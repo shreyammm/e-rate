@@ -171,9 +171,18 @@ def analyze(base: Path, sample_size: int = 16, min_confidence: float = .8) -> di
     # separately and NEVER written into this generated file.
     write_csv(out / 'ocr_review_sample_generated.csv', sample, SAMPLE_FIELDS)
     deep, _ = read_csv(analysis / 'pdf_deep_review.csv')
+    additional_path = analysis / 'additional_recovery/additional_pdf_review_queue.csv'
+    additional, _ = read_csv(additional_path) if additional_path.is_file() else ([], [])
+    additional_keys = {(r['submission_id'],r['document_number']) for r in additional}
+    additional_completed = sum(
+        (r['submission_id'],r['document_number']) in additional_keys
+        and r['status']=='completed' and int(r['ocr_chars'] or 0)>0
+        for r in rows)
     summary = {
         'generated_utc': datetime.now(timezone.utc).isoformat(),
         'review_queue_pdf_count': len(deep),
+        'additional_pdf_gap_queue_count': len(additional),
+        'additional_pdf_gap_ocr_completed_with_nonempty_text': additional_completed,
         'ocr_documents_recorded': len(rows),
         'completed_with_nonempty_text': sum(
             r['status'] == 'completed' and int(r['ocr_chars'] or 0) > 0 for r in rows),

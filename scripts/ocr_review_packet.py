@@ -41,7 +41,8 @@ def keys_for_review(sample: list[dict], qc: list[dict], limit: int, high_only: b
     return unique[:limit]
 
 
-def render_packet(base: Path, limit: int = 20, dpi: int = 95, high_only: bool = False) -> tuple[Path, int, int]:
+def render_packet(base: Path, limit: int = 20, dpi: int = 95, high_only: bool = False,
+                  additional_only: bool = False) -> tuple[Path, int, int]:
     import pymupdf
 
     base = base.expanduser().resolve()
@@ -52,7 +53,14 @@ def render_packet(base: Path, limit: int = 20, dpi: int = 95, high_only: bool = 
     manifest, _ = read_csv(out / 'run_manifest.csv')
     rows = {(r['submission_id'], r['document_number']): r for r in manifest}
     qc_rows = {(r['submission_id'], r['document_number']): r for r in qc}
-    keys = keys_for_review(sample, qc, limit, high_only)
+    if additional_only and high_only:
+        raise ValueError('--additional-only and --high-priority-only cannot be combined')
+    if additional_only:
+        additional_path = audit / 'additional_recovery/additional_pdf_review_queue.csv'
+        additional, _ = read_csv(additional_path)
+        keys = [(r['submission_id'], r['document_number']) for r in additional][:limit]
+    else:
+        keys = keys_for_review(sample, qc, limit, high_only)
     if not keys:
         raise ValueError('No OCR documents found in the review selection')
 
@@ -185,8 +193,9 @@ max-height:900px;overflow:auto;border:1px solid #ddd;padding:12px;background:#ff
               '<button id="export">Download review decisions (CSV)</button>'
               '</header>' + ''.join(sheets) + '<script>' + js
               + '</script></body></html>')
-    output = out / ('ocr_review_packet_high_priority.html' if high_only
-                     else 'ocr_review_packet_sample.html')
+    output = out / ('ocr_review_packet_additional_pdfs.html' if additional_only else
+                    ('ocr_review_packet_high_priority.html' if high_only
+                     else 'ocr_review_packet_sample.html'))
     output.write_text(packet, encoding='utf-8')
     return output, len(keys), total_pages
 
@@ -198,13 +207,16 @@ def main():
     p.add_argument('--limit', type=int, default=20)
     p.add_argument('--dpi', type=int, default=95)
     p.add_argument('--high-priority-only', action='store_true')
+    p.add_argument('--additional-only', action='store_true',
+                   help='Review all reconciled PDF gaps, not the regular OCR sample')
     args = p.parse_args()
     if args.limit < 1 or args.limit > 40:
         p.error('--limit must be from 1 to 40')
     if args.dpi < 72 or args.dpi > 150:
         p.error('--dpi must be from 72 to 150')
     filename, documents, pages = render_packet(
-        args.corpus, args.limit, args.dpi, args.high_priority_only)
+        args.corpus, args.limit, args.dpi, args.high_priority_only,
+        args.additional_only)
     print(f'Private review packet: {filename} ({documents} PDFs, {pages} pages)')
     print('Open with: open ' + str(filename))
     print('Never commit this HTML or exported review CSV to a public repository.')
