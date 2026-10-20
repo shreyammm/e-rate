@@ -9,7 +9,7 @@ on:
       - 'analysis_methods/provision_codebook_v1.json'
       - '.github/workflows/llm-census.yml'
   schedule:
-    - cron: '17 1,5,9,13,17,21 * * *'
+    - cron: '17 1,5,9,13,17,21 * * *' # Fully unattended; 6 incremental batches per day
 
 permissions:
   contents: write
