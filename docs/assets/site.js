@@ -246,7 +246,14 @@ async function main(){
     if(!Array.isArray(index.filings)||index.filings.length!==summary.indexed_filings)throw new Error('partial publication');
     if(JSON.stringify(index.issue_keys)!==JSON.stringify(summary.issues.map(i=>i.id)))throw new Error('incompatible issue index');
     allRecords=index.filings;publishedIndex=true;
-    $('explorer-loaded').textContent=number(allRecords.length)+' source-linked filing records indexed';
+    try {
+      if(typeof window.applyFullTextRoles!=='function')throw new Error('Role audit script unavailable');
+      await window.applyFullTextRoles(allRecords,summary,roleNames);
+      $('explorer-loaded').textContent=number(allRecords.length)+' filing records with provisional full-text commenter roles';
+    } catch(e){
+      console.warn('Full-text role data unavailable; falling back to filer-field classifications',e);
+      $('explorer-loaded').textContent=number(allRecords.length)+' filing records · filer-field categories only';
+    }
   }catch(e){indexFallback();}
   initMetrics();setFilters();renderDirectionalEvidence();drawPositions();drawAlignment();drawArguments();drawRoles();drawIssueRoleComparison();
   document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>openTab(b.dataset.view)));
