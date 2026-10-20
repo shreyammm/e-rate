@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Ask questions about 3,231 FCC E-Rate submissions using free, source-grounded browser-based AI."><title>Ask the FCC E-Rate Corpus · Observatory</title><link rel="stylesheet" href="./assets/site.css"><style>
+.ask-hero{padding:2.2rem 0 1rem}.ask-hero h1{font-size:clamp(1.8rem,3.5vw,2.6rem);margin:.25rem 0}.ask-sub{font-size:1rem;max-width:850px;line-height:1.65;color:#4d6070}
+.ask-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,.85fr);gap:1.2rem;align-items:start}
+.ask-panel{background:#fff;border:1px solid #cbd5df;border-radius:12px;padding:1.3rem;min-width:0;margin:1rem 0}
+.ask-panel h2{margin-top:0}.ask-textarea{width:100%;box-sizing:border-box;min-height:110px;resize:vertical;font:inherit;padding:.8rem;border-radius:8px;border:1px solid #93a7bb;background:#fff;color:#18293b}
+.ask-actions{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:.8rem}
+.ask-submit{border:none;border-radius:7px;background:#172e48;color:white;padding:.7rem 1.15rem;font:inherit;font-weight:650;cursor:pointer}.ask-submit:disabled{opacity:.5;cursor:not-allowed}
+.ask-muted{color:#516677;font-size:.9rem;line-height:1.65}.ask-suggestions{display:flex;flex-wrap:wrap;gap:.5rem}
+.ask-suggestions button{border:1px solid #b7c9d9;background:#f6f9fc;border-radius:10px;padding:.6rem .7rem;color:#17324c;text-align:left;cursor:pointer;font:inherit;font-size:.87rem}
+.ask-suggestions button:hover{background:#e7f2fc}
+.ask-answer-body{white-space:pre-wrap;line-height:1.75;font-size:1.04rem;color:#1a2c3a}
+.ask-answer-body a{font-weight:700}.ask-source{border-top:1px solid #d7e1e8;padding:1rem 0}
+.ask-source-top{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.9rem}
+.ask-source-top strong{max-width:100%;overflow-wrap:anywhere}.ask-source-top span{color:#536b80}
+.ask-source blockquote{white-space:pre-wrap;overflow-wrap:anywhere;font:normal .89rem/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;background:#f4f8fb;border-left:3px solid #809eaf;padding:.8rem;margin:.7rem 0}
+.ask-source-links{display:flex;gap:1.4rem;flex-wrap:wrap;font-size:.9rem}
+.ask-warning{border-left:3px solid #9a7048;background:#fcf7ef;padding:.7rem .8rem;font-size:.94rem;line-height:1.55}
+.ask-small{font-size:.85rem;color:#647787}
+@media(max-width:900px){.ask-layout{grid-template-columns:1fr}}
+</style></head><body>
+<header class="site-top"><div class="shell header-row"><div><strong>E-Rate Comment Observatory</strong><span class="subhead">Full-corpus grounded question answering</span></div><nav><a href="./">Dashboard</a> · <a href="./corpus.html">Read every comment</a> · <a href="./llm.html">Corpus-wide LLM census</a></nav></div></header>
+<main class="shell"><section class="ask-hero"><p class="ask-small">SOURCE-LINKED RESEARCH ASSISTANT</p><h1>Ask the FCC comment corpus</h1>
+<p class="ask-sub">Ask a question in plain English. The tool searches all 3,230 available comment texts, retrieves relevant passages, and uses <strong>Microsoft Phi-3.5 Mini</strong> (US-developed, MIT open-source license) running on your computer to draft an answer with filing citations. There is no paid API or account required.</p>
+</section><div class="ask-layout"><div>
+<section class="ask-panel"><h2>What do you want to know?</h2><label for="ask-question" class="ask-muted">Type a question about the FCC submissions</label><textarea id="ask-question" class="ask-textarea" placeholder="How do school districts describe the consequences of reducing E-Rate funding?"></textarea>
+<div class="ask-actions"><button id="ask-submit" class="ask-submit" disabled>Find evidence and answer</button><span class="ask-muted">Full source retrieval → on-device AI → clickable citations</span></div>
+<p id="ask-status" class="ask-muted" role="status" aria-live="polite">Loading full-corpus search index…</p>
+<div id="ask-warning"></div></section>
+<section class="ask-panel"><h2>Answer</h2><p class="ask-muted">An AI-generated answer will appear here only when the US-developed on-device model is available. Actual filing quotations remain visible even without model support.</p><div id="ask-answer"></div></section>
+<section class="ask-panel"><h2>Original comments used as evidence</h2><p class="ask-muted">These passages are verbatim portions of the research snapshot, not paraphrases. Open the whole filing before relying on any characterization; source claims may be inaccurate and OCR can contain errors.</p><div id="ask-evidence"><p class="ask-muted">Relevant excerpts and direct source links appear here after searching.</p></div></section>
+</div><aside>
+<section class="ask-panel"><h2>Try a question</h2><div class="ask-suggestions">
+<button type="button" data-question="What concerns did school districts raise about E-Rate program eligibility?">What concerns did school districts raise about E-Rate eligibility?</button>
+<button type="button" data-question="What arguments appear about restricting students' screen time or social media use?">What arguments appear about screen time and social media?</button>
+<button type="button" data-question="What did commenters propose about consultant compensation and disclosure?">What did commenters propose about consultant compensation?</button>
+<button type="button" data-question="How did commenters describe rural access and affordability challenges?">How did commenters describe rural access and affordability?</button>
+</div></section>
+<section class="ask-panel"><h2>Free model requirements</h2><p class="ask-muted">The first generated answer downloads a quantized Microsoft Phi-3.5 Mini model (several GB), cached by your browser. It requires a WebGPU-compatible browser and sufficient GPU memory (about 3.7 GB model VRAM). On unsupported devices, you can still search and inspect filing evidence. Subsequent answers reuse the loaded model.</p>
+<p class="ask-muted">This is a GitHub Pages static website. It does not transmit your question or retrieved filing excerpts to a paid inference API. Model weights load from WebLLM / Hugging Face and inference runs in your browser.</p></section>
+<section class="ask-panel"><h2>Important research boundaries</h2><p class="ask-muted">The retrieval results are <strong>not a representative sample</strong>. The system cannot infer that most commenters support or oppose something, calculate a valid percentage from search hits, or verify factual assertions in filings.</p><p class="ask-muted">For population-wide patterns, use the separate <a href="./llm.html">Granite per-filing census</a> once processing is complete. One FCC submission is not necessarily one distinct person. The corpus is an October 20, 2026 snapshot, not a live FCC feed.</p>
+<p class="ask-muted"><a href="https://github.com/shreyammm/e-rate">Review the source code and methods ↗</a></p></section>
+</aside></div></main><footer><div class="shell">Independent research · Not affiliated with the FCC · Original records at <a href="https://www.fcc.gov/ecfs/">FCC ECFS</a></div></footer><script defer src="./assets/ask.js"></script></body></html>
