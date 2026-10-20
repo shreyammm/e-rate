@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0_full_text_census_provisional",
+  "schema_version": "1.1_full_text_role_census_with_named_person_capacity_unstated",
   "data_date": "2026-10-20",
   "source_basis": "Local 3,231-row FCC ECFS research snapshot; analysis read all 3,230 available text files end-to-end",
   "coverage": {
@@ -13,82 +13,82 @@
   },
   "roles": [
     {
-      "id": "unresolved",
-      "label": "Affiliation not established from source",
-      "filings": 984,
-      "distinct_filer_fields": 962
+      "id": "named_person_capacity_unstated",
+      "label": "Personal-name filer; capacity not stated",
+      "filings": 923,
+      "distinct_filer_fields": 905
     },
     {
       "id": "school_district_or_school",
-      "label": "School or district institution",
-      "filings": 607,
-      "distinct_filer_fields": 595
-    },
-    {
-      "id": "advocacy_nonprofit_or_trade_association",
-      "label": "Advocacy group / nonprofit / association",
-      "filings": 487,
-      "distinct_filer_fields": 141
+      "label": "School or district organization",
+      "filings": 843,
+      "distinct_filer_fields": 827
     },
     {
       "id": "educator_or_school_staff",
-      "label": "Educator / superintendent / school staff",
-      "filings": 368,
-      "distinct_filer_fields": 364
+      "label": "Educator / school staff",
+      "filings": 449,
+      "distinct_filer_fields": 443
+    },
+    {
+      "id": "advocacy_nonprofit_or_trade_association",
+      "label": "Advocacy / nonprofit / association",
+      "filings": 428,
+      "distinct_filer_fields": 79
     },
     {
       "id": "library_or_library_system",
       "label": "Library institution or staff",
-      "filings": 314,
-      "distinct_filer_fields": 308
+      "filings": 237,
+      "distinct_filer_fields": 233
     },
     {
-      "id": "school_connected_voice_capacity_unconfirmed",
-      "label": "School-connected; official capacity unconfirmed",
-      "filings": 288,
-      "distinct_filer_fields": 286
+      "id": "unresolved",
+      "label": "Commenter type cannot be established",
+      "filings": 144,
+      "distinct_filer_fields": 142
     },
     {
       "id": "parent_guardian",
-      "label": "Self-identified parent / guardian",
-      "filings": 76,
-      "distinct_filer_fields": 76
+      "label": "Self-identified parent or guardian",
+      "filings": 78,
+      "distinct_filer_fields": 78
     },
     {
       "id": "government_or_tribal_organization",
-      "label": "Government or Tribal organization",
-      "filings": 45,
-      "distinct_filer_fields": 43
+      "label": "Government / elected / Tribal body",
+      "filings": 51,
+      "distinct_filer_fields": 50
     },
     {
       "id": "other_business_or_vendor",
-      "label": "Other business / vendor",
+      "label": "Business or vendor",
       "filings": 39,
       "distinct_filer_fields": 38
     },
     {
-      "id": "consultant_or_e_rate_services_firm",
-      "label": "E-Rate consultant / service firm",
-      "filings": 13,
-      "distinct_filer_fields": 11
+      "id": "school_connected_voice_capacity_unconfirmed",
+      "label": "School-connected, official capacity unclear",
+      "filings": 25,
+      "distinct_filer_fields": 25
     },
     {
-      "id": "student",
-      "label": "Student",
+      "id": "consultant_or_e_rate_services_firm",
+      "label": "E-Rate consultant or service firm",
+      "filings": 8,
+      "distinct_filer_fields": 6
+    },
+    {
+      "id": "researcher_or_health_professional",
+      "label": "Researcher or health professional",
       "filings": 4,
       "distinct_filer_fields": 4
     },
     {
-      "id": "researcher_or_health_professional",
-      "label": "Researcher / health professional",
-      "filings": 3,
-      "distinct_filer_fields": 3
-    },
-    {
-      "id": "telecom_or_network_provider",
-      "label": "Telecom / network provider",
-      "filings": 3,
-      "distinct_filer_fields": 3
+      "id": "student",
+      "label": "Student",
+      "filings": 2,
+      "distinct_filer_fields": 2
     }
   ],
   "provisions": [
@@ -267,7 +267,7 @@
       "other_docket_signature": 0
     }
   ],
-  "identity_method": "Filer metadata plus source-anchored first-person declarations and institutional cues across all available text. Explicitly unresolved where capacity is ambiguous. Lexical and not independently validated.",
+  "identity_method": "All 3,231 records examined. Clear institutional filer metadata reconciled with commenter role statements near letter openings and closing signatures (not quoted scientific appendices). Personal-name-only filer fields are labeled 'capacity not stated', NOT assumed private individuals or evidence of no affiliation; unrecognized or mixed attribution remains unresolved. Automated provisional classification, not identity verification.",
   "retrieval_method": "Term retrieval on all available text for every filing × draft FCC codebook provision; presence alone is not support, opposition, substantive discussion or endorsement.",
   "cross_docket_signal": {
     "filings": 123,
@@ -277,11 +277,11 @@
   },
   "warnings": [
     "NO randomly sampled substantive-count estimates. All 3,231 filing records and 211,756,379 source characters were examined.",
-    "Role labels are EVIDENCE-BASED AUTOMATED CANDIDATES, not verified unique identities; representatives, quotations and institutional boilerplate can mislead.",
     "Stance totals are NOT asserted from keywords, since some submissions quote the FCC's proposals while arguing against them.",
     "Codebook keyword-negative means NOT DETECTED, not proven not addressed.",
     "Agency origin 80 records and OCR candidate 206 attachments remain separate unverified-quality flags.",
-    "Argument frequencies and provision position counts need a validated semantic classifier or exhaustive adjudication; absent values are unknown, not zeros."
+    "Argument frequencies and provision position counts need a validated semantic classifier or exhaustive adjudication; absent values are unknown, not zeros.",
+    "Automated role categories remain fallible: letters may be written for organizations without a clear filing field, and one individual can hold multiple roles. A personal name by itself does not prove the person's representative capacity."
   ],
   "argument_language_signals": [
     {
@@ -383,5 +383,12 @@
       "cross_docket_signature": 4
     }
   ],
-  "argument_language_method": "14 defined sets of exact phrase indicators scanned against all 3,230 texts, counting each matching filing once per family. These are language/evidence retrieval signals, NOT validated claims or agreement. Filings with cross-docket referenced materials may dominate several categories."
+  "argument_language_method": "14 defined sets of exact phrase indicators scanned against all 3,230 texts, counting each matching filing once per family. These are language/evidence retrieval signals, NOT validated claims or agreement. Filings with cross-docket referenced materials may dominate several categories.",
+  "identity_quality": {
+    "classification_scope": "all_3231_filing_records",
+    "named_person_role_not_stated": 923,
+    "unresolved_type": 144,
+    "school_connected_capacity_unconfirmed": 25,
+    "human_verified_identity_count": null
+  }
 }
