@@ -64,25 +64,24 @@ function initMetrics(){
 }
 function renderDirectionalEvidence(){
  const box=$('directional-evidence');if(!box)return;clear(box);
- const row=summary.directional_signals?.[0];
- if(!row)return;
- const heading=el('div','panel-head');heading.append(el('h2','','Corpus-wide directional language (preliminary)'),
-   el('span','','Targeted expression matching · not a validated stance classifier'));box.append(heading);
+ const census=summary.full_census;
+ const head=el('div','panel-head');
+ head.append(el('h2','','Position classification: distinguish wording from endorsement'),
+   el('span','','Complete retrieval census · no sample-derived rates'));
+ box.append(head);
+ if(!census){box.append(el('p','note','The full-corpus role and policy-check dataset could not be loaded.'));return;}
+ const preservation=census.argument_language_signals.find(x=>x.id==='continuity_without_sunset');
+ const sunset=census.provisions.find(x=>x.id==='erate_sunset');
  const vals=el('div','record-line');
- for(const [n,label] of [[row.filings,'Filings with explicit continuation/preservation wording'],
-  [summary.issues.find(x=>x.id==='sunset_or_narrow').n,'Filings mentioning sunset/narrowing (any direction)']]){
-  const item=el('div','');item.append(el('strong','',number(n)),el('p','note',label));vals.append(item);
+ for(const [n,label] of [
+  [preservation.filings_with_language,'Filings using continuity / preservation-related expressions'],
+  [sunset.mentions,'Filings matching the broader sunset / elimination question']
+ ]){
+  const item=el('div','');
+  item.append(el('strong','',number(n)),el('p','note',label));vals.append(item);
  }
- box.append(vals,el('p','note','This is an unverified phrase-based candidate count across the entire corpus, not a validated total of supportive commenters. A naive search for support of E-Rate elimination incorrectly picked up filings quoting the FCC proposal; no whole-corpus pro-sunset tally is published.'));
- const sub=el('div','panel-head');sub.append(el('h3','','Preservation-language signals by provisional filer category'));box.append(sub);
- const track=el('div','');
- const pairs=Object.entries(row.role_counts).map(([id,n])=>({id,label:roleNames[id]||id,n})).sort((a,b)=>b.n-a.n);
- for(const p of pairs){
-  const line=el('div','bar-row');line.append(el('span','bar-label',p.label));
-  const outer=el('div','bar-track'),fill=el('div','bar-fill');fill.style.width=(p.n/pairs[0].n*100)+'%';outer.append(fill);
-  line.append(outer,el('span','bar-value',number(p.n)));track.append(line);
- }
- box.append(track);
+ box.append(vals);
+ box.append(el('p','note','Neither figure is a validated support/opposition tally. We screened every filing against the codebook, but exact-word matching can retrieve the FCC question or a quoted position that the filer rejects. The remaining task is to adjudicate the requested regulatory outcome in each relevant filing; unknown positions are not zeros.'));
 }
 function showCensusProposals(census){
  const t=$('census-proposals');if(!t)return;clear(t);
