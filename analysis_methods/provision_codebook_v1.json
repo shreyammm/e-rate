@@ -1,0 +1,532 @@
+{
+  "version": "1.0.0-draft-anchored",
+  "status": "draft_expert_review_required",
+  "notice_title": "Ensuring Children's Safe Use of Screens and E-Rate-Funded Services; Modernizing the E-Rate Program for Schools and Libraries (FCC 26-41)",
+  "notice_url": "https://docs.fcc.gov/public/attachments/FCC-26-41A1.pdf",
+  "register_url": "https://www.federalregister.gov/documents/2026/08/14/2026-16590/fcc-to-review-e-rate-program-to-ensure-congresss-vision",
+  "notice_scope": "June 26, 2026 NPRM and FNPRM; WC Dockets 26-133, 13-184, 21-93, 21-455",
+  "anchor_accuracy": "Section and PARAGRAPH RANGES follow FCC-26-41 table of contents; verify precise paragraph per option against original PDF before publication or automated coding. These are not exact per-option anchors.",
+  "coding_instruction": "A policy_option states one direction to assess. 'support' means advocating that option; 'oppose' means opposing it. Distinguish FCC questions from actual proposals. Keywords retrieve candidates only; they NEVER indicate a stance.",
+  "positions": [
+    "support",
+    "oppose",
+    "conditional_or_amend",
+    "alternative_proposal",
+    "discussion_no_position",
+    "unclear",
+    "not_addressed"
+  ],
+  "reason_families": [
+    "statutory_authority",
+    "budget_cost_efficiency",
+    "access_affordability_equity",
+    "education_effectiveness",
+    "child_safety",
+    "parental_autonomy",
+    "privacy_free_expression",
+    "administrative_burden",
+    "competition_market_effects",
+    "fraud_integrity",
+    "implementation_feasibility",
+    "evidence_quality",
+    "other"
+  ],
+  "stakeholder_roles": [
+    "school_district",
+    "school_staff",
+    "library",
+    "parent_guardian",
+    "student",
+    "telecom_provider",
+    "vendor",
+    "consultant",
+    "advocacy_group",
+    "researcher",
+    "government",
+    "individual_other",
+    "other_organization",
+    "unknown"
+  ],
+  "evidence_rules": [
+    "Provide a verbatim passage from the source supporting the stance; mere issue mention is not support.",
+    "Quotes must be matched to source text and source segment, with FCC filing URL.",
+    "Record the requested action in original words and separate rationale, consequences, cited evidence, and proposed amendments.",
+    "One filing can support one provision and oppose another; allow multiple distinct arguments per provision.",
+    "A document can be unrelated; no matched keywords does not establish not_addressed, and no automatic inference from filer name or source type.",
+    "Separate explicitly proposed FCC rules from questions for comment; no forced binary classifications.",
+    "Track OCR candidate status, filer-identity uncertainty, template families and agency-origin uncertainty."
+  ],
+  "provisions": [
+    {
+      "id": "erate_sunset",
+      "section": "III.A",
+      "notice_paragraph_range": "12–28",
+      "category": "scope",
+      "label": "Limit or sunset E-Rate",
+      "policy_option": "Reduce, sunset or terminate ongoing E-Rate support because the connectivity mission is fulfilled.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "sunset",
+        "terminate",
+        "eliminate e-rate",
+        "end the e-rate",
+        "e-rate program continue",
+        "continuation of e-rate"
+      ]
+    },
+    {
+      "id": "erate_eligibility_scope",
+      "section": "III.A",
+      "notice_paragraph_range": "12–28",
+      "category": "scope",
+      "label": "Narrow eligible equipment and services",
+      "policy_option": "Limit support for categories currently eligible, including internal connections, or preserve eligibility despite calls for narrowing.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "eligible services",
+        "internal connections",
+        "category two",
+        "category 2",
+        "eligible equipment",
+        "scope of e-rate"
+      ]
+    },
+    {
+      "id": "special_construction",
+      "section": "III.A",
+      "notice_paragraph_range": "12–28",
+      "category": "scope",
+      "label": "Restrict special construction or dark fiber",
+      "policy_option": "Restrict, eliminate, or preserve E-Rate support for special construction, self-provisioned networks or dark fiber.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "special construction",
+        "self provisioned",
+        "self-provisioned",
+        "dark fiber",
+        "overbuilding",
+        "BEAD"
+      ]
+    },
+    {
+      "id": "discount_matrix",
+      "section": "III.A",
+      "notice_paragraph_range": "12–28",
+      "category": "funding",
+      "label": "Change poverty and rural discount matrix",
+      "policy_option": "Change the NSLP- and urban/rural-based discount calculation or preserve current discount rates.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "discount matrix",
+        "NSLP",
+        "school lunch",
+        "discount rates",
+        "rural discount",
+        "urban discount"
+      ]
+    },
+    {
+      "id": "targeted_competition",
+      "section": "III.A",
+      "notice_paragraph_range": "12–28",
+      "category": "funding",
+      "label": "Limit subsidies by broadband competition",
+      "policy_option": "Target E-Rate to high-cost, rural, or single-provider areas, or retain support regardless of competition.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "one provider",
+        "single provider",
+        "broadband competition",
+        "competitive areas",
+        "rural only",
+        "high cost areas"
+      ]
+    },
+    {
+      "id": "vendor_influence",
+      "section": "III.A",
+      "notice_paragraph_range": "12–28",
+      "category": "accountability",
+      "label": "Address vendor influence and procurement incentives",
+      "policy_option": "Impose or reject safeguards addressing the role of vendors in technology selection and procurement.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "vendor influence",
+        "vendor incentives",
+        "vendor interests",
+        "technology vendors",
+        "procurement"
+      ]
+    },
+    {
+      "id": "education_outcomes",
+      "section": "III.A",
+      "notice_paragraph_range": "12–28",
+      "category": "evaluation",
+      "label": "Tie E-Rate decisions to educational outcomes",
+      "policy_option": "Use measured student or educational outcomes to condition or evaluate E-Rate funding.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "educational outcomes",
+        "learning outcomes",
+        "student achievement",
+        "digital curricula",
+        "literacy",
+        "numeracy"
+      ]
+    },
+    {
+      "id": "screen_time_condition",
+      "section": "III.B",
+      "notice_paragraph_range": "29–33",
+      "category": "screens",
+      "label": "Condition E-Rate on screen-time limits",
+      "policy_option": "Require schools or libraries to impose screen-time limits as a condition of E-Rate funding.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "screen time limits",
+        "screen-time limits",
+        "condition of receiving e-rate",
+        "screen time condition",
+        "funding conditioned"
+      ]
+    },
+    {
+      "id": "parent_opt_out",
+      "section": "III.B",
+      "notice_paragraph_range": "29–33",
+      "category": "screens",
+      "label": "Parent opt-out from screen-based instruction",
+      "policy_option": "Condition E-Rate funding on schools offering a meaningful parent opt-out from screen-based instruction.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "opt out",
+        "opt-out",
+        "screen-based instruction",
+        "parental consent",
+        "screen based instruction"
+      ]
+    },
+    {
+      "id": "school_supervision_reporting",
+      "section": "III.B",
+      "notice_paragraph_range": "29–33",
+      "category": "screens",
+      "label": "Supervision and reporting unsafe content",
+      "policy_option": "Require supervision or mechanisms to report inappropriate content on E-Rate-funded networks.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "adult supervision",
+        "report inappropriate content",
+        "reporting requirement",
+        "reporting mechanisms",
+        "supervision requirements"
+      ]
+    },
+    {
+      "id": "prek_headstart",
+      "section": "III.B",
+      "notice_paragraph_range": "29–33",
+      "category": "screens",
+      "label": "Restrict Pre-K and Head Start support",
+      "policy_option": "Remove or limit E-Rate eligibility or require cost allocation for Pre-K or Head Start students and facilities.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "head start",
+        "headstart",
+        "pre-kindergarten",
+        "prekindergarten",
+        "pre-k",
+        "cost allocate"
+      ]
+    },
+    {
+      "id": "cipa_byod",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Extend CIPA to third-party-owned devices",
+      "policy_option": "Apply CIPA protections to personally owned devices connecting to E-Rate-supported networks.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "third-party devices",
+        "third party devices",
+        "BYOD",
+        "device ownership",
+        "its computers",
+        "personal devices"
+      ]
+    },
+    {
+      "id": "cipa_network_filter",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Require network-level content filtering",
+      "policy_option": "Mandate filtering at the network level, not solely school/library-owned computers.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "network-level filtering",
+        "network level filtering",
+        "content filter",
+        "technology protection measures",
+        "filtering at the network"
+      ]
+    },
+    {
+      "id": "cipa_monitoring_privacy",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Interpret monitoring requirements and privacy",
+      "policy_option": "Clarify or modify CIPA monitoring of minors' online activity with attention to privacy.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "monitoring online activities",
+        "monitor minors",
+        "student privacy",
+        "surveillance",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "cipa_social_media",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Change CIPA treatment of social media",
+      "policy_option": "Reverse or retain the interpretation that social-networking sites are not per se harmful to minors.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "social networking",
+        "social media",
+        "harmful to minors",
+        "social networking websites"
+      ]
+    },
+    {
+      "id": "cipa_digital_literacy",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Require digital/media literacy courses",
+      "policy_option": "Require completion of digital/media literacy or internet-safety training tied to E-Rate-supported access.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "digital literacy",
+        "media literacy",
+        "online behavior",
+        "cyberbullying awareness",
+        "training courses"
+      ]
+    },
+    {
+      "id": "cipa_age_specific",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Age-specific internet protections",
+      "policy_option": "Use differing online protections or screen restrictions for younger versus older children.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "age-specific",
+        "age based",
+        "age ranges",
+        "children under 13",
+        "age-appropriate"
+      ]
+    },
+    {
+      "id": "safety_policy_transparency",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Publish internet safety policies",
+      "policy_option": "Require public disclosure, stronger standards, retention or oversight of school/library CIPA policies.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "internet safety policy",
+        "safety policies",
+        "publicly available",
+        "publish the policy",
+        "policy transparency"
+      ]
+    },
+    {
+      "id": "cipa_public_hearings",
+      "section": "III.C",
+      "notice_paragraph_range": "34–48",
+      "category": "cipa",
+      "label": "Strengthen hearings and CIPA enforcement",
+      "policy_option": "Require more timely or repeated public notices/hearings and/or stronger funding consequences for CIPA violations.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "public hearing",
+        "public notice",
+        "notice to parents",
+        "CIPA violation",
+        "funding recovery"
+      ]
+    },
+    {
+      "id": "daily_hour_limits",
+      "section": "III.D",
+      "notice_paragraph_range": "49–53",
+      "category": "screens",
+      "label": "FCC-imposed daily hour limits",
+      "policy_option": "Impose per-day limits on children's use of E-Rate-funded networks or services.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "per-day limits",
+        "daily limits",
+        "hours per day",
+        "daily screen time",
+        "limit screen time"
+      ]
+    },
+    {
+      "id": "consultant_definition",
+      "section": "IV.A.1",
+      "notice_paragraph_range": "57–58",
+      "category": "consultants",
+      "label": "Define covered E-Rate consultants",
+      "policy_option": "Adopt or amend the proposed definition of non-employee consultants, potentially including or excluding resellers/channel partners.",
+      "notice_status": "specific_proposal",
+      "search_terms": [
+        "consultant definition",
+        "define consultant",
+        "non-employee",
+        "channel partner",
+        "reseller",
+        "consulting firm"
+      ]
+    },
+    {
+      "id": "consultant_form_5654",
+      "section": "IV.A.2",
+      "notice_paragraph_range": "59–63",
+      "category": "consultants",
+      "label": "Annual consultant certification and disclosure",
+      "policy_option": "Require annual consultant certifications and conflicts-of-interest disclosures through proposed FCC Form 5654.",
+      "notice_status": "specific_proposal",
+      "search_terms": [
+        "5654",
+        "annual certification",
+        "disclosure form",
+        "conflict of interest",
+        "consultant certification"
+      ]
+    },
+    {
+      "id": "consultant_registration",
+      "section": "IV.A.3",
+      "notice_paragraph_range": "64–69",
+      "category": "consultants",
+      "label": "Individual consultant registration database",
+      "policy_option": "Create individual consultant registration/number requirements for monitoring E-Rate participation.",
+      "notice_status": "specific_proposal",
+      "search_terms": [
+        "consultant registration",
+        "registration database",
+        "registration number",
+        "CRN",
+        "individual consultant"
+      ]
+    },
+    {
+      "id": "consultant_percent_fees",
+      "section": "IV.A.4",
+      "notice_paragraph_range": "70–71",
+      "category": "consultants",
+      "label": "Prohibit percentage-based consultant fees",
+      "policy_option": "Prohibit consultant fees tied to a percentage of contract or E-Rate funding amounts.",
+      "notice_status": "specific_proposal",
+      "search_terms": [
+        "percentage-based",
+        "percentage based",
+        "contingent fee",
+        "consultant fees",
+        "commission-based"
+      ]
+    },
+    {
+      "id": "consultant_records",
+      "section": "IV.A.4",
+      "notice_paragraph_range": "70–71",
+      "category": "consultants",
+      "label": "Consultant document-retention requirements",
+      "policy_option": "Clarify or strengthen records that applicants/providers must retain concerning consultant arrangements.",
+      "notice_status": "specific_proposal",
+      "search_terms": [
+        "document retention",
+        "record retention",
+        "54.516",
+        "consultant documents",
+        "retain documents"
+      ]
+    },
+    {
+      "id": "administrative_forms",
+      "section": "IV.B",
+      "notice_paragraph_range": "72–84",
+      "category": "administration",
+      "label": "Streamline and certify E-Rate forms",
+      "policy_option": "Change administrative deadlines, filings, contract timing, certifications or procurement compliance.",
+      "notice_status": "mixed_proposals_and_questions",
+      "search_terms": [
+        "form 473",
+        "form 479",
+        "form 474",
+        "form 470",
+        "form 471",
+        "certification",
+        "administrative burden"
+      ]
+    },
+    {
+      "id": "mibs",
+      "section": "IV.B",
+      "notice_paragraph_range": "72–84",
+      "category": "administration",
+      "label": "Managed internal broadband service eligibility",
+      "policy_option": "Change eligibility or reseller requirements for managed internal broadband services (MIBS).",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "MIBS",
+        "managed internal broadband",
+        "reseller",
+        "profit margin"
+      ]
+    },
+    {
+      "id": "lowest_corresponding_price",
+      "section": "IV.B",
+      "notice_paragraph_range": "85–88",
+      "category": "administration",
+      "label": "Lowest corresponding price protections",
+      "policy_option": "Reconsider enforcement, transparency or obligations for lowest corresponding price requirements.",
+      "notice_status": "question_for_comment",
+      "search_terms": [
+        "lowest corresponding price",
+        "LCP",
+        "pricing requirements",
+        "service provider pricing"
+      ]
+    },
+    {
+      "id": "ecf_rule_sunset",
+      "section": "IV",
+      "notice_paragraph_range": "89–91",
+      "category": "administration",
+      "label": "Delete obsolete Emergency Connectivity Fund regulations",
+      "policy_option": "Remove completed Emergency Connectivity Fund rules from the Code of Federal Regulations.",
+      "notice_status": "specific_proposal",
+      "search_terms": [
+        "emergency connectivity fund",
+        "ECF rules",
+        "sunset ECF",
+        "delete obsolete"
+      ]
+    }
+  ]
+}
