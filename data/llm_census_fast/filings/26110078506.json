@@ -1,0 +1,34 @@
+{
+  "summary": "The comment supports the continuation of the E-Rate program and opposes any cuts or changes to its funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "Please do not defund or remove the E-rate program. Internet access should be an affordable utility, not a luxury",
+      "evidence_start": 0,
+      "evidence_end": 112,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078506",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078506",
+  "filer_raw": "Tressa",
+  "date_submission": "2026-09-28T13:56:57.501Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c3b55cb9508d90dd64f3fa58b8bfd6cee2c97d2d092bee30aedab3f8ae8c1251",
+  "params_key": "ea72ead3b0834830efb3a32180ad0fef00b9808e4779c102b825d4be25655803",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

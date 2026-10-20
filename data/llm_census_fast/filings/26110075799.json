@@ -1,0 +1,34 @@
+{
+  "summary": "The comment emphasizes the importance of maintaining E-Rate funding for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "Please do not reduce e-rate funds. Our school district relies on the money to provide modern technology for our students and staff.",
+      "evidence_start": 0,
+      "evidence_end": 131,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075799",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075799",
+  "filer_raw": "MICHAEL PLOURDE",
+  "date_submission": "2026-09-08T14:08:36.192Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e721aa2f01a0656483d7d5d2854916df99e8190ca861da6000e072e47eaf5555",
+  "params_key": "ef719446286fc70877549927e319cb9b4985fcb35530be847b2b13756650ff37",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The E-Rate program is an important source of funding to Ashland City Schools. As the FCC looks to make changes to the program, it is important to preserve this funding source to local schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate funding is crucial for local schools.",
+      "evidence_quote": "The E-Rate program is an important source of funding to Ashland City Schools.",
+      "evidence_start": 0,
+      "evidence_end": 77,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080696",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080696",
+  "filer_raw": "Ashland City Schools",
+  "date_submission": "2026-10-12T19:44:17.951Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0a38e40832a8bbc645ab96e3b2a77f953a9d92c331d647b04d3a4ef938533b4a",
+  "params_key": "89082398a73564027a142a36aa3a3f9c7233e0ce85e181a1238021cb8e89b14b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

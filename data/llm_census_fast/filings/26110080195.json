@@ -1,0 +1,73 @@
+{
+  "summary": "Discussion on various aspects of E-Rate program changes",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "Require individual consultant registration database",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "",
+      "evidence_quote": "we cannot remove wifi from those who truly need it",
+      "evidence_start": 0,
+      "evidence_end": 50,
+      "uncertain": false
+    },
+    {
+      "provision_id": "daily_hour_limits",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on daily hour limits",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "personal_experience",
+      "argument": "",
+      "evidence_quote": "we cannot remove wifi from those who truly need it",
+      "evidence_start": 0,
+      "evidence_end": 50,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "",
+      "evidence_quote": "we cannot remove wifi from those who truly need it",
+      "evidence_start": 0,
+      "evidence_end": 50,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Remove or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "we cannot remove wifi from those who truly need it",
+      "evidence_start": 0,
+      "evidence_end": 50,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_registration": "oppose",
+    "daily_hour_limits": "oppose",
+    "education_outcomes": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080195",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080195",
+  "filer_raw": "Anna Lopez",
+  "date_submission": "2026-10-09T06:19:58.437Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7df7f075f14378acc82e504adcb11767f7e6dcb60a858fbb9e2a9f71765de3c9",
+  "params_key": "90a1e33c30f1eff356e26f9f634bbf3c1db58d3a2789af2e0707d8ae6b3d9edf",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

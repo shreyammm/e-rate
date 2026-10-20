@@ -1,0 +1,34 @@
+{
+  "summary": "Discussion on various aspects of the E-Rate program including funding, eligibility, and implementation",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue funding the program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "The e-rate program provides valuable funds to numerous school districts including Meridian 223 and these funds are valuable so that students have good internet access.",
+      "evidence_start": 0,
+      "evidence_end": 167,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075518",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075518",
+  "filer_raw": "Roger Morrow",
+  "date_submission": "2026-09-03T23:19:21.053Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "02621174aa56964fe1c9fa366717fb8267cf4d5729df2dcd9fedb20295c30e26",
+  "params_key": "47568dcdb5471f6bf43aa5722d8a2f365b4a7ec40f9cf880cc6090648725af13",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

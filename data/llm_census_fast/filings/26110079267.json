@@ -1,0 +1,34 @@
+{
+  "summary": "Discussion on various aspects of E-Rate program including eligibility, funding, and implementation",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate program should remain available to ensure connectivity for schools",
+      "evidence_quote": "Reliable, affordable connectivity is an essential part of providing students with an excellent modern education, and I believe this important resource should remain available to schools and students",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079267",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079267",
+  "filer_raw": "Cynthia Espino",
+  "date_submission": "2026-10-04T21:14:00.712Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "87e27bd60eb914880aac975e0d44f5368ad3f6b5d92d9393617ff6eb7f6ce2ed",
+  "params_key": "556b5be7d8c8f4bf15aad64952cc1ad3164287860f08cc22e18b11712c470239",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "Discussion on various aspects of the E-Rate program including its sunset, eligibility scope, and other policy changes",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "The hotspots are very useful for our community and cutting the E-Rate Program would make life harder for the citizens of Malden.",
+      "evidence_start": 0,
+      "evidence_end": 128,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077789",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077789",
+  "filer_raw": "E W",
+  "date_submission": "2026-09-23T01:37:33.431Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "69d966a676ac29fa493efefb8c22f331ee977ce8559fd2e8f8307d17483d7e2f",
+  "params_key": "b45bbdcdb604c284c3c602747ed793ac22137e9de09de8daae365dcd6762017f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

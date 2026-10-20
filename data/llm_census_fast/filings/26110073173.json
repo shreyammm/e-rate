@@ -1,0 +1,34 @@
+{
+  "summary": "Discussion on various aspects of E-Rate program including eligibility, funding, and implementation",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "We need wifi at the library to be able to do homework and research!",
+      "evidence_start": 0,
+      "evidence_end": 67,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073173",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073173",
+  "filer_raw": "caitlin amburn",
+  "date_submission": "2026-08-26T12:26:07.163Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8680ea8d1b20ef49f208766decd798eabedd5b0c397fd2e931e93ddd8388c290",
+  "params_key": "5fbdef54331c6cdf239efbfa1446f173e1f2e4f55e1d40415661f04c44e83247",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

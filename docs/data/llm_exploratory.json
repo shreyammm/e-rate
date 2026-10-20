@@ -1,50 +1,269 @@
 {
   "schema_version": "llm-census-v1.1.0",
-  "generated_utc": "2026-10-20T19:05:28.779712+00:00",
+  "generated_utc": "2026-10-20T19:47:53.912551+00:00",
   "publication_status": "EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS",
-  "model": "granite4.2:3b",
+  "model": "ibm/granite4:1b-q4_K_M",
   "codebook_version": "1.0.0-draft-anchored",
   "indexed_filings": 3231,
   "filings_with_text": 3230,
-  "completed_filings": 5,
+  "completed_filings": 92,
   "processing_status": {
-    "complete": 5,
-    "pending": 3224,
-    "partial": 2
+    "pending": 3138,
+    "complete": 92,
+    "no_source_text": 1
   },
-  "distinct_normalized_texts_among_completed": 5,
+  "distinct_normalized_texts_among_completed": 92,
   "completed_filings_in_exact_text_duplicate_groups": 0,
   "inferred_stakeholder_roles": {
-    "school_district": 1,
-    "unknown": 4
+    "unknown": 73,
+    "school_district": 15,
+    "parent_guardian": 3,
+    "library": 1
   },
   "machine_evidence_quality": {
-    "invalid_claim_rows_rejected": 8,
+    "invalid_claim_rows_rejected": 22,
     "uncertain_claim_rows": 0,
-    "filings_without_grounded_positions": 3,
-    "filings_with_rejected_quotes_or_codes": 2
+    "filings_without_grounded_positions": 15,
+    "filings_with_rejected_quotes_or_codes": 17
   },
   "argument_reason_counts": {
-    "access_affordability_equity": 3,
-    "budget_cost_efficiency": 1
+    "child_safety": 2,
+    "education_effectiveness": 23,
+    "budget_cost_efficiency": 74,
+    "other": 6,
+    "access_affordability_equity": 13,
+    "privacy_free_expression": 5,
+    "competition_market_effects": 5,
+    "administrative_burden": 10,
+    "parental_autonomy": 5
   },
   "argument_type_counts": {
-    "equity_access": 4
+    "legal_claim": 3,
+    "empirical_claim": 21,
+    "cost_or_savings": 77,
+    "equity_access": 7,
+    "privacy_expression": 2,
+    "other": 9,
+    "normative_value": 8,
+    "implementation_burden": 10,
+    "citation_of_external_evidence": 2,
+    "alternative_design": 3,
+    "personal_experience": 1
   },
   "issue_cooccurrences": [
     {
-      "provision_a": "erate_eligibility_scope",
+      "provision_a": "education_outcomes",
       "provision_b": "erate_sunset",
-      "filings": 1
+      "filings": 22
     },
     {
-      "provision_a": "erate_eligibility_scope",
-      "provision_b": "special_construction",
-      "filings": 1
+      "provision_a": "consultant_registration",
+      "provision_b": "education_outcomes",
+      "filings": 10
+    },
+    {
+      "provision_a": "consultant_registration",
+      "provision_b": "erate_sunset",
+      "filings": 10
     },
     {
       "provision_a": "erate_sunset",
       "provision_b": "special_construction",
+      "filings": 7
+    },
+    {
+      "provision_a": "cipa_public_hearings",
+      "provision_b": "education_outcomes",
+      "filings": 4
+    },
+    {
+      "provision_a": "cipa_public_hearings",
+      "provision_b": "erate_sunset",
+      "filings": 4
+    },
+    {
+      "provision_a": "discount_matrix",
+      "provision_b": "erate_sunset",
+      "filings": 4
+    },
+    {
+      "provision_a": "discount_matrix",
+      "provision_b": "special_construction",
+      "filings": 4
+    },
+    {
+      "provision_a": "discount_matrix",
+      "provision_b": "targeted_competition",
+      "filings": 4
+    },
+    {
+      "provision_a": "erate_sunset",
+      "provision_b": "targeted_competition",
+      "filings": 4
+    },
+    {
+      "provision_a": "special_construction",
+      "provision_b": "targeted_competition",
+      "filings": 4
+    },
+    {
+      "provision_a": "discount_matrix",
+      "provision_b": "erate_eligibility_scope",
+      "filings": 3
+    },
+    {
+      "provision_a": "erate_eligibility_scope",
+      "provision_b": "erate_sunset",
+      "filings": 3
+    },
+    {
+      "provision_a": "erate_eligibility_scope",
+      "provision_b": "special_construction",
+      "filings": 3
+    },
+    {
+      "provision_a": "erate_eligibility_scope",
+      "provision_b": "targeted_competition",
+      "filings": 3
+    },
+    {
+      "provision_a": "education_outcomes",
+      "provision_b": "special_construction",
+      "filings": 3
+    },
+    {
+      "provision_a": "education_outcomes",
+      "provision_b": "parent_opt_out",
+      "filings": 3
+    },
+    {
+      "provision_a": "erate_sunset",
+      "provision_b": "parent_opt_out",
+      "filings": 3
+    },
+    {
+      "provision_a": "daily_hour_limits",
+      "provision_b": "education_outcomes",
+      "filings": 3
+    },
+    {
+      "provision_a": "daily_hour_limits",
+      "provision_b": "erate_sunset",
+      "filings": 3
+    },
+    {
+      "provision_a": "consultant_definition",
+      "provision_b": "education_outcomes",
+      "filings": 2
+    },
+    {
+      "provision_a": "consultant_definition",
+      "provision_b": "erate_sunset",
+      "filings": 2
+    },
+    {
+      "provision_a": "consultant_definition",
+      "provision_b": "parent_opt_out",
+      "filings": 2
+    },
+    {
+      "provision_a": "consultant_registration",
+      "provision_b": "special_construction",
+      "filings": 2
+    },
+    {
+      "provision_a": "consultant_registration",
+      "provision_b": "lowest_corresponding_price",
+      "filings": 2
+    },
+    {
+      "provision_a": "education_outcomes",
+      "provision_b": "lowest_corresponding_price",
+      "filings": 2
+    },
+    {
+      "provision_a": "erate_sunset",
+      "provision_b": "lowest_corresponding_price",
+      "filings": 2
+    },
+    {
+      "provision_a": "consultant_registration",
+      "provision_b": "daily_hour_limits",
+      "filings": 2
+    },
+    {
+      "provision_a": "consultant_definition",
+      "provision_b": "daily_hour_limits",
+      "filings": 1
+    },
+    {
+      "provision_a": "daily_hour_limits",
+      "provision_b": "parent_opt_out",
+      "filings": 1
+    },
+    {
+      "provision_a": "discount_matrix",
+      "provision_b": "vendor_influence",
+      "filings": 1
+    },
+    {
+      "provision_a": "erate_eligibility_scope",
+      "provision_b": "vendor_influence",
+      "filings": 1
+    },
+    {
+      "provision_a": "erate_sunset",
+      "provision_b": "vendor_influence",
+      "filings": 1
+    },
+    {
+      "provision_a": "special_construction",
+      "provision_b": "vendor_influence",
+      "filings": 1
+    },
+    {
+      "provision_a": "targeted_competition",
+      "provision_b": "vendor_influence",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_public_hearings",
+      "provision_b": "consultant_registration",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_public_hearings",
+      "provision_b": "lowest_corresponding_price",
+      "filings": 1
+    },
+    {
+      "provision_a": "consultant_percent_fees",
+      "provision_b": "consultant_registration",
+      "filings": 1
+    },
+    {
+      "provision_a": "consultant_percent_fees",
+      "provision_b": "education_outcomes",
+      "filings": 1
+    },
+    {
+      "provision_a": "consultant_percent_fees",
+      "provision_b": "erate_sunset",
+      "filings": 1
+    },
+    {
+      "provision_a": "consultant_percent_fees",
+      "provision_b": "parent_opt_out",
+      "filings": 1
+    },
+    {
+      "provision_a": "consultant_registration",
+      "provision_b": "parent_opt_out",
+      "filings": 1
+    },
+    {
+      "provision_a": "daily_hour_limits",
+      "provision_b": "lowest_corresponding_price",
       "filings": 1
     }
   ],
@@ -55,6 +274,1382 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
+        "oppose": 68,
+        "support": 5
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 68,
+        "support": 5
+      },
+      "filings_mentioning": 73,
+      "claim_reason_counts": {
+        "budget_cost_efficiency": 73
+      },
+      "claim_kind_counts": {
+        "cost_or_savings": 72,
+        "normative_value": 1
+      },
+      "claim_count": 73,
+      "filings_by_inferred_role": {
+        "unknown": 57,
+        "school_district": 14,
+        "library": 1,
+        "parent_guardian": 1
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 55,
+          "support": 2
+        },
+        "school_district": {
+          "oppose": 11,
+          "support": 3
+        },
+        "library": {
+          "oppose": 1
+        },
+        "parent_guardian": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "budget_cost_efficiency": 68
+        },
+        "support": {
+          "budget_cost_efficiency": 5
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26109947858",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26109947858",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Preserve e-rate for schools.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110023369",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110023369",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110025043",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110025043",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "The E-rate program is an essential component of bridging the digital divide; access to these services save lives in countless ways.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110026136",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110026136",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "We rely on Erate to supply our students with the necessary network for the growing digital curricula. Without it, we would quickly be surpassed by the technology and network speeds.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110038471",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110038471",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "We are urging the FCC to keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110069340",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110069340",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Our public library needs this program to continue in order to provide internet services to our community for educational purposes",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110069554",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110069554",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110070367",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110070367",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "This policy allows people to have better access to the internet who would not normally be able to use those resources.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110071405",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110071405",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "In an age where so many jobs are online - it is vital for school communities to have access to setting up a network for children to learn about what it means to be on the internet",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110071489",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110071489",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Our library and all of the libraries in Idaho need E-Rate to be able to continue to offer WiFi for our local communities",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110072331",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110072331",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I do not support any changes to the current e-rate system for libraries",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110072825",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110072825",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "We need internet access, especially in rural communities.",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "label": "Narrow eligible equipment and services",
+      "category": "scope",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 4,
+        "support": 1
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 4,
+        "support": 1
+      },
+      "filings_mentioning": 5,
+      "claim_reason_counts": {
+        "access_affordability_equity": 5
+      },
+      "claim_kind_counts": {
+        "equity_access": 3,
+        "other": 1,
+        "alternative_design": 1
+      },
+      "claim_count": 5,
+      "filings_by_inferred_role": {
+        "unknown": 3,
+        "school_district": 1,
+        "parent_guardian": 1
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 3
+        },
+        "school_district": {
+          "support": 1
+        },
+        "parent_guardian": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "access_affordability_equity": 4
+        },
+        "support": {
+          "access_affordability_equity": 1
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110023369",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110023369",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110038471",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110038471",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "We are urging the FCC to keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110073415",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073415",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "My family has used their services many times and they serve a common good for our community",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075785",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075785",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I am writing today to express my support for no changes to the e-rate regulations that were established in 1996.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110079967",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110079967",
+          "position": "oppose",
+          "argument": "Narrowing eligibility limits access to necessary services",
+          "evidence_quote": "The internet for my children is extremely important.",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "special_construction",
+      "label": "Restrict special construction or dark fiber",
+      "category": "scope",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 7
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 7
+      },
+      "filings_mentioning": 7,
+      "claim_reason_counts": {
+        "privacy_free_expression": 2,
+        "competition_market_effects": 1,
+        "access_affordability_equity": 4
+      },
+      "claim_kind_counts": {
+        "privacy_expression": 2,
+        "normative_value": 1,
+        "alternative_design": 2,
+        "equity_access": 2
+      },
+      "claim_count": 7,
+      "filings_by_inferred_role": {
+        "unknown": 6,
+        "school_district": 1
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 6
+        },
+        "school_district": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "privacy_free_expression": 2,
+          "competition_market_effects": 1,
+          "access_affordability_equity": 4
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110023369",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110023369",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110038471",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110038471",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "We are urging the FCC to keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110070367",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110070367",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "This policy allows people to have better access to the internet who would not normally be able to use those resources.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110073843",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073843",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "The library offers so many opportunities for people who do not have the affordability or normal ability to have access to modern day necessities.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075785",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075785",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I am writing today to express my support for no changes to the e-rate regulations that were established in 1996.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075787",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075787",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "i strongly support the continued funding for my local, rural, school's e-rate supported funded items including broadband access.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110077457",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110077457",
+          "position": "oppose",
+          "argument": "Restricting special construction would increase costs for schools, making broadband more expensive.",
+          "evidence_quote": "Poor schools deserve internet too",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "discount_matrix",
+      "label": "Change poverty and rural discount matrix",
+      "category": "funding",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 4
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 4
+      },
+      "filings_mentioning": 4,
+      "claim_reason_counts": {
+        "other": 1,
+        "budget_cost_efficiency": 1,
+        "access_affordability_equity": 2
+      },
+      "claim_kind_counts": {
+        "cost_or_savings": 3,
+        "equity_access": 1
+      },
+      "claim_count": 4,
+      "filings_by_inferred_role": {
+        "unknown": 4
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 4
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "other": 1,
+          "budget_cost_efficiency": 1,
+          "access_affordability_equity": 2
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110023369",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110023369",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110038471",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110038471",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "We are urging the FCC to keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075785",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075785",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I am writing today to express my support for no changes to the e-rate regulations that were established in 1996.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110077457",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110077457",
+          "position": "oppose",
+          "argument": "Changing the discount matrix could increase the cost burden on low-income schools.",
+          "evidence_quote": "Poor schools deserve internet too",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "targeted_competition",
+      "label": "Limit subsidies by broadband competition",
+      "category": "funding",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 4
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 4
+      },
+      "filings_mentioning": 4,
+      "claim_reason_counts": {
+        "competition_market_effects": 4
+      },
+      "claim_kind_counts": {
+        "other": 3,
+        "normative_value": 1
+      },
+      "claim_count": 4,
+      "filings_by_inferred_role": {
+        "unknown": 4
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 4
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "competition_market_effects": 4
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110023369",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110023369",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110038471",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110038471",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "We are urging the FCC to keep E-Rate intact, flexible, and free of burdensome local mandates",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075785",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075785",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I am writing today to express my support for no changes to the e-rate regulations that were established in 1996.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110077457",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110077457",
+          "position": "oppose",
+          "argument": "Limiting subsidies would reduce competition in broadband markets, potentially leading to higher prices.",
+          "evidence_quote": "Poor schools deserve internet too",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "vendor_influence",
+      "label": "Address vendor influence and procurement incentives",
+      "category": "accountability",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 1
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 1
+      },
+      "filings_mentioning": 1,
+      "claim_reason_counts": {
+        "access_affordability_equity": 1
+      },
+      "claim_kind_counts": {
+        "other": 1
+      },
+      "claim_count": 1,
+      "filings_by_inferred_role": {
+        "unknown": 1
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "access_affordability_equity": 1
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110075785",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075785",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I am writing today to express my support for no changes to the e-rate regulations that were established in 1996.",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "education_outcomes",
+      "label": "Tie E-Rate decisions to educational outcomes",
+      "category": "evaluation",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "support": 19,
+        "oppose": 3,
+        "unclear": 1
+      },
+      "unique_text_weighted_positions": {
+        "support": 19,
+        "oppose": 3,
+        "unclear": 1
+      },
+      "filings_mentioning": 23,
+      "claim_reason_counts": {
+        "education_effectiveness": 23
+      },
+      "claim_kind_counts": {
+        "empirical_claim": 21,
+        "citation_of_external_evidence": 1,
+        "other": 1
+      },
+      "claim_count": 23,
+      "filings_by_inferred_role": {
+        "unknown": 19,
+        "school_district": 3,
+        "parent_guardian": 1
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "support": 15,
+          "oppose": 3,
+          "unclear": 1
+        },
+        "school_district": {
+          "support": 3
+        },
+        "parent_guardian": {
+          "support": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "support": {
+          "education_effectiveness": 19
+        },
+        "oppose": {
+          "education_effectiveness": 3
+        },
+        "unclear": {
+          "education_effectiveness": 1
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26109947858",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26109947858",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Preserve e-rate for schools.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110026136",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110026136",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "We rely on Erate to supply our students with the necessary network for the growing digital curricula. Without it, we would quickly be surpassed by the technology and network speeds.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110069554",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110069554",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110070367",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110070367",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "This policy allows people to have better access to the internet who would not normally be able to use those resources.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110071489",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110071489",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Our library and all of the libraries in Idaho need E-Rate to be able to continue to offer WiFi for our local communities",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110072331",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110072331",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I do not support any changes to the current e-rate system for libraries",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110073177",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073177",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110073741",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073741",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Please do not cut funding to libraries for reduced rates for internet connectivity.  Not everyone has access at home.  Some people need it for homework, job searches, etc.  We need to keep this access available for all.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110073843",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073843",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "The library offers so many opportunities for people who do not have the affordability or normal ability to have access to modern day necessities.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075412",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075412",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Please consider not taking important learning materials away from the students.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075787",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075787",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "i strongly support the continued funding for my local, rural, school's e-rate supported funded items including broadband access.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075816",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075816",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "please continue support for high speed internet to rural areas such as are served by the Latah County Idaho Library",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "label": "Condition E-Rate on screen-time limits",
+      "category": "screens",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 1
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 1
+      },
+      "filings_mentioning": 1,
+      "claim_reason_counts": {
+        "privacy_free_expression": 1
+      },
+      "claim_kind_counts": {
+        "normative_value": 1
+      },
+      "claim_count": 1,
+      "filings_by_inferred_role": {
+        "parent_guardian": 1
+      },
+      "inferred_role_by_position": {
+        "parent_guardian": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "privacy_free_expression": 1
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110069434",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110069434",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "My family appreciates having a library available that offers computers and free internet usage. My children also benefit from access to quality internet at school and to do homework on the bus.",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "label": "Parent opt-out from screen-based instruction",
+      "category": "screens",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 3
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 3
+      },
+      "filings_mentioning": 3,
+      "claim_reason_counts": {
+        "parental_autonomy": 3
+      },
+      "claim_kind_counts": {
+        "normative_value": 3
+      },
+      "claim_count": 3,
+      "filings_by_inferred_role": {
+        "unknown": 3
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 3
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "parental_autonomy": 3
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110073177",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073177",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075412",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075412",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please consider not taking important learning materials away from the students.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110079821",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110079821",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep our funding",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "school_supervision_reporting",
+      "label": "Supervision and reporting unsafe content",
+      "category": "screens",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "prek_headstart",
+      "label": "Restrict Pre-K and Head Start support",
+      "category": "screens",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "cipa_byod",
+      "label": "Extend CIPA to third-party-owned devices",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "label": "Require network-level content filtering",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "label": "Interpret monitoring requirements and privacy",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "label": "Change CIPA treatment of social media",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "cipa_digital_literacy",
+      "label": "Require digital/media literacy courses",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "cipa_age_specific",
+      "label": "Age-specific internet protections",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "safety_policy_transparency",
+      "label": "Publish internet safety policies",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "cipa_public_hearings",
+      "label": "Strengthen hearings and CIPA enforcement",
+      "category": "cipa",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "support": 4
+      },
+      "unique_text_weighted_positions": {
+        "support": 4
+      },
+      "filings_mentioning": 4,
+      "claim_reason_counts": {
+        "child_safety": 2,
+        "other": 1,
+        "privacy_free_expression": 1
+      },
+      "claim_kind_counts": {
+        "legal_claim": 3,
+        "other": 1
+      },
+      "claim_count": 4,
+      "filings_by_inferred_role": {
+        "unknown": 3,
+        "school_district": 1
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "support": 3
+        },
+        "school_district": {
+          "support": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "support": {
+          "child_safety": 2,
+          "other": 1,
+          "privacy_free_expression": 1
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26109947858",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26109947858",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Preserve e-rate for schools.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110076743",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110076743",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110077339",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110077339",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Do not cut funding to for internet service for low income schools",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110079698",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110079698",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "E-funding is necessary for the continuity of educating our students",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "daily_hour_limits",
+      "label": "FCC-imposed daily hour limits",
+      "category": "screens",
+      "notice_status": "question_for_comment",
+      "positions": {
+        "oppose": 3
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 3
+      },
+      "filings_mentioning": 3,
+      "claim_reason_counts": {
+        "privacy_free_expression": 1,
+        "parental_autonomy": 2
+      },
+      "claim_kind_counts": {
+        "other": 1,
+        "personal_experience": 1,
+        "normative_value": 1
+      },
+      "claim_count": 3,
+      "filings_by_inferred_role": {
+        "unknown": 3
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 3
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "privacy_free_expression": 1,
+          "parental_autonomy": 2
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110075412",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075412",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please consider not taking important learning materials away from the students.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110080195",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080195",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "we cannot remove wifi from those who truly need it",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110081108",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110081108",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Helping our school maintain internet and technologies",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "consultant_definition",
+      "label": "Define covered E-Rate consultants",
+      "category": "consultants",
+      "notice_status": "specific_proposal",
+      "positions": {
+        "support": 2
+      },
+      "unique_text_weighted_positions": {
+        "support": 2
+      },
+      "filings_mentioning": 2,
+      "claim_reason_counts": {
+        "other": 2
+      },
+      "claim_kind_counts": {
+        "citation_of_external_evidence": 1,
+        "other": 1
+      },
+      "claim_count": 2,
+      "filings_by_inferred_role": {
+        "unknown": 2
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "support": 2
+        }
+      },
+      "claim_reason_by_position": {
+        "support": {
+          "other": 2
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110073177",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073177",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075412",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075412",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Please consider not taking important learning materials away from the students.",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "label": "Annual consultant certification and disclosure",
+      "category": "consultants",
+      "notice_status": "specific_proposal",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "consultant_registration",
+      "label": "Individual consultant registration database",
+      "category": "consultants",
+      "notice_status": "specific_proposal",
+      "positions": {
+        "oppose": 8,
+        "support": 2
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 8,
+        "support": 2
+      },
+      "filings_mentioning": 10,
+      "claim_reason_counts": {
+        "administrative_burden": 10
+      },
+      "claim_kind_counts": {
+        "implementation_burden": 10
+      },
+      "claim_count": 10,
+      "filings_by_inferred_role": {
+        "unknown": 8,
+        "school_district": 2
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 7,
+          "support": 1
+        },
+        "school_district": {
+          "oppose": 1,
+          "support": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "administrative_burden": 8
+        },
+        "support": {
+          "administrative_burden": 2
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110069554",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110069554",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110072331",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110072331",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "I do not support any changes to the current e-rate system for libraries",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110073843",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073843",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "The library offers so many opportunities for people who do not have the affordability or normal ability to have access to modern day necessities.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075787",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075787",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "i strongly support the continued funding for my local, rural, school's e-rate supported funded items including broadband access.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110075816",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075816",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "please continue support for high speed internet to rural areas such as are served by the Latah County Idaho Library",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110076743",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110076743",
+          "position": "support",
+          "argument": "",
+          "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110077863",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110077863",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "C.The networks in question are federally subsidized (in public school systems), so the government must help to ensure that they are regulated",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110079821",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110079821",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep our funding",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110080195",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080195",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "we cannot remove wifi from those who truly need it",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110081108",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110081108",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Helping our school maintain internet and technologies",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "label": "Prohibit percentage-based consultant fees",
+      "category": "consultants",
+      "notice_status": "specific_proposal",
+      "positions": {
+        "oppose": 1
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 1
+      },
+      "filings_mentioning": 1,
+      "claim_reason_counts": {
+        "other": 1
+      },
+      "claim_kind_counts": {
+        "cost_or_savings": 1
+      },
+      "claim_count": 1,
+      "filings_by_inferred_role": {
+        "unknown": 1
+      },
+      "inferred_role_by_position": {
+        "unknown": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "other": 1
+        }
+      },
+      "completed_filing_denominator": 92,
+      "examples": [
+        {
+          "submission_id": "26110079821",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110079821",
+          "position": "oppose",
+          "argument": "",
+          "evidence_quote": "Please keep our funding",
+          "uncertain": false
+        }
+      ]
+    },
+    {
+      "provision_id": "consultant_records",
+      "label": "Consultant document-retention requirements",
+      "category": "consultants",
+      "notice_status": "specific_proposal",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "administrative_forms",
+      "label": "Streamline and certify E-Rate forms",
+      "category": "administration",
+      "notice_status": "mixed_proposals_and_questions",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "mibs",
+      "label": "Managed internal broadband service eligibility",
+      "category": "administration",
+      "notice_status": "question_for_comment",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "lowest_corresponding_price",
+      "label": "Lowest corresponding price protections",
+      "category": "administration",
+      "notice_status": "question_for_comment",
+      "positions": {
         "support": 2
       },
       "unique_text_weighted_positions": {
@@ -63,10 +1658,11 @@
       "filings_mentioning": 2,
       "claim_reason_counts": {
         "access_affordability_equity": 1,
-        "budget_cost_efficiency": 1
+        "other": 1
       },
       "claim_kind_counts": {
-        "equity_access": 2
+        "equity_access": 1,
+        "cost_or_savings": 1
       },
       "claim_count": 2,
       "filings_by_inferred_role": {
@@ -84,541 +1680,28 @@
       "claim_reason_by_position": {
         "support": {
           "access_affordability_equity": 1,
-          "budget_cost_efficiency": 1
+          "other": 1
         }
       },
-      "completed_filing_denominator": 5,
+      "completed_filing_denominator": 92,
       "examples": [
         {
-          "submission_id": "10604049228283",
-          "source_url": "https://www.fcc.gov/ecfs/filing/10604049228283",
+          "submission_id": "26110076743",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110076743",
           "position": "support",
-          "argument": "E-Rate is essential for rural, low-income districts to achieve reliable network infrastructure, which is necessary for modern classroom tools and student safety beyond screen time.",
-          "evidence_quote": "As the Technology Director for a small, rural school district, I am writing to strongly advocate for the continuation and robust funding of the E-Rate program. In our community, E-Rate is not just a budgetary supplement; it is a critical asset that directly impacts our ability to educate and protect our students.",
+          "argument": "",
+          "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
           "uncertain": false
         },
         {
-          "submission_id": "10604263924780",
-          "source_url": "https://www.fcc.gov/ecfs/filing/10604263924780",
+          "submission_id": "26110081108",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110081108",
           "position": "support",
-          "argument": "The docket focuses on ensuring children's safe use of screens and E-Rate-funded services, which aligns with equity and access goals.",
-          "evidence_quote": "DA 26-549\nReleased:  June 4, 2026\nWIRELINE COMPETITION BUREAU ESTABLISHES  \nWC DOCKET NO. 26-133 \nWC Docket No. 26-133\nBy this Public Notice, the Wireline Competition Bureau establishes WC Docket No. 26-133, \nwhich is captioned “Ensuring Children’s Safe Use of Screens and E-Rate-Funded Services.”",
+          "argument": "",
+          "evidence_quote": "Helping our school maintain internet and technologies",
           "uncertain": false
         }
       ]
-    },
-    {
-      "provision_id": "erate_eligibility_scope",
-      "label": "Narrow eligible equipment and services",
-      "category": "scope",
-      "notice_status": "question_for_comment",
-      "positions": {
-        "support": 1
-      },
-      "unique_text_weighted_positions": {
-        "support": 1
-      },
-      "filings_mentioning": 1,
-      "claim_reason_counts": {
-        "access_affordability_equity": 1
-      },
-      "claim_kind_counts": {
-        "equity_access": 1
-      },
-      "claim_count": 1,
-      "filings_by_inferred_role": {
-        "school_district": 1
-      },
-      "inferred_role_by_position": {
-        "school_district": {
-          "support": 1
-        }
-      },
-      "claim_reason_by_position": {
-        "support": {
-          "access_affordability_equity": 1
-        }
-      },
-      "completed_filing_denominator": 5,
-      "examples": [
-        {
-          "submission_id": "10604049228283",
-          "source_url": "https://www.fcc.gov/ecfs/filing/10604049228283",
-          "position": "support",
-          "argument": "Preserving eligibility for all necessary categories (including internal connections) ensures rural districts can implement necessary safety and connectivity measures without unnecessary restrictions.",
-          "evidence_quote": "As the Technology Director for a small, rural school district, I am writing to strongly advocate for the continuation and robust funding of the E-Rate program. In our community, E-Rate is not just a budgetary supplement; it is a critical asset that directly impacts our ability to educate and protect our students.",
-          "uncertain": false
-        }
-      ]
-    },
-    {
-      "provision_id": "special_construction",
-      "label": "Restrict special construction or dark fiber",
-      "category": "scope",
-      "notice_status": "question_for_comment",
-      "positions": {
-        "support": 1
-      },
-      "unique_text_weighted_positions": {
-        "support": 1
-      },
-      "filings_mentioning": 1,
-      "claim_reason_counts": {
-        "access_affordability_equity": 1
-      },
-      "claim_kind_counts": {
-        "equity_access": 1
-      },
-      "claim_count": 1,
-      "filings_by_inferred_role": {
-        "school_district": 1
-      },
-      "inferred_role_by_position": {
-        "school_district": {
-          "support": 1
-        }
-      },
-      "claim_reason_by_position": {
-        "support": {
-          "access_affordability_equity": 1
-        }
-      },
-      "completed_filing_denominator": 5,
-      "examples": [
-        {
-          "submission_id": "10604049228283",
-          "source_url": "https://www.fcc.gov/ecfs/filing/10604049228283",
-          "position": "support",
-          "argument": "Special construction is needed for robust, high-speed network infrastructure in rural areas, which is critical for student safety and educational effectiveness beyond screen time.",
-          "evidence_quote": "As the Technology Director for a small, rural school district, I am writing to strongly advocate for the continuation and robust funding of the E-Rate program. In our community, E-Rate is not just a budgetary supplement; it is a critical asset that directly impacts our ability to educate and protect our students.",
-          "uncertain": false
-        }
-      ]
-    },
-    {
-      "provision_id": "discount_matrix",
-      "label": "Change poverty and rural discount matrix",
-      "category": "funding",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "targeted_competition",
-      "label": "Limit subsidies by broadband competition",
-      "category": "funding",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "vendor_influence",
-      "label": "Address vendor influence and procurement incentives",
-      "category": "accountability",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "education_outcomes",
-      "label": "Tie E-Rate decisions to educational outcomes",
-      "category": "evaluation",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "screen_time_condition",
-      "label": "Condition E-Rate on screen-time limits",
-      "category": "screens",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "parent_opt_out",
-      "label": "Parent opt-out from screen-based instruction",
-      "category": "screens",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "school_supervision_reporting",
-      "label": "Supervision and reporting unsafe content",
-      "category": "screens",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "prek_headstart",
-      "label": "Restrict Pre-K and Head Start support",
-      "category": "screens",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "cipa_byod",
-      "label": "Extend CIPA to third-party-owned devices",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "cipa_network_filter",
-      "label": "Require network-level content filtering",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "cipa_monitoring_privacy",
-      "label": "Interpret monitoring requirements and privacy",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "cipa_social_media",
-      "label": "Change CIPA treatment of social media",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "cipa_digital_literacy",
-      "label": "Require digital/media literacy courses",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "cipa_age_specific",
-      "label": "Age-specific internet protections",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "safety_policy_transparency",
-      "label": "Publish internet safety policies",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "cipa_public_hearings",
-      "label": "Strengthen hearings and CIPA enforcement",
-      "category": "cipa",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "daily_hour_limits",
-      "label": "FCC-imposed daily hour limits",
-      "category": "screens",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "consultant_definition",
-      "label": "Define covered E-Rate consultants",
-      "category": "consultants",
-      "notice_status": "specific_proposal",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "consultant_form_5654",
-      "label": "Annual consultant certification and disclosure",
-      "category": "consultants",
-      "notice_status": "specific_proposal",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "consultant_registration",
-      "label": "Individual consultant registration database",
-      "category": "consultants",
-      "notice_status": "specific_proposal",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "consultant_percent_fees",
-      "label": "Prohibit percentage-based consultant fees",
-      "category": "consultants",
-      "notice_status": "specific_proposal",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "consultant_records",
-      "label": "Consultant document-retention requirements",
-      "category": "consultants",
-      "notice_status": "specific_proposal",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "administrative_forms",
-      "label": "Streamline and certify E-Rate forms",
-      "category": "administration",
-      "notice_status": "mixed_proposals_and_questions",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "mibs",
-      "label": "Managed internal broadband service eligibility",
-      "category": "administration",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
-    },
-    {
-      "provision_id": "lowest_corresponding_price",
-      "label": "Lowest corresponding price protections",
-      "category": "administration",
-      "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
-      "examples": []
     },
     {
       "provision_id": "ecf_rule_sunset",
@@ -634,7 +1717,24 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 5,
+      "completed_filing_denominator": 92,
+      "examples": []
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "label": "Other arguments or policy proposals",
+      "category": "emergent",
+      "notice_status": "uncatalogued",
+      "positions": {},
+      "unique_text_weighted_positions": {},
+      "filings_mentioning": 0,
+      "claim_reason_counts": {},
+      "claim_kind_counts": {},
+      "claim_count": 0,
+      "filings_by_inferred_role": {},
+      "inferred_role_by_position": {},
+      "claim_reason_by_position": {},
+      "completed_filing_denominator": 92,
       "examples": []
     }
   ],
@@ -651,5 +1751,5 @@
     "Missing provision classifications are unobserved; negative labels not inferred.",
     "This summary includes only filings completing all chunks; processing may be partial."
   ],
-  "suggested_human_audit_count": 3
+  "suggested_human_audit_count": 23
 }

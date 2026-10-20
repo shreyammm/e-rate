@@ -1,0 +1,60 @@
+{
+  "summary": "Discussion on various aspects of E-Rate program changes",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "",
+      "evidence_quote": "This policy allows people to have better access to the internet who would not normally be able to use those resources.",
+      "evidence_start": 0,
+      "evidence_end": 118,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "This policy allows people to have better access to the internet who would not normally be able to use those resources.",
+      "evidence_start": 0,
+      "evidence_end": 118,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Restrict special construction or dark fiber",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "normative_value",
+      "argument": "",
+      "evidence_quote": "This policy allows people to have better access to the internet who would not normally be able to use those resources.",
+      "evidence_start": 0,
+      "evidence_end": 118,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110070367",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110070367",
+  "filer_raw": "Kat Harmon",
+  "date_submission": "2026-08-11T12:21:43.882Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c1066ddf7209de503ef86daf38db1089b17b4c90408a591e5e7d77c282e078ca",
+  "params_key": "ec06739483a8edcc99bce23213108b20af9f01d5898fb662b064ab5d01c48deb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

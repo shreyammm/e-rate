@@ -1,0 +1,73 @@
+{
+  "summary": "Discussion on various aspects of E-Rate program changes",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "Individual consultant registration database",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "",
+      "evidence_quote": "The library offers so many opportunities for people who do not have the affordability or normal ability to have access to modern day necessities.",
+      "evidence_start": 0,
+      "evidence_end": 145,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "",
+      "evidence_quote": "The library offers so many opportunities for people who do not have the affordability or normal ability to have access to modern day necessities.",
+      "evidence_start": 0,
+      "evidence_end": 145,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "The library offers so many opportunities for people who do not have the affordability or normal ability to have access to modern day necessities.",
+      "evidence_start": 0,
+      "evidence_end": 145,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Restrict special construction or dark fiber",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "",
+      "evidence_quote": "The library offers so many opportunities for people who do not have the affordability or normal ability to have access to modern day necessities.",
+      "evidence_start": 0,
+      "evidence_end": 145,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_registration": "oppose",
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073843",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073843",
+  "filer_raw": "Megan",
+  "date_submission": "2026-08-30T23:41:38.409Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8cba90d76df4a5a8d4983208e7b0fcff5e32a20e127e640e725c518d752bf77e",
+  "params_key": "31e8b95091dbd07eaa25c58c533945043cfd72d1ccb2d43065c88781776b4e49",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

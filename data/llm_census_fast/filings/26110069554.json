@@ -1,0 +1,60 @@
+{
+  "summary": "Opposition to various E-Rate changes",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "Individual consultant registration database",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "",
+      "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
+      "evidence_start": 0,
+      "evidence_end": 64,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "",
+      "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
+      "evidence_start": 0,
+      "evidence_end": 64,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "",
+      "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
+      "evidence_start": 0,
+      "evidence_end": 64,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_registration": "oppose",
+    "education_outcomes": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069554",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069554",
+  "filer_raw": "marsha bravo",
+  "date_submission": "2026-08-05T22:09:34.868Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dc31a5d1686613394449ea9587b904e838bd74e4e8e40308401e2f0f72392b11",
+  "params_key": "2d5cf20d9052e643f3e1418f930c5958854bb7fded429d7b625d47bada5af3b6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

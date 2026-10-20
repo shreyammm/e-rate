@@ -1,0 +1,60 @@
+{
+  "summary": "Discussion on various aspects of E-Rate program modifications",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_public_hearings",
+      "position": "support",
+      "requested_action": "Strengthen hearings and CIPA enforcement",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "legal_claim",
+      "argument": "",
+      "evidence_quote": "E-funding is necessary for the continuity of educating our students",
+      "evidence_start": 0,
+      "evidence_end": 67,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "",
+      "evidence_quote": "E-funding is necessary for the continuity of educating our students",
+      "evidence_start": 0,
+      "evidence_end": 67,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "E-funding is necessary for the continuity of educating our students",
+      "evidence_start": 0,
+      "evidence_end": 67,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_public_hearings": "support",
+    "education_outcomes": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079698",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079698",
+  "filer_raw": "Peter Rastrelli | Peter Rastrelli",
+  "date_submission": "2026-10-06T22:34:06.764Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "52b8a4e99cb4d9e54ec0a8efa45d8bebfa5afe5462117939085b4ae16968b4d2",
+  "params_key": "010d8347556898613066ca7ccc1950e3ea347fb3e07fec2bdebffc1306b8683e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}
