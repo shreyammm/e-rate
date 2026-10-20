@@ -1,0 +1,21 @@
+{
+  "taxonomy_version": "0.1.0-provisional",
+  "status": "provisional_manual_review_required",
+  "primary_source_title": "Ensuring Children's Safe Use of Screens and E-Rate-Funded Services; Modernizing the E-Rate Program for Schools and Libraries; FCC 26-41",
+  "primary_source_url": "https://docs.fcc.gov/public/attachments/FCC-26-41A1.pdf",
+  "federal_register_source": "https://www.govinfo.gov/content/pkg/FR-2026-08-14/pdf/2026-16590.pdf",
+  "source_date": "2026-06-26",
+  "note": "Broad provisional issue families grounded in the FCC NPRM/FNPRM synopsis. Validate against full paragraph-level primary source before position coding. A mentioned issue is not automatically support/opposition.",
+  "issues": [
+    {"id":"erate_scope","label":"E-Rate mission, program scope and continued funding","question":"What does the filing advocate regarding the purpose, scope or level of E-Rate support?"},
+    {"id":"broadband_access","label":"School/library broadband connectivity and affordability","question":"What access, availability, equity, or affordability concerns are raised?"},
+    {"id":"screen_time","label":"Screen time, learning outcomes and parental/teacher involvement","question":"Does the filing propose or oppose measures concerning students' screen time or parent/teacher control?"},
+    {"id":"cipa","label":"CIPA interpretation, filtering and online safety","question":"What view does the filing take on filtering, harmful material, CIPA or online safety requirements?"},
+    {"id":"program_integrity","label":"Program integrity, fraud prevention and oversight","question":"What oversight or anti-fraud measures are discussed?"},
+    {"id":"consultants","label":"Consultant compensation, registration and accountability","question":"What rules for E-Rate consultants are supported or opposed?"},
+    {"id":"administration","label":"Application, procurement and competitive bidding administration","question":"What procedural or procurement changes does the filing discuss?"},
+    {"id":"emergency_connectivity_fund","label":"Emergency Connectivity Fund rule sunset","question":"Does the filing address sunsetting rules for the Emergency Connectivity Fund?"}
+  ],
+  "allowed_positions": ["support", "oppose", "mixed_or_conditional", "descriptive_only", "unclear", "not_addressed"],
+  "evidence_requirement": "Explicit verbatim passage for support, oppose, mixed_or_conditional, or descriptive_only. No inference of positions solely from organization identity or keyword presence."
+}
