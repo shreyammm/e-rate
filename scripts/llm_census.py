@@ -239,7 +239,7 @@ def params_key(record: dict, book: dict, model: str, size: int, overlap: int) ->
 
 def process_record(record: dict, book: dict, out: Path, model: str, url: str,
                    size: int, overlap: int, call=ollama_call,
-                   deadline: float | None = None) -> str:
+                   deadline: float | None = None, max_chunks: int | None = None) -> str:
     sid=record['submission_id']
     path=out/'filings'/f'{sid}.json';key=params_key(record,book,model,size,overlap)
     if path.exists():
@@ -257,7 +257,8 @@ def process_record(record: dict, book: dict, out: Path, model: str, url: str,
         previous={'submission_id':sid,'params_key':key,'status':'partial','parts':[],
                   'next_chunk':0}
     idx=previous['next_chunk']
-    for i in range(idx,len(chunks)):
+    stop=len(chunks) if max_chunks is None else min(len(chunks), idx+max_chunks)
+    for i in range(idx,stop):
         if deadline is not None and time.monotonic()>=deadline:
             return 'time_limit'
         raw=call(prompt_for(chunks[i],book),model,url)
@@ -265,6 +266,8 @@ def process_record(record: dict, book: dict, out: Path, model: str, url: str,
         previous['parts'].append(validated)
         previous['next_chunk']=i+1
         atomic_json(path,previous)
+    if previous['next_chunk']<len(chunks):
+        return 'partial'
     result=fuse_chunks(previous['parts'])
     result.update({'submission_id':sid,'source_url':record['source_url'],
                    'filer_raw':record['filer_raw'],
@@ -366,7 +369,9 @@ def main(argv=None) -> int:
     p.add_argument('--model',default='granite4.2:3b',choices=sorted(ALLOWED_MODELS),
                    help='US-developed, Apache-2.0 IBM Granite model')
     p.add_argument('--ollama-url',default='http://127.0.0.1:11434/api/chat')
-    p.add_argument('--limit',type=int,default=25,help='Maximum filings to finish per invocation')
+    p.add_argument('--limit',type=int,default=25,help='Maximum filing attempts per invocation')
+    p.add_argument('--max-chunks-per-filing',type=int,default=5,
+                   help='Maximum model calls per filing per run; prevents giant filings blocking the corpus')
     p.add_argument('--max-minutes',type=float,default=160)
     p.add_argument('--chunk-size',type=int,default=5800)
     p.add_argument('--chunk-overlap',type=int,default=400)
@@ -375,7 +380,8 @@ def main(argv=None) -> int:
     args=p.parse_args(argv)
     if bool(args.input_dir)==bool(args.corpus):
         p.error('Provide exactly one of --input-dir or --corpus')
-    if args.limit<0 or args.max_minutes<=0:p.error('Invalid limit or max-minutes')
+    if args.limit<0 or args.max_minutes<=0 or not 1<=args.max_chunks_per_filing<=50:
+        p.error('Invalid limit, max-minutes or chunk budget')
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,80}',args.snapshot_id):p.error('Invalid snapshot ID')
     book=load_book()
     rows=load_corpus(args.input_dir,args.corpus,args.snapshot_id,args.view)
@@ -394,14 +400,17 @@ def main(argv=None) -> int:
     print(json.dumps({'indexed_filings':len(rows),'pending':len(pending),'done':len(rows)-len(pending)}),flush=True)
     if args.pending_only:return 0
     deadline=time.monotonic()+args.max_minutes*60
-    finished=0;errors=[]
+    finished=0;attempted=0;partial=0;errors=[]
     for row in pending:
-        if args.limit and finished>=args.limit:break
+        if args.limit and attempted>=args.limit:break
         if time.monotonic()>=deadline:break
         try:
+            attempted+=1
             state=process_record(row,book,out,args.model,args.ollama_url,
-                  args.chunk_size,args.chunk_overlap,deadline=deadline)
+                  args.chunk_size,args.chunk_overlap,deadline=deadline,
+                  max_chunks=args.max_chunks_per_filing)
             if state in ('complete','no_source_text'):finished+=1
+            if state=='partial':partial+=1
             if state=='time_limit':break
             print(f"{row['submission_id']}: {state}",flush=True)
         except (RuntimeError,ValueError,urllib.error.URLError) as err:
@@ -411,7 +420,7 @@ def main(argv=None) -> int:
             if len(errors)>=3:break
     result=summarize(rows,out,book,args.model,args.chunk_size,args.chunk_overlap)
     if args.publish_preview:atomic_json(args.publish_preview,result)
-    print(json.dumps({'newly_finished':finished,'errors':errors,
+    print(json.dumps({'attempted':attempted,'newly_finished':finished,'partially_processed':partial,'errors':errors,
          'completed':result['completed_filings'],'total':len(rows)},indent=2),flush=True)
     return 0 if not errors else 2
 
