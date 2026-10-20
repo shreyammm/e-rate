@@ -12,5 +12,9 @@ jobs:
         run: python3 -m pip install -r requirements-dashboard.txt
       - name: Verify all Python files compile
         run: python3 -m compileall -q app.py erate scripts tests
+      - name: Verify direct Mac-style script execution
+        run: |
+          cd /tmp
+          python3 "$GITHUB_WORKSPACE/scripts/build_research_snapshot.py" --help
       - name: Test schema, research snapshot, provenance and topic modeling
         run: python3 -m unittest discover -s tests -v
