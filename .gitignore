@@ -1,0 +1,17 @@
+# Never commit the raw comments, individual filer data, or authentication secrets
+fcc_complete_corpus/
+analysis_observatory/
+analysis_starter/
+*.env
+.env*
+*api_key*
+*.pem
+*.key
+private_data/
+raw_data/
+local_data/
+__pycache__/
+.pytest_cache/
+.streamlit/secrets.toml
+.DS_Store
+*.pyc
