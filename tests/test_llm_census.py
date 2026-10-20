@@ -57,6 +57,25 @@ class LLMCensusTests(unittest.TestCase):
         self.assertEqual(captured['format'],'json')
         self.assertEqual(result['claims'],[])
 
+    def test_missing_role_quote_is_not_a_verified_stakeholder(self):
+        chunk={'text':self.body,'start':0,'end':len(self.body)}
+        prediction=self.model(None,None,None)
+        prediction['stakeholder_quote']=''
+        coded=validate_chunk(prediction,chunk,self.body,self.book)
+        self.assertEqual(coded['stakeholder_role'],'unknown')
+
+    def test_malformed_missing_claims_list_is_retried_and_rejected(self):
+        class BadResponse:
+            def __enter__(self):return self
+            def __exit__(self,*args):return False
+            def read(self,*args):
+                return json.dumps({'message':{'content':'{"summary":"wrong but no claims"}'}}).encode()
+        with patch('urllib.request.urlopen',return_value=BadResponse()):
+            with patch('time.sleep',return_value=None):
+                with self.assertRaisesRegex(RuntimeError,'missing claims array'):
+                    ollama_call([{'role':'user','content':'test'}],
+                                'granite4.2:3b','http://localhost:11434/api/chat')
+
     def test_verbatim_and_invalid_claim_rejection(self):
         chunk={'text':self.body,'start':0,'end':len(self.body)}
         r=self.model(None,None,None)
