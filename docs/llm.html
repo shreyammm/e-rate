@@ -24,6 +24,20 @@
 <p class="llm-disclaimer"><strong>Interpret with care.</strong> Each submission is self-selected. All classifications, role estimates and summaries here are unvalidated. The machine model can misread sarcasm, negation, OCR and complex legal arguments. Percentages among completed files are not percentages of all FCC commenters.</p>
 <p id="llm-status" role="status" aria-live="polite">Checking whether an exploratory census has been generated…</p>
 <section id="llm-stats" class="llm-stats" aria-label="Analysis coverage"></section>
+<section class="llm-panel" id="argument-map">
+<h2>Map the arguments across the docket</h2>
+<p>All 3,231 submissions were scanned to identify major recurring argument language, representative quotations and which filer fields use it. These preliminary themes are <strong>not</strong> support/opposition estimates. As open-source Granite finishes each filing, the <strong>LLM-extracted arguments</strong> view clusters independently cited claims and positions, without user training.</p>
+<p class="llm-small" id="landscape-status" role="status">Loading all-filings argument landscape…</p>
+<p class="llm-small" id="landscape-llm-status">Checking model-generated argument coverage…</p>
+<div class="llm-tools">
+<label>Explore <select id="landscape-kind"><option value="language">All-filings emerging themes</option><option value="llm">LLM-extracted argument groups</option></select></label>
+<label>Find argument <input id="landscape-query" type="search" placeholder="Funding, safety, screen time, costs…"></label>
+<label>Commenter category <select id="landscape-role"><option value="">All tentative types</option></select></label>
+</div>
+<p class="llm-small" id="landscape-result-count"></p>
+<div id="landscape-list" class="llm-issues"></div>
+<p class="llm-small">The themes come from unsupervised grouping of argument-like passages selected from the full source archive; the LLM groups use Granite's evidence-backed extractions. One filing can appear in several groups. All outputs are exploratory.</p>
+</section>
 <section class="llm-panel"><h2>What arguments recur?</h2><div id="llm-reasons"></div></section>
 <section class="llm-panel"><h2>Evidence and model-quality checks</h2>
 <p class="llm-small">Automatic checks confirm whether quoted passages occur in the source text. They do not prove that the model interpreted the passage correctly.</p>
@@ -45,4 +59,4 @@
 <p id="llm-visible" class="llm-small"></p><div id="llm-issues" class="llm-issues"></div></section>
 <section id="methods" class="llm-panel"><h2>How is this generated?</h2><p>Free Ollama inference runs in scheduled GitHub Actions batches, analyzing full comments in overlapping windows. It extracts requested actions, provision positions, cited arguments and inferred roles. The code rejects evidence quotes that cannot be located exactly in their original source window. Every filing has a resumable, hashed checkpoint.</p><p>This experimental lane never overwrites the <a href="./">human-validated findings</a>. The model may find arguments keyword retrieval misses, but an exact quote only verifies the quotation, not the LLM's interpretation. <a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/llm_census_methodology.md">Full methodology and cautions ↗</a></p></section></main>
 <footer><div class="shell">Independent project; not affiliated with the FCC. Machine classifications are not agency decisions.</div></footer>
-<script src="./assets/llm.js" defer></script></body></html>
+<script src="./assets/argument_map.js" defer></script><script src="./assets/llm.js" defer></script></body></html>
