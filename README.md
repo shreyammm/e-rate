@@ -7,14 +7,14 @@ An **additional** LLM census has been installed alongside (not in place of) the 
 - **Auditability:** every accepted quote must occur in the source excerpt at its recorded character offset. OCR-candidate uncertainty, conflicting stances, duplicates, missing texts, model/codebook versions, and unmatched claims are tracked. These are **machine-generated exploratory hypotheses**, never certified survey estimates or manually validated positions.
 - **Automatic cadence:** once `data/fcc_corpus/filings.jsonl` or verified `data/fcc_corpus/shards/filings-*.jsonl.gz` files exist in GitHub, [the scheduled workflow](.github/workflows/llm-census.yml) checks for remaining filings six times daily and writes the separate `data/llm_census/` and `docs/data/llm_exploratory.json` outputs. Do not copy this machine output into human-reviewed records.
 
-**Source upload status (October 20, 2026):** The 3,231-filing, 3,230-text OCR-augmented source archive has been recovered from the researcher's previously shared files and verified against its research inventory. A GitHub-ready package containing twelve checksum-verified gzip JSONL shards has been prepared externally. **The corpus has not yet been pushed into this repository**, and no claim is made that the full LLM census has executed. Once `data/fcc_corpus/manifest.json` and `data/fcc_corpus/shards/filings-*.jsonl.gz` are committed, the existing Granite workflow can load and incrementally analyze the 3,231 filing records. The legacy single-file exporter remains available in `scripts/export_llm_corpus.py`.
+**Source upload status (October 20, 2026):** The 3,231-filing source corpus with 3,230 readable source texts is **published in this public repository** as 12 checksum-verified gzip JSONL shards under `data/fcc_corpus/shards/`. GitHub Actions independently verified and copied those complete texts into `docs/data/full_text_shards/`, with per-filing metadata in `docs/data/full_corpus_index.json`. [Browse and search full source texts](https://shreyammm.github.io/e-rate/corpus.html). The separate IBM Granite LLM census runs in resumable scheduled batches; a workflow starting successfully is **not** proof its substantive analysis is finished. The original research and source document files are never modified by model inference.
 
 
 ## Public website: GitHub Pages (not localhost or hosted Streamlit)
 
 The long-term dashboard is a static site in [`docs/`](docs/) powered by selectively published, **source-validated** aggregate JSON. It uses no Python server, Streamlit account or browser API keys. The older `app.py` is an internal prototype, not the planned public product.
 
-To activate GitHub Pages once the code is merged: open this repository's **Settings → Pages**, under **Build and deployment** choose **Deploy from a branch**, select `main` and `/docs`, then Save. The eventual address is expected to be `https://shreyammm.github.io/e-rate/` **after** GitHub successfully publishes it. No validation data or raw filing texts are published automatically.
+To activate GitHub Pages once the code is merged: open this repository's **Settings → Pages**, under **Build and deployment** choose **Deploy from a branch**, select `main` and `/docs`, then Save. The eventual address is expected to be `https://shreyammm.github.io/e-rate/` **after** GitHub successfully publishes it. Validated research data are not published automatically. The original extracted comment text is publicly accessible through the dedicated full-corpus reader.
 
 ## Research question: what are commenters actually advocating?
 
@@ -88,7 +88,7 @@ In a prior, **pre-integration** manifest, 194 PDF attachments had extracted text
 
 See [analysis_methods/methodology.md](analysis_methods/methodology.md) and [analysis_methods/issue_taxonomy.json](analysis_methods/issue_taxonomy.json). All statements of sentiment/stance must have traceable quotes and validated coding; `unknown` is an acceptable result. Public comments are self-selected, not a representative poll.
 
-Individual-level outputs (including names) and the original corpus belong **outside the public Git repo**. `.gitignore` prevents common accidental uploads. The repo does not require any FCC API key, and you should never commit that key or private contact data.
+At the researcher's explicit request, the original public-FCC extracted comment text and associated filer fields are in the public repository and source-text reader. Some ECFS filings may contain personal details. `.gitignore` still protects locally generated research files, secrets and authentication keys. Do not commit FCC API keys or unrelated personal data.
 
 ## Testing
 
@@ -106,7 +106,7 @@ python3 -m unittest discover -s tests -v
 
 ## Current provenance of demonstration data
 
-No personal filing data is committed. When run on the owner's local corpus the tools compute figures from that snapshot, rather than shipping precomputed, stale or invented charts.
+The complete OCR-augmented source filing texts are now committed as compressed shards. Original analysis methods still compute source-traceable figures rather than shipping fabricated charts, and unreviewed model-derived estimates remain separate.
 
 ### Optional exploratory theme map
 
