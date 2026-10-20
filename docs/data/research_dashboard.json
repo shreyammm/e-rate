@@ -311,7 +311,6 @@
       "filings": 1481,
       "direction": "favor_continuation",
       "scope": "Regex detection within first 40,000 and last 20,000 characters for submissions over 120,000 characters; full text otherwise. Detected phrases are not independently dual-coded.",
-      "manual_spot_check": "27 randomly drawn matching excerpts inspected; all 27 appeared to advocate continuity, but the sample is small and form language dominates.",
       "role_counts": {
         "unresolved": 750,
         "school": 582,
@@ -321,7 +320,9 @@
         "business": 18,
         "telecom": 13,
         "consultant": 3
-      }
+      },
+      "status": "automated_unverified_candidate",
+      "notes": "Full-corpus pattern matching, not a verified census of policy positions. No sample-based accuracy claim."
     }
   ],
   "directional_caveat": "The 1,481 count is a reproducible explicit-wording signal, not a complete prevalence estimate of all supporters or an independently validated classifier. We do not publish an automatic pro-sunset count: an initial pattern falsely matched 175 filings quoting the FCC proposal.",
