@@ -76,7 +76,28 @@ class LLMCensusTests(unittest.TestCase):
         self.assertEqual(next(x for x in agg['provisions'] if x['provision_id']=='erate_sunset')
                          ['positions']['oppose'],1)
         self.assertEqual(agg['argument_type_counts']['predicted_consequence'],1)
+        erate=next(p for p in agg['provisions'] if p['provision_id']=='erate_sunset')
+        self.assertEqual(erate['inferred_role_by_position']['school_district']['oppose'],1)
+        self.assertEqual(erate['claim_reason_by_position']['oppose']['access_affordability_equity'],1)
+        self.assertTrue((self.out/'suggested_human_audit.json').exists())
         self.assertEqual(agg['completed_filings_in_exact_text_duplicate_groups'],0)
+
+    def test_fair_partial_processing_does_not_hog_entire_queue(self):
+        row={**self.row,'text':self.body*45}
+        calls=[]
+        def model(*args):
+            calls.append(1)
+            return self.model(*args)
+        state=process_record(row,self.book,self.out,'fake','local',700,80,
+                             call=model,max_chunks=3)
+        self.assertEqual(state,'partial')
+        self.assertEqual(len(calls),3)
+        path=self.out/'filings'/f'{self.sid}.json'
+        self.assertEqual(json.loads(path.read_text())['next_chunk'],3)
+        state=process_record(row,self.book,self.out,'fake','local',700,80,
+                             call=model,max_chunks=3)
+        self.assertEqual(state,'partial')
+        self.assertEqual(json.loads(path.read_text())['next_chunk'],6)
 
     def test_partial_resumption(self):
         # A preexisting checkpoint resumes the second chunk without redoing the first.
