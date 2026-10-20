@@ -1,0 +1,104 @@
+{
+  "source_archive": "FCC_FULL_ANALYSIS_CORPUS.zip",
+  "source_archive_sha256": "4653053aacc0069e09e30c47e07bbaa7ea17e07cecbe2fc24db5fbc269f44699",
+  "snapshot_id": "ocr_candidate_v1",
+  "text_view": "augmented",
+  "records": 3231,
+  "records_with_text": 3230,
+  "records_without_text": 1,
+  "missing_text_filing_ids": [
+    "26110077815"
+  ],
+  "source_integrity": "All available text verified against the normalized augmented_sha256 field from research_inventory.csv.",
+  "shards": [
+    {
+      "name": "filings-0001.jsonl.gz",
+      "records": 1785,
+      "jsonl_bytes": 18956623,
+      "compressed_bytes": 5640111,
+      "sha256": "dc07ede99512758167d0b807d1d31c0864af9e63848642a4407bb5b54f5fab10"
+    },
+    {
+      "name": "filings-0002.jsonl.gz",
+      "records": 98,
+      "jsonl_bytes": 18717431,
+      "compressed_bytes": 6944665,
+      "sha256": "22e2363e1536633d4c29e27811950ff4a9144cf0ab25dd17ad5e2d62151ffd0d"
+    },
+    {
+      "name": "filings-0003.jsonl.gz",
+      "records": 63,
+      "jsonl_bytes": 16069717,
+      "compressed_bytes": 6218964,
+      "sha256": "1e92adb2040a97785aa2bb994251328bbad64ea992e657a907c310a2b731204a"
+    },
+    {
+      "name": "filings-0004.jsonl.gz",
+      "records": 6,
+      "jsonl_bytes": 18075481,
+      "compressed_bytes": 7244528,
+      "sha256": "973b846ed2d29e06f980a9010c6dc5eb0215a6cdba205f5394cbe4ee24796e07"
+    },
+    {
+      "name": "filings-0005.jsonl.gz",
+      "records": 8,
+      "jsonl_bytes": 18983586,
+      "compressed_bytes": 7613502,
+      "sha256": "bb3fdf644ee811ca24fa9c822bab44a61b9c565c73e8bb592489535b18306df9"
+    },
+    {
+      "name": "filings-0006.jsonl.gz",
+      "records": 131,
+      "jsonl_bytes": 18945246,
+      "compressed_bytes": 7349810,
+      "sha256": "99a6e90eae964f93e76986af92c32d6dd74f8573b97d626578b0cf065373c561"
+    },
+    {
+      "name": "filings-0007.jsonl.gz",
+      "records": 352,
+      "jsonl_bytes": 18953488,
+      "compressed_bytes": 6349729,
+      "sha256": "92d30d6943faee2329e2f92d6e3921a8ac6834c276006fb033670848c80c7de5"
+    },
+    {
+      "name": "filings-0008.jsonl.gz",
+      "records": 247,
+      "jsonl_bytes": 18784782,
+      "compressed_bytes": 6010136,
+      "sha256": "ccd7482ee47470259feacc7a998f25cf779b3949cf9f4d1ebb7e1a820b051119"
+    },
+    {
+      "name": "filings-0009.jsonl.gz",
+      "records": 100,
+      "jsonl_bytes": 18339359,
+      "compressed_bytes": 6383767,
+      "sha256": "a88723067b1e5a1b9b4b927ac24bcd32266dbcbb7f3aee4132afea0fc92278a3"
+    },
+    {
+      "name": "filings-0010.jsonl.gz",
+      "records": 386,
+      "jsonl_bytes": 18953595,
+      "compressed_bytes": 6453561,
+      "sha256": "4c3a95e8679cda1dd2fa6543f7419b6aaeb5e9e1e0924b2e5fe758999aafd83a"
+    },
+    {
+      "name": "filings-0011.jsonl.gz",
+      "records": 28,
+      "jsonl_bytes": 18829308,
+      "compressed_bytes": 6502143,
+      "sha256": "278138ef2098c17e18e8e8dd7864a0e53619b5ba5cc08738138b29aaa1f61ab1"
+    },
+    {
+      "name": "filings-0012.jsonl.gz",
+      "records": 27,
+      "jsonl_bytes": 16295097,
+      "compressed_bytes": 5666130,
+      "sha256": "c4ba54ecb24657e64de1cc53f7f0a19773bff8b0e1bdedb48eab7de8f651f4a7"
+    }
+  ],
+  "notes": [
+    "OCR text is a recovered candidate and may have transcription errors.",
+    "FCC public filings may contain names, addresses or contact details; this is public storage at the users request.",
+    "Index counts refer to filings, not unique people or representative public views."
+  ]
+}
