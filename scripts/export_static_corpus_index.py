@@ -83,19 +83,18 @@ def export(corpus: Path,snapshot_id='ocr_candidate_v1',dest: Path | None = None)
             raise ValueError('Unexpected FCC filing ID')
         role=affiliation_hint(r.get('filer_raw',''))
         roles[role]+=1
-        if r['filer_raw'].strip():distinct_by_role[role].add(' '.join(r['filer_raw'].casefold().split()))
+        if r['filer_raw'].strip():distinct_by_role[role].add(r['filer_raw'])
         path=folder/f'{sid}.txt'
         matches=[]
         if path.is_file():
             text=path.read_text(encoding='utf-8-sig').strip()
             if sha256(normalized_text(text).encode())!=r['augmented_sha256']:
                 raise ValueError('Source hash mismatch for '+sid)
-            low=text.casefold()
+            low=text.lower()
             matches=[key for key,terms in ISSUES.items() if any(term in low for term in terms)]
             mentions.update(matches)
         elif r.get('augmented_sha256'):
             raise FileNotFoundError('Expected text file for '+sid)
-        count=len(r['filer_raw'].strip())  # explicitly not published; keep other fields minimal
         pairs.append({
           'id':sid,'date':r['date_submission'][:10],'type':r['submission_type'],
           'role':role,'agency_candidate':r['agency_record_candidate']=='1',
