@@ -16,5 +16,7 @@ jobs:
         run: |
           cd /tmp
           python3 "$GITHUB_WORKSPACE/scripts/build_research_snapshot.py" --help
+      - name: Verify GitHub Pages JavaScript
+        run: node --check docs/assets/site.js
       - name: Test schema, research snapshot, provenance and topic modeling
         run: python3 -m unittest discover -s tests -v
