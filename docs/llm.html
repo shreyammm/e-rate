@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exploratory LLM census · FCC E-Rate Observatory</title>
+<link rel="stylesheet" href="./assets/site.css">
+<style>
+.llm-hero{padding:2rem 0 1.4rem}.llm-hero h1{max-width:900px}
+.llm-disclaimer{border-left:3px solid currentColor;padding:.7rem 1rem;margin:1rem 0 2rem;background:rgba(140,140,140,.06)}
+.llm-panel{border:1px solid rgba(125,125,125,.35);border-radius:9px;padding:1rem 1.25rem;margin:1rem 0}
+.llm-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:.7rem;margin:1.1rem 0}
+.llm-stats article{border:1px solid rgba(125,125,125,.3);border-radius:8px;padding:1rem}.llm-stats strong{display:block;font-size:1.65rem}
+.llm-tools{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}.llm-tools select,.llm-tools input{font:inherit;padding:.55rem;min-width:170px}
+.llm-issues{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.8rem}
+.llm-issue{border:1px solid rgba(125,125,125,.3);border-radius:9px;padding:1rem;background:rgba(140,140,140,.03)}
+.llm-issue h3{margin:.1rem 0}.llm-small{opacity:.76;font-size:.9rem}.llm-breakdown{display:flex;height:12px;border-radius:5px;overflow:hidden;background:rgba(127,127,127,.13);margin:.7rem 0}
+.llm-breakdown span{min-width:0}.llm-breakdown .support{background:#198c6a}.llm-breakdown .oppose{background:#c55c55}.llm-breakdown .other{background:#9d8bc8}
+.llm-evidence{margin:.7rem 0 0;padding-top:.7rem;border-top:1px solid rgba(125,125,125,.22)}
+.llm-evidence blockquote{margin:.25rem 0;font-size:.93rem}
+.llm-row{display:flex;justify-content:space-between;gap:.5rem;border-bottom:1px solid rgba(125,125,125,.2);padding:.4rem 0}
+</style></head><body>
+<header class="masthead"><div class="shell mast-flex"><a class="brand" href="./">E-RATE <span>OBSERVATORY</span></a><nav aria-label="Site sections"><a href="./">Research home</a><a href="#issues">Machine-coded issues</a><a href="#methods">Methods</a></nav></div></header>
+<main class="shell"><section class="llm-hero"><div class="eyebrow">Separate experimental research layer</div>
+<h1>What does the LLM find across individual FCC comments?</h1>
+<p>This is a source-linked, proposal-specific **machine coding** exploration, not human-reviewed findings or a vote count.</p></section>
+<p class="llm-disclaimer"><strong>Interpret with care.</strong> Each submission is self-selected. All classifications, role estimates and summaries here are unvalidated. The machine model can misread sarcasm, negation, OCR and complex legal arguments. Percentages among completed files are not percentages of all FCC commenters.</p>
+<p id="llm-status" role="status" aria-live="polite">Checking whether an exploratory census has been generated…</p>
+<section id="llm-stats" class="llm-stats" aria-label="Analysis coverage"></section>
+<section class="llm-panel"><h2>What arguments recur?</h2><div id="llm-reasons"></div></section>
+<section id="issues"><h2>Issue-by-issue machine coding</h2><p class="llm-small">Evidence quotes link to the original FCC filing. Filing-position counts differ from argument counts.</p>
+<div class="llm-tools"><label>Search <input id="llm-query" type="search" placeholder="Issue, stakeholder, rationale"></label>
+<label>Issue category <select id="llm-category"><option value="all">All</option></select></label>
+<label>Machine stance <select id="llm-stance"><option value="all">All</option><option value="support">Support</option><option value="oppose">Oppose</option><option value="conditional_or_amend">Conditional/amend</option><option value="alternative_proposal">Alternative</option></select></label></div>
+<p id="llm-visible" class="llm-small"></p><div id="llm-issues" class="llm-issues"></div></section>
+<section id="methods" class="llm-panel"><h2>How is this generated?</h2><p>Free Ollama inference runs in scheduled GitHub Actions batches, analyzing full comments in overlapping windows. It extracts requested actions, provision positions, cited arguments and inferred roles. The code rejects evidence quotes that cannot be located exactly in their original source window. Every filing has a resumable, hashed checkpoint.</p><p>This experimental lane never overwrites the <a href="./">human-validated findings</a>. The model may find arguments keyword retrieval misses, but an exact quote only verifies the quotation, not the LLM's interpretation. <a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/llm_census_methodology.md">Full methodology and cautions ↗</a></p></section></main>
+<footer><div class="shell">Independent project; not affiliated with the FCC. Machine classifications are not agency decisions.</div></footer>
+<script src="./assets/llm.js" defer></script></body></html>
