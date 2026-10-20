@@ -1,3 +1,14 @@
+## Automated free LLM analysis — separate exploratory research lane
+
+An **additional** LLM census has been installed alongside (not in place of) the existing audit, topic-modeling, human-review, and public-data methods. [Open the separate LLM explorer](docs/llm.html) and read [the methodology](analysis_methods/llm_census_methodology.md).
+
+- **Free inference:** scheduled GitHub Actions jobs run the open-weight `qwen2.5:3b` model through Ollama on standard public-repository runners (no paid API key). Jobs batch 100 filings at a time, checkpoint results and resume; runtime limits and runner availability may prevent all filings from finishing immediately.
+- **Per-filing questions:** provision-specific requested actions and stances, verbatim evidence, arguments and rationale, stakeholder role grounded in comment text, exact-duplicate-weighted counts, issue co-occurrences, and corpus coverage.
+- **Auditability:** every accepted quote must occur in the source excerpt at its recorded character offset. OCR-candidate uncertainty, conflicting stances, duplicates, missing texts, model/codebook versions, and unmatched claims are tracked. These are **machine-generated exploratory hypotheses**, never certified survey estimates or manually validated positions.
+- **Automatic cadence:** once `data/fcc_corpus/filings.jsonl` exists in GitHub, [the scheduled workflow](.github/workflows/llm-census.yml) checks for remaining filings six times daily and writes the separate `data/llm_census/` and `docs/data/llm_exploratory.json` outputs. Do not copy this machine output into human-reviewed records.
+
+**Source availability blocker:** The original 3,231-filing augmented snapshot documented below is currently stored on the owner's Mac, not in this GitHub repository. The code and workflow have been installed, but no claim is made that the full LLM census has executed. GitHub cannot automatically read files stored exclusively on the owner's computer. A read-only exporter is provided in `scripts/export_llm_corpus.py` (from the local immutable research snapshot to `data/fcc_corpus/filings.jsonl`). The owner is comfortable making the raw corpus public, but source access still requires a one-time upload or an independently implemented FCC retrieval pipeline.
+
 
 ## Public website: GitHub Pages (not localhost or hosted Streamlit)
 
