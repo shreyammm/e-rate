@@ -25,6 +25,18 @@ class FullTextCensusPublicationTests(unittest.TestCase):
         codes=gzip.decompress(base64.b64decode(roles['sequence'])).decode('ascii')
         self.assertEqual(len(codes),3231)
         self.assertEqual(dict(collections.Counter(codes)),roles['expected_code_counts'])
+        self.assertEqual(roles['expected_code_counts']['5'],143)
+        self.assertEqual(roles['expected_code_counts']['0'],924)
+        self.assertEqual(roles['expected_code_counts']['1'],857)
+        by_id={r['id']:roles['legend'][code] for r,code in zip(records,codes)}
+        # Previous metadata-only errors: institutional, policy NGO and elected office filings.
+        self.assertEqual(by_id['26110080373'],'school_district_or_school')
+        self.assertEqual(by_id['26110078107'],'school_district_or_school')
+        self.assertEqual(by_id['26110081295'],'advocacy_nonprofit_or_trade_association')
+        self.assertEqual(by_id['26110080878'],'advocacy_nonprofit_or_trade_association')
+        self.assertEqual(by_id['26110081059'],'government_or_tribal_organization')
+        self.assertEqual(by_id['26110081382'],'named_person_capacity_unstated')
+        self.assertEqual(len({r['id'] for r in records}),len(records))
         self.assertEqual(set(codes),set(roles['legend']))
         role_counter=collections.Counter(roles['legend'][c] for c in codes)
         self.assertEqual({r['id']:r['filings'] for r in census['roles']},dict(role_counter))
