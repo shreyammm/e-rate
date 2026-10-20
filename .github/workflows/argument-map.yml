@@ -5,6 +5,8 @@ on:
     paths:
       - 'scripts/build_argument_map.py'
       - 'data/fcc_corpus/**'
+      - 'data/llm_census_mac/filings/**'
+      - 'data/llm_census_fast/filings/**'
       - '.github/workflows/argument-map.yml'
   schedule:
     - cron: '43 */4 * * *'
