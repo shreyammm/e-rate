@@ -1,5 +1,8 @@
 import csv
 import json
+import os
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -104,6 +107,21 @@ class ResearchSnapshotTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'SHA-256 mismatch'):
             build(self.base,'hash_failure')
         self.assertFalse((self.base/'analysis_observatory/research_snapshot_hash_failure').exists())
+
+    def test_script_help_runs_from_outside_repository(self):
+        # Regression: invoking scripts/foo.py makes scripts/ sys.path[0],
+        # so it must explicitly add the repository root before local imports.
+        script = Path(__file__).resolve().parents[1] / 'scripts/build_research_snapshot.py'
+        env = dict(os.environ)
+        env.pop('PYTHONPATH', None)
+        with tempfile.TemporaryDirectory() as other_directory:
+            result = subprocess.run(
+                [sys.executable, str(script), '--help'],
+                cwd=other_directory, env=env, text=True, capture_output=True,
+                timeout=20, check=False
+            )
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertIn('--run-id', result.stdout)
 
     def test_wrapper_cleaning_and_duplicate_hashing(self):
         self.assertEqual(clean_passage('===== OCR PAGE 2 =====\nDo not repeal the rule.'),
