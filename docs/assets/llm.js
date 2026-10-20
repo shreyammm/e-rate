@@ -83,6 +83,30 @@
     }
     table.append(body);root.append(table);
   }
+  async function renderAuditQueue() {
+    const root=$('llm-review');root.replaceChildren();
+    try{
+      const response=await fetch('./data/llm_audit_queue.json',{cache:'no-store'});
+      if(!response.ok)throw Error('not yet available');
+      const queue=await response.json();
+      if(queue.publication_status!=='MACHINE_GENERATED_REVIEW_SUGGESTIONS_ONLY')
+        throw Error('unexpected audit status');
+      root.append(node('p','llm-small',
+        queue.selected+' suggested checks among '+queue.completed_filings+' fully analyzed filings. Unreviewed, not independent verification.'));
+      for(const item of (queue.items||[]).slice(0,25)){
+        const block=node('div','llm-evidence');
+        block.append(node('strong','','Filing '+item.submission_id));
+        block.append(node('p','llm-small',(item.review_reasons||[]).map(nice).join(' · ')));
+        if(item.sample_quote)block.append(node('blockquote','',item.sample_quote));
+        const link=node('a','','Read full source text ↗');
+        link.href='./corpus.html?id='+encodeURIComponent(item.submission_id);
+        block.append(link);
+        root.append(block);
+      }
+    }catch(err){
+      root.append(node('p','llm-small','Suggested reviews will appear after the first successful analysis batches.'));
+    }
+  }
   function renderPairs(d){
     const labels=Object.fromEntries(d.provisions.map(x=>[x.provision_id,x.label]));
     const root=$('llm-cooccurrence');root.replaceChildren();
@@ -106,7 +130,7 @@
     const reason=$('llm-reasons');const top=Object.entries(d.argument_reason_counts||{}).sort((a,b)=>b[1]-a[1]).slice(0,10);
     if(!top.length)reason.append(node('p','','No claim estimates yet. The scheduled batches will update this section.'));
     for(const [r,n] of top){const line=node('div','llm-row');line.append(node('span','',nice(r)),node('strong','',n+' argument rows'));reason.append(line);}
-    renderQuality(d);renderPairs(d);
+    renderQuality(d);renderPairs(d);renderAuditQueue();
     const roleSelect=$('llm-role-proposal');
     const ordered=[...d.provisions].sort((a,b)=>Number(b.filings_mentioning)-Number(a.filings_mentioning));
     for(const p of ordered){const opt=node('option','',p.label);opt.value=p.provision_id;roleSelect.append(opt);}
