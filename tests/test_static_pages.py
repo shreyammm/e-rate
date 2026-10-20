@@ -41,11 +41,11 @@ class StaticPublicationTests(unittest.TestCase):
         raw=(ROOT/'docs/index.html').read_text()
         p=LinkParser()
         p.feed(raw)
-        self.assertTrue({'status','proposals','search','area','position'}<=p.ids)
+        self.assertTrue({'status','issue-chart','role-chart','position-table','alignment','ex-query','ex-issue','ex-role','ex-type','ex-table'}<=p.ids)
         for asset in p.assets:
             self.assertTrue((ROOT/'docs'/asset).is_file(),asset)
-        self.assertIn('not affiliated with the FCC',raw)
-        self.assertIn('not a public-opinion poll',raw)
+        self.assertIn('not affiliated with the fcc',raw.lower())
+        self.assertIn('Do not interpret these examples as whole-corpus support percentages',raw)
 
 
 if __name__=='__main__':

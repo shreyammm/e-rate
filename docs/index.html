@@ -1,43 +1,33 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="A source-linked, provision-specific analysis of FCC E-Rate public comments.">
-<title>FCC E-Rate Comment Observatory</title><link rel="stylesheet" href="./assets/site.css">
-</head><body>
-<header class="masthead"><div class="shell mast-flex"><a class="brand" href="./">E-RATE <span>OBSERVATORY</span></a><nav aria-label="Site sections"><a href="#questions">Policy questions</a><a href="#method">Method</a><a href="#source">FCC notice</a></nav></div></header>
-<main class="shell">
-<section class="hero"><div class="eyebrow">FCC 26-41 · E-Rate rulemaking</div>
-<h1>What are commenters <em>asking the FCC to do?</em></h1>
-<p>Not just what words appear most often. Explore the specific regulatory choices, proposed changes, reasons and alternatives raised in E-Rate filings.</p>
-<p id="status" class="status" role="status">Loading research status…</p></section>
-<section class="metrics" aria-label="Local snapshot scope">
-<div class="stat"><strong>3,231</strong><span>ECFS filings in the Oct. 20 research snapshot</span></div>
-<div class="stat"><strong>3,230</strong><span>Filings with source or candidate OCR text</span></div>
-<div class="stat"><strong>29</strong><span>Draft, provision-level questions to investigate</span></div></section>
-<section id="questions" class="section">
-<div class="eyebrow">01 / The policy record</div><h2>What should change—and why?</h2>
-<p class="intro">Each card represents a particular FCC question or proposed change. Evidence-backed position summaries will appear only after review; a text mention is not a vote.</p>
-<div class="toolbar">
-<label>Policy area<select id="area"><option value="all">All policy areas</option></select></label>
-<label>Search the proposals<input id="search" type="search" placeholder="Discounts, parental opt-out, CIPA…"></label>
-<label>Position<select id="position"><option value="all">All review statuses</option><option value="support">Reviewed support</option><option value="oppose">Reviewed opposition</option><option value="conditional_or_amend">Reviewed conditional</option><option value="alternative_proposal">Reviewed alternatives</option></select></label>
-</div>
-<p id="result-count" class="results-note"></p><div id="proposals" class="proposals" aria-live="polite"></div></section>
-<section id="method" class="section">
-<div class="eyebrow">02 / What the analysis measures</div><h2>Evidence and denominators, not sentiment scores.</h2>
-<div class="method-grid">
-<article><h3>Requested regulatory action</h3><p>Does a commenter want the FCC to adopt, reject, narrow, expand or modify an individual rule? Which alternatives do they propose?</p></article>
-<article><h3>Reasons and predicted effects</h3><p>We distinguish costs, educational outcomes, children's safety, competition, privacy, free expression, statutory authority and implementation concerns.</p></article>
-<article><h3>Who speaks, and in what capacity?</h3><p>A filing is not necessarily a distinct person or organization. We separate exact filer fields, verified stakeholder roles, repeated texts and template families.</p></article>
-<article><h3>Original evidence</h3><p>Reviewed positions require a matching passage, source filing and a reproducible review record. OCR and non-comment documents receive separate treatment.</p></article>
-</div>
-<p class="caveat">Public ECFS submissions are self-selected, not a public-opinion poll. Keyword matches are not positions. The currently reviewed sample must not be described as the views of all 3,231 filers.</p>
-<p><a href="https://github.com/shreyammm/e-rate">Methods, source code and issue tracker ↗</a></p></section>
-<section id="source" class="section">
-<div class="eyebrow">03 / Read the proposals</div><h2>FCC source documents</h2>
-<p>The rulemaking covers E-Rate scope, funding, screen use, CIPA online safety, consultants, program administration and obsolete rules. Draft codebook sections require final exact-paragraph verification before publication.</p>
-<p><a href="https://docs.fcc.gov/public/attachments/FCC-26-41A1.pdf" target="_blank" rel="noopener noreferrer">Read FCC 26-41 (NPRM and FNPRM) ↗</a></p>
-</section></main>
-<footer><div class="shell">Independent research project, not affiliated with the FCC. This public site contains no raw filer lists or bulk comment transcripts.</div></footer>
-<script src="./assets/site.js" defer></script>
-</body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Data-first FCC E-Rate comment analysis, position evidence, and filing explorer"><title>E-Rate Comment Observatory | Data</title><link rel="stylesheet" href="./assets/site.css"></head><body>
+<header class="site-top"><div class="shell header-row"><div><strong>E-Rate Comment Observatory</strong><span class="subhead">FCC 26-41 · WC dockets 26-133, 13-184, 21-93, 21-455</span></div><a href="https://docs.fcc.gov/public/attachments/FCC-26-41A1.pdf" target="_blank" rel="noopener noreferrer">Read proposed rulemaking ↗</a></div></header>
+<main class="shell"><div class="heading"><h1>Public comment data</h1><span>Snapshot: October 20, 2026</span></div><p id="status" role="status" class="statusline">Loading research data…</p>
+<div class="metrics" id="metrics"></div>
+<nav class="tabs" aria-label="Dashboard pages">
+<button type="button" data-view="overview">Overview</button><button type="button" data-view="positions">Positions & alignment</button><button type="button" data-view="arguments">Arguments</button><button type="button" data-view="commenters">Commenter types</button><button type="button" data-view="explorer">Corpus explorer</button><button type="button" data-view="methods">Methods</button>
+</nav>
+<section id="overview" class="view">
+<div class="columns">
+<div class="panel"><div class="panel-head"><h2>Policy issues raised</h2><span>Filing-level phrase matches, not positions</span></div><div id="issue-chart"></div><p class="note">Click an issue to open matching filings in the explorer. Filings can appear under multiple issues.</p></div>
+<div class="panel"><div class="panel-head"><h2>Types of filer-field affiliations</h2><span>Preliminary lexical grouping</span></div><div id="role-chart"></div><p class="note">These are categories inferred from filing metadata, not verified identities or representative capacity.</p></div>
+</div><div id="data-qualifications" class="panel"></div></section>
+<section id="positions" class="view" hidden><div class="panel" id="directional-evidence"></div><div class="panel"><div class="panel-head"><h2>Positions on specific FCC changes</h2><span>Organizational examples; incomplete first-pass coding</span></div><p class="note">Do not interpret these examples as whole-corpus support percentages. Each cell is an individual source-reviewed filing/proposal example. Unreviewed positions remain unknown.</p>
+<div class="filters"><label>Proposal<select id="position-proposal"></select></label><label>Position<select id="position-direction"><option value="">All directions</option><option value="support">Support</option><option value="oppose">Oppose</option><option value="conditional">Conditional / amend</option><option value="alternative">Alternative</option></select></label></div>
+<div id="position-summary" class="small-metrics"></div><div class="table-outer"><table><thead><tr><th>Commenter</th><th>Direction</th><th>Requested outcome / reasoning</th><th>Original filing</th></tr></thead><tbody id="position-table"></tbody></table></div></div>
+<div class="panel"><div class="panel-head"><h2>Commenter alignment matrix</h2><span>Shared positions on reviewed provisions</span></div><p class="note">A blank means not coded—not neutral. Agreement on one proposal does not mean agreement on the rulemaking overall.</p><div class="table-outer" id="alignment"></div></div></section>
+<section id="arguments" class="view" hidden><div class="columns"><div class="panel"><div class="panel-head"><h2>Argument categories</h2><span>Among first-pass source examples only</span></div><div id="argument-chart"></div><p class="note">Count of linked illustrative claims, not number of independent commenters or corpus-wide prevalence.</p></div><div class="panel"><h2>What arguments are being made?</h2><p>Legal authority, recurring connectivity expenses, funding equity, curriculum decisions, administrative costs, privacy, child safety, competition and consultant incentives have distinct rationales and often cut across simple pro/anti groups.</p><p>Review the source-linked argument ledger below; source filing links lead to FCC ECFS.</p></div></div>
+<div class="panel"><div class="panel-head"><h2>Argument ledger</h2><span>Original filing links</span></div><div class="filters"><label>Argument family<select id="argument-filter"></select></label></div><div class="table-outer"><table><thead><tr><th>Organization</th><th>Policy issue</th><th>Argument or consequence</th><th>Source</th></tr></thead><tbody id="argument-table"></tbody></table></div></div></section>
+<section id="commenters" class="view" hidden><div class="panel"><div class="panel-head"><h2>Filing records and distinct filer strings</h2><span>Not verified unique people or institutions</span></div><div class="table-outer"><table><thead><tr><th>Provisional filer category</th><th>Filings</th><th>Distinct exact filer fields</th><th>Share of records</th></tr></thead><tbody id="role-table"></tbody></table></div></div>
+<div class="panel"><div class="panel-head"><h2>Issue mentions within each filer category</h2><span>Percentage of filing records in each provisional group</span></div><div class="filters"><label>Issue to compare<select id="role-issue"></select></label></div><div id="role-issue-chart"></div><p class="note">A filing can mention several issues. Percentages do not measure support or opposition, and lexical categories are not verified identities.</p></div><div class="panel" id="concentration"></div></section>
+<section id="explorer" class="view" hidden><div class="panel"><div class="panel-head"><h2>Explore the FCC filing corpus</h2><span id="explorer-loaded">Loading privacy-reviewed filing index…</span></div><p class="note">Search filing IDs and organizational labels, or filter by machine-detected issue mentions, affiliation, submission type and OCR. The complete original filing is linked at FCC ECFS. This is <strong>not full-text search</strong> of the original PDF.</p>
+<div class="filters"><label>Filing / organization<input id="ex-query" type="search" placeholder="Search ID or organization…"></label><label>Issue mention<select id="ex-issue"><option value="">All issues</option></select></label><label>Filer category<select id="ex-role"><option value="">All categories</option></select></label><label>Submission type<select id="ex-type"><option value="">All types</option></select></label><label>OCR status<select id="ex-ocr"><option value="">Any</option><option value="yes">Has candidate OCR</option><option value="no">No candidate OCR</option></select></label></div>
+<div class="pagination"><span id="ex-count"></span><div><button type="button" id="ex-prev">Previous</button><span id="ex-page"></span><button type="button" id="ex-next">Next</button></div></div>
+<div class="table-outer"><table><thead><tr><th>Filing ID</th><th>Date</th><th>Organization (when recognizable)</th><th>Filer-field category</th><th>Issues mentioned</th><th>Source</th></tr></thead><tbody id="ex-table"></tbody></table></div>
+</div></section>
+<section id="methods" class="view" hidden><div class="panel"><h2>Methodology and boundaries</h2>
+<h3>What a count represents</h3><p>The unit for issue frequency is an ECFS filing ID. A single filing can address several issues. Exact phrase matching can find comments quoting arguments they reject. We have deliberately not converted these matches into automatic support/opposition percentages.</p>
+<h3>Commenter types</h3><p>These are single primary heuristic categories derived from ECFS filer fields. Exact-normalized filer strings are not independently verified individuals or organizations. Individuals who list an employer and organizations represented by individuals may be miscategorized.</p>
+<h3>Positions and arguments</h3><p>Organizational examples are initial source-linked qualitative analysis, with passages matched to extracted text, but not independently second-coded or sampled representatively. Reported agreements are limited to those checked filing/proposal pairs.</p>
+<h3>Repeated and very long filings</h3><p>One exact filer-name field appears on 277 filings and accounts for 80.3% of extracted characters. Text-weighted analysis can drastically distort whose comments dominate. Repetition does not establish that filings are improper.</p>
+<h3>OCR and privacy</h3><p>206 OCR candidate attachments were integrated into the snapshot, but source-text matching does not substitute for independent checking against the original scans. The public index uses filing identifiers, source links, issue tags and selected organizational labels, not full comment transcripts or bulk personal-name lists.</p>
+<h3>Sources</h3><p><a href="https://docs.fcc.gov/public/attachments/FCC-26-41A1.pdf">FCC 26-41 notice ↗</a> · <a href="https://www.fcc.gov/ecfs/">FCC ECFS ↗</a> · <a href="https://github.com/shreyammm/e-rate">Code and methods ↗</a></p></div></section>
+</main><footer><div class="shell">Independent research dashboard · Not affiliated with the FCC · <a href="https://github.com/shreyammm/e-rate">Methods and code ↗</a></div></footer><script defer src="./assets/site.js"></script></body></html>

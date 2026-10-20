@@ -1,76 +1,257 @@
 'use strict';
-const pick=id=>document.getElementById(id);
-const AREAS={scope:'E-Rate scope',funding:'Funding and discounts',accountability:'Accountability',evaluation:'Educational outcomes',screens:'Screens and parental choice',cipa:'CIPA and internet safety',consultants:'Consultants',administration:'Administration'};
-const POSITIONS=['support','oppose','conditional_or_amend','alternative_proposal','discussion_no_position','unclear','not_addressed'];
-let codebook=[],results={provisions:[]};
-function node(tag,cls,value){const e=document.createElement(tag);if(cls)e.className=cls;if(value!==undefined)e.textContent=String(value);return e;}
-function render(){
-  const area=pick('area').value,term=pick('search').value.trim().toLocaleLowerCase(),stance=pick('position').value;
-  const container=pick('proposals');container.replaceChildren();
-  const map=new Map(results.provisions.map(p=>[p.id,p]));
-  const visible=codebook.filter(p=>(area==='all'||p.category===area)
-    &&(!term||(p.label+' '+p.policy_option+' '+p.category).toLocaleLowerCase().includes(term))
-    &&(stance==='all'||((map.get(p.id)?.counts||{})[stance]||0)>0));
-  pick('result-count').textContent=visible.length+' of '+codebook.length+' policy questions';
-  if(!visible.length){container.append(node('div','empty','No proposals match the current filters.'));return;}
-  for(const p of visible){
-    const article=node('article','proposal');
-    const top=node('div','head'),left=node('div');
-    left.append(node('div','meta',(AREAS[p.category]||p.category)+' · Notice '+p.notice_paragraph_range+' · '+p.notice_status.replaceAll('_',' ')),
-      node('h3','',p.label),node('p','question',p.policy_option));
-    const record=map.get(p.id),count=Number(record?.adjudicated_filing_count||0);
-    top.append(left,node('span','review',count?'Reviewed: '+count+' filing/provision pairs':'Review pending'));article.append(top);
-    const detail=node('div','detail');
-    if(count){
-      const badges=node('div','badges');
-      for(const key of POSITIONS){const val=Number(record.counts?.[key]||0);if(val)badges.append(node('span','badge',key.replaceAll('_',' ')+': '+val));}
-      detail.append(badges);
-      const note=node('p','results-note','Counts include only individually reviewed filing/provision pairs. They are NOT percentages of all commenters.');
-      detail.append(note);
-      const nArguments=Number(record.reviewed_argument_count||0);
-      if(nArguments){
-        const group=node('div','argument-analysis');
-        group.append(node('h4','','Arguments found in reviewed filings'),
-          node('p','results-note',nArguments+' manually validated argument rows. These are multiple possible claims per filing, not additional commenters.'));
-        const argumentsList=node('div','badges');
-        for(const [kind,n] of Object.entries(record.reviewed_argument_types||{})){
-          if(Number(n)>0)argumentsList.append(node('span','badge',kind.replaceAll('_',' ')+': '+n));
-        }
-        group.append(argumentsList);
-        detail.append(group);
-      }
-      const examples=record.evidence||[];
-      if(examples.length){
-        const list=node('ul','examples');
-        for(const example of examples){
-          const li=node('li'),link=node('a','',example.position.replaceAll('_',' ')+' — FCC filing '+example.filing_id);
-          const u=String(example.source_url||'');
-          if(/^https:\/\/www\.fcc\.gov\/ecfs\//.test(u)){link.href=u;link.target='_blank';link.rel='noopener noreferrer';li.append(link);}
-          if(example.quote){li.append(node('span','',': '+example.quote));}
-          list.append(li);
-        }
-        detail.append(list);
-      }
-    }else{
-      detail.append(node('p','results-note','No evidence-validated position counts published for this proposal yet. Keyword matches alone are not classified as support or opposition.'));
-    }
-    article.append(detail);container.append(article);
-  }
+const $=id=>document.getElementById(id);
+const number=n=>Number(n||0).toLocaleString('en-US');
+const roleNames={unresolved:'No indicated institutional affiliation',school:'School/district/education',nonprofit:'Advocacy/association',library:'Library',government:'Government/Tribal body',business:'Other business',telecom:'Telecom/network organization',consultant:'Consultant/service firm'};
+const statusNames={support:'Support',oppose:'Oppose',conditional:'Conditional/amend',alternative:'Alternative'};
+const issueKeyMap={sunset_or_narrow:'erate_sunset',cipa_filtering:'cipa_social_media',screen_limits:'screen_time_condition',competitive_bidding:'administrative_forms',consultant_rules:'consultant_registration',radiofrequency:'erate_eligibility_scope',discount_matrix:'discount_matrix',special_construction:'special_construction',parent_opt_out:'parent_opt_out'};
+const argumentCategories=[
+['Legal authority','statutory|authority|section 254|statute|legal|cipa'],
+['Access and affordability','afford|access|connectivity|infrastructure|cost|rural|tribal|funding|expense|subscription'],
+['Implementation burden','burden|unworkable|administrative|paperwork|compliance|procurement|district operation|one-size|disrupt'],
+['Child safety / learning','child|screen|development|student|learning|educational|edtech|parent'],
+['Privacy / expression','privacy|surveillance|free.expression|censor|monitoring'],
+['Oversight / incentives','consultant|integrity|fraud|incentive|compensation|registration|disclosure'],
+['Market and competition','competition|provider|construction|build|competitive']
+];
+let summary,provisions={},allRecords=[],publishedIndex=false,filteredRecords=[],page=0,exampleLookup={};
+function el(tag,cls,text){const n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=String(text);return n;}
+function aLink(label,url){const a=el('a','',label);a.href=url;a.rel='noopener noreferrer';a.target='_blank';return a;}
+function fcc(sid){return 'https://www.fcc.gov/ecfs/filing/'+encodeURIComponent(String(sid));}
+function clear(x){x.replaceChildren();}
+function chart(target,arr,max,click){
+ const box=$(target);clear(box);
+ for(const r of arr){
+  const line=el('div','bar-row'),label=el('span','bar-label');
+  if(click){const b=el('button','',r.label);b.type='button';b.onclick=()=>click(r);label.append(b);}else label.textContent=r.label;
+  const track=el('div','bar-track');const bar=el('div','bar-fill'+(target==='role-chart'?' role':''));
+  bar.style.width=(max?Math.max(.2,r.n/max*100):0)+'%';track.append(bar);
+  line.append(label,track,el('span','bar-value',number(r.n)));box.append(line);
+ }
 }
+function openTab(name){
+ const tab=Object.prototype.hasOwnProperty.call({overview:1,positions:1,arguments:1,commenters:1,explorer:1,methods:1},name)?name:'overview';
+ document.querySelectorAll('.view').forEach(s=>s.hidden=s.id!==tab);
+ document.querySelectorAll('.tabs button').forEach(b=>{if(b.dataset.view===tab)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+ if(location.hash!==('#'+tab))history.replaceState(null,'','#'+tab);
+ if(tab==='explorer')renderExplorer();
+}
+function indexFallback(){
+ const unique=new Map();
+ for(const e of summary.examples){if(!unique.has(e.filing)){unique.set(e.filing,{id:e.filing,date:'',type:'',role:'unresolved',organization:e.name,issues:0,ocr:false,agency_candidate:false});}}
+ allRecords=[...unique.values()];publishedIndex=false;
+ $('explorer-loaded').textContent='Preview: '+number(allRecords.length)+' illustrative filings; full public index has not been generated';
+}
+function initMetrics(){
+ const metrics=[
+ [summary.indexed_filings,'ECFS filing records'],
+ [summary.text_filings,'Filings with extracted text'],
+ [summary.ocr_candidate_attachments,'Candidate OCR attachments'],
+ [summary.examples.length,'Initial source-checked position examples']
+ ];
+ clear($('metrics'));
+ for(const [value,label] of metrics){const m=el('div','metric');m.append(el('span','value',number(value)),el('span','caption',label));$('metrics').append(m);}
+ $('status').textContent='Research snapshot · issue mentions across all available text; source-reviewed examples are not representative stance estimates.';
+ chart('issue-chart',summary.issues,Math.max(...summary.issues.map(x=>x.n)),r=>{ $('ex-issue').value=r.id;page=0;openTab('explorer');});
+ chart('role-chart',summary.roles.map(r=>({label:r.label,n:r.filings,id:r.id})),Math.max(...summary.roles.map(x=>x.filings)),r=>{$('ex-role').value=r.id;page=0;openTab('explorer');});
+ const quality=$('data-qualifications');quality.append(el('h2','','How to read these numbers'));
+ const row=el('div','record-line');
+ for(const [n,t] of [
+ ['2,193','Filings mention sunset, elimination or narrowing (not necessarily supporting these outcomes)'],
+ ['277','Filings share one exact filer-name entry (8.6% of records)'],
+ ['80.3%','Share of extracted text characters from that same filer-name entry']
+ ]){const col=el('div','');col.append(el('strong','',n),el('p','note',t));row.append(col);}
+ quality.append(row,el('p','note','The strongest published claims require source review. We do not label all issue mentions as positions or assume that every filing represents an independent commenter.'));
+}
+function renderDirectionalEvidence(){
+ const box=$('directional-evidence');if(!box)return;clear(box);
+ const row=summary.directional_signals?.[0];
+ if(!row)return;
+ const heading=el('div','panel-head');heading.append(el('h2','','Corpus-wide directional language (preliminary)'),
+   el('span','','Targeted expression matching · not a validated stance classifier'));box.append(heading);
+ const vals=el('div','record-line');
+ for(const [n,label] of [[row.filings,'Filings with explicit continuation/preservation wording'],
+  [summary.issues.find(x=>x.id==='sunset_or_narrow').n,'Filings mentioning sunset/narrowing (any direction)']]){
+  const item=el('div','');item.append(el('strong','',number(n)),el('p','note',label));vals.append(item);
+ }
+ box.append(vals,el('p','note',row.manual_spot_check+' The result is a phrase-based lower-bound signal, not the total number of supportive commenters. A naive search for support of E-Rate elimination incorrectly picked up filings quoting the FCC proposal; no whole-corpus pro-sunset tally is published.'));
+ const sub=el('div','panel-head');sub.append(el('h3','','Preservation-language signals by provisional filer category'));box.append(sub);
+ const track=el('div','');
+ const pairs=Object.entries(row.role_counts).map(([id,n])=>({id,label:roleNames[id]||id,n})).sort((a,b)=>b.n-a.n);
+ for(const p of pairs){
+  const line=el('div','bar-row');line.append(el('span','bar-label',p.label));
+  const outer=el('div','bar-track'),fill=el('div','bar-fill');fill.style.width=(p.n/pairs[0].n*100)+'%';outer.append(fill);
+  line.append(outer,el('span','bar-value',number(p.n)));track.append(line);
+ }
+ box.append(track);
+}
+function selectedExamples(){
+ const pid=$('position-proposal').value,dir=$('position-direction').value;
+ return summary.examples.filter(e=>(!pid||e.issue===pid)&&(!dir||e.position===dir));
+}
+function drawPositions(){
+ const rows=selectedExamples();const counts={support:0,oppose:0,conditional:0,alternative:0};
+ rows.forEach(e=>counts[e.position]++);
+ clear($('position-summary'));
+ for(const key of Object.keys(counts)){const m=el('div','small-metric');m.append(el('strong','',counts[key]),el('span','',statusNames[key]));$('position-summary').append(m);}
+ const body=$('position-table');clear(body);
+ if(!rows.length){const tr=el('tr');const td=el('td','','No reviewed examples for this selection. This does not imply no commenters took that position.');td.colSpan=4;tr.append(td);body.append(tr);return;}
+ for(const row of rows){
+  const tr=el('tr');
+  const position=el('span','direction '+row.position,statusNames[row.position]);
+  const p=el('td');p.append(position);const action=el('td','',row.reason);
+  action.append(el('div','excerpt','“'+row.quote+'”'));
+  const link=el('td');link.append(aLink(row.filing,fcc(row.filing)));
+  tr.append(el('td','',row.name),p,action,link);body.append(tr);
+ }
+}
+function drawAlignment(){
+ const used=['erate_sunset','screen_time_condition','parent_opt_out','consultant_registration','consultant_percent_fees','special_construction','cipa_social_media','cipa_monitoring_privacy','discount_matrix'];
+ const short={erate_sunset:'Limit / sunset E-Rate',screen_time_condition:'Screen funding conditions',parent_opt_out:'Parental opt-out mandate',consultant_registration:'Consultant registration',consultant_percent_fees:'Percentage-fee ban',special_construction:'Limit construction',cipa_social_media:'Broaden CIPA social-media scope',cipa_monitoring_privacy:'CIPA monitoring/privacy',discount_matrix:'Change rural discounts'};
+ const organizations=[...new Set(summary.examples.map(e=>e.name))].sort();
+ const wrapper=$('alignment');clear(wrapper);const t=el('table','alignment'),thead=el('thead'),head=el('tr');
+ head.append(el('th','','Organization'));
+ for(const id of used)head.append(el('th','',short[id]));
+ thead.append(head);t.append(thead);const tb=el('tbody');
+ for(const org of organizations){
+  const tr=el('tr');tr.append(el('td','',org));
+  for(const id of used){
+   const e=summary.examples.find(x=>x.name===org&&x.issue===id);
+   const code=e?{support:'S',oppose:'O',conditional:'C',alternative:'A'}[e.position]:'—';
+   const td=el('td',e?code.toLowerCase():'u',code);
+   td.title=e?statusNames[e.position]+' — '+e.reason:'Not reviewed or not coded';
+   tr.append(td);
+  }
+  tb.append(tr);
+ }
+ t.append(tb);wrapper.append(t);
+ wrapper.append(el('p','note','S = support · O = oppose · C = conditional · A = alternative · — = not coded. Examples are first-pass and not independently adjudicated.'));
+}
+function reasonFamily(e){
+ const s=(e.reason+' '+e.quote).toLowerCase();
+ for(const [label,pattern] of argumentCategories){
+  if(new RegExp(pattern,'i').test(s))return label;
+ }
+ return 'Other or multiple reasons';
+}
+function drawArguments(){
+ const counts=new Map();for(const e of summary.examples){const family=reasonFamily(e);counts.set(family,(counts.get(family)||0)+1);}
+ const arr=[...counts].map(([label,n])=>({label,n})).sort((a,b)=>b.n-a.n);
+ chart('argument-chart',arr,Math.max(...arr.map(x=>x.n)));
+ const filter=$('argument-filter');clear(filter);
+ const all=el('option','','All reason categories');all.value='';filter.append(all);
+ for(const r of arr){const option=el('option','',r.label);option.value=r.label;filter.append(option);}
+ renderArgumentTable();
+}
+function renderArgumentTable(){
+ const filter=$('argument-filter').value;const body=$('argument-table');clear(body);
+ for(const row of summary.examples.filter(e=>!filter||reasonFamily(e)===filter)){
+  const tr=el('tr'),issue=provisions[row.issue]?.label||row.issue,source=el('td');source.append(aLink(row.filing,fcc(row.filing)));
+  const evidence=el('td','',row.reason);evidence.append(el('div','excerpt','“'+row.quote+'”'));
+  tr.append(el('td','',row.name),el('td','',issue),evidence,source);body.append(tr);
+ }
+}
+function drawRoles(){
+ const table=$('role-table');clear(table);
+ for(const r of summary.roles){
+  const tr=el('tr'),share=(100*r.filings/summary.indexed_filings).toFixed(1)+'%';
+  tr.append(el('td','',r.label),el('td','num',number(r.filings)),
+     el('td','num',number(r.distinct_filer_fields)),el('td','num',share));table.append(tr);
+ }
+ const con=$('concentration');clear(con);
+ con.append(el('h2','','Repeated submissions and text concentration'));
+ con.append(el('p','','The largest exact filer-field string appears on 277 of 3,231 submissions, accounting for 80.3% of all extracted characters. This makes text-volume weighting especially misleading. It does not establish that these records are improper.'));
+ con.append(el('p','','At least 565 filings contain one identifiable preserve-E-Rate template phrase; a related anti-sunset phrase appears in 637 filings. These are overlapping phrase matches, not independently validated template families. Exact full-text duplicate hashing found 73 filings in 17 clusters after OCR.'));
+}
+function drawIssueRoleComparison(){
+ const id=$('role-issue').value;
+ const counts=summary.issue_role_matrix?.[id]||{};
+ const data=summary.roles.map(r=>({
+   id:r.id,label:r.label,
+   n:counts[r.id]||0,den:r.filings,
+   percentage:r.filings?100*(counts[r.id]||0)/r.filings:0
+ })).sort((a,b)=>b.percentage-a.percentage);
+ const target=$('role-issue-chart');clear(target);
+ for(const r of data){
+   const line=el('div','bar-row'),outer=el('div','bar-track'),fill=el('div','bar-fill');
+   fill.style.width=r.percentage+'%';outer.append(fill);
+   line.append(el('span','bar-label',r.label),outer,
+     el('span','bar-value',r.percentage.toFixed(1)+'%'));
+   line.title=number(r.n)+' of '+number(r.den)+' records in this filer category mention the issue';
+   target.append(line);
+ }
+}
+function renderExplorer(){
+ const query=$('ex-query').value.trim().toLocaleLowerCase();
+ const issue=$('ex-issue').value,role=$('ex-role').value,type=$('ex-type').value,ocr=$('ex-ocr').value;
+ let idx=-1;if(issue)idx=summary.issues.findIndex(r=>r.id===issue);
+ const keys=summary.issues.map(x=>x.id);
+ filteredRecords=allRecords.filter(r=>{
+  if(query && !(r.id.toLowerCase().includes(query)||String(r.organization||'').toLowerCase().includes(query)))return false;
+  if(role&&r.role!==role)return false;
+  if(type&&r.type!==type)return false;
+  if(ocr&&r.ocr!==(ocr==='yes'))return false;
+  if(issue){
+    if(!publishedIndex)return summary.examples.some(e=>e.filing===r.id&&(
+       e.issue===issueKeyMap[issue]|| (issue==='cipa_filtering'&&e.issue.startsWith('cipa_')) ||
+       (issue==='consultant_rules'&&e.issue.startsWith('consultant_'))));
+    if(idx<0||!((Number(r.issues)||0)&(1<<idx)))return false;
+  }
+  return true;
+ });
+ const pages=Math.max(1,Math.ceil(filteredRecords.length/35));
+ if(page>=pages)page=pages-1;if(page<0)page=0;
+ $('ex-count').textContent=number(filteredRecords.length)+' '+(publishedIndex?'matching filing records':'illustrative records only');
+ $('ex-page').textContent='Page '+(page+1)+' of '+pages;
+ $('ex-prev').disabled=page===0;$('ex-next').disabled=page>=pages-1;
+ const body=$('ex-table');clear(body);
+ const subset=filteredRecords.slice(page*35,(page+1)*35);
+ if(!subset.length){const tr=el('tr'),td=el('td','','No matching indexed filings.');td.colSpan=6;tr.append(td);body.append(tr);return;}
+ for(const rec of subset){
+   const tr=el('tr'),issues=el('td');
+   const names=publishedIndex?keys.filter((k,i)=>Number(rec.issues)&(1<<i)).map(k=>summary.issues.find(x=>x.id===k)?.label||k):['Reviewed example'];
+   for(const n of names.slice(0,5))issues.append(el('span','pill',n));
+   if(names.length>5)issues.append(el('span','pill','+'+(names.length-5)));
+   const source=el('td');source.append(aLink('Open ↗',fcc(rec.id)));
+   tr.append(el('td','',rec.id),el('td','',rec.date||'—'),
+    el('td','',rec.organization||'Not republished'),
+    el('td','',roleNames[rec.role]||rec.role),
+    issues,source);body.append(tr);
+ }
+}
+function setFilters(){
+ const p=$('position-proposal');p.append(new Option('All reviewed proposals',''));
+ for(const prov of Object.values(provisions))p.append(new Option(prov.label,prov.id));
+ p.addEventListener('change',drawPositions);$('position-direction').addEventListener('change',drawPositions);
+ const issue=$('ex-issue');
+ for(const v of summary.issues)issue.append(new Option(v.label,v.id));
+ const role=$('ex-role');for(const r of summary.roles)role.append(new Option(r.label,r.id));
+ const compare=$('role-issue');
+ for(const issue of summary.issues)compare.append(new Option(issue.label,issue.id));
+ compare.value='sunset_or_narrow';
+ compare.addEventListener('change',drawIssueRoleComparison);
+ for(const v of [...new Set(allRecords.map(r=>r.type).filter(Boolean))].sort())$('ex-type').append(new Option(v,v));
+ for(const id of ['ex-query','ex-issue','ex-role','ex-type','ex-ocr'])$(id).addEventListener(id==='ex-query'?'input':'change',()=>{page=0;renderExplorer();});
+ $('ex-prev').onclick=()=>{page=Math.max(0,page-1);renderExplorer();};
+ $('ex-next').onclick=()=>{page+=1;renderExplorer();};
+ $('argument-filter').addEventListener('change',renderArgumentTable);
+}
+async function loadJson(path){const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw new Error(path+' returned '+r.status);return r.json();}
 async function main(){
+ try{
+  const [data,book]=await Promise.all([loadJson('./data/research_dashboard.json'),loadJson('./data/provisions.json')]);
+  summary=data;provisions=Object.fromEntries((book.provisions||[]).map(p=>[p.id,p]));
+  const ids=Object.fromEntries(summary.examples.map(e=>[e.id,e]));exampleLookup=ids;
   try{
-    const [bookRes,resRes]=await Promise.all([fetch('./data/provisions.json',{cache:'no-store'}),fetch('./data/public_results.json',{cache:'no-store'})]);
-    if(!bookRes.ok||!resRes.ok)throw new Error('Research files are unavailable');
-    const book=await bookRes.json();results=await resRes.json();codebook=book.provisions||[];
-    const count=Number(results.reviewed_filing_provision_pairs||0);
-    pick('status').textContent=count
-      ?'Early research preview · '+count+' human-reviewed filing/provision pairs. Not a census or public-opinion estimate.'
-      :'Research preview · Methodology and rulemaking questions available; validated position results are not yet published.';
-    const area=pick('area');
-    [...new Set(codebook.map(p=>p.category))].sort().forEach(key=>{const o=node('option','',AREAS[key]||key);o.value=key;area.append(o);});
-    for(const id of ['area','search','position'])pick(id).addEventListener(id==='search'?'input':'change',render);
-    render();
-  }catch(e){pick('status').textContent='Research preview: unable to load the current data files.';
-    pick('proposals').append(node('p','empty','Data could not be loaded. View the open-source methods and FCC notice using the links below.'));}
+    const index=await loadJson('./data/corpus_index.json');
+    if(!Array.isArray(index.filings)||index.filings.length!==summary.indexed_filings)throw new Error('partial publication');
+    if(JSON.stringify(index.issue_keys)!==JSON.stringify(summary.issues.map(i=>i.id)))throw new Error('incompatible issue index');
+    allRecords=index.filings;publishedIndex=true;
+    $('explorer-loaded').textContent=number(allRecords.length)+' source-linked filing records indexed';
+  }catch(e){indexFallback();}
+  initMetrics();setFilters();renderDirectionalEvidence();drawPositions();drawAlignment();drawArguments();drawRoles();drawIssueRoleComparison();
+  document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>openTab(b.dataset.view)));
+  window.addEventListener('hashchange',()=>openTab(location.hash.slice(1)));
+  openTab(location.hash.slice(1)||'overview');
+ }catch(e){$('status').textContent='Unable to load research data; please check the published files. '+e.message;}
 }
 document.addEventListener('DOMContentLoaded',main);
