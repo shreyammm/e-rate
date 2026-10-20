@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import gzip
 import json
 import os
 import re
@@ -49,22 +50,43 @@ def load_corpus(input_dir: Path | None, corpus: Path | None, snapshot_id: str,
     """One source row per FCC submission. Explicitly excludes synthetic/unknown IDs."""
     records = []
     if input_dir is not None:
-        path = input_dir / 'filings.jsonl'
-        if path.is_file():
-            for line in path.read_text(encoding='utf-8').splitlines():
-                if line.strip():
-                    row = json.loads(line)
-                    sid = str(row.get('submission_id',''))
-                    if not re.fullmatch(r'\d{8,20}', sid):
-                        raise ValueError('Invalid submission_id in portable corpus')
-                    if row.get('text_sha256') and digest(str(row.get('text') or ''))!=row['text_sha256']:
-                        raise ValueError('Portable source text SHA-256 mismatch for '+sid)
-                    records.append({'submission_id':sid,'text':str(row.get('text') or ''),
-                                    'source_url':str(row.get('source_url') or ''),
-                                    'filer_raw':str(row.get('filer_raw') or ''),
-                                    'date_submission':str(row.get('date_submission') or ''),
-                                    'has_unreviewed_ocr':str(row.get('has_unreviewed_ocr') or '0'),
-                                    'agency_record_candidate':str(row.get('agency_record_candidate') or '0')})
+        uncompressed = input_dir / 'filings.jsonl'
+        shard_dir = input_dir / 'shards'
+        shards = sorted(shard_dir.glob('filings-*.jsonl.gz')) if shard_dir.is_dir() else []
+        paths = ([uncompressed] if uncompressed.is_file() else []) + shards
+        if paths:
+            manifest_path = input_dir / 'manifest.json'
+            if shards and manifest_path.is_file():
+                metadata = json.loads(manifest_path.read_text(encoding='utf-8'))
+                expected = {x['name']: x for x in metadata.get('shards', [])}
+                if len(expected) != len(shards) or set(expected) != {p.name for p in shards}:
+                    raise ValueError('Public corpus manifest and shard names disagree')
+                for shard in shards:
+                    actual = hashlib.sha256(shard.read_bytes()).hexdigest()
+                    if actual != expected[shard.name]['sha256']:
+                        raise ValueError('Public corpus shard SHA-256 mismatch: ' + shard.name)
+            else:
+                metadata = None
+            for path in paths:
+                opener = gzip.open if path.name.endswith('.gz') else open
+                with opener(path, 'rt', encoding='utf-8') as f:
+                    for line in f:
+                        if not line.strip():
+                            continue
+                        row = json.loads(line)
+                        sid = str(row.get('submission_id',''))
+                        if not re.fullmatch(r'\d{8,20}', sid):
+                            raise ValueError('Invalid submission_id in portable corpus')
+                        if row.get('text_sha256') and digest(str(row.get('text') or '')) != row['text_sha256']:
+                            raise ValueError('Portable source text SHA-256 mismatch for ' + sid)
+                        records.append({'submission_id':sid,'text':str(row.get('text') or ''),
+                                        'source_url':str(row.get('source_url') or ''),
+                                        'filer_raw':str(row.get('filer_raw') or ''),
+                                        'date_submission':str(row.get('date_submission') or ''),
+                                        'has_unreviewed_ocr':str(row.get('has_unreviewed_ocr') or '0'),
+                                        'agency_record_candidate':str(row.get('agency_record_candidate') or '0')})
+            if metadata is not None and len(records) != int(metadata['records']):
+                raise ValueError('Public corpus manifest record count mismatch')
         elif (input_dir / 'comments').is_dir():
             for f in sorted((input_dir / 'comments').glob('*.txt')):
                 if re.fullmatch(r'\d{8,20}', f.stem):
