@@ -297,15 +297,45 @@ def summarize(records: list[dict], out: Path, book: dict,
             text_groups[digest(re.sub(r'\s+',' ',row['text']).strip().casefold())].append(r)
     stances=defaultdict(Counter);reason=defaultdict(Counter);kinds=defaultdict(Counter)
     by_role=defaultdict(Counter);pairs=Counter();examples=defaultdict(list)
+    role_position=defaultdict(lambda:defaultdict(Counter))
+    reason_position=defaultdict(lambda:defaultdict(Counter))
     all_reasons=Counter(); all_kinds=Counter();roles=Counter()
+    integrity=Counter();review_candidates=[]
     for r in completed:
         roles[r['stakeholder_role']]+=1
+        if str(r.get('has_unreviewed_ocr','0'))=='1': integrity['ocr_candidate_filings']+=1
+        if not r['positions']:integrity['filings_without_grounded_positions']+=1
+        if r.get('invalid_claims_rejected',0):integrity['filings_with_rejected_quotes_or_codes']+=1
+        integrity['invalid_claim_rows_rejected']+=int(r.get('invalid_claims_rejected',0))
+        uncertain=sum(bool(c.get('uncertain')) for c in r['claims'])
+        integrity['uncertain_claim_rows']+=uncertain
+        if uncertain:integrity['filings_with_uncertain_claims']+=1
+        conflicted=any(pos=='conflicting_or_multiple' for pos in r['positions'].values())
+        if conflicted:integrity['filings_with_conflicting_claims']+=1
+        flags=[]
+        if conflicted:flags.append('conflicting_positions')
+        if uncertain:flags.append('model_expressed_uncertainty')
+        if r.get('invalid_claims_rejected',0):flags.append('unmatched_or_invalid_quotes')
+        if str(r.get('has_unreviewed_ocr','0'))=='1':flags.append('unreviewed_ocr_candidate')
+        if not r['positions']:flags.append('no_grounded_policy_position_extracted')
+        if int(r.get('chunk_count',0))>12:flags.append('long_complex_filing')
+        if int(digest(r['submission_id'])[:8],16)%25==0:flags.append('deterministic_quality_sample')
+        if flags:
+            review_candidates.append({
+                'submission_id':r['submission_id'],'source_url':r['source_url'],
+                'review_reasons':flags,'claim_count':len(r['claims']),
+                'chunk_count':r.get('chunk_count',0),'source_sha256':r.get('source_sha256',''),
+                'sample_quote':next((c['evidence_quote'] for c in r['claims']), ''),
+                'review_status':'suggested_unreviewed_human_audit'
+            })
         for pid,pos in r['positions'].items():
             stances[pid][pos]+=1
             by_role[pid][r['stakeholder_role']]+=1
+            role_position[pid][r['stakeholder_role']][pos]+=1
         for c in r['claims']:
             reason[c['provision_id']][c['reason_family']]+=1
             kinds[c['provision_id']][c['claim_kind']]+=1
+            reason_position[c['provision_id']][c['position']][c['reason_family']]+=1
             all_reasons[c['reason_family']]+=1
             all_kinds[c['claim_kind']]+=1
             if len(examples[c['provision_id']])<12:
@@ -329,6 +359,9 @@ def summarize(records: list[dict], out: Path, book: dict,
             'positions':dict(stances[pid]),'unique_text_weighted_positions':dict(weighted[pid]),'filings_mentioning':sum(stances[pid].values()),
             'claim_reason_counts':dict(reason[pid]),'claim_kind_counts':dict(kinds[pid]),
             'claim_count':sum(kinds[pid].values()),'filings_by_inferred_role':dict(by_role[pid]),
+            'inferred_role_by_position':{role:dict(counts) for role,counts in role_position[pid].items()},
+            'claim_reason_by_position':{pos:dict(counts) for pos,counts in reason_position[pid].items()},
+            'completed_filing_denominator':len(completed),
             'examples':examples[pid]})
     result={'schema_version':VERSION,'generated_utc':datetime.now(timezone.utc).isoformat(),
             'publication_status':'EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS',
@@ -338,6 +371,7 @@ def summarize(records: list[dict], out: Path, book: dict,
             'distinct_normalized_texts_among_completed':unique_texts,
             'completed_filings_in_exact_text_duplicate_groups':duplicates,
             'inferred_stakeholder_roles':dict(roles),
+            'machine_evidence_quality':dict(integrity),
             'argument_reason_counts':dict(all_reasons),'argument_type_counts':dict(all_kinds),
             'issue_cooccurrences':[{'provision_a':a,'provision_b':b,'filings':n}
                                    for (a,b),n in pairs.most_common(100)],
@@ -355,6 +389,17 @@ def summarize(records: list[dict], out: Path, book: dict,
                 'Missing provision classifications are unobserved; negative labels not inferred.',
                 'This summary includes only filings completing all chunks; processing may be partial.'
             ]}
+    # This is a *selection for* human review, not a human-reviewed dataset.
+    # Sample the highest-risk categories and deterministic random controls.
+    review_candidates.sort(key=lambda x:(-len(x['review_reasons']),
+        digest(x['submission_id']),x['submission_id']))
+    selection=review_candidates[:min(150,len(review_candidates))]
+    atomic_json(out/'suggested_human_audit.json',{
+        'publication_status':'MACHINE_GENERATED_REVIEW_SUGGESTIONS_ONLY',
+        'model':model,'completed_filings':len(completed),'selected':len(selection),
+        'selection':'Quality flags and reproducible filing-ID hash; not a random prevalence estimator',
+        'items':selection})
+    result['suggested_human_audit_count']=len(selection)
     atomic_json(out/'summary.json',result)
     return result
 
