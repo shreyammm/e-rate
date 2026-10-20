@@ -42,7 +42,7 @@ jobs:
           for i in $(seq 1 50); do
             curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
           done
-          ollama pull granite4:1b-q4_K_M
+          ollama pull ibm/granite4:1b-q4_K_M
       - name: Describe emerging argument themes with source-linked model evidence
         run: |
           python3 -m scripts.label_argument_map --max-groups 16
