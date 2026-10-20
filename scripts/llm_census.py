@@ -27,7 +27,7 @@ BOOK = ROOT / 'analysis_methods' / 'provision_codebook_v1.json'
 VERSION = 'llm-census-v1.1.0'
 # IBM Research (US), Apache-2.0 licensed, publicly available in Ollama.
 # The public Actions runner uses the 3B variant; larger variants are optional.
-ALLOWED_MODELS = frozenset({'ibm/granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b'})
+ALLOWED_MODELS = frozenset({'ibm/granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b', 'ibm/granite4.2:8b'})
 POSITIONS = {'support', 'oppose', 'conditional_or_amend', 'alternative_proposal',
              'discussion_no_position', 'unclear'}
 CLAIM_KINDS = {'normative_value','empirical_claim','predicted_consequence','legal_claim',
@@ -149,8 +149,10 @@ def prompt_for(chunk: dict, book: dict) -> list[dict]:
 
 def ollama_call(messages: list[dict], model: str, url: str,
                 timeout: int = 95) -> dict:
+    larger=model.endswith(':8b')
     payload=json.dumps({'model':model,'stream':False,'think':False,'format':'json','messages':messages,
-                        'options':{'temperature':0,'num_ctx':4096,'num_predict':750}}).encode()
+                        'options':{'temperature':0,'num_ctx':8192 if larger else 4096,
+                                   'num_predict':1500 if larger else 750}}).encode()
     req=urllib.request.Request(url,method='POST',data=payload,
                                headers={'Content-Type':'application/json'})
     for attempt in range(2):
@@ -279,6 +281,55 @@ def process_record(record: dict, book: dict, out: Path, model: str, url: str,
                    'review_status':'unvalidated_machine_inference','status':'complete'})
     atomic_json(path,result)
     return 'complete'
+
+
+
+def reuse_exact_text_classifications(records: list[dict], out: Path, book: dict,
+                                     model: str, size: int, overlap: int) -> int:
+    """Copy a completed inference only across IDENTICAL source text bytes.
+
+    Every filing keeps its own ID, source link, submitter metadata, and model
+    provenance. Never transfer offsets from fuzzy/normalized near duplicates.
+    """
+    by_sha={}
+    for row in records:
+        body=row['text']
+        if not body.strip():continue
+        path=out/'filings'/f"{row['submission_id']}.json"
+        if not path.is_file():continue
+        try:r=json.loads(path.read_text(encoding='utf-8'))
+        except (OSError,ValueError):continue
+        if r.get('status')=='complete' and r.get('params_key')==params_key(
+                row,book,model,size,overlap) and r.get('source_sha256')==digest(body):
+            by_sha.setdefault(digest(body),r)
+    copies=0
+    for row in records:
+        body=row['text']
+        if not body.strip():continue
+        donor=by_sha.get(digest(body))
+        if donor is None:continue
+        path=out/'filings'/f"{row['submission_id']}.json"
+        if path.exists():
+            try:existing=json.loads(path.read_text(encoding='utf-8'))
+            except (OSError,ValueError):existing={}
+            if existing.get('status')=='complete' and existing.get('params_key')==params_key(
+                    row,book,model,size,overlap):continue
+            # Never overwrite a partial checkpoint, even when deduplicating.
+            if existing.get('status')=='partial' and existing.get('params_key')==params_key(
+                    row,book,model,size,overlap):continue
+        clone=dict(donor)
+        clone.update({'submission_id':row['submission_id'],
+                      'source_url':row.get('source_url',''),
+                      'filer_raw':row.get('filer_raw',''),
+                      'date_submission':row.get('date_submission',''),
+                      'has_unreviewed_ocr':row.get('has_unreviewed_ocr','0'),
+                      'agency_record_candidate':row.get('agency_record_candidate','0'),
+                      'params_key':params_key(row,book,model,size,overlap),
+                      'source_sha256':digest(body),
+                      'reused_exact_text_inference_from':donor['submission_id']})
+        atomic_json(path,clone)
+        copies+=1
+    return copies
 
 
 def summarize(records: list[dict], out: Path, book: dict,
@@ -435,6 +486,8 @@ def main(argv=None) -> int:
         if args.pending_only:return 0
         p.error('No corpus present. Add a verified research-snapshot export first.')
     out=args.out_dir.expanduser().resolve()
+    reused=reuse_exact_text_classifications(rows,out,book,args.model,args.chunk_size,args.chunk_overlap)
+    if reused:print(json.dumps({'exact_text_inferences_reused':reused}),flush=True)
     pending=[]
     for row in rows:
         path=out/'filings'/f"{row['submission_id']}.json"
