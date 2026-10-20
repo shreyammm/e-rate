@@ -39,7 +39,7 @@ jobs:
             echo 'run=false' >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          python3 -m scripts.llm_census --input-dir data/fcc_corpus --out-dir data/llm_census --pending-only | tee /tmp/erate_pending.log
+          python3 -m scripts.llm_census --input-dir data/fcc_corpus --out-dir data/llm_census_fast --pending-only | tee /tmp/erate_pending.log
           if grep -q '"pending": 0' /tmp/erate_pending.log; then
             echo 'run=false' >> "$GITHUB_OUTPUT"
           else
@@ -55,7 +55,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.ollama/models
-          key: erate-ollama-granite4.2-3b-v1
+          key: erate-ollama-granite4-1b-q4-v1
       - name: Install Ollama and free small language model
         if: steps.pending.outputs.run == 'true'
         run: |
@@ -64,23 +64,23 @@ jobs:
           for i in $(seq 1 40); do
             curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
           done
-          ollama pull granite4.2:3b
+          ollama pull granite4:1b-q4_K_M
       - name: Incremental source-cited LLM analysis
         if: steps.pending.outputs.run == 'true'
         id: analysis
         run: |
           python3 -m scripts.llm_census --input-dir data/fcc_corpus \
-            --out-dir data/llm_census --publish-preview docs/data/llm_exploratory.json \
-            --model granite4.2:3b --limit 110 --max-chunks-per-filing 5 --max-minutes 175
+            --out-dir data/llm_census_fast --publish-preview docs/data/llm_exploratory.json \
+            --model granite4:1b-q4_K_M --limit 240 --max-chunks-per-filing 3 --max-minutes 175
       - name: Update aggregate preview and commit durable checkpoints
         if: always() && steps.pending.outputs.run == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          if [ -f data/llm_census/suggested_human_audit.json ]; then
-            cp data/llm_census/suggested_human_audit.json docs/data/llm_audit_queue.json
+          if [ -f data/llm_census_fast/suggested_human_audit.json ]; then
+            cp data/llm_census_fast/suggested_human_audit.json docs/data/llm_audit_queue.json
           fi
-          if [ -d data/llm_census ]; then git add -- data/llm_census; fi
+          if [ -d data/llm_census_fast ]; then git add -- data/llm_census_fast; fi
           if [ -f docs/data/llm_audit_queue.json ]; then git add -- docs/data/llm_audit_queue.json; fi
           if [ -f docs/data/llm_exploratory.json ]; then git add -- docs/data/llm_exploratory.json; fi
           if ! git diff --cached --quiet; then
