@@ -33,6 +33,20 @@ The machine-only aggregate preview at `docs/data/llm_exploratory.json` enables i
 
 Never call model-only estimates validated or representative. Quote-grounding is mechanical string matching; it does not establish stance correctness. Stakeholder inference is particularly fragile. The draft codebook's question boundaries still require exact NPRM paragraph audit. OCR candidate source text remains unverified. Keep LLM and human-reviewed results visibly separate in the interface. Exemplar rows are sampled in submission-ID order and **not representative** of all categories. Annotated human samples and intercoder checks remain essential before using the estimates as public findings.
 
-## Data ingestion limitation
+## Source archive and live publication
 
-The previously built 3,231-filing snapshot is on the user's Mac, not GitHub. A bot cannot read files on an offline personal machine. If `data/fcc_corpus/filings.jsonl` does not yet exist, the scheduled workflow **intentionally skips without generating imaginary findings**. An already available export can be checked into the repository; use `python3 -m scripts.export_llm_corpus --corpus ~/Downloads/fcc_complete_corpus --output data/fcc_corpus/filings.jsonl` from a checkout of this code to produce that archive once. It includes original unredacted comments and filer metadata; do not confuse an ECFS public filing with permission to publish arbitrary private metadata. Once any source file is committed, the schedule will automatically process it, checkpoint it, and incorporate future updates. Re-export from a new snapshot when source data changes.
+The 3,231 ECFS filing records have been published in this public repository, in 12 compressed JSONL files, from the October 20, 2026 OCR-augmented research snapshot. The original 3,230 readable comment transcripts are preserved; one record lacks a transcript. These are not ongoing live counts from the FCC API. The independently checksum-verified website source is rebuilt by `scripts/publish_full_corpus.py` in the public `docs/data/full_text_shards/` directory. The reader is `docs/corpus.html` and links directly to original source filings.
+
+## Automatic model-quality controls and interpretive limits
+
+- The approved IBM Granite model must return an explicit JSON `claims` array. A missing or malformed array is a retryable model error, **not** a filing with zero policy claims.
+- Verbatim source evidence for positions must contain at least 15 characters and match the exact text window and filing offset. This is mechanical grounding, not proof of correct interpretation.
+- Any inferred stakeholder role requires an exact supporting passage; inconsistent roles across sections are downgraded to unknown.
+- Long filings are processed in bounded, overlapping windows, checkpointed, and resumed on subsequent scheduled runs. They are never counted as completed until every window finishes.
+- `data/llm_census/suggested_human_audit.json` lists reproducibly selected source-linked cases flagged for OCR uncertainty, conflicting positions, invalid/missing quotes, long documents and random audit coverage. They are **not** assumed to be reviewed merely because listed.
+- The reporting output distinguishes filings, cited arguments, unique normalized source texts and machine-inferred roles. A single filing can have multiple arguments or discuss multiple provisions.
+- Each provision has an inferred stakeholder-by-position matrix and a reason-by-position comparison; these are exploratory cross-tabs, not validated estimates or representative public polling.
+- GitHub Actions must report inference failures as failures while retaining any completed checkpoints, instead of showing an apparently successful census from a failed model invocation.
+- The original first-pass analytical procedures (OCR, deterministic keyword retrieval, clustering, human annotation and source validation) remain unchanged and separately published.
+
+Publicly accessible source comments can contain filer names and contact information. Their republication was requested by the researcher. Actual FCC filing texts may include prompt-injection-like instructions, but the model treats them as data; no approach completely eliminates model errors. Reviewers should inspect a balanced stratified sample and reconcile uncertainty before interpreting substantive rates.
