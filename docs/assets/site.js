@@ -162,6 +162,24 @@ function drawRoles(){
  con.append(el('p','','The largest exact filer-field string appears on 277 of 3,231 submissions, accounting for 80.3% of all extracted characters. This makes text-volume weighting especially misleading. It does not establish that these records are improper.'));
  con.append(el('p','','At least 565 filings contain one identifiable preserve-E-Rate template phrase; a related anti-sunset phrase appears in 637 filings. These are overlapping phrase matches, not independently validated template families. Exact full-text duplicate hashing found 73 filings in 17 clusters after OCR.'));
 }
+function drawIssueRoleComparison(){
+ const id=$('role-issue').value;
+ const counts=summary.issue_role_matrix?.[id]||{};
+ const data=summary.roles.map(r=>({
+   id:r.id,label:r.label,
+   n:counts[r.id]||0,den:r.filings,
+   percentage:r.filings?100*(counts[r.id]||0)/r.filings:0
+ })).sort((a,b)=>b.percentage-a.percentage);
+ const target=$('role-issue-chart');clear(target);
+ for(const r of data){
+   const line=el('div','bar-row'),outer=el('div','bar-track'),fill=el('div','bar-fill');
+   fill.style.width=r.percentage+'%';outer.append(fill);
+   line.append(el('span','bar-label',r.label),outer,
+     el('span','bar-value',r.percentage.toFixed(1)+'%'));
+   line.title=number(r.n)+' of '+number(r.den)+' records in this filer category mention the issue';
+   target.append(line);
+ }
+}
 function renderExplorer(){
  const query=$('ex-query').value.trim().toLocaleLowerCase();
  const issue=$('ex-issue').value,role=$('ex-role').value,type=$('ex-type').value,ocr=$('ex-ocr').value;
@@ -207,6 +225,10 @@ function setFilters(){
  const issue=$('ex-issue');
  for(const v of summary.issues)issue.append(new Option(v.label,v.id));
  const role=$('ex-role');for(const r of summary.roles)role.append(new Option(r.label,r.id));
+ const compare=$('role-issue');
+ for(const issue of summary.issues)compare.append(new Option(issue.label,issue.id));
+ compare.value='sunset_or_narrow';
+ compare.addEventListener('change',drawIssueRoleComparison);
  for(const v of [...new Set(allRecords.map(r=>r.type).filter(Boolean))].sort())$('ex-type').append(new Option(v,v));
  for(const id of ['ex-query','ex-issue','ex-role','ex-type','ex-ocr'])$(id).addEventListener(id==='ex-query'?'input':'change',()=>{page=0;renderExplorer();});
  $('ex-prev').onclick=()=>{page=Math.max(0,page-1);renderExplorer();};
@@ -226,7 +248,7 @@ async function main(){
     allRecords=index.filings;publishedIndex=true;
     $('explorer-loaded').textContent=number(allRecords.length)+' source-linked filing records indexed';
   }catch(e){indexFallback();}
-  initMetrics();setFilters();renderDirectionalEvidence();drawPositions();drawAlignment();drawArguments();drawRoles();
+  initMetrics();setFilters();renderDirectionalEvidence();drawPositions();drawAlignment();drawArguments();drawRoles();drawIssueRoleComparison();
   document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>openTab(b.dataset.view)));
   window.addEventListener('hashchange',()=>openTab(location.hash.slice(1)));
   openTab(location.hash.slice(1)||'overview');
