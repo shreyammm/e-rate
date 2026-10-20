@@ -363,7 +363,8 @@ def main(argv=None) -> int:
     p.add_argument('--snapshot-id',default='ocr_candidate_v1')
     p.add_argument('--view',choices=['augmented','baseline'],default='augmented')
     p.add_argument('--out-dir',type=Path,default=Path('data/llm_census'))
-    p.add_argument('--model',default='granite4.2:3b',choices=sorted(ALLOWED_MODELS),\n                   help='US-developed, Apache-2.0 IBM Granite model')
+    p.add_argument('--model',default='granite4.2:3b',choices=sorted(ALLOWED_MODELS),
+                   help='US-developed, Apache-2.0 IBM Granite model')
     p.add_argument('--ollama-url',default='http://127.0.0.1:11434/api/chat')
     p.add_argument('--limit',type=int,default=25,help='Maximum filings to finish per invocation')
     p.add_argument('--max-minutes',type=float,default=160)
