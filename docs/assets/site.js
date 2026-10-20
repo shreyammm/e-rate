@@ -211,7 +211,9 @@ function renderExplorer(){
    const names=publishedIndex?keys.filter((k,i)=>Number(rec.issues)&(1<<i)).map(k=>summary.issues.find(x=>x.id===k)?.label||k):['Reviewed example'];
    for(const n of names.slice(0,5))issues.append(el('span','pill',n));
    if(names.length>5)issues.append(el('span','pill','+'+(names.length-5)));
-   const source=el('td');source.append(aLink('Open ↗',fcc(rec.id)));
+   const source=el('td');source.append(aLink('FCC ↗',fcc(rec.id)));
+   source.append(document.createTextNode(' · '));
+   source.append(aLink('Full text ↗','./corpus.html?id='+encodeURIComponent(rec.id)));
    tr.append(el('td','',rec.id),el('td','',rec.date||'—'),
     el('td','',rec.organization||'Not republished'),
     el('td','',roleNames[rec.role]||rec.role),
