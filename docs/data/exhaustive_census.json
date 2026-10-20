@@ -15,14 +15,14 @@
     {
       "id": "named_person_capacity_unstated",
       "label": "Personal-name filer; capacity not stated",
-      "filings": 923,
-      "distinct_filer_fields": 905
+      "filings": 924,
+      "distinct_filer_fields": 906
     },
     {
       "id": "school_district_or_school",
       "label": "School or district organization",
-      "filings": 843,
-      "distinct_filer_fields": 827
+      "filings": 857,
+      "distinct_filer_fields": 841
     },
     {
       "id": "educator_or_school_staff",
@@ -33,8 +33,8 @@
     {
       "id": "advocacy_nonprofit_or_trade_association",
       "label": "Advocacy / nonprofit / association",
-      "filings": 428,
-      "distinct_filer_fields": 79
+      "filings": 429,
+      "distinct_filer_fields": 80
     },
     {
       "id": "library_or_library_system",
@@ -45,8 +45,8 @@
     {
       "id": "unresolved",
       "label": "Commenter type cannot be established",
-      "filings": 144,
-      "distinct_filer_fields": 142
+      "filings": 143,
+      "distinct_filer_fields": 141
     },
     {
       "id": "parent_guardian",
@@ -57,8 +57,8 @@
     {
       "id": "government_or_tribal_organization",
       "label": "Government / elected / Tribal body",
-      "filings": 51,
-      "distinct_filer_fields": 50
+      "filings": 36,
+      "distinct_filer_fields": 35
     },
     {
       "id": "other_business_or_vendor",
@@ -386,8 +386,8 @@
   "argument_language_method": "14 defined sets of exact phrase indicators scanned against all 3,230 texts, counting each matching filing once per family. These are language/evidence retrieval signals, NOT validated claims or agreement. Filings with cross-docket referenced materials may dominate several categories.",
   "identity_quality": {
     "classification_scope": "all_3231_filing_records",
-    "named_person_role_not_stated": 923,
-    "unresolved_type": 144,
+    "named_person_role_not_stated": 924,
+    "unresolved_type": 143,
     "school_connected_capacity_unconfirmed": 25,
     "human_verified_identity_count": null
   }
