@@ -152,7 +152,7 @@ JSON shape: {"summary":"brief descriptive summary", "stakeholder_role":"one perm
 def ollama_call(messages: list[dict], model: str, url: str,
                 timeout: int = 210) -> dict:
     payload=json.dumps({'model':model,'stream':False,'think':False,'format':'json','messages':messages,
-                        'options':{'temperature':0,'num_ctx':8192,'num_predict':1000}}).encode()
+                        'options':{'temperature':0,'num_ctx':8192,'num_predict':1900}}).encode()
     req=urllib.request.Request(url,method='POST',data=payload,
                                headers={'Content-Type':'application/json'})
     for attempt in range(3):
