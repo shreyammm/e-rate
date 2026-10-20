@@ -110,12 +110,20 @@ with tabs[1]:
     st.caption('Whitespace- and Unicode-normalized text hash. Each filing remains separately counted; exact copies are not deleted.')
     cluster_count=filtered[filtered.exact_duplicate_cluster_id!=''].groupby('exact_duplicate_cluster_id').agg(filings=('submission_id','size'),example=('submission_id','first')).sort_values('filings',ascending=False).reset_index()
     st.dataframe(cluster_count.head(200),hide_index=True,use_container_width=True)
-    p=(analysis/'near_duplicate_candidates.csv') if not snapshot else snapshot/'near_duplicate_candidates.csv'
+    p=(analysis/'near_duplicate_candidates.csv') if not snapshot else snapshot/f'templates_{args.view}'/'near_duplicate_candidates.csv'
     if p.is_file():
         st.subheader('Potential near-duplicate templates (needs human verification)')
         st.dataframe(pd.read_csv(p).head(500),hide_index=True,use_container_width=True)
         st.caption('MinHash LSH is approximate and non-exhaustive. Similar writing is not proof of campaign coordination.')
-    else:st.caption('Optional: run `python3 -m erate.near_duplicates` to generate near-duplicate candidates.')
+        if snapshot:
+            family_path=snapshot/f'templates_{args.view}'/'near_duplicate_families.csv'
+            if family_path.is_file():
+                st.subheader('Candidate repeated-text families')
+                fam=pd.read_csv(family_path,keep_default_na=False)
+                st.caption('Connected groups of similar 5-word shingles; transitive links do not mean every pair is similar. Organization and coordination are not established.')
+                st.dataframe(fam[['family_id','filing_count','edge_count','distinct_exact_filer_fields','members_with_ocr_candidates','example_submission_id']].head(150),hide_index=True,use_container_width=True)
+
+    else:st.caption('Optional: run `python3 -m scripts.snapshot_near_duplicate_families --snapshot-id ocr_candidate_v1 --view augmented` to generate near-duplicate candidates.' if snapshot else 'Optional: run `python3 -m erate.near_duplicates` to generate near-duplicate candidates.')
 with tabs[2]:
     st.subheader('Exploratory map of recurring language')
     st.caption('NMF thematic topics and SVD text projection are descriptive, unsupervised starting points — not semantic proof of agreement, sentiment or policy position. Validate against original passages.')
