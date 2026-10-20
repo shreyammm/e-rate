@@ -138,6 +138,10 @@ async function installFullTextRoles(){
    summary.issue_role_matrix[issue.id]=counts;
  }
  showCensusProposals(census);
+ const argumentRows=(census.argument_language_signals||[]).map(a=>({
+   label:a.label,n:a.filings_with_language,id:a.id
+ })).sort((a,b)=>b.n-a.n);
+ if(argumentRows.length)chart('argument-census-bars',argumentRows,argumentRows[0].n);
  return census;
 }
 function selectedExamples(){
