@@ -64,14 +64,14 @@ jobs:
           for i in $(seq 1 40); do
             curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
           done
-          ollama pull granite4:1b-q4_K_M
+          ollama pull ibm/granite4:1b-q4_K_M
       - name: Incremental source-cited LLM analysis
         if: steps.pending.outputs.run == 'true'
         id: analysis
         run: |
           python3 -m scripts.llm_census --input-dir data/fcc_corpus \
             --out-dir data/llm_census_fast --publish-preview docs/data/llm_exploratory.json \
-            --model granite4:1b-q4_K_M --limit 240 --max-chunks-per-filing 3 --max-minutes 175
+            --model ibm/granite4:1b-q4_K_M --limit 240 --max-chunks-per-filing 3 --max-minutes 175
       - name: Update aggregate preview and commit durable checkpoints
         if: always() && steps.pending.outputs.run == 'true'
         run: |
