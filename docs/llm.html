@@ -25,6 +25,16 @@
 <p id="llm-status" role="status" aria-live="polite">Checking whether an exploratory census has been generated…</p>
 <section id="llm-stats" class="llm-stats" aria-label="Analysis coverage"></section>
 <section class="llm-panel"><h2>What arguments recur?</h2><div id="llm-reasons"></div></section>
+<section class="llm-panel"><h2>Evidence and model-quality checks</h2>
+<p class="llm-small">Automatic checks confirm whether quoted passages occur in the source text. They do not prove that the model interpreted the passage correctly.</p>
+<div id="llm-quality"></div></section>
+<section class="llm-panel"><h2>Positions by self-described stakeholder type</h2>
+<p class="llm-small">Unverified, text-inferred roles; multiple submissions can come from the same entity. Counts represent distinct model-processed filings discussing the selected provision.</p>
+<div class="llm-tools"><label>FCC provision <select id="llm-role-proposal"></select></label></div>
+<div id="llm-role-positions"></div></section>
+<section class="llm-panel"><h2>Which issues appear together?</h2>
+<p class="llm-small">Co-occurrence within the same machine-processed filing. This does not imply agreement between the organizations or support for both proposals.</p>
+<div id="llm-cooccurrence"></div></section>
 <section id="issues"><h2>Issue-by-issue machine coding</h2><p class="llm-small">Evidence quotes link to the original FCC filing. Filing-position counts differ from argument counts.</p>
 <div class="llm-tools"><label>Search <input id="llm-query" type="search" placeholder="Issue, stakeholder, rationale"></label>
 <label>Issue category <select id="llm-category"><option value="all">All</option></select></label>
