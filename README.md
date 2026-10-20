@@ -1,3 +1,21 @@
+## Analyze every FCC filing on an Apple Silicon Mac (automatic GitHub upload)
+
+For an **M3 Pro Mac with 18 GB of unified memory**, the suggested local model is US-developed, Apache-2.0 licensed **IBM Granite 4.2 8B** (the default Ollama quantization is approximately 5.3 GB). Local inference is a much better fit than running a quality model on GitHub's free CPU-only runner. Larger open models such as gpt-oss 20B may technically fit some 18 GB setups but risk substantial memory pressure and slower end-to-end processing.
+
+Paste this into macOS Terminal (requires Python 3 and Git):
+
+```bash
+cd ~/Downloads && { [ -d fcc-llm-local/.git ] || git clone https://github.com/shreyammm/e-rate.git fcc-llm-local; } && cd fcc-llm-local && caffeinate -i bash scripts/run_local_analysis.sh
+```
+
+The bootstrap checks for Ollama, installs it via Homebrew when available, or points you to the official macOS installer if not. It downloads **`ibm/granite4.2:8b`** once, verifies the model extraction tests, then processes the entire public corpus in safe batches. All original texts are already in GitHub, so there is no need to export or reupload files from the Mac. A temporary `--once` option runs one batch for an initial speed check.
+
+After *each* batch, the runner writes independent, source-linked machine-classification checkpoints to `data/llm_census_mac/filings/`, refreshes `docs/data/llm_mac_exploratory.json`, and pushes them directly to `main` with Git. You may need to authenticate to GitHub on your first push. **Stopping and rerunning the exact command resumes saved work; it does not need to begin the corpus again.** Keep the Mac awake, powered, and its lid open while inference runs. Processing 3,230 readable filings may take many hours or longer, depending on document lengths and actual Apple Silicon inference speed.
+
+The separate `data/llm_census_fast/` and legacy `data/llm_census/` GitHub CPU batches remain preserved. The website prefers local 8B exploratory results once available; `scripts/build_argument_map.py` incorporates local annotations first, and `.github/workflows/argument-map.yml` automatically rebuilds the source-grounded argument clusters when local checkpoints are pushed.
+
+All outputs remain **machine-generated, unvalidated analytical estimates**. Exact duplicates with byte-identical comment texts may reuse the same quoted inference under their respective original filing IDs, but fuzzy text variants are never silently treated as identical.
+
 ## Ask the Corpus: free interactive evidence-grounded Q&A
 
 [Open **Ask the Corpus**](https://shreyammm.github.io/e-rate/ask.html) to ask natural-language questions about the October 20, 2026 FCC E-Rate corpus. This **adds** an interactive retrieval-plus-generation lane; it does **not** replace the existing, separately automated IBM Granite per-filing analytical census.
