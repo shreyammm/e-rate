@@ -23,7 +23,13 @@
     if(view==='llm'&&!items.length){box.append(el('p','llm-small','No completed source-cited LLM argument clusters are available yet. Automatic Granite extraction runs separately, and this section will populate as its batches complete.'));return;}
     for(const c of filtered){
       const card=el('article','llm-issue');
-      card.append(el('h3','',c.working_label||c.auto_label));
+      card.append(el('h3','',c.llm_synthesis?.label||c.working_label||c.auto_label));
+      if(c.llm_synthesis?.argument_summary){
+        card.append(el('p','',c.llm_synthesis.argument_summary));
+        if(c.llm_synthesis.other_perspectives)
+          card.append(el('p','llm-small','Different perspectives in selected examples: '+c.llm_synthesis.other_perspectives));
+        card.append(el('p','llm-small','Automatically summarized by US IBM Granite from linked sample passages. This is not a corpus-wide stance estimate.'));
+      }
       const filingN=view==='llm'?c.filings:c.filings_with_matching_language;
       card.append(el('p','llm-small',n(filingN)+' filing records with '+(view==='llm'?'LLM-extracted argument claims':'related argument-language patterns')+' · machine-organized; not validated positions'));
       const roles=Object.entries(c.filing_categories||c.stakeholders||{}).sort((a,b)=>b[1]-a[1]).slice(0,5);
