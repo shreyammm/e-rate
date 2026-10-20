@@ -167,3 +167,19 @@ python3 -m streamlit run app.py -- --corpus ~/Downloads/fcc_complete_corpus --sn
 The model uses seeded TF-IDF/NMF and lexical SVD for exploration, **not** validated sentiment or FCC policy positions. View changes refit the model, so cluster IDs and 2D axes do not align automatically across runs. See [snapshot research methods](analysis_methods/research_snapshot_methodology.md).
 
 **Keep the snapshot folder private on your Mac.** It includes actual filer names and comment texts and is intentionally excluded from the public GitHub repository.
+
+## Comparing the independently fitted topic models (October 2026)
+
+**Do not compare numeric topic IDs directly.** `T01` in baseline and `T01` in augmented are independently fitted components that may describe different language. We match topics using overlap on the *same filing IDs* with one-to-one optimal assignment. This measures descriptive assignment stability, **not semantic truth or policy stances**.
+
+Once both topic models are generated:
+
+```bash
+cd ~/Downloads/e-rate
+git pull --ff-only
+python3 scripts/compare_topic_views.py --corpus ~/Downloads/fcc_complete_corpus --snapshot-id ocr_candidate_v1
+```
+
+Output stays under the local snapshot's `theme_comparison/` directory: `topic_comparison_summary.json` (aggregate coverage, assignment stability, source hashes), `topic_alignment.csv` (one-to-one matching and overlap), `topic_transitions.csv` (cross-tab of shared filings), `ocr_newly_eligible_by_topic.csv` (distribution of newly eligible OCR filings), and `human_theme_review_sample.csv` (FCC filing links for high-scoring examples in each topic and OCR stratum).
+
+The local dashboard's Theme explorer shows this comparison after generating it. No raw text is sent to GitHub. High-scoring examples are not representative, and the model excludes a provisional set of agency-type records. Substantive publication requires independent validation.
