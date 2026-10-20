@@ -4,7 +4,7 @@ This lane **does not replace or write** the OCR, deduplication, topic, commenter
 
 ## Approved model policy
 
-Only IBM Granite 4.2 3B and 8B are permitted by the program CLI, and the unattended GitHub Actions job uses `granite4.2:3b`. The source never calls Qwen or paid LLM providers. The model's thinking output is disabled in the inference request for faster structured JSON generation. This does not demonstrate model classification accuracy; source-grounded model-only estimates remain unvalidated.
+Only IBM Granite 4.2 3B and 8B are permitted by the program CLI, and the unattended GitHub Actions job uses `granite4.2:3b`. The source never calls unapproved or paid LLM providers. The model's thinking output is disabled in the inference request for faster structured JSON generation. This does not demonstrate model classification accuracy; source-grounded model-only estimates remain unvalidated.
 
 ## Operation
 
