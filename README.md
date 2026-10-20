@@ -1,8 +1,40 @@
+
+## Public website: GitHub Pages (not localhost or hosted Streamlit)
+
+The long-term dashboard is a static site in [`docs/`](docs/) powered by selectively published, **source-validated** aggregate JSON. It uses no Python server, Streamlit account or browser API keys. The older `app.py` is an internal prototype, not the planned public product.
+
+To activate GitHub Pages once the code is merged: open this repository's **Settings → Pages**, under **Build and deployment** choose **Deploy from a branch**, select `main` and `/docs`, then Save. The eventual address is expected to be `https://shreyammm.github.io/e-rate/` **after** GitHub successfully publishes it. No validation data or raw filing texts are published automatically.
+
+## Research question: what are commenters actually advocating?
+
+Unlike the initial keyword topic model, substantive analysis is grounded in **specific FCC policy options** and tracks (a) proposed regulatory action; (b) support, opposition, conditional endorsement, or an alternative; (c) reasons, predicted costs/benefits and cited evidence; (d) whether and how the commenter claims to represent an organization; (e) text-template and repeat-filer sensitivity. See [`analysis_methods/substantive_position_research_protocol.md`](analysis_methods/substantive_position_research_protocol.md).
+
+The first draft [`analysis_methods/provision_codebook_v1.json`](analysis_methods/provision_codebook_v1.json) operationalizes 29 FCC policy questions across program eligibility, discounts, screen use, CIPA, consultants and administration. These are *draft* proposal boundaries; check exact FCC paragraph citations before final publication.
+
+Prepare source-exact passage candidates (NOT stance labels) and create a private side-by-side review interface:
+
+```bash
+cd ~/Downloads/e-rate
+git pull --ff-only
+python3 -m scripts.prepare_policy_analysis --corpus ~/Downloads/fcc_complete_corpus --snapshot-id ocr_candidate_v1 --view augmented
+python3 -m scripts.build_policy_review_packet --corpus ~/Downloads/fcc_complete_corpus --snapshot-id ocr_candidate_v1
+open ~/Downloads/fcc_complete_corpus/analysis_observatory/research_snapshot_ocr_candidate_v1/policy_analysis_augmented/private_review_packet.html
+```
+
+Once actual human-coded annotations are exported to `~/Downloads/fcc_policy_human_reviews.csv`, run:
+
+```bash
+python3 -m scripts.validate_position_annotations --corpus ~/Downloads/fcc_complete_corpus --annotations ~/Downloads/fcc_policy_human_reviews.csv
+python3 -m scripts.export_public_site_data --corpus ~/Downloads/fcc_complete_corpus
+```
+
+These commands generate a *private* evidence review and a private public-data preview. Publishing results into `docs/data/public_results.json` requires explicit `--publish-reviewed` **after** validation and privacy review. All raw source texts, reviewer forms and keyword candidate rows stay off public GitHub.
+
 # FCC E-Rate Public Comment Observatory
 
 An auditable, research-grade project to map **who participates, what they say, which issues they discuss, and how repeated submissions affect the interpretation of FCC E-Rate public comments**.
 
-**Current implementation (v0.1):** read-only corpus inventory, SHA-256 attachment audit, short/possibly-scanned-PDF queue, exact and candidate near-duplicate detection, conservative filer concentration metrics, auditable manual coding templates, and an interactive local dashboard. **Not yet implemented/validated:** an exhaustive OCR re-extraction, verified filer identity resolution, issue-specific sentiment/stance classification, theme embeddings, or deployed public site. No fabricated results.
+**Current status (October 20, 2026):** The local 3,231-filing research corpus now has 3,230 files with substantive original or staged OCR-candidate text, 206 OCR-recovered PDF attachments, two immutable research-text views, exploratory topic comparisons and candidate repeated-text families. A GitHub Pages research website is being built under `docs/`. The provision-level coding, commenter/entity identity and argument analysis are **not yet validated or published**. No fabricated findings.
 
 ## Research scope
 
