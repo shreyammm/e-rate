@@ -40,7 +40,7 @@ class AskCorpusIndexTests(unittest.TestCase):
             posting=json.loads((out/'d.json').read_text())['disclosure']
             self.assertEqual(posting[::2],[0,1])
             path.write_bytes(data+b'corrupted')
-            with self.assertRaisesRegex(ValueError,'checksum'):
+            with self.assertRaisesRegex(ValueError,'sha256 mismatch'):
                 build(root,out)
 
 if __name__=='__main__':
