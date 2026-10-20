@@ -2,6 +2,10 @@
 
 This lane **does not replace or write** the OCR, deduplication, topic, commenter-identity, human review, or validated policy-position pipelines. Existing `validated_positions.csv` and `validated_argument_claims.csv` are never read as labels or overwritten. LLM output is segregated under `data/llm_census/` or the path explicitly requested by the researcher.
 
+## Approved model policy
+
+Only IBM Granite 4.2 3B and 8B are permitted by the program CLI, and the unattended GitHub Actions job uses `granite4.2:3b`. The source never calls Qwen or paid LLM providers. The model's thinking output is disabled in the inference request for faster structured JSON generation. This does not demonstrate model classification accuracy; source-grounded model-only estimates remain unvalidated.
+
 ## Operation
 
 * The source must be an authoritative `research_snapshot_*` baseline or OCR-augmented text view, or its **portable export** in `data/fcc_corpus/filings.jsonl`. The corpus is one record per **FCC submission ID**, *not* an estimate of distinct people.
@@ -11,7 +15,7 @@ This lane **does not replace or write** the OCR, deduplication, topic, commenter
 * Comment text is treated as untrusted data, not as model instructions. Structured JSON generation, deterministic prompt parameters, codebook/model/source hashes and per-file resume checkpoints help reproducibility. No attempt is made to pretend the model is infallible.
 * Each filing has a single cached record under `filings/{submission_id}.json`, with `params_key` computed from source text, model, codebook, processing version and chunk settings. New or changed records automatically invalidate themselves, without overwriting other research lanes.
 * When a run hits its time or count cap, the scheduler resumes on the next attempt. Partial filings are not included in population counts. Each chunk is checkpointed so even long files can resume after timeout.
-* The model is [Ollama Qwen2.5 3B](https://ollama.com/library/qwen2.5); GitHub public-repo standard runners use CPU inference at no service charge. Expect many runs; actual throughput depends on document lengths and runner speed. Free does **not** mean immediate or unlimited concurrent compute. [GitHub standard runners](https://docs.github.com/en/actions/reference/runners/github-hosted-runners) are free on public repositories; [GitHub Models was retired July 30, 2026](https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/).
+* The model is [IBM Granite 4.2 3B](https://ollama.com/library/granite4.2) (developed by US-based IBM Research and released under the Apache 2.0 open-source license); GitHub public-repo standard runners use CPU inference at no service charge. Expect many runs; actual throughput depends on document lengths and runner speed. Free does **not** mean immediate or unlimited concurrent compute. [GitHub standard runners](https://docs.github.com/en/actions/reference/runners/github-hosted-runners) are free on public repositories; [GitHub Models was retired July 30, 2026](https://github.blog/changelog/2026-07-01-github-models-is-being-fully-retired-on-july-30-2026/).
 
 ## Outputs / analyses
 
