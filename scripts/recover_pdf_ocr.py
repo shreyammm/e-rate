@@ -194,6 +194,8 @@ def main():
     ap.add_argument('--timeout',type=int,default=120,help='Seconds per rendered page')
     ap.add_argument('--limit',type=int,default=None,help='Try first N PDFs; rerun without limit afterward')
     ap.add_argument('--force',action='store_true',help='Reprocess even if verified result already exists')
+    ap.add_argument('--include-remaining-pdfs',action='store_true',
+                    help='Include 12 separately audited PDF coverage gaps in the OCR queue')
     a=ap.parse_args()
     if a.dpi<72 or a.dpi>300:ap.error('--dpi must be from 72 to 300')
     if a.limit is not None and a.limit<1:ap.error('--limit must be positive')
@@ -205,6 +207,23 @@ def main():
     documents,_=read_csv(base/'documents_manifest.csv')
     by_key={(x['submission_id'],x['document_number']):x for x in documents}
     review,_=read_csv(review_path)
+    initial_review_count=len(review)
+    extra_count=0
+    if a.include_remaining_pdfs:
+        extra_path=audit/'additional_recovery/additional_pdf_review_queue.csv'
+        if not extra_path.is_file():
+            ap.error(f'Run scripts/reconcile_remaining_pdfs.py first; missing {extra_path}')
+        extras,_=read_csv(extra_path)
+        known={(x['submission_id'],x['document_number']) for x in review}
+        for extra in extras:
+            key=(extra['submission_id'],extra['document_number'])
+            if extra['triage_class']!='ocr_candidate_existing_extraction_discrepancy':
+                raise RuntimeError(f'Unexpected additional OCR queue classification: {key}')
+            if key in known:
+                raise RuntimeError(f'Duplicate main/additional OCR queue key: {key}')
+            known.add(key)
+        review += extras
+        extra_count=len(extras)
     to_ocr=[]
     for r in review:
         key=(r['submission_id'],r['document_number'])
@@ -217,7 +236,8 @@ def main():
             actual_hash=sha256(original.read_bytes())
             if actual_hash.casefold()!=d['sha256'].casefold():
                 raise RuntimeError(f'Source hash mismatch for {key}; resolve integrity discrepancy before OCR')
-        if r['triage_class'] not in {'ocr_candidate_image_based','no_native_text_no_image_detected'}:
+        if r['triage_class'] not in {'ocr_candidate_image_based','no_native_text_no_image_detected',
+                                     'ocr_candidate_existing_extraction_discrepancy'}:
             continue
         to_ocr.append(r)
     if a.limit is not None:to_ocr=to_ocr[:a.limit]
@@ -248,7 +268,10 @@ def main():
     errors=sum(x['status']!='completed' for x in records.values())
     summary={'generated_utc':datetime.now(timezone.utc).isoformat(),
              'method_version':METHOD_VERSION,'engine':name,
-             'pdfs_in_full_review_queue':len(review),'pdfs_selected_this_run':len(to_ocr),
+             'pdfs_in_full_review_queue':initial_review_count,
+             'additional_pdf_gaps_included':extra_count,
+             'total_pdf_review_queue_this_run':len(review),
+             'pdfs_selected_this_run':len(to_ocr),
              'recorded_ocr_documents':len(records),'completed':complete,
              'completed_with_nonempty_text':nonempty,'incomplete_or_error':errors,
              'source_data_unchanged':True,
