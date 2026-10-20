@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 from scripts.llm_census import (split_text,load_corpus,process_record,
-                                summarize,validate_chunk,digest,params_key)
+                                summarize,validate_chunk,digest,params_key,ALLOWED_MODELS,ollama_call)
 
 
 class LLMCensusTests(unittest.TestCase):
@@ -33,6 +33,27 @@ class LLMCensusTests(unittest.TestCase):
                            'argument':'Lost access for children',
                            'evidence_quote':'Without these funds, children will lose affordable internet access.',
                            'uncertain':False}]}
+
+    def test_us_developed_apache_licensed_model_allowlist(self):
+        self.assertEqual(ALLOWED_MODELS, frozenset({'granite4.2:3b', 'granite4.2:8b'}))
+
+    def test_granite_request_disables_thinking_and_requires_json(self):
+        captured={}
+        class FakeResponse:
+            def __enter__(self):return self
+            def __exit__(self,*exc):return False
+            def read(self,*args):
+                return json.dumps({"message":{"content":json.dumps({"claims":[]})}}).encode()
+        def mock_urlopen(req,timeout):
+            captured.update(json.loads(req.data))
+            return FakeResponse()
+        with patch('urllib.request.urlopen',mock_urlopen):
+            result=ollama_call([{'role':'user','content':'test'}],
+                               'granite4.2:3b','http://localhost:11434/api/chat')
+        self.assertEqual(captured['model'],'granite4.2:3b')
+        self.assertIs(captured['think'],False)
+        self.assertEqual(captured['format'],'json')
+        self.assertEqual(result['claims'],[])
 
     def test_verbatim_and_invalid_claim_rejection(self):
         chunk={'text':self.body,'start':0,'end':len(self.body)}
