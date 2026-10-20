@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-from scripts.llm_census import (split_text,load_corpus,process_record,
+from scripts.llm_census import (split_text,load_corpus,process_record, reuse_exact_text_classifications,
                                 summarize,validate_chunk,digest,params_key,ALLOWED_MODELS,ollama_call)
 
 
@@ -37,7 +37,7 @@ class LLMCensusTests(unittest.TestCase):
                            'uncertain':False}]}
 
     def test_us_developed_apache_licensed_model_allowlist(self):
-        self.assertEqual(ALLOWED_MODELS, frozenset({'ibm/granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b'}))
+        self.assertEqual(ALLOWED_MODELS, frozenset({'ibm/granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b', 'ibm/granite4.2:8b'}))
 
     def test_granite_request_disables_thinking_and_requires_json(self):
         captured={}
