@@ -134,6 +134,29 @@ with tabs[2]:
             st.plotly_chart(fig,use_container_width=True)
     else:
         st.info('Run `python3 -m erate.topics --corpus ~/Downloads/fcc_complete_corpus` to generate a provisional theme map.')
+    if snapshot:
+        comp=snapshot/'theme_comparison'
+        p=comp/'topic_alignment.csv'
+        summaryp=comp/'topic_comparison_summary.json'
+        if p.is_file() and summaryp.is_file():
+            st.divider()
+            st.subheader('Compare themes before and after OCR')
+            match=json.loads(summaryp.read_text(encoding='utf-8'))
+            c1,c2,c3=st.columns(3)
+            c1.metric('Common filings',f"{match['filings_in_both_views']:,}")
+            c2.metric('Newly eligible after OCR',f"{match['filings_newly_eligible_after_ocr']:,}")
+            c3.metric('Topic assignment stability',f"{100*match['matched_topic_assignment_stability_on_common']:.1f}%")
+            st.caption('Topic matching maximizes assignment overlap among filings appearing in BOTH models. Models are independently fitted; a high match is not proof of identical meaning, a correct theme or a policy position.')
+            align=pd.read_csv(p,keep_default_na=False)
+            st.dataframe(align,hide_index=True,use_container_width=True)
+            additions=comp/'ocr_newly_eligible_by_topic.csv'
+            if additions.is_file():
+                st.subheader('Where newly eligible OCR filings appear')
+                extra=pd.read_csv(additions,keep_default_na=False)
+                st.dataframe(extra,hide_index=True,use_container_width=True)
+            st.caption('Representative source-linked filings for human review are in the local theme_comparison/human_theme_review_sample.csv.')
+        else:
+            st.caption('For a before/after comparison, run: python3 scripts/compare_topic_views.py --corpus ~/Downloads/fcc_complete_corpus --snapshot-id ocr_candidate_v1')
 with tabs[3]:
     st.subheader('Independent data-quality checks')
     st.caption('Collection status is NOT a pass/fail indicator for text readability.')
