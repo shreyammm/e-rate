@@ -62,6 +62,28 @@ function initMetrics(){
  ]){const col=el('div','');col.append(el('strong','',n),el('p','note',t));row.append(col);}
  quality.append(row,el('p','note','The strongest published claims require source review. We do not label all issue mentions as positions or assume that every filing represents an independent commenter.'));
 }
+function renderDirectionalEvidence(){
+ const box=$('directional-evidence');if(!box)return;clear(box);
+ const row=summary.directional_signals?.[0];
+ if(!row)return;
+ const heading=el('div','panel-head');heading.append(el('h2','','Corpus-wide directional language (preliminary)'),
+   el('span','','Targeted expression matching · not a validated stance classifier'));box.append(heading);
+ const vals=el('div','record-line');
+ for(const [n,label] of [[row.filings,'Filings with explicit continuation/preservation wording'],
+  [summary.issues.find(x=>x.id==='sunset_or_narrow').n,'Filings mentioning sunset/narrowing (any direction)']]){
+  const item=el('div','');item.append(el('strong','',number(n)),el('p','note',label));vals.append(item);
+ }
+ box.append(vals,el('p','note',row.manual_spot_check+' The result is a phrase-based lower-bound signal, not the total number of supportive commenters. A naive search for support of E-Rate elimination incorrectly picked up filings quoting the FCC proposal; no whole-corpus pro-sunset tally is published.'));
+ const sub=el('div','panel-head');sub.append(el('h3','','Preservation-language signals by provisional filer category'));box.append(sub);
+ const track=el('div','');
+ const pairs=Object.entries(row.role_counts).map(([id,n])=>({id,label:roleNames[id]||id,n})).sort((a,b)=>b.n-a.n);
+ for(const p of pairs){
+  const line=el('div','bar-row');line.append(el('span','bar-label',p.label));
+  const outer=el('div','bar-track'),fill=el('div','bar-fill');fill.style.width=(p.n/pairs[0].n*100)+'%';outer.append(fill);
+  line.append(outer,el('span','bar-value',number(p.n)));track.append(line);
+ }
+ box.append(track);
+}
 function selectedExamples(){
  const pid=$('position-proposal').value,dir=$('position-direction').value;
  return summary.examples.filter(e=>(!pid||e.issue===pid)&&(!dir||e.position===dir));
@@ -204,7 +226,7 @@ async function main(){
     allRecords=index.filings;publishedIndex=true;
     $('explorer-loaded').textContent=number(allRecords.length)+' source-linked filing records indexed';
   }catch(e){indexFallback();}
-  initMetrics();setFilters();drawPositions();drawAlignment();drawArguments();drawRoles();
+  initMetrics();setFilters();renderDirectionalEvidence();drawPositions();drawAlignment();drawArguments();drawRoles();
   document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>openTab(b.dataset.view)));
   window.addEventListener('hashchange',()=>openTab(location.hash.slice(1)));
   openTab(location.hash.slice(1)||'overview');
