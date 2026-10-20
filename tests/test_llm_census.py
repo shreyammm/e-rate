@@ -105,7 +105,7 @@ class LLMCensusTests(unittest.TestCase):
         shards=self.src/'shards'
         shards.mkdir()
         row={**self.row,'text_sha256':digest(self.body)}
-        payload=(json.dumps(row)+'\\n').encode('utf-8').replace(b'\\\\n',b'\\n')
+        payload=(json.dumps(row)+chr(10)).encode('utf-8')
         shard=shards/'filings-0001.jsonl.gz'
         shard.write_bytes(gzip.compress(payload,mtime=0))
         metadata={'records':1,'shards':[{'name':shard.name,
