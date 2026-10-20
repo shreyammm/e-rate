@@ -15,6 +15,14 @@ class PublicFilingIndexTests(unittest.TestCase):
         self.assertEqual(list(ISSUES),[x['id'] for x in aggregate['issues']])
         self.assertEqual(sum(x['filings'] for x in aggregate['roles']),3231)
         self.assertTrue(all('n' in r for r in aggregate['issues']))
+        self.assertEqual(sum(int(r['filings']) for r in aggregate['roles']),3231)
+        self.assertEqual(sum(aggregate['directional_signals'][0]['role_counts'].values()),
+                         aggregate['directional_signals'][0]['filings'])
+        for issue in aggregate['issues']:
+            self.assertEqual(sum(aggregate['issue_role_matrix'][issue['id']].values()),
+                             issue['n'])
+        self.assertEqual(len({r['id'] for r in aggregate['examples']}),
+                         len(aggregate['examples']))
         self.assertGreater(len(aggregate['examples']),10)
         self.assertTrue(all(r['filing'].isdigit() for r in aggregate['examples']))
         self.assertFalse(any('filer_raw' in r for r in aggregate['examples']))
