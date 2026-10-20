@@ -56,7 +56,9 @@ def load_corpus(input_dir: Path | None, corpus: Path | None, snapshot_id: str,
         paths = ([uncompressed] if uncompressed.is_file() else []) + shards
         if paths:
             manifest_path = input_dir / 'manifest.json'
-            if shards and manifest_path.is_file():
+            if shards and not manifest_path.is_file():
+                raise ValueError('Compressed corpus shards require a manifest.json')
+            if shards:
                 metadata = json.loads(manifest_path.read_text(encoding='utf-8'))
                 expected = {x['name']: x for x in metadata.get('shards', [])}
                 if len(expected) != len(shards) or set(expected) != {p.name for p in shards}:
