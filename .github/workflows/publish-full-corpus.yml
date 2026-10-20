@@ -1,0 +1,62 @@
+name: Publish complete FCC text explorer
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/fcc_corpus/**'
+      - 'scripts/publish_full_corpus.py'
+      - 'docs/corpus.html'
+      - 'docs/assets/corpus.js'
+      - '.github/workflows/publish-full-corpus.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: erate-corpus-publication
+  cancel-in-progress: false
+
+jobs:
+  build-public-corpus:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate all source text and published shard checksums
+        run: |
+          python3 -m compileall -q scripts/publish_full_corpus.py
+          python3 -m scripts.publish_full_corpus --verify-only
+      - name: Build browsable public full-text corpus
+        run: |
+          python3 -m scripts.publish_full_corpus
+          node --check docs/assets/corpus.js
+      - name: Check completeness of public text copy
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          index=json.loads(Path('docs/data/full_corpus_index.json').read_text())
+          assert index['records']==3231
+          assert index['records_with_text']==3230
+          for record in index['filings']:
+              assert (Path('docs/data/full_text_shards')/record['shard']).is_file()
+          print('Verified', index['records'], 'filings and', index['records_with_text'], 'full transcripts')
+          PY
+      - name: Commit complete published text index and shards
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/full_corpus_index.json docs/data/full_text_shards
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish complete source-linked FCC filing texts for reader'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo 'Published corpus is unchanged.'
+          fi
