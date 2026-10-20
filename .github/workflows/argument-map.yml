@@ -47,9 +47,13 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          # This output is generated from a complete immutable source snapshot.
+          # Rebase BEFORE creating the generated commit; otherwise simultaneous
+          # public-site publications can cause add/add conflicts in the JSON.
+          git fetch origin main
+          git reset --mixed origin/main
           git add -- docs/data/argument_landscape.json
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh all-filings argument map and source-backed LLM debate clusters'
-            git pull --rebase origin main
             git push origin HEAD:main
           fi
