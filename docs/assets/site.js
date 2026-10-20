@@ -27,6 +27,18 @@ function render(){
       detail.append(badges);
       const note=node('p','results-note','Counts include only individually reviewed filing/provision pairs. They are NOT percentages of all commenters.');
       detail.append(note);
+      const nArguments=Number(record.reviewed_argument_count||0);
+      if(nArguments){
+        const group=node('div','argument-analysis');
+        group.append(node('h4','','Arguments found in reviewed filings'),
+          node('p','results-note',nArguments+' manually validated argument rows. These are multiple possible claims per filing, not additional commenters.'));
+        const argumentsList=node('div','badges');
+        for(const [kind,n] of Object.entries(record.reviewed_argument_types||{})){
+          if(Number(n)>0)argumentsList.append(node('span','badge',kind.replaceAll('_',' ')+': '+n));
+        }
+        group.append(argumentsList);
+        detail.append(group);
+      }
       const examples=record.evidence||[];
       if(examples.length){
         const list=node('ul','examples');
