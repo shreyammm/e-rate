@@ -38,6 +38,8 @@ class PublicFilingIndexTests(unittest.TestCase):
     def test_do_not_bulk_publish_person_names(self):
         self.assertEqual(safe_org_display('Avery Johnson','unresolved'),'')
         self.assertEqual(safe_org_display('Avery Johnson | Riverview School District','school'),'')
+        self.assertEqual(safe_org_display('Avery Johnson - Riverview School District','school'),'')
+        self.assertEqual(safe_org_display('Avery Johnson, Riverview School District','school'),'')
         self.assertEqual(safe_org_display('example@example.com','nonprofit'),'')
         self.assertEqual(safe_org_display('Canyon School District','school'),'Canyon School District')
 
