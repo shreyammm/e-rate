@@ -84,6 +84,62 @@ function renderDirectionalEvidence(){
  }
  box.append(track);
 }
+function showCensusProposals(census){
+ const t=$('census-proposals');if(!t)return;clear(t);
+ const rows=[...census.provisions].sort((a,b)=>b.mentions-a.mentions);
+ for(const r of rows){
+  const tr=el('tr');const name=provisions[r.id]?.label||r.id.replaceAll('_',' ');
+  tr.append(el('td','',name),el('td','num',number(r.mentions)),
+   el('td','num',number(r.agency_type_candidates)),
+   el('td','num',number(r.other_docket_signature)));
+  t.append(tr);
+ }
+}
+async function installFullTextRoles(){
+ const [census,roles]=await Promise.all([
+   loadJson('./data/exhaustive_census.json'),
+   loadJson('./data/full_text_filer_roles.json')
+ ]);
+ if(census.coverage.filings!==allRecords.length||roles.expected_records!==allRecords.length||
+   allRecords[0].id!==roles.expected_first_id||
+   allRecords[allRecords.length-1].id!==roles.expected_last_id){
+   throw Error('Full-text role index is inconsistent with publication corpus');
+ }
+ if(typeof DecompressionStream!=='function')throw Error('Browser does not support compressed role map');
+ const compressed=Uint8Array.from(atob(roles.sequence),c=>c.charCodeAt(0));
+ const inflated=new Blob([compressed]).stream().pipeThrough(new DecompressionStream('gzip'));
+ const codeString=await new Response(inflated).text();
+ if(codeString.length!==allRecords.length)throw Error('Reconciled role count mismatch');
+ const observed={};
+ for(let i=0;i<codeString.length;i++){
+   const code=codeString[i],name=roles.legend[code];
+   if(!name)throw Error('Unknown role code');
+   observed[code]=(observed[code]||0)+1;
+   allRecords[i].role=name;
+ }
+ for(const [key,n] of Object.entries(roles.expected_code_counts)){
+   if(observed[key]!==n)throw Error('Role count integrity check failed for '+key);
+ }
+ const computed=Object.fromEntries(census.roles.map(r=>[r.id,0]));
+ for(const rec of allRecords)computed[rec.role]=(computed[rec.role]||0)+1;
+ if(census.roles.some(r=>computed[r.id]!==r.filings))throw Error('Aggregate roles do not reconcile to all records');
+ summary.roles=census.roles.map(r=>({
+   id:r.id,label:r.label,filings:r.filings,distinct_filer_fields:r.distinct_filer_fields
+ }));
+ for(const r of summary.roles)roleNames[r.id]=r.label;
+ summary.issue_role_matrix={};
+ for(const [i,issue] of summary.issues.entries()){
+   const counts={};
+   for(const row of allRecords){
+     if(Number(row.issues)&(1<<i))counts[row.role]=(counts[row.role]||0)+1;
+   }
+   const sum=Object.values(counts).reduce((a,b)=>a+b,0);
+   if(sum!==issue.n)throw Error('Issue cross-tab mismatch '+issue.id);
+   summary.issue_role_matrix[issue.id]=counts;
+ }
+ showCensusProposals(census);
+ return census;
+}
 function selectedExamples(){
  const pid=$('position-proposal').value,dir=$('position-direction').value;
  return summary.examples.filter(e=>(!pid||e.issue===pid)&&(!dir||e.position===dir));
@@ -248,6 +304,14 @@ async function main(){
     if(!Array.isArray(index.filings)||index.filings.length!==summary.indexed_filings)throw new Error('partial publication');
     if(JSON.stringify(index.issue_keys)!==JSON.stringify(summary.issues.map(i=>i.id)))throw new Error('incompatible issue index');
     allRecords=index.filings;publishedIndex=true;
+    try{
+      const fullCensus=await installFullTextRoles();
+      $('explorer-loaded').textContent=number(allRecords.length)+' filings indexed · full-text-derived provisional commenter categories';
+      summary.full_census=fullCensus;
+    }catch(e){
+      console.warn('Unable to reconcile latest role counts:',e);
+      $('explorer-loaded').textContent='Full filing index available; legacy name-field roles (full-text role update unavailable)';
+    }
     $('explorer-loaded').textContent=number(allRecords.length)+' source-linked filing records indexed';
   }catch(e){indexFallback();}
   initMetrics();setFilters();renderDirectionalEvidence();drawPositions();drawAlignment();drawArguments();drawRoles();drawIssueRoleComparison();
