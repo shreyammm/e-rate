@@ -106,10 +106,39 @@ function showCensusProposals(census){
   t.append(tr);
  }
 }
+function installArgumentByRole(census,matrix){
+ const sel=$('argument-role-family'),body=$('argument-role-table');
+ if(!sel||!body)return;
+ if(JSON.stringify(matrix.role_ids)!==JSON.stringify(census.roles.map(x=>x.id))){
+   throw Error('Published argument role matrix has a different role taxonomy');
+ }
+ const byId=Object.fromEntries(census.argument_language_signals.map(r=>[r.id,r]));
+ for(const r of census.argument_language_signals){
+  const counts=matrix.counts_by_argument[r.id];
+  if(!counts||counts.length!==census.roles.length||
+     counts.reduce((a,b)=>a+Number(b),0)!==r.filings_with_language){
+     throw Error('Argument-by-role data do not reconcile: '+r.id);
+  }
+  sel.append(new Option(r.label,r.id));
+ }
+ sel.value='continuity_without_sunset';
+ function render(){
+  clear(body);const ids=matrix.counts_by_argument[sel.value];
+  const rows=census.roles.map((r,i)=>({...r,matches:ids[i]})).sort((a,b)=>b.matches-a.matches);
+  for(const r of rows){
+   const tr=el('tr');
+   tr.append(el('td','',r.label),el('td','num',number(r.matches)),
+     el('td','num',number(r.filings)),el('td','num',(r.filings?100*r.matches/r.filings:0).toFixed(1)+'%'));
+   body.append(tr);
+  }
+ }
+ sel.addEventListener('change',render);render();
+}
 async function installFullTextRoles(){
- const [census,roles]=await Promise.all([
+ const [census,roles,argumentMatrix]=await Promise.all([
    loadJson('./data/exhaustive_census.json'),
-   loadJson('./data/full_text_filer_roles.json')
+   loadJson('./data/full_text_filer_roles.json'),
+   loadJson('./data/argument_language_by_role.json')
  ]);
  if(census.coverage.filings!==allRecords.length||roles.expected_records!==allRecords.length||
    allRecords[0].id!==roles.expected_first_id||
@@ -150,6 +179,7 @@ async function installFullTextRoles(){
  }
  showCensusProposals(census);
  showPositionCensus(census);
+ installArgumentByRole(census,argumentMatrix);
  const argumentRows=(census.argument_language_signals||[]).map(a=>({
    label:a.label,n:a.filings_with_language,id:a.id
  })).sort((a,b)=>b.n-a.n);
