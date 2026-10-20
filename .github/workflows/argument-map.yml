@@ -30,6 +30,22 @@ jobs:
         run: |
           python3 -m scripts.build_argument_map
           node --check docs/assets/argument_map.js
+      - name: Cache US open model for automatic argument synthesis
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: erate-ollama-granite4-1b-q4-v1
+      - name: Initialize open-source IBM Granite
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve >/tmp/ollama-argument-map.log 2>&1 &
+          for i in $(seq 1 50); do
+            curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
+          done
+          ollama pull granite4:1b-q4_K_M
+      - name: Describe emerging argument themes with source-linked model evidence
+        run: |
+          python3 -m scripts.label_argument_map --max-groups 16
       - name: Check complete corpus inclusion and reproducible provenance
         run: |
           python3 - <<'PY'
@@ -52,7 +68,7 @@ jobs:
           # public-site publications can cause add/add conflicts in the JSON.
           git fetch origin main
           git reset --mixed origin/main
-          git add -- docs/data/argument_landscape.json
+          git add -- docs/data/argument_landscape.json data/argument_labels
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh all-filings argument map and source-backed LLM debate clusters'
             git push origin HEAD:main
