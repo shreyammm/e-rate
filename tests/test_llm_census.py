@@ -157,6 +157,27 @@ class LLMCensusTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'shard SHA-256 mismatch'):
             load_corpus(self.src,None,'ocr_candidate_v1','augmented')
 
+    def test_exact_text_duplicate_reuses_cited_analysis_with_independent_filing_id(self):
+        model='ibm/granite4.2:8b'
+        first=dict(self.row)
+        second={**self.row,'submission_id':'26110077818',
+                'source_url':'https://www.fcc.gov/ecfs/filing/26110077818',
+                'filer_raw':'District B'}
+        self.assertEqual(process_record(first,self.book,self.out,model,'local',6500,350,call=self.model),'complete')
+        count=reuse_exact_text_classifications([first,second],self.out,self.book,model,6500,350)
+        self.assertEqual(count,1)
+        copied=json.loads((self.out/'filings'/f"{second['submission_id']}.json").read_text())
+        self.assertEqual(copied['status'],'complete')
+        self.assertEqual(copied['submission_id'],second['submission_id'])
+        self.assertEqual(copied['source_url'],second['source_url'])
+        self.assertEqual(copied['filer_raw'],'District B')
+        self.assertEqual(copied['reused_exact_text_inference_from'],first['submission_id'])
+        self.assertEqual(copied['claims'][0]['evidence_quote'],
+                         'Without these funds, children will lose affordable internet access.')
+        modified={**second,'text':second['text']+' Extra source wording.'}
+        self.assertEqual(reuse_exact_text_classifications([first,modified],self.out,
+                                                     self.book,model,6500,350),0)
+
     def test_no_text_not_faked(self):
         row={**self.row,'text':'','submission_id':'26110077817'}
         process_record(row,self.book,self.out,'fake','local',5800,400,call=lambda *a:self.fail('called'))
