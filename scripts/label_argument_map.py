@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 INPUT=ROOT/'docs/data/argument_landscape.json'
 CACHE=ROOT/'data/argument_labels'
-MODEL='granite4:1b-q4_K_M'
+MODEL='ibm/granite4:1b-q4_K_M'
 URL='http://127.0.0.1:11434/api/chat'
 
 
