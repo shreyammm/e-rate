@@ -86,7 +86,10 @@
   async function renderAuditQueue() {
     const root=$('llm-review');root.replaceChildren();
     try{
-      const response=await fetch('./data/llm_audit_queue.json',{cache:'no-store'});
+      let response=await fetch(dataset.model==='ibm/granite4.2:8b'
+        ? './data/llm_mac_audit_queue.json' : './data/llm_audit_queue.json',{cache:'no-store'});
+      if(!response.ok && dataset.model==='ibm/granite4.2:8b')
+        response=await fetch('./data/llm_audit_queue.json',{cache:'no-store'});
       if(!response.ok)throw Error('not yet available');
       const queue=await response.json();
       if(queue.publication_status!=='MACHINE_GENERATED_REVIEW_SUGGESTIONS_ONLY')
@@ -120,7 +123,21 @@
       root.append(line);
     }
   }
-  fetch('./data/llm_exploratory.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('not yet present');return r.json();}).then(d=>{
+  // Prefer more capable locally computed Granite 4.2 8B annotations when
+  // published, falling back to the unattended free 1B/legacy preview.
+  async function preferredAnalysis(){
+    for(const p of ['./data/llm_mac_exploratory.json','./data/llm_exploratory.json']){
+      try {
+        const r=await fetch(p,{cache:'no-store'});
+        if(!r.ok)continue;
+        const d=await r.json();
+        if(d.publication_status==='EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS'
+           && d.completed_filings>0)return d;
+      } catch (_) { /* Next published output may be usable. */ }
+    }
+    throw Error('No published machine-coded filings yet');
+  }
+  preferredAnalysis().then(d=>{
     if(d.publication_status!=='EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS')throw Error('unexpected status');
     dataset=d;status.textContent=`Exploratory machine coding · ${d.model} · updated ${new Date(d.generated_utc).toLocaleString()}. NOT human-validated.`;
     $('llm-stats').append(metric(d.indexed_filings,'Indexed filings in the available corpus'),
