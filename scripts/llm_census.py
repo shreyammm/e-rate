@@ -161,8 +161,8 @@ def ollama_call(messages: list[dict], model: str, url: str,
                 answer=json.load(res)
             content=answer.get('message',{}).get('content','')
             obj=json.loads(content)
-            if not isinstance(obj,dict) or not isinstance(obj.get('claims',[]),list):
-                raise ValueError('Malformed JSON shape from LLM')
+            if not isinstance(obj,dict) or 'claims' not in obj or not isinstance(obj['claims'],list):
+                raise ValueError('Malformed JSON shape from LLM (missing claims array)')
             return obj
         except (urllib.error.URLError,TimeoutError,ValueError,KeyError) as exc:
             if attempt==2: raise RuntimeError(f'Ollama generation failed: {exc}') from exc
@@ -179,7 +179,7 @@ def validate_chunk(raw: dict, chunk: dict, whole: str, book: dict) -> dict:
         if not isinstance(c,dict):rejected+=1;continue
         q=str(c.get('evidence_quote') or '').strip()[:1400]
         pid=c.get('provision_id');position=c.get('position')
-        if not q or q not in chunk['text'] or pid not in pidset or position not in POSITIONS:
+        if len(q)<15 or q not in chunk['text'] or pid not in pidset or position not in POSITIONS:
             rejected+=1;continue
         local_offset=chunk['text'].find(q)
         offset=chunk['start']+local_offset
@@ -195,7 +195,8 @@ def validate_chunk(raw: dict, chunk: dict, whole: str, book: dict) -> dict:
                          'uncertain':bool(c.get('uncertain',False))})
     role=raw.get('stakeholder_role',UNKNOWN)
     rolequote=str(raw.get('stakeholder_quote') or '').strip()
-    if role not in roles or (role!=UNKNOWN and not rolequote in chunk['text']):role=UNKNOWN
+    if role not in roles or (role!=UNKNOWN and (not rolequote or rolequote not in chunk['text'])):
+        role=UNKNOWN
     return {'summary':str(raw.get('summary') or '')[:500],
             'stakeholder_role':role,'stakeholder_quote':rolequote if role!=UNKNOWN else '',
             'claims':accepted,'invalid_claims_rejected':rejected}
@@ -218,8 +219,9 @@ def fuse_chunks(parts: list[dict]) -> dict:
         stance={c['position'] for c in claims if c['provision_id']==pid}
         # Conflicting stances within one filing must NOT be resolved by majority vote.
         positions[pid]=next(iter(stance)) if len(stance)==1 else 'conflicting_or_multiple'
+    inferred_role=next(iter(roles)) if len(roles)==1 else UNKNOWN
     return {'summary':' '.join(summaries)[:1300],
-            'stakeholder_role':roles.most_common(1)[0][0] if roles else UNKNOWN,
+            'stakeholder_role':inferred_role,
             'claims':claims,'positions':positions,
             'invalid_claims_rejected':invalid}
 
