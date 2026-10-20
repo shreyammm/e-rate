@@ -74,3 +74,27 @@ python3 -m erate.topics --corpus ~/Downloads/fcc_complete_corpus --topics 12
 ```
 
 This creates deterministic, provisional TF-IDF/NMF topics and a 2D SVD projection that can be explored in the **Theme explorer** dashboard tab. Its categories are **not** policy positions, and the map should not be used for publication before the OCR and human-validity review. Duplicate normalized texts are fit only once, and original filing counts are retained for plotting. Long filings may be truncated for model input, with the truncation count reported explicitly.
+
+### Corrected quality gate (after the first 2026-10-20 audit)
+
+The original v0.1 report incorrectly counted **short combined text** as
+**missing/ambiguous** because of a substring match on flags. The corrected
+count uses actual combined-file matches. The original v0.1 exact-duplicate
+count was also invalid: downloader-generated headings contain each unique FCC
+filing ID, defeating equality tests. The corrected detector excludes ONLY
+those generated headings and page markers when hashing substantive text; it
+preserves originals on disk.
+
+To rerun the audit with the fixes and triage the 194 flagged PDF attachments:
+
+```bash
+cd ~/Downloads/e-rate
+git pull --ff-only
+zsh run_first_audit.command
+python3 scripts/pdf_deep_audit.py --corpus ~/Downloads/fcc_complete_corpus
+```
+
+This read-only PDF review differentiates likely scanned/image-based files,
+extraction mismatches, genuinely short native text, and PDFs needing manual
+visual review. It does **not** rewrite, repair, or OCR source documents;
+these diagnostic categories are not verified content-recovery outcomes.

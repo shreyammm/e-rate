@@ -1,6 +1,6 @@
 import csv, json, tempfile, unittest
 from pathlib import Path
-from erate.engine import analyze, normalized_text, filer_key, read_csv, sha256, write_csv, local_path
+from erate.engine import analyze, normalized_text, filer_key, read_csv, sha256, write_csv, local_path, substantive_text
 from erate.annotation import SCHEMA, validate, make_sample
 from erate.near_duplicates import jaccard, shingles
 
@@ -41,9 +41,27 @@ class TestCorpus(unittest.TestCase):
         self.assertEqual(summary['filer_keys_exact_normalized_unverified'],2)
         self.assertEqual(summary['largest_single_filer_count'],2)
         self.assertEqual(summary['filings_in_exact_duplicate_clusters'],2)
+        self.assertEqual(summary['filings_with_missing_or_ambiguous_combined_text'],0)
         self.assertEqual(summary['document_quality_flag_counts']['pdf_text_100_chars_or_fewer_review_ocr'],1)
         self.assertIn('possibly_extraction_placeholder',summary['document_quality_flag_counts'])
         self.assertEqual(before,(self.base/'filings_manifest.csv').read_bytes())
+
+    def test_filing_id_headings_do_not_prevent_duplicate_detection(self):
+        text='I am concerned about the E-Rate proposal because it may affect rural connectivity.'
+        (self.base/'combined_text/111.txt').write_text('===== FCC DIRECT TEXT 111 =====\n'+text)
+        (self.base/'combined_text/112.txt').write_text('===== FCC DIRECT TEXT 112 =====\n'+text)
+        summary=analyze(self.base,self.out)
+        self.assertEqual(summary['exact_duplicate_clusters'],1)
+        self.assertEqual(summary['filings_in_exact_duplicate_clusters'],2)
+        self.assertEqual(summary['filings_with_missing_or_ambiguous_combined_text'],0)
+        a,_=read_csv(self.out/'filing_inventory.csv')
+        matches=[r for r in a if r['submission_id'] in ('111','112')]
+        self.assertEqual(len({r['normalized_text_sha256'] for r in matches}),1)
+
+    def test_page_markers_and_blob_only_not_substantive(self):
+        text='===== FCC ATTACHMENT 998/1 =====\n===== PAGE 1 =====\nA meaningful statement.'
+        self.assertEqual(substantive_text(text),('A meaningful statement.',2))
+        self.assertEqual(substantive_text('blob:https://example.invalid/abc'),('',0))
 
     def test_unsafe_path_rejected(self):
         with self.assertRaises(ValueError):local_path(self.base,'../../etc/passwd')
@@ -65,3 +83,11 @@ class TestCorpus(unittest.TestCase):
         self.assertEqual(jaccard(a,a),1)
 
 if __name__ == '__main__':unittest.main()
+
+class TestPdfDeepAudit(unittest.TestCase):
+    def test_triage_distinguishes_missing_extraction_from_scans(self):
+        from scripts.pdf_deep_audit import triage
+        self.assertEqual(triage(1,1,200,0)[0], 'extraction_pipeline_mismatch')
+        self.assertEqual(triage(1,1,0,1)[0], 'ocr_candidate_image_based')
+        self.assertEqual(triage(1,1,0,0)[0], 'no_native_text_no_image_detected')
+        self.assertEqual(triage(50,10,300,0)[0], 'inspection_incomplete')
