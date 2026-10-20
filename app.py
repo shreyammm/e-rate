@@ -13,6 +13,8 @@ st.set_page_config(page_title='E-Rate Comment Observatory',page_icon='📡',layo
 def load(csv_path,summary_path):
     df=pd.read_csv(csv_path, dtype={'submission_id':str, 'filer_key':str},keep_default_na=False)
     summary=json.loads(Path(summary_path).read_text())
+    if 'text_chars' not in df.columns:df['text_chars']=0
+    if 'document_count' not in df.columns:df['document_count']=0
     df['text_chars']=pd.to_numeric(df['text_chars'],errors='coerce').fillna(0).astype(int)
     df['document_count']=pd.to_numeric(df['document_count'],errors='coerce').fillna(0).astype(int)
     df['date']=pd.to_datetime(df['date_submission'],errors='coerce',utc=True)
@@ -48,7 +50,6 @@ if snapshot:
     df['text_chars']=pd.to_numeric(df[f'{col}_chars'],errors='coerce').fillna(0).astype(int)
     df['normalized_text_sha256']=df[f'{col}_sha256']
     df['filer_key']=df['filer_raw'].map(filer_key)
-    dup=df[df.normalized_text_sha256!=''].groupby('normalized_text_sha256')['submission_id'].transform('size')
     df['exact_duplicate_cluster_id']=''
     dup_hashes=df.loc[df.normalized_text_sha256!='','normalized_text_sha256'].value_counts()
     ids={k:f'exact_{i+1:05}' for i,k in enumerate(sorted(dup_hashes[dup_hashes>1].index))}
