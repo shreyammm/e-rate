@@ -11,6 +11,10 @@
     wrap.append(node('blockquote','',`“${c.evidence_quote}”`));
     if(/^https:\/\/www\.fcc\.gov\//.test(c.source_url)){
       const a=node('a','','FCC filing '+c.submission_id+' ↗');a.href=c.source_url;a.rel='noopener noreferrer';a.target='_blank';wrap.append(a);
+      wrap.append(document.createTextNode(' · '));
+      const full=node('a','','Read entire text ↗');
+      full.href='./corpus.html?id='+encodeURIComponent(c.submission_id);
+      wrap.append(full);
     }
     return wrap;
   }
@@ -38,6 +42,60 @@
       target.append(card);
     }
   }
+  function renderQuality(d){
+    const q=$('llm-quality');q.replaceChildren();
+    const entries=[
+      ['Filings with model-rejected or unmatched evidence', d.machine_evidence_quality?.filings_with_rejected_quotes_or_codes],
+      ['Rejected evidence/claim rows',d.machine_evidence_quality?.invalid_claim_rows_rejected],
+      ['Filings with uncertain claims',d.machine_evidence_quality?.filings_with_uncertain_claims],
+      ['OCR-candidate filings completed',d.machine_evidence_quality?.ocr_candidate_filings],
+      ['Filings with conflicting extracted positions',d.machine_evidence_quality?.filings_with_conflicting_claims],
+      ['Filings without grounded policy claims',d.machine_evidence_quality?.filings_without_grounded_positions],
+      ['Suggested source-linked human checks',d.suggested_human_audit_count]
+    ];
+    for(const [name,n] of entries){
+      const line=node('div','llm-row');
+      line.append(node('span','',name),node('strong','',n==null?'Not yet available':n.toLocaleString()));
+      q.append(line);
+    }
+  }
+  function showRoleMatrix(){
+    const p=dataset.provisions.find(x=>x.provision_id===$('llm-role-proposal').value);
+    const root=$('llm-role-positions');root.replaceChildren();
+    if(!p)return;
+    const entries=Object.entries(p.inferred_role_by_position||{})
+      .map(([role,count])=>({role,total:Object.values(count).reduce((a,b)=>a+Number(b||0),0),count}))
+      .sort((a,b)=>b.total-a.total);
+    if(!entries.length){root.append(node('p','','No source-grounded positions completed for this provision yet.'));return;}
+    const table=node('table');const head=node('thead');const tr=node('tr');
+    for(const label of ['Inferred stakeholder role','Support','Oppose','Conditional','Alternative','Other / conflicting','Total filed positions'])
+      tr.append(node('th','',label));
+    head.append(tr);table.append(head);
+    const body=node('tbody');
+    for(const r of entries){
+      const row=node('tr');
+      const other=r.total-(r.count.support||0)-(r.count.oppose||0)-
+        (r.count.conditional_or_amend||0)-(r.count.alternative_proposal||0);
+      for(const v of [nice(r.role),r.count.support||0,r.count.oppose||0,
+          r.count.conditional_or_amend||0,r.count.alternative_proposal||0,other,r.total])
+        row.append(node('td','',v));
+      body.append(row);
+    }
+    table.append(body);root.append(table);
+  }
+  function renderPairs(d){
+    const labels=Object.fromEntries(d.provisions.map(x=>[x.provision_id,x.label]));
+    const root=$('llm-cooccurrence');root.replaceChildren();
+    const pairs=(d.issue_cooccurrences||[]).slice(0,12);
+    if(!pairs.length){root.append(node('p','','Issue co-occurrence will appear as filings finish processing.'));return;}
+    for(const p of pairs){
+      const line=node('div','llm-row');
+      line.append(node('span','',(labels[p.provision_a]||p.provision_a)+' + '+
+          (labels[p.provision_b]||p.provision_b)),
+        node('strong','',Number(p.filings).toLocaleString()+' filings'));
+      root.append(line);
+    }
+  }
   fetch('./data/llm_exploratory.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('not yet present');return r.json();}).then(d=>{
     if(d.publication_status!=='EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS')throw Error('unexpected status');
     dataset=d;status.textContent=`Exploratory machine coding · ${d.model} · updated ${new Date(d.generated_utc).toLocaleString()}. NOT human-validated.`;
@@ -48,12 +106,18 @@
     const reason=$('llm-reasons');const top=Object.entries(d.argument_reason_counts||{}).sort((a,b)=>b[1]-a[1]).slice(0,10);
     if(!top.length)reason.append(node('p','','No claim estimates yet. The scheduled batches will update this section.'));
     for(const [r,n] of top){const line=node('div','llm-row');line.append(node('span','',nice(r)),node('strong','',n+' argument rows'));reason.append(line);}
+    renderQuality(d);renderPairs(d);
+    const roleSelect=$('llm-role-proposal');
+    const ordered=[...d.provisions].sort((a,b)=>Number(b.filings_mentioning)-Number(a.filings_mentioning));
+    for(const p of ordered){const opt=node('option','',p.label);opt.value=p.provision_id;roleSelect.append(opt);}
+    roleSelect.addEventListener('change',showRoleMatrix);
+    if(ordered.length)showRoleMatrix();
     const select=$('llm-category');for(const cat of [...new Set(d.provisions.map(p=>p.category))].sort()){
       const op=node('option','',nice(cat));op.value=cat;select.append(op);
     }
     for(const id of ['llm-query','llm-category','llm-stance'])$(id).addEventListener('input',render);
     render();
-  }).catch(()=>{status.textContent='Awaiting the source-comment export and first successful scheduled LLM batch. No machine results have been generated or published yet.';
+  }).catch(()=>{status.textContent='The corpus is published, but the first complete LLM results are not yet available. No machine-derived findings will be shown before successfully processed filings exist.';
     $('llm-stats').append(metric(0,'Processed filings (nothing inferred yet)'));
-    target.append(node('p','','Once corpus text is available in the repository, GitHub Actions can begin free resumable analysis.'));});
+    target.append(node('p','','Source texts are available in the full corpus reader. The free Granite workflow is processing comments in resumable batches.'));});
 })();
