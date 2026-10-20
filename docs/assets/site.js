@@ -1,7 +1,7 @@
 'use strict';
 const $=id=>document.getElementById(id);
 const number=n=>Number(n||0).toLocaleString('en-US');
-const roleNames={unresolved:'No indicated institutional affiliation',school:'School/district/education',nonprofit:'Advocacy/association',library:'Library',government:'Government/Tribal body',business:'Other business',telecom:'Telecom/network organization',consultant:'Consultant/service firm'};
+const roleNames={unresolved:'Unresolved role',school:'School/district/education',school_district:'School, district or education role',nonprofit:'Advocacy/association',advocacy_nonprofit:'Advocacy/association affiliation',library:'Library role or institution',government:'Government/public authority',tribal_government:'Tribal government',business:'Other business',business_other:'Other business',telecom:'Telecom/network group',telecom_provider:'Telecom/provider role',consultant:'Consultant/service firm',parent_guardian:'Parent/guardian',individual_public:'Explicit individual/public role'};
 const statusNames={support:'Support',oppose:'Oppose',conditional:'Conditional/amend',alternative:'Alternative'};
 const issueKeyMap={sunset_or_narrow:'erate_sunset',cipa_filtering:'cipa_social_media',screen_limits:'screen_time_condition',competitive_bidding:'administrative_forms',consultant_rules:'consultant_registration',radiofrequency:'erate_eligibility_scope',discount_matrix:'discount_matrix',special_construction:'special_construction',parent_opt_out:'parent_opt_out'};
 const argumentCategories=[
