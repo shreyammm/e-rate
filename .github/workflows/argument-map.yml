@@ -1,0 +1,55 @@
+name: Auto-update complete FCC argument landscape
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build_argument_map.py'
+      - 'data/fcc_corpus/**'
+      - '.github/workflows/argument-map.yml'
+  schedule:
+    - cron: '43 */4 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: erate-argument-landscape
+  cancel-in-progress: false
+jobs:
+  landscape:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install argument clustering tools
+        run: python3 -m pip install 'scikit-learn>=1.5,<2'
+      - name: Scan full source corpus and map candidate debate themes
+        run: |
+          python3 -m scripts.build_argument_map
+          node --check docs/assets/argument_map.js
+      - name: Check complete corpus inclusion and reproducible provenance
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('docs/data/argument_landscape.json').read_text())
+          src=json.loads(Path('data/fcc_corpus/manifest.json').read_text())
+          assert m['source_filings_scanned']==src['records']==3231
+          assert m['readable_filings']==src['records_with_text']==3230
+          assert m['source_archive_sha256']==src['source_archive_sha256']
+          assert m['language_themes']
+          print('PASS: all filing records scanned and evidence-linked argument themes published')
+          PY
+      - name: Publish evolving argument landscape to public research site
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/argument_landscape.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh all-filings argument map and source-backed LLM debate clusters'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
