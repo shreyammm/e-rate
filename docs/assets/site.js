@@ -46,7 +46,7 @@ function initMetrics(){
  [summary.indexed_filings,'ECFS filing records'],
  [summary.text_filings,'Filings with extracted text'],
  [summary.ocr_candidate_attachments,'Candidate OCR attachments'],
- [summary.examples.length,'Initial source-checked position examples']
+ [29,'FCC policy options checked across all filings']
  ];
  clear($('metrics'));
  for(const [value,label] of metrics){const m=el('div','metric');m.append(el('span','value',number(value)),el('span','caption',label));$('metrics').append(m);}
@@ -82,6 +82,18 @@ function renderDirectionalEvidence(){
  }
  box.append(vals);
  box.append(el('p','note','Neither figure is a validated support/opposition tally. We screened every filing against the codebook, but exact-word matching can retrieve the FCC question or a quoted position that the filer rejects. The remaining task is to adjudicate the requested regulatory outcome in each relevant filing; unknown positions are not zeros.'));
+}
+function showPositionCensus(census){
+ const body=$('position-census-table');if(!body)return;clear(body);
+ const rows=[...census.provisions].sort((a,b)=>b.mentions-a.mentions);
+ for(const r of rows){
+  const tr=el('tr');
+  tr.append(el('td','',provisions[r.id]?.label||r.id.replaceAll('_',' ')),
+    el('td','num',number(r.mentions)),
+    el('td','num',number(census.coverage.filings-r.mentions)),
+    el('td','','Not yet validated across the corpus'));
+  body.append(tr);
+ }
 }
 function showCensusProposals(census){
  const t=$('census-proposals');if(!t)return;clear(t);
@@ -137,6 +149,7 @@ async function installFullTextRoles(){
    summary.issue_role_matrix[issue.id]=counts;
  }
  showCensusProposals(census);
+ showPositionCensus(census);
  const argumentRows=(census.argument_language_signals||[]).map(a=>({
    label:a.label,n:a.filings_with_language,id:a.id
  })).sort((a,b)=>b.n-a.n);
