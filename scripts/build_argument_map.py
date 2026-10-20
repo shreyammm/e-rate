@@ -129,7 +129,9 @@ def model_argument_map(by_id,fastdir):
     claims=[];done=set();scan=0
     # Prefer new fast annotations, while exposing older verified checkpoints
     # until the faster pipeline catches up. Never double count a filing.
-    sources=[fastdir/'filings', ROOT/'data/llm_census/filings']
+    # Higher-capacity local 8B model takes precedence when the same filing has
+    # also been processed by a smaller free GitHub CPU model.
+    sources=[ROOT/'data/llm_census_mac/filings', fastdir/'filings', ROOT/'data/llm_census/filings']
     for fp in [f for directory in sources for f in sorted(directory.glob('*.json'))]:
         try:r=json.loads(fp.read_text(encoding='utf-8'))
         except (OSError,ValueError):continue
