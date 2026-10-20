@@ -1,4 +1,6 @@
 import json
+import gzip
+import hashlib
 import tempfile
 import unittest
 from pathlib import Path
@@ -98,6 +100,22 @@ class LLMCensusTests(unittest.TestCase):
         rows=load_corpus(self.src,None,'ocr_candidate_v1','augmented')
         self.assertEqual(rows[0]['submission_id'],self.sid)
         self.assertEqual(rows[0]['text'],self.body)
+
+    def test_checksum_verified_compressed_corpus_shards(self):
+        shards=self.src/'shards'
+        shards.mkdir()
+        row={**self.row,'text_sha256':digest(self.body)}
+        payload=(json.dumps(row)+'\\n').encode('utf-8').replace(b'\\\\n',b'\\n')
+        shard=shards/'filings-0001.jsonl.gz'
+        shard.write_bytes(gzip.compress(payload,mtime=0))
+        metadata={'records':1,'shards':[{'name':shard.name,
+                  'sha256':hashlib.sha256(shard.read_bytes()).hexdigest()}]}
+        (self.src/'manifest.json').write_text(json.dumps(metadata))
+        records=load_corpus(self.src,None,'ocr_candidate_v1','augmented')
+        self.assertEqual(records[0]['text'],self.body)
+        shard.write_bytes(shard.read_bytes()+b'corruption')
+        with self.assertRaisesRegex(ValueError,'shard SHA-256 mismatch'):
+            load_corpus(self.src,None,'ocr_candidate_v1','augmented')
 
     def test_no_text_not_faked(self):
         row={**self.row,'text':'','submission_id':'26110077817'}
