@@ -28,7 +28,7 @@ SEGMENT_FIELDS=['submission_id','segment_id','document_number','source_kind','so
                 'text_sha256','text_chars','included_baseline','included_augmented',
                 'evidence_path','review_status']
 FILING_FIELDS=['submission_id','date_submission','submission_type','filer_raw','source_url',
-               'status','agency_record_candidate','baseline_chars','augmented_chars',
+               'status','agency_record_candidate','document_count','baseline_chars','augmented_chars',
                'baseline_sha256','augmented_sha256','baseline_segment_count',
                'augmented_segment_count','ocr_candidate_attachment_count',
                'has_unreviewed_ocr','coverage_class','quality_flags']
@@ -185,6 +185,7 @@ def build(base: Path, run_id: str = 'ocr_candidate_v1') -> dict:
                 'submission_type':f['submission_type'],'filer_raw':f['filers'],
                 'source_url':f['source_url'],'status':f['status'],
                 'agency_record_candidate':int(f['submission_type'].strip().casefold() in AGENCY_TYPES),
+                'document_count':len(docs_by_id[sid]),
                 'baseline_chars':len(baseline),'augmented_chars':len(augmented),
                 'baseline_sha256':sha256(normalized_text(baseline).encode()) if baseline else '',
                 'augmented_sha256':sha256(normalized_text(augmented).encode()) if augmented else '',
