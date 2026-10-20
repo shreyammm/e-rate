@@ -15,49 +15,48 @@
     {
       "id": "named_person_capacity_unstated",
       "label": "Personal-name filer; capacity not stated",
-      "filings": 924,
       "distinct_filer_fields": 906
     },
     {
       "id": "school_district_or_school",
       "label": "School or district organization",
-      "filings": 857,
+      "filings": 757,
       "distinct_filer_fields": 841
     },
     {
       "id": "educator_or_school_staff",
       "label": "Educator / school staff",
-      "filings": 449,
+      "filings": 372,
       "distinct_filer_fields": 443
     },
     {
       "id": "advocacy_nonprofit_or_trade_association",
       "label": "Advocacy / nonprofit / association",
-      "filings": 429,
+      "filings": 499,
       "distinct_filer_fields": 80
     },
     {
       "id": "library_or_library_system",
       "label": "Library institution or staff",
-      "filings": 237,
+      "filings": 316,
       "distinct_filer_fields": 233
     },
     {
       "id": "unresolved",
       "label": "Commenter type cannot be established",
-      "filings": 143,
+      "filings": 803,
       "distinct_filer_fields": 141
     },
     {
       "id": "parent_guardian",
       "label": "Self-identified parent or guardian",
-      "filings": 78,
+      "filings": 76,
       "distinct_filer_fields": 78
     },
     {
       "id": "government_or_tribal_organization",
       "label": "Government / elected / Tribal body",
-      "filings": 36,
+      "filings": 52,
       "distinct_filer_fields": 35
     },
     {
@@ -69,25 +68,25 @@
     {
       "id": "school_connected_voice_capacity_unconfirmed",
       "label": "School-connected, official capacity unclear",
-      "filings": 25,
+      "filings": 288,
       "distinct_filer_fields": 25
     },
     {
       "id": "consultant_or_e_rate_services_firm",
       "label": "E-Rate consultant or service firm",
-      "filings": 8,
+      "filings": 16,
       "distinct_filer_fields": 6
     },
     {
       "id": "researcher_or_health_professional",
       "label": "Researcher or health professional",
-      "filings": 4,
+      "filings": 3,
       "distinct_filer_fields": 4
     },
     {
       "id": "student",
       "label": "Student",
-      "filings": 2,
+      "filings": 4,
       "distinct_filer_fields": 2
     }
   ],
@@ -390,5 +389,12 @@
     "unresolved_type": 143,
     "school_connected_capacity_unconfirmed": 25,
     "human_verified_identity_count": null
+  },
+  "role_reconciliation_v3": {
+    "previous_unresolved": 984,
+    "new_unresolved": 803,
+    "reclassified_from_unresolved": 181,
+    "method": "Conservative institutional identifiers from filer field plus first-person/role signatures in opening 1800 and closing 650 characters. Remains provisional; this is not a semantic LLM or complete proof of identity.",
+    "remaining_person_name_like_fields": 598
   }
 }
