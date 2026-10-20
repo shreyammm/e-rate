@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from erate.engine import read_combined
+from erate.engine import read_combined, filer_key
 
 st.set_page_config(page_title='E-Rate Comment Observatory',page_icon='📡',layout='wide')
 
@@ -13,6 +13,8 @@ st.set_page_config(page_title='E-Rate Comment Observatory',page_icon='📡',layo
 def load(csv_path,summary_path):
     df=pd.read_csv(csv_path, dtype={'submission_id':str, 'filer_key':str},keep_default_na=False)
     summary=json.loads(Path(summary_path).read_text())
+    if 'text_chars' not in df.columns:df['text_chars']=0
+    if 'document_count' not in df.columns:df['document_count']=0
     df['text_chars']=pd.to_numeric(df['text_chars'],errors='coerce').fillna(0).astype(int)
     df['document_count']=pd.to_numeric(df['document_count'],errors='coerce').fillna(0).astype(int)
     df['date']=pd.to_datetime(df['date_submission'],errors='coerce',utc=True)
@@ -20,16 +22,44 @@ def load(csv_path,summary_path):
 
 cli=argparse.ArgumentParser(add_help=False)
 cli.add_argument('--corpus',type=Path,default=Path.home()/'Downloads/fcc_complete_corpus')
+cli.add_argument('--snapshot-id',default=None,help='Immutable research snapshot run ID')
+cli.add_argument('--view',choices=['baseline','augmented'],default='baseline')
 args,_=cli.parse_known_args([x for x in sys.argv[1:] if x != "--"])
 corpus=args.corpus.expanduser()
 analysis=corpus/'analysis_observatory'
-if not (analysis/'filing_inventory.csv').is_file():
-    st.error(f'Analysis outputs not found: {analysis}. Run python3 -m erate.engine --corpus "{corpus}" first.')
+snapshot=None
+if args.snapshot_id:
+    import re
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,80}',args.snapshot_id):
+        st.error('Invalid snapshot ID')
+        st.stop()
+    snapshot=analysis/f'research_snapshot_{args.snapshot_id}'
+    inventory_path=snapshot/'research_inventory.csv'
+    summary_path=snapshot/'snapshot_summary.json'
+    topic_dir=snapshot/f'themes_{args.view}'
+else:
+    inventory_path=analysis/'filing_inventory.csv'
+    summary_path=analysis/'summary.json'
+    topic_dir=analysis
+if not inventory_path.is_file():
+    st.error(f'Analysis outputs not found: {inventory_path}')
     st.stop()
+df,summary=load(str(inventory_path),str(summary_path))
+if snapshot:
+    col='baseline' if args.view=='baseline' else 'augmented'
+    df['text_chars']=pd.to_numeric(df[f'{col}_chars'],errors='coerce').fillna(0).astype(int)
+    df['normalized_text_sha256']=df[f'{col}_sha256']
+    df['filer_key']=df['filer_raw'].map(filer_key)
+    df['exact_duplicate_cluster_id']=''
+    dup_hashes=df.loc[df.normalized_text_sha256!='','normalized_text_sha256'].value_counts()
+    ids={k:f'exact_{i+1:05}' for i,k in enumerate(sorted(dup_hashes[dup_hashes>1].index))}
+    df['exact_duplicate_cluster_id']=df['normalized_text_sha256'].map(ids).fillna('')
+    df['quality_flags']=df['quality_flags'].fillna('')
 
-df,summary=load(str(analysis/'filing_inventory.csv'),str(analysis/'summary.json'))
 st.title('FCC E-Rate Comment Observatory')
 st.caption('WC Dockets 26-133, 13-184, 21-93, 21-455 • FCC 26-41 • Local research build')
+if snapshot:
+    st.warning(f"Snapshot {args.snapshot_id} · {args.view} text view. OCR candidates are NOT human-verified transcripts. Exploratory comparisons only; do not publish stance percentages.",icon='⚠️')
 st.info('Counts below describe ECFS filings, not representative public opinion. Identity matching uses exact-normalized filer strings; stakeholder types, policy positions and themes remain unclassified until validated.',icon='ℹ️')
 with st.sidebar:
     st.header('Explore')
@@ -39,6 +69,8 @@ with st.sidebar:
     quality=st.selectbox('Text-quality filter',['All','Flagged rows only','Unflagged rows only'])
     search=st.text_input('Filer name or submission ID')
     show_agency=st.checkbox('Include agency-record candidates',value=True)
+    if snapshot:
+        st.caption(f'Text source: {args.view}; OCR candidates included only in augmented view')
     st.caption('Agency candidates are identified by submission type and need manual verification.')
 filtered=df[df['submission_type'].isin(types)&df['status'].isin(statuses)].copy()
 if not show_agency:filtered=filtered[filtered['agency_record_candidate'].astype(str)!='1']
@@ -78,7 +110,7 @@ with tabs[1]:
     st.caption('Whitespace- and Unicode-normalized text hash. Each filing remains separately counted; exact copies are not deleted.')
     cluster_count=filtered[filtered.exact_duplicate_cluster_id!=''].groupby('exact_duplicate_cluster_id').agg(filings=('submission_id','size'),example=('submission_id','first')).sort_values('filings',ascending=False).reset_index()
     st.dataframe(cluster_count.head(200),hide_index=True,use_container_width=True)
-    p=analysis/'near_duplicate_candidates.csv'
+    p=(analysis/'near_duplicate_candidates.csv') if not snapshot else snapshot/'near_duplicate_candidates.csv'
     if p.is_file():
         st.subheader('Potential near-duplicate templates (needs human verification)')
         st.dataframe(pd.read_csv(p).head(500),hide_index=True,use_container_width=True)
@@ -87,10 +119,10 @@ with tabs[1]:
 with tabs[2]:
     st.subheader('Exploratory map of recurring language')
     st.caption('NMF thematic topics and SVD text projection are descriptive, unsupervised starting points — not semantic proof of agreement, sentiment or policy position. Validate against original passages.')
-    topicp=analysis/'exploratory_topic_map.csv'
+    topicp=topic_dir/'exploratory_topic_map.csv'
     if topicp.is_file():
         mapping=pd.read_csv(topicp,dtype={'submission_id':str})
-        topicsp=analysis/'exploratory_topics.csv'
+        topicsp=topic_dir/'exploratory_topics.csv'
         tdf=pd.read_csv(topicsp)
         st.dataframe(tdf,hide_index=True,use_container_width=True)
         joined=mapping.merge(filtered[['submission_id','filer_raw','submission_type','text_chars']],on='submission_id',how='inner')
@@ -120,7 +152,7 @@ with tabs[4]:
     st.warning('Policy positions and stakeholder classifications have **not** been automatically assigned. The provisional taxonomy is not a findings table.',icon='⚠️')
     for issue in taxonomy['issues']:
         with st.expander(issue['label']):st.write(issue['question'])
-    path=analysis/'validated_annotations.csv'
+    path=analysis/'validated_annotations.csv'  # Only human evidence-validated labels, independent of snapshot
     if path.is_file():
         ann=pd.read_csv(path,keep_default_na=False,dtype={'submission_id':str})
         if not ann.empty:
@@ -136,9 +168,16 @@ with tabs[5]:
         sid=st.selectbox('Inspect filing content',ids,format_func=lambda x: x+' — '+str(df.loc[df.submission_id==x,'filer_raw'].iloc[0])[:65])
         selected=df.loc[df.submission_id==sid].iloc[0]
         st.markdown(f"[Open original FCC filing]({selected['source_url']})")
-        raw,rel,n=read_combined(corpus,sid)
-        if n==1:st.text_area('Extracted text (read-only)',raw[:120000],height=350)
-        else:st.warning('No single combined-text file found for this filing.')
+        if snapshot:
+            root=snapshot/('baseline_text' if args.view=='baseline' else 'ocr_augmented_text')
+            p=root/f'{sid}.txt'
+            if p.is_file():
+                st.text_area('Versioned analysis text (read-only)',p.read_text(encoding='utf-8')[:120000],height=350)
+            else:st.warning('No substantive text in this versioned view.')
+        else:
+            raw,rel,n=read_combined(corpus,sid)
+            if n==1:st.text_area('Extracted text (read-only)',raw[:120000],height=350)
+            else:st.warning('No single combined-text file found for this filing.')
 with tabs[6]:
     st.subheader('Research method and limitations')
     st.markdown('''- **Population:** ECFS filings indexed in the collected docket snapshot, including agency documents until verified and separated.

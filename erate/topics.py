@@ -10,17 +10,43 @@ from pathlib import Path
 import numpy as np
 from sklearn.decomposition import NMF, TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
-from erate.engine import read_csv, read_combined, write_csv
+from erate.engine import read_csv, read_combined, normalized_text, sha256, write_csv
 
 SEED=20261020
 
-def analyze(corpus:Path,analysis:Path,n_topics=12,max_chars=50000):
-    rows,_=read_csv(analysis/'filing_inventory.csv')
+def analyze(corpus:Path,analysis:Path,n_topics=12,max_chars=50000,
+            snapshot_id=None,view='baseline'):
+    if view not in ('baseline','augmented'):
+        raise ValueError('Text view must be baseline or augmented')
+    if snapshot_id:
+        import re
+        if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_-]{0,80}',snapshot_id):
+            raise ValueError('Invalid snapshot identifier')
+        snap=corpus/'analysis_observatory'/f'research_snapshot_{snapshot_id}'
+        rows,_=read_csv(snap/'research_inventory.csv')
+        length_col=('baseline_chars' if view=='baseline' else 'augmented_chars')
+        hash_col=('baseline_sha256' if view=='baseline' else 'augmented_sha256')
+        folder=snap/('baseline_text' if view=='baseline' else 'ocr_augmented_text')
+        output_dir=snap/f'themes_{view}'
+    else:
+        rows,_=read_csv(analysis/'filing_inventory.csv')
+        length_col='text_chars'
+        hash_col='normalized_text_sha256'
+        folder=None
+        output_dir=analysis
     eligible=[]
     for r in rows:
-        if r['text_chars'].isdigit() and int(r['text_chars'])>=200 and r['agency_record_candidate']=='0':
-            raw,_,matches=read_combined(corpus,r['submission_id'])
-            if matches!=1:continue
+        if r[length_col].isdigit() and int(r[length_col])>=200 and r['agency_record_candidate']=='0':
+            if folder is None:
+                raw,_,matches=read_combined(corpus,r['submission_id'])
+                if matches!=1:continue
+            else:
+                path=folder/f"{r['submission_id']}.txt"
+                if not path.is_file():
+                    raise FileNotFoundError(f'Snapshot text file missing: {path}')
+                raw=path.read_text(encoding='utf-8-sig').strip()
+                if sha256(normalized_text(raw).encode('utf-8')) != r[hash_col]:
+                    raise ValueError(f'Text hash mismatch in immutable snapshot: {path}')
             # Beginning + ending instead of just the beginning; log every truncation.
             truncated=len(raw)>max_chars
             body=(raw[:int(max_chars*.7)]+'\n'+raw[-int(max_chars*.3):]) if truncated else raw
@@ -29,7 +55,7 @@ def analyze(corpus:Path,analysis:Path,n_topics=12,max_chars=50000):
     # Avoid exact duplicates driving topic formation, without excluding their filings from scoring.
     fit_indices=[];seen=set()
     for idx,(r,text,truncated) in enumerate(eligible):
-        h=r['normalized_text_sha256'] or r['submission_id']
+        h=r[hash_col] or r['submission_id']
         if h not in seen:
             fit_indices.append(idx); seen.add(h)
     corpus_fit=[eligible[i][1] for i in fit_indices]
@@ -64,9 +90,11 @@ def analyze(corpus:Path,analysis:Path,n_topics=12,max_chars=50000):
           'truncated_for_model':int(truncated),
           'provisional_topic_terms':topics[j]['top_terms'],
           'source_url':r['source_url']})
-    write_csv(analysis/'exploratory_topics.csv',topics,['topic_id','top_terms','description','model','filing_top_topic_count'])
-    write_csv(analysis/'exploratory_topic_map.csv',assignments,['submission_id','topic_id','topic_strength','map_x','map_y','truncated_for_model','provisional_topic_terms','source_url'])
-    desc={'version':'0.1.0','seed':SEED,'method':'TfidfVectorizer(1,2)-word stop words + NMF + 2D TruncatedSVD',
+    output_dir.mkdir(parents=True,exist_ok=True)
+    write_csv(output_dir/'exploratory_topics.csv',topics,['topic_id','top_terms','description','model','filing_top_topic_count'])
+    write_csv(output_dir/'exploratory_topic_map.csv',assignments,['submission_id','topic_id','topic_strength','map_x','map_y','truncated_for_model','provisional_topic_terms','source_url'])
+    desc={'version':'0.2.0','seed':SEED,'source_snapshot_id':snapshot_id,
+          'text_view':view if snapshot_id else 'legacy_combined','method':'TfidfVectorizer(1,2)-word stop words + NMF + 2D TruncatedSVD',
           'n_topics':k,'eligible_filings':len(eligible),'distinct_texts_used_for_fit':len(corpus_fit),
           'truncated_filings':sum(x[2] for x in eligible),'max_characters_input':max_chars,
           'exclusions':'agency_record_candidates; texts <200 characters; missing text',
@@ -76,7 +104,7 @@ def analyze(corpus:Path,analysis:Path,n_topics=12,max_chars=50000):
              'Boilerplate can influence topic terms','Short and flagged scan documents excluded',
              'Near-duplicate templates still overweight independent texts in topic model'],
           'quality_gate_warning':'Inspect flagged PDFs and rerun after OCR before publishing substantive theme prevalence.'}
-    (analysis/'exploratory_topic_method.json').write_text(json.dumps(desc,indent=2)+'\n')
+    (output_dir/'exploratory_topic_method.json').write_text(json.dumps(desc,indent=2)+'\n')
     return desc
 
 def main():
@@ -85,7 +113,10 @@ def main():
     p.add_argument('--analysis',type=Path)
     p.add_argument('--topics',type=int,default=12)
     p.add_argument('--max-chars',type=int,default=50000)
+    p.add_argument('--snapshot-id',default=None,help='Immutable snapshot run ID')
+    p.add_argument('--view',choices=['baseline','augmented'],default='baseline')
     args=p.parse_args()
     out=args.analysis or args.corpus/'analysis_observatory'
-    print(json.dumps(analyze(args.corpus,out,args.topics,args.max_chars),indent=2))
+    print(json.dumps(analyze(args.corpus,out,args.topics,args.max_chars,
+                             args.snapshot_id,args.view),indent=2))
 if __name__=='__main__':main()

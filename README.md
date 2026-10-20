@@ -136,3 +136,34 @@ open ~/Downloads/fcc_complete_corpus/analysis_observatory/ocr_recovery/ocr_revie
 ```
 
 See [remaining PDF gap reconciliation methodology](analysis_methods/remaining_pdf_gap_reconciliation.md). Neither old originals nor canonical combined texts are rewritten; candidate OCR requires manual review before it can be used in substantive findings.
+
+## Reproducible research snapshots and provisional theme analysis
+
+After the 206 PDF OCR candidates were recovered (194 initial and 12 additional),
+create an **immutable, source-traceable local research dataset**:
+
+```bash
+cd ~/Downloads/e-rate
+git pull --ff-only
+python3 scripts/build_research_snapshot.py --corpus ~/Downloads/fcc_complete_corpus --run-id ocr_candidate_v1
+```
+
+The snapshot contains **two separate views**, each with a private filing table, original source links, content hashes, and segment-level provenance:
+
+- **Baseline:** ECFS direct text and original extractions for attachments without OCR candidates.
+- **OCR-augmented:** the baseline plus integrity-checked OCR candidate text for the 206 recovered PDFs (previous broken extraction is not added a second time).
+
+The augmented view is valuable for exploratory comparisons, **but OCR candidates are not yet human-verified evidence**. No source file, historical extracted text, FCC filing status, or OCR transcript is modified.
+
+To compare themes under the two views:
+
+```bash
+python3 -m pip install -r requirements-dashboard.txt
+python3 -m erate.topics --corpus ~/Downloads/fcc_complete_corpus --snapshot-id ocr_candidate_v1 --view baseline
+python3 -m erate.topics --corpus ~/Downloads/fcc_complete_corpus --snapshot-id ocr_candidate_v1 --view augmented
+python3 -m streamlit run app.py -- --corpus ~/Downloads/fcc_complete_corpus --snapshot-id ocr_candidate_v1 --view augmented
+```
+
+The model uses seeded TF-IDF/NMF and lexical SVD for exploration, **not** validated sentiment or FCC policy positions. View changes refit the model, so cluster IDs and 2D axes do not align automatically across runs. See [snapshot research methods](analysis_methods/research_snapshot_methodology.md).
+
+**Keep the snapshot folder private on your Mac.** It includes actual filer names and comment texts and is intentionally excluded from the public GitHub repository.
