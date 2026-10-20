@@ -17,7 +17,7 @@ permissions:
 # Keep each checkpointed model run from overwriting another run's progress.
 concurrency:
   group: erate-llm-census
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   analyze:
@@ -77,10 +77,15 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f data/llm_census/suggested_human_audit.json ]; then
+            cp data/llm_census/suggested_human_audit.json docs/data/llm_audit_queue.json
+          fi
           if [ -d data/llm_census ]; then git add -- data/llm_census; fi
+          if [ -f docs/data/llm_audit_queue.json ]; then git add -- docs/data/llm_audit_queue.json; fi
           if [ -f docs/data/llm_exploratory.json ]; then git add -- docs/data/llm_exploratory.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Checkpoint exploratory LLM census results (machine-only)'
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           else
             echo 'No new results to checkpoint.'
