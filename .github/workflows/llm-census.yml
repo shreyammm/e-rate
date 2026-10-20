@@ -33,7 +33,8 @@ jobs:
       - name: Check whether source comments and outstanding filings exist
         id: pending
         run: |
-          if [ ! -s data/fcc_corpus/filings.jsonl ] && [ ! -d data/fcc_corpus/comments ]; then
+          if [ ! -s data/fcc_corpus/filings.jsonl ] && [ ! -d data/fcc_corpus/comments ] && \
+             [ -z "$(find data/fcc_corpus/shards -maxdepth 1 -type f -name 'filings-*.jsonl.gz' -print -quit 2>/dev/null)" ]; then
             echo 'No corpus checked in. Skipping LLM model download, no fabricated outputs.'
             echo 'run=false' >> "$GITHUB_OUTPUT"
             exit 0
