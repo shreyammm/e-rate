@@ -1,0 +1,82 @@
+name: Free LLM comment census (additive)
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/fcc_corpus/**'
+      - 'scripts/llm_census.py'
+      - 'analysis_methods/provision_codebook_v1.json'
+      - '.github/workflows/llm-census.yml'
+  schedule:
+    - cron: '17 1,5,9,13,17,21 * * *'
+
+permissions:
+  contents: write
+
+# Keep each checkpointed model run from overwriting another run's progress.
+concurrency:
+  group: erate-llm-census
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 210
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check whether source comments and outstanding filings exist
+        id: pending
+        run: |
+          if [ ! -s data/fcc_corpus/filings.jsonl ] && [ ! -d data/fcc_corpus/comments ]; then
+            echo 'No corpus checked in. Skipping LLM model download, no fabricated outputs.'
+            echo 'run=false' >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 -m scripts.llm_census --input-dir data/fcc_corpus --out-dir data/llm_census --pending-only | tee /tmp/erate_pending.log
+          if grep -q '"pending": 0' /tmp/erate_pending.log; then
+            echo 'run=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'run=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Cache downloaded open-weight model
+        if: steps.pending.outputs.run == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: erate-ollama-qwen2.5-3b-v1
+      - name: Install Ollama and free small language model
+        if: steps.pending.outputs.run == 'true'
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          ollama serve >/tmp/ollama.log 2>&1 &
+          for i in $(seq 1 40); do
+            curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
+          done
+          ollama pull qwen2.5:3b
+      - name: Incremental source-cited LLM analysis
+        if: steps.pending.outputs.run == 'true'
+        id: analysis
+        continue-on-error: true
+        run: |
+          python3 -m scripts.llm_census --input-dir data/fcc_corpus \
+            --out-dir data/llm_census --publish-preview docs/data/llm_exploratory.json \
+            --model qwen2.5:3b --limit 100 --max-minutes 175
+      - name: Update aggregate preview and commit durable checkpoints
+        if: always() && steps.pending.outputs.run == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -d data/llm_census ]; then git add -- data/llm_census; fi
+          if [ -f docs/data/llm_exploratory.json ]; then git add -- docs/data/llm_exploratory.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Checkpoint exploratory LLM census results (machine-only)'
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          else
+            echo 'No new results to checkpoint.'
+          fi
