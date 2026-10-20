@@ -75,17 +75,17 @@ python3 -m erate.topics --corpus ~/Downloads/fcc_complete_corpus --topics 12
 
 This creates deterministic, provisional TF-IDF/NMF topics and a 2D SVD projection that can be explored in the **Theme explorer** dashboard tab. Its categories are **not** policy positions, and the map should not be used for publication before the OCR and human-validity review. Duplicate normalized texts are fit only once, and original filing counts are retained for plotting. Long filings may be truncated for model input, with the truncation count reported explicitly.
 
-### Corrected quality gate (after the first 2026-10-20 audit)
+### Corrected v0.2 quality gate (after the first 2026-10-20 audit)
 
-The original v0.1 report incorrectly counted **short combined text** as
-**missing/ambiguous** because of a substring match on flags. The corrected
-count uses actual combined-file matches. The original v0.1 exact-duplicate
-count was also invalid: downloader-generated headings contain each unique FCC
-filing ID, defeating equality tests. The corrected detector excludes ONLY
-those generated headings and page markers when hashing substantive text; it
-preserves originals on disk.
+The original v0.1 report incorrectly counted **short combined text** as **missing/ambiguous**
+combined text because of a substring-based flag check. The corrected count uses
+actual combined-file matches. **Original v0.1 exact-duplicate counts should also
+not be cited**: the downloader embedded each unique FCC filing ID in generated
+combined-text headings, thereby defeating exact text hashes. The corrected
+analyzer strips only recognized downloader-generated source headings and page
+markers for deduplication, while preserving all original content on disk.
 
-To rerun the audit with the fixes and triage the 194 flagged PDF attachments:
+To rerun the audit after pulling the latest GitHub code:
 
 ```bash
 cd ~/Downloads/e-rate
@@ -94,7 +94,27 @@ zsh run_first_audit.command
 python3 scripts/pdf_deep_audit.py --corpus ~/Downloads/fcc_complete_corpus
 ```
 
-This read-only PDF review differentiates likely scanned/image-based files,
-extraction mismatches, genuinely short native text, and PDFs needing manual
-visual review. It does **not** rewrite, repair, or OCR source documents;
-these diagnostic categories are not verified content-recovery outcomes.
+`pdf_deep_review.csv` then separates likely scanned/image-based PDFs, PDFs
+whose text layer was not captured by the previous extractor, short native text,
+and PDFs needing visual/manual review. The classifications are triage hints, not
+validated content recovery. Original attachments remain untouched. **Do not
+publish issue-position rates until the OCR queue has been adjudicated.**
+
+## 2026-10-20 full-corpus audit: OCR recovery gate
+
+The locally supplied corrected v0.1 audit snapshot shows 3,231 indexed filings, 3,029 with nonempty **substantive** text after generated headings are removed, 16 exact normalized-text duplicate clusters (71 filings) and 194 PDFs flagged with <=100 extracted characters. Independent page-level triage inspected all 435 pages and found 193 image-bearing/no-native-text PDFs and one PDF lacking both a text layer and detected raster images. The *images* in these PDFs are candidates for OCR, not proof of the documents' final semantic content. The observed 201 substantive-text gaps and 194 OCR flags may overlap; use `scripts/coverage_diagnostics.py` to reconcile them before interpreting the denominator.
+
+### Local, resumable OCR with source preservation
+
+After `python3 scripts/pdf_deep_audit.py` and `zsh run_first_audit.command`, run:
+
+```bash
+python3 scripts/coverage_diagnostics.py --corpus ~/Downloads/fcc_complete_corpus
+python3 scripts/recover_pdf_ocr.py --corpus ~/Downloads/fcc_complete_corpus --engine vision --limit 3
+# If the 3-file trial succeeds, run the rest:
+python3 scripts/recover_pdf_ocr.py --corpus ~/Downloads/fcc_complete_corpus --engine vision
+```
+
+Apple Vision runs **on device** through a locally compiled Swift helper; `swiftc` must be available. Alternatively use `--engine tesseract` if the `tesseract` executable is already installed. Both backends require `pymupdf` (`python3 -m pip install pymupdf`). Output is saved **only** under `analysis_observatory/ocr_recovery`, with source SHA-256, per-page text and OCR evidence, run manifest, and a JSON summary. Completed outputs are hash-verified and skipped on rerun. The original PDFs, the original text extraction, and the canonical combined text remain untouched. OCR candidates must be visually checked and approved before use in substantive analysis.
+
+The local detail tables and OCR contents are sensitive research working files and should not be committed to this public repository. Share only `coverage_diagnostics_summary.json` and `ocr_summary.json` for aggregate progress reviews.
