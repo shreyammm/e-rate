@@ -17,6 +17,11 @@ import tempfile
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+import sys
+
+# Allow `python3 scripts/build_research_snapshot.py` from any working directory.
+# Direct script execution sets sys.path[0] to scripts/, not the repository root.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from erate.engine import (DOCFIELDS, FIELDS, local_path, normalized_text, read_combined,
                           read_csv, sha256, substantive_text, write_csv)
