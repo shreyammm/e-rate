@@ -79,7 +79,7 @@ def build(source:Path=SOURCE,out:Path=DEST) -> dict:
     buckets=defaultdict(dict)
     for term,flat in postings.items():
         df=len(flat)//2
-        if df<2 or df>=int(len(docs)*0.94):continue
+        if df<2 or df>=len(docs)*0.94:continue
         buckets[term[0]][term]=flat
     out.mkdir(parents=True,exist_ok=True)
     for bucket in sorted(buckets):
