@@ -8,7 +8,7 @@ Only IBM Granite 4.2 3B and 8B are permitted by the program CLI, and the unatten
 
 ## Operation
 
-* The source must be an authoritative `research_snapshot_*` baseline or OCR-augmented text view, or its **portable export** in `data/fcc_corpus/filings.jsonl`. The corpus is one record per **FCC submission ID**, *not* an estimate of distinct people.
+* The source must be an authoritative `research_snapshot_*` baseline or OCR-augmented text view, or its **portable export** in `data/fcc_corpus/filings.jsonl` or checksum-verified gzip JSONL shards under `data/fcc_corpus/shards/`. The corpus is one record per **FCC submission ID**, *not* an estimate of distinct people.
 * Every readable filing, including filings with no keyword hits, gets model processing. Long files use overlapping windows. Each window yields zero to many cited arguments; keyword nonmatches are never coded `not_addressed`.
 * The model receives the draft FCC policy-codebook's exact **option wording**, not just issue names. It extracts proposal-specific stance, FCC action requested, argument, reason family, claim type and verbatim original evidence; a role is only accepted if the filing itself supplies a matching supporting quote. Multiple positions or rationales per filing are preserved.
 * Machine quotes must match the actual text of their source window at an exact character offset, or they are excluded from counted claims. A match validates transcription, **not** coding correctness, truth or external fact-checking.
