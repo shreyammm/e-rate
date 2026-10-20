@@ -19,7 +19,7 @@ PHONE=re.compile(r'(?<!\d)(?:\+1[\s.-]?)?(?:\(\d{3}\)|\d{3})[\s.-]?\d{3}[\s.-]?\
 
 
 def redact_contact(text: str) -> str:
-    return PHONE.sub('[PHONE REDACTED]',EMAIL.sub('[EMAIL REDACTED]',text)
+    return PHONE.sub('[PHONE REDACTED]',EMAIL.sub('[EMAIL REDACTED]',text))
 
 
 def select_sample(pairs: list[dict], n_per_provision=4, seed=20261020) -> list[dict]:
