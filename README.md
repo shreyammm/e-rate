@@ -118,3 +118,21 @@ python3 scripts/recover_pdf_ocr.py --corpus ~/Downloads/fcc_complete_corpus --en
 Apple Vision runs **on device** through a locally compiled Swift helper; `swiftc` must be available. Alternatively use `--engine tesseract` if the `tesseract` executable is already installed. Both backends require `pymupdf` (`python3 -m pip install pymupdf`). Output is saved **only** under `analysis_observatory/ocr_recovery`, with source SHA-256, per-page text and OCR evidence, run manifest, and a JSON summary. Completed outputs are hash-verified and skipped on rerun. The original PDFs, the original text extraction, and the canonical combined text remain untouched. OCR candidates must be visually checked and approved before use in substantive analysis.
 
 The local detail tables and OCR contents are sensitive research working files and should not be committed to this public repository. Share only `coverage_diagnostics_summary.json` and `ocr_summary.json` for aggregate progress reviews.
+
+## Remaining 12 PDF extraction discrepancies (2026-10-20)
+
+After full OCR recovery of the original 194 flagged PDFs, the technical gap report isolated 12 additional PDFs with existing source/extraction files but no substantive text in combined analysis. The 13th outstanding record is the separately retained link-only submission `26110077815`. The 12 are not presumed to be blank, scanned, or unimportant.
+
+A **separate, read-only** provenance workflow handles these PDFs:
+
+```bash
+cd ~/Downloads/e-rate
+git pull --ff-only
+python3 scripts/reconcile_remaining_pdfs.py --corpus ~/Downloads/fcc_complete_corpus
+caffeinate -i python3 scripts/recover_pdf_ocr.py --corpus ~/Downloads/fcc_complete_corpus --engine vision --include-remaining-pdfs
+python3 scripts/ocr_quality_report.py --corpus ~/Downloads/fcc_complete_corpus
+python3 scripts/ocr_review_packet.py --corpus ~/Downloads/fcc_complete_corpus --additional-only
+open ~/Downloads/fcc_complete_corpus/analysis_observatory/ocr_recovery/ocr_review_packet_additional_pdfs.html
+```
+
+See [remaining PDF gap reconciliation methodology](analysis_methods/remaining_pdf_gap_reconciliation.md). Neither old originals nor canonical combined texts are rewritten; candidate OCR requires manual review before it can be used in substantive findings.
