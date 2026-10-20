@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Search and read all available full-text FCC E-Rate public comments, with source IDs and original FCC links.">
+<title>Full FCC Comment Corpus · E-Rate Observatory</title>
+<link rel="stylesheet" href="./assets/site.css">
+<style>
+.corpus-hero{margin:2.2rem 0 1.3rem}.corpus-hero h1{margin:.35rem 0}
+.corpus-note{line-height:1.55;color:var(--muted,#536272)}
+.corpus-grid{display:grid;grid-template-columns:minmax(290px,.9fr) minmax(0,1.5fr);gap:1rem;align-items:start}
+.corpus-panel{border:1px solid #cdd6de;border-radius:12px;padding:1.2rem;min-width:0;background:#fff}
+.corpus-controls{display:flex;gap:.65rem;flex-wrap:wrap;margin:1rem 0}
+.corpus-controls label{display:flex;flex:1 1 150px;flex-direction:column;gap:.3rem;font-weight:600;font-size:.85rem}
+.corpus-controls input,.corpus-controls select,.corpus-search-row input{border:1px solid #adb9c8;border-radius:6px;padding:.6rem;min-width:0;font-size:1rem;width:100%;background:white;color:#17232f}
+.corpus-search-row{display:flex;gap:.6rem;align-items:center;margin:.8rem 0}
+.corpus-search-row button,.corpus-pager button{background:#182e49;color:white;border:0;border-radius:6px;padding:.65rem 1rem;cursor:pointer}
+.corpus-search-row button:disabled,.corpus-pager button:disabled{opacity:.45;cursor:not-allowed}
+.corpus-results{height:min(65vh,850px);overflow:auto;border:1px solid #d7dee5;border-radius:8px}
+.corpus-item{display:block;text-align:left;width:100%;background:#fff;border:0;border-bottom:1px solid #d7dee5;padding:.8rem;cursor:pointer;color:#16283c}
+.corpus-item:hover,.corpus-item[aria-current="true"]{background:#ecf4fa}
+.corpus-item strong{display:block;overflow-wrap:anywhere}.corpus-item small{display:block;margin-top:.22rem;color:#576b80}
+.corpus-item .excerpt{font-size:.81rem;line-height:1.4;display:block;margin-top:.4rem;overflow-wrap:anywhere}
+.corpus-pager{display:flex;gap:.6rem;align-items:center;justify-content:space-between;margin:.8rem 0;flex-wrap:wrap}
+.corpus-reader{min-height:20rem}.corpus-reader h2{overflow-wrap:anywhere}
+.corpus-meta{display:flex;gap:.6rem;flex-wrap:wrap;font-size:.86rem;color:#3c556d}
+.corpus-text{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.65;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86rem;max-height:68vh;overflow:auto;border:1px solid #d5dfe7;border-radius:8px;padding:1rem;background:#f9fbfd;color:#182735}
+.corpus-muted{color:#52687b;font-size:.89rem}.corpus-status{font-weight:600}
+.corpus-links{display:flex;flex-wrap:wrap;gap:1rem;margin:.75rem 0 1.2rem}
+.corpus-links a{font-weight:600}.corpus-title{font-weight:700;font-size:1.1rem}
+.corpus-statline{display:flex;gap:1rem;flex-wrap:wrap;margin:1rem 0}
+.corpus-statline span{padding:.45rem .6rem;background:#f2f6fa;border-radius:7px}
+@media(max-width:900px){.corpus-grid{grid-template-columns:1fr}.corpus-results{max-height:40vh}}
+</style>
+</head><body>
+<header class="site-top"><div class="shell header-row"><div><strong>E-Rate Comment Observatory</strong><span class="subhead">Full-text archive · FCC 26-41</span></div><nav><a href="./">Research dashboard</a> · <a href="./llm.html">LLM analysis</a></nav></div></header>
+<main class="shell">
+<section class="corpus-hero"><h1>Read every available FCC comment</h1>
+<p class="corpus-note">Browse the actual extracted text behind the research, search across every readable filing, and open the original FCC source. This is a fixed October 20, 2026 research snapshot—not the live docket. Recovered OCR is provisional.</p>
+<div id="corpus-stats" class="corpus-statline"></div>
+<p id="corpus-loading" class="corpus-status" role="status">Loading complete corpus index…</p></section>
+<div class="corpus-grid">
+<section class="corpus-panel" aria-label="Search filings">
+<h2>Find filings</h2>
+<div class="corpus-controls"><label>Filing ID or filer name<input id="corpus-filter" type="search" placeholder="District, organization, filing ID"></label>
+<label>Text status<select id="corpus-text-filter"><option value="">All filings</option><option value="text">Has text</option><option value="missing">Missing text</option></select></label>
+<label>OCR candidate<select id="corpus-ocr"><option value="">All</option><option value="yes">Contains OCR</option><option value="no">Native text only</option></select></label>
+<label>Sort<select id="corpus-sort"><option value="recent">Newest date</option><option value="id">Filing ID</option><option value="longest">Longest text</option><option value="shortest">Shortest text</option></select></label></div>
+<p class="corpus-note">For a full-text search, press Search full texts below. It examines all 12 compressed text files (about 78 MB total), and may take a while on slow connections.</p>
+<div class="corpus-search-row"><input id="corpus-full-query" type="search" aria-label="Search all comment text" placeholder="Find exact words anywhere in the corpus"><button type="button" id="corpus-search-full">Search full texts</button></div>
+<p id="corpus-search-status" class="corpus-muted" role="status"></p>
+<div id="corpus-pager" class="corpus-pager"><span id="corpus-count"></span><div><button id="corpus-prev" type="button">Previous</button> <span id="corpus-page"></span> <button id="corpus-next" type="button">Next</button></div></div>
+<div class="corpus-results" id="corpus-results" aria-label="Filing search results"></div>
+</section>
+<section class="corpus-panel corpus-reader" aria-label="Complete source filing">
+<h2 id="corpus-reader-title">Select a filing</h2>
+<div id="corpus-reader-meta" class="corpus-meta"></div>
+<div id="corpus-reader-links" class="corpus-links"></div>
+<p id="corpus-reader-status" class="corpus-muted" role="status">Choose a filing on the left to read its full extracted text.</p>
+<pre class="corpus-text" id="corpus-reader-text" hidden></pre>
+</section>
+</div>
+<section class="corpus-panel" style="margin:1.2rem 0"><h2>What this archive does—and does not—show</h2>
+<p class="corpus-note">Each record is one FCC ECFS submission ID, not necessarily a unique person. Repeated and template submissions remain separate in the archive. Full text is shown as originally extracted into the research snapshot, including candidate OCR that may contain errors. One link-only record has no recovered comment text. Model-generated issue/stance labels belong on the separate LLM analysis page and do not change source text. Names or contact details in public FCC submissions may appear here.</p></section>
+</main><footer><div class="shell">Independent research · <a href="https://github.com/shreyammm/e-rate">Source code &amp; corpus</a> · <a href="https://www.fcc.gov/ecfs/">FCC ECFS</a></div></footer>
+<script src="./assets/corpus.js" defer></script>
+</body></html>
