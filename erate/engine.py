@@ -20,6 +20,9 @@ DOCFIELDS = ['submission_id','document_number','filename','url','local_file','sh
              'file_status','text_file','text_chars','extraction_status','error']
 SUSPICIOUS_TEXT = ('no extractable text','ocr unavailable','no text found','scanned document')
 AGENCY_TYPE_CANDIDATES = {'nprm','notice','pub notice','public draft'}
+# Generated FCC source headings encode a different ID into otherwise identical comments.
+WRAPPER_HEADING = re.compile(r'^===== FCC (?:DIRECT TEXT \d+|ATTACHMENT \d+/\d+) =====$')
+PAGE_HEADING = re.compile(r'^===== PAGE \d+ =====$')
 
 
 def sha256(data: bytes) -> str:
@@ -28,6 +31,20 @@ def sha256(data: bytes) -> str:
 
 def normalized_text(s: str) -> str:
     return re.sub(r'\s+', ' ', unicodedata.normalize('NFKC', s)).strip().casefold()
+
+
+def substantive_text(text: str) -> tuple[str, int]:
+    """Remove only downloader-generated headings for analysis; never alter source files."""
+    out=[];removed=0
+    for line in text.splitlines():
+        if WRAPPER_HEADING.fullmatch(line.strip()) or PAGE_HEADING.fullmatch(line.strip()):
+            removed+=1
+        else:
+            out.append(line)
+    body='\n'.join(out).strip()
+    if re.fullmatch(r'blob:\S+',body,flags=re.I):
+        return '',removed
+    return body,removed
 
 
 def filer_key(s: str) -> str:
@@ -125,11 +142,14 @@ def analyze(base: Path, out: Path):
     by_filer=defaultdict(list); by_hash=defaultdict(list)
     for f in filings:
         sid=f['submission_id'];text,rel,num_matches=read_combined(base,sid)
-        digest=sha256(normalized_text(text).encode('utf-8')) if text.strip() else ''
+        body,removed_headers=substantive_text(text)
+        digest=sha256(normalized_text(body).encode('utf-8')) if body.strip() else ''
         fk=filer_key(f['filers']); words=len(text.split()); chars=len(text.strip()); flags=[]
         if num_matches!=1: flags.append('combined_text_'+('missing' if num_matches==0 else 'ambiguous'))
-        if chars==0: flags.append('no_substantive_combined_text')
+        if chars==0: flags.append('no_combined_text')
         elif chars<=100: flags.append('short_combined_text_review')
+        if not body.strip():flags.append('no_substantive_text_after_wrapper_removal')
+        elif len(body)<=100:flags.append('short_substantive_text_review')
         if '\ufffd' in text:flags.append('replacement_character')
         if re.fullmatch(r'blob:\S+', text.strip(), flags=re.I):flags.append('blob_only')
         if '<html' in text[:200].casefold():flags.append('html_in_combined_text')
@@ -144,8 +164,9 @@ def analyze(base: Path, out: Path):
             'filer_raw':f['filers'], 'filer_key':fk, 'filer_identity_method':'normalized_exact_field',
             'agency_record_candidate':int(f['submission_type'].strip().casefold() in AGENCY_TYPE_CANDIDATES),
             'status':f['status'],'source_url':f['source_url'],'document_count':len(doclist),
-            'combined_text_path':rel,'text_chars':chars,'text_words':words,
-            'normalized_text_sha256':digest,'quality_flags':';'.join(flags),
+            'combined_text_path':rel,'combined_text_file_count':num_matches,'text_chars':chars,'text_words':words,
+            'substantive_text_chars':len(body),'substantive_text_words':len(body.split()),
+            'source_headings_removed':removed_headers,'normalized_text_sha256':digest,'quality_flags':';'.join(flags),
         }
         rows.append(record)
         if fk:by_filer[fk].append(sid)
@@ -188,7 +209,10 @@ def analyze(base: Path, out: Path):
       'filings_by_status':dict(Counter(r['status'] for r in rows)),
       'filings_by_submission_type':dict(Counter(r['submission_type'] for r in rows)),
       'filings_with_nonempty_combined_text':sum(r['text_chars']>0 for r in rows),
-      'filings_with_missing_or_ambiguous_combined_text':sum('combined_text_' in r['quality_flags'] for r in rows),
+      'filings_with_missing_or_ambiguous_combined_text':sum(r['combined_text_file_count']!=1 for r in rows),
+      'filings_with_nonempty_substantive_text':sum(r['substantive_text_chars']>0 for r in rows),
+      'filings_with_short_substantive_text_100_chars_or_fewer':sum(0<r['substantive_text_chars']<=100 for r in rows),
+      'combined_text_source_headings_removed':sum(r['source_headings_removed'] for r in rows),
       'filings_with_short_combined_text_100_chars_or_fewer':sum(0<r['text_chars']<=100 for r in rows),
       'agency_record_candidates_not_verified':sum(r['agency_record_candidate'] for r in rows),
       'filer_keys_exact_normalized_unverified':len(by_filer),
@@ -203,6 +227,7 @@ def analyze(base: Path, out: Path):
       'document_quality_flag_counts':dict(document_flags),
       'warnings':['filing status complete does not mean all PDF content is readable',
                   'exact-normalized filer strings are not verified unique people',
+                  'exact-duplicate hashes exclude generated FCC filing-ID headings and page markers',
                   'near-duplicate template campaigns and stakeholder/stance labels are not yet classified',
                   'agency_record_candidate is based on submission type, not verified identity',
                   'public comments are self-selected, not a population survey'],
