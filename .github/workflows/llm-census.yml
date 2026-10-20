@@ -65,6 +65,7 @@ jobs:
             curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
           done
           ollama pull ibm/granite4:1b-q4_K_M
+          ollama list
       - name: Incremental source-cited LLM analysis
         if: steps.pending.outputs.run == 'true'
         id: analysis
