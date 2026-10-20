@@ -2,7 +2,7 @@
 """Additive, resumable, source-grounded LLM census. Never writes validated research tables.
 
 Works on immutable research snapshots or portable public-repo JSONL exports.
-Uses a free Ollama model (including on GitHub's public-repo standard runners).
+Uses only US-developed Apache-2.0 IBM Granite 4.2 models via Ollama.
 All saved outputs are explicitly *unvalidated* machine estimates.
 """
 from __future__ import annotations
@@ -23,7 +23,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 BOOK = ROOT / 'analysis_methods' / 'provision_codebook_v1.json'
-VERSION = 'llm-census-v1.0.0'
+VERSION = 'llm-census-v1.1.0'
+# IBM Research (US), Apache-2.0 licensed, publicly available in Ollama.
+# The public Actions runner uses the 3B variant; larger variants are optional.
+ALLOWED_MODELS = frozenset({'granite4.2:3b', 'granite4.2:8b'})
 POSITIONS = {'support', 'oppose', 'conditional_or_amend', 'alternative_proposal',
              'discussion_no_position', 'unclear'}
 CLAIM_KINDS = {'normative_value','empirical_claim','predicted_consequence','legal_claim',
@@ -124,7 +127,7 @@ JSON shape: {"summary":"brief descriptive summary", "stakeholder_role":"one perm
 
 def ollama_call(messages: list[dict], model: str, url: str,
                 timeout: int = 210) -> dict:
-    payload=json.dumps({'model':model,'stream':False,'format':'json','messages':messages,
+    payload=json.dumps({'model':model,'stream':False,'think':False,'format':'json','messages':messages,
                         'options':{'temperature':0,'num_ctx':8192,'num_predict':1000}}).encode()
     req=urllib.request.Request(url,method='POST',data=payload,
                                headers={'Content-Type':'application/json'})
@@ -336,7 +339,7 @@ def main(argv=None) -> int:
     p.add_argument('--snapshot-id',default='ocr_candidate_v1')
     p.add_argument('--view',choices=['augmented','baseline'],default='augmented')
     p.add_argument('--out-dir',type=Path,default=Path('data/llm_census'))
-    p.add_argument('--model',default='qwen2.5:3b')
+    p.add_argument('--model',default='granite4.2:3b',choices=sorted(ALLOWED_MODELS),\n                   help='US-developed, Apache-2.0 IBM Granite model')
     p.add_argument('--ollama-url',default='http://127.0.0.1:11434/api/chat')
     p.add_argument('--limit',type=int,default=25,help='Maximum filings to finish per invocation')
     p.add_argument('--max-minutes',type=float,default=160)
