@@ -1,0 +1,53 @@
+name: Build searchable Ask the Corpus index
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build_qa_index.py'
+      - 'data/fcc_corpus/**'
+      - '.github/workflows/build-qa-index.yml'
+permissions:
+  contents: write
+concurrency:
+  group: fcc-qa-index
+  cancel-in-progress: false
+jobs:
+  index:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify Python and construct full-corpus retrieval index
+        run: |
+          python3 -m py_compile scripts/build_qa_index.py
+          python3 -m scripts.build_qa_index
+      - name: Audit corpus coverage and index integrity
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          source=json.loads(Path('data/fcc_corpus/manifest.json').read_text())
+          idx=json.loads(Path('docs/data/qa_index/manifest.json').read_text())
+          assert idx['records']==source['records']==3231
+          assert idx['with_text']==source['records_with_text']==3230
+          assert len(idx['docs'])==source['records']
+          assert len({x['id'] for x in idx['docs']})==3231
+          assert set(idx['buckets'])=={p.stem for p in Path('docs/data/qa_index').glob('?.json')}
+          assert idx['terms_indexed']>10000
+          print('PASS: 3,231 record source-complete index',idx['terms_indexed'],'search terms')
+          PY
+      - name: Publish index for GitHub Pages
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/qa_index
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish full-source index for Ask the Corpus'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
