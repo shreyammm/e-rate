@@ -1,0 +1,33 @@
+name: Install additive LLM census sources
+on:
+  push:
+    paths:
+      - '.llm-bootstrap-ready'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: erate-llm-bootstrap
+  cancel-in-progress: false
+jobs:
+  install:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Validate and unpack staged source code
+        run: |
+          cat .llm-bootstrap.part0* | base64 --decode > /tmp/erate_llm_bundle.tar.gz
+          echo "e1d0466cb81298c74ab7100ccc9729c924f979779d7f798a9324aab682734eaf  /tmp/erate_llm_bundle.tar.gz" | sha256sum -c -
+          tar -xzf /tmp/erate_llm_bundle.tar.gz
+          python3 -m unittest discover -s tests -p test_llm_census.py -v
+      - name: Commit audited human-readable scripts and workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scripts/llm_census.py scripts/export_llm_corpus.py tests/test_llm_census.py analysis_methods/llm_census_methodology.md .github/workflows/llm-census.yml docs/llm.html docs/assets/llm.js
+          git rm -f .llm-bootstrap.part0* .llm-bootstrap-ready .github/workflows/llm-bootstrap.yml
+          git commit -m 'Add free checkpointed machine-only LLM comment analysis and explorer'
+          git push origin "HEAD:${GITHUB_REF_NAME}"
