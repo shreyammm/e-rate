@@ -49,7 +49,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.ollama/models
-          key: erate-ollama-qwen2.5-3b-v1
+          key: erate-ollama-granite4.2-3b-v1
       - name: Install Ollama and free small language model
         if: steps.pending.outputs.run == 'true'
         run: |
@@ -58,7 +58,7 @@ jobs:
           for i in $(seq 1 40); do
             curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
           done
-          ollama pull qwen2.5:3b
+          ollama pull granite4.2:3b
       - name: Incremental source-cited LLM analysis
         if: steps.pending.outputs.run == 'true'
         id: analysis
@@ -66,7 +66,7 @@ jobs:
         run: |
           python3 -m scripts.llm_census --input-dir data/fcc_corpus \
             --out-dir data/llm_census --publish-preview docs/data/llm_exploratory.json \
-            --model qwen2.5:3b --limit 100 --max-minutes 175
+            --model granite4.2:3b --limit 100 --max-minutes 175
       - name: Update aggregate preview and commit durable checkpoints
         if: always() && steps.pending.outputs.run == 'true'
         run: |
