@@ -50,6 +50,10 @@ def make_review_sample(queue: list[dict], all_filings: list[dict],
         result.extend(pool[:per_provision])
     valid=[r for r in all_filings if r.get('augmented_chars','0').isdigit()
            and int(r['augmented_chars'])>0 and r.get('agency_record_candidate')=='0']
+    if negative_controls == 0:
+        for r in result:
+            r.setdefault('selection_stratum','keyword_candidate')
+        return result
     potential=[]
     # Uniform over provisions and filings; not a statistical survey.
     for p in provisions:
@@ -66,11 +70,12 @@ def make_review_sample(queue: list[dict], all_filings: list[dict],
                 })
     rng.shuffle(potential)
     used={(r['submission_id'],r['provision_id']) for r in result}
+    n_negatives=0
     for r in potential:
         key=(r['submission_id'],r['provision_id'])
         if key not in used:
-            result.append(r);used.add(key)
-        if len(result)>=len(used) and sum(x.get('selection_stratum')=='keyword_negative_control' for x in result)>=negative_controls:
+            result.append(r);used.add(key);n_negatives+=1
+        if n_negatives >= negative_controls:
             break
     for r in result:
         r.setdefault('selection_stratum','keyword_candidate')
