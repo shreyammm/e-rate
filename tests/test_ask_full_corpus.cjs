@@ -52,7 +52,7 @@ test('a missing shard refuses a partial full-corpus search',async()=>{
    for(let i=0;i<12;i++){
      if(i===6)continue; // One missing source invalidates the entire run.
      const d=docs[i];
-     const payload=JSON.stringify({submission_id:d.id,text:'E-Rate screen time funding restrictions',filer_raw:d.filer})+'\\n';
+     const payload=JSON.stringify({submission_id:d.id,text:'E-Rate screen time funding restrictions',filer_raw:d.filer})+'\n';
      fs.writeFileSync(path.join(tmp,d.shard),zlib.gzipSync(payload));
    }
    wireSource(tmp);
