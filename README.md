@@ -1,3 +1,13 @@
+## Ask the Corpus: free interactive evidence-grounded Q&A
+
+[Open **Ask the Corpus**](https://shreyammm.github.io/e-rate/ask.html) to ask natural-language questions about the October 20, 2026 FCC E-Rate corpus. This **adds** an interactive retrieval-plus-generation lane; it does **not** replace the existing, separately automated IBM Granite per-filing analytical census.
+
+- **All original comments searchable:** GitHub Actions runs `scripts/build_qa_index.py`, a complete-document lexical index over the 3,231 filing records (3,230 available texts). It builds reproducible compact document-level term-posting files at `docs/data/qa_index/`. The search index excludes singleton OCR terms and common function words from fast retrieval, but never truncates the source texts. Search the complete source-text archive for rare expressions the fast index misses.
+- **Retrieve, then answer:** JavaScript ranks relevant filings using document-length-adjusted scoring, opens original compressed source files, extracts source-exact evidence excerpts and presents their ECFS IDs and clickable full-text/original-FCC links. It diversifies retrieved filers to mitigate repeated submissions dominating evidence.
+- **US-developed open-source generative model:** Microsoft **Phi-3.5 Mini**, MIT licensed, runs in the reader's browser using WebLLM/WebGPU. No ChatGPT account, paid API, API key or cloud inference server is needed. The first generation downloads several GB of weights and requires a compatible browser and GPU (~3.7 GB VRAM). In unsupported environments the exact-source evidence retrieval remains useful, but the page does **not** fabricate a generated answer.
+- **Evidence boundaries:** Answers are explicitly identified as machine-generated, citations are linkable to the source, and quoted source assertions are not fact-checked. Retrieval cannot justify aggregate stance percentages, representative samples or majority claims. Use the separate per-filing Granite census (itself unvalidated until reviewed) for population-wide coding, and inspect original scans where OCR is uncertain.
+- **Refresh:** Push changed source snapshots to trigger `.github/workflows/build-qa-index.yml`. Its CI validates source shard and per-filing SHA-256 hashes, completeness and the index before committing the static search files to GitHub Pages. No hosted backend required.
+
 ## Automated free LLM analysis — separate exploratory research lane
 
 An **additional** LLM census has been installed alongside (not in place of) the existing audit, topic-modeling, human-review, and public-data methods. [Open the separate LLM explorer](docs/llm.html) and read [the methodology](analysis_methods/llm_census_methodology.md).
