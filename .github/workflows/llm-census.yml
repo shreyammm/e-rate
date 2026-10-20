@@ -49,7 +49,7 @@ jobs:
         if: steps.pending.outputs.run == 'true'
         run: |
           python3 -m compileall -q scripts/llm_census.py tests/test_llm_census.py
-          python3 -m unittest tests.test_llm_census -v
+          python3 -m unittest discover -s tests -p 'test_llm_census.py' -v
       - name: Cache downloaded open-weight model
         if: steps.pending.outputs.run == 'true'
         uses: actions/cache@v4
