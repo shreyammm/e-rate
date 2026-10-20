@@ -41,6 +41,21 @@ class FullTextCensusPublicationTests(unittest.TestCase):
         role_counter=collections.Counter(roles['legend'][c] for c in codes)
         self.assertEqual({r['id']:r['filings'] for r in census['roles']},dict(role_counter))
 
+    def test_full_population_argument_by_role_sums(self):
+        c=json.loads((ROOT/'docs/data/exhaustive_census.json').read_text())
+        matrix=json.loads((ROOT/'docs/data/argument_language_by_role.json').read_text())
+        self.assertEqual(matrix['role_ids'],[x['id'] for x in c['roles']])
+        self.assertEqual(len(matrix['counts_by_argument']),14)
+        for family in c['argument_language_signals']:
+            counts=matrix['counts_by_argument'][family['id']]
+            self.assertEqual(len(counts),len(c['roles']))
+            self.assertEqual(sum(counts),family['filings_with_language'])
+            for n,role in zip(counts,c['roles']):
+                self.assertLessEqual(n,role['filings'])
+        html=(ROOT/'docs/index.html').read_text()
+        self.assertIn('id="argument-role-table"',html)
+        self.assertIn('id="argument-role-family"',html)
+
     def test_all_29_proposal_counts_and_caveats(self):
         census=json.loads((ROOT/'docs/data/exhaustive_census.json').read_text())
         for x in census['provisions']:
