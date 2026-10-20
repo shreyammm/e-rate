@@ -27,7 +27,7 @@ BOOK = ROOT / 'analysis_methods' / 'provision_codebook_v1.json'
 VERSION = 'llm-census-v1.1.0'
 # IBM Research (US), Apache-2.0 licensed, publicly available in Ollama.
 # The public Actions runner uses the 3B variant; larger variants are optional.
-ALLOWED_MODELS = frozenset({'granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b'})
+ALLOWED_MODELS = frozenset({'ibm/granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b'})
 POSITIONS = {'support', 'oppose', 'conditional_or_amend', 'alternative_proposal',
              'discussion_no_position', 'unclear'}
 CLAIM_KINDS = {'normative_value','empirical_claim','predicted_consequence','legal_claim',
@@ -411,7 +411,7 @@ def main(argv=None) -> int:
     p.add_argument('--snapshot-id',default='ocr_candidate_v1')
     p.add_argument('--view',choices=['augmented','baseline'],default='augmented')
     p.add_argument('--out-dir',type=Path,default=Path('data/llm_census'))
-    p.add_argument('--model',default='granite4:1b-q4_K_M',choices=sorted(ALLOWED_MODELS),
+    p.add_argument('--model',default='ibm/granite4:1b-q4_K_M',choices=sorted(ALLOWED_MODELS),
                    help='US-developed, Apache-2.0 IBM Granite model')
     p.add_argument('--ollama-url',default='http://127.0.0.1:11434/api/chat')
     p.add_argument('--limit',type=int,default=25,help='Maximum filing attempts per invocation')
