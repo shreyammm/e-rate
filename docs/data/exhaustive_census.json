@@ -1,0 +1,387 @@
+{
+  "schema_version": "1.0_full_text_census_provisional",
+  "data_date": "2026-10-20",
+  "source_basis": "Local 3,231-row FCC ECFS research snapshot; analysis read all 3,230 available text files end-to-end",
+  "coverage": {
+    "filings": 3231,
+    "filings_with_text": 3230,
+    "characters_analyzed": 211756379,
+    "policy_options_checked": 29,
+    "filing_policy_checks": 93699,
+    "filings_without_text": 1,
+    "unverified_agency_type_records": 80
+  },
+  "roles": [
+    {
+      "id": "unresolved",
+      "label": "Affiliation not established from source",
+      "filings": 984,
+      "distinct_filer_fields": 962
+    },
+    {
+      "id": "school_district_or_school",
+      "label": "School or district institution",
+      "filings": 607,
+      "distinct_filer_fields": 595
+    },
+    {
+      "id": "advocacy_nonprofit_or_trade_association",
+      "label": "Advocacy group / nonprofit / association",
+      "filings": 487,
+      "distinct_filer_fields": 141
+    },
+    {
+      "id": "educator_or_school_staff",
+      "label": "Educator / superintendent / school staff",
+      "filings": 368,
+      "distinct_filer_fields": 364
+    },
+    {
+      "id": "library_or_library_system",
+      "label": "Library institution or staff",
+      "filings": 314,
+      "distinct_filer_fields": 308
+    },
+    {
+      "id": "school_connected_voice_capacity_unconfirmed",
+      "label": "School-connected; official capacity unconfirmed",
+      "filings": 288,
+      "distinct_filer_fields": 286
+    },
+    {
+      "id": "parent_guardian",
+      "label": "Self-identified parent / guardian",
+      "filings": 76,
+      "distinct_filer_fields": 76
+    },
+    {
+      "id": "government_or_tribal_organization",
+      "label": "Government or Tribal organization",
+      "filings": 45,
+      "distinct_filer_fields": 43
+    },
+    {
+      "id": "other_business_or_vendor",
+      "label": "Other business / vendor",
+      "filings": 39,
+      "distinct_filer_fields": 38
+    },
+    {
+      "id": "consultant_or_e_rate_services_firm",
+      "label": "E-Rate consultant / service firm",
+      "filings": 13,
+      "distinct_filer_fields": 11
+    },
+    {
+      "id": "student",
+      "label": "Student",
+      "filings": 4,
+      "distinct_filer_fields": 4
+    },
+    {
+      "id": "researcher_or_health_professional",
+      "label": "Researcher / health professional",
+      "filings": 3,
+      "distinct_filer_fields": 3
+    },
+    {
+      "id": "telecom_or_network_provider",
+      "label": "Telecom / network provider",
+      "filings": 3,
+      "distinct_filer_fields": 3
+    }
+  ],
+  "provisions": [
+    {
+      "id": "erate_sunset",
+      "mentions": 2176,
+      "agency_type_candidates": 66,
+      "other_docket_signature": 119
+    },
+    {
+      "id": "erate_eligibility_scope",
+      "mentions": 883,
+      "agency_type_candidates": 29,
+      "other_docket_signature": 4
+    },
+    {
+      "id": "cipa_monitoring_privacy",
+      "mentions": 646,
+      "agency_type_candidates": 10,
+      "other_docket_signature": 123
+    },
+    {
+      "id": "ecf_rule_sunset",
+      "mentions": 635,
+      "agency_type_candidates": 12,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "administrative_forms",
+      "mentions": 589,
+      "agency_type_candidates": 20,
+      "other_docket_signature": 123
+    },
+    {
+      "id": "education_outcomes",
+      "mentions": 560,
+      "agency_type_candidates": 14,
+      "other_docket_signature": 105
+    },
+    {
+      "id": "cipa_public_hearings",
+      "mentions": 388,
+      "agency_type_candidates": 9,
+      "other_docket_signature": 123
+    },
+    {
+      "id": "safety_policy_transparency",
+      "mentions": 286,
+      "agency_type_candidates": 6,
+      "other_docket_signature": 109
+    },
+    {
+      "id": "cipa_digital_literacy",
+      "mentions": 257,
+      "agency_type_candidates": 9,
+      "other_docket_signature": 1
+    },
+    {
+      "id": "consultant_form_5654",
+      "mentions": 256,
+      "agency_type_candidates": 3,
+      "other_docket_signature": 115
+    },
+    {
+      "id": "cipa_social_media",
+      "mentions": 255,
+      "agency_type_candidates": 20,
+      "other_docket_signature": 106
+    },
+    {
+      "id": "cipa_byod",
+      "mentions": 243,
+      "agency_type_candidates": 7,
+      "other_docket_signature": 108
+    },
+    {
+      "id": "special_construction",
+      "mentions": 240,
+      "agency_type_candidates": 9,
+      "other_docket_signature": 1
+    },
+    {
+      "id": "cipa_age_specific",
+      "mentions": 218,
+      "agency_type_candidates": 7,
+      "other_docket_signature": 108
+    },
+    {
+      "id": "vendor_influence",
+      "mentions": 213,
+      "agency_type_candidates": 7,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "discount_matrix",
+      "mentions": 198,
+      "agency_type_candidates": 4,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "cipa_network_filter",
+      "mentions": 196,
+      "agency_type_candidates": 12,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "daily_hour_limits",
+      "mentions": 194,
+      "agency_type_candidates": 4,
+      "other_docket_signature": 27
+    },
+    {
+      "id": "screen_time_condition",
+      "mentions": 191,
+      "agency_type_candidates": 5,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "parent_opt_out",
+      "mentions": 181,
+      "agency_type_candidates": 7,
+      "other_docket_signature": 7
+    },
+    {
+      "id": "prek_headstart",
+      "mentions": 149,
+      "agency_type_candidates": 4,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "mibs",
+      "mentions": 129,
+      "agency_type_candidates": 5,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "consultant_definition",
+      "mentions": 122,
+      "agency_type_candidates": 4,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "targeted_competition",
+      "mentions": 88,
+      "agency_type_candidates": 5,
+      "other_docket_signature": 1
+    },
+    {
+      "id": "consultant_registration",
+      "mentions": 84,
+      "agency_type_candidates": 4,
+      "other_docket_signature": 5
+    },
+    {
+      "id": "lowest_corresponding_price",
+      "mentions": 71,
+      "agency_type_candidates": 1,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "school_supervision_reporting",
+      "mentions": 57,
+      "agency_type_candidates": 4,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "consultant_percent_fees",
+      "mentions": 56,
+      "agency_type_candidates": 5,
+      "other_docket_signature": 0
+    },
+    {
+      "id": "consultant_records",
+      "mentions": 25,
+      "agency_type_candidates": 2,
+      "other_docket_signature": 0
+    }
+  ],
+  "identity_method": "Filer metadata plus source-anchored first-person declarations and institutional cues across all available text. Explicitly unresolved where capacity is ambiguous. Lexical and not independently validated.",
+  "retrieval_method": "Term retrieval on all available text for every filing × draft FCC codebook provision; presence alone is not support, opposition, substantive discussion or endorsement.",
+  "cross_docket_signal": {
+    "filings": 123,
+    "chars": 74735858,
+    "share_of_corpus_chars_pct": 35.3,
+    "description": "Header signatures for ET Docket 13-84 / DA 26-997 found in documents all associated with one prolific filer field. Retained in inventory; flag for relevance review, not automatically excluded."
+  },
+  "warnings": [
+    "NO randomly sampled substantive-count estimates. All 3,231 filing records and 211,756,379 source characters were examined.",
+    "Role labels are EVIDENCE-BASED AUTOMATED CANDIDATES, not verified unique identities; representatives, quotations and institutional boilerplate can mislead.",
+    "Stance totals are NOT asserted from keywords, since some submissions quote the FCC's proposals while arguing against them.",
+    "Codebook keyword-negative means NOT DETECTED, not proven not addressed.",
+    "Agency origin 80 records and OCR candidate 206 attachments remain separate unverified-quality flags.",
+    "Argument frequencies and provision position counts need a validated semantic classifier or exhaustive adjudication; absent values are unknown, not zeros."
+  ],
+  "argument_language_signals": [
+    {
+      "id": "educational_opportunity",
+      "label": "Educational opportunities and student learning",
+      "filings_with_language": 1616,
+      "agency_type_candidates": 47,
+      "cross_docket_signature": 7
+    },
+    {
+      "id": "continuity_without_sunset",
+      "label": "Preserving / continuing E-Rate",
+      "filings_with_language": 1126,
+      "agency_type_candidates": 36,
+      "cross_docket_signature": 0
+    },
+    {
+      "id": "procurement_administrative_burden",
+      "label": "Procurement and administrative burdens",
+      "filings_with_language": 924,
+      "agency_type_candidates": 30,
+      "cross_docket_signature": 0
+    },
+    {
+      "id": "infrastructure_maintenance_and_buildout",
+      "label": "Infrastructure upgrades and maintenance",
+      "filings_with_language": 811,
+      "agency_type_candidates": 26,
+      "cross_docket_signature": 1
+    },
+    {
+      "id": "rural_tribal_and_equity",
+      "label": "Rural, Tribal and affordability-equity concerns",
+      "filings_with_language": 704,
+      "agency_type_candidates": 22,
+      "cross_docket_signature": 5
+    },
+    {
+      "id": "ongoing_broadband_costs",
+      "label": "Ongoing broadband costs",
+      "filings_with_language": 619,
+      "agency_type_candidates": 11,
+      "cross_docket_signature": 0
+    },
+    {
+      "id": "local_instructional_autonomy",
+      "label": "Local instructional autonomy",
+      "filings_with_language": 578,
+      "agency_type_candidates": 35,
+      "cross_docket_signature": 3
+    },
+    {
+      "id": "library_service_to_public",
+      "label": "Public library services",
+      "filings_with_language": 471,
+      "agency_type_candidates": 11,
+      "cross_docket_signature": 1
+    },
+    {
+      "id": "screen_health_learning_risks",
+      "label": "Screen-use and developmental concerns",
+      "filings_with_language": 460,
+      "agency_type_candidates": 7,
+      "cross_docket_signature": 123
+    },
+    {
+      "id": "radiofrequency_exposure_concerns",
+      "label": "Radiofrequency-exposure concerns",
+      "filings_with_language": 349,
+      "agency_type_candidates": 0,
+      "cross_docket_signature": 123
+    },
+    {
+      "id": "statutory_fcc_jurisdiction",
+      "label": "FCC statutory authority",
+      "filings_with_language": 296,
+      "agency_type_candidates": 9,
+      "cross_docket_signature": 105
+    },
+    {
+      "id": "consultant_incentives_integrity",
+      "label": "Consultant incentives and oversight",
+      "filings_with_language": 265,
+      "agency_type_candidates": 4,
+      "cross_docket_signature": 123
+    },
+    {
+      "id": "privacy_free_expression",
+      "label": "Privacy and free expression",
+      "filings_with_language": 228,
+      "agency_type_candidates": 5,
+      "cross_docket_signature": 105
+    },
+    {
+      "id": "family_choice_parental_rights",
+      "label": "Parental choice and rights",
+      "filings_with_language": 149,
+      "agency_type_candidates": 2,
+      "cross_docket_signature": 4
+    }
+  ],
+  "argument_language_method": "14 defined sets of exact phrase indicators scanned against all 3,230 texts, counting each matching filing once per family. These are language/evidence retrieval signals, NOT validated claims or agreement. Filings with cross-docket referenced materials may dominate several categories."
+}

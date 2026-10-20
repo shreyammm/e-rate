@@ -64,25 +64,84 @@ function initMetrics(){
 }
 function renderDirectionalEvidence(){
  const box=$('directional-evidence');if(!box)return;clear(box);
- const row=summary.directional_signals?.[0];
- if(!row)return;
- const heading=el('div','panel-head');heading.append(el('h2','','Corpus-wide directional language (preliminary)'),
-   el('span','','Targeted expression matching · not a validated stance classifier'));box.append(heading);
+ const census=summary.full_census;
+ const head=el('div','panel-head');
+ head.append(el('h2','','Position classification: distinguish wording from endorsement'),
+   el('span','','Complete retrieval census · no sample-derived rates'));
+ box.append(head);
+ if(!census){box.append(el('p','note','The full-corpus role and policy-check dataset could not be loaded.'));return;}
+ const preservation=census.argument_language_signals.find(x=>x.id==='continuity_without_sunset');
+ const sunset=census.provisions.find(x=>x.id==='erate_sunset');
  const vals=el('div','record-line');
- for(const [n,label] of [[row.filings,'Filings with explicit continuation/preservation wording'],
-  [summary.issues.find(x=>x.id==='sunset_or_narrow').n,'Filings mentioning sunset/narrowing (any direction)']]){
-  const item=el('div','');item.append(el('strong','',number(n)),el('p','note',label));vals.append(item);
+ for(const [n,label] of [
+  [preservation.filings_with_language,'Filings using continuity / preservation-related expressions'],
+  [sunset.mentions,'Filings matching the broader sunset / elimination question']
+ ]){
+  const item=el('div','');
+  item.append(el('strong','',number(n)),el('p','note',label));vals.append(item);
  }
- box.append(vals,el('p','note',row.manual_spot_check+' The result is a phrase-based lower-bound signal, not the total number of supportive commenters. A naive search for support of E-Rate elimination incorrectly picked up filings quoting the FCC proposal; no whole-corpus pro-sunset tally is published.'));
- const sub=el('div','panel-head');sub.append(el('h3','','Preservation-language signals by provisional filer category'));box.append(sub);
- const track=el('div','');
- const pairs=Object.entries(row.role_counts).map(([id,n])=>({id,label:roleNames[id]||id,n})).sort((a,b)=>b.n-a.n);
- for(const p of pairs){
-  const line=el('div','bar-row');line.append(el('span','bar-label',p.label));
-  const outer=el('div','bar-track'),fill=el('div','bar-fill');fill.style.width=(p.n/pairs[0].n*100)+'%';outer.append(fill);
-  line.append(outer,el('span','bar-value',number(p.n)));track.append(line);
+ box.append(vals);
+ box.append(el('p','note','Neither figure is a validated support/opposition tally. We screened every filing against the codebook, but exact-word matching can retrieve the FCC question or a quoted position that the filer rejects. The remaining task is to adjudicate the requested regulatory outcome in each relevant filing; unknown positions are not zeros.'));
+}
+function showCensusProposals(census){
+ const t=$('census-proposals');if(!t)return;clear(t);
+ const rows=[...census.provisions].sort((a,b)=>b.mentions-a.mentions);
+ for(const r of rows){
+  const tr=el('tr');const name=provisions[r.id]?.label||r.id.replaceAll('_',' ');
+  tr.append(el('td','',name),el('td','num',number(r.mentions)),
+   el('td','num',number(r.agency_type_candidates)),
+   el('td','num',number(r.other_docket_signature)));
+  t.append(tr);
  }
- box.append(track);
+}
+async function installFullTextRoles(){
+ const [census,roles]=await Promise.all([
+   loadJson('./data/exhaustive_census.json'),
+   loadJson('./data/full_text_filer_roles.json')
+ ]);
+ if(census.coverage.filings!==allRecords.length||roles.expected_records!==allRecords.length||
+   allRecords[0].id!==roles.expected_first_id||
+   allRecords[allRecords.length-1].id!==roles.expected_last_id){
+   throw Error('Full-text role index is inconsistent with publication corpus');
+ }
+ if(typeof DecompressionStream!=='function')throw Error('Browser does not support compressed role map');
+ const compressed=Uint8Array.from(atob(roles.sequence),c=>c.charCodeAt(0));
+ const inflated=new Blob([compressed]).stream().pipeThrough(new DecompressionStream('gzip'));
+ const codeString=await new Response(inflated).text();
+ if(codeString.length!==allRecords.length)throw Error('Reconciled role count mismatch');
+ const observed={};
+ for(let i=0;i<codeString.length;i++){
+   const code=codeString[i],name=roles.legend[code];
+   if(!name)throw Error('Unknown role code');
+   observed[code]=(observed[code]||0)+1;
+   allRecords[i].role=name;
+ }
+ for(const [key,n] of Object.entries(roles.expected_code_counts)){
+   if(observed[key]!==n)throw Error('Role count integrity check failed for '+key);
+ }
+ const computed=Object.fromEntries(census.roles.map(r=>[r.id,0]));
+ for(const rec of allRecords)computed[rec.role]=(computed[rec.role]||0)+1;
+ if(census.roles.some(r=>computed[r.id]!==r.filings))throw Error('Aggregate roles do not reconcile to all records');
+ summary.roles=census.roles.map(r=>({
+   id:r.id,label:r.label,filings:r.filings,distinct_filer_fields:r.distinct_filer_fields
+ }));
+ for(const r of summary.roles)roleNames[r.id]=r.label;
+ summary.issue_role_matrix={};
+ for(const [i,issue] of summary.issues.entries()){
+   const counts={};
+   for(const row of allRecords){
+     if(Number(row.issues)&(1<<i))counts[row.role]=(counts[row.role]||0)+1;
+   }
+   const sum=Object.values(counts).reduce((a,b)=>a+b,0);
+   if(sum!==issue.n)throw Error('Issue cross-tab mismatch '+issue.id);
+   summary.issue_role_matrix[issue.id]=counts;
+ }
+ showCensusProposals(census);
+ const argumentRows=(census.argument_language_signals||[]).map(a=>({
+   label:a.label,n:a.filings_with_language,id:a.id
+ })).sort((a,b)=>b.n-a.n);
+ if(argumentRows.length)chart('argument-census-bars',argumentRows,argumentRows[0].n);
+ return census;
 }
 function selectedExamples(){
  const pid=$('position-proposal').value,dir=$('position-direction').value;
@@ -248,6 +307,14 @@ async function main(){
     if(!Array.isArray(index.filings)||index.filings.length!==summary.indexed_filings)throw new Error('partial publication');
     if(JSON.stringify(index.issue_keys)!==JSON.stringify(summary.issues.map(i=>i.id)))throw new Error('incompatible issue index');
     allRecords=index.filings;publishedIndex=true;
+    try{
+      const fullCensus=await installFullTextRoles();
+      $('explorer-loaded').textContent=number(allRecords.length)+' filings indexed · full-text-derived provisional commenter categories';
+      summary.full_census=fullCensus;
+    }catch(e){
+      console.warn('Unable to reconcile latest role counts:',e);
+      $('explorer-loaded').textContent='Full filing index available; legacy name-field roles (full-text role update unavailable)';
+    }
     $('explorer-loaded').textContent=number(allRecords.length)+' source-linked filing records indexed';
   }catch(e){indexFallback();}
   initMetrics();setFilters();renderDirectionalEvidence();drawPositions();drawAlignment();drawArguments();drawRoles();drawIssueRoleComparison();
