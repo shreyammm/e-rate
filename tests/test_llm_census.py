@@ -37,7 +37,7 @@ class LLMCensusTests(unittest.TestCase):
                            'uncertain':False}]}
 
     def test_us_developed_apache_licensed_model_allowlist(self):
-        self.assertEqual(ALLOWED_MODELS, frozenset({'granite4.2:3b', 'granite4.2:8b'}))
+        self.assertEqual(ALLOWED_MODELS, frozenset({'granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b'}))
 
     def test_granite_request_disables_thinking_and_requires_json(self):
         captured={}
