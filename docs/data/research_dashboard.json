@@ -1,0 +1,307 @@
+{
+  "schema": "1.0",
+  "snapshot": "2026-10-20",
+  "source": "October 20, 2026 local ECFS corpus",
+  "indexed_filings": 3231,
+  "text_filings": 3230,
+  "attachments": 3268,
+  "ocr_candidate_attachments": 206,
+  "units_notice": "Counts indicate ECFS filings, not verified unique people or population opinion.",
+  "issue_method": "Case-insensitive phrase/term presence searched over all available augmented text; nonexclusive; not pro/anti or necessarily substantive endorsement.",
+  "issues": [
+    {
+      "id": "sunset_or_narrow",
+      "label": "E-Rate sunset / narrowing",
+      "n": 2193,
+      "query": "sunset, eliminate, terminate, phase out or E-Rate funding cuts"
+    },
+    {
+      "id": "cipa_filtering",
+      "label": "CIPA / filtering",
+      "n": 1876,
+      "query": "CIPA, filtering, online-activity monitoring"
+    },
+    {
+      "id": "screen_limits",
+      "label": "Screen-time restrictions",
+      "n": 1108,
+      "query": "screen time, screen-time, screen-use, limiting time on screens"
+    },
+    {
+      "id": "competitive_bidding",
+      "label": "Procurement / competitive bidding",
+      "n": 769,
+      "query": "competitive bidding, Forms 470/471, lowest corresponding price"
+    },
+    {
+      "id": "consultant_rules",
+      "label": "Consultant oversight",
+      "n": 476,
+      "query": "consultants, consultant fees, Form 5654"
+    },
+    {
+      "id": "radiofrequency",
+      "label": "Radiofrequency / electromagnetic exposure",
+      "n": 351,
+      "query": "radiofrequency, radiation, electromagnetic fields"
+    },
+    {
+      "id": "discount_matrix",
+      "label": "Discount formula",
+      "n": 254,
+      "query": "discount matrix, school lunch, NSLP, discount rates"
+    },
+    {
+      "id": "special_construction",
+      "label": "Special construction / dark fiber",
+      "n": 203,
+      "query": "special construction, dark fiber, self-provisioned"
+    },
+    {
+      "id": "parent_opt_out",
+      "label": "Parental opt-out",
+      "n": 170,
+      "query": "opt-out, opt out, screen-based instruction"
+    }
+  ],
+  "role_method": "Nonexclusive filer descriptions are reduced to a single provisional primary category using ordered lexical cues from public ECFS filer fields. These categories are not independently verified and 'unresolved' can include organizational representatives.",
+  "roles": [
+    {
+      "id": "unresolved",
+      "label": "No clear institutional affiliation in filer field",
+      "filings": 1666,
+      "distinct_filer_fields": 1635
+    },
+    {
+      "id": "school",
+      "label": "School / district / education affiliation",
+      "filings": 856,
+      "distinct_filer_fields": 839
+    },
+    {
+      "id": "nonprofit",
+      "label": "Advocacy / association indication",
+      "filings": 411,
+      "distinct_filer_fields": 64
+    },
+    {
+      "id": "library",
+      "label": "Library affiliation",
+      "filings": 176,
+      "distinct_filer_fields": 172
+    },
+    {
+      "id": "government",
+      "label": "Government / Tribal body indication",
+      "filings": 50,
+      "distinct_filer_fields": 49
+    },
+    {
+      "id": "business",
+      "label": "Other business indication",
+      "filings": 37,
+      "distinct_filer_fields": 36
+    },
+    {
+      "id": "telecom",
+      "label": "Telecom / network organization indication",
+      "filings": 26,
+      "distinct_filer_fields": 24
+    },
+    {
+      "id": "consultant",
+      "label": "Consultant/service firm indication",
+      "filings": 9,
+      "distinct_filer_fields": 7
+    }
+  ],
+  "concentration": {
+    "largest_exact_filer_field_filings": 277,
+    "largest_exact_filer_field_share": 8.6,
+    "largest_exact_filer_field_text_character_share": 80.3
+  },
+  "template_signals": [
+    {
+      "label": "Preserve and strengthen E-Rate / reject elimination phrase",
+      "filings": 565
+    },
+    {
+      "label": "Related anti-sunset boilerplate phrase",
+      "filings": 637
+    }
+  ],
+  "examples_method": "Qualitative first-pass of organizational filings; passages matched to uploaded source text but not independently adjudicated by a second researcher. The rows are NOT a probability sample or a corpus-wide prevalence measure.",
+  "examples": [
+    {
+      "id": "ala_sunset",
+      "filing": "26110081214",
+      "name": "American Library Association",
+      "issue": "erate_sunset",
+      "position": "oppose",
+      "reason": "Recurring costs; statutory continuity and affordable connections",
+      "quote": "the E-Rate program is working as intended and should not be terminated or limited."
+    },
+    {
+      "id": "ala_screen",
+      "filing": "26110081214",
+      "name": "American Library Association",
+      "issue": "screen_time_condition",
+      "position": "oppose",
+      "reason": "FCC authority and local decision-making",
+      "quote": "the Commission does not have authority within the framework of the Children’s Internet Protection Act"
+    },
+    {
+      "id": "edl_sunset",
+      "filing": "26110081270",
+      "name": "Education and Libraries Networks Coalition",
+      "issue": "erate_sunset",
+      "position": "oppose",
+      "reason": "Continuing statutory obligation under Section 254",
+      "quote": "the Commission lacks the authority to terminate or drastically modify the E-Rate program"
+    },
+    {
+      "id": "edl_optout",
+      "filing": "26110081270",
+      "name": "Education and Libraries Networks Coalition",
+      "issue": "parent_opt_out",
+      "position": "oppose",
+      "reason": "Unworkable parallel instruction; insufficient statutory basis",
+      "quote": "A mandatory parental opt-out from screen-based instruction lacks a statutory basis and would be unworkable in practice"
+    },
+    {
+      "id": "naesp_sunset",
+      "filing": "26110081099",
+      "name": "National Association of Elementary School Principals",
+      "issue": "erate_sunset",
+      "position": "oppose",
+      "reason": "Ongoing operating and school network costs",
+      "quote": "NAESP strongly supports the continued operation of the E-rate program"
+    },
+    {
+      "id": "navajo_discounts",
+      "filing": "26110081367",
+      "name": "Navajo Nation Telecommunications Regulatory Commission",
+      "issue": "discount_matrix",
+      "position": "oppose",
+      "reason": "Tribal remoteness, rural affordability and discount equity",
+      "quote": "NNTRC opposes eliminating or reducing the existing rural adjustment to the discount matrix"
+    },
+    {
+      "id": "navajo_sunset",
+      "filing": "26110081367",
+      "name": "Navajo Nation Telecommunications Regulatory Commission",
+      "issue": "erate_sunset",
+      "position": "oppose",
+      "reason": "Availability differs from affordable access on Tribal lands",
+      "quote": "urges the Commission to preserve and strengthen the E-Rate program for Tribal schools and libraries."
+    },
+    {
+      "id": "ncta_consult",
+      "filing": "26110081259",
+      "name": "NCTA – The Internet & Television Association",
+      "issue": "consultant_registration",
+      "position": "support",
+      "reason": "Transparency into consultant participation and potential conflicts",
+      "quote": "NCTA supports the Commission’s proposals to create a consultant registration database"
+    },
+    {
+      "id": "ncta_fees",
+      "filing": "26110081259",
+      "name": "NCTA – The Internet & Television Association",
+      "issue": "consultant_percent_fees",
+      "position": "support",
+      "reason": "Percentage incentives might encourage higher funding requests",
+      "quote": "NCTA supports the Commission’s proposal to prohibit these types of fee arrangements"
+    },
+    {
+      "id": "ncta_constr",
+      "filing": "26110081259",
+      "name": "NCTA – The Internet & Television Association",
+      "issue": "special_construction",
+      "position": "oppose",
+      "reason": "Preserve cost-effective broadband deployment choices",
+      "quote": "continue to allow the E-Rate program to fund special construction when it is the most cost-effective solution"
+    },
+    {
+      "id": "ffl_fees",
+      "filing": "26110080653",
+      "name": "Funds For Learning",
+      "issue": "consultant_percent_fees",
+      "position": "oppose",
+      "reason": "Local procurement discretion; fees paid from local funds",
+      "quote": "FFL opposes the prohibition."
+    },
+    {
+      "id": "ffl_consult",
+      "filing": "26110080653",
+      "name": "Funds For Learning",
+      "issue": "consultant_registration",
+      "position": "alternative",
+      "reason": "Entity-level registry without unnecessary individual identifiers",
+      "quote": "build the registry at the entity level without personal identifying information"
+    },
+    {
+      "id": "seca_5654",
+      "filing": "26110080948",
+      "name": "State E-Rate Coordinators’ Alliance",
+      "issue": "consultant_form_5654",
+      "position": "conditional",
+      "reason": "Avoid unnecessary paperwork when applicants use no consultant",
+      "quote": "Requiring all applicants to complete the Form 5654 regardless of their retention of a consultant"
+    },
+    {
+      "id": "sbs_screen",
+      "filing": "26110081377",
+      "name": "Schools Beyond Screens / Fairplay",
+      "issue": "screen_time_condition",
+      "position": "oppose",
+      "reason": "Keep connectivity funding separate from screen-safety measures",
+      "quote": "we oppose any measures that would reduce, restructure, or condition E-Rate connectivity funding."
+    },
+    {
+      "id": "cwa_screen",
+      "filing": "26110080878",
+      "name": "Concerned Women for America",
+      "issue": "screen_time_condition",
+      "position": "conditional",
+      "reason": "Balance necessary connectivity with developmental risks",
+      "quote": "Preserve necessary connectivity while avoiding incentives for unnecessary student screen exposure."
+    },
+    {
+      "id": "aclu_social",
+      "filing": "26110081350",
+      "name": "American Civil Liberties Union",
+      "issue": "cipa_social_media",
+      "position": "oppose",
+      "reason": "Statutory limits, student speech and overbroad filtering",
+      "quote": "Commission lacks authority to expand CIPA’s reach to screen time and social media."
+    },
+    {
+      "id": "aclu_monitor",
+      "filing": "26110081350",
+      "name": "American Civil Liberties Union",
+      "issue": "cipa_monitoring_privacy",
+      "position": "conditional",
+      "reason": "Protect student privacy from pervasive tracking",
+      "quote": "the Commission should clarify CIPA does not require the invasive surveillance technologies"
+    },
+    {
+      "id": "common_sunset",
+      "filing": "26110081295",
+      "name": "Common Sense Media",
+      "issue": "erate_sunset",
+      "position": "oppose",
+      "reason": "Connectivity should remain available alongside safety protections",
+      "quote": "Common Sense Media urges the Commission to reject any proposal that would terminate or limit the E-Rate Program."
+    },
+    {
+      "id": "setda_optout",
+      "filing": "26110080890",
+      "name": "State Educational Technology Directors Association",
+      "issue": "parent_opt_out",
+      "position": "oppose",
+      "reason": "One-size-fits-all federal mandate disrupts school implementation",
+      "quote": "ADOPTING A ONE-SIZED-FITS-ALL FEDERAL PARENTAL OPT-OUT REQUIREMENT WOULD DISRUPT THE EDUCATION SYSTEM"
+    }
+  ]
+}
