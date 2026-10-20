@@ -73,7 +73,7 @@ function renderDirectionalEvidence(){
   [summary.issues.find(x=>x.id==='sunset_or_narrow').n,'Filings mentioning sunset/narrowing (any direction)']]){
   const item=el('div','');item.append(el('strong','',number(n)),el('p','note',label));vals.append(item);
  }
- box.append(vals,el('p','note',row.manual_spot_check+' The result is a phrase-based lower-bound signal, not the total number of supportive commenters. A naive search for support of E-Rate elimination incorrectly picked up filings quoting the FCC proposal; no whole-corpus pro-sunset tally is published.'));
+ box.append(vals,el('p','note','This is an unverified phrase-based candidate count across the entire corpus, not a validated total of supportive commenters. A naive search for support of E-Rate elimination incorrectly picked up filings quoting the FCC proposal; no whole-corpus pro-sunset tally is published.'));
  const sub=el('div','panel-head');sub.append(el('h3','','Preservation-language signals by provisional filer category'));box.append(sub);
  const track=el('div','');
  const pairs=Object.entries(row.role_counts).map(([id,n])=>({id,label:roleNames[id]||id,n})).sort((a,b)=>b.n-a.n);
