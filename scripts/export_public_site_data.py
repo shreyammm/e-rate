@@ -36,6 +36,16 @@ def build(corpus:Path,snapshot_id='ocr_candidate_v1',view='augmented',
         raise ValueError('Unknown reviewed provision or position')
     if any(r['review_status'] not in {'manual_reviewed','adjudicated'} for r in rows):
         raise ValueError('Model-only or pending annotation in validated positions')
+    argument_file=snap/f'policy_analysis_{view}'/'validated_argument_claims.csv'
+    argument_rows,_=read_csv(argument_file) if argument_file.is_file() else ([],[])
+    if len({r['argument_id'] for r in argument_rows})!=len(argument_rows):
+        raise ValueError('Duplicate argument identifiers')
+    if any(r['provision_id'] not in valid_ids or
+           r['review_status'] not in {'manual_reviewed','adjudicated'}
+           for r in argument_rows):
+        raise ValueError('Unreviewed or unknown argument in validated table')
+    arguments_by_provision=defaultdict(list)
+    for r in argument_rows:arguments_by_provision[r['provision_id']].append(r)
     seen=defaultdict(list)
     for row in rows:seen[row['provision_id']].append(row)
     records=[]
@@ -58,6 +68,9 @@ def build(corpus:Path,snapshot_id='ocr_candidate_v1',view='augmented',
             'notice_paragraph_range':prov['notice_paragraph_range'],
             'adjudicated_filing_count':len(group),
             'counts':{pos:count[pos] for pos in POSITIONS},
+            'reviewed_argument_count':len(arguments_by_provision[prov['id']]),
+            'reviewed_argument_types':dict(Counter(
+                r['claim_kind'] for r in arguments_by_provision[prov['id']])),
             'evidence':evidence
         })
     payload={
@@ -68,6 +81,8 @@ def build(corpus:Path,snapshot_id='ocr_candidate_v1',view='augmented',
         'text_view':view,
         'reviewed_filing_provision_pairs':len(rows),
         'unique_filings_reviewed':len({r['submission_id'] for r in rows}),
+        'reviewed_arguments':len(argument_rows),
+        'unique_filings_with_reviewed_arguments':len({r['submission_id'] for r in argument_rows}),
         'indexed_filing_count':3231,
         'position_denominator':'Only filing/provision pairs that were explicitly reviewed and validated. Nonmatching/unreviewed records are excluded, not classified not_addressed.',
         'notice_url':book['notice_url'],'codebook_version':book['version'],
@@ -75,6 +90,8 @@ def build(corpus:Path,snapshot_id='ocr_candidate_v1',view='augmented',
             'All positions are provision-specific, not generic positive or negative sentiment.',
             'This is a self-selected FCC filing record, not an opinion survey.',
             'Keyword candidate counts are excluded from stance charts.',
+            'Argument counts are different units from filing-position counts. A single filing can contain multiple arguments.',
+            'Claims cited by commenters have not necessarily been independently fact-checked.',
             'OCR candidate provenance and unresolved agency/document and identity classifications limit inference.',
             'Counts may be biased by the review sample. Do not infer all-comment prevalence until an audited sample or census is complete.'
         ],
