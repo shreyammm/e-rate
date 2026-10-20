@@ -324,5 +324,94 @@
       }
     }
   ],
-  "directional_caveat": "The 1,481 count is a reproducible explicit-wording signal, not a complete prevalence estimate of all supporters or an independently validated classifier. We do not publish an automatic pro-sunset count: an initial pattern falsely matched 175 filings quoting the FCC proposal."
+  "directional_caveat": "The 1,481 count is a reproducible explicit-wording signal, not a complete prevalence estimate of all supporters or an independently validated classifier. We do not publish an automatic pro-sunset count: an initial pattern falsely matched 175 filings quoting the FCC proposal.",
+  "issue_role_matrix": {
+    "sunset_or_narrow": {
+      "unresolved": 943,
+      "school": 674,
+      "nonprofit": 359,
+      "library": 113,
+      "government": 45,
+      "business": 29,
+      "telecom": 22,
+      "consultant": 8
+    },
+    "cipa_filtering": {
+      "unresolved": 760,
+      "school": 523,
+      "nonprofit": 394,
+      "library": 104,
+      "government": 37,
+      "business": 28,
+      "telecom": 21,
+      "consultant": 9
+    },
+    "screen_limits": {
+      "unresolved": 482,
+      "school": 374,
+      "nonprofit": 156,
+      "government": 33,
+      "library": 28,
+      "business": 19,
+      "telecom": 11,
+      "consultant": 5
+    },
+    "competitive_bidding": {
+      "unresolved": 246,
+      "school": 179,
+      "nonprofit": 178,
+      "library": 88,
+      "government": 24,
+      "business": 24,
+      "telecom": 21,
+      "consultant": 9
+    },
+    "consultant_rules": {
+      "nonprofit": 259,
+      "school": 77,
+      "unresolved": 71,
+      "library": 21,
+      "business": 17,
+      "government": 12,
+      "telecom": 10,
+      "consultant": 9
+    },
+    "radiofrequency": {
+      "nonprofit": 344,
+      "unresolved": 4,
+      "telecom": 1,
+      "government": 1,
+      "school": 1
+    },
+    "discount_matrix": {
+      "school": 114,
+      "unresolved": 62,
+      "nonprofit": 23,
+      "government": 19,
+      "library": 15,
+      "business": 10,
+      "telecom": 6,
+      "consultant": 5
+    },
+    "special_construction": {
+      "school": 99,
+      "unresolved": 40,
+      "library": 20,
+      "telecom": 15,
+      "government": 10,
+      "business": 10,
+      "nonprofit": 7,
+      "consultant": 2
+    },
+    "parent_opt_out": {
+      "unresolved": 80,
+      "school": 44,
+      "nonprofit": 22,
+      "government": 10,
+      "business": 8,
+      "telecom": 3,
+      "library": 2,
+      "consultant": 1
+    }
+  }
 }
