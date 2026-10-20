@@ -57,7 +57,7 @@ def affiliation_hint(raw: str) -> str:
 
 def safe_org_display(name: str, role: str) -> str:
     """Do not republish individual name lists or cofiling identity strings."""
-    if role=='unresolved' or '|' in name or len(name)>110:
+    if role=='unresolved' or any(separator in name for separator in ('|', ' - ', ',')) or len(name)>110:
         return ''
     if re.search(r'[@\d]{4,}|\+?\d{3}[-.\s]\d{3}',name):
         return ''
