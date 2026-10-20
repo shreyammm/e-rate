@@ -45,7 +45,7 @@ class StaticPublicationTests(unittest.TestCase):
         for asset in p.assets:
             self.assertTrue((ROOT/'docs'/asset).is_file(),asset)
         self.assertIn('not affiliated with the fcc',raw.lower())
-        self.assertIn('not a classification of all filings',raw)
+        self.assertIn('Do not interpret these examples as whole-corpus support percentages',raw)
 
 
 if __name__=='__main__':
