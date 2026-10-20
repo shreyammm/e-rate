@@ -40,6 +40,15 @@ class FullTextCensusPublicationTests(unittest.TestCase):
                               if x['id']=='erate_sunset'),2176)
         self.assertIn('not support, opposition',census['retrieval_method'])
         self.assertEqual(census['cross_docket_signal']['filings'],123)
+        self.assertEqual(len(census['argument_language_signals']),14)
+        self.assertEqual(next(x['filings_with_language'] for x in
+                              census['argument_language_signals']
+                              if x['id']=='educational_opportunity'),1616)
+        self.assertTrue(all(0<=x['agency_type_candidates']<=x['filings_with_language']
+                            for x in census['argument_language_signals']))
+        html=(ROOT/'docs/index.html').read_text()
+        self.assertIn('id="argument-census-bars"',html)
+        self.assertIn('id="census-proposals"',html)
         self.assertFalse('manual_spot_check' in (ROOT/'docs/data/research_dashboard.json').read_text())
 
 if __name__=='__main__':
