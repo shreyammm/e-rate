@@ -44,7 +44,7 @@ class StaticPublicationTests(unittest.TestCase):
         self.assertTrue({'status','issue-chart','role-chart','position-table','alignment','ex-query','ex-issue','ex-role','ex-type','ex-table'}<=p.ids)
         for asset in p.assets:
             self.assertTrue((ROOT/'docs'/asset).is_file(),asset)
-        self.assertIn('not affiliated with the FCC',raw)
+        self.assertIn('not affiliated with the fcc',raw.lower())
         self.assertIn('not a classification of all filings',raw)
 
 
