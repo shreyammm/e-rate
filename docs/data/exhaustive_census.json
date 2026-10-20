@@ -282,5 +282,106 @@
     "Codebook keyword-negative means NOT DETECTED, not proven not addressed.",
     "Agency origin 80 records and OCR candidate 206 attachments remain separate unverified-quality flags.",
     "Argument frequencies and provision position counts need a validated semantic classifier or exhaustive adjudication; absent values are unknown, not zeros."
-  ]
+  ],
+  "argument_language_signals": [
+    {
+      "id": "educational_opportunity",
+      "label": "Educational opportunities and student learning",
+      "filings_with_language": 1616,
+      "agency_type_candidates": 47,
+      "cross_docket_signature": 7
+    },
+    {
+      "id": "continuity_without_sunset",
+      "label": "Preserving / continuing E-Rate",
+      "filings_with_language": 1126,
+      "agency_type_candidates": 36,
+      "cross_docket_signature": 0
+    },
+    {
+      "id": "procurement_administrative_burden",
+      "label": "Procurement and administrative burdens",
+      "filings_with_language": 924,
+      "agency_type_candidates": 30,
+      "cross_docket_signature": 0
+    },
+    {
+      "id": "infrastructure_maintenance_and_buildout",
+      "label": "Infrastructure upgrades and maintenance",
+      "filings_with_language": 811,
+      "agency_type_candidates": 26,
+      "cross_docket_signature": 1
+    },
+    {
+      "id": "rural_tribal_and_equity",
+      "label": "Rural, Tribal and affordability-equity concerns",
+      "filings_with_language": 704,
+      "agency_type_candidates": 22,
+      "cross_docket_signature": 5
+    },
+    {
+      "id": "ongoing_broadband_costs",
+      "label": "Ongoing broadband costs",
+      "filings_with_language": 619,
+      "agency_type_candidates": 11,
+      "cross_docket_signature": 0
+    },
+    {
+      "id": "local_instructional_autonomy",
+      "label": "Local instructional autonomy",
+      "filings_with_language": 578,
+      "agency_type_candidates": 35,
+      "cross_docket_signature": 3
+    },
+    {
+      "id": "library_service_to_public",
+      "label": "Public library services",
+      "filings_with_language": 471,
+      "agency_type_candidates": 11,
+      "cross_docket_signature": 1
+    },
+    {
+      "id": "screen_health_learning_risks",
+      "label": "Screen-use and developmental concerns",
+      "filings_with_language": 460,
+      "agency_type_candidates": 7,
+      "cross_docket_signature": 123
+    },
+    {
+      "id": "radiofrequency_exposure_concerns",
+      "label": "Radiofrequency-exposure concerns",
+      "filings_with_language": 349,
+      "agency_type_candidates": 0,
+      "cross_docket_signature": 123
+    },
+    {
+      "id": "statutory_fcc_jurisdiction",
+      "label": "FCC statutory authority",
+      "filings_with_language": 296,
+      "agency_type_candidates": 9,
+      "cross_docket_signature": 105
+    },
+    {
+      "id": "consultant_incentives_integrity",
+      "label": "Consultant incentives and oversight",
+      "filings_with_language": 265,
+      "agency_type_candidates": 4,
+      "cross_docket_signature": 123
+    },
+    {
+      "id": "privacy_free_expression",
+      "label": "Privacy and free expression",
+      "filings_with_language": 228,
+      "agency_type_candidates": 5,
+      "cross_docket_signature": 105
+    },
+    {
+      "id": "family_choice_parental_rights",
+      "label": "Parental choice and rights",
+      "filings_with_language": 149,
+      "agency_type_candidates": 2,
+      "cross_docket_signature": 4
+    }
+  ],
+  "argument_language_method": "14 defined sets of exact phrase indicators scanned against all 3,230 texts, counting each matching filing once per family. These are language/evidence retrieval signals, NOT validated claims or agreement. Filings with cross-docket referenced materials may dominate several categories."
 }
