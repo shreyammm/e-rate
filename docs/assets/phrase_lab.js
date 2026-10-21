@@ -105,11 +105,13 @@ $('ph-run').onclick=async()=>{
     const id=String(r.submission_id||'');
     if(!ids.delete(id))throw Error('Unexpected or duplicated filing ID '+id);
     const p=inspect(String(r.text||''),A,B);
+    const m=lookup.get(id)||{};
+    if(role && (m.role||'unresolved')!==role)return;
+    // Counts refer to the same selected commenter population as the results.
+    // Every source file is still scanned and reconciled irrespective of filter.
     if(p.hasA&&p.hasB)both++;
     if(p.near)near++;
     if(!(mode==='near'?p.near:mode==='both'?(p.hasA&&p.hasB):(p.hasA||p.hasB)))return;
-    const m=lookup.get(id)||{};
-    if(role && (m.role||'unresolved')!==role)return;
     rows.push({id,date:String(r.date_submission||m.date||''),filer:String(r.filer_raw||m.organization||''),
       role:m.role||'unresolved',ocr:Boolean(m.ocr),near:p.near,excerpt:p.excerpt});
    });
