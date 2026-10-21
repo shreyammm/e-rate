@@ -20,6 +20,7 @@ class ResearchToolsTests(unittest.TestCase):
           "patterns.html": {"lab-weight","lab-role","lab-issue","lab-timeline","lab-pairs","lab-download"},
           "compare.html": {"compare-weight","compare-metric","compare-body","compare-records","compare-export"},
           "phrase.html": {"ph-a","ph-b","ph-mode","ph-run","ph-results","ph-export","ph-scanned"},
+          "similar.html": {"sim-id","sim-run","sim-export","sim-results","sim-status"},
           "ask.html": {"ask-use-ai","ask-share-question","ev-role","ev-ocr","ev-order","ev-results","ev-export"}
         }
         for page,ids in expected.items():
@@ -42,9 +43,16 @@ class ResearchToolsTests(unittest.TestCase):
         self.assertIn("full.candidates",sidecar)
         self.assertIn("fcc_ask_corpus_evidence.csv",sidecar)
         self.assertIn("corpus_index.json",sidecar)
+    def test_similarity_uses_document_coverage_and_source_metadata(self):
+        code=(DOCS/"assets"/"similar.js").read_text(encoding="utf-8")
+        for part in ("manifest.records", "manifest.with_text",
+                     "qa_index", "idf", "dots", "norms", "docs[i]",
+                     "fcc_similar_filings.csv"):
+            self.assertIn(part,code)
+
     def test_index_links_all_plain_corpus_workbenches(self):
         home=(DOCS/"index.html").read_text(encoding="utf-8")
-        for page in ("patterns.html","compare.html","phrase.html","ask.html"):
+        for page in ("patterns.html","compare.html","phrase.html","similar.html","ask.html"):
             self.assertIn(page,home)
 
 if __name__=="__main__":unittest.main()
