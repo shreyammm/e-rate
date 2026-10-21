@@ -21,6 +21,7 @@ class ResearchToolsTests(unittest.TestCase):
           "compare.html": {"compare-weight","compare-metric","compare-body","compare-records","compare-export"},
           "phrase.html": {"ph-a","ph-b","ph-mode","ph-run","ph-results","ph-export","ph-scanned"},
           "similar.html": {"sim-id","sim-run","sim-export","sim-results","sim-status"},
+          "research.html": {"studio-search","studio-query","studio-status","studio-filings"},
           "ask.html": {"ask-use-ai","ask-share-question","ev-role","ev-ocr","ev-order","ev-results","ev-export"}
         }
         for page,ids in expected.items():
@@ -52,7 +53,7 @@ class ResearchToolsTests(unittest.TestCase):
 
     def test_index_links_all_plain_corpus_workbenches(self):
         home=(DOCS/"index.html").read_text(encoding="utf-8")
-        for page in ("patterns.html","compare.html","phrase.html","similar.html","ask.html"):
+        for page in ("patterns.html","compare.html","phrase.html","similar.html","research.html","ask.html"):
             self.assertIn(page,home)
 
 if __name__=="__main__":unittest.main()
