@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patterns Lab | E-Rate Comment Observatory</title><link rel="stylesheet" href="./assets/site.css">
+<style>
+.lab-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.lab-wide{grid-column:1/-1}
+.lab-controls{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:18px}.lab-controls label{display:flex;flex-direction:column;font-size:12px;color:#56616d;gap:4px;min-width:160px}
+.lab-chart{display:flex;align-items:end;gap:3px;height:175px;border-bottom:1px solid #b6c4ce;overflow-x:auto;padding-top:10px}
+.lab-column{flex:1;min-width:6px;background:#477b9e;cursor:pointer;border:none;padding:0;position:relative}
+.lab-column:hover,.lab-column:focus{background:#194e70}.lab-column.active{background:#aa643d}
+.lab-row{display:grid;grid-template-columns:minmax(155px,1fr) 2fr 65px;align-items:center;gap:10px;margin:8px 0;font-size:12px}
+.lab-track{height:13px;background:#eef1f3}.lab-fill{height:100%;background:#477b9e}
+.lab-hint{font-size:12px;color:#56616d}.lab-actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.lab-link{color:#174f78;text-decoration:underline;background:transparent;border:0;padding:0;cursor:pointer}
+.lab-table{max-height:470px;overflow:auto}.lab-table td{max-width:230px;overflow-wrap:anywhere}
+@media(max-width:760px){.lab-grid{grid-template-columns:1fr}.lab-wide{grid-column:auto}}
+</style></head><body><header class="site-top"><div class="shell header-row"><strong>E-Rate Comment Observatory</strong><a href="./index.html">← Main dashboard</a></div></header>
+<main class="shell"><div class="heading"><h1>Patterns Lab</h1><span>Deterministic analysis · no LLM required</span></div>
+<p class="note">Explore the entire published FCC filing index. Measurements are filing-level <strong>text mentions</strong>, not verified agreement, opposition, unique people, or causal trends. Issue flags are lexical signals. Duplicate family sizes are metadata-based and may not identify coordinated campaigns.</p>
+<p id="lab-status" role="status">Loading full filing index…</p>
+<div class="panel"><div class="lab-controls">
+<label>Filer category<select id="lab-role"><option value="">All categories</option></select></label>
+<label>Issue mentioned<select id="lab-issue"><option value="">Any issue</option></select></label>
+<label>Submission type<select id="lab-type"><option value="">Any type</option></select></label>
+<label>Weighting<select id="lab-weight"><option value="filings">Filing records</option><option value="dedupe">Exact text family proxy (1/family size)</option></select></label>
+<label>OCR candidate<select id="lab-ocr"><option value="">All</option><option value="no">No OCR candidate</option><option value="yes">OCR candidate</option></select></label>
+</div><div class="lab-actions"><button id="lab-reset">Reset filters</button><button id="lab-download">Export filtered index CSV</button><span class="lab-hint" id="lab-count"></span></div></div>
+<div class="lab-grid">
+<section class="panel"><h2>Filing activity by day</h2><p class="note">Select a bar to inspect filings from that calendar date. Dates are taken from the published index, not inferred from text.</p><div id="lab-timeline" class="lab-chart" aria-label="Filing activity by day"></div><p id="lab-timeline-label" class="lab-hint"></p></section>
+<section class="panel"><h2>Issue language by stakeholder type</h2><p class="note">Each bar counts filings with the selected issue language. Percentages divide by all filings in that role under the current filters.</p><div id="lab-roles"></div></section>
+<section class="panel"><h2>Issue co-occurrence</h2><p class="note">Number of records that mention both issue families, not an argument relationship. Select a row to filter the filing table by the two flags.</p><div id="lab-pairs"></div></section>
+<section class="panel"><h2>Duplication sensitivity</h2><p class="note">Contrast raw filing counts with fractional exact-text-family weights. Duplicate family size is supplied by the index; rounding can occur in weighted totals. These weights are not verified independent-person counts.</p><div id="lab-sensitivity"></div></section>
+<section class="panel lab-wide"><h2>Evidence drilldown</h2><p class="note">All rows retain a direct FCC source link. The exported CSV contains only public, privacy-minimized index fields, not raw names or transcript text.</p>
+<div class="lab-actions"><label>Search ID or displayed organization <input id="lab-search" type="search" placeholder="Search within selected filings"></label><span id="lab-page-label"></span><button id="lab-prev">Previous</button><button id="lab-next">Next</button></div>
+<div class="lab-table"><table><thead><tr><th>Filed</th><th>Filing</th><th>Displayed organization</th><th>Category</th><th>Issues mentioned</th><th>Exact copies</th><th>Original</th></tr></thead><tbody id="lab-table"></tbody></table></div>
+</section></div><p class="note">Methodology: one indexed ECFS submission ID per row. Weighting uses 1/duplicate_count per indexed row and assumes the reported family size reflects the indexed universe; it is a diagnostic, not a deduplication of identities. Cross-issue co-mentions do not establish endorsement. OCR-derived text may require validation. All current filters apply across all plots. The full corpus reader and Ask the Corpus remain available independently.</p></main>
+<script src="./assets/patterns.js" defer></script></body></html>
