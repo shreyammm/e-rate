@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-from scripts.llm_census import (select_argument_windows,split_text,load_corpus,process_record, reuse_exact_text_classifications,
+from scripts.llm_census import (cache_key_is_compatible,select_argument_windows,split_text,load_corpus,process_record, reuse_exact_text_classifications,
                                 summarize,validate_chunk,digest,params_key,ALLOWED_MODELS,ollama_call)
 
 
@@ -69,6 +69,12 @@ class LLMCensusTests(unittest.TestCase):
             'book':digest(json.dumps(self.book,sort_keys=True,ensure_ascii=False)),
             'model':'fake','size':4700,'overlap':250},sort_keys=True)
         self.assertNotEqual(params_key(longer,self.book,'fake',4700,250),digest(old_large))
+        transient=json.dumps({'v':'llm-census-v1.1.0',
+            'text':digest(self.body),
+            'book':digest(json.dumps(self.book,sort_keys=True,ensure_ascii=False)),
+            'model':'fake','size':4700,'overlap':250,'selection':'full'},sort_keys=True)
+        self.assertTrue(cache_key_is_compatible(self.row,self.book,'fake',4700,250,digest(transient)))
+        self.assertFalse(cache_key_is_compatible(longer,self.book,'fake',4700,250,digest(old_large)))
 
     def test_us_developed_apache_licensed_model_allowlist(self):
         self.assertEqual(ALLOWED_MODELS, frozenset({'ibm/granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b', 'ibm/granite4.2:8b'}))
