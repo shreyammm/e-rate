@@ -78,3 +78,66 @@
    }
  })();
 })();
+
+/* All-claim table, separate from the group illustration cards. */
+(function(){
+ const $=id=>document.getElementById(id);
+ if(!$('claim-row-table'))return;
+ const make=(tag,txt)=>{const n=document.createElement(tag);n.textContent=String(txt??'');return n;};
+ let rows=[],filtered=[],page=0;
+ const size=45;
+ const issueNames={other_policy_issue:'Other / novel policy issue'};
+ function refresh(){
+  const query=$('claim-row-query').value.toLowerCase().trim();
+  const group=$('claim-row-group').value,role=$('claim-row-role').value,position=$('claim-row-position').value;
+  filtered=rows.filter(r=>(!group||r.group===group)&&(!role||r.role===role)&&
+      (!position||r.position===position)&&(!query||
+      [r.id,r.organization,r.issue,r.action,r.argument,r.quote].join(' ').toLowerCase().includes(query)));
+  const maxPage=Math.max(1,Math.ceil(filtered.length/size));
+  if(page>=maxPage)page=maxPage-1;
+  const table=$('claim-row-table');table.replaceChildren();
+  for(const row of filtered.slice(page*size,(page+1)*size)){
+    const tr=make('tr','');
+    const source=make('td','');source.style.padding='10px';source.style.verticalAlign='top';source.style.borderBottom='1px solid #d7e1e8';
+    const link=make('a',row.id);
+    const u=String(row.source_url||'');
+    if(/^https:\/\/www\.fcc\.gov\/ecfs\/filing\/\d+$/.test(u)){
+      link.href=u;link.rel='noopener noreferrer';link.target='_blank';
+    }
+    source.append(link);
+    const roleCell=make('td',row.organization||row.role.replaceAll('_',' '));
+    const stance=make('td',(issueNames[row.issue]||row.issue.replaceAll('_',' '))+' · '+row.position.replaceAll('_',' '));
+    const argument=make('td','');
+    if(row.action)argument.append(make('p','Requested: '+row.action));
+    if(row.argument)argument.append(make('p','Argument: '+row.argument));
+    if(!row.argument&&!row.action)argument.append(make('p','No grounded action/reason extracted.'));
+    const quote=make('blockquote','“'+row.quote+'”');quote.style.fontSize='.82rem';quote.style.opacity='.82';
+    argument.append(quote);
+    for(const col of [roleCell,stance,argument]){col.style.padding='10px';col.style.borderBottom='1px solid #d7e1e8';col.style.verticalAlign='top';}
+    tr.append(source,roleCell,stance,argument);table.append(tr);
+  }
+  $('claim-row-count').textContent=filtered.length.toLocaleString('en-US')+' individually source-cited machine claims matched; '
+     +rows.length.toLocaleString('en-US')+' total extracted claim rows available. All counts cover only completed machine-processed filings.';
+  $('claim-row-page').textContent='Page '+(page+1)+' / '+maxPage;
+  $('claim-row-prev').disabled=page===0;$('claim-row-next').disabled=page+1>=maxPage;
+ }
+ (async()=>{
+  try{
+   const r=await fetch('./data/machine_claim_rows.json',{cache:'no-store'});
+   if(!r.ok)throw new Error('The next automatic analysis update has not published claim rows yet');
+   const j=await r.json();
+   if(!Array.isArray(j.rows)||j.publication_status!=='EXPLORATORY_MODEL_ONLY')throw new Error('Invalid machine-claim file');
+   rows=j.rows;
+   const groups=[...new Set(rows.map(x=>x.group))].sort();
+   const roles=[...new Set(rows.map(x=>x.role))].sort();
+   for(const v of groups){const o=make('option',v.replaceAll('_',' '));o.value=v;$('claim-row-group').append(o);}
+   for(const v of roles){const o=make('option',v.replaceAll('_',' '));o.value=v;$('claim-row-role').append(o);}
+   for(const id of ['claim-row-query','claim-row-group','claim-row-role','claim-row-position']){
+     $(id).addEventListener(id==='claim-row-query'?'input':'change',()=>{page=0;refresh();});
+   }
+   $('claim-row-prev').onclick=()=>{page--;refresh();};
+   $('claim-row-next').onclick=()=>{page++;refresh();};
+   refresh();
+  }catch(e){$('claim-row-count').textContent='Source-linked claim table not yet available: '+e.message;}
+ })();
+})();
