@@ -38,14 +38,14 @@ const catRate=sum(cohort)?100*sum(matches)/sum(cohort):0,outRate=sum(others)?100
 $("compare-selection").textContent=title(chosen.role)+" × "+title(chosen.issue);
 $("compare-detail").innerHTML="<p><strong>"+fmt(matches.length)+"</strong> raw matched records out of "+fmt(cohort.length)+" category filings</p><p><strong>"+fmt(catRate)+"%</strong> weighted within-category mention rate</p><p><strong>"+fmt(outRate)+"%</strong> weighted mention rate in other categories</p><p><strong>"+(outRate?fmt(catRate/outRate)+"×":"n/a")+"</strong> relative prevalence</p><p class='compare-caption'>This comparison measures language occurrence, not a pro- or anti-E-Rate position.</p>";
 $("compare-recordcount").textContent=fmt(matches.length)+" source filings. Displaying first "+fmt(Math.min(visible,matches.length))+".";
-$("compare-records").innerHTML=matches.slice(0,visible).map(r=>"<li><a href='https://www.fcc.gov/ecfs/search/search-filings/filing/"+encodeURIComponent(r.id)+"' target='_blank' rel='noopener noreferrer'>FCC filing "+safe(r.id)+"</a> — "+safe(r.date||"Undated")+" · "+safe(r.organization||"Organization not shown")+"</li>").join("");
+$("compare-records").innerHTML=matches.slice(0,visible).map(r=>"<li><a href='https://www.fcc.gov/ecfs/filing/"+encodeURIComponent(r.id)+"' target='_blank' rel='noopener noreferrer'>FCC filing "+safe(r.id)+"</a> — "+safe(r.date||"Undated")+" · "+safe(r.organization||"Organization not shown")+"</li>").join("");
 $("compare-more").disabled=visible>=matches.length;
 window.selectedRows=matches;
 }
 function download(filename,lines){const blob=new Blob([lines.join("\n")],{type:"text/csv;charset=utf-8"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
 const csv=s=>'"'+String(s??"").replace(/^[=+@\-\t\r]/,"'$&").replaceAll('"','""')+'"';
 $("compare-export").onclick=()=>download("erate_stakeholder_issue_matrix.csv",["role,issue,matched_weight,group_weight,metric_value,metric_name",...matrix.map(r=>[r.role,r.issue,r.n,r.den,r.v??"",$("compare-metric").value].map(csv).join(","))]);
-$("compare-record-export").onclick=()=>download("erate_issue_category_sources.csv",["filing_id,date,category,organization,fcc_url",...(window.selectedRows||[]).map(r=>[r.id,r.date,r.role,r.organization,"https://www.fcc.gov/ecfs/search/search-filings/filing/"+r.id].map(csv).join(","))]);
+$("compare-record-export").onclick=()=>download("erate_issue_category_sources.csv",["filing_id,date,category,organization,fcc_url",...(window.selectedRows||[]).map(r=>[r.id,r.date,r.role,r.organization,"https://www.fcc.gov/ecfs/filing/"+r.id].map(csv).join(","))]);
 $("compare-more").onclick=()=>{visible+=50;render()};
 ["compare-type","compare-weight","compare-metric","compare-ocr"].forEach(id=>$(id).onchange=()=>{visible=50;render()});
 render();
