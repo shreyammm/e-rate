@@ -30,7 +30,7 @@ class ResearchToolsTests(unittest.TestCase):
                 self.assertTrue((DOCS/js).is_file(),(page,js))
     def test_question_workbench_guards_source_counts_and_result_status(self):
         code=(DOCS/"assets"/"phrase_lab.js").read_text(encoding="utf-8")
-        for token in ("meta.records", "meta.with_text", "ids.size",
+        for token in ("meta.records", "manifest.with_text", "ids.size",
                       "size!==expected", "No partial findings were published",
                       "DecompressionStream", "encodeURIComponent", "textContent"):
             self.assertIn(token,code)
