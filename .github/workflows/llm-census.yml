@@ -9,7 +9,7 @@ on:
       - 'analysis_methods/provision_codebook_v1.json'
       - '.github/workflows/llm-census.yml'
   schedule:
-    - cron: '17 1,5,9,13,17,21 * * *' # Fully unattended; 6 incremental batches per day
+    - cron: '17 * * * *' # Deadline sprint: continuously queued hourly checkpoints; sequential execution
 
 permissions:
   contents: write
@@ -73,7 +73,7 @@ jobs:
         run: |
           python3 -m scripts.llm_census --input-dir data/fcc_corpus \
             --out-dir data/llm_census_fast --publish-preview docs/data/llm_exploratory.json \
-            --model ibm/granite4:1b-q4_K_M --limit 240 --max-chunks-per-filing 3 --max-minutes 175
+            --model ibm/granite4:1b-q4_K_M --limit 850 --max-chunks-per-filing 6 --max-minutes 165
       - name: Build every-claim argument landscape from all completed filings
         if: always() && steps.pending.outputs.run == 'true'
         run: |

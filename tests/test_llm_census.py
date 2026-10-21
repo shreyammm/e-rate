@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-from scripts.llm_census import (split_text,load_corpus,process_record, reuse_exact_text_classifications,
+from scripts.llm_census import (select_argument_windows,split_text,load_corpus,process_record, reuse_exact_text_classifications,
                                 summarize,validate_chunk,digest,params_key,ALLOWED_MODELS,ollama_call)
 
 
@@ -35,6 +35,26 @@ class LLMCensusTests(unittest.TestCase):
                            'argument':'Lost access for children',
                            'evidence_quote':'Without these funds, children will lose affordable internet access.',
                            'uncertain':False}]}
+
+    def test_deadline_selective_long_document_preserves_offsets_and_scope(self):
+        # The source is scanned end-to-end, but giant reference appendices must
+        # not be misrepresented as being fully read by the LLM.
+        head=("Heading and filer attribution. "+("opening source filing. "*100))
+        appendix="A published scientific news reference about radiation. "*800
+        advocacy=("We urge the Commission to preserve affordable E-Rate support. "
+                  "Our district recommends this rule change. ")*20
+        raw=head+appendix+advocacy+appendix
+        windows,total,scope=select_argument_windows(raw,1600,100)
+        self.assertEqual(scope,'prioritized_windows')
+        self.assertGreater(total,len(windows))
+        self.assertLessEqual(len(windows),6)
+        self.assertTrue(any("We urge the Commission" in w['text'] for w in windows))
+        for w in windows:
+            self.assertEqual(raw[w['start']:w['end']],w['text'])
+        small=self.body
+        w,n,kind=select_argument_windows(small,1600,100)
+        self.assertEqual(kind,'full_text')
+        self.assertEqual(n,len(w))
 
     def test_us_developed_apache_licensed_model_allowlist(self):
         self.assertEqual(ALLOWED_MODELS, frozenset({'ibm/granite4:1b-q4_K_M', 'granite4.2:3b', 'granite4.2:8b', 'ibm/granite4.2:8b'}))
@@ -111,20 +131,20 @@ class LLMCensusTests(unittest.TestCase):
             calls.append(1)
             return self.model(*args)
         state=process_record(row,self.book,self.out,'fake','local',700,80,
-                             call=model,max_chunks=3)
+                             call=model,max_chunks=2)
         self.assertEqual(state,'partial')
-        self.assertEqual(len(calls),3)
+        self.assertEqual(len(calls),2)
         path=self.out/'filings'/f'{self.sid}.json'
-        self.assertEqual(json.loads(path.read_text())['next_chunk'],3)
+        self.assertEqual(json.loads(path.read_text())['next_chunk'],2)
         state=process_record(row,self.book,self.out,'fake','local',700,80,
-                             call=model,max_chunks=3)
+                             call=model,max_chunks=2)
         self.assertEqual(state,'partial')
-        self.assertEqual(json.loads(path.read_text())['next_chunk'],6)
+        self.assertEqual(json.loads(path.read_text())['next_chunk'],4)
 
     def test_partial_resumption(self):
         # A preexisting checkpoint resumes the second chunk without redoing the first.
         row={**self.row,'text':self.body*80}
-        chunks=split_text(row['text'],700,80)
+        chunks,_,_=select_argument_windows(row['text'],700,80)
         key=params_key(row,self.book,'fake',700,80)
         p=self.out/'filings'/f'{self.sid}.json'
         p.parent.mkdir(parents=True)

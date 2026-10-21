@@ -135,6 +135,42 @@ def split_text(text: str, size: int = 5800, overlap: int = 400) -> list[dict]:
     return windows
 
 
+def select_argument_windows(text: str, size: int, overlap: int) -> tuple[list[dict], int, str]:
+    """Scan the ENTIRE source but prioritize filing-author advocacy on huge documents.
+
+    The model does NOT read every word of lengthy appendices. This distinct
+    scope is recorded as 'prioritized_windows', never silently represented as
+    fully exhaustive semantic reading of millions of source characters.
+    """
+    chunks=split_text(text,size,overlap)
+    total=len(chunks)
+    if total<=7:
+        return chunks,total,'full_text'
+    cap=5 if len(text)>500_000 else 6
+    selected={0,1}
+    advocate=re.compile(r'\b(?:we|i|our (?:organization|district|members|coalition))\s+'
+        r'(?:strongly\s+)?(?:urge|oppose|support|request|ask|recommend|believe|object|propose|advocate)\b|'
+        r'\b(?:the (?:fcc|commission) should|we call on|we encourage|we respectfully request)\b',re.I)
+    subject=re.compile(r'\b(?:e[- ]rate|fcc|school|librar|internet|screen time|discount|consultant|broadband|funding)\b',re.I)
+    appendix=re.compile(r'\b(?:microwave news|references|bibliography|journal of|peer.reviewed|doi:|copyright)\b',re.I)
+    ranking=[]
+    for i,c in enumerate(chunks[2:],2):
+        chunk=c['text']
+        av=min(7,len(advocate.findall(chunk)))
+        subject_hits=min(5,len(subject.findall(chunk)))
+        penalty=min(4,len(appendix.findall(chunk)))
+        score=av*12+subject_hits*2-penalty*4-(i/max(1,total))*4
+        if score>4:ranking.append((score,-i,i))
+    ranking.sort(reverse=True)
+    for _,_,idx in ranking:
+        if len(selected)>=cap:break
+        if any(abs(idx-k)<=1 for k in selected):continue
+        selected.add(idx)
+    # For a document with no strong advocacy outside its introduction, a
+    # smaller honest scope is preferable to quoting arbitrary scientific text.
+    return [chunks[i] for i in sorted(selected)],total,'prioritized_windows'
+
+
 def prompt_for(chunk: dict, book: dict) -> list[dict]:
     provisions=[{'id':p['id'],'topic':p['label']}
                 for p in book['provisions']]
@@ -250,7 +286,8 @@ def atomic_json(path: Path, obj: dict) -> None:
 def params_key(record: dict, book: dict, model: str, size: int, overlap: int) -> str:
     return digest(json.dumps({'v':VERSION,'text':digest(record['text']),
           'book':digest(json.dumps(book,sort_keys=True,ensure_ascii=False)),
-          'model':model,'size':size,'overlap':overlap},sort_keys=True))
+          'model':model,'size':size,'overlap':overlap,
+          'selection':'deadline_author_own_v1' if len(record['text'])>size*7 else 'full'},sort_keys=True))
 
 
 def process_record(record: dict, book: dict, out: Path, model: str, url: str,
@@ -268,7 +305,7 @@ def process_record(record: dict, book: dict, out: Path, model: str, url: str,
                           'source_url':record['source_url'],'positions':{},'claims':[],
                           'source_sha256':'','review_status':'unvalidated_machine_inference'})
         return 'no_source_text'
-    chunks=split_text(record['text'],size,overlap)
+    chunks,total_chunks,semantic_scope=select_argument_windows(record['text'],size,overlap)
     if previous.get('params_key')!=key or previous.get('status')!='partial':
         previous={'submission_id':sid,'params_key':key,'status':'partial','parts':[],
                   'next_chunk':0}
@@ -292,7 +329,10 @@ def process_record(record: dict, book: dict, out: Path, model: str, url: str,
                    'agency_record_candidate':record['agency_record_candidate'],
                    'source_sha256':digest(record['text']),'params_key':key,
                    'model':model,'chunk_count':len(chunks),
-                   'review_status':'unvalidated_machine_inference','status':'complete'})
+                   'review_status':'unvalidated_machine_inference','status':'complete',
+                   'semantic_scope':semantic_scope,
+                   'source_windows_total':total_chunks,
+                   'source_windows_model_analyzed':len(chunks)})
     atomic_json(path,result)
     return 'complete'
 
@@ -367,6 +407,11 @@ def summarize(records: list[dict], out: Path, book: dict,
     all_reasons=Counter(); all_kinds=Counter();roles=Counter()
     integrity=Counter();review_candidates=[]
     for r in completed:
+        scope=r.get('semantic_scope','full_text')
+        integrity['semantic_scope_'+scope+'_filings']+=1
+        if scope=='prioritized_windows':
+            integrity['source_windows_selected_for_model']+=int(r.get('source_windows_model_analyzed',0))
+            integrity['source_windows_available_in_selective_documents']+=int(r.get('source_windows_total',0))
         roles[r['stakeholder_role']]+=1
         if str(r.get('has_unreviewed_ocr','0'))=='1': integrity['ocr_candidate_filings']+=1
         if not r['positions']:integrity['filings_without_grounded_positions']+=1
@@ -383,6 +428,7 @@ def summarize(records: list[dict], out: Path, book: dict,
         if r.get('invalid_claims_rejected',0):flags.append('unmatched_or_invalid_quotes')
         if str(r.get('has_unreviewed_ocr','0'))=='1':flags.append('unreviewed_ocr_candidate')
         if not r['positions']:flags.append('no_grounded_policy_position_extracted')
+        if scope=='prioritized_windows':flags.append('selected_author_windows_not_full_appendix_semantic_read')
         if int(r.get('chunk_count',0))>12:flags.append('long_complex_filing')
         if int(digest(r['submission_id'])[:8],16)%25==0:flags.append('deterministic_quality_sample')
         if flags:
