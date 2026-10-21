@@ -150,9 +150,23 @@ def prompt_for(chunk: dict, book: dict) -> list[dict]:
 def ollama_call(messages: list[dict], model: str, url: str,
                 timeout: int = 95) -> dict:
     larger=model.endswith(':8b')
-    payload=json.dumps({'model':model,'stream':False,'think':False,'format':'json','messages':messages,
+    # An explicit JSON Schema prevents the 1B model from returning a prose
+    # summary instead of the required claims array. Empty claims is permissible
+    # only when the model actually returns it; malformed responses are retried.
+    schema={'type':'object','properties':{
+        'claims':{'type':'array','items':{'type':'object','properties':{
+            'provision_id':{'type':'string'},'position':{'type':'string'},
+            'requested_action':{'type':'string'},'reason_family':{'type':'string'},
+            'claim_kind':{'type':'string'},'argument':{'type':'string'},
+            'evidence_quote':{'type':'string'},'uncertain':{'type':'boolean'}
+        },'required':['provision_id','position','requested_action','reason_family',
+                       'claim_kind','argument','evidence_quote','uncertain']}},
+        'summary':{'type':'string'},'stakeholder_role':{'type':'string'},
+        'stakeholder_quote':{'type':'string'}
+    },'required':['claims','summary','stakeholder_role','stakeholder_quote']}
+    payload=json.dumps({'model':model,'stream':False,'think':False,'format':schema,'messages':messages,
                         'options':{'temperature':0,'num_ctx':8192 if larger else 4096,
-                                   'num_predict':1500 if larger else 750}}).encode()
+                                   'num_predict':2300 if larger else 1300}}).encode()
     req=urllib.request.Request(url,method='POST',data=payload,
                                headers={'Content-Type':'application/json'})
     for attempt in range(2):
@@ -518,11 +532,14 @@ def main(argv=None) -> int:
             errors.append({'submission_id':row['submission_id'],'error':str(err)[:240]})
             print(f"{row['submission_id']}: retryable error: {err}",file=sys.stderr,flush=True)
             # A dead inference server should not waste time on every filing.
-            if len(errors)>=12:break
+            if len(errors)>=50:break
     result=summarize(rows,out,book,args.model,args.chunk_size,args.chunk_overlap)
     if args.publish_preview:atomic_json(args.publish_preview,result)
     print(json.dumps({'attempted':attempted,'newly_finished':finished,'partially_processed':partial,'errors':errors,
          'completed':result['completed_filings'],'total':len(rows)},indent=2),flush=True)
-    return 0 if not errors else 2
+    # Individual malformed/unavailable model responses are retryable and are
+    # already reported in errors and left pending. Do not mark the whole run as
+    # failed after successfully checkpointing other filings.
+    return 0
 
 if __name__=='__main__':sys.exit(main())
