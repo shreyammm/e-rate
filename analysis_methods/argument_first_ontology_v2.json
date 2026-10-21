@@ -1,0 +1,118 @@
+{
+  "schema_version": "argument-first-v2-draft",
+  "status": "research_contract_not_model_results",
+  "source_unit": "ECFS filing / exact cited passage; source archive hash required",
+  "scope": "Separate organically discovered lexical clusters, full-corpus analyst-defined vocabulary families, interpreted claims, and FCC notice questions.",
+  "tiers": [
+    {
+      "id": "discovered_language_cluster",
+      "source": "unsupervised source-text grouping",
+      "examples": "docs/data/argument_landscape.json → language_themes",
+      "meaning": "Similar excerpt vocabulary; no inferred stance, alignment, or independent speaker count",
+      "ready": true,
+      "unverified": [
+        "substantive interpretation",
+        "source diversity"
+      ]
+    },
+    {
+      "id": "reason_language_family",
+      "source": "analyst-defined transparent lexicons on all readable documents",
+      "examples": "docs/data/exhaustive_census.json + docs/data/argument_language_by_role.json",
+      "meaning": "Filing mentions reason-related terms; not verified endorsement",
+      "ready": true,
+      "unverified": [
+        "semantic applicability",
+        "viewpoints"
+      ]
+    },
+    {
+      "id": "interpreted_claim",
+      "source": "individual filing/quoted span; GitHub Granite, Kaggle gpt-oss or human review",
+      "meaning": "Proposed claim/rationale/action; model output requires provenance, reconciliation and review",
+      "ready": false,
+      "required": [
+        "filing_id",
+        "source_sha256",
+        "quote",
+        "quote_start",
+        "quote_end",
+        "requested_action",
+        "reason",
+        "model_id",
+        "review_state"
+      ]
+    },
+    {
+      "id": "regulatory_crosswalk",
+      "source": "analyst draft of FCC 26-41 questions/proposals",
+      "meaning": "Secondary mapping from interpreted claims or manually reviewed positions to the 29 draft codebook entries",
+      "ready": true,
+      "unverified": [
+        "exact paragraph anchors",
+        "verified positions"
+      ]
+    }
+  ],
+  "dimensions": {
+    "claim_unit": [
+      "filing_id",
+      "source_offset",
+      "claim_text",
+      "source_quote",
+      "context_window",
+      "cross_docket_flag",
+      "ocr_flag"
+    ],
+    "stance": [
+      "support",
+      "oppose",
+      "conditional_or_amend",
+      "alternative",
+      "discussion_no_position",
+      "unclear",
+      "not_addressed_after_reading"
+    ],
+    "reasoning": [
+      "predicted_consequence",
+      "causal_mechanism",
+      "evidence_invoked",
+      "governance_level",
+      "affected_population",
+      "counterargument_addressed"
+    ],
+    "stakeholder": [
+      "filer_name_string",
+      "provisional_category",
+      "claimed_capacity",
+      "verified_organization_id",
+      "capacity_verified"
+    ],
+    "relationships": [
+      "claim_supports_claim",
+      "claim_rebuts_claim",
+      "claim_qualifies_claim",
+      "claim_offers_alternative",
+      "claim_references_authority",
+      "claim_pertains_to_fcc_option"
+    ],
+    "uncertainty": [
+      "source_recovered",
+      "quote_verbatim",
+      "position_reviewed",
+      "manual_reviewers",
+      "independent_source_family",
+      "model_disagreement",
+      "unaddressed_unknown"
+    ]
+  },
+  "publish_rules": [
+    "Never convert a vocabulary hit, lexical cluster or co-mention into a position.",
+    "Never count repeated extracts as distinct claims of independent commenters without reconciliation.",
+    "Do not infer human-reviewed validation from model-generated source offsets alone.",
+    "Keep GitHub and Kaggle outputs separately identified by model and scope; no averaging stances.",
+    "Source passages are untrusted quotations and may contain FCC background, cross-docket text, or rejected ideas.",
+    "Publish denominators with role codes, OCR flags and any inference limits.",
+    "Regulatory notice status must distinguish specific proposals from open questions."
+  ]
+}
