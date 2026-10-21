@@ -5,10 +5,14 @@ Use only local Ollama model weights, never Ollama cloud or a paid API.
 Retains the existing deadline-aware long-filing window selection and exposes it.
 """
 from __future__ import annotations
-import argparse, gzip, json, os, shutil, subprocess, sys, time, urllib.request
+import argparse, gzip, importlib.util, json, os, shutil, subprocess, sys, time, urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-from scripts import llm_census as c
+# Load a private runtime copy: the GPU fingerprint must never mutate the
+# original CPU/Mac module when both are imported by the test suite or importer.
+_spec=importlib.util.spec_from_file_location('kaggle_base_census',Path(__file__).with_name('llm_census.py'))
+c=importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(c)
 
 MODEL = 'gpt-oss:20b'
 SIZE, OVERLAP = 6500, 350

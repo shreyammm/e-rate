@@ -1,7 +1,6 @@
 import gzip, json, tempfile, unittest
 from pathlib import Path
-from scripts import llm_census as c
-from scripts.kaggle_census import MODEL,SIZE,OVERLAP,pack,restore,source_spans
+from scripts.kaggle_census import c,MODEL,SIZE,OVERLAP,pack,restore,source_spans
 
 class Checkpoints(unittest.TestCase):
     def setUp(self):

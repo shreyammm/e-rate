@@ -2,8 +2,7 @@
 """Import public Kaggle output without Kaggle/GitHub credentials in the notebook."""
 import argparse, json
 from pathlib import Path
-from scripts import llm_census as c
-from scripts.kaggle_census import MODEL, SIZE, OVERLAP, BUNDLE, restore
+from scripts.kaggle_census import c, MODEL, SIZE, OVERLAP, BUNDLE, restore
 
 def import_bundle(bundle, source, out, preview):
     records=c.load_corpus(source,None,'ocr_candidate_v1','augmented');book=c.load_book()
