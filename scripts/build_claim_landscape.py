@@ -84,8 +84,10 @@ def completed_claims(files, records, roles):
                 'position':c.get('position','unclear'),
                 'claim_kind':c.get('claim_kind','other'),
                 'reason_family':c.get('reason_family','other'),
-                'argument':argument[:450],'requested_action':action[:230],
+                'argument':CONTACT.sub('[CONTACT REDACTED]',argument[:450]),
+                'requested_action':CONTACT.sub('[CONTACT REDACTED]',action[:230]),
                 'quote':CONTACT.sub('[CONTACT REDACTED]',quote[:320]),
+                'raw_quote':quote,
                 'source_url':str(row.get('source_url') or 'https://www.fcc.gov/ecfs/filing/'+sid),
                 'evidence_start':offset,'source_sha256':row.get('source_sha256',''),
                 'ocr_candidate':str(row.get('has_unreviewed_ocr','0'))=='1',
@@ -127,12 +129,8 @@ def verify_source_spans(claims, by_file, source=ROOT/'data/fcc_corpus'):
                     original_quote=c['quote']
                     # Compare redacted quote against the same redaction of the
                     # literal stored text span; no model-fabricated citations.
-                    span=body[offset:offset+len(str(next(
-                        (raw['evidence_quote'] for raw in by_file[sid].get('claims',[])
-                         if raw.get('evidence_start')==offset and
-                         raw.get('provision_id')==c['issue_id'] and
-                         raw.get('position')==c['position']),'')))]
-                    if CONTACT.sub('[CONTACT REDACTED]',span[:320])!=original_quote:
+                    span=body[offset:offset+len(c['raw_quote'])]
+                    if span!=c['raw_quote'] or CONTACT.sub('[CONTACT REDACTED]',span[:320])!=original_quote:
                         raise ValueError('Evidence quote does not match original text for '+sid)
                     verified+=1
     if total!=manifest['records'] or seen_ids!=set(wanted):
@@ -211,10 +209,16 @@ def build(data_dir=FILINGS, output=OUT, verify=True, max_groups=42, index_file=I
                        'requested_action','argument','quote','source_url')} for x in examples]
         })
     summarized.sort(key=lambda r:(-r['distinct_filings'],r['id']))
+    org_by_id={r['id']:str(r.get('organization') or '') for r in records}
+    org_positions=defaultdict(lambda:defaultdict(lambda:defaultdict(set)))
+    role_issue_positions=defaultdict(lambda:defaultdict(lambda:defaultdict(set)))
     role_filing_counts=defaultdict(set);position_issues=defaultdict(lambda:defaultdict(set))
     for c in claims:
         role_filing_counts[c['role']].add(c['submission_id'])
         position_issues[c['issue_id']][c['position']].add(c['submission_id'])
+        role_issue_positions[c['role']][c['issue_id']][c['position']].add(c['submission_id'])
+        org=org_by_id.get(c['submission_id'],'')
+        if org:org_positions[org][c['issue_id']][c['position']].add(c['submission_id'])
     completed=len(by_file)
     result={
       'schema_version':'claim-landscape-v1',
@@ -234,6 +238,16 @@ def build(data_dir=FILINGS, output=OUT, verify=True, max_groups=42, index_file=I
       'issue_stance_filing_counts':{k:{position:len(ids) for position,ids in x.items()}
                                    for k,x in sorted(position_issues.items())},
       'clusters':summarized,
+      'commenter_type_issue_stance':[
+        {'role':role,'issue_id':issue,'position':stance,'distinct_filings':len(ids)}
+        for role,issues in sorted(role_issue_positions.items())
+        for issue,stances in sorted(issues.items()) for stance,ids in sorted(stances.items())
+      ],
+      'organization_issue_stance':[
+        {'organization_label':name,'issue_id':issue,'position':stance,'distinct_filings':len(ids)}
+        for name,issues in sorted(org_positions.items())
+        for issue,stances in sorted(issues.items()) for stance,ids in sorted(stances.items())
+      ],
       'warnings':['All completed model-extracted claims are grouped; no sampled passages are used as the prevalence denominator.',
          'The LLM may miss arguments, confuse quoted views with the filer’s stance, or misidentify roles. Source-exact citations do not validate semantic interpretation.',
          'Unprocessed filings are NEVER treated as not_addressed or neutral.',
