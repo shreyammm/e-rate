@@ -58,7 +58,7 @@ function render(){
  const tools=make("div","reg-questions");
  tools.append(link("Ask all filings about this regulatory question ↗",q("What actual positions and reasons do FCC filers express regarding: "+x.policy_option+"? Include disagreement and original sources.")));
  const lens=language[x.category]||[];
- if(lens.length)tools.append(link("Explore cross-cutting reasons in the Atlas ↗","./atlas.html#reasoning"));
+ if(lens.length)tools.append(link("Explore related reason-language lens ↗","./atlas.html?reason="+encodeURIComponent(lens[0])+"#reasoning"));
  card.append(tools);
  host.append(card);
  }
