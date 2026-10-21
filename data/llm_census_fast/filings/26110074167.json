@@ -1,6 +1,6 @@
 {
-  "summary": "The comment opposes cuts to the E-Rate program, emphasizing the importance of free internet services for schools and libraries, and the potential negative impact on struggling school districts.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment opposes cuts to the E-Rate program, emphasizing the importance of free internet services for schools and libraries, and the potential increase in costs if the program were to be cut.",
+  "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9037a09dd90a843f423687aae20661c8c3e31c48ff6be848dce7fb09ab6b9f2a",
-  "params_key": "2ecf27695498ce868d94c9b66426187dc549b84b40f9a859da7ad3e022b4f5e8",
+  "params_key": "abf8ee11b0329c41a240f1e5a557fb84c927aa31274000d132c8c1f50f3743c7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

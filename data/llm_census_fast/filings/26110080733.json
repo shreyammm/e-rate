@@ -5,7 +5,7 @@
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "keep the program funded",
+      "requested_action": "keep E-Rate program funded",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Eliminating E-Rate would reduce annual U.S. GDP by $4.2 billion",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1043c93d8b239baec4dfc44d5d9347caace08d41adde3d0531c5c050bde3680d",
-  "params_key": "68d6af9a22e5c86ac0fd18bb7d88e5e3b6d1e3fb1d0af3e6725acecd1248bf54",
+  "params_key": "9a09ddc62848f5f8c46cfa09cd7b2f893c34c3000d51d4e96c4a8903a9c09d07",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

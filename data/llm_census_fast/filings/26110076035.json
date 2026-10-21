@@ -1,6 +1,6 @@
 {
-  "summary": "The Nassau Library System highlights the cost savings and competitive process provided by the E-Rate program, emphasizing its importance beyond just funding internet access.",
-  "stakeholder_role": "library",
+  "summary": "The Nassau Library System highlights the cost savings and competitive nature of the E-Rate program, which has resulted in substantial cost savings over the years. The library system emphasizes the importance of the 28 waiting window between the 470 and 471 forms, which formalizes a competitive approach to receiving internet. The library system argues that the program is not just providing funding for the internet, but also appears to be bringing down costs.",
+  "stakeholder_role": "unknown",
   "claims": [],
   "positions": {},
   "invalid_claims_rejected": 1,
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2a9d80bb2a1949b83efcc1f9ab37e6dc4ca4f91703b6512e9ecf7d72f9f7609f",
-  "params_key": "f9544d7e645fb666047e5d404884eaf39728fae84d6744ececb302483b3334c4",
+  "params_key": "28e797b742f80bd9e04adff1ccb579ca7e34169910233e02153cb011fb85a872",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,26 +1,14 @@
 {
-  "summary": "Discussion on potential changes to E-Rate program and their implications",
-  "stakeholder_role": "unknown",
+  "summary": "The comment expresses concern about the loss of E-Rate funding, which could lead to increased financial strain on school districts and libraries. It cites a specific quote about the impact on local budgets.",
+  "stakeholder_role": "school_district",
   "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Loss of E-Rate in schools means more pressure on local budgets, many of which are already struggling to fund our libraries",
-      "evidence_start": 0,
-      "evidence_end": 122,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Loss of E-Rate in schools means more pressure on local budgets, many of which are already struggling to fund our libraries",
       "evidence_quote": "Loss of E-Rate in schools means more pressure on local budgets, many of which are already struggling to fund our libraries",
       "evidence_start": 0,
       "evidence_end": 122,
@@ -28,7 +16,6 @@
     }
   ],
   "positions": {
-    "education_outcomes": "support",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -39,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "cb6bd5a7f1bc195ba5378843e9287f56416e023d6acaeca97711c204c37fc971",
-  "params_key": "def8f257eababe76468e0c558d836c40975aeb12e6455ef76daf505847965272",
+  "params_key": "5107c8e8e23e4b23961673a18edf142547e050dd1e777cd59fc247c1e065ad1b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

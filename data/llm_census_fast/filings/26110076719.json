@@ -1,5 +1,5 @@
 {
-  "summary": "The comment supports maintaining the E-Rate program for its educational and infrastructure benefits.",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing budget cost efficiency and the need for broadband access in schools and libraries.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "The program is essential for providing affordable broadband to schools and libraries.",
-      "evidence_quote": "Please keep the e-rate program to benefit schools and libraries",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access in schools and libraries.",
+      "evidence_quote": "Please keep the e-rate program to benefit schools and libraries.",
       "evidence_start": 0,
-      "evidence_end": 63,
+      "evidence_end": 64,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8c2de2b53d977f5dcc9ce37c460cc8de72d67a41e582155f491ff9c4bcf2747e",
-  "params_key": "9d77f904598d0e14e68f2cbbe6ce8e03649c011ee98f8c4d67a8a454d6e5a123",
+  "params_key": "b89727fa75d9d973aee4f3b9236e154901fe32a927580cdda341733ea38838a4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,34 +1,21 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
-  "stakeholder_role": "unknown",
+  "summary": "The comment supports maintaining E-Rate funding for libraries and schools.",
+  "stakeholder_role": "school_district",
   "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Please keep the WiFi and internet services available across all libraries in the nation. We need internet access for our schools and children.",
-      "evidence_start": 0,
-      "evidence_end": 142,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Maintain current E-Rate funding and policies",
+      "requested_action": "Keep E-Rate funding available",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please keep the WiFi and internet services available across all libraries in the nation. We need internet access for our schools and children.",
+      "argument": "Funding should not be limited or sunset",
+      "evidence_quote": "Please keep the WiFi and internet services available across all libraries in the nation.",
       "evidence_start": 0,
-      "evidence_end": 142,
+      "evidence_end": 88,
       "uncertain": false
     }
   ],
   "positions": {
-    "education_outcomes": "support",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -39,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "21f49ee88911134f935b4c5032f795c8c0287f4089bce0164b6e4b94145c686d",
-  "params_key": "a07154d824ffa157f2bac2e8e2ae3b18e5056a084259ec868f57645049ff4e82",
+  "params_key": "0c76c9fef8d41d038e8028b9b41cab08cc85aa38b3a0eb252986b8ee2d868a93",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

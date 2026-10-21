@@ -1,6 +1,6 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
-  "stakeholder_role": "unknown",
+  "summary": "The comment expresses concern about the impact of limiting or sunsetting E-Rate on access to essential services for the community.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "It would be detrimental to mine and my children’s lives if we were no longer able to access the computers, WiFi, and printing offered by our local libraries. These services help provide resources we would not have access to otherwise.",
+      "argument": "Limiting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "It would be detrimental to mine and my children’s lives if we were no longer able to access the computers, WiFi, and printing offered by our local libraries.",
       "evidence_start": 0,
-      "evidence_end": 234,
+      "evidence_end": 157,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "86ab96c5cd6212e74b1254d48cb4092ba4f0350818f1e92eeb0b8ccbd93337f6",
-  "params_key": "dc7bd0cd431c81c35aae73a31e767ca8a16180e99db8c01ff7189a6dc0ea44ad",
+  "params_key": "419e15683218398ee0c4cd1f2bb8ab136b067b7dbff79a1fb93252341349382d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

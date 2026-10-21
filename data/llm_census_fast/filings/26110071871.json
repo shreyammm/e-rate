@@ -1,62 +1,8 @@
 {
-  "summary": "The text argues against tying E-Rate decisions to educational outcomes, extending CIPA to third-party-owned devices, requiring network-level content filtering, interpreting monitoring requirements and privacy, and changing CIPA's treatment of social media. It emphasizes the role of libraries in helping patrons, especially the homeless, find jobs and the importance of internet access for students who cannot afford internet service at home.",
-  "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "cipa_byod",
-      "position": "oppose",
-      "requested_action": "Extend CIPA to third-party-owned devices",
-      "reason_family": "other",
-      "claim_kind": "legal_claim",
-      "argument": "Third-party-owned devices should not be covered by CIPA",
-      "evidence_quote": "Libraries help patrons, especially the homeless, find jobs to help get them back on their feet, and internet/wifi access is the biggest help with that. Students go to public libraries to use their Wi-Fi to study or work on building a resume for a job at age 16 because their parents can't afford internet service at home. Public libraries help their community in so many ways and having internet access is one of them.",
-      "evidence_start": 0,
-      "evidence_end": 418,
-      "uncertain": false
-    },
-    {
-      "provision_id": "cipa_monitoring_privacy",
-      "position": "oppose",
-      "requested_action": "Interpret monitoring requirements and privacy",
-      "reason_family": "privacy_free_expression",
-      "claim_kind": "citation_of_external_evidence",
-      "argument": "CIPA monitoring requirements should not impact privacy",
-      "evidence_quote": "Libraries help patrons, especially the homeless, find jobs to help get them back on their feet, and internet/wifi access is the biggest help with that. Students go to public libraries to use their Wi-Fi to study or work on building a resume for a job at age 16 because their parents can't afford internet service at home. Public libraries help their community in so many ways and having internet access is one of them.",
-      "evidence_start": 0,
-      "evidence_end": 418,
-      "uncertain": false
-    },
-    {
-      "provision_id": "cipa_network_filter",
-      "position": "oppose",
-      "requested_action": "Require network-level content filtering",
-      "reason_family": "privacy_free_expression",
-      "claim_kind": "normative_value",
-      "argument": "Network-level content filtering should not be required by CIPA",
-      "evidence_quote": "Libraries help patrons, especially the homeless, find jobs to help get them back on their feet, and internet/wifi access is the biggest help with that. Students go to public libraries to use their Wi-Fi to study or work on building a resume for a job at age 16 because their parents can't afford internet service at home. Public libraries help their community in so many ways and having internet access is one of them.",
-      "evidence_start": 0,
-      "evidence_end": 418,
-      "uncertain": false
-    },
-    {
-      "provision_id": "cipa_social_media",
-      "position": "oppose",
-      "requested_action": "Change CIPA treatment of social media",
-      "reason_family": "privacy_free_expression",
-      "claim_kind": "normative_value",
-      "argument": "CIPA should not change its treatment of social media",
-      "evidence_quote": "Libraries help patrons, especially the homeless, find jobs to help get them back on their feet, and internet/wifi access is the biggest help with that. Students go to public libraries to use their Wi-Fi to study or work on building a resume for a job at age 16 because their parents can't afford internet service at home. Public libraries help their community in so many ways and having internet access is one of them.",
-      "evidence_start": 0,
-      "evidence_end": 418,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "cipa_byod": "oppose",
-    "cipa_monitoring_privacy": "oppose",
-    "cipa_network_filter": "oppose",
-    "cipa_social_media": "oppose"
-  },
+  "summary": "The text discusses the importance of libraries and internet access for students, especially those who cannot afford internet at home. It highlights the role of libraries in helping students find jobs and build resumes. The text also mentions the potential impact of limiting or sunsetting E-Rate on the cost burden for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [],
+  "positions": {},
   "invalid_claims_rejected": 1,
   "submission_id": "26110071871",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110071871",
@@ -65,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3b964d776c9b94062e161aea9d36e2185941a0b4d7f5842f2622c495c26f3a10",
-  "params_key": "93f4fdaac95ba8abda80e81d87bf9f384476cf804025c3ec6684aac99e30d74b",
+  "params_key": "56c77a70b12e87989d8d83741baf7e96442ab5caeaed0fbdcc6c0690000bd01f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

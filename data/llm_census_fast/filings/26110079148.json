@@ -1,9 +1,24 @@
 {
-  "summary": "Bucyrus City Schools urges the FCC to preserve E-Rate funding to maintain affordable internet access for students and schools.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "Bucyrus City Schools urges the FCC to preserve E-Rate's core funding to maintain affordable internet access for students and schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would need to cover more internet costs with local funds, reducing resources for instruction and technology.",
+      "evidence_quote": "Without this funding, losing E-Rate funding would require Bucyrus City Schools to cover more of our internet and network costs with local funds, leaving less available for instruction and other student needs. It could also force us to delay network upgrades or other planned purchases, making it harder to maintain reliable technology within our budget.",
+      "evidence_start": 643,
+      "evidence_end": 996,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110079148",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110079148",
   "filer_raw": "Bucyrus City Schools",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "28b975371d12dffb09574b6d602496e1424643c37c868efecdd848e01e67b00c",
-  "params_key": "667f6e65e26d9f37d459d855c1edf71f66f73ba6c0b88d0c9b8ea4641da8bd9b",
+  "params_key": "aecdba18e759cbb2dac5d1bb4940158f312ba24520e5f17607a70ce8d6f89d25",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

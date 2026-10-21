@@ -1,5 +1,5 @@
 {
-  "summary": "The comment supports the continuation of the E-Rate program for a rural school district's network maintenance and improvements.",
+  "summary": "Opposes sunsetting E-Rate program for cost efficiency",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Continue E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Our small rural school district relies on the program for needed maintenance and improvements of our network. Thank you.",
-      "evidence_start": 36,
-      "evidence_end": 156,
+      "argument": "Rural school district relies on E-Rate for network maintenance",
+      "evidence_quote": "Please continue the E-Rate program",
+      "evidence_start": 0,
+      "evidence_end": 34,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b33beafc696eacc5461425fd56a7a5acb090f8223358d3f348b6f03822fa3e9b",
-  "params_key": "d90a912ee626c46ad9fa480e42ca6cdc7d5b5745148ce12b7171c5a43a87eb66",
+  "params_key": "23c825dc1a69670946e0c912deec915b6103dec5861da4003edc51b2755631bc",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

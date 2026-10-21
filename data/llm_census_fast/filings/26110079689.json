@@ -1,5 +1,5 @@
 {
-  "summary": "oppose",
+  "summary": "The comment opposes proposed cuts to the E-Rate program, citing the cost burden on vulnerable school communities.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Cutting E-Rate will place a costly burden on school communities",
       "evidence_quote": "I strongly oppose the proposed cuts or reductions to the E-RATE program. Cutting this funding will place a costly burden on our most vulnerable school communities, many of them rural.",
       "evidence_start": 0,
       "evidence_end": 183,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "bafa53dc60a150bcd8877a3383fcc872c4e31794f083b366a6327313b5c3ce86",
-  "params_key": "a7926df14c08adfa048b7eabe0896567150b5ba4ed9a964e2c0dc8fa3e358dc6",
+  "params_key": "43c100badf39ebb81ffa486ab0b5e29a9f997587f66ea801e75fb652a961eaaf",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

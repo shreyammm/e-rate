@@ -1,6 +1,6 @@
 {
-  "summary": "The stakeholder opposes limiting or sunsetting the E-Rate program, arguing that defunding it would be a disservice to lower-income individuals and families and would put additional pressure on schools and libraries to continue providing services without this aid. The stakeholder cites the importance of the program in bridging the digital divide and providing affordable internet connectivity to libraries and schools.",
-  "stakeholder_role": "unknown",
+  "summary": "The eRate program is crucial for bridging the digital divide and providing affordable internet connectivity to libraries and schools. Opposing its limitation or sunset would be detrimental to lower-income individuals and families.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8184cefe9f04428702b5cdcbb7b8a92b6f17e4aa87fb048af97d64c8b4208923",
-  "params_key": "a977911018ae2b2f8390a24bb1415a7a64850fa0140ca70e2e39a0e121f0cf54",
+  "params_key": "86334b7e5f21d4b33728f2f495cf6e7eb17ddf71c0ef9809ae4410c69a38bf9c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

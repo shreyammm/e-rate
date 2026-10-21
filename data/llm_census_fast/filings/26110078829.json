@@ -1,9 +1,24 @@
 {
-  "summary": "The comment supports maintaining the E-Rate program and does not eliminate free WiFi in libraries.",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing concerns about increased costs for schools and libraries.",
   "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "Please do not eliminate free WiFi in libraries.",
+      "evidence_start": 0,
+      "evidence_end": 47,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110078829",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110078829",
   "filer_raw": "Shaina Vorspan",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "05a59ed07d5a1954709160a6b85ab074415ea0955f2f05985125d7d50bc91b8a",
-  "params_key": "8ef0a70d8a0f99b4b8de33164e2554f2d5ea42215c3db4ff299dfb92554a83ab",
+  "params_key": "16676939af73389b2c1f7c534d996716d0d618aab23501392fe5fd5b69cbd541",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

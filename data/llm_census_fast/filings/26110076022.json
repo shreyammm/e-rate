@@ -1,9 +1,24 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "Marlene H. Dortch opposes limiting or sunsetting E-Rate to prevent cost increases for libraries and schools.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would increase costs for schools and libraries",
+      "evidence_quote": "To make changes other then improvements would be harmful to my home, city, state and our nation.",
+      "evidence_start": 118,
+      "evidence_end": 214,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110076022",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076022",
   "filer_raw": "Becky Wigginton",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b78a31ede58851373b2ee502c63b3c14db480e0acf9e5a22a8d9c6f217ef76de",
-  "params_key": "63fa74c58aa089b2a8f17669cf9b1c315b19127482c1b11531571300ca3f3515",
+  "params_key": "164a52f6b4bccb40f448f244971b8dd2e031a0adf44c4eea09ec6c318582b012",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The comment highlights the importance of E-Rate funding for education in West Virginia, emphasizing its role in providing access to internet services for students and libraries. The comment supports the idea of tying E-Rate decisions to educational outcomes to ensure that the funds are used effectively to support learning and digital literacy.",
+  "summary": "The comment highlights the importance of E-Rate funding for education and access to broadband services in West Virginia. It emphasizes the positive impact of E-Rate on students' educational opportunities and career prospects.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Tie E-Rate decisions to educational outcomes",
       "reason_family": "education_effectiveness",
       "claim_kind": "normative_value",
-      "argument": "E-Rate funds are critical to education outcomes in West Virginia",
+      "argument": "E-Rate funds are critical to education outcomes",
       "evidence_quote": "E-Rate funds are critical to West Virginia public libraries. Affordable high speed internet service is not available across the state. Access through public computers and wifi, both inside and outside of the buildings, provides a safe spot for West Virginians to further their education, expand workforce opportunities, and participate in the larger digital world.",
       "evidence_start": 0,
       "evidence_end": 364,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "42df34eb3c4762aef29c094d171094743099da75cfe9b9cd277a465cff55c145",
-  "params_key": "48e94ec5ce14ed34593531aaf88b1fe7697e8226b4da377548aa8351559589f6",
+  "params_key": "ad8c892f2990a0809cfd351501e6e05336fe1985767089b48570287f0545041c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

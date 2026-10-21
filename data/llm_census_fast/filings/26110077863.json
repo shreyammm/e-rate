@@ -1,47 +1,21 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
+  "summary": "The comment opposes limiting or sunsetting E-Rate, citing budget cost efficiency and the need for government regulation of federally subsidized networks in public school systems.",
   "stakeholder_role": "unknown",
   "claims": [
-    {
-      "provision_id": "consultant_registration",
-      "position": "oppose",
-      "requested_action": "Individual consultant registration database",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "C.The networks in question are federally subsidized (in public school systems), so the government must help to ensure that they are regulated",
-      "evidence_start": 0,
-      "evidence_end": 141,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "C.The networks in question are federally subsidized (in public school systems), so the government must help to ensure that they are regulated",
-      "evidence_start": 0,
-      "evidence_end": 141,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "C.The networks in question are federally subsidized (in public school systems), so the government must help to ensure that they are regulated",
-      "evidence_start": 0,
-      "evidence_end": 141,
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "The networks in question are federally subsidized (in public school systems), so the government must help to ensure that they are regulated.",
+      "evidence_start": 2,
+      "evidence_end": 142,
       "uncertain": false
     }
   ],
   "positions": {
-    "consultant_registration": "oppose",
-    "education_outcomes": "support",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -52,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e53384604a64f0734730c54c96fb412aa9a9c300487f7d228942561ed576cbbf",
-  "params_key": "0f35bb1cbd4c0ddd36dc1b857e7801d51dccbcd6e45d37ebb862e56fdddc6dee",
+  "params_key": "1d82b9b6c5067d64071421e3e4a7cb9c891e37357a95d37f99de0778502faeee",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

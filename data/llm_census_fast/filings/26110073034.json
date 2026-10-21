@@ -1,17 +1,17 @@
 {
-  "summary": "Maintain or increase funding for E-Rate program to support internet access in libraries and schools, especially in poorer and rural areas.",
+  "summary": "The comment supports maintaining or increasing funding for E-Rate, emphasizing its importance for libraries and schools, especially in poorer and rural areas. It highlights the program's role in providing internet and communication connections for students and citizens.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Maintain or increase funding for E-Rate",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "It allows libraries and schools, especially poorer and rural ones, to access and maintain internet and communication connections for their patrons, students, and citizens. It is an amazing program",
-      "evidence_start": 53,
-      "evidence_end": 249,
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "Please maintain or even increase funding for e-rate.",
+      "evidence_start": 0,
+      "evidence_end": 52,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "78d71cf9dcfcae80a68f7986957bd2b0784db88556c2662991a02fa430051a5d",
-  "params_key": "33ee67334dcbe38c58dab7c3a73561c180dfd224d6b69ec3cdb9011f0865695e",
+  "params_key": "c5bc10905cfdfbb54c09f8305be3653337f5bc98f8a21f73a6d8e98cc77419d7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

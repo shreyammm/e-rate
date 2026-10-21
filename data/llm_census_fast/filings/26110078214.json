@@ -1,24 +1,9 @@
 {
-  "summary": "The stakeholder supports tying E-Rate decisions to educational outcomes to ensure child safety and protection from harmful content.",
+  "summary": "The comment supports preserving the E-Rate program to ensure school safety and access to internet services for students.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "normative_value",
-      "argument": "Having the subsidy and making it dependent on clear protections that work to keep kids safe makes a lot of sense to me",
-      "evidence_quote": "I like the E-rate subsidy because it helps keep schools honest about protecting the kids' internet access. I care deeply that the schools have protections in place to keep children away from pornography and outside users who may groom them in some way shape or form. Therefore having the subsidy and making it dependent on clear protections that work to keep kids safe makes a lot of sense to me.",
-      "evidence_start": 5,
-      "evidence_end": 401,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "education_outcomes": "support"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110078214",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110078214",
   "filer_raw": "Katrina Furth",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "063aa118fcce0c937a3c6b03c792d919b06b5315070fea3ed9ada3cecdcd66ab",
-  "params_key": "2246f58ff04e74e4e6cb73c9dbef1645d72d661b3cb64143cd4e27fd6f023e41",
+  "params_key": "b68bdc7542f158221ccf4e644f76027fa93a5a17ccc0fd69f086c820cf88b7b7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The comment highlights concerns about the privacy and security of students' data in schools, advocating for the FCC to take a more serious role in protecting minors' rights. The comment supports tying E-Rate decisions to educational outcomes to ensure appropriate protections for students.",
+  "summary": "The comment calls for the FCC to consider educational outcomes when making E-Rate decisions, citing concerns about privacy violations related to technology use in schools.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
@@ -7,11 +7,11 @@
       "position": "support",
       "requested_action": "Tie E-Rate decisions to educational outcomes",
       "reason_family": "education_effectiveness",
-      "claim_kind": "normative_value",
-      "argument": "Educational software providers must be required to provide protections for minors",
-      "evidence_quote": "Technology use in schools regularly violates students’ rights to privacy. In order for my children to access required school software, I am regularly required to give my consent to allow third party sharing of their data, along with other terms and conditions I would otherwise not consent to.",
+      "claim_kind": "empirical_claim",
+      "argument": "Technology use in schools regularly violates students’ rights to privacy.",
+      "evidence_quote": "Technology use in schools regularly violates students’ rights to privacy.",
       "evidence_start": 0,
-      "evidence_end": 293,
+      "evidence_end": 73,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "437ea3bd28406a93c2e9e6e7d7a8ed03b451fce2806d25b6c7395782b92b8649",
-  "params_key": "4a5ea3dab114f4fa2f518ccfae00fe64858631cd8bdd66ec8e79e1041dedd39e",
+  "params_key": "3385d1466ae2c1945e4c662bbd5581c2dd89212e5be7ab3f3cec896a12801e80",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

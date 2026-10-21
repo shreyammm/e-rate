@@ -1,5 +1,5 @@
 {
-  "summary": "The school district argues against limiting E-Rate funding, emphasizing its importance for providing reliable internet access to students who are at risk of poverty.",
+  "summary": "The school district argues against limiting or reducing E-Rate funding, emphasizing its importance for providing reliable internet access to students who are at risk of poverty and lack home internet access. The lack of access to technology and the internet can hinder their ability to succeed.",
   "stakeholder_role": "unknown",
   "claims": [],
   "positions": {},
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "0d8e765d58d0d0e2fd1d7a49ba0a20cf34a3d95615469c56ac42fc54ccf658ef",
-  "params_key": "12e7e524f1a97273b0187aa79a34a17beb70a6c56d7474f2a3d0fbbc25e3911d",
+  "params_key": "af4f77240eb11d66a8fb0ef2d7fa4c82f075aae18e8e28f00df0792aa5de70d9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

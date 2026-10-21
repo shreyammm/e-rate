@@ -1,14 +1,14 @@
 {
-  "summary": "The text argues against limiting or sunsetting E-Rate funding, emphasizing its importance for local libraries and the need for federal support to maintain internet availability.",
+  "summary": "The claim opposes sunsetting E-Rate funding, emphasizing its essential role for local libraries and the importance of federal support to maintain internet availability.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Keep E-Rate funding available without discrimination or additional red tape",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Keep E-Rate funding available without discrimination or additional red tape",
+      "argument": "Local libraries’ internet connectivity has become an essential service and federal support is warranted to ensure its continued availability",
       "evidence_quote": "Keep E-Rate funding available without discrimination or additional red tape.",
       "evidence_start": 0,
       "evidence_end": 76,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "6c781bf77564436e44099fe377e1040a866447339ec8a13e93bc4c32dcdc4e3d",
-  "params_key": "8b7f3e19093d93f6b68f97a43938ba91df05612f327c37d9c6e0cd31f812d462",
+  "params_key": "55d497b24895c6530a44b9880446225a7f5b32df061c8282e431ea7c4c52a6f7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

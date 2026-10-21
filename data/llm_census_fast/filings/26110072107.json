@@ -1,5 +1,5 @@
 {
-  "summary": "The FCC's proposed changes to the E-Rate program are opposed by the submitted comment, which emphasizes the importance of supporting and strengthening libraries and schools rather than dismantling the program.",
+  "summary": "The FCC's proposed changes to the E-Rate program are opposed by the submitted comment, which emphasizes the importance of supporting libraries and schools and urges the FCC to continue supporting these public resources.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "The proposed changes to the E-Rate program could lead to increased costs for schools and libraries.",
-      "evidence_quote": "I fear that there has been a trend lately of dismantling helpful government funded services.",
-      "evidence_start": 658,
-      "evidence_end": 750,
+      "argument": "The proposed changes to the E-Rate program would reduce funding for libraries and schools, which are essential community resources.",
+      "evidence_quote": "We should be doing everything possible to support and strengthen our libraries and schools, not scrapping what makes them great.",
+      "evidence_start": 751,
+      "evidence_end": 879,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "20fd016cc6fed3175f1bbe5b3be64b7af671c92082365cdb21084742da2c3e5c",
-  "params_key": "a3cb6a49679cf5755460d8f776924bbed708109e16d7d8470bdbfc50af4260ab",
+  "params_key": "47ea1a2c62dbcbc7fe179a588d7a47e2010bbe6154e14be0d82ac3c8067de223",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

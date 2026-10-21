@@ -1,24 +1,9 @@
 {
-  "summary": "The comment opposes sunsetting the E-Rate program, citing its importance for public libraries in providing internet access to students and families.",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "do not sunset the program",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "The program is still vital for public libraries",
-      "evidence_quote": "The E-Rate program is still a vital part of a public library's mission and helps us provide internet to students and families who would not be able to access the internet in their homes.",
-      "evidence_start": 0,
-      "evidence_end": 186,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment opposes sunsetting the E-Rate program and opposes mandating network-level filters for third-party devices due to privacy concerns and enforcement challenges.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110014026",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110014026",
   "filer_raw": "Janet Salazar",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "90056d0d351a7d53c6a5d9019228b510c17c62d0234674d43603e124463640be",
-  "params_key": "c461ae285de7f2800cdc9b7a6764bac3357b402204e0b5f5d1373674ffd6298e",
+  "params_key": "bff9c8586d14e4bc84db6d28554231a25759bf1bd477ac42d32346e69dbfa6fe",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

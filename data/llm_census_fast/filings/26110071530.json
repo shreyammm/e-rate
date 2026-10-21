@@ -1,6 +1,6 @@
 {
-  "summary": "The claim urges maintaining the E-Rate program to ensure its availability for schools and libraries, emphasizing the program's role in providing essential internet access while keeping costs manageable for local taxpayers and institutions. The claim argues that ending or significantly limiting E-Rate would shift costs back to schools, libraries, and communities, particularly affecting seniors and low-income citizens.",
-  "stakeholder_role": "unknown",
+  "summary": "The claim urges maintaining the E-Rate program to ensure access to internet for education and libraries while managing costs for schools and taxpayers.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8715d4e802b54f0b5dc9e4411fc6f00b409c8f8d86bb5742e13035c567ea199c",
-  "params_key": "a097c70018ea4bd149c08df8794f993226b0a5ec3961dbfd9e6b76e167432209",
+  "params_key": "65dba22f975a2c360efb50c9dde1a6a56b406864ea5b1ec4903517606ef3cff9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

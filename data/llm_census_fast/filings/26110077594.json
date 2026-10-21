@@ -1,5 +1,5 @@
 {
-  "summary": "A parent in a rural community opposes proposals to eliminate or reduce E-Rate funding, emphasizing the program's importance for providing internet access to rural schools and students.",
+  "summary": "A parent in a rural community opposes proposals to eliminate or reduce E-Rate funding, emphasizing the program's importance for providing essential internet access to rural schools.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2511ae291cede020e30fae1dd1de6b18fff20c0f562dc0a0e3fa3c9d2a53d7bc",
-  "params_key": "ff1b7b18314f59e04d15866e3a93b78becd0c114d3f58e25715c35afc8a0d3ec",
+  "params_key": "f596206a51ff86ec949532bc77b9fc225242ec5bf53e1de5c3ba7ac44cb488eb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

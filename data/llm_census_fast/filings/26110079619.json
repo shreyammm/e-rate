@@ -1,24 +1,9 @@
 {
-  "summary": "The school district emphasizes the importance of the E-Rate program for its rural, low-income school, which relies on it for funding infrastructure and internet access. ",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "do not get rid of the Erate program",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "It is extremely important to us.  We can't afford to pay as well and that makes it hard to compete with schools who start teachers off with 15 to 20 thousand dollars more per step.",
-      "evidence_quote": "We can't afford to pay as well and that makes it hard to compete with schools who start teachers off with 15 to 20 thousand dollars more per step.",
-      "evidence_start": 582,
-      "evidence_end": 728,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The school district emphasizes the importance of the E-Rate program for its rural, low-income school, which relies on it for funding infrastructure and internet access. The director states that the program is crucial for maintaining educational quality and teacher salaries.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110079619",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110079619",
   "filer_raw": "Kita Champion",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "0ee2b8825ef0d7e7788d52a6b593b7cb4dbd1efce5c647fef1ba44134bee28df",
-  "params_key": "f93ee04ea272e04d58e3936a026075f5e1380d323dfc7a92ed44f8827f227344",
+  "params_key": "a8670c0385d6c487abc48f0f24b7a20f6a8b4c39c7f609d266a8af07d7da35ac",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

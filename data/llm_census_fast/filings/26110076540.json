@@ -1,14 +1,14 @@
 {
-  "summary": "The school district explains the importance of E-Rate for maintaining connectivity and the potential costs of losing it. It also emphasizes the need for local control over technology use in education.",
+  "summary": "The district emphasizes the importance of E-Rate for maintaining connectivity and urges the FCC to preserve its core mission to avoid changes that would undermine schools' ability to meet the needs of students and educators.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Preserve E-Rate's core mission",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Reducing E-Rate could lead to significant annual costs for the district",
+      "argument": "Preserving E-Rate ensures schools can maintain connectivity costs",
       "evidence_quote": "If E-Rate support were reduced or eliminated, our district could lose up to $100,000 annually while still maintaining the connectivity to internet systems we have grown accustomed to including, but not limited to our attendance systems, security, student nutrition, and transportation.",
       "evidence_start": 447,
       "evidence_end": 732,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "fcd4551d517c088daa611ab3720826079fd561dc26ecbda882d51c37d9e47196",
-  "params_key": "027cf83d1f65f35c72b2677afadd1d4499e4fc7c6c32fc9b3f27625577d1e938",
+  "params_key": "a60d489c5b37f93ff25b7b926cc9803892b630094b47dfb4fd24dcde64ed95f3",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

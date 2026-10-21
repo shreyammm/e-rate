@@ -1,6 +1,6 @@
 {
   "summary": "Expresses concerns about the potential loss of E-Rate funding and its impact on community access to internet services.",
-  "stakeholder_role": "parent_guardian",
+  "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "aaba4c227f0d2c4008f8b44b38290a2d09e24dcd481290a72efa1b3191a38067",
-  "params_key": "a230fd3072f217d2c2a728e2818b00816f22806205e1298143b5d5e59d817771",
+  "params_key": "8f9df79409adf5b763d390e9f43b87d380fcddb81259c495524f741aece5661c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

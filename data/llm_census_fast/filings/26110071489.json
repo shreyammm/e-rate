@@ -1,26 +1,14 @@
 {
-  "summary": "The comment discusses various aspects of the E-Rate program, including its funding, eligibility, and implementation.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment highlights the importance of E-Rate for libraries in Idaho to provide WiFi access for local communities.",
+  "stakeholder_role": "school_district",
   "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Our library and all of the libraries in Idaho need E-Rate to be able to continue to offer WiFi for our local communities",
-      "evidence_start": 0,
-      "evidence_end": 120,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for broadband access in schools and libraries",
       "evidence_quote": "Our library and all of the libraries in Idaho need E-Rate to be able to continue to offer WiFi for our local communities",
       "evidence_start": 0,
       "evidence_end": 120,
@@ -28,7 +16,6 @@
     }
   ],
   "positions": {
-    "education_outcomes": "support",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -39,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8b12eb2b3dbb1ee4f84db979e1595a30bb67590fc7c6ad3ae0108ff2831af1f0",
-  "params_key": "eba10dbf8e156fd20beb528d8c87236bcd8bd3192665fbe76cd2e6f4949f8f1d",
+  "params_key": "f81367814c5ef7e248b5db45f6deb0f0d430dd33925d3b501d67a9e890d9767a",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

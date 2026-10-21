@@ -1,14 +1,14 @@
 {
-  "summary": "The comment opposes the proposal to sunset the E-Rate program, emphasizing the program's importance for providing internet access to schools and ensuring educational access for students. The comment argues that cutting the program will further damage education, particularly in rural areas.",
+  "summary": "The comment expresses opposition to the proposal to eliminate E-Rate funding, emphasizing the program's critical role in providing internet access for schools and students. The comment highlights the potential negative impact on education, particularly in rural areas, and the need to maintain full funding levels to ensure educational quality and competitiveness.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "continue E-Rate funding at full level",
+      "requested_action": "Eliminate E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting E-Rate will further damage education, especially in rural schools",
+      "argument": "Cutting E-Rate will lead to further educational disparities and economic challenges",
       "evidence_quote": "Without that funding, education will suffer, and we will fall behind the rest of the world.",
       "evidence_start": 662,
       "evidence_end": 753,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "efdee1bc66f0318a8472c6fd17036538fceb76ba8517a4fa7f60272e9c1eef72",
-  "params_key": "92f016375fe738883ca6ce05a09930f7a74020bb7ec82f965d4639e57b801a87",
+  "params_key": "b2e11fd714b657d9f1baf3fb70cde0970a017aacc82a8d034767949601787ee4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

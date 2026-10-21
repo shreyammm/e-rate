@@ -1,9 +1,24 @@
 {
-  "summary": "The public opposes limiting or sunsetting E-Rate to maintain free Wi-Fi access in public libraries for various uses.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The public opposes limiting or sunsetting E-Rate funding for public libraries, citing the importance of free Wi-Fi access for various uses such as job applications, online classes, and research.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The general public deserves to be provided with access of free Wi-Fi in public libraries.",
+      "evidence_quote": "The general public deserves to be provided with access of free Wi-Fi in public libraries. Please do not take this away from these facilities.",
+      "evidence_start": 0,
+      "evidence_end": 141,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110077841",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077841",
   "filer_raw": "Genna Wells",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "04f4c587c8a8fb4aad8ccbcb03b9a983799e52e2b87729c5b10c1941d75b54f7",
-  "params_key": "87d0d302928198fcd40dcfc1909f377bc9ee0c5bd1c321a66488ee4d1072e443",
+  "params_key": "5578a49c250ba905e90cc252dfbfc6e5360cabc126b09bc027fc03f77ae0d2d8",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

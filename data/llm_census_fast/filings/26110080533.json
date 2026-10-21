@@ -1,5 +1,5 @@
 {
-  "summary": "The comment opposes proposals to sunset or restrict the E-Rate program, emphasizing its importance in bridging access gaps for students in low-income and rural areas. It highlights the program's success in providing essential tools for learning and the negative impact of cutting it would have on equity.",
+  "summary": "The comment opposes proposals to sunset or restrict E-Rate, emphasizing its role in bridging access gaps for students in low-income and rural areas. It highlights the program's success in providing tools and access to students and warns against cuts that would exacerbate inequities.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting the program would only deepen inequities",
+      "argument": "Cutting E-Rate would only deepen inequities",
       "evidence_quote": "For nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same tools as students in wealthier districts. While the program has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome.",
       "evidence_start": 0,
       "evidence_end": 446,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9e624cdd04bc85e7b1d8a414953db87fd705e354a7e302fca8e22f4d33e46e8c",
-  "params_key": "ed86e5f767eb7ec3ae735251441d0698405bbf065a6b1ce94091aa147071813e",
+  "params_key": "9bc06ba99ff3dcbe08bdb6a40d8abc6b28137505c9173d4980c144b79368ed24",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

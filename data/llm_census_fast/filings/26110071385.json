@@ -1,5 +1,5 @@
 {
-  "summary": "The text defends keeping E-Rate for libraries and schools, opposing any restrictions on broadband use.",
+  "summary": "The comment defends keeping E-Rate for libraries and schools, opposing any restrictions on broadband use.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -9,9 +9,9 @@
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Restricting broadband to curb screen time misses the mark, as libraries rely on these connections to serve their communities",
-      "evidence_quote": "Restricting broadband to curb screen time misses the mark, as libraries rely on these connections to serve their communities.",
-      "evidence_start": 119,
-      "evidence_end": 244,
+      "evidence_quote": "Fast and reliable internet is essential for everyone who uses and works in libraries, though maintaining it is costly.",
+      "evidence_start": 0,
+      "evidence_end": 118,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b99cd7ba6bdb849ea8668c3f9c391f786d48fd361cdcd33cde62ac417d29d2a1",
-  "params_key": "09bf7c6b0711b0f49fac95aafd7aeb73db673e05a9bb36f1b7b29c005a2b8494",
+  "params_key": "d3ebdb11e43eb27f9a93d133b4460311154bc6ea36677044593fca502b899fcf",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

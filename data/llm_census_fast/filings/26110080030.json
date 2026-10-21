@@ -1,5 +1,5 @@
 {
-  "summary": "The IT professional emphasizes the importance of E-Rate funding for maintaining network infrastructure and preparing students for the future. The claim is supported by the professional's firsthand experience and the necessity of E-Rate for modern learning.",
+  "summary": "The IT professional emphasizes the importance of E-Rate for maintaining network infrastructure and preparing students for the future. The claim is supported by the professional's firsthand experience and the need to preserve funding to ensure the program's effectiveness.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
@@ -9,9 +9,9 @@
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "E-Rate funding is essential for maintaining network infrastructure and preparing students for the future",
-      "evidence_quote": "As an IT Professional at a Public Charter School in Marlborough, Massachusetts, I see firsthand how vital the E-Rate program is for our students. Reliable high-speed broadband and Wi-Fi access are not optional—they are core requirements for modern learning, homework, and research.",
+      "evidence_quote": "As an IT Professional at a Public Charter School in Marlborough, Massachusetts, I see firsthand how vital the E-Rate program is for our students.",
       "evidence_start": 0,
-      "evidence_end": 281,
+      "evidence_end": 145,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1214dfc108bf725aef3c10bd2a5d949c90ac55a1c8358d3b61f9b124b1927fa0",
-  "params_key": "be6c2203e8f2cb9af94502199d37c791a105afa9981cb8444cebe1f6dc7ce878",
+  "params_key": "cadacfd729eec93dc69bacfad9a79d837dcd19fb27067ca974113744a48b3b0d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

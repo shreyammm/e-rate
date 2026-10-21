@@ -1,5 +1,5 @@
 {
-  "summary": "The network administrator for Shrewsbury Public Schools emphasizes the importance of E-Rate for maintaining and improving the network infrastructure for their district, which serves 6,000 students. They argue that reducing or eliminating E-Rate would force districts to divert funding from other programs and student needs to pay for broadband infrastructure, potentially impacting other programs and budgets.",
+  "summary": "The network administrator for Shrewsbury Public Schools emphasizes the importance of E-Rate for maintaining and improving the network infrastructure for their district, which serves 6,000 students. They argue that reducing or eliminating E-Rate would force districts to divert funding from other programs and student needs to pay for broadband infrastructure, potentially impacting other programs and student needs.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1bb020ba17a36d4fafc68955791a582039bc00c4c911f2ee4fc04a714d3ae94d",
-  "params_key": "2942dafe9813dc3daa195a3ad19911acad2ae6fffec48a7b08f6a1ee4dad1b8a",
+  "params_key": "5ec28cfd469bc924c0198ca07078046976448657560c2e07f0931a0943700983",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,6 +1,6 @@
 {
-  "summary": "The text argues against cutting E-Rate funding, stating that it is critical for schools and libraries to maintain digital infrastructure for student learning and community equity.",
-  "stakeholder_role": "unknown",
+  "summary": "Reliable internet funding is critical for schools and public libraries in order to create digital equity and U.S. citizens that are prepared for a future workforce that is rapidly changing. High-speed broadband is essential for daily student learning, digital research, and literacy programs in our school media centers. Cutting E-Rate would force school districts to redirect funding away from classroom instruction, staffing, and student resources to cover internet bills. Strong digital infrastruc",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "308b6585df05496085b8efe91a39e4ae1cf982ab95d532212191e6caf263d0a6",
-  "params_key": "e5ee3930ba49e209b7dbcd56299b9d22861858b64529ec83b34221098ac38098",
+  "params_key": "75edac649bc04d1277f7d200f237a23a4cf7d68ee620b576622ca2c3f814b414",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

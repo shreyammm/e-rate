@@ -1,9 +1,24 @@
 {
-  "summary": "The school district expresses critical reliance on E-Rate for essential connectivity, emphasizing its inability to function without it. It highlights the financial burden of not having access to E-Rate funding, which is crucial for maintaining connectivity in their school district.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The school district expresses reliance on E-Rate for connectivity and the inability to afford connectivity without it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, schools could not afford connectivity",
+      "evidence_quote": "We are reliant on erate for our connectivity in our school district.  Without it, our schools could not operate.  We could not afford to purchase connectivity with our general fund dollars available to us.",
+      "evidence_start": 0,
+      "evidence_end": 205,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110078911",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110078911",
   "filer_raw": "Myrtle Point School District",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "7a225cf14e0c26c0cc477bc4d2983bba28e99885d8431a6dcbbb33e67c2884f3",
-  "params_key": "a4f3de297008274370054b6a8d73c0a216688416406c1385e02ca7ccf906c835",
+  "params_key": "c28b86a1dfd2967258d30f8ef050d8d00218e31d2b32bbb74d7ada7acaf810ca",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

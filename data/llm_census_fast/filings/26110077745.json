@@ -1,24 +1,9 @@
 {
-  "summary": "The Becket Athenaeum urges the FCC to preserve E-Rate's core funding and support for schools and libraries, emphasizing the critical role of the program in providing affordable connectivity for students and communities.",
+  "summary": "The Becket Athenaeum urges the FCC to preserve E-Rate's core funding and support for schools and libraries, and to avoid changes that would reduce access or increase burden for students and communities.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "preserve core funding",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "The Becket Athenaeum urges the FCC to preserve E-Rate's core funding and support for schools and libraries",
-      "evidence_quote": "I urge the FCC to reject any proposal that would terminate or limit the E-Rate Program. Though our library does not rely on E-Rate, it is critical funding for many schools and libraries in order to continue providing their communities with the ability to participate in our society.",
-      "evidence_start": 349,
-      "evidence_end": 631,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110077745",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077745",
   "filer_raw": "Ellen Manley, Becket Athenaeum",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "0199079c68aab5d3d16a2d75f4ddfa3cb1ebe8d1e2fcc3e781bbce2329853b8f",
-  "params_key": "d46978d30c21889a430abc7838b700b88322aa8dcf0d100784d9e136d721aecc",
+  "params_key": "65db8858c802bdeabd093dc30a8932e0d79e8058d6ab6f1ecd6feca6bd22d1e3",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

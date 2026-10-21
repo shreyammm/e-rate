@@ -1,5 +1,5 @@
 {
-  "summary": "The Allegheny County library system argues that the E-Rate program is essential for maintaining library services and the financial savings it provides. They express concern that limiting or sunsetting the program would result in the loss of over $800,000 annually in internet access savings.",
+  "summary": "The Allegheny County library community expresses concern about the potential loss of over $800,000 annual savings on internet access due to the limitation or sunset of the E-Rate program.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e829a58f731661f2d7bc200ff81ba255047b4bf2a1483c5c06503e883e3b8c5a",
-  "params_key": "a104a58d672f0c8bd3da4651c49fee92d0a26efa080256fece38ff7a1de8c87e",
+  "params_key": "b9235adaa0c1d1d4ce96fd2c16dfd4a657351453bb9e4fe469d255535b284e52",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

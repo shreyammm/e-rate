@@ -1,17 +1,17 @@
 {
-  "summary": "The individual expresses opposition to maintaining local control over screen-time expectations and urges the FCC to reject proposals that would narrow or sunset the E-Rate program. The individual emphasizes the role of the E-Rate program in providing access to the internet and education during their youth.",
+  "summary": "The stakeholder emphasizes the importance of the E-Rate program for their personal educational experience and opposes any proposals that would limit or sunset the program, arguing that screen-time expectations should remain a local issue.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
       "provision_id": "screen_time_condition",
       "position": "oppose",
-      "requested_action": "Maintain local control over screen-time expectations",
-      "reason_family": "privacy_free_expression",
-      "claim_kind": "privacy_expression",
+      "requested_action": "Maintain current screen-time expectations for local control",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
       "argument": "Screen-time expectations should remain a local issue",
-      "evidence_quote": "It is because of the E-Rate program that the schools I attended, and the few public libraries I visited during my youth, were able to provide me with the ability to access the internet and gave me the potential to learn as much as I could. Therefore, I believe screen-time expectations should remain strictly a local issue",
+      "evidence_quote": "It is because of the E-Rate program that the schools I attended, and the few public libraries I visited during my youth, were able to provide me with the ability to access the internet and gave me the potential to learn as much as I could. Therefore, I believe screen-time expectations should remain strictly a local issue. I urge the FCC to reject any proposal that would narrow, sunset, or eliminate the E-Rate program in any capacity.",
       "evidence_start": 0,
-      "evidence_end": 322,
+      "evidence_end": 437,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "417a84eb63372e4624e40a7e536b56120be47cc5dcb11c2fef89070165c01237",
-  "params_key": "b1455faf1bd0756755d571ebacb7fb79fba64ae21ca310616274a2c40849e168",
+  "params_key": "7c758e37317c3176bccb99cc1b66b6018e13f7a0f3bb72745970d4a16e57755f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

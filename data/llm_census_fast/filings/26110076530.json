@@ -1,24 +1,9 @@
 {
-  "summary": "The school district emphasizes the importance of the E-Rate program for student achievement and expresses concern about the potential impact of ending the program on funding availability.",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "end E-Rate program",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "If the FCC ends the E-Rate program, that's funding county leaders will either have to take from somewhere else to or make the hard decision to cut off the internet completely.",
-      "evidence_quote": "If the FCC ends the E-Rate program, as it’s proposing, that’s funding county leaders will either have to take from somewhere else to or make the hard decision to cut off the internet completely.",
-      "evidence_start": 317,
-      "evidence_end": 511,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment highlights the importance of the E-Rate program for rural and suburban communities, where students rely on internet access for education. Ending the program would require significant funding cuts from other sources, potentially leading to the complete removal of internet access for students.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110076530",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076530",
   "filer_raw": "Kyrian MacMichael",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "89037473f91a6ea66ba5bdf32e08fcd81a83067a22d112617101f7ce48c615bf",
-  "params_key": "5f5aeb052a62fe6496685a96469a188c895e84662f9a50ae122012d0771f30ee",
+  "params_key": "3b10159d9d648272a89599eb60ec60b5a2d1705e897b09e45a86e7ee095c9d00",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

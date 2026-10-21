@@ -1,5 +1,5 @@
 {
-  "summary": "The stakeholder emphasizes the importance of maintaining E-Rate services for rural schools and libraries in Idaho, highlighting the need to continue or improve the service provided to ensure educational access and equity.",
+  "summary": "The comment emphasizes the importance of maintaining E-Rate services for rural schools and libraries, which are crucial for education access in low-income areas. The comment opposes any efforts to sunset or limit E-Rate funding, arguing that without it, these institutions will suffer further educational disadvantages.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Continue or improve E-Rate service provision",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Idaho public libraries and schools cannot lose high speed connectivity from E-Rate",
-      "evidence_quote": "Idaho public libraries and schools CANNOT lose high speed connectivity from E-Rate!!! We are a very rural state with low-income households being a prevalent factor. Without the connections provided by our libraries we will become even lower on the education scale than we already are! Please continue or improve the service provided!",
+      "argument": "Without E-Rate, libraries and schools will lose high-speed connectivity, worsening education access",
+      "evidence_quote": "Idaho public libraries and schools CANNOT lose high speed connectivity from E-Rate!!! We are a very rural state with low-income households being a prevalent factor. Without the connections provided by our libraries we will become even lower on the education scale than we already are!",
       "evidence_start": 0,
-      "evidence_end": 333,
+      "evidence_end": 284,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "59f1dbac8f8b53e9bc685e9b34485380241d3f08799a173fab68aeeadc68d298",
-  "params_key": "4151248026816b337670d405739475e5d1c1b5434f1e8529476a93e06261c622",
+  "params_key": "d525e069d9ad73515b0dac8aebf13358ec613cd9cb7d128cd5a31fe8ba25dd10",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

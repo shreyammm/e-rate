@@ -1,5 +1,5 @@
 {
-  "summary": "The text argues against limiting or sunsetting E-Rate, emphasizing its importance for public libraries and the potential impact on library access and patron costs.",
+  "summary": "The text discusses the importance of E-Rate for public libraries in Alaska, emphasizing the potential impact of its elimination or reduction on library services and patron costs.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate is a critical component of the Homer Public Library, and many communities around the state of Alaska.  If eliminated or reduced, this could severely affect access to the internet as well as push unaffordable costs onto the patrons of the library.",
-      "evidence_quote": "E Rate is a critical component of the Homer Public Library, and many communities around the state of Alaska.",
-      "evidence_start": 0,
-      "evidence_end": 108,
+      "argument": "Eliminating E-Rate could lead to unaffordable costs for libraries",
+      "evidence_quote": "If eliminated or reduced, this could severely affect access to the internet as well as push unaffordable costs onto the patrons of the library.",
+      "evidence_start": 179,
+      "evidence_end": 322,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c212f152a10e7cfc90df62b2294ecc15120c5db2588101063fd887d318ce4a73",
-  "params_key": "f8eb865a805994e0d78c74d8c23c8bb5d07fa8921fba743e978033c75f7f7aeb",
+  "params_key": "41a819856fa30344b14fd24274b3845c19dd41e095db4f38a04e4315cc6f3fcb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

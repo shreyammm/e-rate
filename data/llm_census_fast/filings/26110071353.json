@@ -1,17 +1,17 @@
 {
-  "summary": "The continuation of E-Rate is vital for the community as it provides essential services such as internet access and cyber security. Ending E-Rate would have negative consequences, including increased school taxes and reduced computer literacy for students.",
+  "summary": "The claim opposes ending E-Rate, citing its importance for community infrastructure and access to high-speed internet. It emphasizes the role of E-Rate in supporting libraries and schools, particularly in rural areas where internet access is limited. The claim also highlights the potential negative impact of removing E-Rate on students' computer literacy and the need for continued support to ensure affordable and reliable internet access for educational purposes.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "end E-Rate",
+      "requested_action": "continue E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Ending E-Rate would be foolish and would not solve the problem of too much screen time for children",
-      "evidence_quote": "I believe ending e-rate would be foolish and would not solve the problem of too much screen time for children.",
-      "evidence_start": 524,
-      "evidence_end": 634,
+      "argument": "Continuation of E-Rate is vital for community infrastructure",
+      "evidence_quote": "The continuation of E-Rate is vital for our small community. The public library utilizes e-rate to help ensure access to high speed internet in the libraries, in a rural area where high speed internet is not available to the majority of the library's user base.",
+      "evidence_start": 0,
+      "evidence_end": 261,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d2006d25ee820911c5f6dca1bc7b5ed01b759775a3e074d92e9d5cb25edb4d56",
-  "params_key": "eedccc25fba3c5c30b24fad7c26c813f23d7ca46ef80cabff56e339e6e85993e",
+  "params_key": "df8d389e78a6ea339d7b34b3bf135ea59fc919517ff2acb3d7cf05387524397c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

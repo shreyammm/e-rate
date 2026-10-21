@@ -1,9 +1,24 @@
 {
-  "summary": "The comment supports continuation of E-Rate funding for Mississippi's educational needs.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The claim supports continuation of E-Rate funding to ensure educational access and infrastructure support in Mississippi.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funds are essential for maintaining broadband infrastructure and educational access",
+      "evidence_quote": "Please continue these efunds in our effort to grow the education of the students and the people of Mississippi.",
+      "evidence_start": 241,
+      "evidence_end": 352,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110072037",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110072037",
   "filer_raw": "Sylvia Walker",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "421e7aaac4ac8af5529591d9beb6ee5761e5aefe3684436efd45aab36efb52de",
-  "params_key": "d8f32ad2eda121cc35028ad4aa025f22d24a0d683b289b1c3c06afb0f56b218f",
+  "params_key": "8d1c7ec38c84f852e4c277e27d5a8594fbc41e1123d43536b1029df7f6426edd",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

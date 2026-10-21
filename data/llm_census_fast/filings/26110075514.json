@@ -1,5 +1,5 @@
 {
-  "summary": "The E-Rate program is a significant funding stream for schools and libraries, providing over $471 million in assistance over the past four years. Cutting the program would have a major impact on many districts and libraries.",
+  "summary": "The comment highlights the importance of the E-Rate program in providing affordable internet access to schools and libraries, emphasizing its role as a significant funding source for educational institutions. The comment argues against cutting the program, citing its substantial contributions to schools and libraries over the past four years.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting E-Rate will impact many districts and libraries",
-      "evidence_quote": "Cutting this program will impact many districts and libraries.",
-      "evidence_start": 289,
-      "evidence_end": 351,
+      "argument": "Cutting E-Rate will reduce funding for schools and libraries",
+      "evidence_quote": "The E-Rate program, which helps schools and libraries obtain affordable internet access and network equipment, is the fifth-largest funding stream for schools nationwide. Over the past four years, E-Rate has provided more than $471 million in assistance to Illinois schools and libraries.",
+      "evidence_start": 0,
+      "evidence_end": 288,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ab6fada63a2726e0f770a729394f41c21a198d315b3cc4c9c21a018f80a57ba7",
-  "params_key": "6970c1a862fe7d075aef08c15846f02ca549ec1dcba646cca8240cdead6585bc",
+  "params_key": "dc4c7c93dffb58cdbed271f4198fb38c9281e09e80e1169fe2f6da914a25aa3e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

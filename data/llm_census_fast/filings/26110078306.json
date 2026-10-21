@@ -1,5 +1,5 @@
 {
-  "summary": "The comment opposes limiting or sunsetting E-Rate funding, citing the importance of the program for libraries to cover costs and maintain services. The comment argues that any loss of funding would require making up the cost elsewhere, emphasizing the critical role of E-Rate in library operations.",
+  "summary": "The comment opposes limiting or sunsetting E-Rate funding, citing the need to maintain current library services and the cost implications of losing this revenue source.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5b4e5696e68c6759d9b52d494c0d59e732676587ced7f5fa6e183060da59d8d2",
-  "params_key": "480c7b1f0e94a411a4cd97e0997546408b140097a4e949e8df8af7e60144a9d3",
+  "params_key": "d2a6730d416fbdf3c1cce678d340e4dd7003d7074e70c9ab907b2fa7f1848662",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

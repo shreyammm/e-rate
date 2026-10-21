@@ -1,22 +1,22 @@
 {
-  "summary": "The claim that tying E-Rate decisions to educational outcomes is supported by evidence of the correlation between Free and Reduced Lunch statistics and E-Rate discounts in rural communities, where the costs of Internet access without E-Rate discounts exceed the budgets of libraries and schools.",
+  "summary": "The claim highlights the financial burden that the loss of E-Rate funding would impose on rural schools and libraries, which rely heavily on the program for internet access. The individual experienced firsthand the impact of the program on their local communities.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "Local Free and Reduced Lunch statistics and E-Rate discounts correlate highly in rural communities",
-      "evidence_quote": "For four years, I served as a rural public library director: the costs of Internet access without E-Rate discounts cost more than that library's entire annual operations budget of $12,000 (minus personnel costs). The budgets of rural schools and libraries are indicative of the condition of the local economies that support them.",
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The local budgets of rural schools and libraries would be significantly impacted by the loss of E-Rate funding",
+      "evidence_quote": "For four years, I served as a rural public library director: the costs of Internet access without E-Rate discounts cost more than that library's entire annual operations budget of $12,000 (minus personnel costs).",
       "evidence_start": 430,
-      "evidence_end": 759,
+      "evidence_end": 642,
       "uncertain": false
     }
   ],
   "positions": {
-    "education_outcomes": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110081382",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "da6bbdd3e5876b493b6bd57525415e7d84e206bf689ab5a25fe052d99262732e",
-  "params_key": "b652741d05255d2a84bd349b83125159f6e30273c458af3f33e0b0c79a7ca46c",
+  "params_key": "d86595dc04fcf99ba1512d6b35d782115fcb5ab2074d223bfe02f2c3fd2b36d0",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,17 +1,17 @@
 {
-  "summary": "The comment supports the continuation of E-Rate services.",
-  "stakeholder_role": "unknown",
+  "summary": "The claim supports continuation of E-Rate funding for libraries to maintain broadband services.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue E-Rate service",
+      "requested_action": "Continue E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Our libraries need E-Rate. Please continue this valuable service",
+      "argument": "Continuing E-Rate is essential for libraries to maintain broadband services",
+      "evidence_quote": "Our libraries need E-Rate. Please continue this valuable service.",
       "evidence_start": 0,
-      "evidence_end": 64,
+      "evidence_end": 65,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "599f59db6b092000a463a2f5e7c85887723accbaf02a62923b254571d244cc62",
-  "params_key": "5037ff79bd86bd025d285786bab41d39328684eef4b00f7a5fb6783d71d5907d",
+  "params_key": "6948e31615d685652f51be5ae24d5baa982a6e3cf0f5c1c8f6be30376259eb3a",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

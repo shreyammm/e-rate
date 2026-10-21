@@ -1,17 +1,17 @@
 {
-  "summary": "The FCC is urged to reject proposals to eliminate or sunset the E-Rate program, emphasizing the program's statutory mandate and its role in ensuring broadband connectivity for schools and libraries.",
+  "summary": "The FCC is urged to reject proposals to eliminate or sunset the E-Rate program, emphasizing the statutory authority established by Congress to ensure universal service access for schools and public libraries.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Eliminate or sunset E-Rate program",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "Eliminating E-Rate would eliminate funding for broadband connectivity in schools and libraries",
-      "evidence_quote": "I am writing to urge the Federal Communications Commission (FCC) to reject proposals in WC Docket No. 26-133 that would eliminate, restrict, or sunset the E-Rate program.",
-      "evidence_start": 0,
-      "evidence_end": 170,
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC does not have authority to eliminate E-Rate under its statutory mandate",
+      "evidence_quote": "Congress explicitly established the E-Rate program under Section 254 of the Telecommunications Act of 1996 to ensure universal service access for schools and public libraries.",
+      "evidence_start": 172,
+      "evidence_end": 347,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d25268ac129276bf24dcce34390f4e95026a2917603f7e353ae60d437fdf023f",
-  "params_key": "d49f852274672a8117e34047724336c772b71c5070bffa68101e17dc0d9ad7b1",
+  "params_key": "296de3866c71acf3e3aff490eb2a39435813af59f98839a41ec77d7f968a337a",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,24 +1,9 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes and their implications",
+  "summary": "The comment opposes limiting or sunsetting E-Rate funding, arguing that it is necessary to maintain broadband access for schools and students. The comment cites budget constraints as a reason for this position.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Gender Ideology or Any Political Issues Should Not Be Taught In Public Schools",
-      "evidence_start": 0,
-      "evidence_end": 78,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110077865",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077865",
   "filer_raw": "Delfina Gonzalez",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5a6d0f60430a4302abf31e1bd1546684ea8e260ad956ec4390e7f32b740981df",
-  "params_key": "93deeab77acb827304f434c7363de26cd9645942b24f995a2a1a16f1195f710a",
+  "params_key": "b46b6a79da491aedb74eb91146fd72d14c8b9903da6108c1f706117ca5581c84",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

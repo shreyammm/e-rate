@@ -1,14 +1,14 @@
 {
-  "summary": "The library emphasizes the importance of E-Rate funding for providing public Internet access and the potential impact on programming and collection spending if funding is reduced.",
+  "summary": "Waynesboro Public Library urges the FCC to preserve E-Rate's core funding and avoid changes that would reduce access or increase burden for students and communities.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "preserve core funding",
+      "requested_action": "Preserve core funding and avoid changes",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate funding, the library would need to cut programming and collection spending to cover the cost of providing public Internet.",
+      "argument": "Without E-Rate funding, the library would need to cut programming and collection spending to cover the cost of public Internet",
       "evidence_quote": "Without this funding, the library would be forced to move money from programming and collection spending to cover the increased cost for our public Internet.",
       "evidence_start": 824,
       "evidence_end": 981,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "7109565a7fc7ffb315b4bb1f374240329934e6494e557a6a86bd225ab9f94c18",
-  "params_key": "5c07d8b88fe187543dd570353c25bd27314532e13b76d02471a4134dcbf97b3d",
+  "params_key": "0f69e706ca95b11ca7c43e60cff52ea80095b9a089f5b76b7aa3fc2a4cbc5dbd",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

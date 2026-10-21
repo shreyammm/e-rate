@@ -1,17 +1,17 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program including funding, eligibility, and implementation",
+  "summary": "The comment opposes sunsetting E-Rate funding, emphasizing its essential role in providing broadband services to the community, especially those in need.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "retain funding",
+      "requested_action": "retain funding for E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please retain funding for this essential, much needed resource that provides services for everyone in the community but especially those most in need such as the unhoused",
+      "argument": "E-Rate provides essential services for everyone in the community",
+      "evidence_quote": "Please retain funding for this essential, much needed resource that provides services for everyone in the community but especially those most in need such as the unhoused.",
       "evidence_start": 0,
-      "evidence_end": 170,
+      "evidence_end": 171,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "299b16d1be04a5f093711bcc2f55eebf09876fa6394a5987280c1e56c3b5e470",
-  "params_key": "f3aa21b2add0108bdebfddfd6b5951ee65ce078b47ddf2c285af880829edc774",
+  "params_key": "f891c9960216602a291b8681a9f6fb8764d64e780321fd8e0c79e71134c1480b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

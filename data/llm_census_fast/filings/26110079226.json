@@ -1,9 +1,24 @@
 {
-  "summary": "The comment highlights the importance of E-Rate funding for providing affordable internet access in schools and libraries, emphasizing the impact of potential cuts on students and library budgets.",
+  "summary": "The text discusses the importance of E-rate funding for libraries and schools to provide affordable internet access to students and communities.",
   "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-rate is critical to keeping affordable internet in many communities via their public libraries.",
+      "evidence_quote": "E-rate is critical to keeping affordable internet in many communities via their public libraries.",
+      "evidence_start": 0,
+      "evidence_end": 97,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110079226",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110079226",
   "filer_raw": "Library Support Network",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "469f94f426f40318ebcd31948aba802f4bfb65fe20e08f34ffe350deb25bdf21",
-  "params_key": "d1aec7050626341a1476c47b07203f633fe8d6d2db6876793570281fc3234c82",
+  "params_key": "8d9ecfe935e3d2026b5e9c4a2a376f86580328a4ab406eb41c7e121d1e5649e7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,22 +1,22 @@
 {
-  "summary": "Urges protection of E-Rate program",
+  "summary": "The comment urges the FCC to protect the E-Rate program, emphasizing its importance for affordable internet access in schools and libraries, particularly in rural and low-income communities.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Protect E-Rate program",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "E-Rate keeps internet access affordable for schools and libraries across the nation and ending it would threaten essential services, especially in rural and low-income communities",
-      "evidence_start": 64,
-      "evidence_end": 243,
+      "argument": "Ending E-Rate would threaten essential services, especially in rural and low-income communities",
+      "evidence_quote": "I'm reaching out to urge the FCC to protect the E-Rate program. E-Rate keeps internet access affordable for schools and libraries across the nation and ending it would threaten essential services, especially in rural and low-income communities.",
+      "evidence_start": 0,
+      "evidence_end": 244,
       "uncertain": false
     }
   ],
   "positions": {
-    "erate_sunset": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110079581",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1d20f90816b4aca53f3142f631555b1ddaa8d2dd5191989e4f3afb431891c5c4",
-  "params_key": "eb4df9e5c464570f6bc1e3b3d618235933f55dedb1b4298d70b1ef7634eacce9",
+  "params_key": "896f65c6f80ccf3b8711c8715147a03f925832348beffc0e61dee46f88578042",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,6 +1,6 @@
 {
-  "summary": "The claim emphasizes the importance of libraries for literacy and community services, advocating for continued E-Rate funding to support libraries and school libraries as essential resources for education and community well-being.",
-  "stakeholder_role": "school_staff",
+  "summary": "The comment emphasizes the importance of libraries for literacy and community engagement, advocating for continued E-Rate funding to support libraries.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "education_outcomes",
@@ -8,10 +8,10 @@
       "requested_action": "Tie E-Rate decisions to educational outcomes",
       "reason_family": "education_effectiveness",
       "claim_kind": "normative_value",
-      "argument": "Public libraries and school libraries are crucial for literacy and community engagement",
-      "evidence_quote": "Libraries are places where people can get books and also learn, be entertained, or just get together with others. They help to combat loneliness by serving as gathering spaces (third spaces).",
-      "evidence_start": 116,
-      "evidence_end": 307,
+      "argument": "Libraries are essential for literacy and community engagement",
+      "evidence_quote": "I encourage the FCC and Congress to continue to support Federal funding of libraries at the same or levels or more than before. Municipalities alone cannot provide adequate funding.",
+      "evidence_start": 309,
+      "evidence_end": 490,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d48a057bd00ee49c7942b92438aee38d362cc541ea9050ef26d15417dbfb0b7c",
-  "params_key": "51a7bd2c1e82207c89a2be4bfbbd2acb535e3d06c6f100845f5badaa60e29062",
+  "params_key": "a2c5b9051dafbe2c6ff220e4edb0b373327e2ce38cea9edab9897894a46ae3dd",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

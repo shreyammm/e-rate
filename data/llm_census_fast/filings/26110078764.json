@@ -1,5 +1,5 @@
 {
-  "summary": "The comment opposes limiting or sunsetting E-Rate, arguing that the government should oversee federally subsidized broadband. It also supports parents having the right to raise concerns about transgender materials and disclose them to school officials.",
+  "summary": "The comment opposes limiting or sunsetting E-Rate, arguing that the government should oversee federally subsidized broadband. It also supports parents having the right to raise concerns about transgender materials and disclose them to school staff.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries.",
       "evidence_quote": "The networking question are federally subsidize, so the government should oversee this.",
       "evidence_start": 243,
       "evidence_end": 330,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "18e320bcdd401c9ee31e23843ce8ba712ca303b40c902690a0b87115efecead0",
-  "params_key": "dfdf4bdbcd6ea06e221a958a152278d55156c7c0e1f7514fd0dd08ced5f226e1",
+  "params_key": "d84cd48140f55cd64f2dc7df5a5178391494f095cc7d216bcbe9007ed64501cb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

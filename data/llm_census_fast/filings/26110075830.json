@@ -1,24 +1,9 @@
 {
-  "summary": "The comment opposes conditionally tying E-Rate eligibility to screen-time limits for screen-based instruction, arguing that reducing internet access in schools and libraries is not an appropriate solution to address excessive screen time. It suggests schools should review their procedures for limiting screen time and providing guidance to parents on how to successfully limit screen time for children. The comment also notes that some states have implemented restrictions on phone use during school",
+  "summary": "The comment opposes conditionally tying E-Rate funding to screen-time limits for screen-based instruction.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "screen_time_condition",
-      "position": "oppose",
-      "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "other",
-      "claim_kind": "normative_value",
-      "argument": "Condition E-Rate on screen-time limits",
-      "evidence_quote": "Reducing Internet access at public schools and libraries is not the way to address the serious issue of too much screen time. Schools should review their procedures for limiting screen time particularly in the primary grades. Some states have also limited use of phones during school hours.",
-      "evidence_start": 0,
-      "evidence_end": 290,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "screen_time_condition": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110075830",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110075830",
   "filer_raw": "Mark Tarpey",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9211012d819687c02a72443ae16f1a6b512f6888f5b439994883b851c2137bdc",
-  "params_key": "9dc777748ecb5cbc1897ee030798465a0107ec8a72253e5ae1ea301f52098ef0",
+  "params_key": "a8a09e00dcec3c144f2817f881dd25e70efc793b3e07dd89b43372b3de3f572b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

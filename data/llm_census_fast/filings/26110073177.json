@@ -1,61 +1,22 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program including funding, eligibility, competition, vendor influence, education outcomes, privacy, and implementation.",
+  "summary": "The comment opposes cutting E-Rate funding, citing the impact on seniors and school children who rely on library services.",
   "stakeholder_role": "unknown",
   "claims": [
-    {
-      "provision_id": "consultant_definition",
-      "position": "support",
-      "requested_action": "Define covered E-Rate consultants",
-      "reason_family": "other",
-      "claim_kind": "citation_of_external_evidence",
-      "argument": "",
-      "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
-      "evidence_start": 0,
-      "evidence_end": 209,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
-      "evidence_start": 0,
-      "evidence_end": 209,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
+      "argument": "Cutting funding would hurt both seniors and school children",
+      "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children",
       "evidence_start": 0,
-      "evidence_end": 209,
-      "uncertain": false
-    },
-    {
-      "provision_id": "parent_opt_out",
-      "position": "oppose",
-      "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "parental_autonomy",
-      "claim_kind": "normative_value",
-      "argument": "",
-      "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
-      "evidence_start": 0,
-      "evidence_end": 209,
+      "evidence_end": 208,
       "uncertain": false
     }
   ],
   "positions": {
-    "consultant_definition": "support",
-    "education_outcomes": "support",
-    "erate_sunset": "oppose",
-    "parent_opt_out": "oppose"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110073177",
@@ -65,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "43dd68e53a63fe3c095896fc899070cb4688020b67fdb26cc5911effd49f75aa",
-  "params_key": "a1b388969c379dacc1cb294710fb9bc0160fe93388f21519f5a5067b6b420314",
+  "params_key": "e3cff4da2a7ff1c1c3bda976f1071139118fbf6e4bece19f38db35bc5050dcd5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

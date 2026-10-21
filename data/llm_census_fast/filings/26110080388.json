@@ -1,5 +1,5 @@
 {
-  "summary": "The County Office of Education emphasizes the importance of E-Rate funding for providing reliable connectivity and maintaining digital infrastructure for educational programs. The funding is crucial for preserving local resources and ensuring equitable access to technology.",
+  "summary": "The comment highlights the importance of E-Rate funding for the County Office of Education, emphasizing its role in providing essential connectivity for educational programs and services.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate funding is vital to our County Office of Education because it helps offset the cost of internet, telecommunications, and network infrastructure that support educational programs across the county. These discounts allow us to provide reliable connectivity for students, staff, and schools while preserving local resources for direct educational services. E-Rate plays a key role in ensuring equitable access to technology and maintaining the digital infrastructure required for teaching, learning, and daily operations.",
-      "evidence_quote": "E-Rate funding is vital to our County Office of Education because it helps offset the cost of internet, telecommunications, and network infrastructure that support educational programs across the county. These discounts allow us to provide reliable connectivity for students, staff, and schools while preserving local resources for direct educational services. E-Rate plays a key role in ensuring equitable access to technology and maintaining the digital infrastructure required for teaching, learning, and daily operations.",
+      "argument": "Limiting or sunsetting E-Rate would result in significant budget shortfalls for schools and libraries.",
+      "evidence_quote": "E-Rate funding is vital to our County Office of Education because it helps offset the cost of internet, telecommunications, and network infrastructure that support educational programs across the county.",
       "evidence_start": 0,
-      "evidence_end": 525,
+      "evidence_end": 203,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "bc427277b1f0e84a092fe5300810ca739a8dca68df4105521785b9f5ed542cf9",
-  "params_key": "dfc653a1e57eaeb06276d6cefb3cd4c99c90b6b1caa907d3ed1aaa585dcd6073",
+  "params_key": "d84b99b84bf7f1827df8a44dcc71455d9f80dddbc40a0dc4f4f4342c1e3bb63f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

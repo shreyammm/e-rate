@@ -1,5 +1,5 @@
 {
-  "summary": "The stakeholder opposes the proposed changes to the E-Rate program, stating that it is not a waste of money to fund it.",
+  "summary": "The FCC comment expresses opposition to limiting or sunsetting the E-Rate program, emphasizing the importance of funding for broadband infrastructure and services.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would result in financial savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services.",
       "evidence_quote": "I would like to complain about the proposed changes for the e-rate program. It is not a waste of money to FUND this!",
       "evidence_start": 798,
       "evidence_end": 914,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "830901a0f5ba30ea6bc564de30e6c8073f5f37b3b55c53ad0a66251741feea3a",
-  "params_key": "e76f9486a53bc3b22c18d0b02aa1d563d816de20e7ff8c0d7be3621ec5789400",
+  "params_key": "ae8188b57bc4d6287790ee3adfa9ab23fdc64b2c0b92844502b2f31ed980efba",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

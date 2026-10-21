@@ -1,5 +1,5 @@
 {
-  "summary": "Eastham Elementary School emphasizes the importance of E-Rate for its financial stability and educational access, urging the FCC to maintain its core funding and avoid changes that could reduce access or increase burden for students and communities.",
+  "summary": "Eastham Elementary School emphasizes the importance of E-Rate for its financial stability and connectivity needs.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "4a6f575c42a8a35bd2ad899bc9d99f328ec4ad463ce67ffa4876c00cc4ff313e",
-  "params_key": "4d3976720936491e2d8cb43aa2f13a7699c2db670de46e2207b54646711570d9",
+  "params_key": "ebde25a8abe4fbbe39c3ebd0c7047d21964b9414a57a373d8f5feb8e175d3c08",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

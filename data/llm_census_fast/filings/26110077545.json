@@ -1,6 +1,6 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program modifications",
-  "stakeholder_role": "unknown",
+  "summary": "The text argues for the importance of government-funded broadband access for public libraries and schools to support education and informed citizenship.",
+  "stakeholder_role": "government",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "It is in the national interest to assist public libraries and schools with Internet access because this has a direct impact on creating an informed citizenry and to help our intellectually developing children. This is exactly the sort of thing govenment should be doing",
+      "argument": "Limiting E-Rate could reduce funding for broadband infrastructure and services",
+      "evidence_quote": "It is in the national interest to assist public libraries and schools with Internet access because this has a direct impact on creating an informed citizenry and to help our intellectually developing children.",
       "evidence_start": 0,
-      "evidence_end": 269,
+      "evidence_end": 209,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "bf0536875f5a5c78a33fbf0ce2879429ea5f273147503029e69038e6e6e22b2e",
-  "params_key": "72e9fe87b3a490dda6372e2c693c6d9a568a82f581a07575dc12ad57fbb5933f",
+  "params_key": "e9bd7a91d50d53153c6f43ce7f21f69e95328c5d41ccfc77cd1f9c3565b5b983",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,24 +1,9 @@
 {
-  "summary": "The text expresses concerns about transparency and parental involvement in education-related technologies funded by E-Rate. It emphasizes the importance of parental access to online materials and content evaluation. The text argues against any restrictions or secrecy imposed by the system.",
+  "summary": "The text expresses concerns about transparency and parental involvement in education-related technologies funded by the FCC. It argues for transparency in the use of federal funds and parental access to online materials. The text does not support any specific policy changes mentioned in the comment.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "The text argues against limiting E-Rate funding to save costs",
-      "evidence_quote": "There should be total transparency especially when it comes to any effort to impose gender ideology/ transitioning/or prompting of secrecy with parents.",
-      "evidence_start": 206,
-      "evidence_end": 358,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110077978",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077978",
   "filer_raw": "Larry and Pam Zook",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e3dc5be8939a8576267e597c893f0557a409bca0eb8d35e07d627d85e427b876",
-  "params_key": "f362129b2fc084f830f2c85a664d7fa3e69714dceda5923812da8f991117ee81",
+  "params_key": "85e6b875ae4f1cd3d52f6e371fc3a550605676079e0534c184f7b1fb731fe929",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

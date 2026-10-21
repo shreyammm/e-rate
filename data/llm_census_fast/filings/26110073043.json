@@ -1,6 +1,6 @@
 {
-  "summary": "Supports tying E-Rate to educational outcomes for libraries in rural areas",
-  "stakeholder_role": "school_district",
+  "summary": "The comment supports using E-Rate to improve educational outcomes, particularly for libraries in rural areas.",
+  "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "education_outcomes",
@@ -8,7 +8,7 @@
       "requested_action": "Tie E-Rate decisions to educational outcomes",
       "reason_family": "education_effectiveness",
       "claim_kind": "normative_value",
-      "argument": "E-Rate should prioritize educational outcomes",
+      "argument": "E-Rate should prioritize improving educational outcomes by supporting broadband access in schools and libraries.",
       "evidence_quote": "I hope public libraries will continue to receive meaningful E-Rate support.",
       "evidence_start": 413,
       "evidence_end": 488,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "61f6375dc3a2b4bcb2f0b1dbb1884a93315f4a85e617a6d783a629c12320ad4e",
-  "params_key": "bab3f612588007aa2d9709b98d3de4740d5583d7a3e0d3a57721b5441ca0e5ba",
+  "params_key": "f89fd4706d639e522fd7bef6efa3a808188c03663a4e91b68e992131377cb5fa",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

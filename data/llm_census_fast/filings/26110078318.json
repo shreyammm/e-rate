@@ -1,5 +1,5 @@
 {
-  "summary": "Discussion on potential changes to the E-Rate program and their impact on schools and libraries.",
+  "summary": "The text argues for the importance of E-rate funding for schools and libraries, emphasizing the cost burden on local budgets if funding were to be withdrawn.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Town and city budgets cannot afford additional cost if E-rate funding were withdrawn",
       "evidence_quote": "Federal E-rate funding is essential to schools and public libraries.",
       "evidence_start": 0,
       "evidence_end": 68,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "96eeeac6f625d58643cabb37a893f42aac8187a91bbdc4242bc67775a5e1f0f8",
-  "params_key": "44be7615fc224a8d6461bff3db9de7cc24896895a58a4a52fef96a950e066c3e",
+  "params_key": "1c8433cf3a20cf2d840c2938b079d61d47a0dc9d1ed48a55290b16516e279144",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

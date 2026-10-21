@@ -1,16 +1,16 @@
 {
-  "summary": "The library emphasizes the importance of E-Rate funding for maintaining affordable, reliable Internet access for patrons. Cutting E-Rate would threaten the library's ability to provide essential services.",
+  "summary": "The library advocates for maintaining E-Rate funding to ensure affordable and reliable Internet access for patrons.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Keep E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Cutting E-Rate would threaten library's ability to provide Internet access",
-      "evidence_quote": "Cutting E-Rate would threaten our ability to provide Internet access because we don’t have dedicated resources to fill the gap in funding.",
-      "evidence_start": 108,
+      "evidence_quote": "E-Rate is critical for our library to maintain affordable, reliable access to the Internet for our patrons. Cutting E-Rate would threaten our ability to provide Internet access because we don’t have dedicated resources to fill the gap in funding.",
+      "evidence_start": 0,
       "evidence_end": 246,
       "uncertain": false
     }
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c93d2ccc5cbfabad65bdd01c4a8c7f1aed755f8a9274ea8a51610c0849168388",
-  "params_key": "6b05f0a1773c8585ce1c8bb6b1b0c1ac1db4b8d16ec9603261b3a4a438a4cf2a",
+  "params_key": "1e0e1fa35e76f32ed6e2c5baad4c9ed55f9ef1b58ca036a924f153716774887f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

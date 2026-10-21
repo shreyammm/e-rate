@@ -1,14 +1,14 @@
 {
-  "summary": "The comment emphasizes the importance of libraries as a free access point to the internet, highlighting personal experiences of using libraries for accessing online services such as unemployment benefits and job applications. It opposes any restrictions on screen-time limits for E-Rate programs, arguing that libraries provide essential free access to the internet without such limitations.",
-  "stakeholder_role": "school_staff",
+  "summary": "The comment emphasizes the importance of libraries as a free access point to the internet, arguing against tying E-Rate decisions to educational outcomes and suggesting that libraries should not be limited based on educational metrics.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
-      "provision_id": "screen_time_condition",
+      "provision_id": "education_outcomes",
       "position": "oppose",
-      "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "privacy_free_expression",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
       "claim_kind": "normative_value",
-      "argument": "The comment argues against imposing screen-time limits on E-Rate programs, asserting that libraries provide free access to the internet without restrictions.",
+      "argument": "The comment argues against tying E-Rate decisions to educational outcomes, suggesting that libraries should not be limited based on educational metrics.",
       "evidence_quote": "When I suddenly became unemployed I went to the library to submit job applications as well as upload all of my unemployment forms. I would not have been able to do that without the library and its free access to the internet.",
       "evidence_start": 578,
       "evidence_end": 803,
@@ -16,7 +16,7 @@
     }
   ],
   "positions": {
-    "screen_time_condition": "oppose"
+    "education_outcomes": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110078255",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c2864e6ad69c1709456c88bb9ffd565364aac7497d7984e9419d536c7fba0efa",
-  "params_key": "d4fe7de9d285cf6c2de74c231b64c115417ae0b3d69cbc926e4a860a5cba1c84",
+  "params_key": "c7429075f1afb4050848015eb2f0cd76b3699314bc550df1aee15093dd50af0f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

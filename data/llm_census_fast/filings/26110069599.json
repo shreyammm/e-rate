@@ -1,6 +1,6 @@
 {
-  "summary": "The comment opposes any restriction or removal of E-Rate funding, arguing that defunding the program would disproportionately impact low-income and rural schools while leaving well-funded districts unaffected. The comment emphasizes that E-Rate is essential for maintaining filtered internet access and supervision for students, and that stronger filtering requirements and digital literacy instruction would require greater funding instead of defunding connectivity.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment opposes any restriction or removal of E-Rate funding, arguing that defunding the connectivity that makes supervision possible would disproportionately harm disadvantaged students.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -9,9 +9,9 @@
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
-      "evidence_quote": "I strongly oppose any restriction or removal of E-Rate funding.",
-      "evidence_start": 0,
-      "evidence_end": 63,
+      "evidence_quote": "Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
+      "evidence_start": 65,
+      "evidence_end": 214,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c828822e586004975e55325cc50bc9e501fd198341eb0a72802c29dc60668fcf",
-  "params_key": "94971bd6b31114842a4759c0937898df3af5c761824e819df910d2437a7b6209",
+  "params_key": "f793bb942f6028c3dfe09abcdb965569c2a268f30ec979153f1db5376c7cdc87",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,24 +1,9 @@
 {
-  "summary": "Maintain E-Rate funding and services for libraries and schools.",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "KEEP INTERNET BUDGET FOR  LIBRARIES. Do not cut the program that provides this.",
-      "evidence_start": 0,
-      "evidence_end": 79,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment supports maintaining E-Rate funding for libraries and other public services.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110078410",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110078410",
   "filer_raw": "Angelica Morales",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "88669a924ae8b12426f4f8e391c9b21f171efa0cec187c6bdb1374b94e42d5d3",
-  "params_key": "a2752f8001c2f27100e2491a568f24feb8dc48779a20acb66fd8124a79fc24a7",
+  "params_key": "43a5be65b8f865ae70a6216014206e4be1fc9447eddecd20eb3fee4a1b4a0481",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

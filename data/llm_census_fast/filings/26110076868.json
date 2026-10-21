@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please support E-Rate so that all libraries will be able to continue to provide internet access",
+      "argument": "Limiting E-Rate could lead to increased costs for libraries",
+      "evidence_quote": "Please support E-Rate so that all libraries will be able to continue to provide internet access.",
       "evidence_start": 0,
-      "evidence_end": 95,
+      "evidence_end": 96,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "7a5c81d334bc50d7cdf553966307d521ababa3f572081d8f6c33e64efb4faf18",
-  "params_key": "ac73c1bdffbc8c1e69062f74a247bc9b8f21ddc5e10a3a19f0ef3d2b883799ab",
+  "params_key": "bc28af89ad0e301f70bbf643c59bba1e4128ed84a8bdfa128d1c7c7e50802ed7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

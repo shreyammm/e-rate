@@ -1,6 +1,6 @@
 {
-  "summary": "The comment opposes limiting or sunsetting E-Rate funding, arguing that cutting funding for libraries would be detrimental to both the library's budget and the services provided to patrons.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment highlights the importance of E-Rate funding for libraries and their services, emphasizing the potential negative impact of cutting funding on libraries and their patrons.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,9 +8,9 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting funding for libraries would be a disservice to patrons and budgets",
-      "evidence_quote": "Libraries are some of the last third spaces that we have, and they do the communities they are centered in many great services. One of those services is free access to computers, printers, and WiFi. To cut the funding for that would be a great disservice to not only the library's budget, but also to the many patrons who are in need of and use these services!",
-      "evidence_start": 0,
+      "argument": "Cutting E-Rate funding would be a disservice to libraries and their patrons",
+      "evidence_quote": "To cut the funding for that would be a great disservice to not only the library's budget, but also to the many patrons who are in need of and use these services!",
+      "evidence_start": 199,
       "evidence_end": 360,
       "uncertain": false
     }
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9c270d4a461b237d5ea1fd15d0f0c67f5c937290ec02ee670b25766b3f2ba069",
-  "params_key": "5b7a2ea434c8cb8a598fd258197ff63b73f841b46f71a194365db13e00cbcdc2",
+  "params_key": "cb43cbb4a6e4a6d326bf2fe6268eca0f7a4894bee51c7384883975cf5a28ecb6",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

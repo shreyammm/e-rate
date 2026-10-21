@@ -1,5 +1,5 @@
 {
-  "summary": "The comment supports the continuation of the E-Rate program and opposes any cuts or changes to its funding.",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, emphasizing its role as an affordable utility for internet access.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please do not defund or remove the E-rate program. Internet access should be an affordable utility, not a luxury",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "Please do not defund or remove the E-rate program. Internet access should be an affordable utility, not a luxury.",
       "evidence_start": 0,
-      "evidence_end": 112,
+      "evidence_end": 113,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c3b55cb9508d90dd64f3fa58b8bfd6cee2c97d2d092bee30aedab3f8ae8c1251",
-  "params_key": "ea72ead3b0834830efb3a32180ad0fef00b9808e4779c102b825d4be25655803",
+  "params_key": "8b8ad5bebf7f8e9fc1157c979a590a95ef056e8600a014f1d9c89b76088a31e1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The school district expresses concern about the impact of losing E-Rate funding on their operations and urges the FCC to preserve the program's core funding.",
+  "summary": "The school district emphasizes the importance of E-Rate funding for its operations and argues against any changes that could reduce access or increase costs.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Preserve core funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-rate, school would cut back on staff",
+      "argument": "Without E-Rate, the school would lose funding and face increased costs for IT personnel",
       "evidence_quote": "Without this funding, losing E-rate would cost our school funding that we rely on and would cause our school to cut back on staff.",
       "evidence_start": 699,
       "evidence_end": 829,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "4b9306e1cceb11920a5e9ac0dcbe08ec43e0bc7815c7fe52f8ec3f203ebef4e9",
-  "params_key": "7c903e092b32f9e977f8480b238d55096822136a3cefe1564963d95f10548e62",
+  "params_key": "63f698a8006bcf81fbf6ca83f9cdf86f3819c9bc5f3b10401806c1684c832ea8",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

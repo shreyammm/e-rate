@@ -1,22 +1,22 @@
 {
-  "summary": "The comment expresses parental concern about early introduction of screen-based learning for young children and opposes tying E-Rate decisions to educational outcomes.",
+  "summary": "The parent expresses concerns about early screen time for young children and suggests a delay in introducing laptops until at least grade 3. This claim is an alternative design to the current approach and highlights the cost implications of implementing screen-based instruction at an early age.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
-      "provision_id": "education_outcomes",
+      "provision_id": "screen_time_condition",
       "position": "oppose",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "normative_value",
-      "argument": "The comment argues against tying E-Rate decisions to educational outcomes.",
-      "evidence_quote": "I am a parent of a child in Kindergarten, and I'm concerned that laptops are being introduced too early.",
-      "evidence_start": 0,
-      "evidence_end": 104,
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Screen-time limits could increase costs for schools",
+      "evidence_quote": "Children at this age use a hands-on approach to learning; for example, the use of manipulatives in math.",
+      "evidence_start": 245,
+      "evidence_end": 349,
       "uncertain": false
     }
   ],
   "positions": {
-    "education_outcomes": "oppose"
+    "screen_time_condition": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110076651",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "17d1e7165693aedc5805228d4fea455a16e9a71df1079e24a82530c58ad535e0",
-  "params_key": "ce56ab2ca412df178af8c51f349633824c9ba3846eb85bff63e2d98483eb762c",
+  "params_key": "1e9d18e198c44536ae751269b67d43ee4d7e404df8cdb8d5af5cc607eb61baa7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

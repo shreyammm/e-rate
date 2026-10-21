@@ -1,5 +1,5 @@
 {
-  "summary": "The comment highlights the importance of E-Rate funding for libraries, which serve elderly individuals who cannot afford home internet. The comment urges funding E-Rate to prevent disenfranchising senior citizens.",
+  "summary": "The text expresses concern about the impact of sunsetting E-Rate on libraries and senior citizens.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,9 +8,9 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for libraries and schools, potentially disenfranchising senior citizens who rely on library internet.",
-      "evidence_quote": "Thousands of elderly people in my area depend upon library internet because they simply cannot adapt to the demands of maintaining home internet. Fund e-rate, or risk disenfranchising and disgruntling America's senior citizens!",
-      "evidence_start": 0,
+      "argument": "Limiting E-Rate could lead to increased costs for libraries and schools",
+      "evidence_quote": "Fund e-rate, or risk disenfranchising and disgruntling America's senior citizens!",
+      "evidence_start": 146,
       "evidence_end": 227,
       "uncertain": false
     }
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c9b2219f57024bd4ac209247aaafbc55c1e75b8c2455d9592c9a4a8a7e45a933",
-  "params_key": "d1c6f78d6b401575cc971149e769a0589d301541fedfc72b7351c7d2124944ef",
+  "params_key": "f7adb20f4fea0ff4d5e65f6636c9643c4277d0325b1564fa3eb221feb3552fed",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

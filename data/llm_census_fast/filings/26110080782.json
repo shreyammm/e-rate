@@ -1,5 +1,5 @@
 {
-  "summary": "The E-Rate Program is crucial to schools and communities across the country and nothing should put the program at risk. There are many ways to ensure the safe use of the internet for children that don't include cutting it from schools and libraries, which is what will happen if this program is cut.",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate Program, citing potential cost increases for schools and communities if the program is cut. It suggests alternative methods to ensure safe internet use for children instead of restricting access.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "The E-Rate Program is crucial to schools and communities across the country and nothing should put the program at risk.",
-      "evidence_start": 0,
-      "evidence_end": 119,
+      "argument": "Cutting the program would increase costs for schools and communities",
+      "evidence_quote": "There are many ways to ensure the safe use of the internet for children that don't include cutting it from schools and libraries, which is what will happen if this program is cut.",
+      "evidence_start": 120,
+      "evidence_end": 299,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "087a71a14aafd06487c0c67afb0662ccc1af326816cfa6f9f5b3c37d0247b384",
-  "params_key": "f8774b46142c2d0101aa24409ad2eff6cb0b6ec00c9dada4f2eec3bc83e0fd9a",
+  "params_key": "b77d711998c07075c72f8bfe57ee1657630e9298320a58f11d1f09a91df8ceed",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

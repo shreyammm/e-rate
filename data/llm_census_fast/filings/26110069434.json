@@ -1,24 +1,9 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
-  "stakeholder_role": "parent_guardian",
-  "claims": [
-    {
-      "provision_id": "screen_time_condition",
-      "position": "oppose",
-      "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "privacy_free_expression",
-      "claim_kind": "normative_value",
-      "argument": "",
-      "evidence_quote": "My family appreciates having a library available that offers computers and free internet usage. My children also benefit from access to quality internet at school and to do homework on the bus.",
-      "evidence_start": 0,
-      "evidence_end": 193,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "screen_time_condition": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment discusses the importance of E-Rate for providing internet access to schools and libraries, and the concern about limiting or sunsetting E-Rate could lead to increased costs for schools and libraries.",
+  "stakeholder_role": "school_staff",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110069434",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110069434",
   "filer_raw": "Michelle Tolman",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "055f01418add8afc662cc0647d5b4e39f171600fa335272f97bd01163969638d",
-  "params_key": "ae6a70bbd46e611b0ca3c08a4b6d0874b49be66acba5566c9d6c92e51a4e8018",
+  "params_key": "cf39545a08bc991a503b1e09110adade57fd66dbae99b0b77d18bdbf5630190a",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

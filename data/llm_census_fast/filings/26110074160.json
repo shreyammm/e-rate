@@ -1,9 +1,24 @@
 {
-  "summary": "The comment expresses concerns about the impact of potential changes to E-Rate on various stakeholders, including school districts, school staff, libraries, parents, telecom providers, vendors, consultants, advocacy groups, researchers, and individuals. The comment highlights the importance of E-Rate for providing affordable broadband access and supports preserving the current program to avoid service cuts.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The comment expresses concern about the impact of E-Rate on funding and service availability for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, schools would face budget cuts and service reductions",
+      "evidence_quote": "We couldn't survive without e-rate and would have to cut services.",
+      "evidence_start": 0,
+      "evidence_end": 66,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110074160",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110074160",
   "filer_raw": "Paul Poswiatowski",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "fa03a3c9abf4e627476e057eb4002af9865a9f9ff469a81f2424881133526c5b",
-  "params_key": "a363fe1f9eeb99c1f3e9ec033280f5a9b273713b4dcb370c318080c421bea1d3",
+  "params_key": "234bbc71bcffd46ff05baeb8e984d4465df67158d7b3508f193f944d465dc603",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,14 +1,14 @@
 {
-  "summary": "The comment expresses concern about defunding the E-Rate program, which provides essential internet access to libraries and schools in the local area. The comment highlights the importance of the program for rural communities and the potential impact of cutting funding on access to internet services.",
+  "summary": "The comment expresses a concern about defunding the E-Rate program, which helps local libraries and schools access affordable high-speed internet in rural areas. The comment argues that the program is essential for providing essential services and that defunding it could have negative consequences.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate program",
+      "requested_action": "Reconsider defunding the E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Defunding E-Rate would eliminate funding for libraries and schools that rely on it for affordable internet access",
+      "argument": "The E-Rate program helps local libraries and schools access affordable high-speed internet, which is essential for rural communities",
       "evidence_quote": "Please reconsider defunding the E-RATE program that helps our local libraries and schools access affordable high speed internet.",
       "evidence_start": 0,
       "evidence_end": 128,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b9b8953bec592041a9e1ab5b87ca35087a990e481ddc02c2c12d8cda517d00e7",
-  "params_key": "c4cfb905b3ca5a8cadfecfefbca1c639706e490778dbc3a8a6052829c891befd",
+  "params_key": "0908499b23d745ba268f078d675309a7f2098da6252a04c5d03ac89cbc97c3a5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

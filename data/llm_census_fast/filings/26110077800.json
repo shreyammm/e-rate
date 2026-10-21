@@ -1,26 +1,14 @@
 {
-  "summary": "The text expresses support for maintaining the E-Rate program and its importance for educational access.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment emphasizes the importance of keeping E-Rate funding, arguing that it is an investment in the future of the country.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "It's crucial for students to have affordable access through school to be competitive in the current world economy.",
-      "evidence_start": 68,
-      "evidence_end": 182,
-      "uncertain": false
-    },
-    {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Keep funding E-Rate",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting funding could lead to increased costs for schools",
       "evidence_quote": "This program is incredibly important, we need to keep funding this.",
       "evidence_start": 0,
       "evidence_end": 67,
@@ -28,8 +16,7 @@
     }
   ],
   "positions": {
-    "education_outcomes": "support",
-    "erate_sunset": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110077800",
@@ -39,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "82f2bbedcf8fc1c28db645be2a9b044525d37db6b0d38dd98f73cf07dccbd4cc",
-  "params_key": "db77488146f18df458d0accfa56f659587cbb3669ffff303bcfa3b6492782067",
+  "params_key": "85d3b9a366ed505feb1c88156113b21bb3797056bab159bca011e8c0440b8102",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

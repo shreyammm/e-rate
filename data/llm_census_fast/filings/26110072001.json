@@ -1,9 +1,24 @@
 {
-  "summary": "The comment supports the continuation of E-Rate funding for the stated reasons.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The comment supports continuation of E-Rate funding for schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is critical for our school needs",
+      "evidence_quote": "E-Rate funding is critical for our school needs, please continue the program to secure our students' futures.",
+      "evidence_start": 0,
+      "evidence_end": 109,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110072001",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110072001",
   "filer_raw": "East Boston Central Catholic School",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2b912da697cdbe06d8e0bea74289f0eca9f9bd9c3ce47824f4f0c77879648420",
-  "params_key": "3c7e16dab2d8af1a2ae1f1026da7c1acc15ef563eadfbdef6d17b61e4d0145cc",
+  "params_key": "778fba7cb990bec2dbcebfb62f16ffb0fd5a98c84abab52310b23cf21c4d1b23",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

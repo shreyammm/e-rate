@@ -1,6 +1,6 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program including eligibility, funding, and implementation",
-  "stakeholder_role": "unknown",
+  "summary": "The comment emphasizes the importance of high-speed internet for public schools and libraries, arguing for the protection of E-Rate funding.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "High speed internet is absolutely essential for all public schools and libraries in today’s world",
+      "argument": "Limiting or sunsetting E-Rate would increase costs for schools and libraries",
+      "evidence_quote": "High speed internet is absolutely essential for all public schools and libraries in today’s world.",
       "evidence_start": 0,
-      "evidence_end": 97,
+      "evidence_end": 98,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a98194b2f900af12b9a321a51193214e448f9cf74c4d28bb49ee39fc16c91d4f",
-  "params_key": "bc38cc60fca38ce0bae0d14946d8ca3a2fc9d88ae136055912bc892a48256e69",
+  "params_key": "dba59b23a4d503efd1580483aeaffabb60c7620e5b61b962682077214129d53d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

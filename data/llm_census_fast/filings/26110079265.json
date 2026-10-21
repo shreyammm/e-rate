@@ -1,24 +1,9 @@
 {
-  "summary": "The comment emphasizes the importance of reliable internet access for education and supports tying E-Rate decisions to educational outcomes to ensure broadband access for schools and students.",
-  "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "normative_value",
-      "argument": "E-Rate should prioritize educational outcomes to ensure broadband access for schools and students",
-      "evidence_quote": "Reliable internet access is an essential part of my children’s education. It allows them to access learning resources, complete assignments, and fully participate in the technology that is now an important part of the classroom.",
-      "evidence_start": 0,
-      "evidence_end": 228,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "education_outcomes": "support"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment highlights the importance of E-Rate for providing internet access to schools and students. It argues against limiting or sunsetting the program to maintain access to essential resources for education.",
+  "stakeholder_role": "school_district",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110079265",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110079265",
   "filer_raw": "Maureen Artl",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2e523b6234336593ac634a8ffc640c4fde5cefaa4fe5e4ca4b606b64ab7f894c",
-  "params_key": "c8aa902704d623d6baf3997323b3793eb23188d5311e47e996d6dd4a5ae701ad",
+  "params_key": "e5b51eac765a9ea3e140bea664d2686cdaf6918177fb393c3cc70d9af44106d0",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

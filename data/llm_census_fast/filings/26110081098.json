@@ -1,22 +1,22 @@
 {
-  "summary": "Summary of impact on Pittsburgh Public Schools if E-Rate ends",
+  "summary": "Pittsburgh Public Schools would face a significant increase in annual broadband costs if E-Rate ends, with an estimated $7.3 million increase over ten years.",
   "stakeholder_role": "school_district",
   "claims": [
     {
-      "provision_id": "lowest_corresponding_price",
+      "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Maintain lowest corresponding price protections",
-      "reason_family": "other",
+      "requested_action": "end E-Rate program",
+      "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate, schools would have to pay full cost of internet services",
-      "evidence_quote": "If E-Rate ends, PPS pays 100% of these costs instead of 10%:\n•\tPrimary internet (Zito, 3-year, $81,000): we pay $8,100 today ($225/month). Without E-Rate: $81,000 ($2,250/month).",
+      "argument": "Loss of E-Rate would increase annual broadband costs for Pittsburgh Public Schools by $7.3 million over ten years",
+      "evidence_quote": "If E-Rate ends, PPS pays 100% of these costs instead of 10%:\n•\tPrimary internet (Zito, 3-year, $81,000): we pay $8,100 today ($225/month). Without E-Rate: $81,000 ($2,250/month).\n•\tWide area network (5-year, $2,250,000): we pay $225,000 today ($3,750/month). Without E-Rate: $2,250,000 ($37,500/month).\n•\tRecurring total: about $47,700/year today vs. $477,000/year without E-Rate, an increase of about $429,300 per year (10x).\n•\tNetwork upgrade (Fortinet, $5.9 million installed): E-Rate covered just over $3 million. Spread over a 7 to 10 year refresh cycle, that is roughly $300,000 to $430,000 per year the district would have to fund on its own.\n•\tCombined: roughly $730,000 to $860,000 more per year, or about $7.3 million over ten years.",
       "evidence_start": 137,
-      "evidence_end": 315,
+      "evidence_end": 880,
       "uncertain": false
     }
   ],
   "positions": {
-    "lowest_corresponding_price": "oppose"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110081098",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5c02538895b33318fa2c6bd05ee4626b1687612c3b95182bc7b40e1cda857e1f",
-  "params_key": "bda5746baa8f470e22fc53eafad92e508d47b6d91cc8fd2ee332cc470170187a",
+  "params_key": "f2ba68a10ad490a643823c068837b0088524039cc6822182c28ed1967057c225",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

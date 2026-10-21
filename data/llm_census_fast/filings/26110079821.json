@@ -1,62 +1,14 @@
 {
-  "summary": "The comment requests to keep current E-Rate funding without making any changes or cuts.",
+  "summary": "The comment requests maintaining E-Rate funding. The stakeholder role is unknown. The claim is an opposition to sunsetting the program. The evidence is a direct quote requesting the funding be kept. No uncertain aspects.",
   "stakeholder_role": "unknown",
   "claims": [
     {
-      "provision_id": "consultant_percent_fees",
-      "position": "oppose",
-      "requested_action": "Prohibit percentage-based consultant fees",
-      "reason_family": "other",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please keep our funding",
-      "evidence_start": 0,
-      "evidence_end": 23,
-      "uncertain": false
-    },
-    {
-      "provision_id": "consultant_registration",
-      "position": "oppose",
-      "requested_action": "Require individual consultant registration database",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "Please keep our funding",
-      "evidence_start": 0,
-      "evidence_end": 23,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "unclear",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Please keep our funding",
-      "evidence_start": 0,
-      "evidence_end": 23,
-      "uncertain": false
-    },
-    {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Keep E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please keep our funding",
-      "evidence_start": 0,
-      "evidence_end": 23,
-      "uncertain": false
-    },
-    {
-      "provision_id": "parent_opt_out",
-      "position": "oppose",
-      "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "parental_autonomy",
-      "claim_kind": "normative_value",
-      "argument": "",
+      "argument": "Funding should not be sunsetted",
       "evidence_quote": "Please keep our funding",
       "evidence_start": 0,
       "evidence_end": 23,
@@ -64,11 +16,7 @@
     }
   ],
   "positions": {
-    "consultant_percent_fees": "oppose",
-    "consultant_registration": "oppose",
-    "education_outcomes": "unclear",
-    "erate_sunset": "oppose",
-    "parent_opt_out": "oppose"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110079821",
@@ -78,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "dbd28dc7455e05cf17cd336ff1a98dba27aa43dd42e52fb8b077c0db57c94abd",
-  "params_key": "367b06e23857a2be5784cba8e6827ae39fdd6d8b1985f2ab76174fe93bece7b2",
+  "params_key": "f0989da3f48e4c4bf54962de479d3d3ef1eb9a93197d8bd7612396ff152f1422",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

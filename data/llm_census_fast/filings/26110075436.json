@@ -1,24 +1,9 @@
 {
-  "summary": "The letter from Coleman Public Library expresses concerns about the potential impact of reducing or sunsetting E-Rate funding, which would affect the library's ability to maintain affordable internet services and build maintenance.",
+  "summary": "The letter from Coleman Public Library emphasizes the importance of preserving the core funding of the E-Rate program, citing reasons such as budget cost efficiency, implementation burden, and cost savings. The letter opposes any changes that would reduce access or increase the burden on schools and libraries. The letter also highlights the role of consulting firms in providing essential services and the need to streamline and certify E-Rate forms.",
   "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "If funding were reduced or lost, delay and/or scrap building maintenance.",
-      "evidence_quote": "If this funding were reduced or lost, delay and/or scrap building maintenance.",
-      "evidence_start": 532,
-      "evidence_end": 610,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 5,
   "submission_id": "26110075436",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110075436",
   "filer_raw": "Sue Dossey",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "81636df4fea5e3f7607652fb65a599e543cb02e46ce269c4b5be929a928764eb",
-  "params_key": "903367e40fc43a855a66a7d2bbfc8532ccafb9d2054bf923e457fc5c44eab243",
+  "params_key": "cf46b87a1edb4170d756ce275c98553f067d84918844fe65fee00775394d3fa5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

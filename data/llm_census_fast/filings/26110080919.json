@@ -1,14 +1,14 @@
 {
-  "summary": "The school librarian argues that the E-Rate program is essential for their budget and students' access to online resources. They oppose any proposal to terminate the program, citing the potential impact on their budget and the elimination of library positions. The school district relies on E-Rate funding to provide essential services for students.",
+  "summary": "The school librarian argues that the E-Rate program is essential for funding and access to online tools and platforms for students, and that cutting or limiting the program would have significant negative impacts on the school budget and educational resources.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "reject proposal to terminate E-Rate program",
+      "requested_action": "reject termination or limiting proposals",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting E-Rate would lead to budget cuts in school districts",
+      "argument": "Cutting E-Rate would add significant challenges to already strained school budgets",
       "evidence_quote": "If E-Rate is cut or rolled back, that will add a significant challenge to an already strained school budget, and could possibly lead to cuts in our book budget, limited or no access to research databases and digital books, and possibly the elimination of certified school librarians in the district.",
       "evidence_start": 728,
       "evidence_end": 1027,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2cba991e792982a013328c9584cf162508d066af94004c9b14e4196d1b65372a",
-  "params_key": "8230cf22ac87cc3a2d8fad726f81a74ce3e423d469f8d233c6e78de5991deec5",
+  "params_key": "1b782e78d8eac1d06d472eef7f50ab24e83aca919dcd1a0095959aa72608d833",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

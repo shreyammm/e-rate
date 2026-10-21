@@ -1,24 +1,9 @@
 {
-  "summary": "The school districts strongly support continued funding for E-Rate to ensure educational outcomes",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "normative_value",
-      "argument": "The school districts strongly support continued funding for E-Rate to ensure educational outcomes",
-      "evidence_quote": "For instance, all standardized testing is digital and requires internet access.",
-      "evidence_start": 760,
-      "evidence_end": 839,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "education_outcomes": "support"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The school districts and their staff strongly support continued funding for E-Rate to ensure access to necessary educational resources and services.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110076421",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076421",
   "filer_raw": "Dana Smith",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "4149be7c4ad48f58ea6bbfadde0adee4e7849471303a6a5dc29d69ace5f30a68",
-  "params_key": "5f7e066bb7fc09c4361fd3f7a4ca90b67553cc878d2d4127910f8cf8ef4ba098",
+  "params_key": "7d6f4661c7f5ca23dbac68bad0fbec33ed6eef645a2fb7e678d3d8b1f3b930ef",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

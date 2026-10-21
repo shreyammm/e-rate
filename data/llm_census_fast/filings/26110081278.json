@@ -1,9 +1,24 @@
 {
-  "summary": "The school district expresses concern about preserving E-Rate funding to maintain network connectivity for students.\nstakeholder_role:",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The school district expresses a strong need for E-Rate funding to maintain network connectivity for student instruction and opposes any sunset or restrictions on the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate Funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "As a small/medium rural K-12 school district, we are not able to self fund necessary network connectivity for student instruction. It would be catastrophic for us to lose this funding. Thank you for your consideration.",
+      "evidence_quote": "Please preserve all E-Rate Funding. As a small/medium rural K-12 school district, we are not able to self fund necessary network connectivity for student instruction. It would be catastrophic for us to lose this funding. Thank you for your consideration.",
+      "evidence_start": 0,
+      "evidence_end": 254,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110081278",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110081278",
   "filer_raw": "Daryl Kilbourne",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ea7d61a31d8bb6a467b6b3a246aebf5ba4e9ea550f636ddbc20b6da4d8019b76",
-  "params_key": "f18dfd9e7b156f12cd4a4c2fc76eac8ef3862ec85f4ef080b56716900fc7fdf2",
+  "params_key": "b00d3497c82f89ce54db05ad90cc55301ece3e1c9e9191f4a88453f12a93465d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

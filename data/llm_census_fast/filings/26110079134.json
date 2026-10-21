@@ -1,5 +1,5 @@
 {
-  "summary": "The library director emphasizes the critical role of eRate funding in providing essential internet connectivity for their community. They express concern that loss of funding would have a catastrophic impact on their ability to meet the needs of their residents, who rely on the library for job applications, government services, skills training, and other essential online activities. The director highlights the financial strain the library would face without this funding support.",
+  "summary": "The library director emphasizes the critical role of eRate funding in providing essential internet access for their community, highlighting the potential catastrophic impact of losing this funding on their budget and community.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "927f03cb18fac318784519a668d434c7d54014755d7cf5b2aca0f9f9f78488d1",
-  "params_key": "ac0065707a0175f3e15471f20502cb3ace4500456401deba5fa5d8733bf55be2",
+  "params_key": "b36b9ac0a6bfe08f1cf58d6a9b340b93ea94c0513ecdad8ddd2e5c1bc1caa998",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

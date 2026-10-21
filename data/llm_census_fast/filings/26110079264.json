@@ -1,17 +1,17 @@
 {
-  "summary": "Supports maintaining E-Rate program for reliable internet access in schools",
-  "stakeholder_role": "unknown",
+  "summary": "The comment supports maintaining E-Rate funding to ensure reliable internet access for schools and students.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue supporting E-Rate program",
+      "requested_action": "Continue E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please continue to support reliable school internet by means of the Federal E-rate program",
-      "evidence_start": 183,
-      "evidence_end": 273,
+      "argument": "Reliable school internet is crucial to students' educations",
+      "evidence_quote": "Access to information and textual materials at a rapid rate is vitally important.",
+      "evidence_start": 98,
+      "evidence_end": 179,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "96e34801856fcfb108e06e10413c583a46c4a7a59117c47076e4354219f76456",
-  "params_key": "e60a0d32338e75c62ce4da08709a96024b84021f610a91e5897f8406aea25cd8",
+  "params_key": "15f480aa2f8f510ef150c26bd21a61040f0f73eaedaaee32a28a1d036ee9b3fe",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

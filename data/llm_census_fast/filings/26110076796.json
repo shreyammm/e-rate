@@ -1,5 +1,5 @@
 {
-  "summary": "The comment opposes limiting or sunsetting the E-Rate program, arguing that it is essential for providing internet access to public schools and libraries to ensure educational access for all, regardless of socioeconomic status. The comment cites a concern that the proposed plan could hinder the ability of students to access educational resources and information, potentially perpetuating a cycle of ignorance and dependency on misinformation. The comment also highlights the importance of ensuring ",
+  "summary": "The text argues against limiting or sunsetting E-Rate, emphasizing its importance for educational equity and access to broadband services in public schools and libraries.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Proposed plan to take away internet access for public schools and libraries only serves to ensure that present and future generations of people who are not in the wealthy elite class are not educated enough to make good, wise decisions",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access in public schools and libraries, which are essential for educational equity.",
       "evidence_quote": "This proposed plan to take away internet access for public schools and libraries only serves to ensure that present and future generations of people who are not in the wealthy elite class, who only go to elite private or religious schools, are not educated enough to make good, wise decisions that can affect them and future generations.",
       "evidence_start": 0,
       "evidence_end": 337,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "73c0ed0d3d0c21a0ef33509272c94843b33071cc82eeea7a283469e58a306fa0",
-  "params_key": "163d5d8e47ac7ed62c74919d50d2c851046727c60441cbc1b270b9fcf9c5faed",
+  "params_key": "c93eb912af236c81bc4a5deb8a1670909ff03ae8c2e3f165289f84b56f840fbe",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

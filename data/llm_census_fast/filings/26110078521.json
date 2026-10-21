@@ -1,14 +1,14 @@
 {
-  "summary": "The IT Director of a high school in Omaha, Nebraska, expresses concern over the proposed regulations that will cut or eliminate access to e-rate funding. They highlight the importance of consistent, reliable, fast connectivity for security cameras, emergency services, and digital curriculum access. The IT Director argues that cutting e-rate will seriously damage the nation's educational goals and negatively impact schools and local governments.",
+  "summary": "The IT Director of a high school in Omaha, Nebraska, expresses concern over the proposed regulations that could cut or eliminate access to e-rate funding. They highlight the importance of consistent, reliable, fast connectivity for security, emergency services, and digital curriculum access. The IT Director argues that cutting e-rate will seriously damage the nation's educational goals and negatively impact schools and local governments.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate funding",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting e-rate will damage the nation's educational goals and negatively impact schools and local governments",
+      "argument": "Cutting e-rate will damage the nation's educational goals and negatively impact schools and local governments.",
       "evidence_quote": "Cutting e-rate will seriously damage that goal. Passing these costs on to already over-burdened schools and local governments will require decreased internet access cutting out other necessary programs.",
       "evidence_start": 931,
       "evidence_end": 1133,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "1",
   "source_sha256": "16a83121611feb66c5d9f8a5bd95340baa473dd44573c3c56b29b2b8127f0dc2",
-  "params_key": "1b5f6d3cef65a008af5cbe9ebfff16f95e30d4f30e209a4e8c5a2d35d75d5216",
+  "params_key": "25f2e89f4c542aa9757b44026dae8579f1b3c58be093c5aa438bf5a82aa9f49e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

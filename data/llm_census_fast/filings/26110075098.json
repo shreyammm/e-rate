@@ -1,9 +1,24 @@
 {
-  "summary": "Library expresses concern about preserving E-Rate funding to maintain affordable services for its community.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "Library expresses concern about preserving E-Rate funding to maintain affordable internet services for its community.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, libraries like Allen Memorial Public Library would struggle to maintain affordable internet services for the public.",
+      "evidence_quote": "Without this funding, if E-Rate funding was lost, I'm not sure how we would handle that.",
+      "evidence_start": 579,
+      "evidence_end": 667,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110075098",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110075098",
   "filer_raw": "Norma J Hallmark",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "db53732b73a216d1914f6339bed14e691f35aabbb61e7ecaab4219a5fe2c0f30",
-  "params_key": "4a1fef9c3c985e56af769ed825b22482368d25f8aec2ff74d0271a3bcb5aff25",
+  "params_key": "52930e7e7edea19326781abba8da9ed71e5b0f32bf1b83894e6349c262a398ec",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

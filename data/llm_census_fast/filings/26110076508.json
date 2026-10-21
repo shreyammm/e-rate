@@ -1,24 +1,9 @@
 {
-  "summary": "The comment expresses opposition to the proposal to eliminate or greatly restrict the E-Rate program, which helps 96% of schools pay for internet access. The comment is made by a public school educator and parent who relies on federal funding for their school.",
+  "summary": "The comment highlights the importance of the E-Rate program for public school educators and parents, emphasizing the need to preserve funding and access to internet access for education.",
   "stakeholder_role": "school_staff",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Eliminate or greatly restrict E-Rate program",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "The Trump administration is proposing to eliminate or greatly restrict the E-Rate program, which helps 96% of schools pay for internet access",
-      "evidence_quote": "The Trump administration is proposing to either eliminate or greatly restrict the E-Rate program—which helps 96% of schools pay for internet access.",
-      "evidence_start": 212,
-      "evidence_end": 360,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110076508",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076508",
   "filer_raw": "Jeanette Greenzweig",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "0c720cd1244120b02ec57012280dec59a902c1a49fc9e788fb5eb379d6ae8f25",
-  "params_key": "e0cd4428090e52705c406648b58984cdaeb15b9336a3fb95e9bdfefb59866c00",
+  "params_key": "2a0dbef2b21e8c3c3e32ef8a67b8488fea85e74af2bd6717d72c484fd6fb82d9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

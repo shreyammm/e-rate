@@ -1,17 +1,17 @@
 {
-  "summary": "The claim is for retaining E-Rate funding for the library and school district in Kokomo, Indiana, emphasizing the importance of the program for educational and community access.",
-  "stakeholder_role": "unknown",
+  "summary": "The text expresses opposition to removing E-Rate funding for its positive impact on the community and the importance of the program for the author and their colleagues.",
+  "stakeholder_role": "parent_guardian",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "retain E-Rate funding",
+      "requested_action": "do not remove funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Retaining funding is essential for maintaining access to broadband services",
-      "evidence_quote": "Please do not remove this funding. I have seen, first-hand, the benefits it brings to a community the size of mine (Kokomo, Indiana).",
+      "argument": "The text argues against removing E-Rate funding.",
+      "evidence_quote": "Please do not remove this funding.",
       "evidence_start": 159,
-      "evidence_end": 292,
+      "evidence_end": 193,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "31f877f075baa99a1cd20d2ca3bac6ab67258603daa7107d464ca74fe338bcf4",
-  "params_key": "15e5de7cc413e8ee953e1fb904975aaac0933c1109a298331cf75909a2ef4448",
+  "params_key": "6dd884c2ff3806349afdabce26c6af00a5aa3f19b29fecf3605319588b80023e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

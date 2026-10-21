@@ -1,5 +1,5 @@
 {
-  "summary": "The ACES organization urges the FCC to maintain the E-Rate program to ensure affordable and reliable internet access for schools, which is essential for educational technology and daily school operations. The comment highlights the potential financial impact of reducing or eliminating E-Rate funding on education budgets and resources.",
+  "summary": "The school district urges the FCC to preserve the E-Rate program to maintain affordable, reliable internet access for schools and students, emphasizing the program's essential role in education and the potential financial strain of its reduction.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Preserve E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Reducing E-Rate could increase costs and strain education budgets",
-      "evidence_quote": "Reducing or eliminating E-rate discounts could dramatically increase costs, placing additional strain on already limited education budgets and diverting resources from students.",
-      "evidence_start": 474,
-      "evidence_end": 651,
+      "argument": "Reducing E-Rate could dramatically increase costs, placing additional strain on already limited education budgets",
+      "evidence_quote": "Please maintain broad access to E-rate so all schools can provide equitable, reliable connectivity for learning.",
+      "evidence_start": 653,
+      "evidence_end": 765,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "cf675f5d57e2a58de3751a2b7eb4785a286cb1d3a9510707645f45699e53f30f",
-  "params_key": "f83fd8f00df8c8161db372c3bb513d88a4275843a0fcd3dfdbd4ef14b44d1261",
+  "params_key": "85529c29f6126b27601cf53bfdfa728b3bb2499b59512b043f16f856a52e1b79",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

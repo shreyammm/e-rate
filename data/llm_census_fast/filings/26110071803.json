@@ -1,11 +1,11 @@
 {
-  "summary": "Public libraries emphasize the importance of E-Rate funding for maintaining essential services and resources.",
+  "summary": "Public libraries rely on E-Rate funding to maintain internet access and services. Losing this support could lead to budget cuts and service reductions.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "protect E-Rate funding",
+      "requested_action": "protect",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Without E-Rate support, libraries would face budget cuts",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3f41003521bd9d56d05b894dc9504d7f25c41e3d7b72b18f0fab3c65b8bce956",
-  "params_key": "2c7d78e6f1094bf0fd45868e933d8d97e35b2e8120914582ae4b080d5f4af918",
+  "params_key": "26a5d17cde03abb23dea5fb4ad7742fcefa8481316c0d3126eb3a4d151cd7eb4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

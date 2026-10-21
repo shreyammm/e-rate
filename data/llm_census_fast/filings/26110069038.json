@@ -1,5 +1,5 @@
 {
-  "summary": "The E-Rate program is vital to rural libraries across Upstate New York. In our small and rural communities, libraries often provide the only reliable access to high-speed internet on budgets that are often less than $100,000. Residents depend on their local library to apply for jobs, complete schoolwork, access telehealth services, and connect with essential government resources. Without E-Rate funding, many rural libraries would struggle to afford the broadband infrastructure needed to meet the",
+  "summary": "The comment highlights the importance of E-Rate for rural libraries in communities with limited budgets, emphasizing the economic impact of discontinuing the program on these vulnerable communities.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Discontinuing E-Rate would directly hurt rural communities financially",
+      "argument": "Discontinuing E-Rate would directly hurt rural communities with limited budgets",
       "evidence_quote": "Without E-Rate funding, many rural libraries would struggle to afford the broadband infrastructure needed to meet these growing demands.",
       "evidence_start": 383,
       "evidence_end": 519,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5e01353d818e674f037ee249561886fdf2c4ddc7bdf2fdf8de8e43e77477bd02",
-  "params_key": "f25f1418f1e1486f0f07a44bbbefe4c039801865edd676184e71baba4ba5a5fc",
+  "params_key": "897834d398e1bdeab7760e2d4954322ef475e4aaabbeaafca71ce804d720edef",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

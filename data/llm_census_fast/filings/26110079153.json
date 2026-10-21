@@ -1,17 +1,17 @@
 {
-  "summary": "School district urges FCC to preserve E-Rate funding to maintain access to technology and internet for students and staff.",
+  "summary": "The school district urges the FCC to preserve E-Rate's core funding and avoid changes that would reduce access or increase burden for students and communities.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "preserve core funding",
+      "requested_action": "Preserve core funding and avoid changes",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without this funding, schools could face a reduction in staff and student learning experiences.",
-      "evidence_quote": "Without this funding, we could face a reduction in staff and student learning experiences.",
-      "evidence_start": 449,
-      "evidence_end": 539,
+      "argument": "Without E-Rate funding, schools could face reduced access to technology and learning experiences",
+      "evidence_quote": "Student access to technology and/or the internet would be limited or even eliminated in some cases.",
+      "evidence_start": 348,
+      "evidence_end": 447,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "59bf91623d557ad8722c1b0fa08ee982011eee9d8ad7b25f454caf35b85c4ca9",
-  "params_key": "c0f8b09836a467aefd26f9225ebbc6417543ae98923b400dbd884b24c5d353ac",
+  "params_key": "1469cb15d864e5a557249013b6de6b54791ffa55484e0b7d5e9fb1d00d68e524",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

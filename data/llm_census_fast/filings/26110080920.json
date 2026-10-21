@@ -1,5 +1,5 @@
 {
-  "summary": "The text argues against making cuts to the E-Rate program, emphasizing its importance and the potential cost of not having it.",
+  "summary": "The text argues against cutting the E-Rate program, emphasizing its importance and the potential impact on libraries and schools.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would save money",
+      "argument": "Limiting or sunsetting E-Rate would result in significant budget cuts",
       "evidence_quote": "Do not make cuts in this program.",
       "evidence_start": 430,
       "evidence_end": 463,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "4e0f2a8d2e1ebe4faeeda4fda492adc6b08ca5c0e4cfbc39f28280c2f8ff6562",
-  "params_key": "01cb061fe8ad0e9a79fc1d505586ce6b04946b5e05c71bcabf021d221c0e9134",
+  "params_key": "951c859ed3c710b2d7f9a12afc32f11730e53ea92be072f75b9f1b0218426bea",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

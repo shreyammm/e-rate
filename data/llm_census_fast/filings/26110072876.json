@@ -1,9 +1,24 @@
 {
-  "summary": "The comment opposes tying E-Rate decisions to educational outcomes for the education effectiveness reason.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The library emphasizes its reliance on E-Rate for affordable internet access, highlighting the cost savings and equal opportunity access it provides to the public.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would increase costs for libraries and schools",
+      "evidence_quote": "Our library depends on e-rate to make our internet connection affordable.",
+      "evidence_start": 0,
+      "evidence_end": 73,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110072876",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110072876",
   "filer_raw": "Marie Letarte",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "25ff2e421a0ea2d2991d4a8f08552ee5f9396f7eb48f7df5602c83471eee1fd5",
-  "params_key": "17ead878ed7e0cccb053d055928081fe3efc07a49250d7b13d8528d0692cfc06",
+  "params_key": "0d4dcc8158b19fea4e363d2c4a0353935d003043ee261284184beb88ffd1db17",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

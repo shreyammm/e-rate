@@ -1,6 +1,6 @@
 {
-  "summary": "The library staff expresses concern about the impact of E-Rate on access to essential services for low-income and rural communities.",
-  "stakeholder_role": "school_staff",
+  "summary": "The stakeholder expresses concern about the impact of E-Rate on access to essential services for low-income and rural communities, emphasizing the importance of preserving the program to ensure equitable access to the internet.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Funding cuts will disproportionately impact low-income and rural communities",
+      "argument": "Funding cuts could disproportionately impact low-income and rural communities",
       "evidence_quote": "Not everyone has access to Internet, and I worry that losing E-Rate will hurt the people that need the service most.",
       "evidence_start": 253,
       "evidence_end": 369,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "97a70a709bc1bb5691fe69e00c4306b3ac5693c257abe6318ba01b0ba173a310",
-  "params_key": "a23eb9f8dab044aef87dfcb8ab7ada4dfa804ba302cacbbda52d3b1b888898f0",
+  "params_key": "0443f3be117f1fab8d5b25a49c061be458234d954ce53a79394bf81cfd0df4bb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

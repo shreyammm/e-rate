@@ -1,17 +1,17 @@
 {
-  "summary": "The comment supports the continuation of E-Rate programs for libraries, citing their importance for families.",
+  "summary": "The comment supports maintaining E-Rate funding for libraries.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue E-Rate funding for libraries",
+      "requested_action": "Continue to allow E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please continue to allow digital Internet access in our libraries for our citizens children included to use. It’s smart, it makes sense and it’s a real benefit to many families. Thank you for your consideration.",
+      "argument": "Funding should not be sunsetted",
+      "evidence_quote": "Please continue to allow digital Internet access in our libraries for our citizens children included to use.",
       "evidence_start": 0,
-      "evidence_end": 211,
+      "evidence_end": 108,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "939a6f98491702f0b7202ab64eb14ac1ccd8acfcf09e50a91534bcf8db5923ba",
-  "params_key": "69d82324796e72242158bb2234aeee0c8202711a2593403030aa5e6922207d31",
+  "params_key": "7ed45e9166f993a72900e5eec43bc892661f1533c15c7fde37f688bc6360a4b1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

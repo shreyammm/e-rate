@@ -1,5 +1,5 @@
 {
-  "summary": "The text discusses the impact of E-rate on libraries and schools in Idaho, highlighting the financial burden they face without E-rate support. It suggests that without E-rate discounts, libraries and schools will struggle to cover internet costs and may have to cut funds from other programs to make up for the deficits.",
+  "summary": "The text discusses the impact of E-rate on libraries and schools in Idaho, highlighting the financial burden of not having E-rate discounts on their internet costs. It opposes any efforts to limit or sunset E-Rate programs.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b6874691ff9ceffbfbec5df09a130724ad7820a7641df25a109480ca842c1067",
-  "params_key": "042a0660a4637a27e1204ff109c532d1f50dedaf0068eedd70f96ed54ba70ce6",
+  "params_key": "6ba287e844d2038cd376c80c49442e7828949aad025215841bb8eded11875e1b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

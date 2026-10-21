@@ -1,5 +1,5 @@
 {
-  "summary": "Advocates for maintaining the current E-rate program to ensure continued access to broadband services for schools and students.",
+  "summary": "Advocates for maintaining the current E-rate program to ensure continued access to broadband for schools and students.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Preserve the robust E-rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Changes to the E-rate program would defeat gains in connectivity and affect children's learning and safety",
+      "argument": "Changes to the E-rate program would defeat gains in connectivity for teaching and learning and affect children’s safety",
       "evidence_quote": "Please preserve the robust E-rate program.",
       "evidence_start": 698,
       "evidence_end": 740,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "514e072bb468f3c91463bb48ef4a3f1a4098be14f241cdfe9897eba672692ed8",
-  "params_key": "96a68a42a6c2e50e938175505f7684d80f4a412f3f33c4819d737c2b2758cafa",
+  "params_key": "ed1028f2348bea2bab002aef16dea3e44b9c3f44694f3261343e2eef29407886",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

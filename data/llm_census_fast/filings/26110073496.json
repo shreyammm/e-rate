@@ -1,9 +1,24 @@
 {
-  "summary": "The comment raises concerns about various aspects of the E-Rate program, including its funding, eligibility criteria, and implementation.",
+  "summary": "The claim urges consideration of the financial implications of funding E-Rate through taxpayer contributions, suggesting potential budgetary concerns.",
   "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 2,
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding E-Rate from taxpayers may strain public finances",
+      "evidence_quote": "E-rate is funded by the FCC from taxpayers who pay for telecommunication services.",
+      "evidence_start": 115,
+      "evidence_end": 197,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110073496",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110073496",
   "filer_raw": "Jamie Elston",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "fe8133fb9940aa467d6b8023d7687a171183f6f38e8eaf6fbae3bd9f0aee6e2d",
-  "params_key": "950ce6b05adc8706ec485976aebf576702d61b31eace6f0a5d41876ae521e20e",
+  "params_key": "57575751ef441f81475d045f17bd52c5ad55e36dfedf8d9c4d7b002ec270b24a",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

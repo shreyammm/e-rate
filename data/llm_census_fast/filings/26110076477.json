@@ -1,14 +1,14 @@
 {
-  "summary": "Support for maintaining E-Rate program funding and services",
+  "summary": "The comment supports maintaining the role of E-Rate in providing internet access to public libraries and schools, emphasizing its importance for access to online resources.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue to fund E-Rate program",
+      "requested_action": "Continue to make internet available through E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Continuing E-Rate ensures affordable internet access for public libraries and schools",
       "evidence_quote": "Please continue to make internet available at our public libraries and schools through the e-rate program.",
       "evidence_start": 0,
       "evidence_end": 106,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3404da98948997c6dfb9b093ab1d2d719d4cb8bf5026fb78ef539d43e43c799f",
-  "params_key": "aab8d7377db8ce5af46fe615ede0b91e785d7c2a61fb9eeb188bbeee30c1d50b",
+  "params_key": "9e6a78e772f31da9723a067003aff323cb94ad750d8002115aa477f4aa4992fb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

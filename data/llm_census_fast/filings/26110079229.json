@@ -1,16 +1,16 @@
 {
-  "summary": "The comment supports maintaining E-Rate funding for libraries, which are essential public resources for education and access to information.",
-  "stakeholder_role": "school_staff",
+  "summary": "The comment emphasizes the importance of E-Rate for libraries, which rely on it for essential services like internet access and interlibrary loan. The comment opposes sunsetting the program to ensure its continued availability.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "keep E-Rate in effect",
+      "requested_action": "Keep E-Rate in effect",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Library relies on E-Rate for public access and backup wifi",
-      "evidence_quote": "Hello. Please keep the E-rate in effect for library patrons.",
-      "evidence_start": 0,
+      "argument": "Libraries rely on E-Rate for essential services",
+      "evidence_quote": "Please keep the E-rate in effect for library patrons.",
+      "evidence_start": 7,
       "evidence_end": 60,
       "uncertain": false
     }
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3fb67c18a65e9b208a88050711a030138c2271811109e25509954f6f934b180e",
-  "params_key": "75d7db8d77e19d20876ed4979a5f2dd4fb116b37331f8baa90c0abed788ebd23",
+  "params_key": "3da82a1694922bf875cace1fc5726c5b69f1979539840f1ddf210332812e2cad",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

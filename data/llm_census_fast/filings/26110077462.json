@@ -1,38 +1,14 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
+  "summary": "The comment opposes limiting or sunsetting E-Rate, arguing it would hinder progress in an increasingly digital world.",
   "stakeholder_role": "unknown",
   "claims": [
-    {
-      "provision_id": "consultant_definition",
-      "position": "oppose",
-      "requested_action": "Define covered E-Rate consultants",
-      "reason_family": "other",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "Most teaching is done using the internet. This prepares the student for the future in their work. Schools and libraries use the internet for research. This idea would take the students and teachers backward.",
-      "evidence_start": 0,
-      "evidence_end": 207,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "oppose",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Most teaching is done using the internet. This prepares the student for the future in their work. Schools and libraries use the internet for research. This idea would take the students and teachers backward.",
-      "evidence_start": 0,
-      "evidence_end": 207,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting E-Rate would reduce funding for broadband access and infrastructure",
       "evidence_quote": "This is a computer/internet world now and it will advance even more with time.",
       "evidence_start": 209,
       "evidence_end": 287,
@@ -40,8 +16,6 @@
     }
   ],
   "positions": {
-    "consultant_definition": "oppose",
-    "education_outcomes": "oppose",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -52,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "114cfc5f4eddbadd781d3c3af29653ddb1f037fbbe052c135b1b3968addcb4c9",
-  "params_key": "e0e1573f80166b0fca9dc320988f71cd45f0f99e3d6764f5fdfbc1e4deff6d2e",
+  "params_key": "bcaf0cfcc7c7e3d0551fc56174a0b3bae6c7610086d073d5a39033ea0aff256d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

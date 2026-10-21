@@ -1,5 +1,5 @@
 {
-  "summary": "The letter expresses opposition to reducing the E-Rate program, emphasizing its importance for education and the digital future of students.",
+  "summary": "The letter expresses opposition to reducing the E-Rate program, emphasizing its importance for education and future investment in children.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Reducing E-Rate would increase costs for schools and students",
+      "argument": "Reducing E-Rate is a cost-saving measure",
       "evidence_quote": "As costs for pretty much everything are on the rise there is no better investment than in our children’s future so that they can create a world that is better than the one we are presently in.",
       "evidence_start": 229,
       "evidence_end": 421,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d2def99f0e225d7c923a961ae401f263f700c76ac4350ae4b06c2d17880355b6",
-  "params_key": "103fe1e9c9f36737b4a154986ac5978b10a37616016ffdb493219e3bd4e30477",
+  "params_key": "1e4959ab6dad0b62403c7656838ce37a0e649f211bab656d79666f6e7ec06de1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

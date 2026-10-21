@@ -1,6 +1,6 @@
 {
-  "summary": "The FCC is urged to preserve the E-Rate program and oppose any proposal to sunset or limit it, emphasizing the program's role in providing essential internet access for students in low-income and rural areas. The claim highlights the program's success in reaching its intended goals and the potential negative impact of cutting the program on educational equity.",
-  "stakeholder_role": "unknown",
+  "summary": "The FCC is urged to preserve the E-Rate program and oppose any proposal to sunset or limit it, emphasizing the program's role in providing essential internet access for students in low-income and rural areas.",
+  "stakeholder_role": "parent_guardian",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "89187e111c9787abc2a99ae0b38dcc9140708b3083c778d2c4406c3a4bafaedc",
-  "params_key": "11d3a4ce77d5a1fc9d7bbf88506f11afb0187dfec9128a803b6ae27fe9f8dbcc",
+  "params_key": "ed4fe49c181cf027bbc13c8afd8ba3a4127c23b5b0e1e1fbd662f90cf5ad532f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

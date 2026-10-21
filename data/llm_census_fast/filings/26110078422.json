@@ -1,22 +1,22 @@
 {
-  "summary": "The comment supports funding the FCC E-Rate program despite various proposed changes and concerns.",
-  "stakeholder_role": "school_district",
+  "summary": "Oppose limiting or sunsetting E-Rate to save costs",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Continue funding",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Our libraries need wifi!",
-      "evidence_start": 52,
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services in schools and libraries",
+      "evidence_quote": "Please continue to fund the Federal E-rate program. Our libraries need wifi!",
+      "evidence_start": 0,
       "evidence_end": 76,
       "uncertain": false
     }
   ],
   "positions": {
-    "erate_sunset": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110078422",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "25afa27bc863e639ee6e02a1a9020ed5373e5ac3f2568dca9265439bbb04a289",
-  "params_key": "2abb49acc8786f6b677b6aa6f2c99fd28f3ce341d13015c8d8732e6ab5bf5cbe",
+  "params_key": "a8e1a827447e3fedbd95c7e0313392bb71a040311b0bd83f398ad3c34e12a63b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

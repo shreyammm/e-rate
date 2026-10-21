@@ -1,22 +1,22 @@
 {
-  "summary": "The text discusses the importance of transparency and parental autonomy in relation to online content and its impact on students, particularly regarding social gender transition and medical interventions.",
-  "stakeholder_role": "school_staff",
+  "summary": "The text discusses concerns about the transparency and oversight of online content in schools, particularly regarding sensitive topics like gender identity and medical interventions. It highlights the need for transparency and parental oversight, and the role of the government in regulating federally subsidized networks. The text opposes limiting or sunsetting E-Rate, citing concerns about cost and funding efficiency.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "Schools should be transparent with parents about whether students can access online material that encourages social gender transition, that advises children to conceal a gender identity from their parents, or that directs minors toward such medical interventions as puberty blockers, cross-sex hormones, or surgeries.",
-      "evidence_quote": "Parents should be able to understand how online content is evaluated by schools, what types of material are restricted or permitted, and how parents can raise concerns.",
-      "evidence_start": 319,
-      "evidence_end": 487,
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services",
+      "evidence_quote": "Schools should be transparent with parents about whether students can access online material that encourages social gender transition, that advises children to conceal a gender identity from their parents, or that directs minors toward such medical interventions as puberty blockers, cross-sex hormones, or surgeries.",
+      "evidence_start": 0,
+      "evidence_end": 317,
       "uncertain": false
     }
   ],
   "positions": {
-    "education_outcomes": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110077882",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "bc406fb5b599442efd33278b026f4de9bce3e00346445d5e923cb8440cd03d84",
-  "params_key": "a2e8a9c9a126fd1877838e9877337d6578a9cdba09fa80886bd326abe20b45b5",
+  "params_key": "f9f6e8d94a7c1295380329fe2da8b16f236008d910b8fd9f0c69ab3aa8caefd2",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

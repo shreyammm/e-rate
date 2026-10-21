@@ -1,5 +1,5 @@
 {
-  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing cost burdens on local governments and impacts on digital access and competitiveness.",
+  "summary": "The comment argues against limiting or sunsetting the E-Rate program, emphasizing the importance of affordable broadband for schools and libraries. It cites the potential impact on competitiveness and the need for local governments to bear the cost of connectivity. The comment also notes that the FCC has no jurisdiction over policies regarding technology use in schools, which should remain under local control.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Reducing or eliminating this program would be damaging for multiple reasons.",
+      "argument": "Reducing or eliminating E-Rate would shift the financial burden of providing connectivity onto local governments and taxpayers.",
       "evidence_quote": "Such an action shifts the financial burden of providing connectivity and related services onto local governments and taxpayers.",
       "evidence_start": 564,
       "evidence_end": 691,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d923c1d3a11f4e5f3694841ba0a05a487df5db24b7aabbeae51df44c7985cd6e",
-  "params_key": "657653b15abad9a172ee6352733dfb8d38beb63a749d10a5aab28136bd5e1e3d",
+  "params_key": "eb5ee1fb4610c5a4b5702124269438b1371ebd9f48a645b93767c4067fb0e5f1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

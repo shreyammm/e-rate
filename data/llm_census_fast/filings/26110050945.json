@@ -1,5 +1,5 @@
 {
-  "summary": "The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for schools and libraries facing budget constraints and the negative impact of cutting it would have on educational access and infrastructure.",
+  "summary": "The stakeholder opposes limiting or sunsetting the E-Rate program, emphasizing the importance of the program for schools and libraries and the negative impact of cutting it.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting E-Rate would be a step backwards for schools and libraries facing budgetary challenges",
+      "argument": "Cutting E-Rate would be a step backwards for schools and libraries",
       "evidence_quote": "Yes, this program has brought about significant progress. Cutting it now would be a step backwards, and leave schools and libraries behind.",
       "evidence_start": 618,
       "evidence_end": 757,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "89dee7cb8f844e1e77f58df4180e7e449f707f22c6c3814c96db865939441d46",
-  "params_key": "ddeb5fe7941a240a9b3488bf3c64bcfda8e9887959d1b1dfa644d4094689e7da",
+  "params_key": "14b429e81adf72790a53269cbae62782510b446cd5e7af394f7fd56c2c8b0fa1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

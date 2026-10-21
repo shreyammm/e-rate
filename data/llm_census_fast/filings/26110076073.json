@@ -1,14 +1,14 @@
 {
-  "summary": "The comment supports maintaining the E-Rate program for the past 20 years and addresses various policy issues related to its funding and implementation.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment supports maintaining E-Rate funding for its long-standing role in supporting school infrastructure.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Continue funding E-Rate",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Funding continuity is essential for school infrastructure",
       "evidence_quote": "Please support E-Rate and make sure that it continues to support our school districts as it has done for the past 20 years.",
       "evidence_start": 0,
       "evidence_end": 123,
@@ -16,7 +16,7 @@
     }
   ],
   "positions": {
-    "erate_sunset": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110076073",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b8234d1aaf2790226fc742ac70568c05addad97a1063751d9e7ca05c0899083a",
-  "params_key": "536d1f51ccafe826bb897a5fd674dc62ae638447905c450a1d913c7a74e0fc97",
+  "params_key": "687ec31782dad0c08b786d8170430b79fb316f7c4a8c2e92eb44063eeea3c30e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

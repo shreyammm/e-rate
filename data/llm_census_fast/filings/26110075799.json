@@ -1,5 +1,5 @@
 {
-  "summary": "The comment emphasizes the importance of maintaining E-Rate funding for schools and libraries.",
+  "summary": "The school district emphasizes the importance of E-Rate funding for modern technology and opposes reducing the funds.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please do not reduce e-rate funds. Our school district relies on the money to provide modern technology for our students and staff.",
+      "argument": "School districts rely on E-Rate funding for modern technology",
+      "evidence_quote": "Please do not reduce e-rate funds.",
       "evidence_start": 0,
-      "evidence_end": 131,
+      "evidence_end": 34,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e721aa2f01a0656483d7d5d2854916df99e8190ca861da6000e072e47eaf5555",
-  "params_key": "ef719446286fc70877549927e319cb9b4985fcb35530be847b2b13756650ff37",
+  "params_key": "10a16f516a6fa7b225d97d01af5c0a6f91c6db7102ccd3fd3a6025df0bbf1409",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The comment supports continuing E-Rate funding for libraries in small towns, emphasizing the program's importance for providing essential internet services to patrons.",
+  "summary": "Support for maintaining E-Rate funding for public libraries in small communities.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Continue E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate funding is essential for libraries to provide affordable internet services to patrons.",
+      "argument": "E-Rate funding is essential for maintaining library services and internet access in small communities",
       "evidence_quote": "Please recognize the important role E-Rate plays in keeping our small town library accessible and connected with affordable, reliable internet service.",
       "evidence_start": 629,
       "evidence_end": 780,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "368cdbf15bba73a3609d9d8af3dbbe314dc81b92be5ccb5390c79783938a8193",
-  "params_key": "680698657897098ace8be31198a156607a22a7e6c7ca26fda94428bb63dbb5e8",
+  "params_key": "9804969991a9f4522e29b6b7e17cae12242f2ca223e6fd6d259e959c03b21e8c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

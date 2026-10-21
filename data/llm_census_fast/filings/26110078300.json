@@ -1,17 +1,17 @@
 {
-  "summary": "The stakeholder strongly urges the FCC to maintain the current status of the E-rate program, emphasizing its importance in providing essential broadband connectivity for schools and libraries to foster lifelong learning and digital engagement.",
+  "summary": "The comment supports maintaining the current status of the E-rate program.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "keep the E-rate program as it currently exists",
+      "requested_action": "keep E-rate program as is",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "The E-rate program provides essential broadband connectivity to schools and libraries at discounted rates, contributing to a common good for nearly 30 years",
-      "evidence_quote": "Please, please keep funding the e-rate.",
-      "evidence_start": 918,
-      "evidence_end": 957,
+      "argument": "E-rate program provides essential broadband access for schools and libraries",
+      "evidence_quote": "I strongly urge the FCC to keep the E-rate program as it currently exists.",
+      "evidence_start": 0,
+      "evidence_end": 74,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "55550d5d89921102808d584822174b36edae79d53597e452fa7db9b253911b9e",
-  "params_key": "4431ad20167542cabed01a093bef6d8cef5c39bf8d49f2d30c697ab02b07acf8",
+  "params_key": "fb6fdaec5916e5d2c3dfb9d977859a0519263a405c26583ba1dae7b6f9c146f3",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

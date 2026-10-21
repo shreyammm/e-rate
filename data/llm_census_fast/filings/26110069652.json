@@ -1,7 +1,19 @@
 {
-  "summary": "The comment opposes any restriction or removal of E-Rate funding, arguing that defunding the program would disproportionately impact low-income and rural schools while leaving well-funded districts unaffected. The comment also highlights the importance of E-Rate in providing filtered internet access for student safety and education.",
+  "summary": "The FCC comment opposes restricting or removing E-Rate funding and argues that defunding connectivity would disproportionately impact disadvantaged students while leaving well-resourced districts unaffected. Instead, the comment suggests strengthening existing E-Rate programs to address student wellbeing online.",
   "stakeholder_role": "unknown",
   "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "If the underlying concern is student wellbeing online, the effective response is stronger filtering requirements, device management policies, and digital literacy instruction which will require greater levels of funding instead of defunding the connectivity that makes supervision possible in the first place.",
+      "evidence_quote": "If the underlying concern is student wellbeing online, the effective response is stronger filtering requirements, device management policies, and digital literacy instruction which will require greater levels of funding instead of defunding the connectivity that makes supervision possible in the first place.",
+      "evidence_start": 962,
+      "evidence_end": 1271,
+      "uncertain": false
+    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
@@ -9,13 +21,14 @@
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
-      "evidence_quote": "I strongly oppose any restriction or removal of E-Rate funding.",
-      "evidence_start": 0,
-      "evidence_end": 63,
+      "evidence_quote": "Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
+      "evidence_start": 65,
+      "evidence_end": 214,
       "uncertain": false
     }
   ],
   "positions": {
+    "education_outcomes": "oppose",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -26,9 +39,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c828822e586004975e55325cc50bc9e501fd198341eb0a72802c29dc60668fcf",
-  "params_key": "94971bd6b31114842a4759c0937898df3af5c761824e819df910d2437a7b6209",
+  "params_key": "f793bb942f6028c3dfe09abcdb965569c2a268f30ec979153f1db5376c7cdc87",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

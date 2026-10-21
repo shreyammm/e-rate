@@ -1,9 +1,24 @@
 {
-  "summary": "School district expresses concern about preserving E-Rate funding to maintain network infrastructure and ensure equal access to online resources for students.",
+  "summary": "The school district emphasizes the importance of preserving E-Rate funding to maintain network infrastructure and ensure equal access to online resources for students.",
   "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, the district would not be able to sustain network connectivity and infrastructure",
+      "evidence_quote": "Without this funding, our district would not be able to sustain our network connectivity and infrastructure. Losing that connectivity would be detrimental to providing quality educational opportunities and resources for our students.",
+      "evidence_start": 739,
+      "evidence_end": 972,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110079824",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110079824",
   "filer_raw": "James LaVere",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2fd596a4192aa88e32ed42497100dfb47a3286a0fc469f33c328d3678bc7070e",
-  "params_key": "0d8a6acfaeab579b8e7738c0e61bc3ca9310aa38a539d2dcd84a8db77f5d1131",
+  "params_key": "c77539ba85e4f736114dd009b4c2171db5a2d261b46b133750f3b1a975d97a80",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

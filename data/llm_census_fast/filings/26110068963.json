@@ -1,5 +1,5 @@
 {
-  "summary": "The comment expresses opposition to cutting E-Rate funding, emphasizing its importance for schools, libraries, and students.",
+  "summary": "The comment opposes cutting the E-Rate program, citing its importance for schools and libraries and the negative impact on underfunded organizations.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -9,9 +9,9 @@
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Cutting E-Rate will harm underfunded schools and libraries",
-      "evidence_quote": "This will also disporportionatlly affect poor areas, which are already struggling.",
-      "evidence_start": 442,
-      "evidence_end": 524,
+      "evidence_quote": "I am writing to express an objection to cutting the current e-rate for schools and libraries. Internet access is integral to being a productive member of society today. Students, teachers, and library staff all rely on the internet to learn, educated, and keep their organizations functioning. Schools and libraries are chronically underfunded; cutting e-rate will harm the organizations that make up the foundations of our education system.",
+      "evidence_start": 0,
+      "evidence_end": 441,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "25566e1fabe5fe08c3be8393ac658c5aa44be2b990300cbb01d78982c8620f8c",
-  "params_key": "17d39902cf63375a34e9d20e60dbc440148dd0cc0ff67d71da028c6899b7e6ea",
+  "params_key": "1bf45f920f262a3f6e468ebdd8a876f7afe527e967560619422065136eb078a1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

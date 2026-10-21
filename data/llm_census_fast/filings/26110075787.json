@@ -1,50 +1,14 @@
 {
-  "summary": "Supports continued E-Rate funding for rural schools and libraries.",
+  "summary": "The comment supports continued funding for E-Rate, opposing any sunset or changes to the program.",
   "stakeholder_role": "school_district",
   "claims": [
-    {
-      "provision_id": "consultant_registration",
-      "position": "oppose",
-      "requested_action": "Individual consultant registration database",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "i strongly support the continued funding for my local, rural, school's e-rate supported funded items including broadband access.",
-      "evidence_start": 0,
-      "evidence_end": 128,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "i strongly support the continued funding for my local, rural, school's e-rate supported funded items including broadband access.",
-      "evidence_start": 0,
-      "evidence_end": 128,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "i strongly support the continued funding for my local, rural, school's e-rate supported funded items including broadband access.",
-      "evidence_start": 0,
-      "evidence_end": 128,
-      "uncertain": false
-    },
-    {
-      "provision_id": "special_construction",
-      "position": "oppose",
-      "requested_action": "Restrict special construction or dark fiber",
-      "reason_family": "access_affordability_equity",
-      "claim_kind": "alternative_design",
-      "argument": "",
+      "argument": "Limiting E-Rate could lead to increased costs for schools",
       "evidence_quote": "i strongly support the continued funding for my local, rural, school's e-rate supported funded items including broadband access.",
       "evidence_start": 0,
       "evidence_end": 128,
@@ -52,10 +16,7 @@
     }
   ],
   "positions": {
-    "consultant_registration": "oppose",
-    "education_outcomes": "support",
-    "erate_sunset": "oppose",
-    "special_construction": "oppose"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110075787",
@@ -65,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d834d605f596908ae05dba28464bc59ded95881c850acaa1ca6c3d55dea8e8ba",
-  "params_key": "b7a93f56cc628aec4059a30103ffd01d7150852c585e170ce129020a9713d869",
+  "params_key": "9f8a3f1ae27e0b80b14a943ccea990142d4c12bebfc219c029776919db203dd1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

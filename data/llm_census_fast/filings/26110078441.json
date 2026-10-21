@@ -1,17 +1,17 @@
 {
-  "summary": "Request to maintain E-Rate funding for libraries despite budget pressures and other factors.",
+  "summary": "The comment supports continuing E-Rate funding for libraries to address budgetary pressures and ensure access to essential broadband services.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue funding E-Rate program",
+      "requested_action": "continue funding E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Libraries are facing inordinate budgetary pressures due to inflation and other factors",
-      "evidence_start": 83,
-      "evidence_end": 169,
+      "argument": "Funding the program is necessary to maintain essential broadband services for libraries",
+      "evidence_quote": "Asking that the FCC continues funding the E-Rate program for libraries nationwide.",
+      "evidence_start": 0,
+      "evidence_end": 82,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9947816fd42805790a297bd27d41d3c34f6d492fbe0835982f41da4266cfe535",
-  "params_key": "90001fcbc928c44dcbd22167e24fc3fcf9d666e9ddbdb9074697cf5b7fa4816d",
+  "params_key": "1998b63e8d97dbb5ff9ff611df61a4013e77062005b2e61325486c6272266d05",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

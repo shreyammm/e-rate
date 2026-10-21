@@ -1,14 +1,14 @@
 {
-  "summary": "Discussion on various aspects of the E-Rate program including its sunset, eligibility scope, and other policy changes",
-  "stakeholder_role": "unknown",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing the importance of hotspots for the community and the negative impact of cutting the program on citizens.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate Program",
+      "requested_action": "Limit or sunset E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Cutting E-Rate would increase costs for schools and libraries",
       "evidence_quote": "The hotspots are very useful for our community and cutting the E-Rate Program would make life harder for the citizens of Malden.",
       "evidence_start": 0,
       "evidence_end": 128,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "69d966a676ac29fa493efefb8c22f331ee977ce8559fd2e8f8307d17483d7e2f",
-  "params_key": "b45bbdcdb604c284c3c602747ed793ac22137e9de09de8daae365dcd6762017f",
+  "params_key": "510e57b77b6467e87ba66fdf6f55d2924f83447f8cae556ea1a5ce910aecb713",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

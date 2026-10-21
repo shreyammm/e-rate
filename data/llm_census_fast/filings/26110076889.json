@@ -1,14 +1,14 @@
 {
-  "summary": "The comment opposes cutting the E-Rate program, arguing that it is a necessary program funded by taxes and not a program for billionaires.",
+  "summary": "The comment expresses opposition to cutting the E-Rate program, arguing that it is a necessary program funded by taxes and not a program for the rich to cut.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Limit or sunset E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting E-Rate programs for the poor while cutting taxes for the rich",
+      "argument": "Cutting E-Rate would reduce funding for broadband access in underserved areas",
       "evidence_quote": "NO MORE BILLIONAIRES and we wouldn't have these problems.",
       "evidence_start": 383,
       "evidence_end": 440,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5148884a373f096d130883d985b87fbdc2c54c061b5f0bcdf54b7b6ea43b79bf",
-  "params_key": "a84c628950766a590331ef8dd64283988ffb3db8c5fd59fe0449581f44edcd75",
+  "params_key": "f299f9f17280e72d6350dded4b176944e9ade6406f541efe9ee7177ef9945ec0",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

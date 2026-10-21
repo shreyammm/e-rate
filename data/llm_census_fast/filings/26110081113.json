@@ -1,5 +1,5 @@
 {
-  "summary": "The comment expresses concern about the impact of ending E-Rate subsidies on a local library, which relies on minimal staff and would need to close branches to cover costs, potentially leading to reduced services.",
+  "summary": "The comment expresses concern about the impact of ending E-Rate subsidies on a local library, which relies on E-Rate funding to maintain services. The library's staff salaries are already strained, and closing branches would be necessary to cover the costs. The comment highlights the financial burden on the library and the potential loss of services.",
   "stakeholder_role": "unknown",
   "claims": [],
   "positions": {},
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e420b8c650da7ee68c91fa6de3a3b9c405284c6255adbc1cba0fb4f2fa2fa0fb",
-  "params_key": "715ed4780a3d8f3bf15a431265b7400c233c0f7f3201a405631babd4941ac22a",
+  "params_key": "a2edcca82098ee85d822f4faf211f0014848cba7191345b78859f24793ee9496",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

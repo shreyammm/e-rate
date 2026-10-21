@@ -1,24 +1,9 @@
 {
-  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing the impact on public schools and libraries in Massachusetts.",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing the impact on libraries' ability to provide online resources and services.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "Reduction or elimination of E-Rate would have a devastating effect on Massachusetts public schools and libraries",
-      "evidence_quote": "The reduction or elimination of the E-Rate program would have a devastating effect on Massachusetts public schools and libraries.",
-      "evidence_start": 0,
-      "evidence_end": 129,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110078936",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110078936",
   "filer_raw": "Joan L. Kuklinski",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "75792dafc4727168b4af8cc5d0d67454259f92c386661a7192acc3bca0c4c866",
-  "params_key": "6b3fe20f2e6283f5f5d4da5a9103c3df5beee379c75d71a31ae38b61d6edb0c6",
+  "params_key": "b1955b7501c6070d49fde0ba6f3c4514a91fd2ce0ceaa962a92022b5e6eb508e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

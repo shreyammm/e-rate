@@ -1,5 +1,5 @@
 {
-  "summary": "The FCC proposes cutting E-Rate funding to limit screen time for young people, arguing against the program's budget costs and educational benefits.",
+  "summary": "The FCC proposes cutting E-Rate funding to address concerns about screen time for young people, but argues that the program is essential for providing affordable Internet access to schools and libraries.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "cut funding for E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "The FCC wants to cut funding for E-Rate to limit screen time for young people.",
-      "evidence_quote": "In the name of limiting screen time for young people, the FCC wants to cut funding for E-Rate.",
-      "evidence_start": 41,
-      "evidence_end": 135,
+      "argument": "The FCC wants to cut funding for E-Rate to limit screen time for young people, but the program provides essential Internet access for schools and libraries.",
+      "evidence_quote": "Please do not touch this funding that makes these essential Internet connections affordable for schools and libraries.",
+      "evidence_start": 846,
+      "evidence_end": 964,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b17c266aaa856b62a70b7b960627fe76b9411db46d9b919d93a90d3f1cf5f1c5",
-  "params_key": "e11b149eb4280bb34edf68b392bc2791374ce65f0cacc7b3b9c57facd2f801b8",
+  "params_key": "b9f7585c0afb1a4e32bcc021bffb6d0ee42eb09a1b92e8aa2c7968f2b2cd2df9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

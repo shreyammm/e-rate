@@ -1,9 +1,24 @@
 {
-  "summary": "The comment urges the FCC to require greater transparency regarding online content accessible through federally subsidized networks in public schools, emphasizing the need for clear policies to inform parents and protect minors.",
+  "summary": "The comment urges the FCC to require greater transparency regarding online content accessible through federally subsidized networks in public schools, emphasizing the importance of informing parents about content restrictions and enabling parental oversight to protect minors.",
   "stakeholder_role": "parent_guardian",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Require transparency regarding online content accessibility",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Parents have a right to know about content accessibility for students on federally supported networks",
+      "evidence_quote": "Parents have a fundamental right to know how schools evaluate online content, which materials are restricted or permitted, and how they can raise concerns.",
+      "evidence_start": 470,
+      "evidence_end": 625,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110077873",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077873",
   "filer_raw": "Ben Harkins",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "761b8479b26812b0a6cc07a273a096cb8b80c597dfe53f9486552323a669fcd4",
-  "params_key": "7081e1290dd461f08de0451ac90e4ad90d16d4891034c71163a93a3b1d9ef8ee",
+  "params_key": "e3dc297ae58a950974b04eeae1a2519ce98c479a96f93a8b3fef6011833f9ad1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,24 +1,9 @@
 {
-  "summary": "Support for maintaining E-Rate program support",
+  "summary": "The stakeholder supports the current state of the E-Rate program and opposes any changes that could reduce its value for their school district.",
   "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Maintain current level of support for E-Rate program",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Any changes which reduce the level of support for the program will negatively impact my school district. Please do not reduce support for schools by ending or modifying the e-rate program. The program has over $600,000 worth of value for my district",
-      "evidence_start": 51,
-      "evidence_end": 300,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "support"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110078138",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110078138",
   "filer_raw": "Mexico Public Schools 59",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "fb646f3e41b41af055d6ec819e376af5ff97cf49f9726fe04c7b57c781a16b3f",
-  "params_key": "eb2ab27205157503541d6e8133cf41735aaace9514226b9de1de7f21ac6d5355",
+  "params_key": "a191e4a2965982ea7232d4e64559f83c07f8052334a211dcc6ac51842494825b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

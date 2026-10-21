@@ -1,24 +1,9 @@
 {
-  "summary": "The comment emphasizes the importance of the E-Rate program for providing internet access to schools and libraries, especially in times of need like flooding. It opposes any cuts to the program.",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate program",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "Cutting E-Rate would eliminate critical internet access for schools and libraries",
-      "evidence_quote": "Please do NOT!!!! cut the E-Rate program.",
-      "evidence_start": 0,
-      "evidence_end": 41,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment opposes cutting the E-Rate program, emphasizing its critical role in providing internet and digital access for schools and libraries, especially in emergencies and for educational purposes.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110075991",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110075991",
   "filer_raw": "Jennifer Yumibe",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "14513af3fabfabb02fe3d660f8392c00c02c7f3998d04e9ac0223eb18fd50876",
-  "params_key": "9300936fdaa6e93d50b406714873e2d6a610bc9b9a8636dab00299488a74ebe4",
+  "params_key": "494cdee50f0847478bd4c2a486fc0378efea889f33c0cb18db07d704189bbcc5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

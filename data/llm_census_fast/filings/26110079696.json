@@ -1,14 +1,14 @@
 {
-  "summary": "The comment urges preservation of E-Rate funding, citing its importance for students in the district. It highlights the program's role in providing internet access and skills for students, especially those from low-income families. The comment emphasizes the need to protect the program to ensure all students can thrive.",
+  "summary": "Retired educator advocates for preserving E-Rate funding to ensure student access to internet resources.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "preserve or enhance funding for the E-Rate Program",
+      "requested_action": "Preserve E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "As a retired educator, I urge you to at least preserve, if not enhance funding for the E-Rate Program",
+      "argument": "Retired educator urges preservation of E-Rate funding to support student access",
       "evidence_quote": "As a retired educator, I urge you to at least preserve, if not enhance funding for the E-Rate Program.",
       "evidence_start": 0,
       "evidence_end": 102,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "cb1a15a8e5783d112b6fdd542a9d7262e47928f920053b8b3e151b3411078f0f",
-  "params_key": "e5514aa764f0af0781810a6e8b6a612b92abba4717af8c4656ef19cb44d26cad",
+  "params_key": "0e92845ed14a7931e11bbddf5fff6b5fc60ebe92065946a1586fe75bc3e21924",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

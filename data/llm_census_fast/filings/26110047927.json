@@ -1,17 +1,17 @@
 {
-  "summary": "The comment expresses opposition to proposed E-Rate rule changes that would limit funding and impact parental rights.",
+  "summary": "The FCC comments argue that proposed rule changes would negatively impact the public good and reduce parental rights, opposing any changes that would limit or sunset E-Rate support.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue providing current E-Rate support",
+      "requested_action": "Continue providing E-Rate support",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "E-Rate is serving its intended purpose and must continue to do so at a minimum of the support it is currently providing. These proposed rule changes would have a negative impact on the public good and would take away parental rights beyond the duty of the FCC",
+      "argument": "Proposed rule changes would negatively impact the public good and reduce parental rights",
+      "evidence_quote": "E-Rate is serving its intended purpose and must continue to do so at a minimum of the support it is currently providing.",
       "evidence_start": 0,
-      "evidence_end": 259,
+      "evidence_end": 120,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "dfd1c6c7b2f3cbe973da29fa2ad8e984e76d6e3d3f5b27beadee3cab3332e189",
-  "params_key": "ac4fceb3c5db9b02d0ac282f4ca95ee95a03f682b10a9178fb8627061605eb8a",
+  "params_key": "fdde2093a1645d67dde1e1e5e7eb5ac30d9a402905cbb35a74e7d5d0b6835087",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

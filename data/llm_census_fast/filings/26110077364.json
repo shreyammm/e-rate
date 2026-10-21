@@ -1,5 +1,5 @@
 {
-  "summary": "The comment strongly supports the continuation of E-Rate and argues that ending the program would have negative impacts on schools and libraries, particularly in terms of cost and service availability.",
+  "summary": "The comment strongly supports the continuation of E-Rate and argues against its reduction, emphasizing the program's essential role in providing connectivity to schools and libraries, which are already facing financial constraints. It cites the potential for service cuts if E-Rate were discontinued, highlighting the program's importance in maintaining access to vital services and infrastructure.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ce4f8f05c688a2270c0b47d540160e0b2850a9039cccc6316d8aa63dfb0c97e5",
-  "params_key": "70ac85aee0417b7a869847e21fc3cf05f5f25452d03c45946338e8e74ac81f87",
+  "params_key": "e78515aa00835c419380c9b6b7586d4d826a5dbc4e431db2bd3d6f98a3797668",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

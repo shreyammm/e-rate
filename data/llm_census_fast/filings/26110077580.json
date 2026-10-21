@@ -1,14 +1,14 @@
 {
-  "summary": "The comment opposes limiting or sunsetting the E-Rate program, emphasizing its role in providing broadband access to low-income communities.",
+  "summary": "The comment opposes sunsetting the E-Rate program, emphasizing its role in providing broadband access to low-income communities.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Continue E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting E-Rate would reduce funding for broadband access in low-income areas",
+      "argument": "Funding continuation is necessary to maintain access to broadband for low-income communities",
       "evidence_quote": "These programs are in place to ensure people and children in poor communities have access to the same resources that children in wealthier areas have.",
       "evidence_start": 0,
       "evidence_end": 150,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "dcc30d6f7a5b4b0deef111823a1fab5ba0c82117402744a384860fd40711012c",
-  "params_key": "86f4df9e6a115f47ed3ea1b8d052b7eb6d138e590e244544f809dafda19fe6d6",
+  "params_key": "5e0c115f9e8886eada799f74e35adec19852b5dd00be6661c4333dac790e3602",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

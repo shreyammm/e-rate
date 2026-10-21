@@ -1,22 +1,22 @@
 {
-  "summary": "The taxpayer emphasizes the importance of E-Rate for schools and libraries and urges the FCC to maintain funding to support educational opportunities.",
-  "stakeholder_role": "parent_guardian",
+  "summary": "The taxpayer emphasizes the importance of E-Rate for educational outcomes and urges consideration of keeping the program to support schools and libraries.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Keep E-Rate funding",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "E-Rate provides essential broadband support for schools and libraries",
-      "evidence_quote": "I strongly urge you to consider keeping these valuable resources flowing to American schools and libraries.",
-      "evidence_start": 846,
-      "evidence_end": 953,
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E-Rate decisions should consider educational outcomes",
+      "evidence_quote": "I sincerely don't know how schools and libraries can be effective without internet connectivity in this day and age, that supports teaching and learning and school operations.",
+      "evidence_start": 613,
+      "evidence_end": 788,
       "uncertain": false
     }
   ],
   "positions": {
-    "erate_sunset": "oppose"
+    "education_outcomes": "support"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110078495",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "bad628a02c158fb5315f3fa3a2a5cf4b4741e736300283d66cc22cd9c8cf8485",
-  "params_key": "43319d07e0d6715d0de62a7fccf51b0b47b163a80eeed7703488cc78da626d6b",
+  "params_key": "b8837fdcae85a17652ee3c7ac66322924e5541879139ff6d612de6ae6ea4deef",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

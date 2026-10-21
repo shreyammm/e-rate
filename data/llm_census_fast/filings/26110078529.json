@@ -1,5 +1,5 @@
 {
-  "summary": "The comment urges the preservation of the E-Rate program, emphasizing its critical role in ensuring educational access and connectivity for students across Missouri and the nation. The comment highlights the potential negative impact of eliminating or reducing E-Rate funding on school districts and the digital divide, particularly in rural and high-poverty communities. The comment argues that E-Rate is a proven investment in educational opportunity and should be preserved to support schools and ",
+  "summary": "The comment urges the FCC to preserve the E-Rate program, emphasizing its importance for educational access and the burden it would place on school districts if eliminated.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -9,9 +9,9 @@
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Reliable internet access is essential for teaching, learning, assessment, school operations, and communication",
-      "evidence_quote": "For schools across Missouri and the nation, E-Rate helps ensure that students, regardless of their zip code or family income, have access to the connectivity they need to succeed. Eliminating or significantly reducing E-Rate funding would place an unnecessary burden on school districts and widen the digital divide, particularly for rural and high-poverty communities.",
+      "evidence_quote": "For schools across Missouri and the nation, E-Rate helps ensure that students, regardless of their zip code or family income, have access to the connectivity they need to succeed.",
       "evidence_start": 240,
-      "evidence_end": 609,
+      "evidence_end": 419,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3b159622b44297f2c0d4a9d0d186d92f133d99202b7a01bea393cf85fcd641f3",
-  "params_key": "3e8d96c6d2d78462cc906afd3b15055b6477e5171066abba5c793453b82cac09",
+  "params_key": "9f8a4550fa0b09d470c12387d911c1ec53c88a6df46da5bbbc0799cc584af84c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

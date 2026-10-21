@@ -1,6 +1,6 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program modifications",
-  "stakeholder_role": "unknown",
+  "summary": "Discusses concerns about the impact of limiting or sunsetting E-Rate on school communities and the importance of internet access for education.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "In an age where so many jobs are online - it is vital for school communities to have access to setting up a network for children to learn about what it means to be on the internet",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "In an age where so many jobs are online - it is vital for school communities to have access to setting up a network for children to learn about what it means to be on the internet.",
       "evidence_start": 0,
-      "evidence_end": 179,
+      "evidence_end": 180,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c8d9b10b1f0281553e5c38430fc935212e4532a0186ed8b9b44a8b91810e797d",
-  "params_key": "b9db552bfab9f85cd01a98c364886a997d5fbeb6e8e6d7adc5907695af13e0a6",
+  "params_key": "bb63e103c92b71a37c5f614ff848b5c33200360c30410bf740ebfbdc9045ecc6",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

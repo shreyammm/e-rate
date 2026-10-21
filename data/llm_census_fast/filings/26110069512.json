@@ -1,17 +1,17 @@
 {
-  "summary": "The South Hadley Public Library relies on E-Rate funding to provide internet access to its community, which is essential for student learning, job searching, health care, and other services. The library argues that E-Rate funding is crucial for maintaining access to the internet for all residents, especially those in rural areas who may not have other access. The library opposes any efforts to limit or sunset E-Rate funding, as it would negatively impact the community's ability to access essenti",
+  "summary": "The South Hadley Public Library emphasizes the importance of E-Rate funding for providing internet access to its community, particularly for residents who may not have other access. The library argues that maintaining current E-Rate funding levels is essential to ensure equal access to information and services for all residents, regardless of their geographic location.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate funding",
+      "requested_action": "Maintain current E-Rate funding levels",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting funding could reduce access to internet services for schools and libraries",
-      "evidence_quote": "Our location in Western Massachusetts can sometimes place us at a geographic disadvantage with our more populous and affluent neighbors closer to Boston. Citizens using the library computers often do not have other access to the internet. E-Rate funding levels the playing field for all residents and needs to remain fully funded",
+      "argument": "E-Rate funding is essential for providing internet access to residents",
+      "evidence_quote": "Our location in Western Massachusetts can sometimes place us at a geographic disadvantage with our more populous and affluent neighbors closer to Boston. Citizens using the library computers often do not have other access to the internet. E-Rate funding levels the playing field for all residents and needs to remain fully funded.",
       "evidence_start": 300,
-      "evidence_end": 629,
+      "evidence_end": 630,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "056a41e6aa5380f450c0365842b84595782ed209dbf32a60b30ea17b3ec67589",
-  "params_key": "d6e36e0f7091e32eee763b79892941cdc972678f649602c7776455bb34183770",
+  "params_key": "435f5cfced8c5050ec11b36130751b8ce40286956d1a237671ad4f945f3965d5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

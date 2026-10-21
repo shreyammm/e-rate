@@ -1,5 +1,5 @@
 {
-  "summary": "The E-Rate program is essential for libraries and schools to provide quality, reliable internet access for students and the public who cannot access the internet on their own. In rural settings, internet access cannot reach everyone, forcing them to rely on library and school internet to do basic online tasks and schoolwork. Costs are rising everywhere, including for internet access. Without the E-Rate program, our library would not be able to afford internet service to run our organization, let",
+  "summary": "The E-Rate program is essential for libraries and schools to provide quality, reliable internet access for students and the public who cannot access the internet on their own. In rural settings, internet access cannot reach everyone, forcing them to rely on library and school internet to do basic online tasks and schoolwork. Due to the nature of rural areas, internet providers are also limited, with some areas having access to only one or two providers. Costs are rising everywhere, including for",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without the E-Rate program, libraries would not be able to afford internet service, leading to service cuts",
+      "argument": "Without E-Rate, libraries would not be able to afford internet service, leading to service cuts",
       "evidence_quote": "Without the E-Rate program, our library would not be able to afford internet service to run our organization, let alone provide public access, without significantly cutting services for our community.",
       "evidence_start": 518,
       "evidence_end": 718,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8ad687ffc52828682fdcdb0eb7a712937371ab1c379783d0f0599d68c2362acf",
-  "params_key": "382cae375516bfdacda5e9c64702f64b57c4f59c0c8f9c22ea415c0813d1f1a1",
+  "params_key": "ee6052d10b067f7a049773eedd92bde723aa39cd3c41e7c8ff166497970f449b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

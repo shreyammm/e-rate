@@ -1,5 +1,5 @@
 {
-  "summary": "The school district emphasizes its reliance on E-Rate funding for infrastructure and internet connectivity needs, arguing that reducing or removing the funding would be detrimental to its operations.",
+  "summary": "The school district opposes sunsetting the E-Rate program due to its reliance on funding for infrastructure and connectivity needs, which are critical for technology integration in education.",
   "stakeholder_role": "unknown",
   "claims": [],
   "positions": {},
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8c5780a87ea05dc822d9b068dc832606f128e2135c7ee162a238f77229043b04",
-  "params_key": "8c332be9dee17c3bb8b88bfa8052f4b9c7f853ce046070c8832e358dc916d915",
+  "params_key": "db106041aff6119f759b259e58b8a73ce8c44ccd823e37d3409d3f4a1c4e30be",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

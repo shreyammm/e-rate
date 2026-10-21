@@ -1,11 +1,11 @@
 {
-  "summary": "The comment highlights the financial impact of ending E-Rate funding, emphasizing the need to preserve the program to avoid additional costs for network and equipment maintenance.",
+  "summary": "The comment expresses concern about the potential cost impact of ending the E-Rate program immediately, highlighting the need to preserve funding to avoid additional costs for network services and equipment replacement.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Limit or sunset E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "The program would cost an extra $337,219.20 annually if funding ended immediately",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5efc47bbd1122205e51dc79e87676d592814178147379ca38d42f0f206ee7273",
-  "params_key": "f1100e4d4cac807d6a594abda617f18776eee79c0b988da88f071fc3aeea8e1d",
+  "params_key": "cce49f6d34b537f5f212af409b1fce34033e8bee1ad7f749db5df51e68317560",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

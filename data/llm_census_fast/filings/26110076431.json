@@ -1,5 +1,5 @@
 {
-  "summary": "The school district highlights the benefits of the E-Rate program, emphasizing cost savings and safety improvements. It opposes any efforts to limit or sunset the program, citing its importance for maintaining affordable internet access and ensuring cybersecurity.",
+  "summary": "The school district highlights the benefits of the E-Rate program, emphasizing its role in providing affordable internet services and IT support. It mentions the cost savings and safety benefits provided by the program.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "94057c9d7d8d3839bbf12747e628e12eae6e5a8a841ed46b10f251e963ac8c78",
-  "params_key": "58860c4080c755035de1ef2bc8c64c56b0f5a49071bb1349265cb6b10950cfb5",
+  "params_key": "41f09a5279d4c5768d8fdfa822d47accb659bf70728c6ff66c272c0b14837737",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

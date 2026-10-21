@@ -1,5 +1,5 @@
 {
-  "summary": "The school district expresses concern about the impact of increased costs on library services, arguing that essential services should not be limited.",
+  "summary": "The school district expresses concern about the impact of increased costs on library services, which are essential for community access and safety.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9662bc57475ab463f60923ea01276cc62d3ad367b8960b9381f48838f96f2671",
-  "params_key": "d0bc5651672dd2a239898929090726c25af04a7dc53d1ae0f327719926a75661",
+  "params_key": "9b9409c22360523c27986010437384c76075cb18c7d67e7d94f9a9bdfcba92e4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

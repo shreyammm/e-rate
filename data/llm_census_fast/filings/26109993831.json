@@ -1,5 +1,5 @@
 {
-  "summary": "The comment highlights the importance of E-Rate for rural districts with high populations of low-income students, emphasizing the need for access to high-quality internet for educational purposes and the potential impact of losing E-Rate funding on programs and cybersecurity.",
+  "summary": "The comment highlights the critical role of E-Rate funding in supporting rural districts, particularly those with high populations of low-income students. It emphasizes the potential impact of removing E-Rate funding on access to high-quality internet services, which are essential for various educational and administrative functions.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting E-Rate could lead to increased costs for rural districts",
+      "argument": "Without E-Rate funding, rural districts would face significant financial burdens and potential disruptions to essential services.",
       "evidence_quote": "E-rate is a vital resource for our rural district. Our high population of low income students has high needs. Without e-rate funding, their access to high quality internet on campus would be affected.",
       "evidence_start": 0,
       "evidence_end": 200,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "4b7590f045da68c6d01fdc83cf92f4c33f832bb534bc88b215088e164e68f83d",
-  "params_key": "6848a500d96f1a24be4d84410a2659dadea3cd092f9be30b09b90e4a0d01b24e",
+  "params_key": "988dca43d951fe72246e11b45d73fa19ea2a659d48162148515efc645ac1edb5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

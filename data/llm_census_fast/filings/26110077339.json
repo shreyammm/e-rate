@@ -1,47 +1,21 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program including eligibility, funding, and implementation",
+  "summary": "The comment opposes limiting or sunsetting E-Rate funding, citing concerns about increased costs for low-income schools.",
   "stakeholder_role": "unknown",
   "claims": [
-    {
-      "provision_id": "cipa_public_hearings",
-      "position": "support",
-      "requested_action": "Strengthen hearings and CIPA enforcement",
-      "reason_family": "child_safety",
-      "claim_kind": "legal_claim",
-      "argument": "",
-      "evidence_quote": "Do not cut funding to for internet service for low income schools",
-      "evidence_start": 0,
-      "evidence_end": 65,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Do not cut funding to for internet service for low income schools",
-      "evidence_start": 0,
-      "evidence_end": 65,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Do not cut funding to for internet service for low income schools",
+      "argument": "Limiting funding could lead to increased costs for maintaining internet services for low-income schools",
+      "evidence_quote": "Do not cut funding to for internet service for low income schools.",
       "evidence_start": 0,
-      "evidence_end": 65,
+      "evidence_end": 66,
       "uncertain": false
     }
   ],
   "positions": {
-    "cipa_public_hearings": "support",
-    "education_outcomes": "support",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -52,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3d4cc0dd6195a027f9046ef387836b34de044ac2beed80f669291da89ea0882e",
-  "params_key": "bd2f27bd1c98a46eb3bc7f82a5c5c1ec40a570e05350421f734a4b46b9b15f70",
+  "params_key": "f0448453e75c266ce3072c1ad4fa6fbacf6125cb1620c33a3fd7c54dbc41e3f5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

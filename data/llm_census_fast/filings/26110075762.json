@@ -1,5 +1,5 @@
 {
-  "summary": "The individual expresses opposition to cutting or reducing E-Rate funding for schools and libraries in Idaho, emphasizing its critical role in educational needs.",
+  "summary": "The individual expresses opposition to cutting or reducing E-Rate funding for schools and libraries in Idaho, emphasizing its critical role in educational access.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting E-Rate would increase costs for schools and libraries",
+      "argument": "Cutting E-Rate would increase costs for schools and libraries",
       "evidence_quote": "I am begging you not to cut or reduce E-Rate to our schools and libraries in Idaho.",
       "evidence_start": 77,
       "evidence_end": 160,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "482a8855fd96485df5efe0afb0b106a9e717d04eedf2adb9b6e86473c00700d1",
-  "params_key": "72098cbf4c0b344a7c32a1a85ffef6f576ec6ddf1c140edd687989c40e03f3d5",
+  "params_key": "414baa85fa3962d6df9b7363d82cf8bbb5c797572c52f4c44627045300df19b7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

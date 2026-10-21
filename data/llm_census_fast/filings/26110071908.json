@@ -1,11 +1,11 @@
 {
-  "summary": "The claim opposes ending the E-Rate program due to budgetary concerns and the program's role in providing essential connectivity to schools and libraries.",
+  "summary": "The claim opposes ending the E-Rate program due to increased budgetary pressures on schools and libraries.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Limit or sunset E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Ending the program will increase financial pressures",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "dcfb91c23ded1909ce5694d6dd005633bd38eeec6a3159f19cb8932a4da05125",
-  "params_key": "5b82303d978fd5c017f23d87778ef78531d5dc230c6d6aa04cda325269c6ea7a",
+  "params_key": "af53ee9762db1dd51da569e818adc4843fbc11dbc19625419631b6c1bc6c95fd",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

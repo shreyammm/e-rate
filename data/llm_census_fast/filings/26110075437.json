@@ -1,5 +1,5 @@
 {
-  "summary": "The school library advocates for preserving the core E-Rate funding to maintain affordable internet services for schools and libraries, emphasizing the importance of the program for students, patrons, and communities.",
+  "summary": "The school library advocates for preserving the core E-Rate funding to maintain essential services and avoid disruptions.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Preserve core funding and avoid sunset",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "If funding were reduced or lost, delay and/or scrap building maintenance.",
+      "argument": "If funding were reduced or lost, it would lead to delays and scrapping of building maintenance.",
       "evidence_quote": "If this funding were reduced or lost, delay and/or scrap building maintenance.",
       "evidence_start": 529,
       "evidence_end": 607,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "aefedd138475c9fe321646db9ade92df78e090d32d8e43c275f7341cfbabee59",
-  "params_key": "d47df3a1b5afbc43366ecd3de4ab98d5bff6e7496bb7dd821d684a796fd1da4b",
+  "params_key": "cde7986b92dfebf8ec5e20c22e95d1350acca8153239a1ddb4f8c184dd26424d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

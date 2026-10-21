@@ -1,6 +1,6 @@
 {
-  "summary": "The comment opposes any restriction or removal of E-Rate funding, arguing that defunding the connectivity that makes supervision possible would disproportionately harm disadvantaged students.",
-  "stakeholder_role": "school_district",
+  "summary": "The comment opposes any restriction or removal of E-Rate funding, arguing that defunding the program would disproportionately impact low-income and rural schools while leaving well-funded districts unaffected. The comment emphasizes that E-Rate is crucial for maintaining filtered internet access and that stronger filtering requirements and digital literacy instruction would require greater funding instead of defunding connectivity.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b9742eec779a59e77233a3129b0e59d90f28c834653e2d31ee2b3a47466e2a28",
-  "params_key": "c134a42247a51074ac8b31f37074e1c92e678b8ea1fe81ac2e0b25c8f491ae10",
+  "params_key": "19e544d20e074418539e60af1d13c0dda78e77c24f62460f82b9f112d6770a77",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,6 +1,6 @@
 {
-  "summary": "The comment argues against limiting or sunsetting E-Rate funding, emphasizing the importance of libraries maintaining internet access for patrons.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment emphasizes the importance of E-Rate funding for libraries to maintain access to internet services for patrons.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Loss of E-Rate funding would lead to libraries losing the ability to provide internet access.",
-      "evidence_quote": "Libraries keep information accessible. If we lose E-Rate funding, many libraries will be unable to afford providing public internet.",
-      "evidence_start": 0,
-      "evidence_end": 132,
+      "argument": "Loss of E-Rate funding could lead to libraries losing internet access for patrons",
+      "evidence_quote": "If we lose E-Rate funding, many libraries will be unable to afford providing public internet. That means many patrons will lose access to internet, tech help, form filing, and the ability to print important documents.",
+      "evidence_start": 39,
+      "evidence_end": 256,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a1838a89431c756c8d284954c54af7e0135aedcc67d6c8db89d6a1d7d5ba3003",
-  "params_key": "2c5c1df6c1ae17d5f2d0dfebfa65e8b0d430d595cdcaef6f8895a96187729b02",
+  "params_key": "7c97378ac0648dce72a365de02330e75267bc153062cb5152ea6676cb76eefc1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

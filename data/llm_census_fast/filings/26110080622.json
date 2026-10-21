@@ -1,5 +1,5 @@
 {
-  "summary": "The comment expresses concern about the impact of limiting or sunsetting E-Rate on students in rural areas, who may lack access to technological resources due to limited home internet availability. The comment also notes the potential cost burden on states and school districts to provide internet access or cut it off completely.",
+  "summary": "The comment expresses concern about the impact of limiting or sunsetting E-Rate on students in rural areas, who may lack access to technological resources due to limited home internet availability. The comment highlights the potential cost burden on states and school districts to either cover the full cost of internet access or cut it off.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c829569e2636d47a23ccc8b96101743cb7e06f7488d2e5aac511e522c2619ed4",
-  "params_key": "97ffb16ceb5a420fe394285647665a915c0b8b3db6668bb21da37c55aea99eca",
+  "params_key": "84e57ac42236753d471600460029bd8ec4655ae16b4b838f54794d3d70968b63",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

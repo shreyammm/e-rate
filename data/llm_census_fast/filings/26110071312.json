@@ -1,5 +1,5 @@
 {
-  "summary": "The claim opposes any proposal to eliminate the E-Rate program and emphasizes the importance of maintaining E-Rate for libraries, which serve as essential resources for patrons in high-need communities. The claim highlights the potential cost and service reliability impacts of eliminating E-Rate on libraries.",
+  "summary": "The claim opposes any proposal to eliminate the E-Rate program and emphasizes the importance of maintaining E-Rate for libraries, which provide essential services to patrons.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "maintain E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Eliminating E-Rate would increase costs and jeopardize service reliability",
-      "evidence_quote": "Eliminating E-Rate would increase costs and jeopardize service reliability, which would disproportionately affect patrons in high-need communities who rely on libraries as their primary, and often only, access point to the internet and essential digital resources.",
-      "evidence_start": 322,
-      "evidence_end": 586,
+      "argument": "Eliminating E-Rate would increase costs and jeopardize service reliability, disproportionately affecting high-need communities",
+      "evidence_quote": "Please maintain E-Rate and reject any changes that would terminate or significantly reduce support for eligible libraries.",
+      "evidence_start": 651,
+      "evidence_end": 773,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "114bee818c412bf05f3369098e51abf7cf9ea47855fb5ec7f60519296b16843e",
-  "params_key": "a273fbb5d27a7cdf2a77e82c22a8a150e38d12aff1c55b5a5adbfa685762d596",
+  "params_key": "bbc2555ea6cb0b1ed1605613e11991c13eadd236e0a617181f9aebd07836d4d7",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,6 +1,6 @@
 {
-  "summary": "Discussion on various aspects of the E-Rate program including eligibility, funding, and implementation",
-  "stakeholder_role": "unknown",
+  "summary": "The public library advocates for the continuation of E-Rate to maintain internet services for educational purposes.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Our public library needs this program to continue in order to provide internet services to our community for educational purposes",
+      "argument": "Limiting E-Rate could lead to increased costs for libraries",
+      "evidence_quote": "Our public library needs this program to continue in order to provide internet services to our community for educational purposes.",
       "evidence_start": 0,
-      "evidence_end": 129,
+      "evidence_end": 130,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "89e4b60e685e318a48fb7678fd97e743cdd8f0581a558e90837f33879a3ef55c",
-  "params_key": "3828060f4166bbb0546ae87e77e3ed308097d94f68001a7421fe8495ad353d61",
+  "params_key": "6b0ce0daf41898312b94b7671b09444b5c57f954b83a156053545e15b7398e31",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

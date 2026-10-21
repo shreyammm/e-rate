@@ -1,11 +1,11 @@
 {
-  "summary": "Palm Beach Maritime Academy urges the FCC to preserve E-Rate's core funding and support for schools and libraries, and to avoid changes that would reduce access or increase burden for the students and communities who depend on it.",
+  "summary": "Palm Beach Maritime Academy urges the FCC to preserve E-Rate's core funding and support for schools and libraries, emphasizing the critical role of E-Rate in providing reliable, affordable connectivity for students and communities.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Preserve core funding",
+      "requested_action": "Preserve core funding and avoid changes",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Funding is paramount for providing quality teachers and additional support staff to close student gaps",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "79fdb9e26984884ea3fa6cde33c089749284828d361a5cbf47de5d92cb0f61ba",
-  "params_key": "99c96eea40436d1ce2ee741018fccdc95d626f2d5d17606295c42b042b1fddac",
+  "params_key": "17c4cf3078a2ad71e1453b03c60d00be36991b6edd2fb64b52053826f5029265",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

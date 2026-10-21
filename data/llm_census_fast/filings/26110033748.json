@@ -1,17 +1,17 @@
 {
-  "summary": "The comment emphasizes the importance of E-Rate services for maintaining school infrastructure and connectivity, arguing for continued funding to avoid major financial impacts.",
-  "stakeholder_role": "school_district",
+  "summary": "The comment emphasizes the importance of E-Rate services for maintaining school infrastructure and connectivity, urging continuation of support.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue E-Rate funding",
+      "requested_action": "Continue to support E-Rate services",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Continuing E-Rate funding is essential to maintain school infrastructure and connectivity",
-      "evidence_quote": "The financial impact of losing e-rate support would be a major detriment to our school district.",
-      "evidence_start": 73,
-      "evidence_end": 169,
+      "argument": "Continuing E-Rate support is essential for maintaining school infrastructure and connectivity",
+      "evidence_quote": "Please continue to support public schools so that we can continue to provide adequate connectivity to our students.",
+      "evidence_start": 254,
+      "evidence_end": 369,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "95bd8cfbb88c0da38ee2da9799bf1f60cdfc0af456251a963dbdfb9f285a499f",
-  "params_key": "489e7eb9d0d14fda0645c60f7564203a468b32274f0c2837e50015ec486b176a",
+  "params_key": "d5ae992185d231009bd400993af72bbd7c9518f9023174f5120f6155a5d54e17",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,14 +1,14 @@
 {
-  "summary": "The comment highlights concerns about the impact of daily screen time on children's learning and well-being, suggesting that screen time should be limited under E-Rate policies.",
+  "summary": "The comment highlights concerns about the impact of daily screen time on children's learning and well-being, arguing that screen time should be limited or not allowed outside of school hours.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
       "provision_id": "screen_time_condition",
       "position": "oppose",
       "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "other",
-      "claim_kind": "empirical_claim",
-      "argument": "Screen time is spilling from school into our home in ways that are affecting our children",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Screen time is spilling from school into our home in ways that are affecting our children, even though they're not behind academically.",
       "evidence_quote": "Screen time is spilling from school into our home in ways that are affecting our children, even though they're not behind academically.",
       "evidence_start": 0,
       "evidence_end": 135,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d0b58ec75439359e6db1ab9349e564f38ff5fdbb68be78717993e532445b1ffb",
-  "params_key": "93da9443f2d964cca94c8752ba3db37e7fb30e07d3755062a9c7e34ee47747f4",
+  "params_key": "2befe27996c84298fe3fb79e05846261bda2c990b7e3126b8c4c8a21906d1eb4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

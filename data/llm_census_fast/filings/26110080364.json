@@ -1,14 +1,14 @@
 {
-  "summary": "Support for continued E-Rate funding",
-  "stakeholder_role": "school_district",
+  "summary": "The comment supports continued E-Rate funding, not opposing any specific provisions.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Continue funding E-Rate",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Funding cuts would reduce broadband access for schools and libraries",
       "evidence_quote": "I support continued E-Rate Funding",
       "evidence_start": 0,
       "evidence_end": 34,
@@ -16,7 +16,7 @@
     }
   ],
   "positions": {
-    "erate_sunset": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110080364",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b6b1cfb3f4c4f527c9b90bd0fec0342828c61b6833d79758f9ee603b50da4912",
-  "params_key": "df10e197b02d3e687c1ac699c7be0216fce57d7083516e316cda5b77c56f405a",
+  "params_key": "708529a416097d3e2fa84cab9285ff66b19801f723ec1e84abc3e4b96e776826",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

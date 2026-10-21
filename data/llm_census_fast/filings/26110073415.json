@@ -1,22 +1,22 @@
 {
-  "summary": "Support for maintaining E-Rate funding for Jeffersonville Public Library services",
+  "summary": "The comment supports maintaining funding for the library's internet services, emphasizing community access and usage.",
   "stakeholder_role": "school_district",
   "claims": [
     {
-      "provision_id": "erate_eligibility_scope",
-      "position": "support",
-      "requested_action": "Maintain eligibility for all eligible equipment and services",
-      "reason_family": "access_affordability_equity",
-      "claim_kind": "other",
-      "argument": "",
-      "evidence_quote": "My family has used their services many times and they serve a common good for our community",
-      "evidence_start": 118,
-      "evidence_end": 209,
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting funding could reduce library services and impact community access",
+      "evidence_quote": "I am writing in support of keeping funding to Jeffersonville Public Library for their internet and computer services. My family has used their services many times and they serve a common good for our community.",
+      "evidence_start": 0,
+      "evidence_end": 210,
       "uncertain": false
     }
   ],
   "positions": {
-    "erate_eligibility_scope": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110073415",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "de9806ff55f060b7a055e1cc4a9ce994acfa2fa15d507b407d845bd062a60e06",
-  "params_key": "e3bee4cfd68fe71204b5311a687b21f4742a29682d318347d873ee54cb842682",
+  "params_key": "787a2a585e716b0e9c2af4b63649bec19cf5205c06fc849d58709c088450bdef",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

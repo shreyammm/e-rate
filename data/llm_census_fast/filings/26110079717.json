@@ -1,5 +1,5 @@
 {
-  "summary": "The comment highlights the critical role of E-Rate funding in supporting school internet access, which is essential for educational outcomes. The comment emphasizes the impact of underfunding on local schools and the need to maintain E-Rate funding to ensure access to technology for students.",
+  "summary": "The claim opposes defunding E-Rate due to its critical role in supporting school internet access and the impact on educational outcomes.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "68fe2f55b7bb985b8773bf5fb6b6dd351de6dcad76ef600c85075834d229fce6",
-  "params_key": "065e40ba6e3a45aa88dba07d6de0ffda9b343691b512e17bd998b0de5057b3e2",
+  "params_key": "b856473203db0595693e31a37857bf1ae096fcac4b3bc8e607f8560a838a7210",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

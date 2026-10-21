@@ -1,14 +1,14 @@
 {
-  "summary": "The comment opposes removing E-Rate funding to reduce screen time for students, arguing that it would negatively impact students and not address the issue of screen time.",
+  "summary": "The comment opposes removing E-Rate funding, arguing that it would reduce funds for internet services used in class activities to reduce screen time, rather than addressing screen time directly.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "remove funding and assistance from public schools",
+      "requested_action": "Remove available funding and assistance from public schools",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Removing E-Rate funding would reduce funds for internet services, which are used for in-class activities that help reduce screen time for students.",
+      "argument": "Removing E-Rate funding would reduce general funds for internet services, which are used for in-class activities that help reduce screen time",
       "evidence_quote": "Many of these funds are used to pay for school services which are billed monthly and not based on the use of the service and reducing or removing these funds and assistance would not change screen time.",
       "evidence_start": 518,
       "evidence_end": 720,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "71e61302d84d3d7c8c1c2111cbe41b045a9ceb5a263a7b12a06d41bdc37c7078",
-  "params_key": "b8db44aa45e7933bfbf83b44755c7b9dbd269c757a9364f1d4b9209e8d4e21f9",
+  "params_key": "ad84dbd03b63554472b283909f6341dcf6f0244a8e15b019ed4599d7a12d5af6",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

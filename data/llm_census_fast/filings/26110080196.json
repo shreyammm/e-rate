@@ -1,26 +1,14 @@
 {
-  "summary": "Discussion on potential changes to E-Rate policies and their implications",
+  "summary": "The comment opposes limiting or sunsetting E-Rate, arguing that it could lead to increased costs for schools and libraries.",
   "stakeholder_role": "unknown",
   "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Why should we allow money hungry beasts to take away a blessing for those who truly need it?",
-      "evidence_start": 0,
-      "evidence_end": 92,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting E-Rate could lead to increased costs for schools and libraries",
       "evidence_quote": "Why should we allow money hungry beasts to take away a blessing for those who truly need it?",
       "evidence_start": 0,
       "evidence_end": 92,
@@ -28,7 +16,6 @@
     }
   ],
   "positions": {
-    "education_outcomes": "support",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -39,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1956b2e96a09034290c5b79ad4f9204e7408a0d33b4a914b1fa8fa79946be0fd",
-  "params_key": "b50456af2ad7376f90cde4fafbbea72053bbc57cc91d21128543e79441fb4925",
+  "params_key": "36036688472466078e5ad8bef103866d3dc3f599f94041fbf1ce5e21f7d2e7b6",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

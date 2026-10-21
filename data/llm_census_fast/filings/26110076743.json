@@ -1,62 +1,14 @@
 {
-  "summary": "The comment supports continuing funding for the E-Rate program, despite various proposed changes.",
-  "stakeholder_role": "school_district",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing concerns about increased costs for schools and libraries.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
-      "provision_id": "cipa_public_hearings",
-      "position": "support",
-      "requested_action": "Preserve public hearings and enforcement",
-      "reason_family": "other",
-      "claim_kind": "other",
-      "argument": "",
-      "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
-      "evidence_start": 0,
-      "evidence_end": 94,
-      "uncertain": false
-    },
-    {
-      "provision_id": "consultant_registration",
-      "position": "support",
-      "requested_action": "Streamline consultant processes",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
-      "evidence_start": 0,
-      "evidence_end": 94,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Maintain educational outcomes focus",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
-      "evidence_start": 0,
-      "evidence_end": 94,
-      "uncertain": false
-    },
-    {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Continue funding E-Rate program",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
-      "evidence_start": 0,
-      "evidence_end": 94,
-      "uncertain": false
-    },
-    {
-      "provision_id": "lowest_corresponding_price",
-      "position": "support",
-      "requested_action": "Protect lowest corresponding price protections",
-      "reason_family": "access_affordability_equity",
-      "claim_kind": "equity_access",
-      "argument": "",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
       "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
       "evidence_start": 0,
       "evidence_end": 94,
@@ -64,11 +16,7 @@
     }
   ],
   "positions": {
-    "cipa_public_hearings": "support",
-    "consultant_registration": "support",
-    "education_outcomes": "support",
-    "erate_sunset": "support",
-    "lowest_corresponding_price": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110076743",
@@ -78,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f998f9f91f8d0e8a18a86ec570237a686d932367c44258a7fe2ddaf3e0588b10",
-  "params_key": "482eceb471f147c56e56b383d8bdb5d315ddcc0661c2d06f7bc1ab3863fe780f",
+  "params_key": "ab23a2618e01bfabb2ec44e01f588183a0e652481ac78ffb8abe6bf45b62c807",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

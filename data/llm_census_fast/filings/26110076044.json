@@ -1,5 +1,5 @@
 {
-  "summary": "The text argues against scaling back or eliminating the E-Rate Program, emphasizing its importance for providing access to digital infrastructure for various communities.",
+  "summary": "The comment emphasizes the importance of preserving the E-Rate Program and argues against any cuts or eliminations, highlighting its role in providing access to digital infrastructure for various communities.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate Program is crucial for providing access to digital infrastructure",
+      "argument": "E-Rate is a crucial resource that should not be scaled back or eliminated",
       "evidence_quote": "The E-Rate Program is a crucial resource and should not be scaled back or eliminated.",
       "evidence_start": 0,
       "evidence_end": 85,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ec8fd58ed1335f2a50cb81eb59f656df5aeb2ad32b07d45e2b797664241ea43b",
-  "params_key": "47bc5e6e5961c3fb69542dbda63a08518248df0489579df63aaa0b491f67a396",
+  "params_key": "8c74f26aae32aba383fca930988739af578868691fad715cee1933b7b1db403b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

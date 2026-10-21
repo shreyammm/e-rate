@@ -1,6 +1,6 @@
 {
-  "summary": "The text discusses the importance of E-Rate for public library systems in Omaha, Nebraska, and the potential impact of limiting or sunsetting the program on access to internet services.",
-  "stakeholder_role": "school_staff",
+  "summary": "The text discusses the importance of public internet access in libraries and schools, and the impact of E-Rate on their operations. It highlights the challenges faced by libraries in Omaha, Nebraska, due to limited budgets, and the need for E-Rate to ensure access to internet services for patrons.",
+  "stakeholder_role": "school_district",
   "claims": [],
   "positions": {},
   "invalid_claims_rejected": 1,
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e54b2c97181dbc2d9b4d46b403f831ea7bf994a5edfbdfadf666b59a000662c4",
-  "params_key": "19a55b181bd03a8c1c2ff59b88a7d474c25e9f2b5c35d492179aca619e003060",
+  "params_key": "6fc69d3fb62f16925666166be8d273c9b70159ca8edc30b5de45b4d9292765ef",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

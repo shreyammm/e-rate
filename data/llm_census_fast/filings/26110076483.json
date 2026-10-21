@@ -1,9 +1,24 @@
 {
-  "summary": "The comment highlights the importance of the Internet in education and the potential consequences of E-Rate decisions on educational access and outcomes",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The comment highlights the critical role of the Internet in education and the potential impact of limiting or sunsetting E-Rate on students and schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would increase costs for schools and reduce broadband access for students.",
+      "evidence_quote": "Everything at my two teacher-daughters' schools depends on the Internet.  The schools use the Internet for everything from grades to parent communication to textbook access.",
+      "evidence_start": 0,
+      "evidence_end": 173,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110076483",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076483",
   "filer_raw": "Herbert Wilson Jr",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "18272dcadce102f7ae753be5949104413d329d599b9f8983a25651a8fe8c3c00",
-  "params_key": "5888dbf1e936b06bc86d34b476dd8799aaba9e944fde5d5bb774ea803feb874b",
+  "params_key": "5fdcd455470cc44b3a944b17b9efafbad1898674b6d42797406c1e2b74addb8d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

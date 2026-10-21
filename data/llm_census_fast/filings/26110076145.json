@@ -1,14 +1,14 @@
 {
-  "summary": "E-Rate comments emphasize the importance of preserving core funding for schools and libraries to maintain connectivity and functionality. The comments urge the FCC to avoid changes that would reduce access or increase burden for students and communities.",
+  "summary": "E-Rate comments emphasize the importance of preserving core E-Rate funding for schools and libraries to maintain connectivity and services. The comments highlight the potential impact of losing E-Rate funding on schools' ability to provide essential services and maintain security.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Preserve core funding and avoid changes",
+      "requested_action": "Preserve core E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate funding, schools would face significant impacts on connectivity and functionality.",
+      "argument": "Without E-Rate funding, schools would face significant costs and potential cuts to services",
       "evidence_quote": "Without this funding, it is hard to imagine what the impact of loosing the discounts and funding that E-Rate provides to our school. Many parts of the school programming and functions would be impacted and I cann't imagine how you determine what would stay and what would go- cutting staff, downgrading school security, etc. This should be a non-issue for schools and libraries.",
       "evidence_start": 563,
       "evidence_end": 941,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1b3cee0fcba7e14e057bad39b8dd6681b8abb9b0a5e82013c21dcee23045ad7c",
-  "params_key": "97f541d4df9daa5e15b2b96c0af1e11746902b4fb45bcc158c7f4cc1261cd7f2",
+  "params_key": "da5a4351cac80fcecb46ff1f3ef921d46dc9ab6e67cd92527c3836799b7c0bc8",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

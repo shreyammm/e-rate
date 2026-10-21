@@ -1,14 +1,14 @@
 {
-  "summary": "A school district member expresses strong support for continued E-Rate funding, emphasizing its direct impact on providing internet access and equipment for their district. They highlight the potential negative consequences of losing this funding, which is crucial for their financial sustainability and ability to serve students.",
+  "summary": "A school district member expresses opposition to limiting or sunsetting the E-Rate program, emphasizing the importance of continued funding for providing internet access and network equipment to support digital learning and services.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Limit or sunset E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Funding would be lost, hurting districts like Metamora CCSD #1.",
+      "argument": "Funding loss would be detrimental to districts financially.",
       "evidence_quote": "Currently, I am a member of the BOE at Metamora CCSD #1. I strongly support continued funding for E-Rate program. Metamora CCSD#1 receives $50,000 from this program. These dollars directly help provide internet access and network equipment. Losing this funding would be highly detrimental.",
       "evidence_start": 0,
       "evidence_end": 289,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f6d749663b73bcc9b81c8645af50eb6704e738c5f2d9d53b6c5f82022c206004",
-  "params_key": "a9abecc46e50f2e2e4c4637d4d5ba0542db588dc953f56f5d39b12da87553c9e",
+  "params_key": "4b278e210334285e04d509876be8e2c62eda0c13d8c3455b4e7c72a29532de2b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

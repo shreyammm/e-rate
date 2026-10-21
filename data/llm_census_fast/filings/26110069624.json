@@ -1,14 +1,14 @@
 {
-  "summary": "The comment emphasizes the importance of maintaining E-Rate funding for libraries and schools.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment emphasizes the importance of maintaining the E-Rate program for libraries, which rely on it for essential services. The comment opposes any efforts to sunset or limit the program.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Keep E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Funding cuts could reduce broadband access for schools and libraries",
+      "argument": "Libraries rely on E-Rate for essential services",
       "evidence_quote": "This is very important to keep!",
       "evidence_start": 0,
       "evidence_end": 31,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f40e7ac1b954e6ab98f858bc70a1fbda88df924b1412529eec9be3ac4d231063",
-  "params_key": "136beda46f356981895d00eb6fb1ece80a926a4412989395fe2a3267d9c9ecdf",
+  "params_key": "82bf29838121135abdc39b55f9c90efb9a17cff6e02e38c1cbcfc8457037fe85",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

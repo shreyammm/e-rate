@@ -1,11 +1,11 @@
 {
-  "summary": "The citizen cites the MPS budget impact of redirecting E-Rate funding, emphasizing the program's critical role in providing internet and devices to students in Minneapolis Public Schools. The claim highlights the financial burden and educational implications of such a redirection.",
-  "stakeholder_role": "parent_guardian",
+  "summary": "The claim is that redirecting E-Rate funding would have a significant financial impact on the MPS budget, potentially causing a 6 million dollar hole. The claim is made by a Minneapolis citizen who emphasizes the importance of E-Rate for their district, particularly for students who rely on the program for education, especially during harsh weather conditions. The claim is made by a school district (MPS).",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Limit or sunset E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Redirecting E-Rate funding would put a 6 million dollar hole in the MPS budget",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d22afb74f8156d5b96746d274bc76aefc14078d29f5defe79ac5d35c25c16d82",
-  "params_key": "ebca30519173a187486533b2dd943c77fb09cd5048be215e876e6a2b0ef923cc",
+  "params_key": "9d78f165fc3e72f64770e9ee715e539e8e880c77b1c07e70eb6567a49769ca05",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

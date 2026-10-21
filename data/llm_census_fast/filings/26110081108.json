@@ -1,62 +1,14 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
-  "stakeholder_role": "unknown",
+  "summary": "The comment highlights concerns about the potential cost implications of limiting or sunsetting E-Rate funding for maintaining internet and technologies in schools.",
+  "stakeholder_role": "school_district",
   "claims": [
-    {
-      "provision_id": "consultant_registration",
-      "position": "oppose",
-      "requested_action": "Individual consultant registration database",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "Helping our school maintain internet and technologies",
-      "evidence_start": 0,
-      "evidence_end": 53,
-      "uncertain": false
-    },
-    {
-      "provision_id": "daily_hour_limits",
-      "position": "oppose",
-      "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "parental_autonomy",
-      "claim_kind": "normative_value",
-      "argument": "",
-      "evidence_quote": "Helping our school maintain internet and technologies",
-      "evidence_start": 0,
-      "evidence_end": 53,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Helping our school maintain internet and technologies",
-      "evidence_start": 0,
-      "evidence_end": 53,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Helping our school maintain internet and technologies",
-      "evidence_start": 0,
-      "evidence_end": 53,
-      "uncertain": false
-    },
-    {
-      "provision_id": "lowest_corresponding_price",
-      "position": "support",
-      "requested_action": "Prohibit percentage-based consultant fees",
-      "reason_family": "other",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting E-Rate could lead to increased costs for schools",
       "evidence_quote": "Helping our school maintain internet and technologies",
       "evidence_start": 0,
       "evidence_end": 53,
@@ -64,11 +16,7 @@
     }
   ],
   "positions": {
-    "consultant_registration": "oppose",
-    "daily_hour_limits": "oppose",
-    "education_outcomes": "support",
-    "erate_sunset": "oppose",
-    "lowest_corresponding_price": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110081108",
@@ -78,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "22b89d0c688246cb052156e115b97afb1a10d4732a223487a3b05d0a58e19806",
-  "params_key": "48988e9d04b3a978b90daa0099dbee5f0890d07b7139baac2350754ba3802237",
+  "params_key": "83a1fa4fedc447714c9089b903ec19f279771fb71656ea3d8a8083961bb9ea95",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

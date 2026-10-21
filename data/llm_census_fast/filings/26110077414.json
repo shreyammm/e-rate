@@ -1,6 +1,6 @@
 {
-  "summary": "The comment expresses strong disagreement with any cuts to E-Rate funding for public education and libraries, emphasizing the importance of internet access in education and the underfunding of libraries. It argues for increased investment rather than reductions.",
-  "stakeholder_role": "school_district",
+  "summary": "The comment expresses disagreement with any reduction in E-Rate funding for public education and libraries, emphasizing the importance of internet access for these institutions which are already underfunded. The comment argues for increased investment rather than cuts.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a60ac6d22f09f63544f5963c10936480fceb72b08f097f1ced724a0ff0d66d04",
-  "params_key": "e42bf730ba4c741d41b362718a4c88896edfb21b82d98419e20e49586bd99e71",
+  "params_key": "62b99444565be838986e6f8450f6768085860613fc8f40b54dc73108e3fcd894",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

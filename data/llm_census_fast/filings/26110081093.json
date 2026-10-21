@@ -1,17 +1,17 @@
 {
-  "summary": "School expresses concern about preserving E-Rate funding to maintain connectivity and access to resources for students and staff.",
+  "summary": "School expresses support for preserving E-Rate funding to ensure connectivity for instruction and security.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "preserve E-Rate funding",
+      "requested_action": "preserve core funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate is essential for schools to maintain connectivity and access to resources",
-      "evidence_quote": "Without this funding, our instruction would be cut short; for many students, the audio available through our online resources is vital.",
+      "argument": "Without E-Rate funding, schools would lose critical connectivity for instruction and security",
+      "evidence_quote": "Without this funding, our instruction would be cut short; for many students, the audio available through our online resources is vital. We also depend on it for security - without it, our Safe School Officer would not be able to respond to any concerns or suspicious figures as immediately.",
       "evidence_start": 620,
-      "evidence_end": 755,
+      "evidence_end": 910,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c5693fc56e7d4eb2bbd60559bdd0fac61341ec51a1be6133ca85893de5d4b68a",
-  "params_key": "5fe2354861130890c3b7903ee0cbb5907790ed163ae2f36063d80c8eab2ef08b",
+  "params_key": "1637542ec73fdc94cb64507fbc3f821715fdfb6c591add73e290fb5f374ece43",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,9 +1,24 @@
 {
-  "summary": "Compass Charter School expresses concern about preserving E-Rate funding to maintain essential services for students and communities.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "Compass Charter School expresses support for preserving E-Rate's core funding to ensure access to connectivity and services for students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without ERate, schools will have to significantly reduce or eliminate an essential part of their identity and commitment to families",
+      "evidence_quote": "Compass Charter School respectfully urges the FCC to preserve E-Rate's core funding and support for schools and libraries, and to avoid changes that would reduce access or increase burden for the students and communities who depend on it.",
+      "evidence_start": 1039,
+      "evidence_end": 1277,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110076433",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076433",
   "filer_raw": "Compass Charter School",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f4d4b4840ecae050e3cf42b749e71a968737bc93b5bbed0f2c8319e6078f96ad",
-  "params_key": "b8f957d195e51ca09c17821929e1645fe263d112d1dcdf2bee270dae2efd01fc",
+  "params_key": "1a6a42ba41f925fac0fb94d8e5c2af6db3fc3956c3df2e3b5b33e50851569627",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

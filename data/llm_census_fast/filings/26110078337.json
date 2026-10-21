@@ -1,11 +1,11 @@
 {
-  "summary": "Centralia Community Library urges the FCC to preserve E-Rate's core funding and support for schools and libraries, emphasizing the program's critical role in providing affordable internet access to students and communities.",
-  "stakeholder_role": "school_district",
+  "summary": "Centralia Community Library urges the FCC to preserve E-Rate's core funding and support for schools and libraries to maintain essential services for students and communities.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Preserve core funding and avoid changes",
+      "requested_action": "Preserve core funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Without core funding, reduce hours and/or services the community depends on",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f74800c5af7b6867c91472ab33cf01349afed01ed820c0857c7065f9d501d4d8",
-  "params_key": "928e952603e10f4ee58003c46c4e486e40b30a2cae707871c54eb1ec4115bc13",
+  "params_key": "2a5b2c1ea7d72bae901e0d6b78cac728975c0484c722e1a9f130b06b6e08aa3b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

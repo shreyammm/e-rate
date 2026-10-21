@@ -1,74 +1,22 @@
 {
-  "summary": "The comment supports maintaining the current state of E-Rate with flexibility and no additional burdens.",
+  "summary": "The comment opposes limiting or sunsetting E-Rate, emphasizing the need to maintain its current status to avoid increased costs for schools and libraries",
   "stakeholder_role": "unknown",
   "claims": [
     {
-      "provision_id": "discount_matrix",
-      "position": "oppose",
-      "requested_action": "Change poverty and rural discount matrix",
-      "reason_family": "other",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
-      "evidence_start": 0,
-      "evidence_end": 74,
-      "uncertain": false
-    },
-    {
-      "provision_id": "erate_eligibility_scope",
-      "position": "oppose",
-      "requested_action": "Narrow eligible equipment and services",
-      "reason_family": "access_affordability_equity",
-      "claim_kind": "equity_access",
-      "argument": "",
-      "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
-      "evidence_start": 0,
-      "evidence_end": 74,
-      "uncertain": false
-    },
-    {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Keep E-Rate intact",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "Please keep E-Rate intact",
       "evidence_start": 0,
-      "evidence_end": 74,
-      "uncertain": false
-    },
-    {
-      "provision_id": "special_construction",
-      "position": "oppose",
-      "requested_action": "Restrict special construction or dark fiber",
-      "reason_family": "privacy_free_expression",
-      "claim_kind": "privacy_expression",
-      "argument": "",
-      "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
-      "evidence_start": 0,
-      "evidence_end": 74,
-      "uncertain": false
-    },
-    {
-      "provision_id": "targeted_competition",
-      "position": "oppose",
-      "requested_action": "Limit subsidies by broadband competition",
-      "reason_family": "competition_market_effects",
-      "claim_kind": "other",
-      "argument": "",
-      "evidence_quote": "Please keep E-Rate intact, flexible, and free of burdensome local mandates",
-      "evidence_start": 0,
-      "evidence_end": 74,
+      "evidence_end": 25,
       "uncertain": false
     }
   ],
   "positions": {
-    "discount_matrix": "oppose",
-    "erate_eligibility_scope": "oppose",
-    "erate_sunset": "oppose",
-    "special_construction": "oppose",
-    "targeted_competition": "oppose"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110023369",
@@ -78,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f58f12e9fd1b4f7e5d4186afafe4e77514ea1cc6c464750738259dac571f92c3",
-  "params_key": "c4514d27a7eead90bbd98106b28340e6618a44bb3fb203b17e5d5f0076402697",
+  "params_key": "94917b3335f0387719fdb30ce0bc5472a61b2fdc78f21c1ef19d0c4cd09b48d4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

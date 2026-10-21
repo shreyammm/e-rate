@@ -1,9 +1,9 @@
 {
-  "summary": "Discussion on various aspects of the E-Rate program including eligibility scope, funding, competition, and privacy concerns.",
+  "summary": "The FCC comments express concerns about the potential impact of limiting or sunsetting the E-Rate program on broadband access and funding efficiency.",
   "stakeholder_role": "unknown",
   "claims": [],
   "positions": {},
-  "invalid_claims_rejected": 5,
+  "invalid_claims_rejected": 1,
   "submission_id": "26110077915",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077915",
   "filer_raw": "Deacon Joseph Buccilli",
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e14ba4dc43c6a69f7d8e5c7c553b87bd44dfb74fde800c28da84775b430bcd31",
-  "params_key": "f1003ae35abd3db520cf5c03d830ac43dcd5b23a79b08c950bcac95f5adea020",
+  "params_key": "dd23c8b1c9f9a65946545bbc761539049a9b2a4a6d6c09ce11dd697252077750",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

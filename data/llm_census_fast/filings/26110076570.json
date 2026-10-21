@@ -1,9 +1,24 @@
 {
-  "summary": "The comment expresses concern over the impact of E-Rate funding cuts on the district's ability to provide internet access for students and teachers, citing budget cuts by the state government as a contributing factor.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The comment expresses concern over the impact of E-Rate funding cuts on the district's ability to provide internet access to students and teachers, emphasizing the importance of the program for education.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding in the district is already threatened by budget cuts, and cuts to E-Rate would further limit the internet access students and teachers rely on.",
+      "evidence_quote": "Funding in our district is already being threatened from every corner, and Des Moines Public Schools is already struggling, thanks to budget cuts by the state government.",
+      "evidence_start": 370,
+      "evidence_end": 540,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110076570",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076570",
   "filer_raw": "Donna Wallace",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ac7e823b4172c520e0b87bc8d9d46dd1ab982ae92cea7e3151ef6a1bb5010496",
-  "params_key": "77137177411552e0c9358f1a633c220a4ef76f67d71247ac12deeb17283395f2",
+  "params_key": "e032f190cb7a8d88eff59c7dd4d21e224549666e673ffa43d4f6a9236d6b0633",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

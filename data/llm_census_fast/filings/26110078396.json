@@ -1,6 +1,6 @@
 {
-  "summary": "The comment highlights concerns about the impact of E-Rate policies on student learning and parental autonomy, suggesting that alternative funding sources should be considered instead of continuing with current E-Rate programs.",
-  "stakeholder_role": "school_staff",
+  "summary": "The comment highlights concerns about the impact of E-Rate policies on student learning and parental rights, and suggests reallocating funds to other educational resources.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5683a50b40ef01dc981ef1ee0f6459f9881c5c24bbc929d2338a049162c5fc29",
-  "params_key": "d8c3d94070bc205949a48955cf77c976bf54c57af0d4d6c936c743933f89968f",
+  "params_key": "d57d0cff4d340f517d9311a4e99155132faeb86e72bd697d40eea6ed1cd9c9ab",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

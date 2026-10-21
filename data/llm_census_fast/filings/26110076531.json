@@ -1,6 +1,6 @@
 {
   "summary": "The comment emphasizes the importance of preserving E-Rate funding to ensure access to internet services for schools, libraries, and rural communities.",
-  "stakeholder_role": "school_district",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,7 +8,7 @@
       "requested_action": "Preserve E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Continuation of programs is essential for maintaining access to internet services for schools and libraries",
+      "argument": "Continuation of programs is essential for maintaining access to internet services",
       "evidence_quote": "Please preserve this service though continuation of programs that provide access to so many of our citizens.",
       "evidence_start": 222,
       "evidence_end": 330,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "fcdce442cab1ecfcab438990b416d1dc76a8c115eb6016d71d11bd18bb3c1bf9",
-  "params_key": "611022184266a384f79c17148b414fa1762d9d82a8fd2ce43e679b415c7242fb",
+  "params_key": "0ec0a6c31f24742736b03e581a815f6437c672aaa916a5f5150801a32d8aaf91",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

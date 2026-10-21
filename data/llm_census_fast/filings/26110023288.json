@@ -1,5 +1,5 @@
 {
-  "summary": "The comment highlights the success of E-Rate and the potential negative impact of changes on access to broadband services.",
+  "summary": "The text discusses the importance of E-Rate for providing digital access in communities, emphasizing its success and the significant investments made. It warns that any changes to E-Rate could negatively impact access to essential services and disproportionately affect communities that rely heavily on public libraries and schools.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate could reduce funding availability for broadband access.",
+      "argument": "Limiting or sunsetting E-Rate could reduce access to essential services and disproportionately harm communities",
       "evidence_quote": "For nearly three decades, E-rate has been one of the most successful federal investments in digital access. In Arizona alone, more than $1.78 billion in E-rate support has enabled libraries and schools to provide the connectivity that residents need for education, employment, healthcare, civic participation, and lifelong learning.",
       "evidence_start": 0,
       "evidence_end": 332,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a97170393fa8a34f22b00cbedb54189f9770100eb91140c4b643cfff10311bd8",
-  "params_key": "3b1f0af6258239e5b9ad58faa67a67d6061a2e009a8a9adca36bb66b1fd1f2ec",
+  "params_key": "d469062307d7997935932d72d94b387464519edea1f98c9bfd2c915e1c774af9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

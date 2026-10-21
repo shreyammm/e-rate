@@ -1,5 +1,5 @@
 {
-  "summary": "The library system emphasizes the importance of E-Rate funding for its operations and the need to continue fully funding it to maintain essential services.",
+  "summary": "The Yalobusha County Public Library System emphasizes the importance of E-Rate funding for providing broadband access to its community. The library system, which serves a county with a higher poverty rate than the MS average, relies on E-Rate funding to offer free public access to Wi-Fi and computers. The library system argues that without E-Rate funding, it could not afford the cost of providing broadband access, which is crucial for its community's communication needs. The library system urges",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "continue to fully fund E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate funds, the library could not afford the cost of providing broadband access",
+      "argument": "Without E-Rate funds, the library could not afford broadband access",
       "evidence_quote": "Without E-Rate funds, we could not afford the cost of providing broadband access.",
       "evidence_start": 704,
       "evidence_end": 785,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "0b7ed2479b87f15be631c71afe89ae4ea6522da6b5dc77feacf81b17eaa7656b",
-  "params_key": "f6e9471483ba2daecdf47b6b0ed4a4a963f2b51d87fbba0d823ddcec06741edc",
+  "params_key": "add80d276f856c02be0033f5b7b7c0f1c754527f7dc4a5b52f3bc6a273b6bb19",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

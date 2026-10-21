@@ -1,6 +1,6 @@
 {
-  "summary": "The comment emphasizes the importance of E-Rate for public libraries and communities, particularly in rural areas where internet access is crucial for economic and educational purposes. It supports maintaining funding for the program to ensure continued access to broadband services for citizens.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment emphasizes the importance of E-Rate for public libraries and communities, particularly in rural areas where internet access is crucial for economic participation and educational access. It supports maintaining funding for the program to ensure continued access to broadband services for citizens.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "education_outcomes",
@@ -8,7 +8,7 @@
       "requested_action": "Tie E-Rate decisions to educational outcomes",
       "reason_family": "education_effectiveness",
       "claim_kind": "normative_value",
-      "argument": "E-Rate should prioritize improving educational outcomes by supporting broadband access for students and schools",
+      "argument": "E-Rate should prioritize improving educational outcomes by supporting broadband access in schools and libraries.",
       "evidence_quote": "Please ensure continued funding for this vital economic program. Especially in rural areas where internet access is scarce and often unaffordable, this program provides access for citizens to get work, file taxes, find housing, acquire degrees or certifications, submit required documentation and paperwork, etc.",
       "evidence_start": 63,
       "evidence_end": 375,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "477f025cc9221a0fc3b305c843232ea18da48098d24c35a9f7a81d41685798ea",
-  "params_key": "a7dc19c8a1fc53ada739b4abc8c46ff1215ff27f0684d1697dd06acbd28ff5da",
+  "params_key": "60a6e83a870156427c606c8381f3abbedfa1aff341ad82abda62d694bbd8dd93",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

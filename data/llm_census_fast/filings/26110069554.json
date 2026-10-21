@@ -1,38 +1,14 @@
 {
-  "summary": "Opposition to various E-Rate changes",
+  "summary": "The citizen and retired educator opposes the measure to limit or sunset E-Rate, citing concerns about increased costs for schools and libraries.",
   "stakeholder_role": "unknown",
   "claims": [
-    {
-      "provision_id": "consultant_registration",
-      "position": "oppose",
-      "requested_action": "Individual consultant registration database",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
-      "evidence_start": 0,
-      "evidence_end": 64,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "oppose",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "citation_of_external_evidence",
-      "argument": "",
-      "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
-      "evidence_start": 0,
-      "evidence_end": 64,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
-      "claim_kind": "normative_value",
-      "argument": "",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate could lead to increased costs for schools and libraries",
       "evidence_quote": "As a citizen and retired educator I greatly oppose this measure.",
       "evidence_start": 0,
       "evidence_end": 64,
@@ -40,8 +16,6 @@
     }
   ],
   "positions": {
-    "consultant_registration": "oppose",
-    "education_outcomes": "oppose",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -52,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "dc31a5d1686613394449ea9587b904e838bd74e4e8e40308401e2f0f72392b11",
-  "params_key": "2d5cf20d9052e643f3e1418f930c5958854bb7fded429d7b625d47bada5af3b6",
+  "params_key": "fd34d0a04d1724620f36e719cf8c7184e9514dec2cdf65a9d2d9ae69e81fa0fd",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

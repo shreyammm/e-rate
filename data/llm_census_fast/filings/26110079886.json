@@ -1,14 +1,14 @@
 {
-  "summary": "The comment emphasizes the importance of reliable internet access for education and supports tying E-Rate decisions to educational outcomes to ensure students have access to necessary digital resources for learning.",
+  "summary": "The school district emphasizes the importance of reliable internet for modern education, stating that it is crucial for students' learning in both home and school settings. The comment highlights the necessity of uninterrupted internet connectivity for educational purposes, as modern education relies on computers, tablets, and phones for instruction.",
   "stakeholder_role": "school_district",
   "claims": [
     {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "normative_value",
-      "argument": "E-Rate should prioritize improving educational outcomes by ensuring reliable internet access for schools and students",
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reliable school internet is crucial for our kids these days. When most of their learning is online, both at home and at school, internet connectivity without interruptions is imperative. Modern education uses computers, tablets, phones, etc. in all settings and reliable internet should remain available to all students and schools.",
       "evidence_quote": "Reliable school internet is crucial for our kids these days. When most of their learning is online, both at home and at school, internet connectivity without interruptions is imperative. Modern education uses computers, tablets, phones, etc. in all settings and reliable internet should remain available to all students and schools.",
       "evidence_start": 0,
       "evidence_end": 332,
@@ -16,7 +16,7 @@
     }
   ],
   "positions": {
-    "education_outcomes": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110079886",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "88b2a2ad4e1e7d55a8cfba8fefaf01e35c7944b3d1b08e5361b6ce30a68246aa",
-  "params_key": "8c07eba1b5490000445f2cae924ea9f7ecefb4b5f032304b262c30d84ab5ed12",
+  "params_key": "75e2a2669352c64ed7ee205c89f8f67876134d880d351e6c2844ac1fe2b733be",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

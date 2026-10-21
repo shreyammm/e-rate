@@ -1,5 +1,5 @@
 {
-  "summary": "The comment expresses concern about the impact of E-Rate on a specific family's situation, including a child's death due to online threats. It emphasizes the importance of considering the long-term consequences of E-Rate policies on children's safety and privacy.",
+  "summary": "The text expresses concern about the impact of E-Rate on funding and safety for students.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "The sunset of E-Rate could lead to increased costs for schools and libraries.",
-      "evidence_quote": "Please consider that this can end a child's life.",
-      "evidence_start": 1167,
-      "evidence_end": 1216,
+      "argument": "The text expresses concern about the impact of E-Rate on funding and safety for students.",
+      "evidence_quote": "I was able to talk at the meeting and wanted to express again my grave concern for what is going on in schools with computers. My special needs son had been previously groomed online and FBI involvement in an ongoing investigation.",
+      "evidence_start": 0,
+      "evidence_end": 231,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ff013a40830e0d98308ccf0f3f4f041941ae9534850514e2917a4b50ab4fd662",
-  "params_key": "168fe339f6e3fb410fd6aee2cc3eaae872ff270514b3a51ce1231c7323dadc23",
+  "params_key": "8514160ad09585a04f4b2f7f1e6e7b81b50e68b7225e93fb37640eb3ff025642",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

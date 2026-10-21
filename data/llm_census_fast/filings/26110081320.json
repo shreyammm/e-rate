@@ -1,6 +1,6 @@
 {
-  "summary": "The claim is that limiting or sunsetting E-Rate would increase costs for schools and libraries.",
-  "stakeholder_role": "school_district",
+  "summary": "The claim that E-Rate is an essential part of infrastructure and supports connectivity and network equipment is presented as a pro position.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would increase costs for schools and libraries",
-      "evidence_quote": "e-rate is an essential part of our infrastructure in our district.  e-rate lowers the cost of broadband, internet, and internal services that schools need along with libraries.  This support is a discount to the districts specific purchases.  It is based on school needs and allows schools to improve the needed equipment.",
-      "evidence_start": 0,
-      "evidence_end": 322,
+      "argument": "E-Rate lowers the cost of broadband, internet, and internal services that schools need",
+      "evidence_quote": "e-rate lowers the cost of broadband, internet, and internal services that schools need along with libraries.",
+      "evidence_start": 68,
+      "evidence_end": 176,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d5fca20fb794ddb8da5d62a262ed71ad6927e56a519a9f7cb65c3573c18fe52a",
-  "params_key": "bf3970a3a968741692f610ce98c3076323d2f4ee514422fe9aaac8792428f53f",
+  "params_key": "404bf25a96d5a2f84d69139accf7a32e07083fffc407e12a1a7dcaed94c8a82d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

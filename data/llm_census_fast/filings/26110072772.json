@@ -1,6 +1,6 @@
 {
-  "summary": "The comment urges the FCC to preserve the E-Rate program, emphasizing its importance for K-12 schools and public libraries. It highlights the cost implications of ending the program and the need to maintain the program to ensure access to broadband for education and community services.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment urges the FCC to preserve the E-Rate program, emphasizing its importance for K-12 schools and public libraries. It argues that ending the program would have negative impacts on education and community access.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "46ca02da21e17dcfa24477fbba961bb93b6343edf0b632633d3b02772f95ca2f",
-  "params_key": "0926ed10f4627d1b450b189ec9416856f9d7af11867e25f0ad091ddc6fd48c57",
+  "params_key": "67f2071b3d0d05111f71c3940d734c6dd063bfb0b727e0b970b74aecaa09145f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,24 +1,9 @@
 {
-  "summary": "The comment raises concerns about the FCC's role in regulating online content and screen-time limits for students in public school systems, emphasizing the need for transparency and parental oversight.",
-  "stakeholder_role": "parent_guardian",
-  "claims": [
-    {
-      "provision_id": "screen_time_condition",
-      "position": "oppose",
-      "requested_action": "Condition E-Rate on screen-time limits",
-      "reason_family": "privacy_free_expression",
-      "claim_kind": "privacy_expression",
-      "argument": "Condition E-Rate on screen-time limits",
-      "evidence_quote": "The networks in question are federally subsidized (in public school systems), so the government must help to ensure that they are regulated.",
-      "evidence_start": 509,
-      "evidence_end": 649,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "screen_time_condition": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The text raises concerns about the potential impact of screen-based content on children's gender identity and the need for transparency and parental oversight. It argues that screen-time limits could increase costs for schools and that the networks in question are federally subsidized, so the government must ensure their regulation.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110077930",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077930",
   "filer_raw": "na",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5e04f486766a317c5b0b2bf04e833480f06a75b1dfb1766ca8beb7250b2e0203",
-  "params_key": "08476c7eee196d669a1fa2cb67edc7ea96debdb398830ed90789f0846486b1ea",
+  "params_key": "72c8d7795dd2fe7150cf03ceda5c690f3a1ce5908de4749b024f225425a53a40",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

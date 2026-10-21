@@ -1,24 +1,9 @@
 {
-  "summary": "The comment discusses the importance of maintaining E-Rate funding for schools and libraries to ensure students have access to high-speed internet for learning. It emphasizes the role of schools and teachers in providing internet access and the impact of internet access on educational opportunities.",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Maintain funding for E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Schools need e-rate funding to provide high speed internet for stucents. Without this, students and learning would definitely be affected.",
-      "evidence_start": 0,
-      "evidence_end": 138,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment supports maintaining E-Rate funding to ensure access to high-speed internet for students and libraries.",
+  "stakeholder_role": "school_staff",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110076512",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076512",
   "filer_raw": "Janet Lee",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "10acaef433f63c62910f61edcc9fab6140ab3fd38dd10b1a0cf55e8eb76312fd",
-  "params_key": "e57836d978d23b3d902084e114cc2c0223a199d6449f8404db3139531adfae8d",
+  "params_key": "c31e08d24354b86a2496e12dd6d40f9ca8f46702117985c77ac0dac0a762f4b0",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

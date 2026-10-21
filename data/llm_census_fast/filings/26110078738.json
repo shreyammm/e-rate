@@ -1,50 +1,9 @@
 {
-  "summary": "Discussion on various aspects of E-Rate funding and its impact on schools and students.",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "consultant_definition",
-      "position": "support",
-      "requested_action": "Define covered E-Rate consultants",
-      "reason_family": "other",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "Public schools utilize E-Rate funding for the supplement that basics of connectivity for students",
-      "evidence_start": 0,
-      "evidence_end": 97,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "Public schools utilize E-Rate funding for the supplement that basics of connectivity for students",
-      "evidence_start": 0,
-      "evidence_end": 97,
-      "uncertain": false
-    },
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Public schools utilize E-Rate funding for the supplement that basics of connectivity for students",
-      "evidence_start": 0,
-      "evidence_end": 97,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "consultant_definition": "support",
-    "education_outcomes": "support",
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The comment opposes limiting or sunsetting E-Rate funding, arguing that it is essential for schools to maintain connectivity for students. The comment cites the importance of E-Rate funding for supplementing connectivity resources for schools. The comment also mentions the potential impact of not having E-Rate funding on schools' ability to keep campuses and districts connected to each other and the outside world.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110078738",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110078738",
   "filer_raw": "Rockwall Independent School District",
@@ -52,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "4a5eb1f922a7c3505726139ad11682df894d104c9abc56d0bd60fa62ed65b1b6",
-  "params_key": "12acf385472399894273deb815474c80e395bd61ada3731efcb28c69dbad39b0",
+  "params_key": "e5da3780131ca062f276e907b9477253433168f511b078c4b4296e4a827f5b4a",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

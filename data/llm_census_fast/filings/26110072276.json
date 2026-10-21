@@ -1,5 +1,5 @@
 {
-  "summary": "The comment urges maintaining E-Rate funding to ensure libraries can continue providing essential services like internet access and digital training.",
+  "summary": "The comment urges maintaining E-Rate funding to ensure libraries can continue providing essential services.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a30e230c8a2d17baf1f8125326bb0a5439026ffd8fb260efc9fd4d3a9f80a857",
-  "params_key": "34c7101cf841f27528fc803103a1ffb1a2eca46dbcd138d386942e91dd906296",
+  "params_key": "669c318fa3074d3c44e67709ebaf2718793a922b87f26590e463aebbb9e534b6",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

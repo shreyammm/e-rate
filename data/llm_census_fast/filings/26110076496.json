@@ -1,6 +1,6 @@
 {
-  "summary": "The FCC's proposal to limit or eliminate the E-Rate program will force states and school districts to cover the full cost of internet access, potentially leading to cuts, harming students who rely on the program.",
-  "stakeholder_role": "school_district",
+  "summary": "The FCC's proposed changes to the E-Rate program will significantly increase costs for states and school districts, potentially leading to the elimination of the program. The current program provides critical support for broadband access in rural, suburban, and urban areas, helping 93% of public schools access high-speed internet at discounted rates.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Proposing to severely limit or eliminate E-Rate will force states and school districts to cover full cost of internet access, potentially leading to cuts.",
+      "argument": "Proposing to limit or eliminate E-Rate will force states and school districts to cover full cost of internet access",
       "evidence_quote": "Now, that program is in peril.  The Trump administration is proposing to severely limit or completely eliminate the E-Rate program.  If they do, states and school districts will have to make a tough decision: cover the full cost of internet access or cut it off completely.",
       "evidence_start": 312,
       "evidence_end": 585,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ddfa07b3d51f5bec5bbb8aed4d8749616f71040ab5c22c1d92c39e17e19edf71",
-  "params_key": "db975038d65716ff1c19abc2fcd9f7da1f5df2b4671d639aa03f881ef3b6d2a0",
+  "params_key": "a81faf865f8ae59efa6f0ee43d2e7cd2c04fb0808e576f853a5903b3a5e178be",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

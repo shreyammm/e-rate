@@ -1,5 +1,5 @@
 {
-  "summary": "Discussion on proposed changes to E-Rate program affecting eligibility, funding, and implementation",
+  "summary": "The comment expresses concern about the impact of changes to E-Rate on budget and services.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,17 +8,17 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Changes to erates will substantially change our budget and funding and will impact services to students and to the community",
+      "argument": "Changes to erates will substantially change our budget and funding",
+      "evidence_quote": "Changes to erates will substantially change our budget and funding and will impact services to students and to the community.",
       "evidence_start": 0,
-      "evidence_end": 124,
+      "evidence_end": 125,
       "uncertain": false
     }
   ],
   "positions": {
     "erate_sunset": "oppose"
   },
-  "invalid_claims_rejected": 1,
+  "invalid_claims_rejected": 0,
   "submission_id": "26110080199",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110080199",
   "filer_raw": "Nicholas Russo and Rochester Community Schools",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "17d38cf0ef4cab843a0bb8484dde3816819c9300b827a63aa7cee9113769fed9",
-  "params_key": "95253e1cfcc4110d0f2c23927e3d249763ccfd4e49b8472b4e421f11fd472b44",
+  "params_key": "dc265d6aac6367b34f88327cdf04f75c6c858b39d12dd8527693023fa926ac1e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

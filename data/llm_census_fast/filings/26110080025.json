@@ -1,6 +1,6 @@
 {
-  "summary": "The Educational Technology and Digital Safety Lead at Assabet Valley Collaborative opposes imposing screen-time limits on E-Rate decisions, arguing that such restrictions could impose additional costs on schools and limit access to essential communication and instructional tools for students with disabilities.",
-  "stakeholder_role": "unknown",
+  "summary": "Supports thoughtful boundaries around screen use and safeguards for students, opposes broad screen-time restrictions.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "screen_time_condition",
@@ -8,10 +8,10 @@
       "requested_action": "Condition E-Rate on screen-time limits",
       "reason_family": "other",
       "claim_kind": "cost_or_savings",
-      "argument": "Screen-time limits could impose additional costs on schools",
-      "evidence_quote": "Please preserve E-Rate and support student safety through approaches that allow schools to make thoughtful decisions based on students’ ages, educational goals, and individualized needs.",
-      "evidence_start": 916,
-      "evidence_end": 1102,
+      "argument": "Screen-time limits could unintentionally limit access to tools students rely on for communication, accessibility, and instruction.",
+      "evidence_quote": "Any requirements concerning screen time or educational technology should preserve flexibility for educators to meet those needs. Broad restrictions could unintentionally limit access to tools students rely on for communication, accessibility, and instruction.",
+      "evidence_start": 469,
+      "evidence_end": 728,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "75509758b836008c522fd9375bcd39e1691a2633882b9e3b13beafd96804768f",
-  "params_key": "24f52d8291d99e76d17607b63a2c709823d7af67e7ddf04d347da178fab91d17",
+  "params_key": "4df48568a6143a81beff687daccb43d1f178b96aa650f836139f097a9ff80412",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

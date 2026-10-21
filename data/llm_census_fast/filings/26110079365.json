@@ -1,24 +1,9 @@
 {
-  "summary": "Family Services of Westchester expresses concern about the potential impact of E-Rate funding loss on their Early Childhood/Head Start program and urges the FCC to preserve the core funding.",
-  "stakeholder_role": "school_district",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "preserve core funding",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "Loss of funding would have direct impact on student learning",
-      "evidence_quote": "Without this funding, a loss of funding would have a direct impact on student learning within our Head Start program. Reduced funding could mean fewer classroom resources, delayed curriculum materials, and limited access to the enrichment activities that support early literacy, language development, and school readiness",
-      "evidence_start": 688,
-      "evidence_end": 1009,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The school district expresses concern about the potential impact of E-Rate funding reductions on student learning and community access to essential services.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110079365",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110079365",
   "filer_raw": "Family Services of Westchester",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "953ef23a1e96ca641f44b4ebdd4707f22be7a0078da81bccb247991b0e700da4",
-  "params_key": "1b512d0f164593d479e53fdbf3af5a138e908c8391878581f8e6c064868a04c7",
+  "params_key": "557e89de0f9c3c08932f3a9ccd049760f2e221a62e595e31296cbc7e600fd583",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

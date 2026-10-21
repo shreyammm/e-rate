@@ -1,5 +1,5 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program including eligibility, funding, and implementation",
+  "summary": "The comment calls for maintaining E-Rate funding to ensure effective teaching.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Funding cuts would hinder broadband access and educational outcomes",
       "evidence_quote": "We need funding to keep teaching effectively in the class.",
       "evidence_start": 0,
       "evidence_end": 58,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f3ace64125c71be327c97cbb44a80ada12240e61fa33c35d8f9a583e75ffea22",
-  "params_key": "94e21782957fafb3d7457f2fc77cc200cd545a01472cb111e6417303fa8592f3",
+  "params_key": "4177ef1aa03fb5f70ca0367734e0833b5b991776fc4287fd0d8edde2801c80bb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Elimination would lead to reduction in services for libraries",
+      "argument": "Elimination would lead to reduction in services for libraries across the country",
       "evidence_quote": "The E-rate program is extremely important to the budgeting and function of libraries across the country, and its elimination would dramatically impact not only libraries who participate in the E-rate program, but all public libraries who are part of shared networks.",
       "evidence_start": 0,
       "evidence_end": 266,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "09b74c09947bf0b61a81df7f922e4faec10208d50ce75a0af9ffb4ce41612f15",
-  "params_key": "6562c4c31a95a34ce324a4b0a76d668726d362d8c2e3d454542a6559b9a8c4c8",
+  "params_key": "334f530f89d4bcea8be32780ee1cb08d74d139181fbf30388c1dcbc55469cde3",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "Parents express concerns about the impact of screen-based instruction on children's development and advocate for parental autonomy",
+  "summary": "The comment expresses opposition to tying E-Rate decisions to educational outcomes, arguing that it undermines parental autonomy and the right to opt out of screen-based instruction.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Tie E-Rate decisions to educational outcomes",
       "reason_family": "education_effectiveness",
       "claim_kind": "normative_value",
-      "argument": "Parents express concern about the impact of screen-based instruction on children's development and advocate for parental autonomy",
+      "argument": "The comment argues that tying E-Rate decisions to educational outcomes undermines parental autonomy and parental rights to opt out of screen-based instruction.",
       "evidence_quote": "I hope that the voices of the people who participated are heard, we are a representation of how the majority of parents feel nationwide.",
       "evidence_start": 993,
       "evidence_end": 1129,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a2a47c338978b4b2179416d9e85c4f6360e35e9cad26a186e3c485faff1f10ee",
-  "params_key": "e88423698c601f37d5301002692725ce9e0b7425f397462c2d64124541d27049",
+  "params_key": "7870f499a19330dc3f155febd03f408bfcb2b8358e840ae79c3513c286215b73",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

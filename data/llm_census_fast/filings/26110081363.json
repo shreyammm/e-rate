@@ -1,5 +1,5 @@
 {
-  "summary": "The Camden County Schools highlight the critical role of E-Rate funding in maintaining their IT infrastructure, emphasizing the financial strain caused by rising connectivity costs and the potential for budget cuts. They argue for maintaining E-Rate funding to ensure the continuity of essential services and protect sensitive data.",
+  "summary": "E-Rate funding is crucial for maintaining IT infrastructure and ensuring reliable internet access for students in Camden County Schools, which are facing budget constraints due to increasing connectivity costs.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Maintain E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate funding maintains IT infrastructure at Camden County Schools, preventing budget cuts",
-      "evidence_quote": "E-Rate funding maintains our IT infrastructure at Camden County Schools in GA. Every function, from paying bills to managing personnel to diabetic monitoring, will be affected. As basic connectivity cost consumes a larger share of our technology budget, they starve the allocations we rely on to secure our systems.",
+      "argument": "E-Rate funding maintains IT infrastructure at Camden County Schools, preventing data breaches and ensuring reliable internet for students",
+      "evidence_quote": "E-Rate funding maintains our IT infrastructure at Camden County Schools in GA. Every function, from paying bills to managing personnel to diabetic monitoring, will be affected. As basic connectivity cost consumes a larger share of our technology budget, they starve the allocations we rely on to secure our systems. We hold sensitive, lifelong data on thousands of minors. The nightmare scenario isn’t just a data breach. It’s a child having their identity stolen in middle school, only to discover at age 18 that they have a debt of two home mortgages because we lacked the resources to protect them.",
       "evidence_start": 0,
-      "evidence_end": 315,
+      "evidence_end": 601,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e11a62962d004d00e696dac336807b647eabf9e99690987c4acdfb713f17282d",
-  "params_key": "18ba138a9fb4cf4b8975394d24e3b58f4c606dac3cff3eef5cf92f4c82836cb9",
+  "params_key": "1b1944f286a96d77626986fbcf3eeb6d58f70500948ff06cebf80c0b35cc9a67",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

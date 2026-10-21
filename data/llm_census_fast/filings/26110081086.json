@@ -1,6 +1,6 @@
 {
-  "summary": "School and library comments emphasize the importance of E-Rate for providing technology and connectivity to students and staff. They urge the FCC to preserve the program's core funding to avoid cuts to teacher positions and ensure students have access to necessary technology for state testing and educational purposes.",
-  "stakeholder_role": "school_staff",
+  "summary": "Palm Beach Maritime Academy urges the FCC to preserve E-Rate's core funding to maintain essential connectivity for schools and students.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,7 +8,7 @@
       "requested_action": "Preserve core funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate funding, schools would cut teacher and staff positions and students would lose access to technology for state testing.",
+      "argument": "Without E-Rate funding, schools would cut teacher and staff positions and students would lose access to technology.",
       "evidence_quote": "Without this funding, cut teacher and staff positions, students would not have access to technology that is used for state testing and technology to bring lessons to life for students.",
       "evidence_start": 474,
       "evidence_end": 658,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "92a9232ac7df799c475a45599a9c194a949832116a2638a617d653e62a6277b6",
-  "params_key": "2b2150eb9a8f26d2659c0f7fdf38960c7cd7f930c9be0209be112520bbbb8bc6",
+  "params_key": "4ffe7e43a271d39f1306bfbf9e865b27e35b8e4059305ae6e3e6410d26b0fd20",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

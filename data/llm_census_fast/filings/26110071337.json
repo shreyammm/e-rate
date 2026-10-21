@@ -1,24 +1,9 @@
 {
-  "summary": "The comment urges protection and full funding for the E-Rate program, emphasizing its importance for schools and libraries in providing internet access and digital learning resources.",
+  "summary": "The comment urges protection and full funding for the E-Rate program, emphasizing its importance for schools and libraries in providing essential digital resources and connectivity.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "Discontinuing E-Rate would widen the digital divide, disproportionately affecting rural, low-income, and underserved communities.",
-      "evidence_quote": "Discontinuing or cutting E-Rate funding would widen the digital divide, disproportionately hurting rural, low-income, and underserved communities that rely on public institutions to stay connected.",
-      "evidence_start": 677,
-      "evidence_end": 874,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110071337",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110071337",
   "filer_raw": "Tosha Anderson TdS Library System",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2983ab1bf9693598c82fcf47490a89d1810f30b1273764b3ebcf5610f64a191e",
-  "params_key": "9ec56d032d1233fd26eb5b8c3d74400ab1988185cdfeb1c259d1ec02958d5053",
+  "params_key": "cc71bdc7266beef9b5b1dfc2d62d9a3f60040d18f035bfc5ad279d0250c1263c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

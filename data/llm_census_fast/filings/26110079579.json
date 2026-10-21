@@ -1,5 +1,5 @@
 {
-  "summary": "Discussion on potential changes to the E-Rate program, including its impact on various stakeholders.",
+  "summary": "The comment opposes cutting the E-Rate program, citing its impact on public schools and libraries and the burden on local government budgets.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please do not cut or reduce the E-rate program, as it would have a devastating impact on public schools and libraries across the country and further burden local government with additional costs in a time when municipal budgets are already stretched extremely thin",
+      "argument": "Cutting E-Rate would have devastating impact on public schools and libraries",
+      "evidence_quote": "Please do not cut or reduce the E-rate program, as it would have a devastating impact on public schools and libraries across the country and further burden local government with additional costs in a time when municipal budgets are already stretched extremely thin.",
       "evidence_start": 0,
-      "evidence_end": 264,
+      "evidence_end": 265,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "bcdea30ff6a5fc7b2bbb9843914fb6d0ec428c14550b0d85ad71e3f53610ce87",
-  "params_key": "3f2f860ea4bf6193ad207fd5ef4ce4091a95f0b21d7da781e7127e2613a9cf53",
+  "params_key": "356dd2e53e2643d9159e54d420a002474473d17206d123b25e17d5fe279f2f81",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

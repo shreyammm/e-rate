@@ -1,5 +1,5 @@
 {
-  "summary": "The stakeholder urges the FCC to preserve E-Rate funding and opposes proposed rule changes that could negatively impact access to educational and library resources.",
+  "summary": "The stakeholder urges the FCC to preserve E-Rate funding and reject proposed rule changes, emphasizing the program's role in providing essential broadband access to schools and libraries and the potential negative impact of rule changes on access to educational resources and parental oversight.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Preserve E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate is fulfilling its intended purpose by helping schools and libraries provide essential broadband access to their communities",
+      "argument": "E-Rate is fulfilling its intended purpose by helping schools and libraries provide essential broadband access",
       "evidence_quote": "I urge the FCC to preserve E-Rate funding and reject the proposed rule changes in Proceedings 26-133 and 13-184.",
       "evidence_start": 0,
       "evidence_end": 112,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a3f9d8384de222c8f4c9e7c387da6c1da5eff7a95e0b0e2fae144d8378323499",
-  "params_key": "dde79c0dae38e874cec2a64f5ae350d9fec39509ead487a5e88b0aae3660fbba",
+  "params_key": "6445679b7b75baf09a9f2f55371d9c3b11e9afb6cfe5c52d61114e85f536c191",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

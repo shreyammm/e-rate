@@ -1,6 +1,6 @@
 {
-  "summary": "The comment opposes limiting or terminating E-Rate, emphasizing its critical role in maintaining affordable and reliable internet access for schools and libraries. It argues that cutting E-Rate would jeopardize network upgrades and threaten vulnerable communities.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment argues for expanding E-Rate rather than limiting it, emphasizing its importance for maintaining affordable and reliable internet access for schools and libraries. It warns that terminating E-Rate could jeopardize school and library budgets and leave communities behind.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing network upgrades.",
-      "evidence_quote": "E-Rate is critical for schools and libraries to maintain affordable, reliable access to the Internet. Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
-      "evidence_start": 208,
-      "evidence_end": 452,
+      "argument": "Cutting E-Rate threatens to leave vulnerable communities behind",
+      "evidence_quote": "Cutting E-Rate also threatens to leave vulnerable communities behind that don’t have dedicated resources to fill the gap.",
+      "evidence_start": 454,
+      "evidence_end": 575,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3febb771a6751acf77487f0b920fab9b6a3017ec9369d0507540e5262b83fdd2",
-  "params_key": "303e55548a9b85a63a75dc4d0e2fcf0943343b778b265b6596c395d3a59db0f0",
+  "params_key": "c334f125bbbf2f40f23e6610e2e68d8ca4ae0eaf73e74c1fe4a8d7eddbe5e802",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

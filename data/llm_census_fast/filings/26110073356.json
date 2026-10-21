@@ -1,17 +1,17 @@
 {
-  "summary": "School expresses concern about preserving E-Rate funding to maintain connectivity and services for students and staff.",
+  "summary": "School expresses concern about preserving E-Rate funding to maintain essential services and infrastructure for schools and libraries.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Preserve core funding",
+      "requested_action": "preserve core funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate funding, schools would face significant financial challenges",
-      "evidence_quote": "Without this funding, if we lost these funds it would be a huge impact to our system of charter schools.",
+      "argument": "Without E-Rate funding, schools would face significant financial burdens and potential changes to their business models.",
+      "evidence_quote": "Without this funding, if we lost these funds it would be a huge impact to our system of charter schools. Our board of directors would have to look at our business model and absolutely have to make some changes.",
       "evidence_start": 678,
-      "evidence_end": 782,
+      "evidence_end": 888,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d3679693cceea472601dd148d6579eaad1c836f50e7c3e4cf778c5b424262bf6",
-  "params_key": "480d723b9ff57c17db57dd1d0be06c583a6e6f86c435db3292304f11e4560c47",
+  "params_key": "3b65bdaf1388542d86fde88268a5d8bcb20b61f9acaad3634cc0451d4551c0ef",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

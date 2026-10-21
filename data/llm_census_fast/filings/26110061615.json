@@ -1,9 +1,24 @@
 {
-  "summary": "The comment opposes any proposed changes to E-Rate that could impact educational outcomes, citing the importance of the library's high-speed broadband access for the community.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The library expresses concern about the proposed changes to E-Rate eligibility scope, which would increase costs for their library. The library relies on the library's community for funding and relies heavily on broadband access for its services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing eligibility scope would increase costs for libraries",
+      "evidence_quote": "We do this by reselling books donated by our community, through our on-site bookstore, triannual bookstalls, and our interest marketplace.",
+      "evidence_start": 313,
+      "evidence_end": 451,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110061615",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110061615",
   "filer_raw": "Leslie Allen",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "05e6308c480fc892de914e201a3fdd8f03b29ed3674022fd5ba39224a7b38211",
-  "params_key": "f6cedfe70292774f0754a8579fba26187c0d187f835add86278bb7e7fb2f18ac",
+  "params_key": "0ce0f5f36b66e868aa85c9000cabe350e352ba7c4c6075f4e1656c723a74477a",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The claim highlights the critical role of E-Rate funding in supporting libraries, which rely on high-speed internet for various services. The library emphasizes the importance of E-Rate to maintain affordable internet access for patrons, including job seekers and students. The claim suggests that without E-Rate funding, the library would struggle to provide essential services and resources.",
+  "summary": "The comment highlights the importance of E-Rate funding for libraries in WV, emphasizing the impact on patrons who rely on the library for network access for school and work.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate funding, libraries would not be able to afford high-speed internet, affecting patrons' access to library resources.",
+      "argument": "Without E-Rate funding, libraries would not be able to afford high-speed internet, affecting patrons who rely on the library for network access.",
       "evidence_quote": "Without E-Rate our library would not be able to afford high speed internet which will affect patrons who rely on the library for network access for school and for work.",
       "evidence_start": 113,
       "evidence_end": 281,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b658684da0b2532fc428df78bf56f1f28dc297a66b3105000a4d37c89ef3978d",
-  "params_key": "05c9fa11ffbc94a4690513f8e45708c1397ce638a55f1ce75684c965932705ce",
+  "params_key": "3b57e1a91756450faf8c2c4b3c5a3e3634554aaed18283237efc9cd29c201c58",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

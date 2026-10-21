@@ -1,6 +1,6 @@
 {
-  "summary": "The comment highlights the importance of internet access for educational success and the challenges faced by rural schools and libraries in providing affordable services. It opposes limiting or sunsetting E-Rate to address budget constraints and ensure equal access to educational opportunities for all students.",
-  "stakeholder_role": "school_staff",
+  "summary": "The text expresses the importance of internet access for educational success and the challenges faced by rural schools and libraries in providing affordable services. It opposes limiting or sunsetting E-Rate due to the costs involved.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would increase costs for schools and libraries",
+      "argument": "Limiting or sunsetting E-Rate would lead to increased costs for schools and libraries",
       "evidence_quote": "Having access to internet services in public entities is important for the educational success of our students. As an educator, who teaches in Oklahoma, the needs of the students we serve in our district are extremely varied. Teaching in Norman, a college town, we can forget that there are those in our communities who can not afford access to internet services and that the only places they can access is at school or the public library.",
       "evidence_start": 0,
       "evidence_end": 439,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c45c3bdb095e7dc675ec2b11c5fceb9b94aeee6f64522dca6e8d83ec6784f634",
-  "params_key": "954b7491cce177b461ce749996ebd99557820e979382b83b30ec66ab6f0892cf",
+  "params_key": "728ce43d165f6bf6bc96fd1a556756a6f36abc4fd0889a10f9c911acc64a7cf5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

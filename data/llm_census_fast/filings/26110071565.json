@@ -1,24 +1,9 @@
 {
-  "summary": "The parent and school director express concerns about any changes or reductions to federal eRate reimbursement for school districts, emphasizing the importance of the program for schools' technology needs and the inability to support costs without federal funding.",
-  "stakeholder_role": "school_staff",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would increase costs for school districts",
-      "evidence_quote": "As a parent and a school director, I hold serious concerns about any changes or reductions to federal eRate reimbursement for school districts.",
-      "evidence_start": 0,
-      "evidence_end": 143,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "summary": "The parent and school director express concerns about any changes or reductions to federal eRate reimbursement, emphasizing the importance of the program in supporting technology needs for schools and the potential increase in costs if the program is limited or sunsetted.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110071565",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110071565",
   "filer_raw": "Anita Pilkerton-Plumb",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d191714f86877aeece1e4ae0141fab23e211cac6e98e24d9ca1c10c00ab57fe4",
-  "params_key": "cc6d7e025596d226549249cf8a8f742e5ae277c05aa72d89ffc7c6fdf5db8046",
+  "params_key": "40c5f431b639a2ce46a7393cfa4c310bc3ebe87b6c2bb062d7a04b806beb9f80",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

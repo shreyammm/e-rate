@@ -1,5 +1,5 @@
 {
-  "summary": "The school district urges the FCC to preserve E-Rate's core funding to ensure schools can maintain technology and operations without compromising other services.",
+  "summary": "The school district urges the FCC to preserve E-Rate funding to ensure schools can maintain technology and operations without reducing access or burdening students and communities.",
   "stakeholder_role": "school_district",
   "claims": [],
   "positions": {},
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ba9e314104d9530ab87db888030f807d80bc7f148fd111bfe822426dfe0aeb8d",
-  "params_key": "40cc8e499ae322fbb9d997855e98e411dedf9d3a9a1834a5d4eb128d76eae9f5",
+  "params_key": "dae030b79bd253ba3b6e915b0f29700fb9286b77d7387f1fb9c068e19825ea87",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

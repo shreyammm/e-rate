@@ -1,5 +1,5 @@
 {
-  "summary": "The stakeholder supports the Federal E-Rate program as reliable school internet is critical in children's education.",
+  "summary": "The stakeholder supports the E-Rate program but opposes limiting or sunsetting it due to budgetary concerns.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure in schools",
       "evidence_quote": "I support the Federal E-Rate program as reliable school internet is critical in children's education.",
       "evidence_start": 0,
       "evidence_end": 101,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "acbf6586fee2948223c23d299da49897e8d86ceed2fd0361a36efcad546f7762",
-  "params_key": "ae91a197b1a3a2cb4357dd64dd20a567e7fbe79dc8996bb015260befbc222f5f",
+  "params_key": "22665dc1734f4d01acc7a552f8c9ce1a195c7f9bae7985926e2f6565e1e765ae",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

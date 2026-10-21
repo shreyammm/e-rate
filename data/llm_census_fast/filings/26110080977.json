@@ -1,9 +1,24 @@
 {
-  "summary": "Library teacher expresses opposition to the FCC's proposal to terminate E-Rate, emphasizing the program's critical role in supporting school and library technology needs and budget stability.",
+  "summary": "Library teacher urges FCC to reject proposals to terminate E-Rate, emphasizing the program's critical role in maintaining affordable, reliable Internet access for schools and libraries.",
   "stakeholder_role": "school_staff",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing years of network upgrades.",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 584,
+      "evidence_end": 726,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110080977",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110080977",
   "filer_raw": "Erin Dalbec",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ee76edc9decbacae95983456e5960378b70c2125011d7ae801cd53ea945410be",
-  "params_key": "18175450dc9657afe8751f6dc61678c8eccc730af87b9d42a66e86c40de936eb",
+  "params_key": "84c8a0ca45f14a466eee11ca5b60822c30204264dbb8a7c40af590ad08962454",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The claim opposes implementing an opt-out mechanism for screen-based instruction, citing concerns about administrative burdens and classroom fragmentation. The claim is supported by a verbatim quote directly addressing these issues.",
+  "summary": "The FCC's opt-out mechanism for screen-based instruction is opposed by the claimant as it creates administrative burdens and fragments the classroom environment. The claimant advocates for a systemic, low-tech instructional approach instead.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8dc61a3c81b0637914337ef944973a5ab69a861fc72cb1f4558af9b5e503118d",
-  "params_key": "7738fcb8b5ba9c66ffdc1993301d32e982abbd3ab2d243fab69ec18322965dc9",
+  "params_key": "af335b886bc98565dc6f87d6cda4051d53e8f103a88c345f38d2dd810c61f88c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

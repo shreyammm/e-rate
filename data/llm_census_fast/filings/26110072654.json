@@ -1,6 +1,6 @@
 {
-  "summary": "The comment opposes any effort to narrow, weaken or eliminate the E-Rate program, emphasizing its critical role in providing connectivity and infrastructure for schools. The comment cites the importance of E-Rate for teaching, student services, and essential school operations, arguing that any reduction in funding could lead to higher costs, delayed technology investments, and resource reallocation challenges.",
-  "stakeholder_role": "school_district",
+  "summary": "The comment opposes any effort to narrow, weaken or eliminate the E-Rate program, emphasizing its importance for schools to maintain current eligibility criteria for equipment and services to ensure continued access to broadband and network infrastructure for teaching, student services, and school operations.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_eligibility_scope",
@@ -8,10 +8,10 @@
       "requested_action": "preserve eligibility scope",
       "reason_family": "access_affordability_equity",
       "claim_kind": "alternative_design",
-      "argument": "E-Rate should maintain broad eligibility for equipment and services",
-      "evidence_quote": "Our schools rely on E-Rate to provide reliable and affordable broadband and network infrastructure that supports teaching and learning, student services and essential school operations.",
-      "evidence_start": 264,
-      "evidence_end": 449,
+      "argument": "E-Rate should maintain current eligibility criteria for equipment and services",
+      "evidence_quote": "I respectfully urge the Federal Communications Commission to preserve and strengthen this critical investment in the connectivity and network infrastructure schools rely on every day.",
+      "evidence_start": 80,
+      "evidence_end": 263,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f79fdad4948f5a389ce68df1166065cec33147186582d1035a490b62c2b1c9d8",
-  "params_key": "f97cf93b638682fae58a7b1d62acd7b20a1af8861f6ebdb8551eff58ca58a9a8",
+  "params_key": "7f70759e209dcac5b55fb01313c09dc6d6702658295f585af3ae9a34ca3f9dbc",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

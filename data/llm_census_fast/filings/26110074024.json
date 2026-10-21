@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f01865fa3402812668bd8e5b245f797d9173670b975652e5dc822c682e63f648",
-  "params_key": "18c92cfa15e763d35bbd45cc9cd7adf6d1b6bc0d633f88b4c092193f73cd67bb",
+  "params_key": "948d29f2787e01b961f98d149cd152507d0e10f1e4b1b5d6df71ce3eea16c2cc",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

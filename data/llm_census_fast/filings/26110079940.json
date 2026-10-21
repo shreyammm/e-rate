@@ -1,22 +1,22 @@
 {
-  "summary": "The comment emphasizes the importance of maintaining E-Rate funding to ensure broadband access for schools and students, highlighting the need to support parents and teach students about internet safety.",
-  "stakeholder_role": "school_district",
+  "summary": "The comment highlights concerns about the impact of screen-time limits on parental autonomy and educational outcomes.",
+  "stakeholder_role": "unknown",
   "claims": [
     {
-      "provision_id": "erate_sunset",
+      "provision_id": "screen_time_condition",
       "position": "oppose",
-      "requested_action": "Continue E-Rate funding",
-      "reason_family": "budget_cost_efficiency",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "other",
       "claim_kind": "cost_or_savings",
-      "argument": "Continuing E-Rate ensures broadband access for schools and students",
-      "evidence_quote": "We need to continue supporting our parents when they want to communicate with their child. And we need to continue to teach kids how to safely use the internet at school.",
+      "argument": "Screen-time limits could increase costs for schools",
+      "evidence_quote": "We need to continue supporting our parents when they want to communicate with their child.",
       "evidence_start": 315,
-      "evidence_end": 485,
+      "evidence_end": 405,
       "uncertain": false
     }
   ],
   "positions": {
-    "erate_sunset": "oppose"
+    "screen_time_condition": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110079940",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "2242cfef5b2a782c387b1766848f0420187bc90130dde5d4ea468b4a35d890a8",
-  "params_key": "d615119cfcc9dd841706369cf7a3907f9ee5551059da8d8adb75e762918da3d4",
+  "params_key": "9050da5fc10ab8f927c2fb1ff1b0d2730632176d9e606a6b52f439d00fb467bf",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

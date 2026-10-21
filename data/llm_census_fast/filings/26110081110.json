@@ -1,14 +1,14 @@
 {
-  "summary": "School district expresses concern about preserving E-Rate funding to maintain connectivity and IT support for students and staff.",
+  "summary": "School district urges FCC to preserve E-Rate funding to maintain connectivity and IT support for students and staff.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "preserve core funding",
+      "requested_action": "Preserve core funding and avoid changes",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without core funding, schools would face increased IT burdens and connectivity issues.",
+      "argument": "Without E-Rate, schools would face increased IT burdens and connectivity issues.",
       "evidence_quote": "Without this funding, if we were to lose this funding, it may mean that we would have less IT people to manage any connectivity issues and if a computer is in need of repair that may keep a student from having one for the amount of time said repair takes.",
       "evidence_start": 530,
       "evidence_end": 785,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "626d1bfe17eade482a1b5b8d9846a9784644c8e237a387a7b1dccffd98bfb301",
-  "params_key": "d15042cf497413e60547ae139474d40d818528782b7a818180d9266b3337a586",
+  "params_key": "1dd72b0b04f026fe46a8a313267099e2a4c2f9a0fc237456b4698c9bd99ba61e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "Library expresses concern about preserving E-Rate funding to maintain essential services and avoid service cuts.",
+  "summary": "Library expresses concern about the impact of E-Rate changes on library services and urges preservation of core funding.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8767db5dda9711f8f490a9739b64bf866c30a7c105dc3b9bec8833a958636e7d",
-  "params_key": "50e425de509e8df4f6cbd9a71c7cd45663b74f4888fc1631e052485be56e2b0b",
+  "params_key": "dd8d3ca842971030a1520692c2d531cc2ebd3c9b651e8d3ecc59716370386c45",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

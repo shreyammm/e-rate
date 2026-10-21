@@ -1,22 +1,22 @@
 {
-  "summary": "The comment supports preserving the E-Rate program for essential educational and library services.",
+  "summary": "The comment opposes cutting the E-Rate program, emphasizing its importance for schools and libraries.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Preserve E-Rate funding",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Our schools and libraries rely on this funding to provide access for all for essential information and educational tools",
-      "evidence_start": 38,
-      "evidence_end": 158,
+      "argument": "Funding cuts would eliminate critical broadband access for schools and libraries",
+      "evidence_quote": "Please do not cut the E-rate program.",
+      "evidence_start": 0,
+      "evidence_end": 37,
       "uncertain": false
     }
   ],
   "positions": {
-    "erate_sunset": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110073318",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "4f6b2d23837645a73a66037aff5098e22f967c8e7736f68a4dde7328caeb291a",
-  "params_key": "912d30d668b0f33a536f52ab1f3669c650ad497095e07d37bd626c440d23b86e",
+  "params_key": "97e11686d81b1bd78f0bb6f83cf6f39a258a24b778e8ae496fdbed816bb05f4b",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

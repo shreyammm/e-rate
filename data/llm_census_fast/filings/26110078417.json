@@ -1,14 +1,14 @@
 {
-  "summary": "The parent guardian emphasizes the importance of the E-Rate program for their library and community, and requests continued commitment to ensure libraries have access to federal funds.",
+  "summary": "The parent guardian emphasizes the importance of the E-Rate program for their library, which relies on it for providing free internet access to the community. They express concern that any termination or limitation of E-Rate funding would force the library to reduce programs and services, potentially impacting its ability to serve the community.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "terminate or limit E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "If E-Rate funding is terminated, libraries will be forced to reduce programs and services to continue providing internet access.",
+      "argument": "If the FCC terminates or limits E-Rate funding, the library will be forced to reduce programs and services to continue providing internet access.",
       "evidence_quote": "If the FCC terminates or limits E-Rate funding, my library will be forced to reduce programs and services in order to continue providing internet access.",
       "evidence_start": 562,
       "evidence_end": 715,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "574206504e4287b668cf0ef398e8ecac8970a58468595f1a92d4b71015e82873",
-  "params_key": "6448e2f5153ee959f0faa5c28337fcc1b86dab4f0217459757a4d0d942d4711b",
+  "params_key": "d64c5313732145a5a2577edd50dc2f4fc4ce51ba1574c653f01d8502e66508ba",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

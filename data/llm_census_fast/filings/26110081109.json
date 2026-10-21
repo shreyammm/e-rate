@@ -1,5 +1,5 @@
 {
-  "summary": "The school district emphasizes the importance of E-Rate funding for maintaining reliable internet infrastructure and education access.",
+  "summary": "The school district emphasizes the importance of E-Rate funding for maintaining reliable internet infrastructure and educational access. It urges the FCC to preserve the core funding and avoid changes that could reduce access or increase burdens on students and communities.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Preserve core E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-Rate funding, schools would be forced to downgrade internet speeds and hardware",
+      "argument": "Without E-Rate funding, schools would face major cost reductions and infrastructure upgrades",
       "evidence_quote": "Without this funding, if PBMA lost it's E-Rate funding we would be forced to majorly downgrade our internet speeds and would not be able to afford the hardware to upgrade it in the future. This would majorly hinder our ability to educate students.",
       "evidence_start": 782,
       "evidence_end": 1029,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "fb16053cd8132551f78973153e8dad18b0045653c9746afaba56e91d8157aadd",
-  "params_key": "fae4893a1c09bafc2eb5ac40d86870c114255eeae4a2f8e0d82c7058fecb5c99",
+  "params_key": "27f42f46dbf1e2ef8c6ceae54ad4350c24dc0d8fd1769fd19ab15c8af7f65b56",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The comment emphasizes the importance of the E-Rate program for providing internet access to communities and libraries, and expresses a desire to continue the program.",
+  "summary": "The comment emphasizes the importance of the E-Rate program for providing internet access in libraries, which are crucial resources for communities. It highlights the funding received by Massachusetts and the number of library users.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "6f5db17146e4ff39c22015372e9c636ea5c08c7c824e46280581e6ef017dca93",
-  "params_key": "38f26168be97c882994c5b6b8c6c51a073d13bee4c9884875cc85135c5606300",
+  "params_key": "79e1c785d28f80ee95c6e124cd21acb29b527a39f3828a9048eb52941cc09222",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

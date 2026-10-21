@@ -1,5 +1,5 @@
 {
-  "summary": "The claim is that limiting or sunsetting E-Rate would threaten access and harm to Americans reliant on libraries and schools for internet access.",
+  "summary": "The claim opposes limiting or sunsetting the E-Rate program, citing its essential role in providing internet access for libraries and schools, which are crucial for education, economic health, and civic participation. The loss of funding would have significant impacts on participating libraries and schools, as well as regional resource sharing networks. The claim emphasizes the importance of preserving the program to prevent further harm to Americans reliant on these services.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Loss of E-Rate would threaten disconnection and further harm to Americans reliant on libraries and schools for internet access",
+      "argument": "Loss of E-Rate would threaten disconnection and harm to Americans reliant on libraries and schools for internet access.",
       "evidence_quote": "As a librarian, I can attest that E-Rate is providing an essential safety net of internet access to Americans of all ages through our participating libraries. As more life services are increasingly online, to end this program would threaten disconnection and further harm to Americans that rely on their libraries and schools for internet access.",
       "evidence_start": 0,
       "evidence_end": 346,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "7d2db1fcf2d25c9a3f9c40cddbe2934dbfe1dc40ead0fedc6407e8e9ab9424df",
-  "params_key": "8e85be96b2b940fe5bc1fe573f41de7d08a44c790de5be69e30a0fba9d1e9554",
+  "params_key": "b05bf4a9d7ebc4e73a454599fc3187e1d49420d61079cce60ee89422525629f0",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

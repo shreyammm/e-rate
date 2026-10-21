@@ -1,24 +1,9 @@
 {
-  "summary": "The comment discusses various aspects of the E-Rate program, including its eligibility scope, funding, and implementation, as well as its impact on education and competition.",
+  "summary": "The text presents a variety of claims and arguments related to the E-Rate program, including concerns about its funding, eligibility, and implementation. The text does not directly address any specific claims related to the E-Rate program, but instead contains unrelated content about reproductive endocrinology and medicine.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "education_outcomes",
-      "position": "oppose",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "other",
-      "argument": "The comment argues that E-Rate decisions should not be tied to educational outcomes.",
-      "evidence_quote": "This is fake medicine and is harming children",
-      "evidence_start": 117,
-      "evidence_end": 162,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "education_outcomes": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110077911",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077911",
   "filer_raw": "Do no Harm",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "7c04ccc3abbaccc679ac634713a22be01bd5ffc52f98277993f91b0e867fcdfc",
-  "params_key": "2cb4bda6f1e2061a38c62ca8b3e185cb3deb60cc8ec0ba946345bf959a6b9c3a",
+  "params_key": "03d499a2b709f02f3a10de0517fa0399d3ccc8337d973357a365d088d0825754",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

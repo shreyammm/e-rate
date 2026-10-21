@@ -1,9 +1,24 @@
 {
-  "summary": "The comment opposes limiting or sunsetting E-Rate funding, emphasizing the importance of maintaining funding for libraries and schools to ensure access to internet services and prevent further inequities.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The comment opposes limiting or sunsetting E-Rate funding, emphasizing the importance of maintaining funding for schools and libraries to ensure access to internet services.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for schools and libraries that rely on it to maintain internet services.",
+      "evidence_quote": "Do not allow the FCC to terminate or limit E- Rate funding for public access.",
+      "evidence_start": 1256,
+      "evidence_end": 1333,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110075674",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110075674",
   "filer_raw": "Jane McDonough",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "479366550beb73514519cf49c59bd91e97e2a5f19e831500085c7ed3c5c0252a",
-  "params_key": "764d6166fddc65530ed0e7184371003d37f5feca4d678dc2a12cde41bdb78a1d",
+  "params_key": "942ba735166080be840a2bed87100517d9787807a52e53152b3fadd9667d4bc8",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

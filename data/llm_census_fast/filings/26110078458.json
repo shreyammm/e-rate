@@ -1,14 +1,14 @@
 {
-  "summary": "The school district expresses concern about the impact of removing E-Rate funding on their ability to provide essential technology infrastructure and educational resources, citing financial pressures and challenges in maintaining quality educational experiences for students and teachers.",
+  "summary": "The school district expresses concern about the impact of removing E-Rate funding on their ability to provide necessary technology infrastructure and educational resources, citing financial pressures and reliance on other funding sources.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate funding",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Removing E-Rate funding will put additional financial pressure on the district, making it more challenging to provide quality educational experiences",
+      "argument": "Removing E-Rate funding will put additional financial pressure on the district, making it more challenging to provide quality educational experiences.",
       "evidence_quote": "E-Rate funding is crucial for my district in helping to fund the connectivity needed to our technology infrastructure, ensuring that teachers and students are able to utilize technology efficiently and effectively.",
       "evidence_start": 0,
       "evidence_end": 214,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "365e3a6dfc8ec436d6934bac537089110ce8f32f459ff90e641d5c8c95c22a88",
-  "params_key": "bebc4dec2e7a3af6e1f4b870dc35aa6d5ae9b5b9c740c9fde1b0349376e91215",
+  "params_key": "594fb644f1717de0bf96e374920baa126ec422a6438b572c782adf5956779753",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

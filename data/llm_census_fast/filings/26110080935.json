@@ -1,5 +1,5 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program including eligibility, funding, and implementation",
+  "summary": "The text expresses opposition to cutting funding for public internet access services, emphasizing the importance of E-Rate for public schools and libraries, especially for students in need. It highlights the financial challenges communities face in maintaining internet services.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please do not cut funding for public access to internet service",
+      "argument": "Limiting or sunsetting E-Rate would result in increased costs for schools and libraries",
+      "evidence_quote": "Please do not cut funding for public access to internet service. Public schools and libraries serve masses of students, especially those who are less fortunate. Communities are already scrambling for funds to pay for services.",
       "evidence_start": 0,
-      "evidence_end": 63,
+      "evidence_end": 226,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "234dde67246693478922eca7e43bb01d8fe1469bcd8517bf59b0025c6e7b2d2d",
-  "params_key": "8a52a395a068063f5d00cd528302458e89bc6a667876fa62bc71639ffa2c0368",
+  "params_key": "b23aba15903711286e7fe30f2ae93320cc2272f7528f0a361a5f08eacfc130d8",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

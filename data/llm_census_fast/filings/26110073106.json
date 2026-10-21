@@ -1,6 +1,6 @@
 {
-  "summary": "Discussion on various aspects of E-Rate programs including funding, eligibility, and implementation",
-  "stakeholder_role": "unknown",
+  "summary": "The text expresses a preference against cutting E-Rate funding, emphasizing its necessity for schools and libraries.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Please do not cut funds for E-Rate programs. Libraries and schools need internet to provide necessary technology for those without and to teach our young students",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "Please do not cut funds for E-Rate programs.",
       "evidence_start": 0,
-      "evidence_end": 162,
+      "evidence_end": 44,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9223480d71289d716e1cfd6b63025433d1fab875262753d7499ab29a915cc701",
-  "params_key": "56c8e9b134ed5d8e605329d9fd1d1a065aae57c3b9f40825e2130857060dbca1",
+  "params_key": "ba77c870d8098b90b0c9247637a91a93d4d77bcf225d439e71b871fb3c97be95",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

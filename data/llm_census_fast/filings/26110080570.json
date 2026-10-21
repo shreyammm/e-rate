@@ -1,9 +1,24 @@
 {
-  "summary": "School urges FCC to preserve E-Rate funding to maintain connectivity and budget for classrooms",
-  "stakeholder_role": "school_district",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "E-Rate is a critical program for schools and libraries to provide reliable, affordable connectivity for students and communities. The school district urges the FCC to preserve E-Rate's core funding and avoid changes that would reduce access or increase burden for students and communities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would need to cover more internet and equipment costs, reducing funds for classrooms",
+      "evidence_quote": "Without this funding, losing E-Rate funding would mean covering more internet and equipment costs with dollars needed for classrooms and student support.",
+      "evidence_start": 609,
+      "evidence_end": 762,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110080570",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110080570",
   "filer_raw": "Jason Kurt",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "efcd067a837dd8ae93047bba732c4ece408dd4312033df37918bc5e6b4fb9ceb",
-  "params_key": "de9cccb6d0e199f3e64fa892c22012d10c27e3ee3d504b1f932fc2d9045598e0",
+  "params_key": "a7bbdb9eea2ffad09b38cd98d0ef63117c0c4112ca99c2d743836abce0c4c00d",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

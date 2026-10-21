@@ -1,17 +1,17 @@
 {
-  "summary": "Combination of opposing views on E-Rate policy changes",
+  "summary": "The comment opposes keeping E-Rate funding in place, citing a lack of funds for education compared to other expenditures. It argues that the current budget situation prioritizes military spending over education funding.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Keep E-Rate access",
+      "requested_action": "Keep E-Rate funding in place",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "I believe public schools and libraries should keep access to the internet",
-      "evidence_start": 0,
-      "evidence_end": 73,
+      "argument": "Funding for E-Rate is essential for maintaining internet access in schools and libraries",
+      "evidence_quote": "We can spend money on illegal wars but can't spend money on public schools and ensuring our kids education is the best it can be. yeah makes sense.",
+      "evidence_start": 75,
+      "evidence_end": 222,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b70c9eddd3e8cfd402537834ae611b5b5a4073290730a6fa7709c7d6810f5080",
-  "params_key": "d4f1df8d5a12e59f3ed0f7b8f8a75621ff48dc3096e88741d2ff1f9d56a44c53",
+  "params_key": "88e750174713974d9ca2cf4e46c74b01077e7b650a2bccca449139d3ce188c38",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

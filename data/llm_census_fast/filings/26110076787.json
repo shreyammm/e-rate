@@ -1,6 +1,6 @@
 {
-  "summary": "The comment opposes limiting or sunsetting E-Rate to ensure broadband access for schools and libraries.",
-  "stakeholder_role": "unknown",
+  "summary": "The comment opposes limiting or sunsetting E-Rate, arguing that it would disadvantage schools and libraries and lead to educational disparities.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access in schools and libraries",
-      "evidence_quote": "Internet access to schools and public libraries ensures that all students regardless of home economics or living situations have access to the same level of information, tools and resources.",
-      "evidence_start": 0,
-      "evidence_end": 190,
+      "argument": "Limiting or sunsetting E-Rate would result in increased costs for schools and libraries",
+      "evidence_quote": "Taking these tools away means that these areas will be disadvantaged and these students will lag behind others.",
+      "evidence_start": 274,
+      "evidence_end": 385,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "fc82ff1b3c8620989b5f21500638e3e2d980a2cff048d72976cad3dcd244dc52",
-  "params_key": "edb315ce5659e97eebc0802bfb653308439531cf1174681661823ea4e275005f",
+  "params_key": "81a8b3be1075f8d43839b0ad71d90ef85897186f4cdd6d7bd0298cf3be757e01",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

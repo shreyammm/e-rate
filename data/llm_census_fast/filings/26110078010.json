@@ -1,6 +1,6 @@
 {
-  "summary": "The comment raises concerns about the potential impact of limiting or sunsetting E-Rate on broadband infrastructure and services, citing examples of how insurance companies and schools are limiting parent access to information about their children's online content.",
-  "stakeholder_role": "school_district",
+  "summary": "The text argues against limiting or sunsetting E-Rate, emphasizing transparency and parental rights regarding online content, especially concerning social gender transition and medical interventions for minors.",
+  "stakeholder_role": "parent_guardian",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services",
-      "evidence_quote": "Further, it is egregious that insurance companies and schools are trying to limit parent information regarding their children being exposed to this sort of propaganda.",
-      "evidence_start": 632,
-      "evidence_end": 799,
+      "argument": "Schools should be transparent with parents about whether students can access online material that encourages social gender transition",
+      "evidence_quote": "Schools should be transparent with parents about whether students can access online material that encourages social gender transition, that advises children to conceal a gender identity from their parents, or that directs minors toward such medical interventions as puberty blockers, cross-sex hormones, or surgeries.",
+      "evidence_start": 0,
+      "evidence_end": 317,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "c2a6d68a3beee79dec5bb147a3537eb61482f8b74925d11667469a61b6cea34b",
-  "params_key": "01db80b0bd507f9123dfa1f4e9c44870f28d625d477d1f734cd577775805f968",
+  "params_key": "5a6ff45de745f947f2d66d5bee65f41ce21eaadc0fdc32f0a4d97001073d6168",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

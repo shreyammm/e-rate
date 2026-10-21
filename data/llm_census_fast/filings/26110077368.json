@@ -1,5 +1,5 @@
 {
-  "summary": "The comment emphasizes the critical role of the internet in schools and libraries, opposing any actions that could limit or sunset E-Rate funding, citing budgetary concerns and the importance of maintaining access for educational and public services.",
+  "summary": "The text emphasizes the importance of the internet for schools and libraries, especially for those that are small and impoverished. It argues against limiting or sunsetting the E-Rate program, stating that it is a vital resource for children, teachers, and the public.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would result in significant budget cuts and loss of access to internet services for schools and libraries.",
-      "evidence_quote": "It is so important that it is being kept in place for all other schools and libraries except those targeted by this filing.",
-      "evidence_start": 301,
-      "evidence_end": 424,
+      "argument": "Limiting or sunsetting E-Rate would result in significant cost savings for schools and libraries",
+      "evidence_quote": "Please don't take away this priceless resource from the children, teachers, and public who rely on it so heavily.",
+      "evidence_start": 425,
+      "evidence_end": 538,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "62196d25a83cb50b7ca1383e42e0cfedf69f0d3527ee3326d862c83bcebdbac6",
-  "params_key": "1ba3787d77b27ef094d82e8c0b299477555b01b76ed7ede318a798eba083ef2f",
+  "params_key": "413f50324ed4be8330e4d06d598502ef4822316cc443bd97a209e5aa012c561c",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

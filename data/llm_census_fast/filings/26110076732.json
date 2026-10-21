@@ -1,9 +1,24 @@
 {
-  "summary": "The comments emphasize parental rights and control over their children's technology use, particularly in schools. They advocate for the right to opt-out of screen-based instruction, AI use, and device use. The comments argue for allowing only verified research and prohibiting persuasive design elements in student technology. The comments also call for the prohibition of social media use for students.",
+  "summary": "The text presents a variety of arguments against various aspects of E-Rate, including parental opt-out rights, restrictions on screen time, and requirements for independent research verification of tech. It also mentions the need for parental oversight and the prohibition of certain forms of social media for students.",
   "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Screen-time limits could increase costs for schools",
+      "evidence_quote": "- K-12 parents should have the right to opt-out of school-mandated tech, \n- Parents should have the right to opt-out of any AI use,\n- Parents should have the right to opt-out of 1:1 device use (chromebooks, iPads, laptops, tablets),\n- Student internet access should be allow-list only, \n- All forms of tech should be independent research verified,",
+      "evidence_start": 0,
+      "evidence_end": 347,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110076732",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076732",
   "filer_raw": "Anna Reosti",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "06ad72c415cf84a0d330d574629bf42ff610aa4e690598c0141df2558c83514d",
-  "params_key": "310a046c62bfc4fc7075de42ed3aa0a8088835334ace9b37a8fe1ddfe6f06617",
+  "params_key": "5e498502c5846a9cd4ca69b13cecac78feaafe40a4cbc69f826f5329d527de27",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

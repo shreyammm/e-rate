@@ -1,9 +1,24 @@
 {
-  "summary": "The comment expresses strong support for preserving the E-Rate program and urges the FCC to keep it fully intact for all schools and libraries.",
-  "stakeholder_role": "school_district",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "The comment expresses strong support for preserving E-Rate funding and urges the FCC to keep the program fully intact.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would create severe budget shortfalls for public education and libraries",
+      "evidence_quote": "Terminating or significantly restricting E-Rate funding—such as limiting support only to rural areas or linking connectivity to unrelated screen-time rules—would create severe budget shortfalls for public education and public libraries.",
+      "evidence_start": 450,
+      "evidence_end": 686,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110072259",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110072259",
   "filer_raw": "Graftie McDaniels",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "b971fe8ac6f0b83b2ddca0fba4ea6862f5795c0332c4118d776f853cd213a40a",
-  "params_key": "d78c2ee5d9a8bcf9098a72ffeee38be341b2adcb541c28e9da2dd283df809f22",
+  "params_key": "f8d09cf2509698f34a320822cd6b8e28bf59d6341100530c6b409132ce691ba1",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

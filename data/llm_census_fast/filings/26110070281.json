@@ -9,8 +9,8 @@
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Cutting E-Rate will lead to loss of public internet access for libraries",
-      "evidence_quote": "Cutting a program many public libraries depend on to provide public internet access will provoke voter anger.",
-      "evidence_start": 46,
+      "evidence_quote": "I strongly oppose cutting the E-Rate program. Cutting a program many public libraries depend on to provide public internet access will provoke voter anger.",
+      "evidence_start": 0,
       "evidence_end": 155,
       "uncertain": false
     }
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "e6de4e47a6396eb67ac76312d0ed4c2345879bb609ec47a373643ecf2e7b21f8",
-  "params_key": "7f3e8a9be20c4100e9b609a18cf81ffdec7b42a583c41c493e81bd346fa47177",
+  "params_key": "14363fa88f75c4870fedb8ec4d6c918a47e06dede6dde6051821fb8b8d4c6626",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

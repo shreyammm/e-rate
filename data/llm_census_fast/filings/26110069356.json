@@ -1,14 +1,14 @@
 {
-  "summary": "The author opposes removing E-Rate, citing their personal experience of relying on the program for internet access for homeschooling.",
+  "summary": "The comment opposes removing E-Rate, citing its importance for homeschooling families.",
   "stakeholder_role": "parent_guardian",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "retain E-Rate",
+      "requested_action": "retain E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "The author states that E-Rate provided essential internet access for their homeschooling needs.",
+      "argument": "The program provided critical internet access for homeschooling families",
       "evidence_quote": "Please do not remove E-Rate. There are so many programs that are a waste of money, E-Rate isn't one of them.",
       "evidence_start": 241,
       "evidence_end": 349,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d95ed70bab48a81fba9452ee4edb7b5946fb5837e358f16b66846ef8edc68d96",
-  "params_key": "797d0d8a1b143ce9cf1cc7b8625a36b3cc454845dafd8c636d125248223ee365",
+  "params_key": "b5f5fadcf606f5dfffc3188f7328143a40874513350768ccea066d02b71b2cf5",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,38 +1,14 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program modifications",
-  "stakeholder_role": "unknown",
+  "summary": "The comment supports maintaining E-Rate support for rural areas, opposing any sunset or changes to the program.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
-      "provision_id": "consultant_registration",
-      "position": "support",
-      "requested_action": "Streamline and certify E-Rate forms",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "please continue support for high speed internet to rural areas such as are served by the Latah County Idaho Library",
-      "evidence_start": 0,
-      "evidence_end": 115,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "support",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "please continue support for high speed internet to rural areas such as are served by the Latah County Idaho Library",
-      "evidence_start": 0,
-      "evidence_end": 115,
-      "uncertain": false
-    },
-    {
       "provision_id": "erate_sunset",
-      "position": "support",
-      "requested_action": "Support continuation of E-Rate program",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for rural schools and libraries",
       "evidence_quote": "please continue support for high speed internet to rural areas such as are served by the Latah County Idaho Library",
       "evidence_start": 0,
       "evidence_end": 115,
@@ -40,9 +16,7 @@
     }
   ],
   "positions": {
-    "consultant_registration": "support",
-    "education_outcomes": "support",
-    "erate_sunset": "support"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110075816",
@@ -52,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "92b2a32ad1b6d2d23b391ab97ddb55df91bc7cce06d4f483dfcb74fd363352fa",
-  "params_key": "b16c83a19682152bf453fd9dd79cb4c3717a45351b9f74d68f91505c85a59ad8",
+  "params_key": "dd47895dd5ae8484deef556096139f7deb8aee0c743d3719270e343661d1bb8e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

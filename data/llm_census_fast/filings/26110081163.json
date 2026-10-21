@@ -1,5 +1,5 @@
 {
-  "summary": "School urges FCC to preserve E-Rate funding to maintain internet access for students and community services.",
+  "summary": "School urges FCC to preserve E-Rate funding to maintain connectivity and services for students and communities.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Preserve core funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without core funding, schools would be unable to provide necessary internet services",
+      "argument": "Without core funding, schools would be unable to provide connectivity.",
       "evidence_quote": "Without the internet, our students would be unable to perform at their best on state tests. It also allows families the opportunity to research and learn on a facility computer when needed.",
       "evidence_start": 371,
       "evidence_end": 560,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "767a792a7610c302d505fb5d32e91ac9bb2d72a6a3823c027b39ad7302678461",
-  "params_key": "67951085947a5c5570cb93f3341e03031939631f1db2c902a23d5ece71ec2cc8",
+  "params_key": "1b14981e87a40fc440adc770cba7dc2c7284afc059e59d9668a7d0ecb86e3fa0",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

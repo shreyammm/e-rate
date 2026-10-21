@@ -1,11 +1,11 @@
 {
-  "summary": "As a grade 6-12 English and Spanish teacher for 16 years, the author believes that internet access is indispensable for exposing students to various texts and speakers, fostering critical thinking, and increasing language fluency and comprehension. The author argues that cutting off internet access to schools would impoverish students' ability to communicate and think, and would negatively impact the educational system's global competitiveness.",
+  "summary": "A teacher argues for maintaining or improving the E-rate program to ensure educational access and competitiveness.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Maintain or improve E-rate program",
+      "requested_action": "Maintain or improve the E-rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
       "argument": "Limiting internet access would lead to a decline in educational competitiveness",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "7cc00c5673c1f7d885c41684b401ca9cc3a3ca969fe3eaed6b18e47015f4b443",
-  "params_key": "5b200274ab5bf37fafc19a234bd63f73061903e4bdc36a34c618192b0f6a128f",
+  "params_key": "a3d6b1825638b5fa048d97d9b0b2810fe8295f74c0acb2985d236c469215e5b4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

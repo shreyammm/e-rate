@@ -1,5 +1,5 @@
 {
-  "summary": "The network technician for a local school district explains the critical role of E-Rate in maintaining the network infrastructure for their school, emphasizing the potential catastrophic impact of losing funding on the reliability, capability, and responsiveness of the network, which is essential for various educational and operational functions.",
+  "summary": "The network technician highlights the critical role of E-Rate in maintaining the school district's network infrastructure, which is essential for various building systems and services. They argue that losing E-Rate funding would have severe consequences, including equipment failure, staff loss, and reduced reliability.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "If E-Rate funding was lost, budgets would thin, equiptment would be pushed till failure, and staff would be lost, reducing reliability, capability, and responsiveness in a world of ever-accelerating technology.",
+      "argument": "Funding loss would reduce network reliability and maintenance, leading to equipment failure and staff loss.",
       "evidence_quote": "If E-Rate funding was lost, budgets would thin, equiptment would be pushed till failure, and staff would be lost, reducing reliability, capability, and responsiveness in a world of ever-accelerating technology.",
       "evidence_start": 585,
       "evidence_end": 795,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d3e9f0297aee55580c95b990f89ca2c5348bfd33a8043fc69a1866add6a3693e",
-  "params_key": "9b5a84990364783c219171ecb3c302cedbb502b7947c2ade22a970ecddc503b7",
+  "params_key": "6bba1c3de3a7aa4cc3752b172aa1cd5c38185c2ff9ee10b6ce71f787a9f5c783",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

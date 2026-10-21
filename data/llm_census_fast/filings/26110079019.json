@@ -1,14 +1,14 @@
 {
-  "summary": "The academic library director emphasizes the importance of E-Rate for their library and communities, stating that it is crucial for providing access to broadband internet. They argue that E-Rate is a public good that must be continued, despite not directly affecting their library.",
-  "stakeholder_role": "school_staff",
+  "summary": "The academic library director emphasizes the importance of the E-Rate program for providing affordable broadband access to communities, stating that it directly affects their library and patrons. They argue that the program must be continued as a public good.",
+  "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Continue E-Rate funding",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would result in increased costs for libraries and communities",
+      "argument": "E-Rate program is crucial for providing affordable broadband access to communities",
       "evidence_quote": "As an academic library director, e-rate does not directly effect my library or my patrons. However, it is hugely important for the communities I work and live in and my colleagues all across Massachusetts in public libraries.",
       "evidence_start": 0,
       "evidence_end": 225,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1f0ffa28a088c6c5cbc440320de54f940f0a5cf28bc9a773744ff45c6253377c",
-  "params_key": "70ac7b4fc6f67d4b12065d7ed879d28ae802fa0531c6b686234822ea6eff8751",
+  "params_key": "ffa4aa9eb871a4377afa5053c30c48d399cf15cff5735adaf77011a38137afbf",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

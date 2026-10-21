@@ -1,17 +1,17 @@
 {
-  "summary": "Library patron argues against termination or limiting of E-Rate funding, emphasizing its importance for maintaining affordable internet access and community services.",
+  "summary": "Library patron urges FCC to reject proposals to terminate or limit E-Rate funding for libraries and schools, emphasizing the program's critical role in providing affordable internet access and community services.",
   "stakeholder_role": "unknown",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "reject termination or limiting proposals",
+      "requested_action": "terminate or limit E-Rate funding for libraries and schools",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate funding is critical for libraries to maintain affordable internet access and community services",
-      "evidence_quote": "I urge the FCC to reject any proposal that would terminate or limit E-Rate funding for local libraries and schools.",
-      "evidence_start": 151,
-      "evidence_end": 266,
+      "argument": "Terminating E-Rate funding would force libraries to reallocate budgets to pay full price for internet, likely resulting in cuts to non-internet services",
+      "evidence_quote": "If the FCC terminates or limits E-Rate funding, libraries will be forced to reallocate their limited local budgets to pay full price for internet connectivity. Having to absorb these costs would likely result in severe budget cuts to the non-internet services, community events, and public programs that so many of us rely on.",
+      "evidence_start": 842,
+      "evidence_end": 1168,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3de4738d5391cc7b66d5ec7a1dd42f3ea1d0fe929aec7bddf20db79b5ca2232c",
-  "params_key": "3f0ab147050b0893f98b8b801a969c2b3cde259e024588c197e9524d5e14f4dd",
+  "params_key": "944730a04aec28854849fb35153f71e44ad2f9b81be4318019adf33edc70f707",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

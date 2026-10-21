@@ -1,22 +1,22 @@
 {
-  "summary": "Service provider expresses preference for using coax over fiber due to cost savings.",
+  "summary": "Providers express concerns about the cost of maintaining E-Rate services and argue for shifting focus to CIPA compliance to save money",
   "stakeholder_role": "telecom_provider",
   "claims": [
     {
-      "provision_id": "special_construction",
+      "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Restrict special construction or dark fiber",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Expensive fiber is more costly than coax",
-      "evidence_quote": "My schools can go back to coax internet to save money there.",
-      "evidence_start": 231,
+      "argument": "Providers argue that shifting focus from internet support to CIPA compliance will save money",
+      "evidence_quote": "I love the idea of erate shifting focus from supporting internet to supporting CIPA compliance.  We always thought it strange that erate required CIPA but did not support it.  My schools can go back to coax internet to save money there.",
+      "evidence_start": 55,
       "evidence_end": 291,
       "uncertain": false
     }
   ],
   "positions": {
-    "special_construction": "oppose"
+    "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110014024",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f4ac2a7be3412f130ffd75a3b3226e8c21ab01b7181950b9db119688010b3bc1",
-  "params_key": "9ff1ca62d45659b707acc4d573d36e3a00ac2f68f4e7de84aced2eb4a2aa98d2",
+  "params_key": "02895217a9fda901257b2f6add5893d79edd829ebc252f6fb6713ef70b5e4655",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

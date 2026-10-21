@@ -1,24 +1,9 @@
 {
-  "summary": "Discussion of various aspects of E-Rate program changes",
+  "summary": "The submission opposes limiting or sunsetting E-Rate to address budget constraints and ensure broadband access for schools and students.",
   "stakeholder_role": "unknown",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "Thank you for accepting this submission.",
-      "evidence_start": 0,
-      "evidence_end": 40,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110081111",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110081111",
   "filer_raw": "Lawrence Wojtecki",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "98e1c60edaf4d615ad2c6d49ae24f242054714157c771146347c3768aa46acd8",
-  "params_key": "f0308f3a6a4fa34b6c6299f7bd02b4be532ae0c8a0483d18f6f19e57de9fdea0",
+  "params_key": "697bdaf74ded769f20192e24cce1fc69e2ae52897197aa5402ff33b795db9c2e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

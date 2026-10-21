@@ -1,22 +1,22 @@
 {
-  "summary": "The Fairfield Library Association urges the FCC to preserve the E-Rate program as a vital resource for libraries serving rural communities.",
-  "stakeholder_role": "library",
+  "summary": "The Fairfield Library Association urges the FCC to preserve the E-Rate program as a vital resource for libraries serving rural communities. Libraries highlight the importance of E-Rate for providing reliable, high-speed internet at an affordable cost, enabling access to educational resources, job applications, government services, and digital skills development. The association emphasizes the program's role as a lifeline for small libraries and encourages the FCC to keep E-Rate strong, flexible,",
+  "stakeholder_role": "school_district",
   "claims": [
     {
-      "provision_id": "erate_sunset",
+      "provision_id": "erate_eligibility_scope",
       "position": "oppose",
-      "requested_action": "Preserve E-Rate program",
+      "requested_action": "Narrow eligible equipment and services",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate program is a vital resource for libraries serving rural communities",
-      "evidence_quote": "E-Rate makes it possible for us to provide reliable, high-speed internet at an affordable cost, allowing our patrons to access educational resources, apply for jobs, connect with government services, and develop essential digital skills.",
-      "evidence_start": 190,
-      "evidence_end": 427,
+      "argument": "Narrowing eligibility could increase costs for libraries",
+      "evidence_quote": "For many small libraries like ours, E-Rate is more than a funding program—it is a lifeline that helps us meet the evolving needs of our community.",
+      "evidence_start": 429,
+      "evidence_end": 575,
       "uncertain": false
     }
   ],
   "positions": {
-    "erate_sunset": "oppose"
+    "erate_eligibility_scope": "oppose"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110023440",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "389bd76f58ca81acc37016ee733748f8db4d56c367ef3875792335e3b6690b51",
-  "params_key": "b079ef932b0f1a23c3ef8480ffe0e7bf3df8a4d34c568e5da5ee9d952d74b0c7",
+  "params_key": "4851e73144e9aeaac6147ebe827f94825edebd5002a3edeec412dadf75390311",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,14 +1,14 @@
 {
-  "summary": "The public librarian emphasizes the importance of keeping e-Rate funding to ensure access to internet services for low-income citizens who rely on public libraries for job applications, communication with doctors, and other essential online services. The librarian argues that defunding e-Rate would remove a vital community resource.",
-  "stakeholder_role": "unknown",
+  "summary": "The public librarian emphasizes the importance of maintaining current e-Rate funding to ensure access to internet services for low-income citizens who rely on public libraries for job applications, communication with doctors, and other essential services.",
+  "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Maintain current funding level",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Defunding e-Rate would remove access to a vital community resource for low-income citizens nationwide",
+      "argument": "Defunding e-Rate would remove access to a vital community resource for low-income citizens",
       "evidence_quote": "Defunding e-Rate would be removing access to a vital community resource for low-income citizens nationwide.",
       "evidence_start": 307,
       "evidence_end": 414,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "3bf119bf7e92615dd71bd14aa58cfc177c332e4d3450f74d5edc0ae89529ffff",
-  "params_key": "2dd689c5eebf264e52311a7913141f86c0f643fc472aed4413c41ae25e8532f7",
+  "params_key": "6fbda12d803489c26806e963c01e5bec979d377fe52ed2663f86058840268e38",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

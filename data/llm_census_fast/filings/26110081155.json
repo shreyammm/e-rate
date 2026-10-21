@@ -1,5 +1,5 @@
 {
-  "summary": "The school district emphasizes the importance of E-Rate funding for providing reliable internet access to students and the community.",
+  "summary": "The school district emphasizes the importance of E-Rate funding for providing reliable internet access to students and the community. They oppose any changes that would reduce access or increase administrative burden. The school urges the FCC to preserve the core funding for E-Rate to support schools and libraries.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f13cfa58c3296eeac6c93f51de28a650ef50a10616ec6ce6e021bac64fb9fa85",
-  "params_key": "966edd96c3fc954aaa0dae3e2b1086f9746509183ee89312b2efcbf68348225a",
+  "params_key": "11df10a719450d4c0be20ca0dfe0c296f0f375f75935bd808bc89e794eca8859",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,6 +1,6 @@
 {
-  "summary": "The school community emphasizes the importance of affordable internet access for their educational programs and student activities. They express concern about the potential loss of funding and services if the E-Rate program were to be limited or sunset.",
-  "stakeholder_role": "school_district",
+  "summary": "The school staff expresses concern about losing low-cost Internet funding, which would impact their ability to provide portable hot spots for students and special laptops for learning. They emphasize the importance of the Internet for various educational purposes and the potential loss of programs and after-school activities if the funding were to be cut.",
+  "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "If we were to loose low cost Internet at our school we would loose so much",
+      "argument": "Losing low-cost Internet would result in losing funds for portable hot spots and special laptops.",
       "evidence_quote": "If we were to loose low cost Internet at our school we would loose so much.",
       "evidence_start": 0,
       "evidence_end": 75,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ce69add0445a4a7cd3bcb6c58c16f8538a9e1c31b657a0e5a80757e14ebb7c33",
-  "params_key": "a20a68191bcaf6063febc0aa0e340fef11436766c7ae76dc80cfbf67fd73d735",
+  "params_key": "7c1fec170166f7fc9e7f3feb7d021cceb194eb09f639c5567f57eac92d452ed3",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

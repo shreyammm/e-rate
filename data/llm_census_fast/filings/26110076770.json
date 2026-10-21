@@ -1,5 +1,5 @@
 {
-  "summary": "A school district in Loudoun County argues for preserving the current scope of the E-Rate program, citing the need to maintain connectivity support for all schools in the division. The district highlights the potential impact of narrowing eligibility on non-rural areas, which could lead to funding disparities and increased costs for local taxpayers. The district requests that the Commission preserve support for both Category 1 and Category 2 services and avoid limiting eligibility based on geogr",
+  "summary": "The Loudoun Education Foundation urges the FCC to preserve the current scope of the E-Rate program, arguing that narrowing eligibility would shift costs to local taxpayers or classroom budgets. The organization highlights the current eligibility for both Category 1 and Category 2 services and requests that the Commission maintain this level of support.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Narrow eligible equipment and services",
       "reason_family": "access_affordability_equity",
       "claim_kind": "alternative_design",
-      "argument": "Narrowing eligibility would exclude non-rural schools from receiving E-Rate support",
-      "evidence_quote": "We are asking to keep what we have.",
-      "evidence_start": 1184,
-      "evidence_end": 1219,
+      "argument": "Narrowing eligibility would shift costs to local taxpayers or classroom budgets",
+      "evidence_quote": "If that support were narrowed or eliminated, those costs would not disappear. They would shift to local taxpayers or come out of classroom budgets.",
+      "evidence_start": 394,
+      "evidence_end": 541,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "cc96649fb70977c98da3679a9077cb310aca29e28c73a507b786bd8405bc3c8e",
-  "params_key": "5096e9d6fb1da916f97812c618b554e3d017bab07e4ddf20332136780e4b703b",
+  "params_key": "a27e372d5d4ed82eb24734e38eb45c299106f07e10c209b3dc5c3c21f93b50d9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

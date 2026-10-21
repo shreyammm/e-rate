@@ -1,5 +1,5 @@
 {
-  "summary": "The FCC comment opposes any reduction in E-Rate funding or increased administrative burden for libraries, emphasizing the importance of libraries as a vital source of electronic access for the community.",
+  "summary": "The FCC comment opposes any reduction in funding or increased administrative burden on E-Rate funding for libraries, emphasizing the importance of libraries as a vital resource for maintaining access to electronic systems for the community.",
   "stakeholder_role": "unknown",
   "claims": [],
   "positions": {},
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "edb6fa02dd4f95be43b8742c0fc3c94761da8cba9354c986121a50c2161b6667",
-  "params_key": "6236ba659addb53bf442431bd4136f9af0b3ffd339c29f30718658278e5075c1",
+  "params_key": "5ef6d33176fcf35c4338326e2277435bd24ff09484aff4ff3ca15f9518ec16d9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

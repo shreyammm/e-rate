@@ -8,10 +8,10 @@
       "requested_action": "preserve E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Cutting E-Rate would shift costs onto local budgets and divert resources away from students",
-      "evidence_quote": "I respectfully urge the Commission to preserve E-Rate as a nationwide program serving all eligible schools and libraries.",
-      "evidence_start": 670,
-      "evidence_end": 791,
+      "argument": "E-Rate has made significant technology investments possible",
+      "evidence_quote": "E-Rate has made it possible for us to make significant technology investments that would otherwise have been out of reach for our budget, and those investments are the foundation of how our students learn and how our teachers teach every day.",
+      "evidence_start": 216,
+      "evidence_end": 458,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "24d30f8fd7d0fcfcee74b41a9f940320d69c5241f87c9ebdb434587d9d792085",
-  "params_key": "02d8e8733edc0c0e83a921fff4cc5b4e946b8deaa3d38f5587a0e03c2ea48cda",
+  "params_key": "e8a17b4b3a95b9e3305d39bfd83e405080f419459b4a512a940e960f2aa1343e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

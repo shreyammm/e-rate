@@ -1,5 +1,5 @@
 {
-  "summary": "The school district emphasizes the critical role of E-Rate funding in providing essential broadband infrastructure for rural students, highlighting its importance in ensuring equitable access to digital education and resources.",
+  "summary": "The comment emphasizes the critical role of E-Rate funding in providing broadband access to rural school districts, highlighting its importance in ensuring equitable education access for students.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate funding is not merely a supplementary financial resource; it is the fundamental lifeline that bridges the digital divide and guarantees students equitable access to a 21st-century education.",
+      "argument": "E-Rate funding is a critical lifeline for rural school districts, enabling them to bridge the digital divide and provide essential broadband services.",
       "evidence_quote": "For our rural school district, E-Rate funding is not merely a supplementary financial resource; it is the fundamental lifeline that bridges the vast digital divide and guarantees our students equitable access to a 21st-century education.",
       "evidence_start": 0,
       "evidence_end": 237,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "6e743d3c5be2d05bc66530717ecccb372206d5b876876100558fe3e69095f7af",
-  "params_key": "f75b2b302491f80e21d12cbfe819fc57cca5f0f630b83cdac9e7a89407a96ffc",
+  "params_key": "dff5063e64dff26df3e7bb0493c558721bf77e65dc63c9d72a90bf260537802e",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

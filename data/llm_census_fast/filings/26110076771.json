@@ -1,9 +1,24 @@
 {
-  "summary": "The comments emphasize parental rights over their children's tech use in schools, advocating for opt-out mechanisms for various forms of technology use, including AI, standardized testing, and social media, to protect parental autonomy and ensure that educational technology is independent and verified.",
-  "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "summary": "Parents argue for parental opt-out rights on AI use, screen-based instruction, and social media use for student tech.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "Require parental opt-out for screen-based instruction and social media use",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Parents should have the right to opt-out of any AI use",
+      "evidence_quote": "- Parents should have the right to opt-out of any AI use,",
+      "evidence_start": 74,
+      "evidence_end": 131,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "parent_opt_out": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110076771",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110076771",
   "filer_raw": "Remi",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "1eca477544f0735c1f0111babae02ae2037c3dbb4f8c6b7a0dd658e7f74f8e68",
-  "params_key": "cfe789b1a26f1e07fe295419d133f16c352206a9acd542e037f51c1c6c6edf8f",
+  "params_key": "a8c5d44bc7801710cc6b8644dcd6eb17269184c064c3fb08089175d26e84a943",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

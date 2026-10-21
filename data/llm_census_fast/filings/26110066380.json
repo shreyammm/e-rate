@@ -1,24 +1,9 @@
 {
-  "summary": "Librarian argues against termination of E-Rate, emphasizing its importance for school and library budgets and network upgrades.",
+  "summary": "A librarian at the Crystal Lake Public Library urges the FCC to reject proposals to terminate the E-Rate program, emphasizing the program's critical role in supporting school and library budgets and network upgrades.",
   "stakeholder_role": "school_staff",
-  "claims": [
-    {
-      "provision_id": "erate_sunset",
-      "position": "oppose",
-      "requested_action": "reject proposal to terminate E-Rate",
-      "reason_family": "budget_cost_efficiency",
-      "claim_kind": "cost_or_savings",
-      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing network upgrades",
-      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
-      "evidence_start": 630,
-      "evidence_end": 772,
-      "uncertain": false
-    }
-  ],
-  "positions": {
-    "erate_sunset": "oppose"
-  },
-  "invalid_claims_rejected": 0,
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 1,
   "submission_id": "26110066380",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110066380",
   "filer_raw": "Kathryn R Meyers",
@@ -26,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "20747b2fb446ef9bb1d9d9ae8218bb93e0cc8029180c80e868da64a357720433",
-  "params_key": "b9e24a234ab1772af71a304c89ef71ba95f1ea069400f3f31f4f7e8574ce1679",
+  "params_key": "744e489141d1bbcf30fa30e8e2fb2bbe4cecf8f69c6073a6acffa800c7276578",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

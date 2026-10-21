@@ -1,5 +1,5 @@
 {
-  "summary": "The comment opposes tying E-Rate decisions to screen-time conditions, citing concerns about educational safety and the impact on schools' ability to protect children online if funding is reduced.",
+  "summary": "The comment opposes tying E-Rate decisions to screen-time limits due to potential cost implications and concerns about the impact on school safety and funding.",
   "stakeholder_role": "school_staff",
   "claims": [
     {
@@ -7,8 +7,8 @@
       "position": "oppose",
       "requested_action": "Condition E-Rate on screen-time limits",
       "reason_family": "other",
-      "claim_kind": "empirical_claim",
-      "argument": "Screen-time limits are needed to ensure educational safety and effectiveness.",
+      "claim_kind": "cost_or_savings",
+      "argument": "Screen-time limits would impose additional costs on schools",
       "evidence_quote": "--screens are often used as rewards and babysitters, which is not educational\n--if the E-rate subsidy goes away, children very likely will be less safe online, and schools (which are already underfunded) will have less ability to protect kids.",
       "evidence_start": 148,
       "evidence_end": 391,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "6db8ad5d9624fcefa4b146865c3e7cac3ea53722d7989b89925a5b54c22de593",
-  "params_key": "3317802268276eb005e2f6e38e09816a7de1b954663e7e70e94580f526c75041",
+  "params_key": "196e04b6f488a3fd168b094938bcf7c82539c44d18c69f142272c53673c88655",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

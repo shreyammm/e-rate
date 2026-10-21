@@ -1,14 +1,14 @@
 {
-  "summary": "The comment opposes the sunset of E-Rate support, citing budgetary impacts on schools and libraries.",
+  "summary": "The comment emphasizes the importance of E-Rate for schools and libraries, arguing that terminating it would lead to budget cuts and negatively impact services. It cites the need for affordable, reliable internet access for students and patrons.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Terminate E-Rate support",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Terminating E-Rate support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "argument": "Terminating E-Rate represents a cut to school and library budgets, jeopardizing years of progress building and upgrading networks.",
       "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
       "evidence_start": 102,
       "evidence_end": 244,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "d7cd704216f1c365522268a4c928586c643fd42743a4c31a6111e6241a4776b0",
-  "params_key": "d29de080b7f9695175370ae364e1a5648708e11b63c7facaad7e6ec32651a92e",
+  "params_key": "311146efc673057dd97feb280dbbe4e9cf5b57b92eb8a24d37184598fa5c32cf",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

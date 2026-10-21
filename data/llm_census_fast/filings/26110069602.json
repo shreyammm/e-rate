@@ -1,9 +1,24 @@
 {
-  "summary": "The claim opposes any restriction or removal of E-Rate funding, emphasizing the importance of maintaining the program in providing filtered internet access for students.",
+  "summary": "The claim opposes any restriction or removal of E-Rate funding, emphasizing the importance of maintaining school internet connectivity for supervision and instruction.",
   "stakeholder_role": "school_district",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
+      "evidence_quote": "I strongly oppose any restriction or removal of E-Rate funding. Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
+      "evidence_start": 3,
+      "evidence_end": 216,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110069602",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110069602",
   "filer_raw": "Krystal Lovato",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5cd8d3821c0f2f807f2aab7095d8db1f5be71a0160c65db0002ac515a7646a4a",
-  "params_key": "a65673797cf3e51489ff14d89405644e9bbc0e3665c780132c8f4fe979da0903",
+  "params_key": "2ae6e22b232e86c7f59334de59bbd338a09a1521dc136efac6d2c1c001248eac",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,5 +1,5 @@
 {
-  "summary": "The comment highlights the importance of E-Rate funding for rural libraries to provide internet access to patrons. The comment opposes limiting or sunsetting E-Rate funding, citing the significant impact on library budgets and internet access for communities.",
+  "summary": "The comment highlights the importance of E-Rate funding for rural libraries to provide internet access to their communities, emphasizing the potential negative impact of losing funding on library budgets and internet access for patrons.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,10 +8,10 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Many of the rural libraries in our region use erate to cover their internet costs",
-      "evidence_quote": "Many of the rural libraries in our region use erate to cover their internet costs, not just for them but for their communities.",
+      "argument": "Many of the rural libraries in our region use erate to cover their internet costs, not just for them but for their communities. This ensures patrons in those areas have access, not only to the library, but to the internet. Losing erate funding would not only create major problems with already stretched library budgets, but remove internet access for patrons",
+      "evidence_quote": "Many of the rural libraries in our region use erate to cover their internet costs, not just for them but for their communities. This ensures patrons in those areas have access, not only to the library, but to the internet. Losing erate funding would not only create major problems with already stretched library budgets, but remove internet access for patrons",
       "evidence_start": 0,
-      "evidence_end": 127,
+      "evidence_end": 359,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "7540af73d28035c3e9fdf00a6437fe94e36bdedf714ee3865db90fba2df0c42d",
-  "params_key": "a6d4866a3f52781d35cf06f4d34e280ef3a903458112c31ecdfe32d4b6d150f8",
+  "params_key": "f3ce8397755cc998d6a8948eb867cde2851684af886b2c26eb6f41ee62b1131f",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

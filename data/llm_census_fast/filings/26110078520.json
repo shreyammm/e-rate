@@ -1,5 +1,5 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
+  "summary": "The comment opposes limiting or sunsetting E-Rate, citing potential increased costs for schools and libraries.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
       "evidence_quote": "Do not remove Internet access from ANY public school or library regardless of financial ability.",
       "evidence_start": 0,
       "evidence_end": 96,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "ae7a6a693415cfbe537fdf97e9235c25707e7476d9075d6198ab74df18d56ea8",
-  "params_key": "4087f55ba762cfcd3d4b5f43373abd05e7283ea5d2565a16c6bd09a4c9c3ab0e",
+  "params_key": "379c8db566c12747bf13809f8488c29d499aa47b2dfb6cb058ffe8fe3851e601",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

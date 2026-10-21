@@ -1,5 +1,5 @@
 {
-  "summary": "The E-rate program is an essential component of bridging the digital divide; access to these services save lives in countless ways.",
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing its importance in providing essential broadband services and saving lives.",
   "stakeholder_role": "unknown",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
       "evidence_quote": "The E-rate program is an essential component of bridging the digital divide; access to these services save lives in countless ways.",
       "evidence_start": 0,
       "evidence_end": 131,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "694c140b9de5a0c3f776268d0bb58d731051c4b44d7d764b592bc9e8daeeeadb",
-  "params_key": "0932ab9698acd9351c368ba914c0dfa00631ec2a4f2e3196f5aa0ec6d08972ab",
+  "params_key": "80e155faff6220400c3e0e2f4ab2df171f24e1399e7da1abc970c66cef917bba",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

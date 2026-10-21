@@ -1,9 +1,24 @@
 {
-  "summary": "The comment expresses opposition to limiting or sunsetting E-Rate, arguing that it could lead to increased costs for schools and libraries.",
+  "summary": "The comment opposes allowing parents to opt-out of screen-based instruction, emphasizing the importance of parental involvement in their children's education.",
   "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "Allow parents to opt-out of screen-based instruction",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents should have full access to their children's educational content",
+      "evidence_quote": "Parents must be allowed to be informed, to give consent and to have full access to all that their child may see, hear, or be in the presence of.",
+      "evidence_start": 0,
+      "evidence_end": 144,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "parent_opt_out": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110077949",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077949",
   "filer_raw": "Kathy Kalafut | Sheila Modglin",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "93001bfa1c46f544fd1235d8117ab55fea37786c797e35572d9446963611331c",
-  "params_key": "933d2574d28a50f2a4082d74558f23ff071959c1fc65a319d1f784d785371636",
+  "params_key": "87b6678f5b4d8c53bd4f20600023c44527f4a7b4de93684c8d7b5b264aa6bda2",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

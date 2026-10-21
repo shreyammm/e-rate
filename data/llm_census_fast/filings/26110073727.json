@@ -1,14 +1,14 @@
 {
-  "summary": "The claim expresses strong support for maintaining the E-Rate program to ensure essential broadband infrastructure for schools and libraries, despite skepticism about digital technologies in schools.",
-  "stakeholder_role": "unknown",
+  "summary": "The claim expresses strong support for continuing to fund and maintain the E-Rate program, emphasizing its essential role in providing necessary internet access during budget strain.",
+  "stakeholder_role": "school_staff",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Limit or sunset E-Rate",
+      "requested_action": "Continue funding and maintaining the E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Limiting or sunsetting E-Rate would eliminate funding for essential broadband infrastructure",
+      "argument": "Funding is essential for maintaining necessary infrastructure during budget strain",
       "evidence_quote": "Please continue to fund and maintain this program. Help our school maintain their essential infrastructure.",
       "evidence_start": 1185,
       "evidence_end": 1292,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "87e9d9e33ba8111b1b950cff1239553bd60dcf08dfce5ce060646b1aa5ef2494",
-  "params_key": "624f773decec5321f62ecec8c04ffd2afbd87036cc905fcda23a243780c4a4d8",
+  "params_key": "2408f2779f0213dd7c3f14e44574564a24556e41861f713f838e4c2221f75753",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

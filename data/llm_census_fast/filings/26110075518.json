@@ -1,17 +1,17 @@
 {
-  "summary": "Discussion on various aspects of the E-Rate program including funding, eligibility, and implementation",
+  "summary": "The e-rate program provides valuable funds to numerous school districts including Meridian 223 and these funds are valuable so that students have good internet access. Please continue to fund the program.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Continue funding the program",
+      "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "The e-rate program provides valuable funds to numerous school districts including Meridian 223 and these funds are valuable so that students have good internet access.",
-      "evidence_start": 0,
-      "evidence_end": 167,
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for school districts",
+      "evidence_quote": "Please continue to fund the program.",
+      "evidence_start": 168,
+      "evidence_end": 204,
       "uncertain": false
     }
   ],
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "02621174aa56964fe1c9fa366717fb8267cf4d5729df2dcd9fedb20295c30e26",
-  "params_key": "47568dcdb5471f6bf43aa5722d8a2f365b4a7ec40f9cf880cc6090648725af13",
+  "params_key": "c728b331f299cf69cc642ab3240300713de548aa5428ba72f832f943b8d07c80",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

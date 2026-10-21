@@ -1,10 +1,10 @@
 {
-  "summary": "E-Rate program is maintained to ensure affordable broadband and Wi-Fi access for schools and libraries, preserving $237,000 in savings annually and supporting educational institutions' connectivity needs.",
+  "summary": "E-Rate program is crucial for schools and libraries, providing cost savings and connectivity. Preservation is recommended.",
   "stakeholder_role": "school_district",
   "claims": [
     {
       "provision_id": "erate_sunset",
-      "position": "oppose",
+      "position": "support",
       "requested_action": "Maintain E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
@@ -16,7 +16,7 @@
     }
   ],
   "positions": {
-    "erate_sunset": "oppose"
+    "erate_sunset": "support"
   },
   "invalid_claims_rejected": 0,
   "submission_id": "26110079593",
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f494105341d06f223ba7656e00b7c842d06dcfb2f716400192dab6c2b875161b",
-  "params_key": "4e9321864942592e590004bf9c8af33a54d6e38fec08c9c7c5864aeaa0d58c55",
+  "params_key": "0af5e806a20635be954786f3f4b56c9ecaf95033c4d923d12b8955d428b10f91",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

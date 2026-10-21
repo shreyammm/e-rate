@@ -1,5 +1,5 @@
 {
-  "summary": "The school districts emphasize the critical role of E-Rate in funding connectivity and infrastructure improvements, highlighting the financial strain of limited budgets and outdated infrastructure. They express concern that reducing E-Rate funding would exacerbate these issues and hinder educational progress.",
+  "summary": "The school districts emphasize the critical role of E-Rate in funding essential technology infrastructure and connectivity for their schools. They express concern that limiting or sunsetting E-Rate would have a devastating impact on their ability to provide necessary services and maintain modern infrastructure.",
   "stakeholder_role": "school_district",
   "claims": [
     {
@@ -8,7 +8,7 @@
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "E-Rate has been essential for the school districts to fund connectivity and infrastructure, and limiting its scope would lead to significant budget shortfalls.",
+      "argument": "E-Rate has been essential for the school districts to fund connectivity and infrastructure, and limiting its funding will have a significant impact on their ability to provide essential services.",
       "evidence_quote": "E-Rate has been essential for the school districts we support to fund not only Internet connectivity, but building wiring updates, and network hardware refresh cycles.",
       "evidence_start": 0,
       "evidence_end": 167,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "6bf5082acebd5ff07a0edb04789119b0d99bf3c4384541341936adc6eb920674",
-  "params_key": "d2c2eed87e7c1e61cedc5ab0dd627296e940db9ad492c2c25649957f3366cd66",
+  "params_key": "e74a040c9726c6ae4dd1571e82300c3732e8da832257b1c3a4ad0149a6a7d8fb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

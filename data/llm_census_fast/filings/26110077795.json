@@ -1,6 +1,6 @@
 {
-  "summary": "The comment highlights concerns about the impact of E-Rate on budgeting and cost efficiency, as well as the need for parents to have the option to opt-out of screen-based instruction for their children.",
-  "stakeholder_role": "parent_guardian",
+  "summary": "The comment highlights concerns about the lack of parental control over screen time for students and the potential educational benefits of non-digital learning methods. It opposes tying E-Rate decisions to educational outcomes that limit parental autonomy and opt-out options.",
+  "stakeholder_role": "unknown",
   "claims": [],
   "positions": {},
   "invalid_claims_rejected": 1,
@@ -11,9 +11,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "8e056d03de4d8e4cbdae37d2ab4b5b696b3083fbfe7fd7fe004e1983c837b4d2",
-  "params_key": "0170b98e70e9c089809f21acbfc2d46b10a98bbb3e8209a8b9349a8f0390717f",
+  "params_key": "5ffe1c6c5dc0864762cd1474d9b12bb7d1924c4110b449d0475029a259fea922",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -5,10 +5,10 @@
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Eliminate or reduce E-Rate funding",
+      "requested_action": "Limit or sunset E-Rate program",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Potential federal cuts to E-Rate would force York Suburban School District to fully absorb the cost of essential internet infrastructure, threatening funding for academic programs",
+      "argument": "Eliminating federal E-Rate subsidies would force the district to fully absorb technology costs locally, threatening funding for academic programs",
       "evidence_quote": "If federal E-Rate subsidies for essential internet infrastructure are eliminated or reduced, York Suburban will be forced to fully absorb these vital technology costs locally.",
       "evidence_start": 340,
       "evidence_end": 515,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "a51088b430e170627f940875152c1680905d72abeed0fef9bc5714de6d52577f",
-  "params_key": "cdb69759ec3a9a7deb33ef20640722c4155fd0320698e0fc7b0383032872d17e",
+  "params_key": "48a4e51603c0cfcd93691482cab98cfc7685abe37c5a553f834dbb9e88dc2af4",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

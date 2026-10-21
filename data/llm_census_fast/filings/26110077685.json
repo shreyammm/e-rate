@@ -5,10 +5,10 @@
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
-      "requested_action": "Preserve core funding and avoid changes",
+      "requested_action": "Preserve core funding and avoid sunset",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "Without E-rate funding, schools may not be able to provide reliable network infrastructure",
+      "argument": "Without E-rate funding, schools may not be able to maintain network infrastructure",
       "evidence_quote": "Without this funding, without E-rate funding, we may not be able to continue to provide the reliable network that we have currently in place.",
       "evidence_start": 692,
       "evidence_end": 833,
@@ -26,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "5995d81a42a298a1c58908693b5033fe6dc7c3afe017e30b489303427176b5be",
-  "params_key": "f653b133ae578e6b13985ce62e77ccb94f1774f1fb35c86cb9d9ac2da11f96c3",
+  "params_key": "0eca4d07eb01511adc56ca14b90606e4c86c0a7bd10abfc01deb449fc63f01eb",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

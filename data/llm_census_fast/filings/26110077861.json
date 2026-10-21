@@ -1,9 +1,24 @@
 {
-  "summary": "Discussion on various aspects of E-Rate program changes",
+  "summary": "The comment expresses opposition to limiting or sunsetting E-Rate, arguing that it is essential for maintaining broadband access and affordability.",
   "stakeholder_role": "unknown",
-  "claims": [],
-  "positions": {},
-  "invalid_claims_rejected": 1,
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "This was never a problem when I was growing up.",
+      "evidence_start": 0,
+      "evidence_end": 47,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
   "submission_id": "26110077861",
   "source_url": "https://www.fcc.gov/ecfs/filing/26110077861",
   "filer_raw": "Parents should be able to understand how online content is evaluated by schools, what types of material are restricted or permitted, and how parents can raise concerns.",
@@ -11,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "f06b0166ae6253b1b09082678cfcd12ef97c89f88de9e0a431597e793773c030",
-  "params_key": "78f820b1b5a2481a76234a655392135cfc2ad04676462ef2b4a92f8b09d8a7b4",
+  "params_key": "5af36a5f0eb83f1a9cf2e4dbadc8dab04138bdcb0006f7c1ee042b97f2c6afb9",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }

@@ -1,47 +1,21 @@
 {
-  "summary": "The stakeholder opposes changes to the E-Rate system, citing concerns about budget costs, access to broadband, and privacy implications.",
+  "summary": "The comment opposes any changes to the current E-Rate system, particularly the potential limit or sunset of the program, citing concerns about increased costs for libraries.",
   "stakeholder_role": "unknown",
   "claims": [
-    {
-      "provision_id": "consultant_registration",
-      "position": "oppose",
-      "requested_action": "Individual consultant registration database",
-      "reason_family": "administrative_burden",
-      "claim_kind": "implementation_burden",
-      "argument": "",
-      "evidence_quote": "I do not support any changes to the current e-rate system for libraries",
-      "evidence_start": 0,
-      "evidence_end": 71,
-      "uncertain": false
-    },
-    {
-      "provision_id": "education_outcomes",
-      "position": "oppose",
-      "requested_action": "Tie E-Rate decisions to educational outcomes",
-      "reason_family": "education_effectiveness",
-      "claim_kind": "empirical_claim",
-      "argument": "",
-      "evidence_quote": "I do not support any changes to the current e-rate system for libraries",
-      "evidence_start": 0,
-      "evidence_end": 71,
-      "uncertain": false
-    },
     {
       "provision_id": "erate_sunset",
       "position": "oppose",
       "requested_action": "Limit or sunset E-Rate",
       "reason_family": "budget_cost_efficiency",
       "claim_kind": "cost_or_savings",
-      "argument": "",
-      "evidence_quote": "I do not support any changes to the current e-rate system for libraries",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for libraries",
+      "evidence_quote": "I do not support any changes to the current e-rate system for libraries.",
       "evidence_start": 0,
-      "evidence_end": 71,
+      "evidence_end": 72,
       "uncertain": false
     }
   ],
   "positions": {
-    "consultant_registration": "oppose",
-    "education_outcomes": "oppose",
     "erate_sunset": "oppose"
   },
   "invalid_claims_rejected": 0,
@@ -52,9 +26,12 @@
   "has_unreviewed_ocr": "0",
   "agency_record_candidate": "0",
   "source_sha256": "9ccb2d3fcb757334fd2adf588a25e5d5f8b27b0de32c5d77c4ee77be962f2ecb",
-  "params_key": "f42c94c0442a209f4cbff17b2a92fe354418adb6d336f8959809a064955920d5",
+  "params_key": "1f07e3253a315a8090c52187e9b41d5a6da06af954c5a2f1436995de78631458",
   "model": "ibm/granite4:1b-q4_K_M",
   "chunk_count": 1,
   "review_status": "unvalidated_machine_inference",
-  "status": "complete"
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
 }
