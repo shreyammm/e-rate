@@ -61,6 +61,31 @@ class ArgumentFirstTests(unittest.TestCase):
             self.assertEqual(sum(counts),family["filings_with_language"])
             self.assertTrue(all(0<=n<=population["filings"] for n,population in zip(counts,census["roles"])))
 
+    def test_open_ended_full_text_topics_if_published(self):
+        page=(DOCS/"atlas.html").read_text()
+        js=(DOCS/"assets"/"argument_atlas.js").read_text()
+        self.assertIn('id="open-discovery"',page)
+        self.assertIn("open_topics.json",js)
+        self.assertIn("loadOpenDocumentTopics",js)
+        path=DOCS/"data"/"open_topics.json"
+        if not path.exists():
+            return  # A missing pending artifact must never be fabricated in the UI.
+        payload=json.loads(path.read_text(encoding="utf-8"))
+        census=json.loads((DOCS/"data"/"exhaustive_census.json").read_text())
+        self.assertEqual(payload["source_filings_scanned"],census["coverage"]["filings"])
+        self.assertEqual(payload["readable_filings"],census["coverage"]["filings_with_text"])
+        self.assertEqual(payload["topics_count"],len(payload["topics"]))
+        self.assertGreater(payload["topics_count"],8)
+        self.assertGreater(payload["fit_documents_after_exact_duplicate_and_filer_cap"],100)
+        for topic in payload["topics"]:
+            self.assertGreaterEqual(topic["assigned_filings"],topic["unique_exact_texts"])
+            self.assertLessEqual(topic["assigned_filings"],payload["source_filings_scanned"])
+            self.assertLessEqual(topic["largest_filer_name_share"],1.0)
+            for quote in topic["illustrative_quotes"]:
+                self.assertTrue(quote["quote"])
+                self.assertEqual(quote["source_url"],
+                    "https://www.fcc.gov/ecfs/filing/"+quote["id"])
+
     def test_atlas_does_not_use_llm_syntheses_as_corpus_facts(self):
         js=(DOCS/"assets"/"argument_atlas.js").read_text()
         for needed in ("landscape.language_themes","topic_terms","e.quote","repeatRisk",
