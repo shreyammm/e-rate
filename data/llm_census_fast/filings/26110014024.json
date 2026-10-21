@@ -1,0 +1,34 @@
+{
+  "summary": "Service provider expresses preference for using coax over fiber due to cost savings.",
+  "stakeholder_role": "telecom_provider",
+  "claims": [
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Restrict special construction or dark fiber",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Expensive fiber is more costly than coax",
+      "evidence_quote": "My schools can go back to coax internet to save money there.",
+      "evidence_start": 231,
+      "evidence_end": 291,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110014024",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110014024",
+  "filer_raw": "Carl Sterling",
+  "date_submission": "2026-07-13T15:11:17.553Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f4ac2a7be3412f130ffd75a3b3226e8c21ab01b7181950b9db119688010b3bc1",
+  "params_key": "9ff1ca62d45659b707acc4d573d36e3a00ac2f68f4e7de84aced2eb4a2aa98d2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

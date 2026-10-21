@@ -1,0 +1,34 @@
+{
+  "summary": "The comment urges the FCC to preserve E-Rate funding for public libraries, emphasizing the importance of libraries as community resources and the impact of restricting funding on communities facing digital access barriers.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Restricting funding would place an additional burden on communities already facing barriers to digital access",
+      "evidence_quote": "I am writing to urge the FCC to preserve E-Rate funding for internet access in public libraries.\n\nPublic libraries are essential community resources, providing free access to information, education, employment opportunities, and vital public services. For many Americans, particularly those with limited incomes, library internet access is a necessity.",
+      "evidence_start": 0,
+      "evidence_end": 352,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080728",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080728",
+  "filer_raw": "Jolie C. Nordstrom",
+  "date_submission": "2026-10-12T21:11:25.620Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7d5a49746e0dbd7ca6421b4f00ace3e1d13cd42277e5fea15c001b9cbab37399",
+  "params_key": "cbebbff2fd93962eb82dd841768964d6fb0ab07adc3e6bf6fad19100f74c6d99",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

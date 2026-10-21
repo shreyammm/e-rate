@@ -1,0 +1,34 @@
+{
+  "summary": "The comment supports preserving E-Rate funding to address financial challenges faced by Oxford Community Schools and the need for reliable internet connectivity for various school operations. It cites the potential impact of reduced funding on budgeting and resource allocation.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing funding would add to financial challenges faced by school districts.",
+      "evidence_quote": "If the millage fails in November, we will need to reduce approximately $7 million from our 2027–28 budget. Losing E-Rate support would add to these challenges, forcing us to redirect limited resources from other student needs just to maintain services we already depend on.",
+      "evidence_start": 536,
+      "evidence_end": 809,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080311",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080311",
+  "filer_raw": "Tonya Milligan",
+  "date_submission": "2026-10-09T17:51:21.050Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4743af2515b860e27e2a361e6b897b815f6f5fd251256e93a597d3d4c589e99e",
+  "params_key": "bc32551b84a16d5bfa5fee95b0fd458c158a4bd6fc952bfd586ba9c1b1b07446",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

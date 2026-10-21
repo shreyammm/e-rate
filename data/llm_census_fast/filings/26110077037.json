@@ -1,0 +1,34 @@
+{
+  "summary": "The individual expresses concerns about the use of generative AI in schools and the lack of parental consent, while also advocating for the continuation of E-Rate funding to support educational needs.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access in schools",
+      "evidence_quote": "Last year, I opted my children out of their school-issued Chromebooks after Gemini began speaking to my middle schooler, unprompted. It offered to do his homework for him. As a therapist in private practice who has seen firsthand what relational AI can do to children, that was enough for me.",
+      "evidence_start": 0,
+      "evidence_end": 292,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077037",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077037",
+  "filer_raw": "Julie Frumin",
+  "date_submission": "2026-09-18T21:28:54.179Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9d54b16338261beb83793312bc62a0204af7b36a195cee00ecde0e08ebefa46b",
+  "params_key": "41ff597f53c9d1d17b2d601a05255a8d16d48b9f4c200ca17cde04dcc039190d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

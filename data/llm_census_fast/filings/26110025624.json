@@ -1,0 +1,34 @@
+{
+  "summary": "The administrator for Pratt Public Library expresses strong opposition to proposals that would limit or sunset E-Rate funding, emphasizing the critical role of E-Rate in providing essential digital access for rural communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Proposals would restrict E-Rate funding, placing an unsustainable financial burden on libraries.",
+      "evidence_quote": "For rural libraries like ours, E-Rate is not an optional luxury; it is a vital lifeline. We serve as the primary digital access point for our community, bridging the digital divide for patrons who rely on us for job applications, homework, remote work, and essential services. Narrowing the scope of E-Rate funding—particularly for internal connections or network infrastructure—will place an unsustainable financial burden on our local budget and directly compromise our ability to provide robust, reliable internet access.",
+      "evidence_start": 299,
+      "evidence_end": 823,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110025624",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110025624",
+  "filer_raw": "Pratt Public Library (Eric Scott Killough, Director)",
+  "date_submission": "2026-07-17T14:43:05.419Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ed009b6645c257f2d87855e7983ffa42985f86ac1daa38e71a59cd6ee27839ee",
+  "params_key": "491a133a6007f281c8196bc74748d535319f011cd7bc9dc3426ff56f98b2523b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

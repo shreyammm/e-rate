@@ -1,0 +1,34 @@
+{
+  "summary": "The school library advocates for preserving the core E-Rate funding to maintain affordable internet services for schools and libraries, emphasizing the importance of the program for students, patrons, and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding and avoid sunset",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If funding were reduced or lost, delay and/or scrap building maintenance.",
+      "evidence_quote": "If this funding were reduced or lost, delay and/or scrap building maintenance.",
+      "evidence_start": 529,
+      "evidence_end": 607,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075437",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075437",
+  "filer_raw": "Sue Dossey",
+  "date_submission": "2026-09-03T16:15:49.828Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aefedd138475c9fe321646db9ade92df78e090d32d8e43c275f7341cfbabee59",
+  "params_key": "d47df3a1b5afbc43366ecd3de4ab98d5bff6e7496bb7dd821d684a796fd1da4b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The text argues against scaling back or eliminating the E-Rate Program, emphasizing its importance for providing access to digital infrastructure for various communities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate Program is crucial for providing access to digital infrastructure",
+      "evidence_quote": "The E-Rate Program is a crucial resource and should not be scaled back or eliminated.",
+      "evidence_start": 0,
+      "evidence_end": 85,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076044",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076044",
+  "filer_raw": "Jane Stimpson",
+  "date_submission": "2026-09-09T14:39:42.772Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ec8fd58ed1335f2a50cb81eb59f656df5aeb2ad32b07d45e2b797664241ea43b",
+  "params_key": "47bc5e6e5961c3fb69542dbda63a08518248df0489579df63aaa0b491f67a396",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

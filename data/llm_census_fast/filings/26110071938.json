@@ -1,0 +1,34 @@
+{
+  "summary": "Live Oak Public Library urges the FCC to preserve E-Rate's core funding and support for schools and libraries, emphasizing the critical role of E-Rate in providing reliable, affordable connectivity for students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, libraries would have to reduce hours and services to cover the difference",
+      "evidence_quote": "Without this funding, if e-rate were lost, we would have to reduce hours and other services to cover the difference.",
+      "evidence_start": 635,
+      "evidence_end": 751,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071938",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071938",
+  "filer_raw": "MaryBeth Deiters",
+  "date_submission": "2026-08-17T22:11:32.426Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d92863a6c0969138a075e42c53709f3144b3983aaffa7679735c5e9928037311",
+  "params_key": "148ccf5b5c91ca51764a8a123733dba8a910289a7fbedf22b49314df9168538f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

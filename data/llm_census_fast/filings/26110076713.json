@@ -1,0 +1,34 @@
+{
+  "summary": "The network technician for a local school district explains the critical role of E-Rate in maintaining the network infrastructure for their school, emphasizing the potential catastrophic impact of losing funding on the reliability, capability, and responsiveness of the network, which is essential for various educational and operational functions.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate funding was lost, budgets would thin, equiptment would be pushed till failure, and staff would be lost, reducing reliability, capability, and responsiveness in a world of ever-accelerating technology.",
+      "evidence_quote": "If E-Rate funding was lost, budgets would thin, equiptment would be pushed till failure, and staff would be lost, reducing reliability, capability, and responsiveness in a world of ever-accelerating technology.",
+      "evidence_start": 585,
+      "evidence_end": 795,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076713",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076713",
+  "filer_raw": "Camden McCroskey",
+  "date_submission": "2026-09-15T18:34:12.681Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d3e9f0297aee55580c95b990f89ca2c5348bfd33a8043fc69a1866add6a3693e",
+  "params_key": "9b5a84990364783c219171ecb3c302cedbb502b7947c2ade22a970ecddc503b7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

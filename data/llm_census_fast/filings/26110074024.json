@@ -1,0 +1,34 @@
+{
+  "summary": "Seacoast Christian Academy urges the FCC to preserve E-Rate's core funding and support for schools and libraries to maintain reliable internet, security, and instruction.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, internet, security, and instruction would be compromised",
+      "evidence_quote": "Without this funding, our internet, security, and classroom instruction would all be compromised.",
+      "evidence_start": 547,
+      "evidence_end": 644,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074024",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074024",
+  "filer_raw": "Seacoast Christian Academy",
+  "date_submission": "2026-08-31T19:56:32.352Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f01865fa3402812668bd8e5b245f797d9173670b975652e5dc822c682e63f648",
+  "params_key": "18c92cfa15e763d35bbd45cc9cd7adf6d1b6bc0d633f88b4c092193f73cd67bb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

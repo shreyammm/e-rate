@@ -1,0 +1,34 @@
+{
+  "summary": "The comments emphasize the importance of preserving E-Rate funding to ensure access to free internet for students, staff, and the community, particularly for those with limited income. The comments highlight the negative impact of cutting E-Rate on individuals and communities, including seniors accessing essential services and children completing homework assignments.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would have a detrimental impact on people across many demographics",
+      "evidence_quote": "Without this funding, reducing free internet access or weakening libraries' ability to maintain necessary infrastructure for our computer technology would leave children, adults, and senior citizens with limited income without resources that are not available anywhere else.",
+      "evidence_start": 626,
+      "evidence_end": 900,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077411",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077411",
+  "filer_raw": "S. Layne Arens",
+  "date_submission": "2026-09-21T16:16:57.258Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2e08a8a11e26423622125f14e982aef79d4db02dd04201d57c73b0d9429f9387",
+  "params_key": "8ce263254c381068f8281a9f1f5e3b7b882572ac9e2d31203342903be5b64297",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

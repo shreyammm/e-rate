@@ -1,0 +1,34 @@
+{
+  "summary": "School urges FCC to preserve E-Rate funding to maintain internet services and avoid budget cuts",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, the cost of monthly service would require budget cuts in other areas",
+      "evidence_quote": "Without E-Rate, the cost of our monthly service would require us to cut our budget in other areas to make up the difference.",
+      "evidence_start": 788,
+      "evidence_end": 912,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074965",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074965",
+  "filer_raw": "Byrneville Elementary Charter School",
+  "date_submission": "2026-09-02T14:10:43.824Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "71df3564fc4139f6a04bb09a8c0ec1f8454f75b5703d395255dd45aa5ea79afa",
+  "params_key": "eef1c9b95b450ea7916a56aa56c78281e704f7bd3318fe2691473ff83c20c998",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

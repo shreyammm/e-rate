@@ -1,0 +1,34 @@
+{
+  "summary": "The Assistant Superintendent urges maintaining the current E-Rate program to ensure reliable internet access for student achievement. They argue that reducing funding to influence screen time could restrict access to educational resources and harm learning outcomes.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E-Rate should not tie funding decisions to educational outcomes",
+      "evidence_quote": "Our schools need the flexibility to use technology in ways that best serve their students. E-Rate should continue doing what it has done so successfully—helping schools provide the reliable, affordable connectivity they need.",
+      "evidence_start": 1044,
+      "evidence_end": 1269,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079666",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079666",
+  "filer_raw": "Anthony Kingston",
+  "date_submission": "2026-10-06T20:04:47.721Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8ef52a82bb7d44a253cdd28cc08f845b06212c50be5e8d0299be92c89fe15d85",
+  "params_key": "a39db7484808657b2fcc4785fce894e2e348b25690a1dc6e746235c427a78792",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

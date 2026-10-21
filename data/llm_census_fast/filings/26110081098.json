@@ -1,0 +1,34 @@
+{
+  "summary": "Summary of impact on Pittsburgh Public Schools if E-Rate ends",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "lowest_corresponding_price",
+      "position": "oppose",
+      "requested_action": "Maintain lowest corresponding price protections",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, schools would have to pay full cost of internet services",
+      "evidence_quote": "If E-Rate ends, PPS pays 100% of these costs instead of 10%:\n•\tPrimary internet (Zito, 3-year, $81,000): we pay $8,100 today ($225/month). Without E-Rate: $81,000 ($2,250/month).",
+      "evidence_start": 137,
+      "evidence_end": 315,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "lowest_corresponding_price": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081098",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081098",
+  "filer_raw": "Ira Weiss/Solicitor on behalf of Pittsburgh Public Schools",
+  "date_submission": "2026-10-13T18:40:32.704Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5c02538895b33318fa2c6bd05ee4626b1687612c3b95182bc7b40e1cda857e1f",
+  "params_key": "bda5746baa8f470e22fc53eafad92e508d47b6d91cc8fd2ee332cc470170187a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

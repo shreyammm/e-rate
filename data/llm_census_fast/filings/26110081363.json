@@ -1,0 +1,34 @@
+{
+  "summary": "The Camden County Schools highlight the critical role of E-Rate funding in maintaining their IT infrastructure, emphasizing the financial strain caused by rising connectivity costs and the potential for budget cuts. They argue for maintaining E-Rate funding to ensure the continuity of essential services and protect sensitive data.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding maintains IT infrastructure at Camden County Schools, preventing budget cuts",
+      "evidence_quote": "E-Rate funding maintains our IT infrastructure at Camden County Schools in GA. Every function, from paying bills to managing personnel to diabetic monitoring, will be affected. As basic connectivity cost consumes a larger share of our technology budget, they starve the allocations we rely on to secure our systems.",
+      "evidence_start": 0,
+      "evidence_end": 315,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081363",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081363",
+  "filer_raw": "Camden County Schools | Frank Gillette",
+  "date_submission": "2026-10-14T00:13:23.936Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e11a62962d004d00e696dac336807b647eabf9e99690987c4acdfb713f17282d",
+  "params_key": "18ba138a9fb4cf4b8975394d24e3b58f4c606dac3cff3eef5cf92f4c82836cb9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

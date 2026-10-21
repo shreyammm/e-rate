@@ -1,0 +1,34 @@
+{
+  "summary": "The library system emphasizes the importance of E-Rate funding for its operations and the need to continue fully funding it to maintain essential services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue to fully fund E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funds, the library could not afford the cost of providing broadband access",
+      "evidence_quote": "Without E-Rate funds, we could not afford the cost of providing broadband access.",
+      "evidence_start": 704,
+      "evidence_end": 785,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073230",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073230",
+  "filer_raw": "Patty M. Bailey",
+  "date_submission": "2026-08-26T16:33:01.218Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0b7ed2479b87f15be631c71afe89ae4ea6522da6b5dc77feacf81b17eaa7656b",
+  "params_key": "f6e9471483ba2daecdf47b6b0ed4a4a963f2b51d87fbba0d823ddcec06741edc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

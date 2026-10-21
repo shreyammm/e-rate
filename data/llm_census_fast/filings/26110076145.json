@@ -1,0 +1,34 @@
+{
+  "summary": "E-Rate comments emphasize the importance of preserving core funding for schools and libraries to maintain connectivity and functionality. The comments urge the FCC to avoid changes that would reduce access or increase burden for students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding and avoid changes",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would face significant impacts on connectivity and functionality.",
+      "evidence_quote": "Without this funding, it is hard to imagine what the impact of loosing the discounts and funding that E-Rate provides to our school. Many parts of the school programming and functions would be impacted and I cann't imagine how you determine what would stay and what would go- cutting staff, downgrading school security, etc. This should be a non-issue for schools and libraries.",
+      "evidence_start": 563,
+      "evidence_end": 941,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076145",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076145",
+  "filer_raw": "EUPISD Learning Center",
+  "date_submission": "2026-09-09T21:54:53.479Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1b3cee0fcba7e14e057bad39b8dd6681b8abb9b0a5e82013c21dcee23045ad7c",
+  "params_key": "97f541d4df9daa5e15b2b96c0af1e11746902b4fb45bcc158c7f4cc1261cd7f2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

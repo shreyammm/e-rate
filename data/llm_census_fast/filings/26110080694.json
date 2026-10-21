@@ -1,0 +1,34 @@
+{
+  "summary": "The community relies on the E-Rate program to access internet resources for job applications, benefits, and communication. Limiting or sunsetting E-Rate would eliminate this access, impacting the community's ability to participate in modern society.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for broadband access programs, leading to increased costs for schools and libraries.",
+      "evidence_quote": "If we want people to be productive members of society, that is now largely dependent on being able to access the internet as the resources to be a productive citizen (job applications, banking, communication) are now online.",
+      "evidence_start": 664,
+      "evidence_end": 888,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080694",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080694",
+  "filer_raw": "Jenan Alleman",
+  "date_submission": "2026-10-12T19:42:32.204Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a8218b9b210aeb2bd8960156679fa0848d28a1a5683035c88a5197ada345c347",
+  "params_key": "fd2f820c96022b23ccf3c87e1b43d374ec69f71468c28d3ef709ee2bbe9f17b2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The school district emphasizes the importance of the E-Rate program for student achievement and expresses concern about the potential impact of ending the program on funding availability.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "end E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If the FCC ends the E-Rate program, that's funding county leaders will either have to take from somewhere else to or make the hard decision to cut off the internet completely.",
+      "evidence_quote": "If the FCC ends the E-Rate program, as it’s proposing, that’s funding county leaders will either have to take from somewhere else to or make the hard decision to cut off the internet completely.",
+      "evidence_start": 317,
+      "evidence_end": 511,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076530",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076530",
+  "filer_raw": "Kyrian MacMichael",
+  "date_submission": "2026-09-13T14:22:57.041Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "89037473f91a6ea66ba5bdf32e08fcd81a83067a22d112617101f7ce48c615bf",
+  "params_key": "5f5aeb052a62fe6496685a96469a188c895e84662f9a50ae122012d0771f30ee",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

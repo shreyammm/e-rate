@@ -1,0 +1,34 @@
+{
+  "summary": "The Fairfield Library Association urges the FCC to preserve the E-Rate program as a vital resource for libraries serving rural communities.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate program is a vital resource for libraries serving rural communities",
+      "evidence_quote": "E-Rate makes it possible for us to provide reliable, high-speed internet at an affordable cost, allowing our patrons to access educational resources, apply for jobs, connect with government services, and develop essential digital skills.",
+      "evidence_start": 190,
+      "evidence_end": 427,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110023440",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110023440",
+  "filer_raw": "Gary Wiggins",
+  "date_submission": "2026-07-16T21:41:28.512Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "389bd76f58ca81acc37016ee733748f8db4d56c367ef3875792335e3b6690b51",
+  "params_key": "b079ef932b0f1a23c3ef8480ffe0e7bf3df8a4d34c568e5da5ee9d952d74b0c7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

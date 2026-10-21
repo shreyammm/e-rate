@@ -1,0 +1,34 @@
+{
+  "summary": "The taxpayer emphasizes the importance of E-Rate for schools and libraries and urges the FCC to maintain funding to support educational opportunities.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Keep E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate provides essential broadband support for schools and libraries",
+      "evidence_quote": "I strongly urge you to consider keeping these valuable resources flowing to American schools and libraries.",
+      "evidence_start": 846,
+      "evidence_end": 953,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078495",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078495",
+  "filer_raw": "Terry Guenther",
+  "date_submission": "2026-09-28T12:22:57.178Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bad628a02c158fb5315f3fa3a2a5cf4b4741e736300283d66cc22cd9c8cf8485",
+  "params_key": "43319d07e0d6715d0de62a7fccf51b0b47b163a80eeed7703488cc78da626d6b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

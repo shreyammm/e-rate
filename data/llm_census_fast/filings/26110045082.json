@@ -1,0 +1,34 @@
+{
+  "summary": "The comment expresses strong support for the E-rate program and emphasizes its importance in providing broadband infrastructure for small and under-resourced school districts. It highlights the cost implications of not having E-rate funding and the need to continue prioritizing and fully funding the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate critical funding for broadband infrastructure in schools and libraries.",
+      "evidence_quote": "Without E-rate discounts, small districts simply could not afford the high cost of enterprise-grade fiber, modern network equipment, and internal Wi-Fi infrastructure.",
+      "evidence_start": 655,
+      "evidence_end": 822,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110045082",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110045082",
+  "filer_raw": "Jonathan Jones",
+  "date_submission": "2026-07-23T19:40:29.402Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "deb682d53280c0b53fb3f899527f057d92b0c5fd6e1fe62f2a37af44518b299b",
+  "params_key": "ed79d2f9f84b9dfa64bd535c53be9caab67eea7ed1e3c3355075c5ea4e378803",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

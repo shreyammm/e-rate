@@ -1,0 +1,34 @@
+{
+  "summary": "The FCC's proposal to limit or eliminate the E-Rate program will force states and school districts to cover the full cost of internet access, potentially leading to cuts, harming students who rely on the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Proposing to severely limit or eliminate E-Rate will force states and school districts to cover full cost of internet access, potentially leading to cuts.",
+      "evidence_quote": "Now, that program is in peril.  The Trump administration is proposing to severely limit or completely eliminate the E-Rate program.  If they do, states and school districts will have to make a tough decision: cover the full cost of internet access or cut it off completely.",
+      "evidence_start": 312,
+      "evidence_end": 585,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076496",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076496",
+  "filer_raw": "Katherine Alexandrowicz",
+  "date_submission": "2026-09-12T18:05:02.628Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ddfa07b3d51f5bec5bbb8aed4d8749616f71040ab5c22c1d92c39e17e19edf71",
+  "params_key": "db975038d65716ff1c19abc2fcd9f7da1f5df2b4671d639aa03f881ef3b6d2a0",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The ACES organization urges the FCC to maintain the E-Rate program to ensure affordable and reliable internet access for schools, which is essential for educational technology and daily school operations. The comment highlights the potential financial impact of reducing or eliminating E-Rate funding on education budgets and resources.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate could increase costs and strain education budgets",
+      "evidence_quote": "Reducing or eliminating E-rate discounts could dramatically increase costs, placing additional strain on already limited education budgets and diverting resources from students.",
+      "evidence_start": 474,
+      "evidence_end": 651,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079146",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079146",
+  "filer_raw": "William Grimm",
+  "date_submission": "2026-10-02T18:21:28.904Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cf675f5d57e2a58de3751a2b7eb4785a286cb1d3a9510707645f45699e53f30f",
+  "params_key": "f83fd8f00df8c8161db372c3bb513d88a4275843a0fcd3dfdbd4ef14b44d1261",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

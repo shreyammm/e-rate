@@ -1,0 +1,34 @@
+{
+  "summary": "School urges FCC to preserve E-Rate funding to maintain access to online resources and avoid access issues",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without funding, schools would face significant access and attendance issues",
+      "evidence_quote": "Without this funding, if my school lost funding, it would seriously diminish the amount of information available to my students and the students of the school.",
+      "evidence_start": 587,
+      "evidence_end": 746,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081115",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081115",
+  "filer_raw": "palm beach maritime academy",
+  "date_submission": "2026-10-13T18:54:38.736Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "91304213e88fe963cf1206895aa7d9eb35add89e6a2156bc2170f9d3b3706c97",
+  "params_key": "bb45f2527f8b6c6cb93f8d0e4842fbec5ef9f5fb231a2cd18b4b25fae24f7135",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

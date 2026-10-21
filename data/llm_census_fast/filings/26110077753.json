@@ -1,0 +1,34 @@
+{
+  "summary": "Library expresses concern about preserving E-Rate funding to maintain essential services and avoid service cuts.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without this funding, libraries would likely have to make cuts to other services.",
+      "evidence_quote": "Connectivity is essential to all classrooms throughout the country - no specifics needed with that basic fact.",
+      "evidence_start": 353,
+      "evidence_end": 463,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077753",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077753",
+  "filer_raw": "Princeton Public Library",
+  "date_submission": "2026-09-22T20:25:13.253Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8767db5dda9711f8f490a9739b64bf866c30a7c105dc3b9bec8833a958636e7d",
+  "params_key": "50e425de509e8df4f6cbd9a71c7cd45663b74f4888fc1631e052485be56e2b0b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

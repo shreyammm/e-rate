@@ -1,0 +1,34 @@
+{
+  "summary": "The comment supports preserving the E-Rate program, emphasizing its importance in providing internet access for schools and libraries to support education and economic opportunities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program represents a small price to pay for the benefits it provides.",
+      "evidence_quote": "To kill the program is to kill the incentive to dream...dreams fulfilled are what makes America great and reaps significant future ROI to society.",
+      "evidence_start": 758,
+      "evidence_end": 904,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075700",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075700",
+  "filer_raw": "Paula C Hardison",
+  "date_submission": "2026-09-06T20:43:53.801Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fe46dbd92658d809ee10fe83343a4804890cf990076fda3979c477ccac4f2f68",
+  "params_key": "99a21bf9feda4050445ab8e40cca778f0159764f8a7dfdea223845bf38559ce3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The Queen Anne's County Library urges the FCC to maintain the current E-Rate program without any additional limitations or restrictions. QACL relies on this critical annual funding to provide internet access to our patrons to use the library's services. This internet service is essential for hundreds of households in our county still lacking broadband connectivity. The library serves to bridge this digital gap.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The library relies on E-Rate funding to provide internet access to patrons and cannot afford additional restrictions",
+      "evidence_quote": "The library serves to bridge this digital gap.",
+      "evidence_start": 377,
+      "evidence_end": 423,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076542",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076542",
+  "filer_raw": "Queen Anne's County Library",
+  "date_submission": "2026-09-13T18:43:01.048Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8d589360edb565fdee04f99d204836a881695578493b31f53124af2ff4f041cf",
+  "params_key": "ad802a4a427735ac43a9d3e7107e9edf27325fe17b757578755c68b0af2c4b43",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

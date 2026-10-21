@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes any restriction or removal of E-Rate funding, arguing that defunding the connectivity that makes supervision possible would disproportionately harm disadvantaged students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
+      "evidence_quote": "Cutting school connectivity does not reduce a child's total screen time. It reduces the supervised, filtered, and instructionally framed share of it.",
+      "evidence_start": 65,
+      "evidence_end": 214,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069759",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069759",
+  "filer_raw": "Caleb Paschall",
+  "date_submission": "2026-08-07T22:01:31.495Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b9742eec779a59e77233a3129b0e59d90f28c834653e2d31ee2b3a47466e2a28",
+  "params_key": "c134a42247a51074ac8b31f37074e1c92e678b8ea1fe81ac2e0b25c8f491ae10",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

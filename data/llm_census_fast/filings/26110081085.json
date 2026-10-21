@@ -1,0 +1,34 @@
+{
+  "summary": "School district urges FCC to preserve E-Rate funding and avoid changes that would reduce access or increase burden for students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding and avoid changes",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools lose critical connectivity for students.",
+      "evidence_quote": "Without this funding, disabled students are no longer able to access enrichment and supplemental materials for my students.",
+      "evidence_start": 456,
+      "evidence_end": 579,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081085",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081085",
+  "filer_raw": "Kisha Pujals",
+  "date_submission": "2026-10-13T18:18:39.961Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "587a7c5a570094a8196345fe424d0448c9a19373bf78301bf9f4f2d1b1006a9b",
+  "params_key": "1d25b4de46a4fe490a36eabb021d4b8ae853471bd960f642bc7edeeff9e7f22e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

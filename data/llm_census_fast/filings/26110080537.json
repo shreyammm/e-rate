@@ -1,0 +1,34 @@
+{
+  "summary": "The comment supports continuing the E-Rate program and urges the FCC to reject any proposal to reduce or sunset funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue funding E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program has been successful for nearly 30 years and helps connect schools and libraries with limited budgets",
+      "evidence_quote": "Please help maintain a quality learning environment. Everyone should have access to this rich resource, no matter where they live.",
+      "evidence_start": 1006,
+      "evidence_end": 1136,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080537",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080537",
+  "filer_raw": "Margaret Meehan",
+  "date_submission": "2026-10-11T22:29:47.932Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "47b8542ded58b58a20e0d41d77fe85b69e6043e18e96154d4f4f80f2e565810b",
+  "params_key": "60ca48cbbda9ff3b449810c25a26819367f3a8a44eec02cd87cf48e42f4dc036",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

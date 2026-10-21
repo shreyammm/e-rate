@@ -1,0 +1,34 @@
+{
+  "summary": "The text argues for continued funding of E-Rate to ensure school districts and public libraries can maintain current levels of access and improve student learning, emphasizing the long-term economic and defense impacts of eliminating E-Rate funding.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Continued funding is vital for school districts and public libraries to maintain current levels of access and improve student learning",
+      "evidence_quote": "In the overall context of the federal budget, E-Rate represents an insignificant expenditure, but in the reality of the work of school districts and public libraries, the loss of E-Rate would absolutely cripple our efforts to stay-up-to-date with technology, with Internet access, and with improving and deepening student learning.",
+      "evidence_start": 567,
+      "evidence_end": 898,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077262",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077262",
+  "filer_raw": "Fenton Community High School District 100",
+  "date_submission": "2026-09-20T16:00:04.957Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3b8a80c34abe36fcabf5ed594d591979ec01044f923ed947651f06d5f031ec66",
+  "params_key": "e4130734f4a389a11b614e33921aba3a90ba207dccbe4da04adf4cb9e757f769",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

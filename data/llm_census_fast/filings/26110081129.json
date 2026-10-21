@@ -1,0 +1,34 @@
+{
+  "summary": "The school district urges the FCC to preserve E-Rate funding to maintain network security and reliability for students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would lose access to reliable connectivity, impacting network security and reliability",
+      "evidence_quote": "Without this funding, it would reduce our network security and reliability if we lose access to this funding.",
+      "evidence_start": 503,
+      "evidence_end": 612,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081129",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081129",
+  "filer_raw": "Shawn Lackey",
+  "date_submission": "2026-10-13T19:02:06.565Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9984c72be643c708cbe2750e2f1197515f74c718350c6504035167bde7b4b243",
+  "params_key": "1403e490a74557d725df829d849784982bc4acb4cdb067aac3498113ed5f2791",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

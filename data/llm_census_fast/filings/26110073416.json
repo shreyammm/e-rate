@@ -1,0 +1,34 @@
+{
+  "summary": "The comment emphasizes the importance of E-rate funding for libraries to provide essential services to their residents.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue to fully fund the E-rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without funding, libraries would have to reduce technology services",
+      "evidence_quote": "Without this funding, our library would have to greatly reduce the technology services we provide, such as wireless hotspots and laptops, in order to keep other essential services such as interlibrary loan and digital lending.",
+      "evidence_start": 325,
+      "evidence_end": 551,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073416",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073416",
+  "filer_raw": "Debra Roy",
+  "date_submission": "2026-08-27T18:52:07.689Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f0a12b924c2dc83eed111cbef5b8d9c44eac35d02d8a71187b64f3bbc71aff8a",
+  "params_key": "10085abd04afbfa977370f0fcac192dfba08f6f6fd6155d7427500cd6db12d52",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

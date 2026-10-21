@@ -1,0 +1,34 @@
+{
+  "summary": "The claim that tying E-Rate decisions to educational outcomes is supported by evidence of the correlation between Free and Reduced Lunch statistics and E-Rate discounts in rural communities, where the costs of Internet access without E-Rate discounts exceed the budgets of libraries and schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Local Free and Reduced Lunch statistics and E-Rate discounts correlate highly in rural communities",
+      "evidence_quote": "For four years, I served as a rural public library director: the costs of Internet access without E-Rate discounts cost more than that library's entire annual operations budget of $12,000 (minus personnel costs). The budgets of rural schools and libraries are indicative of the condition of the local economies that support them.",
+      "evidence_start": 430,
+      "evidence_end": 759,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081382",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081382",
+  "filer_raw": "Heather D. Hutto, Individual",
+  "date_submission": "2026-10-14T01:05:30.366Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "da6bbdd3e5876b493b6bd57525415e7d84e206bf689ab5a25fe052d99262732e",
+  "params_key": "b652741d05255d2a84bd349b83125159f6e30273c458af3f33e0b0c79a7ca46c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The Technology Director emphasizes the critical importance of E-Rate funding for their school district's operational success and technological advancements.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funds we would have to cut back drastically on services",
+      "evidence_quote": "We rely on E-Rate funds to provide high quality internet connectivity to underserved and rural students who may not otherwise be able to access educational resources.",
+      "evidence_start": 260,
+      "evidence_end": 426,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072198",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072198",
+  "filer_raw": "Michael Mott",
+  "date_submission": "2026-08-19T14:13:52.502Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ac51e9a5e1b916a2e99dbc2fc1dc417e3b299ab2d47d8d0ed2530d618afe403d",
+  "params_key": "7f99151d795a7ca4dbfe6205431b3c8e3a8a54e64f858be3332abe19fce01509",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The librarian at Rockford Public Library urges the FCC to reject proposals to terminate or limit E-Rate, emphasizing the program's critical role in maintaining affordable and reliable Internet access for schools and libraries, which are essential for community services and digital inclusion.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would represent a cut to school and library budgets, jeopardizing years of progress building and upgrading networks.",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 543,
+      "evidence_end": 685,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071411",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071411",
+  "filer_raw": "Sarah Stumpf",
+  "date_submission": "2026-08-14T18:50:31.718Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "26c431eb5d411b0436d23a7538a1bbefe3f566fb795de87a06f127f9c16f80b9",
+  "params_key": "64f5f07e29542d9379f33443a9eb020d5e6b1f07cd8e19fe8bca80206b6218a9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

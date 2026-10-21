@@ -1,0 +1,34 @@
+{
+  "summary": "Parents express concerns about the impact of screen-based instruction on children's development and advocate for parental autonomy",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Parents express concern about the impact of screen-based instruction on children's development and advocate for parental autonomy",
+      "evidence_quote": "I hope that the voices of the people who participated are heard, we are a representation of how the majority of parents feel nationwide.",
+      "evidence_start": 993,
+      "evidence_end": 1129,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076777",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076777",
+  "filer_raw": "Justyna S",
+  "date_submission": "2026-09-16T02:40:45.307Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a2a47c338978b4b2179416d9e85c4f6360e35e9cad26a186e3c485faff1f10ee",
+  "params_key": "e88423698c601f37d5301002692725ce9e0b7425f397462c2d64124541d27049",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

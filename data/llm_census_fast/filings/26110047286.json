@@ -1,0 +1,34 @@
+{
+  "summary": "The stakeholder urges the FCC to preserve E-Rate funding and opposes proposed rule changes that could negatively impact access to educational and library resources.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is fulfilling its intended purpose by helping schools and libraries provide essential broadband access to their communities",
+      "evidence_quote": "I urge the FCC to preserve E-Rate funding and reject the proposed rule changes in Proceedings 26-133 and 13-184.",
+      "evidence_start": 0,
+      "evidence_end": 112,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110047286",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110047286",
+  "filer_raw": "Nicole Harold",
+  "date_submission": "2026-07-24T13:44:31.927Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a3f9d8384de222c8f4c9e7c387da6c1da5eff7a95e0b0e2fae144d8378323499",
+  "params_key": "dde79c0dae38e874cec2a64f5ae350d9fec39509ead487a5e88b0aae3660fbba",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

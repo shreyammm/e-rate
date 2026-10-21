@@ -1,54 +1,55 @@
 {
   "schema_version": "llm-census-v1.1.0",
-  "generated_utc": "2026-10-21T03:20:55.308804+00:00",
+  "generated_utc": "2026-10-21T07:23:49.498719+00:00",
   "publication_status": "EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS",
   "model": "ibm/granite4:1b-q4_K_M",
   "codebook_version": "1.0.0-draft-anchored",
   "indexed_filings": 3231,
   "filings_with_text": 3230,
-  "completed_filings": 392,
+  "completed_filings": 632,
   "processing_status": {
-    "pending": 2838,
-    "complete": 392,
+    "pending": 2598,
+    "complete": 632,
     "no_source_text": 1
   },
-  "distinct_normalized_texts_among_completed": 353,
-  "completed_filings_in_exact_text_duplicate_groups": 46,
+  "distinct_normalized_texts_among_completed": 588,
+  "completed_filings_in_exact_text_duplicate_groups": 52,
   "inferred_stakeholder_roles": {
-    "unknown": 236,
-    "school_district": 92,
-    "parent_guardian": 19,
-    "school_staff": 42,
-    "library": 2,
-    "government": 1
+    "unknown": 343,
+    "school_district": 183,
+    "telecom_provider": 1,
+    "library": 3,
+    "school_staff": 66,
+    "parent_guardian": 33,
+    "government": 3
   },
   "machine_evidence_quality": {
-    "filings_without_grounded_positions": 89,
-    "filings_with_rejected_quotes_or_codes": 92,
-    "invalid_claim_rows_rejected": 111,
+    "filings_without_grounded_positions": 159,
+    "filings_with_rejected_quotes_or_codes": 162,
+    "invalid_claim_rows_rejected": 181,
     "uncertain_claim_rows": 0,
-    "ocr_candidate_filings": 2
+    "ocr_candidate_filings": 3
   },
   "argument_reason_counts": {
-    "budget_cost_efficiency": 245,
-    "privacy_free_expression": 15,
+    "budget_cost_efficiency": 397,
+    "privacy_free_expression": 19,
     "child_safety": 2,
-    "education_effectiveness": 69,
-    "other": 13,
-    "access_affordability_equity": 16,
+    "education_effectiveness": 79,
+    "other": 16,
+    "access_affordability_equity": 17,
     "competition_market_effects": 5,
     "administrative_burden": 10,
     "parental_autonomy": 5
   },
   "argument_type_counts": {
-    "cost_or_savings": 249,
-    "normative_value": 28,
+    "cost_or_savings": 403,
+    "normative_value": 40,
     "legal_claim": 4,
-    "empirical_claim": 53,
+    "empirical_claim": 55,
     "equity_access": 8,
-    "privacy_expression": 8,
+    "privacy_expression": 9,
     "other": 9,
-    "alternative_design": 5,
+    "alternative_design": 6,
     "implementation_burden": 12,
     "citation_of_external_evidence": 3,
     "personal_experience": 1
@@ -307,54 +308,58 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 236,
+        "oppose": 386,
         "support": 10
       },
       "unique_text_weighted_positions": {
-        "oppose": 229,
+        "oppose": 374,
         "support": 10
       },
-      "filings_mentioning": 246,
+      "filings_mentioning": 396,
       "claim_reason_counts": {
-        "budget_cost_efficiency": 244,
+        "budget_cost_efficiency": 394,
         "access_affordability_equity": 1,
         "other": 1
       },
       "claim_kind_counts": {
-        "cost_or_savings": 243,
+        "cost_or_savings": 393,
         "normative_value": 2,
         "equity_access": 1
       },
-      "claim_count": 246,
+      "claim_count": 396,
       "filings_by_inferred_role": {
-        "unknown": 145,
-        "school_district": 79,
-        "parent_guardian": 9,
-        "school_staff": 12,
-        "library": 1
+        "unknown": 189,
+        "school_district": 156,
+        "library": 2,
+        "school_staff": 32,
+        "parent_guardian": 16,
+        "government": 1
       },
       "inferred_role_by_position": {
         "unknown": {
-          "oppose": 141,
+          "oppose": 185,
           "support": 4
         },
         "school_district": {
-          "oppose": 73,
+          "oppose": 150,
           "support": 6
         },
-        "parent_guardian": {
-          "oppose": 9
+        "library": {
+          "oppose": 2
         },
         "school_staff": {
-          "oppose": 12
+          "oppose": 32
         },
-        "library": {
+        "parent_guardian": {
+          "oppose": 16
+        },
+        "government": {
           "oppose": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
-          "budget_cost_efficiency": 234,
+          "budget_cost_efficiency": 384,
           "access_affordability_equity": 1,
           "other": 1
         },
@@ -362,7 +367,7 @@
           "budget_cost_efficiency": 10
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26109939480",
@@ -389,11 +394,27 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110014026",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110014026",
+          "position": "oppose",
+          "argument": "The program is still vital for public libraries",
+          "evidence_quote": "The E-Rate program is still a vital part of a public library's mission and helps us provide internet to students and families who would not be able to access the internet in their homes.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110023027",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110023027",
           "position": "oppose",
           "argument": "Suggested mandates and loss of program would be devastating",
           "evidence_quote": "I am writing to urge you to maintain the existing structure to the E-Rate program which is presently providing significant support to school, public and private.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110023251",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110023251",
+          "position": "oppose",
+          "argument": "E-rate funding has allowed libraries to expand internet access, improve network infrastructure, and offer critical services.",
+          "evidence_quote": "E-rate funding has allowed libraries to expand internet access, improve network infrastructure, and offer critical services such as homework support, workforce development, digital literacy training, telehealth access, and connections to government resources.",
           "uncertain": false
         },
         {
@@ -421,6 +442,14 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110023440",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110023440",
+          "position": "oppose",
+          "argument": "E-Rate program is a vital resource for libraries serving rural communities",
+          "evidence_quote": "E-Rate makes it possible for us to provide reliable, high-speed internet at an affordable cost, allowing our patrons to access educational resources, apply for jobs, connect with government services, and develop essential digital skills.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110025043",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110025043",
           "position": "oppose",
@@ -429,35 +458,11 @@
           "uncertain": false
         },
         {
-          "submission_id": "26110026136",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110026136",
+          "submission_id": "26110025624",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110025624",
           "position": "oppose",
-          "argument": "",
-          "evidence_quote": "We rely on Erate to supply our students with the necessary network for the growing digital curricula. Without it, we would quickly be surpassed by the technology and network speeds.",
-          "uncertain": false
-        },
-        {
-          "submission_id": "26110027350",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110027350",
-          "position": "oppose",
-          "argument": "Reducing or removing E-Rate creates more problems than it solves",
-          "evidence_quote": "Reducing or removing E-Rate creates more problems than it solves.",
-          "uncertain": false
-        },
-        {
-          "submission_id": "26110033748",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110033748",
-          "position": "oppose",
-          "argument": "Continuing E-Rate funding is essential to maintain school infrastructure and connectivity",
-          "evidence_quote": "The financial impact of losing e-rate support would be a major detriment to our school district.",
-          "uncertain": false
-        },
-        {
-          "submission_id": "26110034599",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110034599",
-          "position": "oppose",
-          "argument": "",
-          "evidence_quote": "There is nothing more worthy of our dollars than the education system. The children are our future and we want US children to be the best they can be. For this, they need steady internet connectivity. Please do not allow the domino effect to knock down our children's future.",
+          "argument": "Proposals would restrict E-Rate funding, placing an unsustainable financial burden on libraries.",
+          "evidence_quote": "For rural libraries like ours, E-Rate is not an optional luxury; it is a vital lifeline. We serve as the primary digital access point for our community, bridging the digital divide for patrons who rely on us for job applications, homework, remote work, and essential services. Narrowing the scope of E-Rate funding—particularly for internal connections or network infrastructure—will place an unsustainable financial burden on our local budget and directly compromise our ability to provide robust, reliable internet access.",
           "uncertain": false
         }
       ]
@@ -468,26 +473,28 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 5,
+        "oppose": 7,
         "support": 2
       },
       "unique_text_weighted_positions": {
-        "oppose": 5,
+        "oppose": 7,
         "support": 2
       },
-      "filings_mentioning": 7,
+      "filings_mentioning": 9,
       "claim_reason_counts": {
-        "access_affordability_equity": 7
+        "access_affordability_equity": 8,
+        "budget_cost_efficiency": 1
       },
       "claim_kind_counts": {
         "equity_access": 3,
-        "alternative_design": 3,
+        "alternative_design": 4,
+        "cost_or_savings": 1,
         "other": 1
       },
-      "claim_count": 7,
+      "claim_count": 9,
       "filings_by_inferred_role": {
         "unknown": 3,
-        "school_district": 3,
+        "school_district": 5,
         "parent_guardian": 1
       },
       "inferred_role_by_position": {
@@ -496,7 +503,7 @@
         },
         "school_district": {
           "support": 2,
-          "oppose": 1
+          "oppose": 3
         },
         "parent_guardian": {
           "oppose": 1
@@ -504,13 +511,14 @@
       },
       "claim_reason_by_position": {
         "oppose": {
-          "access_affordability_equity": 5
+          "access_affordability_equity": 6,
+          "budget_cost_efficiency": 1
         },
         "support": {
           "access_affordability_equity": 2
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110023369",
@@ -534,6 +542,14 @@
           "position": "support",
           "argument": "",
           "evidence_quote": "Without the discount the budget would need to be adjusted drastically and other services would need to be eliminated",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110072580",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110072580",
+          "position": "oppose",
+          "argument": "Limiting eligibility to specific equipment and services would increase costs for libraries and reduce access to broadband for students and patrons",
+          "evidence_quote": "All in all, it benefits the nation's well-being. Public Libraries are vital to the populace's education, and without the E-Rate discounts, most libraries would not be able to operate or provide what has become an essential utility in everyday life.",
           "uncertain": false
         },
         {
@@ -561,6 +577,14 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110076770",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110076770",
+          "position": "oppose",
+          "argument": "Narrowing eligibility would exclude non-rural schools from receiving E-Rate support",
+          "evidence_quote": "We are asking to keep what we have.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110079967",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110079967",
           "position": "oppose",
@@ -576,29 +600,35 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 7
+        "oppose": 8
       },
       "unique_text_weighted_positions": {
-        "oppose": 7
+        "oppose": 8
       },
-      "filings_mentioning": 7,
+      "filings_mentioning": 8,
       "claim_reason_counts": {
+        "budget_cost_efficiency": 1,
         "privacy_free_expression": 2,
         "competition_market_effects": 1,
         "access_affordability_equity": 4
       },
       "claim_kind_counts": {
+        "cost_or_savings": 1,
         "privacy_expression": 2,
         "normative_value": 1,
         "alternative_design": 2,
         "equity_access": 2
       },
-      "claim_count": 7,
+      "claim_count": 8,
       "filings_by_inferred_role": {
+        "telecom_provider": 1,
         "unknown": 6,
         "school_district": 1
       },
       "inferred_role_by_position": {
+        "telecom_provider": {
+          "oppose": 1
+        },
         "unknown": {
           "oppose": 6
         },
@@ -608,13 +638,22 @@
       },
       "claim_reason_by_position": {
         "oppose": {
+          "budget_cost_efficiency": 1,
           "privacy_free_expression": 2,
           "competition_market_effects": 1,
           "access_affordability_equity": 4
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
+        {
+          "submission_id": "26110014024",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110014024",
+          "position": "oppose",
+          "argument": "Expensive fiber is more costly than coax",
+          "evidence_quote": "My schools can go back to coax internet to save money there.",
+          "uncertain": false
+        },
         {
           "submission_id": "26110023369",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110023369",
@@ -710,7 +749,7 @@
           "access_affordability_equity": 2
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110023369",
@@ -779,7 +818,7 @@
           "competition_market_effects": 4
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110023369",
@@ -847,7 +886,7 @@
           "access_affordability_equity": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110075785",
@@ -865,49 +904,49 @@
       "category": "evaluation",
       "notice_status": "question_for_comment",
       "positions": {
-        "support": 60,
-        "oppose": 8,
+        "support": 65,
+        "oppose": 13,
         "unclear": 1
       },
       "unique_text_weighted_positions": {
-        "support": 35,
-        "oppose": 7,
+        "support": 40,
+        "oppose": 12,
         "unclear": 1
       },
-      "filings_mentioning": 69,
+      "filings_mentioning": 79,
       "claim_reason_counts": {
-        "education_effectiveness": 69
+        "education_effectiveness": 79
       },
       "claim_kind_counts": {
-        "empirical_claim": 52,
-        "normative_value": 15,
+        "empirical_claim": 53,
+        "normative_value": 24,
         "citation_of_external_evidence": 1,
         "other": 1
       },
-      "claim_count": 69,
+      "claim_count": 79,
       "filings_by_inferred_role": {
-        "unknown": 30,
-        "school_district": 9,
-        "school_staff": 26,
-        "parent_guardian": 3,
+        "unknown": 34,
+        "school_district": 12,
+        "school_staff": 27,
+        "parent_guardian": 5,
         "government": 1
       },
       "inferred_role_by_position": {
         "unknown": {
-          "support": 23,
-          "oppose": 6,
+          "support": 24,
+          "oppose": 9,
           "unclear": 1
         },
         "school_district": {
-          "support": 9
+          "support": 12
         },
         "school_staff": {
           "oppose": 1,
-          "support": 25
+          "support": 26
         },
         "parent_guardian": {
           "support": 2,
-          "oppose": 1
+          "oppose": 3
         },
         "government": {
           "support": 1
@@ -915,16 +954,16 @@
       },
       "claim_reason_by_position": {
         "support": {
-          "education_effectiveness": 60
+          "education_effectiveness": 65
         },
         "oppose": {
-          "education_effectiveness": 8
+          "education_effectiveness": 13
         },
         "unclear": {
           "education_effectiveness": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26109947858",
@@ -940,6 +979,14 @@
           "position": "support",
           "argument": "",
           "evidence_quote": "We rely on Erate to supply our students with the necessary network for the growing digital curricula. Without it, we would quickly be surpassed by the technology and network speeds.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110066867",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110066867",
+          "position": "support",
+          "argument": "I support funding for ALL libraries and Schools regardless of size to allow access to the internet ONLY for educational purposes.",
+          "evidence_quote": "I support funding for ALL libraries and Schools regardless of size to allow access to the internet ONLY for educational purposes.",
           "uncertain": false
         },
         {
@@ -1013,14 +1060,6 @@
           "argument": "",
           "evidence_quote": "Please do not cut funding. There are people in our community who cannot afford computers and/or the Internet and use our library for these services. Cutting funding would hurt both seniors and school children.",
           "uncertain": false
-        },
-        {
-          "submission_id": "26110073741",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110073741",
-          "position": "support",
-          "argument": "",
-          "evidence_quote": "Please do not cut funding to libraries for reduced rates for internet connectivity.  Not everyone has access at home.  Some people need it for homework, job searches, etc.  We need to keep this access available for all.",
-          "uncertain": false
         }
       ]
     },
@@ -1030,38 +1069,38 @@
       "category": "screens",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 11
+        "oppose": 15
       },
       "unique_text_weighted_positions": {
-        "oppose": 11
+        "oppose": 15
       },
-      "filings_mentioning": 11,
+      "filings_mentioning": 15,
       "claim_reason_counts": {
-        "privacy_free_expression": 8,
-        "other": 3
+        "privacy_free_expression": 10,
+        "other": 5
       },
       "claim_kind_counts": {
-        "normative_value": 3,
+        "normative_value": 5,
+        "empirical_claim": 2,
         "privacy_expression": 6,
-        "empirical_claim": 1,
-        "cost_or_savings": 1
+        "cost_or_savings": 2
       },
-      "claim_count": 11,
+      "claim_count": 15,
       "filings_by_inferred_role": {
-        "unknown": 2,
-        "parent_guardian": 6,
-        "school_staff": 2,
+        "unknown": 3,
+        "parent_guardian": 8,
+        "school_staff": 3,
         "school_district": 1
       },
       "inferred_role_by_position": {
         "unknown": {
-          "oppose": 2
+          "oppose": 3
         },
         "parent_guardian": {
-          "oppose": 6
+          "oppose": 8
         },
         "school_staff": {
-          "oppose": 2
+          "oppose": 3
         },
         "school_district": {
           "oppose": 1
@@ -1069,11 +1108,11 @@
       },
       "claim_reason_by_position": {
         "oppose": {
-          "privacy_free_expression": 8,
-          "other": 3
+          "privacy_free_expression": 10,
+          "other": 5
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26109939901",
@@ -1097,6 +1136,14 @@
           "position": "oppose",
           "argument": "Condition E-Rate on screen-time limits",
           "evidence_quote": "Reducing Internet access at public schools and libraries is not the way to address the serious issue of too much screen time. Schools should review their procedures for limiting screen time particularly in the primary grades. Some states have also limited use of phones during school hours.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110076753",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110076753",
+          "position": "oppose",
+          "argument": "Screen time is spilling from school into our home in ways that are affecting our children",
+          "evidence_quote": "Screen time is spilling from school into our home in ways that are affecting our children, even though they're not behind academically.",
           "uncertain": false
         },
         {
@@ -1140,6 +1187,14 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110078096",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110078096",
+          "position": "oppose",
+          "argument": "Parents should be able to clearly understand how content is evaluated by schools",
+          "evidence_quote": "Specifically, I believe schools should be transparent with parents about whether students can access any content that encourages social gender transition, advises children to conceal a gender identity from their parents, or directs minors toward medical interventions such as puberty blockers, cross-sex hormones, or surgeries.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110078206",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110078206",
           "position": "oppose",
@@ -1148,19 +1203,11 @@
           "uncertain": false
         },
         {
-          "submission_id": "26110078335",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110078335",
+          "submission_id": "26110078255",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110078255",
           "position": "oppose",
-          "argument": "If E-Rate support ends, districts would be forced to cover the shortfall and finance internet service and network equipment themselves",
-          "evidence_quote": "In our district a higher burden of cost would fall on the tax payer and not the companies who fund the E-Rate program.",
-          "uncertain": false
-        },
-        {
-          "submission_id": "26110078443",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110078443",
-          "position": "oppose",
-          "argument": "Screen-time expectations should remain a local issue",
-          "evidence_quote": "It is because of the E-Rate program that the schools I attended, and the few public libraries I visited during my youth, were able to provide me with the ability to access the internet and gave me the potential to learn as much as I could. Therefore, I believe screen-time expectations should remain strictly a local issue",
+          "argument": "The comment argues against imposing screen-time limits on E-Rate programs, asserting that libraries provide free access to the internet without restrictions.",
+          "evidence_quote": "When I suddenly became unemployed I went to the library to submit job applications as well as upload all of my unemployment forms. I would not have been able to do that without the library and its free access to the internet.",
           "uncertain": false
         }
       ]
@@ -1171,33 +1218,46 @@
       "category": "screens",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 3
+        "oppose": 4,
+        "support": 1
       },
       "unique_text_weighted_positions": {
-        "oppose": 3
+        "oppose": 4,
+        "support": 1
       },
-      "filings_mentioning": 3,
+      "filings_mentioning": 5,
       "claim_reason_counts": {
-        "parental_autonomy": 3
+        "parental_autonomy": 3,
+        "privacy_free_expression": 2
       },
       "claim_kind_counts": {
-        "normative_value": 3
+        "normative_value": 4,
+        "privacy_expression": 1
       },
-      "claim_count": 3,
+      "claim_count": 5,
       "filings_by_inferred_role": {
-        "unknown": 3
+        "unknown": 3,
+        "parent_guardian": 2
       },
       "inferred_role_by_position": {
         "unknown": {
           "oppose": 3
+        },
+        "parent_guardian": {
+          "oppose": 1,
+          "support": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
-          "parental_autonomy": 3
+          "parental_autonomy": 3,
+          "privacy_free_expression": 1
+        },
+        "support": {
+          "privacy_free_expression": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110073177",
@@ -1208,11 +1268,27 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110073990",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073990",
+          "position": "oppose",
+          "argument": "An opt-out model creates significant administrative burdens for educators and fragments the classroom environment",
+          "evidence_quote": "An opt-out model creates significant administrative burdens for already overworked educators, singles out individual students, and fragments the classroom environment.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110075412",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110075412",
           "position": "oppose",
           "argument": "",
           "evidence_quote": "Please consider not taking important learning materials away from the students.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110076689",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110076689",
+          "position": "support",
+          "argument": "Parents should prioritize screen-free learning and have opt-out rights",
+          "evidence_quote": "Parents also deserve much greater transparency and input regarding how much screen time their children are receiving at school.",
           "uncertain": false
         },
         {
@@ -1239,7 +1315,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1256,7 +1332,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1291,7 +1367,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110071871",
@@ -1335,7 +1411,7 @@
           "privacy_free_expression": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110071871",
@@ -1379,7 +1455,7 @@
           "privacy_free_expression": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110071871",
@@ -1423,7 +1499,7 @@
           "privacy_free_expression": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110071871",
@@ -1449,7 +1525,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1466,7 +1542,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1483,7 +1559,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1527,7 +1603,7 @@
           "privacy_free_expression": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26109947858",
@@ -1599,7 +1675,7 @@
           "parental_autonomy": 2
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110075412",
@@ -1671,7 +1747,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110073177",
@@ -1721,7 +1797,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1767,7 +1843,7 @@
           "administrative_burden": 2
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110069554",
@@ -1883,7 +1959,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110079821",
@@ -1909,7 +1985,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1926,7 +2002,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1943,7 +2019,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -1952,28 +2028,31 @@
       "category": "administration",
       "notice_status": "question_for_comment",
       "positions": {
-        "support": 2
+        "support": 2,
+        "oppose": 1
       },
       "unique_text_weighted_positions": {
-        "support": 2
+        "support": 2,
+        "oppose": 1
       },
-      "filings_mentioning": 2,
+      "filings_mentioning": 3,
       "claim_reason_counts": {
         "access_affordability_equity": 1,
-        "other": 1
+        "other": 2
       },
       "claim_kind_counts": {
         "equity_access": 1,
-        "cost_or_savings": 1
+        "cost_or_savings": 2
       },
-      "claim_count": 2,
+      "claim_count": 3,
       "filings_by_inferred_role": {
-        "school_district": 1,
+        "school_district": 2,
         "unknown": 1
       },
       "inferred_role_by_position": {
         "school_district": {
-          "support": 1
+          "support": 1,
+          "oppose": 1
         },
         "unknown": {
           "support": 1
@@ -1983,9 +2062,12 @@
         "support": {
           "access_affordability_equity": 1,
           "other": 1
+        },
+        "oppose": {
+          "other": 1
         }
       },
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": [
         {
           "submission_id": "26110076743",
@@ -1993,6 +2075,14 @@
           "position": "support",
           "argument": "",
           "evidence_quote": "Please continue to fund the broadband internet access E Rate program for schools and libraries",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110081098",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110081098",
+          "position": "oppose",
+          "argument": "Without E-Rate, schools would have to pay full cost of internet services",
+          "evidence_quote": "If E-Rate ends, PPS pays 100% of these costs instead of 10%:\n•\tPrimary internet (Zito, 3-year, $81,000): we pay $8,100 today ($225/month). Without E-Rate: $81,000 ($2,250/month).",
           "uncertain": false
         },
         {
@@ -2019,7 +2109,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     },
     {
@@ -2036,7 +2126,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 392,
+      "completed_filing_denominator": 632,
       "examples": []
     }
   ],
@@ -2053,5 +2143,5 @@
     "Missing provision classifications are unobserved; negative labels not inferred.",
     "This summary includes only filings completing all chunks; processing may be partial."
   ],
-  "suggested_human_audit_count": 107
+  "suggested_human_audit_count": 150
 }

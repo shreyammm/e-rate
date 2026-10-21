@@ -1,0 +1,34 @@
+{
+  "summary": "The comment urges the FCC to preserve the E-Rate program, emphasizing its importance for K-12 schools and public libraries. It highlights the cost implications of ending the program and the need to maintain the program to ensure access to broadband for education and community services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would force local districts to redirect funds away from essential services",
+      "evidence_quote": "Eliminating this vital support would force local districts and municipalities to redirect scarce funds away from teachers, books, and essential services just to keep basic network infrastructure running.",
+      "evidence_start": 336,
+      "evidence_end": 539,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072772",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072772",
+  "filer_raw": "Shawn Crouch",
+  "date_submission": "2026-08-23T13:46:32.015Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "46ca02da21e17dcfa24477fbba961bb93b6343edf0b632633d3b02772f95ca2f",
+  "params_key": "0926ed10f4627d1b450b189ec9416856f9d7af11867e25f0ad091ddc6fd48c57",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

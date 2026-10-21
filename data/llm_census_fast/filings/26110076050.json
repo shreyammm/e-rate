@@ -1,0 +1,34 @@
+{
+  "summary": "Ararat Charter School expresses its support for preserving E-Rate funding and its reliance on it for educational programs and services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, the school would have to cut educational programs and staff positions.",
+      "evidence_quote": "Without this funding, we would have to cut down on educational programs and staff positions. We would have to pay around 45,000 USD out of pocket yearly just for internet without E-rate funding. That can be an entire staff member's salary.",
+      "evidence_start": 559,
+      "evidence_end": 798,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076050",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076050",
+  "filer_raw": "Ararat Charter School",
+  "date_submission": "2026-09-09T15:33:31.635Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7ba546d149cba388e7342aabe6fc7fc1a2073bf251b062954485012571aaab76",
+  "params_key": "3f7d6c65340f4f9130d087dd8e7f5e00a133e4a64ea6706d39749b18c990556b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

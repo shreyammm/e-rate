@@ -1,0 +1,34 @@
+{
+  "summary": "Public libraries emphasize the importance of E-Rate funding for maintaining essential services and resources.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate support, libraries would face budget cuts",
+      "evidence_quote": "Without E-Rate support, our library would face the very real possibility of making harmful cuts elsewhere in our already limited budget simply to maintain internet service. That could mean fewer programs, reduced resources, fewer materials, or cuts to other services our community relies on.",
+      "evidence_start": 284,
+      "evidence_end": 575,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071803",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071803",
+  "filer_raw": "Benson Memorial Library",
+  "date_submission": "2026-08-17T14:16:53.568Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3f41003521bd9d56d05b894dc9504d7f25c41e3d7b72b18f0fab3c65b8bce956",
+  "params_key": "2c7d78e6f1094bf0fd45868e933d8d97e35b2e8120914582ae4b080d5f4af918",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

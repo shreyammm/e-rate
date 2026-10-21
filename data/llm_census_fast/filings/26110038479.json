@@ -1,0 +1,34 @@
+{
+  "summary": "The school staff emphasizes the critical role of the E-Rate program in enabling essential services and access to the internet for the library system and its patrons.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, maintaining public internet access becomes unsustainable",
+      "evidence_quote": "In the past four years I have helped people apply for citizenship, fill out job applications, file their taxes, pay their rent, file for government services, access forms to visit loved ones in prison, search for healthcare, apply for housing, and much, much more.",
+      "evidence_start": 501,
+      "evidence_end": 765,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110038479",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110038479",
+  "filer_raw": "Miranda Hicks",
+  "date_submission": "2026-07-21T18:27:14.984Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b1eb657e00fd1700a4c72088de5321b0809128f1193292485ce0e6bf964ace8e",
+  "params_key": "560785a4bc44bab46bf816466f97f4590d10929f5acad4fae584eebc94f3a28f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

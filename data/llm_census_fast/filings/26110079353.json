@@ -1,0 +1,34 @@
+{
+  "summary": "The stakeholder opposes the proposed changes to the E-Rate program, stating that it is not a waste of money to fund it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would result in financial savings",
+      "evidence_quote": "I would like to complain about the proposed changes for the e-rate program. It is not a waste of money to FUND this!",
+      "evidence_start": 798,
+      "evidence_end": 914,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079353",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079353",
+  "filer_raw": "Malia Kealoha",
+  "date_submission": "2026-10-05T13:11:58.333Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "830901a0f5ba30ea6bc564de30e6c8073f5f37b3b55c53ad0a66251741feea3a",
+  "params_key": "e76f9486a53bc3b22c18d0b02aa1d563d816de20e7ff8c0d7be3621ec5789400",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

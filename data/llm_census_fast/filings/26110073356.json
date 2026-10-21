@@ -1,0 +1,34 @@
+{
+  "summary": "School expresses concern about preserving E-Rate funding to maintain connectivity and services for students and staff.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would face significant financial challenges",
+      "evidence_quote": "Without this funding, if we lost these funds it would be a huge impact to our system of charter schools.",
+      "evidence_start": 678,
+      "evidence_end": 782,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073356",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073356",
+  "filer_raw": "school",
+  "date_submission": "2026-08-27T13:49:16.868Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d3679693cceea472601dd148d6579eaad1c836f50e7c3e4cf778c5b424262bf6",
+  "params_key": "480d723b9ff57c17db57dd1d0be06c583a6e6f86c435db3292304f11e4560c47",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}
