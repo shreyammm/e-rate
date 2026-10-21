@@ -1,0 +1,64 @@
+name: Open-ended source-text topic discovery
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/discover_open_topics.py'
+      - 'data/fcc_corpus/**'
+      - '.github/workflows/open-topic-discovery.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: erate-open-source-topics
+  cancel-in-progress: false
+
+jobs:
+  analyze:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deterministic model-free topic-analysis dependencies
+        run: python3 -m pip install 'numpy>=1.26,<3' 'scikit-learn>=1.4,<2'
+      - name: Verify testable topic-source methods
+        run: |
+          python3 -m compileall -q scripts/discover_open_topics.py
+          python3 -m unittest discover -s tests -p 'test_open_topic_discovery.py' -v
+      - name: Analyze full-source documents (not the 29-option keyword filter)
+        run: |
+          python3 -m scripts.discover_open_topics --source data/fcc_corpus --out docs/data/open_topics.json
+      - name: Verify publication provenance and coverage
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('data/fcc_corpus/manifest.json').read_text())
+          d=json.loads(Path('docs/data/open_topics.json').read_text())
+          assert d['source_archive_sha256']==m['source_archive_sha256']
+          assert d['source_filings_scanned']==m['records']
+          assert d['readable_filings']==m['records_with_text']
+          assert d['topics_count']==len(d['topics']) and d['topics_count']>0
+          for theme in d['topics']:
+              assert theme['assigned_filings']>=theme['unique_exact_texts']
+              assert all(e['id'].isdigit() and e['quote'] for e in theme['illustrative_quotes'])
+          print('Source population and published open-topic data verified')
+          PY
+      - name: Commit corpus-only topic results
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/open_topics.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish source-only full-document exploratory topics'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          else
+            echo 'No changed corpus-only topic results'
+          fi
