@@ -407,6 +407,11 @@ def summarize(records: list[dict], out: Path, book: dict,
     all_reasons=Counter(); all_kinds=Counter();roles=Counter()
     integrity=Counter();review_candidates=[]
     for r in completed:
+        scope=r.get('semantic_scope','full_text')
+        integrity['semantic_scope_'+scope+'_filings']+=1
+        if scope=='prioritized_windows':
+            integrity['source_windows_selected_for_model']+=int(r.get('source_windows_model_analyzed',0))
+            integrity['source_windows_available_in_selective_documents']+=int(r.get('source_windows_total',0))
         roles[r['stakeholder_role']]+=1
         if str(r.get('has_unreviewed_ocr','0'))=='1': integrity['ocr_candidate_filings']+=1
         if not r['positions']:integrity['filings_without_grounded_positions']+=1
@@ -423,6 +428,7 @@ def summarize(records: list[dict], out: Path, book: dict,
         if r.get('invalid_claims_rejected',0):flags.append('unmatched_or_invalid_quotes')
         if str(r.get('has_unreviewed_ocr','0'))=='1':flags.append('unreviewed_ocr_candidate')
         if not r['positions']:flags.append('no_grounded_policy_position_extracted')
+        if scope=='prioritized_windows':flags.append('selected_author_windows_not_full_appendix_semantic_read')
         if int(r.get('chunk_count',0))>12:flags.append('long_complex_filing')
         if int(digest(r['submission_id'])[:8],16)%25==0:flags.append('deterministic_quality_sample')
         if flags:
