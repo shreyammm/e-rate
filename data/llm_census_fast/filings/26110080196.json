@@ -1,0 +1,47 @@
+{
+  "summary": "Discussion on potential changes to E-Rate policies and their implications",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "",
+      "evidence_quote": "Why should we allow money hungry beasts to take away a blessing for those who truly need it?",
+      "evidence_start": 0,
+      "evidence_end": 92,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "Why should we allow money hungry beasts to take away a blessing for those who truly need it?",
+      "evidence_start": 0,
+      "evidence_end": 92,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080196",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080196",
+  "filer_raw": "Ashley Ballenzuela",
+  "date_submission": "2026-10-09T06:22:20.180Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1956b2e96a09034290c5b79ad4f9204e7408a0d33b4a914b1fa8fa79946be0fd",
+  "params_key": "b50456af2ad7376f90cde4fafbbea72053bbc57cc91d21128543e79441fb4925",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

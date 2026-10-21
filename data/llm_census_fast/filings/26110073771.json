@@ -1,0 +1,34 @@
+{
+  "summary": "The text argues for maintaining the E-Rate program, emphasizing its importance for libraries and schools to provide essential computer services for public use and research.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "",
+      "evidence_quote": "Please keep eRate. It is essential for libraries to provide public computers to the public, including research and applying for employment. Schools need this essential service as well so they can access reliable databases for their research and education.",
+      "evidence_start": 0,
+      "evidence_end": 255,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073771",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073771",
+  "filer_raw": "Jeannie Damiano",
+  "date_submission": "2026-08-29T22:05:58.914Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0e1dca659988a3e11699ed5da89f2bd0970a7493123311bee8ce9e19af2b86dd",
+  "params_key": "6ad75b754860030f6881c0d96dbf621b94390de4617485eff69a771a78559ff9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

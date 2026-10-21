@@ -1,0 +1,47 @@
+{
+  "summary": "The text expresses support for maintaining the E-Rate program and its importance for educational access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "",
+      "evidence_quote": "It's crucial for students to have affordable access through school to be competitive in the current world economy.",
+      "evidence_start": 68,
+      "evidence_end": 182,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Keep funding E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "This program is incredibly important, we need to keep funding this.",
+      "evidence_start": 0,
+      "evidence_end": 67,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077800",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077800",
+  "filer_raw": "Cynthia Birkner",
+  "date_submission": "2026-09-23T06:03:49.491Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "82f2bbedcf8fc1c28db645be2a9b044525d37db6b0d38dd98f73cf07dccbd4cc",
+  "params_key": "db77488146f18df458d0accfa56f659587cbb3669ffff303bcfa3b6492782067",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

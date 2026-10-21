@@ -1,0 +1,34 @@
+{
+  "summary": "Maintain or increase funding for E-Rate program to support internet access in libraries and schools, especially in poorer and rural areas.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain or increase funding for E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "",
+      "evidence_quote": "It allows libraries and schools, especially poorer and rural ones, to access and maintain internet and communication connections for their patrons, students, and citizens. It is an amazing program",
+      "evidence_start": 53,
+      "evidence_end": 249,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073034",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073034",
+  "filer_raw": "Lahela Maxwell",
+  "date_submission": "2026-08-25T15:49:00.925Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "78d71cf9dcfcae80a68f7986957bd2b0784db88556c2662991a02fa430051a5d",
+  "params_key": "33ee67334dcbe38c58dab7c3a73561c180dfd224d6b69ec3cdb9011f0865695e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

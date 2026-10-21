@@ -1,0 +1,34 @@
+{
+  "summary": "Discussion on potential changes to the E-Rate program and their impact on various stakeholders.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Eliminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating the program would result in a significant loss of funding for the school.",
+      "evidence_quote": "By eliminating this program, our small rural school would lose access to approximately $250,000 of funding over a five year window.",
+      "evidence_start": 0,
+      "evidence_end": 131,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080078",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080078",
+  "filer_raw": "Linden Community Schools",
+  "date_submission": "2026-10-08T17:02:47.497Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f0407051c94d5a30d9417e280d585d93e277b519312aa3a45b724ea41656238e",
+  "params_key": "bc473808755654385d2da09e4fd91d0de288b241860547e95122e86141756ffd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}
