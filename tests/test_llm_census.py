@@ -54,7 +54,10 @@ class LLMCensusTests(unittest.TestCase):
                                'granite4.2:3b','http://localhost:11434/api/chat')
         self.assertEqual(captured['model'],'granite4.2:3b')
         self.assertIs(captured['think'],False)
-        self.assertEqual(captured['format'],'json')
+        self.assertIsInstance(captured['format'],dict)
+        self.assertEqual(captured['format']['type'],'object')
+        self.assertIn('claims',captured['format']['required'])
+        self.assertEqual(captured['format']['properties']['claims']['type'],'array')
         self.assertEqual(result['claims'],[])
 
     def test_missing_role_quote_is_not_a_verified_stakeholder(self):

@@ -73,6 +73,13 @@ jobs:
           python3 -m scripts.llm_census --input-dir data/fcc_corpus \
             --out-dir data/llm_census_fast --publish-preview docs/data/llm_exploratory.json \
             --model ibm/granite4:1b-q4_K_M --limit 240 --max-chunks-per-filing 3 --max-minutes 175
+      - name: Build every-claim argument landscape from all completed filings
+        if: always() && steps.pending.outputs.run == 'true'
+        run: |
+          python3 -m pip install 'scikit-learn>=1.4,<2'
+          python3 -m scripts.build_claim_landscape \
+            --filings data/llm_census_fast/filings \
+            --source data/fcc_corpus --output docs/data/claim_landscape.json
       - name: Update aggregate preview and commit durable checkpoints
         if: always() && steps.pending.outputs.run == 'true'
         run: |
@@ -84,6 +91,7 @@ jobs:
           if [ -d data/llm_census_fast ]; then git add -- data/llm_census_fast; fi
           if [ -f docs/data/llm_audit_queue.json ]; then git add -- docs/data/llm_audit_queue.json; fi
           if [ -f docs/data/llm_exploratory.json ]; then git add -- docs/data/llm_exploratory.json; fi
+          if [ -f docs/data/claim_landscape.json ]; then git add -- docs/data/claim_landscape.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Checkpoint exploratory LLM census results (machine-only)'
             git pull --rebase origin "${GITHUB_REF_NAME}"

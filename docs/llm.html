@@ -24,6 +24,16 @@
 <p class="llm-disclaimer"><strong>Interpret with care.</strong> Each submission is self-selected. All classifications, role estimates and summaries here are unvalidated. The machine model can misread sarcasm, negation, OCR and complex legal arguments. Percentages among completed files are not percentages of all FCC commenters.</p>
 <p id="llm-status" role="status" aria-live="polite">Checking whether an exploratory census has been generated…</p>
 <section id="llm-stats" class="llm-stats" aria-label="Analysis coverage"></section>
+<section class="llm-panel" id="claim-census">
+<h2>Extracted arguments: who says what, and how often?</h2>
+<p class="llm-small">All completed model-coded filings and all source-grounded claims are included, not a random sample. Groups are automatically discovered and still require semantic verification. Counts represent <strong>distinct filings</strong>, not excerpts, verified people or the entire docket until processing reaches 100%.</p>
+<div id="claim-coverage" class="llm-stats" role="status">Checking full-filing claim coverage…</div>
+<div class="llm-tools"><label>Search an argument <input id="claim-search" type="search" placeholder="Broadband costs, privacy, parent choice…"></label>
+<label>Position <select id="claim-position"><option value="">All positions</option><option value="support">Support</option><option value="oppose">Oppose</option><option value="conditional_or_amend">Conditional or amend</option><option value="alternative_proposal">Alternative proposal</option></select></label></div>
+<p class="llm-small" id="claim-result-count"></p>
+<div id="claim-groups" class="llm-issues"></div>
+<p class="llm-small">The 29 FCC questions are cross-references, <strong>not</strong> the ceiling on arguments discovered. Newly articulated arguments can be labeled <code>other_policy_issue</code>. Each group includes its counting unit and source links; overlapping arguments are counted separately but a filing counts only once within each group.</p>
+</section>
 <section class="llm-panel" id="argument-map">
 <h2>Map the arguments across the docket</h2>
 <p>All 3,231 submissions were scanned to identify major recurring argument language, representative quotations and which filer fields use it. These preliminary themes are <strong>not</strong> support/opposition estimates. As open-source Granite finishes each filing, the <strong>LLM-extracted arguments</strong> view clusters independently cited claims and positions, without user training.</p>
@@ -59,4 +69,4 @@
 <p id="llm-visible" class="llm-small"></p><div id="llm-issues" class="llm-issues"></div></section>
 <section id="methods" class="llm-panel"><h2>How is this generated?</h2><p>Free Ollama inference runs in scheduled GitHub Actions batches, analyzing full comments in overlapping windows. It extracts requested actions, provision positions, cited arguments and inferred roles. The code rejects evidence quotes that cannot be located exactly in their original source window. Every filing has a resumable, hashed checkpoint.</p><p>This experimental lane never overwrites the <a href="./">human-validated findings</a>. The model may find arguments keyword retrieval misses, but an exact quote only verifies the quotation, not the LLM's interpretation. <a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/llm_census_methodology.md">Full methodology and cautions ↗</a></p></section></main>
 <footer><div class="shell">Independent project; not affiliated with the FCC. Machine classifications are not agency decisions.</div></footer>
-<script src="./assets/argument_map.js" defer></script><script src="./assets/llm.js" defer></script></body></html>
+<script src="./assets/argument_map.js" defer></script><script src="./assets/llm.js" defer></script><script defer src="./assets/claims.js"></script></body></html>
