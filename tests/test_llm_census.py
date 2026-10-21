@@ -131,20 +131,20 @@ class LLMCensusTests(unittest.TestCase):
             calls.append(1)
             return self.model(*args)
         state=process_record(row,self.book,self.out,'fake','local',700,80,
-                             call=model,max_chunks=3)
+                             call=model,max_chunks=2)
         self.assertEqual(state,'partial')
-        self.assertEqual(len(calls),3)
+        self.assertEqual(len(calls),2)
         path=self.out/'filings'/f'{self.sid}.json'
-        self.assertEqual(json.loads(path.read_text())['next_chunk'],3)
+        self.assertEqual(json.loads(path.read_text())['next_chunk'],2)
         state=process_record(row,self.book,self.out,'fake','local',700,80,
-                             call=model,max_chunks=3)
+                             call=model,max_chunks=2)
         self.assertEqual(state,'partial')
-        self.assertEqual(json.loads(path.read_text())['next_chunk'],6)
+        self.assertEqual(json.loads(path.read_text())['next_chunk'],4)
 
     def test_partial_resumption(self):
         # A preexisting checkpoint resumes the second chunk without redoing the first.
         row={**self.row,'text':self.body*80}
-        chunks=split_text(row['text'],700,80)
+        chunks,_,_=select_argument_windows(row['text'],700,80)
         key=params_key(row,self.book,'fake',700,80)
         p=self.out/'filings'/f'{self.sid}.json'
         p.parent.mkdir(parents=True)
