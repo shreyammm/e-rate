@@ -87,7 +87,7 @@
       const p=r.passages?.[0];
       const quote=elem('blockquote','ev-excerpt',p?.quote||'No source excerpt');
       const links=elem('div','ask-source-links');
-      links.append(link('Full text ↗','./corpus.html?id='+encodeURIComponent(r.id)),link('Original FCC filing ↗','https://www.fcc.gov/ecfs/filing/'+encodeURIComponent(r.id)));
+      links.append(link('Full text ↗','./corpus.html?id='+encodeURIComponent(r.id)),link('Original FCC filing ↗','https://www.fcc.gov/ecfs/filing/'+encodeURIComponent(r.id)),link('Find similar filings ↗','./similar.html?id='+encodeURIComponent(r.id)));
       card.append(head,quote,links);
       host.append(card);
     }
