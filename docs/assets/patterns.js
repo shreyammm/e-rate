@@ -20,11 +20,11 @@ const has=(r,i)=>Boolean((Number(r.issues)||0)&(1<<i));
 const weight=r=>$("lab-weight").value==="dedupe"?1/Math.max(1,Number(r.duplicate_count)||1):1;
 const sum=a=>a.reduce((n,r)=>n+weight(r),0);
 const percent=(a,b)=>b?num(a/b*100)+"%":"—";
-const controls=["lab-role","lab-type","lab-issue","lab-ocr","lab-weight"];
-const scoped=()=>rows.filter(r=>
+const controls=["lab-role","lab-type","lab-issue","lab-ocr","lab-weight","lab-pairmetric"];
+const scoped=(ignoreIssue=false)=>rows.filter(r=>
  (!$("lab-role").value||r.role===$("lab-role").value)&&
  (!$("lab-type").value||r.type===$("lab-type").value)&&
- (!$("lab-issue").value||has(r,issues.indexOf($("lab-issue").value)))&&
+ (ignoreIssue||!$("lab-issue").value||has(r,issues.indexOf($("lab-issue").value)))&&
  (!$("lab-ocr").value||Boolean(r.ocr)===($("lab-ocr").value==="yes")));
 const inSelection=r=>(!dateOnly||r.date===dateOnly)&&(!pair.length||(has(r,pair[0])&&has(r,pair[1])));
 function metricBars(id,entries,max,onclick){
@@ -54,19 +54,28 @@ function redraw(){
  }
  $("lab-timeline-label").textContent=(dateOnly?"Date selected: "+dateOnly+" (click again to clear). ":"Select any date to filter.")+" "+dates.length+" dates represented.";
  const issueIndex=issues.indexOf($("lab-issue").value);
- const roles=[...new Set(base.map(r=>r.role||"unresolved"))].map(role=>{
- const subset=base.filter(r=>(r.role||"unresolved")===role);
+ // Do NOT condition the role denominator on the very issue being compared;
+ // otherwise every category misleadingly displays 100% after filtering.
+ const roleUniverse=scoped(true).filter(r=>!dateOnly||r.date===dateOnly);
+ const roles=[...new Set(roleUniverse.map(r=>r.role||"unresolved"))].map(role=>{
+ const subset=roleUniverse.filter(r=>(r.role||"unresolved")===role);
  const hits=issueIndex<0?sum(subset):sum(subset.filter(r=>has(r,issueIndex)));
  return {role,hits,total:sum(subset)}
  }).sort((a,b)=>b.hits-a.hits);
  metricBars("lab-roles",roles.map(x=>[friendly(x.role),x.hits,issueIndex<0?num(x.hits):percent(x.hits,x.total),x.role]),Math.max(1,...roles.map(x=>x.hits)),role=>{$("lab-role").value= $("lab-role").value===role?"":role;page=0;redraw()});
- const counts=[];
+ const counts=[],pop=sum(base),byIssue=issues.map((_,i)=>sum(base.filter(r=>has(r,i))));
+ const metric=$("lab-pairmetric").value;
  for(let i=0;i<issues.length;i++)for(let j=i+1;j<issues.length;j++){
  const v=sum(base.filter(r=>has(r,i)&&has(r,j)));
- counts.push({i,j,v});
+ const jaccard=byIssue[i]+byIssue[j]-v>0?v/(byIssue[i]+byIssue[j]-v):0;
+ const lift=pop>0&&byIssue[i]&&byIssue[j]?(v*pop)/(byIssue[i]*byIssue[j]):0;
+ const score=metric==="lift"?lift:metric==="jaccard"?jaccard:v;
+ // Suppress unstable tiny co-mentions from top association lists.
+ if(metric==="count"||v>=3)counts.push({i,j,v,lift,jaccard,score});
  }
- counts.sort((a,b)=>b.v-a.v);const top=counts.slice(0,12);
- metricBars("lab-pairs",top.map(x=>[friendly(issues[x.i])+" + "+friendly(issues[x.j]),x.v,num(x.v),x]),Math.max(1,...top.map(x=>x.v)),x=>{pair=pair[0]===x.i&&pair[1]===x.j?[]:[x.i,x.j];page=0;redraw()});
+ counts.sort((a,b)=>b.score-a.score||b.v-a.v);
+ const top=counts.slice(0,12),label=x=>metric==="lift"?num(x.lift)+"×":metric==="jaccard"?num(x.jaccard*100)+"%":num(x.v);
+ metricBars("lab-pairs",top.map(x=>[friendly(issues[x.i])+" + "+friendly(issues[x.j]),x.score,label(x),x]),Math.max(1,...top.map(x=>x.score)),x=>{pair=pair[0]===x.i&&pair[1]===x.j?[]:[x.i,x.j];page=0;redraw()});
  if(pair.length){const p=document.createElement("p");p.className="lab-hint";p.textContent="Pair filter active: "+friendly(issues[pair[0]])+" + "+friendly(issues[pair[1]]);const b=document.createElement("button");b.textContent="Clear pair";b.onclick=()=>{pair=[];page=0;redraw()};p.append(" ",b);$("lab-pairs").prepend(p);}
  const copy=selected.filter(r=>Number(r.duplicate_count)>1);
  const sens=[
@@ -82,13 +91,13 @@ function redraw(){
  const pages=Math.max(1,Math.ceil(result.length/limit));page=Math.min(page,pages-1);
  $("lab-page-label").textContent=num(result.length)+" matches · page "+(page+1)+"/"+pages;
  $("lab-prev").disabled=page===0;$("lab-next").disabled=page>=pages-1;
- $("lab-table").innerHTML=result.slice(page*limit,(page+1)*limit).map(r=>'<tr><td>'+escape(r.date)+'</td><td>'+escape(r.id)+'</td><td>'+escape(r.organization||"Not displayed")+'</td><td>'+escape(friendly(r.role||"unresolved"))+'</td><td>'+escape(issues.filter((_,i)=>has(r,i)).map(friendly).join(", ")||"None detected")+'</td><td>'+escape(r.duplicate_count||1)+'</td><td><a target="_blank" rel="noopener noreferrer" href="https://www.fcc.gov/ecfs/search/search-filings/filing/'+encodeURIComponent(r.id)+'">FCC ↗</a></td></tr>').join("");
+ $("lab-table").innerHTML=result.slice(page*limit,(page+1)*limit).map(r=>'<tr><td>'+escape(r.date)+'</td><td>'+escape(r.id)+'</td><td>'+escape(r.organization||"Not displayed")+'</td><td>'+escape(friendly(r.role||"unresolved"))+'</td><td>'+escape(issues.filter((_,i)=>has(r,i)).map(friendly).join(", ")||"None detected")+'</td><td>'+escape(r.duplicate_count||1)+'</td><td><a target="_blank" rel="noopener noreferrer" href="https://www.fcc.gov/ecfs/filing/'+encodeURIComponent(r.id)+'">FCC ↗</a></td></tr>').join("");
  window.labExport=()=>result;
 }
 controls.forEach(id=>$(id).addEventListener("change",()=>{page=0;redraw()}));
 $("lab-search").addEventListener("input",()=>{page=0;redraw()});
 $("lab-prev").onclick=()=>{page--;redraw()};$("lab-next").onclick=()=>{page++;redraw()};
-$("lab-reset").onclick=()=>{for(const id of controls)$(id).value=id==="lab-weight"?"filings":"";$("lab-search").value="";dateOnly="";pair=[];page=0;redraw()};
+$("lab-reset").onclick=()=>{for(const id of controls)$(id).value=id==="lab-weight"?"filings":id==="lab-pairmetric"?"count":"";$("lab-search").value="";dateOnly="";pair=[];page=0;redraw()};
 $("lab-download").onclick=()=>{
 const fields=["id","date","type","role","organization","ocr","issues","duplicate_count"];
 const safe=x=>'"'+String(x??"").replace(/^[=+@\-\t\r]/,"'$&").replaceAll('"','""')+'"';
