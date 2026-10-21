@@ -96,7 +96,7 @@ def extract_excerpt(text, terms):
     """Evidence quote must be a contiguous original-text substring."""
     if not text:
         return ""
-    terms = set(terms)
+    terms = {w for phrase in terms for w in SIMPLE.findall(str(phrase).lower())}
     best = None
     # Source text is already fully processed for vectorization; sample
     # sentence windows here only to choose illustrative, exact-span evidence.
