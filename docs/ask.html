@@ -15,7 +15,7 @@
 .ask-source blockquote{white-space:pre-wrap;overflow-wrap:anywhere;font:normal .89rem/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;background:#f4f8fb;border-left:3px solid #809eaf;padding:.8rem;margin:.7rem 0}
 .ask-source-links{display:flex;gap:1.4rem;flex-wrap:wrap;font-size:.9rem}
 .ask-warning{border-left:3px solid #9a7048;background:#fcf7ef;padding:.7rem .8rem;font-size:.94rem;line-height:1.55}
-.ask-small{font-size:.85rem;color:#647787}
+.ask-panel table{width:100%;border-collapse:collapse;font-size:.85rem}.ask-panel th,.ask-panel td{text-align:left;vertical-align:top;padding:.6rem;border-bottom:1px solid #d7e1e8;overflow-wrap:anywhere}.ask-small{font-size:.85rem;color:#647787}
 @media(max-width:900px){.ask-layout{grid-template-columns:1fr}}
  .ask-all-match-list{max-height:340px;overflow:auto;overflow-wrap:anywhere}.ask-all-match-list p{margin:.45rem 0}.ask-all-match-list a{font-weight:600}</style></head><body>
 <header class="site-top"><div class="shell header-row"><div><strong>E-Rate Comment Observatory</strong><span class="subhead">Full-corpus grounded question answering</span></div><nav><a href="./">Dashboard</a> · <a href="./corpus.html">Read every comment</a> · <a href="./llm.html">Corpus-wide LLM census</a></nav></div></header>
@@ -27,6 +27,7 @@
 <p id="ask-status" class="ask-muted" role="status" aria-live="polite">Loading verified source manifest…</p>
 <div id="ask-warning"></div></section>
 <section class="ask-panel"><h2>Answer</h2><p class="ask-muted">An AI-generated answer will appear here only when the US-developed on-device model is available. Actual filing quotations remain visible even without model support.</p><div id="ask-answer"></div></section>
+<section class="ask-panel"><h2>Compare the evidence</h2><p class="ask-muted">Inspect the sources behind the answer, possible contrasting language, and which complete passages the model received.</p><div id="ask-comparison"></div></section>
 <section class="ask-panel"><h2>Original comments used as evidence</h2><p class="ask-muted">These passages are verbatim portions of the research snapshot, not paraphrases. Open the whole filing before relying on any characterization; source claims may be inaccurate and OCR can contain errors.</p><div id="ask-evidence"><p class="ask-muted">Source quotations and direct filing links will appear only after all 12 public text shards have been searched successfully.</p></div></section><details id="ask-all-matches" class="ask-panel"></details>
 </div><aside>
 <section class="ask-panel"><h2>Try a question</h2><div class="ask-suggestions">
