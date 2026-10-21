@@ -1,3 +1,19 @@
+# FCC E-Rate Comment Observatory — argument-first public research
+
+**Primary research entry point: [Argument Atlas](https://shreyammm.github.io/e-rate/atlas.html).** The project is organized around what appears in the original FCC comment record: recurring language, reasons, commenter perspectives, disagreements requiring investigation, and direct filing evidence. The analyst's 29-item policy codebook is now a **secondary FCC regulatory crosswalk**, not the research taxonomy.
+
+- [Argument Atlas](https://shreyammm.github.io/e-rate/atlas.html) — source-linked open-ended full-document topics (21 current exploratory NMF topics), 16 separate debate-passage clusters, 14 transparent reason-language families, stakeholder prevalence, overlap map, and questions of disagreement.
+- [Research Studio](https://shreyammm.github.io/e-rate/research.html) — evidence-first navigation to comparison, time patterns, duplicate sensitivity, exact source phrases, and document similarity.
+- [Ask the Corpus](https://shreyammm.github.io/e-rate/ask.html) — rescan all 3,231 source records for each question, browse source excerpts and all lexical matches, optionally generate a locally sourced citation-bearing synthesis.
+- [Secondary regulatory crosswalk](https://shreyammm.github.io/e-rate/regulatory.html) — 29 analyst-defined FCC questions/proposals with explicit notice-status labels, language-mention counts, and interpretation cautions.
+- [Separate machine-extraction explorer](https://shreyammm.github.io/e-rate/llm.html) — GitHub Granite, Kaggle gpt-oss, and any other model outputs are *unvalidated interpretive analysis*, not the source-only statistics.
+
+**The two discovery systems are different:** `scripts/discover_open_topics.py` analyzes full extracted text without a prespecified FCC proposal or advocacy-sentence filter. The older `scripts/build_argument_map.py` first selects candidate debate-like sentences; its 16 lexical clusters are therefore narrower. Both are exploratory language structures, **not 21 + 16 verified substantive arguments**. The 14 reason families are analyst-defined vocabulary groupings, not discovered claims. One filing is not necessarily an independent person, a word match is not endorsement, and self-selected filings do not estimate public opinion.
+
+Research methods and future source-grounded claim schema: [argument-first methodology](analysis_methods/argument_first_methodology.md) and [argument-first ontology](analysis_methods/argument_first_ontology_v2.json). These are additive: the GitHub/Kaggle automated LLM jobs are not interrupted.
+
+---
+
 ## Analyze every FCC filing on an Apple Silicon Mac (automatic GitHub upload)
 
 For an **M3 Pro Mac with 18 GB of unified memory**, the suggested local model is US-developed, Apache-2.0 licensed **IBM Granite 4.2 8B** (the default Ollama quantization is approximately 5.3 GB). Local inference is a much better fit than running a quality model on GitHub's free CPU-only runner. Larger open models such as gpt-oss 20B may technically fit some 18 GB setups but risk substantial memory pressure and slower end-to-end processing.
