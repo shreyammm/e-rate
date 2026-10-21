@@ -57,8 +57,22 @@ jobs:
           git add -- docs/data/open_topics.json
           if ! git diff --cached --quiet; then
             git commit -m 'Publish source-only full-document exploratory topics'
-            git pull --rebase origin main
-            git push origin HEAD:main
+            # Model and site jobs can update main between fetch and push.
+            # Retry optimistic updates instead of losing a validated result.
+            published=false
+            for attempt in 1 2 3 4 5 6 7 8; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                published=true
+                break
+              fi
+              sleep 3
+            done
+            if [ "$published" != true ]; then
+              echo 'Failed to publish validated source-only topics after eight attempts'
+              exit 1
+            fi
           else
             echo 'No changed corpus-only topic results'
           fi
