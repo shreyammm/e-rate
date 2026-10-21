@@ -125,10 +125,48 @@
     }
     buffer+=decoder.decode();await consume(buffer);
   }
+  // Optional document-level BM25 boosts passage ranking. This never shortlists
+  // documents: every source record is still scanned independently on every question.
+  const lexicalBuckets=new Map();
+  async function bm25Scores(query){
+    const terms=[...new Set((query.question.toLowerCase().match(WORD)||[])
+      .filter(w=>!STOP.has(w)&&w.length<=24))].slice(0,16);
+    if(!terms.length)return new Map();
+    const scores=new Map(),letters=[...new Set(terms.map(t=>t[0]))];
+    const N=meta.records,avg=Math.max(1,Number(meta.avg_doc_length)||1000);
+    for(const letter of letters){
+      if(!meta.buckets?.includes(letter))continue;
+      if(!lexicalBuckets.has(letter))lexicalBuckets.set(letter,
+        fetch('./data/qa_index/'+letter+'.json').then(r=>{
+          if(!r.ok)throw Error('Search index unavailable');return r.json();
+        }));
+      const postings=await lexicalBuckets.get(letter);
+      for(const term of terms.filter(w=>w[0]===letter)){
+        const pairs=postings[term];
+        if(!Array.isArray(pairs)||!pairs.length)continue;
+        const df=pairs.length/2,idf=Math.log(1+(N-df+0.5)/(df+0.5));
+        for(let p=0;p<pairs.length;p+=2){
+          const index=pairs[p],tf=pairs[p+1],doc=meta.docs[index];
+          if(!doc||!Number.isFinite(tf))continue;
+          const length=Math.max(1,Number(doc.length)||1),denom=tf+1.2*(0.25+0.75*length/avg);
+          const score=idf*tf*2.2/denom;
+          scores.set(String(doc.id),(scores.get(String(doc.id))||0)+score);
+        }
+      }
+    }
+    return scores;
+  }
   // Complete fresh scan on EVERY submitted question. The source may be cached
   // over HTTP, but every one of its 3,231 JSONL records is re-read and searched.
   async function fullScan(question){
     const query=plan(question);const expected=meta.docs;
+    // Fall back to verified source-passage matching if optional browser index
+    // loading fails; the exact-completeness guarantee does not depend on BM25.
+    let ranking=new Map();
+    if(typeof document!=='undefined'){
+      try{ranking=await bm25Scores(query);}
+      catch(err){status('Document-level ranking unavailable; continuing exhaustive original-text search.');}
+    }
     const byId=new Map(expected.map(d=>[String(d.id),d]));
     const byShard=new Map();
     for(const d of expected){byShard.set(d.shard,(byShard.get(d.shard)||0)+1);}
@@ -153,7 +191,7 @@
         const main=passages[0];
         const coverage=scorePassage(body.slice(0,Math.min(body.length,5000)),query).coverage;
         // Rank by passages *about the question*, not merely filenames or total word count.
-        const score=main.score +Math.min(10,coverage*2);
+        const score=main.score +Math.min(10,coverage*2) + Math.min(65,2.5*(ranking.get(id)||0));
         const fields={id,filer:String(row.filer_raw||known.filer||''),date:known.date,
           shard,source:String(row.source_url||fccLink(id)),ocr:String(row.has_unreviewed_ocr)==='1',
           score,action:passages.some(p=>p.action),affirmative:passages.some(p=>p.affirmative),contrary:passages.some(p=>p.contrary),
@@ -242,7 +280,7 @@
       context.textContent=i<used.length?'Full displayed passage':'Available for your inspection';
       row.append(name,cues,context);table.append(row);
     });
-    box.append(table,el('p','ask-small','Search cues are automatic retrieval hints. Read the passage to distinguish the author’s position from a quoted proposal or rebuttal. They are not stance labels.'));
+    box.append(table,el('p','ask-small','Passages use question-concept matches, optionally boosted by document-level BM25. Search cues are automatic retrieval hints. Read the passage to distinguish the author’s position from a quoted proposal or rebuttal. They are not stance labels.'));
     const download=el('button','ask-submit','Download evidence JSON');download.type='button';
     download.onclick=()=>{const blob=new Blob([JSON.stringify({question:found.question,scanned:found.scanned,readable:found.withText,lexical_matches:found.candidates.length,selected_evidence:evidence,answer_source_numbers:used.map((_,i)=>i+1)},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=el('a');a.href=url;a.download='fcc-question-evidence.json';a.click();URL.revokeObjectURL(url);};box.append(download);
   }
