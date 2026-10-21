@@ -45,6 +45,8 @@
   function renderQuality(d){
     const q=$('llm-quality');q.replaceChildren();
     const entries=[
+      ['Full-text model reading', d.machine_evidence_quality?.semantic_scope_full_text_filings],
+      ['Prioritized windows in long filings', d.machine_evidence_quality?.semantic_scope_prioritized_windows_filings],
       ['Filings with model-rejected or unmatched evidence', d.machine_evidence_quality?.filings_with_rejected_quotes_or_codes],
       ['Rejected evidence/claim rows',d.machine_evidence_quality?.invalid_claim_rows_rejected],
       ['Filings with uncertain claims',d.machine_evidence_quality?.filings_with_uncertain_claims],
@@ -86,7 +88,7 @@
   async function renderAuditQueue() {
     const root=$('llm-review');root.replaceChildren();
     try{
-      let response=await fetch(dataset.model==='ibm/granite4.2:8b'
+      let response=await fetch(dataset.model==='gpt-oss:20b' ? './data/llm_kaggle_audit_queue.json' : dataset.model==='ibm/granite4.2:8b'
         ? './data/llm_mac_audit_queue.json' : './data/llm_audit_queue.json',{cache:'no-store'});
       if(!response.ok && dataset.model==='ibm/granite4.2:8b')
         response=await fetch('./data/llm_audit_queue.json',{cache:'no-store'});
@@ -126,7 +128,7 @@
   // Prefer more capable locally computed Granite 4.2 8B annotations when
   // published, falling back to the unattended free 1B/legacy preview.
   async function preferredAnalysis(){
-    for(const p of ['./data/llm_mac_exploratory.json','./data/llm_exploratory.json']){
+    for(const p of ['./data/llm_kaggle_exploratory.json','./data/llm_mac_exploratory.json','./data/llm_exploratory.json']){
       try {
         const r=await fetch(p,{cache:'no-store'});
         if(!r.ok)continue;
@@ -162,3 +164,4 @@
     $('llm-stats').append(metric(0,'Processed filings (nothing inferred yet)'));
     target.append(node('p','','Source texts are available in the full corpus reader. The free Granite workflow is processing comments in resumable batches.'));});
 })();
+

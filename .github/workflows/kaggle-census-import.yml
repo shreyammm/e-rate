@@ -1,0 +1,55 @@
+name: Import free Kaggle GPU census (additive)
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '11 * * * *'
+  push:
+    paths:
+      - 'scripts/import_kaggle_census.py'
+      - '.github/workflows/kaggle-census-import.yml'
+permissions:
+  contents: write
+concurrency:
+  group: erate-kaggle-census-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check checkpoint validation and install public output downloader
+        run: |
+          python -m unittest discover -s tests -p test_kaggle_census.py -q
+          python -m pip install 'kagglehub>=0.3,<1' 'scikit-learn>=1.5,<2'
+      - name: Download and validate latest saved public Kaggle output
+        id: download
+        continue-on-error: true
+        run: python -m scripts.import_kaggle_census --notebook shreyammm/fcc-e-rate-gpu-census
+      - name: Build separate GPU argument and findings pages
+        if: steps.download.outcome == 'success'
+        run: |
+          python -m scripts.build_claim_landscape --filings data/llm_census_kaggle/filings --output docs/data/kaggle/claim_landscape.json
+          python - <<'PY'
+          from pathlib import Path
+          from scripts.publish_research_findings import build
+          build(Path('docs/data/kaggle/claim_landscape.json'), Path('docs/data/llm_kaggle_exploratory.json'), Path('docs/kaggle-findings.html'))
+          PY
+      - name: Publish separate durable GPU checkpoints and website data
+        if: steps.download.outcome == 'success'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/llm_census_kaggle docs/data/llm_kaggle_exploratory.json docs/data/llm_kaggle_audit_queue.json docs/data/kaggle docs/kaggle-findings.html
+          if ! git diff --cached --quiet; then
+            git commit -m 'Import source-verified free Kaggle GPU analysis checkpoints'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - name: Report pending first saved output
+        if: steps.download.outcome != 'success'
+        run: echo 'Kaggle output is not available or failed validation. Existing research is unchanged; the next scheduled import will retry.'
+

@@ -1,3 +1,15 @@
+async function preferredClaimFile(name) {
+  for (const base of ['./data/kaggle/', './data/']) {
+    try {
+      const r=await fetch(base+name,{cache:'no-store'});
+      if(!r.ok)continue;
+      const d=await r.json();
+      if((d.coverage?.completed_machine_filings || d.complete_model_filings)>0)
+        return {ok:true,json:async()=>d};
+    } catch (_) {}
+  }
+  throw Error('No completed claim data yet');
+}
 'use strict';
 (function(){
  const $=id=>document.getElementById(id);
@@ -63,7 +75,7 @@
  }
  (async()=>{
    try{
-     const r=await fetch('./data/claim_landscape.json',{cache:'no-store'});
+     const r=await preferredClaimFile('claim_landscape.json');
      if(!r.ok)throw new Error('Claim map has not finished its first refresh');
      data=await r.json();
      if(!data?.coverage?.completed_machine_filings || !Array.isArray(data.clusters))
@@ -123,7 +135,7 @@
  }
  (async()=>{
   try{
-   const r=await fetch('./data/machine_claim_rows.json',{cache:'no-store'});
+   const r=await preferredClaimFile('machine_claim_rows.json');
    if(!r.ok)throw new Error('The next automatic analysis update has not published claim rows yet');
    const j=await r.json();
    if(!Array.isArray(j.rows)||j.publication_status!=='EXPLORATORY_MODEL_ONLY')throw new Error('Invalid machine-claim file');
@@ -141,3 +153,4 @@
   }catch(e){$('claim-row-count').textContent='Source-linked claim table not yet available: '+e.message;}
  })();
 })();
+
