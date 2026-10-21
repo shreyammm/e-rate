@@ -1,0 +1,34 @@
+{
+  "summary": "Teen librarian with Chicago Public Library urges FCC to reject proposals to eliminate E-Rate, emphasizing its critical role in providing affordable and reliable internet access for schools and libraries.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to eliminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 1235,
+      "evidence_end": 1377,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080497",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080497",
+  "filer_raw": "Alenka Figa",
+  "date_submission": "2026-10-10T22:51:39.386Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "553524eb65b56077b7ca67d2b25715a2bc9a115dcac016641601e8addc9a96e1",
+  "params_key": "62e4c734d796ee2a6ecbf239742137536fbc45b29ecccffde155cf7c3b17a353",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

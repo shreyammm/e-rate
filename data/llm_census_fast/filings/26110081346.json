@@ -1,0 +1,34 @@
+{
+  "summary": "The commenter opposes limiting or sunsetting E-Rate, emphasizing its critical role in providing connectivity to schools and libraries. They argue that the loss of funding would result in significant access or service issues. The commenter suggests that local policies, such as CIPA and screen time limits, should be used to address connectivity needs rather than federal policy changes.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The loss of E-Rate funding would lead to significantly less access or less service.",
+      "evidence_quote": "The $2.6 million in E-Rate funding in 2025 is not something that can be shifted to local schools and libraries. The loss of that kind of money means one of two things: significantly less access, or significantly less service. E-Rate is vital to our communities.",
+      "evidence_start": 777,
+      "evidence_end": 1038,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081346",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081346",
+  "filer_raw": "Christine Morris",
+  "date_submission": "2026-10-13T23:25:26.704Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3041c68afe1fbdad440949161de05077d3b2eb2793b4832039192679d491ed9a",
+  "params_key": "6bf6b2646f9f743f9c08f27f70b3c4f522ed9027614e111a19a4d3a79acc62cb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The superintendent emphasizes the importance of preserving E-Rate funding and local control over education decisions, arguing that the program is essential for maintaining reliable broadband infrastructure and that federal involvement in screen time governance is unnecessary and costly.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding and prevent sunset",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate provides essential connectivity for schools and districts",
+      "evidence_quote": "Decisions regarding classroom technology, instructional methods, and student screen-time limits are curriculum matters that belong under local and state control. School boards, educators, and parents—not federal regulatory agencies—are best equipped to govern device usage, balance screen time, and determine what serves their students' educational interests.",
+      "evidence_start": 394,
+      "evidence_end": 753,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077016",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077016",
+  "filer_raw": "Amy Starzecki",
+  "date_submission": "2026-09-18T19:59:14.350Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3558f621e9c77861468d04287444f118b5ab3812775de9aa21d40e24cfd620a3",
+  "params_key": "f570225afd9f576b19c76ec2fe99c25d89e9f8a0b8f401ab330d32afc0efe826",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

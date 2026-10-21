@@ -1,0 +1,34 @@
+{
+  "summary": "The school community urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the program's critical role in maintaining affordable, reliable internet access for schools and libraries, which has enabled significant educational advancements and supports the needs of students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would represent a cut to school and library budgets, jeopardizing years of progress building and upgrading networks.",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 545,
+      "evidence_end": 687,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080887",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080887",
+  "filer_raw": "Bonnie McBride",
+  "date_submission": "2026-10-13T13:38:16.851Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "098b38c1e247c2c6957de58ee8e840d854ae851222495094bfdc466f2a0005c1",
+  "params_key": "870368ac8c526db315d41c7d1314bf1246f0424542f975c2553ca1c4cd74cd92",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

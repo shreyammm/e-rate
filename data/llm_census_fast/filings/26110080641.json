@@ -1,0 +1,34 @@
+{
+  "summary": "The Eastern Shore Public Library relies on E-Rate funding to provide essential internet services to the community, including access to homework assist programs, job applications, telehealth services, online courses, and veteran assistance programs. The loss of E-Rate funding would result in a financial burden on the library, potentially leading to the loss of vital services and increased costs for internet service, equipment upgrades, and licensing. The library argues for continued funding to ma",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue to fully fund E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of funding would place a significant burden on the library, costing an additional $30,000-$50,000 per year for internet service, upgrades to equipment and licenses",
+      "evidence_quote": "Loss of the E-Rate funding would place a significant burden on the funding the library receives from local governments costing them an additional $30,000-$50,000 per year for internet service, upgrades to equipment and licenses.",
+      "evidence_start": 704,
+      "evidence_end": 932,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080641",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080641",
+  "filer_raw": "Eastern Shore of Virginia Public Library System",
+  "date_submission": "2026-10-12T17:21:26.437Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8d801f8b54b5437ebd9a9705d17d24b94be0bcb3d82e5a5881187a33808f0776",
+  "params_key": "8eabd63b00a38b0419ee50d5711388b141d38dc44b78667e0defd6db9819f26e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

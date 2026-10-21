@@ -1,0 +1,34 @@
+{
+  "summary": "Community Action Partnership of Madera County, Inc. urges the FCC to preserve E-Rate's core funding and support for schools and libraries, emphasizing the program's critical role in providing reliable internet access and digital learning resources for students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would have to use other budgetary expenses to fund network upgrades.",
+      "evidence_quote": "Without this funding, without the E-Rate portion to help fund many of our network upgrades such as internet speed upgrades, or new networking switches and wireless access points, we would have to use funds from other budgetary expenses such program supplies.",
+      "evidence_start": 989,
+      "evidence_end": 1247,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081321",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081321",
+  "filer_raw": "Community Action Partnership of Madera County, Inc.",
+  "date_submission": "2026-10-13T22:46:47.225Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6f20a40a626b4a4e6d3d5ac3c665e8272d90ae4c6a0243323c37cee30b4469ff",
+  "params_key": "e40d20ade1a6941c6a59bc1ec80e28fe4d335623c75113ea5f99a65dd3963e8c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

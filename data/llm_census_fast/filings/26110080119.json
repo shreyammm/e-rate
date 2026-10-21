@@ -1,0 +1,34 @@
+{
+  "summary": "The school district strongly supports preserving the E-Rate program, emphasizing its essential role in providing reliable, affordable internet connectivity for modern public education. The comment highlights the financial challenges that would arise from reducing or eliminating E-Rate funding and urges the FCC to maintain funding to avoid impacting school districts' ability to provide essential services and support educational opportunities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate funding would create significant financial challenges for school districts, potentially forcing them to redirect resources from instructional programs.",
+      "evidence_quote": "Our district receives a substantial amount in E-Rate support. Reducing or eliminating this funding would create significant financial challenges, potentially forcing our district to redirect resources from instructional programs, student services, or other operational priorities simply to maintain essential connectivity.",
+      "evidence_start": 577,
+      "evidence_end": 899,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080119",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080119",
+  "filer_raw": "Paul Salah",
+  "date_submission": "2026-10-08T19:16:59.564Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3279c5f57c9c08854f7b54ad9205c7213b6867e861cb4d03be80e8a700c00a5e",
+  "params_key": "6e9fc7d08192d1f70a996e04927fc80f8ba9410652bb7147ac4f374d41bf37d2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

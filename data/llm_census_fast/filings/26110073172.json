@@ -1,0 +1,34 @@
+{
+  "summary": "The individual supports continuing the E-Rate program to provide affordable Internet access for schools and libraries, emphasizing its educational benefits and the individual's personal experience with the library as a reliable source of Internet access.",
+  "stakeholder_role": "student",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue to provide support for schools and libraries",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is a success and should continue to support institutions",
+      "evidence_quote": "I believe the E-Rate program should continue to provide support for schools and libraries to maintain Internet access at an affordable price. As a young person, the library was the only place I could reliably connect to the Internet. This enhanced my learning and helped me understand the world better.",
+      "evidence_start": 0,
+      "evidence_end": 302,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073172",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073172",
+  "filer_raw": "Daniel Gerken",
+  "date_submission": "2026-08-26T12:17:37.497Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cc1bebbf045c3c486793dee2518f7b94a7ab29d08085531dc0dbe97a6a574ec2",
+  "params_key": "d421ec74414710038c2319879a9c78d3c8ac81f5d476aaaa2f8ed29ad9fbe687",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

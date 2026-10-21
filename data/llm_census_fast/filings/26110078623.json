@@ -1,0 +1,34 @@
+{
+  "summary": "The Chief Strategy and Information Officer for Nixa Public Schools urges the FCC to preserve E-Rate support, citing budgetary and maintenance concerns, and emphasizes the importance of connectivity for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Losing E-Rate support would require making difficult budget choices and placing more pressure on local taxpayers",
+      "evidence_quote": "Losing this support would put significant strain on a budget we are already reducing because of lower state appropriations. Replacing $150,000 annually would mean making difficult choices elsewhere in the district and placing more pressure on local taxpayers. It could also affect our ability to maintain and replace the network equipment our schools depend on.",
+      "evidence_start": 626,
+      "evidence_end": 987,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078623",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078623",
+  "filer_raw": "David Liss",
+  "date_submission": "2026-09-28T21:05:10.342Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8cc4bea1db36dd5bc47b447c860ea06647fed358bc3c3a22702f82b05c3bc0ab",
+  "params_key": "c0daac1fec8e6df405ed1ead4c120dbdd1f05dedb85e5cef0c3eb0a53f2ccb2a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

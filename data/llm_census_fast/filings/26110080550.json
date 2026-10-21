@@ -1,0 +1,34 @@
+{
+  "summary": "The technology director and school system advocate for strengthening E-Rate rather than reducing funding, emphasizing the importance of maintaining affordable, reliable internet connectivity for education and student success.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "strengthen E-Rate rather than reduce funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Maintaining affordable, reliable connectivity is essential to preparing students for success",
+      "evidence_quote": "Now is not the time to reduce ERate funding or to add new screen-time requirements for ERate program eligibility. Today, every student must be knowledgeable and fluent in a wide variety of current and emerging technologies if they are to succeed in life, college, and careers.",
+      "evidence_start": 524,
+      "evidence_end": 800,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080550",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080550",
+  "filer_raw": "Emily Elam",
+  "date_submission": "2026-10-12T04:03:33.205Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7bf74773125e791a97e01eb39d130d05d6bca6c5edbd36c944ef52fdcfc3d3ae",
+  "params_key": "d04bc0621d20e2425e59a8226886097e434947fb18723887faed55a066b8aba4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

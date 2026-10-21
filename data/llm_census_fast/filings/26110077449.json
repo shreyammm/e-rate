@@ -1,0 +1,34 @@
+{
+  "summary": "A small charter school in New York states that E-Rate support is essential for their operations and that reducing support would result in additional costs. They request that the Commission preserve meaningful E-Rate support for schools like their own.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate support is reduced, schools will have to absorb more costs within their operating budget",
+      "evidence_quote": "For a small school, that creates real tradeoffs. Additional dollars spent maintaining required technology infrastructure are dollars that cannot be invested in classroom resources, staffing, student programming, professional development, and other services that directly support students.",
+      "evidence_start": 950,
+      "evidence_end": 1238,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077449",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077449",
+  "filer_raw": "Darin Tyson",
+  "date_submission": "2026-09-21T18:13:38.005Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "be2f0f71991a0f8c28a16223e331c046377cc9bfbe8a15862088743d3cb38f44",
+  "params_key": "7534c350720a27bd5a0b5c64f15aced07e7f175de29a5176b5eb4ca0adb82572",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The Alamosa School District emphasizes the importance of E-Rate for maintaining essential technology infrastructure in their rural district. They argue that preserving E-Rate funding is crucial to ensure continued access to reliable, secure, and high-capacity connectivity for students and staff. The district urges the FCC to maintain and strengthen the program to prevent delays in infrastructure upgrades and the diversion of limited resources from other educational priorities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, infrastructure upgrades would be delayed or diverted from other educational priorities",
+      "evidence_quote": "Without E-Rate, these needs would not disappear. We would be forced to delay critical infrastructure upgrades or redirect limited local funding away from other educational priorities. For a rural district with limited resources, that would directly affect the quality and reliability of technology available to students and staff.",
+      "evidence_start": 565,
+      "evidence_end": 895,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072887",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072887",
+  "filer_raw": "Alamosa School District RE-11J",
+  "date_submission": "2026-08-24T17:52:57.534Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aeb50adfc97c0ff9234998058e696ef33070ff4910377fbf8e069f8573e9c22d",
+  "params_key": "ea2c6918bff7c21c81037636df188c81451c546707a55a509498cbc775c149fc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

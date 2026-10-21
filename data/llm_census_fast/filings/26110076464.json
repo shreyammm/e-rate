@@ -1,0 +1,34 @@
+{
+  "summary": "School district expresses concern about the impact of E-Rate funding on network infrastructure and connectivity for students and staff.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate funding would result in an entire school sharing a single individual's cell phone connection",
+      "evidence_quote": "Without cutting $2,000,000 from other programs annually, we would certainly not be able to provide reasonable and reliable access to our critical programs and the internet",
+      "evidence_start": 1424,
+      "evidence_end": 1595,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076464",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076464",
+  "filer_raw": "Tam Nguyen",
+  "date_submission": "2026-09-11T21:39:40.382Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f49dd0ad76fde71cad1a26656a9b29ca911bdf26119b5b912627bf5a21ace963",
+  "params_key": "2ce7cd32c4fa0904eb54a53a22e65c6ea2517fa534cefbd3a27eb84a92e5ab62",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

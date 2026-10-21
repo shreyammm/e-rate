@@ -1,0 +1,34 @@
+{
+  "summary": "The Educational Funding Group urges the FCC to keep the E-rate program intact, emphasizing its importance for schools and libraries and the lack of comparable funding alternatives.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "keep E-rate intact",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-rate would result in a heavy loss to schools and libraries",
+      "evidence_quote": "There are currently no other programs at a federal, state or local level that could make up for the funding loss that cutting the E-rate program would cause.",
+      "evidence_start": 618,
+      "evidence_end": 775,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081427",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081427",
+  "filer_raw": "Educational Funding Group, Inc.",
+  "date_submission": "2026-10-14T03:45:36.926Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "88fc30119749639573e05c6dda300a18fdfa1e371ee096b9c24f3bead344cab9",
+  "params_key": "048ddaf8c1bad172db1d02d22b01578ff0d2e46ec39f61f840229a0f7e393365",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

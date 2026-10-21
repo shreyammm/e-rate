@@ -1,0 +1,34 @@
+{
+  "summary": "A high school teacher and union vice president in Pennsylvania urges the FCC to preserve the E-Rate program and reject any proposal to reduce or sunset it, emphasizing the program's essential role in providing reliable broadband access for students and the potential financial impact of cutting funding.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would lead to significant new costs for maintaining school connectivity",
+      "evidence_quote": "If funding were cut, we would face significant new costs that would directly impact classroom technology, digital equity, and the ability of students from low‑income households to participate fully in learning.",
+      "evidence_start": 888,
+      "evidence_end": 1098,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080171",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080171",
+  "filer_raw": "Sean M Blasetti",
+  "date_submission": "2026-10-09T00:42:55.016Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "63c0f27507634fb22060a1166402c24a9fa7245573d703ad5eede2941bfaa6a3",
+  "params_key": "328e12aabe96fe758222f229453d06c6b5eefb258772e2ed3a99bd35dddd1a86",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

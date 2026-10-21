@@ -1,0 +1,34 @@
+{
+  "summary": "The Academy of Charter Schools urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the program's critical role in maintaining affordable, reliable Internet access for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing network upgrades",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 585,
+      "evidence_end": 727,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078745",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078745",
+  "filer_raw": "Brent Reckman | The Academy of Charter Schools",
+  "date_submission": "2026-09-29T18:33:06.531Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c2ce6f7c58d93c9a95daeb247ac823b8cbc5dd8f0547141445c975132d230a3d",
+  "params_key": "3e8847d9e8a0ea0521197fe898d1d6af2d2d699a84ee615210a9efcfa005effa",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The library urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the program's critical role in maintaining affordable internet access for schools and libraries. The library cites the potential impact on its budget and service provision if E-Rate were cut.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing years of network upgrades.",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 575,
+      "evidence_end": 717,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080139",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080139",
+  "filer_raw": "Anna Holmes | Lansing Public Library",
+  "date_submission": "2026-10-08T20:28:11.866Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5812cd383b835811d24de6ffbaf3f06665f9c7b984f84c55a5ddbff19b628614",
+  "params_key": "b150540a06cd6625a0f4241f09a1c292b3439346a2f1efefcf39f34c2b23ef07",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

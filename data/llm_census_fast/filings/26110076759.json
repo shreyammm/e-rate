@@ -1,0 +1,34 @@
+{
+  "summary": "The text presents a parent's perspective on the negative impact of excessive screen time and technology use on their children's education and health. The parent expresses concerns about the reliance on technology in schools and the lack of parental control over screen time.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The text discusses concerns about the reliance on technology in schools and the impact on children's health and well-being.",
+      "evidence_quote": "My concerns are rooted in direct observation as a parent of children in the pubic school district since starting Kindergarten in 2021. I witnessed a staggering reliance on videos in place of direct instruction. This was compounded by an excessive amount of personal screen time and a pervasive 'gamification' of the curriculum that replaced meaningful learning with digital distraction.",
+      "evidence_start": 0,
+      "evidence_end": 386,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076759",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076759",
+  "filer_raw": "A J",
+  "date_submission": "2026-09-16T00:01:22.775Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "266608d435778acafbc177bcec58ed0432b4f5607e3fe3ae5c64550e1dd15d5c",
+  "params_key": "b4f42980163bce7e234b97c3370657b328146a4f51c527f753c7a494b60c0b7c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

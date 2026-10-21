@@ -1,0 +1,34 @@
+{
+  "summary": "School expresses concern about preserving E-Rate funding to maintain connectivity and avoid budget impacts",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would absorb significant technology costs and face budget constraints",
+      "evidence_quote": "Without this funding, losing E-Rate funding would force our school to absorb a significant recurring technology cost within an already limited operating budget. That would likely mean delaying network and infrastructure upgrades, reducing spending in other instructional technology areas, and potentially shifting more costs to families through tuition or fees.",
+      "evidence_start": 839,
+      "evidence_end": 1200,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079445",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079445",
+  "filer_raw": "Berks Catholic High School",
+  "date_submission": "2026-10-05T18:24:17.252Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3e9de42020d20c61a134bb5fcc83ad315349428db2356a2a1efe9abc6a7a2b37",
+  "params_key": "fa8747325fdcc385f6408a60a50a99cb8dfbd67c8aaab2db408a171c86ddec1f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

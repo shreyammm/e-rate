@@ -1,0 +1,34 @@
+{
+  "summary": "White County School District urges FCC to preserve E-Rate funding to maintain essential network services and infrastructure for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate or reduce E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for White County School District to maintain high-speed internet infrastructure and network services",
+      "evidence_quote": "E-Rate funded MIBS allows our district to retain essential, on-call network engineers that we could never afford to employ full-time on local tax revenues alone. When a critical switch or router fails, an expert engineer is immediately available to keep our network operational. Furthermore, our network is the essential operational backbone for crucial facility operations beyond the classroom, including our smart HVAC systems, security cameras, automated door access controls, and cafeteria point-of-sale systems that keep our 3,600 students safe and fed daily.",
+      "evidence_start": 550,
+      "evidence_end": 1114,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080408",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080408",
+  "filer_raw": "Ashley Rust",
+  "date_submission": "2026-10-10T02:46:25.760Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "711c308602a2ed6ce39bcfa0db79af3ac31983fbf5d5b8dc914795b68eac4fc2",
+  "params_key": "ad6971e785a50192387b84bcd25188302c9f5b68795595a659b8a23aa805de0d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

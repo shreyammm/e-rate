@@ -1,0 +1,34 @@
+{
+  "summary": "School expresses concern about preserving E-Rate funding to maintain connectivity and avoid financial pressure",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools face financial pressure to cut educational resources",
+      "evidence_quote": "Without this funding, losing E-Rate funding would put significant financial pressure on our school and force us to make difficult choices about where limited funds are spent.",
+      "evidence_start": 922,
+      "evidence_end": 1096,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072916",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072916",
+  "filer_raw": "St. Sebastian Parish School",
+  "date_submission": "2026-08-24T19:59:05.902Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f257723cea9ef3699478b9a5df1ff84e718aba98c8d0c85c1348e9f7df8e907d",
+  "params_key": "7e144de964debb04f463f24eebcaae9ed8759ce9d230dbd90d61ae1a67b8433a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

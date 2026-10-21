@@ -1,0 +1,34 @@
+{
+  "summary": "Library media specialist urges preservation of E-Rate program to ensure educational access for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deepen inequities and hinder educational access",
+      "evidence_quote": "Cutting this program would only deepen the inequities that public education is meant to overcome. Students cannot fully participate in modern learning environments without reliable internet access, and schools cannot effectively prepare students for success without it.",
+      "evidence_start": 1313,
+      "evidence_end": 1582,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079722",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079722",
+  "filer_raw": "Beverley Rannow | Rannow Beverley",
+  "date_submission": "2026-10-07T01:43:58.780Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7296db4431a9a11930de03d4011f3edafe22c577d876dfd98cedf757bdbfb7d9",
+  "params_key": "af5c3d2f1a6896e486a6a605f552b7a678c82d319f79fd9d4fd7460ad5820c5e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

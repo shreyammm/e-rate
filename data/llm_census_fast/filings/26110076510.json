@@ -1,0 +1,34 @@
+{
+  "summary": "The FCC comment urges the preservation of the E-Rate program to ensure access to broadband for schools and libraries, emphasizing the program's importance for educational equity and student success.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate means preserving educational opportunity for millions of students",
+      "evidence_quote": "I strongly urge the Commission to reject any proposal that would reduce, limit, or sunset E-Rate funding and instead continue supporting this essential program and protect the access for the students who need it most.",
+      "evidence_start": 1682,
+      "evidence_end": 1899,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076510",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076510",
+  "filer_raw": "Laura Kramer",
+  "date_submission": "2026-09-12T23:24:38.993Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e9e5fecd0777bb830125be09a073632a85977787058d8808fbf5912988abb443",
+  "params_key": "57a71d26f6b6e8f36d0e261969ffff84ed4a0182a88549d0e8cecebd4c15d321",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

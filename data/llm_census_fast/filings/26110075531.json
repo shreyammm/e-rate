@@ -1,0 +1,34 @@
+{
+  "summary": "The Omaha Public Library urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the program's critical role in providing affordable, reliable internet access to schools and libraries. The library argues that such cuts would have immediate and severe impacts on the quality of services it provides to the community, particularly in network deserts where many families lack home internet access.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing progress in network upgrades",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 585,
+      "evidence_end": 727,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075531",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075531",
+  "filer_raw": "Taylor Corbaley",
+  "date_submission": "2026-09-04T02:07:00.404Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c5ea4dae67615587c54f06590e3dbde4d6230a9907870de54ffcfec9d23792a5",
+  "params_key": "e108ce235a98406400fe3f32008078913b13959afb049933706989758cd43242",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

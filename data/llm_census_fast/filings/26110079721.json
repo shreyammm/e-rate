@@ -1,0 +1,34 @@
+{
+  "summary": "Support for continuing and expanding the E-Rate program",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue and expand the federal E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Continuing E-Rate is essential for investing in communities and supporting people's access to vital services",
+      "evidence_quote": "Investing in the E-Rate helps you invest in communities, in the lives of millions of everyday people.",
+      "evidence_start": 1655,
+      "evidence_end": 1756,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079721",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079721",
+  "filer_raw": "Esther Berland",
+  "date_submission": "2026-10-07T01:29:26.478Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "54642988e5d37aa2459dd9cef00264bcdcbdcaa16a8eae0f8a3a2ab723da1bdc",
+  "params_key": "103ca51df11b3f25ca962c3b2d33ebe3620216e0da0c86b9e0a86b48594257b3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The school system emphasizes the importance of E-Rate funding for connectivity, instruction, and safety, and urges the FCC to preserve its core funding to avoid increased costs or service disruptions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is critical for schools and libraries to provide reliable connectivity and support for instruction, testing, and safety",
+      "evidence_quote": "The funding provided by E-Rate is critical to supporting teachers and students as well as to the physical security of our buildings. The loss of funding would result in either increased property taxes for families already stressed or a loss of services at an especially concerning time, particularly in school security.",
+      "evidence_start": 1090,
+      "evidence_end": 1409,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071884",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071884",
+  "filer_raw": "Liberty County School System",
+  "date_submission": "2026-08-17T19:32:24.219Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ffbb6ce4287d700fa346bcc240758b4e5cc5dd0dbfec754c57b52b425b0c8af4",
+  "params_key": "f3342894a366a802879862721c8458bfe4b210e7fbd20355d2beb239c7aa11ec",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

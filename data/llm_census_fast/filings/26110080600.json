@@ -1,0 +1,34 @@
+{
+  "summary": "The school district strongly supports preserving the E-Rate program, emphasizing its essential role in providing reliable, affordable internet connectivity for modern public education. The district expresses concerns about the financial and educational consequences of reducing or eliminating E-Rate funding, which could force the district to divert resources from instructional programs or other operational priorities. The district urges the FCC to maintain funding for E-Rate to ensure the availab",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate funding would create significant financial challenges for school districts, potentially forcing them to redirect resources from instructional programs or other operational priorities.",
+      "evidence_quote": "Our district receives a substantial amount in E-Rate support. Reducing or eliminating this funding would create significant financial challenges, potentially forcing our district to redirect resources from instructional programs, student services, or other operational priorities simply to maintain essential connectivity.",
+      "evidence_start": 592,
+      "evidence_end": 914,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080600",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080600",
+  "filer_raw": "Patricia Perry",
+  "date_submission": "2026-10-12T15:31:30.568Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "54fece3add038c95e308ef97e957f51e22336e5cb83d5b53da18f9038b400e1a",
+  "params_key": "c22e45101962906d539aab6ab85311faee9b1ab5a3ee5c7bbb3ff34881b4c61f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

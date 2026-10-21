@@ -1,0 +1,34 @@
+{
+  "summary": "The comments emphasize the importance of preserving E-Rate funding to ensure proper infrastructure maintenance and avoid increased security vulnerabilities and network instability. The comments highlight the critical role of E-Rate in supporting schools and libraries and urge the FCC to preserve its core funding and avoid changes that would reduce access or increase burden for students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without this funding, key infrastructure would not be properly maintained/upgraded/replaced when needed",
+      "evidence_quote": "Without this funding, key infrastructure would not be properly maintained/upgraded/replaced when needed. This can lead to increased security vulnerability as well as network instability across the board. In my time in this field, schools have heavily leaned on E-Rate funding to maintain and upgrade necessary infrastructure, so much so that our replacement cycles now match E-Rate funding cycles.",
+      "evidence_start": 1216,
+      "evidence_end": 1613,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072582",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072582",
+  "filer_raw": "St. Joseph County ISD",
+  "date_submission": "2026-08-21T14:26:51.260Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "727eae24cb87d0d0d75d13807e0f489720f695a4191994c6e3a00cd145964c66",
+  "params_key": "bf70cc206e91fa0222cdb4ebcae3e47a0a93f2d19526235c34f3fd8e2cb4a8e6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

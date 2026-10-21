@@ -1,0 +1,34 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate funding for maintaining affordable internet access and connectivity in their community, which is critical for educational purposes. They argue that reducing eligibility or adding administrative burdens would disproportionately impact their district and other smaller rural districts.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrow eligible equipment and services",
+      "evidence_quote": "Our district serves roughly 3,400 students across eight buildings in a community that mixes a small city, a university, a military installation, and surrounding rural areas. Over the last five funding years, E-Rate has committed approximately 785k to our district. That support keeps our internet access and internal networks affordable. Without it, those costs would fall on our general operating budget and compete directly with teacher salaries, instructional materials, and student services.",
+      "evidence_start": 242,
+      "evidence_end": 737,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078768",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078768",
+  "filer_raw": "Natalie Tye",
+  "date_submission": "2026-09-29T20:03:32.293Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4b2cd60dc7677403396e710ad82a481fcd2e74d6673309259080e736e6e08b83",
+  "params_key": "01aaf61548e5a46be42667e42448a646745eb7cd71fcaf627a1f2c827314a527",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

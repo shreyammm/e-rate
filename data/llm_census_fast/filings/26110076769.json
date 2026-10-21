@@ -1,0 +1,34 @@
+{
+  "summary": "The parent expresses strong opposition to the current policy, stating that parents should always have the option for paper/pencil standardized testing and should be able to opt out of mandated tech use for their children, citing concerns about the effectiveness and research evidence of the mandated technology.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "Parents should have the right to opt-out of mandated tech use",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Parents should always have the option for paper/pencil standardized testing",
+      "evidence_quote": "Parents should always have the option for paper/pencil standardized testing.",
+      "evidence_start": 789,
+      "evidence_end": 865,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "parent_opt_out": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076769",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076769",
+  "filer_raw": "Leslie Hamel",
+  "date_submission": "2026-09-16T01:15:53.042Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a54c6c2d06762b4ca04f1b6535da07ed1bd553ae829feec8f5cbe8390d558b9a",
+  "params_key": "a0a96d017ff9ca29603b4661972b72aba38335d24ca0dbac889658cc171245b6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

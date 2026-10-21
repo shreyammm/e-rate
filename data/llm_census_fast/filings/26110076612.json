@@ -1,0 +1,34 @@
+{
+  "summary": "West Virginia library advocates highlight the importance of E-Rate for providing affordable internet access to patrons, enabling library services and community support. They express concerns about the financial burden of internet costs and the need for E-Rate to help alleviate these costs and ensure library services remain accessible.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funds are critical to West Virginia public libraries",
+      "evidence_quote": "E-Rate funds are critical to West Virginia public libraries. Affordable high speed internet service is not available across the state. Access through public computers and wifi, both inside and outside of the buildings, provides a safe spot for West Virginians to further their education, expand workforce opportunities, and participate in the larger digital world. E-Rate reimbursements help library budgets go further, enabling them to better support early education, homeschooling, and personal growth for their communities.",
+      "evidence_start": 0,
+      "evidence_end": 526,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076612",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076612",
+  "filer_raw": "Alexandra Schnedier",
+  "date_submission": "2026-09-14T19:11:00.775Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "621871a82e3ceba42a811dab6439914bc633f5de798bc676a6ca40224441fb9c",
+  "params_key": "079acef772dc7c03f5a6d64fa0ef2888502dc65f9e8ede2428f2144fae41a635",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

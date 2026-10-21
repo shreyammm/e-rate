@@ -1,0 +1,34 @@
+{
+  "summary": "Grizzly Youth Academy, a military partnership school, relies on E-Rate funding to maintain its network infrastructure, which supports instruction, assessment, and student devices. The school argues that ending or limiting E-Rate would result in increased costs and declining network reliability, negatively impacting student education. The school urges the FCC to maintain the program intact.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate or limit E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate discounts, the school could not have built reliable network infrastructure",
+      "evidence_quote": "Without E-Rate discounts, we could not have built wired and wireless coverage this reliable across our buildings.",
+      "evidence_start": 850,
+      "evidence_end": 963,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080810",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080810",
+  "filer_raw": "Matt Pauls | Grizzly Challenge Charter School",
+  "date_submission": "2026-10-13T04:39:04.800Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2ee90147b82b11591e8166296c2514281d5fc9e5f057833ef74603f82031d11b",
+  "params_key": "465fb03b472d3ba4554b21dbbb105329d33dd282b5bfdd5cc062599774fbeacd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

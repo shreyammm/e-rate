@@ -1,0 +1,34 @@
+{
+  "summary": "The school district expresses support for preserving E-Rate's core funding to maintain reliable internet access and avoid budget tradeoffs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding helps maintain reliable internet access while preserving limited school resources for instruction and student support",
+      "evidence_quote": "Without this funding, without this funding, we would face difficult budget decisions. We would need to consider redirecting funds from instructional materials, technology replacements, professional development, or other student services to cover internet costs. Reducing connectivity could also limit access to educational resources. E-Rate helps us avoid these tradeoffs and keep our resources focused on students.",
+      "evidence_start": 627,
+      "evidence_end": 1042,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080114",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080114",
+  "filer_raw": "Beth Kelley",
+  "date_submission": "2026-10-08T19:01:05.624Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1a7656e6b35c866c81ea9c0f65b0e82956f8474ccfdb82779ea285a97f260bb4",
+  "params_key": "218d0045d62a7fae672662585d096819d9e68b572d171314796bae1e597e034c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "Taunton Public Schools urges the FCC to preserve E-Rate funding to ensure students have equitable access to educational resources and to avoid shifting costs onto local school budgets.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would shift additional costs onto local school budgets",
+      "evidence_quote": "Maintaining this infrastructure requires ongoing investment as equipment ages and connectivity needs evolve.",
+      "evidence_start": 756,
+      "evidence_end": 864,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079636",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079636",
+  "filer_raw": "Taunton Public Schools",
+  "date_submission": "2026-10-06T18:10:18.046Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4c68afedd2fc495d47a6fb7fe074923d085083cb01a37af44c20bfd9adacc11b",
+  "params_key": "cd068950a186b806cddf3ae999e2bc87c039335423ad1640bc30a32747c389bd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

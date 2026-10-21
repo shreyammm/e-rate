@@ -1,0 +1,34 @@
+{
+  "summary": "The comment supports continued operation of the E-Rate program for its essential role in providing connectivity to schools and libraries, emphasizing the cost implications of scaling back the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain continued operation of the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If the E-Rate plan is scaled back, schools will have to cut other services to keep vital internet connectivity",
+      "evidence_quote": "If the E-Rate plan is scaled back, our schools will have to cut other services and programs to keep vital internet connectivity.",
+      "evidence_start": 463,
+      "evidence_end": 591,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078403",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078403",
+  "filer_raw": "Mike Beggs",
+  "date_submission": "2026-09-25T22:23:00.834Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bba8fdb511af81183f28e2d3b6b088d1ea5b3d58ea64502dd60206bfd35a83de",
+  "params_key": "b3883ce11b7933dacdd9ed167ed4566d8aede45c5295309acbdaa777ba033c7b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

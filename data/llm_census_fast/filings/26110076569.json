@@ -1,0 +1,34 @@
+{
+  "summary": "The public library trustee and parent guardian argue against terminating or limiting E-Rate funding, emphasizing its critical role in maintaining affordable and reliable internet access for schools and libraries, and the potential impact on budget deficits and community services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate or limit E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would jeopardize school and library budgets, threatening progress in connectivity.",
+      "evidence_quote": "If the FCC terminates or limits E-Rate funding, future connectivity needs and programs for our schools and public library branches will be affected. Our community's ability to afford these services is deeply compromised with structural deficits in both state and local budgets, making internet access difficult to continue internet access.",
+      "evidence_start": 1036,
+      "evidence_end": 1375,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076569",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076569",
+  "filer_raw": "Elizabeth Bowman",
+  "date_submission": "2026-09-14T13:31:30.118Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b3f6150c2fd9f3c7933adaa1b8a19c2180385d8a6f195a95c9a46beeeb4af74e",
+  "params_key": "a1fbcc1f07f6a20964843f28db25581135da9d1f82c5a7f67ff9eb9f41b9c46d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

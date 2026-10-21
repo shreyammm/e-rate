@@ -1,0 +1,34 @@
+{
+  "summary": "A teacher expresses the importance of reliable internet access for education in a rural school and the potential impact of changes to the E-Rate program on their community.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and students",
+      "evidence_quote": "Throughout my teaching career, I have watched education change tremendously. Technology has opened doors for students that simply did not exist when I began teaching. Reliable internet access allows us to bring new experiences into our classrooms, provide additional support to struggling learners, and challenge students who are ready for more advanced work.",
+      "evidence_start": 1313,
+      "evidence_end": 1672,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080905",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080905",
+  "filer_raw": "Brendan Carr",
+  "date_submission": "2026-10-13T14:06:32.004Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "de0478398f10c5d12704d9914b41685885cc715279c5d2bc777c87bdbf1ef4d1",
+  "params_key": "3b350eee65024077caa23d0e5d2ed59d3ad7102024eed7d3d07c1f6e9ef2496f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

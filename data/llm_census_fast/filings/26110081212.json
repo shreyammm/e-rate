@@ -1,0 +1,34 @@
+{
+  "summary": "A former classroom teacher argues for preserving E-Rate to ensure equitable access to digital learning and resources for students, emphasizing the economic impact of removing E-Rate support and the importance of keeping both Category 1 and Category 2 support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate support would reduce annual real GDP by $4.2 billion",
+      "evidence_quote": "A recent economic study estimates that removing about $2.6 billion in annual E-Rate support would reduce annual real GDP by about $4.2 billion — roughly $1.60 lost for every $1 removed.",
+      "evidence_start": 1138,
+      "evidence_end": 1323,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081212",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081212",
+  "filer_raw": "Casey Ulrich",
+  "date_submission": "2026-10-13T20:35:46.692Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ee7afbb903db14da6d085ddb6070d2ed72a9768e1d484859a102c8981d8e9d26",
+  "params_key": "075b98f5e131a036c77d1f90fca4f367e998d63c64d2b54513f78eb9fa3f8100",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

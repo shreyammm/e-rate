@@ -1,0 +1,34 @@
+{
+  "summary": "Library expresses support for preserving E-Rate funding to maintain services and avoid increased costs or service cuts",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, libraries would have to increase municipal budget or cut services",
+      "evidence_quote": "Without this funding, if we lost E-Rate funding, we would either 1) have to make up costs by increasing our municipal budget and potentially increasing the tax burden of hardworking families or 2) deprive those families of materials, services, and programs they have come to rely on during the current affordability crisis.",
+      "evidence_start": 724,
+      "evidence_end": 1047,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078185",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078185",
+  "filer_raw": "Luke Kirkland",
+  "date_submission": "2026-09-24T22:17:49.012Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9f4b2b4abc6f3698bcd52bca572d561327ff6f1334306cf29f70424a569b569d",
+  "params_key": "9f63d66dfe9bbeb649648f0819c91cceaa11a06977239fed2e4e99fdad312e5b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

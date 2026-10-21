@@ -1,0 +1,34 @@
+{
+  "summary": "The school and library community urges the FCC to reject proposals to eliminate or limit E-Rate funding, emphasizing the program's critical role in maintaining affordable and reliable internet access for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Eliminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing ongoing network upgrades",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 821,
+      "evidence_end": 963,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076423",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076423",
+  "filer_raw": "Meghan Miller",
+  "date_submission": "2026-09-11T15:25:51.761Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f240f5f4984d5d105b2e4946ef8eeb2bc01c5ef4d026d788761d3e4c1552dde3",
+  "params_key": "f2fdbbe39a5e358215c03f9143b9c435b33b816fd9fb07da46d9089d49348cda",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

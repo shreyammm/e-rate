@@ -1,0 +1,34 @@
+{
+  "summary": "Willington Public Library urges the FCC to reject proposals to terminate or limit E-Rate, emphasizing the program's critical role in maintaining affordable, reliable internet access for its library and rural community.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would represent a cut to library budget, jeopardizing years of progress building and upgrading networks",
+      "evidence_quote": "Terminating that support represents a cut to library budget, which has already suffered operational reductions in recent years, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 737,
+      "evidence_end": 934,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110037949",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110037949",
+  "filer_raw": "Steven Osier | Willington Public Library",
+  "date_submission": "2026-07-21T15:32:24.958Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "982d73a41df518a497fc4e38706b3e1377cf6437225a9b8ac69d1747041e5c46",
+  "params_key": "ce8c88a743be2a9ccaae65a0a0eda695c6b6086c4a9fcd213a1cca61d4b161c7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

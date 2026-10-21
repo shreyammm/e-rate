@@ -1,0 +1,34 @@
+{
+  "summary": "An IT professional at a Head Start program urges the FCC to preserve E-Rate funding to maintain connectivity for their program, which relies on E-Rate for a significant portion of eligible costs. The professional cites the program's success in helping families become self-sufficient and the potential negative impact of cutting E-Rate eligibility on low-income children and families.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would increase costs for programs like Head Start",
+      "evidence_quote": "Without it, a federally funded program serving low-income families could not sustain the connectivity modern early education requires.",
+      "evidence_start": 543,
+      "evidence_end": 677,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076847",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076847",
+  "filer_raw": "Fernando Mancinas",
+  "date_submission": "2026-09-16T22:13:18.875Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5cec16d11449da54693e1671f2a1f296d30d1200fd82d60b7113de0a26e7a29f",
+  "params_key": "2910f8411a8b0779fd8bb6420fb988fe823a4b70ea09c45c183be317bd8a785f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

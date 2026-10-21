@@ -1,0 +1,34 @@
+{
+  "summary": "The Technology Director of a public school district urges the FCC to protect and strengthen E-Rate funding rather than reduce it, emphasizing the critical role of reliable broadband in modern educational infrastructure.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect and strengthen E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reliable broadband is foundational utility infrastructure for schools",
+      "evidence_quote": "In our schools, secure high-speed connectivity underpins everything from daily classroom instruction, state-mandated digital assessments, and Student Information Systems (SIS) to critical emergency notifications, access controls, and facility operations.",
+      "evidence_start": 296,
+      "evidence_end": 550,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079684",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079684",
+  "filer_raw": "Daryl Henson",
+  "date_submission": "2026-10-06T21:24:33.845Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1cff0f4e721e73e9c71deaede69c8f69d4b598192325d0e0fde146f10bf0f1ee",
+  "params_key": "1a4255f94a6bbac7152996e6e33fb51f07c8fbaa88f29a1d02b2f931260fd33b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

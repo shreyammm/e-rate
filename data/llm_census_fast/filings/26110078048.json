@@ -1,0 +1,34 @@
+{
+  "summary": "A school district administrator urges the FCC to reject proposals that would eliminate or weaken the E-Rate program, emphasizing the program's importance for providing connectivity and network infrastructure to support teaching, learning, and access to educational resources. The administrator highlights the financial burden that would result from eliminating E-Rate support and the need to continue strengthening and modernizing the program to meet the growing technology needs of students and staf",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or reducing E-Rate support would place an additional financial burden on the district, forcing it to divert limited resources to cover network and infrastructure costs that E-Rate currently helps offset.",
+      "evidence_quote": "We are a low-income district and work hard to maximize the funding we receive each year. Eliminating or reducing E-Rate support would place an additional financial burden on our district, forcing us to divert limited resources to cover network and infrastructure costs that E-Rate currently helps offset.",
+      "evidence_start": 897,
+      "evidence_end": 1201,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078048",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078048",
+  "filer_raw": "Morton High School Dist 201 (School District, IL)",
+  "date_submission": "2026-09-24T13:27:10.978Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "44ace169ec340302c3a168fd51b9aab2fb4ba9b0e62303e80e99439ceb8ee853",
+  "params_key": "66da70e0ae21f696d69d809842204bda30f1478533eb1dde7ccb3a44a12ca54e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

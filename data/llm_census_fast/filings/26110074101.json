@@ -1,0 +1,34 @@
+{
+  "summary": "The school district urges the FCC to preserve E-Rate funding to maintain essential connectivity for students and staff, citing the program's critical role in supporting network infrastructure and digital learning.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Losing E-Rate funding would significantly impact the district's ability to provide a safe, secure, and effective learning environment",
+      "evidence_quote": "Without this funding, we would be forced to extend the life of aging equipment and delay infrastructure upgrades, increasing cybersecurity risks, reducing network reliability, and limiting access to the digital tools that support teaching and learning across the district.",
+      "evidence_start": 1059,
+      "evidence_end": 1331,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074101",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074101",
+  "filer_raw": "Pasadena Indep School District",
+  "date_submission": "2026-09-01T00:29:54.038Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b95e4b08dacce95409509b9116b8047106408dd0a2960ea4e3e0a505d5ce51ee",
+  "params_key": "47e8511e555b823c4a0fe31579d531a71b07ba0d09801143f38f04514dfbbc42",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

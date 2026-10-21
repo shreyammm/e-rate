@@ -1,0 +1,34 @@
+{
+  "summary": "Opposition to limiting or sunsetting E-Rate program due to budgetary concerns and the importance of internet access for education in rural areas.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate subsidies, local leaders would face unsustainable budget burdens",
+      "evidence_quote": "If the FCC cuts or restricts E-Rate funding, local leaders will face an unsustainable burden. Rural districts operate on tight budgets with limited tax bases to draw from. Without E-Rate subsidies, local leadership would be forced to make impossible choices: diverting critical funds away from instructional programs and staffing, or risking severe cutbacks to student digital resources and connectivity.",
+      "evidence_start": 852,
+      "evidence_end": 1256,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076599",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076599",
+  "filer_raw": "Jeffrey Fitzpatrick",
+  "date_submission": "2026-09-14T17:51:38.832Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f67bd9b17cb56e205e27ade6539146f4846231311e06644dd1d8617a92d132bb",
+  "params_key": "5c1077ed7137523b311051b5ceb9e15c20229a633898bfddf5f2f1ac27af730f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

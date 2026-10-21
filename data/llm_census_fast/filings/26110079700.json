@@ -1,0 +1,86 @@
+{
+  "summary": "The comment urges the FCC to preserve the E-Rate program and opposes proposals to sunset or limit it, emphasizing the program's importance for educational access and equity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "Maintain current discount matrix",
+      "reason_family": "other",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The current discount matrix has proven effective in supporting broadband access for schools.",
+      "evidence_quote": "While the program has done a stellar job in reaching its intended goals",
+      "evidence_start": 457,
+      "evidence_end": 528,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Maintain broad eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Proposals to narrow eligible equipment and services would disproportionately affect low-income schools.",
+      "evidence_quote": "While the program has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools would be catastrophic.",
+      "evidence_start": 457,
+      "evidence_end": 623,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deepen inequities and hinder educational access.",
+      "evidence_quote": "Cutting this program would only deepen the inequities that public education is meant to overcome.",
+      "evidence_start": 624,
+      "evidence_end": 721,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Prevent restriction of special construction or dark fiber",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Special construction and dark fiber are critical for reliable broadband service in rural schools.",
+      "evidence_quote": "For nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same tools as students in wealthier districts.",
+      "evidence_start": 275,
+      "evidence_end": 456,
+      "uncertain": false
+    },
+    {
+      "provision_id": "targeted_competition",
+      "position": "oppose",
+      "requested_action": "Prevent limiting subsidies by broadband competition",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "other",
+      "argument": "Limiting broadband competition could lead to higher costs and reduced service quality.",
+      "evidence_quote": "Rather than questioning whether this program should exist, the FCC should be asking how to make it work even better for students, educators, and communities.",
+      "evidence_start": 895,
+      "evidence_end": 1052,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose",
+    "targeted_competition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079700",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079700",
+  "filer_raw": "Charles Froelich",
+  "date_submission": "2026-10-06T22:54:17.542Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4019d15d5af3b7ca6ecb3e3ef27a17a1dfa6fc1b310a8b0edbb621815a59b285",
+  "params_key": "4bcab2a1ded6554eb60a307a12186ad3a94e5416cebf6310ecdb54df868f9a3a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

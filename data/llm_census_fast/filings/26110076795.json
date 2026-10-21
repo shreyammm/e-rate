@@ -1,0 +1,34 @@
+{
+  "summary": "Citizen emphasizes the importance of E-Rate for libraries and schools to provide affordable internet access for essential services and education.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for libraries and schools to provide affordable internet access",
+      "evidence_quote": "E-Rate funding has been fundamental in ensuring schools and libraries have affordable access to reliable and sustainable internet service.",
+      "evidence_start": 1630,
+      "evidence_end": 1768,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076795",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076795",
+  "filer_raw": "Kelsey Lied",
+  "date_submission": "2026-09-16T15:31:03.360Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "65263e04d78dd3bab0b543b372e088a9d3fb639eb8e15af80bc106443a2fc120",
+  "params_key": "83fe77235486e64dbb38d0c6750b9e470a89e839d3f00cdef0ec3efec4f19961",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

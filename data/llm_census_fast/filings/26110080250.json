@@ -1,0 +1,34 @@
+{
+  "summary": "The school district strongly supports preserving the E-Rate program, emphasizing the essential role it plays in providing reliable, affordable internet connectivity for modern public education. The district argues that reducing or eliminating E-Rate funding would create significant financial challenges and potentially force the district to redirect resources from instructional programs or other operational priorities. The school district urges the FCC to preserve the E-Rate program and maintain ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate funding would create significant financial challenges for school districts, potentially forcing them to redirect resources from instructional programs or other operational priorities.",
+      "evidence_quote": "Our district receives a substantial amount in E-Rate support. Reducing or eliminating this funding would create significant financial challenges, potentially forcing our district to redirect resources from instructional programs, student services, or other operational priorities simply to maintain essential connectivity.",
+      "evidence_start": 650,
+      "evidence_end": 972,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080250",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080250",
+  "filer_raw": "Vital Anne",
+  "date_submission": "2026-10-09T15:29:05.820Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9cade27c0bfad16c6353f7553fffb8d7909d648863a15bec4ea9ea16bc389cc0",
+  "params_key": "3ef02d39823cb30899c1c23e162eda3b46372d2e457663cf527117836226de5c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

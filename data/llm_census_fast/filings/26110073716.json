@@ -1,0 +1,34 @@
+{
+  "summary": "Library media specialist argues against any proposal to terminate E-Rate program, emphasizing its critical role in providing essential connectivity for library services and student access to digital resources.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Elimination would force districts to choose between internet access and other costs",
+      "evidence_quote": "If E-Rate were eliminated or narrowed, the cost would not disappear. It would move onto a school budget that has nowhere to give. Districts would be forced to choose between paying for internet access and paying for staff, materials, and programming.",
+      "evidence_start": 1242,
+      "evidence_end": 1492,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073716",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073716",
+  "filer_raw": "Harriet Carroll",
+  "date_submission": "2026-08-29T14:12:55.113Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "21865d1d9d2a1ab4a2c709b46b1bd995ce591ed4a7a34827aa7a6f45337d0432",
+  "params_key": "c5527ad6e6d12c442c4cf4bd00574d318d33e43ce27f2f8e0752e17317432db9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

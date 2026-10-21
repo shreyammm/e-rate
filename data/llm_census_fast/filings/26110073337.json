@@ -1,0 +1,34 @@
+{
+  "summary": "The comment highlights the importance of E-Rate funding for libraries to provide essential services and maintain connectivity for community members. If the funding is terminated or limited, it could lead to cuts in staff and hours, potentially making services unaffordable for libraries and widening the digital divide.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "terminate or limit E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate funding would require cutting educational programming and staff to maintain internet connectivity, leading to cuts in hours and potentially unaffordable connectivity for libraries.",
+      "evidence_quote": "If the FCC terminates or limits E-Rate funding,\n\n● Educational programming and staff would need to be cut in order to keep paying for internet connectivity for our community. With the cuts in staff, cuts in hours are very likely – giving our community less time to connect and utilize our services.",
+      "evidence_start": 547,
+      "evidence_end": 845,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073337",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073337",
+  "filer_raw": "Cindy Lucas",
+  "date_submission": "2026-08-27T11:34:22.923Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8f2177b527c0695dbcd82d843dda7e18fe3148f520250f4972814dca89bbf522",
+  "params_key": "1775619c6cf614385ba933195b71de32a0ba048f04107f1bddd8ee79a192d202",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

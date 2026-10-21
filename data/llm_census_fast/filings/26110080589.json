@@ -1,0 +1,34 @@
+{
+  "summary": "The school district strongly supports preserving the E-Rate program and opposes any changes that would reduce funding, citing the financial challenges it would create for maintaining essential connectivity services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate funding would create significant financial challenges for school districts, potentially forcing them to redirect resources from instructional programs or other operational priorities.",
+      "evidence_quote": "Our district receives a substantial amount in E-Rate support. Reducing or eliminating this funding would create significant financial challenges, potentially forcing our district to redirect resources from instructional programs, student services, or other operational priorities simply to maintain essential connectivity.",
+      "evidence_start": 604,
+      "evidence_end": 926,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080589",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080589",
+  "filer_raw": "Dr. Michael Lonze",
+  "date_submission": "2026-10-12T14:53:38.972Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f88d2d08d94760ec7963d1c8540f1e24e62f0aebcc34f8579d0f38d992574327",
+  "params_key": "129d4ff9a968025c29c9807af44b7dcc4f29d16e6c810cec0cef8896ab7bb30c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

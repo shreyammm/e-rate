@@ -1,0 +1,34 @@
+{
+  "summary": "Education official discusses impact of E-Rate on their district and suggests preserving the program with certain additions.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would require cutting programs or personnel",
+      "evidence_quote": "If this program is cut we will have to decide which programs to cut. It could be less devices for students, it could be less tech support, or it could be less literacy coaches.",
+      "evidence_start": 922,
+      "evidence_end": 1098,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073435",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073435",
+  "filer_raw": "Jeremy Davis",
+  "date_submission": "2026-08-27T20:33:21.681Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "529e2f61350d0e36edbe4efeaf6da523636be58dc50d665d94926a9e59964548",
+  "params_key": "8d1541b29fdc3403d97fc2b39b134cb8c5fb16799ac8b62dcf84952c1e064c91",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

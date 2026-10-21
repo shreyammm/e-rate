@@ -1,0 +1,34 @@
+{
+  "summary": "Legacy Charter School expresses concern about the potential impact of E-Rate funding changes on their ability to provide essential internet services and resources for students and staff.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would face higher costs for internet access and services, potentially reducing resources for students and teachers.",
+      "evidence_quote": "Legacy Charter School respectfully urges the FCC to preserve E-Rate's core funding and support for schools and libraries, and to avoid changes that would reduce access or increase burden for the students and communities who depend on it.",
+      "evidence_start": 1472,
+      "evidence_end": 1709,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079500",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079500",
+  "filer_raw": "Tamala Daniels",
+  "date_submission": "2026-10-05T22:21:05.128Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "15818735e3bebacc4a5e3620c7187d3a4c9108d009b37cd0c4651add88e34542",
+  "params_key": "e6f24f5908d4dc17361264f36352b7f3ae0993aead66c9a5403db5de5a37a75c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "School district emphasizes importance of E-Rate for maintaining network connectivity and urges FCC to preserve core funding",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would lose financial ability to maintain network connectivity",
+      "evidence_quote": "Without this funding, if we lost e-rate funding, we would lose our financial ability to keep our district network connected and up to industry standard.",
+      "evidence_start": 870,
+      "evidence_end": 1022,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080331",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080331",
+  "filer_raw": "Oyster Bay-East Norwich Central School District",
+  "date_submission": "2026-10-09T18:48:57.717Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7310194c9a48ec1339cca3b6734a6d552b046e506f7f5bb7a146ab0bf4b89056",
+  "params_key": "35db11079ab995ada3c79b83772fe2336c2fde163204f3b3ca28ee64e778f0c8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

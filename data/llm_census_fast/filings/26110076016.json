@@ -1,0 +1,34 @@
+{
+  "summary": "The school district emphasizes the importance of the E-Rate program for providing reliable internet services and supports its continuation.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without ERATE funding we would not be able to provide students and staff with reliable internet service",
+      "evidence_quote": "We operate as a 1:1 device district and refresh student devices on a planned schedule, but those investments are only effective when supported by a robust wireless and LAN network. Through the E-Rate program, we have been able to build and maintain seamless Wi-Fi connectivity throughout classrooms, hallways, gyms and other learning spaces.",
+      "evidence_start": 414,
+      "evidence_end": 755,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076016",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076016",
+  "filer_raw": "Greg Purcell",
+  "date_submission": "2026-09-09T12:05:33.454Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5ae551e0376beccafd4bd98601641edc05f79a0f572898df037523ee17045e26",
+  "params_key": "683711c6089fac4ab95bc6ea009b7c81c207392fe80de35439d01e0b30556e9c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

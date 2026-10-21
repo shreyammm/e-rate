@@ -1,0 +1,34 @@
+{
+  "summary": "The comments emphasize the importance of preserving E-Rate funding for schools and libraries, highlighting the cost and budgetary challenges of maintaining necessary infrastructure without it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-rate funding, schools and libraries cannot afford necessary equipment",
+      "evidence_quote": "A lot of times, the 5-year Category 2 budget isn't enough to cover the necessary 5-year replacement of switches and access points, let alone the other needed equipment such as firewalls and cabling.",
+      "evidence_start": 1324,
+      "evidence_end": 1522,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069343",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069343",
+  "filer_raw": "Elite Fund, Inc.",
+  "date_submission": "2026-08-03T17:27:44.324Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1b5991bd7233849412474845f0dcef902f6256fac306a839edcfbfe81d016319",
+  "params_key": "584e120e87537a9897eb7afa2966df77fd319f4fa4fdb7902349275b4f01d099",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}
