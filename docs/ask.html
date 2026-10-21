@@ -17,18 +17,40 @@
 .ask-warning{border-left:3px solid #9a7048;background:#fcf7ef;padding:.7rem .8rem;font-size:.94rem;line-height:1.55}
 .ask-panel table{width:100%;border-collapse:collapse;font-size:.85rem}.ask-panel th,.ask-panel td{text-align:left;vertical-align:top;padding:.6rem;border-bottom:1px solid #d7e1e8;overflow-wrap:anywhere}.ask-small{font-size:.85rem;color:#647787}
 @media(max-width:900px){.ask-layout{grid-template-columns:1fr}}
- .ask-all-match-list{max-height:340px;overflow:auto;overflow-wrap:anywhere}.ask-all-match-list p{margin:.45rem 0}.ask-all-match-list a{font-weight:600}</style></head><body>
+ .ask-all-match-list{max-height:340px;overflow:auto;overflow-wrap:anywhere}.ask-all-match-list p{margin:.45rem 0}.ask-all-match-list a{font-weight:600}
+.ev-filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}.ev-filters label{font-size:12px;color:#506175;display:flex;flex-direction:column;gap:5px}.ev-filters select,.ev-filters input{width:100%}
+.ev-summary{display:grid;grid-template-columns:1fr 1fr;gap:18px}.ev-summary h3{margin:12px 0 5px;font-size:14px}
+.ev-stat-row{display:grid;grid-template-columns:130px 1fr 48px;gap:8px;align-items:center;margin:7px 0;font-size:11px}.ev-stat-track{height:10px;background:#edf1f5}.ev-stat-fill{height:100%;background:#356e96}.ev-hit{border-top:1px solid #d7e1e8;padding:12px 0}.ev-hit-title{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.ev-excerpt{font-size:12px;line-height:1.5;white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7fa;border-left:2px solid #93a6ba;padding:10px;margin:10px 0;max-height:220px;overflow:auto}
+@media(max-width:800px){.ev-filters{grid-template-columns:1fr 1fr}.ev-summary{grid-template-columns:1fr}}
+@media(max-width:480px){.ev-filters{grid-template-columns:1fr}}
+</style></head><body>
 <header class="site-top"><div class="shell header-row"><div><strong>E-Rate Comment Observatory</strong><span class="subhead">Full-corpus grounded question answering</span></div><nav><a href="./">Dashboard</a> · <a href="./corpus.html">Read every comment</a> · <a href="./llm.html">Corpus-wide LLM census</a></nav></div></header>
 <main class="shell"><section class="ask-hero"><p class="ask-small">SOURCE-LINKED RESEARCH ASSISTANT</p><h1>Ask the FCC comment corpus</h1>
 <p class="ask-sub">Ask a question in plain English. For <strong>every question</strong>, the tool re-scans all 3,231 filing records (3,230 readable comment texts), searches for relevant and contrasting passages, and uses <strong>Microsoft Phi-3.5 Mini</strong> (US-developed, MIT open-source license) running on your computer to draft an answer with filing citations. There is no paid API or account required.</p>
 </section><div class="ask-layout"><div>
 <section class="ask-panel"><h2>What do you want to know?</h2><label for="ask-question" class="ask-muted">Type a question about the FCC submissions</label><textarea id="ask-question" class="ask-textarea" placeholder="How do school districts describe the consequences of reducing E-Rate funding?"></textarea>
 <div class="ask-actions"><button id="ask-submit" class="ask-submit" disabled>Find evidence and answer</button><span class="ask-muted">Every filing scanned → source evidence → AI citations</span></div>
-<p id="ask-status" class="ask-muted" role="status" aria-live="polite">Loading verified source manifest…</p>
+<div class="ask-actions"><label class="ask-muted"><input id="ask-use-ai" type="checkbox" checked> Also generate a cited on-device AI synthesis (requires WebGPU)</label><button id="ask-share-question" type="button">Copy question link</button></div><p id="ask-status" class="ask-muted" role="status" aria-live="polite">Loading verified source manifest…</p>
 <div id="ask-warning"></div></section>
 <section class="ask-panel"><h2>Answer</h2><p class="ask-muted">An AI-generated answer will appear here only when the US-developed on-device model is available. Actual filing quotations remain visible even without model support.</p><div id="ask-answer"></div></section>
 <section class="ask-panel"><h2>Compare the evidence</h2><p class="ask-muted">Inspect the sources behind the answer, possible contrasting language, and which complete passages the model received.</p><div id="ask-comparison"></div></section>
-<section class="ask-panel"><h2>Original comments used as evidence</h2><p class="ask-muted">These passages are verbatim portions of the research snapshot, not paraphrases. Open the whole filing before relying on any characterization; source claims may be inaccurate and OCR can contain errors.</p><div id="ask-evidence"><p class="ask-muted">Source quotations and direct filing links will appear only after all 12 public text shards have been searched successfully.</p></div></section><details id="ask-all-matches" class="ask-panel"></details>
+<section id="ev-navigator" class="ask-panel" hidden>
+<h2>All matching filings · Evidence Navigator</h2>
+<p class="ask-muted">Every matching record in the complete source scan is available here, not just the passages selected for AI synthesis. Text matches cannot establish a commenter's position, or whether quotations represent endorsement.</p>
+<p id="ev-status" role="status" class="ask-small">The navigator populates when a full-corpus search completes.</p>
+<p id="ev-count" class="ask-small"></p><p id="ev-quality" class="ask-small"></p>
+<div class="ev-filters">
+<label>Commenter category<select id="ev-role"><option value="">All roles</option></select></label>
+<label>OCR quality<select id="ev-ocr"><option value="">All</option><option value="native">Exclude OCR candidate</option><option value="candidate">OCR candidate only</option></select></label>
+<label>Date<select id="ev-date"><option value="">All months</option></select></label>
+<label>Passage relevance<select id="ev-coverage"><option value="">All lexical candidates</option><option value="multi">At least 2 query concepts in a passage</option></select></label>
+<label>Order<select id="ev-order"><option value="relevance">Relevance</option><option value="recent">Newest</option><option value="oldest">Oldest</option><option value="filer">Filer name</option><option value="least-copied">Fewest exact copies</option></select></label>
+<label>Within results<input type="search" id="ev-find" placeholder="Text, organization, filing ID…"></label>
+</div><div class="ask-actions"><button id="ev-clear" type="button">Clear filters</button><button id="ev-export" type="button">Export matching evidence CSV</button><a id="ev-all-link" href="./corpus.html">Open full corpus ↗</a></div>
+<div class="ev-summary"><div><h3>Provisional commenter types</h3><div id="ev-roles"></div></div><div><h3>Peak filing dates</h3><div id="ev-dates"></div></div></div>
+<p id="ev-pages" class="ask-small"></p><div id="ev-results"></div><button id="ev-more" type="button" class="ask-submit">Show 40 more</button>
+</section><section class="ask-panel"><h2>Original comments used as evidence</h2><p class="ask-muted">These passages are verbatim portions of the research snapshot, not paraphrases. Open the whole filing before relying on any characterization; source claims may be inaccurate and OCR can contain errors.</p><div id="ask-evidence"><p class="ask-muted">Source quotations and direct filing links will appear only after all 12 public text shards have been searched successfully.</p></div></section><details id="ask-all-matches" class="ask-panel"></details>
 </div><aside>
 <section class="ask-panel"><h2>Try a question</h2><div class="ask-suggestions">
 <button type="button" data-question="What concerns did school districts raise about E-Rate program eligibility?">What concerns did school districts raise about E-Rate eligibility?</button>
@@ -40,4 +62,4 @@
 <p class="ask-muted">This is a GitHub Pages static website. It does not transmit your question or retrieved filing excerpts to a paid inference API. Model weights load from WebLLM / Hugging Face and inference runs in your browser.</p></section>
 <section class="ask-panel"><h2>Important research boundaries</h2><p class="ask-muted">Every question re-reads the full set of source filings (about 78 MB compressed; browser caching may reduce repeat downloads), which can take time. The model receives a <strong>selected set of retrieved passages</strong>, not the entire corpus in one prompt. The retrieval results are <strong>not a representative sample</strong>. The system cannot infer that most commenters support or oppose something, calculate a valid percentage from search hits, or verify factual assertions in filings.</p><p class="ask-muted">For population-wide patterns, use the separate <a href="./llm.html">Granite per-filing census</a> once processing is complete. One FCC submission is not necessarily one distinct person. The corpus is an October 20, 2026 snapshot, not a live FCC feed.</p>
 <p class="ask-muted"><a href="https://github.com/shreyammm/e-rate">Review the source code and methods ↗</a></p></section>
-</aside></div></main><footer><div class="shell">Independent research · Not affiliated with the FCC · Original records at <a href="https://www.fcc.gov/ecfs/">FCC ECFS</a></div></footer><script defer src="./assets/ask.js"></script></body></html>
+</aside></div></main><footer><div class="shell">Independent research · Not affiliated with the FCC · Original records at <a href="https://www.fcc.gov/ecfs/">FCC ECFS</a></div></footer><script defer src="./assets/ask_evidence.js"></script><script defer src="./assets/ask.js"></script></body></html>
