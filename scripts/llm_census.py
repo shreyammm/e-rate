@@ -295,6 +295,23 @@ def params_key(record: dict, book: dict, model: str, size: int, overlap: int) ->
     return digest(json.dumps(payload,sort_keys=True))
 
 
+def cache_key_is_compatible(record: dict, book: dict, model: str,
+                            size: int, overlap: int, candidate: str) -> bool:
+    """Accept complete short-file checkpoints made by either recent cache scheme.
+
+    A transient deployment added selection='full' to short-file keys, despite
+    unchanged source/prompt/model processing. Both fingerprints refer to
+    identical full-text analysis. Never accept this shortcut for selective
+    long documents, where the actual set of model-reviewed windows changed.
+    """
+    if candidate==params_key(record,book,model,size,overlap):return True
+    if len(record['text'])>size*7:return False
+    payload={'v':VERSION,'text':digest(record['text']),
+          'book':digest(json.dumps(book,sort_keys=True,ensure_ascii=False)),
+          'model':model,'size':size,'overlap':overlap,'selection':'full'}
+    return candidate==digest(json.dumps(payload,sort_keys=True))
+
+
 def process_record(record: dict, book: dict, out: Path, model: str, url: str,
                    size: int, overlap: int, call=ollama_call,
                    deadline: float | None = None, max_chunks: int | None = None) -> str:
@@ -302,8 +319,12 @@ def process_record(record: dict, book: dict, out: Path, model: str, url: str,
     path=out/'filings'/f'{sid}.json';key=params_key(record,book,model,size,overlap)
     if path.exists():
         previous=json.loads(path.read_text(encoding='utf-8'))
-        if previous.get('params_key')==key and previous.get('status')=='complete':
+        if previous.get('status')=='complete' and cache_key_is_compatible(
+                record,book,model,size,overlap,previous.get('params_key','')):
             return 'already_complete'
+        if previous.get('status')=='partial' and cache_key_is_compatible(
+                record,book,model,size,overlap,previous.get('params_key','')):
+            previous['params_key']=key
     else:previous={}
     if not record['text'].strip():
         atomic_json(path,{'submission_id':sid,'params_key':key,'status':'no_source_text',
@@ -358,8 +379,8 @@ def reuse_exact_text_classifications(records: list[dict], out: Path, book: dict,
         if not path.is_file():continue
         try:r=json.loads(path.read_text(encoding='utf-8'))
         except (OSError,ValueError):continue
-        if r.get('status')=='complete' and r.get('params_key')==params_key(
-                row,book,model,size,overlap) and r.get('source_sha256')==digest(body):
+        if r.get('status')=='complete' and cache_key_is_compatible(
+                row,book,model,size,overlap,r.get('params_key','')) and r.get('source_sha256')==digest(body):
             by_sha.setdefault(digest(body),r)
     copies=0
     for row in records:
@@ -371,11 +392,11 @@ def reuse_exact_text_classifications(records: list[dict], out: Path, book: dict,
         if path.exists():
             try:existing=json.loads(path.read_text(encoding='utf-8'))
             except (OSError,ValueError):existing={}
-            if existing.get('status')=='complete' and existing.get('params_key')==params_key(
-                    row,book,model,size,overlap):continue
+            if existing.get('status')=='complete' and cache_key_is_compatible(row,book,model,size,overlap,
+                    existing.get('params_key','')):continue
             # Never overwrite a partial checkpoint, even when deduplicating.
-            if existing.get('status')=='partial' and existing.get('params_key')==params_key(
-                    row,book,model,size,overlap):continue
+            if existing.get('status')=='partial' and cache_key_is_compatible(row,book,model,size,overlap,
+                    existing.get('params_key','')):continue
         clone=dict(donor)
         clone.update({'submission_id':row['submission_id'],
                       'source_url':row.get('source_url',''),
@@ -399,7 +420,7 @@ def summarize(records: list[dict], out: Path, book: dict,
         if not path.is_file(): status['pending']+=1;continue
         try:r=json.loads(path.read_text(encoding='utf-8'))
         except (ValueError,OSError):status['invalid_checkpoint']+=1;continue
-        if r.get('params_key')!=params_key(row,book,model,size,overlap):
+        if not cache_key_is_compatible(row,book,model,size,overlap,r.get('params_key','')):
             status['stale']+=1;continue
         status[r['status']]+=1
         if r['status']=='complete':
@@ -558,7 +579,8 @@ def main(argv=None) -> int:
         path=out/'filings'/f"{row['submission_id']}.json"
         try:old=json.loads(path.read_text()) if path.exists() else {}
         except (OSError,ValueError):old={}
-        if old.get('params_key')!=params_key(row,book,args.model,args.chunk_size,args.chunk_overlap) or old.get('status') not in {'complete','no_source_text'}:
+        if not cache_key_is_compatible(row,book,args.model,args.chunk_size,args.chunk_overlap,
+                                       old.get('params_key','')) or old.get('status') not in {'complete','no_source_text'}:
             pending.append(row)
     print(json.dumps({'indexed_filings':len(rows),'pending':len(pending),'done':len(rows)-len(pending)}),flush=True)
     if args.pending_only:return 0
