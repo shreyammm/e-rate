@@ -1,0 +1,34 @@
+{
+  "summary": "The comment expresses strong disagreement with any cuts to E-Rate funding for public education and libraries, emphasizing the importance of internet access in education and the underfunding of libraries. It argues for increased investment rather than reductions.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate funding would reduce the budget for public education and libraries",
+      "evidence_quote": "We strongly disagree with cutting any funding to the public education system and public libraries.",
+      "evidence_start": 0,
+      "evidence_end": 98,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077414",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077414",
+  "filer_raw": "Sonja Phillips",
+  "date_submission": "2026-09-21T16:24:56.185Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a60ac6d22f09f63544f5963c10936480fceb72b08f097f1ced724a0ff0d66d04",
+  "params_key": "e42bf730ba4c741d41b362718a4c88896edfb21b82d98419e20e49586bd99e71",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

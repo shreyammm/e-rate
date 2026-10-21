@@ -1,0 +1,34 @@
+{
+  "summary": "The comment highlights the importance of E-Rate for rural schools, which lack funding and face enrollment decline. It argues that limiting E-Rate would widen the education gap between rural and urban schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate insures internet connectivity for rural schools, which are underfunded and facing enrollment decline. Limiting E-Rate would widen the education gap between rural and urban schools.",
+      "evidence_quote": "E-Rate insures that internet connectivity is NOT one of those things. The rural students will still have access to the internet, as the larger schools do.",
+      "evidence_start": 399,
+      "evidence_end": 553,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076259",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076259",
+  "filer_raw": "Shannon Kvaalen",
+  "date_submission": "2026-09-10T16:15:14.151Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9f099c3524f8146c5f1a972860305980784e4b4c07ea9e11fb354296e7ea44ab",
+  "params_key": "fd212a7f97ee10317378ad8c227778a05f14d42120508d8a6e78e342527d04b6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

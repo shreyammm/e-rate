@@ -1,0 +1,34 @@
+{
+  "summary": "The library staff expresses concern about the impact of E-Rate on access to essential services for low-income and rural communities.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding cuts will disproportionately impact low-income and rural communities",
+      "evidence_quote": "Not everyone has access to Internet, and I worry that losing E-Rate will hurt the people that need the service most.",
+      "evidence_start": 253,
+      "evidence_end": 369,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079474",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079474",
+  "filer_raw": "Erin Cain",
+  "date_submission": "2026-10-05T19:50:23.024Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "97a70a709bc1bb5691fe69e00c4306b3ac5693c257abe6318ba01b0ba173a310",
+  "params_key": "a23eb9f8dab044aef87dfcb8ab7ada4dfa804ba302cacbbda52d3b1b888898f0",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

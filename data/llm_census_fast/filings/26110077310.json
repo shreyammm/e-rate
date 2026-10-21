@@ -1,0 +1,34 @@
+{
+  "summary": "The FCC comments express strong opposition to limiting or sunsetting the E-Rate program, emphasizing the importance of maintaining internet access for schools and libraries. The comments highlight concerns about the impact on education and the budget implications of removing this funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would result in significant budget cuts",
+      "evidence_quote": "You’ve all ruined the country don’t ruin our children’s schooling/libraries by removing internet access to ANY schools or libraries.",
+      "evidence_start": 86,
+      "evidence_end": 218,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077310",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077310",
+  "filer_raw": "Michael Beck",
+  "date_submission": "2026-09-20T21:44:37.364Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4e1d897847aaea48fbec58d5cf245008cd5db32374a4feed9492a4312d6892bb",
+  "params_key": "beaedd995a4ca546e0e22d781df64a3011ef80ae7673b19b6f4813c8ce462a69",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

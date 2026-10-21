@@ -1,0 +1,34 @@
+{
+  "summary": "The comment emphasizes the importance of the E-Rate program for providing internet access to communities and libraries, and expresses a desire to continue the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue to make the program available",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Communities in our district reply on E-Rate for equitable access to the internet via libraries",
+      "evidence_quote": "Communities in our district reply on E-Rate for equitable access to the internet via libraries",
+      "evidence_start": 0,
+      "evidence_end": 94,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076586",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076586",
+  "filer_raw": "Abigail Baines",
+  "date_submission": "2026-09-14T16:31:26.717Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6f5db17146e4ff39c22015372e9c636ea5c08c7c824e46280581e6ef017dca93",
+  "params_key": "38f26168be97c882994c5b6b8c6c51a073d13bee4c9884875cc85135c5606300",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

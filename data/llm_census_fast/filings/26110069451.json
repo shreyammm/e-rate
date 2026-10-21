@@ -1,0 +1,34 @@
+{
+  "summary": "The stakeholder opposes limiting or sunsetting the E-Rate program, arguing that defunding it would be a disservice to lower-income individuals and families and would put additional pressure on schools and libraries to continue providing services without this aid. The stakeholder cites the importance of the program in bridging the digital divide and providing affordable internet connectivity to libraries and schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Defunding or scaling back E-Rate would be a great disservice and limit information and connectivity for lower income individuals and families",
+      "evidence_quote": "Defunding or scaling back this service would be a great disservice and be an active move to try to limit the information and connectivity of lower income individuals and families, while putting stress and pressure on already low funded schools and libraries to continue offering equal or relatively similar services without this aid.",
+      "evidence_start": 223,
+      "evidence_end": 556,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069451",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069451",
+  "filer_raw": "Josh Crotty",
+  "date_submission": "2026-08-04T19:31:33.993Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8184cefe9f04428702b5cdcbb7b8a92b6f17e4aa87fb048af97d64c8b4208923",
+  "params_key": "a977911018ae2b2f8390a24bb1415a7a64850fa0140ca70e2e39a0e121f0cf54",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

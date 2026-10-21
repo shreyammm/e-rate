@@ -1,0 +1,34 @@
+{
+  "summary": "The school emphasizes the importance of E-Rate funding for providing affordable Internet and hardware upgrades, which are critical for maintaining educational opportunities. The school argues that loss of E-Rate funding would have a significant impact on student educational opportunities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would not be able to afford necessary Internet upgrades",
+      "evidence_quote": "Our school has relied on E-rate funding since it began in 1998. It has been instrumental in providing affordable Internet (and phone years ago) and hardware upgrades. We typically are in the 40-50% discount category. Without these funds we would not be able to afford necessary WiFi upgrades about once every 5 years.",
+      "evidence_start": 0,
+      "evidence_end": 317,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079569",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079569",
+  "filer_raw": "Luther High School",
+  "date_submission": "2026-10-06T13:47:21.170Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9c360643e34f83c95fa48047b67f7a246fb2fc76e4b01e8a4226e5c79ff17d80",
+  "params_key": "d53d15f7155ba9d0c2888c2bacf5a1eaf9e4471100868346cdd8e16ca9e73712",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The text argues against limiting or sunsetting E-Rate, emphasizing its importance for public libraries and the potential impact on library access and patron costs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is a critical component of the Homer Public Library, and many communities around the state of Alaska.  If eliminated or reduced, this could severely affect access to the internet as well as push unaffordable costs onto the patrons of the library.",
+      "evidence_quote": "E Rate is a critical component of the Homer Public Library, and many communities around the state of Alaska.",
+      "evidence_start": 0,
+      "evidence_end": 108,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078565",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078565",
+  "filer_raw": "Deb Curtis",
+  "date_submission": "2026-09-28T18:06:40.008Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c212f152a10e7cfc90df62b2294ecc15120c5db2588101063fd887d318ce4a73",
+  "params_key": "f8eb865a805994e0d78c74d8c23c8bb5d07fa8921fba743e978033c75f7f7aeb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

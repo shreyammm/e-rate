@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for equal access to internet for children and the public.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access in schools and libraries",
+      "evidence_quote": "I believe that the E-Rate program should remain fully intact and that it should not be narrowed.",
+      "evidence_start": 0,
+      "evidence_end": 96,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079973",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079973",
+  "filer_raw": "Jessica",
+  "date_submission": "2026-10-08T01:44:40.787Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6a8a0e8f89c6edebf648e2c83a3f7c3f3ef66209909e62d38bd0335492b56a43",
+  "params_key": "cb6fc36715dfa1752463c878d21e2c14a92e723b8087280c44be1cbdd22e6971",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

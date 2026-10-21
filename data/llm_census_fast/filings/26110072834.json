@@ -1,0 +1,34 @@
+{
+  "summary": "The comment highlights the importance of E-Rate for schools to maintain connectivity and technology, emphasizing the negative impact of removing it on schools' ability to meet educational and technological needs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate will devastate schools' ability to fund basic connectivity needs",
+      "evidence_quote": "Without E-Rate, it would not have been possible to have the connectivity and technology schools have today. Schools would have simply went without. There are not enough funds in many schools to support this basic need, and taking away E-Rate will further devastate schools in a time when it is most needed, when schools are struggling to defend themselves from cyber threats, meet online testing requirements, deliver instruction, and just keep their lights on.",
+      "evidence_start": 146,
+      "evidence_end": 607,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072834",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072834",
+  "filer_raw": "Shawn Iverson",
+  "date_submission": "2026-08-24T12:49:55.430Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1aabed5cf6a620861bcc272e26c30dee6ec49cbb5df3d8565a3c0ada4af37c06",
+  "params_key": "553241d8a7d2a66d9d093e6bcd888bc563c961563c3bd184c40b41f22e6dcb25",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

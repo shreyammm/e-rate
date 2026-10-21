@@ -1,0 +1,34 @@
+{
+  "summary": "The comment expresses opposition to cutting E-Rate funding, emphasizing its importance for schools, libraries, and students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate will harm underfunded schools and libraries",
+      "evidence_quote": "This will also disporportionatlly affect poor areas, which are already struggling.",
+      "evidence_start": 442,
+      "evidence_end": 524,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110068963",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110068963",
+  "filer_raw": "Katherine Norton",
+  "date_submission": "2026-07-30T14:21:40.378Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "25566e1fabe5fe08c3be8393ac658c5aa44be2b990300cbb01d78982c8620f8c",
+  "params_key": "17d39902cf63375a34e9d20e60dbc440148dd0cc0ff67d71da028c6899b7e6ea",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

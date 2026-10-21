@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes limiting or sunsetting E-Rate, arguing that it would jeopardize school and library budgets and network upgrades.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate cuts school and library budgets, jeopardizing network upgrades",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 102,
+      "evidence_end": 244,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072914",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072914",
+  "filer_raw": "Blaise Kyrios",
+  "date_submission": "2026-08-24T19:58:16.824Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ff71179844548ad6970dda2d6f236ad336410ab20a2ed9bc3fa64b00a93a80a6",
+  "params_key": "0cf7ae5575522e74261bd63692c26fe833fa2cb3a8cacff2ea640989a00c3e99",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

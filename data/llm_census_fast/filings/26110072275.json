@@ -1,0 +1,34 @@
+{
+  "summary": "The comment highlights the cost implications of E-Rate for individuals in rural areas, particularly retirees on limited budgets, suggesting a potential need to reconsider the program's funding and eligibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would increase costs for schools and libraries",
+      "evidence_quote": "I live in a rural community and home internet service is too costly for me as I am retired and on a limited budget.",
+      "evidence_start": 0,
+      "evidence_end": 115,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072275",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072275",
+  "filer_raw": "Lizard Butte Library",
+  "date_submission": "2026-08-19T20:23:59.457Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "79f4d7206c423698b910aa7795e56745550046c8c7034dceae929c3e32d75921",
+  "params_key": "2cf32ad887a9e44994b5929b55b0d5fcff7d3fff6bfaa2deb88547164c033ab2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes limiting or sunsetting E-Rate funding, arguing that it will not save taxpayers money and will harm communities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate will not save taxpayers money and will widen the digital divide",
+      "evidence_quote": "Since E-Rate funding is money is paid for by governmental fees on telecommunications companies. That means cutting this program will not save taxpayers a dime—it will simply harm communities like ours by widening the digital divide to provide a tax cut for these companies.",
+      "evidence_start": 0,
+      "evidence_end": 273,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075452",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075452",
+  "filer_raw": "Margaret R. Adams",
+  "date_submission": "2026-09-03T17:44:11.102Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4c3e4f34da3de3b528c5254a348e668e3f0c4ba8ded84a31c4e24b453ffa13f2",
+  "params_key": "ac9183d5b90c0d6747c13b55416a05a7805bfa2eef6b66270a03d22ee99e95c9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

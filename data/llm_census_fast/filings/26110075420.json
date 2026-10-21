@@ -1,0 +1,34 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate funding for maintaining network capabilities and access to educational technology.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate or reduce E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, school district would struggle to afford bandwidth",
+      "evidence_quote": "Please do not eliminate or reduce E-Rate funding.",
+      "evidence_start": 0,
+      "evidence_end": 49,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075420",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075420",
+  "filer_raw": "Gary Bills",
+  "date_submission": "2026-09-03T14:29:17.152Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8bc6a828932bbe7c955b6976682434650294faf38dc78bd34da86802f480ab5d",
+  "params_key": "b0495448c4515ebf745701af3cda1b4ba2ac74f8a03e77f338318970ea0484c4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

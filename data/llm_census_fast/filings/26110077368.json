@@ -1,0 +1,34 @@
+{
+  "summary": "The comment emphasizes the critical role of the internet in schools and libraries, opposing any actions that could limit or sunset E-Rate funding, citing budgetary concerns and the importance of maintaining access for educational and public services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would result in significant budget cuts and loss of access to internet services for schools and libraries.",
+      "evidence_quote": "It is so important that it is being kept in place for all other schools and libraries except those targeted by this filing.",
+      "evidence_start": 301,
+      "evidence_end": 424,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077368",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077368",
+  "filer_raw": "Melody A Keefe",
+  "date_submission": "2026-09-21T13:12:46.132Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "62196d25a83cb50b7ca1383e42e0cfedf69f0d3527ee3326d862c83bcebdbac6",
+  "params_key": "1ba3787d77b27ef094d82e8c0b299477555b01b76ed7ede318a798eba083ef2f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

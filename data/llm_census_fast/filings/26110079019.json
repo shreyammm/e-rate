@@ -1,0 +1,34 @@
+{
+  "summary": "The academic library director emphasizes the importance of E-Rate for their library and communities, stating that it is crucial for providing access to broadband internet. They argue that E-Rate is a public good that must be continued, despite not directly affecting their library.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would result in increased costs for libraries and communities",
+      "evidence_quote": "As an academic library director, e-rate does not directly effect my library or my patrons. However, it is hugely important for the communities I work and live in and my colleagues all across Massachusetts in public libraries.",
+      "evidence_start": 0,
+      "evidence_end": 225,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079019",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079019",
+  "filer_raw": "E-Rate program",
+  "date_submission": "2026-10-01T14:00:53.336Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1f0ffa28a088c6c5cbc440320de54f940f0a5cf28bc9a773744ff45c6253377c",
+  "params_key": "70ac7b4fc6f67d4b12065d7ed879d28ae802fa0531c6b686234822ea6eff8751",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

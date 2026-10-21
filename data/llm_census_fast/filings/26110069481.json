@@ -1,0 +1,34 @@
+{
+  "summary": "The Latah County Library District emphasizes the importance of the E-Rate program for providing free and accessible internet access in their rural community. They highlight the critical role of E-Rate funding in maintaining fast and high-quality internet, which is essential for their mission of serving patrons.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for broadband access in rural areas",
+      "evidence_quote": "Without the funding we receive, maintaining fast and high-quality internet for our communities would not be achievable without this funding.",
+      "evidence_start": 158,
+      "evidence_end": 298,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069481",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069481",
+  "filer_raw": "Latah County Library District",
+  "date_submission": "2026-08-04T23:38:40.304Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c76af09cdd97e60a2eac221c59a2c6f9440ec066866a51bfb8631e3a12d70eb0",
+  "params_key": "72f72db4e5ea46cd0d0773136b133041c23c00786956acd5ef5e741645ff2d2a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The comment supports continuation of E-Rate funding for public schools and libraries, emphasizing the importance of maintaining internet access for rural communities.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue funding E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding continuation is necessary to maintain internet access for schools and libraries",
+      "evidence_quote": "I strongly suggest that the FCC continue to fund and support the E-rate for public schools and libraries.",
+      "evidence_start": 0,
+      "evidence_end": 105,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081060",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081060",
+  "filer_raw": "Greg Larson",
+  "date_submission": "2026-10-13T17:45:07.897Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "23c458448d20fe586f6a6959d6c5840c883df73da27394ab6bc3780639620965",
+  "params_key": "5e51ee0df8e578aaaa4499414527c7bdd2b1bb4fe7a99e33f128aeef04036b9d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The library emphasizes the importance of E-Rate funding for maintaining affordable, reliable Internet access for patrons. Cutting E-Rate would threaten the library's ability to provide essential services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would threaten library's ability to provide Internet access",
+      "evidence_quote": "Cutting E-Rate would threaten our ability to provide Internet access because we don’t have dedicated resources to fill the gap in funding.",
+      "evidence_start": 108,
+      "evidence_end": 246,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080253",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080253",
+  "filer_raw": "Kim Shipala",
+  "date_submission": "2026-10-09T15:48:10.276Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c93d2ccc5cbfabad65bdd01c4a8c7f1aed755f8a9274ea8a51610c0849168388",
+  "params_key": "6b05f0a1773c8585ce1c8bb6b1b0c1ac1db4b8d16ec9603261b3a4a438a4cf2a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

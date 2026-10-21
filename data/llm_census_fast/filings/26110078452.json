@@ -1,0 +1,34 @@
+{
+  "summary": "The comment calls for fully funding E-Rate with federal money to ensure internet access for all public schools and libraries, emphasizing the necessity of the internet for education and job applications.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Fully fund with federal money internet access to all public schools and public libraries in the United States",
+      "evidence_quote": "Fully fund with federal money internet access to all public schools and public libraries in the United States",
+      "evidence_start": 0,
+      "evidence_end": 109,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078452",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078452",
+  "filer_raw": "Amy Knapp",
+  "date_submission": "2026-09-27T12:54:35.895Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8b93bd9fb64d206b81c1d9c8470fd545ab3ac4cd2621bb7dff15874e080379f3",
+  "params_key": "da105da62b5c6c16ecc4e78170dd8fbf352ce3bc2901473f4f21ce458c60bdb1",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}
