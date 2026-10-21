@@ -17,10 +17,11 @@ permissions:
 # Keep each checkpointed model run from overwriting another run's progress.
 concurrency:
   group: erate-llm-census
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   analyze:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 210
     steps:
