@@ -135,6 +135,73 @@ function renderRoles(){
   lift.textContent=ratio===null?"n/a":n(ratio)+"×";tr.append(label,matched,den,share,lift);body.append(tr);
  }
 }
+function renderMap(){
+ const box=$("at-map");box.replaceChildren();
+ const svgNS="http://www.w3.org/2000/svg";
+ const create=(name,attrs)=>{const x=document.createElementNS(svgNS,name);for(const [k,v] of Object.entries(attrs||{}))x.setAttribute(k,String(v));return x};
+ const W=900,H=550,cx=W/2,cy=H/2;
+ const excluded=new Set("the and are for with from need needs use using used this that should can could must will a an on to of in as e rate proposal support provide access".split(" "));
+ const token=t=>new Set((t.topic_terms||[]).slice(0,9).join(" ").toLowerCase().match(/[a-z]{3,}/g)?.filter(w=>!excluded.has(w))||[]);
+ const terms=clusters.map(token),edges=[];
+ for(let i=0;i<clusters.length;i++)for(let j=i+1;j<clusters.length;j++){
+  const overlap=[...terms[i]].filter(t=>terms[j].has(t)).length;
+  const union=terms[i].size+terms[j].size-overlap;
+  const score=union?overlap/union:0;
+  if(overlap>=1&&score>=.075)edges.push({i,j,score,overlap});
+ }
+ const nodes=clusters.map((t,i)=>({x:cx+195*Math.cos(i*Math.PI*2/clusters.length),
+    y:cy+195*Math.sin(i*Math.PI*2/clusters.length),r:11+12*Math.sqrt(t.filings_with_matching_language/Math.max(1,...clusters.map(x=>x.filings_with_matching_language)))}));
+ for(let turn=0;turn<160;turn++){
+   const change=nodes.map(()=>({x:0,y:0}));
+   for(let i=0;i<nodes.length;i++){
+     change[i].x+=(cx-nodes[i].x)*.006;
+     change[i].y+=(cy-nodes[i].y)*.006;
+     for(let j=i+1;j<nodes.length;j++){
+       const dx=nodes[j].x-nodes[i].x,dy=nodes[j].y-nodes[i].y,d2=Math.max(100,dx*dx+dy*dy);
+       const push=10500/d2,dist=Math.sqrt(d2);
+       change[i].x-=push*dx/dist;change[i].y-=push*dy/dist;
+       change[j].x+=push*dx/dist;change[j].y+=push*dy/dist;
+     }
+   }
+   for(const e of edges){
+     const a=nodes[e.i],b=nodes[e.j],dx=b.x-a.x,dy=b.y-a.y,dist=Math.max(1,Math.hypot(dx,dy));
+     const force=(dist-135)*(.012+.032*e.score);
+     change[e.i].x+=force*dx/dist;change[e.i].y+=force*dy/dist;
+     change[e.j].x-=force*dx/dist;change[e.j].y-=force*dy/dist;
+   }
+   for(let i=0;i<nodes.length;i++){
+     nodes[i].x=Math.max(70,Math.min(W-70,nodes[i].x+Math.max(-12,Math.min(12,change[i].x))));
+     nodes[i].y=Math.max(55,Math.min(H-55,nodes[i].y+Math.max(-12,Math.min(12,change[i].y))));
+   }
+ }
+ const svg=create("svg",{viewBox:"0 0 "+W+" "+H,width:"100%","aria-label":"Related language clusters connected by shared top vocabulary",role:"img"});
+ svg.style.minWidth="640px";svg.style.display="block";
+ const lines=create("g");
+ for(const e of edges){
+  const a=nodes[e.i],b=nodes[e.j],line=create("line",{x1:a.x,y1:a.y,x2:b.x,y2:b.y,
+    stroke:"#9ab6c6","stroke-opacity":Math.min(.88,.25+e.score*1.5),"stroke-width":Math.max(1,2.5*e.score+1)});
+  const title=create("title");title.textContent=n(e.overlap)+" shared top-vocabulary words; Jaccard "+(100*e.score).toFixed(1)+"%. Not inferred agreement.";
+  line.append(title);lines.append(line);
+ }
+ svg.append(lines);
+ const dots=create("g");
+ clusters.forEach((t,i)=>{
+   const p=nodes[i],g=create("g",{tabindex:"0",role:"button","aria-label":"Inspect cluster "+headline(t)});g.style.cursor="pointer";
+   const circle=create("circle",{cx:p.x,cy:p.y,r:p.r,fill:t.concentrationRisk||t.repeatRisk?"#996e3d":"#2d7196",stroke:"#fff","stroke-width":2});
+   const caption=create("text",{x:p.x,y:p.y+p.r+14,"font-size":"10","font-weight":"600",fill:"#18384e","text-anchor":"middle"});
+   caption.textContent=headline(t).slice(0,28);
+   const tooltip=create("title");tooltip.textContent=headline(t)+"; "+n(t.filings_with_matching_language)+" matching filing texts. Select for source examples.";
+   g.append(circle,caption,tooltip);
+   const activate=()=>{
+     selectedCluster=t;renderClusters();renderEvidence();
+     $("at-selected-title").scrollIntoView({behavior:"smooth",block:"start"});
+   };
+   g.addEventListener("click",activate);g.addEventListener("keydown",ev=>{if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();activate()}});
+   dots.append(g);
+ });
+ svg.append(dots);box.append(svg);
+ $("at-map-status").textContent=n(clusters.length)+" discovered clusters; "+n(edges.length)+" links based on shared vocabulary. Node size tracks filing-language matches; amber nodes have repetition or source-concentration flags. This is not a co-filing or consensus network.";
+}
 const questions=[
  ["Protect connectivity or restrict screen use?","Which filers acknowledge screen-time concerns but reject limiting E-Rate funding, and which explicitly favor funding restrictions?",
   "What evidence supports E-Rate funding conditions tied to screen time, and what counterarguments do commenters offer?"],
@@ -155,7 +222,8 @@ for(const [name,body,question] of questions){
 }
 ["at-cluster-query","at-cluster-filter","at-cluster-order"].forEach(id=>$(id).addEventListener(id.includes("query")?"input":"change",renderClusters));
 ["at-reason-query","at-reason-order"].forEach(id=>$(id).addEventListener(id.includes("query")?"input":"change",renderReasons));
-selectedCluster=clusters[0];selectedReason=reasons[0];renderClusters();renderEvidence();renderReasons();renderRoles();
+selectedCluster=clusters[0];selectedReason=reasons[0];renderClusters();renderEvidence();renderReasons();renderRoles();renderMap();
 const params=new URLSearchParams(location.search),id=params.get("cluster");
 if(id&&clusters.find(x=>x.id===id)){selectedCluster=clusters.find(x=>x.id===id);renderClusters();renderEvidence();}
+const reason=params.get("reason");if(reason&&reasons.find(x=>x.id===reason)){selectedReason=reasons.find(x=>x.id===reason);renderReasons();renderRoles();}
 })();
