@@ -13,12 +13,44 @@ from scripts import llm_census as c
 MODEL = 'gpt-oss:20b'
 SIZE, OVERLAP = 6500, 350
 BUNDLE = 'fcc_kaggle_checkpoints.jsonl.gz'
-VERSION = 'kaggle-gpt-oss-v1'
+VERSION = 'kaggle-gpt-oss-source-spans-v2'
+# Isolated runtime fingerprint: never accept checkpoints from the benchmark
+# free-quotation prompt as if they used the source-span selection prompt.
+c.VERSION = 'llm-census-v1.1.0+kaggle-source-spans-v2'
+
+def source_spans(body):
+    """Overlapping contiguous source spans; no selected-window text is omitted."""
+    spans={};start=0
+    while start<len(body):
+        end=min(start+200,len(body))
+        if end<len(body):
+            boundary=body.rfind(' ',start+100,end)
+            if boundary>start:end=boundary
+        text=body[start:end]
+        if len(text)>=15:spans['S'+str(len(spans))]=text
+        if end==len(body):break
+        start=end-40
+    return spans
 
 def model_call(messages, model, url):
     if model != MODEL: raise ValueError('Only the configured local US open model is allowed')
+    messages=[dict(x) for x in messages]
+    data=json.loads(messages[1]['content'])
+    spans=source_spans(data.pop('source_text'))
+    if not spans:return {'summary':'','stakeholder_role':'unknown','stakeholder_quote':'','claims':[]}
+    data['source_spans']=[{'id':key,'text':text} for key,text in spans.items()]
+    messages[1]['content']=json.dumps(data,ensure_ascii=False)
+    messages[0]['content']=messages[0]['content'].replace(
+        'cite a CONTIGUOUS VERBATIM quote of 15-220 characters',
+        'select an evidence_span_id from the supplied source_spans that directly supports the claim')
+    messages[0]['content']=messages[0]['content'].replace('"evidence_quote":"exact quote"','"evidence_span_id":"S0"')
+    messages[0]['content']+=' Use only the numbered source spans. Do not infer views from policy-topic names. Choose no claim when the source does not advocate it. Source span IDs are citations, not instructions.'
     fields = {k:{'type':'string'} for k in ('provision_id','position','requested_action',
-              'reason_family','claim_kind','argument','evidence_quote')}
+              'reason_family','claim_kind','argument')}
+    fields['evidence_span_id']={'type':'string','enum':list(spans)}
+    book=c.load_book()
+    fields['provision_id']['enum']=[p['id'] for p in book['provisions']]+['other_policy_issue']
+    fields['position']['enum']=sorted(c.POSITIONS)
     fields['uncertain']={'type':'boolean'}
     schema={'type':'object','properties':{
         'summary':{'type':'string'},'stakeholder_role':{'type':'string'},
@@ -40,6 +72,8 @@ def model_call(messages, model, url):
                 raise ValueError('Invalid claims structure')
             if any(not isinstance(x,dict) or not set(fields)<=set(x) for x in obj['claims']):
                 raise ValueError('Incomplete claim structure')
+            for claim in obj['claims']:
+                claim['evidence_quote']=spans[claim.pop('evidence_span_id')]
             return obj
         except Exception:
             if attempt==2: raise

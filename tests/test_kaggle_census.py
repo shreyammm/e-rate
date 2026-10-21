@@ -1,7 +1,7 @@
 import gzip, json, tempfile, unittest
 from pathlib import Path
 from scripts import llm_census as c
-from scripts.kaggle_census import MODEL,SIZE,OVERLAP,pack,restore
+from scripts.kaggle_census import MODEL,SIZE,OVERLAP,pack,restore,source_spans
 
 class Checkpoints(unittest.TestCase):
     def setUp(self):
@@ -40,5 +40,15 @@ class Checkpoints(unittest.TestCase):
     def test_invalid_partial_progress_rejected(self):
         obj=self.payload();obj.update(status='partial',next_chunk=2,parts=[])
         with self.assertRaises(ValueError):restore(self.bundle(obj),self.root/'out',[self.row],self.book)
+    def test_source_spans_are_exact_and_cover_full_window(self):
+        body=('A long paragraph about the E-Rate program and school funding.\n'*180)[:6500]
+        spans=source_spans(body)
+        self.assertTrue(all(15<=len(s)<=200 and s in body for s in spans.values()))
+        # Check coverage against a non-repeating source too, including final tail.
+        body=''.join(chr(0x400+i) for i in range(1300))
+        covered=set()
+        for span in source_spans(body).values():
+            start=body.index(span);covered.update(range(start,start+len(span)))
+        self.assertEqual(covered,set(range(len(body))))
 
 if __name__=='__main__':unittest.main()
