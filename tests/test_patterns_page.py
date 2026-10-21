@@ -36,7 +36,9 @@ class PatternsPageTests(unittest.TestCase):
         for row in data["filings"]:
             self.assertGreaterEqual(int(row["issues"]), 0)
             self.assertLess(int(row["issues"]), 1 << len(data["issue_keys"]))
-            self.assertGreaterEqual(int(row.get("duplicate_count", 0)), 0)\n            # A zero denotes unavailable exact-text family data (for example, no text).\n            # UI weighting explicitly treats this as a singleton instead of division by zero.
+            self.assertGreaterEqual(int(row.get("duplicate_count", 0)), 0)
+            # A zero denotes unavailable exact-text family data (for example, no text).
+            # UI weighting explicitly treats this as a singleton instead of division by zero.
 
 
 if __name__ == "__main__":
