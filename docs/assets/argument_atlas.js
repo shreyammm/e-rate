@@ -125,6 +125,7 @@ function renderRoles(){
  const r=selectedReason;if(!r)return;
  const c=byRole.counts_by_argument[r.id],total=roles.reduce((n,x)=>n+x.filings,0),sum=c.reduce((a,b)=>a+b,0);
  $("at-reason-selected").textContent="Selected: "+r.label+" — "+n(r.filings_with_language)+" matching filing records (language only); "+n(r.cross_docket_signature||0)+" potential cross-docket signatures. Compare category rates below, not raw totals alone.";
+ const open=el("a","","Investigate this reasoning across all original filings ↗");open.href=search(makeQuestion(r.label));open.style.fontWeight="650";$("at-reason-selected").append(" ",open);
  const body=$("at-roles");body.replaceChildren();
  for(const [i,role] of roles.map((x,i)=>[i,x]).sort((a,b)=>c[b[0]]/Math.max(1,b[1].filings)-c[a[0]]/Math.max(1,a[1].filings))){
   const hits=c[i],base=role.filings,outside=total-base,outHits=sum-hits,p=base?hits/base:0,outRate=outside?outHits/outside:0,ratio=outRate?p/outRate:null;
