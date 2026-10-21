@@ -45,7 +45,7 @@ class ResearchToolsTests(unittest.TestCase):
         self.assertIn("corpus_index.json",sidecar)
     def test_similarity_uses_document_coverage_and_source_metadata(self):
         code=(DOCS/"assets"/"similar.js").read_text(encoding="utf-8")
-        for part in ("manifest.records", "manifest.with_text",
+        for part in ("manifest.records", "m.with_text",
                      "qa_index", "idf", "dots", "norms", "docs[i]",
                      "fcc_similar_filings.csv"):
             self.assertIn(part,code)
