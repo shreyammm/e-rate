@@ -17,10 +17,11 @@ permissions:
 # Keep each checkpointed model run from overwriting another run's progress.
 concurrency:
   group: erate-llm-census
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   analyze:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-24.04
     timeout-minutes: 210
     steps:
@@ -92,6 +93,7 @@ jobs:
           if [ -f docs/data/llm_audit_queue.json ]; then git add -- docs/data/llm_audit_queue.json; fi
           if [ -f docs/data/llm_exploratory.json ]; then git add -- docs/data/llm_exploratory.json; fi
           if [ -f docs/data/claim_landscape.json ]; then git add -- docs/data/claim_landscape.json; fi
+          if [ -f docs/data/machine_claim_rows.json ]; then git add -- docs/data/machine_claim_rows.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Checkpoint exploratory LLM census results (machine-only)'
             git pull --rebase origin "${GITHUB_REF_NAME}"

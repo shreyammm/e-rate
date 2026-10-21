@@ -179,6 +179,27 @@ def build(data_dir=FILINGS, output=OUT, verify=True, max_groups=42, index_file=I
     labels,method=cluster_claims(claims,max_groups)
     groups=defaultdict(list)
     for c,label in zip(claims,labels):groups[label].append(c)
+    org_by_id={r['id']:str(r.get('organization') or '') for r in records}
+    # Every accepted machine claim is available for browsing, not just the
+    # handful of examples used to illustrate each automatically found group.
+    row_index={
+      'version':'machine-claim-rows-v1',
+      'publication_status':'EXPLORATORY_MODEL_ONLY',
+      'source_filings':len(records),
+      'complete_model_filings':len(by_file),
+      'rows':[{
+        'id':c['submission_id'],'group':'claim_group_'+str(label),
+        'role':c['role'],'organization':org_by_id.get(c['submission_id'],''),
+        'issue':c['issue_id'],'position':c['position'],
+        'reason_family':c['reason_family'],'claim_kind':c['claim_kind'],
+        'action':c['requested_action'],'argument':c['argument'],
+        'quote':c['quote'],'source_url':c['source_url'],
+        'start':c['evidence_start'],'ocr_candidate':c['ocr_candidate']
+      } for c,label in zip(claims,labels)]
+    }
+    rows_output=Path(output).with_name('machine_claim_rows.json')
+    rows_output.parent.mkdir(parents=True,exist_ok=True)
+    rows_output.write_text(json.dumps(row_index,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     summarized=[]
     for number_group,group in groups.items():
         filing_ids={c['submission_id'] for c in group}

@@ -34,6 +34,19 @@
 <div id="claim-groups" class="llm-issues"></div>
 <p class="llm-small">The 29 FCC questions are cross-references, <strong>not</strong> the ceiling on arguments discovered. Newly articulated arguments can be labeled <code>other_policy_issue</code>. Each group includes its counting unit and source links; overlapping arguments are counted separately but a filing counts only once within each group.</p>
 </section>
+<section class="llm-panel" id="all-machine-claims">
+<h2>Every extracted claim: source-linked filing explorer</h2>
+<p class="llm-small">This table includes <strong>every accepted model-extracted claim</strong> from fully processed submissions, not a selected set of quotes. It updates automatically. Filings that have not completed analysis are excluded and shown in the coverage above; no missing position is imputed as neutral.</p>
+<div class="llm-tools">
+<label>Search arguments or FCC filing ID<input type="search" id="claim-row-query" placeholder="School networks, legal authority…"></label>
+<label>Argument group<select id="claim-row-group"><option value="">All discovered groups</option></select></label>
+<label>Commenter type<select id="claim-row-role"><option value="">All roles</option></select></label>
+<label>Machine position<select id="claim-row-position"><option value="">All directions</option><option value="support">Support</option><option value="oppose">Oppose</option><option value="conditional_or_amend">Conditional</option><option value="alternative_proposal">Alternative</option><option value="discussion_no_position">Discussion only</option><option value="unclear">Unclear</option></select></label>
+</div>
+<p id="claim-row-count" class="llm-small" role="status">Loading claim index…</p>
+<div style="overflow-x:auto"><table style="width:100%;border-collapse:collapse;font-size:.88rem"><thead><tr><th style="text-align:left">Filing / source</th><th style="text-align:left">Commenter type</th><th style="text-align:left">Policy and stance</th><th style="text-align:left">Requested action and actual argument</th></tr></thead><tbody id="claim-row-table"></tbody></table></div>
+<div class="llm-tools"><button type="button" id="claim-row-prev">Previous</button><span id="claim-row-page" class="llm-small"></span><button type="button" id="claim-row-next">Next</button></div>
+</section>
 <section class="llm-panel" id="argument-map">
 <h2>Map the arguments across the docket</h2>
 <p>All 3,231 submissions were scanned to identify major recurring argument language, representative quotations and which filer fields use it. These preliminary themes are <strong>not</strong> support/opposition estimates. As open-source Granite finishes each filing, the <strong>LLM-extracted arguments</strong> view clusters independently cited claims and positions, without user training.</p>

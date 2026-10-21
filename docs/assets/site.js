@@ -46,7 +46,7 @@ function initMetrics(){
  [summary.indexed_filings,'ECFS filing records'],
  [summary.text_filings,'Filings with extracted text'],
  [summary.ocr_candidate_attachments,'Candidate OCR attachments'],
- [29,'FCC policy options checked across all filings']
+ [Number(summary.machine_analyzed_filings||0),'LLM-analyzed filings · argument coding in progress']
  ];
  clear($('metrics'));
  for(const [value,label] of metrics){const m=el('div','metric');m.append(el('span','value',number(value)),el('span','caption',label));$('metrics').append(m);}
@@ -344,6 +344,10 @@ async function main(){
  try{
   const [data,book]=await Promise.all([loadJson('./data/research_dashboard.json'),loadJson('./data/provisions.json')]);
   summary=data;provisions=Object.fromEntries((book.provisions||[]).map(p=>[p.id,p]));
+  try{
+    const model=await loadJson('./data/llm_exploratory.json');
+    summary.machine_analyzed_filings=Number(model.completed_filings||0);
+  }catch(e){summary.machine_analyzed_filings=0;}
   const ids=Object.fromEntries(summary.examples.map(e=>[e.id,e]));exampleLookup=ids;
   try{
     const index=await loadJson('./data/corpus_index.json');
