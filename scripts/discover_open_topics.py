@@ -230,9 +230,22 @@ def run(source=SOURCE, output=OUTPUT):
     model, terms, weights, n_topics = fit_model(rows, fit_indices)
     result = make_output(manifest, rows, fit_indices, model, terms, weights, n_topics)
     output.parent.mkdir(parents=True, exist_ok=True)
-    temp = output.with_suffix(output.suffix + ".tmp")
-    temp.write_text(json.dumps(result, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    temp.replace(output)
+    # Stable reruns should not rewrite the same research snapshot solely because
+    # the workflow ran again; preserve its original valid generation timestamp.
+    if output.exists():
+        existing = json.loads(output.read_text(encoding="utf-8"))
+        def substantive(doc):
+            return {k: v for k, v in doc.items() if k != "generated_utc"}
+        if substantive(existing) == substantive(result):
+            result = existing
+        else:
+            temp = output.with_suffix(output.suffix + ".tmp")
+            temp.write_text(json.dumps(result, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+            temp.replace(output)
+    else:
+        temp = output.with_suffix(output.suffix + ".tmp")
+        temp.write_text(json.dumps(result, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        temp.replace(output)
     return {key: result[key] for key in
             ("source_filings_scanned", "readable_filings",
              "fit_documents_after_exact_duplicate_and_filer_cap", "topics_count")}
