@@ -148,11 +148,11 @@ def select_argument_windows(text: str, size: int, overlap: int) -> tuple[list[di
         return chunks,total,'full_text'
     cap=5 if len(text)>500_000 else 6
     selected={0,1}
-    advocate=re.compile(r'\\b(?:we|i|our (?:organization|district|members|coalition))\\s+'
-        r'(?:strongly\\s+)?(?:urge|oppose|support|request|ask|recommend|believe|object|propose|advocate)\\b|'
-        r'\\b(?:the (?:fcc|commission) should|we call on|we encourage|we respectfully request)\\b',re.I)
-    subject=re.compile(r'\\b(?:e[- ]rate|fcc|school|librar|internet|screen time|discount|consultant|broadband|funding)\\b',re.I)
-    appendix=re.compile(r'\\b(?:microwave news|references|bibliography|journal of|peer.reviewed|doi:|copyright)\\b',re.I)
+    advocate=re.compile(r'\b(?:we|i|our (?:organization|district|members|coalition))\s+'
+        r'(?:strongly\s+)?(?:urge|oppose|support|request|ask|recommend|believe|object|propose|advocate)\b|'
+        r'\b(?:the (?:fcc|commission) should|we call on|we encourage|we respectfully request)\b',re.I)
+    subject=re.compile(r'\b(?:e[- ]rate|fcc|school|librar|internet|screen time|discount|consultant|broadband|funding)\b',re.I)
+    appendix=re.compile(r'\b(?:microwave news|references|bibliography|journal of|peer.reviewed|doi:|copyright)\b',re.I)
     ranking=[]
     for i,c in enumerate(chunks[2:],2):
         chunk=c['text']
