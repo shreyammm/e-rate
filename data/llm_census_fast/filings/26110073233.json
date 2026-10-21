@@ -1,0 +1,34 @@
+{
+  "summary": "The FCC's E-Rate program provides essential broadband access for schools and libraries, particularly in rural and low-income areas. Protecting the program is crucial to ensure that communities have reliable internet access for various educational and economic purposes.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for broadband access in schools and libraries, leading to increased costs for infrastructure upgrades and connectivity.",
+      "evidence_quote": "Please protect the E-Rate program in Indiana!",
+      "evidence_start": 492,
+      "evidence_end": 537,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073233",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073233",
+  "filer_raw": "Jessica Lee Maudlin",
+  "date_submission": "2026-08-26T16:42:46.817Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "27014ec92601a0dd018f9e4c06b3a17ad06eab52dbb54d689d300e6440d11500",
+  "params_key": "2bad79887b69a16950ad5bba0ddcfa3f6f740abaec77f8fa421820e9d9e9d262",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

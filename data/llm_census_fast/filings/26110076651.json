@@ -1,0 +1,34 @@
+{
+  "summary": "The parent expresses concerns about early screen time for young children and suggests a delay in introducing laptops until at least grade 3. This claim is an alternative design to the current approach and highlights the cost implications of implementing screen-based instruction at an early age.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Screen-time limits could increase costs for schools",
+      "evidence_quote": "Children at this age use a hands-on approach to learning; for example, the use of manipulatives in math.",
+      "evidence_start": 245,
+      "evidence_end": 349,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076651",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076651",
+  "filer_raw": "Marina Krickler",
+  "date_submission": "2026-09-15T00:46:09.009Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "17d1e7165693aedc5805228d4fea455a16e9a71df1079e24a82530c58ad535e0",
+  "params_key": "ce56ab2ca412df178af8c51f349633824c9ba3846eb85bff63e2d98483eb762c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

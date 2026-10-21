@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, arguing that funding should not be cut and local students and schools would not lose any funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding should not be cut for the program",
+      "evidence_quote": "I do not believe funding should be cut for this program.",
+      "evidence_start": 0,
+      "evidence_end": 56,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073161",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073161",
+  "filer_raw": "Jennifer",
+  "date_submission": "2026-08-26T08:33:11.409Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2c7ad29796c4fb03992d4a7cb986a3db37f07d3841c80b7d8e10828e82613603",
+  "params_key": "d9b06ed03fe3567dc875151cce29e1a20f0f2750097d1d4b0033da2169fe6604",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

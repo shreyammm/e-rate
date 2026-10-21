@@ -1,0 +1,34 @@
+{
+  "summary": "The text argues against limiting or sunsetting the E-Rate program, emphasizing the importance of broadband infrastructure for schools and the potential security risks of reducing screen time.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing screen time may have merits, but it should not impact E-Rate funding.",
+      "evidence_quote": "Efforts to reduce screen time may have their own merits, but that should have no bearing on the E-Rate program.",
+      "evidence_start": 125,
+      "evidence_end": 236,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110070292",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110070292",
+  "filer_raw": "Jared Hasen-Klein",
+  "date_submission": "2026-08-10T21:47:04.661Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d2cd5f7cf15aedacd8b0b9b1fb1d19cbf359fc09919a6cbfee51bda4e6f9911b",
+  "params_key": "83fe0387a820377fefe642a511454b075a0564febf05470fcc6dc9cd84af3416",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,86 @@
+{
+  "summary": "The text highlights the importance of E-Rate programs in providing essential internet services to students and libraries, emphasizing the need for policies that ensure equitable access and support educational outcomes.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "Define covered E-Rate consultants",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Clearly defining covered E-Rate consultants ensures consistency and clarity in service eligibility",
+      "evidence_quote": "These are resources that will further divide those that are vulnerable in our community and cause a separation of those that have the resources and those that do not",
+      "evidence_start": 306,
+      "evidence_end": 471,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "support",
+      "requested_action": "Annual consultant certification and disclosure",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Annual certification and disclosure requirements can ensure compliance and maintain service quality",
+      "evidence_quote": "These are resources that will further divide those that are vulnerable in our community and cause a separation of those that have the resources and those that do not",
+      "evidence_start": 306,
+      "evidence_end": 471,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "support",
+      "requested_action": "Individual consultant registration database",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Individual consultant registration can streamline the E-Rate process and reduce administrative complexity",
+      "evidence_quote": "These are resources that will further divide those that are vulnerable in our community and cause a separation of those that have the resources and those that do not",
+      "evidence_start": 306,
+      "evidence_end": 471,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate decisions should consider educational outcomes to ensure broadband access supports learning",
+      "evidence_quote": "Now as an adult, I do not have a printer at home and rely on the internet services at the library to be able to access documents and print when needed. These are resources that will further divide those that are vulnerable in our community and cause a separation of those that have the resources and those that do not",
+      "evidence_start": 154,
+      "evidence_end": 471,
+      "uncertain": false
+    },
+    {
+      "provision_id": "lowest_corresponding_price",
+      "position": "support",
+      "requested_action": "Prohibit percentage-based consultant fees",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Prohibiting percentage-based fees can prevent cost overruns and ensure fair pricing for services",
+      "evidence_quote": "These are resources that will further divide those that are vulnerable in our community and cause a separation of those that have the resources and those that do not",
+      "evidence_start": 306,
+      "evidence_end": 471,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "support",
+    "consultant_form_5654": "support",
+    "consultant_registration": "support",
+    "education_outcomes": "support",
+    "lowest_corresponding_price": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073104",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073104",
+  "filer_raw": "Sarah Snowden",
+  "date_submission": "2026-08-25T21:58:06.467Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e0e7087c82788eddc82d1bb547a238262e6cf1b8622a26a50d1b3f394ee4c6ce",
+  "params_key": "00043bfb01c066b750096f1a6055ffc704d645876e9a6b7cfb9b47b8a0224e0b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

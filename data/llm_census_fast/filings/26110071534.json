@@ -1,0 +1,34 @@
+{
+  "summary": "The text defends keeping E-Rate for libraries and schools, opposing any restrictions on broadband use.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Restricting broadband to curb screen time misses the mark, as libraries rely on these connections to serve their communities",
+      "evidence_quote": "Restricting broadband to curb screen time misses the mark, as libraries rely on these connections to serve their communities.",
+      "evidence_start": 119,
+      "evidence_end": 244,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071534",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071534",
+  "filer_raw": "Margot Zelenz",
+  "date_submission": "2026-08-15T14:50:25.022Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b99cd7ba6bdb849ea8668c3f9c391f786d48fd361cdcd33cde62ac417d29d2a1",
+  "params_key": "09bf7c6b0711b0f49fac95aafd7aeb73db673e05a9bb36f1b7b29c005a2b8494",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

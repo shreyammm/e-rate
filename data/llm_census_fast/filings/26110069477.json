@@ -1,0 +1,34 @@
+{
+  "summary": "The claim opposes limiting or sunsetting the E-Rate program, emphasizing its importance for libraries to provide services to community members.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for libraries to provide services to community members.",
+      "evidence_quote": "As a librarian, I know how important this program is for directly providing services to community members with the most need.",
+      "evidence_start": 0,
+      "evidence_end": 125,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069477",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069477",
+  "filer_raw": "Aren Briggs",
+  "date_submission": "2026-08-04T22:42:50.410Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e6c60b5c6961cef80fd884a9fb7f69174e3b47288df2355c528e0c097f9edea4",
+  "params_key": "763cfab64f812dab888cdf2b2de29805f1cdc7fe3489527c08e7c9dc405abc1d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

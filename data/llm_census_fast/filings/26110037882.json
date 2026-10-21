@@ -1,0 +1,34 @@
+{
+  "summary": "The Allegheny County library community expresses concern about the potential loss of over $800,000 annual savings on internet access due to the limitation or sunset of the E-Rate program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, libraries will lose over $800,000 annual savings on internet access",
+      "evidence_quote": "Without the E-Rate funding, our libraries will lose out on the over $800,000 annual savings on internet access.",
+      "evidence_start": 357,
+      "evidence_end": 468,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110037882",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110037882",
+  "filer_raw": "Allegheny County Library Association | Amy Anderson",
+  "date_submission": "2026-07-21T15:10:02.680Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e829a58f731661f2d7bc200ff81ba255047b4bf2a1483c5c06503e883e3b8c5a",
+  "params_key": "a104a58d672f0c8bd3da4651c49fee92d0a26efa080256fece38ff7a1de8c87e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The claim is that redirecting E-Rate funding would have a significant financial impact on the MPS budget, potentially causing a 6 million dollar hole. The claim is made by a Minneapolis citizen who emphasizes the importance of E-Rate for their district, particularly for students who rely on the program for education, especially during harsh weather conditions. The claim is made by a school district (MPS).",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Redirecting E-Rate funding would put a 6 million dollar hole in the MPS budget",
+      "evidence_quote": "Redirecting E-Rate funding would put a 6 million dollar hole in the MPS budget.",
+      "evidence_start": 107,
+      "evidence_end": 186,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080547",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080547",
+  "filer_raw": "Martin Schub",
+  "date_submission": "2026-10-12T02:09:40.820Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d22afb74f8156d5b96746d274bc76aefc14078d29f5defe79ac5d35c25c16d82",
+  "params_key": "ebca30519173a187486533b2dd943c77fb09cd5048be215e876e6a2b0ef923cc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

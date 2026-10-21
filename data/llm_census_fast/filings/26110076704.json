@@ -1,0 +1,34 @@
+{
+  "summary": "The text expresses opposition to cutting E-Rate funding for libraries, emphasizing the importance of free access to computers, printers, and WiFi for patrons and the community.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate funding would be a disservice to libraries and their patrons",
+      "evidence_quote": "To cut the funding for that would be a great disservice to not only the library's budget, but also to the many patrons who are in need of and use these services!",
+      "evidence_start": 199,
+      "evidence_end": 360,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076704",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076704",
+  "filer_raw": "Carina Gillenwater",
+  "date_submission": "2026-09-15T17:43:13.530Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9c270d4a461b237d5ea1fd15d0f0c67f5c937290ec02ee670b25766b3f2ba069",
+  "params_key": "5b7a2ea434c8cb8a598fd258197ff63b73f841b46f71a194365db13e00cbcdc2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

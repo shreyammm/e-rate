@@ -1,0 +1,34 @@
+{
+  "summary": "The comment expresses concern about the potential reduction or elimination of E-Rate funding, which could create financial strain on the school district due to the high poverty rate among students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reduction in funding will create financial strain on school districts",
+      "evidence_quote": "Any change in funding will create a serious problem for our district which has 90% of students eligible for free or reduced lunches due to the high poverty rate in our community",
+      "evidence_start": 174,
+      "evidence_end": 351,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074608",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074608",
+  "filer_raw": "Margaret C Griffin",
+  "date_submission": "2026-09-01T21:11:49.301Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0a6b0b66e31c36ffd56178bab07b8958170d6b60f1902f6428f4395ab3e8c278",
+  "params_key": "7ac47686eb3ec11fb6b2c1e14cb1a96229358966c36c84e88627fa207390513a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

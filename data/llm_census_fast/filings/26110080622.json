@@ -1,0 +1,34 @@
+{
+  "summary": "The comment expresses concern about the impact of limiting or sunsetting E-Rate on students in rural areas, who may lack access to technological resources due to limited home internet availability. The comment highlights the potential cost burden on states and school districts to either cover the full cost of internet access or cut it off.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would deprive students in rural areas of access to technological benefits available to schools with more robust resources",
+      "evidence_quote": "Students that live in rural areas should not be handicapped by depriving them of access to technological benefits available to schools with more robust resources.",
+      "evidence_start": 0,
+      "evidence_end": 162,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080622",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080622",
+  "filer_raw": "Aleita Hass-Holcombe",
+  "date_submission": "2026-10-12T16:27:26.931Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c829569e2636d47a23ccc8b96101743cb7e06f7488d2e5aac511e522c2619ed4",
+  "params_key": "97ffb16ceb5a420fe394285647665a915c0b8b3db6668bb21da37c55aea99eca",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

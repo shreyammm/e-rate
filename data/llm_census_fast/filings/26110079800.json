@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes sunsetting E-Rate, emphasizing its importance in bridging access gaps and ensuring educational equity. It cites the program's long history of success in providing internet access to students in low-income and rural areas. The comment argues that cutting E-Rate would exacerbate existing inequities and hinder students' ability to participate in modern learning environments. It highlights the critical role of reliable internet access in preparing students for success and calls f",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would only deepen inequities",
+      "evidence_quote": "For nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same tools as students in wealthier districts. While the program has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome. Students cannot fully participate in modern learning environments without reliable internet access, and schools cannot effectively prepare students for success without it.",
+      "evidence_start": 0,
+      "evidence_end": 618,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079800",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079800",
+  "filer_raw": "J Sharp",
+  "date_submission": "2026-10-07T15:45:52.084Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "64f5bd63a2d5a4ee1ca4b46e5962f45c95617be634c44dada3654104bab66e3b",
+  "params_key": "4fdaf4e5f24117a9416a3f5b1030f73f35b49b2edb0c4008c9a45ea9866dbac5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

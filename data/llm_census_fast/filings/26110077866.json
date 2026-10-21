@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes conditionally tying E-Rate decisions to screen-time limits for children, emphasizing parental control and transparency over content exposure.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Parents should have transparency and control over screen-time exposure for children",
+      "evidence_quote": "Give parents total transparency as it regards their children & what they are exposed to verbally or in books, films, etc.",
+      "evidence_start": 0,
+      "evidence_end": 121,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077866",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077866",
+  "filer_raw": "Phyllis",
+  "date_submission": "2026-09-23T16:24:31.738Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fee8737db6abcd74470bceaaa1231e4c652a0d27a8d0d53c9540f37235e4d3a3",
+  "params_key": "1a7fd0857ee6c862e59e31c9b504c036d26328e3ef6c063a3ed1e693594b54b2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

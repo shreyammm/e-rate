@@ -1,0 +1,34 @@
+{
+  "summary": "The comment emphasizes the importance of internet access for education and supports tying E-Rate decisions to educational outcomes.",
+  "stakeholder_role": "student",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E-Rate should consider educational outcomes when making decisions",
+      "evidence_quote": "Reliable internet access is an essential part of my children’s education. It allows them to access learning resources, complete assignments, and fully participate in the technology that is now an important part of the classroom.",
+      "evidence_start": 0,
+      "evidence_end": 228,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079265",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079265",
+  "filer_raw": "Maureen Artl",
+  "date_submission": "2026-10-04T19:38:13.819Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2e523b6234336593ac634a8ffc640c4fde5cefaa4fe5e4ca4b606b64ab7f894c",
+  "params_key": "c8aa902704d623d6baf3997323b3793eb23188d5311e47e996d6dd4a5ae701ad",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

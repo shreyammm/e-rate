@@ -1,0 +1,34 @@
+{
+  "summary": "The stakeholder emphasizes the importance of E-Rate for public education and argues against cuts that would harm its funding.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate will shift costs to local budgets",
+      "evidence_quote": "Cutting E-Rate will not eliminate these costs; it will shift the burden to local school budgets and taxpayers.",
+      "evidence_start": 303,
+      "evidence_end": 413,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081370",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081370",
+  "filer_raw": "Edward T Ventura Jr",
+  "date_submission": "2026-10-14T00:31:15.734Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "197c0442d2e15ca4c58a978373db387a78a33b0036c5e8e79273811eb9fdc52d",
+  "params_key": "0683859b9f31d5da2c0dd7235a579087be115e3d72faddf653eddd022b1a2870",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

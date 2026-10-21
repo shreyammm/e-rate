@@ -1,0 +1,34 @@
+{
+  "summary": "The FCC comments argue against imposing screen-time limits on E-Rate decisions, suggesting that responsibility should be left to parents, teachers, and school boards. The comments highlight concerns about increased costs and the lack of expertise of the FCC Chair in this area.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reduced screen time may lead to increased costs for schools",
+      "evidence_quote": "Screen time needs to be better balanced, true, but leave it to the experts; parents, teachers, local school boards and researchers.",
+      "evidence_start": 105,
+      "evidence_end": 236,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26109939901",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109939901",
+  "filer_raw": "Jeff Billings",
+  "date_submission": "2026-06-26T22:07:00.318Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f1d572697888232aa2619915c8944f5a2523ce20c2bc2427564e54fde8be6ae0",
+  "params_key": "480a7da743254de2b13e17aa3212bfee438095d752f599d745e1f345d66e7403",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The comment expresses opposition to limiting or sunsetting the E-Rate program, arguing that it is essential for low-income and rural communities to have access to reliable internet services provided by libraries and schools. The comment highlights the importance of the program in enabling students to research, job seekers to find work, and business owners to perform administrative tasks. The comment also emphasizes the cost and burden of the program on the affected communities.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Gutting e-rate will devastate low income and rural communities",
+      "evidence_quote": "Gutting e-rate will devastate low income and rural communities. The members of these communities deserve equal access to the internet that other, wealthier communities have.",
+      "evidence_start": 0,
+      "evidence_end": 173,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071362",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071362",
+  "filer_raw": "Jeanni Floyd",
+  "date_submission": "2026-08-14T16:51:52.530Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7756f098ce51cf6303b5a1fd69535dd8eda07b0e13d33b9637296b7ef1b67c8a",
+  "params_key": "58eda78447e89f941199b759b6006e19e1ce0534e0ced5725b7c8891d6476275",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

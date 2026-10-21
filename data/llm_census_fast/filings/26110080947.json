@@ -1,0 +1,34 @@
+{
+  "summary": "The comment calls for the FCC to consider educational outcomes when making E-Rate decisions, citing concerns about privacy violations related to technology use in schools.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Technology use in schools regularly violates students’ rights to privacy.",
+      "evidence_quote": "Technology use in schools regularly violates students’ rights to privacy.",
+      "evidence_start": 0,
+      "evidence_end": 73,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080947",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080947",
+  "filer_raw": "Elizabeth Rakola",
+  "date_submission": "2026-10-13T15:04:42.298Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "437ea3bd28406a93c2e9e6e7d7a8ed03b451fce2806d25b6c7395782b92b8649",
+  "params_key": "4a5ea3dab114f4fa2f518ccfae00fe64858631cd8bdd66ec8e79e1041dedd39e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

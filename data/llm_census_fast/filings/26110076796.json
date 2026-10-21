@@ -1,0 +1,34 @@
+{
+  "summary": "The text argues against limiting or sunsetting E-Rate, emphasizing its importance for educational equity and access to broadband services in public schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access in public schools and libraries, which are essential for educational equity.",
+      "evidence_quote": "This proposed plan to take away internet access for public schools and libraries only serves to ensure that present and future generations of people who are not in the wealthy elite class, who only go to elite private or religious schools, are not educated enough to make good, wise decisions that can affect them and future generations.",
+      "evidence_start": 0,
+      "evidence_end": 337,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076796",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076796",
+  "filer_raw": "Ms. Marlene H. Dortch",
+  "date_submission": "2026-09-16T15:34:12.950Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "73c0ed0d3d0c21a0ef33509272c94843b33071cc82eeea7a283469e58a306fa0",
+  "params_key": "163d5d8e47ac7ed62c74919d50d2c851046727c60441cbc1b270b9fcf9c5faed",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

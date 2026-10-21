@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes limiting or sunsetting E-Rate funding, citing the need to maintain current library services and the cost implications of losing this revenue source.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Any loss of funding will need to be made up from somewhere",
+      "evidence_quote": "Our member libraries rely on e-rate so they don't have to pay elevated fees for services from the SAILS library network. Any loss of funding will need to be made up from somewhere.",
+      "evidence_start": 0,
+      "evidence_end": 180,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078306",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078306",
+  "filer_raw": "Laurie Lessner",
+  "date_submission": "2026-09-25T15:50:54.833Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5b4e5696e68c6759d9b52d494c0d59e732676587ced7f5fa6e183060da59d8d2",
+  "params_key": "480c7b1f0e94a411a4cd97e0997546408b140097a4e949e8df8af7e60144a9d3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

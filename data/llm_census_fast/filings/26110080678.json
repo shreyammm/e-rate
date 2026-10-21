@@ -1,0 +1,34 @@
+{
+  "summary": "The retired school librarian opposes any reduction in E-Rate funding, emphasizing its critical role in providing access to online resources for students and libraries in times of limited school funding.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access in schools and libraries.",
+      "evidence_quote": "As a retired school librarian, I greatly oppose anything that is going to limit student access to research and/or education online abilities. Many of my students' families did not have the financial ability to connect to online resources. The school and public libraries were the only place that they could access important information for their education. Given limited funding for school and library programs, the E-Rate program was vital to their access and education.",
+      "evidence_start": 0,
+      "evidence_end": 471,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080678",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080678",
+  "filer_raw": "Kit Hein",
+  "date_submission": "2026-10-12T19:00:30.321Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "16bc907dea36e40f6631ad49740bc4b509c26ff0b7d672df796ce7bea34b1ca8",
+  "params_key": "4090cab2cfe387d57ce6f08356f53d155917e6e12ed2f24973a57e319ed3e660",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

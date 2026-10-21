@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes reducing E-Rate funding, citing its importance for education and services in Arizona.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate or reduce funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate funding would lead to reduced educational resources and services for students and libraries.",
+      "evidence_quote": "I oppose the elimination of or any reduction in funding to the E-Rate program.",
+      "evidence_start": 0,
+      "evidence_end": 78,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077596",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077596",
+  "filer_raw": "Trisha Maes",
+  "date_submission": "2026-09-22T04:05:51.848Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "911e91e3af0ab46de11b81d831d48b6c118381e9d63ef4b47360c64e84e82741",
+  "params_key": "1febcfb6bdd618eb2fcbd759a72c591b2ffdcb875e3cc027b0ec8efd1b83217e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

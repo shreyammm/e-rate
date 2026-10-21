@@ -1,0 +1,34 @@
+{
+  "summary": "The text argues for the continuation of E-Rate support to ensure essential broadband services for underserved populations.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would result in a loss of funding for essential broadband services in underserved communities",
+      "evidence_quote": "The E-rate support has let libraries provide internet services to underserved populations that do not have access to either housing or have the affordability needed for internet services.",
+      "evidence_start": 0,
+      "evidence_end": 187,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069031",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069031",
+  "filer_raw": "Jennifer Vinikour",
+  "date_submission": "2026-07-30T18:28:35.209Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "33eb1ff65e958765006fa68e7ab27b516a40f9e3d51ba302550477464820afd9",
+  "params_key": "0927be56082fc07221fbb459a6907dcbf7efe2876fb61df34b21023db04eccec",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

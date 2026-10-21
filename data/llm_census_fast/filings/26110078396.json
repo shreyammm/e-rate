@@ -1,0 +1,34 @@
+{
+  "summary": "The comment highlights concerns about the impact of E-Rate policies on student learning and parental rights, and suggests reallocating funds to other educational resources.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services",
+      "evidence_quote": "As a high school teacher, I speak from personal experience when I say that 1:1 student device policies reduce student learning and enable bad teaching.",
+      "evidence_start": 0,
+      "evidence_end": 151,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078396",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078396",
+  "filer_raw": "Joanna Peltason",
+  "date_submission": "2026-09-25T21:49:17.633Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5683a50b40ef01dc981ef1ee0f6459f9881c5c24bbc929d2338a049162c5fc29",
+  "params_key": "d8c3d94070bc205949a48955cf77c976bf54c57af0d4d6c936c743933f89968f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, citing concerns about increased costs for schools",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate could lead to increased costs for schools",
+      "evidence_quote": "I think the Internet access program should be kept.",
+      "evidence_start": 0,
+      "evidence_end": 51,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079934",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079934",
+  "filer_raw": "Lisa Seitz",
+  "date_submission": "2026-10-07T21:21:52.504Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c43a3eb9520e1d3f951ec686671694d0bcbca1351798bfd40ea485ce2cb17c3e",
+  "params_key": "c25b2e2d867581bd2b40be5fcb63067f8d3343a86a9fdb545847c672dc3bdc39",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

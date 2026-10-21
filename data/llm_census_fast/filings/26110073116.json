@@ -1,0 +1,34 @@
+{
+  "summary": "The text expresses concern about the impact of sunsetting E-Rate on libraries and senior citizens.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate could lead to increased costs for libraries and schools",
+      "evidence_quote": "Fund e-rate, or risk disenfranchising and disgruntling America's senior citizens!",
+      "evidence_start": 146,
+      "evidence_end": 227,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073116",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073116",
+  "filer_raw": "Diane Stepro",
+  "date_submission": "2026-08-25T23:16:08.986Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c9b2219f57024bd4ac209247aaafbc55c1e75b8c2455d9592c9a4a8a7e45a933",
+  "params_key": "d1c6f78d6b401575cc971149e769a0589d301541fedfc72b7351c7d2124944ef",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

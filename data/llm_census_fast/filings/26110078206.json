@@ -1,0 +1,34 @@
+{
+  "summary": "The comment opposes tying E-Rate decisions to screen-time limits due to potential cost implications and concerns about the impact on school safety and funding.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Screen-time limits would impose additional costs on schools",
+      "evidence_quote": "--screens are often used as rewards and babysitters, which is not educational\n--if the E-rate subsidy goes away, children very likely will be less safe online, and schools (which are already underfunded) will have less ability to protect kids.",
+      "evidence_start": 148,
+      "evidence_end": 391,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078206",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078206",
+  "filer_raw": "Holly Stephens",
+  "date_submission": "2026-09-25T00:28:32.139Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6db8ad5d9624fcefa4b146865c3e7cac3ea53722d7989b89925a5b54c22de593",
+  "params_key": "3317802268276eb005e2f6e38e09816a7de1b954663e7e70e94580f526c75041",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}

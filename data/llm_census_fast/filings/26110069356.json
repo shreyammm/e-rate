@@ -1,0 +1,34 @@
+{
+  "summary": "The author expresses opposition to removing the E-Rate program, citing their personal reliance on it for internet access and stating that it is not a waste of money.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "retain E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The author states that their family relied on E-Rate for internet access and would be negatively impacted by its removal",
+      "evidence_quote": "Please do not remove E-Rate. There are so many programs that are a waste of money, E-Rate isn't one of them.",
+      "evidence_start": 241,
+      "evidence_end": 349,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069356",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069356",
+  "filer_raw": "Sarah Pierce",
+  "date_submission": "2026-08-03T19:02:36.805Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d95ed70bab48a81fba9452ee4edb7b5946fb5837e358f16b66846ef8edc68d96",
+  "params_key": "797d0d8a1b143ce9cf1cc7b8625a36b3cc454845dafd8c636d125248223ee365",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}
