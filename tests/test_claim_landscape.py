@@ -90,6 +90,12 @@ class ClaimLandscapeTests(unittest.TestCase):
         self.assertEqual(sum(c['distinct_filings'] for c in result['clusters']),2)
         self.assertIn('UNVALIDATED',result['model_status'])
         self.assertTrue(path.exists())
+        all_rows=json.loads(path.with_name('machine_claim_rows.json').read_text())
+        self.assertEqual(all_rows['publication_status'],'EXPLORATORY_MODEL_ONLY')
+        self.assertEqual(len(all_rows['rows']),2)
+        self.assertEqual({r['id'] for r in all_rows['rows']},{'111','222'})
+        self.assertEqual({r['role'] for r in all_rows['rows']},
+                         {'individual','school_institution'})
 
     def test_fabricated_quote_rejected_by_full_source_check(self):
         row=json.loads((self.files/'111.json').read_text())
