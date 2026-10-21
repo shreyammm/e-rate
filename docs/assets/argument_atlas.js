@@ -224,6 +224,52 @@ for(const [name,body,question] of questions){
 ["at-cluster-query","at-cluster-filter","at-cluster-order"].forEach(id=>$(id).addEventListener(id.includes("query")?"input":"change",renderClusters));
 ["at-reason-query","at-reason-order"].forEach(id=>$(id).addEventListener(id.includes("query")?"input":"change",renderReasons));
 selectedCluster=clusters[0];selectedReason=reasons[0];renderClusters();renderEvidence();renderReasons();renderRoles();renderMap();
+async function loadOpenDocumentTopics(){
+ let response;
+ try{response=await fetch("./data/open_topics.json",{cache:"no-store"});}catch(_){return;}
+ if(!response.ok)return; // Dataset appears only after the separate corpus-only workflow validates it.
+ let data;
+ try{data=await response.json();}catch(_){return;}
+ if(data.source_filings_scanned!==3231||data.readable_filings!==3230||!Array.isArray(data.topics)||!data.topics.length)return;
+ const list=$("at-open-list"),evidence=$("at-open-evidence"),actions=$("at-open-actions");
+ const select=topic=>{
+   $("at-open-title").textContent="Full-text topic: "+topic.top_terms.slice(0,3).join(" · ");
+   $("at-open-meta").textContent=n(topic.assigned_filings)+" filings assigned by nonexclusive model weights; "+
+     n(topic.unique_exact_texts)+" distinct exact-text hashes; "+
+     n(topic.filings_with_repeated_exact_text)+" filings in repeated-text families. "+
+     "No stance, relevance or coalition is inferred.";
+   evidence.replaceChildren();
+   const terms=el("p","atlas-basis","Model terms: "+topic.top_terms.join(", "));evidence.append(terms);
+   if(topic.largest_filer_name_share>=.5)evidence.append(el("p","atlas-risk","One unverified normalized filer-name field makes up "+
+     n(100*topic.largest_filer_name_share)+"% of assigned filings. This is a concentration warning, not evidence of improper coordination."));
+   for(const e of topic.illustrative_quotes||[]){
+     const article=el("article"),top=el("div");
+     top.append(link(e.filer||"FCC filing "+e.id,source(e.id)));
+     top.append(el("span","atlas-sub"," · "+String(e.date||"").slice(0,10)+(e.ocr?" · OCR candidate":"")));
+     article.append(top,el("blockquote","",e.quote));
+     const links=el("div","atlas-linkrow");
+     links.append(link("Read extracted source ↗","./corpus.html?id="+encodeURIComponent(e.id)));
+     article.append(links);evidence.append(article);
+   }
+   if(!topic.illustrative_quotes?.length)evidence.append(el("p","atlas-basis","No excerpt satisfied the strict automatic source-selection rule. The topic still has source-linked filing memberships in its overall assignment count; do not infer a position."));
+   actions.replaceChildren();
+   actions.append(link("Ask the entire corpus about these terms ↗",search(makeQuestion(topic.top_terms.slice(0,5).join(", ")))));
+ };
+ const topics=[...data.topics].sort((a,b)=>b.assigned_filings-a.assigned_filings);
+ list.replaceChildren();
+ topics.forEach(topic=>{
+   const button=el("button","atlas-cluster");button.type="button";
+   button.append(el("h3","",topic.top_terms.slice(0,3).join(" · ")),el("div","atlas-count",n(topic.assigned_filings)),
+     el("p","","assigned filing records · "+n(topic.unique_exact_texts)+" distinct exact-texts"));
+   if(topic.largest_filer_name_share>=.5)button.append(el("span","atlas-stamp","Source concentration"));
+   button.onclick=()=>select(topic);list.append(button);
+ });
+ $("at-open-status").textContent=n(topics.length)+" automatically inferred topics from "+
+  n(data.fit_documents_after_exact_duplicate_and_filer_cap)+" balanced fitting documents; all "+
+  n(data.source_filings_scanned)+" filings scanned and scored. Topic count depends on vocabulary structure and model parameters, not the FCC codebook. This layer has not been semantically reviewed.";
+ $("open-discovery").hidden=false;select(topics[0]);
+}
+loadOpenDocumentTopics().catch(err=>{const section=$("open-discovery");if(section&&!section.hidden){$("at-open-status").textContent="Open-document topic data could not be rendered: "+err.message}});
 const params=new URLSearchParams(location.search),id=params.get("cluster");
 if(id&&clusters.find(x=>x.id===id)){selectedCluster=clusters.find(x=>x.id===id);renderClusters();renderEvidence();}
 const reason=params.get("reason");if(reason&&reasons.find(x=>x.id===reason)){selectedReason=reasons.find(x=>x.id===reason);renderReasons();renderRoles();}
