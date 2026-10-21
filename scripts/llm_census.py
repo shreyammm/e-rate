@@ -284,10 +284,15 @@ def atomic_json(path: Path, obj: dict) -> None:
 
 
 def params_key(record: dict, book: dict, model: str, size: int, overlap: int) -> str:
-    return digest(json.dumps({'v':VERSION,'text':digest(record['text']),
+    # Keep the original cache key BYTE-FOR-BYTE for all short filings, so the
+    # hundreds of already-completed full-text reviews are never reprocessed
+    # just because long attachments require a different semantic scope.
+    payload={'v':VERSION,'text':digest(record['text']),
           'book':digest(json.dumps(book,sort_keys=True,ensure_ascii=False)),
-          'model':model,'size':size,'overlap':overlap,
-          'selection':'deadline_author_own_v1' if len(record['text'])>size*7 else 'full'},sort_keys=True))
+          'model':model,'size':size,'overlap':overlap}
+    if len(record['text'])>size*7:
+        payload['selection']='deadline_author_own_v1'
+    return digest(json.dumps(payload,sort_keys=True))
 
 
 def process_record(record: dict, book: dict, out: Path, model: str, url: str,
