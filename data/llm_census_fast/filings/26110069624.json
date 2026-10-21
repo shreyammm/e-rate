@@ -1,0 +1,34 @@
+{
+  "summary": "The comment emphasizes the importance of maintaining E-Rate funding for libraries and schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding cuts could reduce broadband access for schools and libraries",
+      "evidence_quote": "This is very important to keep!",
+      "evidence_start": 0,
+      "evidence_end": 31,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069624",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069624",
+  "filer_raw": "Sarah Neil",
+  "date_submission": "2026-08-07T05:39:21.610Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f40e7ac1b954e6ab98f858bc70a1fbda88df924b1412529eec9be3ac4d231063",
+  "params_key": "136beda46f356981895d00eb6fb1ece80a926a4412989395fe2a3267d9c9ecdf",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete"
+}
