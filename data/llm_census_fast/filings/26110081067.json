@@ -1,0 +1,37 @@
+{
+  "summary": "E-Rate program critical for providing affordable connectivity to schools and libraries, enabling modern education for students. School district emphasizes the importance of E-Rate funding for providing reliable internet access for instruction, assessments, administrative systems, and digital resources. Without E-Rate, schools would face significant budget cuts and would widen the digital divide between urban and suburban schools. The E-Rate program has been transformative for the school, enablin The school district urges the FCC to preserve E-Rate's core funding and support for schools and libraries to avoid changes that would reduce access or increase burden for students and communities in underserved areas.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, schools would need to cut technology staff positions, reduce internet bandwidth, or divert funds from classroom instruction",
+      "evidence_quote": "Without E-Rate, we would need to cut technology staff positions, reduce internet bandwidth, or divert funds from classroom instruction",
+      "evidence_start": 2194,
+      "evidence_end": 2328,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110081067",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081067",
+  "filer_raw": "University Preparatory Science and Math  (16057615)",
+  "date_submission": "2026-10-13T17:51:23.274Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b54f79c5ae12f08331275e0e5c58508e8e6b691ec9465928c81f0983f703c1b0",
+  "params_key": "eeefbe9c491f702dbb43466b150b0e8b7334131d27417f576cd7dc0ca01aeefd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

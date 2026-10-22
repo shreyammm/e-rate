@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program rather than eliminate or sunset it, emphasizing the program's essential role in providing reliable broadband infrastructure for schools and libraries. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for modern education and student access to technology.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for providing students with reliable connectivity in modern education.",
+      "evidence_quote": "in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4287,
+      "evidence_end": 4534,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078334",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078334",
+  "filer_raw": "Bo Charlton",
+  "date_submission": "2026-09-25T16:59:03.366Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cbd25ffd417c0a22fe2405667fc7fd534823964bcad75a107cd6cd15ed0fbdf8",
+  "params_key": "ec44083e180d1f4fc1746c5313ecf77c6af450ce7678d5d967f96e6ced6e7310",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

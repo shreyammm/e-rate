@@ -1,0 +1,37 @@
+{
+  "summary": "The Skiatook Public Schools urge the FCC to preserve the E-Rate program and reject proposals to sunset or eliminate it, emphasizing the program's essential role in providing reliable broadband connectivity for schools and libraries. The comment urges protection of E-Rate funding to ensure schools can continue providing connectivity for students, regardless of their location or financial situation.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Protect E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students regardless of financial circumstances",
+      "evidence_quote": "ceed regardless of where they live or\ntheir family's financial circumstances.",
+      "evidence_start": 4450,
+      "evidence_end": 4527,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078265",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078265",
+  "filer_raw": "Clay Vinyard",
+  "date_submission": "2026-09-25T13:56:37.330Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "5e0f2685b68f2e18af1ca44ab5fef1d76b1ad74eb78dc6e158815aab1cea44de",
+  "params_key": "4ae7c402779a370258bf1c53740e837c21cb369a3261d6033844a20c969fec78",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

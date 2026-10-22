@@ -1,0 +1,50 @@
+{
+  "summary": "The school district emphasizes the importance of preserving the core E-Rate program and its eligibility for essential services to ensure continued access to affordable broadband and network infrastructure for teaching, learning, and operations. The comment opposes limiting or sunsetting E-Rate, arguing for thoughtful improvements and simplification while cautioning against changes that could reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing the scope of E-Rate eligible services would be detrimental to the quality of education as it would price out equivalent equipment when current equipment is due for replacement",
+      "evidence_quote": "Narrowing the scope of E-Rate eligible services would be detrimental to the quality of education we are able to offer as we would be priced out of equivalent equipment when our current equipment is due for replacement.",
+      "evidence_start": 2486,
+      "evidence_end": 2704,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Avoid changes that could reduce access or increase administrative burden",
+      "evidence_quote": "We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+      "evidence_start": 4547,
+      "evidence_end": 4764,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081064",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081064",
+  "filer_raw": "AnchorPoint Christian School",
+  "date_submission": "2026-10-13T17:47:18.159Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ee98928d8bd12288d1dbac88cf7d7177b0de35aa45891325937476d5e9ad22ff",
+  "params_key": "5648d54cfc5c737d63ac2791a7ed8767038e14740efcb9fef08e3050511ade57",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

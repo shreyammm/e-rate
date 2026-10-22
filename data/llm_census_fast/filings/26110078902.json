@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program rather than eliminate or sunset it, emphasizing the program's essential role in providing reliable broadband connectivity for schools and students. The comment expresses support for protecting E-Rate funding to ensure public schools maintain reliable, affordable broadband connectivity for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for school districts operating within finite budgets",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 2090,
+      "evidence_end": 2307,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "on to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity",
+      "evidence_quote": "on to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity",
+      "evidence_start": 4450,
+      "evidence_end": 4587,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078902",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078902",
+  "filer_raw": "Lake Pend Oreille School District",
+  "date_submission": "2026-09-30T17:28:54.779Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ae93c165f3f41ff84480df659b7744665ec7f98523aa854a069718b1dcaefba6",
+  "params_key": "1849c892eabc077f039e3f7eb3530769d5396b42f0b0d6b0b3abf98ac61ed1c5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

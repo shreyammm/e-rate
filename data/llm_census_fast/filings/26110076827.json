@@ -1,0 +1,37 @@
+{
+  "summary": "The Meriden Public Library opposes the FCC's proposals to eliminate or limit the E-Rate Program, emphasizing the critical role of E-Rate funding in supporting schools and libraries to maintain affordable, reliable Internet access. The library cites the high poverty rate in Meriden, the library's use of E-Rate to provide discounted Internet access to community members, and the library's role in promoting digital equity and internet safety. The library argues that terminating E-Rate would have a d The comment expresses a desire to build on advancements and meet the evolving educational needs of the library and its community, without explicitly opposing or supporting any specific policy changes.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "want to build on these advancements and\nmeet the evolving educational needs of those we serve.",
+      "evidence_start": 4451,
+      "evidence_end": 4545,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076827",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076827",
+  "filer_raw": "Meriden Public Library",
+  "date_submission": "2026-09-16T19:03:27.032Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e758c9c9e167403c88470c4e14996471e3fd2e91299d41581be2f2c75df296f",
+  "params_key": "d07e7e69f3d2e061291fc7d325770baee82ce273f42cad59a55534d00fb6333f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

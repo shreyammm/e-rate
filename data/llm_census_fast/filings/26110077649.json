@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve E-Rate to maintain essential broadband infrastructure for schools and libraries, emphasizing the program's role in providing reliable connectivity and the potential impact of its reduction on school budgets. The comment urges the FCC to protect E-Rate funding to ensure schools can maintain connectivity for students, emphasizing the importance of reliable, affordable, and effective connectivity for educational purposes.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for school districts operating within finite budgets",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 2100,
+      "evidence_end": 2317,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools can maintain connectivity for students",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4519,
+      "evidence_end": 4676,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077649",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077649",
+  "filer_raw": "United Community Unit School District",
+  "date_submission": "2026-09-22T15:54:59.396Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6263b833f78ffd8a93f893101dafbe86cca7bc4563ee5369a6a5c8a9279e8ec8",
+  "params_key": "8e89039650ee23c189a7e565296ceec4a0623d79e0515909fbc71ce3ea7bb239",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The library system emphasizes the importance of preserving the core E-Rate program and supports thoughtful improvements, but urges the FCC to avoid changes that would reduce access, increase administrative burden, or limit local flexibility for libraries, patrons, and communities. The comment opposes changes that could reduce access to E-Rate programs and suggests avoiding changes that would increase administrative burden or limit local flexibility for libraries, patrons, and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Narrowing eligibility could increase costs for libraries",
+      "evidence_quote": "Many of the areas that we serve are currently served by only one provider, making costs more expensive and out of the reach of many within our community.",
+      "evidence_start": 3034,
+      "evidence_end": 3187,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid changes that would reduce access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Avoid changes that would reduce access",
+      "evidence_quote": "Respectfully submitted, Derek Hess Trustee, Treasurer Massanutten Regional Library",
+      "evidence_start": 4649,
+      "evidence_end": 4731,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072069",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072069",
+  "filer_raw": "Massanutten Regional Library",
+  "date_submission": "2026-08-18T18:33:56.136Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1dc0c80ded709410f535d516c36c6fd280e80a18e9ca0b7943a985302e260581",
+  "params_key": "6602bb44a6dcbed8b3d3751afd69494e0a3be9151d87037fe7118dfc388bbbf9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

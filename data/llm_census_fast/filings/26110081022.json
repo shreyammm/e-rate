@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program rather than sunset or reduce its support, emphasizing the essential role of broadband connectivity in modern public education and the potential impact on school budgets and resources. The text argues against limiting or sunsetting E-Rate to maintain the program's funding and infrastructure for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The text argues against limiting or sunsetting E-Rate to maintain the program's funding and infrastructure for students.",
+      "evidence_quote": "on. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4450,
+      "evidence_end": 4680,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110081022",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081022",
+  "filer_raw": "Peter Dillon",
+  "date_submission": "2026-10-13T16:49:42.910Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f479c3f9b4bb6fb85bf52f857a8886e8f49bbfa9d4825ea00f04a5241d8aab4d",
+  "params_key": "9b38e4b2eb1bd0f6b0d53230043fc2c2cd946ed454a28526cb44eeb3f2507fe2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

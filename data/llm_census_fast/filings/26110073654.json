@@ -1,0 +1,37 @@
+{
+  "summary": "The comment opposes eliminating the E-Rate program, emphasizing its critical role in providing affordable broadband to schools and libraries, especially in rural and low-income areas. The comment cites the program's success in supporting various educational needs and the potential negative impact on students and districts. The comment also highlights the program's integrity and the need to preserve it rather than eliminate it. The comment urges preserving the E-Rate program to maintain educational equity and connectivity for students, emphasizing the importance of the program in ensuring access to digital learning opportunities for all students, regardless of their location or income level.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would widen educational inequities",
+      "evidence_quote": "I urge the Commission to preserve and strengthen the E-Rate program and continue its longstanding commitment to ensuring all students, regardless of geography or income, have access to the connectivity needed for success in education and in the modern workforce.",
+      "evidence_start": 4565,
+      "evidence_end": 4827,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110073654",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073654",
+  "filer_raw": "Gilbert Hernandez",
+  "date_submission": "2026-08-28T22:25:13.514Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3dbf71a2c4d7bf93514d628731f69d8ad17eebcb6e5f6ee0756e9b9e6b25b9b2",
+  "params_key": "be71907af6ef7be528af391b296de3c41a83716c984b6b34f94768fc06c619c5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

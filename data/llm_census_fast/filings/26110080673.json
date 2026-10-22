@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the importance of preserving E-Rate funding for essential infrastructure, not screen time, and urges the FCC to reject any proposal to sunset or reduce E-Rate support. The comments express opposition to limiting or sunsetting the E-Rate program, emphasizing the importance of maintaining eligibility for high-poverty communities to ensure equitable access to broadband services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining essential infrastructure, not screen time",
+      "evidence_quote": "Historical Support: Over Funding Years 2021–2025: Godfrey-Lee Public Schools received $463,591 in committed E-Rate support, an average of $92,718 annually. This funding does not represent a one-time buildout, but the recurring operational cost of maintaining a modern network.",
+      "evidence_start": 2856,
+      "evidence_end": 3132,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries in maintaining broadband infrastructure.",
+      "evidence_quote": "Avoid restricting eligibility based on narrow geographic criteria, ensuring high-poverty communities receive the support necessary to maintain equitable access.",
+      "evidence_start": 4387,
+      "evidence_end": 4547,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080673",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080673",
+  "filer_raw": "Godfrey-Lee Public Schools",
+  "date_submission": "2026-10-12T18:49:01.577Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "40642a96d96e096e5d95e0f8e14dc1b8379dd6ced072704db66180c034b6f829",
+  "params_key": "b904ec156c76a4c69553d21c051a4d5a68d7f798f56d9760e4a02db3d71a01b7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

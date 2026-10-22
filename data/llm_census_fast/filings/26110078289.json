@@ -1,0 +1,49 @@
+{
+  "summary": "A technology coordinator from a public school district urges the FCC to preserve the E-Rate program and reject proposals to eliminate or reduce its support, emphasizing the essential role of reliable broadband in modern education and the potential financial and operational impacts of such cuts. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for modern education and student success.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would force districts to cut back on services or reduce staff, competing with resources for student and educator needs",
+      "evidence_quote": "E-Rate covers 40% of our costs for network equipment and necessary licenses. A cut to E-Rate would force the district to make very difficult decisions to either cut back on services that help the district function, or reduce staff.",
+      "evidence_start": 2245,
+      "evidence_end": 2476,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for providing students with reliable connectivity for education.",
+      "evidence_quote": "in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4235,
+      "evidence_end": 4482,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078289",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078289",
+  "filer_raw": "Jeremy Marx",
+  "date_submission": "2026-09-25T15:07:19.492Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8d66dc021862af4dfc239c91e78e25138000aece3a03b4dde1e11b2d6ff1d336",
+  "params_key": "699306202512397c59c1c1e8d5ec586e71f77f9b40b88aab66311a5f2ff498c3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

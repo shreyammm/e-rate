@@ -1,0 +1,37 @@
+{
+  "summary": "A parent urges the FCC to preserve and strengthen the E-Rate program, emphasizing its essential role in providing reliable broadband for modern public education. The parent guardian emphasizes the importance of E-Rate for educational access and success, urging the Commission to consider educational outcomes in its decision-making process.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E-Rate should consider educational outcomes when making decisions",
+      "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4460,
+      "evidence_end": 4686,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077850",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077850",
+  "filer_raw": "Brandon Landas",
+  "date_submission": "2026-09-23T15:53:40.841Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fab91873decf8d70ebf87069ae53482bd37647abdd963d5a5741b7c9e3711aa6",
+  "params_key": "b0104b5841b5933c8635b925470f551cf21c529a1b70e65e2473927a6f45efa2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

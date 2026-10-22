@@ -1,0 +1,49 @@
+{
+  "summary": "The comment from a school district director urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and preserving its eligibility scope and support for special construction and dark fiber. The comment emphasizes the essential role of E-Rate in providing reliable broadband infrastructure for modern public education and the need to protect it for students' educational access and success. The comment urges protecting E-Rate to ensure broadband access for schools, emphasizing the importance of maintaining funding for educational connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate support is essential for maintaining school infrastructure and connectivity",
+      "evidence_quote": "Lincoln County School District has received $1.73 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $345,969 a year toward the connections our students depend on.",
+      "evidence_start": 979,
+      "evidence_end": 1188,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures continued funding for broadband access in schools",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4589,
+      "evidence_end": 4746,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110075856",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075856",
+  "filer_raw": "Bryan Freschi",
+  "date_submission": "2026-09-08T18:53:37.488Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "742c455ff6edd52131a26af0f35f640e2fd525e58ce8aa7f6626a65d0e688062",
+  "params_key": "6761abf21c3d608ff1845f05c4b66565a5c21efae9d68279952b8ecda70ca5ac",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

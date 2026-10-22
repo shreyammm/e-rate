@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and to work with schools to modernize the program rather than reduce its role in public education. The comment urges protection of E-Rate to ensure schools maintain connectivity for students, emphasizing the importance of reliable, affordable, and effective connectivity for educational access.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Federal Communications Commission should reject any proposal to sunset or eliminate the E-Rate program",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 3549,
+      "evidence_end": 4100,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4651,
+      "evidence_end": 4808,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080042",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080042",
+  "filer_raw": "Saint Regis Sch District 1 A.K.A. St Regis K-12 Schools",
+  "date_submission": "2026-10-08T14:53:18.525Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3e7cefa713c60771747c98313a385c1f3556eb2b87655ed3063e117e29365e17",
+  "params_key": "971ca230d25447d8fcd3ec25dd34e35abc8c8b0d9c533bf28b4c2c26c0c2390f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

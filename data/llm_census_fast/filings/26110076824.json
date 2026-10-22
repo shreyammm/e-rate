@@ -1,0 +1,37 @@
+{
+  "summary": "The comments from E Center, a nonprofit administering Head Start Programs, express opposition to any proposal that would restrict or eliminate E-Rate eligibility for non-public providers, including Head Start programs. They emphasize the importance of connectivity for administrative systems, staff communications, parent engagement portals, reporting, training, and limited educational uses. The comments urge the Commission to maintain robust Category 1 and Category 2 support for high-poverty earl The FCC comments oppose converting the E-Rate program into a vehicle for regulating classroom pedagogy or screen-time policy, maintaining robust Category 1 and Category 2 support for high-poverty early-childhood providers to ensure continued funding and access to broadband services for students and schools in need.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Restricting or eliminating E-Rate would directly impair the ability of organizations like E Center to deliver federally funded services.",
+      "evidence_quote": "Connectivity supports essential operational functions (enrollment systems, family engagement, staff development, compliance reporting) even when direct child screen time is minimal or carefully limited consistent with pediatric guidance. Conditioning eligibility solely on public-school-district status would arbitrarily exclude effective nonprofit providers that already operate under strict federal Head Start performance standards and oversight.",
+      "evidence_start": 1521,
+      "evidence_end": 1969,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076824",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076824",
+  "filer_raw": "E Center",
+  "date_submission": "2026-09-16T18:30:01.378Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1eabbaae375e208e5758d707427f3f99e36e6a79713b3e84bfb9d538430f35f0",
+  "params_key": "fd3bb08d48ae03a0239e089a3c46bc2e07089776a80c280cf14ac285a0efef1c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

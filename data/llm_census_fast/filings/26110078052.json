@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern education. The comment urges protection of the E-Rate program to ensure students have access to reliable connectivity for learning, emphasizing the importance of the program regardless of financial circumstances.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate has enabled schools to provide reliable broadband for students",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4158,
+      "evidence_end": 4562,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures students have reliable connectivity for learning",
+      "evidence_quote": "Our students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial circumstances.",
+      "evidence_start": 4563,
+      "evidence_end": 4707,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078052",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078052",
+  "filer_raw": "J. Sterling Morton 201",
+  "date_submission": "2026-09-24T13:37:28.805Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ab2846db0434f76a705ceb2d862aa3a7858d143427996aa136bbb61ec644bb60",
+  "params_key": "e8e743f3b5e54dca0c380f45ac5b214998c8c7df307f10b32adcda5ba30c4f46",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

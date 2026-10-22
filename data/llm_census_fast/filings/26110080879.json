@@ -1,0 +1,49 @@
+{
+  "summary": "Kindergarten teacher urges preservation of E-Rate program as essential investment in educational opportunity for students with limited resources. The comment supports preserving E-Rate funding for educational access and success.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate funding would place an additional financial burden on school districts.",
+      "evidence_quote": "Reducing or eliminating E-Rate funding would place an additional financial burden on school districts that are already working hard to meet the needs of their students with limited resources.",
+      "evidence_start": 2564,
+      "evidence_end": 2755,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting this vital resource for schools, libraries, educators, and the millions of students who depend on reliable internet access to learn and succeed",
+      "evidence_quote": "nue protecting this vital resource for schools, libraries, educators, and the millions of students who depend on reliable internet access to learn and succeed.",
+      "evidence_start": 4450,
+      "evidence_end": 4609,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080879",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080879",
+  "filer_raw": "Samantha Kelien",
+  "date_submission": "2026-10-13T13:18:21.679Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e6df44cd7817e74f36e6b53f30fcbf5164b0ae39ac1fe206ea92cfb06c90dd22",
+  "params_key": "e51fd429e95ddd33627a9042834efc1e2951e3011840d9e43627a442173c6f9c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

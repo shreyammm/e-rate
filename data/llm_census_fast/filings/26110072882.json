@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's essential role in providing reliable broadband infrastructure for modern public education. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for modern education and student access to technology.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts like Davis Joint Unified School Dist",
+      "evidence_quote": "Davis Joint Unified School Dist has received $1.29 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $257,369 a year toward the connections our students depend on.",
+      "evidence_start": 2425,
+      "evidence_end": 2635,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for providing students with reliable connectivity.",
+      "evidence_quote": "in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4233,
+      "evidence_end": 4480,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072882",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072882",
+  "filer_raw": "Scott Thomsen",
+  "date_submission": "2026-08-24T17:37:46.675Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0caf95366d40926290d86375d097198480be52f54d797eb4fc7a0ba306be3b54",
+  "params_key": "1d72cf93437fc8d524f5c2bb1cf87383c4110989fd7af8e651d67e0ffd99a286",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

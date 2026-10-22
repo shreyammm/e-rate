@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's role in modern education infrastructure and the potential financial burden of its reduction. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for modern education and student access to technology.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal to sunset E-Rate would increase costs for school districts like Hudsonville Public Schools, which already operate within finite budgets.",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology continue to evolve. For my district, reducing or eliminating E-Rate support would have a direct and tangible impact.",
+      "evidence_start": 2270,
+      "evidence_end": 2489,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079465",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079465",
+  "filer_raw": "Doug VanderJagt",
+  "date_submission": "2026-10-05T19:23:32.002Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a39fb34291d4a5b56aef111b66a9e720345635804a67ca7ab457119322d9b1a4",
+  "params_key": "b432728d80b666fb6d0031f8f2d959773d37c9f656f289704fd72201d2f0883b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

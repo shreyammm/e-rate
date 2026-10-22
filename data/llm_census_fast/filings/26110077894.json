@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission urged to preserve and strengthen E-Rate program and reject proposals to sunset or eliminate it The comment urges the FCC to protect E-Rate funding to ensure schools can maintain connectivity for students and schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "statutory_authority",
+      "claim_kind": "normative_value",
+      "argument": "Federal Communications Commission should reject any proposal to sunset or eliminate E-Rate program",
+      "evidence_quote": "I therefore respectfully urge the Commission to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;",
+      "evidence_start": 3321,
+      "evidence_end": 3436,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate is essential to ensure schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4438,
+      "evidence_end": 4595,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077894",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077894",
+  "filer_raw": "Blessed Sacrament School, Newark, OH",
+  "date_submission": "2026-09-23T17:28:36.418Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0141a5a511f6d4bade283d853bed39cc4cc2933a8d85db3d291273cc88aa7e9f",
+  "params_key": "7c4557c8d4783b7c7621a2f7952cdea7e285ac92e737be80588fd83ee3038391",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

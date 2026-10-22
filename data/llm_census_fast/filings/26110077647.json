@@ -1,0 +1,37 @@
+{
+  "summary": "School business official urges preservation of E-Rate program to maintain essential connectivity support and avoid budget cuts The comments emphasize the importance of preserving E-Rate funding to ensure schools have the necessary connectivity for students, regardless of their location or financial circumstances. The comments urge the FCC to protect E-Rate to maintain access to reliable, affordable, and effective broadband for public schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4582,
+      "evidence_end": 4739,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077647",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077647",
+  "filer_raw": "Tim Keeley, Chief School Business Official, Bensenville Elementary School District #2",
+  "date_submission": "2026-09-22T15:54:32.976Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5733aca104b46988da22b092232f89f55ea9faec641f413dc18a2b3989a38bbc",
+  "params_key": "070f3e977ccec193ab26d36267e1121a6c86e886ea606eb69e65958d1933901f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

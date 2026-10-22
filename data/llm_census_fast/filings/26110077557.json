@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern education. The comments emphasize the importance of protecting E-Rate funding to ensure schools can provide students with reliable, affordable, and effective connectivity, regardless of their financial circumstances. The comments urge the Commission to protect E-Rate to maintain this essential service for public schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "If we had to absorb the cost, we'd need to cut teacher positions and other resources for our most challenged kids. Those costs would ultimately compete with the resources we use to support students and educators.",
+      "evidence_start": 1939,
+      "evidence_end": 2151,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Protect E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students regardless of financial circumstances",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4525,
+      "evidence_end": 4682,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077557",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077557",
+  "filer_raw": "Susan Alvaro",
+  "date_submission": "2026-09-21T23:05:12.922Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a2375b8c83642f588a285fbccce168dd453afecc4b18926bf337873accfabdc5",
+  "params_key": "28ec18f4110310c16e03582c8f04033aeea31cd1ecce665eb3670b88cef3e96d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

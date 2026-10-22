@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission (FCC) proposal to sunset or eliminate E-Rate program is opposed by a school district superintendent who emphasizes the essential role of E-Rate in providing reliable broadband for modern public education. The superintendent argues that preserving E-Rate is necessary to maintain network infrastructure, ensure connectivity for students, and avoid budgetary challenges in school districts. The comment opposes limiting or sunsetting E-Rate to maintain essential broadband services for schools and students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4561,
+      "evidence_end": 4718,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079459",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079459",
+  "filer_raw": "Minnesota Transitions Charter School",
+  "date_submission": "2026-10-05T19:06:41.519Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9820ac41aaccb7f76a392722db2c4950f9b83a55f4641e3d80981ba3e22f95ad",
+  "params_key": "a6f792437bff26f1211ca72bc292d2f5304c09d384a57dca6945c5771095642a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

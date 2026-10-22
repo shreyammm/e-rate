@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern public education. The comment urges protecting E-Rate funding to ensure broadband access for schools and students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 2114,
+      "evidence_end": 2331,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Protect E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures continued broadband access for schools",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4466,
+      "evidence_end": 4623,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081285",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081285",
+  "filer_raw": "Jennifer Khuory",
+  "date_submission": "2026-10-13T22:03:38.776Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4fb9ee3d33d1e1a5e1b23f85d32dc43782102907e45277ce470fb1f5e4b68162",
+  "params_key": "4ed329d15ea662bc2b1ba4ff444ba13df213042353227dc9b8e213939bce9209",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

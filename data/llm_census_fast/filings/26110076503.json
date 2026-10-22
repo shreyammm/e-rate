@@ -1,0 +1,49 @@
+{
+  "summary": "A social studies teacher emphasizes the importance of E-Rate-supported internet infrastructure for students, teachers, and the school district, arguing that significant reductions or loss of support would have substantial financial and educational consequences. The comment expresses opposition to limiting or sunsetting the E-Rate program, citing the budgetary and educational responsibilities that would remain if the program were no longer available. The comment emphasizes the importance of the program for providing reliable internet access to students and educators.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Significant reductions or loss of E-Rate support would have substantial financial impact on school districts.",
+      "evidence_quote": "The financial impact on our district is also substantial. Collinsville CUSD 10 receives approximately $989,000 in E-Rate support. For a public school district, that is not an insignificant amount of money that can simply be absorbed without consequence.",
+      "evidence_start": 2035,
+      "evidence_end": 2288,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would result in a loss of approximately $1 million in support for school districts",
+      "evidence_quote": "ation of limiting or sunsetting the program should account for the approximately 1 million dollars in support received by our district and the budgetary and educational responsibilities that would remain if that assistance were no longer available.",
+      "evidence_start": 3991,
+      "evidence_end": 4239,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076503",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076503",
+  "filer_raw": "Dakota Tostado",
+  "date_submission": "2026-09-12T19:33:33.372Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d53b2c734f8f661b31068ffeb42a67a160bf79e761bf146a4dfa82e9cab7a2c1",
+  "params_key": "7c4790c5a5b860df250e481feaafeaf36fcefaf323a4c0d241cedbad0cd872dc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

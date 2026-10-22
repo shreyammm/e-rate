@@ -1,0 +1,49 @@
+{
+  "summary": "A student advocate urges the FCC to preserve and strengthen the E-Rate program, emphasizing the importance of reliable broadband for modern public education and the need to protect the program from unnecessary cuts or restrictions. The comment urges protection of E-Rate to ensure schools maintain connectivity for students, emphasizing the importance of reliable, affordable, and effective connectivity for educational access.",
+  "stakeholder_role": "student",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate support is essential for maintaining modern school infrastructure and connectivity",
+      "evidence_quote": "Morton High School Dist 201 has received $1.38 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $275,351 a year toward the connections our students depend on.",
+      "evidence_start": 998,
+      "evidence_end": 1204,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4646,
+      "evidence_end": 4803,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078046",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078046",
+  "filer_raw": "West40 | Morton East High School | J.Sterling Morton High School Dist. 201",
+  "date_submission": "2026-09-24T13:23:41.827Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "14494f33b8a05e6fedc0bd1bef5df3275addf6420a1a4f7e6d21757c26dc1af8",
+  "params_key": "0feff77880758e4788f7fc404dfb0c3e13b0ecfbfabd165a4e0f1d1e5c0c9fd6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

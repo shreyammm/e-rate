@@ -1,0 +1,49 @@
+{
+  "summary": "Opposes proposal to sunset E-Rate program, emphasizing cost and impact on district's operations and services. The school district expresses concern about the potential impact of limiting or sunsetting E-Rate on maintaining essential connectivity for students and staff.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, the district would lose connectivity, staffing, students, and viability.",
+      "evidence_quote": "Without the support of the E-Rate program, but school, district, and its students WILL LOSE. I am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries.",
+      "evidence_start": 329,
+      "evidence_end": 679,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students and staff.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4424,
+      "evidence_end": 4581,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081203",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081203",
+  "filer_raw": "Laura Orr | Ukiah School District",
+  "date_submission": "2026-10-13T20:25:06.626Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "585daad7b19a0782bfc6f107d1960ddef709ba07ee17f512a8ae60b7ed99f339",
+  "params_key": "30ca86d782de067fcb9dcf0341dc92ec54f2449393c69797a247f8069aa4cbd5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

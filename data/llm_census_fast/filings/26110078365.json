@@ -1,0 +1,49 @@
+{
+  "summary": "The teacher argues for preserving E-Rate to maintain essential broadband infrastructure for schools and libraries, emphasizing the program's role in modern education and the costs of reducing or eliminating it. The comment expresses a concern about the potential impact of limiting or sunsetting E-Rate on schools and students.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools",
+      "evidence_quote": "Reject any proposal to sunset or eliminate the E-Rate program",
+      "evidence_start": 3393,
+      "evidence_end": 3454,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and students.",
+      "evidence_quote": "Thank you for considering my comments.",
+      "evidence_start": 4604,
+      "evidence_end": 4642,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078365",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078365",
+  "filer_raw": "Carolina Ruiz",
+  "date_submission": "2026-09-25T19:26:55.508Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1320503d5027a89aa822698742f70007e41c2cdddc016bb0fc031a46fa36c1fd",
+  "params_key": "4206a76b5e57f59bf60b47dc8f82e2c3f55b0bd3e1db9e2500bbd3b530328b00",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

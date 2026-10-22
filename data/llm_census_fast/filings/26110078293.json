@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the importance of preserving E-Rate to maintain reliable broadband infrastructure for schools and students, arguing that eliminating the program would shift costs to local budgets and compete with other resources. The district urges the FCC to preserve E-Rate rather than sunset or eliminate it. The school district expresses concern about protecting E-Rate funding to ensure schools can continue providing necessary connectivity for safe and effective operations and services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate were eliminated, costs would shift to local school district budgets, competing with other resources",
+      "evidence_quote": "It is also important to distinguish school connectivity from unrestricted student screen time. Decisions about when and how students use technology are made by school districts, educators, and families. District 41 has policies, safeguards, and instructional practices designed to guide appropriate technology use. E-Rate provides the infrastructure; local school communities determine how that infrastructure is used to best support students.",
+      "evidence_start": 2676,
+      "evidence_end": 3119,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate is essential to ensure schools can continue providing connectivity necessary for safe operation and effective service to students.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that schools can continue providing the connectivity necessary to safely operate our schools and effectively serve our students.",
+      "evidence_start": 4454,
+      "evidence_end": 4633,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078293",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078293",
+  "filer_raw": "Jeffrey McHugh",
+  "date_submission": "2026-09-25T15:18:39.418Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ef8b19457573e7796db67ac78d442b917837cc853fcd45b804f9bbf2c0d5bcc1",
+  "params_key": "97c721405536175bd532bb79e2613d03d79e3ade5a657be32167c14044171454",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

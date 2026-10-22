@@ -1,0 +1,49 @@
+{
+  "summary": "E-Rate program critical for providing affordable connectivity to schools and libraries, enabling modern education for students. School comments emphasize the program's importance for delivering online curriculum, digital learning, and supporting educational equity. Without E-Rate funding, schools would face significant budget cuts and would widen the digital divide between urban and suburban schools. The comments highlight the program's transformational impact on providing technology-rich educat The comment from University Preparatory Academy urges the FCC to preserve E-Rate funding to maintain access and educational equity for students in underserved communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, schools would need to cut technology staff positions, reduce internet bandwidth, or divert funds from classroom instruction",
+      "evidence_quote": "Without E-Rate, we would need to cut technology staff positions, reduce internet bandwidth, or divert funds from classroom instruction",
+      "evidence_start": 2182,
+      "evidence_end": 2316,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Directly harm student outcomes in underserved communities",
+      "evidence_quote": "This would directly harm student outcomes in an already underserved community",
+      "evidence_start": 4326,
+      "evidence_end": 4403,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081061",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081061",
+  "filer_raw": "University Preparatory Academy (226025)",
+  "date_submission": "2026-10-13T17:45:36.519Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d97567abe1340cae3d11402fa5586a7d8223b5d86d6f5a6716f80681d6489c25",
+  "params_key": "ffed6d09fd9107b22672b299106fd9c9042f8e53f42ae01ff46ba62a565069e9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district expresses strong opposition to any proposal to sunset or eliminate the E-Rate program, emphasizing the program's essential role in providing reliable broadband infrastructure for modern public education. The district highlights the direct financial impact on its budget and the importance of preserving the program to ensure students have access to the tools they need to learn and succeed. The school district urges the FCC to preserve and strengthen E-Rate rather than reduce it The comment expresses a strong opposition to limiting or sunsetting the E-Rate program, emphasizing its importance for providing reliable, affordable, and effective connectivity to students in public schools. The superintendent urges the Commission to protect the program to ensure schools can continue providing essential tools for learning.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students.",
+      "evidence_quote": "I urge the Commission to protect E-R ate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4662,
+      "evidence_end": 4820,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078346",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078346",
+  "filer_raw": "Sackets Harbor CSD",
+  "date_submission": "2026-09-25T17:48:29.256Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a64bcc9a663ed327061f8ce45a4a4ce6319551ff5316a277773978418b03e43d",
+  "params_key": "737d916def8881188c5e1b0b3bbe59ed3168f313bcee6ac5ebd8b18db9a12aa7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

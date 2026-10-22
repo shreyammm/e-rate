@@ -1,0 +1,49 @@
+{
+  "summary": "A school district in Texas urges the FCC to preserve and strengthen the E-Rate program, emphasizing the importance of reliable connectivity for instruction, operations, and student services. The district received $127,501 in committed federal E-Rate support over funding years 2021-2025, averaging approximately $25,500 per year, and urges the FCC to reject proposals to sunset or eliminate the program. The school district emphasizes the importance of preserving E-Rate funding to ensure affordable and reliable broadband access for students, which is crucial for educational equity and safety.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate and reject proposals to sunset or eliminate the program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Losing E-Rate would force the district to absorb additional infrastructure costs within an already limited budget, placing those needs in direct competition with staffing, instructional programs, student services, transportation, and facilities",
+      "evidence_quote": "For a district serving 180 students, that is meaningful support. Losing it would force us to absorb additional infrastructure costs within an already limited budget, placing those needs in direct competition with staffing, instructional programs, student services, transportation, and facilities.",
+      "evidence_start": 1655,
+      "evidence_end": 1951,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would shift costs onto small districts without reducing responsibility to provide a safe learning environment",
+      "evidence_quote": "Our students deserve dependable access to educational opportunities regardless of their ZIP code or their families’ financial circumstances. Please preserve and strengthen E-Rate so districts like ours can continue meeting that responsibility.",
+      "evidence_start": 4718,
+      "evidence_end": 4961,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077678",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077678",
+  "filer_raw": "Zach Rothwell High Island ISD",
+  "date_submission": "2026-09-22T16:49:12.108Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1e0f00ac0d971052c4289d45004aceee8a4764c6130c38dfbbbdfa546d2161b9",
+  "params_key": "9fc8091ee2f7ef2561698bb1c9ad2c17b29fd46a94784facff034614ccdf0b4e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband infrastructure for schools and libraries. The FCC comments express opposition to limiting or sunsetting the E-Rate program, emphasizing its importance for providing students with reliable connectivity in modern education. The comments urge the FCC to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of funding would divert resources from student support",
+      "evidence_quote": "The loss of funding would result in the district diverting funds allocated for students.",
+      "evidence_start": 1964,
+      "evidence_end": 2052,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078034",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078034",
+  "filer_raw": "Matthew Mayer",
+  "date_submission": "2026-09-24T12:24:15.285Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ba50b044bd233887e431ecf4661e77c0e148b78296d35f3f7e70892b57b39caa",
+  "params_key": "605dba4575604b240c9bedac57a21cc945fd20b843e0f376d043aa4f0c5c7020",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

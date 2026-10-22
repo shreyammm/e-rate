@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the importance of preserving the E-Rate program to maintain reliable internet access for educational purposes and to support the school's technology infrastructure. They argue that a reduction in E-Rate funding would have significant financial and educational impacts, including the need to make difficult choices about budget allocation and connectivity availability. The school administration expresses concerns about the effects on families and the need to consider  The comment from a school administrator emphasizes the importance of maintaining the E-Rate program for educational purposes. The school administrator requests that the FCC maintain the program to ensure affordable and dependable broadband access for students and teachers.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A substantial reduction in this support would have a significant impact on our school budget and our ability to sustain the technology infrastructure that supports learning",
+      "evidence_quote": "We rely heavily on E-Rate to provide dependable internet access for our students and teachers. A substantial reduction in this support would have a significant impact on our school budget and our ability to sustain the technology infrastructure that supports learning. Our commitment is to provide an exceptional education that prepares students to think carefully, act with integrity, and contribute meaningfully to their communities. Reliable internet connectivity forms the foundation of our IT infrastructure.",
+      "evidence_start": 561,
+      "evidence_end": 1074,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is a practical investment in education",
+      "evidence_quote": "For New Hope Christian Academy, E-Rate is a practical investment in the foundation that allows our teachers to teach and our students to learn.",
+      "evidence_start": 4460,
+      "evidence_end": 4603,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076212",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076212",
+  "filer_raw": "Dr. Jeff Mudrow",
+  "date_submission": "2026-09-10T12:57:15.331Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a2ad0939e0d6748da91711b600e6be2e3bc7d6e998bf9fda256bcc33fa415373",
+  "params_key": "d4d807fbb52be0102664d088672029fda004df70c17ed9d078aa17898137ef2c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

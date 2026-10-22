@@ -1,0 +1,37 @@
+{
+  "summary": "A parent advocates for preserving the E-Rate program to ensure reliable broadband access for students and schools, emphasizing the program's role in modern education and the potential cost implications of its elimination. The parent guardian urges the FCC to protect E-Rate funding to ensure public schools maintain connectivity for students.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Protect E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4509,
+      "evidence_end": 4666,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079127",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079127",
+  "filer_raw": "Ray Crespo",
+  "date_submission": "2026-10-02T15:09:18.715Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cd5e1d39e7a8da927d39007946007d08b0f388c649bd3a523e6248c2bddaa873",
+  "params_key": "85904e528786cadaeb297ea914e0e6c6362df9e9d8d5ca43ec4370daf3ea9535",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The FCC proposal to sunset E-Rate is opposed by a teacher who emphasizes the program's essential role in providing reliable broadband infrastructure for schools and libraries, and urges the FCC to preserve and strengthen the program rather than eliminate it. The comment urges the FCC to protect E-Rate funding to ensure schools maintain connectivity for students and staff.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students and staff.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4498,
+      "evidence_end": 4655,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078038",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078038",
+  "filer_raw": "Josh Baltz",
+  "date_submission": "2026-09-24T12:55:37.406Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cf8399ef6b7fefcccc8c23dafbe0415cd79e3f8bd2766d9bc623401153441072",
+  "params_key": "d563ab92c55f7ad67ff413ffc1c7d8b34b70daad2471f56c6e13ecd2077fc2c4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

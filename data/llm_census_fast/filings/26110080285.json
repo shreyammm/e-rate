@@ -1,0 +1,49 @@
+{
+  "summary": "The author, a principal at a school, emphasizes the importance of E-Rate for providing reliable broadband infrastructure for modern public education and urges the FCC to preserve and strengthen the program rather than eliminate or restrict it. The comment opposes protecting the E-Rate program and emphasizes the importance of maintaining connectivity for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen the E-Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "The author urges preservation of E-Rate to ensure access to broadband for students and schools",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 3587,
+      "evidence_end": 4138,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures public schools maintain connectivity for students",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4690,
+      "evidence_end": 4847,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080285",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080285",
+  "filer_raw": "Marc Nuno",
+  "date_submission": "2026-10-09T17:01:45.726Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2be6389a3389c51a0c51fb0f8d49bb0d3a3cadea4d9cd2fb0eab6dde23a8fd7a",
+  "params_key": "d1e4848d89286b10f6c5e23e423c86b11ec9f5af1e0b6ed46876922d270818e6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

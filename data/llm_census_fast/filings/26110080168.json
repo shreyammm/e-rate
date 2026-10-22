@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's critical role in providing reliable broadband for educational access and operations.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools operating within finite budgets",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared. Connectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology continue to evolve. For my district, reducing or eliminating E-Rate support would have a direct and tangible impact.",
+      "evidence_start": 1605,
+      "evidence_end": 2110,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080168",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080168",
+  "filer_raw": "Alyse Nichols",
+  "date_submission": "2026-10-09T00:04:42.893Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e72c67bb27cf969af16e4adb1f3c66667818b4ec66480eca926b26fc527dcc02",
+  "params_key": "0a053029b6c84516facb22b7b14be4c5c86ed272e9599047f81795219107221d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,49 @@
+{
+  "summary": "As a parent of a school-age student and a technology director, I urge the FCC to strengthen, not reduce, E-Rate. The comment emphasizes the importance of maintaining E-Rate funding for ensuring reliable, affordable connectivity in schools, which is crucial for educational access and safety. It argues against limiting or sunsetting E-Rate, as such actions could lead to increased costs and widen inequities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Strengthening E-Rate program is essential to ensure adequate internet access for students and schools.",
+      "evidence_quote": "As a parent of a school-age student and a technology director, I urge the FCC to strengthen, not reduce, E-Rate.",
+      "evidence_start": 0,
+      "evidence_end": 112,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate will reduce funding for broadband infrastructure, leading to increased costs for schools.",
+      "evidence_quote": "ly to instruction, but also to the safety, security, and day-to-day operation of school facilities.",
+      "evidence_start": 3757,
+      "evidence_end": 3856,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079626",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079626",
+  "filer_raw": "Derek Wright",
+  "date_submission": "2026-10-06T17:24:31.448Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "97daddf2472d0129ab0c5172106aabe17f16387b45e6446071d7b6c5d17aa898",
+  "params_key": "a25dff6528c9945c36bcba22c43527896babed3c6d58f8be07fe02d98ce090ec",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

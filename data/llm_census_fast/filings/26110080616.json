@@ -1,0 +1,37 @@
+{
+  "summary": "ESUHSD urges the FCC to preserve E-rate funding, rejecting proposals to sunset or cap the program. The district relies on E-rate to maintain broadband infrastructure and access to digital learning resources for thousands of students. The comment emphasizes the importance of maintaining robust E-rate funding and streamlining compliance to ensure that the program remains a reliable cornerstone of American K-12 education. The comment cites the successful outcomes of the program for East Side Union High School District and urges the Commission to avoid unfunded operational mandates.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-rate program funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-rate support, millions of dollars would have to be diverted from classroom instruction",
+      "evidence_quote": "Without E-rate support, millions of dollars would have to be diverted directly from classroom instruction, student support services, and educator compensation to cover basic telecommunications infrastructure",
+      "evidence_start": 1352,
+      "evidence_end": 1559,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080616",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080616",
+  "filer_raw": "Omar Gutierrez",
+  "date_submission": "2026-10-12T16:02:52.082Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c181a1210809a2a730c72fadaa913ab78adf7eade0fd62017b1b47720ce0e95e",
+  "params_key": "ff1672da0e34513d61c5a0f9e0069508ffe02e6b9fafefd8eaafceebaf8b2e3a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

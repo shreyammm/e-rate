@@ -1,0 +1,50 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate for providing reliable broadband connectivity to students and staff, which is essential for modern public education. The district urges the FCC to preserve and improve the program rather than eliminate it, citing the success of E-Rate over the past three decades in providing connectivity. The comments urge protecting E-Rate to ensure schools maintain connectivity for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Preserve and improve E-Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate has enabled schools to provide connectivity for educational access",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education.",
+      "evidence_start": 3901,
+      "evidence_end": 4078,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures schools maintain connectivity for students",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4451,
+      "evidence_end": 4608,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075125",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075125",
+  "filer_raw": "Gilmer Independent School District",
+  "date_submission": "2026-09-02T18:10:56.847Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "25b62dca4805915a80ef8c69d60c10dbd3f4b05df5dc5bcd0d3b611724c328df",
+  "params_key": "888c60d8ab4c9b40256befb4d3cfd6b4add6439050e0323242e95894ef4b802a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

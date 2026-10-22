@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's critical role in modern education infrastructure and the potential financial burden of reducing or eliminating it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts like Aberdeen School District 6-1",
+      "evidence_quote": "There are no other funds available to support these vital services. Those costs would ultimately compete with the resources we use to support students and educators.",
+      "evidence_start": 2168,
+      "evidence_end": 2333,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078231",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078231",
+  "filer_raw": "Becky Guffin",
+  "date_submission": "2026-09-25T11:56:09.894Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6dc4484af2c313405e6cbd7506064e7f633222f30fdd05f7d3cc6322f95c69cc",
+  "params_key": "ed88d01c103f68531247a731158f6a0719894d38337778a4e7449b8e1774c183",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

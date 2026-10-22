@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "Mount Vernon Twp H S Dist 201 has received $325,295 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $65,059 a year toward the connections our students depend on.",
+      "evidence_start": 2623,
+      "evidence_end": 2825,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078992",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078992",
+  "filer_raw": "Mt. Vernon Township High School District 201",
+  "date_submission": "2026-09-30T23:27:55.513Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a753f73f7adabe6adf90e07c7bcb58b163b8fffab9d661e37d6cd2afe474e48d",
+  "params_key": "6870b5b418b1e599b9878b8dd37fc49fa483837e0533f6ce534479cddbea9657",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

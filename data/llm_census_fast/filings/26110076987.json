@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's role in modern education infrastructure and the potential cost implications of its reduction. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for modern education and student success.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts like St. Clare School",
+      "evidence_quote": "St. Clare School has received $2,760 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $552 a year toward the connections our students depend on.",
+      "evidence_start": 2259,
+      "evidence_end": 2443,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for providing students with reliable connectivity in modern education.",
+      "evidence_quote": "in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4389,
+      "evidence_end": 4636,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076987",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076987",
+  "filer_raw": "Crystal Blahnik",
+  "date_submission": "2026-09-18T17:17:27.280Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "33272e9e809608fc8b2736866f132b6dac7f950b5cc044f1f4bc7035920e1856",
+  "params_key": "2acb279f53e284fc2acf98734e7c296cdf842a8fc158c21e3052747f6aa7a7e5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

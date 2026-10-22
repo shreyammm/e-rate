@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing necessary connectivity for their operations, including network appliances, cabling, and ISP connections. Any changes to E-Rate eligibility would significantly impact their budget and ability to afford essential services. The comment opposes maintaining current E-Rate support levels, citing budget considerations and cost savings.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain current support levels for E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Maintain current support levels to ensure connectivity affordability",
+      "evidence_quote": "We appreciate the opportunity to comment. Respectfully submitted, Robert Thompson Director of Technology Pleasant Ridge Union School District 22580 Kingston Ln. Grass Valley, CA 95949 Dated:  August 27 , 2026",
+      "evidence_start": 4573,
+      "evidence_end": 4781,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110073398",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073398",
+  "filer_raw": "Robert Thompson",
+  "date_submission": "2026-08-27T17:32:49.491Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0d59059b2ea63af51aa24025fc4b0409b872b9beab82d9a6d5cbcf97859722e4",
+  "params_key": "01dda0567864ec84985f317eddc67af8df4cb0f3aaf2b7ceddf4d03d64cceed6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

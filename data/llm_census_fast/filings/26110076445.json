@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, citing cost and infrastructure needs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate would eliminate critical funding for schools' broadband infrastructure",
+      "evidence_quote": "Placer Co Office Of Education has received $560,918 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $112,184 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 931,
+      "evidence_end": 1246,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076445",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076445",
+  "filer_raw": "Bryan Wilke",
+  "date_submission": "2026-09-11T18:01:02.473Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "037e1757c6e33ea70106c8055d7f690ca4b2a6abe975e9c3fe1e2002a928ee3c",
+  "params_key": "d184af29037a9052c7ccbd9fc171d897dd8ad7ec1d2c490abf4533c30284767d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

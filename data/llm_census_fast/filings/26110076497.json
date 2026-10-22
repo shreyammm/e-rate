@@ -1,0 +1,49 @@
+{
+  "summary": "Preserving E-Rate is essential for maintaining educational infrastructure and access in a rural, economically disadvantaged district. The comment opposes preserving E-Rate funding and cites the importance of preserving educational access for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is an ongoing operating necessity for Riverbank USD, and proposals to sunset it would force the district to absorb broadband costs directly from the general fund, potentially triggering cuts to essential personnel.",
+      "evidence_quote": "In our elementary classrooms, reliable connectivity is not an instructional novelty—it is the foundational backbone of our daily interventions. Third-grade reading proficiency in our district declined to 14.53% on the 2025 California School Dashboard, and our English Learner Progress Indicator fell to 43.4%. To combat this, our educators rely daily on broadband-powered diagnostic and progress-monitoring systems like **mCLASS DIBELS**, adaptive literacy software, and data platforms like **Ellevation** to target early reading deficits and accelerate language acquisition. Furthermore, because many of our families face economic hardships, significant numbers of our students lack reliable high-speed internet at home; our school network is often their only gateway to equitable digital literacy, research, and mandatory state assessments such as CAASPP and ELPAC.",
+      "evidence_start": 1152,
+      "evidence_end": 2019,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate means preserving the educational future of Riverbank’s students",
+      "evidence_quote": "Preserving E-Rate means preserving the educational future of Riverbank’s students",
+      "evidence_start": 4458,
+      "evidence_end": 4539,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076497",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076497",
+  "filer_raw": "Vivian Wilson",
+  "date_submission": "2026-09-12T18:38:53.209Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9cd0d97edb639ca4b7fde88bd421174052c4d82e135faf3441c2a43ec0eff56e",
+  "params_key": "a1815645b18a5f95f668d56941b4346e3a800e637a394e47a45205caada37d24",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

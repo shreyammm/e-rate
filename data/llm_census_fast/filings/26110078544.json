@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's essential role in providing reliable broadband infrastructure for modern public education. The FCC Chief Financial Officer expresses concerns about the potential cost implications of limiting or sunsetting the E-Rate program, emphasizing the need for reliable, affordable, and effective connectivity for public schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would increase costs for school districts operating within finite budgets",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 2075,
+      "evidence_end": 2292,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would increase costs for schools and libraries",
+      "evidence_quote": "d ensure that public schools can continue providing students with reliable, affordable, and effective connectivity. Thank you for considering my comments.",
+      "evidence_start": 4450,
+      "evidence_end": 4604,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078544",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078544",
+  "filer_raw": "Wimberley Indep School Dist",
+  "date_submission": "2026-09-28T16:40:49.137Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ea586b47fa4f92c0cb593de8dc123b4854b9b11cd14b25232bc089f6ac788f22",
+  "params_key": "d7a64394b814dd307d5e592d26a63bc289992c8e393c9bc35174e84719478e6c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

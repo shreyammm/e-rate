@@ -1,0 +1,37 @@
+{
+  "summary": "Heber Elementary School District opposes proposals to eliminate or significantly reduce the E-Rate program, emphasizing the program's essential role in maintaining reliable internet connectivity for public education. The district argues that eliminating E-Rate would create financial challenges and increase the risk of network disruptions. The district also supports maintaining the existing discount methodology for determining eligibility and maintaining the program's accessibility to all eligibl The school district opposes sunsetting the E-Rate program, emphasizing its importance for maintaining network infrastructure, protecting educational resources, and ensuring equitable access to digital learning opportunities for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "continued E-Rate support is essential for maintaining network infrastructure and ensuring affordability",
+      "evidence_quote": "For small school districts like ours, continued E-Rate support is essential to maintaining network infrastructure, protecting limited educational resources, and ensuring that students have equitable access to digital learning opportunities.",
+      "evidence_start": 4566,
+      "evidence_end": 4806,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080763",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080763",
+  "filer_raw": "Heber Elementary School District",
+  "date_submission": "2026-10-12T23:09:27.894Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "974e42f64716ac612d97e1f7a0557b5bdad594e4969fbf730c605caba26f52c2",
+  "params_key": "2289b352e24fbb0e58397c0565d39aa50dc2ae9c2fd83589ce938a091096a9f8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}
