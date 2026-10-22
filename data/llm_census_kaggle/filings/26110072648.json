@@ -1,0 +1,87 @@
+{
+  "summary": "Lynwood Unified School District opposes any effort to narrow, weaken, or eliminate the E‑Rate program, urges preservation and strengthening, and stresses the importance of equity, accountability, and continued investment in connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district opposes narrowing the program’s eligibility.",
+      "evidence_quote": "dent of Lynwood Unified School District, serving approximately 10,300 \nstudents in Los Angeles County, I strongly oppose any effort to narrow, weaken or \neliminate the E-Rate program. I respectfully",
+      "evidence_start": 317,
+      "evidence_end": 515,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve equity in connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures students’ access is not determined by community wealth.",
+      "evidence_quote": "al connectivity is not determined by the wealth of their community. That \nprinciple remains as important today as it was when the program was established. \nIndeed, as instruction, assessment, student",
+      "evidence_start": 2171,
+      "evidence_end": 2370,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district opposes any sunset or reduction of E‑Rate funding.",
+      "evidence_quote": "dent of Lynwood Unified School District, serving approximately 10,300 \nstudents in Los Angeles County, I strongly oppose any effort to narrow, weaken or \neliminate the E-Rate program. I respectfully",
+      "evidence_start": 317,
+      "evidence_end": 515,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reductions in funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A significant reduction would shift costs to local communities.",
+      "evidence_quote": "achers, instructional \nprograms, student supports, and other critical educational priorities. \n \nA significant reduction in E-Rate funding would not reduce our students’ need for \nconnectivity.",
+      "evidence_start": 1550,
+      "evidence_end": 1743,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen accountability while preserving core investments",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernization should enhance transparency without undermining core connectivity.",
+      "evidence_quote": "frastructure, \nreliable connectivity has become even more fundamental to providing a high-quality \npublic education. \n \nWe recognize and support the FCC’s responsibility to ensure program integrity,",
+      "evidence_start": 2489,
+      "evidence_end": 2687,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072648",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072648",
+  "filer_raw": "Patrick Gittisriboongul",
+  "date_submission": "2026-08-21T21:34:17.307Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "789a90c61f6df6b822b03e0edeba3cccdb148c57569909bdba8b165d967569b6",
+  "params_key": "e624b9147fff2cff6aa7f977b60ee37072d07bccfefc6b6ca774ee3e5137d7aa",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

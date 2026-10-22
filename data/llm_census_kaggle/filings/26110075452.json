@@ -1,0 +1,50 @@
+{
+  "summary": "The comment argues that ending E‑Rate would not save taxpayers and would harm communities, and urges continued funding for libraries to maintain internet services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Libraries need E‑Rate funds to provide free Wi‑Fi and computer labs.",
+      "evidence_quote": "ime—it will simply harm communities like ours by widening the digital divide to provide a tax cut for these companies.\nPlease continue to provide this funding to all libraries so that they can",
+      "evidence_start": 155,
+      "evidence_end": 347,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate will not save taxpayers but will harm communities.",
+      "evidence_quote": "Since E-Rate funding is money is paid for by governmental fees on telecommunications companies. That means cutting this program will not save taxpayers a dime—it will simply harm communities like",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075452",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075452",
+  "filer_raw": "Margaret R. Adams",
+  "date_submission": "2026-09-03T17:44:11.102Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4c3e4f34da3de3b528c5254a348e668e3f0c4ba8ded84a31c4e24b453ffa13f2",
+  "params_key": "3fb183772968a916ba3ce6386c6e1c5f91bfbef17e8a5d9561f77a354c5161c4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,85 @@
+{
+  "summary": "Parent argues schools misuse one‑to‑one devices, lack accountability, expose children to harmful content and data misuse, and calls for opt‑out rights and government oversight.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "Prohibit access to harmful content",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Students should not be able to access violent or explicit content on school devices.",
+      "evidence_quote": "collect or grade written math work - all grading is seemingly done automatically by the application.\nBoth children have access to websites that provide  inappropriate, violent online games that",
+      "evidence_start": 3114,
+      "evidence_end": 3307,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "Allow parent opt‑out of AI and device use",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents should be able to opt their children out of AI and device use in school.",
+      "evidence_quote": "Google Gemini without any guardrails or monitoring. The school district has refused to block the websites when I have asked, and has admitted that they cannot monitor student usage, but rely on",
+      "evidence_start": 3740,
+      "evidence_end": 3933,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "Prevent third‑party data collection",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "legal_claim",
+      "argument": "Schools must ensure student data is not shared with third parties for profit.",
+      "evidence_quote": "d my repeated requests. \nAlthough I have signed no documents permitting sharing of my children’s personal and identifying information, the contracts that the district posts online clearly allow for",
+      "evidence_start": 4049,
+      "evidence_end": 4246,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "Hold schools accountable for device‑time value",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Schools must demonstrate that time spent on school‑issued devices is more valuable than analog learning.",
+      "evidence_quote": "hool on their school-issued devices, nor where my children’s data is going. Schools should be held accountable to show that the time spent on the one-to-one device and the internet is more valuable",
+      "evidence_start": 5143,
+      "evidence_end": 5340,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Fund independent research and audit of educational technology",
+      "reason_family": "evidence_quality",
+      "claim_kind": "empirical_claim",
+      "argument": "The government should fund peer‑reviewed research and audits of the products forced on students.",
+      "evidence_quote": "ed, independent research about the harms of Education Technology,  audit the products that are forced on our children, pilot tech-free classrooms to return to analogue learning where it is superior",
+      "evidence_start": 5924,
+      "evidence_end": 6121,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077242",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077242",
+  "filer_raw": "Jessica Deutsch",
+  "date_submission": "2026-09-20T11:20:25.731Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7c793c82075e8c15a946dcb0320b35db2e2b78b32e2c2852e4566c598be8f7d4",
+  "params_key": "d3ce40dd96b47e45d201f608510c60242c71e3a05fb90634f420dba854a70e1b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

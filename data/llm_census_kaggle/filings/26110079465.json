@@ -1,0 +1,87 @@
+{
+  "summary": "Hudsonville Public Schools superintendent urges the FCC to preserve and strengthen the E‑Rate program, rejecting proposals to sunset, eliminate, or narrow eligibility and calling for modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Reliable connectivity is foundational to school safety, operations, and instructional effectiveness.",
+      "evidence_quote": "to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 3564,
+      "evidence_end": 3760,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access to broadband.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 3720,
+      "evidence_end": 3914,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and its elimination would directly harm schools’ operations.",
+      "evidence_quote": "ge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict",
+      "evidence_start": 466,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "l network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 3874,
+      "evidence_end": 4072,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other specific policy issues beyond preserving and strengthening E‑Rate.",
+      "evidence_quote": "te rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to",
+      "evidence_start": 4032,
+      "evidence_end": 4223,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079465",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079465",
+  "filer_raw": "Doug VanderJagt",
+  "date_submission": "2026-10-05T19:23:32.002Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a39fb34291d4a5b56aef111b66a9e720345635804a67ca7ab457119322d9b1a4",
+  "params_key": "69fcd56e9cc6340d6706e4bb2adec5845de58a28f4343d29eb7ea2b4a644ff42",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

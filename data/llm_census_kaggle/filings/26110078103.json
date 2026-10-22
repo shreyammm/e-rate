@@ -1,0 +1,86 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program intact, reject any sunset or narrowing of eligibility, and preserve connectivity support for schools, arguing that E‑Rate is essential infrastructure and that cutting it would impose significant financial burdens on the district.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equity.",
+      "evidence_quote": "set or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria that would leave students",
+      "evidence_start": 4821,
+      "evidence_end": 5020,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate provides the connectivity schools need to deliver reliable educational access.",
+      "evidence_quote": "other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable \neducational access;",
+      "evidence_start": 4980,
+      "evidence_end": 5178,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program must not be eliminated or sunset because it is essential infrastructure for modern public education.",
+      "evidence_quote": "munications Commission (FCC) to preserve and strengthen the E-Rate \nprogram and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-\nRate support",
+      "evidence_start": 784,
+      "evidence_end": 980,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential infrastructure that ensures all students have access to modern technology.",
+      "evidence_quote": "e decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — \nnot evidence that the need for the program has disappeared. Connectivity must be",
+      "evidence_start": 2350,
+      "evidence_end": 2543,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate from cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would force the district to absorb 100% of connectivity costs, adding tens or hundreds of thousands of dollars to the annual budget.",
+      "evidence_quote": "ve a significant financial impact on our \nschools. Currently, E-Rate covers approximately 80% of eligible connectivity costs, leaving our district \nresponsible for only 20%. Without this support, our",
+      "evidence_start": 2814,
+      "evidence_end": 3013,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078103",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078103",
+  "filer_raw": "Chawanakee Unified School District",
+  "date_submission": "2026-09-24T16:41:41.008Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9a0001adac6ee4fd2e299ad5d6eda56b0e18b4c883c654c4535d30c49c12a777",
+  "params_key": "6832b00f433704a3f55b4e2e5f369d8a7d5f07eeadb54ad88c46c897796b74be",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

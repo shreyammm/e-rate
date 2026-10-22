@@ -1,0 +1,62 @@
+{
+  "summary": "The commenter argues that device‑based monitoring is preferable to network‑level control, that schools should not offer guest connections, and that CIPA compliance should be supported through device monitoring rather than network management.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "Implement device‑based monitoring programs",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Device monitoring is effective and should replace network‑level control.",
+      "evidence_quote": "hers monitor and control device internet use.  I would not go the network management route.  School owned devices are too mobile.  Control needs to be on the device.  Schools can simply not offer",
+      "evidence_start": 462,
+      "evidence_end": 657,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "Do not require network‑level content filtering",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Network control is unnecessary and intrusive; control should be on devices.",
+      "evidence_quote": "hers monitor and control device internet use.  I would not go the network management route.  School owned devices are too mobile.  Control needs to be on the device.  Schools can simply not offer",
+      "evidence_start": 462,
+      "evidence_end": 657,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "Do not mandate guest network access",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Schools can simply not offer guest connections to avoid device monitoring issues.",
+      "evidence_quote": "he device.  Schools can simply not offer guest connections.  My K-8 schools do not have issues with students on personal devices.  My schools could still use support with internet hardware (switches",
+      "evidence_start": 617,
+      "evidence_end": 815,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110014024",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110014024",
+  "filer_raw": "Carl Sterling",
+  "date_submission": "2026-07-13T15:11:17.553Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f4ac2a7be3412f130ffd75a3b3226e8c21ab01b7181950b9db119688010b3bc1",
+  "params_key": "2ca3241d357b1dc825abb4932ce7aa01b584f9540781ed2f9656197bcd5f38f2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

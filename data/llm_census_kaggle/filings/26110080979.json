@@ -1,0 +1,75 @@
+{
+  "summary": "Clay County District Schools urges the FCC to continue and expand E‑Rate funding, oppose any cuts, and add a new cybersecurity category.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "expand eligibility to include cybersecurity",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Adding a Category 3 for cybersecurity would protect student data and critical infrastructure.",
+      "evidence_quote": "r than scaling back E-Rate support, Clay County District Schools urges the Commission to strengthen the \nprogram by creating and funding a Category 3 dedicated to Cybersecurity. As school district",
+      "evidence_start": 2800,
+      "evidence_end": 2996,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would force the district to absorb millions of unexpected liabilities, harming students and staff.",
+      "evidence_quote": "nrollment access, and College and Career \nAcceleration opportunities for our students. Any reduction or elimination of E-Rate funding would significantly \nharm our students, educators, and community",
+      "evidence_start": 766,
+      "evidence_end": 964,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other E‑Rate policy topics.",
+      "evidence_quote": "October 8, 2026 \nFederal Communications Commission \n45 L Street NE \nWashington, DC 20554 \n \nRE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 — Notice of Proposed Rulemaking and Further \nNotice of",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "create Category 3 dedicated to cybersecurity",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Cybersecurity defenses are essential to safeguard student data and ensure uninterrupted learning.",
+      "evidence_quote": "r than scaling back E-Rate support, Clay County District Schools urges the Commission to strengthen the \nprogram by creating and funding a Category 3 dedicated to Cybersecurity. As school district",
+      "evidence_start": 2800,
+      "evidence_end": 2996,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080979",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080979",
+  "filer_raw": "Duane Weeks",
+  "date_submission": "2026-10-13T15:44:57.521Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b182893ae4449e3d3513251eed2746a0aaaa2eae3bedc8c7e263d7166e5a5626",
+  "params_key": "67c34df74a310d0951d2651db1bc8b814b67ca7c12a57b8515ae2292ce79c22a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

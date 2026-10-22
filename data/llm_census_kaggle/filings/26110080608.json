@@ -1,0 +1,87 @@
+{
+  "summary": "The Massachusetts advocacy coalition argues that eliminating or limiting the E‑Rate program would severely harm schools and libraries by cutting essential broadband subsidies, widening digital inequities, compromising safety, and imposing unsustainable budget burdens on local districts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "maintain current safety provisions",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate funding supports modern network hardware and software needed to protect student data and ensure safety.",
+      "evidence_quote": "as K-12 education increasingly becomes a prime target for \ncybercriminals, E-Rate funding helps subsidize the modern network hardware and software \nrequired to protect sensitive student data against",
+      "evidence_start": 2957,
+      "evidence_end": 3155,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is critical for public schools and libraries to maintain affordable, reliable internet access.",
+      "evidence_quote": "rminates or limits the E-Rate Program. \n \nE-Rate is critical for public schools and libraries to maintain affordable, reliable access to \nthe Internet. Terminating that support represents a cut to",
+      "evidence_start": 929,
+      "evidence_end": 1125,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate subsidies",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate would widen digital inequities, especially in rural, urban, and low‑income communities.",
+      "evidence_quote": "rom core instruction, 1:1 student device programs, administrative platforms, and \nessential digital learning and safety software.  \n \nThe resulting funding gap would widen digital inequities,",
+      "evidence_start": 4033,
+      "evidence_end": 4224,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate would leave vulnerable communities behind that lack resources to fill the gap.",
+      "evidence_quote": "inating that support represents a cut to school and library budgets, jeopardizing \nyears of progress building and upgrading those networks. Cutting E-Rate also threatens to leave \nvulnerable",
+      "evidence_start": 1085,
+      "evidence_end": 1275,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject elimination of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate, districts would face immediate budget strains and forced reallocations from core instruction.",
+      "evidence_quote": "data at risk and educational \naccess, or over extending municipal budgets to maintain basic, essential connectivity. \n \nIn the event where E-Rate funding is eliminated or significantly reduced,",
+      "evidence_start": 3419,
+      "evidence_end": 3612,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080608",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080608",
+  "filer_raw": "Massachusetts Computer Using Educators | Massachusetts Educational Technology Administrators Association | Massachusetts Association of School Superindendents",
+  "date_submission": "2026-10-12T15:46:10.750Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "37d9f53f864df07aa8f2574fe60a7fa1d402fb1e08ee0aedb98e5720bb09344e",
+  "params_key": "b136b4de21dad7069aefa26b38337c5af10c5fdf453fdf88e8c5dad04e5a9f86",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

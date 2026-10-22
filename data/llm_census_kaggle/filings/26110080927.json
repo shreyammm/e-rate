@@ -1,0 +1,100 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, rejecting any proposals to sunset, eliminate, or unnecessarily narrow eligibility, and calling for continued support for connectivity and internal network infrastructure. The comment urges the FCC to preserve the E‑Rate program, arguing that it is essential for reliable, affordable, and effective connectivity for students and library patrons.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate eligibility should not be restricted based on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "ict support based solely on geography or other criteria that would leave students without adequate support;\nPreserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 5449,
+      "evidence_end": 5646,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that supports modern public education and should not be sunset or eliminated.",
+      "evidence_quote": "chools.\nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce,",
+      "evidence_start": 459,
+      "evidence_end": 656,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for reliable, affordable, and effective connectivity for students and library patrons.",
+      "evidence_quote": "ed solely on geography or other criteria that would leave students without adequate support;\nPreserve support for the connectivity and internal network infrastructure schools need to provide reliable",
+      "evidence_start": 5464,
+      "evidence_end": 5663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must continue to support connectivity and internal network infrastructure schools need to provide reliable educational access.",
+      "evidence_quote": "l network infrastructure schools need to provide reliable educational access; and\nWork with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 5606,
+      "evidence_end": 5801,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter discusses the importance of E‑Rate for safety protocols, instructional programs, and equity but does not propose a specific new policy beyond preserving the program.",
+      "evidence_quote": "ogy continue to evolve. For my district, reducing or eliminating E-Rate support would have a direct and tangible impact.\n\nE-Rate covers 95% of our annual $179,000 fiber and wireless costs; absorbing",
+      "evidence_start": 2795,
+      "evidence_end": 2993,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should work with schools and stakeholders to strengthen and modernize E‑Rate rather than reduce its role in public education.",
+      "evidence_quote": "te rather than reduce its role in public education.",
+      "evidence_start": 5761,
+      "evidence_end": 5812,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080927",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080927",
+  "filer_raw": "David Mendoza Jr",
+  "date_submission": "2026-10-13T14:35:28.740Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8e0aba76efc0b2adc5a54173d34e34cbab671f33ae3ec32ace3c7026e48b6252",
+  "params_key": "2a653c23c36642da461393d386ea4766029aab9fce19843b74b0d39774cc373b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

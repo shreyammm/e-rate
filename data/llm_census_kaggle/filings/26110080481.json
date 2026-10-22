@@ -1,0 +1,88 @@
+{
+  "summary": "The commenter argues that E‑Rate should continue and expand to support AI‑enabled education, contends that limiting access would harm equity and increase costs, and rejects screen‑time restrictions as ineffective.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue and expand E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential for equitable access to technology that supports AI‑enabled learning.",
+      "evidence_quote": "E-Rate has provided affordable access to the vast information and capabilities of the internet to schools and libraries for the last 30 years, allowing for tremendous gains in student achievement and",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "maintain funding with cost controls",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would increase district costs by up to $400k per year.",
+      "evidence_quote": "etter habits, you get a building that no longer works. \n\nFor my district alone, this change could represent an increase in costs of up to $400k per year to maintain the same services, which include",
+      "evidence_start": 1247,
+      "evidence_end": 1444,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Sunsetting E‑Rate would create a two‑tier system where students of means have access while those without do not.",
+      "evidence_quote": "ty education to ALL students in the USA. Limiting or removing E-Rate would create a two-tier structure in which students of means will have access to technology while those without the means will",
+      "evidence_start": 1719,
+      "evidence_end": 1914,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The commenter does not propose a specific alternative design for E‑Rate.",
+      "evidence_quote": "ology while those without the means will not.  \nThank you for opening this issue up for public comment. I am available to testify further on this issue should the FCC require additional insights.",
+      "evidence_start": 1874,
+      "evidence_end": 2069,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Limiting infrastructure to curb screen time is ineffective and harms educational infrastructure.",
+      "evidence_quote": "buting to unhealthy or inappropriate use of screen time, the answer is education, training and ultimately, teaching the intentional use of screens, not limiting or banning them outright. Pulling the",
+      "evidence_start": 936,
+      "evidence_end": 1134,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080481",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080481",
+  "filer_raw": "Michael Jay Lawrence",
+  "date_submission": "2026-10-10T16:52:09.636Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ad3b24d297d14d1bd1d8061d0b70abf37f9c505e535b28d26238665f2dabe5b9",
+  "params_key": "7297618da04d9c91c6921a21d6dbea054528d0a3bad85679124747c4fbc03999",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

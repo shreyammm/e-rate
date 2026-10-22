@@ -1,0 +1,86 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program intact, reject sunset or narrowing proposals, and preserve connectivity support for rural schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Ensure funding for rural schools",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E‑Rate funding would force rural schools to cut essential services due to tight budgets.",
+      "evidence_quote": "rural school I have been connected with has extremely tight budgets. The loss of this funding would cost schools too much, without a way to make it up. Local tax levy's for schools are failing at",
+      "evidence_start": 2331,
+      "evidence_end": 2526,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain connectivity for schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reliable broadband is part of basic infrastructure like electricity and transportation.",
+      "evidence_quote": "hool connectivity is not synonymous with unrestricted student screen time. Districts, educators, and families already make decisions about when and how technology should be used to support learning —",
+      "evidence_start": 3270,
+      "evidence_end": 3469,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "raphy or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational",
+      "evidence_start": 4365,
+      "evidence_end": 4559,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Connectivity is essential for reliable educational access.",
+      "evidence_quote": "ols need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled",
+      "evidence_start": 4519,
+      "evidence_end": 4715,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The program is essential infrastructure for modern education and should not be eliminated.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave",
+      "evidence_start": 4207,
+      "evidence_end": 4405,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077392",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077392",
+  "filer_raw": "Laura Chastain",
+  "date_submission": "2026-09-21T14:57:16.545Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "03c489fd266e08c06655a54b071246620b5d0d12175e70e631cdda763e159ef4",
+  "params_key": "4bc21c1eaceeb7afab0bdeeca2ddc969095c90b73c032de08806b749b3ddcbd8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

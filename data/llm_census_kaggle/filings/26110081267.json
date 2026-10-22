@@ -1,0 +1,110 @@
+{
+  "summary": "HWC Consultants comments on E‑Rate consultant rules The comment argues against a proposed rule that would ban consultant contracts based on a percentage of E‑Rate funding, contending that such a prohibition would not add safeguards, would unduly burden legitimate procurement, and would unfairly restrict existing agreements.",
+  "stakeholder_role": "consultant",
+  "claims": [
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "do not prohibit percentage‑based fees",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "legal_claim",
+      "argument": "A prohibition on percentage‑based fees is unnecessary because other program checks prevent inflated requests.",
+      "evidence_quote": "ants and service providers from entering into any consultant \nfee arrangement based on a percentage of E-Rate contracts or disbursements. We ask the \nCommission not to adopt that prohibition. \nWe",
+      "evidence_start": 4994,
+      "evidence_end": 5189,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "support",
+      "requested_action": "allow percentage‑based fees",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Consultants should be allowed to charge a percentage of E‑Rate contracts to reflect the scale of work.",
+      "evidence_quote": "ces the applicant does not need, and the Commission is right to ask \nwhether anything in the program creates that pull. Our disagreement is with the remedy. A \nprohibition framed around pricing",
+      "evidence_start": 5304,
+      "evidence_end": 5497,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "allow percentage‑based consultant fees",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "Banning percentage‑based fees would remove a legitimate pricing option without adding any new safeguards against fraud or abuse.",
+      "evidence_quote": "ry of contract does \nnot add to them. It removes a pricing option without addressing the conduct that produced the \ncases the FNPRM describes. \nWe would also note that this prohibition affects",
+      "evidence_start": 7481,
+      "evidence_end": 7673,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "conditional_or_amend",
+      "requested_action": "apply prohibition only to new or renewed contracts, allow existing contracts to run to term end",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "A prohibition without a transition would force schools to reopen or terminate lawfully procured multi‑year agreements.",
+      "evidence_quote": "a proposed engagement complies. Second, \napply any prohibition only to arrangements entered into or renewed after the effective date, and \nallow arrangements in effect on that date to run to the end",
+      "evidence_start": 8249,
+      "evidence_end": 8447,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "support",
+      "requested_action": "treat consulting firm as the consultant",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "Treat the consulting firm as the consultant to avoid individual registration and preserve visibility.",
+      "evidence_quote": "s that address it. Our comments speak to how \nthe proposals are carried out rather than whether the Commission should act. \n1. Definition of “Consultant” \nWe ask the Commission to treat the",
+      "evidence_start": 939,
+      "evidence_end": 1128,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "support",
+      "requested_action": "use existing USAC CRN system",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "The existing USAC CRN system already tracks firms and staff, so a new database is unnecessary.",
+      "evidence_quote": "funds recovered because a consultant was late with a federal form. \n3. Consultant Registration Database \nWe do not believe a new registration database is necessary. USAC already maintains Consultant",
+      "evidence_start": 3277,
+      "evidence_end": 3475,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "support",
+      "requested_action": "expand CRN to include employee info",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "Expanding the CRN system to capture employee details would improve accountability without new infrastructure.",
+      "evidence_quote": "issued, so the change is visible in the record. If the \nCommission wants more individual-level detail than the CRN record currently carries, we \nrecommend expanding the existing CRN system to",
+      "evidence_start": 4053,
+      "evidence_end": 4244,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_percent_fees": "conflicting_or_multiple",
+    "consultant_registration": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081267",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081267",
+  "filer_raw": "HWC Consultants",
+  "date_submission": "2026-10-13T21:37:42.623Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0361447febcac40a421f7d15de7af02ccff5c8a03fcae6ae8bc487b63dfbfaf9",
+  "params_key": "17142d1168e9634780b994efb376f4fb766c55be7f1f2d668f86d8e7685e833e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

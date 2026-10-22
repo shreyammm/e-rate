@@ -1,0 +1,86 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, opposing any phase‑out or eligibility restrictions and emphasizing broadband as essential infrastructure.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility restrictions based on geography, poverty, or provider availability",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility restrictions would leave schools without adequate support.",
+      "evidence_quote": "ibraries;\nAvoid eligibility restrictions based solely on geography, poverty measures, provider availability, or similar criteria that could leave schools and students without adequate",
+      "evidence_start": 2937,
+      "evidence_end": 3120,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility restrictions based solely on geography, poverty measures, provider availability, or similar criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Such criteria could leave schools and students without adequate support.",
+      "evidence_quote": "ve schools and students without adequate support;\nPreserve support for both broadband connectivity and the internal network infrastructure necessary to provide reliable educational access;",
+      "evidence_start": 3080,
+      "evidence_end": 3268,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for broadband connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Broadband and internal network are essential for reliable educational access.",
+      "evidence_quote": "ve schools and students without adequate support;\nPreserve support for both broadband connectivity and the internal network infrastructure necessary to provide reliable educational access;",
+      "evidence_start": 3080,
+      "evidence_end": 3268,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue working with stakeholders to strengthen program integrity and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Modernization should not diminish E‑Rate’s essential role.",
+      "evidence_quote": "to provide reliable educational access; and\nContinue working with schools, libraries, and other stakeholders to strengthen program integrity and modernize E-Rate without diminishing its essential",
+      "evidence_start": 3229,
+      "evidence_end": 3424,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject phase‑out or substantial reduction of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure that must not be phased out.",
+      "evidence_quote": "t, a public school district in Missouri. I am writing to urge the Federal Communications Commission to preserve and strengthen the E-Rate program and to reject proposals that would phase out,",
+      "evidence_start": 315,
+      "evidence_end": 506,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078281",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078281",
+  "filer_raw": "Hancock Place School District",
+  "date_submission": "2026-09-25T14:33:57.502Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ad85bf7b276945d1011b0dc2838b4e952361e452ccd2defd780558c371bbfa66",
+  "params_key": "c198224e97b9a8f95b967a40367f9e50c5196e454acaa200746e7f4f06d79922",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

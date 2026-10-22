@@ -1,0 +1,62 @@
+{
+  "summary": "St. Clair County Regional Educational Service Agency urges the FCC to preserve the current E‑Rate program and oppose proposals that would narrow eligible services or reduce discounts, citing the essential role of the countywide fiber network for school operations and the financial burden of shifting costs to local budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "preserve current eligible services list",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The proposed narrowing of eligible services would sever county library branches and essential school operations from the shared fiber network, undermining educational and safety functions.",
+      "evidence_quote": "carries a rural designation. Similarly, narrowing eligibility to services that transport information directly to \nschool classrooms would sever our county library branches from the shared network",
+      "evidence_start": 4643,
+      "evidence_end": 4838,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "ground any reductions in empirical applicant cost data",
+      "reason_family": "other",
+      "claim_kind": "empirical_claim",
+      "argument": "Any reduction in discounts should be based on empirical analysis of actual applicant cost data, grandfather existing contracts, and phased implementation to avoid budget shocks.",
+      "evidence_quote": "If the Commission does move forward with any reduction, ground it in an empirical analysis of actual \napplicant cost data, grandfather existing multi-year contracts, and phase in any change over a",
+      "evidence_start": 4954,
+      "evidence_end": 5150,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain Category One and Category E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or reducing E‑Rate support would impose an estimated $70 per student per year cost shift, effectively cutting classroom, staffing, and student services.",
+      "evidence_quote": "local budgets would be \nroughly $70 per student per year. In a Michigan public school funding environment where districts have no \nmeaningful local mechanism to raise operating revenue, and in a",
+      "evidence_start": 2333,
+      "evidence_end": 2527,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078598",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078598",
+  "filer_raw": "Brenda L Tenniswood",
+  "date_submission": "2026-09-28T19:31:31.184Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5e7132b70949bd30351b21e765f238e814222a60196537ed69439df62c304999",
+  "params_key": "a95753c4d787e5bdf98f03a9e5233b648ae3d54f965cb9f55713341f01f2f6e7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

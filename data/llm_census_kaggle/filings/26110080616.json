@@ -1,0 +1,89 @@
+{
+  "summary": "East Side Union High School District urges the FCC to keep the E‑Rate program fully funded, maintain flexible infrastructure options, preserve all discount tiers, and avoid tying funding to screen‑time or expanding CIPA to personal devices, while calling for streamlined consultant rules.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "streamline consultant rules",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Introducing overly restrictive new consultant rules, multi‑layered certifications, and redundant contracting mandates risks discouraging smaller or under‑resourced districts from applying altogether.",
+      "evidence_quote": "ble liability and legal friction without meaningfully enhancing student safety.\n\nWhile accountability and fiscal integrity are paramount, introducing overly restrictive new consultant rules,",
+      "evidence_start": 3569,
+      "evidence_end": 3759,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain all discount tiers",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Phasing out or reducing support for districts with lower discount rates threatens equity and penalizes districts striving to modernize their local networks.",
+      "evidence_quote": "calable, expensive commercial contracts, ultimately raising costs for the entire program over time.\n\nAdditionally, the Commission must maintain support across all discount rate tiers. Phasing out or",
+      "evidence_start": 2175,
+      "evidence_end": 2373,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district opposes any attempt to sunset, cap, or narrow the overall scope of the E‑Rate program.",
+      "evidence_quote": "astructure.\n\nESUHSD strongly opposes any attempt to sunset, cap, or narrow the overall scope of the E-rate program. Digital connectivity is not an optional luxury or a temporary emergency need; it is",
+      "evidence_start": 1549,
+      "evidence_end": 1748,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not condition on screen‑time",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Conditioning E‑Rate funding on screen‑time limitations or extending CIPA filtering to personal student devices is unworkable and inappropriate at the federal regulatory level.",
+      "evidence_quote": "uity and penalizes districts striving to modernize their local networks.\n\nWhile ESUHSD fully supports student health, digital wellness, and internet safety, conditioning E-rate funding on screen-time",
+      "evidence_start": 2645,
+      "evidence_end": 2844,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "maintain",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving special construction and dark fiber support is vital to keeping program costs manageable and providing scalable, cost‑effective long‑term bandwidth solutions.",
+      "evidence_quote": "ury or a temporary emergency need; it is a permanent infrastructure requirement for modern schooling.\n\nIn particular, preserving special construction and dark fiber support is vital to keeping",
+      "evidence_start": 1708,
+      "evidence_end": 1900,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_percent_fees": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080616",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080616",
+  "filer_raw": "Omar Gutierrez",
+  "date_submission": "2026-10-12T16:02:52.082Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c181a1210809a2a730c72fadaa913ab78adf7eade0fd62017b1b47720ce0e95e",
+  "params_key": "674f2b49f00d6d16be73fbd36572f248b1824210ca886f19d703f693959b0832",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

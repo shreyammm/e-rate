@@ -1,0 +1,74 @@
+{
+  "summary": "The Neoga School District 3 Technology Coordinator urges the FCC to keep the E‑Rate program intact, oppose any sunset or narrowing of eligibility, and preserve funding for connectivity and internal network infrastructure, while calling for collaboration to strengthen the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "s that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the",
+      "evidence_start": 3263,
+      "evidence_end": 3459,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity and internal network infrastructure are basic infrastructure needed for reliable educational access.",
+      "evidence_quote": "ate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to",
+      "evidence_start": 3419,
+      "evidence_end": 3612,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Collaboration can improve the program without reducing its role.",
+      "evidence_quote": "k with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and",
+      "evidence_start": 3572,
+      "evidence_end": 3769,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that supports modern public education and should not be eliminated.",
+      "evidence_quote": "fe facilities.\n\nI therefore respectfully urge the Commission to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate",
+      "evidence_start": 3113,
+      "evidence_end": 3303,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077880",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077880",
+  "filer_raw": "Alicia kessler",
+  "date_submission": "2026-09-23T16:45:01.560Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a32fd9f18d1a63573b2f4c0c8d06eb35b798abe05233ebffb047fa15dbec0e79",
+  "params_key": "e80d7638db32488c2d83b4fb398c75569619acfcb738b20e23b91ded7ca1f13d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

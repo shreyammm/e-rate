@@ -1,0 +1,63 @@
+{
+  "summary": "Berkshire Local Schools urges the FCC to preserve the E‑Rate program, citing the program’s essential role in maintaining internet connectivity, network equipment, and security for students and staff.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain support for connectivity and internal network infrastructure",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Predictable E‑Rate funding allows the district to plan for recurring service costs and multiyear technology needs.",
+      "evidence_quote": "is not enough; the network equipment and licenses that distribute connectivity \nthroughout our buildings must also be maintained. Predictable funding allows us to plan for recurring service costs",
+      "evidence_start": 1717,
+      "evidence_end": 1912,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate keeps essential internet and network infrastructure affordable for the district, preventing a 150% increase in local costs.",
+      "evidence_quote": "nd BECC, and $28,800 for fiber transport connections. E-rate contributes \n$34,488 annually, while Berkshire pays $22,992. Without that support, the district would need to absorb an \nadditional",
+      "evidence_start": 629,
+      "evidence_end": 821,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "expand support for network security equipment and services",
+      "reason_family": "child_safety",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate support for network security protects students and staff from cyber threats.",
+      "evidence_quote": "ries in rural and urban communities, and expand support for \nnetwork security equipment and services. Protecting these investments will help districts such as Berkshire sustain \ndependable access for",
+      "evidence_start": 2492,
+      "evidence_end": 2691,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080215",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080215",
+  "filer_raw": "Berkshire Local Schools",
+  "date_submission": "2026-10-09T13:34:20.443Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "517ca68658ca82f3faa67453636e273085f3a70f24a15e775f05bf215ab22699",
+  "params_key": "7bc128224bea9dda24d100d7bbc16d4377ae6b5e7ae60a9903b00955efc2c138",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

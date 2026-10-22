@@ -1,0 +1,63 @@
+{
+  "summary": "Parent requests stricter school‑device content controls, revocation of internet access, and preservation of her right to opt her children out of school‑issued devices.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "restrict Spotify and other non‑educational content on school‑issued devices",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The parent argues that unrestricted access to Spotify on school devices exposes children to pedophilic grooming and explicit content, warranting a block of such services.",
+      "evidence_quote": "In third grade, my children were using Spotify on their school issued devices, but I assumed content blockers were in place. \nIn May 2026, I became aware of pedophilic grooming risks associated",
+      "evidence_start": 155,
+      "evidence_end": 348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "enforce parents’ right to revoke internet access and decline school‑issued devices",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "The parent asserts that her statutory right to opt her children out of school‑issued devices must be upheld, and that the school’s refusal to honor this right is unlawful.",
+      "evidence_quote": "ing into your room at night, don’t go to sleep. \nI requested to revoke internet access in writing, as was my right under Policy 4328 as published in the 2025/2026 Student Handbook, as well as",
+      "evidence_start": 2175,
+      "evidence_end": 2366,
+      "uncertain": false
+    },
+    {
+      "provision_id": "school_supervision_reporting",
+      "position": "oppose",
+      "requested_action": "prevent retaliation against parents who request device restrictions",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "legal_claim",
+      "argument": "The parent claims that school administrators threatened retaliation, including removal from a medical director position, indicating a hostile environment that undermines parental rights.",
+      "evidence_quote": "eive a response referring me back to the principal's suggestion to home school. He did, however, call my corporate employer daily the first week after receiving my letter to have me removed as the",
+      "evidence_start": 2945,
+      "evidence_end": 3141,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "parent_opt_out": "support",
+    "school_supervision_reporting": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076643",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076643",
+  "filer_raw": "Erica Collins",
+  "date_submission": "2026-09-14T22:17:23.783Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b811a6dbc4e3e63d346c4b618cea974e108ab09ac4314ecaa568be911df0989a",
+  "params_key": "44050da5fc278d31f89ce9eda5397e2d727f787b2b9f544e0fdf18ee40057f82",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

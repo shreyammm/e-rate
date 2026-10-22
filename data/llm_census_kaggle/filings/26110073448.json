@@ -1,0 +1,89 @@
+{
+  "summary": "The Sacramento County Superintendent urges the FCC to preserve and modernize the E‑Rate program, maintain its discount structure and infrastructure support, and clarify that screen‑time concerns should not drive cuts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "maintain existing needs‑based discount structure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Geographic restrictions would unfairly disadvantage urban and suburban schools.",
+      "evidence_quote": "sion to: \n1. Preserve the E-Rate program and reject proposals to eliminate, sunset, or\nsubstantially reduce its support.\n2. Maintain the existing needs-based discount structure and reject",
+      "evidence_start": 4791,
+      "evidence_end": 4978,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to eliminate, sunset, or substantially reduce E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The program must be preserved to maintain reliable connectivity for schools.",
+      "evidence_quote": "o County Superintendent of Schools, I am writing to urge \nthe Federal Communications Commission to preserve the E-Rate program \nand reject proposals to eliminate the program or otherwise reduce its",
+      "evidence_start": 310,
+      "evidence_end": 507,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "continue supporting broadband circuits, internal connections, and regional network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Infrastructure support is essential for equitable educational opportunities.",
+      "evidence_quote": "cation or presumed tax base.\n3. Continue supporting broadband circuits, internal connections, and regional\nnetwork infrastructure serving eligible schools and educational programs.\n4. Recognize that",
+      "evidence_start": 5092,
+      "evidence_end": 5290,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize the Eligible Services List to include advanced cybersecurity protections",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "alternative_design",
+      "argument": "Cybersecurity protections must be updated to protect student data.",
+      "evidence_quote": "the Eligible Services List, informed by the Cybersecurity Pilot\nProgram, to include advanced and next-generation firewall capabilities and\nother effective cybersecurity protections within existing",
+      "evidence_start": 5409,
+      "evidence_end": 5605,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "clarify that reducing screen time does not reduce need for reliable connectivity",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time concerns should not drive cuts to network infrastructure.",
+      "evidence_quote": "educational programs.\n4. Recognize that reducing student screen time does not reduce schools’\nunderlying need for reliable network connectivity.\n5. Modernize the Eligible Services List, informed by",
+      "evidence_start": 5251,
+      "evidence_end": 5448,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "support",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073448",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073448",
+  "filer_raw": "Sacramento County Office of Education",
+  "date_submission": "2026-08-27T21:49:54.202Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6fdb13dc9715a6574c030d4b086aa9425c12105a183d65ccf882b521912849f9",
+  "params_key": "f889838b11bee44ab2db0a2e2d8eacedc7a49cb53c09dddce1de98e2b798b9cb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

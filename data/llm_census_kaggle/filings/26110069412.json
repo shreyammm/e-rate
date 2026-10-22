@@ -1,0 +1,63 @@
+{
+  "summary": "The commenter opposes sunsetting or narrowing the E‑Rate program, rejects conditioning funding on screen‑time limits, and questions the appropriateness of eliminating percentage‑based consulting fees.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Do not narrow eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing the program would increase budgets and cut services or raise local taxes.",
+      "evidence_quote": "The internet is a utility. No business could operate without the internet, and neither should public service institutions. The narrowing of this program would increase budgets across K-12 and",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Do not sunset the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting the program would shift costs to local taxes and reduce service access.",
+      "evidence_quote": "ey to maintain and support. That doesn't stop once built.  \n\n3. Considering sunsetting the program: Again, access is a requirement for today's world. If you sunset the program, costs don't go away",
+      "evidence_start": 924,
+      "evidence_end": 1120,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Do not condition funding on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions are unrelated to infrastructure and should be left to states and districts.",
+      "evidence_quote": "minate access. \n\n4. Conditioning funding on screen time & social media restrictions: This has nothing to do with building and maintaining internet infrastructure and access. It should not be part of",
+      "evidence_start": 1238,
+      "evidence_end": 1436,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069412",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069412",
+  "filer_raw": "Amy Ruffo",
+  "date_submission": "2026-08-04T14:28:48.740Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f13b8af4b3a452ac8f46506b6c8a879a2566ba22f4c628f9e14fa262e5a894e7",
+  "params_key": "0e944ea183783e85d4615fa86e2d952a30acc21ebbe0ff804c0ff59f4b8fc199",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "Letter urging the FCC to preserve full E‑Rate funding, arguing that the program funds essential school infrastructure and life‑safety systems.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "E‑Rate funds the baseline physical utility layer—the internet pipe, internal wiring, and foundational connection layer—rather than end‑user software or individual devices.",
+      "evidence_quote": "E-Rate program. A critical misconception surrounding school connectivity is that E-Rate exists to subsidize end-user software applications or individ ual student devices. In reality, E-Rate funds the",
+      "evidence_start": 149,
+      "evidence_end": 348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "defend and preserve full E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program provides the essential broadband infrastructure that underpins school safety, operations, and compliance, and its loss would jeopardize life‑safety systems.",
+      "evidence_quote": "internal wiring layer that every modern operational and security system assumes is present. I strongly prompt the Commission to defend and preserve full E-Rate program f unding, ensuring our",
+      "evidence_start": 5248,
+      "evidence_end": 5438,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "School connectivity is critical for early‑morning operations such as transportation, HVAC, security, cafeteria services, attendance, and state funding allocation.",
+      "evidence_quote": "and why school connectivity is essential infrastructure, one must examine the operational timeline of a school building hours before a  single student logs into a classroom device. Modern school",
+      "evidence_start": 934,
+      "evidence_end": 1128,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "E‑Rate funding supports continuous administrative, compliance, and health services throughout the school day, enabling digital testing, IEP documentation, teletherapy, payroll, and local economic stability.",
+      "evidence_quote": "c driving state funding  calculations 2. Continuous Administrative, Compliance, and Health Services Beyond morning initialization, school connectivity forms the operational backbone for mandatory",
+      "evidence_start": 3089,
+      "evidence_end": 3284,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "The broadband network funded by E‑Rate functions as the primary life‑safety system during emergencies, coordinating lockdown announcements, access control, video feeds, and 911 telemetry.",
+      "evidence_quote": "Primary Building Life Safety System Most critically, the broadband network funded by E-Rate has evolved into a school's primary life safety system during emergency situations. In a critical lockdown",
+      "evidence_start": 4165,
+      "evidence_end": 4363,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076805",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076805",
+  "filer_raw": "Whitney Hood",
+  "date_submission": "2026-09-16T16:32:44.046Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9e95c458e2d007c5dfafe1ff5caae5d1f41b6e9e7201e83f6cdba83111bd4951",
+  "params_key": "1bc602d60de6ec3510374a7f9297180ec9c43d85fdb7530809cb18e33a9bf109",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,88 @@
+{
+  "summary": "Parent advocates for greater transparency, parental control, and evidence‑based evaluation of school technology.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "implement opt‑out policy for school‑issued devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Parents should have the right to opt their children out of using school‑issued devices that run unvetted educational software.",
+      "evidence_quote": "y are not asked for permission (they are forced to sign a blanket technology agreement when \nthey register for school) and they are not given access or given the opportunity to see these \nprograms",
+      "evidence_start": 472,
+      "evidence_end": 668,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "stop mandatory use of school devices for homework",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Mandatory use of school devices for homework exacerbates screen addiction and disrupts family life.",
+      "evidence_quote": "en \nlike my son who struggle with screen addiction, being forced to carry a chromebook around all \nday at school, and then bring it home every night, has materially changed our lives for the \nworse.",
+      "evidence_start": 1567,
+      "evidence_end": 1765,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "oppose",
+      "requested_action": "establish federal committee to vet edtech companies",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "A federal committee should rigorously evaluate edtech companies before schools adopt their products.",
+      "evidence_quote": "king powerpoint presentations, and doing \nlittle quiz videos on a chromebook enhance or improve learning outcomes. Period. We need a \nfederal committee to vet these educational technology companies",
+      "evidence_start": 2353,
+      "evidence_end": 2550,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "require parental training on school platforms",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Parents need training to understand and monitor the educational platforms their children use.",
+      "evidence_quote": "hat I think is best for my children. Our school didn’t even provide any \nkind of parental training on how to use Schoology, the main app they use to organize homework \nand assignments. When I look at",
+      "evidence_start": 1881,
+      "evidence_end": 2080,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "oppose",
+      "requested_action": "require evidence of learning outcomes for screen‑based tools",
+      "reason_family": "evidence_quality",
+      "claim_kind": "empirical_claim",
+      "argument": "There is no evidence that screen‑based activities improve learning outcomes.",
+      "evidence_quote": "is not intuitive to use. I believe it is just \nthe cheapest thing the district could get. \n \nEfficacy \n\n\nThere is no evidence that reading on a screen, making powerpoint presentations, and doing",
+      "evidence_start": 2199,
+      "evidence_end": 2393,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_digital_literacy": "oppose",
+    "cipa_monitoring_privacy": "oppose",
+    "cipa_social_media": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080573",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080573",
+  "filer_raw": "Rachel Cox",
+  "date_submission": "2026-10-12T12:34:15.621Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "433a7a408a1df968a7ccb9a2a8b0710b729b2e82058673cfd6b060e29da753c3",
+  "params_key": "e06d42f527daa37912298b307423e0a9b6052ef85dd8e6e125e84f20a0215f70",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

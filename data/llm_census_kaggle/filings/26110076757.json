@@ -1,0 +1,87 @@
+{
+  "summary": "Parent advocates for universal screen‑use opt‑out, raises privacy concerns about AI tutoring, and argues that excessive screen time harms learning.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "restrict AI tutor data collection",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "legal_claim",
+      "argument": "AI tutoring programs that record voice and typing data violate student privacy.",
+      "evidence_quote": "d be provided to them. \n\nI have concerns regarding student data privacy. Our school district utilizes an AI tutor program called Snorkl. This program records student voice information as well as",
+      "evidence_start": 1551,
+      "evidence_end": 1745,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No additional policy claim identified.",
+      "evidence_quote": "Thank you for providing this opportunity for stakeholders to share their experiences regarding student screen use at school.\n\nAs parents, we have endeavored to limit our child's access to screens,",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "implement universal opt‑out for screen‑based instruction",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Parents should be able to opt their children out of screen‑based instruction to protect focus and learning.",
+      "evidence_quote": "per, I estimate that a comparable online assignment would take at least 45 minutes.\n\nI would welcome a universal opt-out opportunity. While I recognize that opting out of certain platforms may",
+      "evidence_start": 1240,
+      "evidence_end": 1432,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "limit screen time in schools",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "Increased screen use correlates with worse educational outcomes and cognitive decline.",
+      "evidence_quote": "y but I am not convinced that my child's voice recordings are safe or that they are not being used to train their AI model.\n\nGrowing research indicates that increased screen use correlates with worse",
+      "evidence_start": 1863,
+      "evidence_end": 2062,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "return to basics and teach critical thinking",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Reducing screen use will improve critical thinking and foundational skills.",
+      "evidence_quote": "ing generative AI, schools would benefit from decreasing their screen use, returning to basics and teaching critical thinking and foundational skills.\n\nThank you for your time.",
+      "evidence_start": 2331,
+      "evidence_end": 2507,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076757",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076757",
+  "filer_raw": "Jennifer Curry",
+  "date_submission": "2026-09-15T23:45:59.006Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "30fca457dd023d712f9f8788cc0e5c1d3223a8db487956ff82afce45d4f1608d",
+  "params_key": "83b5a3b0da412c977cb66bff0902f6fa573f5c34113b8e4e82d44a017df0e0e3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

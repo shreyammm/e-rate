@@ -1,0 +1,50 @@
+{
+  "summary": "The comment argues that eliminating E‑Rate would severely harm rural libraries and their patrons by cutting essential internet access and straining already tight budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate eligibility for rural libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Many rural libraries rely on E‑Rate to cover their internet costs, ensuring community access.",
+      "evidence_quote": "Many of the rural libraries in our region use erate to cover their internet costs, not just for them but for their communities. This ensures patrons in those areas have access, not only to the",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Losing E‑Rate funding would remove internet access for patrons in rural communities.",
+      "evidence_quote": "those areas have access, not only to the library, but to the internet. Losing erate funding would not only create major problems with already stretched library budgets, but remove internet access for",
+      "evidence_start": 152,
+      "evidence_end": 351,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069574",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069574",
+  "filer_raw": "SELCO | Michael Flores",
+  "date_submission": "2026-08-06T14:27:55.942Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7540af73d28035c3e9fdf00a6437fe94e36bdedf714ee3865db90fba2df0c42d",
+  "params_key": "6c0023bbe039f65e130f119d6fd88ca66ec4b67e607968f585f42d435e5c1680",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

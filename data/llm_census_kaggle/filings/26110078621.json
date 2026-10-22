@@ -1,0 +1,101 @@
+{
+  "summary": "The Wisconsin Association of School Boards (WASB) opposes any sunset or major restriction of the E‑Rate program, urges preservation of broadband and internal network support, and argues that screen‑time policy decisions should remain at the state/local level. The WASB urges the FCC to protect E‑Rate so that public schools can continue to provide reliable, affordable, and effective connectivity for students.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility based on geography or income",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "WASB maintains that restricting support solely on geography or income would deny needed connectivity to many schools.",
+      "evidence_quote": "eject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on geography, income, or other criteria; \n \nPreserve support for the connectivity and internal",
+      "evidence_start": 3112,
+      "evidence_end": 3308,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "WASB argues that sunsetting the program would impose extreme burdens on districts already operating under finite resources.",
+      "evidence_quote": "and scaled as instructional demands and \ntechnology continue to evolve. Sunsetting the program would place extreme burden on districts that \nalready operate under finite resources and strained",
+      "evidence_start": 5129,
+      "evidence_end": 5321,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The WASB believes that maintaining E‑Rate funding is essential for schools to deliver reliable, affordable connectivity to all students.",
+      "evidence_quote": "cess to the tools they need to learn and succeed regardless of where \nthey live or their family's financial circumstances. I urge the Commission to protect E-Rate and ensure \nthat public schools can",
+      "evidence_start": 6842,
+      "evidence_end": 7040,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate program",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "other",
+      "argument": "WASB urges collaboration with schools and stakeholders to modernize the program rather than reduce its role.",
+      "evidence_quote": "stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education. \nInternet connectivity is a vital part of a school’s educational mission. Even with debates over",
+      "evidence_start": 3422,
+      "evidence_end": 3616,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Reject requiring screen‑time policies for E‑Rate eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "WASB believes screen‑time decisions should be made at the state and local level, not by the FCC.",
+      "evidence_quote": "eir own accord. While the FCC’s proposal to take a \nnew look at the program through the lens of exposure to screen time in children is laudable, it is our \nstrong belief that these decisions need to",
+      "evidence_start": 4197,
+      "evidence_end": 4395,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "WASB contends that internal network infrastructure is essential for reliable educational access.",
+      "evidence_quote": "upport for the connectivity and internal network infrastructure schools need to \nprovide reliable educational access; and \n \nWork with schools and other stakeholders to strengthen and modernize",
+      "evidence_start": 3268,
+      "evidence_end": 3462,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078621",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078621",
+  "filer_raw": "Wisconsin Association Of School Boards",
+  "date_submission": "2026-09-28T21:00:27.360Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c1d328d95980dfc689cd86608df8d48e1eaee7dd39fdc7bf3583b29515eaff1c",
+  "params_key": "d0b83e0367f7a8cfcfb7141f8be0d5d92157b1dfaa5410b559f2139edce6bbbc",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

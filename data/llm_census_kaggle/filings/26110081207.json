@@ -1,0 +1,112 @@
+{
+  "summary": "The Illinois Office of Broadband argues that E‑Rate’s connectivity mission is incomplete, that the program disproportionately benefits economically disadvantaged and rural districts, and that BEAD and E‑Rate serve complementary purposes. It opposes sunset or cuts to E‑Rate funding and calls for continued support. The Illinois Office of Broadband argues that E‑Rate should not be narrowed or sunset and that it should remain complementary to BEAD, preserving eligibility for network construction, dark fiber, and self‑provisioned networks.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The program’s discount matrix ensures that economically disadvantaged communities receive higher discounts, preventing disproportionate burden if funding were reduced.",
+      "evidence_quote": "36.9 million \nof the 67.2 million E-Rate committed to Illinois applicants, or 55 percent1. Under the E-Rate \ndiscount matrix, discount rates are determined based on both the percentage of students",
+      "evidence_start": 2772,
+      "evidence_end": 2968,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current discount matrix",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The discount matrix’s dual criteria of poverty and rural/urban classification protects low‑income districts from higher service costs.",
+      "evidence_quote": "based on both the percentage of students eligible \nfor the National School Lunch Program (MSLP), or an equivalent poverty measure, and an \napplicant’s urban or rural classification.2 An 80% or higher",
+      "evidence_start": 2928,
+      "evidence_end": 3127,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue because Illinois data shows that 55% of funding goes to high‑need applicants and rural districts pay twice as much for the same bandwidth.",
+      "evidence_quote": "ls indicates that a substantial share of Illinois E-\nRate recipients serve economically disadvantaged communities. Any reduction in support would \ntherefore fall disproportionately on applicants with",
+      "evidence_start": 3394,
+      "evidence_end": 3593,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Initial connectivity does not equal ongoing connectivity; schools face recurring costs that E‑Rate discounts.",
+      "evidence_quote": "oing connectivity. Widespread \nbroadband infrastructure does not eliminate the need for E-Rate, as schools and libraries face \nrecurring service costs, capacity needs, necessary infrastructure",
+      "evidence_start": 4332,
+      "evidence_end": 4524,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "decline to narrow or sunset E‑Rate's scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate must remain available to ensure continued connectivity for schools and libraries.",
+      "evidence_quote": "e funding to \ninvest in necessary system improvements. \n \nConclusion \n \nFor the reasons stated above, IOB respectfully requests that the Commission:  \n \n1. Decline to narrow or sunset E-Rate's scope",
+      "evidence_start": 6933,
+      "evidence_end": 7131,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "evaluate BEAD and E‑Rate complementarity",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "BEAD funds one‑time construction while E‑Rate discounts recurring service costs, so the programs are complementary, not duplicative.",
+      "evidence_quote": "finding of duplication.  \n \nThe ongoing connectivity support provided through E-Rate is fundamentally different from that \nof BEAD. BEAD funds one-time construction of network infrastructure for",
+      "evidence_start": 4940,
+      "evidence_end": 5134,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "maintain eligibility for network construction, dark fiber, and self‑provisioned networks",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should continue to fund special construction and related services to meet evolving broadband needs.",
+      "evidence_quote": "oncentration of \nparticipation among the highest-need Illinois applicants, and  \n2. Treat E-Rate and BEAD as complementary programs, declining to reduce E-Rate \neligibility for network construction,",
+      "evidence_start": 7239,
+      "evidence_end": 7437,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081207",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081207",
+  "filer_raw": "Illinois Office of Broadband",
+  "date_submission": "2026-10-13T20:27:50.500Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9d7365693a6b7f63a8bb62366750f200c2295ed6f38fa0b232d6bb28710167ee",
+  "params_key": "bc2a9318ac9a2a90aeb6fa64f23c779f09392d4c0a41fe9842615febb33e9607",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

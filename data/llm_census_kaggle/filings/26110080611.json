@@ -1,0 +1,89 @@
+{
+  "summary": "Delta Greely School District Superintendent urges the FCC to preserve the E‑Rate program, oppose narrowing or sunset, maintain special construction and dark fiber options, and support responsible stewardship and filtering policies.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "other",
+      "argument": "No stance on monitoring or privacy is expressed.",
+      "evidence_quote": "Dear Commissioners:\nAs Superintendent of Delta Greely School District in rural Interior Alaska, I am writing in strong support of the E-Rate program and its continued investment in affordable,",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": true
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "maintain filtering policy",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district emphasizes its own filtering policy and calls for clear, practical requirements for small rural districts.",
+      "evidence_quote": "We also recognize our responsibility to protect students and use technology thoughtfully. Delta Greely School District’s Board Policy 6161.4, Internet, establishes expectations for filtering,",
+      "evidence_start": 1720,
+      "evidence_end": 1911,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "administrative_burden",
+      "claim_kind": "other",
+      "argument": "The letter does not address consultant definitions.",
+      "evidence_quote": "Dear Commissioners:\nAs Superintendent of Delta Greely School District in rural Interior Alaska, I am writing in strong support of the E-Rate program and its continued investment in affordable,",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that eliminating or narrowing E‑Rate would shift substantial costs to local budgets and harm students.",
+      "evidence_quote": "-Rate commitments. This support helps us maintain essential connectivity while preserving local resources for teachers, instructional materials, and student services. Reducing or eliminating E-Rate",
+      "evidence_start": 309,
+      "evidence_end": 506,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "maintain special construction and dark fiber options",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district requests that special construction and dark fiber remain available when they are practical and cost‑effective.",
+      "evidence_quote": "han narrow or sunset the program. Please maintain support for rural schools across discount levels and preserve special construction and dark fiber options when they provide practical, cost-effective",
+      "evidence_start": 1401,
+      "evidence_end": 1600,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "discussion_no_position",
+    "cipa_network_filter": "support",
+    "consultant_definition": "discussion_no_position",
+    "erate_sunset": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080611",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080611",
+  "filer_raw": "Delta Greely School District",
+  "date_submission": "2026-10-12T15:55:09.313Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5bc03aa297a5f93160032e88f56f848a6f7a4f28d5cf008a0c896ef22424b256",
+  "params_key": "0f57ed03193551a749a4b88aa60c36c0a125565ef76751fb861ba9b21bf8db6d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

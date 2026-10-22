@@ -1,0 +1,86 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, opposing any sunset, narrowing of eligibility, or reduction of support, and calls for continued investment in connectivity infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equity.",
+      "evidence_quote": "necessarily narrow E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity",
+      "evidence_start": 3896,
+      "evidence_end": 4092,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate provides recurring cost coverage essential for maintaining modern networks.",
+      "evidence_quote": "3. Preserve support for the connectivity and internal network infrastructure schools need to \nprovide reliable educational access; and \n4. Work with schools and other stakeholders to strengthen and",
+      "evidence_start": 4052,
+      "evidence_end": 4249,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The program is essential infrastructure and its elimination would directly harm schools’ ability to provide broadband.",
+      "evidence_quote": "ties. \nI therefore respectfully urge the Commission to: \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or",
+      "evidence_start": 3739,
+      "evidence_end": 3936,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "Improving the program will better equip schools for a technology‑driven economy.",
+      "evidence_quote": "and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the",
+      "evidence_start": 4209,
+      "evidence_end": 4405,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve and strengthen E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures reliable, affordable connectivity for all students regardless of location or family income.",
+      "evidence_quote": "and libraries to build and maintain the connectivity \nnecessary for students and patrons to participate fully in modern education. As our nation seeks to \nprepare students for college, careers, and",
+      "evidence_start": 4366,
+      "evidence_end": 4563,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080881",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080881",
+  "filer_raw": "Nicholas Ford",
+  "date_submission": "2026-10-13T13:22:31.866Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "093a9c60ec8d82c2ca79312315d5a8eb372d32321eef6643a9ce112ade6cf1cc",
+  "params_key": "ac73ab4c9311cdcf497fd2571c92aa8cbd6cd97f00d6222a75e023ac881b3906",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,62 @@
+{
+  "summary": "The Eastern Shore of Virginia Public Library System argues that continuing E‑Rate funding is essential to maintain reliable, free internet access and associated services for a high‑poverty community, and that losing the program would impose significant financial burdens and service gaps.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding provides reliable, free internet access to a community with high poverty rates, enabling essential services such as homework assistance and telehealth.",
+      "evidence_quote": "Continuing E-Rate for the Eastern Shore of Virginia Public Library System will ensue:\n1) reliable, free internet access in a community where many people (13.1% of Accomack County and 16.8% of",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate supports access to homework assistance, job applications, and online classes, which are critical for student success.",
+      "evidence_quote": "e (13.1% of Accomack County and 16.8% of Northampton County) live below the poverty line\n2) access to services that assist with homework, applying for jobs, telehealth, online classes, databases, and",
+      "evidence_start": 151,
+      "evidence_end": 350,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent E‑Rate sunset",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate would force local governments to cover $30,000–$50,000 per year for internet service, licenses, and equipment upgrades, reducing library services.",
+      "evidence_quote": "Losing Federal funding for E-Rate would mean:\n1) Reduction of other library services and programs the community has come to rely\n2) Increased burden for library funding from local governments to",
+      "evidence_start": 627,
+      "evidence_end": 821,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076518",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076518",
+  "filer_raw": "M.K. Miles",
+  "date_submission": "2026-09-13T02:28:40.591Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "319b810064f7c688f2e137692104b0c0801166e6ceeab7a8f1cc61d31104270c",
+  "params_key": "9888fa6b3d3b0ed575802b199e5b9b4d66a54007cdb4d52e1ceb432bd8d7b2a7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

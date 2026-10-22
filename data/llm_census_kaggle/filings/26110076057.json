@@ -1,0 +1,87 @@
+{
+  "summary": "Lake Holcombe School District urges the FCC to preserve and strengthen the E‑Rate program, opposing sunset or restrictive eligibility rules and advocating continued support for connectivity and program integrity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Avoid eligibility restrictions based solely on geography, poverty level, or provider count",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restrictions would leave schools without adequate support, undermining equitable broadband access.",
+      "evidence_quote": "id eligibility restrictions based solely on geography, poverty level, or provider count when those restrictions would leave schools without adequate support; Preserve support for the connectivity and",
+      "evidence_start": 2785,
+      "evidence_end": 2984,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity is essential for modern instruction and daily operations.",
+      "evidence_quote": "reserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools, libraries, and other stakeholders to strengthen",
+      "evidence_start": 2944,
+      "evidence_end": 3140,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that eliminating E‑Rate would shift essential broadband costs to local budgets, harming education.",
+      "evidence_quote": "actices, consistent with applicable CIPA requirements. I respectfully urge the Commission to: Reject proposals to sunset or eliminate the E-Rate program; Avoid eligibility restrictions based solely",
+      "evidence_start": 2628,
+      "evidence_end": 2825,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Maintain reliable broadband as essential for education",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband supports instruction, communication, safety, and assessment.",
+      "evidence_quote": "s, transportation, facilities, and other priorities. School connectivity is also not synonymous with unrestricted student screen time. Decisions about when and how technology supports learning are",
+      "evidence_start": 2320,
+      "evidence_end": 2516,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with stakeholders to strengthen program integrity and modernize E‑Rate without undermining its role",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Collaboration can improve efficiency while maintaining essential support.",
+      "evidence_quote": "es, and other stakeholders to strengthen program integrity and modernize E-Rate without undermining its essential role. E-Rate has enabled schools and libraries to build and maintain the connectivity",
+      "evidence_start": 3100,
+      "evidence_end": 3299,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076057",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076057",
+  "filer_raw": "Kurt D Lindau",
+  "date_submission": "2026-09-09T15:56:53.149Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d7c92741893d9a1cd0c776c05478a93a34335572cf85002eb9e0ca7fc6fcba32",
+  "params_key": "3d5da3514236233ba9af4c5b356420ab86506eee0835a5f9448235686b0b5348",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

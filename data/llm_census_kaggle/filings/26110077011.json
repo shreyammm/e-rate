@@ -1,0 +1,50 @@
+{
+  "summary": "Madison County Schools argues that E‑Rate funding is essential for their district’s network upgrades and cybersecurity needs, and that eliminating or reducing the program would be devastating.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "expand eligibility to include cybersecurity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district needs E‑Rate funds to cover rising cybersecurity costs, which are currently excluded.",
+      "evidence_quote": "cybersecurity \nor infrastructure. eRate funding should EXPANDED to include funds for cybersecurity \ninstead of reduced or removed.  \n \nThe loss of eRate funding for our small, rural district would",
+      "evidence_start": 1412,
+      "evidence_end": 1608,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or reducing E‑Rate would deprive the district of $900,000 needed for network upgrades.",
+      "evidence_quote": "ding for our small, rural district would be devastating.  \n \nSincerely, \n \n \n \n \nAmy Denman, Technology Director \nMadison County Schools \nP.O. Box 37 \nDanielsville, GA 30633 \n706-795-2191 x 1427",
+      "evidence_start": 1568,
+      "evidence_end": 1762,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077011",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077011",
+  "filer_raw": "Madison County Schools | Amy Denman",
+  "date_submission": "2026-09-18T19:19:41.080Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c748cbd9dab1a394b62d3a00bedd3a7c05c3186fc053e56335043e311e7143f7",
+  "params_key": "6bdc04349f1f73621cd593214268392595c65fadfb5738104fc703622dc81424",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

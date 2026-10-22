@@ -1,0 +1,88 @@
+{
+  "summary": "Superintendent urges preservation of E‑Rate, opposing sunset, narrowing eligibility, and cuts to internal network support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave schools and students without adequate connectivity.",
+      "evidence_quote": "transportation, and safe facilities.\n\nI respectfully urge the Commission to:\n\n- Reject proposals to sunset or eliminate the E-Rate program;\n- Avoid unnecessarily narrowing eligibility or restricting",
+      "evidence_start": 3414,
+      "evidence_end": 3612,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for schools and must not be sunset or eliminated.",
+      "evidence_quote": "transportation, and safe facilities.\n\nI respectfully urge the Commission to:\n\n- Reject proposals to sunset or eliminate the E-Rate program;\n- Avoid unnecessarily narrowing eligibility or restricting",
+      "evidence_start": 3414,
+      "evidence_end": 3612,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is critical for safe and effective school operations and must be maintained.",
+      "evidence_quote": "ily narrowing eligibility or restricting support in ways that could leave schools and students without adequate connectivity;\n- Preserve support for the connectivity and internal network",
+      "evidence_start": 3572,
+      "evidence_end": 3758,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter emphasizes the importance of reliable connectivity but does not propose specific policy changes beyond preserving the program.",
+      "evidence_quote": "My name is Jeffrey McHugh, and I serve as Superintendent of Glen Ellyn School District 41 in Glen Ellyn, Illinois, a public school district serving approximately 3,500 students across seven",
+      "evidence_start": 0,
+      "evidence_end": 189,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should be modernized to better serve current educational needs.",
+      "evidence_quote": "ls, libraries, and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.\n\nE-Rate has helped schools and libraries across the country build and",
+      "evidence_start": 3872,
+      "evidence_end": 4063,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078293",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078293",
+  "filer_raw": "Jeffrey McHugh",
+  "date_submission": "2026-09-25T15:18:39.418Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ef8b19457573e7796db67ac78d442b917837cc853fcd45b804f9bbf2c0d5bcc1",
+  "params_key": "a413dbb89ab9c5f7170efef77cc73b3399ff85dc115d1eb1c6f7a44c71087b85",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

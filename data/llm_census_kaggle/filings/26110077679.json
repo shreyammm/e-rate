@@ -1,0 +1,49 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen the E‑Rate program, arguing that broadband is essential infrastructure for modern schools and that eliminating or reducing E‑Rate support would shift costs to local budgets and undermine educational effectiveness.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure that supports instruction, communication, student services, safety, and daily operations of schools.",
+      "evidence_quote": "ommission to preserve and strengthen the E-Rate program and reject proposals that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and",
+      "evidence_start": 464,
+      "evidence_end": 649,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate support",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Without E‑Rate, costs shift to local budgets, competing with funding for teachers, staff, instructional programs, and other essential needs.",
+      "evidence_quote": "ear. They shift directly to local school district budgets and compete with funding for teachers, staff, instructional programs, student services, transportation, facilities, and other essential",
+      "evidence_start": 1242,
+      "evidence_end": 1435,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077679",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077679",
+  "filer_raw": "Dr. Anthony McConnell",
+  "date_submission": "2026-09-22T16:50:18.964Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9da06c75eca3d8f24fd5ba86041cdd9a4f35fb6e98522d8b06cc89e990fa06e8",
+  "params_key": "00053179a0d1d6cd1626df0a7c76e4459f283fff6362c2f377d9b4f516327d39",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

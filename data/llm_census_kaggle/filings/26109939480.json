@@ -1,0 +1,50 @@
+{
+  "summary": "The comment opposes any reduction or sunset of the E‑Rate program and rejects tying it to screen‑time limits, arguing that E‑Rate funds infrastructure, not screens.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current funding levels",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Discontinuing or reducing the e‑Rate program would do great harm to education across America.",
+      "evidence_quote": "Discontinuing or reducing the e-rate program in any way would do great harm to education across America.  There is no scenario where the goal can be considered met as it is in ongoing need.  \n\nIs",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not condition E‑Rate on screen‑time limits",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate funds the infrastructure teachers need to educate children effectively, not the screens themselves.",
+      "evidence_quote": "ered met as it is in ongoing need.  \n\nIs there too much screentime?  Maybe.  But erate doesn’t fund screens, it funds the infrastructure that teachers need to educate children effectively.  \n\nThis",
+      "evidence_start": 155,
+      "evidence_end": 351,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26109939480",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109939480",
+  "filer_raw": "Benjamin Courtade",
+  "date_submission": "2026-06-26T21:14:57.183Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1d891a4d14b1d133ceec795874d9811fc530ab42931d57ff197dbaa379675a5e",
+  "params_key": "eb5c3b37c568cca68daed9e980c2044a3ca08897081137ba0babbec0c31741b9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

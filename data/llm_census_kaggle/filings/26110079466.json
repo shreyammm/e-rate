@@ -1,0 +1,88 @@
+{
+  "summary": "Superintendent Jeff Newton urges the FCC to preserve and strengthen the E‑Rate program, opposing sunset, narrowing eligibility, and cuts to internal network support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "n\ngeography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to provide",
+      "evidence_start": 3745,
+      "evidence_end": 3927,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure that must be maintained to support modern education.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on\ngeography or other criteria that would",
+      "evidence_start": 3590,
+      "evidence_end": 3785,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Internal network infrastructure is critical for delivering meaningful connectivity throughout school buildings.",
+      "evidence_quote": "k infrastructure schools need to provide reliable\neducational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role\nin public",
+      "evidence_start": 3887,
+      "evidence_end": 4077,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with schools and other stakeholders to strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "te rather than reduce its role\nin public education.\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for\nstudents and patrons to",
+      "evidence_start": 4037,
+      "evidence_end": 4227,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter emphasizes the importance of reliable broadband for student learning but does not propose a specific policy change beyond preserving the program.",
+      "evidence_quote": "ty necessary for\nstudents and patrons to participate fully in modern education. As our nation seeks to prepare students for college,\ncareers, and an increasingly technology-driven economy, now is not",
+      "evidence_start": 4187,
+      "evidence_end": 4386,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079466",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079466",
+  "filer_raw": "Jeffrey Newton",
+  "date_submission": "2026-10-05T19:23:55.997Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "1",
+  "source_sha256": "eca83171f93971ce37f55d1a8ee072189f700cd9383b116037753d6d7b39d1cf",
+  "params_key": "93b0cd63584cb329c294fd84879ee191747a7666c50c09d7b39ea2c40e68c220",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

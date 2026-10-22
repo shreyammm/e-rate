@@ -1,0 +1,74 @@
+{
+  "summary": "Greenfield Public Schools opposes any termination or limitation of the E‑Rate program, arguing that such actions would cut essential funding for schools and libraries, especially in low‑income communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject limiting urban areas from eligibility",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should not cut out urban areas from E‑Rate eligibility.",
+      "evidence_quote": "on’s (FCC) Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking regarding the E-Rate program, including whether the FCC should eliminate E-Rate altogether or cut out urban areas",
+      "evidence_start": 159,
+      "evidence_end": 355,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should not terminate or limit the E‑Rate program.",
+      "evidence_quote": "E-Rate altogether or cut out urban areas from E-Rate eligibility. I urge the FCC to reject any proposal that would terminate or limit the E-Rate Program.\n\nE-Rate is critical for schools and libraries",
+      "evidence_start": 315,
+      "evidence_end": 514,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is critical for schools and libraries to maintain affordable, reliable access to the Internet.",
+      "evidence_quote": "te is critical for schools and libraries to maintain affordable, reliable access to the Internet. Terminating that support represents a cut to school and library budgets, jeopardizing years of",
+      "evidence_start": 474,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding for low‑income students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding helps low‑income students who have limited or no internet access at home.",
+      "evidence_quote": "enefits of that support first-hand. As a school district with a high number of low-income students, many of our students have limited or no internet access at home. E-Rate funding to our school",
+      "evidence_start": 936,
+      "evidence_end": 1129,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081056",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081056",
+  "filer_raw": "Jessica Pollock",
+  "date_submission": "2026-10-13T17:36:50.468Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8acb5ec57c7389fb42a31b7dcdb002d31f12f9ddc34f9de6705d7ea0e497f68b",
+  "params_key": "2e4053e318267f6486842d9ad9ea5a2838bca3f21a88fe9686c7fcb86955bd11",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

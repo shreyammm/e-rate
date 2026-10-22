@@ -1,0 +1,89 @@
+{
+  "summary": "The comment expresses appreciation for E‑Rate and describes how the program supports the school’s operations, but it does not contain any explicit policy claims or requested actions. The comment describes how a school used E‑Rate funded internet services to automate a manual discipline‑form process, saving staff time and providing digital resources to students and parents. The comment describes how digital tools and consultant services streamline administrative tasks for educators, but it does not advocate any specific E‑Rate policy change. The letter urges the FCC to preserve the core E‑Rate program and related provisions while limiting changes that would increase administrative burden or reduce local flexibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "CIPA rules must remain realistic and privacy‑respecting to protect students.",
+      "evidence_quote": "ow school networks are\nactually used for instruction, operations, and student support.\n• Avoid one-size-fits-all federal screen-time limits. Leave it to local control.\n• Keep CIPA requirements",
+      "evidence_start": 16044,
+      "evidence_end": 16236,
+      "uncertain": false
+    },
+    {
+      "provision_id": "daily_hour_limits",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "alternative_design",
+      "argument": "Screen‑time limits should be left to local control rather than imposed federally.",
+      "evidence_quote": "ow school networks are\nactually used for instruction, operations, and student support.\n• Avoid one-size-fits-all federal screen-time limits. Leave it to local control.\n• Keep CIPA requirements",
+      "evidence_start": 16044,
+      "evidence_end": 16236,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Discount calculations should be based on local cost and need to avoid disproportionate harm to high‑need districts.",
+      "evidence_quote": "nance, and\nrelated network services that schools rely on every day.\n• Ensure any changes to discount methodology reflect true local cost and need, and do not\ndisproportionately harm districts serving",
+      "evidence_start": 15728,
+      "evidence_end": 15927,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E‑Rate program",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "The core E‑Rate program should be maintained to avoid unnecessary administrative burden on schools.",
+      "evidence_quote": "n workload.\n5. RECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective",
+      "evidence_start": 15419,
+      "evidence_end": 15613,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, and self‑provisioned networks",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Eligibility for special construction and related services must remain to ensure equitable broadband access.",
+      "evidence_quote": "n workload.\n5. RECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective",
+      "evidence_start": 15419,
+      "evidence_end": 15613,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "daily_hour_limits": "oppose",
+    "discount_matrix": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080505",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080505",
+  "filer_raw": "Ron Clark Academy",
+  "date_submission": "2026-10-11T07:46:57.519Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1f0055693c36c390f3ff848715597b16421c3f829c327ad20349071951ac667c",
+  "params_key": "fe43f04297741d2f1af9d7a838b0a52a768c196bad40be21e973deceb620d688",
+  "model": "gpt-oss:20b",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 4,
+  "source_windows_model_analyzed": 4
+}

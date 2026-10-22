@@ -1,0 +1,89 @@
+{
+  "summary": "Blaine County School District opposes E‑Rate sunset, narrowing, screen‑time mandates, and certain consultant/administrative proposals, citing rural needs and local control.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "maintain percentage‑based fees",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Banning percentage‑based consultant fees would force districts to pay upfront costs they cannot afford.",
+      "evidence_quote": "en rely on affordable consulting help to navigate this complex program. Banning percentage-based consultant fees would force districts like ours to pay upfront costs out of our constrained budgets,",
+      "evidence_start": 2479,
+      "evidence_end": 2676,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "avoid reseller markup cap",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Capping reseller markups in single‑bid markets would risk leaving districts with no options.",
+      "evidence_quote": "angerous for rural markets. In high-cost areas like ours, there may only be one provider willing to bid; capping their reimbursement removes their economic incentive and risks leaving our district",
+      "evidence_start": 2795,
+      "evidence_end": 2991,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing E‑Rate eligibility would devastate rural communities.",
+      "evidence_quote": "ars ago will not be enough for tomorrow. Furthermore, eliminating E-Rate support for special construction or restructuring the discount matrix would devastate rural communities. Other programs like",
+      "evidence_start": 1076,
+      "evidence_end": 1273,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for rural connectivity and should not be sunset.",
+      "evidence_quote": "ion of the E-Rate program for affordable connectivity. On behalf of our educators and students, I urge the Commission to reject the proposals to sunset the E-Rate program and abandon efforts to",
+      "evidence_start": 459,
+      "evidence_end": 652,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen time decisions belong to local educators, not the FCC.",
+      "evidence_quote": "te**\nThe FCC does not have the statutory authority under the Children's Internet Protection Act (CIPA) to regulate the amount of time students spend on screens. In Blaine County, determining how much",
+      "evidence_start": 1541,
+      "evidence_end": 1740,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_percent_fees": "oppose",
+    "consultant_registration": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110038632",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110038632",
+  "filer_raw": "Paul Zimmerman",
+  "date_submission": "2026-07-21T19:59:19.323Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "228ca37a8d2b78ac614027d916b4c37087a3a361fa1fb4c2592a1348e03523ca",
+  "params_key": "10b976af8e1a7654083338e5ed99d29da30d5a6c80e6bf7e15f60e1580590df6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

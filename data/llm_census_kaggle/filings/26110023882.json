@@ -1,0 +1,100 @@
+{
+  "summary": "Klamath Falls City Schools urges the FCC to keep E‑Rate fully funded, oppose any narrowing or sunset, reject a rural‑only restriction, preserve both Category 1 and 2 services, and expand eligibility to include cybersecurity tools. The comment urges the FCC to keep and strengthen the E‑Rate program, emphasizing its essential role for rural schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "support",
+      "requested_action": "expand eligibility to include cybersecurity services",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Expanding E‑Rate to cover endpoint detection, security monitoring, and firewall services would address the unmet cybersecurity needs of K‑12 schools.",
+      "evidence_quote": "program drew demand exceeding $3 billion against only $200 million available — demonstrating that unmet need is enormous. Expanding E-Rate eligibility to cover endpoint detection, security",
+      "evidence_start": 5300,
+      "evidence_end": 5488,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject rural‑only limitation",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "A rural‑only restriction would create arbitrary eligibility boundaries and signal that non‑rural connectivity is solved, which is untrue.",
+      "evidence_quote": "o or partially within rural areas, serve diverse geographic populations that do not fit neatly into rural or urban categories. A rural-only limitation would create arbitrary eligibility boundaries",
+      "evidence_start": 3281,
+      "evidence_end": 3477,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve Category 1 and Category 2 eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Both Category 1 and Category 2 services are operationally necessary to deliver reliable internet inside schools.",
+      "evidence_quote": "only half the solution; distributing it throughout the building to students and staff requires the internal network infrastructure that Category 2 supports. In our district, Category 2 funding has",
+      "evidence_start": 4206,
+      "evidence_end": 4402,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or narrowing of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating or narrowing E‑Rate would reverse decades of infrastructure investment and cause a severe budget crisis for rural districts.",
+      "evidence_quote": "taining and expanding the E-Rate program and in opposition to any proposal that would narrow, limit, or sunset the program. The FCC's Notice of Proposed Rulemaking in this proceeding asks whether the",
+      "evidence_start": 786,
+      "evidence_end": 985,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is the foundation for rural districts, not a supplement.",
+      "evidence_quote": ", E-Rate is not a supplement — it is the foundation. I respectfully urge the Commission to maintain and strengthen this program. Respectfully submitted, Nick Collins Network Specialist, Technology",
+      "evidence_start": 6299,
+      "evidence_end": 6495,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain and strengthen overall E‑Rate program",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Maintaining and strengthening E‑Rate ensures continued funding for essential infrastructure and program integrity.",
+      "evidence_quote": "row the program. It should preserve both Category 1 and Category 2 eligibility, reject rural-only limitations, support program integrity through the FNPRM's consultant oversight proposals, and",
+      "evidence_start": 5913,
+      "evidence_end": 6105,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_digital_literacy": "support",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110023882",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110023882",
+  "filer_raw": "Nicholas Collins | Klamath Falls City Schools",
+  "date_submission": "2026-07-16T23:04:11.906Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d950043536a28ce8de38e2e5b571aa54ae29c6f87b5acc9e3f5ece084f934474",
+  "params_key": "900583d46eb9e931e391c3bb11766832a815a20553f5c6ebb15a5abec67d3838",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,86 @@
+{
+  "summary": "Taunton Public Schools urges the FCC to preserve E‑Rate funding, oppose sunset or restriction of eligibility, and maintain support for broadband and internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain funding for broadband service and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate provides essential support for affordable broadband and the network infrastructure that delivers reliable Wi‑Fi throughout schools and libraries.",
+      "evidence_quote": "Taunton Public Schools urges the Federal Communications Commission to preserve E-Rate and reject proposals to terminate, restrict, or substantially weaken the program. E-Rate provides essential",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain eligibility for all communities",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting eligibility to rural communities would overlook the financial pressures and connectivity needs facing districts such as Taunton.",
+      "evidence_quote": "itional costs onto local school budgets, creating greater competition for resources that support staffing, student services, and classroom instruction. Restricting eligibility to rural communities",
+      "evidence_start": 919,
+      "evidence_end": 1115,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "preserve eligibility for schools and libraries across all communities",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Students’ access to reliable school broadband should not depend on their community’s geographic classification.",
+      "evidence_quote": "ricting eligibility to rural communities would overlook the financial pressures and connectivity needs facing districts such as Taunton. Students’ access to reliable school broadband should not",
+      "evidence_start": 1075,
+      "evidence_end": 1268,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "provide predictable support for planning",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving E‑Rate is an investment in educational opportunity, responsible stewardship of public funds, and the students and families served by Taunton Public Schools.",
+      "evidence_quote": "le support that allows districts to plan responsibly. Preserving E-Rate is an investment in educational opportunity, responsible stewardship of public funds, and the students and families served by",
+      "evidence_start": 1530,
+      "evidence_end": 1727,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating or reducing E‑Rate support would shift additional costs onto local school budgets, creating greater competition for resources that support staffing, student services, and classroom instruction.",
+      "evidence_quote": "ing this infrastructure requires ongoing investment as equipment ages and connectivity needs evolve.\nEliminating or reducing E-Rate support would shift additional costs onto local school budgets,",
+      "evidence_start": 764,
+      "evidence_end": 959,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079636",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079636",
+  "filer_raw": "Taunton Public Schools",
+  "date_submission": "2026-10-06T18:10:18.046Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4c68afedd2fc495d47a6fb7fe074923d085083cb01a37af44c20bfd9adacc11b",
+  "params_key": "2404883fea3ab0001c8403a1827b04c3978e41b5bc74cf997037797883822203",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

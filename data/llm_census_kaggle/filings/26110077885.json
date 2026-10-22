@@ -1,0 +1,62 @@
+{
+  "summary": "Superintendent Jill Griffin urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, and calling for continued support for broadband infrastructure.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "program; 2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; 3.",
+      "evidence_start": 3122,
+      "evidence_end": 3320,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should be strengthened to meet evolving instructional demands.",
+      "evidence_quote": "nal access; and 4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and",
+      "evidence_start": 3436,
+      "evidence_end": 3631,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure for modern education and must not be sunset.",
+      "evidence_quote": "hen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries. As a superintendent, I see",
+      "evidence_start": 467,
+      "evidence_end": 663,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077885",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077885",
+  "filer_raw": "Bethalto School District",
+  "date_submission": "2026-09-23T17:02:46.234Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f00e5509f43359b141e7f223a07285e772bb96c207c4867e2e076b01fcaae00d",
+  "params_key": "22320bc55239d93b13ff9a5ae92162d323046da48c33a52b3cf95dfae8943d09",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

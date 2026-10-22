@@ -1,0 +1,86 @@
+{
+  "summary": "NMSBA urges the FCC to preserve and strengthen E‑Rate, oppose any sunset or reduction, and maintain local control over screen‑time policies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Eliminating E‑Rate would force districts to cut other essential services such as summer school and building maintenance.",
+      "evidence_quote": "conduct district business. To fund this, school districts would \nhave to make cuts in other areas, such as efforts intended to increase student \nachievement, summer school services, and funding to",
+      "evidence_start": 2482,
+      "evidence_end": 2678,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Reduced E‑Rate funding would delay critical network maintenance and cybersecurity upgrades.",
+      "evidence_quote": ", summer school services, and funding to keep school buildings safe and up \nto date. In addition, reductions in E-Rate funding may cause school districts to postpone \ncritical network maintenance and",
+      "evidence_start": 2638,
+      "evidence_end": 2837,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding enables schools to maintain and upgrade network infrastructure, ensuring equitable access to digital resources.",
+      "evidence_quote": "stpone \ncritical network maintenance and essential cybersecurity upgrades. \nOn behalf of NMSBA’s entire membership, I urge you to \n• Preserve and strengthen the E-Rate program for rural, urban and",
+      "evidence_start": 2797,
+      "evidence_end": 2993,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or reduction of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for reliable internet that supports critical school operations and student achievement.",
+      "evidence_quote": "the E-Rate program for rural, urban and suburban districts; \n• Reject any proposal that would eliminate, sunset, substantially reduce, or \nunnecessarily restrict E-Rate support for schools and",
+      "evidence_start": 2954,
+      "evidence_end": 3146,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "Maintain local control over screen‑time policies",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time regulation is a separate issue from E‑Rate and should be governed by local school boards.",
+      "evidence_quote": "restrict E-Rate support for schools and libraries; and \n• Continue to allow local school boards to regulate screentime and other educational \ntechnology issues in partnership with their local",
+      "evidence_start": 3107,
+      "evidence_end": 3298,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081229",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081229",
+  "filer_raw": "Joe Guillen",
+  "date_submission": "2026-10-13T20:53:29.918Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aac82980d0afde36cd33aeffc5ad263e170e75fc5a24c13d799f31ea252d84cb",
+  "params_key": "6b02dea47b5fd147af6b5d7068708911efa0e77eaa7b0302c4469481ea3564d4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

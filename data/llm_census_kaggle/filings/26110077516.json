@@ -1,0 +1,89 @@
+{
+  "summary": "Horizon Science Academy Belmont opposes any sunset or scaling back of E‑Rate, arguing that the program is essential for operational budget predictability, modern classroom infrastructure, and that other federal grants cannot replace its ongoing service discounts. They request the FCC maintain full funding, eligibility scopes, and Category Two support.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "ecf_rule_sunset",
+      "position": "oppose",
+      "requested_action": "reject replacement by BEAD",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "BEAD does not fund ongoing monthly telecom discounts or internal networking that E‑Rate covers.",
+      "evidence_quote": "conomy. \n \n3. Broad Federal Grants (Like BEAD) Cannot Replace E-Rate \nWhile recent federal programs like BEAD are vital for building physical footprint infrastructure in unserved regions, they do",
+      "evidence_start": 1719,
+      "evidence_end": 1914,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain eligibility scopes",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The school relies on E‑Rate to provide equitable, secure, and modern learning environments for all 914 students.",
+      "evidence_quote": "rogram. As a public learning institution serving 914 students, Horizon \nScience Academy Belmont relies on E-Rate funding to maintain an equitable, secure, and modern learning environment. \n \n1.",
+      "evidence_start": 470,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate discounts are built into the school’s long‑term fiscal planning and a sunset would force diversion of tens of thousands of dollars from core educational services.",
+      "evidence_quote": "ned public budgets. E-Rate discounts are built directly into our long-term fiscal \nplanning. If E-Rate funding were sunset or restricted, Horizon Science Academy Belmont  would be forced to divert",
+      "evidence_start": 782,
+      "evidence_end": 978,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comments do not address other policy issues beyond sunset and eligibility.",
+      "evidence_quote": "e Commission to abandon any proposals to limit or sunset E-Rate. The program has been a monumental success \nprecisely because it evolved alongside the technological needs of our students. We request",
+      "evidence_start": 2186,
+      "evidence_end": 2384,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "retain Category Two funding",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Category Two internal connections are as critical as plumbing and electricity for a modern classroom.",
+      "evidence_quote": "to whether to strip funding for advanced internal connections (Category Two) or off-campus \nconnectivity overlooks how modern education functions. Digital literacy is no longer elective; it is",
+      "evidence_start": 1253,
+      "evidence_end": 1445,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "ecf_rule_sunset": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077516",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077516",
+  "filer_raw": "Alex Connell",
+  "date_submission": "2026-09-21T20:56:44.428Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9856eb7683c8fe5aa9159833ccb8513ab45f6ce7c6ed5cd3a89fbe383ec435f1",
+  "params_key": "9b705010c60550a40924c867dda80d8612c8029f6a8cb8cf77e2ef7ea494cb76",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

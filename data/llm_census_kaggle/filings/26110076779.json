@@ -1,0 +1,89 @@
+{
+  "summary": "The school advocates preserving the current E‑Rate program, opposes narrowing its scope, rejects additional administrative burdens, and urges the FCC to maintain local flexibility on screen‑use and content‑monitoring requirements.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "preserve existing local internet safety and technology policies",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "The school claims that new federal standards would undermine the flexibility needed to deliver high‑quality digital learning.",
+      "evidence_quote": "roposed in this proceeding, as they will undermine the\nflexibility schools need to deliver high-quality, digital learning. Our school has already developed its own\ninternet safety and technology",
+      "evidence_start": 2311,
+      "evidence_end": 2505,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "maintain local flexibility on screen‑use and content‑monitoring requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The school urges the FCC not to impose overly restrictive mandates on screen‑use and content‑monitoring, arguing that local policies better serve their students.",
+      "evidence_quote": "e also urge the\nFCC not to impose overly restrictive mandates or administrative burdens, particularly around screenuse and content-monitoring requirements proposed in this proceeding, as they will",
+      "evidence_start": 2155,
+      "evidence_end": 2351,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "do not require new annual consultant disclosure form for all applicants",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The school states that requiring Form 5654 for every applicant adds unnecessary filing requirements with no clear benefit.",
+      "evidence_quote": "would fall disproportionately hard on us compared to\nlarger districts with dedicated procurement teams. Similarly, requiring a new annual consultant\ndisclosure form (Form 5654) from every applicant,",
+      "evidence_start": 1538,
+      "evidence_end": 1736,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility for schools in less‑resourced communities",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The school contends that narrowing the program’s scope would reduce support for schools in less‑resourced communities and eliminate funding for special construction projects.",
+      "evidence_quote": "oncerned by proposals in this proceeding that would narrow the program's scope, including\nreducing support for schools in less-resourced communities, eliminating funding for certain",
+      "evidence_start": 629,
+      "evidence_end": 810,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The school argues that eliminating or reducing E‑Rate funding would force cuts to essential technology and other critical educational programs.",
+      "evidence_quote": "rate program.\nOur students have reliable internet access at our school because of E-Rate. Without E-Rate funding,\nwe would have to cut core services, programs, and operations to maintain the internet",
+      "evidence_start": 313,
+      "evidence_end": 512,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "oppose",
+    "cipa_network_filter": "oppose",
+    "consultant_form_5654": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076779",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076779",
+  "filer_raw": "Christ Child Academy",
+  "date_submission": "2026-09-16T03:09:03.807Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1918dc8ba6d5d1838c417960fb12474a8d7af4008328a512095bb63f200cd29c",
+  "params_key": "83ad402b29868aab80ba197dae1bce57332fc0f0a2e979b9b534f64e545bed30",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

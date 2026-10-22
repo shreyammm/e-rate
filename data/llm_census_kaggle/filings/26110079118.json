@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program active, argues that E‑Rate is essential for school operations and student learning, and proposes that discount levels be tied to a district’s financial capacity rather than a simple rural‑vs‑urban classification.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address narrowing eligible equipment or services.",
+      "evidence_quote": "Dear Federal Communications Commission, \nI am writing to respectfully ask the Federal Communications Commission to continue supporting \nthe E-Rate program and to recognize how essential it is to",
+      "evidence_start": 0,
+      "evidence_end": 194,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for infrastructure, devices, and cybersecurity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate funds are critical for purchasing wireless access points, switches, firewalls, and maintaining a safe digital learning environment.",
+      "evidence_quote": "well. \nE-Rate also helps us maintain and improve the infrastructure behind these services.  This school \nyear, we anticipate spending more than $25,000 on new wireless access points and switches.",
+      "evidence_start": 929,
+      "evidence_end": 1124,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain 1:1 laptop program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Without E‑Rate, the school would have to divert resources away from its 1:1 laptop program, potentially reverting to paper‑based instruction.",
+      "evidence_quote": "logy, we would have to divert \nresources simply to maintain our existing infrastructure.  Over time, this could force us to \nreconsider our 1:1 laptop program, which costs our school approximately",
+      "evidence_start": 1555,
+      "evidence_end": 1751,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The school argues that eliminating or reducing E‑Rate would impose unsustainable costs and jeopardize technology‑rich instruction.",
+      "evidence_quote": "Dear Federal Communications Commission, \nI am writing to respectfully ask the Federal Communications Commission to continue supporting \nthe E-Rate program and to recognize how essential it is to",
+      "evidence_start": 0,
+      "evidence_end": 194,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "tie discount levels to financial capacity and demonstrated need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The author proposes that discounts be based on a district’s taxable property valuation, revenue capacity, enrollment, and broadband costs rather than a rural‑vs‑urban distinction.",
+      "evidence_quote": "e the FCC to reconsider whether a simple rural-versus-urban distinction is the \nbest measure of a school's ability to fund its technology needs.  Rural communities can have \nsignificant property",
+      "evidence_start": 2650,
+      "evidence_end": 2844,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079118",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079118",
+  "filer_raw": "Corey Petersen",
+  "date_submission": "2026-10-02T14:38:59.127Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "43edbdee87da40446e7bc1cde571accc80b7c983a0ba19c5c1249becb8e20250",
+  "params_key": "97fc4283b6c2416af68a7011bb38b52f7c7032751f22971be373c7123c165e15",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

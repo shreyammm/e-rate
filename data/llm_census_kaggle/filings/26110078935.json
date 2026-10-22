@@ -1,0 +1,62 @@
+{
+  "summary": "The commenter urges the FCC to keep E‑Rate funding levels unchanged and to avoid tying them to screen‑time limits, arguing that such cuts would harm educational outcomes and widen inequities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain focus on reliable, secure connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should remain focused on ensuring schools have robust, secure connectivity necessary to educate and protect students.",
+      "evidence_quote": "y necessary to educate and protect their students. Limiting that connectivity will not ensure better learning; it risks widening inequities, restricting educational opportunity, and undermining the",
+      "evidence_start": 2001,
+      "evidence_end": 2198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not reduce E‑Rate funding based on screen‑time limits",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reducing E‑Rate funding to influence screen time would restrict access to essential digital learning resources and harm learning outcomes.",
+      "evidence_quote": "of cloud-based instructional resources, courses, applications, and essential services. Reducing funding to influence screen time could restrict access to valuable educational resources and harm",
+      "evidence_start": 768,
+      "evidence_end": 961,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie E‑Rate funding to screen‑time assumptions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should not impose additional screen‑time restrictions indirectly through reduced funding.",
+      "evidence_quote": "valuable educational resources and harm learning outcomes rather than improve them. Schools are already required to comply with applicable state laws and policies; the E-Rate program should not",
+      "evidence_start": 922,
+      "evidence_end": 1115,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078935",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078935",
+  "filer_raw": "Elizabeth Hancock",
+  "date_submission": "2026-09-30T19:35:54.909Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0e7b1f4961a6f581c5a02ecf992285f2143eae60ae40dddef0135a4d683324cc",
+  "params_key": "a008984ddf28ccc641906775590beacede6f2c4018da2c5a0b0af742fdbe3f59",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

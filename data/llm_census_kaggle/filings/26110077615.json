@@ -1,0 +1,89 @@
+{
+  "summary": "Loudon County Schools advocates for continued E‑Rate funding, emphasizing its role in maintaining modern, secure, and equitable technology infrastructure, supporting student safety, and preventing costly trade‑offs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "maintain",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate supports the network infrastructure that safeguards students with medical devices and emergency communication systems.",
+      "evidence_quote": "ict network is not just an instructional tool—it is a safety system. Students with medical needs, including those who rely on continuous glucose monitoring devices, depend on uninterrupted Wi‑Fi to",
+      "evidence_start": 2002,
+      "evidence_end": 2199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "maintain",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate funding helps cover the costs of consulting services necessary for maintaining enterprise‑grade networks across multiple campuses.",
+      "evidence_quote": "across multiple campuses is costly. The scale, security requirements, and reliability expectations far exceed those of home or small business internet service. Without E‑Rate subsidies, Loudon",
+      "evidence_start": 2771,
+      "evidence_end": 2963,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures students have access to high‑speed, reliable connectivity needed for emerging instructional programs such as AI, AR/VR, and high‑definition video.",
+      "evidence_quote": "instructional programs expand to include artificial intelligence tools, CTE programs, augmented and virtual reality, and high‑definition video production, bandwidth demands continue to rise. E‑Rate",
+      "evidence_start": 1539,
+      "evidence_end": 1736,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables the district’s 1:1 device program and digital instructional materials to function effectively across all grade levels.",
+      "evidence_quote": "nment that depends on strong, consistent connectivity. Loudon County Schools operates a 1:1 device program and provides digital instructional materials across grade levels. These tools only function",
+      "evidence_start": 1232,
+      "evidence_end": 1430,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for replacing aging equipment on a regular cycle, ensuring reliable connectivity and preventing instructional loss.",
+      "evidence_quote": "ss points remain in service, reliability declines, security risks increase, and instructional time is lost. E‑Rate funding makes it possible for our district to replace aging equipment on schedule",
+      "evidence_start": 764,
+      "evidence_end": 960,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "consultant_definition": "support",
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077615",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077615",
+  "filer_raw": "Jennifer Malone, Loudon County Schools",
+  "date_submission": "2026-09-22T13:59:08.568Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b1a7511da6d22fcb3d23235dee598741e8e480ddfe9962f4d312424b4d866ed9",
+  "params_key": "4cf7e6a65b57d6fdd1ed42505175655d889367f47d69caf2a49e85da25092348",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

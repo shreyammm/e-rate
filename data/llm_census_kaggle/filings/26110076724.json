@@ -1,0 +1,89 @@
+{
+  "summary": "A parent and advocate urges the FCC to keep E‑Rate connectivity funding intact, warns that cuts would force schools to cut other programs, and calls for state/local control of screen‑time limits and parental opt‑out rights.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not propose specific changes to educational outcomes beyond maintaining broadband access.",
+      "evidence_quote": "NPRM asks: “We seek comment not only on how to ensure E-Rate-funded services \nare advancing educational outcomes and protecting children online, but also on whether the \nprogram should be narrowed,",
+      "evidence_start": 1095,
+      "evidence_end": 1292,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate connectivity funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing E‑Rate connectivity funding would deprive schools of essential broadband access, forcing cuts to other programs that keep children online.",
+      "evidence_quote": "classroom screen use, based on my son’s experience in elementary school, I urge the \nFCC not to reduce E-Rate funded services as a means of addressing excessive and harmful \nclassroom screen use.",
+      "evidence_start": 318,
+      "evidence_end": 513,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate connectivity program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate remains critical for many districts that still struggle to meet bandwidth goals, and sunset would eliminate a vital infrastructure subsidy.",
+      "evidence_quote": "try, and many districts rely upon E-Rate resources. “74% of all districts are now \nmeeting or exceeding the FCC’s recommended bandwidth goal of 1 Mbps per student.” \n(Connect K-12 2023 Report,",
+      "evidence_start": 1860,
+      "evidence_end": 2052,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "enable parental opt‑out of student data collection",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Parents should have meaningful notification and the ability to opt‑out of technology platforms that collect student data.",
+      "evidence_quote": "o key ways: \n1.​ Parents need meaningful notification and the opportunity to consent or opt out of their \nchildren’s data collection by technology companies. The Federal Trade Commission can \nissue",
+      "evidence_start": 3106,
+      "evidence_end": 3303,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "state/local control of screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time limits should be set by states and local districts rather than by federal funding conditions.",
+      "evidence_quote": "e reliance on classroom technology, \nand for soliciting stakeholder feedback. However, I believe questions of how to safely and \n\n\nresponsibly use digital products and set reasonable limits on screen",
+      "evidence_start": 2792,
+      "evidence_end": 2991,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "parent_opt_out": "support",
+    "screen_time_condition": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076724",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076724",
+  "filer_raw": "Alexandra Aznar",
+  "date_submission": "2026-09-15T19:07:27.362Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f20d1a65e0a9a24af7834cb025f1df96f8910f70c2df1d9fdba14aedbe6435e7",
+  "params_key": "63a75745c1123062bd65d7558a707b6b76e7d4e3430491c191d76bd131d57491",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

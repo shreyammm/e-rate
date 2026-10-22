@@ -1,0 +1,74 @@
+{
+  "summary": "Jackson County Schools opposes any termination or limitation of the E‑Rate program, arguing that E‑Rate is essential for affordable, reliable internet and network equipment, and that cuts would degrade services and harm students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding has allowed the district to provide quality internet service, a resilient wide‑area network, updated switches, and WiFi in every classroom.",
+      "evidence_quote": "n’t have dedicated resources to fill the gap. Our organization has used E-Rate funding to connect students in our community, and we’ve seen the benefits of that support first-hand. E-Rate funding has",
+      "evidence_start": 785,
+      "evidence_end": 984,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "prevent cuts to E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Cuts would degrade network services, requiring budget reallocation that would negatively impact students.",
+      "evidence_quote": "iFi access points in every classroom. If the FCC terminates or limits E-Rate funding, network services such as Internet and WiFi would be degraded. Network switches and WiFi access points would not",
+      "evidence_start": 1100,
+      "evidence_end": 1297,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is critical for schools to maintain affordable, reliable access to the Internet, and terminating it would cut school district budgets and jeopardize progress.",
+      "evidence_quote": "d eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility. We urge the FCC to reject any proposal that would terminate or limit the E-Rate Program. E-Rate is critical for schools",
+      "evidence_start": 314,
+      "evidence_end": 511,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject limiting urban areas from E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Limiting urban areas would leave vulnerable communities behind that lack dedicated resources to fill the gap.",
+      "evidence_quote": "Program. E-Rate is critical for schools to maintain affordable, reliable access to the Internet. Terminating that support represents a cut to school district budgets, jeopardizing years of progress",
+      "evidence_start": 472,
+      "evidence_end": 669,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080584",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080584",
+  "filer_raw": "Jackson County Schools",
+  "date_submission": "2026-10-12T14:26:33.778Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d2483035f1e2acbe911f19da871e646ea2baed1b0437bdd39c0a93bcd266f2bf",
+  "params_key": "f95f4eaaf6a64fed9765f301013468cd62877abc0c2d8d09995643c6c5fb0597",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

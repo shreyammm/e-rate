@@ -1,0 +1,87 @@
+{
+  "summary": "Marion County Public Schools urges the FCC to preserve and strengthen the E‑Rate program, citing its critical role in providing broadband connectivity and technology upgrades for students and staff, and calls for expanding eligibility to include cybersecurity technologies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "expand eligibility to include cybersecurity technologies",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Cybersecurity tools are critical for protecting student and staff data and should be funded under E‑Rate.",
+      "evidence_quote": "expanding E-Rate eligibility to include \ncybersecurity technologies. As schools increasingly depend on digital resources and cloud-based \nsystems, investments in firewalls, threat detection, network",
+      "evidence_start": 2631,
+      "evidence_end": 2829,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential for equitable broadband access and should not be sunset.",
+      "evidence_quote": "ring reliable internet \naccess and modem wireless connectivity across our district. Through E-Rate Category One funding, \nMCPS receives approximately $1.39 million annually toward internet services,",
+      "evidence_start": 773,
+      "evidence_end": 971,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate covers 90% of connectivity costs, reducing taxpayer burden.",
+      "evidence_quote": "llion annually toward internet services, covering 90% of our \nannual connectivity costs. This support allows us to maintain the infrastructure necessary for digital \nlearning, online assessments,",
+      "evidence_start": 931,
+      "evidence_end": 1126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Three decades of school connectivity success demonstrate E‑Rate’s effectiveness.",
+      "evidence_quote": "local funding sources or reduce planned infrastructure investments. \nThe success of school connectivity over the past three decades is evidence of E-Rate's effectiveness, not \na sign that the",
+      "evidence_start": 1860,
+      "evidence_end": 2051,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "include cybersecurity in E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Investing in firewalls, threat detection, and identity protection is necessary for safe digital learning environments.",
+      "evidence_quote": "in firewalls, threat detection, network monitoring, and identity protection \nare critical to protecting student and staff data and maintaining reliable operations. \nWe respectfully encourage the",
+      "evidence_start": 2790,
+      "evidence_end": 2984,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080897",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080897",
+  "filer_raw": "Marion County Public Schools",
+  "date_submission": "2026-10-13T13:55:00.203Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1c5c0a8ca1ca749f8a2480efabc024ab5a0fe2d6ffc9cbe0323a7c2f30f4ac1b",
+  "params_key": "780e68efb503ea7ee4e6f03390506ee3ae98760b2376b9afe0facdd110d57884",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

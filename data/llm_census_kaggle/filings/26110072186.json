@@ -1,0 +1,87 @@
+{
+  "summary": "WSWHE BOCES argues that E‑Rate funding is essential to maintain and upgrade broadband infrastructure, prevent a widening digital divide, modernize technology, and avoid diverting funds from classroom needs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is necessary to keep rural districts connected and prevent a digital divide.",
+      "evidence_quote": "strain, directly forcing a compromise on the quality of student education.Widen the Digital Divide: Smaller, resource-constrained rural districts in our region would be unable to keep pace with the",
+      "evidence_start": 1556,
+      "evidence_end": 1753,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for internal network upgrades",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate enables timely replacement of aging routers, switches, and access points, preventing instructional disruption.",
+      "evidence_quote": "pportunities as their peers in wealthier areas.Halt Technology Modernization: Essential internal network upgrades—such as replacing aging routers, switches, and access points—would be indefinitely",
+      "evidence_start": 1871,
+      "evidence_end": 2067,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Without E‑Rate, rural schools would be unable to afford recurring broadband costs, cutting off students from equal opportunities.",
+      "evidence_quote": "on would be unable to keep pace with the high recurring costs of broadband circuits. This would effectively cut off rural students from the same educational opportunities as their peers in wealthier",
+      "evidence_start": 1713,
+      "evidence_end": 1911,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid diverting funds to broadband",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate, school boards would reallocate classroom funds to maintain internet, leading to staff cuts and larger class sizes.",
+      "evidence_quote": "unning, school boards would be forced to reallocate money away from the classroom. This would trigger painful trade-offs like reduced support staff, cut programs, or larger class sizes.",
+      "evidence_start": 2184,
+      "evidence_end": 2369,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not propose alternative designs or policy changes beyond maintaining current E‑Rate support.",
+      "evidence_quote": "As a Supervisor of Network and Instructional Technology at WSWHE BOCES I respectfully submit the following:\n1. District IntroductionWSWHE BOCES serves approximately 38,000 students across 31",
+      "evidence_start": 0,
+      "evidence_end": 190,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072186",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072186",
+  "filer_raw": "Sandy Wagner",
+  "date_submission": "2026-08-19T12:59:49.485Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5d8b6425147a4924f7d802af4de2d5aa05356c90d540ffe3e0558415a45978b7",
+  "params_key": "0ab39a05a951298d5c1ea2eb80fa5f8635b9d52905f5e85bc38aef53681fda8f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

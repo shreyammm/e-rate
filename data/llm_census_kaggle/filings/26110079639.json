@@ -1,0 +1,87 @@
+{
+  "summary": "The commenter, a technology director for a public school system, urges the FCC to strengthen rather than cut E‑Rate funding and opposes tying the program to screen‑time limits, citing the essential role of broadband for instruction, safety, and equity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should not be reduced because broadband is fundamental to education and safety.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I encourage the FCC to strengthen, not reduce, E-Rate.\n\nInternet connectivity has become as fundamental to education",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain broadband for equity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reductions would disproportionately harm low‑income students and widen inequities.",
+      "evidence_quote": "te, communicate, and solve problems with technology is now essential to preparing students for their future. Reductions in E-Rate support could limit these opportunities, particularly for students",
+      "evidence_start": 1246,
+      "evidence_end": 1442,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "recognize broadband as critical for safety and operations",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Reliable connectivity is essential for security systems, emergency communications, and daily operations, and cutting it endangers student safety.",
+      "evidence_quote": "original, more narrowly defined purpose, this is the operational reality of today's schools. Reliable connectivity is now integral not only to instruction, but also to the safety, security, and",
+      "evidence_start": 3424,
+      "evidence_end": 3617,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose screen‑time limits on E‑Rate eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions would limit access to essential educational resources and harm learning outcomes.",
+      "evidence_quote": "opportunities, particularly for students whose schools and communities have fewer resources.\n\nThe FCC should not base E-Rate funding levels on the assumption that states will enact screen-time limits",
+      "evidence_start": 1402,
+      "evidence_end": 1601,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base funding on screen‑time assumptions",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Schools already comply with state laws; E‑Rate should not add indirect screen‑time restrictions.",
+      "evidence_quote": "valuable educational resources and harm learning outcomes rather than improve them. Schools are already required to comply with applicable state laws and policies; the E-Rate program should not",
+      "evidence_start": 1875,
+      "evidence_end": 2068,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079639",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079639",
+  "filer_raw": "Jeremy Green",
+  "date_submission": "2026-10-06T18:20:27.504Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7090898a44bab5af7df6499c5fefc5f02256226296329b48d2ea83559a854a12",
+  "params_key": "331c70246bbc74c2d0b7494d2a6f5d50434fa3b1449c113669756a5f40de736b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

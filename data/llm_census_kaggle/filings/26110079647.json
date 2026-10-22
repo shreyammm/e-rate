@@ -1,0 +1,49 @@
+{
+  "summary": "A library patron opposes any FCC proposal that would terminate or limit E‑Rate funding, arguing that such cuts would jeopardize affordable internet access and force libraries to cut non‑internet services.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals that terminate or limit E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for libraries to provide affordable, reliable internet access to community members.",
+      "evidence_quote": "he FCC to reject any proposal that would terminate or limit E-Rate funding for local libraries and schools.\n​E-Rate funding is critical for public libraries to maintain affordable, reliable internet",
+      "evidence_start": 159,
+      "evidence_end": 357,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent budget cuts to non‑internet services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E‑Rate funding is reduced, libraries will have to reallocate local budgets, likely resulting in cuts to community events and public programs.",
+      "evidence_quote": "e is welcome regardless of background or financial means.\n​If the FCC terminates or limits E-Rate funding, libraries will be forced to reallocate their limited local budgets to pay full price for",
+      "evidence_start": 783,
+      "evidence_end": 978,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079647",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079647",
+  "filer_raw": "Lacey Gilmore",
+  "date_submission": "2026-10-06T18:40:45.928Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3de4738d5391cc7b66d5ec7a1dd42f3ea1d0fe929aec7bddf20db79b5ca2232c",
+  "params_key": "616dfbf67c7b727f74fc5ee42d74ac21e9d61a94a7bb563644498ea655b6b2bb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

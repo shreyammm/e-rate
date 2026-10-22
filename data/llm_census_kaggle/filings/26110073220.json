@@ -1,0 +1,89 @@
+{
+  "summary": "Wooster City Schools opposes any actions that would reduce or restrict E‑Rate funding or eligibility, arguing that such measures would jeopardize essential network infrastructure and early childhood programs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "avoid adding new compliance burdens that distract from learning",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Additional compliance requirements would create administrative complexity and penalize public Pre‑K programs.",
+      "evidence_quote": "h-quality learning experiences for these young learners. Removing infrastructure support creates administrative complexity while penalizing public Pre-K programs.\n\nSchool districts, specifically",
+      "evidence_start": 1232,
+      "evidence_end": 1426,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "maintain existing CIPA monitoring practices",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "implementation_burden",
+      "argument": "The district’s administrative directive focuses on quality over quantity, ensuring technology serves as an intentional educational tool.",
+      "evidence_quote": "s through enterprise-grade firewalls and content filtering. Regarding screen use, our administrative directive to educators and staff centers on \"quality over quantity,\" ensuring technology serves as",
+      "evidence_start": 1690,
+      "evidence_end": 1889,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "continue current CIPA compliance practices",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "The district already meets CIPA requirements with enterprise‑grade firewalls and content filtering.",
+      "evidence_quote": "ct networks against rising cybersecurity threats with limited dedicated financial assistance.\n\nWooster City Schools strictly adheres to CIPA requirements through enterprise-grade firewalls and",
+      "evidence_start": 1538,
+      "evidence_end": 1730,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility for public Pre‑K programs",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Restricting E‑Rate eligibility or mandating complex cost‑allocations for Pre‑K programs threatens early childhood initiatives.",
+      "evidence_quote": "nding would force our district to absorb these expenses directly, diverting scarce general operating funds from instructional priorities.\n\nProposals under Paragraph 33 to restrict E-Rate eligibility",
+      "evidence_start": 607,
+      "evidence_end": 805,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset or limit E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Limiting or sunsetting E‑Rate would force the district to absorb critical infrastructure costs, diverting funds from instructional priorities.",
+      "evidence_quote": "1 and Category 2 E-Rate support to cover approximately $100,000 to $150,000 in annual infrastructure costs. Proposals to limit, narrow, or sunset E-Rate funding would force our district to absorb",
+      "evidence_start": 452,
+      "evidence_end": 647,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073220",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073220",
+  "filer_raw": "Wooster City School District",
+  "date_submission": "2026-08-26T16:09:33.202Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0d0d6d216b505d83374cf888ce2bc3970398cc1f674e666659c01d16434a5837",
+  "params_key": "d2b4bca98c695144390dafa0885b20ec7272b7f8af576c458a10decb67880e52",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

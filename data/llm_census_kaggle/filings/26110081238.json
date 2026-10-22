@@ -1,0 +1,100 @@
+{
+  "summary": "Iowa Department of Education opposes terminating or limiting the E‑Rate program, urges the FCC to maintain funding, and objects to a proposed new Form 479 requirement that would increase administrative burden. The Iowa Department of Education opposes adding new certifications to the existing E‑Rate Form 479, arguing it would unnecessarily increase administrative burden on consortium applicants and the Department.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "oppose",
+      "requested_action": "remove additional certifications to Form 479",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Adding new certifications to the existing Form 479 would unnecessarily increase administrative burden on consortium applicants and the Department.",
+      "evidence_quote": "ortium applicants and on the Department. Additionally, the FNRPM proposes \nadditional certifications to the current simple Form 479 that would be difficult for single \nconsortium members to",
+      "evidence_start": 5782,
+      "evidence_end": 5971,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "reject new Form 479 requirement",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The proposed requirement would force each of Iowa’s 330 consortium members to file Form 479, creating unnecessary paperwork.",
+      "evidence_quote": "xisting E-Rate revenue.  \nAdministrative Burden Concerns for the Iowa Department of Education and Iowa’s 330 E-Rate \nConsortium Members \n \nThe FNPRM (paragraphs 79-80) appears to propose a new",
+      "evidence_start": 4176,
+      "evidence_end": 4368,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "maintain current CIPA compliance process",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Current CIPA compliance is handled by the consortium’s Form 471; adding Form 479 would duplicate effort.",
+      "evidence_quote": "equipment (inside the school or library equipment). Iowa’s consortium Form \n471 only files for telecommunications services (i.e. data circuits); thus, the Form 479 is not \ncurrently required. To",
+      "evidence_start": 4794,
+      "evidence_end": 4988,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or limitation",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The Department argues that eliminating or limiting E‑Rate would deprive Iowa schools of $22.5 million in essential funding.",
+      "evidence_quote": "ce and Category 2 products and services. Approximately 96% of Iowa school districts and \nnon-public schools participate in the E-Rate program. \nThe Department urges the Commission to reject any",
+      "evidence_start": 1845,
+      "evidence_end": 2038,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Iowa schools rely on E‑Rate for internet and equipment, and its loss would disproportionately affect public and non‑public schools.",
+      "evidence_quote": "of a \nnon-public system/district - have requested $22,497,064 in E-Rate funding through their own \n2 \n \n\n\n \n \nindividual E-Rate funding applications. Of this total requested amount, $6,405,259 is",
+      "evidence_start": 3555,
+      "evidence_end": 3750,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The Department notes screen‑time concerns but does not propose specific policy changes.",
+      "evidence_quote": "the Commission for highlighting concerns regarding \nscreen-based instruction and the amount of time PK-12 students spend using digital devices. \nThese are important issues that warrant thoughtful",
+      "evidence_start": 2151,
+      "evidence_end": 2346,
+      "uncertain": true
+    }
+  ],
+  "positions": {
+    "administrative_forms": "oppose",
+    "consultant_form_5654": "oppose",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081238",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081238",
+  "filer_raw": "Iowa Department of Education",
+  "date_submission": "2026-10-13T21:03:10.193Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d61e1553ab09839bf076262bef00ae9c782a9c697ca1a61f972e5e9dd8a74caa",
+  "params_key": "9f0cbc319286494818bc2a7e2c13b7ebd1cd767a3eaad68ebebc464e6e776069",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

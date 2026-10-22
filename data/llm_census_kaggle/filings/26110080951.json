@@ -1,0 +1,113 @@
+{
+  "summary": "Miller Place UFSD argues for preserving E‑Rate funding and broad eligibility, emphasizing the essential role of connectivity for safety, health, and instruction, and calls for practical CIPA requirements and cybersecurity protections. Miller Place UFSD urges the FCC to preserve E‑Rate’s core strengths, support affordable broadband and internal connectivity, and to simplify the program while preventing fraud, but requests that the FCC avoid any changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "discussion_no_position",
+      "requested_action": "Maintain monitoring within school culture while respecting privacy",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Monitoring should align with school culture and privacy concerns, but the comment does not explicitly advocate a specific policy change.",
+      "evidence_quote": "n addition, not all segmentation is 100% protection; therefore, filtering provides opportunity to limit malicious behavior and actors from infiltrating the educational environment. Monitoring - YES,",
+      "evidence_start": 4365,
+      "evidence_end": 4563,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "conditional_or_amend",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "CIPA filtering should be applied at the network level but must not infringe on student privacy.",
+      "evidence_quote": "oad, workable definition of “educational purpose” that reflects how school networks are actually used for instruction, operations, and student support. • Keep CIPA requirements practical, technically",
+      "evidence_start": 5917,
+      "evidence_end": 6116,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and cost‑effective managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district needs broad eligibility to maintain and upgrade essential network infrastructure for instruction and safety.",
+      "evidence_quote": "e network system monitoring which serves as a preventative against malicious actors. 5. RECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber,",
+      "evidence_start": 5452,
+      "evidence_end": 5651,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would force costly local budget increases that voters cannot support.",
+      "evidence_quote": "h Erate funds - we plan to continue with remaining closets with Erate funds. Budget increases to make up the lost Erate funds will directly impact local community and voters when it is time to vote",
+      "evidence_start": 5137,
+      "evidence_end": 5334,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Include all levels of cybersecurity resources such as DDOS protection, endpoint protection, and email filtering",
+      "reason_family": "child_safety",
+      "claim_kind": "equity_access",
+      "argument": "Cybersecurity measures are essential for protecting students and staff from malicious actors.",
+      "evidence_quote": "CIPA requirements practical, technically feasible, and respectful of student privacy. • Include all levels of cybersecurity resources districts have in place: 1) DDOS protection on Internet Services",
+      "evidence_start": 6076,
+      "evidence_end": 6274,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "avoid changes that reduce access, increase administrative burden, or limit local flexibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The district opposes any E‑Rate changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+      "evidence_quote": "and cost-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative",
+      "evidence_start": 6613,
+      "evidence_end": 6807,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "simplify the program and prevent fraud",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The district supports thoughtful improvements, simplification, and fraud prevention in E‑Rate.",
+      "evidence_quote": "and cost-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative",
+      "evidence_start": 6613,
+      "evidence_end": 6807,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "discussion_no_position",
+    "cipa_network_filter": "conditional_or_amend",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080951",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080951",
+  "filer_raw": "Miller Place UFSD",
+  "date_submission": "2026-10-13T15:15:06.145Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "18fe81f8b59fdbfaa6d87f882586139be6d526282d3934d0afe50b0311705a9b",
+  "params_key": "467b8008a8b67154de452806797f4b6a1ecfd4ad4d6ac1685a3ce3496cdceb06",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

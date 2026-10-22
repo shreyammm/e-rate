@@ -1,0 +1,87 @@
+{
+  "summary": "The comment urges the FCC to preserve and strengthen the E‑Rate program, opposing sunset or eligibility restrictions, arguing that reduced funding would shift costs to local budgets and that connectivity is not synonymous with unrestricted screen time.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "Connectivity is not synonymous with unrestricted student screen time; decisions about technology use are made by local stakeholders.",
+      "evidence_quote": "acilities, and other priorities. \nSchool connectivity is also not synonymous with unrestricted student screen time. Decisions \nabout when and how technology supports learning are appropriately made",
+      "evidence_start": 1837,
+      "evidence_end": 2034,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility restrictions based solely on geography, poverty level, or provider count",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility restrictions that leave schools without adequate support would undermine equitable broadband access.",
+      "evidence_quote": "nt with applicable CIPA requirements. \nI respectfully urge the Commission to: \n1. Reject proposals to sunset or eliminate the E-Rate program; \n2. Avoid eligibility restrictions based solely on",
+      "evidence_start": 2146,
+      "evidence_end": 2338,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable connectivity and internal network infrastructure to provide modern education.",
+      "evidence_quote": "nt with applicable CIPA requirements. \nI respectfully urge the Commission to: \n1. Reject proposals to sunset or eliminate the E-Rate program; \n2. Avoid eligibility restrictions based solely on",
+      "evidence_start": 2146,
+      "evidence_end": 2338,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate support would shift costs to local school budgets, competing with staffing and instructional programs.",
+      "evidence_quote": "etworks secured, and \ncapacity increased as instructional and operational demands evolve. \nReducing E-Rate support would not eliminate these costs; it would shift more of them to \nlocal school",
+      "evidence_start": 1537,
+      "evidence_end": 1729,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to sunset or eliminate the E‑Rate program",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program should not be eliminated or sunset because it provides essential broadband support for schools and libraries.",
+      "evidence_quote": "nt with applicable CIPA requirements. \nI respectfully urge the Commission to: \n1. Reject proposals to sunset or eliminate the E-Rate program; \n2. Avoid eligibility restrictions based solely on",
+      "evidence_start": 2146,
+      "evidence_end": 2338,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081299",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081299",
+  "filer_raw": "Cooperative Educational Service Agency 10",
+  "date_submission": "2026-10-13T22:18:09.684Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4b38d15e3479dc3c29c786862f7b417db776587a47ef350ba232c6e222605349",
+  "params_key": "917d6ea33600104c77d426ab237cef1e6de6e6c3ec05e99bb1740fe7e9bf2ba0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

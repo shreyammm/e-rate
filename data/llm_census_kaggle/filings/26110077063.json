@@ -1,0 +1,76 @@
+{
+  "summary": "The commenter argues that Chromebooks, AI, and YouTube should be removed from elementary schools due to negative impacts on children’s behavior, learning, and safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "oppose",
+      "requested_action": "ban AI in elementary schools",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "AI is dangerous for young children and should be moratoriumed until age-appropriate use is established.",
+      "evidence_quote": "rdized tests, but do not put homework or assignments on these screens.  Start slowly in middle school.  \n\nREMOVE AI FROM ELEMENTARY SCHOOLS.  (K-12 would be better)  It's dangerous.  It is not",
+      "evidence_start": 633,
+      "evidence_end": 825,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "oppose",
+      "requested_action": "block YouTube on school computers",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "YouTube is inappropriate for children and cannot be effectively blocked, harming student safety.",
+      "evidence_quote": ".  \n\nParental consent is an issue.  Data collection of children is an issue.\n\nYouTube has NO PLACE on personal computers given to children by the school.  Yes, it can be blocked.  Kids work around",
+      "evidence_start": 944,
+      "evidence_end": 1140,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "remove Chromebooks from elementary schools",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Chromebooks cause immediate behavioral changes and reduce academic focus in elementary students.",
+      "evidence_quote": "My son's behavior changed immediately with the introduction of a Chromebook in 3rd grade.  He went from a happy, creative boy with no screens to suddenly begging for screen time and needing immediate",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The commenter calls for federal intervention but does not specify a policy change beyond removal of devices.",
+      "evidence_quote": "\"guidelines\" with no enforcement and no commonality.   This is ridiculous and harming children.  \n\nSometimes the old ways are the best ways.  New isn't better.  We need federal intervention NOW.",
+      "evidence_start": 1255,
+      "evidence_end": 1449,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_digital_literacy": "oppose",
+    "cipa_social_media": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077063",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077063",
+  "filer_raw": "Amanda Salchow",
+  "date_submission": "2026-09-19T18:21:50.326Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "982e4ccd81aaa8145e50c5b9123a9bba54d8b7bedf9a5de3139f4b9c9a32491c",
+  "params_key": "7de92e6482b63e668a773bb480ea701ecbd0df4b3b26e6031db082254310a4fe",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,88 @@
+{
+  "summary": "The comment urges the FCC to preserve and strengthen the E‑Rate program, rejecting sunset proposals, eligibility restrictions, and cuts to connectivity and internal network support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain connectivity support for schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate covers roughly 80% of the district’s internet costs, and cuts would strain budgets and staff.",
+      "evidence_quote": ". For Collier County Public Schools, the impact of reduced support would be direct. E-Rate covers  roughly 80%  of our internet connection, about $376,000 a year. Absorbing these recurring costs",
+      "evidence_start": 942,
+      "evidence_end": 1136,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject restrictions on eligibility based on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility restrictions would unfairly limit support for schools in non‑rural but economically needy areas.",
+      "evidence_quote": "eliminate E-Rate; 2. Reject restrictions on eligibility based solely on geography or similar criteria; 3. Preserve support for connectivity and internal network infrastructure; and 4. Work with",
+      "evidence_start": 1888,
+      "evidence_end": 2081,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The program must not be sunset or eliminated because schools rely on it for essential broadband services.",
+      "evidence_quote": "I am writing to urge the Federal Communications Commission to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, or unnecessarily restrict support for",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Internal network upgrades are essential for safety systems and instructional demands.",
+      "evidence_quote": "dividual students. These tools cannot be delivered with paper and pencil. The same connection also powers  critical safety systems , including emergency notification, school lockdown applications,",
+      "evidence_start": 474,
+      "evidence_end": 670,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "Modernize and strengthen the program",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "other",
+      "argument": "The Commission should work with schools to modernize the program.",
+      "evidence_quote": "network infrastructure; and 4. Work with schools and stakeholders to modernize and strengthen the program. Our students deserve the tools they need to learn and succeed, regardless of where they live",
+      "evidence_start": 2041,
+      "evidence_end": 2240,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080650",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080650",
+  "filer_raw": "Stephanie Lucarelli",
+  "date_submission": "2026-10-12T17:42:42.494Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "27251af9478f97699252006d44c7fe92af3ed0d857d1d78edb1ccfa7d2b12a7f",
+  "params_key": "fe15fa16696202f1f05f71f0ae6c7cb0a0281139fefe8820dc5591922a477288",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

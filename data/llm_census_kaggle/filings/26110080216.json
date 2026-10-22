@@ -1,0 +1,50 @@
+{
+  "summary": "The Indiana State Teachers Association president urges the FCC to preserve E‑Rate funding and rejects any changes that would weaken access to affordable, reliable internet, while also arguing that screen‑time decisions should be made by educators and families rather than imposed through funding conditions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving E‑Rate funding is essential to maintain affordable, reliable internet for all students, especially in rural areas.",
+      "evidence_quote": "rs: \n \nAs president of the Indiana State Teachers Association, I urge the Federal Communications \nCommission to preserve E-Rate funding and reject changes that would weaken access to \naffordable,",
+      "evidence_start": 159,
+      "evidence_end": 354,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose screen‑time conditions on E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time decisions should be guided by educators and families, not imposed through essential connectivity funding conditions.",
+      "evidence_quote": "nology is used safely and \npurposefully. Decisions about classroom instruction and appropriate screen time should be \nguided by student needs and made with educators and families, rather than imposed",
+      "evidence_start": 1086,
+      "evidence_end": 1285,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080216",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080216",
+  "filer_raw": "Indiana State Teachers Association",
+  "date_submission": "2026-10-09T13:37:22.644Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c99b90e0555e425f07ee3852940eb1dab7d65ece717fbae039b78b2ae8940ba5",
+  "params_key": "66bd285dee3a5a6e32d2ffb0a4e7f37cbad9d33ab71c22d7dfe76194f7a9e38f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

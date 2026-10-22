@@ -1,0 +1,99 @@
+{
+  "summary": "The letter from the Lincolnwood School District 74 technology director urges the FCC to preserve and strengthen the E‑Rate program, rejecting any sunset, reduction, or narrowing of eligibility, and stresses the essential role of broadband for instructional and operational needs. The comment urges the FCC to preserve the E‑Rate program, arguing that it is essential for reliable, affordable connectivity for all students regardless of geography or family income.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district contends that narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ion to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 6056,
+      "evidence_end": 6249,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district maintains that E‑Rate is essential for maintaining modern network infrastructure and cybersecurity.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide",
+      "evidence_start": 6209,
+      "evidence_end": 6408,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "Work with schools and other stakeholders to strengthen and improve the program",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The letter calls for collaboration to enhance the program but does not specify a particular policy change.",
+      "evidence_quote": "k infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and",
+      "evidence_start": 6368,
+      "evidence_end": 6500,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that eliminating E‑Rate would impose unsustainable financial burdens and jeopardize essential educational services.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily",
+      "evidence_start": 462,
+      "evidence_end": 661,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential for reliable connectivity for all students regardless of geography or family income.",
+      "evidence_quote": "ould unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity",
+      "evidence_start": 6150,
+      "evidence_end": 6348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate funding to avoid increased costs to local taxpayers and households",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district warns that losing E‑Rate would add close to $50,000 a year to its budget, forcing cuts in other areas.",
+      "evidence_quote": "and network coverage initiatives, which directly lowers our insurance risk and keeps our overall expenditures sustainable. Losing this funding would add close to $50,000 a year to our current",
+      "evidence_start": 3583,
+      "evidence_end": 3774,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076822",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076822",
+  "filer_raw": "Lincolnwood School District 74",
+  "date_submission": "2026-09-16T18:12:04.227Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "afdf1e84eb93667afc29e5ec86415cfeb7f7bd5b5f4554dd65f1631af68d2c87",
+  "params_key": "f190fc0eff875d8ec72e7b09467c4f6c218bb0a4a1b2dc14f8c13d9030057ed6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

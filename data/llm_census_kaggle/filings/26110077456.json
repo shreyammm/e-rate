@@ -1,0 +1,89 @@
+{
+  "summary": "Kent Intermediate School District urges the FCC to preserve the core E‑Rate program, keep CIPA requirements practical, maintain eligibility for special construction and other services, and emphasize that screen‑time decisions are separate from infrastructure needs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "keep CIPA monitoring requirements practical and respectful of privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "CIPA monitoring must be technically feasible and not infringe on student privacy.",
+      "evidence_quote": "am. \n• Keep CIPA requirements practical, technically feasible, and respectful of student privacy. \n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal",
+      "evidence_start": 4177,
+      "evidence_end": 4372,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "maintain practical CIPA filtering requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "A high‑quality content filter is essential to creating a safe digital learning environment.",
+      "evidence_quote": "enabling schools to provide appropriate access to the digital resources, applications, and online \ntools that are increasingly integral to teaching and learning. For an organization of Kent ISD’s",
+      "evidence_start": 2795,
+      "evidence_end": 2990,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating or significantly reducing E‑Rate would undermine reliable, affordable broadband essential for education.",
+      "evidence_quote": "RM).1 \nE-Rate is a critical program that helps schools provide reliable, affordable connectivity for teaching, \nlearning, operations, student support, and community service. \nKent Intermediate School",
+      "evidence_start": 781,
+      "evidence_end": 980,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "avoid changes that reduce educational access or increase administrative burdens",
+      "reason_family": "administrative_burden",
+      "claim_kind": "other",
+      "argument": "The district cautions against reforms that could limit flexibility or increase costs for schools.",
+      "evidence_quote": "oughtful \nimprovements that simplify the program, strengthen accountability, and prevent fraud while asking the \nFCC to avoid changes that could reduce educational access, increase administrative",
+      "evidence_start": 5420,
+      "evidence_end": 5615,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "preserve eligibility for special construction, dark fiber, and self‑provisioned networks",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Special construction and dark fiber are critical for maintaining reliable connectivity in the district.",
+      "evidence_quote": "ber, self-provisioned networks, internal \nconnections, and cost-effective managed services. \n• Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation, maintenance,",
+      "evidence_start": 4332,
+      "evidence_end": 4527,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077456",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077456",
+  "filer_raw": "Kent Intermediate School District",
+  "date_submission": "2026-09-21T18:34:59.588Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fed9073f32fe25ef63b84671b465ea57ad2ffcc159a860bd9f2d8f0cad1f0b14",
+  "params_key": "509e7312db2b51e2f1792bb49a65e1bb1225607d6ab3230893e8e76df6555a01",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

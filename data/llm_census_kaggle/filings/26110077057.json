@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, reduction, or unnecessary narrowing of eligibility, and calling for continued support for connectivity and modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "roposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would leave students without adequate support; \n3.​\nPreserve support",
+      "evidence_start": 3425,
+      "evidence_end": 3623,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reliable broadband is part of the basic infrastructure of a modern school system.",
+      "evidence_quote": "adequate support; \n3.​\nPreserve support for the connectivity and internal network infrastructure schools need to provide \nreliable educational access; and \n4.​\nWork with schools and other",
+      "evidence_start": 3584,
+      "evidence_end": 3771,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "unications Commission (FCC) to \npreserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, \nsubstantially reduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 465,
+      "evidence_end": 664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve and strengthen the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is the only federal education technology program and foundational to student learning.",
+      "evidence_quote": "vely serve students. \nE-Rate is the only federal education technology program, and the connectivity it provides is foundational \nto supporting our students’ learning. \n \nThe FCC’s proposal points to",
+      "evidence_start": 1248,
+      "evidence_end": 1446,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernization is needed to keep pace with evolving instructional demands and technology.",
+      "evidence_quote": "ss; and \n4.​\nWork with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce \nits role in public education. \n \nOur students deserve access to the tools they need to",
+      "evidence_start": 3731,
+      "evidence_end": 3926,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077057",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077057",
+  "filer_raw": "Keith R. Kline",
+  "date_submission": "2026-09-19T13:01:43.142Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "ff5bd129118b52eb30940072d2acacdd6e9f4d830207f88e357168f7f73d1f69",
+  "params_key": "0421578430597d3eb2bd3a26c2f7a5dd0c6c66dde1f2afe2ec6382607ed0560c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

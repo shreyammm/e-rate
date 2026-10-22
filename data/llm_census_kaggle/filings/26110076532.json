@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to preserve the E‑Rate program, opposing any sunset or reduction, and argues that E‑Rate is essential for equitable broadband access, critical district services, and rural library connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures students in low‑income and rural districts have the same digital tools as wealthier peers.",
+      "evidence_quote": "udents in wealthier districts. While the program has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools or districts would be",
+      "evidence_start": 2503,
+      "evidence_end": 2699,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must be preserved to maintain equitable broadband access for all students.",
+      "evidence_quote": "program and to oppose any proposal that would reduce, limit, or sunset this vital source of support for schools and libraries that millions of students depend on every day.\nAt the Colchester School",
+      "evidence_start": 315,
+      "evidence_end": 512,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain funding for district services",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate funds essential district services such as security, finance, and HVAC systems, preventing budget cuts that harm students.",
+      "evidence_quote": "finance systems, and HVAC systems, among other services. These are essential services; without E-Rate funding, these services would have to be funded in other ways, leading to budget cuts that would",
+      "evidence_start": 1258,
+      "evidence_end": 1456,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue E‑Rate support for career readiness",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Students need internet access to learn digital skills essential for college and career readiness.",
+      "evidence_quote": "for students during the school day, the reality is that 21st-Century workers rely on use of the internet for the majority of their work day. In order for students to be career and college ready, we",
+      "evidence_start": 1570,
+      "evidence_end": 1767,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain library connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Rural libraries rely on E‑Rate to provide internet access to remote patrons, serving as a lifeline.",
+      "evidence_quote": "E-Rate funding enables public libraries in rural communities to provide internet access to their patrons. In many places, this is a lifeline for people who live too remotely for home internet",
+      "evidence_start": 2036,
+      "evidence_end": 2227,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076532",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076532",
+  "filer_raw": "Rebecca Sofferman",
+  "date_submission": "2026-09-13T15:25:21.223Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "321699bee705bb1e07d1f77dfecf4f84df16e20eba223469ec01a51ea3d96463",
+  "params_key": "46b14a62bbeccb9a6e11e372e56cb7785bc7b572e9f2073151751a3ebba583cf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

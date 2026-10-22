@@ -1,0 +1,87 @@
+{
+  "summary": "Alleghany Highlands Regional Library urges the FCC to preserve the core E‑Rate program, oppose any changes that would reduce access or increase administrative burden, and support simplification and fraud prevention measures.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "oppose",
+      "requested_action": "avoid increasing administrative burden",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The library warns that increased administrative requirements would strain its limited resources.",
+      "evidence_quote": "e, and cost-effective network solutions. We support thoughtful improvements, simplification,\nand fraud prevention, but ask the FCC to avoid changes that would reduce access, increase",
+      "evidence_start": 2794,
+      "evidence_end": 2976,
+      "uncertain": false
+    },
+    {
+      "provision_id": "administrative_forms",
+      "position": "support",
+      "requested_action": "implement simplification and fraud prevention measures",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "normative_value",
+      "argument": "The library supports thoughtful improvements that simplify processes and prevent fraud.",
+      "evidence_quote": "e, and cost-effective network solutions. We support thoughtful improvements, simplification,\nand fraud prevention, but ask the FCC to avoid changes that would reduce access, increase",
+      "evidence_start": 2794,
+      "evidence_end": 2976,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility for library services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library maintains that E‑Rate is essential for providing reliable, affordable connectivity for public access and community services.",
+      "evidence_quote": "current\npublic-access, operational, and safety needs.\nEach year E-Rate funds a significant portion of our internet services.  This supplements local funding\nshortages and allows us to offer free 24",
+      "evidence_start": 1541,
+      "evidence_end": 1738,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid sunset or reduction of core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library argues that eliminating or reducing the core E‑Rate program would severely limit affordable broadband access for its patrons.",
+      "evidence_quote": "s the FCC to preserve the core strengths of\nE-Rate, including support for affordable broadband, Internet access, internal connections, public Wi-Fi,\nmaintenance, and cost-effective network solutions.",
+      "evidence_start": 2635,
+      "evidence_end": 2834,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent changes that reduce access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library contends that any FCC action that would reduce access to broadband services is detrimental to community needs.",
+      "evidence_quote": "e, and cost-effective network solutions. We support thoughtful improvements, simplification,\nand fraud prevention, but ask the FCC to avoid changes that would reduce access, increase",
+      "evidence_start": 2794,
+      "evidence_end": 2976,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conflicting_or_multiple",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075928",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075928",
+  "filer_raw": "Alleghany Highlands Regional Library",
+  "date_submission": "2026-09-08T21:15:03.675Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2298c28b7c1ca381dcade6187c6d492d194a4439ede04f5fcf0b220c1ea1e951",
+  "params_key": "36c40f68df0512e0ded7ac967dce4cb65248519fafe9b64f984382d5fea0e7ce",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

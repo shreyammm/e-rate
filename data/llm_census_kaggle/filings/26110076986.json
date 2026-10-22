@@ -1,0 +1,86 @@
+{
+  "summary": "Notre Dame Academy principal urges the FCC to preserve and strengthen E‑Rate, opposing sunset, cuts, and narrowing eligibility, and stresses the program’s essential role in reliable school connectivity and student safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain reliable connectivity for student learning and safety",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Outages disrupt lessons, safety procedures, and parent communication, underscoring connectivity’s essential role.",
+      "evidence_quote": "it does not just interrupt a lesson — it affects our ability to operate safely and effectively. An outage this past August left staff unable to access prepared lesson plans and forced us to admit",
+      "evidence_start": 1088,
+      "evidence_end": 1283,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding covers 50% of network costs, and cuts would force service reductions and compromise security.",
+      "evidence_quote": "ding currently covers 50% of our network costs — including fiber connections, network switches, Wi-Fi, and managed internet services. Without that support, our total annual network expenses would",
+      "evidence_start": 2341,
+      "evidence_end": 2536,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "ensure E‑Rate supports cybersecurity and digital citizenship safeguards",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Sustained funding allows continuous filtering and cybersecurity instruction, protecting students from unsafe content.",
+      "evidence_quote": "ed student screen time. As educators, we already make deliberate, local decisions about when and how technology is used to support learning. We maintain continuous internet filtering on all",
+      "evidence_start": 3431,
+      "evidence_end": 3620,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "A strict rural/non‑rural classification would overlook real infrastructure gaps and misdirect support.",
+      "evidence_quote": "hool, and our students' ability to learn depends on it. I respectfully urge the Commission to: 1. Reject any proposal to sunset or eliminate the E-Rate program; 2. Reject proposals that would",
+      "evidence_start": 4675,
+      "evidence_end": 4866,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern education and should not be eliminated.",
+      "evidence_quote": "iting to urge the Federal Communications Commission to preserve and strengthen the E-Rate program, and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily",
+      "evidence_start": 469,
+      "evidence_end": 663,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076986",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076986",
+  "filer_raw": "Mrs. Andrea Zimmerman",
+  "date_submission": "2026-09-18T17:15:54.444Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "94ab2bd2748efe83284fed705abe9f406d6af9a44c03fd7897f5dd3d6b0a5127",
+  "params_key": "59977eb241c5683d3ef97ef61d7b60307b1acbd88011b349b0efc140f69d2228",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

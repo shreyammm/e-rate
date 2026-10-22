@@ -1,0 +1,50 @@
+{
+  "summary": "Parent argues that short‑form digital videos and quizzes hinder deep learning, advocates for reduced screen time and for parents to have an opt‑out option from screen‑based instruction.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "allow parents to opt‑out of screen‑based instruction",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents should have the right to limit their children’s screen time and choose analog education.",
+      "evidence_quote": "ective analog education. I want to \nfeel supported and instead feel I have to push for something I feel is my right as a parent to limit \nmy kids’ screen time, which I work hard to have in place at",
+      "evidence_start": 2180,
+      "evidence_end": 2377,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reduce screen time in all forms",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Short‑form digital videos and quizzes impede deep, conceptual learning and critical thinking.",
+      "evidence_quote": "just memorize facts, she demonstrated a deep understanding.   \nThese short form videos and digital quizzes hinder deep, conceptual understanding. Clicking a \nmultiple choice button doesn’t",
+      "evidence_start": 788,
+      "evidence_end": 976,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "parent_opt_out": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077104",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077104",
+  "filer_raw": "Carly Perlman",
+  "date_submission": "2026-09-19T20:14:35.625Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d3a402e135e10d8f93a05cfdc1772183e9730618862b3947253c4ee81797ad51",
+  "params_key": "69c4d05e219ac9eedfbfce706b9333e4b784ae411ff74ad07f75fedcdaa86728",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

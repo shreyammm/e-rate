@@ -1,0 +1,87 @@
+{
+  "summary": "The library staff argues that E‑Rate funding is essential to maintain internet services, digital literacy programs, and overall library operations, and that cutting or limiting the program would force significant service reductions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain E‑Rate for digital literacy training",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funded broadband supports digital literacy training and technology support for patrons.",
+      "evidence_quote": "reduce programs and services in order to continue providing internet access. E-Rate supported broadband connections enable libraries, like ours, to provide digital literacy training, internet access,",
+      "evidence_start": 5432,
+      "evidence_end": 5631,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "continue broad eligibility for library broadband",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables the library to serve low‑income patrons who cannot afford home internet access.",
+      "evidence_quote": "ntain the internet service our community requires. There are still members of our community who cannot afford home internet access and will continue to rely on the library to stay connected",
+      "evidence_start": 1237,
+      "evidence_end": 1426,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts to E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Without E‑Rate, the library would have to cut core services, programs, and operations to maintain internet access.",
+      "evidence_quote": "reliable internet access year after year because of E-Rate.   Without E-Rate funding, we will have to cut core services, programs, and operations to maintain the internet service our community",
+      "evidence_start": 1085,
+      "evidence_end": 1277,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is critical for libraries to provide reliable internet and digital services to underserved community members.",
+      "evidence_quote": "nance, safety, and security. The library can’t operate without the internet. If the FCC terminates or limits E-Rate funding, our library will be forced to reduce programs and services in order to",
+      "evidence_start": 5277,
+      "evidence_end": 5472,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "ensure continued commitment to secure, scalable connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library requests the FCC’s continued commitment to secure, scalable, future‑ready connectivity.",
+      "evidence_quote": "’s continued commitment to ensuring that libraries and schools across the nation have access to these federal funds needed to provide secure, scalable, future-ready connectivity that supports the",
+      "evidence_start": 5897,
+      "evidence_end": 6092,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072066",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072066",
+  "filer_raw": "Raquel Watson",
+  "date_submission": "2026-08-18T18:20:15.636Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d6f71c0028f5dd47b4a5b02a6370ff1b75b65eb0ca6f960b00760845ef722fdb",
+  "params_key": "d7ec320d61d8533e59e79e3a9b1b2004d01dc42d8b1702ceef63763f4a72f55d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

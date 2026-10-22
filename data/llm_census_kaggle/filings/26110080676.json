@@ -1,0 +1,101 @@
+{
+  "summary": "Plymouth‑Canton Community Schools urges the FCC to preserve the core E‑Rate program and its current eligibility scope, oppose blanket screen‑time limits, keep CIPA requirements practical, and avoid additional cost burdens for Head Start and Pre‑K. Plymouth-Canton Community Schools urges the FCC to preserve E‑Rate’s core strengths and avoid changes that would reduce access, increase administrative burden, or limit local flexibility.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "conditional_or_amend",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district seeks to ensure CIPA filtering and monitoring remain feasible for BYOD environments without imposing undue burdens.",
+      "evidence_quote": "operations, and student support. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. • Keep CIPA requirements practical, technically feasible, and respectful of student",
+      "evidence_start": 5596,
+      "evidence_end": 5793,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that cutting or sunsetting the core E‑Rate program would undermine essential connectivity for instruction and operations.",
+      "evidence_quote": "Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. • Preserve E-Rate support for Internet",
+      "evidence_start": 5137,
+      "evidence_end": 5336,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core strengths of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district requests that the FCC maintain E‑Rate’s existing support for affordable broadband and avoid any changes that would reduce access, increase administrative burden, or limit local flexibility.",
+      "evidence_quote": "ble broadband, Internet access, internal connections, Wi-Fi, maintenance, and cost-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the",
+      "evidence_start": 6302,
+      "evidence_end": 6499,
+      "uncertain": false
+    },
+    {
+      "provision_id": "prek_headstart",
+      "position": "oppose",
+      "requested_action": "Avoid unnecessary cost allocation for Head Start or Pre‑K classrooms",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that Head Start and Pre‑K programs are integrated into existing school networks and should not face separate cost burdens.",
+      "evidence_quote": "ally feasible, and respectful of student privacy. • Avoid unnecessary cost allocation for Head Start or Pre-K classrooms, as many are integrated into existing school networks and all have teachers",
+      "evidence_start": 5753,
+      "evidence_end": 5949,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district contends that local control is necessary to tailor screen‑time policies to community needs.",
+      "evidence_quote": "operations, and student support. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. • Keep CIPA requirements practical, technically feasible, and respectful of student",
+      "evidence_start": 5596,
+      "evidence_end": 5793,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Maintain eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district maintains that these services are critical for building and sustaining reliable broadband infrastructure.",
+      "evidence_quote": "Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. • Preserve E-Rate support for Internet",
+      "evidence_start": 5137,
+      "evidence_end": 5336,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "prek_headstart": "oppose",
+    "screen_time_condition": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080676",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080676",
+  "filer_raw": "Plymouth-Canton Community Schools",
+  "date_submission": "2026-10-12T18:56:26.730Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ad22f44d6f22d17a1a50acc0d5294939df470aa60ea498095d65decdb167b0ce",
+  "params_key": "1ac5ea562496415839e4f8d8a602fa68184aaef5702a9d866c09c42459a9efc5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

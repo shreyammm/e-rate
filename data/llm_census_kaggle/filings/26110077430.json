@@ -1,0 +1,89 @@
+{
+  "summary": "The technology director of a public school system argues that E‑Rate funding should not be reduced, contends that screen‑time based cuts would harm educational access, cites Alabama’s academic recovery as evidence that increased technology access benefits learning, and stresses that reliable high‑speed internet is essential for both education and student safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain or increase E‑Rate support",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Alabama’s significant NAEP gains from 2019‑2024 demonstrate that increased technology access can improve academic outcomes.",
+      "evidence_quote": "es and online educational resources, yet Alabama subsequently experienced some of the strongest academic recovery in the nation. From 2019 to 2024, Alabama was the only state to achieve a",
+      "evidence_start": 2008,
+      "evidence_end": 2195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue current eligibility for high‑speed internet",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable high‑speed internet is essential for security, communications, and critical student information systems.",
+      "evidence_quote": "et is no longer just a pathway to online learning. Schools depend on it for security, communications, facility controls, and critical student information systems. Whatever E-Rate’s original purpose,",
+      "evidence_start": 2621,
+      "evidence_end": 2819,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding is essential to provide reliable, affordable internet that supports equitable educational opportunities.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I urge the FCC not to reduce E-Rate support for schools.\n\nReliable, affordable internet access is no longer an",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue E‑Rate support for schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need flexibility to use technology in ways that best serve their students, and reducing support risks limiting educational opportunity for those who depend most on school access.",
+      "evidence_quote": "o use technology in ways that best serve their students. E-Rate should continue doing what it has done so successfully—helping schools provide the reliable, affordable connectivity they need.",
+      "evidence_start": 2935,
+      "evidence_end": 3126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base funding on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "Reducing E‑Rate support to influence screen‑time would restrict access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "hat states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly diverse range of cloud-based instructional resources,",
+      "evidence_start": 1228,
+      "evidence_end": 1427,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077430",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077430",
+  "filer_raw": "Walker County BOE",
+  "date_submission": "2026-09-21T17:06:12.820Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ffa5077cf9300ebd2442df28489f2eef3c3ae2a9c4012a93c48cffa239259ef7",
+  "params_key": "11bfe42b3164d912f607581ad1adf30f66a61ca54577e748d8cac000d456480d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

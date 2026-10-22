@@ -1,0 +1,88 @@
+{
+  "summary": "The New Jersey School Boards Association urges the FCC to preserve and strengthen the E‑Rate program, reject any sunset or substantial reduction, and decline federal intrusion into state‑level student‑screen‑time policy.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve current eligibility and funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate remains essential for connecting 1.4 million students and supporting a wide range of instructional and operational functions.",
+      "evidence_quote": "1.4 million students. For a significant majority of those LEAs, E-Rate provides critical support \nconnecting students with the digital resources necessary for modern education. It is a key component",
+      "evidence_start": 623,
+      "evidence_end": 821,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or substantial reduction of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating or substantially reducing E‑Rate would shift critical connectivity costs to local districts, jeopardizing investments and student services.",
+      "evidence_quote": "ctively serve students. We urge the \nFCC to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, \nsunset, or substantially reduce or restrict E-Rate support for",
+      "evidence_start": 1094,
+      "evidence_end": 1293,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain federal support for broadband connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate’s success over three decades demonstrates its essential role in providing affordable, high‑capacity broadband to schools.",
+      "evidence_quote": "s detailed in USAC’s 2025 Annual Report, the program reached over 150,000 \nschools and libraries in 2025, authorizing over $2.3 billion in support. This is not the continued reach of \na program at",
+      "evidence_start": 1871,
+      "evidence_end": 2067,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "maintain balance between federal support and state/local authority",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The FCC should preserve strong federal support for broadband while respecting state and local educational leadership.",
+      "evidence_quote": "maintain strong federal support for the affordable, high-capacity broadband \nschools need while respecting the authority of State and local education leaders to make instructional \nand policy",
+      "evidence_start": 4822,
+      "evidence_end": 5013,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject federal intrusion into state and local student‑screen‑time policy",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Questions about screen time and digital learning are best answered by states and local districts, not by the FCC.",
+      "evidence_quote": "udent Screen Time than the FCC \nWhile we appreciate the FCC’s concern that technology should always be used in ways that support \nstudent learning and well-being, questions about screen time, digital",
+      "evidence_start": 3731,
+      "evidence_end": 3930,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080246",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080246",
+  "filer_raw": "New Jersey School Boards Association",
+  "date_submission": "2026-10-09T15:25:29.880Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "95492b1c63b12bbb207fd3654a9d21c90d168876ad39dcaf01a3b4c4a05870a2",
+  "params_key": "f4c438a817b1d84607055b1806b6613a4137553a8206ced00929d1db13bc9952",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

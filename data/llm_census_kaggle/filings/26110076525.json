@@ -1,0 +1,49 @@
+{
+  "summary": "A band director from a rural school urges the FCC to reject any proposal to reduce, limit, or sunset the E‑Rate program, arguing that doing so would deepen educational inequities and deny students essential broadband access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Cutting the program would deepen inequities that public education is meant to overcome.",
+      "evidence_quote": "to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome. Students cannot",
+      "evidence_start": 1714,
+      "evidence_end": 1911,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue supporting E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving E‑Rate maintains educational opportunity for millions of students.",
+      "evidence_quote": "ructure to our PreK-12 education system. E-Rate is how schools gain access to it.\n\nI strongly urge the Commission to reject any proposal that would reduce, limit, or sunset E-Rate funding and instead",
+      "evidence_start": 2489,
+      "evidence_end": 2688,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076525",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076525",
+  "filer_raw": "Bradley E. Harzman",
+  "date_submission": "2026-09-13T10:44:21.889Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5913c84f0bec84b93ffb13f130cd604e841c68dcc0ce30377d8941e845e97811",
+  "params_key": "1f31f8acdf009feadd6d0a746e70224d1be1727ab0dcee420fe525fb248fbea6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

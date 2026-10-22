@@ -1,0 +1,50 @@
+{
+  "summary": "A high‑school teacher urges the FCC to keep the E‑Rate program intact, arguing that cutting funding would harm classroom technology, digital equity, and student outcomes, especially for low‑income families.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain full E‑Rate support",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate funding is essential for maintaining modern infrastructure, expanding wireless coverage, and supporting tools that keep students engaged and prepared for college and career pathways.",
+      "evidence_quote": "ss coverage, and support tools that keep students engaged and prepared for college and career pathways. If funding were cut, we would face significant new costs that would directly impact classroom",
+      "evidence_start": 784,
+      "evidence_end": 981,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would widen digital inequities and undermine educational opportunities for students in low‑income households.",
+      "evidence_quote": "a. I’m urging the Commission to preserve the E‑Rate program and reject any proposal that would reduce or sunset this essential support.\n\nIn Central York, reliable broadband is the backbone of daily",
+      "evidence_start": 156,
+      "evidence_end": 353,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080171",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080171",
+  "filer_raw": "Sean M Blasetti",
+  "date_submission": "2026-10-09T00:42:55.016Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "63c0f27507634fb22060a1166402c24a9fa7245573d703ad5eede2941bfaa6a3",
+  "params_key": "485ca37d664058b1c02dd45117ab89d9fe90a8ae43e47d6cf3fe25e908e388cb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

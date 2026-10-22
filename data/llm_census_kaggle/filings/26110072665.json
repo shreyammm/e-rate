@@ -1,0 +1,75 @@
+{
+  "summary": "The Archdiocese of New Orleans opposes any termination or limitation of the E‑Rate program, arguing that E‑Rate is essential for affordable, reliable connectivity, educational equity, and safety compliance for low‑income schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "continue compliance with CIPA requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate recipients must comply with CIPA, ensuring internet filtering, monitoring, and safety education for minors.",
+      "evidence_quote": "to absorb those costs.  Improved online safety. Schools receiving applicable E-rate support must comply with the Children’s Internet Protection Act, including internet filtering, monitoring minors’",
+      "evidence_start": 4003,
+      "evidence_end": 4200,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "other",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate subsidizes broadband and network infrastructure, enabling low‑income schools to provide high‑speed internet and modern instruction.",
+      "evidence_quote": "pport first-hand.  Specifically, schools serving low-income children benefit from E-rate with the following: Affordable high-speed internet. E-rate subsidizes the recurring cost of broadband service",
+      "evidence_start": 1542,
+      "evidence_end": 1740,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "Terminating or limiting E‑Rate would cut essential funding, jeopardizing school and library budgets and widening inequities.",
+      "evidence_quote": "areas from E-Rate eligibility.  We urge the FCC to reject any proposal that would terminate or limit the E-Rate Program. E-Rate is critical for schools and libraries to maintain affordable, reliable",
+      "evidence_start": 920,
+      "evidence_end": 1118,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts that disproportionately affect low‑income schools",
+      "reason_family": "other",
+      "claim_kind": "equity_access",
+      "argument": "Termination would disproportionately harm economically disadvantaged schools, increasing operating costs and reducing educational resources.",
+      "evidence_quote": "ogy procurement.   If the FCC terminates or limits E-Rate funding,  schools serving low-income children in the Archdiocese  of New Orleans, would therefore have a disproportionate effect on schools",
+      "evidence_start": 4478,
+      "evidence_end": 4675,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072665",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072665",
+  "filer_raw": "Office of Catholic Schools Archdiocese of New Orleans",
+  "date_submission": "2026-08-21T23:58:36.029Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "35dffc0c88f53e6c750b8b6a20012b394d34a289957d713b2f0878d479058df3",
+  "params_key": "da1c19799ef5ac8ae79f6eb06953cd9df7e298b3acbaa991afeca62e8087c2e8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

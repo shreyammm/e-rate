@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, rejecting proposals to sunset, eliminate, or narrow eligibility, and calling for continued support for connectivity and modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based solely on geography \nor other criteria that would leave students without adequate support; \n3.​ Preserve support for the connectivity and internal",
+      "evidence_start": 3578,
+      "evidence_end": 3771,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity is foundational educational infrastructure.",
+      "evidence_quote": "upport for the connectivity and internal network infrastructure schools need to provide reliable \neducational access; and \n4.​ Work with schools and other stakeholders to strengthen and modernize",
+      "evidence_start": 3731,
+      "evidence_end": 3926,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential for maintaining school network infrastructure and cannot be eliminated.",
+      "evidence_quote": "espectfully urge the Commission to: \n1.​ Reject any proposal to sunset or eliminate the E-Rate program; \n2.​ Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 3422,
+      "evidence_end": 3618,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "work with schools and other stakeholders to strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernization will improve program effectiveness.",
+      "evidence_quote": "stakeholders to strengthen and modernize E-Rate rather than reduce its role in public \neducation. \nE-Rate has enabled schools and libraries to build and maintain the connectivity necessary to",
+      "evidence_start": 3886,
+      "evidence_end": 4077,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Students deserve access to tools needed to learn regardless of location or finances.",
+      "evidence_quote": "d maintain the connectivity necessary to participate fully in modern \neducation. Our students deserve access to the tools they need to learn and succeed regardless of where they live or their",
+      "evidence_start": 4037,
+      "evidence_end": 4228,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080995",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080995",
+  "filer_raw": "Jennifer Collins",
+  "date_submission": "2026-10-13T15:58:43.331Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2f7bb7ce96505568dd7012c2b805c6642f6e7d9cea22370dae404534534e6e09",
+  "params_key": "7fad71696c918c135ffbc4535df1056a1232df64d9cfd20b7df1badd5a062b20",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "The Gibbs School librarian opposes any termination or limitation of the E‑Rate program, arguing that cuts would jeopardize library positions, student access to digital resources, and overall educational readiness.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to terminate or limit E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would severely strain the district’s budget and threaten essential library services.",
+      "evidence_quote": "nse to the Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking regarding the E-Rate program. Please reject any proposal that would terminate or limit the E-Rate Program.\n\nThe town",
+      "evidence_start": 315,
+      "evidence_end": 514,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent elimination of certified school librarians",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding supports the maintenance of certified school librarians, whose loss would harm student access to research resources.",
+      "evidence_quote": "l books, and possibly the elimination of certified school librarians in the district. We just finished restoring library positions that were cut in 2008. It would be devastating to lose them again.",
+      "evidence_start": 942,
+      "evidence_end": 1139,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate is essential for preparing students for the 21st century by ensuring continuous internet access.",
+      "evidence_quote": "would be devastating to lose them again. \n\nE-Rate funding is a core element of our budget and enables us to help students be prepared for the 21st century. This program is essential and must continue",
+      "evidence_start": 1099,
+      "evidence_end": 1298,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080919",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080919",
+  "filer_raw": "Jennifer Lauchlan",
+  "date_submission": "2026-10-13T14:28:56.437Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2cba991e792982a013328c9584cf162508d066af94004c9b14e4196d1b65372a",
+  "params_key": "c66bf4a6a5247d2411ba62ce4011aa9d362558a77935b2466527dfd81ade3ec4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

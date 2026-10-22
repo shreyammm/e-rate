@@ -1,0 +1,50 @@
+{
+  "summary": "A public library requests that the E‑Rate program not be sunset and opposes a mandate to filter all third‑party personal devices on its Wi‑Fi.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "do not mandate network‑level filtering of third‑party devices",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "The library contends that requiring network‑level filters on all third‑party devices would be an onerous burden, difficult to enforce, and would infringe on privacy and legitimate research.",
+      "evidence_quote": "the internet in their homes.  Please do not sunset this program.\nThe mandating of filters at the network level for all third-party personal devices (smartphones, laptops) brought in by patrons is an",
+      "evidence_start": 158,
+      "evidence_end": 356,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library argues that E‑Rate is essential for providing internet to students and families who otherwise lack home access.",
+      "evidence_quote": "The E-Rate program is still a vital part of a public library's mission and helps us provide internet to students and families who would not be able to access the internet in their homes.  Please do",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110014026",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110014026",
+  "filer_raw": "Janet Salazar",
+  "date_submission": "2026-07-13T15:12:02.606Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "90056d0d351a7d53c6a5d9019228b510c17c62d0234674d43603e124463640be",
+  "params_key": "0976c653153d8201e322a867a78eae64e4fa12b02479d5919b80c7fb47f4fb75",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

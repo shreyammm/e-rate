@@ -1,0 +1,75 @@
+{
+  "summary": "The comment argues for preserving the E‑Rate program, opposes restrictive usage and filtering requirements, and opposes new procurement barriers.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "avoid use‑based filtering",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Use‑based filtering is not feasible for public Wi‑Fi and would undermine privacy.",
+      "evidence_quote": "nt purposes.  Due to the fluid nature of internet use, libraries cannot reliably measure user intent without compromising privacy and filtering technologies cannot accurately distinguish educational",
+      "evidence_start": 2023,
+      "evidence_end": 2221,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "do not impose additional filtering",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Additional filtering would block legitimate educational, informational, and health‑related resources.",
+      "evidence_quote": "t that filtering could be used to ensure educational use of E-rate-supported networks, more restrictive filtering could block legitimate educational, informational, and health-related resources.",
+      "evidence_start": 2339,
+      "evidence_end": 2533,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "maintain current procurement process",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring separate bidding would increase costs, administrative burdens, and delays.",
+      "evidence_quote": "ontracts to efficiently meet procurement requirements and E-rate deadlines, requiring separate competitive bidding processes and new contracts for E-rate-funded services would likely increase costs,",
+      "evidence_start": 2944,
+      "evidence_end": 3142,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Preserving E‑Rate is essential to maintain broadband access for libraries and schools.",
+      "evidence_quote": "It is vital to preserve the E-Rate program, to continue helping public libraries and schools across the state provide technology access by upgrading broadband capacity and internet speeds, paying",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "consultant_registration": "oppose",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110023613",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110023613",
+  "filer_raw": "Sean George | Janine George",
+  "date_submission": "2026-07-16T22:15:35.781Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f31394239e8746c8bfe5403472a84ffe788fb3996e45abf9843b64400616d409",
+  "params_key": "5c8392286a34384a2eb3be383cc678ee481c1856bf635fd40506cdb19f4041f0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

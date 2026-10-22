@@ -1,0 +1,73 @@
+{
+  "summary": "Clinton Central School District urges the FCC to preserve E‑Rate’s core funding and support, arguing that cuts would increase local costs, divert resources from classroom and community programs, and jeopardize essential school operations and safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent instructional disruption",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Unreliable connectivity would disrupt instruction, testing, and essential services throughout the district.",
+      "evidence_quote": "arn. When connectivity or the underlying infrastructure is unavailable or unreliable, the impact goes far beyond technology; it can disrupt instruction, testing, building operations, safety, and",
+      "evidence_start": 1535,
+      "evidence_end": 1729,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A significant reduction or elimination of the program would increase local costs and require additional long‑term planning for technology and capital improvements.",
+      "evidence_quote": "esting, building operations, safety, and essential services throughout the district.\n\nWithout this funding, a significant reduction or elimination of the program would increase local costs and",
+      "evidence_start": 1689,
+      "evidence_end": 1881,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain safety and operations",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Critical systems such as door access, security cameras, and building operations rely on the network, and maintaining safety and functionality could become more challenging without E‑Rate support.",
+      "evidence_quote": "dress them proactively. Because critical systems such as door access, security cameras, communications, and other building operations rely on our network, maintaining the same level of safety and",
+      "evidence_start": 2311,
+      "evidence_end": 2506,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating or reducing E‑Rate would increase local costs and divert funds from classroom resources and community programs.",
+      "evidence_quote": "core funding and support for schools and libraries, and to avoid changes that would reduce access or increase burden for the students and communities who depend on it.\n\nRespectfully submitted,\nJordan",
+      "evidence_start": 2779,
+      "evidence_end": 2978,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079746",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079746",
+  "filer_raw": "Clinton Central School District",
+  "date_submission": "2026-10-07T12:20:53.750Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "edbee3667beea07aa3371269f508a184de30ba69fa3839e0bb481d17fe1d6a24",
+  "params_key": "d463c9d8c7b8da1ac12ab53f1f4ba969c0aeef746d7eb21f371ef35c5d3edacd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,63 @@
+{
+  "summary": "The Plattsburgh City School District urges the FCC to keep E‑Rate funding, reject proposals to sunset the program, and oppose tying E‑Rate to screen‑time limits or parental opt‑outs, citing the essential role of broadband for instruction and digital literacy.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding is essential for reliable, high‑speed broadband that supports all aspects of modern public education.",
+      "evidence_quote": "I share this message to urge the Federal Communications Commission (FCC) to preserve E-Rate support\nto schools and caution about the negative impacts of some of the proposed amendments.\nReliable,",
+      "evidence_start": 460,
+      "evidence_end": 655,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "reject",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Allowing parents to opt‑out of school‑based internet connectivity would severely limit students’ access to essential digital learning resources.",
+      "evidence_quote": "t access.\nThe coupling of E-Rate funding with screen time limits and parental opt-outs seems particularly ill-\nconceived. School-based internet connectivity is not synonymous with unrestricted",
+      "evidence_start": 922,
+      "evidence_end": 1114,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Linking E‑Rate to screen‑time limits would undermine the educationally valuable use of computing devices in schools.",
+      "evidence_quote": "t access.\nThe coupling of E-Rate funding with screen time limits and parental opt-outs seems particularly ill-\nconceived. School-based internet connectivity is not synonymous with unrestricted",
+      "evidence_start": 922,
+      "evidence_end": 1114,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "parent_opt_out": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080883",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080883",
+  "filer_raw": "Jay Lebrun",
+  "date_submission": "2026-10-13T13:26:55.178Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "96de9910963e51ee521d76036b84d04f12ea29f9fb29dc83415391bbf0e16fc5",
+  "params_key": "b4ef2f36dbfb08860fbfd8f9a28cbb39cc3f3bd07f6c6cdda935d49a9c5f9697",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

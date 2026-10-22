@@ -1,0 +1,62 @@
+{
+  "summary": "Superintendent urges FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, and eligibility narrowing.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support;",
+      "evidence_start": 4226,
+      "evidence_end": 4422,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable broadband to function and serve students.",
+      "evidence_quote": "leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other",
+      "evidence_start": 4382,
+      "evidence_end": 4581,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern education and should not be discontinued.",
+      "evidence_quote": "ate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support;",
+      "evidence_start": 4226,
+      "evidence_end": 4422,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078797",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078797",
+  "filer_raw": "Christine M Bourne",
+  "date_submission": "2026-09-29T22:16:17.519Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8c679cd45334cc6492bc36e590e3286ea45e7c447f6b4bb6492b1133d5502915",
+  "params_key": "fecb155d21caf1aeb37942464a11178349daba06d824c0e6ad9e91f999ce9d46",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

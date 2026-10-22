@@ -1,0 +1,87 @@
+{
+  "summary": "Parent advocates for opt‑out of school‑issued devices, citing evidence of learning inefficacy and harms, and urges funding to be tied to opt‑out rights.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "stop using devices for state testing",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Using iPads for state testing forces schools to rely on devices, undermining effective learning.",
+      "evidence_quote": "em is kids using devices at home.” I was given excuses like, “we can’t possibly stock physical books on every topic kids want to read about” and “state testing is on iPad so they have to use them”.",
+      "evidence_start": 1097,
+      "evidence_end": 1294,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "stop relying on digital curriculum for core subjects",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Digital curriculum companies no longer print textbooks, limiting effective learning resources.",
+      "evidence_quote": "o determine their funding; and from tech companies who bombard them with messaging that kids will “fall behind” if they can’t use their devices; and from digital curriculum companies who don’t print",
+      "evidence_start": 2965,
+      "evidence_end": 3163,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "implement safeguards against inappropriate content and bullying on school devices",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "Parents report bullying and inappropriate content on school‑issued devices, indicating a need for stronger safeguards.",
+      "evidence_quote": "hers can’t intervene. Parents around the country have reported bullying through school issued devices, encountering inappropriate content on school issued devices, and many more harms. But when I",
+      "evidence_start": 1725,
+      "evidence_end": 1920,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "require opt‑out option for school‑issued devices",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Parents must have a clear mechanism to opt their children out of receiving school‑issued devices.",
+      "evidence_quote": "ked to learn that my local public school gave each child their own iPad when they entered kindergarten and I as a parent had no way to opt my children out of it. When I brought up my concerns about",
+      "evidence_start": 785,
+      "evidence_end": 982,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "tie E‑Rate funding to parents’ ability to opt out of digital instruction",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Funding should be contingent on schools allowing parents to opt their children out of device‑based instruction.",
+      "evidence_quote": "ny changes. This is why parents need the ability to opt out and if you can do something to tie funding to the ability to opt out of digital based instruction would make a world of difference for",
+      "evidence_start": 3279,
+      "evidence_end": 3473,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076583",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076583",
+  "filer_raw": "Connor Haynes",
+  "date_submission": "2026-09-14T15:55:29.801Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0a3e790ebf3cbeac9cf081c8c7945861cb55828fa2f8145d34785651d0b12d8e",
+  "params_key": "bfd9c770fb06190a23444f29c33b1d612b1c2de2c3e57aa18bbfe56185f1d013",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "Austin Independent School District urges the FCC to preserve E‑Rate funding, arguing that broadband is essential for educational operations and that cutting or sunsetting the program would impose severe financial burdens on the district.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "AISD acknowledges the Commission’s commitment to student safety and CIPA compliance but does not propose specific policy changes.",
+      "evidence_quote": "fety and Educational Access \nAISD shares the Commission’s commitment to student safety, CIPA compliance, and \nresponsible technology usage. However, restricting or sunsetting broadband discounts",
+      "evidence_start": 3287,
+      "evidence_end": 3481,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain broadband for safety and operational needs",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "High‑speed networks support essential school operations—including emergency communications, secure student record management, and safety infrastructure—beyond passive screen time.",
+      "evidence_quote": "-speed networks support essential school operations—including emergency \ncommunications, secure student record management, safety infrastructure, and educator \nprofessional development—well beyond",
+      "evidence_start": 3590,
+      "evidence_end": 3786,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid reducing discount rates",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "An 80% discount shift onto local taxpayers would create a severe financial deficit, forcing cuts to educational programming and staffing.",
+      "evidence_quote": "ms, and operational \ndata. \n2.​ Economic Vulnerability: An 80% funding shift onto local taxpayers would create a severe \nfinancial deficit. Tax base constraints mean that losing E-Rate support would",
+      "evidence_start": 2970,
+      "evidence_end": 3168,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain Category 1 and Category 2 funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "AISD requests that the Commission preserve Category 1 and Category 2 funding mechanisms to support high‑speed connectivity and internal connections.",
+      "evidence_quote": "s like Austin ISD to \nbridge the digital divide for underserved students. AISD respectfully requests that the \nCommission preserve Category 1 and Category 2 funding mechanisms and continue supporting",
+      "evidence_start": 3903,
+      "evidence_end": 4102,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "AISD opposes sunsetting E‑Rate because broadband is an ongoing infrastructure requirement for modern education.",
+      "evidence_quote": "ty goals have been achieved \nand whether E-Rate should be narrowed or sunsetted. AISD strongly cautions against this \nconclusion: \n1.​ Connectivity Is an Ongoing Infrastructure Requirement: Broadband",
+      "evidence_start": 2496,
+      "evidence_end": 2695,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "conflicting_or_multiple",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081063",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081063",
+  "filer_raw": "Laura Browder | Austin Independent School District",
+  "date_submission": "2026-10-13T17:46:13.105Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "515d74fffa21ef25a85900b1d768569ccf78d4213acfeb0853b445a1358d7b8d",
+  "params_key": "436ed4f05df738301080aad790fd943e9b2db22b729a2adf941a12a7142cda40",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

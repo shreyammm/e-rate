@@ -1,0 +1,86 @@
+{
+  "summary": "Opposition to sunset or restriction of E‑Rate for libraries, arguing that library Wi‑Fi is essential for low‑income households and that removing discounts would force service cuts; also opposes new eligibility tests as unnecessary administrative burden.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Adding new eligibility tests would create administrative burden without improving outcomes.",
+      "evidence_quote": "y networks on library property serves an educational purpose. Libraries serve the public, including adults, and their mission is broader than classroom instruction. Adding new eligibility tests would",
+      "evidence_start": 1093,
+      "evidence_end": 1292,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The text does not explicitly argue for or against expanding eligibility beyond current scope.",
+      "evidence_quote": "tion. Adding new eligibility tests would create administrative burden without improving outcomes.\nSection 254 of the Communications Act directs the Commission to enhance access to advanced services",
+      "evidence_start": 1252,
+      "evidence_end": 1449,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "reject proposals to sunset or restrict the program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Libraries provide free, high‑speed internet that many households rely on for jobs, benefits, and education.",
+      "evidence_quote": "Wi-Fi is not a luxury. People use it to apply for jobs, file for benefits, attend telehealth appointments, do homework, and access government services that are increasingly online-only. For many",
+      "evidence_start": 158,
+      "evidence_end": 352,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has proven effective in providing broadband to libraries, which serve as essential public access points.",
+      "evidence_quote": "rary wi-fi to get work done, and work on creative projects, without needing to spend valuable money on a safe space to do so. \nThe fact that most libraries now have broadband is evidence that E-Rate",
+      "evidence_start": 469,
+      "evidence_end": 667,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or restriction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Removing E‑Rate discounts would force libraries serving low‑income communities to cut speeds, hours, or service entirely.",
+      "evidence_quote": "very month, and access points, switches, and cabling wear out and need replacement. Remove the discount and many libraries, especially those serving low-income communities, will be forced to cut",
+      "evidence_start": 786,
+      "evidence_end": 980,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077908",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077908",
+  "filer_raw": "Kortney Casanova",
+  "date_submission": "2026-09-23T18:02:13.050Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "18d10618f137f391f14fdcf7d56c2773701ab277f740d11515f6b1ef50e9a8ca",
+  "params_key": "41b8609a99a7e602dffcae8949bd32d60a1dca8b12dea3c1f1ddefb602d5f90f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

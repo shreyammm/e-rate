@@ -1,0 +1,49 @@
+{
+  "summary": "The comment urges the FCC to reject any proposal to reduce, limit, or sunset E‑Rate funding and to continue supporting the program as essential for educational opportunity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for modern education and must not be reduced or sunset.",
+      "evidence_quote": "ely prepare students for success without it.\nI strongly urge the Commission to reject any proposal that would reduce, limit, or sunset E-Rate funding and instead continue supporting this essential",
+      "evidence_start": 1999,
+      "evidence_end": 2195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "Continuing E‑Rate funding preserves educational opportunity for millions of students.",
+      "evidence_quote": "y piece of infrastructure to our PreK-12 education system that the E-Rate program makes possible, Preserving E-Rate means preserving educational opportunity for millions of students, including those",
+      "evidence_start": 2308,
+      "evidence_end": 2506,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080522",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080522",
+  "filer_raw": "Ann Dorsey",
+  "date_submission": "2026-10-11T18:08:48.933Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "beadfd88a535e60cd34b58fadba5bf1e96214bae569b2ef54cc70dcbce221117",
+  "params_key": "e23ceac2c95d23dcb0f51cc1d222a7473bf02c3d071990f2077ecdbecf57209a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

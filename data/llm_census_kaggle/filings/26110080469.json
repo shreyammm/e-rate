@@ -1,0 +1,86 @@
+{
+  "summary": "A school librarian urges the FCC to preserve and protect the E‑Rate program, opposing any proposal to reduce, limit, or sunset it, arguing that E‑Rate is essential for equitable broadband access, modern learning, and preventing cuts to valuable educational programs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures students in low‑income and rural communities have the same tools as wealthier districts.",
+      "evidence_quote": "the AI patient simulation for our Health Care station, and more. \n\nFor nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to",
+      "evidence_start": 2034,
+      "evidence_end": 2231,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Cutting E‑Rate would force schools to cut valuable programs such as libraries and technology instruction.",
+      "evidence_quote": "h will mean having to cut other valuable programs. We know that many districts in our state have already made the tough choice to eliminate services they know students benefit from in order to stay",
+      "evidence_start": 2812,
+      "evidence_end": 3009,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Strong school libraries correlate with increased literacy rates and achievement.",
+      "evidence_quote": "ciety. We know that students with strong school libraries show increased literacy rates and achievement. The research in this is numerous and unequivocal. But when schools have to make cuts in order",
+      "evidence_start": 3282,
+      "evidence_end": 3480,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must be preserved to maintain equitable broadband access for all students.",
+      "evidence_quote": "al Communications Commission to preserve and protect the E-Rate program and to oppose any proposal that would reduce, limit, or sunset this vital source of support for schools and libraries that",
+      "evidence_start": 311,
+      "evidence_end": 505,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting or limiting E‑Rate would deepen inequities in public education.",
+      "evidence_quote": "oals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome.",
+      "evidence_start": 2350,
+      "evidence_end": 2547,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080469",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080469",
+  "filer_raw": "Rebecca Lowe",
+  "date_submission": "2026-10-10T13:21:56.931Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5d969717aa8b73690c84426a6e253ef8b5efca2d1b03b7aa1a83652c3442b283",
+  "params_key": "8d375c2a6af96891f5e730ff4d3917d1c37dfbae464773a9f3427353c61967a3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

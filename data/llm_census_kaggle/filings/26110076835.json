@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, rejecting any proposals to sunset, eliminate, or narrow its scope, and calling for continued support for connectivity and internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate eligibility should not be narrowed based on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "he E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate",
+      "evidence_start": 3105,
+      "evidence_end": 3298,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program should continue to provide connectivity and internal network infrastructure to all schools.",
+      "evidence_quote": "at would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools",
+      "evidence_start": 3258,
+      "evidence_end": 3456,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must not be sunset or eliminated because it is essential infrastructure for modern public education.",
+      "evidence_quote": "ion (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and",
+      "evidence_start": 467,
+      "evidence_end": 658,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should be modernized and strengthened rather than reduced in its role in public education.",
+      "evidence_quote": "ducational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and",
+      "evidence_start": 3416,
+      "evidence_end": 3615,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address any other specific policy issue beyond preserving and strengthening E‑Rate.",
+      "evidence_quote": "ntinue providing students with reliable, affordable, and effective connectivity. Thank you for considering my comments. Respectfully, Krista Albrecht Director of Technology Hewlett-Woodmere Union",
+      "evidence_start": 4191,
+      "evidence_end": 4386,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076835",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076835",
+  "filer_raw": "Krista Albrecht",
+  "date_submission": "2026-09-16T19:51:12.220Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e455ecccc4355523ae86e49dd236afac76dd46a97b02df8c213b0119c835cd9",
+  "params_key": "9a611a6d6c50b796c6f0b970d7ca5ef4e094dc2b05315a8e5a5591a375f5da37",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

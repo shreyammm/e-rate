@@ -1,0 +1,88 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen E‑Rate, rejecting sunset or cuts, and to maintain broad eligibility and support for connectivity and internal network infrastructure. The comment urges the FCC to protect and modernize E‑Rate, emphasizing its importance for student access to technology and equitable connectivity.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eligibility should not be narrowed based on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "he Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or",
+      "evidence_start": 5769,
+      "evidence_end": 5966,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The program should not be sunset or eliminated because it remains essential for modern education.",
+      "evidence_quote": "program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries. As a technology director, I see firsthand",
+      "evidence_start": 471,
+      "evidence_end": 667,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate must continue to fund internal network infrastructure to provide reliable educational access.",
+      "evidence_quote": "ict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 5926,
+      "evidence_end": 6123,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter notes that connectivity is essential infrastructure but does not propose a specific new policy beyond preserving the program.",
+      "evidence_quote": "is part of the basic infrastructure of a modern school system, just like electricity, transportation, and safe facilities. I therefore respectfully urge the Commission to: Reject any proposal to",
+      "evidence_start": 5615,
+      "evidence_end": 5809,
+      "uncertain": true
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "other",
+      "argument": "The FCC should work with schools and stakeholders to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "l network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 6083,
+      "evidence_end": 6278,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080116",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080116",
+  "filer_raw": "Brendan Fitzgerald",
+  "date_submission": "2026-10-08T19:09:06.613Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "eb9f6f8aac9e44cc91bb33d8bbd8c44e642b7d054ad5781531aec603d3f44119",
+  "params_key": "d1527f3b8c646c4fe11b5eb907ccf3f97199c20a0509ddbde0985d405fc9aac3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

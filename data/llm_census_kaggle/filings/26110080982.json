@@ -1,0 +1,88 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing eligibility, or cuts, and to maintain support for internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based solely on geography \nor other criteria that would leave students without adequate support; \n3.​ Preserve support for the connectivity and internal",
+      "evidence_start": 3727,
+      "evidence_end": 3920,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The program is essential for school safety and cannot be eliminated.",
+      "evidence_quote": "hools. \nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and \nto reject any proposal that would eliminate, sunset, substantially reduce,",
+      "evidence_start": 474,
+      "evidence_end": 672,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Internal network infrastructure is critical for reliable educational access.",
+      "evidence_quote": "upport for the connectivity and internal network infrastructure schools need to provide reliable \neducational access; and \n4.​ Work with schools and other stakeholders to strengthen and modernize",
+      "evidence_start": 3880,
+      "evidence_end": 4075,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other specific policy proposals.",
+      "evidence_quote": "October 8, 2026 \nFederal Communications Commission \n45 L Street NE \nWashington, DC 20554 \n \nRE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 — Notice of Proposed Rulemaking and Further Notice of",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should be strengthened and modernized rather than reduced.",
+      "evidence_quote": "stakeholders to strengthen and modernize E-Rate rather than reduce its role in public \neducation. \nE-Rate has enabled schools and libraries to build and maintain the connectivity necessary to",
+      "evidence_start": 4035,
+      "evidence_end": 4226,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080982",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080982",
+  "filer_raw": "Matthew Boyack",
+  "date_submission": "2026-10-13T15:48:19.975Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "04507793bbf610acf7e30d8423e253d902a7ad367c4656a3561b2198c38ee446",
+  "params_key": "1de35a55081d4b2e6131a0c3b2c08fa66790e7f6c6ddc57faaa5a6a4f7fa41f4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

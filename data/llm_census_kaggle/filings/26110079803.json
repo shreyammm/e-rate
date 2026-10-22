@@ -1,0 +1,86 @@
+{
+  "summary": "The commenter urges the FCC to preserve and protect the E‑Rate program, arguing that it is essential for reliable broadband access in schools and libraries, especially for low‑income and rural communities, and that cuts would deepen inequities and harm educational outcomes.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "continue funding for connectivity and Wi‑Fi infrastructure",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "implementation_burden",
+      "argument": "Schools rely on E‑Rate to provide Wi‑Fi networks and connectivity for digital curriculum, assignments, and assessments.",
+      "evidence_quote": "supports connectivity at 10 gigabits per second at 24 school and division sites in MCPS at a 60 percent discount rate.  E-Rate disbursements to the division totaled roughly $1.5 million over funding",
+      "evidence_start": 2827,
+      "evidence_end": 3025,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "protect equity in broadband access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has historically ensured that students in low‑income urban and rural communities have access to the same tools as wealthier districts.",
+      "evidence_quote": "ly 30 years—starting about the same time I first became a high school English teacher, with a single internet connected computer in the library--E-Rate has helped ensure that students in low-income",
+      "evidence_start": 3613,
+      "evidence_end": 3810,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility for all schools and libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would force local divisions with the least capacity to absorb costs, harming students and families.",
+      "evidence_quote": "s to cover, or passing the cost to local taxpayers in a county where thousands of households are still waiting for reliable home internet. Cutting E-Rate would deepen the inequities that public",
+      "evidence_start": 4227,
+      "evidence_end": 4420,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent deepening of inequities through E‑Rate cuts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "predicted_consequence",
+      "argument": "Cutting E‑Rate would deepen inequities that public education is meant to overcome, limiting students’ ability to participate in modern learning environments.",
+      "evidence_quote": "would deepen the inequities that public education is meant to overcome. Students cannot fully participate in modern learning environments without reliable internet access, and schools cannot prepare",
+      "evidence_start": 4381,
+      "evidence_end": 4579,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to reduce, limit, or sunset E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for reliable broadband in schools and libraries, especially in low‑income and rural areas.",
+      "evidence_quote": "K-12 education system, and E-Rate is how schools gain access to it.\n\nI strongly urge the Commission to reject any proposal that would reduce, limit, or sunset E-Rate funding and instead continue",
+      "evidence_start": 4850,
+      "evidence_end": 5044,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079803",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079803",
+  "filer_raw": "Marcus Weaver-Hightower",
+  "date_submission": "2026-10-07T15:51:40.713Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fec23863014fbf4abae61826fbbf0450ac1d466545c23a0b3c6d64810804402e",
+  "params_key": "e24163edf811c5b63fb1b7513677aa29a196595ce2e82d0d5f7b1d27ae9ad6b5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

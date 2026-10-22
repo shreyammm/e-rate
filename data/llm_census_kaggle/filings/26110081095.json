@@ -1,0 +1,89 @@
+{
+  "summary": "Denver Public Schools urges the FCC to preserve E‑Rate funding, arguing that cuts would jeopardize essential network infrastructure, cybersecurity, and educational programs, while emphasizing that E‑Rate is not intended to regulate student screen time and that technology use decisions should remain local.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address CIPA or BYOD policies.",
+      "evidence_quote": "time, decisions regarding instructional technology remain at the local level. Educators, \nschool leaders, school boards, and families are far better positioned than the FCC to \nevaluate and address",
+      "evidence_start": 2623,
+      "evidence_end": 2820,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No stance on consultant registration is expressed.",
+      "evidence_quote": "d than the FCC to \nevaluate and address  the unique needs of their students. \nWe strongly caution the Commission against regulatory or policy efforts that conflate \ninfrastructure funding with the",
+      "evidence_start": 2781,
+      "evidence_end": 2977,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "avoid linking E‑Rate to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate funding is unrelated to student screen‑time policies, which should be decided locally.",
+      "evidence_quote": "funding with efforts to reduce \nstudent screen time. DPS takes the need to reduce screen time seriously. Earlier this year, \nwe implemented a district-wide, bell-to-bell cell phone ban for all",
+      "evidence_start": 936,
+      "evidence_end": 1128,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate funds are strictly for enterprise infrastructure and are not used for student devices, so reducing them would not curb screen time.",
+      "evidence_quote": "robust infrastructure is precisely what enables our district to operate a safe, secure, and \nactively filtered network during the school day. \nE-Rate funds are dedicated strictly to enterprise",
+      "evidence_start": 1243,
+      "evidence_end": 1435,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would strip schools of the infrastructure needed to safely filter and manage secure networks, undermining student learning.",
+      "evidence_quote": "g that schools and libraries \ncan obtain affordable, reliable, high-capacity connectivity and to avoid changes that would \nundermine local school district’s ability to meet the evolving needs of",
+      "evidence_start": 3410,
+      "evidence_end": 3604,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "consultant_registration": "discussion_no_position",
+    "education_outcomes": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081095",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081095",
+  "filer_raw": "Denver Public Schools, William Good, Dr. Richard Charles",
+  "date_submission": "2026-10-13T18:34:30.729Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c973c0291b435e644bde01638b99f10d8359c02954cd488fa414bc1b4751fefa",
+  "params_key": "a53ec254f7e3020a37d0dfc11eeefa9c685d478c5c538da5ce4499e1854a7bce",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

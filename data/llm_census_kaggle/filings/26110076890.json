@@ -1,0 +1,89 @@
+{
+  "summary": "The Diocese of Corpus Christi urges the FCC to preserve and simplify the E‑Rate program, arguing that cuts would shift costs to small private schools, that administrative burdens hinder participation, and that broadband access should not be conflated with increased screen time.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "support",
+      "requested_action": "simplify administrative requirements",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Simplifying E‑Rate administrative processes will encourage participation without reducing access.",
+      "evidence_quote": "elves become a barrier to participation. Improvements to E-Rate should make the program easier \nto access, not unintentionally exclude schools without large technology or administrative departments.",
+      "evidence_start": 1694,
+      "evidence_end": 1892,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "clarify that broadband access is not equivalent to increased screen time",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Connectivity is infrastructure; how it is used is an educational decision best left to school leaders, educators, and parents.",
+      "evidence_quote": "echnology or administrative departments. \nFinally, reliable internet access should not be equated with increased screen time. Connectivity is \ninfrastructure; how it is used is an educational",
+      "evidence_start": 1852,
+      "evidence_end": 2043,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "oppose",
+      "requested_action": "maintain current administrative requirements",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Complex application and compliance requirements are a barrier for small schools with limited administrative staff.",
+      "evidence_quote": "er the administrative realities of small schools. Our \nadministrators and staff wear many hats, and complex application and compliance requirements can \nthemselves become a barrier to participation.",
+      "evidence_start": 1536,
+      "evidence_end": 1734,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve broad access for private and religious schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program must remain available to private and religious schools to ensure equitable broadband access for all students.",
+      "evidence_quote": "mmission to preserve broad access to the E-Rate program, including continued \naccess for private and religious schools. \nOur ten Catholic schools serve 1,933 students and families across South Texas,",
+      "evidence_start": 300,
+      "evidence_end": 499,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reducing E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate support would shift essential broadband costs onto schools and families, undermining educational resources.",
+      "evidence_quote": "offsetting \nthe significant and ongoing costs of the connectivity and infrastructure necessary for education today. \nReducing E-Rate support does not reduce a school's need for reliable broadband,",
+      "evidence_start": 923,
+      "evidence_end": 1119,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "support",
+    "cipa_byod": "discussion_no_position",
+    "consultant_definition": "oppose",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076890",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076890",
+  "filer_raw": "Dr. Rebecca Hammel",
+  "date_submission": "2026-09-17T17:55:28.500Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "22f4f425c06c3f53e4841dd5c5fdc7886718a960d884bbad7a063e41ac7e6103",
+  "params_key": "f68ecee633055d156af12181b46810a471d0d1c8acb23a3e924f336ed36adf1b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

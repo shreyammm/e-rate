@@ -1,0 +1,86 @@
+{
+  "summary": "OPLIN argues that limiting E‑Rate funding would harm public libraries and that proposed streamlining of consortium paperwork would increase administrative burdens, while supporting continued use of the current consortia model. No policy claims identified in the provided text.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "oppose",
+      "requested_action": "retain current consortium administrative model",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring consortium members to submit electronic forms directly would impose additional administrative burdens on both consortium leads and members.",
+      "evidence_quote": "submit their electronic versions of Form 479\nin EPC would indeed impose additional administrative burdens on both consortium leads, who would not\nbe able to assist members directly in that task, and",
+      "evidence_start": 3712,
+      "evidence_end": 3910,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "oppose",
+      "requested_action": "do not require direct electronic submission of Form 479",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The current bundled collection of Letters of Agency and Form 479 is more efficient and should remain unchanged.",
+      "evidence_quote": "rs of Agency from each member before\nthe consortium can file a funding application. This annual activity is most efficiently bundled with the\ncorresponding activity of collecting forms 479, and it",
+      "evidence_start": 4339,
+      "evidence_end": 4535,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "discussion_no_position",
+      "requested_action": "maintain consortium oversight mechanisms",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Oversight and accountability could be achieved through other means without changing consortium processes.",
+      "evidence_quote": "certification of CIPA compliance remain a\nconsortium task.\nwww.oplin.ohio.gov •support@oplin.ohio.gov\n\nOversight and accountability could very easily be achieved through other means. We would",
+      "evidence_start": 4651,
+      "evidence_end": 4842,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Limiting E‑Rate would directly reduce internet access for Ohio public libraries, harming equity of information access.",
+      "evidence_quote": "$2.5\nmillion of that budget is internet access to the 251 public libraries in our state. We receive BEAR\nreimbursements of approximately $1.5 million on those services. Any limitation to the E-Rate",
+      "evidence_start": 1237,
+      "evidence_end": 1434,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has been essential for affordable, reliable internet in libraries, as noted by state broadband office.",
+      "evidence_quote": "libraries in our state. A loss of E-Rate funding cannot\nbe \"made up\" through other means.\nThe E-Rate program has been very successful in establishing affordable, reliable internet access for",
+      "evidence_start": 1547,
+      "evidence_end": 1737,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076726",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076726",
+  "filer_raw": "Ohio Public Library Information Network (OPLIN)",
+  "date_submission": "2026-09-15T19:11:02.228Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "5847b3a29811a94fe69936274cd24e5e02ac2fd191aad94cd79e75fb3748eecb",
+  "params_key": "ece09bc33fb2c12e85dd736073b6b651a2451e5235d73cac081a795460222d18",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

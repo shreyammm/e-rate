@@ -1,0 +1,75 @@
+{
+  "summary": "The Central Union Elementary School District strongly supports continued E‑Rate funding, opposes any reduction or conditioning of that funding on instructional practices, and advocates that decisions about technology use remain local.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "maintain local control over instructional technology decisions",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Decisions regarding instructional technology and student screen time should remain with local school districts in partnership with educators and families.",
+      "evidence_quote": "cational priorities. \nOur Board supports responsible technology use, student online safety, fiscal accountability, and \nappropriate federal oversight. However, decisions regarding instructional",
+      "evidence_start": 1397,
+      "evidence_end": 1590,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "oppose conditioning E‑Rate on instructional practices",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Affordable connectivity should not be conditioned on locally determined instructional practices.",
+      "evidence_quote": "s and families. \nAffordable connectivity should not be conditioned on locally determined instructional practices. \nAs the Commission considers changes to E-Rate, I respectfully urge continued access",
+      "evidence_start": 1706,
+      "evidence_end": 1904,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district urges the FCC to maintain the current E‑Rate program to preserve affordable connectivity for schools.",
+      "evidence_quote": "ntinuation and protection of the federal E-Rate program. \nOur District serves approximately 1,500 students across four schools. E-Rate provides essential support \nfor reliable internet connectivity",
+      "evidence_start": 618,
+      "evidence_end": 815,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose any reduction in E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate discounts would shift additional expenses to local schools, potentially diverting resources from classroom instruction.",
+      "evidence_quote": "t and data connectivity and $186,375 for internal network infrastructure. Our \ncurrent 70 percent E-Rate discount substantially reduces costs to local taxpayers. Reducing this support \nwould shift",
+      "evidence_start": 1090,
+      "evidence_end": 1286,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_monitoring_privacy": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081009",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081009",
+  "filer_raw": "Central Union Elementary School District",
+  "date_submission": "2026-10-13T16:19:54.009Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b9ea1756d4c719eab73bbd8c8db84d4019aafc76b5c4c054a1ebc22c7b371b94",
+  "params_key": "7de1de6ab7f92cc1381883d380108b2154c0977ac1535a5fe97efcfaacbdf9b6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

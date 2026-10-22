@@ -1,0 +1,50 @@
+{
+  "summary": "Elizabeth Johnson urges the FCC to reject any proposals that would limit, sunset, or weaken the E‑Rate program and calls for streamlining the application process to keep pace with modern technological standards.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "conditional_or_amend",
+      "requested_action": "streamline the application process",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The FCC should focus on streamlining the application process and ensuring funding keeps pace with modern technological standards.",
+      "evidence_quote": "community needs evolve, the \ndemand for bandwidth only increases. Rather than restricting or sunsetting the \nprogram, the FCC should focus on streamlining the application process and \nensuring",
+      "evidence_start": 2167,
+      "evidence_end": 2359,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals limiting, sunsetting, or weakening E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for digital equity and must not be curtailed.",
+      "evidence_quote": "deral Communications Commission (FCC) to reject any proposals that would limit, \nsunset, or weaken this vital initiative. For decades, E-Rate has served as the foundational \nbedrock of digital equity",
+      "evidence_start": 619,
+      "evidence_end": 818,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conditional_or_amend",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077502",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077502",
+  "filer_raw": "Elizabeth Johnson",
+  "date_submission": "2026-09-21T20:20:03.098Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f0cf5a3ff4d780663b205a4483ac3e1fad509dafa3ad0d8e17e6872eddcf31f2",
+  "params_key": "51b39f3816bd5cd54f90d06f97f1cc41264064c8105d43adaded63aa0623789a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

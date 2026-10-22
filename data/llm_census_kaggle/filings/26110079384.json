@@ -1,0 +1,88 @@
+{
+  "summary": "McHenry Community Consolidated School District 15 urges the FCC to keep the E‑Rate program, reject any sunset or narrowing of eligibility, and continue supporting connectivity and internal network equipment.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue supporting connectivity and internal network equipment",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funds cover about 60% of networking costs and are critical for ongoing maintenance and upgrades.",
+      "evidence_quote": ". You don't throw out your umbrella just because it isn't raining today. Here is what E-Rate means for us in real numbers. It covers about 60% of our networking costs. Over funding years 2021 through",
+      "evidence_start": 2181,
+      "evidence_end": 2380,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility or geographic restrictions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district contends that narrowing eligibility would leave students without needed support, especially in small towns with many disadvantaged families.",
+      "evidence_quote": "ission to: Reject any proposal to sunset or eliminate the E-Rate program. Reject proposals that would narrow E-Rate eligibility or limit support based on geography or other criteria that would leave",
+      "evidence_start": 4063,
+      "evidence_end": 4261,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that E‑Rate is essential for maintaining reliable network infrastructure and that eliminating it would jeopardize daily operations.",
+      "evidence_quote": "he E-Rate program in place and to reject any proposal that would eliminate it, sunset it, cut it significantly, or add unnecessary restrictions to it. In my role, I see every day that reliable",
+      "evidence_start": 472,
+      "evidence_end": 664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "protect E‑Rate to ensure reliable, affordable connectivity for all students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that E‑Rate is necessary for schools to provide modern education tools regardless of location or family income.",
+      "evidence_quote": "ols to learn and succeed no matter where they live or what their family can afford. Please protect E-Rate so schools like ours can keep providing reliable, affordable connectivity. Thank you for",
+      "evidence_start": 4694,
+      "evidence_end": 4888,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "maintain current filtering and device management practices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district maintains that internet access is not the same as screen time and that filtering tools are essential for student safety.",
+      "evidence_quote": "ant to address the screen time question. Internet access is not the same thing as screen time. We filter internet access on every student device, both at the network level and on the device itself.",
+      "evidence_start": 3115,
+      "evidence_end": 3312,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079384",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079384",
+  "filer_raw": "McHenry Community Consolidated School District 15",
+  "date_submission": "2026-10-05T14:20:50.747Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "42473d69cf75f83d40aa8dde75e3ebef1232862822e978e9d52e5258c834fde2",
+  "params_key": "a943dacf4fa1d10103fb671e2882f1e1ab4ac7b387fadd3ce82cd6121e2af097",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

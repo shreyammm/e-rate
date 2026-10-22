@@ -1,0 +1,89 @@
+{
+  "summary": "Riverbank Unified School District teachers oppose any E‑Rate cuts, sunset, or new restrictions, arguing that such moves would harm rural students, cut essential broadband funding, and undermine instructional autonomy.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "do not expand CIPA to BYOD",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Expanding CIPA to monitor and filter BYOD devices would create technical costs and infringe on employee working conditions.",
+      "evidence_quote": "tal stage where early literacy screening and developmental transitions are most critical.\n\n\n* **Unbargained Burdens and Privacy Conflicts:** Expanding CIPA mandates to monitor, filter, and police",
+      "evidence_start": 3541,
+      "evidence_end": 3736,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Limiting eligibility to single‑provider areas would disadvantage students in rural districts that rely on E‑Rate for connectivity.",
+      "evidence_quote": "e digital tools as students in wealthier suburban districts. While the program has been remarkably successful, proposals to sunset E-Rate, restrict funding to single-provider areas, or condition",
+      "evidence_start": 2143,
+      "evidence_end": 2337,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting or reducing E‑Rate would force rural schools to absorb costly broadband expenses, leading to cuts in instructional staff.",
+      "evidence_quote": "g to single-provider areas, or condition support on rigid federal screen-time caps and parental opt-out mandates would severely harm our schools:\n\n* **Devastating Budget Impacts:** E-Rate is an",
+      "evidence_start": 2297,
+      "evidence_end": 2490,
+      "uncertain": false
+    },
+    {
+      "provision_id": "prek_headstart",
+      "position": "oppose",
+      "requested_action": "do not exclude Pre‑K/TK",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Excluding Pre‑K and TK students would penalize early learning classrooms at a critical developmental stage.",
+      "evidence_quote": "tion:** Excluding Pre-K and Transitional Kindergarten (TK) students from E-Rate requests would penalize our early learning classrooms at the exact developmental stage where early literacy screening",
+      "evidence_start": 3384,
+      "evidence_end": 3581,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose screen‑time caps",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Uniform per‑day screen‑time limits would undermine local educational autonomy and disrupt instructional planning.",
+      "evidence_quote": "uts to vital personnel like intervention teachers, paraprofessionals, and counselors.\n\n\n* **Classroom Realities vs. Federal Mandates:** Imposing uniform per-day screen-time limits or federally",
+      "evidence_start": 2921,
+      "evidence_end": 3113,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "prek_headstart": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076497",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076497",
+  "filer_raw": "Vivian Wilson",
+  "date_submission": "2026-09-12T18:38:53.209Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9cd0d97edb639ca4b7fde88bd421174052c4d82e135faf3441c2a43ec0eff56e",
+  "params_key": "9067ea7f9853ea9542e2ad863abbd9717057fbb7fca4fd338014d4488e4935a9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

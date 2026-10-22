@@ -1,0 +1,89 @@
+{
+  "summary": "Independent Women urges the FCC to strengthen E‑Rate oversight, limit excessive screen time, and protect children from online harms while preserving parental authority.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "extend CIPA to third‑party devices",
+      "reason_family": "child_safety",
+      "claim_kind": "legal_claim",
+      "argument": "Third‑party devices should be subject to the same child‑protection rules as school‑issued devices.",
+      "evidence_quote": "lowing children to access distracting or harmful content. Over \none in ten school-aged children surveyed reported not just accessing pornography \nand other inappropriate content at school, but on",
+      "evidence_start": 2945,
+      "evidence_end": 3140,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "support",
+      "requested_action": "apply CIPA restrictions to social media use",
+      "reason_family": "child_safety",
+      "claim_kind": "legal_claim",
+      "argument": "Social media platforms accessed in schools must meet CIPA content‑filtering requirements.",
+      "evidence_quote": "inappropriate content at school, but on school-issued devices, possibly \nprovided for through this program. Federal programs that allow schools and \nchildren’s libraries to become unregulated",
+      "evidence_start": 3101,
+      "evidence_end": 3292,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "ensure E‑Rate services support genuine learning",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E‑Rate must prioritize educational outcomes over unrestricted access.",
+      "evidence_quote": "nd libraries across the country. It must respect parental \nauthority by ensuring that subsidized networks and services support genuine \nlearning rather than allowing children to access distracting or",
+      "evidence_start": 2786,
+      "evidence_end": 2985,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "empower parents to control online access",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents should retain primary responsibility for their children’s internet use.",
+      "evidence_quote": "e subjected to such risks as a condition of \naccessing federally subsidized educational resources. \n \nThe E-Rate Program Must Reflect Parental Authority and Educational Purpose \n \nParents retain",
+      "evidence_start": 2321,
+      "evidence_end": 2515,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "limit screen time in schools",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "Excessive screen time in classrooms harms academic performance and attention.",
+      "evidence_quote": "esearch, including the 2026 U.S. Surgeon General’s Advisory on the Harms of \nScreen Use, documents clear links between heightened screen time and negative \noutcomes, including declining academic",
+      "evidence_start": 1080,
+      "evidence_end": 1274,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_social_media": "support",
+    "education_outcomes": "support",
+    "parent_opt_out": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26109834985",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109834985",
+  "filer_raw": "Independent Women",
+  "date_submission": "2026-06-18T01:51:27.689Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3ec43b18955e3f98a7a1129d1027e202ddf2a1d3251ce4d9a3a2340bd3372a71",
+  "params_key": "94bab028231494b317ea856b6b4722aa2a82a7c0d7f7acab15c11d6eaa1b47af",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "The Eastern Shore of Virginia Public Library System urges the FCC to preserve the core E‑Rate program, adjust discount methodology to reflect local cost and need, and avoid changes that would reduce access, increase administrative burden, or limit local flexibility for libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "oppose",
+      "requested_action": "avoid increasing administrative burden",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The library argues that additional administrative requirements would limit local flexibility and strain library resources.",
+      "evidence_quote": "cess, increase administrative burden, or limit local flexibility for libraries, patrons, and communiti es. E-Rate is an essential program, and we ask for the FCC’s continued commitment to ensuring",
+      "evidence_start": 5128,
+      "evidence_end": 5324,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "adjust discount methodology to reflect local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library contends that discount calculations should be based on true local cost and need, not a one‑size‑fits‑all approach.",
+      "evidence_quote": "do not disproportionately harm libraries serving high-need, rural, or high-cost communities. • Do not treat urban and rural libraries and library systems the same, where their missions and user",
+      "evidence_start": 4506,
+      "evidence_end": 4699,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid treating urban and rural libraries the same",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library stresses that urban and rural libraries have different missions and user environments, and a uniform approach would harm rural libraries.",
+      "evidence_quote": "do not disproportionately harm libraries serving high-need, rural, or high-cost communities. • Do not treat urban and rural libraries and library systems the same, where their missions and user",
+      "evidence_start": 4506,
+      "evidence_end": 4699,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library system argues that eliminating or reducing E‑Rate would severely limit library services and community access to essential digital resources.",
+      "evidence_quote": "ing reduced as well. 5. RECOMMENDATION • Preserve the core E-Rate program. • Ensure any changes to discount methodology reflect true local cost and need, and do not disproportionately harm libraries",
+      "evidence_start": 4348,
+      "evidence_end": 4546,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "avoid changes that reduce access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library warns that any FCC changes that reduce access would create barriers to education, employment, and health services for the community.",
+      "evidence_quote": "-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or",
+      "evidence_start": 4971,
+      "evidence_end": 5168,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "oppose",
+    "discount_matrix": "conditional_or_amend",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076435",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076435",
+  "filer_raw": "Eastern Shore of Virginia Public Library System",
+  "date_submission": "2026-09-11T16:23:58.023Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c5a65e219947dce0ec7ce1febfc319cf2e59c91bd0f8bead69d554a19002c2c7",
+  "params_key": "9583df408878bd619afcb7fc62a2624768cce02b666b39f57633403269c910f1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

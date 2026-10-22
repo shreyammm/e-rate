@@ -1,0 +1,88 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing eligibility, and cuts to connectivity support, and calling for modernization and reliable, affordable broadband for all students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "E‑Rate eligibility should not be unnecessarily narrowed based on geography or other criteria.",
+      "evidence_quote": "trict \nsupport based solely on geography or other criteria that would leave students without \nadequate support; \n3.        Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 2783,
+      "evidence_end": 2979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program should not be eliminated or sunset.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen \nthe E-Rate program and to reject any proposal that would eliminate, sunset, substantially \nreduce, or",
+      "evidence_start": 457,
+      "evidence_end": 644,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "The FCC should work with schools to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "ngthen and modernize E-Rate \nrather than reduce its role in public education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the \nconnectivity necessary for",
+      "evidence_start": 3097,
+      "evidence_end": 3291,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure reliable, affordable connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students deserve reliable, affordable connectivity regardless of location or family finances.",
+      "evidence_quote": "ly’s financial circumstances. I urge the Commission to protect E-Rate and \nensure that public schools can continue providing students with reliable, affordable, and \neffective connectivity. \nThank",
+      "evidence_start": 3702,
+      "evidence_end": 3898,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Schools need continued support for connectivity and internal network infrastructure.",
+      "evidence_quote": "vity and internal network infrastructure schools \nneed to provide reliable educational access; and \n4.        Work with schools and other stakeholders to strengthen and modernize E-Rate \nrather than",
+      "evidence_start": 2939,
+      "evidence_end": 3137,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078794",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078794",
+  "filer_raw": "Portola Valley School District",
+  "date_submission": "2026-09-29T21:51:22.268Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8c1adfa8ac0741b3ea18680a92e1c8b2fd49b574572d41963d55124dbabe99cc",
+  "params_key": "5d7add8b9cf0537f9f452dd860216b4d9ca85efe689f32df80b53c1136cb51bf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

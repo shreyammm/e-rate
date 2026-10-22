@@ -1,0 +1,85 @@
+{
+  "summary": "New Ulm Public Schools urges the FCC to preserve current E‑Rate Category One and Category Two support levels, arguing that reductions would jeopardize network reliability, increase local costs, and delay necessary upgrades.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current discount levels for Category One and Category Two",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district needs predictable Category One and Category Two support to replace aging equipment and keep network performance reliable.",
+      "evidence_quote": "he Commission's review of the future \nof the E-Rate program. \nOur current E-Rate discount is 60%. E-Rate helps us maintain the connectivity and internal network infrastructure used \nfor instruction,",
+      "evidence_start": 623,
+      "evidence_end": 821,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reduce E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing support would shift costs to local budgets, potentially leading to deferred upgrades or lower‑capacity solutions.",
+      "evidence_quote": "fore E-Rate and approximately $15,000 in annual E-\nRate support. If support were reduced, we would have to significantly restructure our network-upgrade plan, putting our \nnetwork at risk. \nThe",
+      "evidence_start": 1408,
+      "evidence_end": 1601,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve needs‑based structure of the program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Category Two is a recurring infrastructure need; treating it as a one‑time buildout would not reflect how school networks function over time.",
+      "evidence_quote": "investment in eligible internal network components. Planned \nreplacement allows us to address aging or unsupported infrastructure before failure disrupts instruction or operations. \nTreating",
+      "evidence_start": 2811,
+      "evidence_end": 3001,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "allow flexibility in eligible solutions such as dark fiber, self‑provisioned fiber, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Applicants should retain the flexibility to compare eligible solutions and choose the option that best fits local technical and financial conditions.",
+      "evidence_quote": "ered dark fiber, self-provisioned fiber, and Managed Internal Broadband Services \nas possible ways to meet our network needs. Applicants should retain the flexibility to compare eligible solutions",
+      "evidence_start": 4200,
+      "evidence_end": 4396,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain predictable Category One and Category Two support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district’s ability to plan network improvements depends on predictable E‑Rate support, preventing delays until equipment fails.",
+      "evidence_quote": "the ability to plan network improvements rather than simply delay them until equipment fails or \nperformance becomes a problem. We ask the Commission to continue predictable Category One and Category",
+      "evidence_start": 4666,
+      "evidence_end": 4865,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080719",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080719",
+  "filer_raw": "New Ulm School District 88",
+  "date_submission": "2026-10-12T20:48:41.723Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "268b779f53a70c8df3103a7eefebf29c75b6f79f4ffbc40146efe1d569973aca",
+  "params_key": "0e0de78d1ab1296090bd3fc98ee8e3298775bff7906c04d60ef6b4602dd499f2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

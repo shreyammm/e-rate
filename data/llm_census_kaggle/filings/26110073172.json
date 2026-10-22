@@ -1,0 +1,63 @@
+{
+  "summary": "The commenter supports continued E‑Rate funding for schools and libraries, opposes using screen‑time concerns to cut that funding, and calls for stricter contractor and vendor oversight.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_records",
+      "position": "alternative_proposal",
+      "requested_action": "enforce stricter contractor/vendor rules",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "The program should hold contractors and vendors to high standards to prevent waste and fraud.",
+      "evidence_quote": "rcing stricter rules for contractors and vendors that participate in the program. We should hold them to very high standards to prevent waste and fraudulent activity.",
+      "evidence_start": 1409,
+      "evidence_end": 1575,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program should remain in place to keep Internet access affordable for schools and libraries.",
+      "evidence_quote": "I believe the E-Rate program should continue to provide support for schools and libraries to maintain Internet access at an affordable price. As a young person, the library was the only place I could",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not limit funds based on screen time",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time concerns should not be used to reduce E‑Rate funding for institutions serving children.",
+      "evidence_quote": "lace. I believe the issue of screen time for children is better addressed in other ways than potentially limiting funds to institutions that serve children. Should we be concerned about screen time",
+      "evidence_start": 788,
+      "evidence_end": 985,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_records": "alternative_proposal",
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073172",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073172",
+  "filer_raw": "Daniel Gerken",
+  "date_submission": "2026-08-26T12:17:37.497Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cc1bebbf045c3c486793dee2518f7b94a7ab29d08085531dc0dbe97a6a574ec2",
+  "params_key": "6a8a2ce2c4ca08a02dea891b5a3e323df87db3e1fe7b762156f4602584320e41",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

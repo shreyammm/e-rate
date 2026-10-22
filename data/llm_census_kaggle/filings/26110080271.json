@@ -1,0 +1,63 @@
+{
+  "summary": "The Northwest region of Oregon, represented by several school superintendents, opposes any proposals that would narrow eligibility, reduce funding, or impose unrelated conditions on the E‑Rate program, arguing that the program remains essential for affordable broadband and should be preserved in line with Congress’s original intent.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "reject proposals to condition E‑Rate on unrelated policies",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should not be tied to instructional technology or screen‑time policies, as it is a broadband discount program, not an instructional technology program.",
+      "evidence_quote": "ncerned by proposals to condition E-Rate participation in educational \ntechnology or screen-time policies. E-Rate is not an instructional technology program. It \ndoes not purchase laptops, software,",
+      "evidence_start": 2313,
+      "evidence_end": 2511,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals to narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program must remain open to all schools and libraries regardless of geography or local wealth to ensure equitable broadband access.",
+      "evidence_quote": "Chair Carr and FCC Commissioners,​\n \nThe Northwest region of Oregon respectfully urges the Federal Communications \nCommission to reject proposals that would narrow eligibility for, reduce funding",
+      "evidence_start": 155,
+      "evidence_end": 350,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to reduce funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate funding would shift costs to already strained local budgets without lowering overall expenses.",
+      "evidence_quote": "proposals to reduce eligibility based on poverty \nthresholds, market competition, or assumptions regarding local fiscal capacity. While \nhigher-poverty communities appropriately receive larger",
+      "evidence_start": 1864,
+      "evidence_end": 2056,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080271",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080271",
+  "filer_raw": "NW Regional ESD | Banks School District | Forest Grove School District | Clatskanie School District | Gaston School District | Neah-Kah-Nie School District | Rainier School District | Warrenton-Hammond School District",
+  "date_submission": "2026-10-09T16:37:13.104Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5f7c99c12af611fd58a3cfc39ce358c671b96b934de83600ba2631d919bfb6cd",
+  "params_key": "30527802e4685dfbe972463ae6f241046455a5bbe1d0b44c60fad67cded3d252",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

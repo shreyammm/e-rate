@@ -1,0 +1,89 @@
+{
+  "summary": "Bethlehem Area School District urges the FCC to maintain the core E‑Rate program, keep eligibility for special construction and other services, ensure discount methodology reflects local cost and need, and avoid federal screen‑time limits.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district contends that discounts should be based on local cost and need to avoid harming high‑need communities.",
+      "evidence_quote": "reflect true local cost and need, and do not\ndisproportionately harm districts serving high-need or high-cost communities.\n• Avoid one-size-fits-all federal screen-time limits. Leave it to local",
+      "evidence_start": 3992,
+      "evidence_end": 4186,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating or reducing E‑Rate would severely limit students’ access to reliable internet and network infrastructure.",
+      "evidence_quote": "a teacher can devote to each student.\n5. RECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal",
+      "evidence_start": 3544,
+      "evidence_end": 3732,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address other policy issues beyond those listed.",
+      "evidence_quote": "E-Rate,\nincluding support for affordable broadband, Internet access, internal connections, Wi-Fi, maintenance,\nand cost-effective network solutions. We support thoughtful improvements,",
+      "evidence_start": 4299,
+      "evidence_end": 4483,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district believes local control is necessary to manage screen time appropriately.",
+      "evidence_quote": "al screen-time limits. Leave it to local control.\n6. CLOSING\nBethlehem Area School District respectfully urges the FCC to preserve the core strengths of E-Rate,\nincluding support for affordable",
+      "evidence_start": 4146,
+      "evidence_end": 4339,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district maintains that these services are essential for maintaining affordable connectivity.",
+      "evidence_quote": "ber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n• Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation, maintenance,",
+      "evidence_start": 3692,
+      "evidence_end": 3885,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076908",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076908",
+  "filer_raw": "Bethlehem Area School District",
+  "date_submission": "2026-09-17T19:12:53.317Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2fb3d3ca71736dd3bd82c9a859872317b2255c89078ff30521d5ef28aa2dce29",
+  "params_key": "f3f867a5790161caf27a969095c73d584b68eb9ba910609611accc54e0acaeb7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

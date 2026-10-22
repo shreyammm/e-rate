@@ -1,0 +1,49 @@
+{
+  "summary": "Teacher urges FCC to reject any proposal that would reduce, limit, or sunset the E‑Rate program, arguing that such cuts would deepen inequities, harm educational opportunity, and compromise school safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding for safety and security",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate support is essential for school security systems and record‑keeping, protecting student safety.",
+      "evidence_quote": "s internet access is used for systems of communication with parents, college applications, home access for e-learning days, and more. It is also essential for our security system that keeps our",
+      "evidence_start": 1072,
+      "evidence_end": 1265,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to reduce, limit, or sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would deepen inequities that public education is meant to overcome.",
+      "evidence_quote": "ts. While the program has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would",
+      "evidence_start": 1535,
+      "evidence_end": 1732,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081261",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081261",
+  "filer_raw": "Jon Cook | National Education Association",
+  "date_submission": "2026-10-13T21:32:10.847Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "29672938f2eec26ba0c200bc2ef1c8064d06ffcffcb2e70730928af334b878e0",
+  "params_key": "e7228bf728a9c33db8a51177bc018b9ec71ede9f861f416a626e120d1c7a8451",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

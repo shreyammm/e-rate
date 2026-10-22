@@ -1,0 +1,62 @@
+{
+  "summary": "The educator opposes eliminating or restricting E‑Rate, argues that screen‑time limits should be decided by local leaders, and warns that cutting E‑Rate funding will harm schools and staff.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate will harm students and schools by forcing budget cuts and staff layoffs.",
+      "evidence_quote": "As an educator/administrator in a cash-strapped school district, I am writing to oppose any \nefforts to eliminate or restrict E-Rate funding. \nEliminating E-Rate will do nothing to help our students;",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate will force schools to divert money away from instruction, leading to layoffs and reduced services.",
+      "evidence_quote": "us to rely on local referendums just to maintain operations. Cutting E-Rate will force us \nto divert money away from instruction—meaning we will have to lay off teachers and staff just to \nkeep the",
+      "evidence_start": 627,
+      "evidence_end": 824,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "leave screen‑time decisions to local leaders",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time limits should be set by state and local district leaders who know the students best.",
+      "evidence_quote": "te will do nothing to help our students; it will only harm them. Screen time is a \nreality of modern education and essential learning environments, and determining appropriate \nscreen usage should be",
+      "evidence_start": 159,
+      "evidence_end": 358,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071343",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071343",
+  "filer_raw": "Mary Maderich",
+  "date_submission": "2026-08-14T16:05:48.110Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "34b6e7085fdb83cf592562b004254c7a97c14e9e29b9159311821861660697f8",
+  "params_key": "a3286a5a596db572e8c1e87ed3137e1c2a535f96deb8ada28fa5336305bda26d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

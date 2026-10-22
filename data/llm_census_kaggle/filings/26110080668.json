@@ -1,0 +1,87 @@
+{
+  "summary": "Letter from a school district superintendent urging the FCC to keep the E‑Rate program intact, oppose reductions or eliminations, and expand it to include security equipment and services while maintaining priority for all schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not discuss narrowing eligible equipment or services.",
+      "evidence_quote": "WE\nWILLOUGHBY-EASTLAKE\nPatrick Ward, PhD, Superintendent\nCITY SCHOOLS\nNicholas E. Ciarniello, Treasurer\nBOARD OF EDUCATION MEMBERS:\nStacy Menser, President • Jaime Shatsman, Vice President\nGabrielle",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue prioritizing funding to all schools and libraries, urban and rural",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district maintains that all schools and libraries have unique needs and should receive priority funding.",
+      "evidence_quote": "he Commission completely reject any plan to reduce, narrow or\neliminate the E-rate program. We also ask that the E-rate program continue to prioritize funding\nto all schools and libraries - urban and",
+      "evidence_start": 1863,
+      "evidence_end": 2062,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address sunset timing or specific sunset dates.",
+      "evidence_quote": "WE\nWILLOUGHBY-EASTLAKE\nPatrick Ward, PhD, Superintendent\nCITY SCHOOLS\nNicholas E. Ciarniello, Treasurer\nBOARD OF EDUCATION MEMBERS:\nStacy Menser, President • Jaime Shatsman, Vice President\nGabrielle",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any plan to reduce, narrow or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The district argues that cutting E‑Rate would cause catastrophic funding losses and staff cuts.",
+      "evidence_quote": "ng in the years to come to the five-year equipment cycles with which we keep our networks\nin good working order.\nReducing or eliminating E-rate funding would result in a heavy loss to us and to our",
+      "evidence_start": 766,
+      "evidence_end": 963,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "expand the E‑Rate program to include security equipment and services",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district believes security equipment and services are sorely needed and should be funded.",
+      "evidence_quote": "st that the Commission expand the E-rate program to include security equipment\nand services as those items are sorely needed.\nAgain, we respectfully ask that the Commission completely reject any plan",
+      "evidence_start": 1704,
+      "evidence_end": 1903,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080668",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080668",
+  "filer_raw": "Willoughby-Eastlake City Schools",
+  "date_submission": "2026-10-12T18:36:49.571Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "5d4d789275af6e1da5daea5837d241cac2bd267c987fb949fa860bfeb4101f11",
+  "params_key": "c6e35ef1c8471343e06ab05f58e38f92c3302f33bd161c0615a6a2065686f143",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

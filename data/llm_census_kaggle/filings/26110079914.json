@@ -1,0 +1,49 @@
+{
+  "summary": "Kingfisher Library urges the FCC to keep the E‑Rate program to maintain essential broadband for libraries, arguing that eliminating the program would shift a heavy financial burden onto local libraries and harm public service.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid eliminating E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Removing E‑Rate would force libraries to absorb full connectivity costs, potentially reducing service quality or availability.",
+      "evidence_quote": "for this connectivity. It would instead shift a greater \nfinancial burden onto local libraries and the communities they serve. For smaller and rural libraries in \nparticular, absorbing the full cost",
+      "evidence_start": 2335,
+      "evidence_end": 2533,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate would shift a heavy financial burden onto local libraries, especially in rural areas, jeopardizing public internet service.",
+      "evidence_quote": "the E-Rate \nprogram and its support for public library broadband connectivity. \n \nRespectfully submitted, \n \n**Kingfisher Library**",
+      "evidence_start": 3120,
+      "evidence_end": 3251,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079914",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079914",
+  "filer_raw": "KINGFISHER LIBRARY",
+  "date_submission": "2026-10-07T20:00:25.507Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "630398f0cf716b07b20a566b8cc10a8ab6224ea58773b6e4fc151782336dc744",
+  "params_key": "10aea04e9d3491b0a0c807e5f8d01d3eeb3c9668d600fe70605c66dfd7054e58",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

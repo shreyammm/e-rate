@@ -1,0 +1,122 @@
+{
+  "summary": "The Learning Technology Center (LTC) argues that E‑Rate funding is essential for maintaining affordable, high‑capacity connectivity in Illinois schools and libraries, and that cuts would harm educational equity, staff, and safety. The Illinois Learning Technology Center urges the FCC to preserve existing E‑Rate eligibility, add cybersecurity as an eligible service, and avoid changes that would reduce access or increase administrative burden.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain full eligibility for all infrastructure models",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue to allow all eligible infrastructure models so districts can build cost‑effective networks.",
+      "evidence_quote": "ain the flexibility to build affordable, high-capacity networks tailored to \ntheir specific needs. Continuing to include various options of connectivity like special construction, dark \nfiber, and",
+      "evidence_start": 4645,
+      "evidence_end": 4841,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for internal connections and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Internal connections and managed services enable districts to meet every student’s educational needs.",
+      "evidence_quote": "e special construction, dark \nfiber, and self-provisioned networks allows each entity to leverage options that are the most cost effective \nfor their situation. Funding towards internal connections",
+      "evidence_start": 4801,
+      "evidence_end": 4998,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve robust subsidies for essential daily services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Strong subsidies keep schools reliably connected without diverting operational funds from students and teachers.",
+      "evidence_quote": "on. Funding towards internal connections and managed services allow districts to meet the \neducational needs of every student. Furthermore, preserving robust E-Rate subsidies for essential daily",
+      "evidence_start": 4958,
+      "evidence_end": 5152,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "add cybersecurity as eligible service",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The organization urges the FCC to consider making cybersecurity an eligible service of the program.",
+      "evidence_quote": "data and helps maintain FERPA compliance across all connected devices. For \nthis reason, we ask the commission not only to continue the eligibility of existing items, but to seriously \nconsider",
+      "evidence_start": 8017,
+      "evidence_end": 8210,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve existing eligible items",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The Learning Technology Center requests that the FCC continue to allow current E‑Rate eligible items to remain eligible.",
+      "evidence_quote": "s the FCC to preserve the core strengths of \nE-Rate, including support for affordable broadband, Internet access, internal connections, Wi-Fi, \nmaintenance, and cost-effective network solutions.",
+      "evidence_start": 8329,
+      "evidence_end": 8523,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid reducing access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The organization asks the FCC to avoid changes that would reduce access.",
+      "evidence_quote": "e, and cost-effective network solutions. Additionally, we support thoughtful improvements, \nsimplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase",
+      "evidence_start": 8483,
+      "evidence_end": 8680,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid sunset or reduction of E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would force districts to divert classroom funds to cover lost subsidies.",
+      "evidence_quote": "nts and teachers. \n \nA reduction or loss in E-Rate funding would create a severe domino effect across a school district's entire \ngeneral operating budget. Connectivity and network infrastructure are",
+      "evidence_start": 5270,
+      "evidence_end": 5469,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent loss of E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Loss of funding would compromise physical security and campus safety by forcing districts to downgrade security capabilities.",
+      "evidence_quote": "y repairs. Even more critically, because modern physical security \nruns directly over the local network, losing infrastructure support directly threatens school safety by \nforcing districts to",
+      "evidence_start": 6058,
+      "evidence_end": 6250,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081258",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081258",
+  "filer_raw": "Learning Technology Center",
+  "date_submission": "2026-10-13T21:30:10.494Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "66f844d9390bbdcd1afc16a95c9ef70e74ed5307f89369ff7687cb86e0e326e5",
+  "params_key": "9083864f9f78bb53bcf78efa529d1f0b5cc7f6c174ae126288c763b010cc9ded",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

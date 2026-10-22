@@ -1,0 +1,86 @@
+{
+  "summary": "Covina‑Valley Unified School District urges the FCC to preserve the E‑Rate program, arguing that cuts would harm connectivity, cybersecurity, and local budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid increased cybersecurity risk",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "Continuing to replace aging equipment is essential to protect against ransomware and other cyber threats.",
+      "evidence_quote": "ls. \nModern, properly maintained network infrastructure is an important part of protecting sensitive \nstudent and employee information and defending against increasingly sophisticated cyber threats,",
+      "evidence_start": 2018,
+      "evidence_end": 2216,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "prevent cuts to E‑Rate discounts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If discounts were reduced, districts would need to redirect significant local funds toward basic connectivity, forcing delays or cuts to other priorities.",
+      "evidence_quote": "st limited local resources and competing demands for \nfunding. If E-Rate discounts were reduced or eliminated, we would have to redirect significantly \nmore local funding toward basic connectivity",
+      "evidence_start": 2646,
+      "evidence_end": 2842,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables long‑term investments in network infrastructure that support classroom instruction and student information systems.",
+      "evidence_quote": "and lost opportunities. \n  \nThe value of E-Rate also extends beyond the individual funding received by any one school \ndistrict. The program has helped schools and libraries across the country build",
+      "evidence_start": 3275,
+      "evidence_end": 3473,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain funding for equitable access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has helped build resilient networks that provide equitable access to technology for all students.",
+      "evidence_quote": "s and libraries across the country build stronger more \nresilient networks and provide students with equitable access to the technology that has become \nan essential part of education. \n  \nAfter more",
+      "evidence_start": 3433,
+      "evidence_end": 3632,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve robust E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that terminating or reducing E‑Rate would jeopardize reliable, secure connectivity essential for modern education.",
+      "evidence_quote": "ssion: \nWe respectfully urge the Federal Communications Commission to reject proposals that would \nterminate, reduce, or otherwise limit eligibility for the E-Rate Program. \n  \nFor more than a",
+      "evidence_start": 468,
+      "evidence_end": 660,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079823",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079823",
+  "filer_raw": "Covina-Valley Unified School District",
+  "date_submission": "2026-10-07T16:44:59.978Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e907d6c4cf14c7407a7d89bbd38c832b93f81be1c518f21dc589d2fe1a252f91",
+  "params_key": "e00937e787c9e7212bb5992d549a1ddee77caef6d92864b21e8e6af072a320ef",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

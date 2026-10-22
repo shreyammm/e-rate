@@ -1,0 +1,74 @@
+{
+  "summary": "The School District of Palm Beach County opposes FCC proposals that tie E‑Rate funding to screen‑time policies, arguing that such mandates would jeopardize essential connectivity and infringe on local educational decision‑making.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "preserve existing funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for equitable digital access across all schools.",
+      "evidence_quote": "lies, and\nessential Wi-Fi access points. This is funded per pupil.\nWhat Would Happen If E-Rate Funding Were Reduced or Eliminated?\nIf funding were reduced or eliminated due to non-compliance with",
+      "evidence_start": 2781,
+      "evidence_end": 2976,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "prevent funding cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate funds would create a $26 million budget gap for the district.",
+      "evidence_quote": "or eliminated due to non-compliance with overreaching federal screen time\nmandates, our district would face a catastrophic financial gap of over $26 million. To cover these\nunexpected,",
+      "evidence_start": 2936,
+      "evidence_end": 3120,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "abandon screen‑time mandates tied to E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should not dictate classroom screen‑time policies as a condition for E‑Rate funding.",
+      "evidence_quote": ".\nWhile we share the universal desire to promote healthy digital habits among children, the FCC is not in\na position to understand classroom level decisions. Decisions regarding curriculum,",
+      "evidence_start": 911,
+      "evidence_end": 1100,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject tying funding to instructional policies",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time mandates would undermine local control over curriculum and instructional models.",
+      "evidence_quote": "o recognize that academic screen time is vastly different from recreational\nscreen time or personal cell phone use. The FCC should NOT be empowered to weigh in on,\ndetermine, or control school screen",
+      "evidence_start": 3703,
+      "evidence_end": 3902,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076959",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076959",
+  "filer_raw": "The School District of Palm Beach County, FL.",
+  "date_submission": "2026-09-18T12:34:22.894Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "39ff92dcd1e000b1cce1a87fd19fa9bb6d6f95d70e033b6f906e5619197ea6e5",
+  "params_key": "9850138a6dd91c64880928a67414c597ae311812984aecc4b8d5783e2c74c8ca",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

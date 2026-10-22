@@ -1,0 +1,87 @@
+{
+  "summary": "Vice Principal Edward Gruber urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, narrowing of eligibility, or reduction of support, and calling for modernization and continued affordability for schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility should not be restricted by geography or other criteria that leave students without adequate support.",
+      "evidence_quote": "lity or restrict support based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 2183,
+      "evidence_end": 2380,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Support for connectivity and internal network infrastructure is essential for reliable educational access.",
+      "evidence_quote": "vity and internal network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its",
+      "evidence_start": 2340,
+      "evidence_end": 2539,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "ensure affordability",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue to provide affordable connectivity regardless of students’ financial circumstances.",
+      "evidence_quote": "rge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.\n\nThank you for considering my",
+      "evidence_start": 3121,
+      "evidence_end": 3305,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must be preserved to ensure reliable broadband for all students.",
+      "evidence_quote": "sion to do the following:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on",
+      "evidence_start": 2024,
+      "evidence_end": 2223,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should be modernized to better serve current educational needs.",
+      "evidence_quote": "modernize E-Rate rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and",
+      "evidence_start": 2500,
+      "evidence_end": 2694,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079842",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079842",
+  "filer_raw": "Edward Gruber",
+  "date_submission": "2026-10-07T17:26:36.252Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9c1eb1f37b39591d82ddb4ca0968ea44607b037ee332cf4b096285cb9d4d6812",
+  "params_key": "3966252b4c127d15652282e2444ca7d1d4713c38edf8ddbed39017976666646c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

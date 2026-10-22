@@ -1,0 +1,74 @@
+{
+  "summary": "Pennsylvania STEAM Academy argues that E‑Rate funding is essential for reliable, affordable internet and that reductions would force costly budget cuts; it also contends that consultants are necessary to navigate complex rules.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "recognize the necessity of consultants for schools",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Consultants provide specialized guidance that enables schools to navigate complex E‑Rate rules and complete applications accurately.",
+      "evidence_quote": "rograms and school budgets.\nPennsylvania STEAM Academy uses a consultant because the E-Rate program involves complex rules, eligibility requirements, documentation, application procedures, deadlines,",
+      "evidence_start": 4177,
+      "evidence_end": 4376,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "maintain consultant use as part of E‑Rate participation",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "The use of a consultant does not diminish the program’s importance but ensures public funds are used in accordance with program requirements.",
+      "evidence_quote": "he use of a consultant does not diminish the importance of the program. Rather, it helps schools effectively access the program and ensures that public funds are utilized in accordance with program",
+      "evidence_start": 5117,
+      "evidence_end": 5314,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for reliable internet that supports all aspects of modern education, and cutting it would force schools to divert funds from instructional priorities.",
+      "evidence_quote": "infrastructure necessary to operate our school effectively.\n\nIf E-Rate funding were significantly reduced or eliminated, these costs would not disappear. They would have to be absorbed by our",
+      "evidence_start": 2314,
+      "evidence_end": 2505,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid significant reductions or elimination of E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "If E‑Rate were reduced or eliminated, schools would have to absorb those costs, leading to cuts in instructional materials, staffing, and other student‑direct services.",
+      "evidence_quote": "r. They would have to be absorbed by our school's operating budget.\n\nThat would mean making difficult choices about where those dollars could otherwise be used. Funds that currently support internet",
+      "evidence_start": 2465,
+      "evidence_end": 2663,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079467",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079467",
+  "filer_raw": "Jennifer Morrison",
+  "date_submission": "2026-10-05T19:24:47.167Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "84d47e5a985b73c1e54050243df01064e3abcfdc42252aef1c8656767ca08207",
+  "params_key": "75dd0f72273fb60ce4bf141453558bd6a5951f143717753099ca72b324a111b9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

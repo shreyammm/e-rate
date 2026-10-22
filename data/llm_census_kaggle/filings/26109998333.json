@@ -1,0 +1,87 @@
+{
+  "summary": "The Lake Tahoe Unified School District argues that E‑Rate funding is essential for maintaining secure, filtered internet access and keeping equipment up to date in a high‑cost, low‑income rural area.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "continue filtering requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Filtering and weekly reports are essential for protecting students and meeting CIPA mandates.",
+      "evidence_quote": "nt which would result in less security.  Every student device includes filtering with weekly reports provided to parents of their students Internet activity.  All access to our schools is filtered to",
+      "evidence_start": 459,
+      "evidence_end": 658,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "continue content filtering",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Filtering ensures that all access meets CIPA mandates and protects students.",
+      "evidence_quote": "All access to our schools is filtered to meet CIPA mandates and provide access to appropriate content.  E-Rate has improved our ability to provide secure and appropriate content and losing E-Rate",
+      "evidence_start": 618,
+      "evidence_end": 813,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is necessary to provide secure, filtered internet access in a high‑cost, low‑income rural district.",
+      "evidence_quote": "The E-Rate program has provided funding to maintain and upgrade access to the Internet for our public school district.  We are located in a rural area with a high cost of living and low income",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain equipment upgrades",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate enables timely equipment upgrades that keep student data secure.",
+      "evidence_quote": "to maintain and upgrade our equipment to maintain the security of our student data.  Without E-Rate, our schools would have less access and outdated equipment which would result in less security.",
+      "evidence_start": 303,
+      "evidence_end": 498,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Sunsetting E‑Rate would severely reduce access to appropriate content for students.",
+      "evidence_quote": "nd appropriate content and losing E-Rate funding would make it more difficult to provide this access.\n\nE-Rate allows Schools and Libraries better ability to provide access to appropriate content and",
+      "evidence_start": 773,
+      "evidence_end": 971,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26109998333",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109998333",
+  "filer_raw": "Scott Ramirez",
+  "date_submission": "2026-07-07T19:12:27.638Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "08adb2436249f0d7161e2b45e3c5d276eec96d4e0d1533d8764d873492587056",
+  "params_key": "5613342045c1b9a47b4e7026f50c61ea5a9bd89947029a4b42e291137a4124dd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

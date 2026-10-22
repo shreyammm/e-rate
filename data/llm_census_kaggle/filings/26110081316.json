@@ -1,0 +1,87 @@
+{
+  "summary": "Jericho Union Free School District opposes narrowing E‑Rate eligibility to rural schools, supports keeping Category 1 and Category 2 services eligible, and calls for a stable, predictable program to enable multi‑year planning.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "keep firewall and network security eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district emphasizes growing cybersecurity threats and urges continued support for network security eligibility.",
+      "evidence_quote": "rk security eligibility in place \nand to consider expanding support for school cybersecurity, not to \nnarrow the program.\nRequest. Jericho asks the Commission to (1) reject limiting E-Rate \nto rural",
+      "evidence_start": 2819,
+      "evidence_end": 3017,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject limiting E‑Rate to rural schools",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Jericho argues that limiting E‑Rate to rural schools would shift full connectivity costs onto local taxpayers and harm instruction.",
+      "evidence_quote": "ct carries an urban designation, but our region has some of the \nhighest costs in the country for circuits, equipment and installation. E-\nRate discounts are already scaled to student need. Removing",
+      "evidence_start": 1872,
+      "evidence_end": 2070,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain stable, predictable program",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Jericho needs a predictable program to plan multi‑year upgrades and avoid project disruptions.",
+      "evidence_quote": "is \nalready planning E-Rate requests for FY 2027-28, including new fiber \nconnectivity. Abrupt eligibility changes would strand that planning and \nleave districts mid-project.\n6. Cybersecurity needs",
+      "evidence_start": 2346,
+      "evidence_end": 2544,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain Category 1 and Category 2 eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district maintains that Category 1 and Category 2 services are essential for secure, reliable networks and should remain eligible.",
+      "evidence_quote": "to (1) reject limiting E-Rate \nto rural schools and libraries, (2) keep Category 1 and Category \n2 services eligible, including the network equipment that underpins \nsecurity, and (3) maintain a",
+      "evidence_start": 2978,
+      "evidence_end": 3172,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset of E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "Jericho contends that sunset would remove essential funding for critical infrastructure upgrades.",
+      "evidence_quote": "to (1) reject limiting E-Rate \nto rural schools and libraries, (2) keep Category 1 and Category \n2 services eligible, including the network equipment that underpins \nsecurity, and (3) maintain a",
+      "evidence_start": 2978,
+      "evidence_end": 3172,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081316",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081316",
+  "filer_raw": "Jericho School District",
+  "date_submission": "2026-10-13T22:44:54.444Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cbb3cba6dc7dc62d63196a9821e6d62382fba9a5ca6606271e3a20b0289ab538",
+  "params_key": "910acf97c65ee66653f2449b10b0026281312b4159912bd22588ce43f85e4f3d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

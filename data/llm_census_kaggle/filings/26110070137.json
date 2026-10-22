@@ -1,0 +1,86 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program in its current need‑based form, reject any sunset or geographic restriction, and highlights the impact on high‑poverty urban and suburban districts, libraries, and mid‑size schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain need‑based eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate discounts are calculated based on poverty and location, ensuring that need—not geography—determines eligibility.",
+      "evidence_quote": "not a proxy for it: \n \nE-Rate discounts are calculated based on two factors: the share of students eligible for free or \nreduced-price lunch and urban/rural location. This design means the districts",
+      "evidence_start": 936,
+      "evidence_end": 1134,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject rural‑only restriction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting E‑Rate to rural areas would cut off high‑poverty urban and suburban communities that rely on the program.",
+      "evidence_quote": "e. A high-poverty school or library in a city or suburb can qualify for the same steep \ndiscount — up to 90% — as one in a remote rural community. Narrowing the program to \"rural \nonly\" would sever",
+      "evidence_start": 1250,
+      "evidence_end": 1447,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Public libraries serve low‑income residents who rely on free high‑speed internet for essential services.",
+      "evidence_quote": "\"homework gap\" the Commission itself has recognized and funded through \nthis program. \n●​ Public libraries, which for many low-income, unemployed, and underbanked residents \nare the only place to",
+      "evidence_start": 1860,
+      "evidence_end": 2055,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain funding for mid‑size districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Mid‑size and smaller districts use E‑Rate discounts to offset material costs that would otherwise be absorbed by taxpayers or cut from instructional budgets.",
+      "evidence_quote": "id-size and smaller districts like mine, where E-Rate discounts offset real, material \ncosts for Category 1 (data transport and internet access) and Category 2 (internal \nconnections) — costs that",
+      "evidence_start": 2171,
+      "evidence_end": 2367,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program should not be sunset because it provides essential broadband support to schools and libraries that cannot afford it otherwise.",
+      "evidence_quote": "l district financial leadership, to urge the Commission to preserve \nthe E-Rate program in its current, need-based form and to reject any proposal to limit or sunset \nthe program, including any",
+      "evidence_start": 624,
+      "evidence_end": 817,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110070137",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110070137",
+  "filer_raw": "Christine Griffin",
+  "date_submission": "2026-08-10T11:15:36.145Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "014ffb9f52ecc16777ba732235783034a4402624f14d260bcc1361be5eec1253",
+  "params_key": "0e9b0eaf20eb1e301cabb600918a6e33f0e543626bfb4edf3b72a08d9a051103",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

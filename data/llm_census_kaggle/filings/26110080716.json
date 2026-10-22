@@ -1,0 +1,87 @@
+{
+  "summary": "Sioux Falls School District urges the FCC to preserve Category Two E‑Rate support, maintain the existing needs‑based framework, and avoid cuts or narrowing of eligibility while allowing modest administrative reforms.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "retain existing nationwide, needs‑based eligibility rules",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that narrowing applicant eligibility would shift costs to local budgets and undermine affordability.",
+      "evidence_quote": "also operates within defined eligibility rules, competitive-bidding requirements, Category Two budgets, \ndocumentation and record-retention obligations, and USAC review. We support targeted",
+      "evidence_start": 2651,
+      "evidence_end": 2840,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "evaluate local provider conditions based on realistic options",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "other",
+      "argument": "Competitive‑bidding safeguards should focus on cost‑effectiveness rather than nominal availability.",
+      "evidence_quote": "School District | FCC 26-41 \nThe number of providers that may technically advertise service in an area is not necessarily the number of providers that \ncan meet an applicant's actual capacity,",
+      "evidence_start": 4189,
+      "evidence_end": 4381,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "retain current discount methodology and local‑share requirement",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Maintaining the discount methodology ensures predictable affordability for schools.",
+      "evidence_quote": "ssion to retain the existing nationwide, needs-based E-Rate framework; preserve recurring \nCategory One and Category Two support; retain the current discount methodology and applicant local-share",
+      "evidence_start": 5584,
+      "evidence_end": 5779,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset Category Two support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Category Two support is a recurring infrastructure need that cannot be met without E‑Rate funding.",
+      "evidence_quote": "RING INFRASTRUCTURE NEED\nWith E-Rate, we try to replace equipment after approximately seven to eight years. Without Category Two support, we \ncould not maintain that replacement cycle. Delaying",
+      "evidence_start": 3112,
+      "evidence_end": 3305,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "implement modest administrative reforms that improve efficiency and transparency",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Reforms should not reduce support or impose new unfunded burdens on schools.",
+      "evidence_quote": "mpose \nnew unfunded burdens. \nWe support reasonable program-integrity and administrative improvements that make E-Rate more efficient and \ntransparent without undermining the affordability,",
+      "evidence_start": 5895,
+      "evidence_end": 6084,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080716",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080716",
+  "filer_raw": "Sioux Falls School District 49-5",
+  "date_submission": "2026-10-12T20:45:14.079Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fbae52d0dc566fc3c7d5e29f480a57a8fe60946baa7cb290466bbb391dbee543",
+  "params_key": "fea0124cf9d0e878ce6ce75d9e462692615fd20a7520776430929062b47c2847",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

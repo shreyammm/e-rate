@@ -1,0 +1,88 @@
+{
+  "summary": "Colstrip Public Schools District 19 opposes conditioning E‑Rate funding on classroom pedagogy mandates (screen‑time limits, parental opt‑outs, expanded CIPA) and urges the FCC to preserve Category 1 and Category 2 infrastructure funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "do not expand CIPA compliance to personal devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Expanding CIPA to personal devices would exceed FCC statutory authority and impose undue burdens on schools.",
+      "evidence_quote": "f Holding Infrastructure Funding Hostage Conditioning our Category 1 and 2 \ninfrastructure funding on new federal mandates regarding screen time limits, parental opt-outs, \nor expanded CIPA",
+      "evidence_start": 2799,
+      "evidence_end": 2988,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain E‑Rate focus on infrastructure, not devices",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funds mission‑critical infrastructure, not end‑user devices, which schools purchase through local funds.",
+      "evidence_quote": "e current proposals \nthat E-Rate funding directly controls how much time students spend on screens. E-Rate does \nnot purchase our students' Chromebooks or end-user devices. Our district sources those",
+      "evidence_start": 783,
+      "evidence_end": 982,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve Category 1 and Category 2 funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Preserving Category 1 and Category 2 funding is essential to maintain broadband and network infrastructure that rural schools cannot afford otherwise.",
+      "evidence_quote": "Our local district is already stretching its budgets to the absolute limit to cover the \nremaining $90,000+ out of pocket. \nIf E-Rate funding is reduced, sunsetted, or withheld, the impact goes far",
+      "evidence_start": 2337,
+      "evidence_end": 2534,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "do not impose parental opt‑out mandates",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "A federal parental opt‑out mandate is operationally impossible for rural districts and would disrupt core instructional and security systems.",
+      "evidence_quote": "mpacting a \nstudent must be reviewed and authorized by a human professional.  \nFurthermore, the logistical reality of a federal \"parental opt-out\" mandate for E-Rate networks is \nimpossible. We",
+      "evidence_start": 3733,
+      "evidence_end": 3926,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie E‑Rate to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding should not be conditioned on screen‑time limits because it would undermine essential broadband infrastructure for rural schools.",
+      "evidence_quote": "f Holding Infrastructure Funding Hostage Conditioning our Category 1 and 2 \ninfrastructure funding on new federal mandates regarding screen time limits, parental opt-outs, \nor expanded CIPA",
+      "evidence_start": 2799,
+      "evidence_end": 2988,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "erate_eligibility_scope": "support",
+    "parent_opt_out": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078894",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078894",
+  "filer_raw": "Colstrip Public Schools",
+  "date_submission": "2026-09-30T16:39:58.933Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "258a6ecf07c67b5bb8bd8b7d0bc50500e4315f5edac3368f09ab24e0cd0fa3a8",
+  "params_key": "db25a1ba1cb04084faa1cd4e53a3738aff41c25e815e87f1cd8324a29294c5f7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

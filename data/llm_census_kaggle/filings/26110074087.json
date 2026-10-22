@@ -1,0 +1,86 @@
+{
+  "summary": "The San Francisco School argues that E‑Rate is essential for maintaining affordable, reliable broadband and internal network infrastructure, and urges the FCC to preserve current support levels.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain Category One support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Category One funding is what makes the school’s bandwidth affordable and essential for operations.",
+      "evidence_quote": "ly because E-Rate exists.\n\nBROADBAND AND INTERNET ACCESS COSTS (CATEGORY ONE)\nCategory One support is what makes our bandwidth affordable.\nWithout E-Rate, our monthly cost for internet is about",
+      "evidence_start": 1707,
+      "evidence_end": 1900,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate’s 40 % discount keeps monthly internet costs at about $1,000, making bandwidth affordable for the school.",
+      "evidence_quote": ", our monthly cost for internet is about $1,000. E-Rate's 40 percent discount for our school is significant. Any narrowing of Category One eligibility would not reduce our need for bandwidth,",
+      "evidence_start": 1860,
+      "evidence_end": 2051,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain Category Two support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Category Two funding allows the school to replace aging equipment and keep the network operational.",
+      "evidence_quote": "d us to increase our network uptime in a power outage from 30 minutes to 1 hour thanks to newer UPSs. Eliminating or reducing Category 2 funding would create a challenge for us because we are",
+      "evidence_start": 2800,
+      "evidence_end": 2991,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating or reducing E‑Rate would force the school to stretch upgrade timelines and reduce bandwidth.",
+      "evidence_quote": "oints. If E-Rate funding were reduced or eliminated, we would have to stretch out the timeline for upgrading access points due to budgeting constraints, and we would be unable to upgrade our gigabit",
+      "evidence_start": 929,
+      "evidence_end": 1127,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate remains necessary for the school’s connectivity and infrastructure, which would otherwise be unaffordable.",
+      "evidence_quote": "e would be unable to upgrade our gigabit internet in the near future to accommodate rising data/network usage associated with higher levels of AI computing.\n\nE-RATE REMAINS NECESSARY\nThe Commission",
+      "evidence_start": 1087,
+      "evidence_end": 1284,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074087",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074087",
+  "filer_raw": "Diane Cho",
+  "date_submission": "2026-08-31T23:28:50.848Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f24d5953bcc12675f8cb688be1d9a7814eaf481893682e2daa7debce91119e81",
+  "params_key": "2fc519c290ebbfc79c17152cd409fc776848193b184fae900c46d6afa388d55a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,122 @@
+{
+  "summary": "The letter from the CTO of Prosper Independent School District urges the FCC to preserve and strengthen the E‑Rate program, rejecting any proposals to eliminate, sunset, or substantially reduce support. The author argues that reliable broadband is essential for daily school operations, student learning, and infrastructure maintenance, and that E‑Rate funding has enabled significant growth and modernization of the district’s network. The comment urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset or narrowing of eligibility and emphasizing the need for reliable connectivity infrastructure for schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain broadband connectivity for schools",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "implementation_burden",
+      "argument": "Reliable, high‑quality broadband is essential infrastructure for modern public education and supports myriad operational and instructional functions.",
+      "evidence_quote": "aries. \n \nAs a CTO, I see firsthand that reliable, high-quality broadband is no longer optional for students. It is \nessential infrastructure for modern public education and supports myriad",
+      "evidence_start": 763,
+      "evidence_end": 952,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "ensure continuous funding for network upgrades",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate funding, schools would face obsolescence of equipment and inability to maintain security measures.",
+      "evidence_quote": "due to rapid technological \nadvances. A firewall or content filter that was fine 5 years ago today struggles to block malicious content, \nwhether from new threats or simply from content hosted on",
+      "evidence_start": 3718,
+      "evidence_end": 3913,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "acknowledge E‑Rate’s role in district growth",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Since 2016, Prosper ISD has received approximately $6.8M in E‑Rate funding, enabling the construction of new schools and network infrastructure that supported a tripling of student enrollment.",
+      "evidence_quote": "We have almost tripled our numbers, and you, \nE-Rate, and everyone who approved funding have helped make it possible that, since 2016, we have \nbeen funded approximately $6.8M. More than half has",
+      "evidence_start": 4818,
+      "evidence_end": 5013,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing E‑Rate eligibility would leave students without adequate support.",
+      "evidence_quote": "ject proposals that would \nunnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other \ncriteria that would leave students without adequate support; \n2)​ Preserve",
+      "evidence_start": 9160,
+      "evidence_end": 9357,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve eligibility for all schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "All schools, regardless of location or financial circumstances, deserve access to E‑Rate support.",
+      "evidence_quote": "without adequate support; \n2)​ Preserve support for the connectivity and internal network infrastructure schools need to \nprovide reliable educational access; and \n3 \n\n\n3)​ Work with schools and",
+      "evidence_start": 9318,
+      "evidence_end": 9512,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program should be modernized to better serve current educational needs.",
+      "evidence_quote": "ess; and \n3 \n\n\n3)​ Work with schools and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education. How can we make this program great? That is the",
+      "evidence_start": 9472,
+      "evidence_end": 9664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The author opposes any proposal that would eliminate, sunset, or substantially reduce E‑Rate support for schools and libraries.",
+      "evidence_quote": "program and to reject any proposal that would eliminate, sunset, substantially reduce, or \nunnecessarily restrict E-Rate support for schools and libraries. \n \nAs a CTO, I see firsthand that",
+      "evidence_start": 614,
+      "evidence_end": 803,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program should not be sunset or eliminated because it provides essential broadband infrastructure for schools.",
+      "evidence_quote": "ransportation, and safe facilities. \n \nI therefore respectfully urge the Commission to: \n1)​ Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would \nunnecessarily",
+      "evidence_start": 9002,
+      "evidence_end": 9200,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077514",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077514",
+  "filer_raw": "Prosper ISD",
+  "date_submission": "2026-09-21T20:51:37.822Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8cceec16e20d90db515e96fca00dc4b036bb129d3f591e2fac51b558f598f3c9",
+  "params_key": "87be3473c869946ccd7867b3c941a4f3eb8b83e67d272cce9526304b53aff668",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

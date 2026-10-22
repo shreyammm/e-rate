@@ -1,0 +1,63 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting any sunset, elimination, or unnecessary narrowing of eligibility, and to maintain support for connectivity and internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "erefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 2505,
+      "evidence_end": 2700,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "deral Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 463,
+      "evidence_end": 658,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity is foundational to supporting students’ learning and must be maintained.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network",
+      "evidence_start": 2660,
+      "evidence_end": 2855,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079825",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079825",
+  "filer_raw": "Dr. Paul McDermott",
+  "date_submission": "2026-10-07T16:49:00.952Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fd72757d811ef67887c55e99e82396f9c6d46b72977560e39879546c14e54c08",
+  "params_key": "4260ad29c17271e42700cf2f623136415e82b753258202428031782d08cc9ccb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

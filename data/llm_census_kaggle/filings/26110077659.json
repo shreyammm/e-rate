@@ -1,0 +1,74 @@
+{
+  "summary": "Lake Bluff School District 65’s chief business officer urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing eligibility, or cuts, and stresses broadband as essential infrastructure for modern education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria that would leave",
+      "evidence_start": 3103,
+      "evidence_end": 3296,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable connectivity to provide effective education.",
+      "evidence_quote": "raphy or other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to provide \nreliable educational",
+      "evidence_start": 3256,
+      "evidence_end": 3455,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure that must not be eliminated or sunset.",
+      "evidence_quote": "ols. \n \nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-\nRate program and to reject any proposal that would eliminate, sunset, substantially reduce,",
+      "evidence_start": 462,
+      "evidence_end": 660,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should be modernized rather than reduced to maintain educational opportunities.",
+      "evidence_quote": "ls need to provide \nreliable educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its \nrole in public education. \n \nE-Rate has",
+      "evidence_start": 3415,
+      "evidence_end": 3611,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077659",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077659",
+  "filer_raw": "Lake Bluff School District 65",
+  "date_submission": "2026-09-22T16:13:53.580Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "09968c3d6ebf2c2e5b6ec7ac66c24ff059eac66c9d0a0ccde234e0ab65158b2d",
+  "params_key": "df8734b70c655eeee8f9b924e43d74d852b7c785ba7c6bea9a8da275973d40d5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,62 @@
+{
+  "summary": "Libertas School of Memphis opposes any termination or limitation of the E‑Rate program, arguing that such actions would cut essential funding for network infrastructure, state testing, and staff operations, thereby harming underserved students and staff retention.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain urban eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate eligibility for urban areas would leave vulnerable communities behind that lack dedicated resources to fill the gap.",
+      "evidence_quote": "and library budgets, jeopardizing years of progress building and upgrading those networks. Cutting E-Rate also threatens to leave vulnerable communities behind that don’t have dedicated resources to",
+      "evidence_start": 629,
+      "evidence_end": 827,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E‑Rate would cut essential funding for network infrastructure and state testing, harming school operations and student outcomes.",
+      "evidence_quote": "ether or cut out urban areas from E-Rate eligibility (- it should *not -). We urge the FCC to reject any proposal that would terminate or limit the E-Rate Program.\n\nE-Rate is critical for schools and",
+      "evidence_start": 310,
+      "evidence_end": 509,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding has enabled the school to upgrade infrastructure, support state testing, and maintain staff competitiveness, which is essential for serving underserved students.",
+      "evidence_quote": "rade. Several times we had to reschedule testing because of the slow speed of our internet and the number of students we had to test at once.\n\nIf the FCC terminates or limits E-Rate funding, our",
+      "evidence_start": 2807,
+      "evidence_end": 3001,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081412",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081412",
+  "filer_raw": "Libertas School of Memphis",
+  "date_submission": "2026-10-14T02:32:23.659Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "727217afaffee4f28ad9129cb6260c76186bde668737f314466e4825af3ff22c",
+  "params_key": "12a6bb1ef920f0bfdecec0b0e241b8119aa1c30e4e772093df7cc3b95eacae53",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

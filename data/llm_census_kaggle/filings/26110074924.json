@@ -1,0 +1,102 @@
+{
+  "summary": "Lee County Schools urges the FCC to keep E‑Rate funding at current levels, maintain the existing discount matrix, preserve Pre‑K eligibility, and allow local control over CIPA and screen‑time policies. LCS urges the FCC to keep the current E‑Rate framework, including its discount structure and safety requirements, so that students remain eligible and districts are not burdened with new costs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "preserve local CIPA and screen‑time policy",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Extending CIPA to BYOD devices would raise technical and privacy concerns and displace local decision‑making.",
+      "evidence_quote": "parents, teachers, and the school board. Extending filtering and monitoring obligations to devices the District does not own or control -\tpersonal phones and BYOD devices on guest network segments",
+      "evidence_start": 5582,
+      "evidence_end": 5778,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The district supports CIPA compliance but prefers local control over filtering and monitoring specifics.",
+      "evidence_quote": "its CIPA obligations today: the District filters network traffic, maintains a Board-adopted Internet safety policy, and holds the required public hearing before certifying compliance. Age-appropriate",
+      "evidence_start": 4803,
+      "evidence_end": 5002,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "maintain current discount matrix",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Any refinement that disadvantages mixed urban‑rural, high‑poverty districts would be unfair.",
+      "evidence_quote": "sites from additional support they would otherwise merit. The Commission should ensure that any refinement to the discount matrix uses the most granular, accurate data available and does not",
+      "evidence_start": 3565,
+      "evidence_end": 3755,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve existing framework",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "LCS argues that preserving the current discount framework prevents removal of eligible students and protects districts that cannot absorb new costs",
+      "evidence_quote": "LCS respectfully urges the Commission to preserve E-Rate's core structure and discount framework, to avoid rules that would remove eligible students or shift costs onto districts least able to absorb",
+      "evidence_start": 6582,
+      "evidence_end": 6781,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset or narrow E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for continuous network refresh that the district cannot afford otherwise.",
+      "evidence_quote": "vestment; it funds a continuous cycle of network refresh that the District could not otherwise afford.\n\nFor funding year 2026 alone, LCS's Category Two application requests E-Rate support for network",
+      "evidence_start": 1866,
+      "evidence_end": 2065,
+      "uncertain": false
+    },
+    {
+      "provision_id": "prek_headstart",
+      "position": "oppose",
+      "requested_action": "retain Pre‑K eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Excluding Pre‑K would force duplicate infrastructure or absorb connectivity needs without offsetting support.",
+      "evidence_quote": "ble\" and \"ineligible\" bandwidth within a single building network. Excluding Pre-K enrollment from eligibility calculations would either force the District to fund duplicate infrastructure for these",
+      "evidence_start": 4335,
+      "evidence_end": 4532,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_network_filter": "discussion_no_position",
+    "discount_matrix": "oppose",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "prek_headstart": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074924",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074924",
+  "filer_raw": "Lee County School District",
+  "date_submission": "2026-09-02T12:37:18.666Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2a67f51a907e2f97704c2283af009e2c163cae5fbfb26be215f6c58616b2471c",
+  "params_key": "4aaee04a3466ee33f70ece038492c9c14d8ff255f753ab57982c39cccad52949",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,86 @@
+{
+  "summary": "The Fort Dodge Public Library urges the FCC to keep the E‑Rate program unchanged, emphasizing its critical role in providing affordable broadband for library patrons, staff, and the broader community, especially in rural and low‑income areas.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "continue support for low‑income patrons",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library serves many patrons who lack reliable home internet, making E‑Rate essential for equitable access.",
+      "evidence_quote": "g evenings and Saturdays, to ensure that our services remain accessible to all.\n\nA significant portion of our patrons lack reliable home internet access and depend on the library every day for their",
+      "evidence_start": 464,
+      "evidence_end": 662,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "preserve rural and disadvantaged eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Rural communities and those with high free/reduced lunch eligibility must retain E‑Rate support to maintain broadband affordability.",
+      "evidence_quote": "he FCC to maintain the E Rate program as it currently exists. If changes are being considered, we strongly encourage the FCC to preserve support for rural communities like ours and for areas where",
+      "evidence_start": 2815,
+      "evidence_end": 3011,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain connectivity for libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library’s internal operations and public services rely on affordable broadband, which E‑Rate provides.",
+      "evidence_quote": "nd communication tools such as Microsoft 360 and conferencing platforms, and participate in remote training opportunities that would otherwise be unavailable to us. The E Rate program makes this",
+      "evidence_start": 1405,
+      "evidence_end": 1599,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate structure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library’s operations and community services depend on the 90% E‑Rate discount to keep broadband costs low.",
+      "evidence_quote": "ble to us. The E Rate program makes this level of service possible. Without E Rate, our annual cost for internet access would be $6,600. With a 90% discount, we pay only $660 per year for a 1GB",
+      "evidence_start": 1559,
+      "evidence_end": 1752,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid cuts that would force staff reductions",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A reduction in E‑Rate discounts would force personnel cuts, reducing service hours.",
+      "evidence_quote": "cted from covering operational expenses. As a result, any additional financial burden caused by a reduction or elimination of our E Rate discount would force us to consider cuts to personnel, which",
+      "evidence_start": 2501,
+      "evidence_end": 2698,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080150",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080150",
+  "filer_raw": "Fort Dodge Public Library",
+  "date_submission": "2026-10-08T21:27:56.070Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1d130ee0e8115cea8cb8c73c1aad6cc8ac381edccc458a0eefa0f73df1a44fb8",
+  "params_key": "c6c1b4797afa7307ff53bb48c4e88965a0755855609eacd69fdab29bae106338",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

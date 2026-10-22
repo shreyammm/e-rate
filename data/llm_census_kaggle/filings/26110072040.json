@@ -1,0 +1,62 @@
+{
+  "summary": "Lake‑Lehman School District urges the FCC to preserve E‑Rate core funding and avoid any reductions that would cut bandwidth or services, arguing that such cuts would severely harm daily education and state testing.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain high‑speed connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for the district to afford high‑speed internet for students and teachers.",
+      "evidence_quote": "for students, staff, and the communities they serve.\n\nE-rate funding is essential to Lake-Lehman to enable us the ability to afford high speed internet connectivity to provide to our students and",
+      "evidence_start": 302,
+      "evidence_end": 497,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid cuts to bandwidth",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Cutting bandwidth would force the district to reduce program services, negatively impacting education.",
+      "evidence_quote": "rovided.\n\nWithout this funding, we would need to cut the bandwidth and current program services we provide on a daily basis. In doing so it would make our daily education process take enormous steps",
+      "evidence_start": 613,
+      "evidence_end": 811,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that reducing E‑Rate funding would cut bandwidth and services, harming daily education and state testing.",
+      "evidence_quote": "ng process.\n\nLake-Lehman School District respectfully urges the FCC to preserve E-Rate's core funding and support for schools and libraries, and to avoid changes that would reduce access or increase",
+      "evidence_start": 928,
+      "evidence_end": 1126,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072040",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072040",
+  "filer_raw": "Brian Murphy",
+  "date_submission": "2026-08-18T16:18:44.776Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "adf36358d7f91f6ab7f0bc64f9dae4ea01568535d20e6ebe561ccb8e27fc43d9",
+  "params_key": "173caa8fdceeb1c71dc274f22ee747a6e308046019e384400ed0c5d583e97ad0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

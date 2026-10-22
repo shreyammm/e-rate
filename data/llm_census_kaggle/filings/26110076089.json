@@ -1,0 +1,76 @@
+{
+  "summary": "The library urges the FCC to preserve the core E‑Rate program, keep CIPA requirements practical and privacy‑respectful, and avoid any changes that would reduce access, increase administrative burden, or limit local flexibility. It also calls for thoughtful simplification and fraud prevention while rejecting proposals to terminate or limit the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "conditional_or_amend",
+      "requested_action": "avoid changes that reduce access, increase administrative burden, or limit local flexibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Any reforms should simplify processes and prevent fraud without compromising access or local control.",
+      "evidence_quote": "-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or",
+      "evidence_start": 2794,
+      "evidence_end": 2991,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "keep CIPA requirements practical, technically feasible, and respectful of patron privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "CIPA must remain practical and privacy‑respectful to protect children while enabling safe internet use.",
+      "evidence_quote": "CIPA requirements practical, technically feasible, and respectful of patron privacy. 4. CLOSING Edith Wheeler Memorial Library respectfully urges the FCC to preserve the core strengths of E-Rate,",
+      "evidence_start": 2480,
+      "evidence_end": 2675,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve the core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The core E‑Rate program is essential for maintaining affordable broadband and public Wi‑Fi services.",
+      "evidence_quote": "oposal that would terminate or limit the E-Rate Program. Cutting E-Rate threatens to leave vulnerable communities behind that don't have the resources to fill the gap. In our case, the library's",
+      "evidence_start": 1859,
+      "evidence_end": 2053,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to terminate or limit the E‑Rate Program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate threatens to leave vulnerable communities behind that lack resources to fill the gap.",
+      "evidence_quote": "50 per quarter. Yes, $1,000 per year for high speed internet and public Wi-Fi throughout the 36,000 square foot building. I urge the FCC to reject any proposal that would terminate or limit the",
+      "evidence_start": 1706,
+      "evidence_end": 1899,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conditional_or_amend",
+    "cipa_byod": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076089",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076089",
+  "filer_raw": "Nicole Cignoli",
+  "date_submission": "2026-09-09T18:24:28.017Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "778dd6f1c508511420213e99bca78ba7b3c5d15f721b6373c8b7282ba173f2db",
+  "params_key": "fbbc78749bdac8f4d0a807bd325a642bed46358dfd8c4c61849cc9820ce4b3ea",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

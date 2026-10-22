@@ -1,0 +1,76 @@
+{
+  "summary": "The Oregon School Boards Association opposes any proposals that would sunset or narrow the E‑Rate program, change its discount structure, or impose screen‑time requirements, arguing that such actions would undermine essential broadband and infrastructure support for Oregon schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "reject changes to the discount structure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Altering the discount matrix would increase costs for schools and reduce broadband access.",
+      "evidence_quote": "o: \n• \nSunset or conclude the program \n• \nNarrow the program to only rural areas or areas where there is limited competition \n• \nNarrow the services provided \n• \nChange the discount structure \n• \nAdd",
+      "evidence_start": 2139,
+      "evidence_end": 2338,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing the program to only rural or limited‑competition areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would deny many schools access to critical services.",
+      "evidence_quote": "o: \n• \nSunset or conclude the program \n• \nNarrow the program to only rural areas or areas where there is limited competition \n• \nNarrow the services provided \n• \nChange the discount structure \n• \nAdd",
+      "evidence_start": 2139,
+      "evidence_end": 2338,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or conclusion of the program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting the program would deprive schools of essential broadband and infrastructure support.",
+      "evidence_quote": "can understand the scope of the services E-Rate provides \nand the impact it will have on schools and libraries.  \nWe urge the Commission to reject proposals to: \n• \nSunset or conclude the program \n•",
+      "evidence_start": 1981,
+      "evidence_end": 2179,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject adding screen‑time based requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The FCC lacks authority to impose screen‑time limits, which are state curricular matters.",
+      "evidence_quote": "e authority to do. Additionally, the FCC does not have the authority to place restrictions on \nscreen time in schools. Curriculum (and thereby screen time) is left up to individual states.3  \nAs",
+      "evidence_start": 3231,
+      "evidence_end": 3425,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080270",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080270",
+  "filer_raw": "Oregon School Boards Association",
+  "date_submission": "2026-10-09T16:35:31.698Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aa253e4fef9c8b82004b3165b7e3c03459027aca979281f073e373c2016d3cf8",
+  "params_key": "46fa0f44c1fb6559fefc995d96fa89fac63ece211b9cba9bc47521fe5361b27c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

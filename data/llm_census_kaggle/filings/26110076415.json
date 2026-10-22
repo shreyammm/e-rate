@@ -1,0 +1,87 @@
+{
+  "summary": "St. Augustine Preparatory Academy urges the FCC to maintain E‑Rate funding and to avoid imposing restrictive screen‑use mandates that would limit schools’ flexibility in digital instruction.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate eligibility and funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The school needs continued E‑Rate support to sustain high‑speed, secure internet essential for 1:1 Chromebook instruction.",
+      "evidence_quote": "Our school would be forced to change our programming if the FCC terminates or \nlimits the E-Rate program. \n \nE-Rate is an essential program, and we ask for the FCC’s continued commitment to ensuring",
+      "evidence_start": 3872,
+      "evidence_end": 4070,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset or terminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Terminating E‑Rate would force the school to cut core services and downgrade network security.",
+      "evidence_quote": "Our school would be forced to change our programming if the FCC terminates or \nlimits the E-Rate program. \n \nE-Rate is an essential program, and we ask for the FCC’s continued commitment to ensuring",
+      "evidence_start": 3872,
+      "evidence_end": 4070,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate is essential for maintaining the school’s technology infrastructure and student learning outcomes.",
+      "evidence_quote": "e FCC’s continued commitment to ensuring \nthat libraries and schools across the nation have access to these federal funds needed to \nprovide secure, scalable, future-ready connectivity that supports",
+      "evidence_start": 4030,
+      "evidence_end": 4228,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose new screen‑time limits or restrictive mandates",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Restrictive screen‑time mandates would undermine the flexibility schools need for high‑quality digital learning.",
+      "evidence_quote": "future-ready connectivity that supports the current and evolving needs \nof our community. We urge the FCC not to impose overly restrictive mandates or administrative \nburdens regarding screen use",
+      "evidence_start": 4189,
+      "evidence_end": 4384,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not explicitly propose a new screen‑time policy, only requests avoidance of restrictive mandates.",
+      "evidence_quote": "future-ready connectivity that supports the current and evolving needs \nof our community. We urge the FCC not to impose overly restrictive mandates or administrative \nburdens regarding screen use",
+      "evidence_start": 4189,
+      "evidence_end": 4384,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076415",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076415",
+  "filer_raw": "St. Augustine Preparatory Academy",
+  "date_submission": "2026-09-11T13:46:40.707Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "25f21d1cdbd5651626658895301e0a4a80b31e28cd240fb4aa6cbdb7a4024b07",
+  "params_key": "3afc09d79a9aafa4d7dc34c532d2499bd7f442c746c762fa3699ed702e068aff",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

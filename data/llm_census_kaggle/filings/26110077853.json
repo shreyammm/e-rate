@@ -1,0 +1,86 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, reduction, or unnecessary restriction of eligibility or support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate eligibility should not be unnecessarily narrowed based on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 3740,
+      "evidence_end": 3936,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program must continue to provide connectivity and internal network infrastructure schools need for reliable educational access.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 3896,
+      "evidence_end": 4090,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated or sunset.",
+      "evidence_quote": "ge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict",
+      "evidence_start": 469,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Rather than reduce its role, the FCC should work with schools to modernize E‑Rate to meet current educational needs.",
+      "evidence_quote": "l network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 4050,
+      "evidence_end": 4248,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address specific policy changes beyond preserving the program.",
+      "evidence_quote": "te rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to",
+      "evidence_start": 4208,
+      "evidence_end": 4399,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077853",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077853",
+  "filer_raw": "Matt Derrick",
+  "date_submission": "2026-09-23T16:07:24.607Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8bf6c6d378b273b0ddc942e1f6d2718de7a89c922562bda18b6b114ebd1d522a",
+  "params_key": "d4fdd776dd92ced6f84958a37c6046e4bd7e73a6595ef33bff0ac5282f4c2f04",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

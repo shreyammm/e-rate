@@ -1,0 +1,86 @@
+{
+  "summary": "Letter from St. Marcus Lutheran School superintendent urging the FCC to preserve E‑Rate funding and oppose any restrictions that would limit schools’ ability to use the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "continue broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The school maintains that its current eligibility for Category 1 and Category 2 funding is essential to its operations.",
+      "evidence_quote": "ibraries serving \ncommunities across the nation. We respectfully ask the FCC to continue its commitment to ensuring \nthat schools and libraries have access to affordable, reliable connectivity and",
+      "evidence_start": 3887,
+      "evidence_end": 4083,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain funding for network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The school’s network infrastructure, funded by E‑Rate, ensures that students from low‑income households have equitable access to digital learning.",
+      "evidence_quote": "s \nto partner with SourceOne for Managed Internal Broadband Services and to maintain and upgrade \ncritical network infrastructure. \n \nThese investments help us operate a network that is reliable and",
+      "evidence_start": 2796,
+      "evidence_end": 2994,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid cuts to E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A significant reduction or loss of E‑Rate support would force the school to defer technology investments, increasing risk of instability and cybersecurity vulnerabilities.",
+      "evidence_quote": "Rate support would have an immediate and substantial impact \non our school budget. St. Marcus would face difficult choices between maintaining essential \ntechnology infrastructure and funding other",
+      "evidence_start": 3414,
+      "evidence_end": 3611,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The school argues that eliminating or restricting E‑Rate would severely limit its ability to provide reliable internet and network infrastructure for students.",
+      "evidence_quote": "to affordable, reliable connectivity and the infrastructure \nnecessary to support it.  We urge the FCC to preserve strong E-Rate support and to avoid \nrequirements that would unnecessarily restrict",
+      "evidence_start": 4043,
+      "evidence_end": 4240,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent restrictions on technology use",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Restrictions would unnecessarily limit schools’ ability to determine how technology can best support their students and educational mission.",
+      "evidence_quote": "ements that would unnecessarily restrict schools' ability to determine how technology can \nbest support their students and educational mission. \n \nSincerely, \n \nHenry Tyson \nSuperintendent",
+      "evidence_start": 4200,
+      "evidence_end": 4388,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077918",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077918",
+  "filer_raw": "St. Marcus Lutheran School",
+  "date_submission": "2026-09-23T18:54:41.000Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "64df050a8c4850b2fd495b8988c39a8803329f1c292ad2949d55f76a5f0949e9",
+  "params_key": "bde1e069686160d3084257f6020d3cce88df287596e88bf4b3f6754047d76457",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

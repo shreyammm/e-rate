@@ -1,0 +1,87 @@
+{
+  "summary": "The technology director urges the FCC to keep E‑Rate funding levels unchanged and to avoid tying eligibility to screen‑time limits, arguing that reliable internet is essential for student achievement and that such restrictions would harm learning outcomes.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue providing reliable, affordable connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should continue helping schools provide the reliable, affordable connectivity they need.",
+      "evidence_quote": "in ways that best serve their students. E-Rate should continue doing what it has done so successfully—helping schools provide the reliable, affordable connectivity they need. Reducing that support",
+      "evidence_start": 1857,
+      "evidence_end": 2053,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reducing E‑Rate funding would jeopardize the educational value of investments in student technology.",
+      "evidence_quote": "ped schools buy devices for nearly every student, greatly expanding access to online educational resources. A reduction of E-Rate funding would jeopardize the the educational value of these",
+      "evidence_start": 938,
+      "evidence_end": 1127,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate support for students who depend on schools for access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reducing support risks limiting educational opportunity for students who depend most on their schools for access.",
+      "evidence_quote": "ctivity they need. Reducing that support risks limiting educational opportunity, particularly for students who depend most on their schools for access.",
+      "evidence_start": 2013,
+      "evidence_end": 2164,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie E‑Rate eligibility to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions would restrict access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "tional resources, courses, applications, and essential services. Reducing funding to influence screen time could restrict access to valuable educational resources and harm learning outcomes rather",
+      "evidence_start": 1389,
+      "evidence_end": 1585,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose additional screen‑time restrictions through reduced funding",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Schools are already required to comply with state laws; E‑Rate should not add further restrictions.",
+      "evidence_quote": "ources and harm learning outcomes rather than improve them. Schools are already required to comply with applicable state laws and policies; the E-Rate program should not attempt to impose additional",
+      "evidence_start": 1545,
+      "evidence_end": 1743,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079618",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079618",
+  "filer_raw": "Michael Sanders",
+  "date_submission": "2026-10-06T16:56:45.312Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e91f6d8880b3a8aa38f97cf13882eca7448a3832049c8bef931cc3634c5dc1e7",
+  "params_key": "e3c323da67af2a1dca30d16b16c7795d083737a9a26c4557ba72980767507468",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

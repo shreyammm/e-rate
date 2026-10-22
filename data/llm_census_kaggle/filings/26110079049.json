@@ -1,0 +1,86 @@
+{
+  "summary": "Letter from a school technology director urging the FCC to preserve and strengthen E‑Rate, opposing sunset or narrowing of eligibility, and highlighting the program’s cost savings and essential role in school operations.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support, undermining equitable access to reliable broadband.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would",
+      "evidence_start": 3877,
+      "evidence_end": 4074,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is part of basic school infrastructure, essential for safety systems, emergency alerts, and instructional tools.",
+      "evidence_quote": "ucture schools need to provide \nreliable educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce \nits role in public education.",
+      "evidence_start": 4187,
+      "evidence_end": 4381,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that supports critical school operations and student learning, and eliminating it would harm educational outcomes.",
+      "evidence_quote": ") to preserve and strengthen the E-\nRate program and to reject any proposal that would eliminate, sunset, substantially reduce, or \nunnecessarily restrict E-Rate support for schools and libraries.",
+      "evidence_start": 465,
+      "evidence_end": 661,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate to save district money and avoid diverting funds from critical priorities",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate saves the district thousands of dollars each month, preventing cuts to cybersecurity and other essential services.",
+      "evidence_quote": "tangible impact. \nE-Rate saves our small district thousands of dollars each month in network fees. Without this support, \nwe would be forced to divert funds from other critical priorities, directly",
+      "evidence_start": 2481,
+      "evidence_end": 2678,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The program should be improved to meet evolving instructional demands and technology needs.",
+      "evidence_quote": "an reduce \nits role in public education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity \nnecessary for students and patrons to participate fully",
+      "evidence_start": 4341,
+      "evidence_end": 4540,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079049",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079049",
+  "filer_raw": "Dominick Avera",
+  "date_submission": "2026-10-01T18:28:16.583Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "425cb7e30cc3b995e8b56602894cc3efe1255c3d92ddee5c1daabe2de779ed12",
+  "params_key": "7acd2aa0531dc79785edcd97be6ed75a74820bac3b19b86a97b7c14145566570",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

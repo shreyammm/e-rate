@@ -1,0 +1,63 @@
+{
+  "summary": "A high‑school teacher and parent argue that 1:1 device policies harm learning, violate parental rights, and that E‑Rate funds should be redirected to teachers and labs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_age_specific",
+      "position": "oppose",
+      "requested_action": "Protect parental right to manage child’s internet access",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "child_safety",
+      "argument": "Chromebooks required by schools violate parents’ right to control their child’s technology use.",
+      "evidence_quote": "arent, I can attest that the Chromebooks my students are required to use by their public school system violate my parental right to manage my child’s access to technology and the Internet.  Our",
+      "evidence_start": 158,
+      "evidence_end": 351,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "Reallocate E‑Rate funds to teachers and computer labs",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funds should be spent on computer science teachers and a good computer lab rather than on device procurement.",
+      "evidence_quote": "ess to technology and the Internet.  Our schools need funds, but I would spend that money on awesome computer science teachers and a good computer lab.",
+      "evidence_start": 311,
+      "evidence_end": 462,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Eliminate 1:1 device policies",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "1:1 student device policies reduce student learning and enable bad teaching.",
+      "evidence_quote": "As a high school teacher, I speak from personal experience when I say that 1:1 student device policies reduce student learning and enable bad teaching. As a parent, I can attest that the Chromebooks",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_age_specific": "oppose",
+    "consultant_percent_fees": "oppose",
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078396",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078396",
+  "filer_raw": "Joanna Peltason",
+  "date_submission": "2026-09-25T21:49:17.633Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5683a50b40ef01dc981ef1ee0f6459f9881c5c24bbc929d2338a049162c5fc29",
+  "params_key": "3ef9d0e113fdcd11a691b555f1f3f954bc5cf3a3a3c02942cacc30848d897357",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

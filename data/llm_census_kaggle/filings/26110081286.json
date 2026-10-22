@@ -1,0 +1,87 @@
+{
+  "summary": "Congressional letter urging the FCC to preserve the E‑Rate program, oppose any sunset or narrowing of eligible services, and restore support for school bus Wi‑Fi and hotspot services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current scope of eligible services and equipment",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "The letter warns that narrowing eligibility would undermine the program’s ability to support schools and libraries.",
+      "evidence_quote": "4973. \n\n\nChairman Carr \nOctober 13, 2026 \nPage 2 \n----- \nand rural status. The Commission’s consideration of narrowing the scope of services and equipment \neligible for E-Rate support risks",
+      "evidence_start": 2383,
+      "evidence_end": 2572,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or limit E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The letter argues that sunset or limitation would undermine progress in rural education.",
+      "evidence_quote": "the Federal Communications Commission to preserve the E-Rate program \nand reject any proposal that would limit, sunset, or otherwise weaken the program’s support for \nschools and libraries. E-Rate",
+      "evidence_start": 304,
+      "evidence_end": 500,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding for all eligible services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "The letter urges the FCC to preserve E‑Rate and reject any proposal to limit, sunset, or weaken the program.",
+      "evidence_quote": "The progress North Carolina has made is real, but it can be undone if federal \nsupport is pulled back. I urge the Commission to preserve E-Rate, to reject any proposal to limit, \nsunset, or weaken",
+      "evidence_start": 4257,
+      "evidence_end": 4453,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "restore E‑Rate support for school bus Wi‑Fi and hotspot services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "The letter contends that school bus Wi‑Fi is essential for students in rural areas to complete homework.",
+      "evidence_quote": "d E-Rate program support for \nschool bus Wi-Fi and hotspot services in September 2025. Broadband access is a significant issue in \neastern North Carolina, where some students lack reliable internet",
+      "evidence_start": 3156,
+      "evidence_end": 3353,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "reverse FCC decision to end bus Wi‑Fi support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "The letter states that the FCC’s decision lacks legal authority and would harm rural students’ connectivity.",
+      "evidence_quote": "ool bus Wi-Fi.3 While the Commission has concluded that it lacks \nlegal authority to support these services, a long bus ride is part of the school day for many rural \nstudents, and Wi-Fi on the bus",
+      "evidence_start": 3624,
+      "evidence_end": 3821,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081286",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081286",
+  "filer_raw": "Representative Donald G. Davis",
+  "date_submission": "2026-10-13T22:03:53.031Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cac507f1f0bb0c2762143b5fca5717656e1ccde45a09f2060ad8c6430cee4cf1",
+  "params_key": "5ed5ac40f4db099b52d073a321517e2adffe123877b4c390a559deeef3793de0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

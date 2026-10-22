@@ -1,0 +1,74 @@
+{
+  "summary": "The comment urges the FCC to preserve and strengthen the E‑Rate program, arguing that narrowing or reducing it would widen the digital divide, increase costs, reduce cybersecurity, and hinder staff recruitment.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate also gives districts the ability to deploy industry‑standard hardware, modern network designs, and best‑practice security frameworks.",
+      "evidence_quote": "Rate also gives districts the ability to deploy industry‑standard hardware, modern network \ndesigns, and best‑practice security frameworks. This matters not only for instructional quality but \nalso",
+      "evidence_start": 778,
+      "evidence_end": 975,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing or reducing the program would directly widen the gap between students who have access to strong technology and those who do not.",
+      "evidence_quote": "E‑Rate, we cannot provide the high‑speed connectivity, robust network infrastructure, and \nsecure digital environments required to prepare them for those next steps. Narrowing or \nreducing the",
+      "evidence_start": 468,
+      "evidence_end": 660,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid cuts to connectivity",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E‑Rate is narrowed, reoriented, or reduced, the impact will be immediate and severe: higher costs for essential connectivity.",
+      "evidence_quote": "is narrowed, reoriented, or reduced, the impact will be immediate and severe: \n●​ Higher costs for essential connectivity \n●​ Reduced ability to upgrade aging infrastructure \n●​ Increased",
+      "evidence_start": 1874,
+      "evidence_end": 2061,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent widening digital divide",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "A widening digital divide that directly harms student readiness for college, career, and the workforce.",
+      "evidence_quote": "grade aging infrastructure \n●​ Increased cybersecurity risk \n●​ Greater inequity between districts \n●​ Difficulty attracting and retaining qualified technical staff \n●​ A widening digital divide that",
+      "evidence_start": 2021,
+      "evidence_end": 2220,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076225",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076225",
+  "filer_raw": "Crandall ISD",
+  "date_submission": "2026-09-10T14:38:54.470Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "eefe2d61c7c78be3b101eb46c5f007cca387b4387feb92b6078333895af260cd",
+  "params_key": "4a972850e01529c084754a4b6b41e5854e3748d4b442753b31e42518146a285c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

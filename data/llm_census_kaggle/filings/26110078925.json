@@ -1,0 +1,88 @@
+{
+  "summary": "Woodland Public Schools superintendent urges the FCC to preserve and strengthen E‑Rate, opposing sunset or elimination, advocating need‑based eligibility, continued support for connectivity and internal networks, and modernization of the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "maintain eligibility based on need, not geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility should reflect student and community needs rather than geographic location.",
+      "evidence_quote": "s and communities, rather than\ngeography alone;\nMaintain support for the connectivity and internal network infrastructure schools\nneed; and\nWork with schools and other stakeholders to strengthen and",
+      "evidence_start": 3884,
+      "evidence_end": 4082,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program must be preserved to maintain essential broadband infrastructure for schools.",
+      "evidence_quote": "Rate has\nworked.\nI respectfully urge the Commission to:\nReject any proposal to sunset or eliminate E-Rate;\nPreserve eligibility based on the needs of students and communities, rather than\ngeography",
+      "evidence_start": 3727,
+      "evidence_end": 3924,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "maintain support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools require reliable internal networks for instruction, safety, and operations.",
+      "evidence_quote": "and other stakeholders to strengthen and modernize E-Rate rather\nthan reduce its role in public education.\nOur students deserve access to the infrastructure they need to learn, communicate, and be",
+      "evidence_start": 4042,
+      "evidence_end": 4238,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address specific policy proposals beyond preservation and modernization.",
+      "evidence_quote": "RECEIVED & INSPECTEL\nW\nSEP 24 2026\nFCC MAIL ROCM\nWOODLAND\nPublic Schools\nFederal Communications Commission\n45 L Street NE\nWashington, DC 20554\nRE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernization will improve program efficiency and relevance for current educational needs.",
+      "evidence_quote": "and other stakeholders to strengthen and modernize E-Rate rather\nthan reduce its role in public education.\nOur students deserve access to the infrastructure they need to learn, communicate, and be",
+      "evidence_start": 4042,
+      "evidence_end": 4238,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078925",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078925",
+  "filer_raw": "Woodland Public Schools",
+  "date_submission": "2026-09-30T19:13:10.980Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "69ec45a6334a49c3e3a9b7942d31bb50d475d5b5143bc69d06e95730631729a4",
+  "params_key": "42446af4b3335746c7fb3dab212088d1c35c1afa74acd871c5ea4d67d2d15441",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

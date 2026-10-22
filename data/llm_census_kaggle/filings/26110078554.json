@@ -1,0 +1,87 @@
+{
+  "summary": "Superintendent urges continued support for E‑Rate, opposing sunset, narrowing eligibility, and cuts, and calls for modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave many students without adequate support.",
+      "evidence_quote": "any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would",
+      "evidence_start": 3878,
+      "evidence_end": 4076,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable broadband to run instruction, assessments, and safety systems.",
+      "evidence_quote": "n geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable",
+      "evidence_start": 4036,
+      "evidence_end": 4224,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure that schools cannot afford to lose.",
+      "evidence_quote": "nfrastructure of a modern school system, just like electricity, transportation, and safe facilities. I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the",
+      "evidence_start": 3721,
+      "evidence_end": 3917,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernization should enhance the program rather than reduce its role.",
+      "evidence_quote": "ructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate",
+      "evidence_start": 4184,
+      "evidence_end": 4380,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other policy issues such as screen‑time limits or CIPA changes.",
+      "evidence_quote": "ien  County,  but it does illustrate the impact that removal of this funding would have on budget decisions. Much of the proposal is framed around concerns over children’s screen time, and those",
+      "evidence_start": 2785,
+      "evidence_end": 2979,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078554",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078554",
+  "filer_raw": "Berrien Regional Education Service Agency",
+  "date_submission": "2026-09-28T17:33:57.486Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "06488aa42aa021f3382e2f3d88be5f30453d9d19bd7a08c0edf8748707d48e2d",
+  "params_key": "71d21106b71bc48b1711cb66cffbe33f7f7ac452d0a32b5638b2d0ef1020a7d8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

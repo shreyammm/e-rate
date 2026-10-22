@@ -1,0 +1,50 @@
+{
+  "summary": "North Central Independent Living Services opposes FCC proposals that would cut or restrict E‑Rate authorizations for students with disabilities who rely on assistive technology, arguing that such cuts would harm academic and community participation. The organization also stresses that child‑safety filtering should be determined by schools and parents rather than imposed by the FCC.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "conditional_or_amend",
+      "requested_action": "Allow schools and parents to set child‑safety filters",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Child‑safety filtering should be decided by local schools and parents, not mandated by the FCC.",
+      "evidence_quote": "puters and  the E-Rate system to advance academic,and other opportunitiesit should be out to the parent and the local  school district to determine the   appropriate child safe filters and everything",
+      "evidence_start": 1245,
+      "evidence_end": 1444,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Maintain current E‑Rate authorizations for assistive technology and AAC devices",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Cutting E‑Rate support for AAC users would impede their academic growth and community participation.",
+      "evidence_quote": "school district would have available to them,  the FCC may unintentionally harm academic growth of students who utilize AAC  communication devices  and other  assistive  technologies that rely on",
+      "evidence_start": 1875,
+      "evidence_end": 2070,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "conditional_or_amend",
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081084",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081084",
+  "filer_raw": "Shyla Patera",
+  "date_submission": "2026-10-13T18:16:50.953Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aef063b694b3b353b1c700796c6944fd38bc87a75eeedf2fe22056aaef968a6d",
+  "params_key": "1a155a4468922cf4195dc85dc3aee885f23420dc5ef805ee651bd26db5d0ccf6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "Irving ISD urges the FCC to keep the core E‑Rate program intact, preserve eligibility for special construction, dark fiber, self‑provisioned networks, and managed services, maintain full support for Head Start and Pre‑K, rely on existing CIPA rules and local decision‑making, and ensure discount methodology reflects true local cost and need without disproportionately harming high‑need districts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "rely on existing CIPA requirements and preserve local authority over how E‑Rate‑supported networks are used for instruction",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Irving ISD believes schools are best positioned to decide technology use and should not be subject to federal screen‑time limits.",
+      "evidence_quote": "uld be used to meet local instructional, \noperational, and community needs. Irving ISD encourages the Commission to continue relying on CIPA \nand to respect local decision-making authority over the",
+      "evidence_start": 3423,
+      "evidence_end": 3620,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "ensure discount methodology reflects true local cost and need and does not disproportionately harm high‑need districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district contends that discount changes should be based on local cost and need rather than broad policy shifts.",
+      "evidence_quote": "nges to the discount methodology reflect true local cost and need and do \nnot disproportionately harm districts serving high-need or high-cost communities. \n \n6. CONCLUSION \n\n\nE-Rate remains",
+      "evidence_start": 5595,
+      "evidence_end": 5785,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Irving ISD argues that eliminating or reducing the core E‑Rate program would shift millions of dollars in costs back to local taxpayers and harm educational operations.",
+      "evidence_quote": "serve the core E-Rate program, including support for Internet access, WAN, internal \nconnections (including Wi-Fi), installation, and maintenance that schools rely on every day. \n•     Retain",
+      "evidence_start": 4980,
+      "evidence_end": 5171,
+      "uncertain": false
+    },
+    {
+      "provision_id": "prek_headstart",
+      "position": "support",
+      "requested_action": "continue full E‑Rate eligibility for Head Start and Pre‑K students and campuses",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Removing or reallocating support would add administrative burden and shift costs onto programs serving the youngest learners.",
+      "evidence_quote": "ations for young learners, families, and staff. Removing or cost-\nallocating support for these students would add administrative burden and shift costs onto the programs \nthat serve our youngest",
+      "evidence_start": 4206,
+      "evidence_end": 4400,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "retain eligibility for special construction, dark fiber, self‑provisioned networks, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district maintains that these options allow cost‑effective network solutions essential for meeting local needs.",
+      "evidence_quote": "schools rely on every day. \n•     Retain eligibility for special construction, dark fiber, self-provisioned networks, and managed \nservices, which allow districts to choose the most cost-effective",
+      "evidence_start": 5131,
+      "evidence_end": 5327,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "discount_matrix": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "prek_headstart": "support",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081421",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081421",
+  "filer_raw": "Irving ISD",
+  "date_submission": "2026-10-14T03:22:42.365Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a5679c3e189a944d860516caf05e2afc763423c9cabd24c6be7a7ed17a7a7c44",
+  "params_key": "3c3f6420379991268a0dabf49a3d200a7b9bc42941474e9923d205e59098a4e3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

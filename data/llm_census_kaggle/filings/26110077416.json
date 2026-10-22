@@ -1,0 +1,62 @@
+{
+  "summary": "Knappa School District urges the FCC to maintain full E‑Rate funding, citing digital equity, safety, and fiscal constraints in a rural setting.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility for broadband and internal network services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate support would force districts to divert funds from instruction and staff, undermining educational quality.",
+      "evidence_quote": "small, rural district, Knappa relies on E-Rate discounts to maintain essential Category 1 (broadband connectivity) and Category 2 (internal network infrastructure, Wi-Fi, and routing hardware)",
+      "evidence_start": 618,
+      "evidence_end": 810,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "retain E‑Rate funding for VoIP and safety communications",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "VoIP systems are critical for campus safety, emergency response, and classroom security, and rely on E‑Rate‑funded infrastructure.",
+      "evidence_quote": "lassroom instruction, certified teaching staff, and direct student support services.  2. School Safety and Emergency Response Communications (VoIP) Modern Voice over IP (VoIP) telephony systems are",
+      "evidence_start": 1086,
+      "evidence_end": 1283,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve full E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate subsidies are essential for rural districts to afford high‑speed broadband and internal network infrastructure.",
+      "evidence_quote": "ges the FCC to preserve and protect full E-Rate funding for broadband infrastructure and communications systems to ensure our schools remain safe, connected, and equipped to prepare our students for",
+      "evidence_start": 2793,
+      "evidence_end": 2991,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077416",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077416",
+  "filer_raw": "William Fritz",
+  "date_submission": "2026-09-21T16:41:49.568Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d0ce444dbfcdb650bfc39693f4e7d5129f54ce836bb60256cb36600c5ffe4096",
+  "params_key": "1170e0ccc3604e760c1678c9847f5e441e8cf26b36aab20fe40906b96e9ceff8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,111 @@
+{
+  "summary": "Letter from San Bernardino County Superintendent of Schools urges the FCC to keep the E‑Rate program intact, emphasizing its critical role in providing reliable broadband for special‑education students and for underserved rural communities. The commenter urges the FCC to keep the E‑Rate program fully funded and to postpone any child‑safety or screen‑time rules to state and local authorities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain broadband support for all students",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "Reliable connectivity enabled by E‑Rate allows specialists to program and troubleshoot AAC devices remotely, directly supporting student communication and learning.",
+      "evidence_quote": "e \nnetwork makes that happen, and E-Rate helps our schools afford it: the broadband into the \nbuilding and the Wi-Fi in the classroom. Maintaining this support is essential for fostering \nstudent",
+      "evidence_start": 3101,
+      "evidence_end": 3296,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "ensure broadband reliability for all campus networks",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "implementation_burden",
+      "argument": "The network that carries a student’s AAC device also supports general‑education students, teachers, and state assessments, making broadband reliability critical for overall educational delivery.",
+      "evidence_quote": "ts, a call home to a family. Our special education classrooms share those \nnetworks with the general education students around them. E-Rate helps schools keep \ntheir connections reliable and ensures",
+      "evidence_start": 4977,
+      "evidence_end": 5175,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue E‑Rate discounts for high‑poverty and rural schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate discounts are deepest for high‑poverty and rural schools, which are the most underserved in San Bernardino County.",
+      "evidence_quote": "om the nearest city, with few \nproviders competing to serve them. E-Rate discounts are deepest for high-poverty and \nrural schools, which is where our county's needs are greatest. For families in",
+      "evidence_start": 5445,
+      "evidence_end": 5640,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "keep program intact",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program is essential for ensuring that special‑education students in remote areas have reliable broadband to access assistive technology and educational resources.",
+      "evidence_quote": "stricts across the largest county in the contiguous United States. \nI am writing to ask the Commission to keep the E-Rate program intact for all students. For \nmany of the students I serve, the",
+      "evidence_start": 776,
+      "evidence_end": 969,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "evaluate sunset timing",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter notes the FCC’s Notice asking whether E‑Rate should be limited or sunset now that most schools are connected, but does not take a position on the timing.",
+      "evidence_quote": "s otherwise found only in larger cities. \nThe Notice asks whether E-Rate should be limited or sunset now that most schools are \nconnected (¶ 12), and whether support should be conditioned on limits",
+      "evidence_start": 5758,
+      "evidence_end": 5955,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not limit or sunset E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The commenter argues that E‑Rate should remain fully funded to support essential broadband and internal networks for all students.",
+      "evidence_quote": "k the Commission to: \n1. Keep the E-Rate program intact, without limiting or sunsetting support for \nbroadband and internal connections, so every school can sustain the networks that \nstudents,",
+      "evidence_start": 6619,
+      "evidence_end": 6812,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "defer child‑safety measures to states",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The commenter requests that any child‑safety or screen‑time rules be left to state and local authorities rather than imposed by the FCC.",
+      "evidence_quote": "can sustain the networks that \nstudents, especially those with special needs, depend on. \n2. Defer any child-safety measures and screen time rules to the states and local \nauthorities that understand",
+      "evidence_start": 6772,
+      "evidence_end": 6971,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080272",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080272",
+  "filer_raw": "San Bernardino County Superintendent of Schools. Assistant Superintendent of Student Services Myrlene Pierre",
+  "date_submission": "2026-10-09T16:38:04.613Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cb77b640060f13e21ef922ee30a364600227bd06f4bfc9195c7728b74e8cd5fd",
+  "params_key": "0cab6bcc67e9d907b41c5ea374b3d6b3a477afc2a2280446c2dcff6aaf802c65",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

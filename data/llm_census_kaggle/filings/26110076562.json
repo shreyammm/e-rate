@@ -1,0 +1,87 @@
+{
+  "summary": "The commenter, a former Alabama school technology coordinator, argues that E‑Rate should not be reduced or sunset, that funding should not be tied to screen‑time limits, and that reliable broadband is essential for both instruction and school operations, especially for students in poverty.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset or reduce E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should remain to ensure equitable access to reliable broadband for all students.",
+      "evidence_quote": "ology in public schools, I have seen the remarkable changes that E-Rate has enabled. Please do not eliminate or reduce E-Rate.\n\nReliable, affordable internet access is no longer an optional",
+      "evidence_start": 155,
+      "evidence_end": 344,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not eliminate or reduce E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating or reducing E‑Rate would harm students, especially those in poverty.",
+      "evidence_quote": "itable educational opportunities and the tools they need to succeed.\n\nIn Alabama, where poverty remains among the highest in the nation and roughly one in five children lives in poverty,",
+      "evidence_start": 771,
+      "evidence_end": 957,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain broadband connectivity for safety and operations",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is essential for school safety, security, and daily operations, not just instruction.",
+      "evidence_quote": "l improve academic outcomes.\n\nHigh-speed internet access provides far more than a conduit to online learning applications and other web-based educational tools. It is a critical lifeline connecting",
+      "evidence_start": 2779,
+      "evidence_end": 2976,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base funding on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Funding should not be tied to screen‑time limits because it would restrict access to essential educational resources.",
+      "evidence_quote": "ld not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly",
+      "evidence_start": 1380,
+      "evidence_end": 1578,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not reduce funding to influence screen time",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Reducing funding to influence screen time would harm learning outcomes.",
+      "evidence_quote": "h needs. Schools rely on an increasingly diverse range of cloud-based instructional resources, courses, applications, and essential services. Reducing funding to influence screen time could restrict",
+      "evidence_start": 1538,
+      "evidence_end": 1736,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076562",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076562",
+  "filer_raw": "Susan Poling",
+  "date_submission": "2026-09-14T12:22:32.263Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "00ae223528b0895c5a2520ceda601286a97c5dbf2f3592e0ce68c7b2fee75d72",
+  "params_key": "16f4592b6f742e2a446d8b57213489d9f4e72959010a853211c724eb7c8d35c6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

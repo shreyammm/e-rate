@@ -1,0 +1,88 @@
+{
+  "summary": "The technology director of a school district urges the FCC to strengthen, not cut, E‑Rate funding, arguing that broadband is essential for instruction, equity, and school safety, and that screen‑time restrictions should not drive funding decisions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address CIPA or BYOD policies.",
+      "evidence_quote": "As the technology director and on behalf of my school system, I encourage the FCC to strengthen rather than reduce E-Rate.\n\nInternet connectivity has become as fundamental to education as classrooms,",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain broadband access for all students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students in poverty are less likely to have reliable home broadband, making school connectivity essential to bridge opportunity gaps.",
+      "evidence_quote": "es in poverty, school-provided access to technology and online educational resources is especially important. Children living in poverty are less likely to have reliable broadband and technology",
+      "evidence_start": 626,
+      "evidence_end": 820,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not base funding on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Funding decisions should not be tied to screen‑time limits, as this would restrict access to essential educational resources.",
+      "evidence_quote": "evels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly diverse range of cloud-based",
+      "evidence_start": 1091,
+      "evidence_end": 1290,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should not be reduced because it would disproportionately harm students in poverty who rely on school‑provided connectivity.",
+      "evidence_quote": "o have reliable broadband and technology resources at home, making their schools critical to bridging that opportunity gap. Reductions in E-Rate support could therefore have the greatest impact on",
+      "evidence_start": 780,
+      "evidence_end": 976,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure reliable connectivity for safety and security systems",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "High‑speed internet is critical for school safety systems such as security cameras, alarms, and emergency communications.",
+      "evidence_quote": "eline connecting schools to cloud-hosted services that support security cameras, alarm and emergency systems, law enforcement communications, phone systems, HVAC controls, electronic door access, and",
+      "evidence_start": 2643,
+      "evidence_end": 2842,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079603",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079603",
+  "filer_raw": "Matthew McQuay",
+  "date_submission": "2026-10-06T16:08:49.298Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9804b8dc9e7116324cf3b2134a71f1a2eeea8d807e7b6fd84f96fadbd6b1b64e",
+  "params_key": "f4ec7d4e3165b678183b7675c426952abf6451b6e0164b45dc36b334f029822e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

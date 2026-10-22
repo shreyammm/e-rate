@@ -1,0 +1,62 @@
+{
+  "summary": "St. Ignatius Public Schools urges the FCC to maintain full E‑Rate funding, argues that funding cuts would harm network infrastructure and that screen‑time and monitoring policies should be decided locally, not through E‑Rate restrictions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "allow local boards to set screen‑time and monitoring policies",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Decisions about screen‑time and monitoring should remain under local school board control.",
+      "evidence_quote": "T designed to impact network or internet \naccess or oversight at a policy level.  Decisions about screen time, instructional \ntechnology, and appropriate technology use in our district is best left",
+      "evidence_start": 475,
+      "evidence_end": 672,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset or cut E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate funding would severely limit rural schools’ ability to maintain safe, reliable networks.",
+      "evidence_quote": "Dear Federal Communications Commission: \n \nI am writing on behalf of St. Ignatius Public Schools in western Montana in support of \ncontinued E-Rate funding.  For Montana schools - particularly rural",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not restrict funding to address screen‑time",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Using E‑Rate cuts to address screen‑time concerns is an inappropriate policy tool.",
+      "evidence_quote": "itimate \nconcerns that school boards and administrations should consider, restricting funding on \nnetwork infrastructure is NOT an appropriate methodology for addressing them. Our \nlocal school board",
+      "evidence_start": 779,
+      "evidence_end": 978,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080177",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080177",
+  "filer_raw": "Timothy Marchant",
+  "date_submission": "2026-10-09T01:56:47.249Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a1a326db98f73d07f3a9ae2d74e2d05c6fbbf254be364db832747d4a006ff585",
+  "params_key": "1c9cb02288e5ff1744439639e2eed0a8c6b5996f9f67a4791a8978d0bfc4e00c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

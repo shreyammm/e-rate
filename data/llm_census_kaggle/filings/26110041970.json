@@ -1,0 +1,112 @@
+{
+  "summary": "Communications Audit Services LLC, an E‑Rate consulting firm, argues that Managed Internal Broadband Services (MIBS) should remain a supported E‑Rate service, that reimbursement should not be limited to hours worked, that applicants need clearer guidance on bidding, and that MIBS should not be restricted by applicant size or used to fund ineligible staffing. The comment argues that the C2 funding cap and Form 470 guidance should be used to prevent bundling of ineligible services, while maintaining the ability for applicants to use MIBS contracts for complex network support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "support",
+      "requested_action": "Provide clearer bid‑request guidance in FCC Form 470",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Clearer guidance would reduce confusion for applicants, consultants, and service providers.",
+      "evidence_quote": "applicants can effectively compare bids to \nselect the most cost-effective service offering? A complete list of the equipment to be \nmanaged and if the applicant requires on site hours should be",
+      "evidence_start": 2809,
+      "evidence_end": 3003,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "Do not limit reimbursement to hours worked",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring hourly limits would unduly constrain small rural schools that need flexible contracting options.",
+      "evidence_quote": "hat tickets for work requested/performed and hours worked be \nincluded with requests for reimbursement? No, Local entities should be given the \ngreatest flexibility to determine what solution best",
+      "evidence_start": 1869,
+      "evidence_end": 2065,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "implement clear Form 470 guidance with drop‑down menus",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "Clear Form 470 guidance will prevent bundling of ineligible services with MIBS contracts.",
+      "evidence_quote": "ent network.  The existence of the C2 \nfunding cap  ensures that E-Rate is not effectively funding ineligible services as MIBs \nmakes up only a percentage of IT support contracts. \n• How can we",
+      "evidence_start": 5265,
+      "evidence_end": 5458,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Keep MIBS as a supported service",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "MIBS provides essential network management for schools and libraries that lack internal resources, preventing long‑term cost increases.",
+      "evidence_quote": "in DA-26-647A1. \n \n• Should continue to be a supported service within the E-Rate program?  Yes, many \nschools and libraries lack the resources to effectively manage a modern network.  \nWithout the",
+      "evidence_start": 620,
+      "evidence_end": 816,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "oppose",
+      "requested_action": "Do not limit MIBS eligibility by applicant size",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Large districts also need MIBS to fill staffing gaps, and restricting eligibility would deny them needed support.",
+      "evidence_quote": "ibility of MIBS to schools and libraries of a certain size instead of \neliminating it as a supported service? No, while the loss of MIBs would be a very \nsignificant issue for smaller entities,",
+      "evidence_start": 3903,
+      "evidence_end": 4096,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Ensure MIBS does not fund ineligible staffing",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "The C2 funding cap and MIBS’s limited share of IT contracts prevent E‑Rate from funding ineligible services.",
+      "evidence_quote": "MIBs contract allows all applicants the ability to gain the expert support \nthat is needed to maintain a secure and efficient network.  The existence of the C2 \nfunding cap  ensures that E-Rate is",
+      "evidence_start": 5143,
+      "evidence_end": 5339,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "retain MIBS contracts for complex network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "MIBS contracts are essential for managing complex networks beyond basic maintenance.",
+      "evidence_quote": "ns (BMIC) instead of MIBS for its \nowned equipment?  No, many applicants need expert assistance to effectively \nmanage complex networks.  E-Rate assistance through MIBs contracts plays a vital \nrole",
+      "evidence_start": 6353,
+      "evidence_end": 6551,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_form_5654": "support",
+    "consultant_percent_fees": "oppose",
+    "erate_eligibility_scope": "support",
+    "mibs": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110041970",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110041970",
+  "filer_raw": "Communications Audit Services LLC",
+  "date_submission": "2026-07-22T19:19:52.028Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4641f3fa2160c8207fa3b4717e5b96545539a9b97758ea588ddb5edc67586694",
+  "params_key": "8280c71039c815e86c6c104b40b775f476049a0d95ff06f497fb8c99a13999c1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,74 @@
+{
+  "summary": "A library‑digital skills teacher urges the FCC to reject proposals that would terminate or limit the E‑Rate program, arguing that such cuts would jeopardize school and library budgets, leave vulnerable communities behind, and undermine students’ learning opportunities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject limiting urban areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate eligibility in urban areas would leave vulnerable communities without dedicated resources to fill the gap.",
+      "evidence_quote": "tworks. Cutting E-Rate also threatens to leave vulnerable communities behind that don’t have dedicated resources to fill the gap.  \n\nHorace Mann Laboratory School has used E-Rate funding to connect",
+      "evidence_start": 785,
+      "evidence_end": 982,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E‑Rate would force schools to divert essential budget funds from learning tools to basic internet access, robbing students of vital resources.",
+      "evidence_quote": "access to the Internet. Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks. Cutting E-Rate also threatens to",
+      "evidence_start": 626,
+      "evidence_end": 825,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate funding has enabled the school to connect students and families, supporting research projects and digital literacy.",
+      "evidence_quote": "chool has used E-Rate funding to connect students and families in our community, and I've seen the benefits of that support firsthand. I would not be able to help students complete research projects,",
+      "evidence_start": 942,
+      "evidence_end": 1141,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter highlights the broader impact on school budgets but does not propose a specific alternative policy.",
+      "evidence_quote": "information to parents and caregivers as easily without E-Rate funding. \n \nIf the FCC terminates or limits E-Rate funding, major budget reallocation would have to be done. Nearly all of my budget",
+      "evidence_start": 1256,
+      "evidence_end": 1451,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076832",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076832",
+  "filer_raw": "Magenta Jasinski",
+  "date_submission": "2026-09-16T19:28:47.955Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a9a1dc315c35f98bdc8bc0a72067f41e10293f36db3d27cf448f58667c977ccc",
+  "params_key": "a9316e475b7c61af292be517f6045c64ade68b49878e05f433d023377a104b85",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

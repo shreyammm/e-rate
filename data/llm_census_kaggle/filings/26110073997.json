@@ -1,0 +1,49 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program in its current form and to reject proposals that would sunset or significantly reduce it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program remains essential for affordable broadband access in schools and libraries, especially in underserved communities.",
+      "evidence_quote": "lly \nevaluate federal programs to ensure they continue to serve the public interest, we ask the \nCommission to preserve E-Rate in its current form, where it is an incredibly successful \nand",
+      "evidence_start": 776,
+      "evidence_end": 965,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate continues to support educational outcomes by ensuring reliable internet connectivity for students and staff.",
+      "evidence_quote": "in today's digital economy. Particularly \namong those serving rural, low-income, and underserved communities, the program has \nprovided reliable internet access that supports education, workforce",
+      "evidence_start": 1234,
+      "evidence_end": 1429,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073997",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073997",
+  "filer_raw": "Mayor Larry Klein, City of Sunnyvale, CA",
+  "date_submission": "2026-08-31T18:57:49.078Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cb29e43ea39bb59af097a3c4880aac5f3aef32b75c328dae5e4a8852b83541dc",
+  "params_key": "b9a8b57214b019eee0e05c104d8bbcf02a61cec0e1e4e3b00264e2a39cab7f83",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

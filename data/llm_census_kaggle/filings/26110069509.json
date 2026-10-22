@@ -1,0 +1,49 @@
+{
+  "summary": "Leicester Public Library urges the FCC to keep the E‑Rate program and to continue funding it for schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library contends that E‑Rate funding is vital for providing internet access to its community.",
+      "evidence_quote": "on the holiday and access this service. Without e-rate, we simply would not be able to provide this vital, necessary access. Please fund e-rate for schools and libraries.   Leicester Public Library",
+      "evidence_start": 2331,
+      "evidence_end": 2528,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library argues that terminating E‑Rate would deprive its patrons of essential internet access.",
+      "evidence_quote": "d libraries.   Leicester Public Library  urges the Commission to reject any proposal that would terminate or limit the E-Rate Program. Specifically, we recommend:  Without e-rate, we would not be",
+      "evidence_start": 2489,
+      "evidence_end": 2684,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069509",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069509",
+  "filer_raw": "Leicester Public Library",
+  "date_submission": "2026-08-05T14:55:48.864Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "36a7913b8fc52d6c90802bdba7152863d3207a37600c76d0f2ec2cfe93912bc2",
+  "params_key": "e38a61ae7abb9523f3974dbecefc489345cbdba9069176a3f254fb2330624418",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

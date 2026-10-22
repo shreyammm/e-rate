@@ -1,0 +1,86 @@
+{
+  "summary": "A parent from Alaska urges the FCC to keep the E‑Rate program intact, arguing that cuts would deprive rural and urban schools and libraries of essential internet access needed for education, skill development, and community services.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Cutting funding would leave schools without internet access, harming learning opportunities.",
+      "evidence_quote": "turn affected state money available for schools. Schools in our state are in crisis and if further funding that supports internet access is cut, I am concerned that schools will be left without",
+      "evidence_start": 777,
+      "evidence_end": 970,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate for educational skill development",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Internet access is crucial for learning and developing job‑market skills.",
+      "evidence_quote": "earn how to use the internet safely in a monitored setting. Internet access is important to learning and developing skills for a competitive job market, and eliminating access puts children at a",
+      "evidence_start": 1395,
+      "evidence_end": 1589,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain funding for libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Libraries are a primary or only internet source for many families in rural Alaska.",
+      "evidence_quote": "es to access the internet is through the local library and public school, and eliminating or decreasing funding will make it even harder for people in these areas to be able to access key services",
+      "evidence_start": 1707,
+      "evidence_end": 1903,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate support for telehealth and safety services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reduced funding would hinder access to telehealth appointments and safety information.",
+      "evidence_quote": "areas to be able to access key services such as telehealth appointments for medical care and necessary safety information. \nE-Rate funding has been fundamental in ensuring schools and libraries have",
+      "evidence_start": 1864,
+      "evidence_end": 2062,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential to ensure internet access in many parts of rural and urban Alaska.",
+      "evidence_quote": "ligibility. I urge the FCC to reject any proposal that would terminate or limit the E-Rate Program.\nThis program is essential to ensure internet access in many parts of rural and urban Alaska.",
+      "evidence_start": 472,
+      "evidence_end": 664,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110070842",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110070842",
+  "filer_raw": "Katharine Brooks",
+  "date_submission": "2026-08-13T04:37:40.999Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ed4e48a765bf56ec6fd1f7b5a6bf21eecb80aa742a7fe63f9446a99826645b5b",
+  "params_key": "d022696456df58a0d25b7df2b53d2d65fe82ad44e3de989f03578bc9b2e3abe9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

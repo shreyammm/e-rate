@@ -1,0 +1,50 @@
+{
+  "summary": "Opposes eliminating or restricting E‑Rate, especially tying funding to screen‑time policies.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC lacks statutory authority to dismantle the E‑Rate program, which Congress established to ensure universal service for schools and libraries.",
+      "evidence_quote": "I am writing to urge the Federal Communications Commission (FCC) to reject proposals in WC Docket No. 26-133 that would eliminate, restrict, or sunset the E-Rate program.\n\nCongress explicitly",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "maintain funding regardless of screen‑time policies",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Conditioning federal connectivity funding on local educational screen‑time policies exceeds the FCC’s statutory scope and undermines congressional intent.",
+      "evidence_quote": "smantle the program or condition federal connectivity funding on local educational screen-time policies. Decisions regarding classroom instructional methods, technology integration, and student",
+      "evidence_start": 455,
+      "evidence_end": 648,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071886",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071886",
+  "filer_raw": "Dionne Nicole Burks",
+  "date_submission": "2026-08-17T19:48:19.956Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d25268ac129276bf24dcce34390f4e95026a2917603f7e353ae60d437fdf023f",
+  "params_key": "f6ed0caa69bbfff37960d8267d0c0551df47287814f3ab17ebb3e35e582ce537",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

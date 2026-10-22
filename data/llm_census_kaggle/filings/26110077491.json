@@ -1,0 +1,50 @@
+{
+  "summary": "The commenter urges continued support for E‑Rate, opposes FCC proposals that would weaken or eliminate the program, and argues that FCC should focus solely on connectivity rather than classroom instruction.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "restrict FCC from regulating classroom instruction",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "FCC should focus on connectivity, not interfere in local decisions about classroom instruction.",
+      "evidence_quote": "scope of the FCC’s proposal exceeds its area of expertise—connectivity—and reaches into   questions about content and learning. E-Rate is a connectivity program and should be treated   and evaluated",
+      "evidence_start": 1254,
+      "evidence_end": 1452,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The FCC’s proposed changes would undermine the program and the connectivity it provides.",
+      "evidence_quote": "As a  Network Administrator  responsible for the day-to-day operation of  public school  systems, I   write to urge continued support for the E-Rate program and to oppose any efforts that would",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077491",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077491",
+  "filer_raw": "Dave Todd",
+  "date_submission": "2026-09-21T19:48:34.098Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dcd131aa8387990eef9c66c96f51867bb6d9928ace75081db676dd881fecd594",
+  "params_key": "6774bd152a21c22db0e9fe30b68f3d34aa6c7e3f1d1b554740a28042d20b557e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

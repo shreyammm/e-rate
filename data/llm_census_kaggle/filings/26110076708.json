@@ -1,0 +1,75 @@
+{
+  "summary": "California IT in Education opposes any effort to narrow, weaken, or eliminate the E‑Rate program, urges the FCC to reject the proposed rulemaking, and stresses the program’s essential role in maintaining reliable broadband for schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "continue focusing on connectivity, not content use",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "CITE contends that connectivity and responsible technology use are separate issues and that the FCC should focus on connectivity.",
+      "evidence_quote": "ng is to these operations. \n \nWe support efforts to protect students online and promote responsible technology use. However, we \ncontend that E-Rate and the connectivity it provides are separate and",
+      "evidence_start": 2183,
+      "evidence_end": 2381,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate eligibility and funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The organization argues that E‑Rate funding is critical for schools to maintain and upgrade broadband infrastructure.",
+      "evidence_quote": ", providing training, and installing and maintaining the infrastructure as the \ntechnology used in schools is now an essential component to teaching and learning. \n \nBroadband access is a critical",
+      "evidence_start": 787,
+      "evidence_end": 983,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject the Notice of Proposed Rulemaking",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "California IT in Education opposes any effort to narrow, weaken, or eliminate the E‑Rate program.",
+      "evidence_quote": "view of E-Rate Program \n \nDear Secretary Dortch: \n  \nOn behalf of California IT in Education (CITE), I write to express our strong opposition to any effort \nto narrow, weaken, or eliminate the E-Rate",
+      "evidence_start": 158,
+      "evidence_end": 357,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts that would force schools to choose between connectivity and other priorities",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "predicted_consequence",
+      "argument": "If E‑Rate is narrowed or eliminated, schools would face difficult choices between maintaining connectivity and funding other priorities.",
+      "evidence_quote": "support the infrastructure that enables reliable connectivity from school networks to classrooms and \ncommunities. Without continued federal investment, our schools would face difficult choices",
+      "evidence_start": 3433,
+      "evidence_end": 3626,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076708",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076708",
+  "filer_raw": "California IT in Education",
+  "date_submission": "2026-09-15T18:03:41.996Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "be541ff5b84468577563bb3d164b51eb9e2af876c05b240037d00e8b2fd895f5",
+  "params_key": "9c06a697ad8a40fb0d4f15d4a4079b3308ce26183f07e9dae7d567365369b2ff",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

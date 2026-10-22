@@ -1,0 +1,89 @@
+{
+  "summary": "Arizona libraries argue against limiting or sunsetting E‑Rate, opposing educational‑use proof, restrictive filtering, and procurement barriers, citing the program’s essential role in broadband access.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "avoid restrictive filtering mandates",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "More restrictive filtering could block legitimate educational, informational, and health‑related resources, undermining libraries’ core mission.",
+      "evidence_quote": "estrictions\nConcerns:\n~ More restrictive filtering could block legitimate educational, informational, and health-related resources.\n~ Libraries already comply with federal filtering requirements",
+      "evidence_start": 2462,
+      "evidence_end": 2656,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "maintain state master contract use",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring separate procurements would increase costs, administrative burdens, and delays for libraries.",
+      "evidence_quote": "braries should continue to be allowed to utilize state master contracts after filing FCC Form 470, rather than being forced into duplicative bidding processes.\n\nFor nearly three decades, E-rate has",
+      "evidence_start": 3235,
+      "evidence_end": 3432,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not require proof of educational use",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring libraries to prove that internet use is primarily educational would create unnecessary administrative burdens and could exclude many valuable community services.",
+      "evidence_quote": "to educational and economic outcomes.\n~ Requiring libraries to prove that internet use is primarily educational would create unnecessary administrative burdens and could exclude many valuable",
+      "evidence_start": 1706,
+      "evidence_end": 1897,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Arizona libraries contend that sunsetting or limiting E‑Rate would severely reduce broadband access for underserved communities.",
+      "evidence_quote": "own devices to library networks, helping bridge Arizona's digital divide and ensuring access to essential online services.\n\n1. Potential Limits or Sunset of E-rate\nThe FCC is questioning whether",
+      "evidence_start": 773,
+      "evidence_end": 967,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "E‑Rate has enabled libraries and schools to provide connectivity essential for education, employment, healthcare, civic participation, and lifelong learning.",
+      "evidence_quote": "E-rate support has enabled libraries and schools to provide the connectivity that residents need for education, employment, healthcare, civic participation, and lifelong learning. Any changes that",
+      "evidence_start": 3549,
+      "evidence_end": 3745,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "consultant_registration": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110024072",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110024072",
+  "filer_raw": "Sierra Schuman",
+  "date_submission": "2026-07-16T23:28:48.198Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ab67a0f1a1d46eec8a63ebca59c5a147a139a0fd637705b75297d9725d9ba44a",
+  "params_key": "77ffd3077beb6d917549420aff97a7d9870db465b94da4ef91c7d4346b7be79a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

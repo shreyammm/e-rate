@@ -1,0 +1,61 @@
+{
+  "summary": "Clark County School District urges the FCC to preserve the E‑Rate program, citing its essential role in providing affordable broadband, safeguarding school operations, and maintaining strong fraud‑risk controls.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for ensuring affordable broadband and critical infrastructure for schools.",
+      "evidence_quote": "ct (CCSD) writes to respectfully express strong support for the \ncontinuance and preservation of the E-Rate program, currently under consideration to be \ndrastically scaled back or discontinued",
+      "evidence_start": 307,
+      "evidence_end": 500,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "Reliable connectivity supports teaching, learning, and essential school operations such as HVAC, emergency communications, and cybersecurity.",
+      "evidence_quote": "rnet infrastructure necessary to connect students, educators, and school facilities. E-Rate is \nmore than a technology program; it is an infrastructure program. Reliable connectivity not only",
+      "evidence_start": 611,
+      "evidence_end": 802,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate safeguards",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "legal_claim",
+      "argument": "E‑Rate has demonstrated strong fraud‑risk management, meeting all nine key requirements and best practices identified by the GAO.",
+      "evidence_quote": "ions, transportation communications, and cybersecurity systems. The \nGovernment Accountability Office’s January 2026 review identified E-Rate as the only one of \nfive selected federal programs that",
+      "evidence_start": 917,
+      "evidence_end": 1114,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081297",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081297",
+  "filer_raw": "Jhone Ebert",
+  "date_submission": "2026-10-13T22:12:14.196Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "57bfa22ceeb92aa6de01423c04b4c282975b5298bd0c5e26790fe6da9831aa0f",
+  "params_key": "fb76e77a230850a80fce15dea1e8c672b82ce2a92d99261a4d3a73803a4611f3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

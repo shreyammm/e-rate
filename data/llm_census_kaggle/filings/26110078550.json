@@ -1,0 +1,88 @@
+{
+  "summary": "The superintendent urges the FCC to keep E‑Rate active, prevent narrowing of eligibility, preserve connectivity support, and modernize the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse communities.",
+      "evidence_quote": "sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict \nsupport based solely on geography or other criteria that would leave",
+      "evidence_start": 3883,
+      "evidence_end": 4076,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate would directly harm schools’ ability to maintain essential broadband infrastructure.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to \npreserve and strengthen the E-Rate program and to reject any proposal that \nwould eliminate, sunset, substantially reduce, or",
+      "evidence_start": 458,
+      "evidence_end": 645,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter emphasizes the importance of broadband as foundational infrastructure, akin to electricity and transportation.",
+      "evidence_quote": "t as a reason to assume that the work is \nfinished. From my perspective as a superintendent, reliable broadband is part of \nthe basic infrastructure of a modern school system, just like electricity,",
+      "evidence_start": 3565,
+      "evidence_end": 3763,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernizing the program will improve efficiency and better meet evolving instructional demands.",
+      "evidence_quote": "reduce its role in public education. \n\n\n \n2 \nE-Rate has enabled schools (public and private) and libraries to build and \nmaintain the connectivity necessary for students and patrons to participate",
+      "evidence_start": 4342,
+      "evidence_end": 4538,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Schools need reliable internal networks to provide meaningful connectivity throughout buildings.",
+      "evidence_quote": "ucture \nschools need to provide reliable educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize \nE-Rate rather than reduce its role in public education.",
+      "evidence_start": 4184,
+      "evidence_end": 4378,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078550",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078550",
+  "filer_raw": "Peninsula School District",
+  "date_submission": "2026-09-28T17:01:45.693Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b5a3e6fe7b7cc61ad8c81c28647f7c1b92bc99fc4e94576570bae1d5d66d0030",
+  "params_key": "3a57a8da36b2649d54586123bf591ed965db780f5bc9aad44019dff5816b0c16",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

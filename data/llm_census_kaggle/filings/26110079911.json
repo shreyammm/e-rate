@@ -1,0 +1,99 @@
+{
+  "summary": "A principal of a private school urges the FCC to preserve and strengthen E‑Rate, arguing that broadband is essential infrastructure, that cuts would harm students and staff, and that state/local control already governs screen time. The commenter urges the FCC to protect and preserve the E‑Rate program so that schools can continue to provide reliable, affordable, and effective connectivity for students regardless of location or family income.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter notes that state and local control governs student technology use, implying that FCC should not impose additional screen‑time limits.",
+      "evidence_quote": "-time build; it is the recurring cost of keeping a modern network running. School connectivity is not synonymous with unrestricted student screen time. Districts, educators, and families already make",
+      "evidence_start": 3568,
+      "evidence_end": 3767,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse economic and geographic contexts.",
+      "evidence_quote": ", transportation, and safe facilities. I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow",
+      "evidence_start": 5591,
+      "evidence_end": 5790,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is critical for daily classroom instruction and student safety.",
+      "evidence_quote": "roposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for",
+      "evidence_start": 5750,
+      "evidence_end": 5946,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Preserve support for schools and libraries to build and maintain connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools and libraries to build connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "k with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and",
+      "evidence_start": 6060,
+      "evidence_end": 6256,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure that supports student safety, communication, and instructional technology.",
+      "evidence_quote": "eserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries. As a",
+      "evidence_start": 469,
+      "evidence_end": 661,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The commenter believes that E‑Rate is essential for ensuring all students have access to reliable, affordable connectivity regardless of location or family income.",
+      "evidence_quote": "e its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern",
+      "evidence_start": 6150,
+      "evidence_end": 6348,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079911",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079911",
+  "filer_raw": "Dana Lashley",
+  "date_submission": "2026-10-07T19:57:52.463Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "03d18fc2fd147f74c43a6bd484ba254165f60f210ceafbe3dad8501906ffb996",
+  "params_key": "1d66a6b3e825860e7da16960d961b843d9a160f395ccf02a85dc6ff056fff1f3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

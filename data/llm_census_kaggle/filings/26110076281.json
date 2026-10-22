@@ -1,0 +1,50 @@
+{
+  "summary": "Mayor of Albany, California urges the FCC to preserve and strengthen the E‑Rate program, arguing that cuts would harm libraries and communities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate’s broad eligibility is essential for libraries to provide reliable broadband and digital literacy services to all community members.",
+      "evidence_quote": "difficult choices: reducing collections, cutting programs,\ndelaying technology upgrades, or limiting other services that our communities rely upon.\nE-Rate also provides libraries with the ability to",
+      "evidence_start": 4194,
+      "evidence_end": 4392,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would force libraries to absorb costs, leading to reduced services and inequitable access for low‑income residents.",
+      "evidence_quote": "tire community.\nThese services depend on reliable, secure, and sufficiently fast broadband. If E-Rate\nsupport is reduced or eliminated, the cost of maintaining this essential infrastructure will\nnot",
+      "evidence_start": 3877,
+      "evidence_end": 4075,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076281",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076281",
+  "filer_raw": "City of Albany, California",
+  "date_submission": "2026-09-10T17:55:06.971Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "1c67b2e66967cc04abe3480c28b7531eadb03a43a10457e3291617fdca453217",
+  "params_key": "9ffa6197c5193e2a309aab91b8496b22e94f0b64166f93c7bdbc33ed8b853e2e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "The letter from a library assistant argues that E‑Rate is essential for community connectivity and opposes any cuts to the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables libraries to offer reliable internet and technology services.",
+      "evidence_quote": "on internet acces s. E-Rate allows C.C. Mellor Memorial Library and libraries and schools all over the country to  provide  needed  internet acces s  and technology support .  Reliable   internet",
+      "evidence_start": 1865,
+      "evidence_end": 2060,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate supports educational outcomes by ensuring students have internet access.",
+      "evidence_quote": "chnology support .  Reliable   internet  access  put s  personal goals within reach of everyone in our community: attending school, finding a job, accessing healthcare, connecting with family,",
+      "evidence_start": 2021,
+      "evidence_end": 2213,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate provides essential internet access for underserved community members.",
+      "evidence_quote": "and learn, our communities rely on these institutions more than ever. E-Rate makes  connectivity  sustainable and predictable and helps to ensure libraries  maintain  secure networks. Cutting E-Rate",
+      "evidence_start": 2323,
+      "evidence_end": 2521,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074215",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074215",
+  "filer_raw": "Jennifer Boudreau",
+  "date_submission": "2026-09-01T15:02:41.870Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5963622307674c9bbd8e6b1dbbdb3d1faedc85a5c09f34db6e57921e6bbe3ad3",
+  "params_key": "19478417e58872b9ab75503097a42b061863dbb9332558066715ab3b42852bcb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

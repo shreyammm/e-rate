@@ -1,0 +1,62 @@
+{
+  "summary": "The comment supports E‑Rate for libraries and to prevent budget cuts, while also expressing opposition to the program on the grounds that it benefits the wealthy.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve funding for library broadband",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables libraries to provide essential internet access to underserved citizens.",
+      "evidence_quote": "Libraries use E-Rate to offer public internet access for essential daily tasks, such as job applications, telehealth appointments, filing government paperwork, and adult education.  I worked in the",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reduce or eliminate E‑Rate subsidies",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The program primarily benefits the wealthy rather than those in need.",
+      "evidence_quote": "ccess and cannot afford a minimum of $70 a month for their home. Some don't have computers at all. But, I forget, we don't care about those in need. We only want to help the billionaires make more",
+      "evidence_start": 315,
+      "evidence_end": 511,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate subsidies",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate, schools would divert funds from core programs, leading to cuts in staff and education.",
+      "evidence_quote": "or fly government officials to Epstein's Island.\nThe E-rate program Prevents Budget Strain: Without E-Rate subsidies, schools and libraries would have to divert money from already tight operating",
+      "evidence_start": 630,
+      "evidence_end": 825,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080535",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080535",
+  "filer_raw": "Linda Morgan",
+  "date_submission": "2026-10-11T21:08:48.854Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "54bbe9becb518abe8d4f82985f7c3af4b6f0b5b9ef55460e3dc73f3eba4dd5c7",
+  "params_key": "ecae354e68837d07b56b2d58f7d01aec0674fc040a15bedbaf1b489bece4d789",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

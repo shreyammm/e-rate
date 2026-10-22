@@ -1,0 +1,87 @@
+{
+  "summary": "JL BOCES urges the FCC to preserve E‑Rate funding for Category 1 and 2 services, oppose abrupt cuts based on aggregate connectivity data, and require evidence‑based, locally informed changes with a reasonable transition period.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain eligibility for Category 1 and 2 services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The organization contends that Category 1 and 2 services are critical for classroom technology, administration, and safety systems.",
+      "evidence_quote": "ity to and within schools and libraries, including both Category 1 and Category 2 services. E-Rate support continues to matter to local budgets and reliable services.  The five-year JL BOCES snapshot",
+      "evidence_start": 464,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "JL BOCES argues that eliminating or sharply narrowing E‑Rate would shift costs to local budgets and harm essential school operations.",
+      "evidence_quote": "ew of the E-Rate program. JL BOCES urges the Commission to preserve E-Rate as a stable, predictable source of support for eligible broadband connectivity to and within schools and libraries,",
+      "evidence_start": 314,
+      "evidence_end": 504,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid ending program based on aggregate connectivity rates",
+      "reason_family": "other",
+      "claim_kind": "legal_claim",
+      "argument": "JL BOCES warns that aggregate connectivity statistics do not reflect affordability, reliability, or internal network needs.",
+      "evidence_quote": "y 1 and Category 2 services and maintain predictable funding for schools and libraries. •  Avoid ending or sharply narrowing the program based only on aggregate connectivity rates, without examining",
+      "evidence_start": 2318,
+      "evidence_end": 2516,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "require evidence‑based changes with local input",
+      "reason_family": "evidence_quality",
+      "claim_kind": "implementation_burden",
+      "argument": "The group calls for evidence‑based decisions that consider rural and smaller applicants’ input before new limits take effect.",
+      "evidence_quote": "te connectivity rates, without examining affordability, reliability, internal network needs, and impacts on local budgets. •  Ensure any changes are evidence-based, allow meaningful input from rural",
+      "evidence_start": 2476,
+      "evidence_end": 2674,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "provide reasonable transition period before new limits",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "JL BOCES requests a transition period to mitigate abrupt impacts on school and library budgets.",
+      "evidence_quote": "based, allow meaningful input from rural and smaller applicants, and provide a reasonable transition before new limits take effect. E-Rate helps schools sustain the digital connections that support",
+      "evidence_start": 2634,
+      "evidence_end": 2831,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079567",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079567",
+  "filer_raw": "Ensuring Children’s Safe Use of Screens and E-Rate-Funded Services.",
+  "date_submission": "2026-10-06T13:44:10.764Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7beb0dc18eaf62a31aef97447e4f3511ddc3d60725a9c006d879ce01610aa13c",
+  "params_key": "e525dc2705065beedf9b986e0c2d65143e863d004eb1f9bb93b0a2015167ccda",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

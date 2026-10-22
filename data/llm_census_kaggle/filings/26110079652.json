@@ -1,0 +1,88 @@
+{
+  "summary": "The commenter, a technology director of a public school system, argues that E‑Rate funding should be strengthened, not reduced, and that screen‑time restrictions should not be tied to E‑Rate eligibility. They emphasize the essential nature of reliable, affordable internet for student success, equity, and safety, and cite Alabama’s academic gains following increased technology access.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "recognize technology access as a driver of academic gains",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Alabama’s increased NAEP scores demonstrate that greater technology access can improve learning outcomes.",
+      "evidence_quote": "ama subsequently experienced some of the strongest academic recovery in the nation. From 2019 to 2024, Alabama was the only state to achieve a statistically significant increase in fourth-grade NAEP",
+      "evidence_start": 3099,
+      "evidence_end": 3297,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding should not be reduced because reliable internet is essential infrastructure for student success.",
+      "evidence_quote": "Now is not the time to reduce ERate funding or to add new screen-time requirements for ERate program eligibility. Today, every student must be knowledgeable and fluent in a wide variety of current",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain E‑Rate focus on connectivity, not instructional use",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should remain focused on ensuring robust, secure connectivity rather than regulating how schools use technology for instruction.",
+      "evidence_quote": "ons about screen time, bandwidth use, or future state policies. Decisions about how technology is used for instruction belong with states and local school systems, while E-Rate should remain focused",
+      "evidence_start": 4183,
+      "evidence_end": 4381,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie screen‑time limits to E‑Rate eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions should not influence E‑Rate funding decisions.",
+      "evidence_quote": "for accessing these resources.\n\nThe FCC should not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’",
+      "evidence_start": 2177,
+      "evidence_end": 2370,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "avoid using screen‑time assumptions to set funding levels",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Assuming states will enact screen‑time limits to justify funding cuts is unfounded.",
+      "evidence_quote": "mits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly diverse range of cloud-based instructional resources, courses, applications, and essential services. Reducing",
+      "evidence_start": 2330,
+      "evidence_end": 2529,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079652",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079652",
+  "filer_raw": "Kate Huggins",
+  "date_submission": "2026-10-06T19:07:22.806Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d08934d562e63c04ba7129f0588dab30fff3ffa10050f3f17620dcfc0cbed3e4",
+  "params_key": "8a414206a09284723ddcbe46ae7eea50b7da2875dc59bf277a0ea1e7ff19f5a3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,49 @@
+{
+  "summary": "Oxford Community Schools urges the FCC to preserve E‑Rate funding for internet connectivity and internal network infrastructure, arguing that cuts would impose severe financial strain and jeopardize essential school services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Maintaining E‑Rate support ensures reliable internet connectivity for safety systems, emergency communications, and daily operations, which are critical for student and staff well‑being.",
+      "evidence_quote": "le internet connectivity is essential to much more than classroom instruction. It supports our school safety and security systems, emergency communications, online assessments, student services, and",
+      "evidence_start": 158,
+      "evidence_end": 356,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E‑Rate funding prevents a $7 million budget shortfall that would otherwise force the district to cut essential services.",
+      "evidence_quote": "g costs, and uncertainty surrounding our operating millage renewal. If the millage fails in November, we will need to reduce approximately $7 million from our 2027–28 budget. Losing E-Rate support",
+      "evidence_start": 468,
+      "evidence_end": 664,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080311",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080311",
+  "filer_raw": "Tonya Milligan",
+  "date_submission": "2026-10-09T17:51:21.050Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4743af2515b860e27e2a361e6b897b815f6f5fd251256e93a597d3d4c589e99e",
+  "params_key": "a62f8079854b5891234efe8fe023ec10620d214c7765d9efb55991fa5fb725bb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

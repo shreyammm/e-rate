@@ -1,0 +1,62 @@
+{
+  "summary": "Bloomingdale Public Schools urges the FCC to maintain full E‑Rate funding and to avoid blunt screen‑time mandates, arguing that E‑Rate subsidies are essential for rural broadband, safety, and instructional quality.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that reducing or sunsetting E‑Rate would force cuts to staff, services, and safety infrastructure.",
+      "evidence_quote": "ning smoothly and securely.\n\nIII. SEVERE FINANCIAL CONSEQUENCES OF POTENTIAL E-RATE FUNDING REDUCTIONS\nA reduction, restriction, or restructuring of E-Rate funding would create severe budgetary",
+      "evidence_start": 1847,
+      "evidence_end": 2040,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "avoid blunt regulatory mandates on screen time",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district cautions against blanket screen‑time limits that ignore its structured, supervised technology use.",
+      "evidence_quote": "rts the Commission's overarching goal of ensuring safe, balanced, and productive online environments for children. However, we strongly caution against blunt regulatory mandates that assume",
+      "evidence_start": 3089,
+      "evidence_end": 3278,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The district emphasizes its existing controls but does not propose new policy changes beyond opposing blunt mandates.",
+      "evidence_quote": "ology usage is intentionally structured, strictly supervised, and tied directly to learning outcomes:\n\nNo Unsupervised Tech Use: We do not permit unsupervised device access or unmonitored browsing on",
+      "evidence_start": 3393,
+      "evidence_end": 3592,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080739",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080739",
+  "filer_raw": "Rick Reo / Bloomingdale Public Schools",
+  "date_submission": "2026-10-12T21:35:51.363Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "18f3b391bfbd4ea64291eecad68705f6f1949190e92b5105ef12c8dcc084a8de",
+  "params_key": "f046333c825caa89b7bdef30fb2d79df62b0515bbbff25a4c129b4d6cd84a83f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

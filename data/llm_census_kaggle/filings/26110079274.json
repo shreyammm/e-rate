@@ -1,0 +1,88 @@
+{
+  "summary": "The commenter urges the FCC to keep the current E‑Rate program unchanged, arguing that reliable, affordable internet is essential for student success and that cutting funding or adding screen‑time restrictions would harm educational outcomes and widen inequities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "continue to provide reliable, affordable connectivity",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "The commenter cites Alabama’s academic recovery as evidence that increased technology access improves outcomes.",
+      "evidence_quote": "gy is detrimental to learning. COVID-era investments dramatically expanded student access to devices and online educational resources, yet Alabama subsequently experienced some of the strongest",
+      "evidence_start": 2470,
+      "evidence_end": 2663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The commenter believes that reducing E‑Rate support would limit essential educational opportunities for students, especially in low‑resource communities.",
+      "evidence_quote": "igh-quality internet access is therefore fundamental to providing students with equitable educational opportunities and the tools they need to succeed.\n\nNow is not the time to reduce E-Rate funding",
+      "evidence_start": 611,
+      "evidence_end": 808,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address any other policy issue beyond maintaining current E‑Rate funding and opposing screen‑time restrictions.",
+      "evidence_quote": "As a parent of school-age students, a recently retired K-12 technology coordinator, and a member of Alabama Leaders in Educational Technology (ALET), I urge the FCC to maintain the current E-Rate",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not add screen‑time requirements to E‑Rate eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The commenter argues that screen‑time limits would not significantly reduce bandwidth needs and could harm learning outcomes.",
+      "evidence_quote": "es have fewer resources.\n\nThe FCC should not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth",
+      "evidence_start": 1697,
+      "evidence_end": 1894,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base funding on assumed state screen‑time limits",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The commenter contends that schools already comply with state laws and that E‑Rate should not impose indirect restrictions.",
+      "evidence_quote": "r than improve them. Schools are already required to comply with applicable state laws and policies; the E-Rate program should not attempt to impose additional screen-time restrictions indirectly",
+      "evidence_start": 2165,
+      "evidence_end": 2360,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079274",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079274",
+  "filer_raw": "Sue Ellen Gilliland",
+  "date_submission": "2026-10-04T23:28:40.167Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "249f404e729639b89c786a297215fb0a04ca89fb1a51e2d7a9affcd7cc86edb6",
+  "params_key": "9bec0b748e6ecd1eabc4cb0791abf13b16e146b301c46978ba72bb1d7bd40c9b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

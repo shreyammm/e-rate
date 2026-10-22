@@ -1,0 +1,97 @@
+{
+  "summary": "The comment argues that current oversight of educational technology is inadequate, that student data privacy is at risk, and that the Children’s Internet Protection Act (CIPA) fails to protect sensitive data. It calls for stronger public oversight of ed‑tech algorithms, stricter data‑privacy safeguards, and reform of CIPA to address these gaps. The comment argues that allowing educational technology providers to collect and use student data—even when de‑identified—poses a significant threat to student privacy and public safety.",
+  "stakeholder_role": "researcher",
+  "claims": [
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "require public oversight of ed‑tech algorithms",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Schools must be able to audit and understand the algorithms that mediate educational content and decisions.",
+      "evidence_quote": "What We Don’t Know \nMy concerns center on the lack of adequate public oversight of ed tech products. These products \nand their algorithms are proprietary, and we cannot under current law and policy",
+      "evidence_start": 1093,
+      "evidence_end": 1290,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "enforce strict data‑privacy safeguards for student data",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Student data must not be used for commercial predictions or non‑educational purposes.",
+      "evidence_quote": "ata, retain it, share it, \nand use it—in perpetuity.4  Even if providers keep their contractual promises to not re-identify \nstudent data, they may use it for all sorts of commercial purposes, such",
+      "evidence_start": 1868,
+      "evidence_end": 2065,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "mandate that ed‑tech providers disclose data sharing practices",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Providers must reveal who receives student data and for what purposes.",
+      "evidence_quote": "cted \nand others like them.  Although it is impossible to verify the basis for these predictions, they can \nand often are used for both for academic purposes like guiding students toward different",
+      "evidence_start": 2182,
+      "evidence_end": 2378,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "limit commercial use of student data derived from ed‑tech",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Data used to predict student behavior should be restricted to educational purposes only.",
+      "evidence_quote": "s like guiding students toward different \nacademic tracks5 and non-academic ones like determining insurance rates6 or the likelihood of \ncommitting a crime7.  \nThe Children's Internet Protection Act",
+      "evidence_start": 2338,
+      "evidence_end": 2536,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "reform CIPA to include algorithmic transparency and data‑privacy enforcement",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "CIPA’s current provisions do not cover the hidden data uses of ed‑tech products.",
+      "evidence_quote": "The Children's Internet Protection Act (CIPA) Fails to Protect Children’s Sensitive Data \nThe Children's Internet Protection Act (CIPA) requires schools to certify that they have adopted \nand are",
+      "evidence_start": 2498,
+      "evidence_end": 2693,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "restrict or prohibit the use of student data by E‑Rate‑funded ed‑tech providers",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "child_safety",
+      "argument": "Collecting and using student data, even when de‑identified, creates a significant threat to student privacy and public safety.",
+      "evidence_quote": "haring, and use of data extracted from students as part of their state-required schooling, \nespecially including theoretically non-personal data. Such allowed but invisible use presents a",
+      "evidence_start": 3084,
+      "evidence_end": 3271,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076665",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076665",
+  "filer_raw": "Faith Boninger",
+  "date_submission": "2026-09-15T06:27:53.022Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "936367fb8ea1f9f41bd77b05eb7d2ceb7b0830c08b31c78930e206640eb084ca",
+  "params_key": "009ce81f6556dacd1f5ca09a2f57b907a9cf3c7650314d980169719c86781ccf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

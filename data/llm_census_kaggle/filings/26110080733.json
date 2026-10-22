@@ -1,0 +1,49 @@
+{
+  "summary": "A mother urges the FCC to keep the E‑Rate program funded, citing its essential role for students, libraries, and the broader economy.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "keep program funded",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate provides reliable internet that is essential for students’ learning and for families who lack home connectivity.",
+      "evidence_quote": "internet is a basic part of how children learn today. Homework, research, testing, and communication between teachers and families all depend on it. Libraries give families without home internet a",
+      "evidence_start": 155,
+      "evidence_end": 351,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "keep program funded",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would reduce U.S. GDP by about $4.2 billion, a $1.60 loss for every $1 of support removed.",
+      "evidence_quote": "will still need connectivity. They will pay for it by cutting teachers, counselors, and programs. A recent economic study by The Brattle Group, released by the SHLB Coalition, estimates that",
+      "evidence_start": 471,
+      "evidence_end": 661,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080733",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080733",
+  "filer_raw": "Lorrae Bradbury",
+  "date_submission": "2026-10-12T21:26:31.361Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1043c93d8b239baec4dfc44d5d9347caace08d41adde3d0531c5c050bde3680d",
+  "params_key": "2bdb8b6cc90c667331b372d59620ec23ecc809284e06d07c3c1048be08f39a03",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "Early County School District urges the FCC to preserve and strengthen E‑Rate, opposing sunset, unnecessary narrowing of eligibility, and tying connectivity to screen‑time limits.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equity.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave",
+      "evidence_start": 3116,
+      "evidence_end": 3314,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Reliable broadband is part of basic infrastructure, comparable to electricity and transportation.",
+      "evidence_quote": "raphy or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational",
+      "evidence_start": 3274,
+      "evidence_end": 3468,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to maintain reliable broadband for schools.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave",
+      "evidence_start": 3116,
+      "evidence_end": 3314,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate has enabled schools to build and maintain connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "ols need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled",
+      "evidence_start": 3428,
+      "evidence_end": 3624,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Do not condition E‑Rate on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity is necessary regardless of how much screen time is allowed; governance of screen time should be a state or local decision.",
+      "evidence_quote": "guards governing student technology use: Connectivity is necessary regardless of how much screen time is allowed at any given school.  Governance of screen time should be a state or local decision",
+      "evidence_start": 2184,
+      "evidence_end": 2380,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076114",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076114",
+  "filer_raw": "Early County School District",
+  "date_submission": "2026-09-09T19:27:11.111Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aa2449ed2c7db0ac72ff061f9a19f362273677c69d0762b483e43d1572caec33",
+  "params_key": "922e3a867c3df7297a69c6d6d1ca3d8d0e0f2d2b7ca14aee9e73a46f5bc5dd3e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

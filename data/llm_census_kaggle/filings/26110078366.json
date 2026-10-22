@@ -1,0 +1,86 @@
+{
+  "summary": "SETA Head Start argues for full preservation of E‑Rate, opposing cuts to the program and to Head Start/pre‑K eligibility, citing the need for ongoing connectivity and the administrative burden of cost allocation.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain need‑based discounts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Need‑based discounts are essential to allow high‑poverty schools to afford recurring connectivity costs.",
+      "evidence_quote": "not. Circuits, internal connections, and the equipment that carries them must be paid for every year and replaced on a regular cycle. E-Rate’s need-based discounts are what allow high-poverty schools",
+      "evidence_start": 1252,
+      "evidence_end": 1451,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain Head Start and pre‑K eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Head Start and pre‑K students should remain eligible for E‑Rate support to prevent early learning gaps.",
+      "evidence_quote": "ue to receive E-Rate support and whether schools should be required to remove them from funding requests. We strongly oppose both changes. Early learning is where the gap starts. The children we",
+      "evidence_start": 2182,
+      "evidence_end": 2376,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject cost‑allocation requirement",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring districts to cost‑allocate Head Start and pre‑K students would create unnecessary administrative burden and audit risk.",
+      "evidence_quote": "would create waste, not prevent it. Many Head Start and pre-K classrooms sit in or share infrastructure with elementary schools. Requiring districts to carve those students out of their counts and",
+      "evidence_start": 2956,
+      "evidence_end": 3152,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve the E‑Rate program in full",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program must be preserved because it provides essential, need‑based discounts that keep high‑poverty schools and libraries connected.",
+      "evidence_quote": "ross approximately 40 sites with a staff of roughly 700. I submit these comments as the agency’s head of information technology. We urge the Commission to (1) preserve the E-Rate program rather than",
+      "evidence_start": 625,
+      "evidence_end": 823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "retain competitive bidding and audit requirements",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate’s competitive bidding and audit mechanisms ensure integrity and should be retained.",
+      "evidence_quote": "aces the program was built to serve. The program is also structured in the way federal funding should be: support is tied to specific eligible services, applicants must bid competitively, and",
+      "evidence_start": 1725,
+      "evidence_end": 1916,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078366",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078366",
+  "filer_raw": "SETA HEAD START",
+  "date_submission": "2026-09-25T19:34:30.330Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d36065102ab7ffa61a4777d9b4c5505394ac7fb225cbd189542933ff65e60408",
+  "params_key": "87e669e717a8f22848aadee207429e8b13a6b4b36919886e51b2ee2dbfb6eaea",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

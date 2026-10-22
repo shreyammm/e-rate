@@ -1,0 +1,88 @@
+{
+  "summary": "Teacher urges FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts to connectivity support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "e Commission to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on",
+      "evidence_start": 1874,
+      "evidence_end": 2064,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to maintain reliable broadband for students.",
+      "evidence_quote": "e Commission to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on",
+      "evidence_start": 1874,
+      "evidence_end": 2064,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate provides the recurring cost needed to keep modern networks running.",
+      "evidence_quote": "lity or restrict support based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 2024,
+      "evidence_end": 2221,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be modernized rather than reduced to meet evolving educational needs.",
+      "evidence_quote": "vity and internal network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its",
+      "evidence_start": 2181,
+      "evidence_end": 2380,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure public schools can continue providing reliable, affordable, and effective connectivity",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "Students deserve access to tools necessary for learning regardless of location or finances.",
+      "evidence_quote": "ble.\n\nOur students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial circumstances. I urge the Commission to protect E-Rate and",
+      "evidence_start": 2808,
+      "evidence_end": 3002,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078055",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078055",
+  "filer_raw": "Michael Stewart Allen",
+  "date_submission": "2026-09-24T13:50:18.499Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1d3cc2638f55251ef425108b43f3c4e16ccbbdb74a374c3bfc73da9b844b3861",
+  "params_key": "83c8659e8c8054a89b76ff3d48f0197a0b4d4f78bf70ad3a5340a7e15057a747",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

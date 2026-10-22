@@ -1,0 +1,98 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen the E‑Rate program, arguing that reliable broadband is essential infrastructure for modern public education and safety. The comment urges the FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts that would harm rural and urban schools’ connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funds up to 90% of network infrastructure, and its removal would cut $1.8 million from a county with ~1,700 students, forcing staff reductions and service cuts.",
+      "evidence_quote": ", which is provided equitably across our county to ALL school and \nlibrary sites.  Removal of this support would result in the sudden loss of $1.8 million dollars in a county with only ~1,700",
+      "evidence_start": 4931,
+      "evidence_end": 5122,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject cuts based on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Geographic cuts would disproportionately harm schools in remote areas that rely on E‑Rate for connectivity.",
+      "evidence_quote": "al only rule.  The suggested cut to this access is an equity issue across geography and not just limited to rural \nlocations.  Urban does not mean less need nor solved infrastructure.  Our more urban",
+      "evidence_start": 7407,
+      "evidence_end": 7606,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility based on geography would leave many rural and urban schools without adequate support, exacerbating inequities.",
+      "evidence_quote": "necessarily narrow E-Rate eligibility or restrict support based solely on geography \nor other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity",
+      "evidence_start": 8503,
+      "evidence_end": 8699,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools and libraries to build and maintain connectivity necessary for students to participate fully in modern education, and strengthening it will support future technology needs.",
+      "evidence_quote": "and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in \npublic education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the",
+      "evidence_start": 8816,
+      "evidence_end": 9012,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable, high‑quality broadband is essential infrastructure for modern public education and supports myriad operational and instructional functions.",
+      "evidence_quote": "munications Commission (FCC) to preserve and strengthen the E-Rate program and \nto reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 618,
+      "evidence_end": 817,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for maintaining modern broadband infrastructure in schools and libraries, and its removal would severely reduce connectivity and staff capacity.",
+      "evidence_quote": "ties. \nI therefore respectfully urge the Commission to: \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or",
+      "evidence_start": 8346,
+      "evidence_end": 8543,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076332",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076332",
+  "filer_raw": "Mono County Office of Education | Tammy Nguyen",
+  "date_submission": "2026-09-10T20:48:05.283Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f6315186ee57b471aeabe66d26d76c0d234a6aa4110710340565d94843b66833",
+  "params_key": "3fafba12c4a91355197c39f55270aa3ebc9b72bd1ce7caf0b148ed5c7fc190ce",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

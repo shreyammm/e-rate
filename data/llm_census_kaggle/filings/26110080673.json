@@ -1,0 +1,88 @@
+{
+  "summary": "The comment urges the FCC to preserve and strengthen E‑Rate, reject any sunset or reduction, separate screen‑time policy from infrastructure funding, and maintain full support for Category 1 and 2 equipment while ensuring high‑poverty districts receive equitable assistance.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "maintain full support for Category 1 and 2 equipment",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Schools need ongoing support for backbone and internal network infrastructure to operate safely and efficiently.",
+      "evidence_quote": "l technology integration and screen time management.\nMaintain full support for Category 1 and Category 2 internal network infrastructure, ensuring schools can sustain secure, reliable campus",
+      "evidence_start": 4186,
+      "evidence_end": 4376,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "avoid restricting eligibility based on narrow geographic criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "High‑poverty districts require equitable support regardless of rural classification.",
+      "evidence_quote": "ools can sustain secure, reliable campus networks.\nAvoid restricting eligibility based on narrow geographic criteria, ensuring high-poverty communities receive the support necessary to maintain",
+      "evidence_start": 4336,
+      "evidence_end": 4529,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding is essential for maintaining secure, reliable school networks and should not be eliminated or reduced.",
+      "evidence_quote": "ersecurity threats.\n\nI respectfully urge the Commission to:\nReject any proposal to sunset, eliminate, or reduce E-Rate funding, recognizing that broadband connectivity is foundational utility",
+      "evidence_start": 3881,
+      "evidence_end": 4072,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain E‑Rate funding as a foundational utility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "E‑Rate provides the digital equivalent of essential utilities like electricity and plumbing for schools.",
+      "evidence_quote": "damental nature of modern school network architecture. E-Rate does not fund student screen time directly. It funds essential educational infrastructure; the digital equivalent of electricity,",
+      "evidence_start": 935,
+      "evidence_end": 1126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "separate screen‑time policy from infrastructure funding",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time management is a local policy issue and should not influence E‑Rate eligibility.",
+      "evidence_quote": "egulate screen time are not eligible for E-Rate funding. Reducing E-Rate support will do nothing to alter student screen habits; it will simply weaken the secure, reliable infrastructure required to",
+      "evidence_start": 2159,
+      "evidence_end": 2357,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080673",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080673",
+  "filer_raw": "Godfrey-Lee Public Schools",
+  "date_submission": "2026-10-12T18:49:01.577Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "40642a96d96e096e5d95e0f8e14dc1b8379dd6ced072704db66180c034b6f829",
+  "params_key": "282da4f383e7fd13bb24e3540283885f06564a8759c1157dd339f17a3bb3d270",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

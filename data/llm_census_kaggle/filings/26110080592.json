@@ -1,0 +1,87 @@
+{
+  "summary": "The technology director of a public school system argues that E‑Rate funding should not be reduced or tied to screen‑time limits, citing the essential role of reliable, high‑speed internet for student learning, safety, and equity, and presenting evidence that increased technology access can improve academic outcomes.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding should not be reduced because reliable, affordable internet is essential infrastructure for student success.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I urge the FCC not to reduce E-Rate support for schools.\n\nReliable, affordable internet access is no longer an",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reducing connectivity to widen inequities",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Limiting connectivity risks widening inequities, restricting educational opportunity, and undermining essential school systems.",
+      "evidence_quote": "y necessary to educate and protect their students. Limiting that connectivity will not ensure better learning; it risks widening inequities, restricting educational opportunity, and undermining the",
+      "evidence_start": 3703,
+      "evidence_end": 3900,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "recognize technology access improves outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Alabama’s increased technology access during COVID‑era correlated with significant gains in NAEP math and reading scores.",
+      "evidence_quote": "es and online educational resources, yet Alabama subsequently experienced some of the strongest academic recovery in the nation. From 2019 to 2024, Alabama was the only state to achieve a",
+      "evidence_start": 2315,
+      "evidence_end": 2502,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "acknowledge high‑speed internet essential for safety and operations",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "High‑speed internet is critical for school security, communications, and student information systems.",
+      "evidence_quote": "et is no longer just a pathway to online learning. Schools depend on it for security, communications, facility controls, and critical student information systems. Whatever E-Rate’s original purpose,",
+      "evidence_start": 2928,
+      "evidence_end": 3126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie E‑Rate eligibility to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should not be conditioned on screen‑time limits, as schools already comply with state laws and such restrictions would harm learning outcomes.",
+      "evidence_quote": "states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly diverse range of cloud-based instructional resources,",
+      "evidence_start": 1539,
+      "evidence_end": 1734,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080592",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080592",
+  "filer_raw": "Urick Wright",
+  "date_submission": "2026-10-12T14:58:00.859Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "913233c200827c888d675dcc47e349ec50df47c86461619e7728e7581d5f1913",
+  "params_key": "7f3024aab4912a34c9fb792bf2a2d98ae066e78238dcb672c994a4f8c467229e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

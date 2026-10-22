@@ -1,0 +1,87 @@
+{
+  "summary": "Letter from Southwest Cook County Cooperative Association for Special Education urges the FCC to preserve and strengthen the E‑Rate program, opposing sunset or narrowing of eligibility and emphasizing broadband as essential infrastructure for special‑education students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ibility or restrict support based solely on \ngeography or other criteria that would leave students without adequate support; \n3. \nPreserve support for the connectivity and internal network",
+      "evidence_start": 4505,
+      "evidence_end": 4693,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable connectivity to provide modern education.",
+      "evidence_quote": "or the connectivity and internal network infrastructure schools and educational \nentities need to provide reliable educational access; and \n4. \nWork with educational leaders and other stakeholders to",
+      "evidence_start": 4653,
+      "evidence_end": 4852,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for special‑education students and should not be eliminated.",
+      "evidence_quote": "urge the Commission to: \n1. \nReject any proposal to sunset or eliminate the E-Rate program; \n2. \nReject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely",
+      "evidence_start": 4348,
+      "evidence_end": 4545,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue providing reliable, affordable, and effective connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is the only federal education technology program that supports student learning.",
+      "evidence_quote": "operations and compromise our ability to safely and effectively serve our students. E-Rate is \nthe only federal education technology program, and the connectivity it provides is foundational to",
+      "evidence_start": 1393,
+      "evidence_end": 1586,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain and upgrade broadband infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity must be maintained, upgraded, secured, and scaled as instructional demands evolve.",
+      "evidence_quote": "he success of E-Rate — not evidence that the need for the program has disappeared. \nConnectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology \ncontinue to",
+      "evidence_start": 1859,
+      "evidence_end": 2058,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078508",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078508",
+  "filer_raw": "Southwest Cook County Cooperative Association for Special Education",
+  "date_submission": "2026-09-28T14:04:09.340Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "601571a85b880ebf95c3ba11411d23e66963e582a0ff08e05e8c7bf60e504385",
+  "params_key": "7bff036855fa6424f46940d7a48587283780543732340d67d291e67c85eda595",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

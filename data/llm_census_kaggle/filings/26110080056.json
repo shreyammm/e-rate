@@ -1,0 +1,87 @@
+{
+  "summary": "The superintendent urges the FCC to keep the E‑Rate program intact, reject sunset or cuts, oppose narrowing eligibility, and maintain broadband for safety and instructional needs while affirming local control over screen‑time policies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ion to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 4787,
+      "evidence_end": 4980,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "iting to urge the Federal Communications Commission  (FCC)  to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or",
+      "evidence_start": 469,
+      "evidence_end": 656,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain broadband connectivity for safety and operational functions",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "Reliable broadband is required for school security systems and other safety-critical operations.",
+      "evidence_quote": "ure that allows  our  school district to function. When that connectivity is unavailable or unreliable, it can disrupt the basic operations of  our  school and compromise our ability to safely and",
+      "evidence_start": 1080,
+      "evidence_end": 1276,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "preserve local control over student screen‑time policies",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time decisions should remain under state and local control, not be dictated by federal broadband policy.",
+      "evidence_quote": "vity is not synonymous with unrestricted student screen time. Districts, educators, and families already make decisions about when and how technology should be used to support learning , decisions",
+      "evidence_start": 3249,
+      "evidence_end": 3445,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should be updated to meet evolving instructional demands and technology needs.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide",
+      "evidence_start": 4940,
+      "evidence_end": 5139,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080056",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080056",
+  "filer_raw": "Anaconda School District #10",
+  "date_submission": "2026-10-08T15:46:57.357Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "90d3d2e5467415ac33690356e014606252366fd3e78598e1e55c4cb707f86ebf",
+  "params_key": "81b18ecdca4a54965fbc240840771c8f78d5ef9f8eff5a43ecf9e63c51f57bf5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

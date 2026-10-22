@@ -1,0 +1,113 @@
+{
+  "summary": "The commenter argues that the E‑Rate program is obsolete, that it subsidizes services that the market now provides, that it has enabled non‑CIPA‑compliant practices and ideological programming, and that the ALA’s “Save Our E‑Rate” campaign is a political effort to preserve funding for its own agenda. SafeLibraries urges the FCC to phase out or substantially narrow E‑Rate support for libraries, limiting any remaining funding to truly unserved or underserved areas with rigorous auditing, CIPA compliance, and clear educational purpose.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "maintain CIPA compliance requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "legal_claim",
+      "argument": "Libraries receiving E‑Rate funds have failed to fully meet CIPA’s statutory conditions, allowing non‑compliant practices.",
+      "evidence_quote": "Despite these requirements, significant compliance issues have persisted. My 2013 filing documented multiple examples of libraries receiving E-Rate funds while maintaining policies or practices that",
+      "evidence_start": 2494,
+      "evidence_end": 2692,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "oppose",
+      "requested_action": "prevent ideological programming funded by E‑Rate",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding has enabled ideological events such as Drag Queen Story Hour, which the commenter views as inappropriate for children.",
+      "evidence_quote": "d communities consider inappropriate for children. One prominent example is Drag Queen Story Hour events \"sneakily\" hosted in public libraries, as American Library Association itself details here:",
+      "evidence_start": 4044,
+      "evidence_end": 4240,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "limit funding to truly unserved or underserved areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Any remaining E‑Rate funding for libraries should be strictly limited to truly unserved or underserved areas, subject to rigorous independent auditing and verifiable CIPA compliance.",
+      "evidence_quote": "be strictly limited to truly unserved or underserved areas, subject to rigorous independent auditing, verifiable CIPA compliance (with librarian-controlled filtering and transparent enforcement), and",
+      "evidence_start": 6624,
+      "evidence_end": 6823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "sunset or reduce E‑Rate subsidies",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate subsidies are no longer needed because high‑speed broadband is widely available and the program distorts competition.",
+      "evidence_quote": "ic connectivity in schools and libraries is no longer necessary for most communities. Continuing the program at current levels risks subsidizing services the market now provides efficiently,",
+      "evidence_start": 1877,
+      "evidence_end": 2067,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "phase out or narrow library support",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program should be phased out or substantially narrowed for libraries to protect children from inappropriate content and ensure fiscal responsibility.",
+      "evidence_quote": "nal programming, I respectfully urge the Commission to phase out or substantially narrow E-Rate support for libraries. If any funding continues, it should be strictly limited to truly unserved or",
+      "evidence_start": 6469,
+      "evidence_end": 6664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "limit ALA influence on E‑Rate funding",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "other",
+      "argument": "The ALA’s “Save Our E‑Rate” campaign is a political effort to preserve funding for its own agenda rather than for educational connectivity.",
+      "evidence_quote": "campaign titled \"Save Our E-Rate,\" that urges libraries, schools, and the public to file comments and contact Congress in support of preserving the program. While advocacy is legitimate, the",
+      "evidence_start": 3433,
+      "evidence_end": 3623,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The commenter notes that E‑Rate has enabled libraries to allocate resources to programs that some parents find inappropriate, but does not explicitly call for a policy change.",
+      "evidence_quote": "l connectivity.\n\nWith E-Rate subsidizing infrastructure, libraries have been able to allocate resources to programs and collections that many parents and communities consider inappropriate for",
+      "evidence_start": 3892,
+      "evidence_end": 4084,
+      "uncertain": true
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_social_media": "oppose",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26109996479",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109996479",
+  "filer_raw": "Dan Kleinman | SafeLibraries® brand library educational services",
+  "date_submission": "2026-07-07T03:19:13.940Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1c4e8fe9daf2cb79bc02d1c40c0c0d48f155ab2fe739103961c215f08fb42bb9",
+  "params_key": "7344b7ad5d47c00fc830e135690a33742e7c89fdd8df5e5240e0cc679ca17cdd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

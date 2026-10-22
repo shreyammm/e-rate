@@ -1,0 +1,61 @@
+{
+  "summary": "A Pre‑K teacher urges the FCC to preserve the E‑Rate program, arguing that cutting or sunsetting the program would worsen educational inequities, jeopardize emergency communications, and force cuts to other school programs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Cutting E‑Rate would deepen inequities by denying low‑income students reliable internet access.",
+      "evidence_quote": "oals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome.",
+      "evidence_start": 2020,
+      "evidence_end": 2217,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate support",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Removing E‑Rate funds would force cuts to fine arts, sports, and after‑school programs, harming overall student development.",
+      "evidence_quote": ". Our district has no choice but to fund technology and therefore other programs like fine arts, sports, and afterschool programs would be cut along with compensation for their employees.",
+      "evidence_start": 2479,
+      "evidence_end": 2666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect emergency communications",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate‑funded internet is essential for 911 calls and emergency response; loss would jeopardize student safety.",
+      "evidence_quote": "on quality and fast internet. Emergency response times would be affected in the event of an emergency. No one's life should be taken away due to slow internet and the ability to identify the",
+      "evidence_start": 2779,
+      "evidence_end": 2969,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079906",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079906",
+  "filer_raw": "Michelle Cardenas",
+  "date_submission": "2026-10-07T19:43:54.883Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7bd38d245c6893b745bc7af6c9334f0f23aea877b9c3c53b8791642ee266416d",
+  "params_key": "7ef71875193a4da0fc933de873459568b586491dced66d6f9753a2e13e231ba1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,63 @@
+{
+  "summary": "Gresham‑Barlow School District opposes new screen‑time limits, supports permanent cybersecurity pilot, and urges the FCC to maintain current E‑Rate funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "make cybersecurity pilot permanent",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that a permanent cybersecurity pilot is essential to protect students and school infrastructure.",
+      "evidence_quote": "heir personal \ndata and physical safety. Therefore, we respectfully request that the FCC establish the \nCybersecurity Pilot Program on a permanent basis. \n \nIn summary, the E-Rate program is vital to",
+      "evidence_start": 2610,
+      "evidence_end": 2809,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or reduction of E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district contends that cutting or ending E‑Rate would severely impact students’ access to technology and learning opportunities.",
+      "evidence_quote": "r high school, whether that be a \ncareer in marketing, business, technology, engineering, the trades, or something else. We urge \nthe FCC to reject any proposal that would terminate or reduce funding",
+      "evidence_start": 2927,
+      "evidence_end": 3126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "avoid screen‑time restrictions",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that federal screen‑time limits would hinder local efforts to balance technology with non‑digital instruction.",
+      "evidence_quote": "s remains our primary \ngoal, introducing additional federal restrictions would hinder our local efforts to work with our \ncommunity and find what works best for our students. Therefore, we",
+      "evidence_start": 1688,
+      "evidence_end": 1876,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077042",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077042",
+  "filer_raw": "Gresham-Barlow School District 10J",
+  "date_submission": "2026-09-18T22:03:53.546Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "137ab2431ef86521be3db64d7f78e7971fdc40990f4d53a695b3a8746114baff",
+  "params_key": "7b15d72a3a59fcad1c9bb7e02c7820d97889ed0a5dc197cb8e638a3e60e65080",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "WCRIS urges the FCC to keep E‑Rate available to private schools, support flexible child‑safety policies, and avoid burdensome new rules.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "WCRIS acknowledges the FCC’s focus on child safety but does not explicitly endorse or oppose specific CIPA extensions.",
+      "evidence_quote": "eligible private schools. \n \nSupporting Children’s Safety While Preserving Flexibility \n \nWCRIS shares the Commission’s concern about the harms associated with excessive or unsupervised \nscreen use,",
+      "evidence_start": 1851,
+      "evidence_end": 2049,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "avoid rigid, centrally prescribed screen‑time or content‑monitoring mandates tied to E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "One‑size‑fits‑all mandates would not reflect the diverse educational models of private schools.",
+      "evidence_quote": "ncern is that new federal screen-time or content-monitoring mandates tied to E-Rate funding \ncould create a one-size-fits-all standard that does not reflect the wide diversity of educational",
+      "evidence_start": 2310,
+      "evidence_end": 2500,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "retain the Kalamazoo exception for competitively bid contracts",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Eliminating the exception would force schools to re‑bid and re‑sign contracts, creating staff time and risk of service gaps.",
+      "evidence_quote": "xpanded certification and \ndocumentation requirements, would fall especially hard on these schools. \n \nFor example, eliminating the “Kalamazoo exception” would require schools to re-bid and re-sign",
+      "evidence_start": 3380,
+      "evidence_end": 3577,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "limit consultant disclosure to applicants that actually use a consultant",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring all schools to file Form 5654 would impose unnecessary paperwork on those who manage their own applications.",
+      "evidence_quote": "gaps. Similarly, requiring a new annual consultant disclosure form (Form 5654) from every \napplicant, including schools that do not use a consultant, would add a filing obligation with no clear",
+      "evidence_start": 3694,
+      "evidence_end": 3887,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve E‑Rate eligibility for private schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Private schools rely on E‑Rate discounts to maintain essential connectivity and cannot afford to lose this support.",
+      "evidence_quote": "made a meaningful difference for private schools, many of which operate on tight budgets \nwhile serving families from low-income backgrounds. Our member schools rely on E-Rate discounts to \nsupport",
+      "evidence_start": 1242,
+      "evidence_end": 1439,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "cipa_monitoring_privacy": "oppose",
+    "consultant_definition": "support",
+    "consultant_registration": "oppose",
+    "erate_eligibility_scope": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080888",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080888",
+  "filer_raw": "WCRIS Private Schools",
+  "date_submission": "2026-10-13T13:39:00.564Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "67adce72d56123e87734d042bb63dae42a27045164030edf77d487fa95b702a6",
+  "params_key": "8e490a5b2b81e80a452cda2cc9aeb88d3957ae8e13e54c391f497b63e7c961b4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

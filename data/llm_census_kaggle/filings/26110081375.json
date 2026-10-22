@@ -1,0 +1,88 @@
+{
+  "summary": "The comment argues for stronger parental control and safety measures in schools, including opt‑out rights, parental consent for AI, screen‑time reporting, and stricter CIPA compliance.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "Require parental consent before AI tools are turned on",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Parental consent is necessary for AI use in classrooms.",
+      "evidence_quote": "not penalize or ostracize a student;\n\n-          Require parental consent before artificial intelligence tools are turned on;\n\n-          Provide reporting mechanism for school districts that do not",
+      "evidence_start": 2472,
+      "evidence_end": 2670,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "support",
+      "requested_action": "Report instructional screen time by grade level",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen time should be monitored to prevent excessive use.",
+      "evidence_quote": "Report instructional screen time by grade level and certify that E-Rate-funded networks are not used to exceed reasonable daily limits for all grades;\n\n-          Adopt a technology model that",
+      "evidence_start": 1851,
+      "evidence_end": 2043,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "Replace CIPA certifications with meaningful audits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Audits are needed to ensure minors cannot access harmful content.",
+      "evidence_quote": "eplace existing CIPA certifications with meaningful audits that test whether minors can reach obscenity and other harmful content;\n\n-          Provide notice to parents about what content students",
+      "evidence_start": 2157,
+      "evidence_end": 2353,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "Require parental consent before AI tools are activated",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "AI tools should not be used without parental approval.",
+      "evidence_quote": "not penalize or ostracize a student;\n\n-          Require parental consent before artificial intelligence tools are turned on;\n\n-          Provide reporting mechanism for school districts that do not",
+      "evidence_start": 2472,
+      "evidence_end": 2670,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "Require parental opt‑out right without penalty",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Students should not be forced to use internet-connected devices if parents opt out.",
+      "evidence_quote": "Parents should have the right to provide informed consent for their children’s use of internet-connected devices in the classroom and for the collection and use of their children’s data. This should",
+      "evidence_start": 1237,
+      "evidence_end": 1435,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_digital_literacy": "support",
+    "cipa_monitoring_privacy": "support",
+    "parent_opt_out": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081375",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081375",
+  "filer_raw": "Ashley Bowers",
+  "date_submission": "2026-10-14T00:47:11.703Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f036d8d5b7e5400e4180cc9ad6e120218f1924267559205aa82f76b3f9be1756",
+  "params_key": "30c111b4a59a1a1bc450d8b979578662ce7af3e8c43d2df840600e96918bf3e9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

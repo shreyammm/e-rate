@@ -1,0 +1,86 @@
+{
+  "summary": "The letter from Buffalo School District Re‑4J opposes any termination or significant reduction of the E‑Rate program, arguing that E‑Rate is essential for affordable, reliable connectivity and equitable educational opportunities in rural schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for 1:1 Chromebook environments",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "implementation_burden",
+      "argument": "The district’s 1:1 Chromebook program relies on E‑Rate‑funded connectivity to support daily instruction, assessment, and research.",
+      "evidence_quote": "or a district our size. \nAlthough we are small, our technology needs are not. We provide a 1:1 Chromebook environment for \nK-12 students and rely on internet connectivity for daily instruction,",
+      "evidence_start": 1703,
+      "evidence_end": 1896,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain eligibility for rural districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables rural districts to build and maintain infrastructure that would otherwise be unaffordable due to small student populations and limited tax bases.",
+      "evidence_quote": "ing for rural districts. We need much of the same infrastructure as larger school systems, \nbut we spread those costs across only a few hundred students and a much smaller local tax base. \nPerhaps",
+      "evidence_start": 2324,
+      "evidence_end": 2520,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain strong, reliable E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is critical for rural schools to provide affordable, reliable internet and network infrastructure, enabling equitable educational opportunities.",
+      "evidence_quote": "from E-Rate eligibility.[1] \nWe urge the FCC to reject any proposal that would terminate or limit the E-Rate Program. \n  \nE-Rate is critical for schools and libraries to maintain affordable, reliable",
+      "evidence_start": 773,
+      "evidence_end": 972,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating or cutting E‑Rate would force rural districts to absorb costs, leading to difficult budget choices and reduced instructional resources.",
+      "evidence_quote": "braries to maintain affordable, reliable access to the Internet. \nTerminating that support represents a cut to school and library budgets, jeopardizing years of progress building \nand upgrading those",
+      "evidence_start": 932,
+      "evidence_end": 1131,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate to prevent loss of educational opportunities",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "predicted_consequence",
+      "argument": "Without E‑Rate, rural students would lose access to instructional resources, online learning, and career exploration opportunities.",
+      "evidence_quote": "omplish. Reliable connectivity opens the door to instructional resources, research, \ncareer exploration, online learning, and educational experiences that might otherwise be difficult to provide in a",
+      "evidence_start": 2639,
+      "evidence_end": 2838,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077845",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077845",
+  "filer_raw": "Lonnie Brungardt | Buffalo School District RE-4J",
+  "date_submission": "2026-09-23T15:36:47.731Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "07f6b2f749981b7baf6292498205ebda86c1c41064091ba7c1e5ecba5636714f",
+  "params_key": "6b8e98bbe9c9c6a1a4166d5a97eb92e381cda3830fca00fde8475e764a26d653",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

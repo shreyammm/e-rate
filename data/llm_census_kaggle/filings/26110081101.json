@@ -1,0 +1,110 @@
+{
+  "summary": "Southgate Community School District argues for preserving and expanding E‑Rate eligibility, emphasizing its critical role in maintaining connectivity, cybersecurity, and operational systems for schools. Southgate Community School District urges the FCC to preserve E‑Rate’s core strengths while opposing any changes that would reduce access, increase administrative burden, or limit local flexibility.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve and expand eligible services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district needs E‑Rate to fund broadband, Wi‑Fi, structured cabling, and cybersecurity tools to keep up with educational and safety demands.",
+      "evidence_quote": "m is invaluable to all school districts, libraries and ISDs in our area. 3. KEY ISSUES ELIGIBLE SERVICES AND INFRASTRUCTURE Current eligible services should not be reduced.  It should be expanded.",
+      "evidence_start": 3098,
+      "evidence_end": 3294,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain broad definition of “educational purpose”",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "A workable definition of educational purpose is needed to reflect actual instructional, operational, and student support uses.",
+      "evidence_quote": "s, Wi-Fi, installation, maintenance, and related network services that schools rely on every day. • Maintain a broad, workable definition of “educational purpose” that reflects how school networks",
+      "evidence_start": 5582,
+      "evidence_end": 5778,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Include structured cabling and cybersecurity services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Structured cabling and cybersecurity programs are essential for modern communication systems and insurance requirements.",
+      "evidence_quote": "rpose” that reflects how school networks are actually used for instruction, operations, and student support. • We would like all structured cabling in the building to be included since most new",
+      "evidence_start": 5738,
+      "evidence_end": 5931,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve core strengths of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district requests that the FCC maintain support for affordable broadband, Internet access, internal connections, Wi‑Fi, maintenance, and cost‑effective network solutions.",
+      "evidence_quote": "6. CLOSING Southgate Community School District respectfully urges the FCC to preserve the core strengths of E-Rate, including support for affordable broadband, Internet access, internal connections,",
+      "evidence_start": 6151,
+      "evidence_end": 6349,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid changes that reduce access, increase admin burden, or limit local flexibility",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The district urges the FCC to avoid any changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+      "evidence_quote": ", Internet access, internal connections, Wi-Fi, maintenance, and cost-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid",
+      "evidence_start": 6309,
+      "evidence_end": 6506,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E‑Rate would force drastic cuts to staffing, programming, and infrastructure upgrades, harming the district’s general fund.",
+      "evidence_quote": "budget would take a massive hit. We have received almost $1.5 million from the E-rate program.  The money that is currently used for programming and staffing would need to be drastically cut to fund",
+      "evidence_start": 4817,
+      "evidence_end": 5015,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, and self‑provisioned networks",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "These services are critical for maintaining reliable connectivity and operational systems across district facilities.",
+      "evidence_quote": "isn't available in the general fund. 5. RECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal",
+      "evidence_start": 5278,
+      "evidence_end": 5465,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081101",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081101",
+  "filer_raw": "Southgate Community School District",
+  "date_submission": "2026-10-13T18:43:50.353Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7056bf420472f5895d8ac39f8d4ee08cd66e4e37f07101950bb3ed1cf77a0697",
+  "params_key": "d222ce34a8d73a8a85f22b6048b9becc1f5f1abc120f06dc6400984951d1df35",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

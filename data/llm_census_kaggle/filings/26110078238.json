@@ -1,0 +1,98 @@
+{
+  "summary": "Windber Area School District superintendent urges FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, or geographic cuts; argues broadband is essential infrastructure, not a screen‑time tool, and that cuts would shift costs to local taxpayers and widen equity gaps. The comment urges the FCC to preserve and strengthen the E‑Rate program so that schools can continue to provide reliable, affordable connectivity for all students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent notes that 100% of students receive free meals, indicating significant economic need regardless of geographic classification.",
+      "evidence_quote": "At Windber, 100 percent of our students receive free school meals, a clear reminder that significant economic need exists in small towns regardless of how a community is classified geographically.",
+      "evidence_start": 5158,
+      "evidence_end": 5354,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent contends that narrowing eligibility would leave high‑need students without adequate connectivity.",
+      "evidence_quote": "pectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely",
+      "evidence_start": 5936,
+      "evidence_end": 6133,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent asserts that broadband is essential infrastructure for modern schools, comparable to electricity and transportation.",
+      "evidence_quote": "ibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 6093,
+      "evidence_end": 6290,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "Work with schools and other stakeholders to strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent calls for collaboration to improve the program, without specifying a particular policy change.",
+      "evidence_quote": "vity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its",
+      "evidence_start": 6250,
+      "evidence_end": 6446,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent argues that eliminating E‑Rate would shift essential connectivity costs to local taxpayers, harming students and widening equity gaps.",
+      "evidence_quote": "pectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely",
+      "evidence_start": 5936,
+      "evidence_end": 6133,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate enables schools to build and maintain connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "ic education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our",
+      "evidence_start": 6459,
+      "evidence_end": 6657,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078238",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078238",
+  "filer_raw": "Dr. Michael J. Vuckovich",
+  "date_submission": "2026-09-25T12:21:53.917Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dbbd724e659d78ef665d9e524540171e0e1eae2555b58b92d31dd0ac983bbe83",
+  "params_key": "c93e6c74b2b0329d27e63c192ada64793038a98f6edfe769052641707851df9e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The Omaha Public Library opposes any proposal to terminate or limit the E‑Rate program, arguing that such actions would cut essential funding for schools and libraries, especially in vulnerable communities.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject limiting urban areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Limiting E‑Rate eligibility to exclude urban areas would deny critical broadband support to many schools and libraries.",
+      "evidence_quote": "CC should eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility. We urge the FCC to reject any proposal that would terminate or limit the E-Rate Program.\n\nE-Rate is critical for",
+      "evidence_start": 307,
+      "evidence_end": 505,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Terminating E‑Rate would cut essential broadband funding for schools and libraries, harming vulnerable communities.",
+      "evidence_quote": "E-Rate Program.\n\nE-Rate is critical for schools and libraries to maintain affordable, reliable access to the Internet. Terminating that support represents a cut to school and library budgets,",
+      "evidence_start": 466,
+      "evidence_end": 657,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075531",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075531",
+  "filer_raw": "Taylor Corbaley",
+  "date_submission": "2026-09-04T02:07:00.404Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c5ea4dae67615587c54f06590e3dbde4d6230a9907870de54ffcfec9d23792a5",
+  "params_key": "26d5ba547fb878394a6d839dd90b1f61ed6ebc7f86fbb590dc79e4d388c7c486",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

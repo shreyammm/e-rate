@@ -1,0 +1,50 @@
+{
+  "summary": "Bipartisan state legislators urge the FCC to preserve and strengthen the E‑Rate program and to keep its focus on connectivity rather than expanding into content and instruction. No policy claims identified in the provided text.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain focus on connectivity only",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The FCC’s proposal extends beyond connectivity into content and instruction, which should remain the responsibility of state and local education policymakers.",
+      "evidence_quote": "sion's proposal exceeds its core area of \nexpertise — connectivity — and reaches into questions about content and learning that are \nproperly the responsibility of state and local education",
+      "evidence_start": 2335,
+      "evidence_end": 2524,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for reliable, affordable broadband that underpins teaching, learning, and daily school operations.",
+      "evidence_quote": "islators from every corner of the United States to urge the Federal \nCommunications Commission (the Commission) to preserve and strengthen — not weaken — \nthe E-Rate program. As legislators who are",
+      "evidence_start": 313,
+      "evidence_end": 510,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081314",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081314",
+  "filer_raw": "Delegate Jared Solomon | Representative Louis Riggs | Representative Matt Pierce | On behalf of other state legislators.",
+  "date_submission": "2026-10-13T22:40:05.114Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "de9c62b33ced637963f2f38eccd041d79cdc17eaf1300a3201731fc24e4f854d",
+  "params_key": "42e8b378afe7db5b88848d70a928b0164b53096cbf97a4c186fb265a07d1dab6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

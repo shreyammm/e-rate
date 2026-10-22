@@ -1,0 +1,89 @@
+{
+  "summary": "The notice argues for correcting legal citations, clarifying the Lowest Corresponding Price rule, limiting consultant filing burdens, preserving certain procurement channels, and addressing Head‑Start and pre‑K funding. It opposes blanket consultant certification and the removal of the Kalamazoo Order, while proposing targeted reforms.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "limit annual filing to engaged consultants",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The notice argues that requiring all applicants to file Form 5654 annually imposes undue paperwork on small schools and libraries.",
+      "evidence_quote": "including those who certify they use no consultant at all. Pairing that universal filing obligation with a Consultant Registration Database that collects a consultant's date of birth and the last",
+      "evidence_start": 1873,
+      "evidence_end": 2068,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "support",
+      "requested_action": "eliminate percentage‑based consultant fees",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "The notice notes that eliminating reliance on the Kalamazoo Order would curb disguised noncompliant procurement practices.",
+      "evidence_quote": "e associates with disguised noncompliant procurement, but the same channel covers applicants using state master contracts that predate a given year's Allowable Contract Date for reasons unrelated to",
+      "evidence_start": 2798,
+      "evidence_end": 2996,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "retain existing database only for engaged consultants",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "It suggests restricting the registration database to those who actually use a consultant, avoiding unnecessary identity data collection.",
+      "evidence_quote": "consultant's date of birth and the last four digits of a Social Security number, modeled on the Lifeline program's Representative Accountability Database, concentrates two new burdens -- an annual",
+      "evidence_start": 2029,
+      "evidence_end": 2225,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "support",
+      "requested_action": "clarify LCP definition",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "It proposes extending the Rural Health Care Telecommunications Program’s similarity test to the Lowest Corresponding Price rule to close a definitional gap.",
+      "evidence_quote": "one passage where a reader can check the premise against a public reporter.\n\nA related clarity gap sits in the Lowest Corresponding Price rule: the notice acknowledges that the LCP rule leaves the",
+      "evidence_start": 1090,
+      "evidence_end": 1286,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "correct legal citations",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The notice contends that mis‑reporting of Chevron and Texas Office of Public Utility Counsel cases undermines the statutory basis for E‑Rate interpretations.",
+      "evidence_quote": "This notice invites comment on E-Rate's future by leaning on a specific doctrinal shift: it argues that interpretations of section 254(h) sustained under Chevron deference may not survive review now",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_form_5654": "oppose",
+    "consultant_percent_fees": "support",
+    "consultant_registration": "oppose",
+    "discount_matrix": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075713",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075713",
+  "filer_raw": "Steven Quinn Singleton",
+  "date_submission": "2026-09-07T03:17:36.124Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c52bb50eb1603b868009b7de3cf799dd5ce86f72a5f972a105cdd949f7461a1d",
+  "params_key": "c7b147a6b786957fbb3f2df74ee3b3e5c28e0cc81c51a6be2cb9f6379cd25191",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

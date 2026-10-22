@@ -1,0 +1,86 @@
+{
+  "summary": "School board member urges FCC to keep E‑Rate, reject sunset or narrowing, and maintain broadband as essential infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that narrow eligibility or restrict support based on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 3595,
+      "evidence_end": 3792,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is basic infrastructure for modern schools.",
+      "evidence_quote": "vity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its",
+      "evidence_start": 3752,
+      "evidence_end": 3948,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate as essential infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Broadband is essential infrastructure for modern public education.",
+      "evidence_quote": "t for schools and libraries. As a school board member, I see firsthand that reliable, high-quality broadband is no longer an optional technology benefit for students. It is essential infrastructure",
+      "evidence_start": 627,
+      "evidence_end": 824,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate to avoid staff cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate would force districts to cut teacher positions and other resources.",
+      "evidence_quote": "needed to keep our schools and district offices connected. If we had to absorb the cost, we'd need to cut teacher positions and other resources for our most challenged kids. Those costs would",
+      "evidence_start": 1880,
+      "evidence_end": 2071,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential for modern education and should not be discontinued.",
+      "evidence_quote": "pectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely",
+      "evidence_start": 3438,
+      "evidence_end": 3635,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077557",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077557",
+  "filer_raw": "Susan Alvaro",
+  "date_submission": "2026-09-21T23:05:12.922Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a2375b8c83642f588a285fbccce168dd453afecc4b18926bf337873accfabdc5",
+  "params_key": "b90fbdce9c4d9d3edb1e96a5f0bc463abe90b710259b5dcbfc5e0b295137b53d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

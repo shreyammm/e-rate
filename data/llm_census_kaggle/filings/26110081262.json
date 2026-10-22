@@ -1,0 +1,99 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, narrowing of eligibility, or cuts that would harm school operations and staffing. The comment urges the FCC to preserve and strengthen E‑Rate to ensure reliable, affordable connectivity for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The letter states that proposals restricting eligibility based on geography would leave students without adequate support.",
+      "evidence_quote": "ge   the Commission   to: Reject   any   proposal   to   sunset   or   eliminate   the   E-Rate   program; Reject   proposals that would unnecessarily   narrow E-Rate eligibility or restrict support",
+      "evidence_start": 5943,
+      "evidence_end": 6141,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent urges the FCC to preserve support for connectivity and internal network infrastructure schools need.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based solely   on   geography   or   other   criteria   that would   leave   students   without   adequate   support; Preserve   support   for   the",
+      "evidence_start": 6101,
+      "evidence_end": 6290,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent argues that eliminating E‑Rate would force districts to cut staff and reduce services.",
+      "evidence_quote": "-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily   restrict E-Rate support for schools and libraries. As a superintendent, I see firsthand",
+      "evidence_start": 1242,
+      "evidence_end": 1441,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving E‑Rate is essential to maintain reliable, affordable connectivity for all students.",
+      "evidence_quote": "lely   on   geography   or   other   criteria   that would   leave   students   without   adequate   support; Preserve   support   for   the   connectivity   and   internal   network   infrastructure",
+      "evidence_start": 6150,
+      "evidence_end": 6349,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain E‑Rate connectivity for safety and operations",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate provides essential connectivity for emergency alerts, phone systems, and safety measures.",
+      "evidence_quote": "that   connectivity   is   unavailable   or   unreliable,   it   can   disrupt   the   basic  operations   of   our   school   and   compromise   our   ability   to   safely   and   effectively",
+      "evidence_start": 1873,
+      "evidence_end": 2066,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "avoid cuts that would reduce staffing",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate, the district would need to subsidize $37,200 annually, leading to staff cuts and larger class sizes.",
+      "evidence_quote": "ct and tangible impact. Without E-Rate,   our   general fund would have   to   subsidize the dollar   amount   of   approximately   $37,200.00 dollars a year.   This would   mean   cuts   to   staff,",
+      "evidence_start": 3905,
+      "evidence_end": 4104,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081262",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081262",
+  "filer_raw": "Pamela Reynolds",
+  "date_submission": "2026-10-13T21:34:11.516Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c0d1f77e1be32683833563bf265e9e624c921fd59246cb94f71b50707cf77d2a",
+  "params_key": "cf6b19080e045f92c5e444f81ac3697a447be51a6e26653fde4f84ecad613350",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

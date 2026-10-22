@@ -1,0 +1,88 @@
+{
+  "summary": "Letter from Modesto City Schools urges the FCC to preserve E‑Rate Category One and Two support, maintain urban eligibility, and pursue targeted administrative improvements while noting that screen‑use concerns should be handled through instructional decisions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "conditional_or_amend",
+      "requested_action": "implement targeted administrative improvements",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate should strengthen accountability without undermining connectivity.",
+      "evidence_quote": "etter \nclassroom technology use. \nPlease preserve predictable Category One and Category Two support, maintain equitable access \nfor urban applicants, and pursue targeted administrative improvements",
+      "evidence_start": 3574,
+      "evidence_end": 3771,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "Screen‑use concerns should be addressed through instructional decisions rather than E‑Rate cuts.",
+      "evidence_quote": "and support age-appropriate \ntechnology practices, digital citizenship, family engagement, and effective safeguards. Those \nconcerns should be addressed directly through instructional decisions and",
+      "evidence_start": 3260,
+      "evidence_end": 3457,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve urban eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue to support urban schools to avoid inequitable connectivity gaps.",
+      "evidence_quote": "t serving \napproximately 30,000 students across 34 schools. I urge the Commission to preserve a strong E-Rate \nprogram, including continued support for both Category One and Category Two services and",
+      "evidence_start": 940,
+      "evidence_end": 1139,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not terminate E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E‑Rate would force districts to redirect funds and postpone essential infrastructure upgrades.",
+      "evidence_quote": "invested in infrastructure that requires ongoing operation, maintenance, and renewal. \n\n\nIf E-Rate were terminated or materially reduced, the underlying connectivity costs would not \ndisappear.",
+      "evidence_start": 2641,
+      "evidence_end": 2834,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not materially reduce E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate would leave connectivity costs unchanged while weakening school infrastructure.",
+      "evidence_quote": "connectivity costs would not \ndisappear. Districts would have to redirect limited educational funds, postpone infrastructure \nreplacements, accept less reliable service, or reduce spending in other",
+      "evidence_start": 2794,
+      "evidence_end": 2991,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conditional_or_amend",
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079038",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079038",
+  "filer_raw": "Rebecca Alexander | Modesto City Schools",
+  "date_submission": "2026-10-01T17:15:31.163Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "df96a9f989c6d3feec743d850f68757403be93b545dea12e5aee978894f09e6a",
+  "params_key": "4023754d484d8773580dd415e4705e3c6c6491f56a3614d76243367c2577fee9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

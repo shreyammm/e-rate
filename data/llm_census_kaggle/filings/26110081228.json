@@ -1,0 +1,89 @@
+{
+  "summary": "The National Parents Union argues for preserving and strengthening the E‑Rate program, contends that screen time should be valued, and stresses the program’s role in supporting low‑income and rural communities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address CIPA or BYOD policies.",
+      "evidence_quote": "National Parents Union​\nPublic Comment on a Notice of Proposed Rulemaking by the Federal \nCommunications Commission To Review E-Rate Program To Ensure Congress's \nVision \n47 CFR Part 54​\n[WC Docket",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility for schools and libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing or eliminating E‑Rate would disproportionately harm low‑income districts and rural libraries that rely on the funding.",
+      "evidence_quote": "can afford to \nremain connected without support. If E-Rate funding is reduced or eliminated, the \nhighest-poverty districts and the smallest rural libraries will lose connectivity first. While",
+      "evidence_start": 2193,
+      "evidence_end": 2385,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The program should not be ended because it has achieved near‑universal connectivity and continues to meet statutory goals.",
+      "evidence_quote": "vity is clear \nevidence of the program’s success and need for continuation, not a reason to dissolve it.  \n \nConnectivity is a recurring cost, like electricity. Schools pay for service every month,",
+      "evidence_start": 1561,
+      "evidence_end": 1758,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue funding for connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "E‑Rate provides critical connectivity for families to access education, health, and employment services.",
+      "evidence_quote": "nances, \nand connect with family members and emergency resources. \n \nFor many families, the public library is the only place where they can reliably access \nhigh-speed broadband and technology. As",
+      "evidence_start": 4061,
+      "evidence_end": 4257,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "emphasize screen value over blanket limits",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "While screen time can be distracting, most screens are essential for learning and future career readiness.",
+      "evidence_quote": ". We recognize the Commission’s concerns about screen time. \nHowever, we believe in placing a stronger emphasis on screen value, acknowledging that \nwhile some screens can be distracting and inhibit",
+      "evidence_start": 2967,
+      "evidence_end": 3165,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081228",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081228",
+  "filer_raw": "Ariel Taylor Smith, National Parents Union",
+  "date_submission": "2026-10-13T20:53:14.402Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d705c96e7ec192ff3b49b8a1e1085944e89522ff4512a7d776b4302ae9a1e0be",
+  "params_key": "91bee6e7689841f0878cded6af5ca59a945a4d61fa0399714b65517fd26e4023",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

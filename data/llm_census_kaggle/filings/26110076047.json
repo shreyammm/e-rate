@@ -1,0 +1,88 @@
+{
+  "summary": "Frankenmuth School District urges the FCC to preserve the core E‑Rate program, keep CIPA requirements practical, maintain eligibility for special construction and other services, add cybersecurity equipment to the Eligible Services List, and avoid any changes that would reduce access or increase administrative burden.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "conditional_or_amend",
+      "requested_action": "keep CIPA requirements practical",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "The district supports keeping CIPA requirements practical, technically feasible, and respectful of student privacy.",
+      "evidence_quote": "E-Rate program.\n• Keep CIPA requirements practical, technically feasible, and respectful of student privacy.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks,",
+      "evidence_start": 4622,
+      "evidence_end": 4818,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that the core E‑Rate program must remain unchanged to continue providing reliable connectivity.",
+      "evidence_quote": "in for nearly three decades.\nFrankenmuth School District respectfully urges the Federal Communications Commission to preserve\nE-Rate’s core funding and support for schools and libraries, maintain the",
+      "evidence_start": 3848,
+      "evidence_end": 4047,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "add cybersecurity equipment and services to Eligible Services List",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district proposes adding cybersecurity equipment to protect networks and prevent disruptions.",
+      "evidence_quote": "hile\nmaking one important modernization: adding cybersecurity equipment and services to the Eligible\nServices List.\nCybersecurity is now essential to the availability, security, and reliability of",
+      "evidence_start": 2917,
+      "evidence_end": 3113,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "avoid changes that reduce access or increase administrative burden",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "The district cautions against any changes that would reduce access or increase administrative burden.",
+      "evidence_quote": "maintenance,\nand cost-effective network solutions. We support thoughtful improvements, simplification, and fraud\nprevention, but ask the FCC to avoid changes that would reduce access, increase",
+      "evidence_start": 5242,
+      "evidence_end": 5434,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "preserve eligibility for special construction, dark fiber, self‑provisioned networks",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district wants to preserve eligibility for special construction and related services.",
+      "evidence_quote": ", dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n• Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation,",
+      "evidence_start": 4778,
+      "evidence_end": 4967,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076047",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076047",
+  "filer_raw": "Frankenmuth School District",
+  "date_submission": "2026-09-09T15:04:40.924Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2881b3667f60e36105b717f9f9de16f9f3cb21019d7477c21924d535c320182e",
+  "params_key": "7b5c5f9a53a6ada26b26ffa0f16054fead8701adc947020d653692453c89037d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

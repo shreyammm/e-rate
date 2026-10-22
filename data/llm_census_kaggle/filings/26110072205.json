@@ -1,0 +1,50 @@
+{
+  "summary": "Support for continued E‑Rate funding for libraries and opposition to cuts that would force libraries to choose between internet access and other services.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve and continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding enables libraries to provide reliable broadband and technology services that are essential for community members who lack home access.",
+      "evidence_quote": "her services our community depends on. I respectfully ask the FCC to preserve and continue its commitment to E-Rate funding for libraries and schools. Reliable, secure, and scalable internet access",
+      "evidence_start": 4344,
+      "evidence_end": 4541,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose reduction or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing or eliminating E‑Rate would force libraries to choose between internet access and other critical services, undermining community support.",
+      "evidence_quote": "ort were reduced or eliminated, the need for internet access would not disappear. Our libraries would still need to provide it. The difference is that more of the cost would have to be absorbed",
+      "evidence_start": 2802,
+      "evidence_end": 2995,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072205",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072205",
+  "filer_raw": "Katherine Daniels",
+  "date_submission": "2026-08-19T14:56:30.996Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ad834f292accfe8a82a0da144e0260ccdf469da15e52004adf408c33e7f02c3a",
+  "params_key": "5d4fb7ef3c07659db61095162d0bf0b1220e49e10a86d86f54222fa76aa3e403",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

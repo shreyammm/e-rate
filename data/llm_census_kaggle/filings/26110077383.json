@@ -1,0 +1,63 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, reject sunset or elimination, oppose unnecessary narrowing of eligibility, and add cyber‑security support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that unnecessarily narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Eligibility should not be restricted based on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would",
+      "evidence_start": 2803,
+      "evidence_end": 2998,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program should not be sunset or eliminated because it provides essential broadband infrastructure for schools.",
+      "evidence_quote": "Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 474,
+      "evidence_end": 671,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "add additional cyber‑security support",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should include additional support for cyber‑security to protect school networks.",
+      "evidence_quote": "uce its role in public education.\n5. Add additional support for cyber security.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for",
+      "evidence_start": 3268,
+      "evidence_end": 3463,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077383",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077383",
+  "filer_raw": "Cory Boggs | Putnam City Schools",
+  "date_submission": "2026-09-21T14:13:13.220Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "061142fdb1f4223757ace966fa41a0483135a254b5b3bf0fc615ed422fc97ea8",
+  "params_key": "838a49fa2443d5a0d0c363b813aa5d2669e3d475557a9bf76e862a619023127c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "The educator opposes proposals that would cut or restrict E‑Rate funding, narrow its scope, impose screen‑time limits, or add burdens on third‑party consultants.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "maintain current fee structure",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "Restrictions on consultant fees would penalize underfunded, rural, and small school districts that rely on outside expertise.",
+      "evidence_quote": "unnecessary bureaucratic red tape. These hurdles disproportionately penalize underfunded, rural, and small school districts that rely on outside expertise to navigate complex federal",
+      "evidence_start": 1237,
+      "evidence_end": 1419,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "avoid burdensome registration",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Adding registration systems and restrictions on third‑party consultants creates unnecessary bureaucratic red tape.",
+      "evidence_quote": "* Integrity and Oversight: While program integrity is important, adding burdensome registration systems and restrictions on third-party consultants creates unnecessary bureaucratic red tape. These",
+      "evidence_start": 1081,
+      "evidence_end": 1277,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Digital connectivity is a permanent infrastructure requirement for modern education, not a temporary luxury.",
+      "evidence_quote": "E-Rate's mission is \"complete\" or should be narrowed is fundamentally flawed. Digital connectivity is not a temporary luxury; it is a permanent infrastructure requirement for modern education.",
+      "evidence_start": 459,
+      "evidence_end": 651,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "Defunding or scaling back E‑Rate will widen the digital divide and harm student achievement.",
+      "evidence_quote": "Proceeding: WC Docket No. 26-133\nAs an educator, I strongly object to this \"top-to-bottom\" review, which appears to be a veiled attempt to cut critical funds (chain-saw management) rather than",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject screen‑time mandates",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Mandating screen‑time limits or parental digital gates oversteps professional judgment of educators.",
+      "evidence_quote": "ty and Screen Time: Leveraging E-Rate to mandate screen time limits or parental digital gates is an overreach that insults the professional judgment of educators. Decisions regarding classroom screen",
+      "evidence_start": 766,
+      "evidence_end": 965,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_percent_fees": "oppose",
+    "consultant_registration": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069292",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069292",
+  "filer_raw": "Thomas Neuville",
+  "date_submission": "2026-08-02T12:25:02.736Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "082286b7591d7de69fd4e20cc93e3c3371cb775f7f53324d060740a70e286201",
+  "params_key": "c54193a15df68e149fb523617f9e8f87d0978beecbb1750a90c01385a04a56c4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

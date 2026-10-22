@@ -1,0 +1,113 @@
+{
+  "summary": "The comment provides background on EBSCO’s role and the importance of E‑Rate but does not contain any explicit policy positions or requested actions. The comment argues that E‑Rate is essential for public schools and libraries, and that limiting or terminating the program would harm connectivity, education, and community services. E‑Rate support from a library‑industry stakeholder",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "maintain filter maintenance",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "The filters are integral to the shared objective of protecting children online.",
+      "evidence_quote": "rces accessed through school and library \ndevices and on the premises, EBSCO’s databases operate inside the CIPA filters. The maintenance \nof these filters as currently required for school- and",
+      "evidence_start": 11636,
+      "evidence_end": 11829,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "continue required filters",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate‑funded institutions must maintain CIPA filters to protect children from harmful content.",
+      "evidence_quote": "could create a ripple effect relative to online \nsafety, as the Children’s Internet Protection Act (CIPA) requires schools and libraries receiving E-\nRate funding to adopt certain internet safety",
+      "evidence_start": 11327,
+      "evidence_end": 11522,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate remains critical for 96% of public schools and 73% of libraries, ensuring reliable internet for all communities.",
+      "evidence_quote": "ies (over 12,000 out of more than 16,000 libraries) and 96% of public \nschools (96,000-plus schools, out of approximately 100,000) participate in and depend upon the E-\nRate program to guarantee",
+      "evidence_start": 5025,
+      "evidence_end": 5219,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "retain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Libraries and schools rely on E‑Rate to provide high‑quality research resources to students and community members.",
+      "evidence_quote": "gazines to research journals and ebooks. Without the robust connectivity \nsupported by E-Rate, these resources cannot reliably reach the students they are intended to serve. \nGenerations of students",
+      "evidence_start": 7978,
+      "evidence_end": 8176,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset or limit E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Terminating or limiting E‑Rate would deprive schools and libraries of essential broadband, reversing progress made in digital equity.",
+      "evidence_quote": "nd upon the E-\nRate program to guarantee internet access in their communities and bridge the digital divide.2 \n \nTerminating E-Rate or limiting eligibility to rural areas would threaten the basic",
+      "evidence_start": 5179,
+      "evidence_end": 5374,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for sustaining connectivity that supports educational outcomes and workforce development.",
+      "evidence_quote": "st needs that led to E-Rate’s innovation \ncontinue to necessitate that the program be maintained, not limited or terminated. EBSCO urges \nthe FCC to consider the overwhelming and consequential",
+      "evidence_start": 12098,
+      "evidence_end": 12290,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "E‑Rate funding supports essential community services beyond education, such as workforce training and entrepreneurship.",
+      "evidence_quote": "internet service at home, the ability to use \nthese resources at the public library, alongside other critical community services, proves crucial to \ntraining and retraining workers for an evolving",
+      "evidence_start": 8763,
+      "evidence_end": 8959,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079489",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079489",
+  "filer_raw": "EBSCO Information Services",
+  "date_submission": "2026-10-05T21:17:06.297Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bc610c45b8a56de37578d6802c02003cee8d96459017e7591c9f6bf191129833",
+  "params_key": "62171441d4916cf8a3302d11a487fb10d198cd7eb3830c736aeca7b40dd6c084",
+  "model": "gpt-oss:20b",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

@@ -1,0 +1,62 @@
+{
+  "summary": "Midwest City-Del City School District opposes any reduction or sunset of E‑Rate, arguing that reliable broadband is essential infrastructure and that cuts would force costly reallocation of limited budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ities. I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict",
+      "evidence_start": 3736,
+      "evidence_end": 3934,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Maintaining connectivity is essential for modern education and safety.",
+      "evidence_quote": "ly narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal",
+      "evidence_start": 3894,
+      "evidence_end": 4089,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating E‑Rate would directly compromise school infrastructure and student learning.",
+      "evidence_quote": "ge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict",
+      "evidence_start": 470,
+      "evidence_end": 667,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077961",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077961",
+  "filer_raw": "Mid-Del Public Schools",
+  "date_submission": "2026-09-23T21:29:09.403Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "112c6b8eb05520f79cb87f70e05189c3efe865d31b539b0e809b442afba21b1f",
+  "params_key": "1ccff6055dd256914f7d2e7ab746240e8853580a5ffaf9525be9d013c0f3a4e3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

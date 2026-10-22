@@ -1,0 +1,87 @@
+{
+  "summary": "The superintendent of Orange County Public Schools urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, narrowing, or reduction of support, and argues that broadband is essential infrastructure, not a screen‑time issue.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The letter states that narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program; \n●​\nReject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria that would",
+      "evidence_start": 3876,
+      "evidence_end": 4073,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The superintendent argues that eliminating E‑Rate would deprive schools of essential broadband funding, forcing cuts to critical services.",
+      "evidence_quote": "rn school system, just like electricity, transportation, and safe \nfacilities. I therefore respectfully urge the Commission to: \n \n \n \n\n\n \n●​\nReject any proposal to sunset or eliminate the E-Rate",
+      "evidence_start": 3721,
+      "evidence_end": 3916,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter notes that broadband is not synonymous with unrestricted screen time, but does not propose a specific policy change on that issue.",
+      "evidence_quote": "nstructional programs, student services, transportation, facilities, and other priorities.  \n \nPlease note that school connectivity is not synonymous with unrestricted student screen time. In fact,",
+      "evidence_start": 2167,
+      "evidence_end": 2364,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The superintendent urges the FCC to preserve connectivity infrastructure funding to maintain reliable educational access.",
+      "evidence_quote": "geography or other criteria that would leave students without adequate support; \n●​\nPreserve support for the connectivity and internal network infrastructure schools need to provide reliable",
+      "evidence_start": 4035,
+      "evidence_end": 4225,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "other",
+      "argument": "The superintendent calls for working with stakeholders to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "ructure schools need to provide reliable \neducational access; and \n●​\nWork with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role \nin public education.",
+      "evidence_start": 4185,
+      "evidence_end": 4380,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080023",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080023",
+  "filer_raw": "Orange County Public Schools (VA)",
+  "date_submission": "2026-10-08T14:14:28.377Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "83576a0bfc51ba35ed42b12c8b3a8ba098e1fdf0a5c1873d4bafa7ae516bc6ec",
+  "params_key": "7c51366f33c7e8882117c2b0715b10dcac3fcc4afc02a0652fe891414770e4f7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

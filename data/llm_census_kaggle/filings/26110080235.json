@@ -1,0 +1,61 @@
+{
+  "summary": "The letter from the Public Library Albuquerque and Bernalillo County urges the FCC to reject any proposal to terminate or limit the E‑Rate program, arguing that such cuts would harm library services, reduce public access, and undermine essential broadband support for schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Terminating or limiting E‑Rate would cut essential broadband support for schools and libraries, jeopardizing years of progress and leaving vulnerable communities behind.",
+      "evidence_quote": "urban areas from E-\nRate eligibility. We urge the FCC to reject any proposal that would terminate or limit the E-Rate \nProgram. \n \nE-Rate is critical for schools and libraries to maintain affordable,",
+      "evidence_start": 615,
+      "evidence_end": 814,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent reduction of library operating hours",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "If E‑Rate funding is cut, the library would have to limit open hours or cut services, directly impacting public access.",
+      "evidence_quote": "nding, the only place for the Library to get the funds for internet \nconnectivity and hardware upgrades is staff salary funding. This directly impacts library users, because \nit means branches have",
+      "evidence_start": 2326,
+      "evidence_end": 2523,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is fundamental to ensuring schools and libraries have affordable, reliable, and sustainable broadband service.",
+      "evidence_quote": "E-Rate funding has been fundamental in ensuring schools and libraries have affordable access to \nreliable and sustainable service. Continued support of the program is essential if we want to build",
+      "evidence_start": 2793,
+      "evidence_end": 2989,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080235",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080235",
+  "filer_raw": "Library Advisory Board, Albuquerque & Bernalillo County | Friends of the Public Library | Albuquerque Public Library Foundation",
+  "date_submission": "2026-10-09T14:50:23.148Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "63c7d56bfd0df79b6317b3d97a5dfd6a190cd29d5c2919f750cd36972cdcbb99",
+  "params_key": "02eb158b90b8c934b3c778a484e981713636f7b6f9da789c48cc908e5686df44",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

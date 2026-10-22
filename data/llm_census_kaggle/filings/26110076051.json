@@ -1,0 +1,88 @@
+{
+  "summary": "Coventry Public Schools urges the FCC to preserve core E‑Rate functions, broaden eligibility, keep CIPA practical, and avoid cuts that harm high‑need districts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "conditional_or_amend",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district contends that CIPA must remain feasible and privacy‑respectful to avoid burdening schools.",
+      "evidence_quote": "nance, and related network services that schools rely on every day. • Keep CIPA requirements practical, technically feasible, and respectful of student privacy. • Maintain a broad, workable",
+      "evidence_start": 3414,
+      "evidence_end": 3603,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district maintains that broad eligibility is essential for expanding services to remote sites and keeping infrastructure current.",
+      "evidence_quote": "nt devices. 5. RECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective",
+      "evidence_start": 3105,
+      "evidence_end": 3299,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating or reducing E‑Rate would leave schools unable to maintain up‑to‑date networking equipment.",
+      "evidence_quote": "IMPACT Losing E-Rate funding would leave us without the ability to keep our networking equipment up-to-date.  We would likely have to resort to keeping existing hardware for 8-10 years at a minimum,",
+      "evidence_start": 2789,
+      "evidence_end": 2987,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district warns that discount changes should not disproportionately harm high‑need or high‑cost communities.",
+      "evidence_quote": "nd student support. • Ensure any changes to discount methodology reflect true local cost and need, and do not disproportionately harm districts serving high-need or high-cost communities. 6. CLOSING",
+      "evidence_start": 3722,
+      "evidence_end": 3920,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "Ask FCC to avoid changes that reduce access, increase administrative burden, or limit local flexibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The district urges the FCC to maintain flexibility and avoid unnecessary administrative burdens.",
+      "evidence_quote": "implification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students. Respectfully",
+      "evidence_start": 4192,
+      "evidence_end": 4385,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "conditional_or_amend",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076051",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076051",
+  "filer_raw": "Jeffrey Beebe",
+  "date_submission": "2026-09-09T15:34:40.213Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "372990761c728aa0a9a4fd2d3513a2e1877014804e147407bce43c43e27dd28b",
+  "params_key": "b5a583d51c1bac0998152ba8e7540e8a3e1d2129b5aab0f35f17e2b2bfc3423e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

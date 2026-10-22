@@ -1,0 +1,88 @@
+{
+  "summary": "Evergreen Public Schools superintendent urges the FCC to preserve and strengthen E‑Rate, opposing sunset or cuts, and advocating eligibility based on need and continued support for internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "preserve eligibility based on student and community needs rather than geography alone",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Eligibility should reflect economic need and community challenges, not just geographic location.",
+      "evidence_quote": "eeds of students and communities, rather than\ngeography alone;\n• Maintain support for the connectivity and internal network infrastructure schools\nneed; and\n• Work with schools and other stakeholders",
+      "evidence_start": 3868,
+      "evidence_end": 4067,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that eliminating E‑Rate would shift essential connectivity costs to local budgets, undermining educational and safety functions.",
+      "evidence_quote": "Rate has\nworked.\nI respectfully urge the Commission to:\n• Reject any proposal to sunset or eliminate E-Rate;\n• Preserve eligibility based on the needs of students and communities, rather",
+      "evidence_start": 3722,
+      "evidence_end": 3908,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "maintain support for internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is essential for instruction, assessment, and safety, and should remain funded.",
+      "evidence_quote": "Work with schools and other stakeholders to strengthen and modernize E-Rate rather\nthan reduce its role in public education.\nOur students deserve access to the infrastructure they need to learn,",
+      "evidence_start": 4027,
+      "evidence_end": 4221,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address specific policy proposals beyond preserving and strengthening E‑Rate.",
+      "evidence_quote": "Evergreen Public Schools\nFederal Communications Commission\n45 L Street NE\nWashington, DC 20554\nRE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 — Notice of Proposed Rulemaking\nand Further Notice",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": true
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The district calls for modernization to keep pace with evolving educational technology needs.",
+      "evidence_quote": "Work with schools and other stakeholders to strengthen and modernize E-Rate rather\nthan reduce its role in public education.\nOur students deserve access to the infrastructure they need to learn,",
+      "evidence_start": 4027,
+      "evidence_end": 4221,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073655",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073655",
+  "filer_raw": "Evergreen Public Schools",
+  "date_submission": "2026-08-28T22:25:55.373Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "2b4fc2250f5ab2013fba94b4b2c2a9b2e8c5f4f64a4caed6d44e0ccb63e38b57",
+  "params_key": "b10a9116d1ef2ff07293c0f06d66f0e05caee290dc19b2b10482e5fd94be73ae",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

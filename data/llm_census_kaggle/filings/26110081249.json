@@ -1,0 +1,50 @@
+{
+  "summary": "Marion County school board members urge the FCC to preserve and strengthen the E‑Rate program, highlighting its critical role in providing broadband and technology for students and proposing an expansion of eligibility to include cybersecurity technologies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "expand eligibility to include cybersecurity technologies",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Schools need firewalls, threat detection, and identity protection to safeguard student and staff data.",
+      "evidence_quote": "expanding E-Rate eligibility to include cybersecurity \ntechnologies. As schools increasingly depend on digital resources and cloud-based systems, investments in \nfirewalls, threat detection, network",
+      "evidence_start": 2625,
+      "evidence_end": 2823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program is essential for equitable broadband access for all students.",
+      "evidence_quote": "well as serving as the president of the Florida School \nBoards Association, I am writing to urge the Federal Communications Commission to preserve and strengthen \nthe E-Rate Program, which plays a",
+      "evidence_start": 618,
+      "evidence_end": 814,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conditional_or_amend",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081249",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081249",
+  "filer_raw": "Dr. Allison B. Campbell, Marion County (FL) School Board",
+  "date_submission": "2026-10-13T21:15:08.752Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3ca2c8d34d36c2cf46d3d53002f9738e260bec119ee07050e0d11afab126fcb0",
+  "params_key": "fa9c3751bae961ca1e696e997e8b77a936455e575e9f76f5603d8ec4c91241cc",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

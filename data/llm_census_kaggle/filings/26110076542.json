@@ -1,0 +1,89 @@
+{
+  "summary": "The Queen Anne's County Library (QACL) urges the FCC to keep the E‑Rate program unchanged, opposing any new restrictions that would tie library funding to screen‑time limits or require monitoring of patrons. It argues that such controls are impractical, infringe on privacy, and could block legitimate educational resources.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "reject monitoring mandates",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "implementation_burden",
+      "argument": "Monitoring practices would compromise patron privacy and divert staff from customer service duties.",
+      "evidence_quote": "ble without compromising patron privacy.  Library personnel time is better and more appropriately spent providing customer services than acting as screen monitors.  Furthermore, overly restrictive",
+      "evidence_start": 783,
+      "evidence_end": 979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "reject network filtering mandates",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "implementation_burden",
+      "argument": "Overly restrictive network filters risk blocking legitimate educational and research sites.",
+      "evidence_quote": "nitors.  Furthermore, overly restrictive network filters or monitoring practices risk blocking legitimate educational and research sites, directly conflicting with QACL's core value of providing",
+      "evidence_start": 939,
+      "evidence_end": 1133,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "QACL believes the current E‑Rate program is essential for providing internet access to underserved households.",
+      "evidence_quote": "The Queen Anne's County Library (QACL) urges the FCC to maintain the current E-Rate program without any additional limitations or restrictions. QACL relies on this critical annual funding to provide",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "school_supervision_reporting",
+      "position": "oppose",
+      "requested_action": "reject monitoring/reporting requirements",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "implementation_burden",
+      "argument": "Requiring library personnel to monitor or report on content accessed by youth is not feasible and compromises privacy.",
+      "evidence_quote": "nnel to monitor and/or report on content accessed by youth or students is a practical or effective solution.  Implementing these types of controls is not feasible without compromising patron privacy.",
+      "evidence_start": 624,
+      "evidence_end": 823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject screen‑time limit conditions",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "implementation_burden",
+      "argument": "Conditioning E‑Rate funding on setting screen‑time limits is impractical and infringes on patron privacy.",
+      "evidence_quote": "best interests of children, we disagree that conditioning E-Rate funding for libraries on setting screen time limits for youth or requiring library personnel to monitor and/or report on content",
+      "evidence_start": 471,
+      "evidence_end": 664,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "oppose",
+    "cipa_network_filter": "oppose",
+    "erate_sunset": "support",
+    "school_supervision_reporting": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076542",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076542",
+  "filer_raw": "Queen Anne's County Library",
+  "date_submission": "2026-09-13T18:43:01.048Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8d589360edb565fdee04f99d204836a881695578493b31f53124af2ff4f041cf",
+  "params_key": "3e419053b6ae11074ea341322c266372629c9257a5ed9430dc92a024cc5b11a9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

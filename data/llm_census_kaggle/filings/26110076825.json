@@ -1,0 +1,89 @@
+{
+  "summary": "The Racine Christian School argues for preserving the current E‑Rate program, opposes proposals that would narrow its scope or impose additional administrative burdens, and urges the FCC to maintain local flexibility on screen‑use and content‑monitoring policies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "do not impose one‑size‑fits‑all screen‑use and content‑monitoring mandates",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The school urges the FCC to preserve local flexibility in internet safety and technology policies rather than impose federal standards.",
+      "evidence_quote": "tive mandates or administrative burdens, particularly around screen use and content-monitoring requirements proposed in this proceeding, as they will undermine the\nflexibility schools need to deliver",
+      "evidence_start": 2317,
+      "evidence_end": 2516,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "do not require new annual consultant disclosure form for all applicants",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The school states that a new Form 5654 would impose unnecessary filing requirements on schools that manage their own applications.",
+      "evidence_quote": "ger districts with dedicated procurement teams. Similarly, requiring a new annual consultant\ndisclosure form (Form 5654) from every applicant, even schools that do not use a consultant, adds a\nfiling",
+      "evidence_start": 1707,
+      "evidence_end": 1906,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not explicitly address consultant registration requirements.",
+      "evidence_quote": "Dear Ms. Marlene Dortch:\nWe are writing regarding the Federal Communications Commission's (FCC) Notice of Proposed\nRulemaking and Further Notice of Proposed Rulemaking on the E-Rate program, and we",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility for all schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The school contends that proposals to narrow the program’s scope would disproportionately harm less‑resourced communities.",
+      "evidence_quote": "l.\nWe are concerned by proposals in this proceeding that would narrow the program's scope, including\nreducing support for schools in less-resourced communities, eliminating funding for certain",
+      "evidence_start": 617,
+      "evidence_end": 809,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The school argues that eliminating or reducing E‑Rate funding would force cuts to essential technology and other critical educational programs.",
+      "evidence_quote": "Rulemaking on the E-Rate program, and we appreciate\nthe opportunity to comment ahead of the October 13, 2026 deadline, asking the FCC to preserve the\ncurrent E-Rate program.\nOur students have",
+      "evidence_start": 157,
+      "evidence_end": 348,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "consultant_form_5654": "oppose",
+    "consultant_registration": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076825",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076825",
+  "filer_raw": "Racine Christian School",
+  "date_submission": "2026-09-16T18:42:00.786Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "20502b5b263c2576572dfd08a07dfd4fb2529013ee463db1fe9016eff9b5d377",
+  "params_key": "3a51cfdd09a7b33cd1187b8d2d37e6219bbf1d797396e687260e681e61830ba2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

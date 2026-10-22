@@ -1,0 +1,87 @@
+{
+  "summary": "North Carolina School Boards Association urges the FCC to preserve and strengthen E‑Rate, reject sunset or cuts, oppose narrowing eligibility, and argues that screen‑time limits are a state/local responsibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "program; \n• Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography, income, or other criteria that would leave students without adequate",
+      "evidence_start": 4505,
+      "evidence_end": 4701,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The program should not be sunset or eliminated because it provides essential broadband support to schools.",
+      "evidence_quote": "internet and network costs, according to the most \nrecent NC Department of Public Instruction data. \nWe urge the Commission to preserve and strengthen the E-Rate program and to \nreject any proposal",
+      "evidence_start": 1720,
+      "evidence_end": 1917,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals that reduce support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate would shift costs to local communities with no taxing authority.",
+      "evidence_quote": "oday is evidence \nthat E-Rate works, not evidence that the need has passed. Networks must be \nmaintained, upgraded, secured, and scaled as demands grow and technology \nadvances. Reducing E-Rate would",
+      "evidence_start": 2799,
+      "evidence_end": 2998,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "E‑Rate’s success over three decades warrants continued investment.",
+      "evidence_quote": "n. \nE-Rate’s success over the past three decades is a reason to preserve and improve the program, not a reason to \nassume the work is ϐinished. North Carolina’s students deserve access to the tools",
+      "evidence_start": 4972,
+      "evidence_end": 5169,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "state/local responsibility for screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time limits should be handled by state and local boards, not the FCC.",
+      "evidence_quote": "e and Local Responsibility \nWe share the Commission’s interest in ensuring that technology supports student learning and well-being. The \nresponsibility to act on concerns such as screen time,",
+      "evidence_start": 3424,
+      "evidence_end": 3616,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081106",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081106",
+  "filer_raw": "North Carolina School Boards Association",
+  "date_submission": "2026-10-13T18:46:36.994Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "97a848b95db77ee70515a969ec92ea265465816e905025abe5173298fbfebfc8",
+  "params_key": "be2c02467e52fc7053202620c800eb278cbc679372a8e2773896f5fb5b717587",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

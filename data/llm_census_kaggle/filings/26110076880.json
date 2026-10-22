@@ -1,0 +1,89 @@
+{
+  "summary": "Bernard Zell, a school director, opposes any sunset or scaling back of E‑Rate, argues that Category Two infrastructure and ongoing service discounts are essential for modern classrooms, and contends that other federal programs such as BEAD cannot replace E‑Rate’s operational support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "ecf_rule_sunset",
+      "position": "oppose",
+      "requested_action": "reject replacement of E‑Rate by other federal programs",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Programs like BEAD cannot replace E‑Rate’s ongoing monthly telecommunications service discounts or internal networking support.",
+      "evidence_quote": "ared for a digital economy. \n  \n3. Broad Federal Grants (Like BEAD) Cannot Replace E-Rate \nWhile recent federal programs like BEAD are vital for building physical footprint infrastructure in unserved",
+      "evidence_start": 1567,
+      "evidence_end": 1766,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain full eligibility scopes",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting eligibility would undermine the school’s ability to provide equitable, secure, and modern learning environments.",
+      "evidence_quote": "titution operates on tightly constrained public budgets. E-Rate discounts are built directly into our \nlong-term fiscal planning. If E-Rate funding were sunset or restricted, Bernard Zell  would be",
+      "evidence_start": 632,
+      "evidence_end": 829,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting or scaling back E‑Rate would force the school to divert tens of thousands of dollars from core educational services.",
+      "evidence_quote": "titution operates on tightly constrained public budgets. E-Rate discounts are built directly into our \nlong-term fiscal planning. If E-Rate funding were sunset or restricted, Bernard Zell  would be",
+      "evidence_start": 632,
+      "evidence_end": 829,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comments do not address other policy issues beyond E‑Rate funding and scope.",
+      "evidence_quote": "Before the FEDERAL COMMUNICATIONS COMMISSION​\nWashington, D.C. 20554 \n  \nIn the Matter of: Modernizing and Evaluating the E-Rate Program’s Core Purpose​\nWC Docket No. 26-133 (FCC 26-41) \n  \nCOMMENTS",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "retain Category Two funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Category Two internal connections are as critical as plumbing and electricity for a modern school building.",
+      "evidence_quote": "The NPRM’s inquiry into whether to strip funding for advanced internal connections (Category Two) or \noff-campus connectivity overlooks how modern education functions. Digital literacy is no longer",
+      "evidence_start": 1100,
+      "evidence_end": 1297,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "ecf_rule_sunset": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076880",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076880",
+  "filer_raw": "Andrew Grabowski",
+  "date_submission": "2026-09-17T16:57:12.223Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f9e50d56acbd78031eb7ba66e2245d898eba6088f49fd876b3667b09737c170c",
+  "params_key": "ce018d8c2fd5b16a48b0f9802a3f9aafe657469d95ed69336fef950a996feb6a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

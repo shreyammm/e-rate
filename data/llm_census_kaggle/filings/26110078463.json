@@ -1,0 +1,50 @@
+{
+  "summary": "The Santa Cruz Valley USD No. 35 argues that E‑Rate should maintain its current eligibility and funding levels while modernizing to meet contemporary educational and cybersecurity needs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "preserve current eligibility and funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district opposes any reduction in E‑Rate eligibility or funding because it would disproportionately harm rural, Tribal, and economically disadvantaged schools.",
+      "evidence_quote": "age the Commission to carefully consider the impact that \nany reduction in eligibility, eligible services, or available funding could have on \nschools and libraries, particularly those serving rural,",
+      "evidence_start": 1868,
+      "evidence_end": 2067,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "modernize the program to address cybersecurity and educational needs",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "The district supports modernizing E‑Rate to ensure reliable broadband, secure networks, and modern internal connections are fundamental to education.",
+      "evidence_quote": "ssful while \ncontinuing to modernize the program to meet today's educational and cybersecurity \nneeds. Reliable broadband, secure networks, and modern internal connections are \nno longer",
+      "evidence_start": 1564,
+      "evidence_end": 1750,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078463",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078463",
+  "filer_raw": "Santa Cruz Valley Unified School District No. 35",
+  "date_submission": "2026-09-27T18:47:33.364Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "45c7c80a74e89b6d9e761d10a389e531e1180b5d18087303250cb61b95f52c5f",
+  "params_key": "d95abe52d9614aca5f1b1ebccc708ee533db027f3ddd9683ed7b538d58df887c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

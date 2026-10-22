@@ -1,0 +1,88 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, and to modernize the program to maintain reliable broadband for all schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "s that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the",
+      "evidence_start": 4662,
+      "evidence_end": 4855,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The program must be preserved to ensure all students have reliable broadband access.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily",
+      "evidence_start": 468,
+      "evidence_end": 667,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Internal network infrastructure is essential for reliable educational access.",
+      "evidence_quote": "equate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to",
+      "evidence_start": 4815,
+      "evidence_end": 5005,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernizing the program will keep pace with evolving instructional demands and technology.",
+      "evidence_quote": "k with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and",
+      "evidence_start": 4965,
+      "evidence_end": 5161,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has enabled schools and libraries to build connectivity essential for student learning.",
+      "evidence_quote": "and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college,",
+      "evidence_start": 5122,
+      "evidence_end": 5317,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079350",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079350",
+  "filer_raw": "Kings Park Central School District",
+  "date_submission": "2026-10-05T13:01:49.396Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6772113d0af7ece3687285c49e6807650fe5116ff2de460eca57fc435d10757e",
+  "params_key": "41ee1da4d3063957411cc8daebe7923fffc228911cf2610e7c7f55ea6509bbb1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

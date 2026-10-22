@@ -1,0 +1,89 @@
+{
+  "summary": "MABE urges the FCC to keep E‑Rate intact, preserve broad eligibility, and limit new oversight to targeted, locally‑driven safeguards while simplifying administrative burdens.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "conditional_or_amend",
+      "requested_action": "simplify application, review, and reimbursement processes",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "MABE recommends relying on existing documentation to reduce administrative load and improve compliance.",
+      "evidence_quote": "d budget. Where documentation is already collected through \nexisting E-Rate processes or through state reporting, the Commission should rely on it \nrather than ask for the same information again.",
+      "evidence_start": 3882,
+      "evidence_end": 4077,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter references CIPA but does not propose changes to its scope.",
+      "evidence_quote": "ved through local decision-making. \nMABE shares the Commission’s interest in ensuring that technology supports student \nlearning and well-being. Concerns about screen time, digital content, and",
+      "evidence_start": 2170,
+      "evidence_end": 2363,
+      "uncertain": true
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "conditional_or_amend",
+      "requested_action": "avoid blanket requirements that apply equally to every applicant",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "MABE supports targeted oversight and cautions against blanket rules that would burden all applicants.",
+      "evidence_quote": "the Commission \nto maintain broad access to E-Rate while focusing oversight where risk is greatest, and to \navoid blanket requirements that apply equally to every applicant. Rules should be clear",
+      "evidence_start": 3577,
+      "evidence_end": 3772,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility, including urban areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "MABE argues that excluding urban systems would risk students in high‑need areas and that urban concentration does not equate to high resources.",
+      "evidence_quote": "he \nprogram, or narrowing eligibility to exclude urban areas, would shift significant new costs \nonto local budgets and put at risk the network upgrades that districts and libraries have \nbuilt over",
+      "evidence_start": 1697,
+      "evidence_end": 1895,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to eliminate or limit E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "MABE opposes eliminating or narrowing E‑Rate because it would shift significant costs to local budgets and jeopardize network upgrades.",
+      "evidence_quote": "stems, and the daily operations of every school system. For many \ncommunities, E-Rate is what makes this connectivity financially possible. Eliminating the \nprogram, or narrowing eligibility to",
+      "evidence_start": 1544,
+      "evidence_end": 1737,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conditional_or_amend",
+    "cipa_byod": "discussion_no_position",
+    "consultant_definition": "conditional_or_amend",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081135",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081135",
+  "filer_raw": "Maryland Association of Boards of Education",
+  "date_submission": "2026-10-13T19:08:12.025Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a16338df7078966811f58ffa305cdef3b43b8d9180dc3a65f2161ec62dda1d13",
+  "params_key": "5e1afab6d387efa04d7a94a58e8c929d5e92c96255a6d33dbd8aa4abe8c85b7b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

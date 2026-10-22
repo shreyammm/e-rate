@@ -1,0 +1,61 @@
+{
+  "summary": "Cincinnati City School District urges the FCC to preserve and potentially expand E‑Rate funding, arguing that the program is essential for maintaining network, internet, and Wi‑Fi services for its high‑poverty student population and that need should be measured by more than geography.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is critical for providing network, internet, and Wi‑Fi services to a high‑poverty student body.",
+      "evidence_quote": "rely on E-Rate for three critical areas: network/data transmission services, internet access, \nand Wi-Fi services. E-Rate provides approximately $3.7 million in annual support for these \nservices in",
+      "evidence_start": 765,
+      "evidence_end": 963,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue E‑Rate support for network/data transmission, internet access, and Wi‑Fi",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding enables the district to afford essential connectivity services for students.",
+      "evidence_quote": "in annual support for these \nservices in our district. These services are basic infrastructure required to operate our schools and \ngive students access to the tools they need to be successful.",
+      "evidence_start": 923,
+      "evidence_end": 1116,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "alternative_proposal",
+      "requested_action": "use additional metrics beyond geography to assess need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Need should be measured by factors such as poverty rates rather than solely by geographic location.",
+      "evidence_quote": "trict budget that has \nalready undergone significant reductions. \nI encourage the Commission to use more than geography as a measure of a school's need. \nProviders and services may be more readily",
+      "evidence_start": 1856,
+      "evidence_end": 2052,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072945",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072945",
+  "filer_raw": "Cincinnati City School District",
+  "date_submission": "2026-08-24T21:10:53.892Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "78d7c1bbcd940255b4e7cce3a0aeafe9925a910ae15ee85df13b0619027557ef",
+  "params_key": "46136e446399a23bfd6019d18ac41ea87f325501aa9ba7e4a7b0d5363079b281",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

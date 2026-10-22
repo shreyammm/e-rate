@@ -1,0 +1,37 @@
+{
+  "summary": "School district requests that E‑Rate funds not be reduced to maintain technology provision.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district relies on E‑Rate funds to provide modern technology for students and staff.",
+      "evidence_quote": "Please do not reduce e-rate funds. Our school district relies on the money to provide modern technology for our students and staff.",
+      "evidence_start": 0,
+      "evidence_end": 131,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075799",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075799",
+  "filer_raw": "MICHAEL PLOURDE",
+  "date_submission": "2026-09-08T14:08:36.192Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e721aa2f01a0656483d7d5d2854916df99e8190ca861da6000e072e47eaf5555",
+  "params_key": "64034225910dbf63db79571247f293c41036b90cf313be8b6a4eb279d0b863b3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

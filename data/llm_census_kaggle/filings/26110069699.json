@@ -1,0 +1,85 @@
+{
+  "summary": "Belpre City School District urges the FCC to reject any proposal that would terminate or limit the E‑Rate program, arguing that such cuts would devastate school operations, increase local taxpayer burden, and leave vulnerable communities without affordable, reliable internet.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limits",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or limiting E‑Rate would cut essential funding, forcing schools to divert local funds and jeopardize educational services.",
+      "evidence_quote": "Notice of Proposed Rulemaking regarding the E-Rate program, including whether the FCC should eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility.  We urge the FCC to reject",
+      "evidence_start": 789,
+      "evidence_end": 984,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is critical for maintaining affordable, reliable internet access for students and libraries, especially in underserved communities.",
+      "evidence_quote": "eligibility.  We urge the FCC to reject any proposal that would terminate or limit the E-Rate Program. E-Rate is critical for schools and libraries to maintain affordable, reliable access to the",
+      "evidence_start": 945,
+      "evidence_end": 1139,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts to Category 1 and 2 funding",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Loss of Category 1 and 2 E‑Rate funds would force the district to cover connectivity and equipment costs from its general fund, reducing resources for other programs.",
+      "evidence_quote": "Rate funding fills gaps in those funding deficiencies. We utilize the Category 1 funding for our district wide Internet connectivity and Category 2 funding for installation of new network equipment",
+      "evidence_start": 1716,
+      "evidence_end": 1913,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate to support state testing and reporting",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E‑Rate supports the district’s ability to meet state testing and reporting requirements without additional costs.",
+      "evidence_quote": "nnual state testing for students online. In this case the external connectivity and internal connectivity supported by the E-Rate program helps us to accomplish this each and every year with no",
+      "evidence_start": 2348,
+      "evidence_end": 2541,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid shifting burden to local taxpayers",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "State funding inequality has already shifted the burden to local taxpayers; terminating E‑Rate would exacerbate this shift.",
+      "evidence_quote": "rogram would be devastating not only for our students but also for our  day-to-day  operations and our budget. State funding inequality over the last 30 years in Ohio has shifted the burden from the",
+      "evidence_start": 2657,
+      "evidence_end": 2855,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069699",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069699",
+  "filer_raw": "Belpre City School District",
+  "date_submission": "2026-08-07T18:02:35.089Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ea624339bc2f3544f9745d92af4021ae33ca230c3f6c10fbea3ef72c7c1ee3db",
+  "params_key": "2e676f4051826485740c94cff6d2cfccdd6338cabcc065363111c26839df1631",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

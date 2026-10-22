@@ -1,0 +1,89 @@
+{
+  "summary": "The letter from Penn Manor School District’s CIO opposes any FCC action that would sunset or substantially narrow the E‑Rate program, rejects conditioning funding on screen‑time or other instructional policies, and urges Congress to preserve and strengthen the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility and funding levels for broadband infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate must continue to fund broadband connectivity, equipment, and security services essential for teaching, learning, and student safety.",
+      "evidence_quote": "ot fund student devices like laptops and tablets. Instead, E-Rate supports the \nunderlying network infrastructure: broadband connectivity, equipment, and eligible network \nsecurity services. Our",
+      "evidence_start": 2950,
+      "evidence_end": 3144,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent sunset or substantial narrowing of E‑Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should not unilaterally sunset or substantially narrow the congressionally authorized E‑Rate program.",
+      "evidence_quote": "am that continues to benefit millions of students. The Commission is asking whether it has \nthe legal authority to limit or \"sunset\" E-Rate, whether the program's discount structure and \nthe ability",
+      "evidence_start": 461,
+      "evidence_end": 659,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen E‑Rate to ensure ongoing investment in school network infrastructure",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "School networks require continual modernization to remain reliable, secure, and capable of supporting new technologies.",
+      "evidence_quote": "ultimately, to local taxpayers. \nE-Rate has never been a one-time construction project. Like highways, electric grids, water \nsystems, and other critical infrastructure, school networks require",
+      "evidence_start": 4365,
+      "evidence_end": 4558,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject conditioning E‑Rate on screen‑time limits or opt‑out policies",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding should not be tied to school policies on screen time or parental opt‑outs.",
+      "evidence_quote": "s, the NPRM also attempts to usurp local community authority by \nasking whether the FCC should condition E-Rate funding on schools adopting specific \nscreen-time limits, opt-out policies, or",
+      "evidence_start": 2025,
+      "evidence_end": 2215,
+      "uncertain": false
+    },
+    {
+      "provision_id": "targeted_competition",
+      "position": "oppose",
+      "requested_action": "avoid narrowing support to only the most rural applicants or those served by a single provider",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Targeted narrowing would reopen the digital divide and disproportionately harm underserved schools.",
+      "evidence_quote": "and student \nsafety. \nReductions to the program would fall hardest on the districts least able to absorb them. The \nNPRM floats narrowing support to only the most rural applicants or those served by",
+      "evidence_start": 3576,
+      "evidence_end": 3774,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose",
+    "targeted_competition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110065857",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110065857",
+  "filer_raw": "Penn Manor School District",
+  "date_submission": "2026-07-29T13:22:15.600Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "770e8b332efbd516aa3ec1db15abb9cecfdefb1775231fa3bafaed7d4b9f7b8f",
+  "params_key": "fb7f0234d47cfe4245445a7c46b0819a198fb4e93c5a7bdb0df4e6f2bcb66832",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

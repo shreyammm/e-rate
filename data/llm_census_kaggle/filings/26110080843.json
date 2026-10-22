@@ -1,0 +1,101 @@
+{
+  "summary": "EdAdvance, a Connecticut Regional Educational Service Center, opposes several proposed E‑Rate changes that would cut funding for Head Start/pre‑K programs, reverse the educational‑purpose presumption, impose a rural/poverty screen, and require all contracts to be signed after the 28‑day waiting period. EdAdvance urges the FCC to adopt an exception for State Master contracts and preserve eligibility of existing competitively procured multi‑year contracts, arguing that doing so prevents unnecessary cost increases and protects responsible districts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "do not reverse the educational‑purpose presumption for activities on school property",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Reversing the presumption would impose unnecessary administrative burden without benefiting students.",
+      "evidence_quote": "not advance the statute; it would simply force districts to document \nand defend the educational character of ordinary building-wide activity, imposing a new administrative \nburden with no",
+      "evidence_start": 4056,
+      "evidence_end": 4244,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "do not require all contracts to be signed after the 28‑day waiting period",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The rule would unduly affect State Master contracts and multi‑year agreements that are already competitively procured.",
+      "evidence_quote": "pport from everyone else. \nRequiring all contracts to be signed after the 28-day waiting period. \nThe Notice proposes to require that every contract be signed after the Allowable Contract Date of a",
+      "evidence_start": 5435,
+      "evidence_end": 5632,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not cost‑allocate and remove Head Start and pre‑K from E‑Rate requests",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Head Start and pre‑K programs need internet to operate as schools, and excluding them would deny legitimate public programs access to E‑Rate connectivity.",
+      "evidence_quote": "l districts, citing concerns about young children’s screen use and a past fraud case. We oppose a \ncost-allocation mandate. E-Rate supports a school’s operational connectivity, the network that runs",
+      "evidence_start": 1390,
+      "evidence_end": 1588,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "adopt exception for State Master contracts and preserve eligibility of existing multi‑year contracts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "Preserving existing competitively procured multi‑year contracts prevents cost increases and protects responsible districts.",
+      "evidence_quote": "stranding districts that bid correctly. \nBecause the Notice expressly asks whether an exception is needed for applicants that select a State \nMaster contract, we urge the Commission to adopt one,",
+      "evidence_start": 6832,
+      "evidence_end": 7027,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not limit support to rural or single‑provider areas or phase out funding for low‑poverty districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "A geographic screen would strip support from high‑need urban and suburban districts that rely on E‑Rate.",
+      "evidence_quote": "a rural designation does not track need. Connecticut’s highest-need communities are its \n“distressed” municipalities, including Torrington in our own region and cities such as Meriden, \nWaterbury,",
+      "evidence_start": 4650,
+      "evidence_end": 4846,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address other policy issues beyond the four proposals highlighted.",
+      "evidence_quote": "Brendan Carr, Chairman \nAnna Gomez, Commissioner \nOlivia Trusty, Commissioner \nRE: Docket Numbers 26-133, 13-184, 21-93, and 21-455 \nOctober 13, 2026 \nTo the Honorable Chairman and Commissioners, \nMy",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "consultant_form_5654": "oppose",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080843",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080843",
+  "filer_raw": "EdAdvance",
+  "date_submission": "2026-10-13T11:42:32.209Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "063a125fa45590ac2d99ef7728d7d417346508001e71191158e17fbd8d95128c",
+  "params_key": "54708d157631b19c857d68e9a533d33b4cf191d685656bc5f1a6692e256e7b2a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

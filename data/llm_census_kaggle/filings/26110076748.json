@@ -1,0 +1,49 @@
+{
+  "summary": "The Vigo County Public Library opposes any proposal to terminate or limit the E‑Rate program, arguing that E‑Rate funding is essential for maintaining affordable, reliable internet access for library patrons and for supporting future service improvements.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for libraries to provide affordable, reliable internet access to patrons.",
+      "evidence_quote": "Proposed Rulemaking regarding the E-Rate program, including whether the\nFCC should eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility.\nI would strongly urge the FCC to reject",
+      "evidence_start": 931,
+      "evidence_end": 1129,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate dollars are fundamental to the library’s mission of providing reliable services to the community.",
+      "evidence_quote": "rdable, reliable access to the Internet. Cutting E-Rate also threatens\nto leave vulnerable communities behind that don't have dedicated resources to fill the gap. VCPL has used E-\nRate funding to",
+      "evidence_start": 1241,
+      "evidence_end": 1436,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076748",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076748",
+  "filer_raw": "Jordan Orwig",
+  "date_submission": "2026-09-15T22:37:05.360Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "ce288878341b3b5fd22157f0930da9aadab3e4d7552502def142a6fd460a4b6b",
+  "params_key": "6a48143b58e49459a27db3dee2b1ff4f5b655cd73a5376ec5984fa7a80e6da98",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

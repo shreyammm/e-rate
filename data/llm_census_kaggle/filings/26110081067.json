@@ -1,0 +1,88 @@
+{
+  "summary": "University Preparatory Science and Math argues that E‑Rate is essential for low‑income students, that cuts would harm equity and instruction, and that consultant support is critical for compliance and maximizing funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "maintain consultant role",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Consultants provide specialized expertise that small IT teams cannot maintain, preventing costly compliance errors.",
+      "evidence_quote": "competitive bidding misstep, or invoice discrepancy can result in funding denials or audit findings worth hundreds of thousands of dollars. A consultant provides the specialized expertise our small",
+      "evidence_start": 2504,
+      "evidence_end": 2701,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_records",
+      "position": "support",
+      "requested_action": "retain consultant support",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Consultants free IT staff to focus on students rather than federal paperwork, improving educational support.",
+      "evidence_quote": "m 471, PIA responses, and invoicing is a specialized, time-consuming discipline. Without a consultant, we would need to redirect staff time from supporting teachers and students to managing federal",
+      "evidence_start": 3120,
+      "evidence_end": 3317,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "support",
+      "requested_action": "maximize eligible funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Consultants help schools identify all eligible services to maximize discounts within FCC guidelines.",
+      "evidence_quote": "tify all eligible services and structure technology procurements to maximize discounts while remaining fully within FCC guidelines. Without this expertise, schools routinely leave significant funding",
+      "evidence_start": 2810,
+      "evidence_end": 3009,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent budget cuts that affect students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would directly harm student outcomes in underserved communities.",
+      "evidence_quote": "tly affecting students and instructional staff\nWiden the digital divide between urban and suburban school systems at precisely the moment when connectivity is most critical\nUndermine educational",
+      "evidence_start": 4054,
+      "evidence_end": 4248,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid cuts to core funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential infrastructure for low‑income students, and reducing it would widen the digital divide.",
+      "evidence_quote": "(16057615) respectfully urges the FCC to preserve E-Rate's core funding and support for schools and libraries, and to avoid changes that would reduce access or increase burden for the students and",
+      "evidence_start": 4517,
+      "evidence_end": 4713,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "support",
+    "consultant_records": "support",
+    "discount_matrix": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081067",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081067",
+  "filer_raw": "University Preparatory Science and Math  (16057615)",
+  "date_submission": "2026-10-13T17:51:23.274Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b54f79c5ae12f08331275e0e5c58508e8e6b691ec9465928c81f0983f703c1b0",
+  "params_key": "f4905f0d97bd67e52bf7e2e49477eb295071cda1c97ba72e12a569df628992ef",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

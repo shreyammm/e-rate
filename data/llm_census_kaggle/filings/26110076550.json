@@ -1,0 +1,49 @@
+{
+  "summary": "A rural high‑school math teacher urges the FCC to keep the E‑Rate program intact, arguing that broadband is essential for teaching and that cuts would harm students and teachers.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure that enables rural teachers to deliver modern mathematics instruction.",
+      "evidence_quote": "am writing to strongly urge the FCC to protect and maintain the E-Rate program. Reliable broadband access is no longer a luxury or an enrichment opportunity in education. It is an essential",
+      "evidence_start": 159,
+      "evidence_end": 348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to reduce or sunset E‑Rate",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Cutting E‑Rate would directly limit teachers’ ability to use digital tools and diminish students’ learning opportunities.",
+      "evidence_quote": "rected toward maintaining basic internet access.\nReducing or eliminating E-Rate funding would therefore have consequences far beyond the technology department. It would directly affect what teachers",
+      "evidence_start": 1398,
+      "evidence_end": 1596,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076550",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076550",
+  "filer_raw": "Kim Phipps",
+  "date_submission": "2026-09-13T23:29:58.109Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5550ec75403ef53eea218cfe4c42058aaca50ee152a889d6e36334cd43fcafcf",
+  "params_key": "4994a6eba09f26a4bb5dd99032314ab4edb1eaeae0f2da4f1c4f18a7244cedaf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

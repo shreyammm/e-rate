@@ -1,0 +1,87 @@
+{
+  "summary": "Show Low Unified School District 10 superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, citing essential broadband for instruction and the financial impact of cuts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access to broadband.",
+      "evidence_quote": "any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would",
+      "evidence_start": 4658,
+      "evidence_end": 4856,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is part of the basic infrastructure of a modern school system, comparable to electricity and transportation.",
+      "evidence_quote": "n geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable",
+      "evidence_start": 4816,
+      "evidence_end": 5004,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and its elimination would severely disrupt school operations.",
+      "evidence_quote": "chools. I am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce,",
+      "evidence_start": 463,
+      "evidence_end": 660,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools and libraries to build and maintain connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "ructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate",
+      "evidence_start": 4964,
+      "evidence_end": 5160,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate funding to avoid $500,000 annual cost impact",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate support would directly cost the district approximately $500,000 per year, forcing difficult budget choices.",
+      "evidence_quote": "eliminating E-Rate support would have a direct and tangible impact. Our districts impact if we were to have this funding cut would amount to approximately $500,000.00 or half a million dollars.",
+      "evidence_start": 2777,
+      "evidence_end": 2970,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079495",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079495",
+  "filer_raw": "Dr. Joseph Farnsworth Superintendent of the Show Low Unified School District",
+  "date_submission": "2026-10-05T21:42:08.792Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3626a9d6c5270de03e174f7d8409851971dab261347fde3d46aed04a5de32b44",
+  "params_key": "11b943491d20138403b131d49ee30530f3616d6f6789dcfae43fc475dc5ff33e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

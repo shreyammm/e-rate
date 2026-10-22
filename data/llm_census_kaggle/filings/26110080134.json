@@ -1,0 +1,88 @@
+{
+  "summary": "The commenter urges the FCC to strengthen, not reduce, the E‑Rate program, arguing that broadband is essential for instruction, safety, and equity, and that screen‑time restrictions would harm learning outcomes.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain or increase E‑Rate support",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Alabama’s academic recovery after increased technology access demonstrates that more broadband improves student achievement.",
+      "evidence_quote": "ma first nationally in math recovery and third in reading recovery. While this does not prove that increased technology access caused those gains, it provides compelling evidence against assuming",
+      "evidence_start": 2773,
+      "evidence_end": 2968,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset or reduce E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding should not be reduced because it is essential for equitable broadband access and school safety.",
+      "evidence_quote": "rning resources. Maintaining affordable, reliable connectivity is essential to preparing students for success in school, college, and the workforce.\n\nNow is not the time to reduce E-Rate funding or",
+      "evidence_start": 455,
+      "evidence_end": 652,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The commenter does not address specific policy proposals beyond opposing reductions and screen‑time limits.",
+      "evidence_quote": "As a former Alabama Technology Director, Principal, Teacher, and E-rate Coordinator for Alabama, I am very familiar with the E-Rate program.  I urge the FCC to strengthen, not reduce, the E-Rate",
+      "evidence_start": 0,
+      "evidence_end": 194,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue E‑Rate focus on connectivity for safety and security",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Reliable connectivity is critical for school safety systems such as security cameras, emergency communications, and student information systems.",
+      "evidence_quote": "ls to cloud-hosted services that support security cameras, alarm and emergency systems, law enforcement communications, phone systems, HVAC controls, electronic door access, and student information",
+      "evidence_start": 3241,
+      "evidence_end": 3438,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose screen‑time limits on E‑Rate eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions would limit access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "of cloud-based instructional resources, courses, applications, and essential services. Reducing funding to influence screen time could restrict access to valuable educational resources and harm",
+      "evidence_start": 1852,
+      "evidence_end": 2045,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080134",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080134",
+  "filer_raw": "Devlynne Barnes",
+  "date_submission": "2026-10-08T20:10:51.278Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "31b47e32e8c73159e6a4ab353f9a17b3acf1dc3447b27cbbdbf274590e972d55",
+  "params_key": "8027c19cdc4a78cd7f15a07966ac21f29c6d192869e8721d4069f736c9f78580",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

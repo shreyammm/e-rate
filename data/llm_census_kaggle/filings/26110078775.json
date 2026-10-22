@@ -1,0 +1,63 @@
+{
+  "summary": "Head of a high‑school school district opposes proposed E‑Rate cuts, arguing that reduced funding would harm student safety, instructional technology, and workforce readiness.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Ensure E‑Rate supports workforce‑ready education",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E‑Rate funding is critical to preparing students for a competitive future workforce.",
+      "evidence_quote": "st connectivity.\nOur nation must educate the future work force to remain competitive as a nation. Cutting e-rate\nwill seriously damage that goal. Passing these costs on to already over-burdened",
+      "evidence_start": 769,
+      "evidence_end": 962,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain eligibility for high‑speed connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reliable, fast connectivity is essential for security cameras, emergency alerts, and digital curriculum delivery.",
+      "evidence_quote": "our fiber optic to 2K data to manage the many\noverlapping and required systems to ensure the safety and learning of our students.\nOur connectivity ensures we have security cameras, connection to",
+      "evidence_start": 299,
+      "evidence_end": 493,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve current E‑Rate funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate will force schools to pass costs onto already over‑burdened budgets, reducing internet access and other essential programs.",
+      "evidence_quote": "iting with deep concern for the proposed regulations that will cut or eliminate our access to\ne-rate funding. We have recently had to increase our fiber optic to 2K data to manage the",
+      "evidence_start": 156,
+      "evidence_end": 339,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078775",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078775",
+  "filer_raw": "Margaret \"Meg\" Brudney",
+  "date_submission": "2026-09-29T20:35:55.787Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "1",
+  "source_sha256": "b4a03a578020cdedecf3d5b89354d13987e52fd7201b54415c3a3310b1e725a5",
+  "params_key": "9c983cd85547b1c8d9c1e3d796854ce2279c94f4c3502fd7cb6a0fba3cdc747b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,88 @@
+{
+  "summary": "Bethel Public Schools superintendent urges the FCC to preserve and strengthen the E‑Rate program, opposing sunset, cuts, and narrowing of eligibility, and calling for continued support for connectivity and internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse communities.",
+      "evidence_quote": "nset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based\nsolely on geography or other criteria that would leave students",
+      "evidence_start": 4942,
+      "evidence_end": 5140,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would restrict support based solely on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Geographic restrictions would disadvantage students in areas where broadband is technically available but still insufficient.",
+      "evidence_quote": "other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to\nprovide reliable educational access;",
+      "evidence_start": 5100,
+      "evidence_end": 5296,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and its elimination would directly harm schools’ operations.",
+      "evidence_quote": "deral Communications Commission (FCC) to preserve and strengthen\nthe E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce,\nor unnecessarily restrict E-Rate",
+      "evidence_start": 930,
+      "evidence_end": 1125,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Internal network upgrades are recurring costs essential for reliable educational access.",
+      "evidence_quote": "to\nprovide reliable educational access; and\n\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than\nreduce its role in public education.\nE-Rate has enabled",
+      "evidence_start": 5257,
+      "evidence_end": 5448,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "work with schools and stakeholders to strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "to\nprovide reliable educational access; and\n\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than\nreduce its role in public education.\nE-Rate has enabled",
+      "evidence_start": 5257,
+      "evidence_end": 5448,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079143",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079143",
+  "filer_raw": "Albert Sackey",
+  "date_submission": "2026-10-02T17:58:07.844Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "5b42f568367025bd2edca03f56a54dcd2ee42c25e6000429b530cc6a2bd949e7",
+  "params_key": "40b19877c8e112bce9e61d210c421830dfd6f9a0a7d45a690df4374c70cfa9a8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

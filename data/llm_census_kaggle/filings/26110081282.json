@@ -1,0 +1,63 @@
+{
+  "summary": "A parent of six children in Robinson Independent School District urges the FCC to maintain E‑Rate support for internet access, telecommunications services, and network equipment, opposes any changes that would shift connectivity costs onto district budgets, and requests that decisions about screen‑time and student devices remain with the school board and state.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "prevent shifting connectivity costs onto district budgets",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The parent contends that without E‑Rate, districts would have to use their own funds for internet access, which would divert resources from teachers and staff.",
+      "evidence_quote": "District would have to pay for Internet access, telecommunications and network equipment from the same funds that pay for teachers, staff and other educational resources. Because E-Rate covers part",
+      "evidence_start": 764,
+      "evidence_end": 961,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate support for internet access, telecommunications services and network equipment",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The parent argues that E‑Rate funding is essential for maintaining broadband connectivity and a better learning environment for all students.",
+      "evidence_quote": "still enrolled. I am writing to ask the Commission to keep the E-Rate program strong and to continue supporting the Internet access, telecommunications services and network equipment that our",
+      "evidence_start": 157,
+      "evidence_end": 348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "leave screen‑time and student device decisions to school board and state",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "The parent requests that the FCC leave decisions about screen use and student devices to the school board and state, trusting local governance.",
+      "evidence_quote": "t’s time and money go to students rather than paperwork.\nOn screen use and student devices, I trust my school board and our state to set rules for our children, and I ask the Commission to leave",
+      "evidence_start": 1393,
+      "evidence_end": 1587,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "support",
+    "screen_time_condition": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081282",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081282",
+  "filer_raw": "Ashley Brown",
+  "date_submission": "2026-10-13T21:57:46.673Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "46897a4b375b2accbc9fd7fd4667531ed79d8b8258faaf3d7043e60ab8b92564",
+  "params_key": "2f86d2657056fa2680ab82997cc611ac8252cb9d188dbd9cd514d696ca7c5031",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

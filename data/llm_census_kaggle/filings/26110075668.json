@@ -1,0 +1,74 @@
+{
+  "summary": "A New Jersey parent and medical educator urges the FCC to preserve and strengthen the E‑Rate program, arguing that cutting or eliminating it would create inequitable outcomes, that safeguards and oversight can be added without undermining the program, and that protecting children online should remain a priority.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "protect children online",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate funds must be used responsibly to protect children from online risks.",
+      "evidence_quote": "I appreciate the FCC’s responsibility to evaluate whether federal programs remain effective, \nfiscally responsible, and appropriately designed. I also support thoughtful efforts to protect \nchildren",
+      "evidence_start": 1377,
+      "evidence_end": 1575,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain robust E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Preserving E‑Rate ensures equitable broadband access for all schools and libraries.",
+      "evidence_quote": "Re: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 \nDear Ms. Dortch: \nI am writing as a New Jersey resident, parent, physician, and medical educator to urge the \nFederal Communications Commission",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "implement safeguards, oversight, and modernization while preserving core mission",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate can be modernized with oversight without losing its effectiveness.",
+      "evidence_quote": "rlying program that provides schools and libraries with affordable \nconnectivity. Safeguards, oversight, and modernization can occur while preserving E-Rate’s \nfundamental mission. \nEliminating or",
+      "evidence_start": 1689,
+      "evidence_end": 1885,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose substantial reduction or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would disproportionately harm rural and low‑income communities.",
+      "evidence_quote": "’s \nfundamental mission. \nEliminating or substantially reducing E-Rate would also create an inequitable result. \nCommunities with greater financial resources may be able to absorb higher connectivity",
+      "evidence_start": 1845,
+      "evidence_end": 2044,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075668",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075668",
+  "filer_raw": "Asena Bahce-Altuntas",
+  "date_submission": "2026-09-06T01:41:42.132Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a8b05b193b21ae63d769343bdd561d82e462a3ba9ecfaa5a0eee35d1a6c0d219",
+  "params_key": "03297febf5e9ef71816deb04b5606d03c2782fe241e3358e664521db040a94af",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

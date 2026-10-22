@@ -1,0 +1,86 @@
+{
+  "summary": "Emily Duncan, a K‑5 special‑education teacher, urges the FCC to preserve the E‑Rate program, arguing that reliable broadband is essential for individualized instruction, especially for students with disabilities and in rural, low‑income communities. She opposes any reductions, cuts, or sunset of the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Special‑education instruction relies on district‑ and state‑required digital curriculum and assessment tools that require broadband access.",
+      "evidence_quote": "specially designed instruction in areas such as reading, writing, mathematics, behavior, and social-emotional skills. Internet connectivity allows us to use district- and state-required",
+      "evidence_start": 789,
+      "evidence_end": 974,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students in rural and lower‑income communities depend on school‑provided connectivity because home broadband is often unreliable or unaffordable.",
+      "evidence_quote": "nd outside of school cannot be taken for granted. For some families, school may provide the most dependable internet connection their children have access to for educational purposes. When students",
+      "evidence_start": 1866,
+      "evidence_end": 2063,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential for providing reliable broadband that supports individualized instruction for students with disabilities and for rural schools that lack affordable connectivity.",
+      "evidence_quote": "ounty in South Carolina. I am writing to urge the Federal Communications Commission to preserve the E-Rate program and to oppose proposals that would reduce, limit, or sunset this important source of",
+      "evidence_start": 317,
+      "evidence_end": 516,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reductions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate preserves educational opportunity by ensuring that connectivity is not contingent on family income or home internet quality.",
+      "evidence_quote": "for educational purposes. When students walk into our building, their educational opportunities should not depend on the quality of the internet available at home or on their family’s ability to pay",
+      "evidence_start": 2024,
+      "evidence_end": 2222,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reductions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing E‑Rate support would force schools to divert funds from teachers, paraprofessionals, and other direct student supports.",
+      "evidence_quote": "te. The difference is that more of those costs would have to come from local or state funds, potentially competing with money used for teachers, paraprofessionals, intervention materials, assistive",
+      "evidence_start": 2639,
+      "evidence_end": 2836,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077060",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077060",
+  "filer_raw": "Emily Duncan",
+  "date_submission": "2026-09-19T14:34:41.925Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a90fed540c23fba5042cb69a8f70adbe7bfe3099c98acdb2912e35b032284710",
+  "params_key": "baefcf590363d1c06e5d691ab1ef260fafab189447b5ef67ba026fb693e54391",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "Warren County Public Schools opposes several proposed E‑Rate changes, arguing they would harm educational connectivity, impose unfunded mandates, and overstep FCC authority.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "reject extending CIPA compliance to student‑owned devices",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "legal_claim",
+      "argument": "Enforcing SSL/TLS decryption on non‑district hardware would compromise privacy and impose unmanageable security burdens.",
+      "evidence_quote": "CIPA compliance obligations to student- or visitor-owned \npersonal devices.  This would introduce extreme technical, legal, and privacy \nchallenges. Enforcing SSL/TLS decryption or installing",
+      "evidence_start": 3413,
+      "evidence_end": 3604,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "reject blanket prohibition on percentage‑based consulting arrangements",
+      "reason_family": "administrative_burden",
+      "claim_kind": "legal_claim",
+      "argument": "A total ban would disproportionately harm under‑resourced districts that rely on flexible consulting models.",
+      "evidence_quote": "support a rigid, blanket prohibition on percentage-based consulting \narrangements.  This will disproportionately harm under-resourced school districts. \nContingency or percentage-based structures",
+      "evidence_start": 4927,
+      "evidence_end": 5122,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of the E‑Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The district relies on E‑Rate funds for essential broadband and would be severely impacted by any termination or limitation.",
+      "evidence_quote": "ogram, including whether the FCC \nshould eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility.1  Warren \nCounty Public Schools relies on these funds to provide dark fiber and",
+      "evidence_start": 774,
+      "evidence_end": 970,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "reject universal parental opt‑out requirement",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "A universal opt‑out would compromise modern curriculum delivery and create unfunded instructional burdens.",
+      "evidence_quote": "t support mandating a universal parental opt-out for digital learning as an E-\nRate funding condition.  It compromises modern curriculum delivery, creates an \nunfunded instructional and operational",
+      "evidence_start": 2490,
+      "evidence_end": 2687,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject screen‑time limits as a funding condition",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time limits are a pedagogical decision best left to educators, not a federal regulatory mandate.",
+      "evidence_quote": "forces school IT departments to manage unmanageable endpoint security \nenvironments. \n● does not support enforcing screen time limits.  Screentime is a pedagogical decision \nthat belongs to",
+      "evidence_start": 3717,
+      "evidence_end": 3906,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "consultant_percent_fees": "oppose",
+    "erate_sunset": "oppose",
+    "parent_opt_out": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079399",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079399",
+  "filer_raw": "Warren County Public Schools",
+  "date_submission": "2026-10-05T14:48:46.144Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f42176dfd4da6b83cb2f39b0d4c94f50651306e3231a4b9df12b57f209fd513b",
+  "params_key": "3b630e84bb631dde895de5cfe4c2b8dbc29297c45240edab8fc0ebb6f11c8777",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

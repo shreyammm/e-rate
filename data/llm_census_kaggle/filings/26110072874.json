@@ -1,0 +1,87 @@
+{
+  "summary": "Cincinnati Public Schools argues that E‑Rate is essential for reliable connectivity, should be preserved for both Category One and Two services, and that geography should not replace financial need; it opposes limiting or ending the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain Category One and Two support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Both Category One and Category Two services are critical for reliable school networks and should continue to be funded based on financial need.",
+      "evidence_quote": "for both Category One and \nCategory Two services and to continue basing that support on the financial needs of the \nstudents and communities school districts serve. \nJeremy D. Gollihue \nChief",
+      "evidence_start": 3593,
+      "evidence_end": 3784,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating E‑Rate would shift essential connectivity costs to the district, reducing funds for other student services.",
+      "evidence_quote": "The question is whether we can afford to provide reliable connectivity across 63 \nsites without taking millions of dollars from other district priorities. \nEliminating E-Rate does not eliminate the",
+      "evidence_start": 1098,
+      "evidence_end": 1295,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not limit or end E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program has proven effective and should not be viewed as unnecessary due to increased connectivity.",
+      "evidence_quote": "e conversations to have about how E-Rate should evolve and \nremain accountable. But widespread school connectivity should not be viewed as \nevidence that the program is no longer needed. It is",
+      "evidence_start": 3124,
+      "evidence_end": 3316,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "separate connectivity from screen‑time concerns",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "Connectivity is fundamental to school operations and should be considered separately from instructional screen‑time policies.",
+      "evidence_quote": "lso encourage the Commission to separate questions about connectivity from \nconcerns about student screen time. How schools use technology instructionally is an \nimportant discussion, but it is",
+      "evidence_start": 2193,
+      "evidence_end": 2386,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "do not use geography as a substitute for financial need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Urban districts may have more providers but still face affordability challenges for low‑income students.",
+      "evidence_quote": "Urban districts \nmay have access to more providers, but availability does not equal affordability. CPS \nserves a high-poverty student population across dozens of facilities, and being located \nin an",
+      "evidence_start": 2812,
+      "evidence_end": 3010,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072874",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072874",
+  "filer_raw": "Jeremy D. Gollihue, CIO, Cincinnati Public Schools",
+  "date_submission": "2026-08-24T16:11:14.531Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f339640ae281e2c5f001d5cda7faea8ca899ea254e4263416d59c86d6136be3f",
+  "params_key": "063274ec83ff8bc2090955ff15527763e30c63acca2ad9de8a555ffab831c433",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

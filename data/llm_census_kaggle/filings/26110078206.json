@@ -1,0 +1,50 @@
+{
+  "summary": "The comment argues that screen‑time limits are necessary and that eliminating the E‑Rate subsidy would reduce student safety online.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate subsidy",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing the E‑Rate subsidy would reduce schools’ ability to protect children online.",
+      "evidence_quote": "--screens are often used as rewards and babysitters, which is not educational\n--if the E-rate subsidy goes away, children very likely will be less safe online, and schools (which are already",
+      "evidence_start": 148,
+      "evidence_end": 338,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "tie E‑Rate funding to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time limits are needed to protect students from excessive use of devices.",
+      "evidence_quote": "--existing filters/blocks are not adequate\n--screen time limits are needed -- these would be more likely to be imposed if funding were tied to them\n--screens are often used as rewards and",
+      "evidence_start": 0,
+      "evidence_end": 187,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "other_policy_issue": "oppose",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078206",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078206",
+  "filer_raw": "Holly Stephens",
+  "date_submission": "2026-09-25T00:28:32.139Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6db8ad5d9624fcefa4b146865c3e7cac3ea53722d7989b89925a5b54c22de593",
+  "params_key": "ff250784f221da3c58a82e59c0faaac5dd96162e75badf5a4a728c5ad05981dd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

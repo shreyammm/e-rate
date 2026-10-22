@@ -1,0 +1,87 @@
+{
+  "summary": "The assistant superintendent urges the FCC to keep E‑Rate, reject sunset or narrowing proposals, preserve connectivity support, strengthen the program, and notes that screen‑time limits are a local issue.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter notes that screen‑time limits are a local policy decision, not a federal mandate.",
+      "evidence_quote": "not synonymous with unrestricted student screen time. Districts, educators, and families \nalready make decisions about when and how technology should be used to support learning — decisions that rest",
+      "evidence_start": 3408,
+      "evidence_end": 3607,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate is essential for maintaining modern network infrastructure and preventing costly budget cuts.",
+      "evidence_quote": "ke electricity, transportation, and safe \nfacilities. \nI therefore respectfully urge the Commission to: \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that",
+      "evidence_start": 4171,
+      "evidence_end": 4367,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "The letter states that narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography \nor other criteria that would leave students without adequate",
+      "evidence_start": 4327,
+      "evidence_end": 4521,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The assistant superintendent argues that eliminating E‑Rate would directly harm school operations and student learning.",
+      "evidence_quote": "y 2700 students across 5 \nschools. \nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate \nprogram and to reject any proposal that would eliminate,",
+      "evidence_start": 462,
+      "evidence_end": 658,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The writer urges the FCC to work with stakeholders to improve the program.",
+      "evidence_quote": "e \neducational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in \npublic education. \nE-Rate has enabled schools (public and",
+      "evidence_start": 4640,
+      "evidence_end": 4836,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079679",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079679",
+  "filer_raw": "Annaliese Spaziano",
+  "date_submission": "2026-10-06T21:06:18.589Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "29fc7d20ee3a2dc514f560d85b3090b2aa50e370e30f9b279f58d577fe8abe9b",
+  "params_key": "d841ee15feb1ca008bfbe3838c263b6aa18c7ed105b790445d781269be0b24a7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

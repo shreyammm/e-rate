@@ -1,0 +1,87 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, and argues that reliable broadband is essential infrastructure for schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing of eligibility or geographic restrictions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent contends that narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ion to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 4199,
+      "evidence_end": 4392,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent argues that eliminating or sunsetting E‑Rate would directly harm school operations and student learning.",
+      "evidence_quote": "deral Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 465,
+      "evidence_end": 660,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain funding for networking equipment and internet lines",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate covers roughly 80% of networking costs, amounting to $600,000 annually, which is critical to avoid budget cuts in other areas.",
+      "evidence_quote": "district, reducing or eliminating E-Rate support would have a direct and tangible impact. E-Rate covers roughly 80% of our networking equipment and internet  lines  which  equates  to roughly",
+      "evidence_start": 2028,
+      "evidence_end": 2219,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue E‑Rate as foundational to student learning and digital citizenship",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent emphasizes that E‑Rate supports digital citizenship education and modern learning environments.",
+      "evidence_quote": "guards governing student technology use: We filter student  access,  teach digital citizenship at every grade level. The Commission should also consider the needs of districts that serve diverse",
+      "evidence_start": 3267,
+      "evidence_end": 3461,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "preserve and strengthen E‑Rate connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is essential infrastructure for modern schools, comparable to electricity and transportation.",
+      "evidence_quote": "tructure necessary to deliver meaningful connectivity throughout school buildings. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not",
+      "evidence_start": 3727,
+      "evidence_end": 3925,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078844",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078844",
+  "filer_raw": "Roanoke County Public Schools",
+  "date_submission": "2026-09-30T12:38:06.466Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "35de56ae148769f12e425d0ad3b25f95a1614e1b80c6b9da4125b1fab9b9ef48",
+  "params_key": "15fdc81279685080ddb4f0db7007f0dd94afbb9a022d4c0000dc96cce6b6d6d6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

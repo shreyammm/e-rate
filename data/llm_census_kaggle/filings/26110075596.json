@@ -1,0 +1,87 @@
+{
+  "summary": "Belmont Select Board Chair urges the FCC to preserve the E‑Rate program, arguing that eliminating or limiting it would shift costly infrastructure burdens to local budgets, delay essential upgrades, and disproportionately harm students—especially those with IEPs—by reducing reliable access to technology.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "continue E‑Rate subsidies for equipment replacement",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Recent E‑Rate subsidies, such as a $70,000 contribution toward a $320,000 network switch replacement, allow timely equipment upgrades that local budgets could not otherwise afford.",
+      "evidence_quote": "buildings. \nFurthermore, partial E-Rate subsidies—such as a recent $70,000 contribution toward a \n$320,000 network switch replacement in our district—allow municipalities to advance end-of-life",
+      "evidence_start": 2185,
+      "evidence_end": 2378,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain reliable technology access for students",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Students, particularly those with IEPs, rely on reliable school technology; slow or unreliable networks disproportionately impact their educational access.",
+      "evidence_quote": "eliable school technology is a matter of educational access. Students \nwho depend on school-provided technology to access their education, particularly those utilizing \nIndividualized Education",
+      "evidence_start": 2495,
+      "evidence_end": 2688,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility for public school districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Preserving eligibility ensures that districts can fund critical upgrades such as 2 Gbps connections and new wireless access points.",
+      "evidence_quote": "ngible, necessary improvements it funds. \nIt enables districts to execute critical upgrades, such as increasing internet capacity to 2 Gbps, \ninstalling separate 2 Gbps connections to manage device",
+      "evidence_start": 1876,
+      "evidence_end": 2073,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for maintaining reliable school technology and preventing local budgets from bearing prohibitive infrastructure costs.",
+      "evidence_quote": "As Chair of the Belmont Select Board, I strongly urge the Federal Communications Commission \nto preserve the E-Rate program and maintain access for public school districts like Belmont. \nThe",
+      "evidence_start": 632,
+      "evidence_end": 822,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate or limit the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or limiting E‑Rate would shift substantial network and wireless costs directly to local municipal and school budgets.",
+      "evidence_quote": "unding provided Belmont with $97,772.49, and \napproved requests for the 2026 funding year could yield up to $84,897.16 in benefits. If the \nE-Rate program is restricted or eliminated, the necessity",
+      "evidence_start": 1253,
+      "evidence_end": 1450,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075596",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075596",
+  "filer_raw": "Taylor Yates",
+  "date_submission": "2026-09-04T17:51:52.473Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ca46e06a2ee4885e8c35239956c58d59c9fd1694498703e8319a18da24e7569f",
+  "params_key": "9c3014b6b342f9a1d7ba99d6b1e6395181b5faf99e5756dfea796a6f9be15659",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

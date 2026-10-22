@@ -1,0 +1,89 @@
+{
+  "summary": "Catoosa County Public Schools opposes any proposal to eliminate, cap, or restrict E‑Rate funding, arguing that broadband is essential for school safety, operations, health services, and overall student well‑being.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "maintain broadband connectivity for safety systems",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Uninterrupted broadband is required for real‑time security cameras, panic buttons, and lockdown protocols that protect students.",
+      "evidence_quote": "entry, perimeter access monitoring, and instantaneous \nlockdown protocols run directly over our local network. Furthermore, high-definition IP  \n \n\n\n \nsecurity cameras stream real-time visual feeds",
+      "evidence_start": 1556,
+      "evidence_end": 1753,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "maintain broadband connectivity for administrative systems",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate ensures the Student Information System remains operational, enabling attendance, scheduling, and emergency documentation.",
+      "evidence_quote": "erational nerve center of our \ndistrict, managing attendance, state reporting, master scheduling, and vital emergency \ndocumentation. A disruption or degradation of our broadband capacity halts basic",
+      "evidence_start": 2808,
+      "evidence_end": 3007,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "protect E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding underpins telehealth and mental health services that are critical to student health and academic success.",
+      "evidence_quote": "services, particularly in low-income or geographically isolated \ncommunities. E-Rate funding directly underpins this health infrastructure by supporting \nhigh-speed internet connections required for",
+      "evidence_start": 3441,
+      "evidence_end": 3639,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility and discount structure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting E‑Rate based on geography ignores identical structural reliance on continuous, high‑speed networking in suburban and urban districts.",
+      "evidence_quote": "ontent; it funds the raw \nconnection and underlying network infrastructure that make these instructional and \nnon-instructional systems possible. Restricting support based on geography ignores the",
+      "evidence_start": 4215,
+      "evidence_end": 4411,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal that would eliminate, cap, or restrict E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is an essential, ongoing utility that supports critical school safety and operational systems.",
+      "evidence_quote": "ss 18 schools, I am \nwriting to urge the Commission to reject any proposal that would eliminate, cap, or restrict \nfunding for the Schools and Libraries Universal Service support (E-Rate). We direct",
+      "evidence_start": 624,
+      "evidence_end": 822,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_monitoring_privacy": "oppose",
+    "education_outcomes": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076690",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076690",
+  "filer_raw": "Charles Nix",
+  "date_submission": "2026-09-15T16:02:50.746Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "54441208f6e81d23ce94cd1cde172555b72561a999747622bceffb6e4b6d2ee1",
+  "params_key": "1f828d77386e0f72d84bbb01e766822743548ccad6c58a44736ead1492d7b50e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

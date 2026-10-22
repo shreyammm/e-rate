@@ -1,0 +1,63 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program intact, oppose any reductions or narrowing, and expand its scope to include security equipment and services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program must continue to provide broadband connectivity to all schools and libraries.",
+      "evidence_quote": "or eliminate the E-rate program. We also ask that\nthe E-rate program continue to prioritize funding to all schools and\nJennifer Fitzsimmons\nlibraries - urban and rural - as each have unique needs.",
+      "evidence_start": 2034,
+      "evidence_end": 2230,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for schools and libraries and its elimination would cause severe funding losses.",
+      "evidence_quote": "years to\ncome to the five-year equipment cycles with which we keep our networks\nwww.plainlocal.org\nin good working order.\nBrent May\nSuperintendent\nReducing or eliminating E-rate funding would result",
+      "evidence_start": 625,
+      "evidence_end": 823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "expand to include security equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Security equipment and services are sorely needed and should be funded under E‑Rate.",
+      "evidence_quote": "it. In fact,\nJohn W. Halkias.\nwe suggest that the Commission expand the E-rate program to include\nlice President\nsecurity equipment and services as those items are sorely needed.\nMonica Rose",
+      "evidence_start": 1726,
+      "evidence_end": 1916,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080273",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080273",
+  "filer_raw": "Plain Local Schools",
+  "date_submission": "2026-10-09T16:42:12.689Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "ca5ffcb21074e30e9ba5c0d84f5dd6c0d80b3fc270583e5b8c164ad582e40228",
+  "params_key": "419edf77b892f40002f53c5444ebe06ef804a9070cb458b7ab74808f077c0208",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

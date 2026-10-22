@@ -1,0 +1,89 @@
+{
+  "summary": "Parent advocates limiting screen time, removing YouTube, and improving device usage transparency.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "support",
+      "requested_action": "implement digital literacy education to mitigate screen‑related distractions",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Research shows digital multitasking during instruction harms grades and comprehension.",
+      "evidence_quote": "digital multitasking during instruction hurts grades, test scores, recall, and reading comprehension. Neuroscientist Jared Horvath's research backs this up. Students studying on a screen last less",
+      "evidence_start": 2195,
+      "evidence_end": 2391,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "require timely usage reports for parents",
+      "reason_family": "other",
+      "claim_kind": "empirical_claim",
+      "argument": "Parents need immediate access to device usage data to monitor screen time and content.",
+      "evidence_quote": "s on school issued devices, and why? The district should be able to answer these  questions  easily. In April 2026, I requested a usage report for my kids' devices. After months of back and forth, I",
+      "evidence_start": 467,
+      "evidence_end": 665,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "disconnect YouTube on all school‑issued devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "YouTube exposes minors to harmful content and should be blocked on school devices.",
+      "evidence_quote": "as put in place are exposing our kids to inappropriate content  and it should stop.  Fulton County must put policy in place to limit screen time during the school day and disconnect YouTube access on",
+      "evidence_start": 2815,
+      "evidence_end": 3014,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "support",
+      "requested_action": "restrict third‑party ads on school devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Third‑party ads expose students to inappropriate content during school hours.",
+      "evidence_quote": "got the report, I learned my 6th grader accessed YouTube during instructional time, and that our children are being shown third party ads on school issued devices during the school day. Distressing",
+      "evidence_start": 941,
+      "evidence_end": 1138,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "limit screen time during school day",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen time should be limited during instructional hours to protect learning outcomes.",
+      "evidence_quote": "here, what else is out there, and who is accountable. Here's what the research says. The U.S. Surgeon General's May 2026 advisory on screen use recommends bell-to-bell phone bans, a return to",
+      "evidence_start": 1888,
+      "evidence_end": 2079,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_digital_literacy": "support",
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "cipa_social_media": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080282",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080282",
+  "filer_raw": "Sandra Carter",
+  "date_submission": "2026-10-09T16:59:22.423Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ca77fdc8c3417473438c51db49f67a55e8d0b8544b8210f20c19584faffe3d75",
+  "params_key": "556ad5dbde77dce942574f7bbc428d009659b67618b8d641fa39f7fc78d1a4d4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

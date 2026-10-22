@@ -1,0 +1,74 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, rejecting proposals to sunset, eliminate, or narrow eligibility, and calling for continued support for school connectivity and modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or \nother criteria that would leave students without adequate",
+      "evidence_start": 4055,
+      "evidence_end": 4249,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Such restrictions would deprive students of necessary connectivity.",
+      "evidence_quote": "at would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable \neducational access; and \n4. Work with",
+      "evidence_start": 4209,
+      "evidence_end": 4408,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools require reliable broadband to provide educational access.",
+      "evidence_quote": "e \neducational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public \neducation. \n \nE-Rate has enabled schools (public and",
+      "evidence_start": 4368,
+      "evidence_end": 4566,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "ols. \n \nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program \nand to reject any proposal that would eliminate, sunset, substantially reduce,",
+      "evidence_start": 463,
+      "evidence_end": 661,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078585",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078585",
+  "filer_raw": "Franklin Public Schools",
+  "date_submission": "2026-09-28T19:03:31.430Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a6c0ebf4eef97ded208e4313ee7de55fe6bd33cc595bc8f17605be8fe2f25df8",
+  "params_key": "d4e036e86d289d6eb7a9763658770e9eb3ae0ecbf352a545009483a3994edfe0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

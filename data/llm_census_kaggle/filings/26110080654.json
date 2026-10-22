@@ -1,0 +1,74 @@
+{
+  "summary": "Strongsville City Schools urges the FCC to keep the E‑Rate program intact, expand it to include security equipment and services, and continue prioritizing all schools and libraries, arguing that cutting or narrowing the program would severely harm funding, staff, and student access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "No other federal, state, or local program can replace the funding loss that would result from cutting E‑Rate.",
+      "evidence_quote": "trict average $83,787 in E-rate funding. \nThere are currently no other programs at a federal, state or local level that can even come close to making \nup for the funding loss that cutting the E-rate",
+      "evidence_start": 1259,
+      "evidence_end": 1457,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "expand security equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Adding security equipment and services to the E‑Rate program would address growing needs for safer internet access.",
+      "evidence_quote": "now as much as it ever was and we \nurge the Commission to keep it intact rather than reducing or eliminating it. In fact, we suggest that the \nCommission expand the E-rate program to include",
+      "evidence_start": 1887,
+      "evidence_end": 2077,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "prioritize all schools and libraries",
+      "reason_family": "other",
+      "claim_kind": "equity_access",
+      "argument": "The program should continue to prioritize funding to all schools and libraries, urban and rural, to meet unique needs.",
+      "evidence_quote": "on completely reject any plan to reduce, narrow or eliminate \nthe E-rate program. We also ask that the E-rate program continue to prioritize funding to all schools and \nlibraries – urban and rural –",
+      "evidence_start": 2192,
+      "evidence_end": 2390,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting or eliminating E‑Rate funding would cause a heavy loss to schools and libraries, requiring staff cuts and program elimination.",
+      "evidence_quote": "that we would have funding in the years to come to the \nfive-year equipment cycles with which we keep our networks in good working order.  \n \nReducing or eliminating E-rate funding would result in a",
+      "evidence_start": 945,
+      "evidence_end": 1143,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080654",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080654",
+  "filer_raw": "Strongsville City Schools",
+  "date_submission": "2026-10-12T18:04:32.521Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "23e95a33fdb3e8af57cd688db737451571141c87a43e096340ef18d024fb4326",
+  "params_key": "b5112a9322ed6fb3d5565ba4b74dcc54b53b638247310ad361968472947fde7b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,88 @@
+{
+  "summary": "Branford Public Schools urges the FCC to keep E‑Rate funding, arguing that the program is essential for maintaining connectivity that supports teaching, operations, and student services, and that cuts would strain local budgets and educational access. The district also calls for oversight and administrative improvements but opposes eligibility changes that would exclude schools with ongoing needs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "conditional_or_amend",
+      "requested_action": "improve oversight and administration",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Better oversight would make the program easier to use responsibly and more effective.",
+      "evidence_quote": "networks, and avoid \neligibility changes that would exclude schools with continuing needs. Improvements to oversight and \nadministration should make the program easier to use responsibly and more",
+      "evidence_start": 3578,
+      "evidence_end": 3773,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility changes that exclude schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eligibility changes would leave schools with continuing needs without necessary support.",
+      "evidence_quote": "ervices while preserving local resources for other educational priorities. \nI ask the Commission to retain E-Rate, continue supporting broadband and internal networks, and avoid \neligibility changes",
+      "evidence_start": 3420,
+      "evidence_end": 3618,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "retain E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate provides essential recurring funding that prevents local budgets from bearing the full cost of connectivity.",
+      "evidence_quote": "n that is essential to serving students. \nBranford receives approximately $90,000 each year in E-Rate assistance. That support helps us pay for connectivity \nand eligible network services and replace",
+      "evidence_start": 939,
+      "evidence_end": 1138,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain connectivity assistance",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "Connectivity supports teaching, operations, and student services beyond classroom devices.",
+      "evidence_quote": "pressure on the resources available for teaching, student support, and school \noperations. \nThe value of connectivity reaches well beyond classroom devices. Our staff depend on connected systems to",
+      "evidence_start": 1568,
+      "evidence_end": 1765,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue broadband and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "E‑Rate helps sustain services while preserving local resources for other priorities.",
+      "evidence_quote": "ervices while preserving local resources for other educational priorities. \nI ask the Commission to retain E-Rate, continue supporting broadband and internal networks, and avoid \neligibility changes",
+      "evidence_start": 3420,
+      "evidence_end": 3618,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conditional_or_amend",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079463",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079463",
+  "filer_raw": "Christopher Tranberg",
+  "date_submission": "2026-10-05T19:20:05.668Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "225444b20ee3a5e4cf3bba9041012ae1d08ec5cb492618db1b2533ea612c4cb4",
+  "params_key": "47cf1d6d4470c4d4b0e9b8c1efb5833ee63c5265724be68f56e00a93070b26eb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

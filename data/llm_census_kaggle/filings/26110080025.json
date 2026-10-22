@@ -1,0 +1,50 @@
+{
+  "summary": "The commenter urges the FCC to preserve E‑Rate funding and to allow schools flexibility in setting screen‑time limits, arguing that such measures support student safety and access to essential technology.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving E‑Rate ensures continued broadband and Wi‑Fi access that supports student safety and school operations.",
+      "evidence_quote": "mily communications, student safety, and school operations. These needs continue even when schools limit classroom screen time.\n\nPlease preserve E-Rate and support student safety through approaches",
+      "evidence_start": 787,
+      "evidence_end": 984,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "allow flexible screen‑time limits",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Schools should retain discretion to set screen‑time limits that meet students’ ages, educational goals, and individualized needs.",
+      "evidence_quote": "y requirements concerning screen time or educational technology should preserve flexibility for educators to meet those needs. Broad restrictions could unintentionally limit access to tools students",
+      "evidence_start": 471,
+      "evidence_end": 669,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080025",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080025",
+  "filer_raw": "Dusty Noller",
+  "date_submission": "2026-10-08T14:15:37.560Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "75509758b836008c522fd9375bcd39e1691a2633882b9e3b13beafd96804768f",
+  "params_key": "90f34d481976db34ac5a6f0d54fc91828289a4a07005e1589ba367fb614f13bb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

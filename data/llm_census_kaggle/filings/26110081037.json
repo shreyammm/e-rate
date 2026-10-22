@@ -1,0 +1,63 @@
+{
+  "summary": "The superintendent urges the FCC to keep E‑Rate funding for recurring internet services, argues that screen‑time decisions should stay with local educators, and stresses that E‑Rate is essential for educational equity in high‑need districts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve recurring internet services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate discounts are essential for ongoing internet and network maintenance costs in high‑need districts.",
+      "evidence_quote": "ng \ninternet services, internal wireless networks, and eligible network maintenance. Continued \nfederal investment is particularly important for Alliance Districts and other high-need \ncommunities",
+      "evidence_start": 3750,
+      "evidence_end": 3946,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is critical for equitable access to technology infrastructure in Alliance Districts and other high‑need communities.",
+      "evidence_quote": "ted \nfinancial resources and significant student needs, continued federal support is essential to \nmaintaining equitable access to the technology infrastructure that modern education requires. \nWhile",
+      "evidence_start": 2351,
+      "evidence_end": 2550,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not use E‑Rate cuts to address screen‑time",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Decisions about technology use and screen time should remain with local educators and families, not be tied to federal funding reductions.",
+      "evidence_quote": "icts are \n\n\nbest positioned to determine the appropriate balance between technology-supported instruction \nand other learning experiences based on the developmental, academic, and social-emotional",
+      "evidence_start": 2818,
+      "evidence_end": 3014,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081037",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081037",
+  "filer_raw": "Patrick Tudryn",
+  "date_submission": "2026-10-13T17:06:40.244Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6ec0ea3be9ff0c673aed9570ef79b90843d86eaa307a14dfbcf5840013aa82d9",
+  "params_key": "5173f23ad5596f14dc9f108f6e20f74d8d5d5212ea0961433c186585d00b11c5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,88 @@
+{
+  "summary": "The library urges the FCC to preserve the core E‑Rate program, maintain local‑cost discount methodology, keep distinct urban‑rural treatment, broaden eligible use, and safeguard pricing transparency and reimbursement caps.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The library contends that discount calculations must account for local cost variations to avoid disproportionate harm.",
+      "evidence_quote": "rural libraries and library systems the same, where their missions and user\nenvironments differ.\n• Maintain a broad, workable definition of eligible library use that reflects how library networks",
+      "evidence_start": 3395,
+      "evidence_end": 3590,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "Maintain a broad definition of eligible library use",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The library maintains that eligible use should reflect real library functions such as public access and workforce development.",
+      "evidence_quote": "y use that reflects how library networks actually\nserve public access, digital resources, workforce development, lifelong learning, and daily operations.\n• Ensure that any LCP, pricing transparency,",
+      "evidence_start": 3550,
+      "evidence_end": 3748,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library argues that ending or significantly reducing E‑Rate would leave high‑need, rural libraries without essential connectivity.",
+      "evidence_quote": "reflect true local cost and need, and do not\ndisproportionately harm libraries serving high-need, rural, or high-cost communities.\n• Do not treat urban and rural libraries and library systems the",
+      "evidence_start": 3239,
+      "evidence_end": 3434,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure LCP, pricing transparency, and reimbursement caps account for rural, high‑cost, limited‑provider, branch‑based, and complex service environments",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The library warns that blanket pricing rules could discourage service to hard‑to‑serve libraries.",
+      "evidence_quote": "sure that any LCP, pricing transparency, reimbursement cap, or pricing justification requirements\naccount for rural, high-cost, limited-provider, branch-based, and complex service environments.\n• Do",
+      "evidence_start": 3708,
+      "evidence_end": 3906,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "conditional_or_amend",
+      "requested_action": "Do not allow benchmark pricing or reimbursement caps to unintentionally discourage providers from serving high‑cost or hard‑to‑serve libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The library stresses that pricing caps must not deter providers from serving rural or high‑cost areas.",
+      "evidence_quote": ", and complex service environments.\n• Do not allow benchmark pricing or reimbursement caps to unintentionally discourage providers from\nserving high-cost or hard-to-serve libraries.\n6.",
+      "evidence_start": 3866,
+      "evidence_end": 4050,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "conditional_or_amend",
+    "erate_eligibility_scope": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "special_construction": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078694",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078694",
+  "filer_raw": "Stevens Memorial Community Library",
+  "date_submission": "2026-09-29T14:25:50.277Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6dc2510a334b8106e835bf14176117c6143ceccbe38990cd123ec852cabe3a39",
+  "params_key": "1a50f89223e6ad048b104a678fb520774ee2040c1b20ce2371afd96075316a4f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

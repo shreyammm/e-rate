@@ -1,0 +1,87 @@
+{
+  "summary": "White County Schools urges the FCC to preserve and expand E‑Rate support, opposing any cuts or narrowing of the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "make cybersecurity and threat mitigation permanently eligible",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Advanced cybersecurity protections are essential to safeguard student and district data.",
+      "evidence_quote": "cal school networks secure, updated, and reliable.      Make  Cybersecurity and Threat Mitigation Permanently Eligible Formally expand the main E-Rate Eligible Services List to include advanced",
+      "evidence_start": 2172,
+      "evidence_end": 2366,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject any proposal that would terminate or limit the E‑Rate Program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that terminating or limiting E‑Rate would dismantle essential broadband infrastructure in rural schools.",
+      "evidence_quote": "ny (USAC) to secure discounted broadband connectivity, network infrastructure, and internal connections for our schools and students. White County Schools  urges the Commission to reject any proposal",
+      "evidence_start": 1092,
+      "evidence_end": 1291,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain full Category 1 broadband support for rural districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Rural districts need sustained Category 1 funding to cover recurring circuit costs.",
+      "evidence_quote": "es the Commission to reject any proposal that would terminate or limit the E-Rate Program. Specifically, we recommend:      Maintain  Full Category 1 Broadband Support for Rural Districts Preserve",
+      "evidence_start": 1251,
+      "evidence_end": 1448,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals to narrow program scope based on high adoption rates",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Near‑universal connectivity is a success of E‑Rate, not evidence that the program is no longer needed.",
+      "evidence_quote": "Program, modern school networks require robust defense mechanisms to protect sensitive student and district data from escalating cyber threats.      Reject  Proposals to Narrow Program Scope Based",
+      "evidence_start": 2486,
+      "evidence_end": 2683,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "explicitly preserve Category 2 support for Managed Internal Broadband Services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "MIBS funding is a cost‑effective way for small districts to maintain secure, updated networks.",
+      "evidence_quote": "rb recurring annual circuit costs.      Protect  Category 2 Support for Managed Internal Broadband Services (MIBS) Explicitly preserve funding for managed internal broadband services, on-call",
+      "evidence_start": 1715,
+      "evidence_end": 1907,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "mibs": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080406",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080406",
+  "filer_raw": "Ashley Rust",
+  "date_submission": "2026-10-10T02:31:07.902Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a3bb83c9075344ce0b2572ffae6422ba8db8b89118b9d32bef06344607dbe39b",
+  "params_key": "4797bfc0cb25ba0105d48d0f4430484367bb434d690a4f7d71fed25f83b4a840",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

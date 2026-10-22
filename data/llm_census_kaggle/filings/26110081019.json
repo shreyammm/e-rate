@@ -1,0 +1,87 @@
+{
+  "summary": "The Baldwin Union Free School District opposes limiting E‑Rate eligibility to rural districts, arguing that eligibility should be based on student need, not locale, and that abrupt changes would disrupt planning, burden local taxpayers, and jeopardize CIPA compliance.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "preserve ability to protect students online",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Any changes to CIPA should preserve the ability of districts to protect students online without adding administrative burden.",
+      "evidence_quote": "change should be gradual, well-signaled, and tied to demonstrated need. 6. CIPA requirements. Any changes to CIPA should preserve the ability of districts to protect students online without adding",
+      "evidence_start": 3259,
+      "evidence_end": 3455,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not limit eligibility to rural districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility should be based on student need, not locale codes, to ensure equitable support for all districts.",
+      "evidence_quote": "n strong opposition to any proposal that would limit E-Rate eligibility to schools and libraries with a rural designation. 1. An “urban” label does not mean a district can absorb these costs.",
+      "evidence_start": 471,
+      "evidence_end": 662,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain eligibility for internet access, WAN services, and Category 2 equipment",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district relies on E‑Rate for essential network infrastructure that supports instruction, testing, and safety systems.",
+      "evidence_quote": "or Baldwin students. E-Rate supports the connectivity that every part of our instructional program now depends  on:  internet access, our wide area network, and the Category 2 internal connections",
+      "evidence_start": 1246,
+      "evidence_end": 1442,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid abrupt narrowing of eligible services or applicants",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Abrupt changes would disrupt long‑term planning, strand investments, and shift costs onto local taxpayers.",
+      "evidence_quote": "te just as much as their rural peers. 5. Predictability matters. School districts plan technology investments years in advance, and our budgets are voter-approved. Abrupt narrowing of eligible",
+      "evidence_start": 2951,
+      "evidence_end": 3143,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The district urges the Commission not to sunset or drastically alter the E‑Rate program.",
+      "evidence_quote": "r than shifting ones. Conclusion Baldwin respectfully urges the Commission not to limit E-Rate to rural applicants, and to preserve eligibility for internet access, WAN services, and Category 2",
+      "evidence_start": 3563,
+      "evidence_end": 3756,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081019",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081019",
+  "filer_raw": "Baldwin UFSD",
+  "date_submission": "2026-10-13T16:46:28.974Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "429c0ea61d6f91a3414662785d3829c05404d4820f07f841335489c9ec69dd1c",
+  "params_key": "e54bc4959839ebe75ee31f54b2ce19d5827d3a9ba6096220e70e08b0523ab57c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

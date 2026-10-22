@@ -1,0 +1,74 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, and stresses the essential nature of broadband for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access.",
+      "evidence_quote": "he Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or",
+      "evidence_start": 3580,
+      "evidence_end": 3777,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to ensure reliable broadband for all students.",
+      "evidence_quote": "tely 155 students across 1 schools. I am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate,",
+      "evidence_start": 468,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is part of basic infrastructure like electricity and transportation, necessary for student success.",
+      "evidence_quote": "ict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 3737,
+      "evidence_end": 3934,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools to build and maintain connectivity essential for modern education.",
+      "evidence_quote": "te rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to",
+      "evidence_start": 4049,
+      "evidence_end": 4239,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080042",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080042",
+  "filer_raw": "Saint Regis Sch District 1 A.K.A. St Regis K-12 Schools",
+  "date_submission": "2026-10-08T14:53:18.525Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3e7cefa713c60771747c98313a385c1f3556eb2b87655ed3063e117e29365e17",
+  "params_key": "a6e67679c366494ac499b687c33037894435632444cde5fc78122935de227521",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

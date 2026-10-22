@@ -1,0 +1,63 @@
+{
+  "summary": "The commenter, a public school educator, opposes eliminating or restricting the E‑Rate program, arguing that internet access is essential for education and that the program is critical for Title I schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility for Title I schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The commenter relies on federal funding through E‑Rate to provide internet access at a Title I school.",
+      "evidence_quote": "ch helps 96% of schools pay for internet access. I teach at Gallaher ES in the Christina SD in Newark, DE. We are a Title I school and rely on federal funding. So many of my daily tasks involve the",
+      "evidence_start": 312,
+      "evidence_end": 509,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The commenter believes that eliminating or restricting E‑Rate would deny essential internet access to students.",
+      "evidence_quote": "ools. My late husband was a proud public school educator. \nThe Trump administration is proposing to either eliminate or greatly restrict the E-Rate program—which helps 96% of schools pay for internet",
+      "evidence_start": 153,
+      "evidence_end": 352,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue funding for one‑to‑one devices",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students use devices daily for learning, and the program supports this need.",
+      "evidence_quote": "pivot and use the internet to teach back then and have continued to rely on it. Students use their devices daily in their learning.",
+      "evidence_start": 780,
+      "evidence_end": 911,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076508",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076508",
+  "filer_raw": "Jeanette Greenzweig",
+  "date_submission": "2026-09-12T20:37:31.141Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0c720cd1244120b02ec57012280dec59a902c1a49fc9e788fb5eb379d6ae8f25",
+  "params_key": "79ad429ad4434b001699cd808b20dea2c6e79de6e337de8a27c8a695d324a5a4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

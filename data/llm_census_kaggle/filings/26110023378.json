@@ -1,0 +1,88 @@
+{
+  "summary": "A librarian in Arizona urges the FCC to preserve the E‑Rate program, oppose new filtering and use‑classification rules, and maintain current procurement flexibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "do not require libraries to distinguish educational vs recreational use",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Classifying every internet session by purpose would be impractical, invasive, and inconsistent with patron privacy.",
+      "evidence_quote": "roposals that would require libraries to distinguish between \"educational\" and \"recreational\" internet use. Libraries support lifelong learning in countless ways that do not fit neatly into",
+      "evidence_start": 1069,
+      "evidence_end": 1258,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "do not expand filtering requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Expanded filtering would block legitimate educational, informational, and health resources.",
+      "evidence_quote": "o protecting patron privacy.\n\nSimilarly, expanding filtering requirements would risk blocking legitimate educational, informational, and health resources while creating unnecessary technical",
+      "evidence_start": 1675,
+      "evidence_end": 1865,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "support",
+      "requested_action": "preserve procurement flexibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "State master contracts have successfully provided high‑quality services efficiently while meeting E‑Rate requirements.",
+      "evidence_quote": "access to information for all members of the community.\n\nFinally, I urge the FCC to preserve existing procurement flexibility. Arizona libraries have successfully used state master contracts to",
+      "evidence_start": 1984,
+      "evidence_end": 2177,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "do not impose additional procurement hurdles",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Additional procurement hurdles would increase administrative burdens and costs without improving service to patrons.",
+      "evidence_quote": "cessfully used state master contracts to obtain high-quality services efficiently while meeting E-rate requirements. Creating additional procurement hurdles would increase administrative burdens and",
+      "evidence_start": 2137,
+      "evidence_end": 2335,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for libraries to provide free broadband access to underserved communities.",
+      "evidence_quote": "I strongly support preserving and protecting the E-rate program.\n\nAs a librarian in Arizona, I have seen first hand that libraries are far more than places to borrow books. They are essential",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_network_filter": "oppose",
+    "consultant_registration": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110023378",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110023378",
+  "filer_raw": "Charleigh Reid | CHARLEIGH REID",
+  "date_submission": "2026-07-16T21:15:58.226Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "24a8eb5213c37e83f45fe6f6222c82f6d036adfd32ff2df71d801c283ff33079",
+  "params_key": "42519123cf28f51328badf7b4b7bf6e5c9a818b943e585582fad1cf82bfb81d9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

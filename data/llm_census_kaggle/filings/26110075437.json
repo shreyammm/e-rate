@@ -1,0 +1,50 @@
+{
+  "summary": "Coleman Public Library urges the FCC to preserve E‑Rate funding and to keep consulting firms available, opposing any cuts or eliminations that would harm schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "other",
+      "argument": "The library argues that cutting or eliminating E‑Rate funding would harm schools and libraries by increasing costs and reducing access to affordable internet.",
+      "evidence_quote": "e urge the FCC to preserve E-Rate's core funding and support, and to avoid changes that would reduce access or increase the burden on the schools and libraries that depend on it.\n\nThank you for your",
+      "evidence_start": 941,
+      "evidence_end": 1139,
+      "uncertain": false
+    },
+    {
+      "provision_id": "vendor_influence",
+      "position": "oppose",
+      "requested_action": "retain consulting firms",
+      "reason_family": "administrative_burden",
+      "claim_kind": "other",
+      "argument": "The library contends that consulting firms are essential to navigating the complex E‑Rate process and that eliminating them would increase burden on schools and libraries.",
+      "evidence_quote": "to comment. Please do not eliminate our consulting firms.  \"We are provided with E-rate Central services, and if it wasn't for this awesome team, I wouldn't be getting any E-rate funds.  The process",
+      "evidence_start": 628,
+      "evidence_end": 826,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "vendor_influence": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075437",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075437",
+  "filer_raw": "Sue Dossey",
+  "date_submission": "2026-09-03T16:15:49.828Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aefedd138475c9fe321646db9ade92df78e090d32d8e43c275f7341cfbabee59",
+  "params_key": "7bcc7bac8d6d3f45fac162f4c45bd5a17d5e6dcbeff2699129ca3ce5c1c467bf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,75 @@
+{
+  "summary": "Cypress School District Superintendent Grant Litfin urges the FCC to preserve and strengthen the E‑Rate program, arguing that reliable connectivity is essential for instruction, safety, and equitable access, and that cuts would strain limited budgets and jeopardize student services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures that rural, high‑need communities retain robust connectivity, which is especially challenging in those areas.",
+      "evidence_quote": "d operate effectively. That need has not disappeared. E-Rate \nremains essential educational infrastructure, particularly for rural, high-need, and other communities where \nmaintaining robust",
+      "evidence_start": 2464,
+      "evidence_end": 2654,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for maintaining reliable, affordable connectivity that supports instruction and safety in schools.",
+      "evidence_quote": "perintendent of Cypress School District, serving approximately 3100 students in Cypress and La Palma, I \nstrongly oppose any effort to narrow, weaken, or eliminate the E-Rate program. I respectfully",
+      "evidence_start": 621,
+      "evidence_end": 819,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts to E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or narrowing E‑Rate would place additional pressure on district budgets and delay necessary network upgrades.",
+      "evidence_quote": "al. \nWithout E-Rate support, these costs would place additional pressure on an already limited district budget and could \ndelay necessary network and safety infrastructure upgrades or require",
+      "evidence_start": 2006,
+      "evidence_end": 2197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address any specific policy proposals beyond preserving the program.",
+      "evidence_quote": "schools across the country can continue providing \nstudents with the connectivity and educational opportunities they need to succeed. \nSincerely, \n \n \nGrant Litfin, Ed.D.  \nSuperintendent \nWe",
+      "evidence_start": 2770,
+      "evidence_end": 2961,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073252",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073252",
+  "filer_raw": "Cypress School District",
+  "date_submission": "2026-08-26T18:51:32.156Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cce01e16ed421678675f604e680aeedae9a8a6a8d708ee2e48ac2a07a171b7a7",
+  "params_key": "ccdcb75e19f19c254afb7c7e25b94a1d353778bbe5645a44f4df70e694d2541e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, and narrowing of eligibility, and to maintain support for internal network infrastructure and equity for diverse districts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "roposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography \nor other criteria that would leave students without adequate support; \n3.​ Preserve support",
+      "evidence_start": 3425,
+      "evidence_end": 3623,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The program is essential to maintain modern network infrastructure and cannot be eliminated.",
+      "evidence_quote": "our district-wide network. \nI therefore respectfully urge the Commission to: \n1.​ Reject any proposal to sunset or eliminate the E-Rate program; \n2.​ Reject proposals that would unnecessarily narrow",
+      "evidence_start": 3267,
+      "evidence_end": 3465,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain funding for diverse districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "A rigid rural/non‑rural distinction would cripple district‑wide network needs.",
+      "evidence_quote": "district, encompassing rapidly growing suburban neighborhoods and deeply rural areas alike. A rigid 'rural versus \nnon-rural' distinction fails to recognize that the need for secure, high-capacity",
+      "evidence_start": 2956,
+      "evidence_end": 3152,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Internal network support is critical for reliable educational access.",
+      "evidence_quote": "adequate support; \n3.​ Preserve support for the connectivity and internal network infrastructure schools need to provide reliable \neducational access; and \n4.​ Work with schools and other",
+      "evidence_start": 3584,
+      "evidence_end": 3771,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate has enabled schools and libraries to build necessary connectivity for modern education.",
+      "evidence_quote": "ss; and \n4.​ Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public \neducation. \nE-Rate has enabled schools and libraries to build and",
+      "evidence_start": 3731,
+      "evidence_end": 3924,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080990",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080990",
+  "filer_raw": "Roger Dailey",
+  "date_submission": "2026-10-13T15:53:12.146Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "30b48a76fb2f21335d7ad433c5ef2a926c985cd041499a515f64b3e3ac8419e5",
+  "params_key": "61cba38c72eed5b418759cc86511cfc9d79501f7136e2a21e23b3622965af5a3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

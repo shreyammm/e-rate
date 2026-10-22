@@ -1,0 +1,89 @@
+{
+  "summary": "District administrator urges FCC to preserve E‑Rate, oppose sunset, maintain eligibility and support for internet and internal networks, uphold local instructional decision‑making, and emphasize connectivity’s essential role in education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "Preserve local instructional decision‑making",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The district emphasizes that reliable connectivity supports local instructional decision‑making and should not be restricted by federal policy.",
+      "evidence_quote": "ture. Work with educators, families, and other stakeholders to improve program effectiveness and administration while preserving local instructional decision-making. Reliable broadband is part of the",
+      "evidence_start": 3870,
+      "evidence_end": 4069,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "support",
+      "requested_action": "Maintain support for internet service and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district requests that the FCC maintain support for internet service and internal network infrastructure to avoid additional costs that would compete with staffing and instructional programs.",
+      "evidence_quote": "eligibility and support for schools and libraries in both urban and rural communities. Maintain support for internet service and internal network infrastructure. Work with educators, families, and",
+      "evidence_start": 3714,
+      "evidence_end": 3910,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Recognize connectivity as essential for learning",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that connectivity is essential for accessing curricular resources, learning environments, and professional development, thereby supporting student success.",
+      "evidence_quote": "cations and coordination with responders during critical incidents. Within classrooms, connectivity provides access to curricular resources and learning environments that serve students with diverse",
+      "evidence_start": 920,
+      "evidence_end": 1118,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve eligibility for schools and libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district urges the FCC to preserve eligibility and support for schools and libraries in both urban and rural communities.",
+      "evidence_quote": "s not depend on their family’s financial circumstances. I respectfully urge the Commission to: Reject any proposal to sunset or eliminate E-Rate. Preserve eligibility and support for schools and",
+      "evidence_start": 3559,
+      "evidence_end": 3753,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district opposes any proposal to sunset or eliminate E‑Rate because reliable broadband is essential infrastructure for public education.",
+      "evidence_quote": "ommunications Commission to preserve and strengthen E-Rate and reject changes that would eliminate, sunset, substantially reduce, or unnecessarily restrict support for schools and libraries. Reliable",
+      "evidence_start": 456,
+      "evidence_end": 655,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "support",
+    "discount_matrix": "support",
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079978",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079978",
+  "filer_raw": "Skokie School District 73.5",
+  "date_submission": "2026-10-08T02:25:37.197Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "10428d419bf5e4c015482435eb12c4323d85d39d89564fa25e119dfa10f3b114",
+  "params_key": "6af6757d6104cd16a4ef59e67f63c9d1c0ac3db0d50c44f48a29aa0a0cb06adf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

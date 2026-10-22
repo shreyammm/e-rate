@@ -1,0 +1,88 @@
+{
+  "summary": "The library director opposes eliminating or narrowing E‑Rate, argues that libraries across all communities rely on the program, and urges the FCC to preserve and simplify it.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "conditional_or_amend",
+      "requested_action": "simplify the program",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Simplifying the program would reduce administrative burden without cutting essential services.",
+      "evidence_quote": "ity and internal network infrastructure; and focus on simplifying the program rather than eliminating or substantially narrowing it.",
+      "evidence_start": 1716,
+      "evidence_end": 1848,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No explicit stance on CIPA or related policies is provided in the comment.",
+      "evidence_quote": "g other services.\n\nSchools and Libraries especially should not act in loco parentis. Concerns about children’s screen time should be addressed through appropriate  supervision by parents, filtering,",
+      "evidence_start": 1089,
+      "evidence_end": 1287,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not limit to rural or single‑provider areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting E‑Rate based on geography would shift costs onto libraries and taxpayers.",
+      "evidence_quote": "and suburban libraries also serve people experiencing financial hardship and digital exclusion. Restricting E-Rate based primarily on geography would overlook the needs of these communities and shift",
+      "evidence_start": 780,
+      "evidence_end": 979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain support for all eligible schools and libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Libraries in urban, suburban, and rural communities all need E‑Rate funding for connectivity and internal infrastructure.",
+      "evidence_quote": ".\n\nI urge the FCC to preserve E-Rate for eligible schools and libraries in rural, suburban, and urban communities; maintain support for both internet connectivity and internal network infrastructure;",
+      "evidence_start": 1557,
+      "evidence_end": 1756,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating E‑Rate would deprive libraries of essential internet and internal network support.",
+      "evidence_quote": "important E-Rate is to libraries and the communities they serve. I strongly oppose eliminating E-Rate or limiting it only to rural communities or areas with a single internet provider.\n\nReliable",
+      "evidence_start": 156,
+      "evidence_end": 350,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conditional_or_amend",
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076527",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076527",
+  "filer_raw": "Anna Newborg",
+  "date_submission": "2026-09-13T13:43:43.711Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f7dbfb132b53f2f66126c4c37678bc684fed9ad39addaffeacd035b1a8386187",
+  "params_key": "95073cd698bb66e067ed7b23c615427fcc1e94d97c8f950c7970c75175ec289f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

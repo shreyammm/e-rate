@@ -1,0 +1,86 @@
+{
+  "summary": "Alvord Unified School District urges the FCC to reject any proposal that would sunset, narrow, or substantially reduce E‑Rate funding, arguing that an 85% cut would cripple essential network infrastructure, increase security risks, and disproportionately harm students who lack reliable home broadband.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate discounts are structural, built into budgeting, procurement, and maintenance of core network infrastructure.",
+      "evidence_quote": "are not a convenience for our district — they are structural. They are built into how we \nbudget, procure, and maintain the network infrastructure that every one-to-one device, every state \ntesting",
+      "evidence_start": 932,
+      "evidence_end": 1129,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "other",
+      "argument": "E‑Rate supports essential safety and emergency communication tools that protect student data and district systems.",
+      "evidence_quote": "connections linking our school sites to the district office and to each other \n● \nISP transport connections providing internet access at every campus \n● \nFirewall infrastructure protecting student",
+      "evidence_start": 1402,
+      "evidence_end": 1598,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students who lack reliable broadband at home would feel the impact first, widening the digital divide.",
+      "evidence_quote": "classroom materials. For many districts, especially smaller and rural ones, that \ntradeoff will not be close. Networks will degrade, and the students who rely most on school \nconnectivity, because",
+      "evidence_start": 2649,
+      "evidence_end": 2845,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "Rolling back E‑Rate support would jeopardize the outcomes the program was built to achieve.",
+      "evidence_quote": "simply \nbecause most schools now have a broadband connection; the ongoing cost of maintaining, securing, and \nrefreshing that infrastructure is exactly what the category two and category one",
+      "evidence_start": 3116,
+      "evidence_end": 3306,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals that would sunset, narrow, or reduce E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "An 85% cut to E‑Rate support would directly burden six critical infrastructure categories, forcing districts to choose which schools keep Wi‑Fi and which do not.",
+      "evidence_quote": "one-to-one device, every state \ntesting platform, every learning management system, and every safety and emergency communication \ntool in our schools relies on. An 85% cut to E-Rate support would",
+      "evidence_start": 1090,
+      "evidence_end": 1285,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069346",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069346",
+  "filer_raw": "Alvord Unified School District",
+  "date_submission": "2026-08-03T17:38:31.336Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "80679a9d552f7fedc6ace905e3362fe59bfbd33649dc3663fcdbc8c41cdd8305",
+  "params_key": "3dc780eccf28a2cc093f9e8ffdb629fdb36facd4de7eba0c8bc8a7643d4b9266",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

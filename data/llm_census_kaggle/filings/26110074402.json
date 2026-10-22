@@ -1,0 +1,85 @@
+{
+  "summary": "The district opposes any termination or reduction of E‑Rate funding, arguing that such cuts would severely harm connectivity, equity, and educational outcomes for its students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or reduction of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Terminating E‑Rate would disproportionately harm the district’s high‑need students by eliminating the 80% federal subsidy that keeps connectivity affordable.",
+      "evidence_quote": "eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility. We urge the FCC \nto reject any proposal that would terminate or limit the E-Rate Program. \nE-Rate is critical for schools",
+      "evidence_start": 1568,
+      "evidence_end": 1765,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts to E‑Rate",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E‑Rate funding has enabled the district to complete a $10 million dark‑fiber project and upgrade hardware, directly supporting classroom learning and community access.",
+      "evidence_quote": "we’ve \nseen the benefits of that support first-hand. \nDark Fiber Infrastructure Project: FSUSD is on the verge of completing a \ntransformative $10,000,000 dark fiber network project connecting all 32",
+      "evidence_start": 2190,
+      "evidence_end": 2389,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current subsidy levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Without E‑Rate, the district would be forced to reallocate general funds away from core educational services, reducing curriculum and staffing budgets.",
+      "evidence_quote": "on digitally, \nFSUSD would be forced to reallocate general funds away from core educational \nservices. Money spent to cover full-price internet and hardware directly reduces the \nbudget available",
+      "evidence_start": 4372,
+      "evidence_end": 4567,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid E‑Rate cuts",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Loss of reliable network would impair students’ ability to complete digital assignments and state assessments, undermining academic equity.",
+      "evidence_quote": "d State Assessments: Today's educational \nstandards rely heavily on digital platforms, adaptive software, and online state \nassessments. A compromised or unaffordable network directly impairs our",
+      "evidence_start": 4683,
+      "evidence_end": 4878,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue E‑Rate support",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "The district’s infrastructure upgrades and cybersecurity enhancements would be delayed indefinitely without E‑Rate subsidies.",
+      "evidence_quote": "dules and classroom activities. \nStalled Modernization and Future Connectivity: Without E-Rate subsidies, future \ninfrastructure upgrades across our 32 sites would come to a complete halt. Essential",
+      "evidence_start": 4995,
+      "evidence_end": 5193,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074402",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074402",
+  "filer_raw": "Fairfield-Suisun Unified School District",
+  "date_submission": "2026-09-01T18:25:04.788Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dec92aaedb55250fd1f1d43638f8d8568b32eb3c28a67f4b7edbe28162f7939c",
+  "params_key": "c97ab8b5deb49c98b6fd7620dfd12a239fc2a6893f9a33cec8dfa16a168c8bd2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

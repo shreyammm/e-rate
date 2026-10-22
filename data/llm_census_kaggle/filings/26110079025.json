@@ -1,0 +1,88 @@
+{
+  "summary": "USD 507 Satanta urges the FCC to preserve core E‑Rate benefits, oppose blanket screen‑time limits, and avoid changes that reduce access, increase administrative burden, or limit local flexibility, while supporting simplification and fraud prevention.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "support",
+      "requested_action": "support simplification and fraud prevention",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The district supports thoughtful simplification and fraud prevention measures.",
+      "evidence_quote": "the core strengths of E-Rate, including support for affordable broadband, Internet access, internal connections, Wi-Fi, maintenance, and cost-effective network solutions. We support thoughtful",
+      "evidence_start": 2479,
+      "evidence_end": 2671,
+      "uncertain": false
+    },
+    {
+      "provision_id": "administrative_forms",
+      "position": "oppose",
+      "requested_action": "avoid increasing administrative burden",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The district cautions against policies that would raise administrative burdens.",
+      "evidence_quote": "network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or limit local",
+      "evidence_start": 2631,
+      "evidence_end": 2829,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid changes that reduce access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district warns that any changes reducing access would harm students.",
+      "evidence_quote": "network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or limit local",
+      "evidence_start": 2631,
+      "evidence_end": 2829,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district believes maintaining the core E‑Rate program is essential for affordable broadband access.",
+      "evidence_quote": "ogram. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. 6. CLOSING USD 507 Satanta respectfully urges the FCC to preserve the core strengths of E-Rate, including",
+      "evidence_start": 2325,
+      "evidence_end": 2518,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject one‑size‑fits‑all screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district opposes blanket screen‑time limits, preferring local control.",
+      "evidence_quote": "ogram. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. 6. CLOSING USD 507 Satanta respectfully urges the FCC to preserve the core strengths of E-Rate, including",
+      "evidence_start": 2325,
+      "evidence_end": 2518,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conflicting_or_multiple",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079025",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079025",
+  "filer_raw": "USD 507 Satanta",
+  "date_submission": "2026-10-01T15:20:01.883Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6083b8d4aab2b4968eee8e8f93c897054cab74865d644221358a801f94bfef18",
+  "params_key": "cc4605a8020b4a7b0e5da20b99480a74f86e8f1fcb0fbd275160ff1bfe7bbdd9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

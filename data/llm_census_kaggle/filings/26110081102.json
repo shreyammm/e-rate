@@ -1,0 +1,50 @@
+{
+  "summary": "Massachusetts Library Legislative Caucus urges the FCC to preserve E‑Rate funding and to streamline administrative requirements without cutting support for libraries and schools. No policy claims identified in the provided text.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "conditional_or_amend",
+      "requested_action": "streamline administrative procedures without reducing funding",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Improving administration should not come at the expense of the funding that enables libraries and schools to provide essential connectivity.",
+      "evidence_quote": "them.  \n \nWe recognize the Commission's responsibility to ensure that federal programs are \nadministered efficiently, transparently, and responsibly. Efforts to prevent waste, fraud, and \nabuse and",
+      "evidence_start": 3751,
+      "evidence_end": 3948,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential for libraries and schools to provide reliable broadband, especially in rural and low‑income communities.",
+      "evidence_quote": "-\n41 (rel. June 26, 2026).  \n\n\n2 \nE-Rate is critical for schools and libraries to maintain affordable, reliable access to the \nInternet. Terminating that support represents a cut to school and",
+      "evidence_start": 1575,
+      "evidence_end": 1767,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "conditional_or_amend",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081102",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081102",
+  "filer_raw": "Senator Paul Feeney | Representative Brian W. Murray | Representative Natalie Higgins",
+  "date_submission": "2026-10-13T18:43:52.167Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f5557df1d410d8321f615110d9fe8e4836a7f7abaa05d3c3c09160eabdbcc900",
+  "params_key": "b21f17f4c6eaf379b1232e9fbbca19ecaec82a642ca7355bd27d86631ccbed56",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

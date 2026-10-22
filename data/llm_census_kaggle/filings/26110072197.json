@@ -1,0 +1,89 @@
+{
+  "summary": "Rebecca Price Martin opposes conditioning E‑Rate funding on screen‑time limits, parental opt‑outs, and network‑level filtering, arguing these intrude on local educational sovereignty, parental rights, and individual liberties.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "reject network‑level filtering requirements",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Network‑level filtering on personal devices violates individual liberties and access to information.",
+      "evidence_quote": "ricula.\nFurthermore, the NPRM floats the idea of network-level filtering to enforce screen time limits on all devices, potentially including third-party or student-owned devices. Forcing libraries",
+      "evidence_start": 2164,
+      "evidence_end": 2360,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No explicit stance on narrowing eligible equipment or services was expressed.",
+      "evidence_quote": "COMMENTS OF Rebecca Price Martin, PsyD\n\nIntroduction\nThe Commission’s Notice of Proposed Rulemaking (NPRM) seeking comment on conditioning E-Rate funding on the imposition of screen time limits,",
+      "evidence_start": 0,
+      "evidence_end": 194,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate program without new behavioral conditions",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Transforming E‑Rate into a tool for behavioral engineering would create financial coercion and stifle recipient freedom.",
+      "evidence_quote": "sforming a connectivity discount program into a mechanism for enforcing rigid, per-day network access limits creates an environment of financial coercion. Recipient institutions face an unfair",
+      "evidence_start": 2944,
+      "evidence_end": 3136,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "reject parental opt‑out mandates",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Mandating parental opt‑outs would create an unworkable administrative burden and infringe on parental rights.",
+      "evidence_quote": "o opt their children out of screen-based instruction as a condition of receiving E-Rate support. While parental engagement is critical, embedding such a requirement into a federal universal service",
+      "evidence_start": 1849,
+      "evidence_end": 2046,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject screen‑time limits as E‑Rate conditions",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time limits imposed by federal funding would unduly restrict local schools’ instructional autonomy.",
+      "evidence_quote": "ment on whether E-Rate funding should be conditioned on the imposition of screen time limits in schools and libraries. Decisions regarding classroom instruction, technology deployment, and daily",
+      "evidence_start": 768,
+      "evidence_end": 962,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "erate_eligibility_scope": "discussion_no_position",
+    "erate_sunset": "oppose",
+    "parent_opt_out": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072197",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072197",
+  "filer_raw": "Dr. Rebecca Price Martin",
+  "date_submission": "2026-08-19T14:02:29.506Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ac9c5491ae83a177e0c6cd80dae43d863d1fd517a650143a226db45a5686315b",
+  "params_key": "ab4475c48c89007c7fe73edb1a49dc6f06c24d0449fc1fd8b0293c0b2da8fc42",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

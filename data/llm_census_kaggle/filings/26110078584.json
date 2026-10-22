@@ -1,0 +1,74 @@
+{
+  "summary": "Superintendent urges FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts to connectivity support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "to:\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based\nsolely on geography or other",
+      "evidence_start": 3275,
+      "evidence_end": 3470,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity is part of basic infrastructure like electricity and transportation.",
+      "evidence_quote": "pport based\nsolely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 3430,
+      "evidence_end": 3624,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "deral Communications Commission (FCC) to preserve and strengthen the E-\nRate program and to reject any proposal that would eliminate, sunset, substantially reduce, or\nunnecessarily restrict E-Rate",
+      "evidence_start": 464,
+      "evidence_end": 660,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be updated to meet evolving instructional demands.",
+      "evidence_quote": "l network infrastructure schools need to provide\nreliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce\nits role in public",
+      "evidence_start": 3584,
+      "evidence_end": 3782,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078584",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078584",
+  "filer_raw": "Pendleton County School District KY",
+  "date_submission": "2026-09-28T19:03:05.678Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "711c7c69959b830a0c54b1de0bf38284a50d7baf5cc920df8a9d044b665f7bff",
+  "params_key": "b19e9ec5de2428fc34807bc6368e3d2c8975947127c3c2d5c292a4b4977332c4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

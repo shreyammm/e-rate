@@ -1,0 +1,63 @@
+{
+  "summary": "Parent argues that school‑issued iPads violate COPPA, harm child health, and that parents should be able to opt‑out of screen‑based instruction.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "enforce COPPA compliance and parental consent for data collection",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "legal_claim",
+      "argument": "School‑issued iPads violate COPPA by collecting and disclosing child data without parental consent.",
+      "evidence_quote": "using the iPad any longer and I did  not consent to the use, collection and disclosure of my child’s data ,  as was my right under the Children’s Online Privacy and Protection Act. A series of",
+      "evidence_start": 1869,
+      "evidence_end": 2061,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "allow parental opt‑out of screen‑based instruction",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Parents should be able to refuse school‑issued iPads to protect their children’s health and privacy.",
+      "evidence_quote": "NTIA Public Comment Docket Number :  26-133 Docket/Proceeding Title :  Ensuring Children's Safe Use of Screens and E-Rate-Funded Services Dear NTIA  and FCC : We are a minimal screen household. No",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "limit screen time to protect health",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "Scientific studies show negative associations between screen time and brain, mental, and physical health.",
+      "evidence_quote": "full of empty promises. Ed tech products lack any credible, independent evidence of educational benefit. Rather, an abundance of  s cientific studies highlight s  the negative associations between",
+      "evidence_start": 1403,
+      "evidence_end": 1599,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "oppose",
+    "parent_opt_out": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075646",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075646",
+  "filer_raw": "Sandhya Polu",
+  "date_submission": "2026-09-05T15:18:25.403Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8cb3b966c204eda061a9f2d8c32bfd9412768bb7aa386801652ac1ffa7ed0294",
+  "params_key": "758e11aa46e6ca246b8b1ec128dec9664ac100270a9b0c8697ed0938c744bfe9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

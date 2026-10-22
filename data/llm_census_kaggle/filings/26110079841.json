@@ -1,0 +1,112 @@
+{
+  "summary": "Connecticut’s Chief Information Officer argues that E‑Rate funding remains essential to ensure broadband affordability and access for schools and libraries, especially in distressed communities. The comment argues that E‑Rate funding is essential for equitable broadband access and that arbitrary screen‑time limits would undermine educational goals.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "maintain current CIPA guidance",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "The comment references state guidance on personal technology use but does not propose changes to CIPA",
+      "evidence_quote": "necticut State \nDepartment of Education, “Connecticut Releases Updated Position Statement and Guidance on the Use of Personal \nand Purposeful Technology in Schools,” press release, August 5, 2026,",
+      "evidence_start": 9632,
+      "evidence_end": 9828,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential to keep broadband affordable for schools and libraries in Connecticut, where demand far exceeds supply.",
+      "evidence_quote": "Demand remains strong for funding, with requests representing 114% and \n121%, respectively, of actual disbursements5. E-Rate funding is clearly necessary in \nConnecticut, with demand far exceeding",
+      "evidence_start": 2798,
+      "evidence_end": 2994,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The state’s high broadband availability does not eliminate the need for E‑Rate because many households still lack affordable service.",
+      "evidence_quote": "Connecticut, with demand far exceeding supply. \nReturning to the above questions in the NPRM, there continues to be a significant \nneed for the E-Rate program, given demand from schools and",
+      "evidence_start": 2956,
+      "evidence_end": 3145,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current reimbursement formula",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding must continue to support schools in socioeconomically challenged communities to avoid widening disparities",
+      "evidence_quote": "cally challenged communities. Those same cities and towns would be \nhardest hit by the elimination or scaling back of E-Rate reimbursements, likely \nwidening disparities in opportunity for students",
+      "evidence_start": 4807,
+      "evidence_end": 5004,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating or scaling back E‑Rate would undermine broadband access for students in poor communities",
+      "evidence_quote": "cally challenged communities. Those same cities and towns would be \nhardest hit by the elimination or scaling back of E-Rate reimbursements, likely \nwidening disparities in opportunity for students",
+      "evidence_start": 4807,
+      "evidence_end": 5004,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "evaluate context‑specific use",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Guidance calls for intentional use of technology rather than blanket limits",
+      "evidence_quote": "ssued guidance advising local \neducation agencies to address these concerns. Both sets of guidance call for \nintentional use of technology for learning as the common goal of these tools, rather \nthan",
+      "evidence_start": 8219,
+      "evidence_end": 8418,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose arbitrary screen‑time limits",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "child_safety",
+      "argument": "Screen‑time limits that do not correlate with learning are arbitrary and ignore essential uses of technology",
+      "evidence_quote": "common goal of these tools, rather \nthan imposing arbitrary “screen time” limits that do not correlate with student \nlearning12. The Commission has issued competency standards that help students \nand",
+      "evidence_start": 8378,
+      "evidence_end": 8577,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079841",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079841",
+  "filer_raw": "Mark Raymond",
+  "date_submission": "2026-10-07T17:25:59.969Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ae40ec332d85e501bddf8a4e0d0156a949094eee9c54f03a2ba0ed37021b5bac",
+  "params_key": "cff38636ecffeb54544d3caa662e7af5359f16870445a360e18e0c08e951d938",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

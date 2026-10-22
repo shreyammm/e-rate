@@ -1,0 +1,86 @@
+{
+  "summary": "Pleasant Ridge Union School District urges the FCC to preserve the E‑Rate program and maintain current support levels, arguing that the program is essential for affordable broadband, internal network maintenance, and student safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not narrow Category One eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Narrowing Category One eligibility would shift costs onto the district’s budget and increase expenses.",
+      "evidence_quote": "uld be approximately $465 a month before taxes and fees. Right now, the E-Rate program discounts 60% to 70% of those circuits, which is the only way the district can afford them. Any narrowing of",
+      "evidence_start": 2964,
+      "evidence_end": 3159,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not narrow Category One eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Such narrowing would not reduce the district’s need for bandwidth but would increase costs.",
+      "evidence_quote": "strict can afford them. Any narrowing of Category One eligibility would not reduce our need for bandwidth , but instead,  would shift the cost onto  our  budget and potentially require us to  keep it",
+      "evidence_start": 3119,
+      "evidence_end": 3318,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain Category Two support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Category Two support is essential for replacing network equipment and maintaining internal connectivity.",
+      "evidence_quote": "Two budgets are what allow us to replace equipment and keep our networks running. That support also covers Managed Internal Broadband Services (MIBS) and Basic Maintenance of Internal Connections",
+      "evidence_start": 3434,
+      "evidence_end": 3629,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain Category Two support",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "Eliminating Category Two would create significant safety issues and negatively impact student learning.",
+      "evidence_quote": "itical infrastructure – which would be a  significant  safety issue, negatively impact student learning, and prevent staff from effectively completing their duties – or we would have to cut costs",
+      "evidence_start": 4060,
+      "evidence_end": 4255,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district believes the E‑Rate program remains necessary to afford broadband and internal network costs.",
+      "evidence_quote": "School District  urges the Commission to preserve the E-Rate program and to maintain the support levels that make connectivity affordable for the schools and libraries Congress intended it to reach.",
+      "evidence_start": 4374,
+      "evidence_end": 4572,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073398",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073398",
+  "filer_raw": "Robert Thompson",
+  "date_submission": "2026-08-27T17:32:49.491Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0d59059b2ea63af51aa24025fc4b0409b872b9beab82d9a6d5cbcf97859722e4",
+  "params_key": "2ea05eaa43b9198316482d43374dec144dcb6147841e2ac4e7435c5304851c4c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

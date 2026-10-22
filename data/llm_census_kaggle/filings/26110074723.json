@@ -1,0 +1,74 @@
+{
+  "summary": "Orcutt Union School District urges the FCC to preserve and strengthen the E‑Rate program, arguing that the program is essential for maintaining reliable, affordable connectivity that supports all aspects of school operations, safety, and instructional technology.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility and funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding covers critical infrastructure upgrades that the district could not afford otherwise.",
+      "evidence_quote": "That work will not be possible \nwithout continued E-Rate support. \nIf E-Rate funding were reduced or eliminated, our district would not be able to sustain our current network environment, \nlet alone",
+      "evidence_start": 2024,
+      "evidence_end": 2222,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for safety and communication systems",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate‑supported connectivity underpins emergency communication and safety platforms that protect students and staff.",
+      "evidence_quote": "current network environment, \nlet alone continue the infrastructure improvements our sites still need. Every core system we rely on today runs on internet \nconnectivity: our student information",
+      "evidence_start": 2183,
+      "evidence_end": 2376,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reducing or eliminating E‑Rate",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "implementation_burden",
+      "argument": "Reducing or eliminating E‑Rate would force the district to cut essential services or revert to paper‑based processes, harming instructional quality.",
+      "evidence_quote": "d force us to look at our entire budget, and we would very likely need to reduce \nservices elsewhere to protect connectivity, or reduce connectivity itself, to protect other essential programs.",
+      "evidence_start": 2653,
+      "evidence_end": 2846,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for maintaining reliable, affordable connectivity that supports all aspects of school operations.",
+      "evidence_quote": "strict for decades. We respectfully urge the \nCommission to preserve and strengthen the program rather than sunset or narrow it. On behalf of the students, families, \nand staff of our district, thank",
+      "evidence_start": 3583,
+      "evidence_end": 3782,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074723",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074723",
+  "filer_raw": "Leslie Wagonseller | Orcutt Union School District",
+  "date_submission": "2026-09-01T23:45:02.510Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5b0f81216d1dd2b6d87bc74773a6d7ea05004188d1309747a575a65e01dfa6ae",
+  "params_key": "c5e685aadec5373da285525edaaf12f146bfafcc18a4d31c8e2ca20bf843cbdd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

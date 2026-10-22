@@ -1,0 +1,98 @@
+{
+  "summary": "NCTA argues that managed internal broadband services (MIBS) should remain eligible for E‑Rate funding, citing security, reliability, and operational expertise concerns. The comments argue that MIBS should remain eligible for E‑Rate funding with clearer guidance on cost allocation for customer‑specific staff augmentation, and that variable‑pricing NaaS services should remain ineligible due to administrative burden and risk to competitive bidding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "exclude variable‑pricing NaaS",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Variable‑pricing NaaS services should remain ineligible for E‑Rate funding due to administrative burden and uncertainty.",
+      "evidence_quote": "THLY PRICING SERVICES, LIKE NAAS, SHOULD \nREMAIN INELIGIBLE FOR E-RATE FUNDING \nNCTA has concerns with the Commission making monthly variable pricing NaaS \nservices eligible for E-Rate funding.10",
+      "evidence_start": 7119,
+      "evidence_end": 7314,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "prevent variable‑pricing NaaS",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "implementation_burden",
+      "argument": "Variable pricing could undermine the competitive bidding process by incentivizing artificially low usage estimates.",
+      "evidence_quote": "pricing structure would introduce to the \nprogram.   \nSecond, variable pricing could undermine the competitive bidding process. Under a \nusage-based pricing system, providers, consultants, or",
+      "evidence_start": 9445,
+      "evidence_end": 9636,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "keep MIBS eligible for E‑Rate funding",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "MIBS provide essential external expertise, monitoring, and maintenance that keep school networks functional, reliable, and secure, especially when staff responsibilities fall to teachers or administrators.",
+      "evidence_quote": "ly \non managed systems to maintain their networks, and wholesale changes to E-Rate support for \nMIBS, particularly making it ineligible, would pose serious risks to network operation, security, \nand",
+      "evidence_start": 2332,
+      "evidence_end": 2530,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "retain eligibility for MIBS",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "MIBS should remain eligible for E‑Rate funding, with clearer guidance to cost‑allocate customer‑specific staff augmentation out of MIBS contracts.",
+      "evidence_quote": "iably, and safely.”); SentinelOne \nComments at 3 (“MIBS has served as a critical vehicle by which schools and libraries have funded third-party \nmanagement of their internal broadband infrastructure,",
+      "evidence_start": 4784,
+      "evidence_end": 4983,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "conditional_or_amend",
+      "requested_action": "clarify cost‑allocation rules",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The Commission should require that any customer‑specific staff augmentation costs be cost‑allocated out of MIBS contracts.",
+      "evidence_quote": "guidance. Specifically, the \nCommission should require that any customer-specific staff augmentation costs be cost-allocated \nout of MIBS contracts. For example, where a school or library uses MIBS",
+      "evidence_start": 5404,
+      "evidence_end": 5601,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "maintain eligibility for managed services",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Eligible internal connections should remain eligible when delivered as part of a managed service offering.",
+      "evidence_quote": "n, monitoring, configuration management, maintenance, software support, and lifecycle \nmanagement of eligible internal connections should remain eligible when delivered as part of a \nmanaged service",
+      "evidence_start": 6022,
+      "evidence_end": 6220,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "mibs": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071317",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071317",
+  "filer_raw": "NCTA - The Internet & Television Association",
+  "date_submission": "2026-08-14T15:15:24.721Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a7e5fc0a07ec5e1183300cd3348410716a9f2a9ecff35724fff01689c62a6348",
+  "params_key": "38b2dc1f1569b6187c251d91eb1e1a72ca32cea4b205582d4abc58596b16605e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

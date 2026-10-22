@@ -1,0 +1,89 @@
+{
+  "summary": "Grandville Calvin Christian Schools urges the FCC to preserve the core E‑Rate program, maintain eligibility for special construction and other services, oppose blanket screen‑time limits, and keep CIPA requirements practical while avoiding funding cuts that would harm students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "conditional_or_amend",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "implementation_burden",
+      "argument": "The school supports CIPA but calls for practical, privacy‑respecting implementation.",
+      "evidence_quote": "districts serving high-need or high-cost communities. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. • Keep CIPA requirements practical, technically feasible, and",
+      "evidence_start": 4814,
+      "evidence_end": 5010,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The school maintains that these services are critical to keeping up with current wireless standards and reliable Wi‑Fi.",
+      "evidence_quote": "ON • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. • Preserve",
+      "evidence_start": 4350,
+      "evidence_end": 4546,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The school argues that cutting E‑Rate funding would degrade wireless infrastructure and increase disparities among families.",
+      "evidence_quote": "would see a degradation in our wireless infrastructure over time because we can't proactively replace access points and network infrastructure as consistently due to decreased funding.  We would",
+      "evidence_start": 3886,
+      "evidence_end": 4080,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "Avoid reducing E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The school warns that funding cuts would disproportionately impact rural communities and increase costs for families.",
+      "evidence_quote": "harm all students and families and could disproportionally impact rural communities in a greater way. 6. CLOSING Grandville Calvin Christian Schools respectfully urges the FCC to preserve the core",
+      "evidence_start": 5127,
+      "evidence_end": 5323,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The school contends that screen‑time metrics should be locally defined and not imposed federally.",
+      "evidence_quote": "rvices that schools rely on every day. • Ensure any changes to discount methodology reflect true local cost and need, and do not disproportionately harm districts serving high-need or high-cost",
+      "evidence_start": 4661,
+      "evidence_end": 4854,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "conditional_or_amend",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080731",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080731",
+  "filer_raw": "Grandville Calvin Christian Schools",
+  "date_submission": "2026-10-12T21:17:45.300Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "30f564d8d40d8cebde91a6535dd51186a6deb2b81e30ed5eb19da843df03d921",
+  "params_key": "f296333e854dbaa1e60f28f27d9c386c949c5c98fe0a84b73ea85d36d5db7513",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,122 @@
+{
+  "summary": "Burlington Township Schools’ superintendent urges the FCC to preserve and strengthen the E‑Rate program, arguing that broadband is essential infrastructure, that cuts would force budgetary compromises, and that the program’s continued relevance is evidenced by its long‑term success and the persistent needs of economically disadvantaged students. Superintendent urges the FCC to reject sunset and narrowing proposals, preserve connectivity and modernize E‑Rate.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve broadband support for schools and libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Broadband needs persist even where technical availability exists, especially for economically disadvantaged students.",
+      "evidence_quote": "lso consider the needs of districts that serve diverse communities. \nBroadband needs do not disappear simply because a school district is located in an area where \nbroadband is technically available.",
+      "evidence_start": 4305,
+      "evidence_end": 4504,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "bility or restrict support based \nsolely on geography or other criteria that would leave students without adequate support; \n3.​ Preserve support for the connectivity and internal network",
+      "evidence_start": 5654,
+      "evidence_end": 5841,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Schools need reliable connectivity to provide effective education.",
+      "evidence_quote": "or the connectivity and internal network infrastructure schools need to \nprovide reliable educational access; and \n4.​ Work with schools and other stakeholders to strengthen and modernize E-Rate",
+      "evidence_start": 5801,
+      "evidence_end": 5995,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "The program’s success over three decades demonstrates its ongoing necessity for modern education.",
+      "evidence_quote": "schools are connected today is, in large part, evidence \nof the success of E-Rate — not evidence that the need for the program has disappeared. \n \nPage 1 of 3 \n\n\nBURLINGTON TOWNSHIP SCHOOLS \nOffice",
+      "evidence_start": 2153,
+      "evidence_end": 2350,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "The program’s long‑term success indicates that its benefits are still essential.",
+      "evidence_quote": "3 \n\n\nBURLINGTON TOWNSHIP SCHOOLS \nOffice of the Superintendent \nPO Box 428, 710 Jacksonville Road - Hopkins Building, Burlington, NJ 08016 \n Dr. Mary Ann Bell, Superintendent of",
+      "evidence_start": 2310,
+      "evidence_end": 2487,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to eliminate or substantially reduce E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E‑Rate would force districts to cut essential services and defer network upgrades.",
+      "evidence_quote": "rect and tangible impact. \nE-Rate covers approximately 60% of our internet costs, about $12,000 year. E-Rate has also offset \nhundreds of thousands of dollars in technology infrastructure costs for",
+      "evidence_start": 2752,
+      "evidence_end": 2949,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program is essential for ensuring reliable broadband access for all students.",
+      "evidence_quote": "urge the Commission to: \n1.​ Reject any proposal to sunset or eliminate the E-Rate program; \n2.​ Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely",
+      "evidence_start": 5496,
+      "evidence_end": 5694,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing E‑Rate will strengthen its role in public education.",
+      "evidence_quote": "lders to strengthen and modernize E-Rate rather than \nreduce its role in public education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity",
+      "evidence_start": 5955,
+      "evidence_end": 6147,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080115",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080115",
+  "filer_raw": "Burlington Township School District",
+  "date_submission": "2026-10-08T19:01:50.062Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6b218ec994725409e28ba670cabc25aed291a5d389e50f961831a75866d79228",
+  "params_key": "8afe43510aaab60e1648154f27789c854cfea8d08522749a4b805b61f59604fe",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "Boston Public Library argues that E‑Rate is essential for equitable access to digital services in urban neighborhoods and should be preserved.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would shift roughly $700,000 a year in recurring connectivity support onto a library and municipal budget that lacks the resources.",
+      "evidence_quote": "rar ies . Eliminating E-Rate would shift roughly $700,000 a year in recurring connectivity support onto a  library and  municipal budget that  does not have these resources  — and the first",
+      "evidence_start": 3253,
+      "evidence_end": 3442,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The loss of E‑Rate funding would also mean a huge decrease in revenue for the vendor community that supports these networks and services.",
+      "evidence_quote": "ot have these resources  — and the first casualties would be  the bandwidth , Wi-Fi, and security that make the library a lifeline  to our residents .  This would also mean a huge decrease in revenue",
+      "evidence_start": 3402,
+      "evidence_end": 3601,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate provides critical broadband and Wi‑Fi infrastructure that enables low‑income residents to access jobs, education, and health services.",
+      "evidence_quote": "work. It is the reason a library card in Boston still means what it meant in 1848: full membership in the life of the city, regardless of income. We urge the Commission to preserve it. David Leonard",
+      "evidence_start": 3717,
+      "evidence_end": 3915,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080605",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080605",
+  "filer_raw": "Boston Public Library | Metro Boston Library Network | David Loenard",
+  "date_submission": "2026-10-12T15:42:05.515Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c02442acf7156f67c2a4a736c55dadb77a477b2d601217618dffc5b109a55ce8",
+  "params_key": "2824f0dfeb798621f84beb504c712b75ac3d928796acdd33bdbf9205870c0a38",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

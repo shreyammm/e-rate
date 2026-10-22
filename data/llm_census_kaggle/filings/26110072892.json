@@ -1,0 +1,89 @@
+{
+  "summary": "Calhoun County Schools urges the FCC to preserve and strengthen the E‑Rate program, arguing that federal support is essential for maintaining modern, secure, and reliable school networks and that concerns about student screen time should not justify cutting funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "maintain content filtering and cybersecurity protections",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "Strong infrastructure supports content filtering, cybersecurity, and device management essential for student safety.",
+      "evidence_quote": "ology responsibly. Strong infrastructure supports\ncontent filtering, cybersecurity protections, device management, secure assessments, communications, and\n\nthe tools schools use to protect students",
+      "evidence_start": 3222,
+      "evidence_end": 3419,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "administrative_burden",
+      "claim_kind": "other",
+      "argument": "The letter does not address consultant definitions or related administrative changes.",
+      "evidence_quote": "August 24, 2026\nThe Honorable Marlene H. Dortch\nFederal Communications Commission\n45 L Street NE\nWashington, DC 20554\nRE: Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district needs continued federal funding to keep its network infrastructure current and secure.",
+      "evidence_quote": "-Rate on our district is substantial and measurable. Most recently, E-Rate provided\napproximately $1 million in funding for a districtwide wireless access point refiesh. That support allowed us\nto",
+      "evidence_start": 1060,
+      "evidence_end": 1256,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No other policy issues are explicitly discussed in the letter.",
+      "evidence_quote": "August 24, 2026\nThe Honorable Marlene H. Dortch\nFederal Communications Commission\n45 L Street NE\nWashington, DC 20554\nRE: Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": true
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie E‑Rate to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time concerns should not reduce the resources needed to provide safe, reliable technology.",
+      "evidence_quote": "ficult to maintain the level of\nservice, safety, and educational opportunity our students deserve.\nWe understand and respect concerns about student screen time. Schools and families should continue",
+      "evidence_start": 2301,
+      "evidence_end": 2498,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "consultant_definition": "discussion_no_position",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072892",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072892",
+  "filer_raw": "Lance Driskell",
+  "date_submission": "2026-08-24T18:41:03.745Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "14f92354bb359e61f62ceb26d64f43641ea28a922e958ccd95d594450335b0db",
+  "params_key": "cffc83125a5dd8517eb90d6e25d0d1b013a9937960bbb131eff543311c8e87b6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

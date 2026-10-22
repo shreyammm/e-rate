@@ -1,0 +1,88 @@
+{
+  "summary": "The comment urges continued support for the E‑Rate program, opposes any weakening or elimination, and argues that reliable broadband is essential for school operations and that FCC proposals overreach the program’s scope.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address CIPA or related policies.",
+      "evidence_quote": "As an Information Technology leader for Madera Unified School District, I oversee the day-to-day operations of public school Information Technology systems.  I write to urge continued support for the",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Broadband is core infrastructure, not supplemental, and must remain eligible for support.",
+      "evidence_quote": "no longer a supplemental service in our schools; it is core infrastructure.  Our district relies on high-capacity connectivity to run instruction, assessments, student information systems, safety",
+      "evidence_start": 311,
+      "evidence_end": 506,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must continue to provide affordable broadband to schools.",
+      "evidence_quote": "write to urge continued support for the E-Rate program and to oppose any efforts that would weaken or eliminate it.\n\nReliable, affordable broadband is no longer a supplemental service in our",
+      "evidence_start": 160,
+      "evidence_end": 350,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject FCC sunset proposal",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "FCC’s proposed sunset undermines a congressionally authorized program.",
+      "evidence_quote": "tions Commission (FCC) recently proposed a rule that includes changes to the E-Rate program that will undermine the program and the connectivity it provides. The success of near-universal",
+      "evidence_start": 1399,
+      "evidence_end": 1586,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure predictable, affordable access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Predictable, affordable access to high‑capacity broadband is essential for teaching, learning, and school operations.",
+      "evidence_quote": "uthorized program for decades because it addresses an ongoing need.  I urge policymakers to reaffirm that commitment and ensure the program continues to provide predictable, affordable access to",
+      "evidence_start": 2472,
+      "evidence_end": 2666,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072628",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072628",
+  "filer_raw": "Kee Vang | Madera Unified School District",
+  "date_submission": "2026-08-21T19:21:32.999Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dd8fdb9b42e8cc112e31f8ecb5befdbb785d5dcf5c87bec1d6e553d59bbe9fb0",
+  "params_key": "bb7f9fcfecdd9cd8a428e6c326f211d9324cd48ac2fe0c4a13b4bb123b5558de",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

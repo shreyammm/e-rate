@@ -1,0 +1,75 @@
+{
+  "summary": "Hawaii Technology Academy opposes sunset or scaling back of E‑Rate, argues Category Two funding is essential, claims BEAD cannot replace ongoing discounts, and requests full funding and eligibility remain.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "ecf_rule_sunset",
+      "position": "oppose",
+      "requested_action": "reject BEAD as replacement for E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "BEAD funds only physical infrastructure and does not cover ongoing monthly service discounts.",
+      "evidence_quote": "federal programs like BEAD are vital for building physical footprint infrastructure in \nunserved regions, they do not fund the ongoing, monthly telecommunications service discounts \n94-450 Mokuola",
+      "evidence_start": 1731,
+      "evidence_end": 1927,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "retain Category Two eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Category Two internal connectivity is critical for modern classrooms and cannot be stripped.",
+      "evidence_quote": "ory Two Infrastructure Define the Modern Classroom \nThe NPRM’s inquiry into whether to strip funding for advanced internal connections (Category \nTwo) or off-campus connectivity overlooks how modern",
+      "evidence_start": 1108,
+      "evidence_end": 1306,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting or scaling back E‑Rate would force the school to divert tens of thousands of dollars from instruction and services.",
+      "evidence_quote": "fiscal planning. If E-Rate funding were sunset or restricted, Hawaii \nTechnology Academy would be forced to divert tens of thousands of dollars away from \nclassroom instruction, teacher hiring, and",
+      "evidence_start": 792,
+      "evidence_end": 989,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full funding and eligibility scopes",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has been a monumental success because it evolved with technology needs.",
+      "evidence_quote": "ved alongside the technological needs of \nour students. We request the FCC to maintain full funding and eligibility scopes for the program \nmoving forward. \n \nRespectfully submitted, \n \nElaine Terry",
+      "evidence_start": 2352,
+      "evidence_end": 2550,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "ecf_rule_sunset": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077046",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077046",
+  "filer_raw": "Elaine Terry",
+  "date_submission": "2026-09-18T22:41:09.308Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f5e5b823b7152d83cc7a1974598da7340496f89c26695cd42684f552aa912d9b",
+  "params_key": "282a517a3f2a107e3a994d6f739498a21193829bad9a2ef613a98a3ba5f5b95e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

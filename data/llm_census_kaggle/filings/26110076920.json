@@ -1,0 +1,88 @@
+{
+  "summary": "Fall Creek School District urges the FCC to keep the E‑Rate program intact, reject sunset proposals, avoid restrictive eligibility rules, maintain support for internal network infrastructure, and prevent shifting costs to local budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "prevent shifting costs to local budgets",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate support would shift costs to local school budgets, competing with staffing and instructional programs.",
+      "evidence_quote": "rational demands\nevolve.\nReducing E-Rate support would not eliminate these costs; it would shift more of them to local school\nbudgets, where they would compete with staffing, instructional programs,",
+      "evidence_start": 2168,
+      "evidence_end": 2366,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility restrictions based on geography, poverty, or provider count",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Eligibility restrictions that would leave schools without adequate support are unacceptable.",
+      "evidence_quote": "ect proposals to sunset or eliminate the E-Rate program;\n2. Avoid eligibility restrictions based solely on geography, poverty level, or provider count when\nthose restrictions would leave schools",
+      "evidence_start": 2790,
+      "evidence_end": 2984,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve and strengthen the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district urges the FCC to preserve and strengthen the E‑Rate program.",
+      "evidence_quote": "3 school buildings in Fall Creek, WI.\nI urge the Federal Communications Commission to preserve and strengthen the E-Rate program and reject\nproposals that would eliminate, sunset, substantially",
+      "evidence_start": 473,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "statutory_authority",
+      "claim_kind": "alternative_design",
+      "argument": "The district opposes any proposal to sunset or eliminate the E‑Rate program.",
+      "evidence_quote": "ect proposals to sunset or eliminate the E-Rate program;\n2. Avoid eligibility restrictions based solely on geography, poverty level, or provider count when\nthose restrictions would leave schools",
+      "evidence_start": 2790,
+      "evidence_end": 2984,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district needs continued funding for connectivity and internal network infrastructure to provide reliable educational access.",
+      "evidence_quote": "n\nthose restrictions would leave schools without adequate support;\n\n3.\nPreserve support for the connectivity and internal network infrastructure schools need to provide\nreliable educational access;",
+      "evidence_start": 2944,
+      "evidence_end": 3141,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_percent_fees": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "mibs": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076920",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076920",
+  "filer_raw": "Fall Creek School District",
+  "date_submission": "2026-09-17T20:06:57.819Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "c03eaeff70ce5d7639f472d7793df0b3b11898b85a1435fc8f5a497415b5ae0c",
+  "params_key": "223537effb02fd5ff53b01fc02d22a04eca508f9c3e7a83aeb97f1bdf5849278",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

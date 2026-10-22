@@ -1,0 +1,62 @@
+{
+  "summary": "A library patron urges the FCC to keep the E‑Rate program active, arguing it provides essential, affordable, and safe internet access for the community, especially for students and low‑income households.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "maintain safety filtering",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate‑funded libraries must filter internet access for minors, ensuring a safer online environment than unfiltered home access.",
+      "evidence_quote": "the open internet at home often does not provide. That is not an accident: libraries that \nreceive E-Rate are required under the Children’s Internet Protection Act to filter internet access \nfor",
+      "evidence_start": 2962,
+      "evidence_end": 3156,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating or reducing E‑Rate would force libraries to cut essential programs, disproportionately harming the most vulnerable.",
+      "evidence_quote": "g kids safe online.\nIf E-Rate funding is eliminated or reduced, I worry about what my library would be forced to \ngive up. A library operating on a tight budget cannot simply absorb the cost of",
+      "evidence_start": 3577,
+      "evidence_end": 3770,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for libraries to provide affordable internet that serves students, job seekers, and low‑income residents.",
+      "evidence_quote": "y community look for work, \nfinish their education, manage their health and their benefits, and stay connected. E-Rate is what \nkeeps that door open. I respectfully urge the Commission to maintain",
+      "evidence_start": 4201,
+      "evidence_end": 4397,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071839",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071839",
+  "filer_raw": "Dr. Matthew Arthur-Gray",
+  "date_submission": "2026-08-17T16:29:17.289Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1729f9125117a4a8a6ea4694c5088bc1e04215e81bc49503fcd0d3dde9f0cc43",
+  "params_key": "2891d0a5cec6d1cc005c607298b81d84a684b4fafbea6e73de2815eee7f7749f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

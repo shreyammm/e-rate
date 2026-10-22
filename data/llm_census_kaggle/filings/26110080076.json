@@ -1,0 +1,49 @@
+{
+  "summary": "Suffolk Cooperative Library System opposes any termination or limitation of the E‑Rate program, arguing that libraries rely on E‑Rate funding to provide essential broadband services to the community.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Libraries use E‑Rate funds to offer no‑fee services that support students, families, and other community members.",
+      "evidence_quote": "ties rely on public libraries for access more \nthan ever. E-Rate makes that connectivity sustainable, predictable, and helps to ensure libraries \nmaintain secure networks. Cutting E-Rate only starves",
+      "evidence_start": 2169,
+      "evidence_end": 2368,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program is essential for libraries to provide high‑speed broadband and related services to the community.",
+      "evidence_quote": "re networks. Cutting E-Rate only starves libraries of needed resources to serve our \ncommunities. \nSCLS urges the Commission to reject any proposal that would terminate or limit the E-\nRate Program.",
+      "evidence_start": 2328,
+      "evidence_end": 2526,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080076",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080076",
+  "filer_raw": "Kevin Verbesey | Suffolk Cooperative Library System",
+  "date_submission": "2026-10-08T16:54:34.345Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6bba913f8eecf7bf25414fc88edfef35736663bb52cbed107c0cfad79727194f",
+  "params_key": "cfd8d25ff12ff57b682d2191955b7d84c3834861d5d2a24e2ffbcaf8b182a2e0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

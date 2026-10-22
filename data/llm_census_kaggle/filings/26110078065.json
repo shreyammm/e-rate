@@ -1,0 +1,87 @@
+{
+  "summary": "The comment argues that fully sunsetting the E‑Rate program would be catastrophic for rural districts, that E‑Rate funding is essential for maintaining and strengthening technology infrastructure, that a lack of qualified technology leaders leads to vendor and consultant influence, and that independent technical oversight should be mandated through policy to ensure sound technology decisions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "Require independent technical oversight",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "Independent technical oversight by qualified technology leaders is necessary to evaluate vendor recommendations and ensure sustainable technology strategy.",
+      "evidence_quote": "perational, security, and infrastructure requirements, followed by an objective evaluation of available solutions and funding opportunities.  This essential  independent technical oversight  can be",
+      "evidence_start": 2479,
+      "evidence_end": 2676,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "Mandate vetted, trained technical professionals in decision processes",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "Policy should require properly vetted, trained, and experienced technical professionals to be present in technology decision-making.",
+      "evidence_quote": "aking table . I propose, through policy, rules for removing the technical leadership deficit  and installing language within the program parameters ensuring properly vetted, trained and experienced",
+      "evidence_start": 3723,
+      "evidence_end": 3920,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Do not sunset the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "Sunsetting the E‑Rate program would be catastrophic for rural districts.",
+      "evidence_quote": "FCC 26-41 WC Docket No. 26-133 WC Docket No. 13-184 WC Docket No. 21-93 WC Docket No. 21-455 In  rural districts such as  ours ,  McDowell County WV,  completely sunsetting the E-Rate program would",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "E‑Rate funding is essential to maintaining and strengthening district technology infrastructure.",
+      "evidence_quote": "tely sunsetting the E-Rate program would prove catastrophic. The program has proved invaluable to the continued growth and upkeep of our infrastructure.  With a high degree of certainty, I cannot",
+      "evidence_start": 157,
+      "evidence_end": 352,
+      "uncertain": false
+    },
+    {
+      "provision_id": "vendor_influence",
+      "position": "oppose",
+      "requested_action": "Reduce vendor influence on purchasing decisions",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "other",
+      "argument": "A lack of qualified technology professionals allows vendors and consultants to disproportionately influence purchasing recommendations.",
+      "evidence_quote": "s  of those investments. This creates an environment in which vendors and, in some cases, E-Rate consultants can have disproportionate influence over purchasing recommendations. While many vendors",
+      "evidence_start": 1540,
+      "evidence_end": 1736,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "vendor_influence": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078065",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078065",
+  "filer_raw": "Walter L. Newcomb II | McDowell County Schools",
+  "date_submission": "2026-09-24T14:40:25.219Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c625ce165484001ed6e2791e1fc5bd1a2a991951a0bc4ac9bae31c0caa7e79f0",
+  "params_key": "03dc9c3bffbe62dd1855bf8eb78c596e5a7c37284ba388c37ed7ad41d2702b48",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

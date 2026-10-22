@@ -1,0 +1,74 @@
+{
+  "summary": "Principal urges FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing eligibility, and any cuts to connectivity support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing E‑Rate eligibility would leave students without adequate support and undermine equitable access.",
+      "evidence_quote": "erefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 2480,
+      "evidence_end": 2675,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue to support the connectivity and internal network infrastructure schools need for reliable educational access.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network",
+      "evidence_start": 2635,
+      "evidence_end": 2830,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program must not be sunset or eliminated because it is essential infrastructure for modern public education.",
+      "evidence_quote": "cations Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 457,
+      "evidence_end": 651,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be strengthened and modernized rather than reduced in its role in public education.",
+      "evidence_quote": "or the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather",
+      "evidence_start": 2790,
+      "evidence_end": 2985,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077784",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077784",
+  "filer_raw": "Joseph A Ciccoianni",
+  "date_submission": "2026-09-23T00:23:26.878Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e3a610c481a120795707c29de9ae070c4b8c5227023451d262e885891237fa1",
+  "params_key": "fb6897f52a2a890c3db0d6dfb376a63caed32c50f279ca1cd686fb685c2caecd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

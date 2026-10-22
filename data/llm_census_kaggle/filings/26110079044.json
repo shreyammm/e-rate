@@ -1,0 +1,50 @@
+{
+  "summary": "The Helena Public Schools district urges the FCC to keep current E‑Rate funding levels and to broaden the program to include device and classroom equipment purchases, citing the catastrophic impact of cuts on its technology budget.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "expand E‑Rate to include devices and classroom equipment",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Expanding E‑Rate eligibility to cover staff and student devices and critical classroom equipment would address funding gaps left by state appropriations.",
+      "evidence_quote": "te internet service or to update network components as they go end of life. In an ideal world, funding for this would be expanded to also allow us to purchase devices for staff and students, as well",
+      "evidence_start": 307,
+      "evidence_end": 505,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The district cannot sustain adequate internet service or network upgrades without current E‑Rate funding, and a cut would be catastrophic.",
+      "evidence_quote": "ng process that makes sure standards are met, including CIPPA compliance. Please maintain current E-Rate funding and procedures…not doing so would be catastrophic for the Helena school district and",
+      "evidence_start": 938,
+      "evidence_end": 1135,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079044",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079044",
+  "filer_raw": "Helena Public schools",
+  "date_submission": "2026-10-01T18:03:36.297Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "75eb5b4c398b82fedfcdaa1597cda9662cf94f9d21ea527bc65348a430d75f58",
+  "params_key": "cedad99d463887b1e52d0de0edfb770f23fff156ff282ad1c3f460e283d407a3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

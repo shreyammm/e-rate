@@ -1,0 +1,49 @@
+{
+  "summary": "The superintendent of a small suburban school district expresses support for E‑Rate in its current form and opposes its elimination, arguing that the program funds essential network infrastructure and that cutting the program would force districts to cut essential services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The superintendent states that E‑Rate funds 50% of the district’s network costs and is essential for maintaining infrastructure.",
+      "evidence_quote": "reases screentime for students. I am the \nsuperintendent of a small suburban school district. In reality, E-rate has nothing to do with \nstudent screen time. E-rate funds 50% of our network costs,",
+      "evidence_start": 158,
+      "evidence_end": 354,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent argues that eliminating E‑Rate would force districts to cut essential services such as firewalls, security systems, email, and phones.",
+      "evidence_quote": "er the past decade. Elimination of these programs will be \ncutting funds for required services, forcing districts to chose to eliminate \"extra opportunities.\" For \ndistricts with tight budgets, this",
+      "evidence_start": 937,
+      "evidence_end": 1135,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073602",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073602",
+  "filer_raw": "Matt Rich - Superintendent, Winfield 34 | Matthew Rich",
+  "date_submission": "2026-08-28T19:34:44.855Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2885c23721c61c632f01feeb531a76e86e66619c79d4df6ef9003d7ae3612c06",
+  "params_key": "c1113c966a6f9fa6df56035a8c62a90e9df6786926722270729304631b3db679",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

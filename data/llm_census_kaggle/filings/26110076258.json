@@ -1,0 +1,87 @@
+{
+  "summary": "Letter from a school district program manager urging the FCC to preserve and strengthen the E‑Rate program, opposing sunset or narrowing of eligibility, and emphasizing broadband as essential infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access.",
+      "evidence_quote": "E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate",
+      "evidence_start": 4338,
+      "evidence_end": 4531,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools require reliable broadband to function and to deliver meaningful educational experiences.",
+      "evidence_quote": "at would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and\n4. Work with",
+      "evidence_start": 4491,
+      "evidence_end": 4687,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that supports modern public education and should not be eliminated.",
+      "evidence_quote": "ke electricity, transportation, and safe facilities.\n\nI therefore respectfully urge the Commission to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that",
+      "evidence_start": 4184,
+      "evidence_end": 4378,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "ble educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and",
+      "evidence_start": 4647,
+      "evidence_end": 4842,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Recognize broadband as essential infrastructure for modern education",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable, high‑quality broadband is no longer optional but a foundational technology benefit for students.",
+      "evidence_quote": ", substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries.\n\nAs a technology director, I see firsthand that reliable, high-quality broadband is no longer an optional",
+      "evidence_start": 630,
+      "evidence_end": 827,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076258",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076258",
+  "filer_raw": "David Fair",
+  "date_submission": "2026-09-10T16:12:04.882Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8ef57ebd6727955a5c7432adf581c98545fcc6e29ebd999a19a9b63104db5420",
+  "params_key": "99f781ee8a77a30f7a52b85a6fa7deea87d61251e6e38fb387726a1c4898f43e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

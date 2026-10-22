@@ -1,0 +1,74 @@
+{
+  "summary": "Hemet Unified School District opposes terminating or limiting the E‑Rate program, arguing it is essential for equitable, reliable broadband access and would cause severe budget deficits and digital inequity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Maintaining the current eligibility scope ensures all schools, regardless of location, receive necessary broadband support.",
+      "evidence_quote": "regarding the E-Rate program, including whether the FCC should eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility .  We urge the FCC to reject any proposal that would",
+      "evidence_start": 780,
+      "evidence_end": 970,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Terminating or limiting E‑Rate would create a massive equity divide, especially for rural and high‑poverty schools.",
+      "evidence_quote": "regarding the E-Rate program, including whether the FCC should eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility .  We urge the FCC to reject any proposal that would",
+      "evidence_start": 780,
+      "evidence_end": 970,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding directly powers Category 1 broadband and internal network infrastructure essential for instructional delivery.",
+      "evidence_quote": "seen the transformative benefits of this support firsthand. In Hemet Unified School District, E-Rate funding directly powers our Category 1 broadband connections and Category 2 internal network",
+      "evidence_start": 1555,
+      "evidence_end": 1748,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "prevent budget deficits caused by E‑Rate cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate, the district would divert funds from classroom instruction and essential student programs, causing severe budget deficits.",
+      "evidence_quote": "consequences for Hemet USD and hundreds of districts like ours across California and the nation would be devastating. Without E-Rate support, our district would face severe budget deficits, forcing",
+      "evidence_start": 2487,
+      "evidence_end": 2684,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072208",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072208",
+  "filer_raw": "Ben Markley",
+  "date_submission": "2026-08-19T15:21:46.614Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ece448c6da370aefe35bb2ed02186ac3d8b42f6fb7dff6e980fcd9b77efa5d95",
+  "params_key": "53851ae2b685710ce824a6eeb475c4041f65ffd7429fc80eb788a376c9f96d7a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

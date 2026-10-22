@@ -1,0 +1,87 @@
+{
+  "summary": "The Technology Director of Granite City School District 9 urges the FCC to preserve and strengthen E‑Rate, reject sunset or narrowing proposals, and maintain internal network support, while arguing that screen‑time limits should not affect E‑Rate funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "respectfully urge the Commission to: 1. Reject any proposal to sunset or eliminate the E-Rate program; 2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 4814,
+      "evidence_end": 5007,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network connectivity is foundational to school operations and must remain funded.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; 3. Preserve support for the connectivity and internal network",
+      "evidence_start": 4967,
+      "evidence_end": 5165,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "am and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries. As a technology director, I see firsthand that",
+      "evidence_start": 470,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools to build and maintain connectivity necessary for modern education.",
+      "evidence_quote": "o strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for",
+      "evidence_start": 5283,
+      "evidence_end": 5480,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Do not condition E‑Rate on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time policies are a separate domain of state and local control and should not affect E‑Rate funding.",
+      "evidence_quote": "t screen time. Districts, educators, and families already make decisions about when and how technology should be used to support learning — decisions that rest squarely in the domain of state and",
+      "evidence_start": 3726,
+      "evidence_end": 3921,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077734",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077734",
+  "filer_raw": "Granite City School District",
+  "date_submission": "2026-09-22T19:32:18.294Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "66d0e0f8459a402ad7a3cb00dc8f7a8ecbbf193eb8029baad29a8995a97dbbc7",
+  "params_key": "431977401a48280aaf916435b9e179ba2707bea236f1559de5c8ff29df756e79",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

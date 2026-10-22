@@ -1,0 +1,89 @@
+{
+  "summary": "The commenter supports continued E‑Rate funding but calls for stricter conditions to curb digital distraction, enforce CIPA, limit screen time, provide parental opt‑out and consent for AI use.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "extend CIPA to third‑party‑owned devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should require or incentivize E‑Rate schools to adopt a technology model that uses a shared, supervised computer lab or in‑class access rather than one‑to‑one take‑home devices.",
+      "evidence_quote": "Adopt a technology model that uses a shared, supervised computer lab or in-class access rather than one-to-one take-home devices;\n\n-          Replace existing CIPA certifications with meaningful",
+      "evidence_start": 1231,
+      "evidence_end": 1425,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "require parental consent before AI tools are used",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Require parental consent before artificial intelligence tools are turned on and reduce the use of it to an absolute minimum so that children are not able to engage in cognitive offloading.",
+      "evidence_quote": "lize or ostracize a student;\n\n-          Require parental consent before artificial intelligence tools are turned on and reduce the use of it to an absolute minimum so that children are not able to",
+      "evidence_start": 1697,
+      "evidence_end": 1894,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "strengthen enforcement of CIPA",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should strengthen its enforcement of CIPA to combat digital distraction and prevent access to inappropriate content.",
+      "evidence_quote": "ate began. The FCC should strengthen its enforcement of the Children’s Internet Protection Act (CIPA) to combat digital distraction and prevent access to inappropriate content.\n\nSpecifically, the FCC",
+      "evidence_start": 613,
+      "evidence_end": 812,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "provide parental opt‑out right",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Students should have a parental opt‑out right that will not penalize or ostracize a student.",
+      "evidence_quote": "ts about what content students access in school and how much time students spend on a screen;\n\n-          Provide a parental opt-out right that will not penalize or ostracize a student;\n\n-",
+      "evidence_start": 1540,
+      "evidence_end": 1728,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "limit instructional screen time",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate‑funded networks should not be used to exceed reasonable daily limits, especially in elementary school.",
+      "evidence_quote": "een time by grade level and certify that E-Rate-funded networks are not used to exceed reasonable daily limits, especially in elementary school;\n\n-          Adopt a technology model that uses a",
+      "evidence_start": 1074,
+      "evidence_end": 1267,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "parent_opt_out": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080742",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080742",
+  "filer_raw": "John Ocampo",
+  "date_submission": "2026-10-12T21:43:33.302Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8dc413703c40a17e61f0384dcaaf02f0ddcc00ba3769f43eb318fef2c170a07e",
+  "params_key": "14970f95e742f9f79cb8305fcc381aeeba6c2d7f47cc39a10ac1d378c7c62a60",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

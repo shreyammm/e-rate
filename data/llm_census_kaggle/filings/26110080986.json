@@ -1,0 +1,86 @@
+{
+  "summary": "A Clay County school district supervisor urges the FCC to keep the E‑Rate program intact, oppose any sunset or narrowing of eligibility, preserve connectivity funding, and modernize the program to support workforce‑ready digital skills.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain E‑Rate as foundational to workforce‑ready digital skills",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Digital literacy and high‑tech skills are non‑negotiable for students; E‑Rate provides the necessary broadband to deliver industry‑standard tools.",
+      "evidence_quote": "y upon graduation. In these discussions, employers \nconsistently emphasize that digital literacy and high-tech skills are non-negotiable. Without the reliable, high-quality \nbroadband provided by the",
+      "evidence_start": 943,
+      "evidence_end": 1142,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate funding is the recurring cost of keeping a modern network running; shifting it to local budgets would force impossible choices.",
+      "evidence_quote": "and securing our network infrastructure across Clay \nCounty. If these network costs were shifted entirely onto our local budget, we would be forced to make impossible \nchoices. Those costs would",
+      "evidence_start": 1880,
+      "evidence_end": 2074,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse and rural communities.",
+      "evidence_quote": "liminate the E-Rate program; \n2.​ Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography \nor other criteria that would leave students",
+      "evidence_start": 3583,
+      "evidence_end": 3775,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program is essential for maintaining modern broadband infrastructure that supports student learning and workforce readiness.",
+      "evidence_quote": "ents across 43 schools. \nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and \nto reject any proposal that would eliminate, sunset,",
+      "evidence_start": 472,
+      "evidence_end": 665,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "work with schools to strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernizing E‑Rate will better meet evolving demands for secure, high‑capacity broadband.",
+      "evidence_quote": "to provide reliable \neducational access; and \n4.​ Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public \neducation. \nE-Rate has enabled",
+      "evidence_start": 3894,
+      "evidence_end": 4089,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080986",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080986",
+  "filer_raw": "Kelly Mosley",
+  "date_submission": "2026-10-13T15:51:17.104Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fd274af7490be3377772ad2e206302fe3c619c4f5e142b1128da56b07deea1c9",
+  "params_key": "4813c021cb89e041ca2ddc903e4f6d75de97c0e14ff1a50a8a33f4b6570a7da5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

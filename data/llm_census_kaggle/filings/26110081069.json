@@ -1,0 +1,100 @@
+{
+  "summary": "A community member urges the FCC to preserve and strengthen the E‑Rate program, rejecting sunset, narrowing eligibility, and cuts to connectivity and internal network support. Support for maintaining the E‑Rate program to ensure reliable, affordable connectivity for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility or geographic restrictions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting eligibility would leave students in underserved areas without necessary broadband support.",
+      "evidence_quote": "eject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve",
+      "evidence_start": 5422,
+      "evidence_end": 5616,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity support for schools",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Maintaining connectivity ensures students can access learning materials and complete assignments effectively.",
+      "evidence_quote": "cess; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and",
+      "evidence_start": 5729,
+      "evidence_end": 5919,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting E‑Rate would force rural districts to absorb costly connectivity expenses, undermining equitable access to education.",
+      "evidence_quote": "cations Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 465,
+      "evidence_end": 659,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students deserve reliable, affordable connectivity regardless of location or family income.",
+      "evidence_quote": "aries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an",
+      "evidence_start": 5924,
+      "evidence_end": 6114,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Modernize and strengthen E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing E‑Rate will better align the program with current technology needs and educational outcomes.",
+      "evidence_quote": "enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare",
+      "evidence_start": 5879,
+      "evidence_end": 6076,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve support for internal network infrastructure",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Internal network upgrades are essential for reliable educational access and cannot be eliminated.",
+      "evidence_quote": "ts without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other",
+      "evidence_start": 5576,
+      "evidence_end": 5769,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081069",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081069",
+  "filer_raw": "Amber Miskowitz",
+  "date_submission": "2026-10-13T17:52:59.859Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2f5ea94352e2faa04c743723102b365a33cc9ab94ce2966b8216a5fcc158553f",
+  "params_key": "e238a941693802859ab967f41cb6b0e8b97b07064be0ce3407dda8bdf7b97083",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

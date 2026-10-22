@@ -1,0 +1,88 @@
+{
+  "summary": "RIDE urges the FCC to keep E‑Rate funding, preserve poverty‑based eligibility, maintain Category Two support, oppose rural‑only limits and daily screen‑time mandates, and leave instructional technology decisions to state and local authorities.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "retain educational‑purpose presumption",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "RIDE maintains that the presumption that on‑campus use serves educational purposes should be preserved to avoid increased monitoring burdens.",
+      "evidence_quote": "online statewide assessments and access to assistive technology and language supports. The Commission should retain the presumption that on-campus use serves educational purposes; reversing it would",
+      "evidence_start": 4820,
+      "evidence_end": 5018,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject rural‑only eligibility limits",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "RIDE opposes limiting eligibility to rural areas or single‑provider markets, noting that many high‑need students live in urban communities.",
+      "evidence_quote": "ing costs.\n2. Eligibility should reflect poverty and affordability, not geography alone.\nRIDE opposes rural-only, highest-cost, single-provider, or competitive-market eligibility limits. Sixty-eight",
+      "evidence_start": 2169,
+      "evidence_end": 2367,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "retain poverty‑based discount matrix",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "RIDE argues that the poverty‑based discount matrix is essential to serve high‑need students and should not be phased out based on National School Lunch Program participation.",
+      "evidence_quote": "ct phasing out support based on National School Lunch Program participation. Discounts already reflect economic need, and competitive bidding reduces the federal share. Further restrictions could",
+      "evidence_start": 2800,
+      "evidence_end": 2995,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve Category Two funding for Wi‑Fi and internal connections",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "RIDE urges the Commission to keep Category Two eligibility for Wi‑Fi, internal connections, and basic maintenance through FY2026‑2030.",
+      "evidence_quote": "y for Wi-Fi, internal connections, basic maintenance, and managed internal broadband services, at least through the FY2026–2030 budget cycle. Member-level records show more than $16.56 million in",
+      "evidence_start": 1540,
+      "evidence_end": 1735,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "decline federal daily screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "RIDE contends that daily screen‑time limits would interfere with assessments and assistive technology, and should remain a local decision.",
+      "evidence_quote": "the Commission to decline federal daily screen-time limits and blanket opt-out mandates for screen-based instruction. Such requirements could interfere with online statewide assessments and access",
+      "evidence_start": 4663,
+      "evidence_end": 4859,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081153",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081153",
+  "filer_raw": "Rhode Island Department of Education",
+  "date_submission": "2026-10-13T19:30:02.925Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "758b651a1fb8cf38d6dc369b8f6c7398f86ec5a7a0ae305e0cde45f15978657c",
+  "params_key": "cb23437bcd4f5df9b91854c5ac4627c780a6318da3a0f2d1ed7a78520514eeb6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

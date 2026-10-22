@@ -1,0 +1,74 @@
+{
+  "summary": "A senior education administrator urges the FCC to keep the E‑Rate program intact, opposes any cuts, and calls for targeted expansions to cybersecurity, student hotspots, and broader student‑achievement initiatives.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has been critical for providing internet access and learning materials to low‑income students.",
+      "evidence_quote": "Officer and Assistant Superintendent of Innovation. In the five districts I have worked for, E-Rate has played a significant role in ensuring students have access to the Internet and the best",
+      "evidence_start": 153,
+      "evidence_end": 344,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district would lose essential technology services and staff if E‑Rate funding is cut.",
+      "evidence_quote": "so parents could go to work and students could be in a better learning environment, and it would not have been possible without the E-Rate program. If this program is cut we will have to decide which",
+      "evidence_start": 774,
+      "evidence_end": 973,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "expand to include cybersecurity",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be expanded to add cybersecurity measures for schools.",
+      "evidence_quote": "programs if these cuts are made. Please reconsider any changes to the program other than expanding the program to add cybersecurity, hotspots for students, or other programs that could increase",
+      "evidence_start": 1556,
+      "evidence_end": 1749,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "expand to increase student achievement/network safety",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be broadened to enhance student achievement and network safety.",
+      "evidence_quote": "s, or other programs that could increase student achievement or increase network safety. Thank you.",
+      "evidence_start": 1709,
+      "evidence_end": 1808,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073435",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073435",
+  "filer_raw": "Jeremy Davis",
+  "date_submission": "2026-08-27T20:33:21.681Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "529e2f61350d0e36edbe4efeaf6da523636be58dc50d665d94926a9e59964548",
+  "params_key": "fce0543845b9df2de3da66ead3130840d9dacff7165e3f045c9867cf852c946c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

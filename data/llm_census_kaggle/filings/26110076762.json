@@ -1,0 +1,89 @@
+{
+  "summary": "Jill Anderson argues that excessive screen time in schools is developmentally inappropriate, that vendor influence should be eliminated, and that schools should prioritize hands‑on, analog education to promote equity and protect children’s well‑being.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "promote analog, hands‑on education",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Hands‑on, analog instruction improves learning outcomes and supports equitable access.",
+      "evidence_quote": "ot only those \nwhose families can afford another option or have the time and resources to advocate \nfor one. \nProtecting hands-on, human-centered education in our public schools benefits all",
+      "evidence_start": 3413,
+      "evidence_end": 3603,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain no mandatory technology requirement",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Requiring educational technology limits schools’ flexibility and may disadvantage families unable to advocate for alternatives.",
+      "evidence_quote": "nd appropriate for home use. Schools are not only educating \nchildren. We are also shaping family norms. \nI am fortunate to teach in a district that does not require any educational technology. \nIn",
+      "evidence_start": 2943,
+      "evidence_end": 3140,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding for technology support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Technology support is essential for equitable access to education, especially for underserved students.",
+      "evidence_quote": "nce.  \nPublic schools are pillars of our communities, and this has become an equity issue. \nEvery child deserves access to an analog, hands-on education, not only those \nwhose families can afford",
+      "evidence_start": 3258,
+      "evidence_end": 3453,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "limit instructional screen time",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Excessive screen time in classrooms is developmentally inappropriate and distracts from core learning.",
+      "evidence_quote": "on a device. \nIt is not developmentally appropriate for children to spend significant instructional \ntime staring at screens. A classroom full of children wearing headphones and \nplugged into",
+      "evidence_start": 928,
+      "evidence_end": 1119,
+      "uncertain": false
+    },
+    {
+      "provision_id": "vendor_influence",
+      "position": "oppose",
+      "requested_action": "eliminate vendor conflicts of interest",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "legal_claim",
+      "argument": "Vendor incentives create conflicts of interest that compromise product vetting and student safety.",
+      "evidence_quote": "responsible for vetting these products should be free of conflicts of interest. \nAs a teacher, I am inundated with emails from EdTech and school AI companies \noffering free professional development",
+      "evidence_start": 1852,
+      "evidence_end": 2049,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose",
+    "vendor_influence": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076762",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076762",
+  "filer_raw": "Jill Anderson",
+  "date_submission": "2026-09-16T00:24:00.340Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ddda7b2463b112aa15e90b2226fc56603e583c06d5d21ed4d317829db68908fd",
+  "params_key": "cecbe3ef035b8271897bad46c8027107746c5f4978111e1b3c82ac908fa3f03f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

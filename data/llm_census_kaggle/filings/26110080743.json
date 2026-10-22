@@ -1,0 +1,76 @@
+{
+  "summary": "A parent argues that the FCC should end the E‑Rate program to reduce high‑tech use in schools, while also calling for stricter CIPA enforcement, parental opt‑out rights, and a ban on technology in elementary classrooms.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "ban technology in elementary schools",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Digital tools should be banned in elementary schools and introduced later when students can use them for studying and researching.",
+      "evidence_quote": "gh tech and access to videos and screens at a young age is depriving our children of our childhood. Digital tools should therefore be banned in elementary schools and introduced later when students",
+      "evidence_start": 2038,
+      "evidence_end": 2235,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "strengthen CIPA enforcement",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The FCC should strengthen its enforcement of CIPA to combat digital distraction and prevent access to inappropriate content.",
+      "evidence_quote": "tent, all of which is far more pervasive on the internet now than it was when E-Rate began. The FCC should strengthen its enforcement of the Children’s Internet Protection Act (CIPA) to combat",
+      "evidence_start": 626,
+      "evidence_end": 818,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "end E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should discontinue the E‑Rate program to discourage high‑tech use in schools.",
+      "evidence_quote": "I am a parent of a child enrolled in Montgomery County Public Schools (MCPS), Maryland. I believe that the FCC shouldn’t continue the E-Rate program in order to discourage the use of high-tech and",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "provide parental opt‑out right",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "alternative_design",
+      "argument": "Schools should provide a parental opt‑out right that will not penalize or ostracize a student.",
+      "evidence_quote": "rmful content;\n-          Provide notice to parents about what content students access in school and how much time students spend on a screen;\n-          Provide a parental opt-out right that will",
+      "evidence_start": 1566,
+      "evidence_end": 1762,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_network_filter": "support",
+    "erate_sunset": "oppose",
+    "parent_opt_out": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080743",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080743",
+  "filer_raw": "Lee Oppenheimer",
+  "date_submission": "2026-10-12T21:47:45.388Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "298ae752b3395ac525e8c2b2f15be354c1fd3c2ba987b43cdb3fc64bfecdf84e",
+  "params_key": "d03ec7c262829294fffa9cf2a4571955155ec3eeee0e67fc578445fc9d4b77ef",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

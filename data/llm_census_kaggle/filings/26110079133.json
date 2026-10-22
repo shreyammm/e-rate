@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, elimination, or unnecessary narrowing of eligibility, and stresses that reliable broadband is essential infrastructure for modern education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ly narrow E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would leave students without adequate support; \n3.​ Preserve support for the connectivity and",
+      "evidence_start": 4670,
+      "evidence_end": 4862,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is basic infrastructure like electricity and transportation.",
+      "evidence_quote": "reserve support for the connectivity and internal network infrastructure schools need to \nprovide reliable educational access; and \n4.​ Work with schools and other stakeholders to strengthen and",
+      "evidence_start": 4822,
+      "evidence_end": 5016,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure that supports modern public education and should not be eliminated.",
+      "evidence_quote": "Federal Communications Commission (FCC) to preserve and strengthen the \nE-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or \nunnecessarily restrict",
+      "evidence_start": 467,
+      "evidence_end": 659,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program has enabled schools to build and maintain connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the",
+      "evidence_start": 4976,
+      "evidence_end": 5172,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other policy issues beyond preserving E‑Rate.",
+      "evidence_quote": "their family’s financial circumstances. I urge the Commission to protect E-Rate and ensure that \npublic schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5601,
+      "evidence_end": 5799,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079133",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079133",
+  "filer_raw": "East Union Community School District",
+  "date_submission": "2026-10-02T16:46:40.674Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "184170c5ec9c97fe82feb9c9ad669fa840c7441e6b25926a2542108140abeb95",
+  "params_key": "b55eb1d1248b517273feaf2617fd898e20ccbba371388d3b8c0a6405e450553f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

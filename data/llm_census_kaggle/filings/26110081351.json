@@ -1,0 +1,89 @@
+{
+  "summary": "SJPL opposes sunset or narrowing of E‑Rate based on competition, supports robust library funding, opposes screen‑time limits and new compliance burdens, and urges preservation of library flexibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "avoid new unfunded compliance burdens on library E‑Rate applicants",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Additional administrative, technical, or monitoring requirements would divert scarce resources from direct public service.",
+      "evidence_quote": "t would conflict with those core values. \nFinally, SJPL asks the Commission to refrain from imposing new compliance obligations on library E-Rate \napplicants without dedicated funding or a clear",
+      "evidence_start": 4358,
+      "evidence_end": 4552,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve robust E‑Rate support for public libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate discounts are critical to libraries’ ability to keep branches connected and serve the community.",
+      "evidence_quote": "age.  \nE-Rate discounts are critical to SJPL’s ability to keep our 25 branches connected. Our libraries logged more \nthan 265,000 public computer reservations, 230,000 Wi-Fi sessions, and nearly 3.9",
+      "evidence_start": 2353,
+      "evidence_end": 2551,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or narrowing based on competition",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Libraries need E‑Rate support regardless of local broadband competition to provide affordable connectivity.",
+      "evidence_quote": "aries’ ability to provide free \ninternet access for communities to participate in the digital economy. \nSJPL urges the Commission to reject any outcome that would terminate, sunset, or condition",
+      "evidence_start": 938,
+      "evidence_end": 1132,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "preserve flexibility for libraries to use connectivity for evolving community needs",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "other",
+      "argument": "Libraries need the flexibility to adapt connectivity to AI literacy, workforce development, and civic participation.",
+      "evidence_quote": "traditional instructional access. As the Commission considers the future scope of E-\n\n\nRate, it should preserve the flexibility libraries need to use that connectivity to meet evolving community",
+      "evidence_start": 3582,
+      "evidence_end": 3776,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "exempt libraries from K‑12‑focused screen‑time and reporting requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Libraries lack a supervisory relationship with patrons, so screen‑time limits would conflict with intellectual freedom and privacy.",
+      "evidence_quote": "connectivity to meet evolving community \nneeds. \nSJPL urges the Commission not to impose screen-time limits or supervision, monitoring or reporting \nobligations related to screen use on public",
+      "evidence_start": 3737,
+      "evidence_end": 3929,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_form_5654": "oppose",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081351",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081351",
+  "filer_raw": "San Jose Public Library",
+  "date_submission": "2026-10-13T23:41:45.490Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "efa769941d2991e8b6bf36c934d69b35d131189df925fa24593db802ebf0aae5",
+  "params_key": "2cc0d5c0833f551d2c99268e305da3962167d9ae409e7565de3caaf9dc6d39e3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "The Hillsboro School District 3 superintendent urges the FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts, and calling for continued reliable, affordable connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing E‑Rate eligibility would leave students without adequate support.",
+      "evidence_quote": "-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria that would leave students without adequate",
+      "evidence_start": 3552,
+      "evidence_end": 3746,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue to support connectivity and internal network infrastructure for reliable educational access.",
+      "evidence_quote": "at would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to provide \nreliable educational access; and \n4. Work with",
+      "evidence_start": 3706,
+      "evidence_end": 3905,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program should not be sunset or eliminated because it provides essential broadband infrastructure for schools.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate \nprogram and to reject any proposal that would eliminate, sunset, substantially reduce, or",
+      "evidence_start": 460,
+      "evidence_end": 646,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "The FCC should work with schools to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "le educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its \nrole in public education. \nE-Rate has enabled schools (public and",
+      "evidence_start": 3865,
+      "evidence_end": 4061,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure reliable, affordable connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students deserve reliable, affordable, and effective connectivity regardless of location or family finances.",
+      "evidence_quote": "nd succeed regardless of where they live or their \nfamily’s financial circumstances. I urge the Commission to protect E-Rate and ensure that public schools can \ncontinue providing students with",
+      "evidence_start": 4493,
+      "evidence_end": 4686,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078708",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078708",
+  "filer_raw": "Hillsboro Community Unit School District 3",
+  "date_submission": "2026-09-29T15:35:07.356Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "46838debc058606e584a158323336aa8b9200ba87145d04e376b00d8afc2b4bf",
+  "params_key": "42283596fda10f54241359fedf98d241a7740ec40ff97dfa991f2de158b0aad6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

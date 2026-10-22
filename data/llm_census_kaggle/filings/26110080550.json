@@ -1,0 +1,62 @@
+{
+  "summary": "The technology director of a school system urges the FCC to maintain and strengthen E‑Rate funding, arguing that reliable broadband is essential for education, safety, and student success, and warns against reducing support or adding screen‑time requirements.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reducing E‑Rate funding would limit educational opportunity for students who rely on schools for internet access.",
+      "evidence_quote": "As the technology director and on behalf of my school system, I encourage the FCC to strengthen rather than reduce E-Rate.\n\nInternet connectivity has become as fundamental to education as classrooms,",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate program as is",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has successfully provided reliable, affordable connectivity that supports instruction, assessment, and student safety.",
+      "evidence_quote": "nectivity is essential to both education and student safety.\n\nOur schools need the flexibility to use technology in ways that best serve their students. E-Rate should continue doing what it has done",
+      "evidence_start": 1252,
+      "evidence_end": 1450,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not add screen‑time limits to eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Adding screen‑time requirements would undermine the flexibility schools need to use technology effectively.",
+      "evidence_quote": "for success in school, college, and the workforce.\n\nNow is not the time to reduce ERate funding or to add new screen-time requirements for ERate program eligibility. Today, every student must be",
+      "evidence_start": 472,
+      "evidence_end": 666,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080550",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080550",
+  "filer_raw": "Emily Elam",
+  "date_submission": "2026-10-12T04:03:33.205Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7bf74773125e791a97e01eb39d130d05d6bca6c5edbd36c944ef52fdcfc3d3ae",
+  "params_key": "7a94a0fca1c31e44c1b09844abafc1b7fec105c99aa9d0f05173cad6bd94d02e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

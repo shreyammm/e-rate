@@ -1,0 +1,86 @@
+{
+  "summary": "The Ludlow Independent School District superintendent urges the FCC to keep the E‑Rate program intact, oppose any sunset or narrowing of eligibility, preserve internal network support, and modernize the program rather than cut it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equity.",
+      "evidence_quote": "lity or restrict\nsupport based solely on geography or other criteria that would leave students\nwithout adequate support;\n3. Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 3391,
+      "evidence_end": 3588,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is part of basic modern school infrastructure, just like electricity and transportation.",
+      "evidence_quote": "vity and internal network infrastructure schools\nneed to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate\nrather than reduce its",
+      "evidence_start": 3548,
+      "evidence_end": 3747,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and its elimination would cause massive staffing and curriculum cuts.",
+      "evidence_quote": "he Commission to:\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict\nsupport based solely on",
+      "evidence_start": 3241,
+      "evidence_end": 3431,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "work with schools to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "modernize E-Rate\nrather than reduce its role in public education.\nE-Rate has enabled schools (public and private) and libraries to build and maintain the\nconnectivity necessary for students and",
+      "evidence_start": 3708,
+      "evidence_end": 3901,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate as essential for student access to technology",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate enables students and patrons to participate fully in modern education and prepares them for a technology‑driven economy.",
+      "evidence_quote": "connectivity necessary for students and patrons to participate fully in modern education.\nAs our nation seeks to prepare students for college, careers, and an increasingly\ntechnology-driven economy,",
+      "evidence_start": 3862,
+      "evidence_end": 4060,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076903",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076903",
+  "filer_raw": "Ludlow Independent School District",
+  "date_submission": "2026-09-17T18:55:57.386Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "deea43589dba2c0ea73d7d55e546d1731237bc28ff4a95cc34175c29d799cdf6",
+  "params_key": "2d4aca9a2d3a7fb785366762f3f335294f90f872f60c02b9b6cd0f0f365f3cc6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

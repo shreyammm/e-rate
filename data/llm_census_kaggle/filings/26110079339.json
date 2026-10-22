@@ -1,0 +1,87 @@
+{
+  "summary": "The technology director of a public school system argues against reducing E‑Rate funding or tying it to screen‑time limits, emphasizing the essential role of reliable broadband for education, equity, and student safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "continue providing reliable, affordable connectivity",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "High‑speed internet is essential for security, communications, and critical student information systems.",
+      "evidence_quote": "ademic outcomes.\n\nHigh-speed internet is no longer just a pathway to online learning. Schools depend on it for security, communications, facility controls, and critical student information systems.",
+      "evidence_start": 2923,
+      "evidence_end": 3120,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain flexibility for schools to use technology",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "Schools need flexibility to use technology in ways that best serve their students.",
+      "evidence_quote": "Our schools need the flexibility to use technology in ways that best serve their students. E-Rate should continue doing what it has done so successfully—helping schools provide the reliable,",
+      "evidence_start": 3238,
+      "evidence_end": 3428,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Reducing E‑Rate support would limit educational opportunities, especially for low‑income students.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I urge the FCC not to reduce E-Rate support for schools.\n\nInternet connectivity has become as fundamental to",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose screen‑time restrictions on E‑Rate eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Screen‑time limits would restrict access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "ing levels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly diverse range of",
+      "evidence_start": 1535,
+      "evidence_end": 1727,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base funding on assumed screen‑time limits",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Schools already comply with state laws; E‑Rate should not impose additional restrictions through funding cuts.",
+      "evidence_quote": "nce screen time could restrict access to valuable educational resources and harm learning outcomes rather than improve them. Schools are already required to comply with applicable state laws and",
+      "evidence_start": 1838,
+      "evidence_end": 2032,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079339",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079339",
+  "filer_raw": "Stephanie Snyder",
+  "date_submission": "2026-10-05T12:29:27.487Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cad0ac44cff6d3b918d551eca5d9ee12d2bf8bdebde60e70245ec8a5e8ccc43a",
+  "params_key": "8da6e44289a3d46ad3b7a3cf9a0745e2a50ccdf2e4c25f4745a82a117acdaae5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

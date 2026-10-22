@@ -1,0 +1,88 @@
+{
+  "summary": "Tehama County Department of Education urges the FCC to preserve and strengthen the E‑Rate program, oppose broad cuts or exclusions, and maintain current eligibility and CIPA frameworks.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "Do not extend CIPA to personally owned devices",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The county finds extending CIPA to personal devices would be difficult or impossible to implement and would displace local decision‑making.",
+      "evidence_quote": "ifying compliance. The NPRM asks whether the \nCommission should extend CIPA obligations to personally owned devices, \nmandate network-level filtering with per-day screen-time limits, categorically",
+      "evidence_start": 4035,
+      "evidence_end": 4231,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "Do not mandate network‑level filtering with per‑day screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The county argues that such mandates would be difficult or impossible to implement and would displace local decision‑making.",
+      "evidence_quote": "ifying compliance. The NPRM asks whether the \nCommission should extend CIPA obligations to personally owned devices, \nmandate network-level filtering with per-day screen-time limits, categorically",
+      "evidence_start": 4035,
+      "evidence_end": 4231,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Target discount matrix to highest‑cost, rural, or single‑provider areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The county supports better targeting of funds to districts that need them most, provided the matrix uses granular, accurate school‑level data.",
+      "evidence_quote": "tes reflect exactly the kind of need the \nprogram should prioritize. However, the Commission should ensure that any \nrefinement to the discount matrix is administered using the most granular,",
+      "evidence_start": 2806,
+      "evidence_end": 2997,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Maintain current eligibility for Pre‑K and Head Start",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The county contends that excluding Pre‑K and Head Start would force duplicate infrastructure or absorb costs without offsetting support.",
+      "evidence_quote": "d pre-kindergarten \nstudents from E-Rate eligibility. TCDE and the districts it serves operate Pre-K and \nHead Start classrooms co-located with, and served by, the same shared network \ninfrastructure",
+      "evidence_start": 3257,
+      "evidence_end": 3456,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The county argues that eliminating or reducing E‑Rate support would directly harm schools’ ability to maintain and upgrade broadband infrastructure.",
+      "evidence_quote": "Rate program and \nto respectfully submit these comments in response to the Notice of Proposed \nRulemaking and Further Notice of Proposed Rulemaking referenced above. \nHigh-quality broadband is no",
+      "evidence_start": 1241,
+      "evidence_end": 1436,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_network_filter": "oppose",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076271",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076271",
+  "filer_raw": "Jared Caylor",
+  "date_submission": "2026-09-10T17:03:59.331Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4701aecea004d430065abda681ed1c8f9b07476dfbac4787856b9c0f254dca8e",
+  "params_key": "781ad3f10f563c738a1d3b9d221e3eaf151fb88f43c10959bb954efdd02503b7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

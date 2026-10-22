@@ -1,0 +1,75 @@
+{
+  "summary": "Madison County Schools opposes any E‑Rate cuts, urges preservation of the program, stresses local control over technology decisions, and highlights E‑Rate’s role in closing the digital divide.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "retain local decision authority over technology use",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Decisions about technology use should remain at the state and local levels.",
+      "evidence_quote": "al priorities. We also believe decisions regarding how technology is used for instruction should remain at the state and local levels. Local school boards, administrators, educators, and families are",
+      "evidence_start": 1383,
+      "evidence_end": 1582,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility and funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing eligibility would widen the digital divide and limit access to essential technology.",
+      "evidence_quote": "connectivity for schools and libraries. We do not support changes that would narrow eligibility, significantly reduce funding, or create barriers that limit schools' ability to participate in the",
+      "evidence_start": 1859,
+      "evidence_end": 2054,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve the E‑Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate cuts would impose significant financial burdens on local school budgets.",
+      "evidence_quote": "ility or available funding would place a significant financial burden on local school districts. Costs currently supported through E-Rate would have to be absorbed by local budgets, potentially",
+      "evidence_start": 1074,
+      "evidence_end": 1267,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue federal investment in E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate expands educational opportunity and closes the digital divide.",
+      "evidence_quote": "t schools' ability to participate in the program. E-Rate has played a critical role in expanding educational opportunity and closing the digital divide. Continued federal investment is necessary to",
+      "evidence_start": 2014,
+      "evidence_end": 2211,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074680",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074680",
+  "filer_raw": "Nashandra James",
+  "date_submission": "2026-09-01T22:37:02.937Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a8e185222af14bccb978366c3c6d82ee611418de0b5997ff4e032e567258c6ac",
+  "params_key": "771c892ad1acd3407eaf579badcf05f30a2605a7f9fbf283c62200e896012222",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

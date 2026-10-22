@@ -1,0 +1,87 @@
+{
+  "summary": "Hulbert Public Schools urges the FCC to keep the E‑Rate program intact, oppose any sunset or narrowing of eligibility, preserve robust connectivity support, collaborate on modernization, and ensure equitable access for all students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject restrictions narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility restrictions would leave underserved communities without necessary connectivity.",
+      "evidence_quote": "minate, or phase out the E-Rate program. Reject restrictions  that narrow eligibility based on geography or other criteria that leave communities underserved. Preserve robust support  for essential",
+      "evidence_start": 2175,
+      "evidence_end": 2372,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve robust support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Robust support is essential for maintaining and upgrading school networks.",
+      "evidence_quote": ". Preserve robust support  for essential connectivity and internal network infrastructure. Partner with stakeholders  to modernize and strengthen E-Rate rather than diminish its role. Now is not the",
+      "evidence_start": 2332,
+      "evidence_end": 2530,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must be preserved to maintain reliable broadband for schools.",
+      "evidence_quote": "g approximately 567 students. I write to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and reject any proposal that would eliminate, sunset, reduce,",
+      "evidence_start": 778,
+      "evidence_end": 975,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "partner with stakeholders to modernize and strengthen E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Collaboration will help modernize the program without diminishing its role.",
+      "evidence_quote": ". Preserve robust support  for essential connectivity and internal network infrastructure. Partner with stakeholders  to modernize and strengthen E-Rate rather than diminish its role. Now is not the",
+      "evidence_start": 2332,
+      "evidence_end": 2530,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure equitable access for all students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Equitable access to reliable connectivity is critical for student success.",
+      "evidence_quote": "r than diminish its role. Now is not the time to undermine the foundation of modern education. I urge the Commission to protect E-Rate so public schools can continue providing all students with the",
+      "evidence_start": 2490,
+      "evidence_end": 2687,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078394",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078394",
+  "filer_raw": "Jolyn Choate | Hulbert Public Schools",
+  "date_submission": "2026-09-25T21:38:45.866Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "047a47e44eae5b6d0fb48395db987f40b770f77d920c77b4515125ef0c7390a5",
+  "params_key": "c2144e33926b0948cb9f0da8976ab94b869f52106b5afe4eb83f16f59c8782d8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

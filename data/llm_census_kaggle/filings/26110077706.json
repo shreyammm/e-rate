@@ -1,0 +1,86 @@
+{
+  "summary": "Mary Kay Kavanaugh urges the FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts that would harm school connectivity and budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "on to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 3254,
+      "evidence_end": 3453,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is part of the basic infrastructure of a modern school system.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 3413,
+      "evidence_end": 3607,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that keeps broadband affordable for schools.",
+      "evidence_quote": "ge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict",
+      "evidence_start": 471,
+      "evidence_end": 668,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to reduce or eliminate E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E‑Rate would force districts to cut essential services due to increased infrastructure costs.",
+      "evidence_quote": ", reducing or eliminating E-Rate support would have a direct and tangible impact.\n\nE-Rate covers 90% of our internet costs and keeps connectivity affordable to our district.\n\nThose costs would",
+      "evidence_start": 2004,
+      "evidence_end": 2196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools to build and maintain connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "te rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to",
+      "evidence_start": 3725,
+      "evidence_end": 3916,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077706",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077706",
+  "filer_raw": "Mary Kay Kavanaugh",
+  "date_submission": "2026-09-22T18:11:21.032Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5b8e5ccf2feeb653e6011bbd31b27b9980c1c955fa15bd2b9d1a97bb23f4fdb7",
+  "params_key": "71b115b89ef97649bc4b6c6ce82c283594ca32a950b612fcfe62d8c740d8895a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

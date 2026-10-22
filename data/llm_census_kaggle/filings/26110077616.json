@@ -1,0 +1,87 @@
+{
+  "summary": "Ladysmith School District urges the FCC to keep E‑Rate, avoid restrictive eligibility rules, maintain connectivity support, and strengthen program integrity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility restrictions based solely on geography, poverty level, or provider count",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility limits that ignore local needs would leave schools without adequate support.",
+      "evidence_quote": "graphy, poverty level, or provider count when those \nrestrictions would leave schools without adequate support; \n3.​ Preserve support for the connectivity and internal network infrastructure schools",
+      "evidence_start": 3107,
+      "evidence_end": 3305,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding has enabled the district to maintain reliable broadband and internal networks essential for instruction.",
+      "evidence_quote": "internal network infrastructure schools need to provide \nreliable educational access; and \n4.​ Work with schools, libraries, and other stakeholders to strengthen program integrity and \nmodernize",
+      "evidence_start": 3266,
+      "evidence_end": 3460,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that eliminating E‑Rate would shift essential broadband costs to local budgets, undermining educational operations.",
+      "evidence_quote": "ommission to preserve and strengthen the E-Rate program and reject \nproposals that would eliminate, sunset, substantially reduce, or unnecessarily restrict support for schools \nand libraries.",
+      "evidence_start": 617,
+      "evidence_end": 808,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen program integrity and modernize E‑Rate",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "normative_value",
+      "argument": "The district calls for measures that enhance integrity while preserving the program’s core role.",
+      "evidence_quote": "engthen program integrity and \nmodernize E-Rate without undermining its essential role. \nE-Rate has enabled schools and libraries to build and maintain the connectivity needed for students and",
+      "evidence_start": 3420,
+      "evidence_end": 3612,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter highlights the importance of reliable connectivity for modern education but does not propose a specific policy change.",
+      "evidence_quote": "the connectivity needed for students and \ncommunities to participate fully in modern education. As the nation prepares students for college, careers, \nand an increasingly technology-driven economy,",
+      "evidence_start": 3572,
+      "evidence_end": 3769,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077616",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077616",
+  "filer_raw": "School District of Ladysmith",
+  "date_submission": "2026-09-22T14:09:47.672Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bcf2a95b94a5e57839293242792f48176b739c2a4ab4622f39ae14e52c097522",
+  "params_key": "a8b43451b402b40e239906635c4a4bb9d2b69b6b41985ac1b8c0e2a5f6dcde74",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,110 @@
+{
+  "summary": "MAMA urges stronger federal safeguards for classroom technology, emphasizing evaluation of effectiveness, separation of learning from engagement, safety/privacy/transparency, and parental choice without shifting responsibility to families. The comment argues that E‑Rate should not shift responsibility for child safety onto families and that connectivity programs must include safeguards against addictive design and other harms.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "require safeguards against addictive design and other foreseeable harms",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must embed child‑safety safeguards so that responsibility does not fall on families.",
+      "evidence_quote": "arental choice can never substitute for safe design. \nParents deserve meaningful information and meaningful input. But a disclosure, dashboard, or \nopt-out mechanism should not shift responsibility",
+      "evidence_start": 4758,
+      "evidence_end": 4955,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "prevent endorsement of any product or platform that enables harmful connectivity",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity programs should not serve as endorsements for products that expose children to addictive or harmful design.",
+      "evidence_quote": "the need for equitable connectivity with an endorsement of \nevery product, platform, or practice that connectivity enables. Connecting schools is not the \nsame as requiring children to spend more",
+      "evidence_start": 5231,
+      "evidence_end": 5426,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Require evaluation of educational effectiveness and foreseeable harm",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "MAMA urges that products be scrutinized for effectiveness and harm before adoption.",
+      "evidence_quote": "policymakers to focus on four areas: \n1. Evaluate educational technology for both effectiveness and foreseeable harm. \nA company simply claiming its product serves an educational purpose should not",
+      "evidence_start": 2455,
+      "evidence_end": 2652,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Distinguish learning from engagement metrics in policy",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "MAMA argues that attention metrics should not replace evidence of learning outcomes.",
+      "evidence_quote": "o overcome it. \n2. Federal policy should distinguish learning from engagement. \nMinutes logged in, clicks, daily active use, and time on platform demonstrate usage. They do \nnot, by themselves,",
+      "evidence_start": 3069,
+      "evidence_end": 3262,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Enforce transparency on data collection, AI use, and independent evidence",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "implementation_burden",
+      "argument": "MAMA demands parents and educators know what data is collected and how AI is used.",
+      "evidence_quote": "rency for products \nentering classrooms. \nParents and educators should know which technologies students are required to use, what data \nthey collect, what systems do with student information and",
+      "evidence_start": 3690,
+      "evidence_end": 3884,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Implement federal safety standards for classroom technology",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "MAMA calls for mandatory safety standards that cover engagement mechanics, advertising, data practices, and AI use in educational tech.",
+      "evidence_quote": "iveness. \nMAMA supports safety standards that address engagement mechanics, advertising, data \npractices, and AI functionality, as well as data minimization, purpose limitation, restrictions on",
+      "evidence_start": 3999,
+      "evidence_end": 4192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Provide meaningful parental choice without shifting safety responsibility",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "MAMA insists that parental dashboards or opt‑outs should not replace design‑time safety.",
+      "evidence_quote": "ce can never substitute for safe design. \nParents deserve meaningful information and meaningful input. But a disclosure, dashboard, or \nopt-out mechanism should not shift responsibility for product",
+      "evidence_start": 4770,
+      "evidence_end": 4967,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076667",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076667",
+  "filer_raw": "Mothers Against Media Addiction",
+  "date_submission": "2026-09-15T09:57:27.271Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5e296a7d64e537c9e17083310d6cc02244be2b4e9fb495ac90f1de347d2fad3c",
+  "params_key": "4954601bdc7d5599159d44d60e0fa0aea91a841f5427af463044218fe27387d9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

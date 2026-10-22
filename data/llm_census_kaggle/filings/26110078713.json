@@ -1,0 +1,89 @@
+{
+  "summary": "School psychologist Benjamin Knaebel argues for preserving E‑Rate connectivity while tightening safeguards against non‑instructional use, protecting children’s attention, and strengthening vendor accountability.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_social_media",
+      "position": "alternative_proposal",
+      "requested_action": "disable personalized feeds by default",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Personalized recommendation feeds, autoplay, infinite scroll, and targeted advertising should be disabled by default on E‑Rate networks unless a teacher authorizes educational use.",
+      "evidence_quote": "ndation feeds, autoplay, inﬁnite scroll, engagement notiﬁcations, \nand targeted advertising should be disabled by default during the school day unless a \nteacher authorizes a deﬁned educational use.",
+      "evidence_start": 3098,
+      "evidence_end": 3296,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "support",
+      "requested_action": "ban percentage‑based compensation",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "Consultants should be prohibited from receiving percentage‑based fees to reduce conflicts of interest.",
+      "evidence_quote": "ds. \n4. Strengthen vendor and consultant accountability. I support consultant registration, \nconﬂict disclosures, a ban on percentage-based compensation, and stronger \nrecordkeeping. Also require",
+      "evidence_start": 4188,
+      "evidence_end": 4383,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "support",
+      "requested_action": "require registration and disclosure",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "Consultants must register, disclose conflicts, and maintain record‑keeping to ensure accountability.",
+      "evidence_quote": "ds. \n4. Strengthen vendor and consultant accountability. I support consultant registration, \nconﬂict disclosures, a ban on percentage-based compensation, and stronger \nrecordkeeping. Also require",
+      "evidence_start": 4188,
+      "evidence_end": 4383,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "retain core connectivity support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate should continue to provide connectivity to ensure equal educational opportunities for all students.",
+      "evidence_quote": "utomated systems. \n \n1. Preserve access. Retain E-Rate’s core connectivity support and avoid changes that \nwiden the digital divide. \n \n\n\n2. Protect attention and limit noneducational use. Require",
+      "evidence_start": 2171,
+      "evidence_end": 2367,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "limit non‑instructional use",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Non‑instructional social media, short‑form video, gaming, and endless scrolling should be restricted during school hours.",
+      "evidence_quote": "on and limit noneducational use. Require recipients to distinguish \ninstructional from recreational use; limit noninstructional social media, short-form video, \ngaming, and endless scrolling during",
+      "evidence_start": 2327,
+      "evidence_end": 2524,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_social_media": "alternative_proposal",
+    "consultant_percent_fees": "support",
+    "consultant_registration": "support",
+    "erate_eligibility_scope": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078713",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078713",
+  "filer_raw": "Benjamin Knaebel",
+  "date_submission": "2026-09-29T16:10:33.096Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "99279afb0b772c9404834772ee96a6885fad42c762cf48524100c1c008d80381",
+  "params_key": "2436882a5a3ef1acdc29ffc58eaebe6a296848b8b8745b90f35a45d703fcfd93",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

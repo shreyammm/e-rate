@@ -1,0 +1,50 @@
+{
+  "summary": "The comment urges the FCC to maintain full E‑Rate funding, arguing it is essential for at‑risk students, and notes that the district already has policies to manage screen time.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect full funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential to provide at‑risk students with the technology and connectivity needed to compete academically.",
+      "evidence_quote": "Date: July 22, 2026 \nTo: Federal Communications Commission \n45 L Street NE \nWashington, DC 20554 \nRe: Public Comment in Strong Support of the E-Rate Program and Rejection of Potential \nFunding Cuts",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The district has school board policy and teaching guidelines to manage student screen time.",
+      "evidence_quote": "too much screen time, and we agree that \nthis is a concern. As a district, we have created School Board policy and teaching guidelines \nthat help us manage this area of concern. On the other hand,",
+      "evidence_start": 3264,
+      "evidence_end": 3460,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110044464",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110044464",
+  "filer_raw": "Matthew Fraijo",
+  "date_submission": "2026-07-23T15:28:10.458Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f6e6af17cb6e423b5819b2a32344ef39a08510fcb25abc60d1a93840cff0e8ac",
+  "params_key": "41db0415e1d1ac96c91039e04c0271bbca9a0d99ab73e5a0ad88d4b2f0b39ec6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

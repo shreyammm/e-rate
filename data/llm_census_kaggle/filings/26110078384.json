@@ -1,0 +1,89 @@
+{
+  "summary": "Waterloo Community School District urges the FCC to preserve E‑Rate funding, maintain support for leased dark fiber, and continue allocating aid based on student need.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter references filtering and device management but does not advocate a specific policy change.",
+      "evidence_quote": "ty for how students use the connectivity E-Rate helps provide. We believe in balancing \naccess to digital learning tools with appropriate safeguards. In addition to filtering at our network",
+      "evidence_start": 2025,
+      "evidence_end": 2214,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue allocating support according to student need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate discounts based on free or reduced‑price lunch share ensure high‑poverty districts receive more aid, preventing a shift of costs onto the least able to absorb them.",
+      "evidence_quote": "s on the share of students \neligible for free or reduced-price lunch. Students living in poverty often need more support, while districts serving \nhigher concentrations of those students often have",
+      "evidence_start": 1552,
+      "evidence_end": 1749,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would force the district to absorb network costs that would otherwise be covered, directly impacting teaching positions.",
+      "evidence_quote": "Our schools and offices would grind to a halt. Maintaining that network is not an optional expense we \ncan cut if E-Rate funding disappears. \nFrom funding years 2021 through 2025, Waterloo Schools",
+      "evidence_start": 783,
+      "evidence_end": 979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No additional policy proposals are made beyond preserving current E‑Rate support.",
+      "evidence_quote": "ney we need for teachers. \nThank you for considering Waterloo Schools’ experience. \nRespectfully, \nMatt O’Brien \nDirector of Technology \nWaterloo Community School District",
+      "evidence_start": 2799,
+      "evidence_end": 2970,
+      "uncertain": true
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "retain support for leased dark fiber",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Leased dark fiber is essential for connecting schools and offices; without it, teachers and students would lose access to online tools.",
+      "evidence_quote": "Rate support for schools and to continue directing the greatest support to districts \nserving students with the greatest needs. \nOur leased dark fiber is central to how Waterloo Schools operates. We",
+      "evidence_start": 314,
+      "evidence_end": 512,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "discussion_no_position",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078384",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078384",
+  "filer_raw": "Waterloo Community Schools",
+  "date_submission": "2026-09-25T20:33:19.794Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cbfa41df5c1861eb89f583c0e0aa0cf7e586feedccec8a467c10fd3e09569fa2",
+  "params_key": "0179406fecec775a82a5bde04c730427f447bc8831b6a3070965d2c52a0dd778",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

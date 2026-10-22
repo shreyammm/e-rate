@@ -1,0 +1,87 @@
+{
+  "summary": "Superintendent urges FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, or cuts; supports continued funding for connectivity and internal network infrastructure; stresses importance of broadband for education and safety; rejects proposals that would restrict support based on geography; calls for modernizing the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility or restrict support based on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "strict support based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools",
+      "evidence_start": 4953,
+      "evidence_end": 5148,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable connectivity for operations and instruction.",
+      "evidence_quote": "internal network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in",
+      "evidence_start": 5109,
+      "evidence_end": 5307,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "oss 4 schools.\n\nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially",
+      "evidence_start": 466,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain broadband for safety and communication",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Reliable connectivity is needed for security cameras, door access, and crisis communication.",
+      "evidence_quote": "our school and compromise our ability to safely and effectively serve students.\n\nOur security cameras and door access systems reply on strong internet connectivity. Additionally, our family messaging",
+      "evidence_start": 1239,
+      "evidence_end": 1438,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize E‑Rate program",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be strengthened rather than reduced.",
+      "evidence_quote": "ze E-Rate rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to",
+      "evidence_start": 5267,
+      "evidence_end": 5465,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077640",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077640",
+  "filer_raw": "Dr. Mary Gorr",
+  "date_submission": "2026-09-22T15:40:47.498Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "065ee12c434b3be5c70264dae0726978de69e7850cf5800713a0b940840b0c18",
+  "params_key": "a80838e922a1513f01d17e9dea9648d075cf2537ef4150808d0857acbfdbe78c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

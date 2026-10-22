@@ -1,0 +1,89 @@
+{
+  "summary": "The technology director of a public school system urges the FCC to keep the current E‑Rate program and opposes tying funding to screen‑time limits, arguing that reliable, affordable internet is essential for equitable education and student success.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address CIPA or BYOD policies.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I urge the FCC to maintain the current E-Rate program.\n\nReliable, affordable internet access is no longer an",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue broad eligibility for connectivity services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Schools need secure, high‑quality internet to provide equitable educational opportunities.",
+      "evidence_quote": "skills, and prepare for college and the workforce. Ensuring that every school has secure, high-quality internet access is therefore fundamental to providing students with equitable educational",
+      "evidence_start": 453,
+      "evidence_end": 645,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable, affordable internet access is essential infrastructure for student success and must be preserved.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I urge the FCC to maintain the current E-Rate program.\n\nReliable, affordable internet access is no longer an",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No other policy issues are explicitly discussed in the comment.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I urge the FCC to maintain the current E-Rate program.\n\nReliable, affordable internet access is no longer an",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": true
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie E‑Rate funding to screen‑time limits",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "legal_claim",
+      "argument": "Reducing funding to influence screen time would restrict access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "o learn is not limited by the assistance available at home.\n\nThe FCC should not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would",
+      "evidence_start": 914,
+      "evidence_end": 1106,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079607",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079607",
+  "filer_raw": "John Alley",
+  "date_submission": "2026-10-06T16:16:31.232Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d1d8a6d583697b056cf6bed984d05fe707d7fa4e7d1b4f1f090905e34797f579",
+  "params_key": "0a8270a6a8e9fc7e99b8d82305dff2c8b4154bb85612a647b25ae379ec2a388d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "Randolph Public Schools argues that E‑Rate funding is essential to maintain broadband, prevent larger class sizes, and support cybersecurity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is critical for maintaining reliable broadband in classrooms and libraries.",
+      "evidence_quote": "Randolph Public Schools depends heavily on E-Rate to provide reliable broadband to our school classrooms and their libraries in support of a modern learning and teaching environment for our students",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "prevent cuts to E‑Rate",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E‑Rate would lead to increased class sizes and reduced access to modern curriculum.",
+      "evidence_quote": "would be a steamrolling effect, putting our high needs community farther behind neighboring cities and towns in terms of class size and the tools we can make available for students to learn and",
+      "evidence_start": 473,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate cybersecurity support",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate funds enable managed firewalls that protect student data and reduce IT staff burden.",
+      "evidence_quote": "managed firewalls, keeping the burden of maintaining that skill set off of an overtasked IT staff and protecting our state and federally regulated and protected student data.  We have been able to",
+      "evidence_start": 928,
+      "evidence_end": 1124,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079594",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079594",
+  "filer_raw": "James Puccio, Randolph Public Schools, Randolph, MA",
+  "date_submission": "2026-10-06T15:40:32.590Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9126775242d3ec13bdee4716792a46ce29833251cc63c4c365548e20b0116112",
+  "params_key": "4032bf49e8972ccf5991c6f8ca3142336e8d8a32875913620d4db3c7deb88aa2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

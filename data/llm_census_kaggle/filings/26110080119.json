@@ -1,0 +1,49 @@
+{
+  "summary": "District supports preserving E‑Rate and opposes any reductions that would limit connectivity services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate provides reliable, affordable internet connectivity essential for classroom instruction and digital learning.",
+      "evidence_quote": "I am submitting this comment on behalf of [District Name], which serves approximately [Number] students in Michigan, to express our strong support for preserving the federal E-Rate program.\nE-Rate is",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose reductions to E‑Rate funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E‑Rate support would force districts to divert resources from instructional programs and student services.",
+      "evidence_quote": "te support. Reducing or eliminating this funding would create significant financial challenges, potentially forcing our district to redirect resources from instructional programs, student services,",
+      "evidence_start": 627,
+      "evidence_end": 824,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080119",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080119",
+  "filer_raw": "Paul Salah",
+  "date_submission": "2026-10-08T19:16:59.564Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3279c5f57c9c08854f7b54ad9205c7213b6867e861cb4d03be80e8a700c00a5e",
+  "params_key": "4f781b37ae3b822d9341fcbc4d0bf5341c8d837df9bd73ee4d3821854b3609d0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

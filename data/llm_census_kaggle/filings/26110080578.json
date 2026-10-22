@@ -1,0 +1,61 @@
+{
+  "summary": "Waterford School District urges the FCC to preserve the E‑Rate program, citing its essential role in providing reliable, affordable internet and supporting equitable education, while warning that cuts would force costly reallocation of resources and stressing the need for responsible oversight.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district relies on E‑Rate to provide reliable, affordable internet connectivity essential for modern public education.",
+      "evidence_quote": "I am submitting this comment on behalf of Waterford School District, which serves approximately 7,200 students in Michigan, to express our strong support for preserving the federal E-Rate",
+      "evidence_start": 0,
+      "evidence_end": 187,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reducing E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E‑Rate support would create significant financial challenges, forcing the district to redirect resources from instructional programs.",
+      "evidence_quote": "a substantial amount in E-Rate support. \nReducing or eliminating this funding would create significant financial challenges, potentially forcing our district to redirect resources from instructional",
+      "evidence_start": 606,
+      "evidence_end": 804,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "implement responsible oversight and accountability",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The district supports responsible oversight, accountability, and continuous improvement of federal programs.",
+      "evidence_quote": "to redirect resources from instructional programs, student services, or other operational priorities simply to maintain essential connectivity.\nWhile we support responsible oversight, accountability,",
+      "evidence_start": 764,
+      "evidence_end": 963,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080578",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080578",
+  "filer_raw": "Adam Martin",
+  "date_submission": "2026-10-12T13:55:06.665Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0e0eab80d520e060757115a9e7b7481ab84402e6a00e325bd76e05db415478b1",
+  "params_key": "641245b87b3abdc7626dd9f44d4a6e1b5a3b0410564cd055e10263e6163e4bb8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

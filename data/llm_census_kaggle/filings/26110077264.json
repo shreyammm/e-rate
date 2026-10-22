@@ -1,0 +1,63 @@
+{
+  "summary": "Teacher urges FCC to preserve E‑Rate, opposing any sunset or reduction, citing its essential role in equitable broadband access and student learning.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures all students, regardless of income or location, can access digital curriculum.",
+      "evidence_quote": "and build the skills they will need for college, career, and civic life. E-Rate support helps ensure that these opportunities are available to all students, regardless of where they live or their",
+      "evidence_start": 780,
+      "evidence_end": 975,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is vital for equitable broadband access and modern learning.",
+      "evidence_quote": "tions Commission to preserve and protect the E-Rate program and to oppose any proposal that would reduce, limit, or sunset this vital source of support for schools and libraries that millions of",
+      "evidence_start": 313,
+      "evidence_end": 507,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Cutting E‑Rate would deepen inequities and hinder student participation in modern learning environments.",
+      "evidence_quote": "catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome. Students cannot fully participate in modern learning environments without reliable",
+      "evidence_start": 1864,
+      "evidence_end": 2058,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077264",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077264",
+  "filer_raw": "Ashley Nelson",
+  "date_submission": "2026-09-20T16:24:47.796Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e183543f81cb7db8833408863b5e39d3526eba28ef31eb9ed218ecc882463c2",
+  "params_key": "66e655061b7342413b7ec6965a535939f638ae06d2b8321b66918584e93e3277",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

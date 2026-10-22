@@ -1,0 +1,75 @@
+{
+  "summary": "Clermont County Public Library opposes further cuts to E‑Rate funding, arguing that reduced support would eliminate essential services such as Wi‑Fi lending and broader community connectivity, especially for underserved households. The Clermont County Public Library argues that E‑Rate funding is essential for maintaining reliable broadband connectivity, which supports a wide range of community services and digital literacy efforts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate eligibility for Wi‑Fi lending and other services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library’s Wi‑Fi lending program, which serves residents without home internet, would be unsustainable without E‑Rate support.",
+      "evidence_quote": "-Rate\neligibility. Following the removal of Wi-Fi hotspot lending from E-Rate support, the\nLibrary was unable to sustain the cost of its Pocket Wi-Fi lending services and\ndiscontinued the program",
+      "evidence_start": 1859,
+      "evidence_end": 2054,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent sunset or reduction of E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate funding would force the library to discontinue core services and reduce community access to technology.",
+      "evidence_quote": "and schools across the nation, including Clermont\nCounty Public Library, have reliable internet access year after year because of E-Rate.\nWithout E-Rate funding, we will have to cut core services,",
+      "evidence_start": 1389,
+      "evidence_end": 1585,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for the library to provide reliable broadband that supports community services and digital literacy.",
+      "evidence_quote": "ailable\nat home.\nE-Rate is essential for reliable broadband speeds and for regular network maintenance,\nsafety, and security. The Library cannot operate without the internet. If the FCC\nterminates or",
+      "evidence_start": 5891,
+      "evidence_end": 6090,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure continued connectivity for underserved households",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Approximately 21.3% of households in Franklin Township lack broadband, making library connectivity vital for education and employment.",
+      "evidence_quote": "y on the Library to stay connected. This need is especially evident in\nsome areas of Clermont County. In Franklin Township, located in the southern portion\nof the county along the Ohio River, 21.3%",
+      "evidence_start": 2473,
+      "evidence_end": 2670,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076993",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076993",
+  "filer_raw": "Clermont County Public Library",
+  "date_submission": "2026-09-18T17:30:57.400Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "483f4761d5c8afc7bdb9ad4dd7d2eafdde9e112b617055258c383d735b664d28",
+  "params_key": "9bd3ad77563a398b0c9c7ae2355cea514f7b328d89aec559c74054f51d1e0a50",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

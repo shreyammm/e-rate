@@ -1,0 +1,86 @@
+{
+  "summary": "Letter urges FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts that would harm school connectivity and staffing.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access.",
+      "evidence_quote": "program; 2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; 3.",
+      "evidence_start": 3573,
+      "evidence_end": 3771,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Current eligibility ensures all schools can build and maintain connectivity necessary for modern education.",
+      "evidence_quote": "ve students without adequate support; 3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and 4. Work with schools and",
+      "evidence_start": 3731,
+      "evidence_end": 3927,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to maintain reliable broadband for students.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily",
+      "evidence_start": 465,
+      "evidence_end": 664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain funding to avoid staffing cuts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E‑Rate revenue would force districts to reduce instructional staffing to cover increased infrastructure costs.",
+      "evidence_quote": "mands and technology continue to evolve. For my district, reducing or eliminating E-Rate support would have a direct and tangible impact. E-Rate accounts for approximately $70,000 a year in revenue",
+      "evidence_start": 2015,
+      "evidence_end": 2212,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate provides the recurring cost of keeping a modern network running, which is vital for school operations.",
+      "evidence_quote": "nville Elem School  Dist  2 has received $340,985 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $68,197 a year toward the connections our students depend",
+      "evidence_start": 2797,
+      "evidence_end": 2993,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077647",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077647",
+  "filer_raw": "Tim Keeley, Chief School Business Official, Bensenville Elementary School District #2",
+  "date_submission": "2026-09-22T15:54:32.976Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5733aca104b46988da22b092232f89f55ea9faec641f413dc18a2b3989a38bbc",
+  "params_key": "21d92810b7853e4b30800735d7790c448f18c012e993a4443bce7de6fdcdd0b7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

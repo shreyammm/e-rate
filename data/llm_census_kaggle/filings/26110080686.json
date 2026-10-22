@@ -1,0 +1,89 @@
+{
+  "summary": "Ponca City Public Schools opposes any sunset or reduction of E‑Rate support, rejects tying infrastructure funding to screen‑time limits, and urges preservation of existing discount structures and Category 1/2 funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "support",
+      "requested_action": "protect existing discount matrix for high‑need communities",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The discount matrix ensures equitable broadband access for low‑income and rural schools.",
+      "evidence_quote": "and infringes on \nlocal governance. \nWe urge the Commission to preserve Category 1 and Category 2 funding, protect the existing \ndiscount matrix for high-need communities, and keep modern schools",
+      "evidence_start": 2950,
+      "evidence_end": 3145,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve Category 1 and Category 2 funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Category 1/2 funding sustains high‑speed connectivity for the district’s students.",
+      "evidence_quote": "and infringes on \nlocal governance. \nWe urge the Commission to preserve Category 1 and Category 2 funding, protect the existing \ndiscount matrix for high-need communities, and keep modern schools",
+      "evidence_start": 2950,
+      "evidence_end": 3145,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to eliminate, sunset, reduce, or geographically restrict E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential utility infrastructure that schools cannot afford without it.",
+      "evidence_quote": "ain high-speed connectivity. We urge the Commission \nto reject any proposals that would eliminate, sunset, reduce, or geographically restrict E-Rate support, or \nattach unworkable conditions that",
+      "evidence_start": 468,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain E‑Rate as essential utility infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funds critical campus life‑safety systems and network backbone services.",
+      "evidence_quote": "ogy grant; it provides essential utility infrastructure comparable \nto electricity, water, and HVAC services. In Ponca City, our network backbone powers vital campus \nlife-safety systems before any",
+      "evidence_start": 781,
+      "evidence_end": 978,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject conditioning infrastructure support on screen‑time caps or pedagogical device mandates",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Bandwidth is not synonymous with student screen time; device usage decisions belong to local educators and parents.",
+      "evidence_quote": "nomic loss that would disproportionately impact regional school \ncommunities like ours. \nThe Commission must also reject proposals conditioning infrastructure support on federal \nscreen-time caps or",
+      "evidence_start": 2175,
+      "evidence_end": 2373,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080686",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080686",
+  "filer_raw": "Ponca City Public Schools",
+  "date_submission": "2026-10-12T19:29:57.390Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "23a252283ca0c4d21a4b8153c7d56c36880e39df8a87e7ae2727bc5f3ae522a1",
+  "params_key": "b2d256ceb4550445c5ed9681090537ab94a09399717d0c8f1e0be091673beaeb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

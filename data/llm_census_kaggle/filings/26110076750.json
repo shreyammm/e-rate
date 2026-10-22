@@ -1,0 +1,88 @@
+{
+  "summary": "Emily Cherkin, a screen‑time advocate, argues that children’s safety and privacy must be protected in schools, calls for a reevaluation of the E‑Rate program, and supports opt‑out policies for EdTech use. The author argues that the E‑Rate program should not subsidize large EdTech companies and calls for restrictions on such subsidies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_age_specific",
+      "position": "support",
+      "requested_action": "require child‑safety protections for school‑issued devices",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Schools must provide safeguards that protect children from predatory technology companies when using school‑issued devices.",
+      "evidence_quote": "not children.  \n \nI am here today to ask for the bare minimum in protections of children from predatory \ntechnology companies, particularly those who hide behind monikers with “education” in \nthe",
+      "evidence_start": 1087,
+      "evidence_end": 1282,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "adopt opt‑out policies for EdTech use in schools",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Opt‑out policies give families the right to refuse the use of EdTech products that pose risks to children.",
+      "evidence_quote": "Over the past year the tide has begun to turn as schools have begun to resist the \nEdTech deluge, from opt out policies12 to school AI bans.13 I applaud these. But these \n13",
+      "evidence_start": 5242,
+      "evidence_end": 5415,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "require schools to disclose data collection practices to parents",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Parents must be informed about how school‑issued devices collect and share data to protect children’s privacy.",
+      "evidence_quote": "hat while using these devices and EdTech products for \n“school,” their children’s data is collected and sold to third parties without parental \nconsent.  \n \nAnd families who have restricted their",
+      "evidence_start": 4773,
+      "evidence_end": 4968,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reevaluate the E‑Rate program before continuing funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "other",
+      "argument": "The E‑Rate program should be reevaluated to ensure it aligns with Congress’s vision and does not perpetuate unchecked technology use in schools.",
+      "evidence_quote": "ding ties upfront, \nespecially those who will push for continuing the eRate program without reevaluation. \nThis pro-EdTech messaging benefits tech companies, not children.  \n \nI am here today to ask",
+      "evidence_start": 929,
+      "evidence_end": 1127,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "restrict E‑Rate subsidies to large EdTech companies",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should not be used to subsidize large EdTech firms whose primary goal is engagement rather than education.",
+      "evidence_quote": "suffice for teacher and staff needs.  \n \nThe eRate program plays an important role in ensuring students have access to the \ninternet and to support school systems. But it must not become a subsidy",
+      "evidence_start": 9603,
+      "evidence_end": 9799,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_age_specific": "support",
+    "cipa_byod": "support",
+    "cipa_monitoring_privacy": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076750",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076750",
+  "filer_raw": "Emily Cherkin",
+  "date_submission": "2026-09-15T23:03:10.076Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c72ff82ec0b95c074a30dda9a5e118d6b0387bc9715c4082314fae038ed7abcf",
+  "params_key": "b9a8681d072dace94d6897525066a790767496d4815a128912fca29dd6ab354d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

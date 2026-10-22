@@ -1,0 +1,86 @@
+{
+  "summary": "The superintendent urges the FCC to keep the E‑Rate program intact, oppose any sunset or narrowing of eligibility, preserve funding for core network infrastructure, and work with stakeholders to modernize the program. The comment urges the FCC to protect and modernize E‑Rate, arguing that the program is essential for equitable, affordable, and effective connectivity for students and library patrons.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility would leave students without adequate support and is unjustified.",
+      "evidence_quote": "roposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would leave students without adequate support; \n3.​ Preserve support",
+      "evidence_start": 5413,
+      "evidence_end": 5611,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Preserving support for connectivity and internal network infrastructure is vital for reliable educational access.",
+      "evidence_quote": "adequate support; \n3.​ Preserve support for the connectivity and internal network infrastructure schools need to \nprovide reliable educational access; and \n4.​ Work with schools and other",
+      "evidence_start": 5572,
+      "evidence_end": 5759,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be sunset or eliminated.",
+      "evidence_quote": "ge the Federal Communications Commission (FCC) to preserve and strengthen the \nE-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or \nunnecessarily restrict",
+      "evidence_start": 464,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize program",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "The FCC should work with stakeholders to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "ss; and \n4.​ Work with schools and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education. \nE-Rate has enabled schools (public and private) and",
+      "evidence_start": 5719,
+      "evidence_end": 5910,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for equitable, affordable, and effective connectivity for students and library patrons.",
+      "evidence_quote": "and \n4.​ Work with schools and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education. \nE-Rate has enabled schools (public and private) and libraries",
+      "evidence_start": 5723,
+      "evidence_end": 5920,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080091",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080091",
+  "filer_raw": "Amy E. Gayheart",
+  "date_submission": "2026-10-08T17:57:17.762Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "29bff1d498d40a0d5429880395384c24d8c0746f83ad20eb1799b9a699f5dcb9",
+  "params_key": "add085efc58967bf08145618725b977d90219a482588ae2c6a347ee2a7d15bc0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

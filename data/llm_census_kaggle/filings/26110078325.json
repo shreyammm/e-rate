@@ -1,0 +1,86 @@
+{
+  "summary": "The superintendent urges the FCC to keep the E‑Rate program intact, oppose any sunset or narrowing of eligibility, preserve connectivity support, strengthen and modernize the program, and ensure equitable access for all students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate eligibility should not be narrowed solely on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "mission to: \n \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on geography",
+      "evidence_start": 4039,
+      "evidence_end": 4238,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The program must continue to support the connectivity and internal network infrastructure schools need for reliable educational access.",
+      "evidence_quote": "internal network infrastructure schools need to \nprovide reliable educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role",
+      "evidence_start": 4357,
+      "evidence_end": 4555,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Ensure equitable access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial circumstances.",
+      "evidence_quote": "nities possible. \n \nOur students deserve access to the tools they need to learn and succeed regardless of where \nthey live or their family’s financial circumstances. I urge the Commission to protect",
+      "evidence_start": 4972,
+      "evidence_end": 5170,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program must not be sunset or eliminated because it provides essential broadband infrastructure for schools.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen \nthe E-Rate program and to reject any proposal that would eliminate, sunset, substantially \nreduce, or",
+      "evidence_start": 461,
+      "evidence_end": 648,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "The FCC should work with schools to strengthen and modernize E‑Rate rather than reduce its role in public education.",
+      "evidence_quote": "nize E-Rate rather than \nreduce its role in public education. \n \nE-Rate has enabled schools (public and private) and libraries to build and maintain the \nconnectivity necessary for students and",
+      "evidence_start": 4515,
+      "evidence_end": 4708,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078325",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078325",
+  "filer_raw": "Leah Gauthier",
+  "date_submission": "2026-09-25T16:31:34.525Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "76e3d38034c06479a86d54a744429c4fe9726ad3d36678cbbe8f340cb70bb4ac",
+  "params_key": "501055c02b694aa5988d72d6fc15869e6f302c1d19249591c5ca0df1c4f9c35a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

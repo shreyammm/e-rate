@@ -1,0 +1,88 @@
+{
+  "summary": "Saint John’s High School opposes any termination or limitation of the E‑Rate program, arguing that such actions would cut essential funding for school and library broadband and technology services. The school also requests administrative improvements, including a simpler portal, mandatory cybersecurity services, and expanded device funding for students in need.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "alternative_proposal",
+      "requested_action": "create an easier-to-use portal",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "The current E‑Rate portal is difficult to navigate, hindering efficient application and compliance.",
+      "evidence_quote": "areas would be substantially critical as well:\n•\tCreation of an easier to use portal. The current one is incredibly hard to navigate or find things.\n•\tOpen discussion on inclusion of Cybersecurity",
+      "evidence_start": 2486,
+      "evidence_end": 2682,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "alternative_proposal",
+      "requested_action": "allow E‑Rate funding for devices for students of need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Expanding E‑Rate to fund devices for students in need would enhance equitable access to digital learning tools.",
+      "evidence_quote": "providing access in schools.\n•\tAmending the options to allow e-rate to provide funding for devices for students of need.",
+      "evidence_start": 2802,
+      "evidence_end": 2922,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "alternative_proposal",
+      "requested_action": "include cybersecurity services and hardware as mandatory E‑Rate items",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Cybersecurity services and hardware are now necessary for safe and reliable school network access and should be funded through E‑Rate.",
+      "evidence_quote": "discussion on inclusion of Cybersecurity Services and hardware as part of E-Rate as they are no longer optional but necessary requirements in the discussion of providing access in schools.\n•\tAmending",
+      "evidence_start": 2642,
+      "evidence_end": 2841,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Terminating or limiting E‑Rate would cut critical broadband and technology funding for schools and libraries, jeopardizing student access to educational resources.",
+      "evidence_quote": "is critical for schools and libraries to maintain affordable, reliable access to the Internet. Terminating that support represents a cut to school and library budgets, jeopardizing years of progress",
+      "evidence_start": 462,
+      "evidence_end": 660,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding is essential for upgrading infrastructure and providing equitable technology access to students of need.",
+      "evidence_quote": "e benefits of that support first-hand. \n \n●\tE-rate has allowed us to lower our ISP costs allowing us to increase the speed and network capacity at our school.\n●\tIt has allowed us to upgrade an aging",
+      "evidence_start": 930,
+      "evidence_end": 1128,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "alternative_proposal",
+    "cipa_digital_literacy": "alternative_proposal",
+    "cipa_network_filter": "alternative_proposal",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076784",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076784",
+  "filer_raw": "Saint John's High School",
+  "date_submission": "2026-09-16T13:46:11.172Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "395ae31fa3a3caa30d51b34ad5c26276ee0adaa2b17ba293085f8c2ed3839142",
+  "params_key": "e6ea23e3931a2330368b0293a17da234362a02fd76772fdf275b800e80bfef68",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

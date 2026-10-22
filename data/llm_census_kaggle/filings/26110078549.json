@@ -1,0 +1,76 @@
+{
+  "summary": "The superintendent urges the FCC to keep the E‑Rate program intact, reject sunset or narrowing of eligibility, and maintain robust support for internal network infrastructure, while clarifying that E‑Rate does not fund student screen time.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject restrictions narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility should not be limited by arbitrary geographic or administrative criteria.",
+      "evidence_quote": "e district, those costs directly compete with instructional staffing, student services, and classroom resources. I respectfully urge the Commission to: 1. Reject any proposal to sunset or eliminate",
+      "evidence_start": 2489,
+      "evidence_end": 2686,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential for maintaining school connectivity and should not be eliminated.",
+      "evidence_quote": "eject any proposal that would eliminate, sunset, substantially reduce, or restrict E-Rate support for schools and libraries. E-Rate is the sole federal education technology program, and the",
+      "evidence_start": 623,
+      "evidence_end": 812,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Preserve robust support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is foundational to modern public education.",
+      "evidence_quote": "ive criteria; 3. Preserve robust support for internal network infrastructure and broadband connections; and 4. Work with stakeholders to modernize and strengthen E-Rate rather than reduce its",
+      "evidence_start": 2805,
+      "evidence_end": 2996,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "Clarify that E‑Rate does not fund student screen time",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "E‑Rate funds infrastructure, not individual devices or content.",
+      "evidence_quote": "ss our campuses. It is also important to clarify that school connectivity is not synonymous with unrestricted student screen time. E-Rate funds the unseen infrastructure backbone that supports the",
+      "evidence_start": 1703,
+      "evidence_end": 1899,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078549",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078549",
+  "filer_raw": "Brian DeBernardi",
+  "date_submission": "2026-09-28T16:51:32.617Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "01d1ecff3c1187fc3685fa3c6fdcd3803edd634b74762c6193a32d77788b1dae",
+  "params_key": "56c3f676874b06f214babef6e281a4eb1e45c57433803f4c6e1ee357b98b695e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

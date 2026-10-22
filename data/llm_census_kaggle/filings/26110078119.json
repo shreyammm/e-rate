@@ -1,0 +1,111 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, arguing that eliminating or sunsetting the program would shift the majority of costs to local districts, reduce essential network upgrades, and harm instructional operations. A superintendent urges the FCC to preserve and strengthen the E‑Rate program, rejecting sunset proposals, narrowing eligibility, and advocating for continued support of connectivity and internal network infrastructure, while calling for modernization and reliable, affordable access for all students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address changes to eligible equipment or services.",
+      "evidence_quote": "Federal Communications Commission \n45 L Street NE \nWashington, DC 20554 \nRE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 — Notice of Proposed Rulemaking and \nFurther Notice of Proposed",
+      "evidence_start": 0,
+      "evidence_end": 189,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility should not be narrowed solely on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "spectfully urge the Commission to: \n\n\n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 6069,
+      "evidence_end": 6264,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program must continue to support connectivity and internal network infrastructure schools need for reliable educational access.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity and internal",
+      "evidence_start": 6224,
+      "evidence_end": 6416,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Eliminating E‑Rate would shift 80% of current federal support to local budgets, forcing districts to cut essential technology services.",
+      "evidence_quote": "ing budget. \nThe important point is that eliminating E-Rate would not eliminate our need for Internet service or \nnetwork infrastructure. It would shift costs that are currently 80% federally",
+      "evidence_start": 5460,
+      "evidence_end": 5651,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program should not be sunset or eliminated because reliable broadband is essential infrastructure for modern schools.",
+      "evidence_quote": "spectfully urge the Commission to: \n\n\n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 6069,
+      "evidence_end": 6264,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should be modernized to better meet current educational technology needs.",
+      "evidence_quote": "stakeholders to strengthen and modernize E-Rate rather than reduce \nits role in public education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity",
+      "evidence_start": 6530,
+      "evidence_end": 6729,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Ensure reliable, affordable, effective connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Students deserve access to tools needed to learn and succeed regardless of location or family finances.",
+      "evidence_quote": "that makes those opportunities possible. \nOur students deserve access to the tools they need to learn and succeed regardless of where they live or \ntheir family’s financial circumstances. I urge the",
+      "evidence_start": 6996,
+      "evidence_end": 7194,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078119",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078119",
+  "filer_raw": "West Saint Francois Co Dist R4",
+  "date_submission": "2026-09-24T17:52:16.611Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "13a31df9f5323b7e15b31db2880cf46a2bc9a5b2398b47871af61a0c92c8de1f",
+  "params_key": "f9370541bb61552528cf3af746aa35234de3ba61cfd01e78f99a94230ea49ec1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

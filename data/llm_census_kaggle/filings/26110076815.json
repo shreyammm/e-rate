@@ -1,0 +1,75 @@
+{
+  "summary": "A parent argues that schools should allow parents to opt their children out of unproven digital learning tools, citing independent research that shows such tools do not improve learning and may harm attention, and that paper‑based alternatives exist.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_age_specific",
+      "position": "oppose",
+      "requested_action": "limit screen time",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Excessive screen time reduces children’s attention and engagement.",
+      "evidence_quote": "truggle isn't separate from the screens. The more time she spends swiping and clicking through an app, the harder it becomes for her to sit still and concentrate and engage.  Attention is exactly",
+      "evidence_start": 2189,
+      "evidence_end": 2384,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "require opt‑out option for parents",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "District refusal to allow opt‑out is based on administrative convenience rather than student well‑being.",
+      "evidence_quote": "o this for one child, because they would then have to do it for 400 kids, and there is no teacher time or resources available to support that.\nI understand schools are stretched thin. But that answer",
+      "evidence_start": 1093,
+      "evidence_end": 1292,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "require opt‑out option for parents",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Parents should be able to opt their children out of digital learning tools that lack proven educational benefit.",
+      "evidence_quote": "sts and the only obstacle is convenience thus  I do­ believe schools should be required to provide an opt-out option to receive E-rate funding.",
+      "evidence_start": 2976,
+      "evidence_end": 3119,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "oppose",
+      "requested_action": "allow paper‑based alternative",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Digital components of the I‑ready program do not deliver meaningful educational benefit.",
+      "evidence_quote": "that digital parts of it don't deliver a meaningful educational benefit and does not improve learning outcomes. The publisher of this exact curriculum already offers a paper-based version of the same",
+      "evidence_start": 625,
+      "evidence_end": 824,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_age_specific": "oppose",
+    "cipa_byod": "conflicting_or_multiple",
+    "cipa_digital_literacy": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076815",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076815",
+  "filer_raw": "K.Lapierre",
+  "date_submission": "2026-09-16T17:26:35.086Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9acef8bdbe827c50454136d1e9c02086dd2855fb8f8e169d54ee9c67914a7ac5",
+  "params_key": "b24821cbb9ac2c9b987f6fdc2f47c27fae6845fe62af271c617d4a0ba96aefdf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

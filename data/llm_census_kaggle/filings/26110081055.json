@@ -1,0 +1,86 @@
+{
+  "summary": "Streetsboro City Schools urges the FCC to preserve E‑Rate funding, oppose any reductions or eliminations, and expand eligibility to include cybersecurity services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "expand eligible services to include cybersecurity equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Cybersecurity threats are rising, and E‑Rate should cover protective equipment to maintain educational continuity.",
+      "evidence_quote": "gly encourage the Commission to consider expanding E-rate eligibility to include additional \ncybersecurity equipment and services. School districts face increasingly sophisticated cybersecurity",
+      "evidence_start": 3407,
+      "evidence_end": 3600,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "maintain equitable access for all eligible schools and libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "The district emphasizes that all schools, regardless of size or location, benefit from E‑Rate.",
+      "evidence_quote": "rtant to recognize that districts of all sizes and geographic locations benefit from this program. \nWhile the challenges facing urban, suburban, and rural school systems may differ, the need for",
+      "evidence_start": 4027,
+      "evidence_end": 4221,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve the E‑Rate program in its current scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for maintaining reliable connectivity that supports teaching, learning, and daily operations.",
+      "evidence_quote": "theast Ohio, I am writing to express our strong support for the \ncontinued funding and preservation of the E-rate program. Since its establishment in 1998, E-rate has played a \ncritical role in",
+      "evidence_start": 774,
+      "evidence_end": 967,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals that would reduce or eliminate E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that cutting E‑Rate would force costly delays in essential network upgrades.",
+      "evidence_quote": "n, restriction, or elimination of E-rate funding would have significant consequences for our \ndistrict. Technology infrastructure is not a one-time investment. Networks require ongoing maintenance,",
+      "evidence_start": 2167,
+      "evidence_end": 2364,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals that would reduce or eliminate its funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating or significantly reducing E‑Rate support would represent a step backward in an era of increasing technology dependence.",
+      "evidence_quote": "s and connectivity they need to succeed. Eliminating or significantly reducing this support would represent \na step backward at a time when technology is more essential to education than ever before.",
+      "evidence_start": 5109,
+      "evidence_end": 5308,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081055",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081055",
+  "filer_raw": "Streetsboro City Schools",
+  "date_submission": "2026-10-13T17:34:46.061Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "020d06d83f806d97e700adf0c331b2a4b4c549efbaa385e580ecce1d6627d67e",
+  "params_key": "572976f0e7e1d3dd54867c7b8d7d17e0a13ab4994d21aff55770783991a7490f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

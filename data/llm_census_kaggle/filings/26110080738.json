@@ -1,0 +1,63 @@
+{
+  "summary": "A parent of a Montgomery County student supports the E‑Rate program but calls for stronger CIPA enforcement, curriculum‑based technology use, and parental controls.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "conditional_or_amend",
+      "requested_action": "restrict one‑to‑one take‑home devices",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate schools should adopt a technology model that uses a shared, supervised computer lab or in‑class access rather than one‑to‑one take‑home devices to reduce digital distraction.",
+      "evidence_quote": "d reasonable daily limits, especially in elementary school;\n-          Adopt a technology model that uses a shared, supervised computer lab or in-class access rather than one-to-one take-home",
+      "evidence_start": 1099,
+      "evidence_end": 1290,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "conditional_or_amend",
+      "requested_action": "implement parental opt‑out and consent for AI tools",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "alternative_design",
+      "argument": "Schools must provide notice to parents about what content students access in school, how much time students spend on a screen, and must provide a parental opt‑out right that will not penalize or ostracize a student, including requiring parental consent before AI tools are turned on.",
+      "evidence_quote": "cenity and other harmful content;\n-          Provide notice to parents about what content students access in school and how much time students spend on a screen;\n-          Provide a parental opt-out",
+      "evidence_start": 1409,
+      "evidence_end": 1608,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen CIPA enforcement and audits",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The FCC should require or incentivize E‑Rate schools to adopt and use curricula that prioritize teacher‑led instruction and to replace existing CIPA certifications with meaningful audits that test whether minors can reach obscenity and other harmful content.",
+      "evidence_quote": "hildren’s Internet Protection Act (CIPA) to combat digital distraction and prevent access to inappropriate content.\n\nSpecifically, the FCC should require or incentivize E-Rate schools to:\n\n-",
+      "evidence_start": 630,
+      "evidence_end": 820,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "conditional_or_amend",
+    "cipa_monitoring_privacy": "conditional_or_amend",
+    "cipa_network_filter": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080738",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080738",
+  "filer_raw": "Kristel Diehl",
+  "date_submission": "2026-10-12T21:35:24.332Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9c2714415a6e1ea8af7351a1223157c3b020a818e7f1d58af69d4ba454d25fb1",
+  "params_key": "637bd5426397c6e175229c93c8471f27b91a3dda65e9d46dcc5374252426c8b5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

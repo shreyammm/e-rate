@@ -1,0 +1,87 @@
+{
+  "summary": "The commenter urges the FCC to strengthen, not reduce, the E‑Rate program, arguing that reliable broadband is essential for student success, equity, and school safety, especially in high‑poverty Alabama.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue broad eligibility for high‑speed internet",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "High‑speed internet is now essential for daily education and student safety, not just optional learning.",
+      "evidence_quote": "ccess to technology and online resources will improve academic outcomes.\n\nEqually important, high-speed internet is no longer just a pathway to online learning. Today, schools depend on robust",
+      "evidence_start": 2022,
+      "evidence_end": 2214,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain connectivity for campus security and emergency communications",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Schools depend on robust connectivity for security, emergency communications, and critical student information systems.",
+      "evidence_quote": "earning. Today, schools depend on robust connectivity for campus security, emergency communications, facility controls, and critical student information systems. For parents, knowing that schools",
+      "evidence_start": 2174,
+      "evidence_end": 2369,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain or increase E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing E‑Rate funding would disproportionately harm students in poverty who rely on school‑provided connectivity.",
+      "evidence_quote": "ess their critical and often sole bridge across that opportunity gap. Reductions in E-Rate support would hit these vulnerable students hardest, leaving them with few alternatives for accessing these",
+      "evidence_start": 1081,
+      "evidence_end": 1279,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid limiting connectivity based on screen‑time or bandwidth assumptions",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Limiting connectivity will not improve learning and risks widening inequities.",
+      "evidence_quote": "ctivity necessary to educate and protect our children. Limiting that connectivity will not ensure better learning; it risks widening inequities, restricting educational opportunity, and undermining",
+      "evidence_start": 3111,
+      "evidence_end": 3308,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not propose specific policy changes beyond opposing reductions.",
+      "evidence_quote": "As a citizen of the State of Alabama, a parent of school-age children, and someone familiar with the E-Rate program, I urge the FCC to strengthen, not reduce, the E-Rate program. From both a",
+      "evidence_start": 0,
+      "evidence_end": 190,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080588",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080588",
+  "filer_raw": "Jason Truett",
+  "date_submission": "2026-10-12T14:49:55.091Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "559ea06ce0c81ea226dc24a19f365ec335964e7635a7b57d116c78d375ef2a85",
+  "params_key": "3950915c2a54c4df298f4f905bfac8e244a2d123222f9023a4feaf161affe9f7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

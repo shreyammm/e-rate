@@ -1,0 +1,61 @@
+{
+  "summary": "A retired librarian argues that E‑Rate funding is essential for maintaining high‑speed internet in libraries, warning that discontinuing the program would severely harm library services and community access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Without E‑Rate, libraries would need to allocate over half their budget to internet, cutting other programs.",
+      "evidence_quote": "still out of reach for many customers.  To maintain the current level of access at our library would take more than half the monthly budget and effectively hurt every other program at the library",
+      "evidence_start": 931,
+      "evidence_end": 1126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Discontinuing E‑Rate would deprive libraries of high‑speed internet, undermining essential services for the community.",
+      "evidence_quote": "most libraries have high speed Internet due to E-rate funding but many of these libraries would not be able to sustain it without the assistance of E-rate.   Please do not discontinue this funding",
+      "evidence_start": 2025,
+      "evidence_end": 2221,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "child_safety",
+      "argument": "High‑speed internet is critical for community services such as food assistance applications, which rely on library access.",
+      "evidence_quote": "Please do not discontinue this funding without a plan in place to make high speed Internet access available for all libraries.  It is the infrastructure that allows communities to stay in touch,",
+      "evidence_start": 2183,
+      "evidence_end": 2377,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075634",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075634",
+  "filer_raw": "Terri S Crawford",
+  "date_submission": "2026-09-05T01:26:33.777Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3822f64e90672c7e3fc4bd3a692ec8c43cd18e526927d64895dbacecf0b13831",
+  "params_key": "842af9674c7a338ec44f8900435c89b66b4b714f2e41c73103c0eaafe35914e8",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,74 @@
+{
+  "summary": "Letter from a superintendent urging the FCC to preserve and strengthen the E‑Rate program, opposing sunset, narrowing eligibility, and advocating continued support for school connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ely on \ngeography or other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable",
+      "evidence_start": 3903,
+      "evidence_end": 4101,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Schools require reliable broadband to function and serve students safely.",
+      "evidence_quote": "ructure schools need to provide reliable \neducational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its \nrole in public education.",
+      "evidence_start": 4061,
+      "evidence_end": 4256,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria that",
+      "evidence_start": 3746,
+      "evidence_end": 3943,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "work with schools to strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be modernized to meet evolving instructional demands.",
+      "evidence_quote": "reduce its \nrole in public education. \n \nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity \nnecessary for students and patrons to participate fully",
+      "evidence_start": 4219,
+      "evidence_end": 4417,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080040",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080040",
+  "filer_raw": "Target Range Elementary School",
+  "date_submission": "2026-10-08T14:48:21.327Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e92c64c82dbe11c3012edc496957efe01a823806fe085b11942ca8738658f345",
+  "params_key": "5de44719a436dd65a5142556e1323b18bbb09033d7a1b4cae5c6ccf4b589c267",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

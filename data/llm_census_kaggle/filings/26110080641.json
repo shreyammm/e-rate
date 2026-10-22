@@ -1,0 +1,49 @@
+{
+  "summary": "The Eastern Shore Public Library urges the FCC to maintain full E‑Rate funding to avoid significant service disruptions and financial strain on the community.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue full funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate funding would impose a $30,000‑$50,000 annual cost on the library, threatening essential services.",
+      "evidence_quote": "funding the library receives from local governments costing them an additional $30,000-$50,000 per year for internet service, upgrades to equipment and licenses. \n\nEliminating the funding could",
+      "evidence_start": 771,
+      "evidence_end": 964,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Loss of funding would result in delayed maintenance and loss of vital services such as telehealth, e‑books, and job‑search programs.",
+      "evidence_quote": "icenses. \n\nEliminating the funding could result in the loss of vital services which serve all segments of the community from students, to job seekers, those needing telehealth services, database",
+      "evidence_start": 924,
+      "evidence_end": 1118,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080641",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080641",
+  "filer_raw": "Eastern Shore of Virginia Public Library System",
+  "date_submission": "2026-10-12T17:21:26.437Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8d801f8b54b5437ebd9a9705d17d24b94be0bcb3d82e5a5881187a33808f0776",
+  "params_key": "692bafc2fa969a3ed75e33016d2a4286ff46fc414302ac88a0fb7709be76c038",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

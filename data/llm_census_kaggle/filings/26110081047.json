@@ -1,0 +1,99 @@
+{
+  "summary": "The comment urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, reduction, or narrowing of eligibility, and argues that connectivity is essential infrastructure independent of screen‑time policies. Support for continued E‑Rate funding to maintain reliable, affordable connectivity for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would create a digital equity gap and leave students without adequate support.",
+      "evidence_quote": "he Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or",
+      "evidence_start": 5138,
+      "evidence_end": 5335,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is basic infrastructure like electricity and transportation, essential for modern education.",
+      "evidence_quote": "ict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 5295,
+      "evidence_end": 5492,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that supports modern education and should not be eliminated.",
+      "evidence_quote": "ge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict",
+      "evidence_start": 468,
+      "evidence_end": 665,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program has enabled schools to build and maintain connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "te rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to",
+      "evidence_start": 5607,
+      "evidence_end": 5797,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The commenter argues that E‑Rate must be preserved to ensure reliable, affordable connectivity for students regardless of their family’s financial circumstances.",
+      "evidence_quote": "where they live or their family’s financial circumstances. I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and",
+      "evidence_start": 6151,
+      "evidence_end": 6343,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Reject linking E‑Rate to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funds connectivity, not end‑user devices, and should not dictate how much screen time students receive.",
+      "evidence_quote": "olicies and safeguards governing student technology use: E-Rate does not fund end user devices, thus should have no input into how much screen time is allowed or not allowed. The internet",
+      "evidence_start": 3587,
+      "evidence_end": 3774,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081047",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081047",
+  "filer_raw": "Andrew Diehl",
+  "date_submission": "2026-10-13T17:20:36.669Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c1c30f9d92f727f9300b9649a311ae0fb1f5f23f438220b7feff0e167722fa8d",
+  "params_key": "853d10e15c3b9c8c8a1d5678e190ee7abb7d6c343b1e7ffea120ec35b9f273d7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "Hall High School District 502 argues that E‑Rate funding is essential for high‑poverty schools, that cutting it would not reduce screen time but harm operations, and that E‑Rate enables better monitoring and filtering to support intentional technology use.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "ecf_rule_sunset",
+      "position": "support",
+      "requested_action": "continue ECF support for device replacement",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The Emergency Connectivity Fund was used to replace 1:1 Chromebooks and provide cellular hotspots for students lacking home internet.",
+      "evidence_quote": "​Connectivity Fund (ECF) to replace 1:1 Chromebooks that had reached their Auto Update Expiration​\n​(AUE) date and provided cellular hotspots to students who lacked home internet access. Without",
+      "evidence_start": 2330,
+      "evidence_end": 2524,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue E‑Rate support for high‑poverty districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential for high‑poverty districts to maintain modern, reliable digital environments.",
+      "evidence_quote": "chool system, E-Rate is not a luxury, it is an essential operational pillar. Without E-Rate​\n​support, maintaining basic digital infrastructure and equitable connectivity would place an unbearable",
+      "evidence_start": 918,
+      "evidence_end": 1114,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility and use of E‑Rate for monitoring and filtering",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate enables districts to better monitor, filter, and guide bandwidth usage effectively.",
+      "evidence_quote": "lenges,​​curtailing​​or defunding E-Rate infrastructure is not the​\n​solution.​​Modernizing bandwidth and network controls​​actually gives districts the tools needed to better​\n​monitor, filter, and",
+      "evidence_start": 3416,
+      "evidence_end": 3614,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose cuts to E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would leave schools with outdated, insecure, and unreliable networks that undermine essential operations.",
+      "evidence_quote": "needed to better​\n​monitor, filter, and guide bandwidth usage effectively. Cutting E-Rate funding would not reduce screen time—it​\n​would simply leave schools with outdated, insecure, and unreliable",
+      "evidence_start": 3575,
+      "evidence_end": 3773,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve full E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for high‑poverty districts to maintain modern, reliable digital environments.",
+      "evidence_quote": "Commission to protect and preserve full E-Rate funding for K-12 schools while supporting best​\n​practices for balanced, intentional technology integration in the classroom.​\n​Respectfully",
+      "evidence_start": 4203,
+      "evidence_end": 4390,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "ecf_rule_sunset": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080143",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080143",
+  "filer_raw": "Hall High School, District 502",
+  "date_submission": "2026-10-08T20:49:45.244Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "368591b34c9248c4e1b5f1d94af4b0ceabf8f131bc09da2dfad9dedf3d6b0d8e",
+  "params_key": "77c4e11221d368f3458cd107a390e5748a07f24924d7e3629aa66f611a558633",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "Citizens Against Government Waste (CAGW) argues that E‑Rate subsidies for Wi‑Fi on school buses are wasteful and urges the FCC to rescind the rule permitting such use. CAGW argues the FCC should assess school and library broadband needs based on BEAD eligibility and eliminate duplication with other federal or private broadband efforts to reduce waste.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "rescind FCC Rule 24‑76",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate funding for school‑bus Wi‑Fi is an unnecessary expense that diverts resources from more critical educational needs.",
+      "evidence_quote": "e mobile broadband services, which would \nbe a waste of taxpayer resources.2  CAGW urged the FCC to rescind FCC Rule 24-76, the  \nReport and Order and Further Notice of Proposed Rulemaking in the",
+      "evidence_start": 2182,
+      "evidence_end": 2377,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "evaluate broadband connectivity for schools/libraries based on BEAD inclusion and private sector service availability",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "CAGW proposes that the FCC assess whether schools and libraries are covered by BEAD or private broadband before allocating E‑Rate funds to avoid unnecessary duplication.",
+      "evidence_quote": "requests that the FCC evaluate broadband connectivity to schools and \nlibraries based on whether these locations will be included in broadband buildout through BEAD \nof other federal programs, and if",
+      "evidence_start": 5406,
+      "evidence_end": 5605,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "eliminate duplication of broadband services funded by other federal programs or private investment",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "CAGW contends that overlapping federal and private broadband funding wastes taxpayer resources and should be removed from E‑Rate consideration.",
+      "evidence_quote": "should continue its efforts to eliminate duplication of broadband services that \nare provided by other federal funding opportunities and private sector investment.  Such \nduplication and overlap is a",
+      "evidence_start": 5715,
+      "evidence_end": 5914,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "reduce USF contribution factor by cutting redundant broadband subsidies",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "CAGW notes the USF’s contribution factor has risen to 42% and that eliminating duplication could lower this burden.",
+      "evidence_quote": "communities and help to reduce the USF’s contribution \nfactor, which reached all-time high of 42 percent for the fourth quarter of 2026, 14 percent \ngreater than the top federal income tax marginal",
+      "evidence_start": 6025,
+      "evidence_end": 6222,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment references BEAD program funding and its impact on eligible locations but does not explicitly propose a new policy beyond evaluation and duplication elimination.",
+      "evidence_quote": "eform-to-take-center-stage-at-fcc/.  \n\n\n \n3\nThe 2021 Infrastructure Investment and Jobs Act provided $42.45 billion for the \nBroadband Equity, Access, and Deployment (BEAD) program, managed by the",
+      "evidence_start": 4473,
+      "evidence_end": 4669,
+      "uncertain": true
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "support",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080303",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080303",
+  "filer_raw": "Citizens Against Government Waste",
+  "date_submission": "2026-10-09T17:32:11.422Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "56024b1544d11b507a2370181a81be1e40355eb5111d1cee531df1bb6cf9a396",
+  "params_key": "02591876f064108f5a9bf7caba4f0908a5522db70dbde653e32cea541960cf40",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

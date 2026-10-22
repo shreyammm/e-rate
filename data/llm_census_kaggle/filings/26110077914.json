@@ -1,0 +1,87 @@
+{
+  "summary": "Scott City R-1 School District urges the FCC to keep E‑Rate funding robust, oppose tying it to student screen‑time limits, and expand eligible services to include modern cybersecurity tools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility for Category 2 services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The district relies on Category 2 funding to upgrade its network infrastructure.",
+      "evidence_quote": "cture updates and critical cybersecurity measures. We \nrespectfully urge the Federal Communications Commission to maintain robust funding for \nE-Rate and strongly consider expanding eligible services",
+      "evidence_start": 3410,
+      "evidence_end": 3609,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "expand eligible services to cybersecurity tools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate should cover modern cybersecurity tools such as firewalls, EDR, and SOC services.",
+      "evidence_quote": "gly consider expanding eligible services to cover modern cybersecurity tools, \nincluding firewall licensing, Endpoint Detection and Response (EDR), Endpoint Protection \nPlatforms (EPP) and Security",
+      "evidence_start": 3569,
+      "evidence_end": 3766,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for cybersecurity upgrades",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Cybersecurity upgrades are essential for protecting student and staff data.",
+      "evidence_quote": "gly consider expanding eligible services to cover modern cybersecurity tools, \nincluding firewall licensing, Endpoint Detection and Response (EDR), Endpoint Protection \nPlatforms (EPP) and Security",
+      "evidence_start": 3569,
+      "evidence_end": 3766,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain robust funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The district needs continued E‑Rate support to keep its infrastructure current and secure.",
+      "evidence_quote": "cture updates and critical cybersecurity measures. We \nrespectfully urge the Federal Communications Commission to maintain robust funding for \nE-Rate and strongly consider expanding eligible services",
+      "evidence_start": 3410,
+      "evidence_end": 3609,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not link E‑Rate to student screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Linking funding to screen time would impose severe administrative burdens and divert resources from instruction.",
+      "evidence_quote": "Protection \nPlatforms (EPP) and Security Operations Center (SOC) services. We strongly oppose linking \nE-Rate funding to student screen time. Managing digital tool use is a curriculum decision that",
+      "evidence_start": 3726,
+      "evidence_end": 3923,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077914",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077914",
+  "filer_raw": "Scott City R-1 School District",
+  "date_submission": "2026-09-23T18:41:22.957Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "062a64cc35049d039d799025e3198d60e76dc43b9217d23e685dca29afa65a8b",
+  "params_key": "23693fd72401416cb0e1ff0b29234394f8b760bf0cad30245a6f60bd81e525ee",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

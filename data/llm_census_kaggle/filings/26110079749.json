@@ -1,0 +1,85 @@
+{
+  "summary": "A citizen letter urges the FCC to preserve the E‑Rate program, opposing any sunset or reduction and arguing that cutting the program would deepen educational inequities and harm students’ access to essential broadband.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate is essential for students to fully participate in modern learning environments.",
+      "evidence_quote": "r schools and libraries that millions of students depend on every single day.\n\nReliable broadband access is essential to teaching and learning. Every day, our students use the internet to access",
+      "evidence_start": 465,
+      "evidence_end": 659,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate enables schools to deliver high‑quality education, especially in rural areas where broadband is critical.",
+      "evidence_quote": "nd simply cannot be administered without reliable broadband. In areas like rural western Massachusetts, where I grew up, broadband access is particularly important to deliver high-quality education.",
+      "evidence_start": 1083,
+      "evidence_end": 1281,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students in low‑income urban neighborhoods and rural communities rely on E‑Rate to access the same tools as wealthier districts.",
+      "evidence_quote": "rtant to deliver high-quality education. \n\nFor nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same tools as",
+      "evidence_start": 1241,
+      "evidence_end": 1432,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting the program would deepen inequities that public education is meant to overcome.",
+      "evidence_quote": "to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome. Students cannot",
+      "evidence_start": 1549,
+      "evidence_end": 1746,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect access for students who need it most",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Preserving E‑Rate means preserving educational opportunity for millions of students, including those in underserved communities.",
+      "evidence_quote": "his essential program and protect access for the students who need it most.\n\nPreserving E-Rate means preserving educational opportunity for millions of students, including those in communities like",
+      "evidence_start": 2320,
+      "evidence_end": 2517,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079749",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079749",
+  "filer_raw": "26-133 | 13-184 | 21-93 | 21-455",
+  "date_submission": "2026-10-07T12:56:36.296Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1d68b9e3814ed75ef0f14c0222d78a16425af2cf73d2dc326ed011402ff73a8f",
+  "params_key": "71d90dc415c0119e1505bca088226455043281ab0731ebe12e9eaf8674ff5d6d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

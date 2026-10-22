@@ -1,0 +1,86 @@
+{
+  "summary": "University Preparatory Academy urges the FCC to preserve E‑Rate funding, maintain current consultant access, and avoid any cuts that would widen the digital divide and increase administrative burden.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "support",
+      "requested_action": "maintain consultant access",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate regulations are complex and costly to navigate without specialized expertise.",
+      "evidence_quote": "mplexity\nE-Rate regulations are complex, change frequently, and carry significant financial consequences for non-compliance. A single Form 471 filing error, competitive bidding misstep, or invoice",
+      "evidence_start": 2335,
+      "evidence_end": 2531,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "support",
+      "requested_action": "allow consultants to maximize eligible funding",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Consultants help schools identify all eligible services and structure procurements to maximize discounts.",
+      "evidence_quote": "tify all eligible services and structure technology procurements to maximize discounts while remaining fully within FCC guidelines. Without this expertise, schools routinely leave significant funding",
+      "evidence_start": 2798,
+      "evidence_end": 2997,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential infrastructure for low‑income students, comparable to electricity and water.",
+      "evidence_quote": "al for our Schools. It has enabled us to provide modern, equitable, technology-rich education to low-income students in Detroit who would otherwise lack access to the digital infrastructure their",
+      "evidence_start": 3729,
+      "evidence_end": 3924,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reductions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing or eliminating E‑Rate would widen the digital divide between urban and suburban schools.",
+      "evidence_quote": "tly affecting students and instructional staff\nWiden the digital divide between urban and suburban school systems at precisely the moment when connectivity is most critical\nUndermine educational",
+      "evidence_start": 4042,
+      "evidence_end": 4236,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts that harm students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would directly harm student outcomes in underserved communities.",
+      "evidence_quote": "y is most critical\nUndermine educational equity in communities that depend on public investment for equal access to opportunity\n\n\"This would directly harm student outcomes in an already underserved",
+      "evidence_start": 4196,
+      "evidence_end": 4393,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_percent_fees": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081061",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081061",
+  "filer_raw": "University Preparatory Academy (226025)",
+  "date_submission": "2026-10-13T17:45:36.519Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d97567abe1340cae3d11402fa5586a7d8223b5d86d6f5a6716f80681d6489c25",
+  "params_key": "c7e76221ac51c7be8bd5645276cce2da24ec73730504a4c178d84f9dcfa3a448",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

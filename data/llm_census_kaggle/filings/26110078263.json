@@ -1,0 +1,86 @@
+{
+  "summary": "Superintendent urges FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing eligibility, and cuts while calling for modernization and equitable access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility should not be narrowed based on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would leave students",
+      "evidence_start": 3872,
+      "evidence_end": 4064,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must continue to fund connectivity and internal network infrastructure needed for reliable educational access.",
+      "evidence_quote": "other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to \nprovide reliable educational access;",
+      "evidence_start": 4024,
+      "evidence_end": 4222,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "ensure equitable access regardless of location or family finances",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Students deserve access to reliable, affordable connectivity regardless of where they live or their family’s financial circumstances.",
+      "evidence_quote": "the tools they need to learn and succeed regardless of where \nthey live or their family’s financial circumstances. I urge the Commission to protect E-Rate and \nensure that public schools can continue",
+      "evidence_start": 4803,
+      "evidence_end": 5002,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program should not be sunset or eliminated because broadband is essential infrastructure for modern education.",
+      "evidence_quote": ", just like electricity, transportation, and safe facilities. \n \nI therefore respectfully urge the Commission to: \n \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject",
+      "evidence_start": 3719,
+      "evidence_end": 3912,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should work with stakeholders to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "to \nprovide reliable educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education. \n \nE-Rate has enabled",
+      "evidence_start": 4182,
+      "evidence_end": 4378,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078263",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078263",
+  "filer_raw": "Cache Public Schools",
+  "date_submission": "2026-09-25T13:46:11.076Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d78d734b83f44473c7318540496d32ab5050815d76f29134abb9faddc4f942f4",
+  "params_key": "d59b43635ac2f439cf91b02d6523367ba5f9f36b16531e49f70cbc9cb744df60",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

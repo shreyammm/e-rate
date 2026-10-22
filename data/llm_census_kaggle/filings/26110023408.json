@@ -1,0 +1,50 @@
+{
+  "summary": "The comment argues that E‑Rate has been a successful federal investment and that proposed changes that narrow eligibility, impose impractical usage requirements, increase filtering mandates, or create new procurement barriers would reduce access to essential services and disproportionately harm communities that rely on public libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "do not increase filtering mandates",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Increasing filtering mandates would harm access to essential services and disproportionately affect communities that rely on public libraries.",
+      "evidence_quote": "reduce access to essential services and disproportionately harm the communities that rely most on public libraries. The proposed changes are concerning and could hurt many Arizonans' access to",
+      "evidence_start": 466,
+      "evidence_end": 658,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility standards",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would reduce access to essential services for communities that rely on public libraries.",
+      "evidence_quote": "enabled libraries and schools to provide the connectivity that residents need for education, employment, healthcare, civic participation, and lifelong learning. Any changes that narrow eligibility,",
+      "evidence_start": 159,
+      "evidence_end": 356,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110023408",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110023408",
+  "filer_raw": "David Robinson",
+  "date_submission": "2026-07-16T21:28:56.110Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "81aa8b370c062fd494c5a56c0313e780022e9fb0839a814ac97a28c132e6dae5",
+  "params_key": "a18785be7031f37a428de79fc274ba11de2993c11ac4ce0f5e179437efc463ec",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

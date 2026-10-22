@@ -1,0 +1,74 @@
+{
+  "summary": "The commenter urges the FCC to preserve E‑Rate’s core services, avoid cuts that would reduce access, increase administrative burden, or limit local flexibility, and to maintain library connectivity funding.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid limiting local flexibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The commenter contends that limiting local flexibility would reduce access for libraries and communities.",
+      "evidence_quote": "c Wi-Fi, maintenance, and cost-effective network solutions. I support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access,",
+      "evidence_start": 157,
+      "evidence_end": 348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve core services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The commenter believes that preserving E‑Rate’s core services is essential to maintain affordable broadband and connectivity for libraries and schools.",
+      "evidence_quote": "I respectfully urge the FCC to preserve the core services of E-Rate, including support for affordable broadband, Internet access, internal connections, public Wi-Fi, maintenance, and cost-effective",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid increased administrative burden",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The commenter argues that changes increasing administrative burden would harm local flexibility and access.",
+      "evidence_quote": "c Wi-Fi, maintenance, and cost-effective network solutions. I support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access,",
+      "evidence_start": 157,
+      "evidence_end": 348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve library connectivity funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The commenter states that library connectivity funding is essential for community services and economic opportunities.",
+      "evidence_quote": "y covers 90% of my local regional public library's (the Eastern Shore Public Library) entire connectivity funding, which is essential both for monthly service at it's four locations and for",
+      "evidence_start": 465,
+      "evidence_end": 654,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076587",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076587",
+  "filer_raw": "Charle Ricci",
+  "date_submission": "2026-09-14T16:38:12.845Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "298c6bed76682bcfc96240059dcb148c8c426eb8be9a1221bce4e187807fda63",
+  "params_key": "da05785a022f56b2fd199a183c6d219e5abad4a5aa51376e0a453fceeb9d88a1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

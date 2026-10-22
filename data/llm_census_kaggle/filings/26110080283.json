@@ -1,0 +1,88 @@
+{
+  "summary": "Central Catholic High School Business Manager urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, reduction, or unnecessary narrowing of eligibility, and calling for continued support for internal network infrastructure and modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that unnecessarily narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse communities.",
+      "evidence_quote": "afe facilities. I therefore respectfully urge the Commission to : Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or",
+      "evidence_start": 4048,
+      "evidence_end": 4247,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Current eligibility ensures all schools can provide reliable educational access regardless of location or family finances.",
+      "evidence_quote": "necessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserv e support for the connectivity and",
+      "evidence_start": 4207,
+      "evidence_end": 4403,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and its removal would directly harm students’ learning.",
+      "evidence_quote": "munications Commission (FCC) to preserve and s trengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 465,
+      "evidence_end": 664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is part of basic modern school infrastructure, comparable to electricity and transportation.",
+      "evidence_quote": "eserv e support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize",
+      "evidence_start": 4363,
+      "evidence_end": 4561,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "work with stakeholders to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernization is needed to keep pace with evolving instructional demands and technology.",
+      "evidence_quote": "stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate  has enabled schools (public and private) and libraries to build and maintain the connectivity",
+      "evidence_start": 4521,
+      "evidence_end": 4719,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080283",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080283",
+  "filer_raw": "Central Catholic High School Bloomington IL",
+  "date_submission": "2026-10-09T16:59:27.768Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2860baf1f302dc748c310d9ceef9ee4ce4580f81a6a350ec58845d44bebb59f8",
+  "params_key": "9c3f0398bd264b026457d3726e49ca535078cfe4d5873bdf5d0e872e85d31a34",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

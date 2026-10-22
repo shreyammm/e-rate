@@ -1,0 +1,50 @@
+{
+  "summary": "Lindale ISD supports maintaining the current E‑Rate structure and requests additional funding for content filtering to ensure a safe internet environment for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "add E‑Rate funding for content filtering",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district requests that E‑Rate funding be expanded to cover content filtering, a requirement of CIPA, to provide a safe and filtered internet experience for students.",
+      "evidence_quote": "E-Rate program stay structured as \nit is currently with one change. The one change needed is the addition of E-Rate funding for \ncontent filtering of student internet traffic, which is a requirement",
+      "evidence_start": 471,
+      "evidence_end": 669,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate structure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Lindale ISD argues that keeping the current E‑Rate structure prevents increased financial burdens and supports student educational needs.",
+      "evidence_quote": "Public Comment from Lindale ISD \nLindale ISD relies on the E-Rate program to help fund student internet service and the \nsupporting equipment needed to process student internet traffic. If funding is",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076685",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076685",
+  "filer_raw": "Lindale ISD",
+  "date_submission": "2026-09-15T15:28:23.192Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dee70467ae1b2be334452c24ab7b4bd20664cbc5a2e72b993e0d458111c812d0",
+  "params_key": "5d121c5179c05198c4aa0b826088b50bb0c875e1e227e28a49859e13fd720fb5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

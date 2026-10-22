@@ -1,0 +1,87 @@
+{
+  "summary": "The commenter urges the FCC to keep the E‑Rate program intact, arguing that cutting or reducing support would shift costs to local budgets, harm staff operations, and that targeted safety measures can address concerns without undermining connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "implement targeted safety measures",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The FCC can strengthen expectations on appropriate educational use, online safety, filtering, and accountability without undermining basic connectivity.",
+      "evidence_quote": "better and more targeted ways to address concerns regarding student internet use. The Commission can strengthen expectations regarding appropriate educational use, online safety, filtering, and",
+      "evidence_start": 1084,
+      "evidence_end": 1277,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "discussion_no_position",
+      "requested_action": "address harmful or inappropriate uses directly",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Targeted measures can address concerns about student internet use without reducing infrastructure support.",
+      "evidence_quote": "ional use, online safety, filtering, and accountability without undermining the basic connectivity on which public schools rely. The Commission should address harmful or inappropriate uses of",
+      "evidence_start": 1237,
+      "evidence_end": 1428,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would shift costs to already constrained state and local education budgets.",
+      "evidence_quote": "ficant reduction in E-Rate support would also risk shifting costs rather than eliminating them. School districts still need reliable internet access and network infrastructure. If federal assistance",
+      "evidence_start": 1547,
+      "evidence_end": 1745,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reducing E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reduced federal assistance would force districts to absorb internet costs, potentially compromising other educational priorities.",
+      "evidence_quote": "rk infrastructure. If federal assistance is reduced, those costs do not disappear. They must instead be absorbed through already constrained state and local education budgets, potentially competing",
+      "evidence_start": 1705,
+      "evidence_end": 1902,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve connectivity for staff",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "implementation_burden",
+      "argument": "Without reliable internet, school staff cannot communicate with parents, issue attendance notifications, or run essential school functions.",
+      "evidence_quote": "education budgets, potentially competing with funding for teachers, student services, instructional programs, facilities, and other educational priorities.  School staff without internet cannot",
+      "evidence_start": 1862,
+      "evidence_end": 2055,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "cipa_monitoring_privacy": "discussion_no_position",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080466",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080466",
+  "filer_raw": "Allison Hite",
+  "date_submission": "2026-10-10T10:35:44.848Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "13639c889896e66f7d0823031c46b49fd83ea5906ce1f7750a9bcf1f35dc983d",
+  "params_key": "465365d8cbe6cea34828bce29c56f1d2d344fb6fbcae63ba51d55ac5c7666604",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

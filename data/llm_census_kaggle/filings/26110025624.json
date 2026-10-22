@@ -1,0 +1,87 @@
+{
+  "summary": "The Pratt Public Library opposes any E‑Rate restrictions that would sunset funding, narrow eligible equipment or services, or impose additional administrative burdens, arguing that such measures would cripple rural library services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "oppose",
+      "requested_action": "avoid additional regulatory mandates",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Adding restrictive regulatory mandates and complex compliance burdens would penalize smaller, under‑staffed institutions.",
+      "evidence_quote": "our ability to provide robust, reliable internet access.\n\nFurthermore, adding restrictive regulatory mandates and complex compliance burdens only penalizes smaller, under-staffed institutions that",
+      "evidence_start": 767,
+      "evidence_end": 963,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing the scope of E‑Rate funding would place an unsustainable financial burden on the library’s budget.",
+      "evidence_quote": "the digital divide for patrons who rely on us for job applications, homework, remote work, and essential services. Narrowing the scope of E-Rate funding—particularly for internal connections or",
+      "evidence_start": 461,
+      "evidence_end": 654,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "keep full funding for internal connections",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Restricting internal connections or network infrastructure would directly compromise the library’s ability to provide robust, reliable internet access.",
+      "evidence_quote": "particularly for internal connections or network infrastructure—will place an unsustainable financial burden on our local budget and directly compromise our ability to provide robust, reliable",
+      "evidence_start": 614,
+      "evidence_end": 806,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset of E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The library argues that sunset provisions would eliminate a vital lifeline for rural communities.",
+      "evidence_quote": "As the administrator for Pratt Public Library in Pratt, Kansas, I am writing to express strong concern regarding the proposals in Docket 26-133 that would restrict E-Rate funding, limit",
+      "evidence_start": 0,
+      "evidence_end": 185,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "keep E‑Rate fully funded",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library urges the Commission to keep the program fully funded for communities that need it most.",
+      "evidence_quote": "restrict E-Rate technology funding, and instead focus on keeping this critical program accessible and fully funded for the communities that need it most.\n\nThank you for your time and consideration",
+      "evidence_start": 1076,
+      "evidence_end": 1272,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110025624",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110025624",
+  "filer_raw": "Pratt Public Library (Eric Scott Killough, Director)",
+  "date_submission": "2026-07-17T14:43:05.419Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ed009b6645c257f2d87855e7983ffa42985f86ac1daa38e71a59cd6ee27839ee",
+  "params_key": "c522191a1cf799d27f99f3f79f4a1d34f377cc4b331acb6ff5594576292171ed",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

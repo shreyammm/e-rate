@@ -1,0 +1,89 @@
+{
+  "summary": "The Gorham Free Library argues for preserving the core E‑Rate program, maintaining equitable discount methodology, protecting CIPA requirements, and keeping consortium and eligibility rules broad and practical.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of patron privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "CIPA rules must remain workable and not compromise patron privacy.",
+      "evidence_quote": "libraries and library systems the same, where their missions and user environments differ. • Keep CIPA requirements practical, technically feasible, and respectful of patron privacy. • Make",
+      "evidence_start": 4654,
+      "evidence_end": 4843,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "support",
+      "requested_action": "Maintain workable consortium Form 479 requirements",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Consortium filing rules should be realistic and not penalize members for delayed filings.",
+      "evidence_quote": "and respectful of patron privacy. • Make consortium Form 479 requirements workable and do not allow delayed or non-filing members to jeopardize an entire consortium. • Maintain a broad, workable",
+      "evidence_start": 4803,
+      "evidence_end": 4997,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Discounts should be based on local cost and need rather than a one‑size‑fits‑all formula.",
+      "evidence_quote": "e annual school district budget vote. 5. RECOMMENDATION • Preserve the core E-Rate program. • Ensure any changes to discount methodology reflect true local cost and need, and do not",
+      "evidence_start": 4355,
+      "evidence_end": 4536,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "conditional_or_amend",
+      "requested_action": "Do not treat urban and rural libraries the same",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Urban and rural libraries have different missions and user environments, requiring differentiated treatment.",
+      "evidence_quote": "ect true local cost and need, and do not disproportionately harm libraries serving high-need, rural, or high-cost communities. • Do not treat urban and rural libraries and library systems the same,",
+      "evidence_start": 4496,
+      "evidence_end": 4693,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The library contends that eliminating or drastically reducing E‑Rate would impose unsustainable costs and operational burdens on rural libraries.",
+      "evidence_quote": "e annual school district budget vote. 5. RECOMMENDATION • Preserve the core E-Rate program. • Ensure any changes to discount methodology reflect true local cost and need, and do not",
+      "evidence_start": 4355,
+      "evidence_end": 4536,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "consultant_form_5654": "support",
+    "discount_matrix": "conditional_or_amend",
+    "erate_eligibility_scope": "conditional_or_amend",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080365",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080365",
+  "filer_raw": "Gorham  Free Library (OWWL Library System)",
+  "date_submission": "2026-10-09T20:47:01.214Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "64bc507beb7d83710e6905a8d0fe63d1dc103ea9261ee164e0ed96062042e41b",
+  "params_key": "3278b5d7fd9284a6603a334bc775151d0f3ffad41592dca4cf3606fd7aad2963",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

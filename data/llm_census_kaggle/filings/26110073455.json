@@ -1,0 +1,75 @@
+{
+  "summary": "The School District of Lodi urges the FCC to keep E‑Rate funding intact, arguing that the program is essential for reliable connectivity, equitable access, and local control over technology use. They also oppose any FCC‑mandated screen‑time limits, insisting such decisions should remain with local school boards.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "continue E‑Rate funding to support equitable access",
+      "reason_family": "other",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has helped create more equitable access to reliable technology for students across the country, including those in smaller districts.",
+      "evidence_quote": "ructure schools need to educate students in a modern learning environment. \nE-Rate has helped create more equitable access to reliable technology for students across \nthe country, including students",
+      "evidence_start": 2035,
+      "evidence_end": 2233,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is the only dedicated funding source that allows the district to maintain and upgrade essential technology infrastructure.",
+      "evidence_quote": "8.27.26  \n \nTo Whom This May Concern, \nThe School District of Lodi strongly urges the Federal Communications Commission to \nmaintain E-Rate as a dependable source of funding for school connectivity",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not reduce E‑Rate discounts or eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing discounts or narrowing eligible services would devastate districts like Lodi by forcing cuts to teachers and delaying necessary upgrades.",
+      "evidence_quote": "instruction, assessment, \ncommunication, collaboration, and access to educational resources. Limiting E-Rate \neligibility, reducing discounts, or narrowing the services and infrastructure that",
+      "evidence_start": 788,
+      "evidence_end": 980,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "maintain local control over screen‑time decisions",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Decisions about student screen time and instructional technology use should be made by local school boards, educators, families, and communities, not by the FCC.",
+      "evidence_quote": "at technology is used appropriately \nand responsibly with students. However, decisions regarding student screen time and the \ninstructional use of technology are best made locally by school boards,",
+      "evidence_start": 1719,
+      "evidence_end": 1916,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073455",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073455",
+  "filer_raw": "School District of Lodi",
+  "date_submission": "2026-08-27T23:27:10.486Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d95981c0a5995ea3bb1f52abce61ebff3b47c591c45891e999b48a87e75fef97",
+  "params_key": "f6495826c225ab828eefa8e9e116cab8bdb56c27b01ac74e7c96821e663c567f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,86 @@
+{
+  "summary": "Letter from a Michigan congresswoman strongly opposes any reduction or sunset of the E‑Rate program, arguing that the program is essential for school operations, student safety, and equitable access to broadband. She urges the FCC to reject proposals that would limit funding or broaden the program’s scope.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility and scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Expanding the program too broadly or limiting its availability would undermine the safety and functionality of nearly 102,000 schools.",
+      "evidence_quote": "nding.3 \nThis NPRM also seeks comment on whether the E-Rate program has expanded too broadly to cover a range of\nservices under the term of “educational purposes,” as described in Section 254 of the",
+      "evidence_start": 2150,
+      "evidence_end": 2348,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter raises concerns about the program’s scope but does not explicitly propose an alternative design.",
+      "evidence_quote": "accomplished through this rulemaking. In curtailing access to broadband, the Commission would simply eliminate\na wealth of teaching tools that would otherwise be available to schools. The question of",
+      "evidence_start": 2779,
+      "evidence_end": 2978,
+      "uncertain": true
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction of E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for school operations and student safety, and cutting its funding would force districts to make impossible budgetary choices.",
+      "evidence_quote": "ongress’s Vision (WC DOCKET Nos. 26-133, 13-\n184, 21-93, 21-455). This proposed rule is deeply concerning, and I urge the Commission to reject proposals that\nwould reduce or eliminate funding for the",
+      "evidence_start": 305,
+      "evidence_end": 504,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Any reduction in funding would force districts to cut staffing, transportation, curriculum, and student support services.",
+      "evidence_quote": "afford these services without additional support. Any reduction in funding would simply\nforce school districts across the country to make impossible choices between staffing, transportation,",
+      "evidence_start": 1243,
+      "evidence_end": 1433,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals that limit availability of funds",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should not limit the availability of E‑Rate funds to communities that rely on them for essential services.",
+      "evidence_quote": "rnet services. \nI urge the Commission to reconsider the parameters of this proposed rule, and to reject any proposals that would\nlimit the availability of these funds to the communities relying on",
+      "evidence_start": 4238,
+      "evidence_end": 4434,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081076",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081076",
+  "filer_raw": "Congresswoman Hillary Scholten",
+  "date_submission": "2026-10-13T18:06:47.655Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cfd004e09b5cba749a828e098346a5cbf4eb7d96dbc52c133bb64689e0fdc663",
+  "params_key": "ccfd50d882e541f186ae1302091a866b827e227abb546eabe7cf44c0ec1c8e16",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

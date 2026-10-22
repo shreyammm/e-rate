@@ -1,0 +1,89 @@
+{
+  "summary": "The National Alliance for Public Charter Schools opposes any sunset, phase‑down, or narrowing of the E‑Rate program, arguing that such actions would disproportionately harm charter schools, compromise school safety, undermine essential connectivity, and exclude urban and low‑income schools from needed support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "Reducing E‑Rate support would jeopardize safety infrastructure such as surveillance cameras and emergency communication systems.",
+      "evidence_quote": "dinate a \nresponse can fail with it. The same is true of the security infrastructure schools have invested in \nover the past decade: surveillance cameras, electronic door-access controls, and",
+      "evidence_start": 1864,
+      "evidence_end": 2055,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "E‑Rate funding supports the Children’s Internet Protection Act requirements; cuts would remove these safeguards.",
+      "evidence_quote": "en its doors. Reducing support \nfor this infrastructure would not make schools safer. It would jeopardize the systems that keep \nstudents safe. We also note that the child-safety obligations of the",
+      "evidence_start": 2323,
+      "evidence_end": 2520,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing of eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing E‑Rate eligibility would exclude many charter schools that serve high‑need students and lack economies of scale.",
+      "evidence_quote": "ot to sunset, phase down, or narrow \nthe E-Rate program, which is essential to public charter schools and the students they serve. Like \nall public schools, public charter schools depend on reliable",
+      "evidence_start": 618,
+      "evidence_end": 816,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or phase‑down",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Sunsetting or phasing down E‑Rate would severely disadvantage charter schools that rely on affordable broadband for core operations.",
+      "evidence_quote": "ot to sunset, phase down, or narrow \nthe E-Rate program, which is essential to public charter schools and the students they serve. Like \nall public schools, public charter schools depend on reliable",
+      "evidence_start": 618,
+      "evidence_end": 816,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "reject limiting to rural or single‑provider areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Limiting support to rural or single‑provider areas would exclude urban and low‑income charter schools that need connectivity.",
+      "evidence_quote": "libraries benefit to rural communities — they named rural, urban, \nhigh-cost, and low-income areas together. A geographic or provider-based limit would exclude \nurban and low-income schools, many of",
+      "evidence_start": 4174,
+      "evidence_end": 4372,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "cipa_network_filter": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073191",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073191",
+  "filer_raw": "National Alliance for Public Charter Schools",
+  "date_submission": "2026-08-26T14:05:11.717Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a3bdc139ab6a47b505dc67601040968f3d982122a13500b2bb064ec58f083f10",
+  "params_key": "52909bd98681fa6f7cdbe86a53c9a78268fc3a07166ad85dac9cc488d35fba27",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

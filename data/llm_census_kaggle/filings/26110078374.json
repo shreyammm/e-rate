@@ -1,0 +1,88 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, reduction, or unnecessary narrowing of eligibility, and calling for continued support for school connectivity and internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Unnecessary narrowing of eligibility would leave students without adequate support.",
+      "evidence_quote": "sunset or eliminate the E-Rate program; \n2.  ​\nReject proposals that would unnecessarily narrow E-Rate eligibility or restrict \nsupport based solely on geography or other criteria that would leave",
+      "evidence_start": 3117,
+      "evidence_end": 3313,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "cations Commission (FCC) to preserve and strengthen \nthe E-Rate program and to reject any proposal that would eliminate, sunset, substantially \nreduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 465,
+      "evidence_end": 661,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable internal network infrastructure to provide educational access.",
+      "evidence_quote": "ucture schools \nneed to provide reliable educational access; and \n4.  ​\nWork with schools and other stakeholders to strengthen and modernize E-Rate \nrather than reduce its role in public education.",
+      "evidence_start": 3424,
+      "evidence_end": 3621,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain connectivity and upgrade infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity must be maintained, upgraded, secured, and scaled as instructional demands evolve.",
+      "evidence_quote": "act that schools are connected today is, in \nlarge part, evidence of the success of E-Rate — not evidence that the need for the program has \ndisappeared. Connectivity must be maintained, upgraded,",
+      "evidence_start": 1247,
+      "evidence_end": 1443,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The FCC should work with schools to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "tudents and patrons to participate fully in modern education. As our \nnation seeks to prepare students for college, careers, and an increasingly technology-driven \neconomy, now is not the time to",
+      "evidence_start": 3740,
+      "evidence_end": 3935,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078374",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078374",
+  "filer_raw": "Middleton-Cross Plains Area School District",
+  "date_submission": "2026-09-25T20:01:17.189Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "484a6d34965dd2a25fe5c01bd2af0309c2375a60368c65ba470ddfa3d76e1675",
+  "params_key": "34713b578cdfd64e1a8c7c18824e6292573bfb18524cbf747c041520ca209fed",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

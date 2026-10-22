@@ -1,0 +1,63 @@
+{
+  "summary": "A parent argues against E‑Rate conditions that would limit screen time, require adult supervision of devices, or mandate third‑party filtering on personal devices, claiming these would harm disabled students’ communication rights.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "Reject third‑party filtering on personal devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Mandating filtering on personal devices would force families to choose between privacy and the child’s ability to speak.",
+      "evidence_quote": "ability to communicate, which is a basic civil right.\n\nThird, requiring students who bring their own devices to install third-party filtering software — or barring personal devices from school",
+      "evidence_start": 941,
+      "evidence_end": 1133,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "oppose",
+      "requested_action": "Reject adult‑supervision requirement for device use",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Requiring adult supervision would effectively deny disabled students the ability to communicate, violating a basic civil right.",
+      "evidence_quote": "licitly exempt assistive technology used for communication.\n\nSecond, conditioning funding on \"adult supervision\" of all device use would mean students who use AAC could not keep their communication",
+      "evidence_start": 627,
+      "evidence_end": 824,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Reject screen‑time limits on E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time limits would deny disabled students access to essential assistive communication devices.",
+      "evidence_quote": "proposals in this proceeding that would make E-Rate funding conditional on screen-time limits and device restrictions, because they would directly harm students like my son — students who depend on",
+      "evidence_start": 159,
+      "evidence_end": 356,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "parent_opt_out": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080400",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080400",
+  "filer_raw": "Abiot Frew",
+  "date_submission": "2026-10-10T00:53:45.266Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "669f00ff47fc949bc89adf82121e5876f81b08821d547a4479d32b624ab7ab4c",
+  "params_key": "71f05d3d3ab9a0949b314560b7d86280ffc35fecdf0699c4fd11727cc8ebbd6d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

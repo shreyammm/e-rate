@@ -1,0 +1,62 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, elimination, or unnecessary narrowing of eligibility, and calling for continued support for school connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that unnecessarily narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access.",
+      "evidence_quote": "any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would",
+      "evidence_start": 2171,
+      "evidence_end": 2369,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Maintaining connectivity and internal network support is vital for modern educational operations.",
+      "evidence_quote": "n geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable",
+      "evidence_start": 2329,
+      "evidence_end": 2517,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to ensure reliable broadband for students.",
+      "evidence_quote": "C) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries. As",
+      "evidence_start": 462,
+      "evidence_end": 660,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077378",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077378",
+  "filer_raw": "St. Benedict’s Preparatory School",
+  "date_submission": "2026-09-21T14:04:16.493Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8074fc3fcc498d447b1c463a3915aec01af5e9379888d92d77cfe335f9f8da09",
+  "params_key": "8c5822c1a737fd48aac4fc03782f77d5fb831e9272af884a8cb3ba18ac06a9fa",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

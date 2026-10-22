@@ -1,0 +1,86 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program intact, oppose any reductions or narrowing, and expand it to include security equipment and services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any plan to reduce, narrow or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for schools and libraries and cutting it would cause catastrophic funding losses.",
+      "evidence_quote": "ed with the knowledge that we would have funding in the years to come to the five-year equipment cycles with which we keep our networks in good working order.  Reducing or eliminating E-rate funding",
+      "evidence_start": 625,
+      "evidence_end": 823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any plan to reduce, narrow or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "No other federal, state or local program can replace the funding lost if the E‑Rate program is cut.",
+      "evidence_quote": "Reducing or eliminating E-rate funding would result in a heavy loss to us and to our students and greater community. There are currently no other programs at a federal, state or local level that",
+      "evidence_start": 785,
+      "evidence_end": 979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "keep the E‑Rate program intact",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The program is needed now as much as ever and is critical for internet access in schools.",
+      "evidence_quote": "increased connectivity is only growing. The E-rate program is needed now as much as it ever was and we urge the Commission to keep it intact rather than reducing or eliminating it. In fact, we",
+      "evidence_start": 1412,
+      "evidence_end": 1604,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "expand the E‑Rate program to include security equipment and services",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Security equipment and services are sorely needed and should be funded under E‑Rate.",
+      "evidence_quote": "reducing or eliminating it. In fact, we suggest that the Commission expand the E-rate program to include security equipment and services as those items are sorely needed. Again, we respectfully ask",
+      "evidence_start": 1565,
+      "evidence_end": 1762,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "expand the E‑Rate program to include security equipment and services",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Expanding funding to security will address growing needs in that area.",
+      "evidence_quote": "ogram expand funding to include security equipment and services in order to address growing needs in that area. Our students and communities have succeeded due to this program. Please ensure that",
+      "evidence_start": 2038,
+      "evidence_end": 2233,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080587",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080587",
+  "filer_raw": "Crestwood Local Schools",
+  "date_submission": "2026-10-12T14:45:33.401Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d018c3d66561e7b9343f7cb3b34b49e335a1da254bdac9b9725d4124b6d50faa",
+  "params_key": "3d3ea64280888bf34eae4ebb9d1c0a994153732da1413bf8ae5b7d41770f7717",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

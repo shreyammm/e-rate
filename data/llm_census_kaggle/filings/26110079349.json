@@ -1,0 +1,86 @@
+{
+  "summary": "Bucks County Free Library urges the FCC to preserve and strengthen the E‑Rate program and to reject any proposal that would eliminate, reduce, or restrict E‑Rate support for schools and libraries, and it opposes mandatory screen‑time monitoring.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal that would eliminate, reduce, or restrict E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library argues that eliminating or restricting E‑Rate would increase costs and reduce access to high‑speed internet for patrons.",
+      "evidence_quote": "Free Library and its Board of Directors, I am writing to urge the Federal\nCommunications Commission to preserve and strengthen the E-Rate program, and to reject any \nproposal that would eliminate,",
+      "evidence_start": 630,
+      "evidence_end": 826,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal that would eliminate, reduce, or restrict E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library states that without the 40% discount, monthly bills would rise from $770.51 to $1,284.18, burdening the budget.",
+      "evidence_quote": "buildings, and Category \n2 on networking equipment inside our buildings, our internet access would be much costlier, less \nmodern and less safe. Our monthly bills from Zayo and Verizon for our seven",
+      "evidence_start": 2811,
+      "evidence_end": 3009,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal that would eliminate, reduce, or restrict E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "The library estimates that eliminating Category 2 savings would cost $450,000 in the last funding window.",
+      "evidence_quote": "ills from Zayo and Verizon for our seven buildings would \nincrease from $770.51 to $1284.18 based on the Category 1 discount. Our Category 2 savings \ntotaled up to $450,000 in our last funding window",
+      "evidence_start": 2969,
+      "evidence_end": 3168,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "leave screen‑time monitoring at the local level",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The library contends that mandatory time‑based monitoring would add unnecessary software and staff costs.",
+      "evidence_quote": "and screen time monitoring at the \nlocal level with the organizations that are already administering their networks and filters, instead of \nimposing mandatory restrictions. The increase in software",
+      "evidence_start": 3751,
+      "evidence_end": 3949,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "leave screen‑time monitoring at the local level",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The library notes that extra monitoring would create an unnecessary layer of complications for schools.",
+      "evidence_quote": "ts, who have the means \nand knowledge to apply the correct level of network restrictions based on the level of activity on their \nnetworks, the extra level of monitoring would add another unnecessary",
+      "evidence_start": 4067,
+      "evidence_end": 4266,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079349",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079349",
+  "filer_raw": "Bucks County Free Library",
+  "date_submission": "2026-10-05T12:58:20.463Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "33500e602f003c56ec7ffba77889a2424512fb3582f245a764d3bcd552572daa",
+  "params_key": "329598a5e7e1b86b722833ae15366ae33ad18475867dd8a1610431acd62c093f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

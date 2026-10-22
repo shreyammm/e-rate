@@ -1,0 +1,88 @@
+{
+  "summary": "Montezuma‑Cortez School District urges the FCC to preserve the core E‑Rate program, oppose narrowing the scope of eligible services, and maintain current discount methodology to avoid harming high‑need rural districts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "Maintain current discount methodology",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district warns that reducing discounts would force drastic cuts to connectivity and widen the gap between high‑need and wealthier districts.",
+      "evidence_quote": "y for E-Rate based upon our high poverty rate in Southwest Colorado.  We are also a rural area,\nso many times it is not profitable for companies to provide services at the level that we would need",
+      "evidence_start": 2768,
+      "evidence_end": 2964,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Preserve current eligibility for all E‑Rate services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district argues that narrowing the scope of eligible services would disproportionately harm high‑poverty, rural schools that rely on E‑Rate to maintain essential connectivity.",
+      "evidence_quote": "to connect our district.  These services are\nessential for our district connectivity.  We do not believe the program scope should be narrowed.  We also\nrely heavily upon internal connections to",
+      "evidence_start": 2460,
+      "evidence_end": 2653,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district contends that sunsetting or significantly reducing the program would reduce access to affordable broadband for students.",
+      "evidence_quote": "nstruction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n• Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation,",
+      "evidence_start": 3849,
+      "evidence_end": 4048,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "Simplify and prevent fraud",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The district supports thoughtful improvements, simplification, and fraud prevention but opposes changes that increase administrative burden.",
+      "evidence_quote": "l connections, Wi-Fi, maintenance,\n\n\nand cost-effective network solutions. We support thoughtful improvements, simplification, and fraud\nprevention, but ask the FCC to avoid changes that would reduce",
+      "evidence_start": 4624,
+      "evidence_end": 4823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "Avoid changes that reduce access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The district urges the FCC to avoid changes that would reduce access, increase administrative burden, or limit local flexibility.",
+      "evidence_quote": "e FCC to avoid changes that would reduce access, increase administrative burden, or\nlimit local flexibility for schools and students.\nRespectfully submitted,\nMark Knox\nTechnology",
+      "evidence_start": 4783,
+      "evidence_end": 4961,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081072",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081072",
+  "filer_raw": "Montezuma-Cortez School District",
+  "date_submission": "2026-10-13T18:00:45.012Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1f1516ecdc1cc566ea90a315dcc6a21a4024b1b65e9111308f846b49648d18bc",
+  "params_key": "bf6f6ca27b38272110301807e815622fe9f65cbbafc051014fa9084aa1bafb95",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

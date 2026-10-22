@@ -1,0 +1,88 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, rejecting proposals to sunset it, narrow eligibility, or cut support for internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support, undermining equitable access.",
+      "evidence_quote": "respectfully urge the Commission to: \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 3265,
+      "evidence_end": 3460,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating E‑Rate would directly harm schools’ ability to maintain essential broadband infrastructure.",
+      "evidence_quote": "respectfully urge the Commission to: \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 3265,
+      "evidence_end": 3460,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Modernizing the program will improve efficiency and effectiveness for schools.",
+      "evidence_quote": "stakeholders to strengthen and modernize E-Rate rather than reduce \nits role in education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity",
+      "evidence_start": 3726,
+      "evidence_end": 3918,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter emphasizes the importance of E‑Rate for preparing students for a technology‑driven economy.",
+      "evidence_quote": "re students for college, careers, and an increasingly technology-driven economy, now is not the \ntime to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4026,
+      "evidence_end": 4225,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network support is essential for reliable educational access, comparable to electricity and transportation.",
+      "evidence_quote": "upport for the connectivity and internal network infrastructure schools need to provide \nreliable educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize",
+      "evidence_start": 3572,
+      "evidence_end": 3766,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077513",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077513",
+  "filer_raw": "Philip Forcier",
+  "date_submission": "2026-09-21T20:46:18.273Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "0642f330e249e4b853d16b75703e753086fd7040891bd8c8b4544476eda4e60b",
+  "params_key": "777698e3c00223816cd528dc5f3399f8b970caa8dbbf6f89df51e2e78a713f79",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

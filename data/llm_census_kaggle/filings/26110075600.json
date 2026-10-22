@@ -1,0 +1,88 @@
+{
+  "summary": "Jeff Koenig, Superintendent of Stanley‑Boyd School District, urges the FCC to preserve and strengthen the E‑Rate program, opposing sunset proposals, eligibility restrictions, and shifting costs to local budgets while emphasizing the need for reliable broadband infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Avoid eligibility restrictions based solely on geography, poverty level, or provider count",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restrictions would leave schools without adequate support.",
+      "evidence_quote": "posals to sunset or eliminate the E-Rate program; \n2.​ Avoid eligibility restrictions based solely on geography, poverty level, or provider count when those \nrestrictions would leave schools without",
+      "evidence_start": 2620,
+      "evidence_end": 2818,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E‑Rate program",
+      "reason_family": "statutory_authority",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for modern education and should not be eliminated.",
+      "evidence_quote": "ommunications Commission to preserve and strengthen the E-Rate program and reject \nproposals that would eliminate, sunset, substantially reduce, or unnecessarily restrict support for schools \nand",
+      "evidence_start": 455,
+      "evidence_end": 650,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable internal networks to provide educational access.",
+      "evidence_quote": "restrictions would leave schools without adequate support; \n3.​ Preserve support for the connectivity and internal network infrastructure schools need to provide \nreliable educational access; and",
+      "evidence_start": 2778,
+      "evidence_end": 2973,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "Prevent shifting E‑Rate costs to local school budgets",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate support would shift costs to local budgets, competing with other priorities.",
+      "evidence_quote": "olve. \nReducing E-Rate support would not eliminate these costs; it would shift more of them to local school \nbudgets, where they would compete with staffing, instructional programs, student services,",
+      "evidence_start": 2001,
+      "evidence_end": 2200,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Maintain reliable broadband connectivity for all students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Connectivity is essential for instruction, safety, and operations regardless of geography or wealth.",
+      "evidence_quote": "able connectivity must remain accessible regardless of \ngeography or local wealth. \nThank you for considering these comments and the experience of Stanley-Boyd School District. \nRespectfully, \nJeff",
+      "evidence_start": 3396,
+      "evidence_end": 3593,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075600",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075600",
+  "filer_raw": "Stanley-Boyd Area School District",
+  "date_submission": "2026-09-04T18:16:35.927Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b202f3d75eaa4669feb2ba5c4af5114563064c482e0d7b714db114ef65656655",
+  "params_key": "d99e73ab7d337fb8b12b8445b19cf76ad50852ad330488ea7672e87cbd399474",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

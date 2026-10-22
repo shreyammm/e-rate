@@ -1,0 +1,49 @@
+{
+  "summary": "Teacher Andy Nguyen urges the FCC to preserve the E‑Rate program and oppose any cuts or sunset, arguing that reducing funding would harm students’ access to technology and learning resources.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must be preserved to ensure students have reliable internet access for learning.",
+      "evidence_quote": "Dear Chairman Carr,\n\nMy name is Andy Nguyen, and I am a Teacher in Lakewood, California. I urge the Federal Communications Commission to preserve and protect the E-Rate program and to oppose any",
+      "evidence_start": 0,
+      "evidence_end": 194,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose cuts to E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would deprive students of essential technology and resources needed for projects and assignments.",
+      "evidence_quote": "of students depend on every single day. \n\nPublic schools are already poorly underfunded and losing even further access to resources only hurts our students and future generations. My students would",
+      "evidence_start": 313,
+      "evidence_end": 510,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077324",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077324",
+  "filer_raw": "Andy Nguyen",
+  "date_submission": "2026-09-20T22:45:22.642Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "de30f18d1efb24e16439ce99139b97003845c0dd2417c2935f0f96fc006e360e",
+  "params_key": "96343c3a045c8f96f9feaf35c8769f2ac9e6458acbc0bcf575ebf9ca44b3f007",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

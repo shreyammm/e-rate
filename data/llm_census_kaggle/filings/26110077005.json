@@ -1,0 +1,63 @@
+{
+  "summary": "Tri‑Township Public Library District opposes proposals to sunset or restrict E‑Rate, arguing the program is essential for budget predictability, modern infrastructure, and cannot be replaced by temporary federal funds.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "retain Category Two infrastructure funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Category Two support is critical for modern internal networking, comparable to plumbing and electricity.",
+      "evidence_quote": "verlooks how modern education functions. Digital literacy is no \nlonger elective; it is foundational. Wi-Fi networks, robust routing, and reliable internal switches \nare just as critical to a modern",
+      "evidence_start": 1547,
+      "evidence_end": 1745,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The library’s operational budget relies on predictable E‑Rate discounts, and sunset would force costly reallocations.",
+      "evidence_quote": "ets. E-Rate discounts are built directly \ninto our long-term fiscal planning. If E-Rate funding were sunset or restricted, Tri-Township \nPublic Library District would be forced to divert tens of",
+      "evidence_start": 924,
+      "evidence_end": 1118,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "reject substitution of BEAD for ongoing E‑Rate service discounts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "BEAD funds are temporary and do not cover monthly telecommunications discounts or internal networking.",
+      "evidence_quote": "ike BEAD are vital for building physical footprint infrastructure in \nunserved regions, they do not fund the ongoing, monthly telecommunications service discounts \nor the internal localized",
+      "evidence_start": 2015,
+      "evidence_end": 2204,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077005",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077005",
+  "filer_raw": "Tri-Township Public Library District",
+  "date_submission": "2026-09-18T18:57:07.701Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fba81d027d6a6b2012279b85f068afa012c9008d082f35e8ae984015abbe15f8",
+  "params_key": "6abc34545535edd8a5a25e583c62729b98357302c5f73c451ccf4b5801ef1fda",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

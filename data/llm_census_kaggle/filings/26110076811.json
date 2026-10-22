@@ -1,0 +1,87 @@
+{
+  "summary": "Hudson School District urges the FCC to preserve and strengthen E‑Rate, oppose restrictive eligibility rules, and maintain internal network support while arguing that reduced funding would burden local budgets and that connectivity is not synonymous with unrestricted screen time.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility restrictions based solely on geography, poverty level, or provider count",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility restrictions that ignore local needs would leave schools without adequate support.",
+      "evidence_quote": "e E-Rate program; \n2.​ Avoid eligibility restrictions based solely on geography, poverty level, or provider count when those \nrestrictions would leave schools without adequate support; \n3.​ Preserve",
+      "evidence_start": 2935,
+      "evidence_end": 3133,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "reject proposals to sunset or eliminate E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Hudson School District believes that eliminating or sunsetting E‑Rate would remove essential broadband support for schools.",
+      "evidence_quote": "the Federal Communications Commission to preserve and strengthen the E-Rate program and reject \nproposals that would eliminate, sunset, substantially reduce, or unnecessarily restrict support for",
+      "evidence_start": 462,
+      "evidence_end": 657,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate support would shift costs to local school budgets, competing with other priorities.",
+      "evidence_quote": "ot eliminate these costs; it would shift more of them to local school \nbudgets, where they would compete with staffing, instructional programs, student services, transportation, \nfacilities, and",
+      "evidence_start": 2322,
+      "evidence_end": 2516,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "School connectivity is not synonymous with unrestricted student screen time; decisions about technology use are made locally.",
+      "evidence_quote": "rvices, transportation, \nfacilities, and other priorities. \nSchool connectivity is also not synonymous with unrestricted student screen time. Decisions about when \nand how technology supports",
+      "evidence_start": 2476,
+      "evidence_end": 2667,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is critical for reliable educational access and must be maintained.",
+      "evidence_quote": "without adequate support; \n3.​ Preserve support for the connectivity and internal network infrastructure schools need to provide \nreliable educational access; and \n\n\n \n4.​ Work with schools,",
+      "evidence_start": 3094,
+      "evidence_end": 3284,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076811",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076811",
+  "filer_raw": "School District of Hudson",
+  "date_submission": "2026-09-16T16:50:50.882Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "126fdb1e3f77a73c5b29e049867fbe8604f9e8ddafb74240b4135f840d4d3516",
+  "params_key": "2ea09d16c1bf85481b9bac84a43b608eced50f1a1b36b400d03542cabd9b6e3b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

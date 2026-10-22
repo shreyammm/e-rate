@@ -1,0 +1,87 @@
+{
+  "summary": "Tallmadge City Schools opposes any termination or limitation of the E‑Rate program, arguing that such actions would double district costs, jeopardize network upgrades, and leave vulnerable students without reliable broadband and hardware support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility for all urban areas",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would leave vulnerable communities behind that lack dedicated resources to maintain or upgrade their networks.",
+      "evidence_quote": "upgrading those networks. Cutting E-Rate also threatens to leave vulnerable communities behind that don't have dedicated resources to\nIf the FCC terminates or limits E-Rate funding,\nCategory 1: Loss",
+      "evidence_start": 1406,
+      "evidence_end": 1604,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "retain Category I subsidies for high‑speed internet and fiber",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district currently receives a 50‑60% discount on Category I telecommunications costs, which is essential for meeting state testing and other requirements.",
+      "evidence_quote": "rnal broadband access.\n• Discount Level: Based on district free-and-reduced-price lunch (NSLP) eligibility rates, Tallmadge typically qualifies for a 50% to 60% discount on\nCategory I",
+      "evidence_start": 1872,
+      "evidence_end": 2055,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "retain Category II hardware replacement subsidies",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Without Category II subsidies, the district would face full‑price outlays to refresh aging switches, Wi‑Fi access points, and firewalls, risking network downtime and cybersecurity.",
+      "evidence_quote": "e.\nConsequence: Without these subsidies, Tallmadge would periodically face full-price outlays of tens to hundreds of thousands of dollars to refresh aging\nswitches, replace classroom Wi-Fi access",
+      "evidence_start": 3235,
+      "evidence_end": 3430,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would double the district’s out‑of‑pocket costs for wide‑area network and broadband services, forcing the general fund to absorb tens of thousands of dollars per year.",
+      "evidence_quote": "et costs for wide area network (WAN) and broadband services,\nforcing the general fund to absorb tens of thousands of dollars per year in direct cost increases to maintain current bandwidth levels.",
+      "evidence_start": 2167,
+      "evidence_end": 2363,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not propose any alternative design or policy change beyond opposing cuts.",
+      "evidence_quote": "EMPOWER EVERYBODY EVERYDAY\nLMADO\nTALLMADGE CITY SCHOOLS\nMcCombs Education Center\nSCHOO\nTallmadge, OH 44278\n486 East Avenue\nP: 330-633-3291\nF: 330-633-5331\ntallmadgeschools.org\nSeptember 15,",
+      "evidence_start": 0,
+      "evidence_end": 189,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076701",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076701",
+  "filer_raw": "Tallmadge City School District",
+  "date_submission": "2026-09-15T17:23:30.224Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "2461bc72049775603426951d7a722f5e57ec070ae865328a2d309a7ff65d871c",
+  "params_key": "744ebdc480907c34132ed731376eb0a48776e0a01a4a1c9b0a97c0ec57a9bef9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

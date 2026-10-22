@@ -1,0 +1,89 @@
+{
+  "summary": "A parent of a Montgomery County Public Schools student urges the FCC to keep the E‑Rate program but to impose stricter conditions on its use, including stronger CIPA enforcement, curriculum and screen‑time controls, supervised access models, audit‑based certification, parental notice and opt‑out rights, and AI consent requirements.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "support",
+      "requested_action": "require curricula prioritizing teacher‑led instruction",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate schools should adopt curricula that prioritize teacher‑led instruction, books, and handwriting, using technology only as an enhancement.",
+      "evidence_quote": "te schools to:\n\n-          Adopt and use curricula that prioritize teacher-led instruction, books, and handwriting, using technology only as an enhancement, not a replacement;\n\n-          Report",
+      "evidence_start": 781,
+      "evidence_end": 975,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "replace CIPA certifications with audits",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "alternative_design",
+      "argument": "Existing CIPA certifications should be replaced with meaningful audits that test whether minors can reach obscenity and other harmful content.",
+      "evidence_quote": "n one-to-one take-home devices;\n\n-          Replace existing CIPA certifications with meaningful audits that test whether minors can reach obscenity and other harmful content;\n\n-          Provide",
+      "evidence_start": 1248,
+      "evidence_end": 1443,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "strengthen enforcement of CIPA",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should strengthen its enforcement of the Children’s Internet Protection Act to combat digital distraction and prevent access to inappropriate content.",
+      "evidence_quote": "raphic content, all of which is far more pervasive on the internet now than it was when E-Rate began. \n\nThe FCC should strengthen its enforcement of the Children’s Internet Protection Act (CIPA) to",
+      "evidence_start": 468,
+      "evidence_end": 665,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_public_hearings",
+      "position": "support",
+      "requested_action": "provide notice to parents and parental opt‑out right",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Schools must provide notice to parents about what content students access in school and how much time students spend on a screen, and provide a parental opt‑out right that will not penalize or ostracize a student.",
+      "evidence_quote": "her harmful content;\n\n-          Provide notice to parents about what content students access in school and how much time students spend on a screen;\n\n-          Provide a parental opt-out right that",
+      "evidence_start": 1403,
+      "evidence_end": 1602,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "report instructional screen time and certify limits",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "Schools must report instructional screen time by grade level and certify that E‑Rate‑funded networks are not used to exceed reasonable daily limits, especially in elementary school.",
+      "evidence_quote": "t, not a replacement;\n\n-          Report instructional screen time by grade level and certify that E-Rate-funded networks are not used to exceed reasonable daily limits, especially in elementary",
+      "evidence_start": 935,
+      "evidence_end": 1129,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_digital_literacy": "support",
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "cipa_public_hearings": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080994",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080994",
+  "filer_raw": "Alexander Perkins",
+  "date_submission": "2026-10-13T15:58:42.565Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0462eed6a9dc1971176257a708901bfc06237ab19fd74411201f3cc8518d4067",
+  "params_key": "296c41432e64185c51e306f088f0b65b7b64ea4e906203b57ba38038f6fc8c2c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

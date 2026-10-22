@@ -1,0 +1,50 @@
+{
+  "summary": "Grand Blanc Community Schools argues that E‑Rate should be limited to discounts for dark fiber and internet access only, rejecting broader internal services and local community subsidies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "limit discounts to dark fiber and internet services only",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district believes E‑Rate should be restricted to dark fiber and internet access, excluding internal services.",
+      "evidence_quote": "to only provide discounts for dark fiber and\ninternet services. In short, slash it.\nRespectfully submitted,\nThomas Wilberding\nNetwork Engineer\nGrand Blanc Community Schools\n—————\n¹ Commission’s",
+      "evidence_start": 2003,
+      "evidence_end": 2196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject broader E‑Rate subsidies",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The district contends that federal subsidies should not extend to local community services beyond internet access.",
+      "evidence_quote": ".\nI think E-Rate should only be used for internet access and nothing internal. The fed shouldn't be\nsubsidizing local communities.\n3. KEY ISSUES\nELIGIBLE SERVICES AND INFRASTRUCTURE\nWe use dark fiber",
+      "evidence_start": 1532,
+      "evidence_end": 1731,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076046",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076046",
+  "filer_raw": "Grand Blanc Community Schools | Thomas Wilberding",
+  "date_submission": "2026-09-09T14:58:34.475Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "101d35a8605d2626fc91bdefa1b13b060a66c474bd1a4fb44b781e8564895b8a",
+  "params_key": "596a54f1f1713aa7bc24eecd23f8ddd1a1b20a4fe3f1fdeebb7c840a1f788c2c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

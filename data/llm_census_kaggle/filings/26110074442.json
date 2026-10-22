@@ -1,0 +1,63 @@
+{
+  "summary": "Portage Community School District urges the FCC to keep E‑Rate funding intact, arguing that the program is essential for reliable connectivity, equitable access, and preventing staff and instructional cuts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "oppose",
+      "requested_action": "avoid cuts to staff and instructional resources",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Without E‑Rate, the district would have to divert limited resources from teachers and educational assistants to replace critical technology, harming student outcomes.",
+      "evidence_quote": "maintain and replace critical technology infrastructure \nwould have to come from the same limited resources we currently use to support classrooms. That \ncould mean choosing between reducing teachers",
+      "evidence_start": 1550,
+      "evidence_end": 1749,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is the only dedicated funding source that allows the district to maintain and upgrade essential broadband infrastructure.",
+      "evidence_quote": "for school \nconnectivity and technology infrastructure. \nFor our district, E-Rate is not an enhancement or a luxury. It is an essential funding source that has \nallowed us to upgrade our Wi-Fi",
+      "evidence_start": 309,
+      "evidence_end": 501,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "maintain infrastructure access",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Decisions about student screen time and instructional technology use should be made locally, not by reducing access to necessary infrastructure.",
+      "evidence_quote": "nize, and share, concerns about ensuring technology is used appropriately and responsibly \nwith students. However, decisions regarding student screen time and the instructional use of \ntechnology are",
+      "evidence_start": 2017,
+      "evidence_end": 2216,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "oppose",
+    "erate_sunset": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074442",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074442",
+  "filer_raw": "Portage Community School District",
+  "date_submission": "2026-09-01T19:03:04.219Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ce1f99ca0466e0195fe1cea2d2fd421f40a847427d49bc1d4b9665798b42f696",
+  "params_key": "6ccc29735652d1af74e408d8f30160d638ca27b39ed0433dd862634ad55d1553",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

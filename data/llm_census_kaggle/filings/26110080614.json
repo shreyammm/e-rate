@@ -1,0 +1,49 @@
+{
+  "summary": "Hawkins County Schools opposes any proposal to terminate or limit the E‑Rate program, arguing that such cuts would jeopardize school budgets, threaten vulnerable communities, and undermine essential internet connectivity for education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would leave vulnerable rural communities behind, depriving them of dedicated resources to maintain internet access.",
+      "evidence_quote": "access to the Internet. Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks. Cutting E-Rate also threatens to",
+      "evidence_start": 635,
+      "evidence_end": 834,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would force the district to cut teaching positions and potentially close schools due to a $4.5 million budget deficit.",
+      "evidence_quote": "itive student information.\nThe financial reality is stark. Our district faced a 4.5 million dollar budget deficit this past year, which required us to eliminate 41 positions. Without E-Rate funding",
+      "evidence_start": 1879,
+      "evidence_end": 2076,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080614",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080614",
+  "filer_raw": "Hawkins County Schools",
+  "date_submission": "2026-10-12T15:58:48.009Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e4d90ac115a463947e668b8714bb6e4462751fb04d533b195d65257da960de24",
+  "params_key": "ee1c8e3a7afa0d390c606e505e74ee4be8947d465d217c2ad2d2ada5f48d0543",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

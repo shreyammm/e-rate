@@ -1,0 +1,88 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, and to maintain support for internal network infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without",
+      "evidence_start": 3735,
+      "evidence_end": 3933,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure and its removal would impose unsustainable costs on districts.",
+      "evidence_quote": "munications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 471,
+      "evidence_end": 669,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other specific policy proposals.",
+      "evidence_quote": "Federal Communications Commission 45 L Street NE Washington, DC 20554 RE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 — Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be updated to meet evolving instructional demands rather than reduced.",
+      "evidence_quote": "liable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and",
+      "evidence_start": 4052,
+      "evidence_end": 4246,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "maintain support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network connectivity is essential for daily operations and student learning.",
+      "evidence_quote": "When that connectivity is unavailable or unreliable, it can disrupt the basic operations of our school and compromise our ability to safely and effectively serve students. We lease dark fiber in our",
+      "evidence_start": 1098,
+      "evidence_end": 1296,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078762",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078762",
+  "filer_raw": "Justin Black",
+  "date_submission": "2026-09-29T19:45:52.362Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "387b1c8766dcf7554510f2157b2cfc61efdb506c428cc98440431b2a16166c75",
+  "params_key": "08418c41b4c887b03bc0c606ffa164a5990f63e3781017cd0a817b90060f5c46",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

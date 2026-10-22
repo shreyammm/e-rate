@@ -1,0 +1,50 @@
+{
+  "summary": "The comment opposes cuts to the E‑Rate program and argues that screen‑time concerns can be addressed without reducing funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current E‑Rate funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate funding will impose a costly burden on vulnerable, especially rural, school communities.",
+      "evidence_quote": "I strongly oppose the proposed cuts or reductions to the E-RATE program. Cutting this funding will place a costly burden on our most vulnerable school communities, many of them rural. The concerns",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "address screen‑time concerns without cutting E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "Screen‑time concerns can be addressed without gutting the valuable 30‑year‑old program.",
+      "evidence_quote": "nities, many of them rural. The concerns about screen time can be addressed eithout gutting this valuable 30 year-old program.",
+      "evidence_start": 156,
+      "evidence_end": 282,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079689",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079689",
+  "filer_raw": "Ryan Ridenour",
+  "date_submission": "2026-10-06T22:04:39.181Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bafa53dc60a150bcd8877a3383fcc872c4e31794f083b366a6327313b5c3ce86",
+  "params_key": "d0480c53e90f4808b44047b611d29801789823d75487d9801be3a51d96ad08b1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

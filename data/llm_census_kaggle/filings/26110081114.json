@@ -1,0 +1,50 @@
+{
+  "summary": "NCSL supports the E‑Rate program and opposes federal imposition of screen‑time limits, arguing that such decisions should remain under state and local control.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "NCSL believes the E‑Rate program is essential for universal broadband access in schools and libraries.",
+      "evidence_quote": "26, Federal \nRegister Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking \nConcerning E-Rate.   \n  \nNCSL supports the Universal Service Fund’s E-Rate program and its core mission",
+      "evidence_start": 632,
+      "evidence_end": 830,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "refrain from imposing screen‑time limits",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "NCSL argues that decisions on screen‑time limits should be left to states and local schools to avoid conflict with state law.",
+      "evidence_quote": "erging \nchallenges.  \n \nIn the NPRM, the FCC discusses the impact of screen time on student learning and \nseeks comment on whether E-Rate funding should be conditioned on the imposition of \nscreen",
+      "evidence_start": 1258,
+      "evidence_end": 1454,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081114",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081114",
+  "filer_raw": "National Conference of State Legislatures",
+  "date_submission": "2026-10-13T18:52:46.835Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6d223d3a921fbad4ef644b0408beb62bd69dcee75624c227348bd5c78fdb04d2",
+  "params_key": "4a7988cda5686c0c64972f616fb101f417d38daee7c011e2bc768423965f35d0",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

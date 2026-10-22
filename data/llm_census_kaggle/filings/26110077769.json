@@ -1,0 +1,87 @@
+{
+  "summary": "Monrovia Unified School District Board urges the FCC to oppose any reduction in E‑Rate funding, arguing that cuts would undermine broadband access, divert scarce resources from critical educational programs, reverse bipartisan progress, and erode equity and educational outcomes.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility and funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding is essential for reliable, high‑speed internet that supports all aspects of modern education.",
+      "evidence_quote": "very student has equitable access to the technology and digital \nresources needed to succeed. E-Rate funding has been instrumental in helping us provide reliable, \nhigh-speed internet access",
+      "evidence_start": 1099,
+      "evidence_end": 1289,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose any reduction in E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that cutting E‑Rate funds would reverse years of bipartisan progress and deny students equitable broadband access.",
+      "evidence_quote": "l budget cuts to the E-Rate \nProgram. We respectfully urge you to oppose any reduction in funding for this critical program, which \nprovides schools and libraries with affordable access to broadband",
+      "evidence_start": 626,
+      "evidence_end": 824,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "prevent diversion of E‑Rate funds to other priorities",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E‑Rate is cut, districts will redirect local resources to technology, pulling funds from special education, mental health, and teacher support.",
+      "evidence_quote": "et access. If E-Rate funding is reduced, districts will be \nforced to redirect scarce local resources to maintain essential technology infrastructure. Those dollars \nwould inevitably come from other",
+      "evidence_start": 3272,
+      "evidence_end": 3470,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "protect investment in digital infrastructure",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Preserving E‑Rate funding is necessary to maintain the digital infrastructure that underpins modern teaching and learning.",
+      "evidence_quote": "rn \neducation. Preserving E-Rate funding is not simply about maintaining internet access; it is about \nprotecting the foundation upon which today's educational system operates. \nOur students deserve",
+      "evidence_start": 4200,
+      "evidence_end": 4398,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "support continued investment in E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is an investment in educational equity, workforce readiness, and national competitiveness.",
+      "evidence_quote": "d investment in the E-Rate Program is an investment in educational \nequity, academic achievement, workforce readiness, economic competitiveness, and our nation's \nfuture. \nWe respectfully ask that",
+      "evidence_start": 4511,
+      "evidence_end": 4707,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077769",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077769",
+  "filer_raw": "Monrovia Unified School District Board of Education",
+  "date_submission": "2026-09-22T22:08:08.224Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7405e6967c6d691e61863b03d039ff1f3002946bd66a91b9bef98acdbceb3e2c",
+  "params_key": "b31ac7e2027609afc0e57356b95f9ed4e6a06173e77b3c19e81a9b56458c1729",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

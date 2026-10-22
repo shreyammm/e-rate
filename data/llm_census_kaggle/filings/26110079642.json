@@ -1,0 +1,88 @@
+{
+  "summary": "The school system’s technology director urges the FCC to maintain current E‑Rate funding levels, oppose new screen‑time restrictions, and highlights the essential role of broadband for education, equity, and school safety.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue broad eligibility for broadband and related services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Broadband is critical for instruction, safety, and operational functions, so eligibility should remain wide.",
+      "evidence_quote": "dance data, and other vital information. Regardless of the E-Rate program's original, more narrowly defined purpose, this is the operational reality of today's schools. Reliable connectivity is now",
+      "evidence_start": 3407,
+      "evidence_end": 3604,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding should not be reduced because it is essential for equitable access to technology for all students.",
+      "evidence_quote": "As the technology director and on behalf of my school system, I ask that the FCC not reduce E-Rate support for schools and libraries.\n\nInternet connectivity has become as fundamental to education as",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain flexibility for schools to use technology as needed",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Schools require flexibility to deploy technology that best serves their students’ needs.",
+      "evidence_quote": "s need the flexibility to use technology in ways that best serve their students. E-Rate should continue doing what it has done so successfully—helping schools provide the reliable, affordable",
+      "evidence_start": 3880,
+      "evidence_end": 4071,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "add cybersecurity as an eligible Category 2 service",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Cybersecurity should be included to protect schools’ digital infrastructure.",
+      "evidence_quote": "nts who depend most on their schools for access.\n\nAlso Cybersecurity needs to be added as an eligible services for Category 2.",
+      "evidence_start": 4180,
+      "evidence_end": 4306,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose screen‑time limits on E‑Rate eligibility",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions would unnecessarily limit access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "CC should not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an",
+      "evidence_start": 1560,
+      "evidence_end": 1752,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079642",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079642",
+  "filer_raw": "Juan A Cepero",
+  "date_submission": "2026-10-06T18:30:40.050Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dcf306895ca62acac05d4917021dedd3aab0ac9d09357babad37898e589f16da",
+  "params_key": "8db0510ec74b3a80299931479b50c1d76c744ca28ca6f1d3617ae08494c03433",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

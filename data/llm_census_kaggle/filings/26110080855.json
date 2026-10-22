@@ -1,0 +1,74 @@
+{
+  "summary": "Indiana school leaders urge the FCC to preserve and strengthen E‑Rate, rejecting any sunset, reduction, or unnecessary narrowing of the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Unnecessarily narrowing eligibility would leave students without adequate support, especially in rural areas.",
+      "evidence_quote": "fore  urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on",
+      "evidence_start": 4477,
+      "evidence_end": 4673,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable connectivity and internal network infrastructure to provide meaningful educational access.",
+      "evidence_quote": "lity or restrict support based solely on geography , income,  or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network",
+      "evidence_start": 4633,
+      "evidence_end": 4823,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and its removal would directly harm school operations.",
+      "evidence_quote": "logy Officers Council, we write to  urge the Federal Communications Commission  (FCC)  to preserve and strengthen the E-Rate program . Please  reject any proposal that would eliminate, sunset,",
+      "evidence_start": 472,
+      "evidence_end": 664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program’s success over three decades warrants preservation and modernization rather than reduction.",
+      "evidence_quote": "o strengthen and modernize E-Rate rather than reduce its role in public education. Our students deserve access to the tools they need to learn and succeed regardless of where they live or their",
+      "evidence_start": 4938,
+      "evidence_end": 5131,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080855",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080855",
+  "filer_raw": "Indiana School Boards Association | Indiana Association of Public School Superintendents | Indiana Association of School Business Officials | Indiana Chief Technology Officers Council",
+  "date_submission": "2026-10-13T12:24:47.741Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "db4bdbf626329f22d3121682bc4d9d7ccabe549d797700b5826b589917e5ff8b",
+  "params_key": "4fbc68e84020c0af9a60d5df2c89029136629faa372d3c0440327906dc460107",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

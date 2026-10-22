@@ -1,0 +1,86 @@
+{
+  "summary": "Student advocate urges FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility based on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "ion to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 3585,
+      "evidence_end": 3778,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need reliable connectivity to provide safe and effective learning environments.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide",
+      "evidence_start": 3738,
+      "evidence_end": 3937,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be sunset.",
+      "evidence_quote": "C) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries. As",
+      "evidence_start": 471,
+      "evidence_end": 669,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools and libraries to build and maintain connectivity necessary for students to participate fully in modern education.",
+      "evidence_quote": "han reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully",
+      "evidence_start": 4055,
+      "evidence_end": 4252,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address specific policy changes beyond preserving and strengthening the program.",
+      "evidence_quote": "tudents and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to",
+      "evidence_start": 4212,
+      "evidence_end": 4405,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078046",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078046",
+  "filer_raw": "West40 | Morton East High School | J.Sterling Morton High School Dist. 201",
+  "date_submission": "2026-09-24T13:23:41.827Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "14494f33b8a05e6fedc0bd1bef5df3275addf6420a1a4f7e6d21757c26dc1af8",
+  "params_key": "35afb889d6c434bb53fe6be922c132a09ddaf8d7c215695516e0379340b70198",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

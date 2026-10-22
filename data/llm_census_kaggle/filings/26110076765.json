@@ -1,0 +1,89 @@
+{
+  "summary": "Parents and educators argue for stronger parental control over student data, reduced reliance on digital assessments for young children, centralized edtech regulation, and protection of E‑Rate funding to preserve non‑technology programs.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "establish centralized product regulation for educational technology",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "A centralized edtech vetting process would relieve individual districts of the burden of evaluating safety and effectiveness.",
+      "evidence_quote": "Explore a centralized product regulation approach for educational technology to ensure that any program our students use is safe and effective for learning, so the burden of edtech vetting isn’t left",
+      "evidence_start": 2468,
+      "evidence_end": 2667,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "support",
+      "requested_action": "limit computer‑based assessments for kindergarten and first grade",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Digital assessments should not be required for children as young as kindergarten or first grade.",
+      "evidence_quote": "e use at this age is not developmentally appropriate, yet is incentivized by the widespread adoption of computer-based assessments. The Department of Education can help resolve this by making it",
+      "evidence_start": 2007,
+      "evidence_end": 2201,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "require parental notification and opt‑out for student data collection",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "Parents must be able to consent or opt‑out of technology platforms that collect students’ data.",
+      "evidence_quote": "gful notification and the opportunity to consent or opt out of their children’s data collection by technology companies. The Federal Trade Commission can issue clear COPPA guidance on parental",
+      "evidence_start": 1544,
+      "evidence_end": 1736,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "ensure broadband remains essential for basic school operations",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Broadband access is essential for cybersecurity and other basic school functions.",
+      "evidence_quote": "nt to emphasize that broadband access in schools is separate from issues relating to educational technology content and applications. Broadband is still essential for many basic school operations,",
+      "evidence_start": 2781,
+      "evidence_end": 2977,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate subsidies",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E‑Rate would force districts to cut arts, science, and sports programs.",
+      "evidence_quote": "sidies will force districts to cut other programs to make up any budget deficit. As a result, the very programs that get children offline, including arts, science, and sports programming, could be",
+      "evidence_start": 3091,
+      "evidence_end": 3287,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_digital_literacy": "support",
+    "cipa_monitoring_privacy": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076765",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076765",
+  "filer_raw": "Lila Byock, Schools Beyond Screens",
+  "date_submission": "2026-09-16T00:35:13.955Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7be86009856a76b766ad38893038d4a19257a0bd1b14939bf3e2a879708fd721",
+  "params_key": "01df4d59721f280a4af4f17cacf4c60591d8289550d7d23dcafba068f9151500",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

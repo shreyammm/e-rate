@@ -1,0 +1,75 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, rejecting proposals to sunset, eliminate, or unnecessarily narrow eligibility, and emphasizing the essential role of broadband for schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equity.",
+      "evidence_quote": "roposals that would unnecessarily narrow E-Rate eligibility or restrict support based\nsolely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for",
+      "evidence_start": 4209,
+      "evidence_end": 4408,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is basic infrastructure like electricity and transportation, essential for modern education.",
+      "evidence_quote": "dequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to provide\nreliable educational access; and\n4. Work with schools and other stakeholders to",
+      "evidence_start": 4368,
+      "evidence_end": 4565,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to avoid costly budget cuts in schools.",
+      "evidence_quote": "tation, and safe facilities.\nI therefore respectfully urge the Commission to:\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow",
+      "evidence_start": 4054,
+      "evidence_end": 4249,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The FCC should work with schools to modernize E‑Rate rather than reduce its role.",
+      "evidence_quote": "k with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce\nits role in public education.\nE-Rate has enabled schools (public and private) and libraries to build and",
+      "evidence_start": 4525,
+      "evidence_end": 4721,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080943",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080943",
+  "filer_raw": "Central Berkshire Regional SD",
+  "date_submission": "2026-10-13T14:56:29.240Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "68a1f6400a743b6287b16e3fe0a23240232dd7bf97e7bf55b4c4d7d859043998",
+  "params_key": "113d7dc680bd7b90f4d89ab6a664886da3ff2e6c80b0400506f0881de70a8b60",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

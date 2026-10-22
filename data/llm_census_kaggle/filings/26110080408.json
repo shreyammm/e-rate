@@ -1,0 +1,74 @@
+{
+  "summary": "White County School District urges the FCC to maintain and expand E‑Rate funding for rural schools, emphasizing the essential role of broadband and network services in education and safety.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve full 80%–90% Category 1 broadband support for rural districts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Maintaining high discount rates ensures rural schools can afford high‑speed broadband essential for modern education.",
+      "evidence_quote": "dates, and student services just to keep basic utilities online. We specifically urge the Commission to:Preserve full 80%–90% Category 1 broadband support for rural districts.   Protect Category 2",
+      "evidence_start": 1240,
+      "evidence_end": 1436,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Formally expand E‑Rate to permanently include advanced cybersecurity protections",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Cybersecurity safeguards protect students and school infrastructure from emerging digital threats.",
+      "evidence_quote": "or rural districts.   Protect Category 2 Managed Internal Broadband Services (MIBS) and on-call engineering support.   Formally expand E-Rate to permanently include advanced cybersecurity",
+      "evidence_start": 1396,
+      "evidence_end": 1583,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to narrow program scope based on high adoption rates",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Narrowing the scope would undermine the program’s success and reverse progress in rural broadband access.",
+      "evidence_quote": "rmanently include advanced cybersecurity protections.   Reject proposals to narrow program scope based on high adoption rates, which exist solely because of E-Rate's success.Terminating or curtailing",
+      "evidence_start": 1543,
+      "evidence_end": 1742,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Terminate or curtail E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would force unsustainable budget reallocations away from essential educational resources.",
+      "evidence_quote": "Rate's success.Terminating or curtailing E-Rate support would reverse decades of progress, compromising the educational opportunities, physical safety, and digital future of every student in White",
+      "evidence_start": 1702,
+      "evidence_end": 1898,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080408",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080408",
+  "filer_raw": "Ashley Rust",
+  "date_submission": "2026-10-10T02:46:25.760Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "711c308602a2ed6ce39bcfa0db79af3ac31983fbf5d5b8dc914795b68eac4fc2",
+  "params_key": "0265ce6f81b1361bb51f530ba4d744e83e8e93e68b7958587c0f1fb5d95b732e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,85 @@
+{
+  "summary": "Pittsburgh Public Schools argue that ending E‑Rate would dramatically increase their broadband and network costs, threatening fiscal sustainability.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate currently reduces the district’s annual broadband and network expenses by roughly tenfold, from $47,700 to $477,000 per year.",
+      "evidence_quote": "Below is a summary of what the loss of E-Rate would mean for Pittsburgh Public Schools, using our current competitively bid contracts. \n\nIf E-Rate ends, PPS pays 100% of these costs instead of",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "retain E‑Rate discounts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district’s current contracts show a 10% discount on primary internet and wide‑area network services, which would be lost if E‑Rate ended.",
+      "evidence_quote": "PPS pays 100% of these costs instead of 10%:\n•\tPrimary internet (Zito, 3-year, $81,000): we pay $8,100 today ($225/month). Without E-Rate: $81,000 ($2,250/month).\n•\tWide area network (5-year,",
+      "evidence_start": 153,
+      "evidence_end": 344,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue E‑Rate coverage for network upgrades",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate covered just over $3 million of a $5.9 million network upgrade, saving the district $300,000–$430,000 annually.",
+      "evidence_quote": "out $47,700/year today vs. $477,000/year without E-Rate, an increase of about $429,300 per year (10x).\n•\tNetwork upgrade (Fortinet, $5.9 million installed): E-Rate covered just over $3 million.",
+      "evidence_start": 461,
+      "evidence_end": 654,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate subsidies",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate, the district would face an additional $730,000–$860,000 per year, totaling about $7.3 million over ten years.",
+      "evidence_quote": "d): E-Rate covered just over $3 million. Spread over a 7 to 10 year refresh cycle, that is roughly $300,000 to $430,000 per year the district would have to fund on its own.\n•\tCombined: roughly",
+      "evidence_start": 614,
+      "evidence_end": 806,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "keep E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Projected hardware cost increases mean the next refresh will likely exceed $5.9 million, amplifying the financial impact of losing E‑Rate.",
+      "evidence_quote": "or declining, but network hardware costs typically rise, so the next refresh will likely cost more than $5.9 million.",
+      "evidence_start": 916,
+      "evidence_end": 1033,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081098",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081098",
+  "filer_raw": "Ira Weiss/Solicitor on behalf of Pittsburgh Public Schools",
+  "date_submission": "2026-10-13T18:40:32.704Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5c02538895b33318fa2c6bd05ee4626b1687612c3b95182bc7b40e1cda857e1f",
+  "params_key": "98e27e87f4c857437817a02a2c7280411da28150f581523952f5fdafae546d7d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

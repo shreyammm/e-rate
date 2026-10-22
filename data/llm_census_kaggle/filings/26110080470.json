@@ -1,0 +1,76 @@
+{
+  "summary": "The commenter opposes any narrowing or sunset of the E‑Rate program, arguing that schools—especially those with weak connectivity—cannot self‑fund upgrades, that E‑Rate funds essential network‑layer safe‑use controls, and that his own educational project depends on a baseline network that would be lost if the program were cut.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "retain network‑layer safe‑use controls",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "The commenter maintains that safe use is enforced at the network layer, which E‑Rate‑funded internal connections and managed services support; weakening the program would erode these controls.",
+      "evidence_quote": "enforced at the network layer — content filtering, \nmanaged access, usage policy — and that layer is exactly what E-Rate-funded \ninternal connections and managed services pay for. Weakening the",
+      "evidence_start": 1087,
+      "evidence_end": 1280,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "He contends that schools with the weakest connectivity cannot self‑fund network upgrades, so any reduction in E‑Rate funding would disproportionately harm them.",
+      "evidence_quote": "chools with the weakest connectivity are the least able to \nreplace E-Rate dollars. Rural districts, small districts, and underfunded \nurban schools cannot self-fund network upgrades. Cutting the",
+      "evidence_start": 775,
+      "evidence_end": 970,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The commenter argues that cutting or narrowing E‑Rate would shift the cost of essential broadband upgrades onto the communities least able to pay, thereby worsening inequities.",
+      "evidence_quote": "tutoring system for classrooms where the network can't be counted on. \n \nI urge the Commission not to narrow or sunset the E-Rate program. \n \nFirst, learning is now connectivity-dependent, and that",
+      "evidence_start": 309,
+      "evidence_end": 506,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "keep E‑Rate funding intact",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "He notes that his offline tutoring project relies on a baseline school network; without E‑Rate funding, such projects would be impossible.",
+      "evidence_quote": "baseline school network to \nbuild on. An offline tutor helps where connectivity is intermittent; it \ncannot help where there is no network at all. Please keep E-Rate whole.",
+      "evidence_start": 1395,
+      "evidence_end": 1567,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080470",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080470",
+  "filer_raw": "Jairus Noor",
+  "date_submission": "2026-10-10T14:11:29.414Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "441dcb973dfd32005528f8fc972da5042902bbafd98298648d94ac31fdefb7ea",
+  "params_key": "6022e24ebae5afde98a4378aebe446041ad777ce8334801b7b274c98459d3733",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

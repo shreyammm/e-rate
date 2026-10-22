@@ -1,0 +1,89 @@
+{
+  "summary": "Forest Ridge School District 142 urges the FCC to preserve the core E‑Rate program, maintain eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and cost‑effective managed services, and to continue supporting security services. The district also opposes any changes that would reduce access, increase administrative burden, or limit local flexibility.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "oppose",
+      "requested_action": "avoid increasing administrative burden",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The district warns that higher fees and more paperwork would strain operations.",
+      "evidence_quote": "maintenance,\nand cost-effective network solutions. We support thoughtful improvements, simplification, and fraud\nprevention, but ask the FCC to avoid changes that would reduce access, increase",
+      "evidence_start": 2935,
+      "evidence_end": 3127,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "continue funding security services such as firewall upgrades",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "Security upgrades are essential and currently underfunded by E‑Rate.",
+      "evidence_quote": "lation, maintenance, and\nrelated network services that schools rely on every day.\n• Please maintain the core and add security. I upgraded our firewall last year and erate did not cover\nnearly enough",
+      "evidence_start": 2468,
+      "evidence_end": 2666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid sunset or reduction of core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that eliminating or reducing the core E‑Rate program would diminish essential broadband access for schools.",
+      "evidence_quote": "tion\nwould run like.\n5. RECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand",
+      "evidence_start": 2164,
+      "evidence_end": 2352,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "avoid limiting local flexibility for schools and students",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district stresses that local flexibility is critical for meeting diverse educational needs.",
+      "evidence_quote": "maintenance,\nand cost-effective network solutions. We support thoughtful improvements, simplification, and fraud\nprevention, but ask the FCC to avoid changes that would reduce access, increase",
+      "evidence_start": 2935,
+      "evidence_end": 3127,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and cost‑effective managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district requires these services to maintain reliable, affordable connectivity for teaching and operations.",
+      "evidence_quote": "oned networks, internal connections,\nand cost-effective managed services.\n• Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation, maintenance, and\nrelated network",
+      "evidence_start": 2312,
+      "evidence_end": 2508,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "oppose",
+    "cipa_network_filter": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076722",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076722",
+  "filer_raw": "Forest Ridge School District 142",
+  "date_submission": "2026-09-15T19:00:23.788Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "481e2c6481cc6c6f03aed0f0d0a746bf2e72f47ee37e253495c7725ba0d391d1",
+  "params_key": "126ae8ed2fe1353cd8fb8d0e7431cf566e0adf2819c5160581be88b04fa61af7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,86 @@
+{
+  "summary": "Plainfield School District superintendent urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, elimination, or unnecessary narrowing of eligibility and calling for continued support for connectivity infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse communities.",
+      "evidence_quote": "respectfully urge the Commission to:\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 3894,
+      "evidence_end": 4087,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that restrict support based on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Geographic restrictions would undermine equitable access to broadband for all students.",
+      "evidence_quote": "w E-Rate eligibility or restrict support based solely on\ngeography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network",
+      "evidence_start": 4047,
+      "evidence_end": 4245,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Schools need reliable connectivity to deliver meaningful education and maintain operational functions.",
+      "evidence_quote": "or the connectivity and internal network infrastructure schools need to provide reliable\neducational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather",
+      "evidence_start": 4205,
+      "evidence_end": 4403,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The E‑Rate program is essential infrastructure that must be maintained to support modern education.",
+      "evidence_quote": "Federal Communications Commission (FCC) to preserve and strengthen the E-Rate\nprogram and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-\nRate",
+      "evidence_start": 632,
+      "evidence_end": 830,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate has enabled schools to build and maintain connectivity essential for student success.",
+      "evidence_quote": "o strengthen and modernize E-Rate rather than reduce its role in\npublic education.\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary",
+      "evidence_start": 4363,
+      "evidence_end": 4556,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080347",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080347",
+  "filer_raw": "Paul M Brenton",
+  "date_submission": "2026-10-09T19:49:49.103Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "6ed8f4cb5014ad6b1523e6f0cc076a6dfd84dbd7d0eb5aa1b36f7a735919b929",
+  "params_key": "4f603ecbeb769c991833666b3d6aa149f90d34e3f48c3363a4ff22a7cd867702",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

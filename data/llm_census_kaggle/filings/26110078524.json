@@ -1,0 +1,75 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing eligibility, or cuts, and calling for continued support for connectivity and modernization.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave",
+      "evidence_start": 3714,
+      "evidence_end": 3912,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure for modern education and its elimination would directly harm student learning.",
+      "evidence_quote": "hen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and libraries. As a superintendent, I see",
+      "evidence_start": 613,
+      "evidence_end": 809,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve and strengthen program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving and strengthening E‑Rate ensures reliable, affordable connectivity for all students.",
+      "evidence_quote": "tructure of a modern school system, just like electricity, transportation, and safe facilities. I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate",
+      "evidence_start": 3556,
+      "evidence_end": 3754,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing E‑Rate will improve its effectiveness and adapt to evolving instructional demands.",
+      "evidence_quote": "ols need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled",
+      "evidence_start": 4026,
+      "evidence_end": 4222,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078524",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078524",
+  "filer_raw": "Pequannock Township School District",
+  "date_submission": "2026-09-28T15:15:43.007Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c21f4e1c5052f07e291cc03b9f4604a178fc7bc7780b7872d7a89d6a29081e66",
+  "params_key": "e75a261ce3f086adde5ec3a9d075b685070c017bb103c41a51ecb59ef15e5671",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,74 @@
+{
+  "summary": "Parent argues against widespread 1:1 device use in elementary schools while urging that E‑Rate funding remain intact to preserve essential internet access.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "decrease 1:1 device use",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "1:1 laptops for elementary students lead to significant off‑task behavior and exposure to inappropriate content.",
+      "evidence_quote": "udents often spend hours a day at school on their laptops, where studies show 37 min of every hour is spent OFF TASK. Kids can and do bypass any filters and blocks that the school district puts on",
+      "evidence_start": 624,
+      "evidence_end": 820,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate is critical for districts to meet the FCC’s bandwidth goal of 1 Mbps per student.",
+      "evidence_quote": "try, and many districts rely upon E-Rate resources. “74% of all districts are now meeting or exceeding the FCC’s recommended bandwidth goal of 1 Mbps per student.” (Connect K-12 2023 Report,",
+      "evidence_start": 1405,
+      "evidence_end": 1595,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Without E‑Rate, schools would likely lose essential internet access needed for teaching.",
+      "evidence_quote": "f schools lose access to critical E-Rate funding, it is highly unlikely they will reduce or eliminate internet access. Teachers and administrators need internet access to perform essential job",
+      "evidence_start": 1714,
+      "evidence_end": 1906,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate would force districts to cut other programs, harming arts and sports.",
+      "evidence_quote": "ny budget deficit. As a result, the very programs that get children offline, including arts and sports programming, will be negatively impacted.",
+      "evidence_start": 2023,
+      "evidence_end": 2167,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076568",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076568",
+  "filer_raw": "Grace Chen",
+  "date_submission": "2026-09-14T13:08:55.655Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "71b01a4577b32995c13aaa9b802351820d375aba9208d063a5882e44d9b395cd",
+  "params_key": "ebdd2feb1f49f96d78b0f4f31faf287ff6ce4b91dbc203376d67f986efe8a516",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

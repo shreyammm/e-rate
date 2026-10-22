@@ -1,0 +1,86 @@
+{
+  "summary": "Letter urges FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing, or cuts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate broadband support.",
+      "evidence_quote": "tation, and safe facilities. I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate",
+      "evidence_start": 2805,
+      "evidence_end": 3001,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate provides essential connectivity infrastructure for modern education.",
+      "evidence_quote": "s that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the",
+      "evidence_start": 2961,
+      "evidence_end": 3154,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating E‑Rate would directly harm school operations and student learning.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily",
+      "evidence_start": 467,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing E‑Rate will improve its effectiveness without reducing support.",
+      "evidence_quote": "equate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to",
+      "evidence_start": 3114,
+      "evidence_end": 3304,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Ensure equitable access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students deserve reliable, affordable connectivity regardless of location or family income.",
+      "evidence_quote": "related infrastructure that makes those opportunities possible. Our students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial",
+      "evidence_start": 3727,
+      "evidence_end": 3920,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079673",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079673",
+  "filer_raw": "East Lyme Public Schools",
+  "date_submission": "2026-10-06T20:39:58.985Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e7a62f06ba98a32f5fa0624995a2883e8f8591a7a77755c433698d0ebb651be",
+  "params_key": "2bb1a9c17a3d5d3d9f1fd8fef1e2e2bb9a5872a54202c825edc62aa8e02d5f9c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "The letter urges the FCC to preserve E‑Rate funding, arguing that reliable connectivity is essential for school operations and that eliminating or reducing the program would impose significant financial burdens on a small educational collaborative.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E‑Rate, the collaborative would need to find approximately $200,000 in additional local funding or delay critical infrastructure improvements.",
+      "evidence_quote": "bling project estimated at approximately $250,000, with E-Rate expected to cover 80% of the eligible costs. Without that support, we would need to find approximately $200,000 in additional local",
+      "evidence_start": 2159,
+      "evidence_end": 2353,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating or significantly reducing E‑Rate would place additional financial pressure on schools that are already managing limited resources.",
+      "evidence_quote": "create new challenges for districts and collaboratives working to maintain secure, dependable networks across multiple buildings. I respectfully ask the Commission to preserve E-Rate funding,",
+      "evidence_start": 3095,
+      "evidence_end": 3286,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has been an effective and valuable program for schools across the country, especially for smaller districts and educational collaboratives.",
+      "evidence_quote": "and meet growing technology and security expectations without continued investment in that infrastructure. E-Rate has been an effective and valuable program for schools across the country. Its",
+      "evidence_start": 3707,
+      "evidence_end": 3899,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080861",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080861",
+  "filer_raw": "Northshore Education Consortium",
+  "date_submission": "2026-10-13T12:39:17.363Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c7e66643b9f8387da9ca5936ab2a8d77213848d4609bc740ef506d5b0a2948ee",
+  "params_key": "cb1fefc564bbd1f4de7ce35a5854934695617ffd9aa594e56f7c0fb91403bf0d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

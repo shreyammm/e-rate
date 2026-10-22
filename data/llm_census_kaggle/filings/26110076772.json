@@ -1,0 +1,89 @@
+{
+  "summary": "Parent requests opt‑out of screen‑based instruction, limits on screen time, and stronger privacy protections for children’s data.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "support",
+      "requested_action": "require digital literacy courses",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Students need digital literacy training to navigate technology responsibly.",
+      "evidence_quote": "al, mental, and emotional development by removing screens from lower grades, removing \ngaming as rewards or time-killing tools for all grades, bringing back computer labs and \n\n\nsupervision for older",
+      "evidence_start": 3279,
+      "evidence_end": 3478,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "strengthen privacy safeguards for child data",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "legal_claim",
+      "argument": "Educational technology must protect children’s personal data and limit unsolicited communications.",
+      "evidence_quote": "programs are \ncollecting on our children without their knowledge or consent. My oldest child is now in second \ngrade and I get regular spam emails from an app used by the school, trying to convince",
+      "evidence_start": 2026,
+      "evidence_end": 2223,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "oppose",
+      "requested_action": "ban social media and AI in schools",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Social media and AI pose risks to children’s mental health and should be prohibited in schools.",
+      "evidence_quote": "al, mental, and emotional development by removing screens from lower grades, removing \ngaming as rewards or time-killing tools for all grades, bringing back computer labs and \n\n\nsupervision for older",
+      "evidence_start": 3279,
+      "evidence_end": 3478,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "allow parent opt‑out of edtech",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents must have the right to opt their children out of screen‑based instruction.",
+      "evidence_quote": "eceiving and I cannot verify the quality \nof this screen time. I do not have any guarantees that their privacy and their mental health is \nbeing prioritized. I am not given the option to opt-out of",
+      "evidence_start": 2810,
+      "evidence_end": 3007,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "impose daily screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Parents should be able to set daily limits on screen time to protect children’s health and development.",
+      "evidence_quote": "Hello, my name is Yvonne and I have three children in California. I have become increasingly \nalarmed at the amount of screen time provided to my children in school, without my knowledge \nor consent,",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_digital_literacy": "support",
+    "cipa_monitoring_privacy": "support",
+    "cipa_social_media": "oppose",
+    "parent_opt_out": "support",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076772",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076772",
+  "filer_raw": "Dominique Yvonne Wall",
+  "date_submission": "2026-09-16T01:31:00.052Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8f40a1a6b40635840bd62d8ef804aef0115f9f4a2d04f62f4999a87a1d956934",
+  "params_key": "b15261bb3b793f461264bd48986ef99358ff786fa3140e0f9a145aab13c2cfbf",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

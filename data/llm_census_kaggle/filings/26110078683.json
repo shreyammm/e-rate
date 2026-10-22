@@ -1,0 +1,88 @@
+{
+  "summary": "Hawthorn School District 73 urges the FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts to internal network support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse communities.",
+      "evidence_quote": "he Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or",
+      "evidence_start": 4680,
+      "evidence_end": 4877,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and its elimination would severely disrupt school operations.",
+      "evidence_quote": "he Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or",
+      "evidence_start": 4680,
+      "evidence_end": 4877,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Internal network upgrades are recurring costs that E‑Rate currently covers, and losing this support would force districts to divert scarce resources.",
+      "evidence_quote": "ict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 4837,
+      "evidence_end": 5034,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Modernizing the program will ensure reliable, affordable, and effective connectivity for students and patrons.",
+      "evidence_quote": "l network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 4994,
+      "evidence_end": 5189,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Ensure public schools can continue providing students with reliable, affordable, and effective connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students deserve access to the tools they need to learn and succeed regardless of location or family finances.",
+      "evidence_quote": "ts deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial circumstances. I urge the Commission to protect E-Rate and ensure that public",
+      "evidence_start": 5616,
+      "evidence_end": 5813,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078683",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078683",
+  "filer_raw": "Hawthorn School District 73",
+  "date_submission": "2026-09-29T12:27:49.228Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "971f6427438b891863d5ef0abc399ec689159442bd639dfbea28a648428da061",
+  "params_key": "cc0b235d66cd61a888bbdc4d72bbcad2f39a7b0184731e31a0b57191289f7e54",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

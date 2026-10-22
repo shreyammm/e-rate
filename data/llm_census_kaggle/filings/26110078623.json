@@ -1,0 +1,63 @@
+{
+  "summary": "Nixa Public Schools urges the FCC to preserve E‑Rate funding, oppose conditioning it on screen‑time limits, and resist narrowing eligibility or discount rates, citing budget strain and student access concerns.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not narrow eligibility or change discount rates",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "implementation_burden",
+      "argument": "Narrowing eligibility or altering discount rates would impose difficult budget choices and strain local taxpayers.",
+      "evidence_quote": "en schools. I also ask the Commission to consider the real budget impact on districts before narrowing eligibility or changing discount rates. Nixa’s experience shows why being connected today is a",
+      "evidence_start": 1848,
+      "evidence_end": 2045,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "equity_access",
+      "argument": "Preserving E‑Rate support is essential to maintain reliable connectivity for students, especially those lacking home internet.",
+      "evidence_quote": "I serve as Chief Strategy and Information Officer for Nixa Public Schools in Missouri. I urge the Commission to preserve E-Rate and the support it provides for reliable connectivity in our",
+      "evidence_start": 0,
+      "evidence_end": 188,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not condition connectivity funding on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Conditioning essential connectivity funding on federally prescribed screen‑time limits would undermine educators’ and families’ ability to manage appropriate device use.",
+      "evidence_quote": "ges, needs, and instruction. Providing a reliable network does not mean students should be on a screen all day. I ask the Commission not to condition essential connectivity funding on a federally",
+      "evidence_start": 1537,
+      "evidence_end": 1732,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078623",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078623",
+  "filer_raw": "David Liss",
+  "date_submission": "2026-09-28T21:05:10.342Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8cc4bea1db36dd5bc47b447c860ea06647fed358bc3c3a22702f82b05c3bc0ab",
+  "params_key": "9a2a07cea9457aba0f2db9f636f77533c9d28c081067c46b813e6959badf9825",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

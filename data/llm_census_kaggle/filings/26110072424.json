@@ -1,0 +1,89 @@
+{
+  "summary": "Broken Arrow Public Schools urges the FCC to preserve the core E‑Rate program and related services, oppose cuts that would reduce access or increase administrative burden, and support practical, locally‑controlled policies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The district believes that CIPA should remain workable and not impose undue burdens on schools.",
+      "evidence_quote": "works are\nactually used for instruction, operations, and student support.\n• Avoid one-size-fits-all federal screen-time limits. Leave it to local control.\n• Keep CIPA requirements practical,",
+      "evidence_start": 4314,
+      "evidence_end": 4504,
+      "uncertain": false
+    },
+    {
+      "provision_id": "daily_hour_limits",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues for local control over screen‑time policies rather than federal mandates.",
+      "evidence_quote": "tely harm districts serving high-need or high-cost communities.\n• Maintain a broad, workable definition of “educational purpose” that reflects how school networks are\nactually used for instruction,",
+      "evidence_start": 4157,
+      "evidence_end": 4354,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district contends that discount calculations should consider local high‑need populations to avoid disproportionate harm.",
+      "evidence_quote": "work services that schools rely on every day.\n• Ensure any changes to discount methodology reflect true local cost and need, and do not\ndisproportionately harm districts serving high-need or",
+      "evidence_start": 4007,
+      "evidence_end": 4197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district maintains that these services are essential for reliable, affordable connectivity.",
+      "evidence_quote": ",\nand cost-effective managed services.\n• Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation, maintenance, and\nrelated network services that schools rely on every",
+      "evidence_start": 3850,
+      "evidence_end": 4047,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating or significantly reducing E‑Rate would force cuts to staff or services, harming students.",
+      "evidence_quote": "ECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n•",
+      "evidence_start": 3692,
+      "evidence_end": 3890,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "daily_hour_limits": "oppose",
+    "discount_matrix": "conditional_or_amend",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072424",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072424",
+  "filer_raw": "Broken Arrow Public Schools",
+  "date_submission": "2026-08-20T16:18:25.388Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c3c0dbc0d6843a6e0b673556d9416be12c54e5b71800ffe176cf567ceadfc5d8",
+  "params_key": "0d49d33a517a8c2e43924cc1c12f6016169b3849d27292b7f15857d47f4ac5ee",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

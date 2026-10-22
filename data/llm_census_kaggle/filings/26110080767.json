@@ -1,0 +1,88 @@
+{
+  "summary": "Washington State school boards affirm E‑Rate’s essential role, oppose new screen‑time or instructional conditions, and call for continued equity‑focused support, especially for rural schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "preserve local flexibility",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Local boards and educators should decide technology use based on community needs, not federal mandates.",
+      "evidence_quote": "boards, district leaders, educators, and families are best positioned to make decisions regarding instructional technology, digital learning environments, and age-appropriate technology use based on",
+      "evidence_start": 928,
+      "evidence_end": 1126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue to provide affordable, high‑capacity broadband for all schools and libraries.",
+      "evidence_quote": "ate program as an essential component of basic education and a vital tool for ensuring digital equity across Washington’s public schools. E-Rate helps schools provide affordable, high-capacity",
+      "evidence_start": 154,
+      "evidence_end": 346,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "strengthen rural support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Sustained and equitable E‑Rate support is particularly important for rural and high‑cost communities.",
+      "evidence_quote": "ustained and equitable E-Rate support is particularly important for rural and high-cost communities, where connectivity remains essential to student learning, school operations, instructional",
+      "evidence_start": 2004,
+      "evidence_end": 2195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential for reliable broadband in all schools, especially rural and high‑cost communities.",
+      "evidence_quote": "On behalf of Washington State’s nearly 1,500 elected school board members, we urge the Federal Communications Commission to protect and strengthen the E-Rate program as an essential component of",
+      "evidence_start": 0,
+      "evidence_end": 194,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not condition E‑Rate on screen‑time",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Conditioning funding on screen‑time would shift local decision‑making to the federal level and create unnecessary administrative burdens.",
+      "evidence_quote": "tate’s school board members urge the FCC not to condition E-Rate funding on federally prescribed screen-time requirements, instructional mandates, or additional requirements that could displace local",
+      "evidence_start": 1242,
+      "evidence_end": 1441,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080767",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080767",
+  "filer_raw": "Cynthia Tamayo",
+  "date_submission": "2026-10-12T23:16:25.706Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0264dc70ec2d7a37ca00418d640febc8458ba8da758e8e5990614b9758477b45",
+  "params_key": "db02004a188ac76eacea0c26ab53acbc32bedd290dae6f04bf45da30aca181e4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

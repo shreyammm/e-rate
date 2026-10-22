@@ -1,0 +1,85 @@
+{
+  "summary": "The filing urges the FCC to reject any proposal that terminates or limits the E‑Rate program, arguing that E‑Rate is essential for affordable, reliable broadband, student safety, and digital equity, and that eliminating or reducing it would impose severe budgetary strains and widen inequities.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating or reducing E‑Rate would force districts to cut essential services, widening digital inequities.",
+      "evidence_quote": "urban areas from E-Rate eligibility.1 We strongly urge the FCC to reject any \nproposal that terminates or limits the E-Rate Program. \n \nE-Rate is critical for public schools and libraries to maintain",
+      "evidence_start": 1089,
+      "evidence_end": 1288,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate subsidies bridge severe geographic and socioeconomic divides, ensuring rural and underserved students access rich online instruction.",
+      "evidence_quote": "E-Rate’s funding helps to bridge severe geographic and socioeconomic \ndivides, ensuring that students in rural and underserved communities are able to access rich \nonline instruction, specialized",
+      "evidence_start": 2637,
+      "evidence_end": 2832,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect safety and security investments",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate funding enables modern network hardware and software to protect student data against evolving cyber threats.",
+      "evidence_quote": "orks guarantee that staff can seamlessly communicate with first responders during \nemergencies. Furthermore, as K-12 education increasingly becomes a prime target for \ncybercriminals, E-Rate funding",
+      "evidence_start": 3102,
+      "evidence_end": 3300,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent budget cuts to E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would force districts to reallocate core instructional funds, compromising education quality.",
+      "evidence_quote": "ult budget reallocations to cover basic, non-negotiable internet access, pulling vital funds \ndirectly from core instruction, 1:1 student device programs, administrative platforms, and \nessential",
+      "evidence_start": 4183,
+      "evidence_end": 4378,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate for operational integrity",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Without sustained E‑Rate, districts would be forced to use aging, unsupported hardware, increasing vulnerability to ransomware and data breaches.",
+      "evidence_quote": "uate to run today's high-quality digital learning content. \n \n2 \n\n\nBeyond instruction, cutting E-Rate will compromise safety and operational integrity: \ndistricts would be stuck using aging,",
+      "evidence_start": 4801,
+      "evidence_end": 4991,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081304",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081304",
+  "filer_raw": "Massachusetts Computer Using Educators (MassCUE) | Massachusetts Educational Technology Administrators Association (METAA) | Massachusetts Association of School Superintendents (M.A.S.S.) | Massachusetts Association of School Business Officials (MASBO)",
+  "date_submission": "2026-10-13T22:31:38.638Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "caff406eb91086680e586b9227d02b68d4cd9e65eaf50401e050840314309f7f",
+  "params_key": "75ab1176a90ca67594290f6d2c76296f8fd0ee51a867f79c62479a8c3c16c49f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

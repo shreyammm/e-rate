@@ -1,0 +1,86 @@
+{
+  "summary": "A school district argues that E‑Rate funding is essential for maintaining and upgrading broadband and networking infrastructure, enabling equitable access and preventing a severe digital divide if funding were cut.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables the district to provide reliable, high‑speed broadband and modern networking hardware at a fraction of the market cost, ensuring equitable access for all students.",
+      "evidence_quote": "The E-Rate program is an invaluable catalyst for our digital infrastructure, allowing us to secure reliable, high-speed broadband and modern networking hardware at a fraction of the market cost. By",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for Wi‑Fi capacity expansion",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate allows the district to expand Wi‑Fi capacity across learning environments, supporting thousands of connected devices without slowdowns.",
+      "evidence_quote": "nt Connectivity: Reliable Wi-Fi capacity that supports thousands of connected devices simultaneously without slowdowns. Infrastructure Upgrades: Modern firewalls, switches, and access points that",
+      "evidence_start": 1092,
+      "evidence_end": 1287,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain funding for modern firewalls, switches, and access points",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding supports the procurement of modern firewalls, switches, and access points that keep the network safe, fast, and scalable.",
+      "evidence_quote": "ewalls, switches, and access points that keep our network safe, fast, and scalable. Equal Access: Leveling the playing field so every student, regardless of their background, accesses the same",
+      "evidence_start": 1247,
+      "evidence_end": 1439,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid sunset or reduction of E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "predicted_consequence",
+      "argument": "If E‑Rate funding were reduced or eliminated, the district would face a severe digital divide, with network upgrades stalling and bandwidth throttled.",
+      "evidence_quote": "testing and streaming educational media. Through E-Rate support, we overhauled our core network infrastructure and upgraded our fiber bandwidth tenfold.\n\nIf E-Rate funding were reduced or eliminated,",
+      "evidence_start": 1557,
+      "evidence_end": 1756,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent elimination of E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "predicted_consequence",
+      "argument": "Without E‑Rate, the district would have to pay vastly more for a significantly worse online experience, sacrificing student programs to keep the lights on digitally.",
+      "evidence_quote": "ss. However, without E-Rate, we would be forced to settle for severely downgraded, bare-minimum connectivity. We would be paying vastly more for a significantly worse online experience, directly",
+      "evidence_start": 2341,
+      "evidence_end": 2535,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110070486",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110070486",
+  "filer_raw": "River Springs Charter School | Citrus Springs Charter School | Empire Springs Charter School | Harbor Springs Charter School | Inland Empire Springs Charter School | Pacific Springs Charter School | Vista Springs Charter School",
+  "date_submission": "2026-08-11T19:27:53.996Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d8fe8880b32c562f5fa9e184cb9683d6eee0c81b0335fc2058fd4aa741751b9e",
+  "params_key": "77e6a1919b1861c1c6d0c3bbd53a9004a6bc5a07f399292a527c237c44ed39b4",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

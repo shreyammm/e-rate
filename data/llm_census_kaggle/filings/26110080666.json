@@ -1,0 +1,110 @@
+{
+  "summary": "PASBO urges the FCC to preserve and strengthen E‑Rate, arguing that the program is essential infrastructure, that its removal would shift significant costs to local budgets, and that the program’s oversight and competitive bidding safeguards are strong. The Pennsylvania Association of School Business Officials urges the FCC to preserve and strengthen E‑Rate, rejecting proposals to sunset the program, narrow eligibility, or shift its focus away from connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address changes to eligible equipment or services.",
+      "evidence_quote": "Page 1 of 5\nPennsylvania Association of School Business Officials\n \nOctober 12, 2026\nSUBMITTED ELECTRONICALLY VIA ECFS\nMarlene H. Dortch, Secretary\nFederal Communications Commission\n45 L Street",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject geographic restrictions",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Geographic restrictions would ignore need in diverse communities.",
+      "evidence_quote": "or them.\nNeed does not stop at the rural line\nThe Commission should also consider the needs of districts that serve diverse communities. \nRestricting support to rural schools would not target need;",
+      "evidence_start": 7391,
+      "evidence_end": 7588,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject exclusionary eligibility tests",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The discount matrix already accounts for poverty and rurality; making rurality an exclusionary test would be unjust.",
+      "evidence_quote": "to rural schools would not target need; it would ignore it. E-Rate’s discount \nmatrix already accounts for both poverty and rurality, with discounts rising by National School \nLunch Program",
+      "evidence_start": 7549,
+      "evidence_end": 7738,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "oposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support \nbased solely on geography or other criteria that would",
+      "evidence_start": 9392,
+      "evidence_end": 9588,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Connectivity and internal network infrastructure are essential for reliable educational access.",
+      "evidence_quote": "ucture schools need to \nprovide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public",
+      "evidence_start": 9701,
+      "evidence_end": 9883,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure that must be preserved to avoid shifting large recurring costs onto local school budgets.",
+      "evidence_quote": "am and to reject any proposal that would eliminate, sunset, \nsubstantially reduce, or unnecessarily restrict E-Rate support for schools and libraries.\nThe business officials PASBO represents see",
+      "evidence_start": 1690,
+      "evidence_end": 1884,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The program should not be sunset because it provides essential broadband infrastructure for schools.",
+      "evidence_quote": "tions, setting schools and students back and negatively impacting \nPennsylvania taxpayers.\nWe therefore respectfully urge the Commission to:\n1. Reject any proposal to sunset or eliminate the E-Rate",
+      "evidence_start": 9235,
+      "evidence_end": 9432,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080666",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080666",
+  "filer_raw": "Pennsylvania Association of School Business Officials (PASBO)",
+  "date_submission": "2026-10-12T18:34:55.357Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0d83a433eb4a035729f263b350834074b3c464a98cab8301714220d57c6181bc",
+  "params_key": "764ba2dcb4638cf1fec762c8be13cd9114aee30002bad6595353b1b38d07ec41",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

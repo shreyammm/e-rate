@@ -1,0 +1,74 @@
+{
+  "summary": "The Ignacio School District opposes any termination or limitation of the E‑Rate program, arguing that E‑Rate is essential for affordable, reliable internet access, especially for vulnerable communities, and that cuts would jeopardize school and library budgets and security.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is critical for maintaining affordable, reliable internet access for all students and library users.",
+      "evidence_quote": "limit the E-Rate Program. \n  \nE-Rate is critical for schools and libraries to maintain affordable, reliable access to the Internet. \nTerminating that support represents a cut to school and library",
+      "evidence_start": 1085,
+      "evidence_end": 1281,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district argues that terminating E‑Rate would cut essential funding and increase costs for schools and libraries.",
+      "evidence_quote": "CC should eliminate E-Rate altogether or cut out urban areas from E-Rate \neligibility.[1] We urge the FCC to reject any proposal that would terminate or limit the E-Rate Program. \n  \nE-Rate is",
+      "evidence_start": 932,
+      "evidence_end": 1124,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect vulnerable communities",
+      "reason_family": "other",
+      "claim_kind": "equity_access",
+      "argument": "The district warns that vulnerable communities would be left behind if E‑Rate support is removed.",
+      "evidence_quote": "t represents a cut to school and library budgets, jeopardizing years of progress \nbuilding and upgrading those networks. Cutting E-Rate also threatens to leave vulnerable communities \nbehind that",
+      "evidence_start": 1241,
+      "evidence_end": 1436,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would force the district to reduce internet speed and compromise network security.",
+      "evidence_quote": "CC terminates or limits E-Rate funding,  \n  \nDue to the cost of the internet in our remote area we would need to reduce our overall internet speed \nand would end up with a less secure more vulnerable",
+      "evidence_start": 2176,
+      "evidence_end": 2375,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078890",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078890",
+  "filer_raw": "Ignacio School District 11JT",
+  "date_submission": "2026-09-30T16:15:57.971Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cb1989aea2efdcc567a5dd65e2a5b632219aa10fd6d4471f3e237bbec05db912",
+  "params_key": "5b4281e4ea8a377af811d211edf98450bf5b3e124638c5fa1b72b9f50530cafa",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

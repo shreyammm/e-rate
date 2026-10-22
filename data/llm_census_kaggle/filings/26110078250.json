@@ -1,0 +1,86 @@
+{
+  "summary": "Canute ISD Director urges FCC to preserve, modernize, and expand E‑Rate support, opposing sunset, restrictive eligibility, and bandwidth limits.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other policy topics such as CIPA or consultant rules.",
+      "evidence_quote": "Federal Communications Commission 45 L Street NE Washington, DC 20554 RE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 — Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Modernize program bandwidth targets to ensure funding formulas recognize a modern baseline of 1 Gbps with headroom scalable to 10 Gbps",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Current 100 Mbps benchmarks are outdated; schools need gigabit capacity for modern learning.",
+      "evidence_quote": "As our technology advances, we must not arbitrarily limit student learning. Modern connectivity in education can no longer be measured by outdated benchmarks like 100 Mbps; our students require a",
+      "evidence_start": 1878,
+      "evidence_end": 2073,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve robust support for both Category 1 connectivity and Category 2 internal infrastructure so small schools can route high‑speed capacity directly to student devices",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Category 2 support is critical for security, safety, and instructional technology.",
+      "evidence_quote": "eliminate the E-Rate program; Modernize program bandwidth targets to ensure funding formulas recognize a modern baseline of 1 Gbps with headroom scalable to 10 Gbps; Preserve robust support for both",
+      "evidence_start": 4364,
+      "evidence_end": 4562,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject restrictive eligibility rules or arbitrary geographical formulas that penalize small and rural communities",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Rural schools face commercial hurdles that E‑Rate must mitigate to avoid widening the digital divide.",
+      "evidence_quote": "y to student devices; Reject restrictive eligibility rules or arbitrary geographical formulas that penalize small and rural communities; and Work collaboratively with school technology leaders to",
+      "evidence_start": 4680,
+      "evidence_end": 4875,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset, phase out, or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for safety, instruction, and equity in rural schools.",
+      "evidence_quote": "s like ours will be left stranded behind an ever-widening digital divide. I respectfully urge the Commission to: Reject any proposal to sunset, phase out, or eliminate the E-Rate program; Modernize",
+      "evidence_start": 4206,
+      "evidence_end": 4403,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078250",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078250",
+  "filer_raw": "Brian Morris",
+  "date_submission": "2026-09-25T12:59:25.243Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "889c07038ffe51674647ad69895eecb334c583fea17c91c66d5fc05793acbab9",
+  "params_key": "fc7b077978a0577ab83622bbb51c45cd0a60a27b5a45f5a9956f48dd2d03703b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

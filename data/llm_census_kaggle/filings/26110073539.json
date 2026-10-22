@@ -1,0 +1,87 @@
+{
+  "summary": "Toledo Lucas County Public Library urges the FCC to maintain E‑Rate funding for libraries, arguing that the program is essential for digital literacy, community connectivity, and equitable access to technology.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for library broadband and network maintenance",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate‑supported broadband enables libraries to provide digital literacy training and internet access for all community members.",
+      "evidence_quote": "taxpayer. ​\n​\nE-Rate-supported broadband connections enable libraries like TLCPL to provide digital literacy \ntraining, internet access, and technology support, putting personal goals within reach of",
+      "evidence_start": 3110,
+      "evidence_end": 3309,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels for libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library argues that terminating or limiting E‑Rate would force reductions in technology‑based programs, harming taxpayers and community access.",
+      "evidence_quote": "te as an essential program for \nreliable broadband speeds and for regular network maintenance, safety, and security. If the \nFCC terminates or limits E-Rate funding for libraries, TLCPL will",
+      "evidence_start": 2802,
+      "evidence_end": 2992,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter references multiple FCC docket numbers but does not advocate specific policy changes beyond maintaining funding.",
+      "evidence_quote": "’s Safe Use of Screens and E-Rate-Funded Services, WC Docket No. 26-133  \nModernizing the E-Rate Program for Schools and Libraries, WC Docket No. 13-184  \nEstablishing the Emergency Connectivity Fund",
+      "evidence_start": 154,
+      "evidence_end": 353,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter cites community statistics and historical context without proposing new regulatory actions.",
+      "evidence_quote": "uld not be \npossible. ​\n​\nStill in 2026, numerous members of Lucas County communities cannot afford home internet \n\n\n \naccess and continue to rely on TLCPL to stay connected. In a 2023 analysis with",
+      "evidence_start": 1872,
+      "evidence_end": 2070,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure secure, scalable, future‑ready connectivity for libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library emphasizes the need for secure and future‑ready connectivity to meet evolving community needs.",
+      "evidence_quote": "ommitment to ensuring that libraries and our school partners across the nation have \naccess to these federal funds needed to provide secure, scalable, future-ready connectivity \nthat supports the",
+      "evidence_start": 3572,
+      "evidence_end": 3767,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073539",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073539",
+  "filer_raw": "Toledo Lucas County Public Library",
+  "date_submission": "2026-08-28T16:29:44.656Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "96de96947f8c488af3f19a55e9a5a6e8b04202ebdd2097713d24d442a99b8021",
+  "params_key": "e63a0d28c6e217240baebbc2545c9cbbb80d8eb0dd2326834a32aa6e5237ac65",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

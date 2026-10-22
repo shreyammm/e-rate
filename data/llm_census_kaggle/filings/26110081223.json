@@ -1,0 +1,101 @@
+{
+  "summary": "Decorah Community School District urges the FCC to preserve E‑Rate support, maintain connectivity and safety requirements, keep Category One and Two funding, promote transparent bidding, and retain rural discounts while simplifying procedures. The comment urges the FCC to preserve the E‑Rate program, citing financial hardship for rural schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "conditional_or_amend",
+      "requested_action": "preserve connectivity while maintaining workable internet‑safety requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate connectivity should be preserved, but new mandates that consume scarce resources without clear safety benefits should be avoided.",
+      "evidence_quote": "boards make instructional choices. \nThe Commission should preserve E-Rate connectivity while maintaining workable \ninternet-safety requirements and avoiding new mandates that consume scarce school",
+      "evidence_start": 3859,
+      "evidence_end": 4055,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "promote transparent, fair, and open competitive bidding and simplify procedures",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Simplifying application, bidding, documentation, and reimbursement procedures will reduce administrative burden on small district teams.",
+      "evidence_quote": "cket No. 21-455, we support transparent, fair, and open competitive \nbidding and strong safeguards against waste, fraud, and abuse. Our district depends on \ncompetitive procurement to obtain",
+      "evidence_start": 5112,
+      "evidence_end": 5302,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "support",
+      "requested_action": "maintain meaningful rural discounts and modernize eligible services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Rural discounts and modernized eligible services are necessary to sustain affordable, reliable connectivity for rural schools.",
+      "evidence_quote": "vert staff time from supporting students and maintaining systems. \nWe ask the Commission to maintain meaningful rural discounts, preserve predictable Category \nOne and Category Two budgets, modernize",
+      "evidence_start": 5569,
+      "evidence_end": 5768,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve Category One and Category Two support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Both Category One and Category Two funding are essential for schools to afford switches, wireless equipment, and internal connections.",
+      "evidence_quote": "ategory One \nand Category Two support. A broadband circuit entering a building does not serve students \nunless the school can afford the switches, wireless equipment, and related internal connections",
+      "evidence_start": 4174,
+      "evidence_end": 4373,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals that eliminate or materially reduce E‑Rate support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would transfer substantial connectivity costs to local budgets, burdening rural schools.",
+      "evidence_quote": "the \nCommission to reject proposals that would eliminate or materially reduce E-Rate support. For \nour district, E-Rate is essential infrastructure funding, not a discretionary technology benefit.",
+      "evidence_start": 778,
+      "evidence_end": 974,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The commenter argues that terminating or cutting the E‑Rate program would impose significant financial hardship on rural public schools.",
+      "evidence_quote": "for nearly three decades. Continued support is necessary to protect those investments and \nmeet evolving educational needs. We respectfully urge the Commission to preserve the \nprogram and consider",
+      "evidence_start": 6150,
+      "evidence_end": 6347,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "conditional_or_amend",
+    "consultant_definition": "support",
+    "consultant_registration": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081223",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081223",
+  "filer_raw": "Decorah Community School District",
+  "date_submission": "2026-10-13T20:47:15.095Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e7bfa96bcccc0fd88110f7ea439cdffe72008a2d1a9442a25bd009780569ee25",
+  "params_key": "f87402443f55c9c9e69982908b037836944b7e24643bd02d0e66b39d4e89b931",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

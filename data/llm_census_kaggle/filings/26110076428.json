@@ -1,0 +1,74 @@
+{
+  "summary": "Superintendent Jason Hay urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, and to modernize the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "respectfully urge the Commission to: 1. Reject any proposal to sunset or eliminate the E-Rate program; 2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support",
+      "evidence_start": 3885,
+      "evidence_end": 4078,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must continue to support connectivity and internal network infrastructure.",
+      "evidence_quote": "or the connectivity and internal network infrastructure schools need to provide reliable educational access; and 4. Work with schools and other stakeholders to strengthen and  modernize E-Rate rather",
+      "evidence_start": 4197,
+      "evidence_end": 4396,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential infrastructure for modern public education and must not be eliminated.",
+      "evidence_quote": "Federal Communications Commission (FCC) to  preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 471,
+      "evidence_end": 669,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be modernized rather than reduced in scope.",
+      "evidence_quote": "strengthen and  modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools, public and private, and libraries to build and maintain the connectivity students and",
+      "evidence_start": 4357,
+      "evidence_end": 4552,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076428",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076428",
+  "filer_raw": "Jason Hay",
+  "date_submission": "2026-09-11T15:38:47.426Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "13ae79a2e837211fa823a41e5c30972454ec9fe48694a4273038546a99fbf822",
+  "params_key": "7610e44d2f34e0b1e0056d834f1ceff138d0989bc114e29e8a18280e4f0450db",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

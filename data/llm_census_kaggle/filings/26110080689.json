@@ -1,0 +1,99 @@
+{
+  "summary": "WISD urges the FCC to keep the E‑Rate program unchanged, arguing that cuts would harm broadband access, discount eligibility, Head Start/Pre‑K programs, and local decision‑making. The comment argues that the E‑Rate program has a proven track record of success and should continue to provide connectivity for schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "allow local decision‑making on technology use",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "School districts already have protocols for screen time, content filtering, and cybersecurity, and should retain control over these decisions.",
+      "evidence_quote": "ean students have access to unrestricted screen time or free reign to visit any website or use any application they wish. Districts, educators, and families already make decisions about when and how",
+      "evidence_start": 4956,
+      "evidence_end": 5154,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain existing eligibility criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating or limiting eligibility for Head Start and Pre‑K programs would disproportionately harm low‑income children and families.",
+      "evidence_quote": "have a detrimental impact on Head Start and early pre-kindergarten students and facilities. Changes that eliminate or limit eligibility to Head Start and Pre-K programs in community-based",
+      "evidence_start": 1551,
+      "evidence_end": 1738,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broadband infrastructure support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding covers 50‑95% of projects that maintain and upgrade critical broadband infrastructure for schools.",
+      "evidence_quote": "-Rate funding covers the costs of 50-95% of projects and is used to update and maintain critical infrastructure, such as the countywide fiber network that keeps schools connected to the internet.",
+      "evidence_start": 2782,
+      "evidence_end": 2977,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "protect existing discount formula",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Schools serving high concentrations of low‑income students rely on the current discount structure to remain affordable.",
+      "evidence_quote": "ving higher concentrations of low-income students receive a higher discount rate. Any changes to the eligibility criteria that removes these schools from the E-Rate Program or significantly reduces",
+      "evidence_start": 4333,
+      "evidence_end": 4530,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The E‑Rate program has consistently provided critical broadband funding, and sunsetting it would cut essential services.",
+      "evidence_quote": "es.\nIn Conclusion\nWISD respectfully asks the FCC to preserve the E-Rate program as is and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 5743,
+      "evidence_end": 5940,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "evidence_quality",
+      "claim_kind": "other",
+      "argument": "The E‑Rate program’s track record of success demonstrates that it remains necessary for schools.",
+      "evidence_quote": "f school districts just from 2021-2025, including $11.2 million in Washtenaw County. The program’s track record of success is evidence that the need for the program continues, particularly so",
+      "evidence_start": 6110,
+      "evidence_end": 6301,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080689",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080689",
+  "filer_raw": "Washtenaw Intermediate School District",
+  "date_submission": "2026-10-12T19:36:01.526Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9e67776fa4150a045032a45b6da6a756a9413296bad63013b80ebe121827d07d",
+  "params_key": "4be943fa1a5d7cd6095bf6ce28ecf6d513ff17a60ae796416f35f295c5d0211f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

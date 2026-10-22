@@ -1,0 +1,87 @@
+{
+  "summary": "The superintendent urges the FCC to keep the E‑Rate program intact, oppose any sunset or narrowing of eligibility, preserve funding for connectivity and internal networks, reject screen‑time contingent proposals, and strengthen the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "E‑Rate funding is the recurring cost of keeping a modern network running.",
+      "evidence_quote": "ot represent a one-time build; it is the recurring cost of keeping a modern network running. \n \n\n\nSchool connectivity is not synonymous with unrestricted student screen time. Districts, educators,",
+      "evidence_start": 2808,
+      "evidence_end": 3004,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "roposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria that would leave students without adequate support; \n3. Preserve support",
+      "evidence_start": 3902,
+      "evidence_end": 4099,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "mission (FCC) to preserve and strengthen the E-Rate \nprogram and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict \nE-Rate support for schools and",
+      "evidence_start": 467,
+      "evidence_end": 664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The program should be improved to meet evolving instructional demands.",
+      "evidence_quote": "ess; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in \npublic education. \n5. Reject any proposal that makes funding contingent on the",
+      "evidence_start": 4206,
+      "evidence_end": 4405,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Reject any proposal that makes funding contingent on limiting screen time",
+      "reason_family": "child_safety",
+      "claim_kind": "legal_claim",
+      "argument": "Screen‑time limits are a matter of state and local control, not a condition for federal funding.",
+      "evidence_quote": "sal that makes funding contingent on the fallacy of limiting screen time. \n \nE-Rate has enabled schools to build and maintain the connectivity necessary for students and patrons to \nparticipate fully",
+      "evidence_start": 4365,
+      "evidence_end": 4564,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078728",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078728",
+  "filer_raw": "Dale Olinger",
+  "date_submission": "2026-09-29T17:08:38.579Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "96f5416a8b3bd1c6e8c6ff74d7259d87c7112cbb072bfcea9163f44046864ba2",
+  "params_key": "8cbabd52143cea40763c3948ada940f0feb2b89b5c940c964d60ca4908d212e5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

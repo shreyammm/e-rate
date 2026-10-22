@@ -1,0 +1,101 @@
+{
+  "summary": "NSBA argues that screen‑time limits should not be imposed uniformly; instead, technology use should be evaluated by instructional purpose and local governance should remain the primary decision‑making body. The comment argues that E‑Rate should not be conditioned on screen‑time limits, preserving the distinction between infrastructure support and classroom practice. NSBA urges the FCC to keep E‑Rate’s federal support, preserve local decision‑making authority, and build on the existing CIPA framework for student online safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "preserve local authority over internet safety policy adoption",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Local educational authorities should retain the power to adopt and modify internet safety policies, ensuring decisions reflect community values.",
+      "evidence_quote": "tendents, educators, families, and their communities, are best \npositioned to determine how that connectivity should be used to advance teaching and learning. The \nCommission should preserve both",
+      "evidence_start": 10606,
+      "evidence_end": 10801,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "build on CIPA’s existing framework for online safety",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The current CIPA framework provides a balanced model of federal protection and local implementation, which should be expanded rather than replaced.",
+      "evidence_quote": "s receiving certain E-Rate support while leaving \nimportant policy decisions to local educational authorities. Among other requirements, schools must \nadopt an Internet safety policy, provide",
+      "evidence_start": 11383,
+      "evidence_end": 11574,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain strong federal support for affordable, high‑capacity broadband for schools and libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate’s federal funding is essential to keep broadband affordable for schools and libraries, preventing local budgets from bearing the full cost of connectivity.",
+      "evidence_quote": "pport, school districts would still need to purchase broadband services, maintain \ninternal networks, and periodically upgrade infrastructure, but a greater share of those expenses would fall \non",
+      "evidence_start": 9058,
+      "evidence_end": 9253,
+      "uncertain": false
+    },
+    {
+      "provision_id": "school_supervision_reporting",
+      "position": "support",
+      "requested_action": "Maintain local school board oversight as the primary decision‑making body for technology use",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Local school boards are uniquely positioned to balance educational goals with community values and should retain authority over technology policies.",
+      "evidence_quote": "traditionally been entrusted to states and local school districts rather than prescribed through a federal \ntelecommunications program. \nLocally elected school boards occupy a unique position in",
+      "evidence_start": 1075,
+      "evidence_end": 1269,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Encourage districts to evaluate technology based on instructional purpose and results rather than impose uniform screen‑time limits",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Uniform screen‑time limits ignore the instructional value of technology and should be replaced by purpose‑based evaluation.",
+      "evidence_quote": "istive technology, or enable a homebound student to \nparticipate in classroom learning. Federal policy should therefore encourage districts to evaluate \ntechnology based on its instructional purpose",
+      "evidence_start": 3872,
+      "evidence_end": 4070,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "preserve distinction between E‑Rate infrastructure support and classroom practice",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should remain focused on providing connectivity, not on regulating how schools use technology for instruction.",
+      "evidence_quote": "Conditioning E-Rate support on federally prescribed screen-time or instructional \nrequirements would blur the line between supporting educational infrastructure and regulating classroom \npractice.",
+      "evidence_start": 6264,
+      "evidence_end": 6460,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "support",
+    "school_supervision_reporting": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077997",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077997",
+  "filer_raw": "National School Boards Association",
+  "date_submission": "2026-09-24T00:56:06.271Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d0afb7bbb0685a14414ac18c08a5f99918f9efce65498df53c2bf6eb9012f713",
+  "params_key": "18ceb47097d8344ae7efd91aaf85867a657795845edd0ca2f353ccd56836cc06",
+  "model": "gpt-oss:20b",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

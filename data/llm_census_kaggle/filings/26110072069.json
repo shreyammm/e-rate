@@ -1,0 +1,89 @@
+{
+  "summary": "Massanutten Regional Library urges the FCC to preserve the core E‑Rate program, ensure discount methodology reflects local cost and need, and avoid treating urban and rural libraries the same, while supporting simplification and fraud prevention but opposing any changes that would reduce access or increase administrative burden.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "alternative_proposal",
+      "requested_action": "support simplification and fraud prevention",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The library supports streamlining forms and improving fraud prevention while avoiding changes that increase administrative burden.",
+      "evidence_quote": "and cost-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative",
+      "evidence_start": 4378,
+      "evidence_end": 4572,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The library requests that discount calculations be adjusted to account for local cost variations and high‑need communities.",
+      "evidence_quote": "reflect true local cost and need, and do not disproportionately harm libraries serving high-need, rural, or high-cost communities. • Do not treat urban and rural libraries and library systems the",
+      "evidence_start": 3906,
+      "evidence_end": 4101,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not treat urban and rural libraries the same",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library contends that urban and rural libraries have different missions and user environments, so a one‑size‑fits‑all approach would harm rural patrons.",
+      "evidence_quote": "reflect true local cost and need, and do not disproportionately harm libraries serving high-need, rural, or high-cost communities. • Do not treat urban and rural libraries and library systems the",
+      "evidence_start": 3906,
+      "evidence_end": 4101,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The library argues that eliminating or reducing E‑Rate would severely limit affordable broadband access for its patrons.",
+      "evidence_quote": "schools, we could see systemwide funding reduced as well. 5. RECOMMENDATION • Preserve the core E-Rate program. • Ensure any changes to discount methodology reflect true local cost and need, and do",
+      "evidence_start": 3749,
+      "evidence_end": 3946,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "avoid changes that reduce access or increase administrative burden",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The library urges the FCC to avoid any modifications that would reduce access, increase administrative burden, or limit local flexibility.",
+      "evidence_quote": "d reduce access, increase administrative burden, or limit local flexibility for libraries, patrons, and communities. Respectfully submitted, Derek Hess Trustee, Treasurer Massanutten Regional Library",
+      "evidence_start": 4532,
+      "evidence_end": 4731,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "alternative_proposal",
+    "discount_matrix": "conditional_or_amend",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072069",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072069",
+  "filer_raw": "Massanutten Regional Library",
+  "date_submission": "2026-08-18T18:33:56.136Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1dc0c80ded709410f535d516c36c6fd280e80a18e9ca0b7943a985302e260581",
+  "params_key": "dd74e147eef2f416336d37ff49a7c4c63130a259beae30e3bbed251c6da7fd99",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

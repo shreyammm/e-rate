@@ -1,0 +1,87 @@
+{
+  "summary": "Letter urges FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, and narrowing eligibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access to broadband.",
+      "evidence_quote": "ate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support;",
+      "evidence_start": 4339,
+      "evidence_end": 4535,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and its elimination would directly harm students’ learning opportunities.",
+      "evidence_quote": "h and special education. I am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset,",
+      "evidence_start": 464,
+      "evidence_end": 656,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is basic infrastructure like electricity and transportation, necessary for safe and effective school operations.",
+      "evidence_quote": "system. From our intercoms to our doors for security to our in classroom devices, we cannot function or maintain safety without the network up and running. E-Rate’s success over the past three",
+      "evidence_start": 3731,
+      "evidence_end": 3923,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Work with schools to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries",
+      "evidence_start": 4655,
+      "evidence_end": 4853,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Ensure public schools can continue providing reliable, affordable, and effective connectivity",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Students deserve access to tools needed to learn and succeed regardless of location or family circumstances.",
+      "evidence_quote": "ess of where they live or their family’s financial circumstances. I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and",
+      "evidence_start": 5276,
+      "evidence_end": 5475,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076904",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076904",
+  "filer_raw": "Samantha Sekelsky",
+  "date_submission": "2026-09-17T18:56:34.376Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "c506e589b455eaff95a2ad37ed5c84d7c4f3df32abfbf13cb7f6b3266045a311",
+  "params_key": "fcb7b683e7633251e17e1d53d90cab9ed9f5e42e5380718bc180f83a35c8aa15",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

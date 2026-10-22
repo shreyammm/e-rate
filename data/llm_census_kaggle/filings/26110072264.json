@@ -1,0 +1,89 @@
+{
+  "summary": "Anthony Wayne Local Schools urges the FCC to preserve the core E‑Rate program, maintain broad eligibility, keep CIPA requirements practical, and avoid federal screen‑time limits.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district contends that CIPA filtering costs must remain covered by E‑Rate to avoid financial hardship.",
+      "evidence_quote": "• Maintain a broad, workable definition of “educational purpose” that reflects how school networks are\nactually used for instruction, operations, and student support.\n• Keep CIPA requirements",
+      "evidence_start": 3569,
+      "evidence_end": 3760,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and cost‑effective managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district maintains that broad eligibility is essential for modernizing infrastructure and meeting educational needs.",
+      "evidence_quote": "gram.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n• Preserve E-Rate support for Internet access,",
+      "evidence_start": 3252,
+      "evidence_end": 3451,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating or significantly reducing E‑Rate would severely limit affordable broadband access for students.",
+      "evidence_quote": "gram.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n• Preserve E-Rate support for Internet access,",
+      "evidence_start": 3252,
+      "evidence_end": 3451,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "Support thoughtful improvements, simplification, and fraud prevention",
+      "reason_family": "administrative_burden",
+      "claim_kind": "other",
+      "argument": "The district expresses willingness to consider reforms that reduce administrative burden while preserving access.",
+      "evidence_quote": "ghtful improvements, simplification, and fraud\nprevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or\nlimit local flexibility for schools and",
+      "evidence_start": 4174,
+      "evidence_end": 4366,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits; leave it to local control",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that local control over screen‑time is necessary to address diverse community needs.",
+      "evidence_quote": "tudent support.\n• Keep CIPA requirements practical, technically feasible, and respectful of student privacy.\n• Avoid one-size-fits-all federal screen-time limits. Leave it to local control.\n6.",
+      "evidence_start": 3720,
+      "evidence_end": 3912,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072264",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072264",
+  "filer_raw": "Anthony Wayne Local Schools | Chris Local Hamady",
+  "date_submission": "2026-08-19T19:13:35.250Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "02a5ca3277bc5d53de6aa6c8318fc878e2dc87b516474737a8e798432b4243c4",
+  "params_key": "2d5cc3cc0cd9b13b32a0203ee8f4404832cf03c97b3cdb3a82dad1dd69720618",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

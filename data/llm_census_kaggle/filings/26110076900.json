@@ -1,0 +1,99 @@
+{
+  "summary": "The letter from Notre Dame Academy’s Technology Director urges the FCC to preserve and strengthen the E‑Rate program, reject any sunset or narrowing of eligibility, and maintain funding for safety filtering and digital citizenship training, arguing that reliable broadband is essential for school operations and student learning. The commenter urges the FCC to protect and strengthen the E‑Rate program, arguing that it is essential for reliable, affordable connectivity that supports modern education and equitable access.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "Maintain funding for safety filtering and digital citizenship",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Adequate funding is critical to maintaining internet filtering and digital citizenship training for students, faculty, and staff.",
+      "evidence_quote": "ogy should be used to support learning — decisions that rest squarely in the domain of state and local control. We have policies and safeguards governing student technology use: We enforce continuous",
+      "evidence_start": 3885,
+      "evidence_end": 4084,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain connectivity support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable connectivity is essential for school operations, including door access, emergency notifications, and instructional technology.",
+      "evidence_quote": "ur schools. Before a student even enters our classroom, E-Rate helps provide the network infrastructure that allows our school district to function. When that connectivity is unavailable or",
+      "evidence_start": 932,
+      "evidence_end": 1121,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Proposals that would narrow E‑Rate eligibility or restrict support based solely on geography would leave students without adequate support.",
+      "evidence_quote": "ate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support;",
+      "evidence_start": 5907,
+      "evidence_end": 6103,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must not be sunset or eliminated because schools still rely on it for essential connectivity.",
+      "evidence_quote": "ion (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and",
+      "evidence_start": 468,
+      "evidence_end": 659,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve and strengthen",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must be preserved and strengthened to continue providing reliable broadband for modern education.",
+      "evidence_quote": "ion (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for schools and",
+      "evidence_start": 468,
+      "evidence_end": 659,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E-Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for reliable, affordable connectivity that enables students to participate fully in modern education.",
+      "evidence_quote": "rnal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 6150,
+      "evidence_end": 6348,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "support",
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076900",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076900",
+  "filer_raw": "Jeffery Williams",
+  "date_submission": "2026-09-17T18:50:00.136Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "5aef93560d5e1748881eb5640cab17dd6f1a17106ae76e6254a566a90d5fc208",
+  "params_key": "8e90b592ace4be37d7827002b13cd1e7644958ccdf111b979dbe475c48e2c55a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

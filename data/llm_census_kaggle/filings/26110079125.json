@@ -1,0 +1,89 @@
+{
+  "summary": "KnowledgeWorks urges the FCC to keep the E‑Rate program, maintain its current discount structure, and allow local control over technology use to support competency‑based learning.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address CIPA or BYOD policies.",
+      "evidence_quote": "KnowledgeWorks.org  •  312 Plum Street, Suite 950, Cincinnati, OH 45202  •  P 513.929.4777  •  F 513.929.1122 \nOctober 1, 2026 \n \nMs. Marlene H. Dortch  \nSecretary, Office of the Secretary  \nFederal",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": true
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "continue funding for PCBL",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "E‑Rate funding is essential for schools to implement competency‑based learning practices that improve student outcomes.",
+      "evidence_quote": "y physical and wireless \ntechnology, and students must have ubiquitous and safe internet access throughout the school \nday. The E-Rate program is key to this mission as it helps ensure that schools",
+      "evidence_start": 1407,
+      "evidence_end": 1604,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current discount rates",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Current discount rates, ranging 20‑90%, are tailored to poverty and rural status and ensure equitable broadband access.",
+      "evidence_quote": "ly, we also urge the FCC to maintain the current discount rates for E-Rate. The current E-\nRate program allows districts to receive discounts ranging from 20 to 90 percent on eligible",
+      "evidence_start": 4215,
+      "evidence_end": 4398,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Ending E‑Rate would force districts to cut essential educational programs to cover broadband costs.",
+      "evidence_quote": "KnowledgeWorks, including the \npotential restructuring or sunsetting of critical broadband funding for schools. If E-rate is \nreduced or eliminated, districts and schools across the country will be",
+      "evidence_start": 2029,
+      "evidence_end": 2226,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "allow local control of screen‑time policies",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "alternative_design",
+      "argument": "Local districts should decide on screen‑time and parental opt‑out based on individual student needs, not FCC mandates.",
+      "evidence_quote": "Though KnowledgeWorks supports local decision-making authority regarding technology use, \nincluding decisions about screen time usage and the ability for parents to opt their students out \nof",
+      "evidence_start": 5303,
+      "evidence_end": 5494,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079125",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079125",
+  "filer_raw": "Jonathan Alfuth",
+  "date_submission": "2026-10-02T14:54:56.092Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "36e952c39f2bb7ced68a7152d659314257e9fd69895afcb7968baf9cf037ad53",
+  "params_key": "700f63155ed482c17546e23e8e86dcb4133bd30aef63ccfac8cb7641192b7857",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

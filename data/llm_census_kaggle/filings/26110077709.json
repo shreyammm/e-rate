@@ -1,0 +1,86 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen the E‑Rate program, rejecting any proposal to sunset, eliminate, or unnecessarily narrow eligibility, and calling for continued support for connectivity and modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Unnecessarily narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "afe facilities. I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or",
+      "evidence_start": 3723,
+      "evidence_end": 3921,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain current eligibility criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Current eligibility ensures all students receive necessary connectivity.",
+      "evidence_quote": "necessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and",
+      "evidence_start": 3881,
+      "evidence_end": 4076,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program is essential infrastructure for modern public education and must be preserved.",
+      "evidence_quote": "deral Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 471,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate provides vital funding for maintaining and upgrading school networks.",
+      "evidence_quote": "changing and improvement in the field of network connectivity, it is especially difficult for small rural schools to keep our networks updated.  ERate provides vital funding that allows us to keep",
+      "evidence_start": 2484,
+      "evidence_end": 2680,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "conditional_or_amend",
+      "requested_action": "Modernize E‑Rate program",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "The program should be modernized to meet evolving instructional demands and technology.",
+      "evidence_quote": "stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity",
+      "evidence_start": 4194,
+      "evidence_end": 4391,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077709",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077709",
+  "filer_raw": "Robert E Gound",
+  "date_submission": "2026-09-22T18:18:20.227Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "232d14984eba74675fc6a6f1b178b2668772d730756573b5d75147391daa0916",
+  "params_key": "90a061fe27b16b01bdc3fb82e18eba2f362dd9a7871fc8ccb9b0b03aa3d768bb",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

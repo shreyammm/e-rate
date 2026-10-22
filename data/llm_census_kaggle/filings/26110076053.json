@@ -1,0 +1,89 @@
+{
+  "summary": "The IT Director of Arrupe Jesuit High School urges the FCC to maintain full E‑Rate funding and eligibility, arguing that cuts would jeopardize connectivity for low‑income students and that screen‑time concerns should be addressed separately.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "discussion_no_position",
+      "requested_action": "address CIPA concerns through targeted rule changes",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Screen‑time and CIPA compliance can be handled via existing content‑filtering and acceptable‑use rules, not by reducing connectivity funding.",
+      "evidence_quote": "chools use connectivity, and they can be addressed through content-filtering and acceptable-use requirements already built into CIPA. They are a separate question from whether the connectivity itself",
+      "evidence_start": 1560,
+      "evidence_end": 1759,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would deprive first‑generation and low‑income students of the connectivity they need.",
+      "evidence_quote": "would not reduce our students' need for connectivity — it would simply shift that cost onto a school that has no room in its budget to absorb it. The students E-Rate was built to serve,",
+      "evidence_start": 1108,
+      "evidence_end": 1293,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and fully fund E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting or sunsetting E‑Rate would shift the cost of essential connectivity onto a school that cannot absorb it, endangering low‑income students’ access.",
+      "evidence_quote": "ther essential student services to cover full-price connectivity.\n\nNarrowing eligibility, capping funding, or sunsetting the program, as the NPRM contemplates, would not reduce our students' need for",
+      "evidence_start": 948,
+      "evidence_end": 1147,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain E‑Rate funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E‑Rate funding ensures schools can sustain internet connectivity without diverting funds from other essential services.",
+      "evidence_quote": "ctivity affordable for institutions like Arrupe Jesuit that cannot otherwise sustain it.",
+      "evidence_start": 2330,
+      "evidence_end": 2418,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not condition E‑Rate on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Conditioning funding on screen‑time would cut off infrastructure needed for instruction and cybersecurity, without improving outcomes.",
+      "evidence_quote": "ion from whether the connectivity itself should exist. Conditioning or reducing E-Rate funding based on screen-time policy would not improve student outcomes — it would simply cut off the",
+      "evidence_start": 1719,
+      "evidence_end": 1906,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076053",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076053",
+  "filer_raw": "Matthew Paradise",
+  "date_submission": "2026-09-09T15:49:18.214Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "be87578c99de8572bf6bc8e717166b476c07edd63c6e0b26e80c8625dede3252",
+  "params_key": "1e184031ec192ab3301d25c549f9c16893d6d1dec92b6ed0aec3d53932e2256a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

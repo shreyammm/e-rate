@@ -1,0 +1,75 @@
+{
+  "summary": "Greenburgh Public Library urges the FCC to preserve E‑Rate core funding and support Managed Internal Broadband Services (MIBS) to maintain infrastructure and reduce costs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve core funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library needs continued E‑Rate funding to maintain reliable connectivity for students and the community.",
+      "evidence_quote": "but it is a critical amount for a public library especially when working with a tight yearly operational budget.\n\nGreenburgh Public Library respectfully urges the FCC to preserve E-Rate's core",
+      "evidence_start": 1861,
+      "evidence_end": 2053,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid cuts that reduce access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "child_safety",
+      "argument": "Cuts would increase burden on taxpayers and reduce internet access for students.",
+      "evidence_quote": "urges the FCC to preserve E-Rate's core funding and support for schools and libraries, and to avoid changes that would reduce access or increase burden for the students and communities who depend on",
+      "evidence_start": 2014,
+      "evidence_end": 2212,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "maintain MIBS eligibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "MIBS reduces staff workload and saves the library under $10,000 annually.",
+      "evidence_quote": ". With MIBS the library does not have to hire additional staff to maintain these services - another overall cost savings measure. The yearly cost for MIBS for the library is less than $10,000 a year",
+      "evidence_start": 1391,
+      "evidence_end": 1589,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "continue funding for infrastructure upgrades",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate funding enabled a $100,000 savings on a cabling upgrade that benefits the community.",
+      "evidence_quote": "nnection. It was through the help of the e-rate consultant and the funding itself that we were able to save the Town and taxpayers over $100,000 for this project. That cabling is now 6 years old and",
+      "evidence_start": 769,
+      "evidence_end": 967,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple",
+    "mibs": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079646",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079646",
+  "filer_raw": "Greenburgh Public Library",
+  "date_submission": "2026-10-06T18:36:55.011Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "31f4a29b40a01fcad55e92b830cd6c2008ca93c87d53303892bb3964b3760419",
+  "params_key": "df3509a578b7876e0f7b4bedcc1a7a881027e41ca48ad2984d13ebf27d3b04be",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "The comment urges that the E‑Rate program should not be cut, citing its role in providing internet access during emergencies and for student homework, and argues that limiting student screen time is unrelated to the program’s purpose.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students, especially lower‑income or rural, need Wi‑Fi at school and libraries for homework.",
+      "evidence_quote": "to the public libraries' free wifi.  At schools, much of the homework is online homework.  Students, especially lower income or students from rural areas, need the wifi at school and at public",
+      "evidence_start": 307,
+      "evidence_end": 499,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program should not be cut because it provides essential internet access to schools and libraries.",
+      "evidence_quote": "Please do NOT!!!! cut the E-Rate program.  Schools and libraries provide invaluable internet and digital access to communities.  For example, we recently had severe flooding in Indiana, and those",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate supports community resilience during emergencies, as seen in Indiana flooding.",
+      "evidence_quote": "Please do NOT!!!! cut the E-Rate program.  Schools and libraries provide invaluable internet and digital access to communities.  For example, we recently had severe flooding in Indiana, and those",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "Limiting student screen time has nothing to do with the aims of E‑Rate.",
+      "evidence_quote": "s, need the wifi at school and at public libraries to do their homework.\nLimiting student screen time has nothing to do with these two aims.  Many schools now are limiting phones, but keeping",
+      "evidence_start": 459,
+      "evidence_end": 650,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "Schools limiting phones but keeping Chromebooks shows screen‑time limits do not affect E‑Rate.",
+      "evidence_quote": "ols now are limiting phones, but keeping Chromebooks or equivalent for homework.  Children are not hanging out at the library for three hours or more just to do things on their screens (doubtful",
+      "evidence_start": 610,
+      "evidence_end": 804,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075991",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075991",
+  "filer_raw": "Jennifer Yumibe",
+  "date_submission": "2026-09-09T01:05:56.902Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "14513af3fabfabb02fe3d660f8392c00c02c7f3998d04e9ac0223eb18fd50876",
+  "params_key": "893d417c70110aded80838156d7b4b2db8bbd019e29b3fbd2087b78d165558e6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

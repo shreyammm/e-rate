@@ -1,0 +1,74 @@
+{
+  "summary": "Teacher urges FCC to preserve and strengthen E‑Rate, opposing sunset, narrowing eligibility, and cuts to connectivity support.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "legal_claim",
+      "argument": "The teacher contends that narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;\n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 3105,
+      "evidence_end": 3301,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The teacher emphasizes that schools need ongoing funding for capacity, reliability, and maintenance.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 3261,
+      "evidence_end": 3455,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The teacher argues that eliminating E‑Rate would deprive students of essential broadband access.",
+      "evidence_quote": "basic infrastructure of a modern school system, just like electricity, transportation, and safe facilities.\n\nI therefore respectfully urge the Commission to:\n\n1. Reject any proposal to sunset or",
+      "evidence_start": 2951,
+      "evidence_end": 3145,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "work with schools to strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "The teacher urges collaboration to improve the program rather than reduce its role.",
+      "evidence_quote": "l network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 3415,
+      "evidence_end": 3613,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078039",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078039",
+  "filer_raw": "Thomas Mizell",
+  "date_submission": "2026-09-24T13:04:00.551Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "269acbb33fb0e6f85f3139739c7601d561444774b09990f39e81724f88b9a58b",
+  "params_key": "84c6a43a26db0fb80dbcbf03182bf8ec4f41c27a6a982ba446f70b7df318d799",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

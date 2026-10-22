@@ -1,0 +1,50 @@
+{
+  "summary": "The letter from a local school administrator opposes terminating the E‑Rate program and rejects the FCC’s proposal to impose screen‑time limits on schools that receive E‑Rate funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for continuous, utility‑like broadband connectivity that supports critical educational and operational functions in schools.",
+      "evidence_quote": "on , As a local   member of the American Federation of School Administrators and a longtime educator in  Nashua, New Hampshire , I write in strong opposition to the Commission terminating or",
+      "evidence_start": 152,
+      "evidence_end": 342,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not impose screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "A federal screen‑time mandate would conflict with state‑level policies and undermine the use of essential classroom devices such as Chromebooks.",
+      "evidence_quote": "ve  real-life consequences for students, staff and the community around us. We also call on the Commission to not attempt to exercise authority on local educational matters as proposed in this",
+      "evidence_start": 1547,
+      "evidence_end": 1739,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078459",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078459",
+  "filer_raw": "Leslie Anton",
+  "date_submission": "2026-09-27T17:30:51.443Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "797371dd99654107ee8d183eed0ba7012cb8b53254815e225ee46dc2d4ff9111",
+  "params_key": "47a839a5d3251825f166c6e03095755530d44c0095b24088dbae613d01a18616",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

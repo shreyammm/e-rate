@@ -1,0 +1,50 @@
+{
+  "summary": "Hamilton School District argues that E‑Rate funding is essential for rural broadband infrastructure, classroom technology, and compliance with federal testing mandates, and urges the FCC to maintain full support for these core services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain full support for core services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate provides 70% of the cost for high‑speed internet, fiber, and Wi‑Fi, enabling modern instruction and equitable access for rural students.",
+      "evidence_quote": "the\npast three years, the E-Rate program has provided $274,352.00 in direct infrastructure support to our\nDistrict. This funding covers 70% of the cost for some of our core connectivity and technical",
+      "evidence_start": 462,
+      "evidence_end": 661,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not reduce or eliminate E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing E‑Rate would create a $91,450 annual shortfall that would force cuts to essential connectivity and classroom personnel, undermining federal testing requirements.",
+      "evidence_quote": "federal education policy requires online testing, while proposed federal communications\ncommission policy undermines the very infrastructure needed to run it.\nImpact on Our Local General Fund:\nIf",
+      "evidence_start": 1856,
+      "evidence_end": 2051,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081372",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081372",
+  "filer_raw": "Hamilton School District #3",
+  "date_submission": "2026-10-14T00:34:41.267Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "5e58ff82d3c7ec7124dafd39867990760e27d8da9d54cfc5c4d7107142081a8c",
+  "params_key": "b0d1c53d171130cff3b9ef1ffcf65a2b6419a057fee4156b3043a7a6333ac33a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

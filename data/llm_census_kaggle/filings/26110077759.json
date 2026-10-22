@@ -1,0 +1,86 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset or unnecessary narrowing of eligibility, and argues that broadband is essential infrastructure whose loss would impose significant financial burdens on the district.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Unnecessary narrowing of eligibility would leave students without adequate support.",
+      "evidence_quote": "s that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the",
+      "evidence_start": 3732,
+      "evidence_end": 3925,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network infrastructure support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate support is needed to maintain the district’s backbone network for essential operations.",
+      "evidence_quote": "equate support; Preserve support for the connectivity and inte rnal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to",
+      "evidence_start": 3885,
+      "evidence_end": 4076,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to ensure reliable broadband for students.",
+      "evidence_quote": "cations Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would elimin ate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for",
+      "evidence_start": 468,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate to avoid $5 million cost burden",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E‑Rate would force the district to absorb roughly $5 million in costs, impacting other priorities.",
+      "evidence_quote": "work infrastructure and connectivity our district relies on every day, allowing us to direct more local dollars toward classrooms and student services. Without that support, we would have to absorb",
+      "evidence_start": 2171,
+      "evidence_end": 2368,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "maintain broadband as essential infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Broadband is part of the basic infrastructure of a modern school system, comparable to electricity and transportation.",
+      "evidence_quote": "rspective as  a school business manager, reliable broadband is part of the basic infrastructure of a modern school system, just like electricity, transportation, and safe facilities. I therefore",
+      "evidence_start": 3421,
+      "evidence_end": 3615,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077759",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077759",
+  "filer_raw": "Frank Williams",
+  "date_submission": "2026-09-22T20:42:21.415Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f795f9591338253ca95d611db939913e26532f087e025592fb613a615b1289e2",
+  "params_key": "ee5fffcd38bd3c4fc131e17d8ef5554ce281abfbc3575e2c079fb380a07679be",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

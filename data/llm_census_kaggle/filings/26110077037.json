@@ -1,0 +1,74 @@
+{
+  "summary": "Parent opposes generative AI on school-issued devices, demands opt‑out rights, and supports continued E‑Rate funding for schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "Require opt‑out rights for parents on school‑issued devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Parents should be able to opt their children out of generative AI on school devices to protect their privacy and learning environment.",
+      "evidence_quote": "Last year, I opted my children out of their school-issued Chromebooks after Gemini began speaking to my middle schooler, unprompted. It offered to do his homework for him. As a therapist in private",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "Prohibit generative AI access on school devices without parental consent",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Generative AI should not be available to children on school devices without explicit parental consent.",
+      "evidence_quote": "e fundamental issue: these devices still provide access to generative AI, and my children are too young for these products. I do not consent to my children using them, yet I have no meaningful",
+      "evidence_start": 774,
+      "evidence_end": 966,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The author expresses concern about technology in schools but does not propose a specific policy change beyond opt‑out.",
+      "evidence_quote": "f the most consequential mistakes we can make for our children and our future as a country.",
+      "evidence_start": 1238,
+      "evidence_end": 1329,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Maintain E‑Rate funding for schools",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Schools need continued E‑Rate resources to provide quality education.",
+      "evidence_quote": "ren using them, yet I have no meaningful ability to opt out.\n\nI do not want funding taken away from our public schools. I want our schools to have the resources they need to educate children well.",
+      "evidence_start": 926,
+      "evidence_end": 1122,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "conflicting_or_multiple",
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077037",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077037",
+  "filer_raw": "Julie Frumin",
+  "date_submission": "2026-09-18T21:28:54.179Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9d54b16338261beb83793312bc62a0204af7b36a195cee00ecde0e08ebefa46b",
+  "params_key": "ed8f29de3c0082f9282e3a08bf11e8231b2ed09a4eb50fc33626baa82a08537b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

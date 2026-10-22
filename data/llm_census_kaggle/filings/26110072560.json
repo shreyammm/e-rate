@@ -1,0 +1,86 @@
+{
+  "summary": "The letter urges the FCC to preserve E‑Rate funding, arguing that the program is essential for libraries and schools to provide reliable broadband, especially for low‑income and rural communities, and that cuts would force cuts to core services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue broad eligibility for libraries and schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables libraries to provide essential services to nearly 700,000 residents in Massachusetts.",
+      "evidence_quote": "communities served by this cooperative, E-Rate has been—and remains—a lifeline. The libraries within the cooperative’s service area provide essential services to nearly 700,000 residents. Continued",
+      "evidence_start": 1256,
+      "evidence_end": 1453,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain discounts for high‑speed broadband",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The program’s discount structure is critical for keeping broadband affordable for underserved households.",
+      "evidence_quote": "ical connectivity services were reduced, limited to rural communities, or eliminated entirely, the resulting impact on local budgets would likely lead to cuts in personnel, services, and programming,",
+      "evidence_start": 4054,
+      "evidence_end": 4253,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid terminating E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Termination would force libraries to divert resources from programs and services to maintain basic connectivity.",
+      "evidence_quote": "ly cannot fulfill their missions without dependable Internet access. If the FCC terminates or significantly limits E-Rate funding, libraries will be forced to divert resources from programs and",
+      "evidence_start": 3588,
+      "evidence_end": 3781,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent significant reduction in E‑Rate discounts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Significant reductions would destabilize local budgets and cut personnel, services, and programming.",
+      "evidence_quote": "ical connectivity services were reduced, limited to rural communities, or eliminated entirely, the resulting impact on local budgets would likely lead to cuts in personnel, services, and programming,",
+      "evidence_start": 4054,
+      "evidence_end": 4253,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting or limiting E‑Rate would disproportionately harm low‑income communities that rely on libraries for internet access.",
+      "evidence_quote": "in personnel, services, and programming, to the detriment of library users and students. The loss of E-Rate funding would be destabilizing and would disproportionately affect lower-income",
+      "evidence_start": 4213,
+      "evidence_end": 4400,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072560",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072560",
+  "filer_raw": "Deborah Conrad",
+  "date_submission": "2026-08-21T11:30:28.692Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "15d567e1a80bda70c14d25d312755f2dc79a55404d245c9864e608674325ca5e",
+  "params_key": "cbd33b1419b3e458d3bf96b9d015d2e1db58279d43006122fa6a73edb390befc",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

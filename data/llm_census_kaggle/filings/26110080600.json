@@ -1,0 +1,62 @@
+{
+  "summary": "Madison District Public Schools urges the FCC to preserve the E‑Rate program, arguing that cuts would jeopardize essential connectivity and equitable educational opportunities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility for essential connectivity services",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables the district to provide essential internet and internal network infrastructure necessary for modern public education.",
+      "evidence_quote": "upport for preserving the federal E-Rate program.\nE-Rate is an essential funding resource that enables our district to provide reliable, affordable internet connectivity and maintain the network",
+      "evidence_start": 153,
+      "evidence_end": 347,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district believes that maintaining E‑Rate funding is essential to provide reliable, affordable internet connectivity for students and staff.",
+      "evidence_quote": "I am submitting this comment on behalf of Madison District Public Schools, which serves approximately 1,000 students in Michigan, to express our strong support for preserving the federal E-Rate",
+      "evidence_start": 0,
+      "evidence_end": 193,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid reductions in E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E‑Rate support would create significant financial challenges, forcing the district to divert resources from instructional programs and student services.",
+      "evidence_quote": "a substantial amount in E-Rate support. Reducing or eliminating this funding would create significant financial challenges, potentially forcing our district to redirect resources from instructional",
+      "evidence_start": 614,
+      "evidence_end": 811,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080600",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080600",
+  "filer_raw": "Patricia Perry",
+  "date_submission": "2026-10-12T15:31:30.568Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "54fece3add038c95e308ef97e957f51e22336e5cb83d5b53da18f9038b400e1a",
+  "params_key": "48cbae91e47e77ba9b8cfecd123dbf14388bcdf866762892101760c013ab2ca9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

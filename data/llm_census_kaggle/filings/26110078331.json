@@ -1,0 +1,87 @@
+{
+  "summary": "South Bay Union School District urges the FCC to preserve the E‑Rate program, oppose any restrictions that would shift costs to local budgets, and continue supporting internet services and modernization efforts.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Prevent shifting connectivity costs to local districts",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district notes that without E‑Rate support, recurring maintenance and upgrade expenses would burden the general fund.",
+      "evidence_quote": "forward. If E-Rate funding is reduced or \neliminated, these costs do not go away. They move to local school district budgets and must compete \nwith other instructional and operational priorities.",
+      "evidence_start": 1854,
+      "evidence_end": 2049,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Avoid restricting eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district contends that narrowing eligible equipment and services would increase local costs and limit necessary infrastructure upgrades.",
+      "evidence_quote": "hools and libraries; \nAvoid changes that would unnecessarily restrict eligibility and shift existing connectivity costs to local \nschool districts; \nContinue supporting eligible internet services and",
+      "evidence_start": 2167,
+      "evidence_end": 2366,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Continue supporting eligible internet services and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The district maintains that E‑Rate funding is essential for maintaining reliable networks that support core school operations.",
+      "evidence_quote": "upporting eligible internet services and the internal network infrastructure necessary to \noperate modern schools; and \nContinue working with school districts and other stakeholders to improve and",
+      "evidence_start": 2326,
+      "evidence_end": 2522,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating or reducing E‑Rate would shift essential connectivity costs to local budgets, undermining fiscal stability.",
+      "evidence_quote": "irector of Fiscal Services for South Bay Union School \nDistrict in Imperial Beach, California. \nI am writing to ask the Federal Communications Commission to preserve the E-Rate program and the",
+      "evidence_start": 308,
+      "evidence_end": 500,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Continue working with stakeholders to modernize the program",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "other",
+      "argument": "The district calls for ongoing collaboration to improve and modernize E‑Rate to meet evolving educational needs.",
+      "evidence_quote": "ts and other stakeholders to improve and modernize the program \nwhile recognizing the ongoing cost of maintaining reliable networks. \n\n\nE-Rate has allowed our District to make necessary investments",
+      "evidence_start": 2482,
+      "evidence_end": 2679,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078331",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078331",
+  "filer_raw": "South Bay Union School District",
+  "date_submission": "2026-09-25T16:47:34.117Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c2431a3b2e3d4990107dc96308b75ffe92288cf674490c72a8d07f0051c9748b",
+  "params_key": "8b63cc1e5807ebbee79a3831e624e7232f0d90d6eb3a64cefc740001b4cd8bc3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

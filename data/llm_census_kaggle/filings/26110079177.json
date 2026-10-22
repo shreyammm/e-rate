@@ -1,0 +1,100 @@
+{
+  "summary": "The Rockwood School District’s Chief Information Officer urges the FCC to preserve and strengthen E‑Rate, opposing any sunset, reduction, or unnecessary narrowing of eligibility, and calling for continued support for internal network infrastructure and modernization of the program. The comment urges the FCC to preserve the E‑Rate program and not sunset it, arguing that E‑Rate is essential for reliable, affordable connectivity that supports modern education and AI literacy.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and undermine equitable access.",
+      "evidence_quote": "roposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on geography or other criteria that would leave students without adequate support; \n3. Preserve support",
+      "evidence_start": 4968,
+      "evidence_end": 5165,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and its elimination would impose a direct financial burden on districts.",
+      "evidence_quote": "ols. \n \nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen \nthe E-Rate program and to reject any proposal that would eliminate, sunset, substantially \nreduce,",
+      "evidence_start": 461,
+      "evidence_end": 660,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is essential for reliable, affordable connectivity that enables students to participate fully in modern education.",
+      "evidence_quote": "eography or other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to \nprovide reliable",
+      "evidence_start": 5066,
+      "evidence_end": 5256,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Preserve support for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Internal network infrastructure is foundational to safe and effective school operations and requires ongoing funding.",
+      "evidence_quote": "ne-time build; it is the recurring \ncost of keeping a modern network running. Networks also need to be maintained and \nupgraded to provide a quality user experience that is also secure. Continued",
+      "evidence_start": 3418,
+      "evidence_end": 3613,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter discusses the importance of reliable broadband but does not propose a specific new policy beyond preserving the current program.",
+      "evidence_quote": "Federal Communications Commission \n45 L Street NE \nWashington, DC 20554 \n \nRE: WC Docket Nos. 26-133, 13-184, 21-93, and 21-455 — Notice of Proposed Rulemaking \nand Further Notice of Proposed",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Work with schools to strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Modernizing the program will improve efficiency and better meet evolving instructional demands.",
+      "evidence_quote": "ess; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than \nreduce its role in public education.",
+      "evidence_start": 5272,
+      "evidence_end": 5410,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "mibs": "support",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079177",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079177",
+  "filer_raw": "Rockwood School District",
+  "date_submission": "2026-10-02T20:59:33.489Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c13e4ebc0e624940d04e68c249b1cd69f5b9a7c3bebac45d29944eb71cf5ae53",
+  "params_key": "978b5e9c2a1df76ac1b4e96fac136d8e209ef4c202de869289d049d2c9ca32e6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

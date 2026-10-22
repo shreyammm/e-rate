@@ -1,0 +1,99 @@
+{
+  "summary": "Almont Community Schools argues that E‑Rate is essential for maintaining reliable, affordable connectivity and supporting all aspects of school operations, and that weakening or restricting the program would harm student learning and safety. Almont Community Schools urges the FCC to preserve core E‑Rate services, especially special construction, dark fiber, and Head Start/Pre‑K eligibility, while opposing age‑based cost allocation and any reduction in funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funding is essential for maintaining reliable, affordable connectivity that supports teaching, learning, and safety in schools.",
+      "evidence_quote": "Rulemaking (NPRM) and Further Notice of Proposed Rulemaking\n(FNPRM).¹\nE-Rate is a critical program that helps schools provide reliable, affordable connectivity for teaching,\nlearning, operations,",
+      "evidence_start": 632,
+      "evidence_end": 827,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve eligibility for Head Start and Pre‑K programs",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Head Start and Pre‑K programs rely on the same dependable network infrastructure that supports the rest of the school.",
+      "evidence_quote": "gy and capacity\nrequirements continue to evolve.\nHEAD START AND PRE-K\nHead Start and Pre-K programs are an important part of the educational services provided by Almont\nCommunity Schools. These",
+      "evidence_start": 5944,
+      "evidence_end": 6137,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid cost allocation based on student age",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Cost‑allocation based on age would force districts to separate or cost‑allocate shared network expenses.",
+      "evidence_quote": "s that would\nforce districts to separate or cost-allocate shared network expenses based on the age of the students being\nserved.\n4. OPERATIONAL IMPACT\nIf E-Rate funding were reduced or eliminated,",
+      "evidence_start": 6407,
+      "evidence_end": 6603,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "avoid unnecessary cost allocation for Head Start or Pre‑K classrooms",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Many Head Start and Pre‑K classrooms are integrated into existing school networks and rely on the Internet for direct instruction.",
+      "evidence_quote": "• Avoid unnecessary cost allocation for Head Start or Pre-K classrooms, as many are integrated into\nexisting school networks and all have teachers and staff who rely on the Internet for direct",
+      "evidence_start": 7496,
+      "evidence_end": 7688,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district would face increased operating costs and potential elimination of essential resources if E‑Rate funding were reduced or eliminated.",
+      "evidence_quote": "Rate funding were reduced or eliminated, Almont Community Schools would face increased\noperating costs to maintain the reliable internet connectivity and network infrastructure our students and\nstaff",
+      "evidence_start": 6563,
+      "evidence_end": 6762,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Special construction remains essential for delivering connectivity where students and staff actually use it.",
+      "evidence_quote": "n should not be limited or eliminated as the support for special construction\nremains important. Schools must continually expand and improve network infrastructure to meet\nincreasing bandwidth",
+      "evidence_start": 5493,
+      "evidence_end": 5685,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080884",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080884",
+  "filer_raw": "Almont Community Schools",
+  "date_submission": "2026-10-13T13:33:15.205Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "abd49a9ac8dbd2cb844915f955eb740001d71f322e77d86b06a4f5e4bbbc97e0",
+  "params_key": "bd18e72844c9659bea8e6c825e6133d4d3f5515296a9cbf643e7c17f384b5d24",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

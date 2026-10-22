@@ -1,0 +1,50 @@
+{
+  "summary": "The Dallas Center‑Grimes School District supports continued E‑Rate funding, cites significant financial impact if the program were discontinued, and indicates willingness to comply with screen‑time restrictions while opposing loss of the discount program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Discontinuing E‑Rate would impose over one million dollars in additional costs on the district’s budget.",
+      "evidence_quote": "nnectivity, and with price increases, we anticipate a total impact on our budget of over one million dollars if the e-rate program was to be discontinued. Additionally, Iowa has already passed",
+      "evidence_start": 473,
+      "evidence_end": 665,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "allow screen‑time restrictions",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district is prepared to comply with screen‑time restrictions imposed by the FCC.",
+      "evidence_quote": "d. Additionally, Iowa has already passed screentime restrictions and parental choice options in state law. We are prepared to handle any similar requirements put in place by the FCC, but we can't",
+      "evidence_start": 625,
+      "evidence_end": 820,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079566",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079566",
+  "filer_raw": "Steven Hopper",
+  "date_submission": "2026-10-06T13:37:17.433Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b81d1112ae07197980f68070ba915fdeb519da05992664ce843281f38b4d10ff",
+  "params_key": "364ee58c91c885863d1973ed109ceac97b3bcf5227733e0999d0cd0133d2cb31",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

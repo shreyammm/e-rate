@@ -1,0 +1,89 @@
+{
+  "summary": "Marion Public Library urges the FCC to preserve the core E‑Rate program and to keep its current discount methodology, eligibility scope, consortium rules, and CIPA requirements practical and respectful of privacy.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "Keep CIPA requirements practical and respectful of patron privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "privacy_expression",
+      "argument": "The library requests that CIPA requirements remain technically feasible and respect patron privacy.",
+      "evidence_quote": "or non-filing members to\n\n\njeopardize an entire consortium.\n• Keep CIPA requirements practical, technically feasible, and respectful of patron privacy.\n6. CLOSING\nMarion Public Library respectfully",
+      "evidence_start": 4656,
+      "evidence_end": 4853,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Maintain current discount methodology",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "The library contends that discount methodology must reflect true local cost and need and not disproportionately harm high‑need, rural communities.",
+      "evidence_quote": "ON\n• Preserve the core E-Rate program.\n• Ensure any changes to discount methodology reflect true local cost and need, and do not\ndisproportionately harm libraries serving high-need, rural, or",
+      "evidence_start": 4033,
+      "evidence_end": 4224,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Keep broad definition of eligible library use",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The library maintains that a broad, workable definition of eligible library use is necessary to serve public access, digital resources, workforce development, and daily operations.",
+      "evidence_quote": "d user\nenvironments differ.\n• Maintain a broad, workable definition of eligible library use that reflects how library networks actually\nserve public access, digital resources, workforce development,",
+      "evidence_start": 4342,
+      "evidence_end": 4540,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library argues that ending E‑Rate would severely reduce its ability to provide affordable broadband and public Wi‑Fi services.",
+      "evidence_quote": "s.\nWe would have no choice but to reduce spending on collections, programs, or other community services\nto cover these additional expenses.\n5. RECOMMENDATION\n• Preserve the core E-Rate program.\n•",
+      "evidence_start": 3878,
+      "evidence_end": 4073,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Make consortium Form 479 requirements workable",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The library urges that consortium rules should not allow delayed or non‑filing members to jeopardize an entire consortium.",
+      "evidence_quote": "igital resources, workforce development, lifelong learning, and daily operations.\n• Make consortium Form 479 requirements workable and do not allow delayed or non-filing members to\n\n\njeopardize an",
+      "evidence_start": 4500,
+      "evidence_end": 4696,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "discount_matrix": "conditional_or_amend",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "mibs": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077450",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077450",
+  "filer_raw": "Tracy Whitney",
+  "date_submission": "2026-09-21T18:23:13.116Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4a4b9e542850b2a06fceada12b0549efcb082d5b4f6697cf81e6026d9a4d82c5",
+  "params_key": "3633ccb3a5a4d8fc12a2c796f7424dff933a0381e4adc70fa3fb0808aa7b6041",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

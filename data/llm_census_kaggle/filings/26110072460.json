@@ -1,0 +1,102 @@
+{
+  "summary": "The Northeast Georgia Regional Library System urges the FCC to preserve the core E‑Rate program, maintain broad eligibility for special construction and dark fiber, avoid blanket screen‑time limits, keep CIPA requirements practical, and protect applicant choice while tightening oversight. The library director urges the FCC to avoid any E‑Rate changes that would reduce access, increase administrative burden, or limit local flexibility for libraries and communities.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "oppose",
+      "requested_action": "Keep CIPA requirements practical and respectful of patron privacy",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "alternative_design",
+      "argument": "The library system believes overly stringent CIPA rules would burden libraries and infringe on privacy.",
+      "evidence_quote": "learning, and daily operations. •  Avoid one-size-fits-all federal screen-time limits. Leave it to local control. •  Keep CIPA requirements practical, technically feasible, and respectful of patron",
+      "evidence_start": 4504,
+      "evidence_end": 4701,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "Preserve applicant choice in obtaining qualified E‑Rate support while adopting clear oversight rules",
+      "reason_family": "administrative_burden",
+      "claim_kind": "alternative_design",
+      "argument": "The library system supports maintaining access to experienced consultants and fair oversight to prevent misconduct.",
+      "evidence_quote": "cally feasible, and respectful of patron privacy. •  Preserve applicant choice in obtaining qualified E-Rate support while adopting clear, practical oversight rules that target misconduct — many",
+      "evidence_start": 4661,
+      "evidence_end": 4855,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library system argues that eliminating or reducing E‑Rate would severely limit broadband access and operational efficiency for rural patrons.",
+      "evidence_quote": "checking out books and other materials, making service to patrons less efficient. 4. RECOMMENDATION •  Preserve the core E-Rate program. •  Preserve eligibility for special construction, dark fiber,",
+      "evidence_start": 3564,
+      "evidence_end": 3762,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "avoid changes that reduce access, increase burden, or limit flexibility",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The library director opposes any E‑Rate changes that would reduce access, increase administrative burden, or limit local flexibility for libraries and communities.",
+      "evidence_quote": "ic Wi-Fi, maintenance, and cost-effective network solutions. We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access,",
+      "evidence_start": 6150,
+      "evidence_end": 6343,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The library system contends that local control is necessary to set appropriate screen‑time policies.",
+      "evidence_quote": "kable definition of eligible library use that reflects how library networks actually serve public access, digital resources, workforce development, lifelong learning, and daily operations. •  Avoid",
+      "evidence_start": 4347,
+      "evidence_end": 4544,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Maintain eligibility for special construction, dark fiber, and self‑provisioned networks",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library system maintains that these services are essential for meeting community needs and should remain eligible.",
+      "evidence_quote": "ty for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. •  Preserve E-Rate support for Internet access, internal connections,",
+      "evidence_start": 3722,
+      "evidence_end": 3918,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "oppose",
+    "consultant_definition": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose",
+    "screen_time_condition": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072460",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072460",
+  "filer_raw": "Northeast Georgia Regional Library System (Ne GA Rls)",
+  "date_submission": "2026-08-20T18:39:04.883Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cfeff38646022d51aabbc63fe4c454c8dd50ec88c00779b9ff58ae9acff3fe7a",
+  "params_key": "315f1a6a8bf8fbde99a1fa268fd7bdf7c6c07a0374d233ad2084bfc22cd242c3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

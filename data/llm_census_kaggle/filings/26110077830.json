@@ -1,0 +1,62 @@
+{
+  "summary": "A high‑school teacher urges the FCC to keep the E‑Rate program intact, arguing that cutting or sunsetting the program would harm students—especially those from under‑privileged backgrounds—by denying them essential internet access and digital skills.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue supporting E‑Rate as essential for internet access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is the key mechanism that provides reliable broadband to schools and libraries, enabling students to develop critical digital skills.",
+      "evidence_quote": "users of the internet. Without reliable broadband access, which millions of children have access through only because of the E-Rate program, we would be leaving them to learn some of the most",
+      "evidence_start": 473,
+      "evidence_end": 664,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting or sunsetting E‑Rate would deny under‑privileged students essential internet access and digital skills.",
+      "evidence_quote": "s Commission to preserve and protect the E-Rate program and to oppose any proposal that would reduce, limit, or sunset this vital source of support for schools and libraries that millions of students",
+      "evidence_start": 155,
+      "evidence_end": 354,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose reduction, limitation, or sunset of E‑Rate",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Any proposal to reduce, limit, or sunset E‑Rate would undermine educational opportunity for millions of students.",
+      "evidence_quote": "ation system. E-Rate is how schools gain access to it.\n\nI strongly urge the Commission to reject any proposal that would reduce, limit, or sunset E-Rate funding and instead continue supporting this",
+      "evidence_start": 1876,
+      "evidence_end": 2073,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077830",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077830",
+  "filer_raw": "Colin Keppner",
+  "date_submission": "2026-09-23T14:27:17.296Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ce33641a1299a52ecae9aabf2bfffb9eb3fbf7f793ac2f9ceed150a7ae1de4d3",
+  "params_key": "d121833726af461ea65998278edbabce1cd782bc038bdf6ed3919bb36c61a4c2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

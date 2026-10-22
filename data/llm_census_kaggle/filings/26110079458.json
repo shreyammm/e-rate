@@ -1,0 +1,89 @@
+{
+  "summary": "Sherwood Montessori argues for preserving the core E‑Rate program and related provisions while limiting changes that would reduce access or increase burden.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "CIPA should remain feasible and not overly burdensome to schools.",
+      "evidence_quote": "n of “educational purpose” that reflects how school networks are  actually used  for instruction, operations, and student support. • Keep CIPA requirements practical, technically feasible, and",
+      "evidence_start": 3751,
+      "evidence_end": 3943,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "administrative_burden",
+      "claim_kind": "other",
+      "argument": "The comment does not explicitly advocate a specific consultant oversight policy.",
+      "evidence_quote": "nts practical, technically feasible, and respectful of student privacy. • Preserve applicant choice in obtaining qualified E-Rate support while adopting clear, practical oversight rules that target",
+      "evidence_start": 3903,
+      "evidence_end": 4100,
+      "uncertain": true
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Discounts must be based on local cost to avoid harming high‑need districts.",
+      "evidence_quote": "s, Wi-Fi, installation, maintenance, and related network services that schools rely on every day. • Ensure any changes to discount methodology reflect true local cost and need, and do not",
+      "evidence_start": 3445,
+      "evidence_end": 3632,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The school needs E‑Rate funding to maintain affordable broadband and cannot afford to lose it.",
+      "evidence_quote": "and quite  possibly cause our school to close. 5. RECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal",
+      "evidence_start": 3131,
+      "evidence_end": 3328,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "These services are essential for the school’s network infrastructure and should remain eligible.",
+      "evidence_quote": "and quite  possibly cause our school to close. 5. RECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal",
+      "evidence_start": 3131,
+      "evidence_end": 3328,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "consultant_registration": "discussion_no_position",
+    "discount_matrix": "conditional_or_amend",
+    "erate_sunset": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079458",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079458",
+  "filer_raw": "Michelle Yezbick",
+  "date_submission": "2026-10-05T19:04:09.313Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "597ccffd9df4a67ecabea517acd07f0c17f8e3dc671736bede29c08b1047977e",
+  "params_key": "d26eb43eea364fdda6ea3e50348cac8684dd5251bb9de30992111868a4db6e43",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

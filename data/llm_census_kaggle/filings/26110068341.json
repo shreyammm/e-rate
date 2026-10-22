@@ -1,0 +1,89 @@
+{
+  "summary": "Golden Eagle Charter School supports continued E‑Rate funding as a technology infrastructure program, opposes expanding eligibility beyond broadband infrastructure, opposes additional administrative burdens, and supports existing CIPA requirements.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "oppose",
+      "requested_action": "avoid additional administrative burdens",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Additional reporting requirements divert limited school resources away from student services and instruction.",
+      "evidence_quote": "learning, and online resources.\n\nWe also encourage the FCC to avoid creating additional administrative burdens that increase compliance costs without directly improving student connectivity or",
+      "evidence_start": 1711,
+      "evidence_end": 1903,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "maintain existing CIPA requirements",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Existing CIPA requirements already provide schools with flexibility to implement age‑appropriate filtering and monitoring.",
+      "evidence_quote": "tion.\n\nGolden Eagle Charter School fully supports appropriate internet safety measures and compliance with the Children's Internet Protection Act (CIPA). Existing requirements already provide schools",
+      "evidence_start": 2022,
+      "evidence_end": 2221,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address consultant definitions.",
+      "evidence_quote": "Golden Eagle Charter School strongly supports the continued availability of the E-Rate program as a technology infrastructure program whose primary purpose is to ensure equitable access to reliable",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not expand eligibility beyond telecommunications and internet infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Expanding eligibility to include screen‑time policies or instructional practices would fundamentally change the purpose of the program.",
+      "evidence_quote": "ommunicate with teachers, participate in virtual instruction, complete state assessments, and receive educational support.\n\nWe are concerned that expanding E-Rate eligibility requirements beyond",
+      "evidence_start": 627,
+      "evidence_end": 821,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment does not address sunset provisions.",
+      "evidence_quote": "Golden Eagle Charter School strongly supports the continued availability of the E-Rate program as a technology infrastructure program whose primary purpose is to ensure equitable access to reliable",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "oppose",
+    "cipa_byod": "support",
+    "consultant_definition": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110068341",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110068341",
+  "filer_raw": "Shelly Blakely",
+  "date_submission": "2026-07-29T22:11:51.846Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a19a80c1b96891a436f76f3192ea5975f99e30305a7f951a20cd0a6a8c9557f9",
+  "params_key": "1921028cf1299304b36c4759128f07ce644f575fe5ab341752cc5ec31bf8a16b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

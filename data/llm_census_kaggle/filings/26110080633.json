@@ -1,0 +1,110 @@
+{
+  "summary": "Jewell School District 8 argues that E‑Rate funding is essential to maintain and upgrade its broadband and networking infrastructure, and that any reduction would jeopardize student instruction and safety. Jewell School District 8 urges the FCC to preserve the E‑Rate program, arguing it is essential for maintaining secure, affordable connectivity for low‑income and geographically isolated schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue eligibility for rural, Title I schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district’s remote location and limited ISP options make E‑Rate eligibility critical for maintaining reliable connectivity.",
+      "evidence_quote": "n and surrounding terrain, Jewell School District 8 currently has access\nto only one terrestrial Internet Service Provider (ISP) capable of providing service to our school.\nWhile satellite internet",
+      "evidence_start": 2002,
+      "evidence_end": 2199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current discount rates",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district relies on an 80% discount to fund critical broadband and networking upgrades that directly support student instruction.",
+      "evidence_quote": "rdware.\nUnder the E-Rate program, Jewell School District 8 qualifies for an 80% Category One discount\nrate for high-speed internet access and an 80% Category Two discount rate for",
+      "evidence_start": 3242,
+      "evidence_end": 3421,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain funding for UPS and power protection",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "UPS devices funded by E‑Rate protect expensive networking hardware from frequent power outages.",
+      "evidence_quote": "nd electrical grid instability.\nCategory Two support for Uninterruptible Power Supply (UPS) devices is critical to\nsafeguarding the expensive networking hardware, core switches, and wireless",
+      "evidence_start": 4789,
+      "evidence_end": 4979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for wireless infrastructure upgrades",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate Category Two support enabled the district to replace aging wireless infrastructure, preserving capital for student programs.",
+      "evidence_quote": "g that remains directly in our operating budget for student instruction.\n• Replacing Aging Wireless Infrastructure: E-Rate Category Two support enabled our\ndistrict to completely replace our aging,",
+      "evidence_start": 5249,
+      "evidence_end": 5446,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E‑Rate support would force the district to divert scarce operational revenue away from direct student instruction.",
+      "evidence_quote": "ved on infrastructure and broadband is a dollar\npreserved directly for classroom instruction, academic support, teachers, and basic student needs.\nIf E-Rate support were reduced or lost, our district",
+      "evidence_start": 4001,
+      "evidence_end": 4200,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is an indispensable lifeline that enables small, rural, and Title I districts to maintain secure, affordable connectivity for students.",
+      "evidence_quote": "st the Commission to preserve the E-Rate program\nconsistent with Congress's original intent by rejecting proposals that narrow eligibility, reduce\nfunding, or impose conditions unrelated to",
+      "evidence_start": 6624,
+      "evidence_end": 6813,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current eligibility and funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Without E‑Rate, districts like ours would face prohibitive costs for essential network upgrades, jeopardizing student instruction and safety.",
+      "evidence_quote": "e program is not a\nconvenience; it is an indispensable lifeline. Any potential regulatory changes must be evaluated\nagainst the true, on-the-ground conditions of low-income and geographically",
+      "evidence_start": 7234,
+      "evidence_end": 7425,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080633",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080633",
+  "filer_raw": "Jewell School District 8",
+  "date_submission": "2026-10-12T17:04:44.625Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "68d9539a77fe7a2e7b30809ca45bf88a814ce2f84733d28dea18684bf0b43ebc",
+  "params_key": "268429912daa95cb33d45364fca50dd0e58c7d22519b48bb13d88489f010fc96",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

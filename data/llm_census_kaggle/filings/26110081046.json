@@ -1,0 +1,88 @@
+{
+  "summary": "The Noxon School District board member urges the FCC to preserve and strengthen the E‑Rate program, rejecting proposals to sunset, eliminate, or narrow eligibility, and calling for continued support for connectivity infrastructure and modernization.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "lity or restrict support based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 2782,
+      "evidence_end": 2979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must not be sunset or eliminated.",
+      "evidence_quote": "hools.\n\nI am writing to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce,",
+      "evidence_start": 460,
+      "evidence_end": 657,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must continue to support connectivity and internal network infrastructure needed for reliable educational access.",
+      "evidence_quote": "vity and internal network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its",
+      "evidence_start": 2939,
+      "evidence_end": 3138,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The program should be modernized rather than reduced to keep pace with technology-driven education.",
+      "evidence_quote": "modernize E-Rate rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and",
+      "evidence_start": 3099,
+      "evidence_end": 3293,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should be strengthened to ensure students have reliable, affordable, and effective connectivity.",
+      "evidence_quote": "connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy,",
+      "evidence_start": 3254,
+      "evidence_end": 3452,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081046",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081046",
+  "filer_raw": "Noxon Public School",
+  "date_submission": "2026-10-13T17:19:21.019Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "602a98c9e8d2ac1682037241332cc27a2e522a2b4bbe8054300a146f229bdf5e",
+  "params_key": "a06eea01a29b3ecca0bee353f287979d759e5462e15703361f456a8303d6b23f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

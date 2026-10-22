@@ -1,0 +1,62 @@
+{
+  "summary": "Garden Grove Unified School District urges the FCC to reject proposals that would terminate or reduce E‑Rate funding and to preserve the program, arguing that such cuts would harm student access to digital resources and widen the digital divide.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject restriction on urban eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting E‑Rate eligibility for urban schools would deny equitable access to connectivity and technology resources.",
+      "evidence_quote": "ully urge the FCC to preserve the E-Rate program and reject proposals that would\neliminate the program or restrict eligibility based on whether a school or library serves an urban\ncommunity. All",
+      "evidence_start": 4202,
+      "evidence_end": 4396,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating or reducing E‑Rate funding would disproportionately burden schools and widen the digital divide.",
+      "evidence_quote": "Notice of Proposed\nRulemaking regarding the E-Rate program, including proposals to eliminate the program entirely or\nrestrict E-Rate eligibility for urban areas. We strongly urge the FCC to reject",
+      "evidence_start": 1090,
+      "evidence_end": 1286,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving E‑Rate funding is essential to maintaining reliable digital infrastructure for all students.",
+      "evidence_quote": "reas. We strongly urge the FCC to reject any proposal that would\nterminate, reduce, or otherwise limit access to E-Rate funding.\nThe E-Rate program is essential to ensuring that schools and libraries",
+      "evidence_start": 1246,
+      "evidence_end": 1445,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081014",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081014",
+  "filer_raw": "Garden Grove Unified School District",
+  "date_submission": "2026-10-13T16:38:36.475Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "578dea599bafc941d58f30dcc51988976c7feeeabdaa13af170b5f3e10f9c8b8",
+  "params_key": "9a4a24b61e7fa327d2ebc436666446da2eb344dc216f874b047e51eb7762d114",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

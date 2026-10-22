@@ -1,0 +1,87 @@
+{
+  "summary": "Teacher urges FCC to keep E‑Rate, oppose sunset or narrowing, and strengthen program to ensure reliable broadband for all students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The teacher contends that restricting eligibility by geography would leave students without adequate support.",
+      "evidence_quote": "nset or eliminate the E-Rate program; 2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students",
+      "evidence_start": 2640,
+      "evidence_end": 2838,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The teacher stresses the need to maintain funding for internal network infrastructure to ensure reliable educational access.",
+      "evidence_quote": "other criteria that would leave students without adequate support; 3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access;",
+      "evidence_start": 2798,
+      "evidence_end": 2994,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The teacher argues that eliminating E‑Rate would undermine essential broadband infrastructure for schools.",
+      "evidence_quote": "rn school system, just like electricity, transportation, and safe facilities. I therefore respectfully urge the Commission to: 1. Reject any proposal to sunset or eliminate the E-Rate program; 2.",
+      "evidence_start": 2485,
+      "evidence_end": 2680,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen and modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The teacher calls for collaboration with stakeholders to modernize the program rather than reduce its role.",
+      "evidence_quote": "to provide reliable educational access; and 4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools",
+      "evidence_start": 2955,
+      "evidence_end": 3153,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "ensure access regardless of location or finances",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The teacher asserts that students deserve reliable, affordable connectivity regardless of where they live or family finances.",
+      "evidence_quote": "to learn and succeed regardless of where they live or their family’s financial circumstances. I urge the Commission to protect E-Rate and ensure that public schools can continue providing students",
+      "evidence_start": 3583,
+      "evidence_end": 3779,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078075",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078075",
+  "filer_raw": "J Sterling Morton District 201",
+  "date_submission": "2026-09-24T14:59:10.247Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "34a09676550988fa34781cecf9665f9e050271f5da95602a2f7b2f843d20cf20",
+  "params_key": "64d82c2e3b64a13959baa380d11c1c2a39063e45903dd7768b2e7b29cdf55552",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

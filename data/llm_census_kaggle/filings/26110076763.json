@@ -1,0 +1,89 @@
+{
+  "summary": "Parent argues that E‑Rate subsidies for 1‑1 device programs and opt‑out policies are costly, ineffective, and violate student privacy.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "restrict opt‑out implementation",
+      "reason_family": "child_safety",
+      "claim_kind": "privacy_expression",
+      "argument": "Opt‑out policies require additional staff and resources, burdening already tight budgets.",
+      "evidence_quote": "re too expensive to implement.  Opt-Outs require additional teaching staff, books, and other resources that are a hard sell when many school budgets are already tight.  Another argument against",
+      "evidence_start": 1852,
+      "evidence_end": 2045,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "oppose",
+      "requested_action": "enforce strict privacy safeguards",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "IXL tracks keystrokes and sells data to Google without parental consent, violating privacy rights.",
+      "evidence_quote": "d tech overall the evidence is even more damning—recent studies directly link 1:1 devices to declining test scores.\n\nIXL faces a class action lawsuit for secretly tracking students’ keystrokes,",
+      "evidence_start": 925,
+      "evidence_end": 1118,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "require evidence of learning gains",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "No randomized controlled trials show iReady improves learning, and independent research finds no net positive effect.",
+      "evidence_quote": "arms children. So we must ask: does this value outweigh the cost?\n\nOn the research: zero randomized controlled trials show iReady improves learning. The most positive data comes from studies",
+      "evidence_start": 627,
+      "evidence_end": 817,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "limit subsidies for 1‑1 device programs",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate subsidies for 1‑1 device programs inflate district budgets without demonstrable learning gains.",
+      "evidence_quote": "policy and what it means for our budget, instructional efficacy, and children’s digital privacy.\n\nIn 2024 our district spent $500,000 on a three-year IXL contract; in 2025, nearly $200,000 on iReady.",
+      "evidence_start": 153,
+      "evidence_end": 352,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "limit screen time in schools",
+      "reason_family": "child_safety",
+      "claim_kind": "predicted_consequence",
+      "argument": "Excessive screen time harms children, and 1‑1 device programs increase exposure.",
+      "evidence_quote": "district cut 14 teaching positions, many of them librarians at a time that reading comprehension is at an all time low. We already know too much screen time harms children. So we must ask: does this",
+      "evidence_start": 469,
+      "evidence_end": 667,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "cipa_monitoring_privacy": "oppose",
+    "education_outcomes": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076763",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076763",
+  "filer_raw": "Sarah Wickliffe",
+  "date_submission": "2026-09-16T00:29:13.353Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3595e88b350dc9a0c2f68f24dce08fd19e516637eba41feb826cc5c3669f1a97",
+  "params_key": "712f4fec3029106c627d212bb8426270ac27ef556cd3affdec3d9452973c291f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

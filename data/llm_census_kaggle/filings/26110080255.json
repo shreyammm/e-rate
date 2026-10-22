@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, rejecting any sunset, elimination, or unnecessary narrowing of eligibility, and calling for continued support for connectivity infrastructure and modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support, especially in diverse communities.",
+      "evidence_quote": "ject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria",
+      "evidence_start": 4989,
+      "evidence_end": 5186,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "Reliable broadband is basic infrastructure like electricity and transportation, necessary for safe and effective schooling.",
+      "evidence_quote": "d solely on \ngeography or other criteria that would leave students without adequate support; \n3. Preserve support for the connectivity and internal network infrastructure schools need to provide",
+      "evidence_start": 5146,
+      "evidence_end": 5340,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The E‑Rate program is essential infrastructure for modern schools and its elimination would directly harm educational operations.",
+      "evidence_quote": "en the E-Rate \nprogram and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict \nE-Rate support for schools and libraries. \n \nAs a technology director,",
+      "evidence_start": 460,
+      "evidence_end": 659,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "conditional_or_amend",
+      "requested_action": "Work with schools to strengthen and modernize E‑Rate",
+      "reason_family": "implementation_feasibility",
+      "claim_kind": "alternative_design",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "k infrastructure schools need to provide reliable \neducational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in \npublic",
+      "evidence_start": 5300,
+      "evidence_end": 5493,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter emphasizes the importance of E‑Rate but does not propose specific policy changes beyond preservation.",
+      "evidence_quote": "e rather than reduce its role in \npublic education. \n \nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary \nfor students and patrons to",
+      "evidence_start": 5453,
+      "evidence_end": 5647,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080255",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080255",
+  "filer_raw": "Central Catholic High School, Bloomington Illinois",
+  "date_submission": "2026-10-09T15:58:50.137Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "81dc27bd23c1c76211a907c53f507f9b070c7e3ce5348d52b67403667502ba24",
+  "params_key": "7ce59f59ffd4c63159c65d1f0ad8c14cc6fad7dbf166f932821351075acdf7e9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,88 @@
+{
+  "summary": "The commenter, a technology director for a school system, urges the FCC to strengthen rather than reduce E‑Rate funding, opposes tying funding to screen‑time limits, and stresses the essential role of broadband for instruction, equity, and school operations.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "continue funding broadband for instructional use",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Alabama’s academic recovery demonstrates that increased technology access correlates with improved outcomes.",
+      "evidence_quote": "ning. COVID-era investments dramatically expanded student access to devices and online educational resources, yet Alabama subsequently experienced some of the strongest academic recovery in the",
+      "evidence_start": 2474,
+      "evidence_end": 2667,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should not be reduced because broadband is essential for equitable education.",
+      "evidence_quote": "As the technology director and on behalf of my school system, I encourage the FCC to strengthen rather than reduce E-Rate.\n\nReliable, affordable internet access is no longer an optional educational",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "recognize broadband as critical for school safety and operations",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Reliable connectivity is vital for security systems, emergency communications, and daily operations.",
+      "evidence_quote": "ased educational tools. It is a critical lifeline connecting schools to cloud-hosted services that support security cameras, alarm and emergency systems, law enforcement communications, phone",
+      "evidence_start": 3250,
+      "evidence_end": 3441,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain E‑Rate focus on connectivity, not instructional content",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should remain focused on connectivity, leaving instructional decisions to states and local systems.",
+      "evidence_quote": "echnology is used for instruction belong with states and local school systems, while E-Rate should remain focused on ensuring that schools have the robust, secure connectivity necessary to educate",
+      "evidence_start": 4338,
+      "evidence_end": 4534,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not tie E‑Rate eligibility to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions would harm learning outcomes by limiting access to valuable resources.",
+      "evidence_quote": "CC should not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an",
+      "evidence_start": 1707,
+      "evidence_end": 1899,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079630",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079630",
+  "filer_raw": "Jadarius Taylor",
+  "date_submission": "2026-10-06T17:53:35.036Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8dbfdc0ac81f750acf5516600ec5909e5f1d80ddf3323e7eb969274c50f021d5",
+  "params_key": "7c272785cb2d5406776da40e3cfe37bbb62859049b3a5d5b523d37faa4bae679",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

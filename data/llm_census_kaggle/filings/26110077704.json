@@ -1,0 +1,86 @@
+{
+  "summary": "Superintendent urges FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing, or cuts to connectivity support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria tha t would leave students",
+      "evidence_start": 4977,
+      "evidence_end": 5168,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate provides the connectivity schools need to function and deliver education.",
+      "evidence_quote": "provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate  rather than reduce its role in public education. E-Rate has enabled schools",
+      "evidence_start": 5285,
+      "evidence_end": 5478,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program is essential infrastructure for modern public education and should not be eliminated.",
+      "evidence_quote": "Federal Communications Commission (FCC) to prese rve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 468,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Continue investment in broadband infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is basic infrastructure like electricity and water, requiring ongoing investment.",
+      "evidence_quote": ", transportation, facilities, a nd other priorities. Bluford  Unit School District 318 has received $57,579 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly",
+      "evidence_start": 2798,
+      "evidence_end": 2994,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Maintain and modernize E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate has enabled schools to build and maintain connectivity essential for student learning.",
+      "evidence_quote": "lity education to all students. E-Rate’s success over the past three decades should be viewed as a reason to preserve and  improve the program — not as a reason to assume that the work is finished.",
+      "evidence_start": 4509,
+      "evidence_end": 4706,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077704",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077704",
+  "filer_raw": "Bluford Unit School District 318",
+  "date_submission": "2026-09-22T18:03:23.058Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d7604b77b8fc8a3d04a885f3b7d2d9195e1057d532a83b71350273c7618aff76",
+  "params_key": "0365869816eea13c0c292d49642342c8757afcc386c2ae467ffced6d4fb936ee",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

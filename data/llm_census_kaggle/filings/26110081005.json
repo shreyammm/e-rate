@@ -1,0 +1,49 @@
+{
+  "summary": "The letter urges the FCC to preserve and strengthen the E‑Rate program, arguing that cuts would harm rural students and force schools to choose between connectivity and other essential services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose reduction or sunset of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing E‑Rate funding would force rural schools to choose between connectivity and other priorities, disproportionately harming students who rely on school for reliable internet.",
+      "evidence_quote": ". I am writing to urge the Commission to preserve and strengthen the E-Rate program, and to oppose any proposal that would reduce, limit, or sunset the support it provides to schools and",
+      "evidence_start": 310,
+      "evidence_end": 496,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate makes broadband affordable for rural districts, enabling students to access digital curriculum, assessments, and career‑technical programs.",
+      "evidence_quote": "a loss of connectivity directly affects our ability to meet state requirements.\n\nE-Rate support is what makes this connectivity affordable for a district like ours.  Without it, the cost would fall",
+      "evidence_start": 930,
+      "evidence_end": 1127,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081005",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081005",
+  "filer_raw": "Samantha Hurst",
+  "date_submission": "2026-10-13T16:15:03.678Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e470109d7c8ebd897580a4494e3bc6eb83758b33fa3be506468463dc282fcdb1",
+  "params_key": "05a84b3ea9b48e697cf625bce4493b9c092b69c3c134c60b090fac73043bff4d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

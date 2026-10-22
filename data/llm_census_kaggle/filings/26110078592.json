@@ -1,0 +1,98 @@
+{
+  "summary": "The letter from an advocacy group urges the FCC to reject any proposal to terminate or limit the E‑Rate program, arguing that such action would severely cut school and library budgets, leave vulnerable communities without reliable internet, and undermine the ability of libraries to serve their patrons. Libraries support continued E‑Rate funding to maintain affordable, reliable internet for schools and libraries.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility and funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding has enabled libraries to upgrade equipment and increase speeds, ensuring equitable access to digital resources.",
+      "evidence_quote": "or \naffordability, the library provides critical services for its community. We have successfully used \nE-Rate funds to increase broadband speeds and access so that our member libraries can better",
+      "evidence_start": 2316,
+      "evidence_end": 2512,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue E‑Rate support for libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Without E‑Rate, libraries would be forced to cut services or staff, undermining community access to technology.",
+      "evidence_quote": "trophic on library \nbudgets and have far reaching consequences on the communities they serve and the services they \nprovide.  For example, without E-Rate: \n \n●​ our libraries would be unable to",
+      "evidence_start": 3567,
+      "evidence_end": 3760,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Terminating or limiting E‑Rate would cut essential broadband support for schools and libraries, disproportionately harming vulnerable communities.",
+      "evidence_quote": "whether the FCC should eliminate E-Rate \naltogether or cut out urban areas from E-Rate eligibility.1 We urge the FCC to reject any proposal \nthat would terminate or limit the E-Rate Program.",
+      "evidence_start": 771,
+      "evidence_end": 961,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid catastrophic impact on library services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Termination would leave libraries unable to provide essential services such as cloud‑based ILS and wireless access.",
+      "evidence_quote": "t connectivity, library staff would have difficulty performing \nmany parts of their jobs which rely on cloud-based ILS software accessed through the \nInternet via a web browser \n●​ Our libraries",
+      "evidence_start": 4180,
+      "evidence_end": 4374,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent budget cuts to libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is critical for libraries to maintain reliable internet and plan for future bandwidth needs.",
+      "evidence_quote": "rnet via a web browser \n●​ Our libraries would find it difficult to plan for capital hardware upgrades for public \ncomputers and wireless access points; old and obsolete hardware could leave them",
+      "evidence_start": 4334,
+      "evidence_end": 4529,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate funding is essential for libraries to provide affordable, reliable internet to their communities.",
+      "evidence_quote": "and in \ntheir communities \nE-Rate funding has been instrumental in ensuring schools and libraries have affordable \naccess to reliable and sustainable Internet service. Continued support of the E-Rate",
+      "evidence_start": 4734,
+      "evidence_end": 4933,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078592",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078592",
+  "filer_raw": "C/W MARS Member Libraries",
+  "date_submission": "2026-09-28T19:16:29.068Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "585a8a4298966e236ab1f3b5f6795191cb655ca2596a83e1bc2eea65f7411663",
+  "params_key": "b5d04f55fe16164b70933b37137ebaa3e0a568e9c68e62a69f81d0efa9349895",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

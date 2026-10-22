@@ -1,0 +1,88 @@
+{
+  "summary": "Teacher Stacey Wright urges the FCC to preserve the E‑Rate program, arguing that cutting or sunsetting it would deepen inequities, harm rural students, and eliminate essential computer‑science instruction.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "The letter does not address CIPA or digital literacy requirements.",
+      "evidence_quote": "Brendan Carr\nChairman\nFederal Communications Commission\n45 L Street NE\nWashington, DC 20554\n\nFederal Communications Commission\nRE: WC Docket No. 13-184 – E-Rate Program Review NPRM\nProceeding",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate’s broad eligibility ensures all students, regardless of location or family finances, receive equal digital opportunities.",
+      "evidence_quote": "civic life. E-Rate\nsupport helps ensure that these opportunities are available to all students, regardless of\nwhere they live or their family’s financial circumstances.\n\nStudents in my classroom",
+      "evidence_start": 936,
+      "evidence_end": 1130,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Students in rural areas rely on school broadband to complete assignments, and E‑Rate keeps that access available.",
+      "evidence_quote": "circumstances.\n\nStudents in my classroom live in a rural area where internet access is sporadic at times.  They rely on their access at school to complete assignments.  They also use the internet to",
+      "evidence_start": 1090,
+      "evidence_end": 1288,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would deepen inequities in public education by removing vital broadband support for low‑income and rural schools.",
+      "evidence_quote": "llar job in reaching its intended\ngoals, proposals to sunset the program or restrict it to only certain schools would be\ncatastrophic. Cutting this program would only deepen the inequities that",
+      "evidence_start": 1717,
+      "evidence_end": 1910,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "No other policy proposals are mentioned in the letter.",
+      "evidence_quote": "Brendan Carr\nChairman\nFederal Communications Commission\n45 L Street NE\nWashington, DC 20554\n\nFederal Communications Commission\nRE: WC Docket No. 13-184 – E-Rate Program Review NPRM\nProceeding",
+      "evidence_start": 0,
+      "evidence_end": 191,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_digital_literacy": "discussion_no_position",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081024",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081024",
+  "filer_raw": "Stacey Wright",
+  "date_submission": "2026-10-13T16:50:49.519Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4be8165956e4fddf8c037dddb1695066da4d21c0918395cc71b1983a0bf7af29",
+  "params_key": "da0e69d1b6cee775d8b610490b38c48a556f73b4ebaa03a3e5e5985c9472a211",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,87 @@
+{
+  "summary": "Flambeau School District urges the FCC to keep the E‑Rate program intact, oppose eligibility cuts, preserve connectivity support, and modernize integrity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid eligibility restrictions based on geography, poverty, or provider count",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eligibility restrictions that leave schools without adequate support would undermine equitable broadband access.",
+      "evidence_quote": "provider count when those‬\n‭restrictions would leave schools without adequate support;‬\n‭3.‬ ‭Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 2648,
+      "evidence_end": 2831,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve connectivity and internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Schools need ongoing support for connectivity and internal network infrastructure to maintain reliable educational access.",
+      "evidence_quote": "l network infrastructure schools need to provide‬\n‭reliable educational access; and‬\n‭4.‬ ‭Work with schools, libraries, and other stakeholders to strengthen program integrity and modernize‬\n‭E-Rate",
+      "evidence_start": 2791,
+      "evidence_end": 2989,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset proposals",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program must not be eliminated or sunset because it provides essential broadband support for schools.",
+      "evidence_quote": "on to:‬\n‭1.‬ ‭Reject proposals to sunset or eliminate the E-Rate program;‬\n‭2.‬ ‭Avoid eligibility restrictions based solely on geography, poverty level, or provider count when those‬\n‭restrictions",
+      "evidence_start": 2491,
+      "evidence_end": 2688,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "maintain connectivity as essential resource",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is an essential resource for modern education and must remain accessible regardless of geography or local wealth.",
+      "evidence_quote": "hools today.‬\n‭The progress schools have made in expanding broadband connectivity is evidence of E-Rate's success, not‬\n‭evidence that the need has disappeared. Connectivity is not a one-time build.",
+      "evidence_start": 1554,
+      "evidence_end": 1752,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "modernize program integrity",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "The FCC should work with stakeholders to strengthen program integrity and modernize E‑Rate.",
+      "evidence_quote": "program integrity and modernize‬\n‭E-Rate without undermining its essential role.‬\n\n\n‭E-Rate has enabled schools and libraries to build and maintain the connectivity needed for students",
+      "evidence_start": 2949,
+      "evidence_end": 3133,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077374",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077374",
+  "filer_raw": "School District of Flambeau",
+  "date_submission": "2026-09-21T13:38:04.745Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3fa53893c52dd80342cd17ba54ee512d17d9793ccf289df0e6680af9ff6b7750",
+  "params_key": "d748d5daa2a7631393adedb07a66f16811ddc3eb6ad4f65c6be4b2c08a7c1c87",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

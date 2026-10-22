@@ -1,0 +1,61 @@
+{
+  "summary": "A small school district opposes the proposed sunsetting of the E‑Rate program, arguing that eliminating the funding would severely harm its ability to maintain necessary technology infrastructure and negatively impact instruction.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate funding would severely limit the district’s ability to maintain essential technology infrastructure, harming instruction and daily operations.",
+      "evidence_quote": "On the subject of the proposed sunsetting of the E-Rate program; we are a relatively small district. As such (and probably like most other districts); we rely heavily on E-Rate funding for our",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Removing E‑Rate support would detrimentally affect the quality and effectiveness of educational delivery.",
+      "evidence_quote": "e rely heavily on E-Rate funding for our infrastructure and internet connectivity needs. Especially when other mandated changes have resulted in reduced public school funding overall. Technology is a",
+      "evidence_start": 152,
+      "evidence_end": 351,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the E‑Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "The loss of E‑Rate funding would be highly detrimental to instruction and day‑to‑day operations.",
+      "evidence_quote": "school funding overall. Technology is a huge part of instruction and day to day operation on every level and reducing or removing that funding altogether would be highly detrimental at best.",
+      "evidence_start": 312,
+      "evidence_end": 502,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080725",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080725",
+  "filer_raw": "John Hager",
+  "date_submission": "2026-10-12T21:00:57.570Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8c5780a87ea05dc822d9b068dc832606f128e2135c7ee162a238f77229043b04",
+  "params_key": "0ee805bfcd48985737c4be29c0713e8160f3a07fac886f2f2bb9ea4c072c73ef",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

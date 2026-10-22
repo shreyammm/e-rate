@@ -1,0 +1,61 @@
+{
+  "summary": "A school district urges the FCC to preserve the E‑Rate program, arguing that it is essential for maintaining reliable, secure, and modern technology infrastructure, preventing a widening digital divide, and enabling long‑term planning for schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E-Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Preserving E‑Rate ensures schools can maintain reliable, secure, and modern technology infrastructure.",
+      "evidence_quote": "I strongly urge the Federal Communications Commission to preserve the E-Rate program and maintain the support it currently provides to schools and libraries.\n\nFor school districts such as Vallejo",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E-Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Maintaining E‑Rate prevents the digital divide from widening in communities with limited local resources.",
+      "evidence_quote": "other essential educational priorities. Communities with fewer local resources would feel this impact most severely, further widening the digital divide that E-Rate was created to address.\n\nReliable",
+      "evidence_start": 1716,
+      "evidence_end": 1914,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E-Rate",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate provides predictable, sustainable funding that allows districts to plan multi‑year technology investments and replace aging infrastructure.",
+      "evidence_quote": "tructure. The program should continue to provide predictable and sustainable funding so districts can responsibly plan multi-year technology investments, replace aging infrastructure, strengthen",
+      "evidence_start": 2644,
+      "evidence_end": 2838,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071880",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071880",
+  "filer_raw": "Winston Crump - Vallejo City Unified School District",
+  "date_submission": "2026-08-17T19:16:48.322Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9e3e1b54d485284857316bc96256a3f7c6ac4527bd31ac7e5431f45cc6cc0784",
+  "params_key": "5b58e21c36d043f9514e4283517418a3cad3635838f2f3e8f50025a1a5466870",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

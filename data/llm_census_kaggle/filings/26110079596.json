@@ -1,0 +1,76 @@
+{
+  "summary": "The letter opposes sunset of E‑Rate, supports tying funding to screen‑time limits, advocates a rule for discounted rates to schools, and calls for open communication.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "administrative_forms",
+      "position": "support",
+      "requested_action": "maintain open communication",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Open communication between the FCC and schools fosters transparency and effective program management.",
+      "evidence_quote": "and so it is impossible to simply state “mission​\n​accomplished” on our E-Rate program, because it needs to be consistently maintained and paid​\n​for. I support open communication on this issue. You",
+      "evidence_start": 1395,
+      "evidence_end": 1593,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "mandate discounted rates for schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "A rule requiring providers to offer discounted rates ensures schools can afford reliable internet access.",
+      "evidence_quote": "s’ screen time, and would agree to tying E-Rate funding to screen-time limit mandates.​\n​Additionally, rather than using federal funds, I would also support simply making it a rule that​\n​internet",
+      "evidence_start": 1100,
+      "evidence_end": 1296,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for low‑income students to access digital literacy and educational opportunities.",
+      "evidence_quote": "language skills, learn what is happening in the world around them, and apply for​\n​employment opportunities.​\n​I am in complete opposition to any attempts to sunset the E-Rate program, but am open to",
+      "evidence_start": 785,
+      "evidence_end": 984,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "tie funding to screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Linking E‑Rate funding to screen‑time limits will promote healthier digital habits for K‑12 students.",
+      "evidence_quote": "unset the E-Rate program, but am open to a few​\n​changes. I do believe that, especially in the younger, K-12 population, it is important to reduce​\n​students’ screen time, and would agree to tying",
+      "evidence_start": 944,
+      "evidence_end": 1140,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "administrative_forms": "support",
+    "cipa_network_filter": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079596",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079596",
+  "filer_raw": "Nancy Herrera",
+  "date_submission": "2026-10-06T15:42:28.781Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9c416b44046006bd41850a6450b5f0449113d805297b792d1814e418bf468dc4",
+  "params_key": "e05c6315a6e30e02c7a20f9182d5f8ff8565ff8575f2dcc9809fea96d40ac5c6",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

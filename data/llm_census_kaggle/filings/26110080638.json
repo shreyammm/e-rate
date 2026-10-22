@@ -1,0 +1,89 @@
+{
+  "summary": "Winslow Christian School urges the FCC to preserve core E‑Rate functions, broaden eligibility, keep local control over screen‑time, and limit administrative burdens while allowing modest reforms.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "privacy_expression",
+      "argument": "The school believes overly strict CIPA rules would burden schools and infringe on privacy.",
+      "evidence_quote": "ally feasible, and respectful of student privacy.\n• Avoid unnecessary cost allocation for Head Start or Pre-K classrooms, as many are integrated into\nexisting school networks and all have teachers",
+      "evidence_start": 3240,
+      "evidence_end": 3436,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "adopt clear, practical oversight rules that target misconduct",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "implementation_burden",
+      "argument": "The school calls for oversight that protects applicants while avoiding unnecessary administrative burdens.",
+      "evidence_quote": "ied E-Rate support while adopting clear, practical oversight\nrules that target misconduct.\n• Preserve applicants’ ability to use properly procured state master contracts and cooperative",
+      "evidence_start": 3555,
+      "evidence_end": 3740,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain broad eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The school maintains that broad eligibility is necessary to meet its diverse connectivity needs.",
+      "evidence_quote": "Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n• Preserve E-Rate support for Internet",
+      "evidence_start": 2456,
+      "evidence_end": 2655,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The school argues that eliminating or drastically reducing E‑Rate would deny essential broadband access to its students.",
+      "evidence_quote": "ithout the E-Rate program, we would have to drop all of our internet based supplemental programs to\nour school.\n5. RECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for",
+      "evidence_start": 2304,
+      "evidence_end": 2496,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "The school contends that local control over screen‑time is preferable to a blanket federal rule.",
+      "evidence_quote": "operations, and student support.\n• Avoid one-size-fits-all federal screen-time limits. Leave it to local control.\n• Keep CIPA requirements practical, technically feasible, and respectful of student",
+      "evidence_start": 3083,
+      "evidence_end": 3280,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "consultant_definition": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080638",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080638",
+  "filer_raw": "Winslow Christian School",
+  "date_submission": "2026-10-12T17:18:11.808Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ba421bf9afff0e20dfb84c72ca6d6d45d2ceaaa011401fe128752bc14f13f04a",
+  "params_key": "3dac0169106b8c755cd18dee699ab1262a127041f882c49928698523152e729e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

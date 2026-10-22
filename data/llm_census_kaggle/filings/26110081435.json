@@ -1,0 +1,89 @@
+{
+  "summary": "The Heritage Foundation’s comment argues for stricter E‑Rate conditions to limit screen‑based learning, require blocking of social media, give parents opt‑outs, and publish school safety policies.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "allow parents to opt‑out of tech tools and data collection",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents must be informed and consent to any technology use, and should be able to opt‑out of data collection.",
+      "evidence_quote": "to install external filters or \nblocking software. This is unacceptable. Parents must be informed, and their consent must be \nobtained before schools introduce sweeping changes in the use of",
+      "evidence_start": 3496,
+      "evidence_end": 3686,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "require blocking and filtering of social media on E‑Rate funded networks",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate funded networks should block and filter social media to protect children from harmful screen time.",
+      "evidence_quote": "r restructured, \nI provide the following recommendations.  \n \nExtend E-Rate conditions for funding to requiring schools to block and filter social media \nplatforms. \n \nThe Children’s Internet",
+      "evidence_start": 1703,
+      "evidence_end": 1894,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "support",
+      "requested_action": "extend CIPA to block social media on school devices",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Social media’s addictive design and harmful content warrant CIPA‑style blocking on school devices.",
+      "evidence_quote": "a \nplatforms. \n \nThe Children’s Internet Protection Act of 2000 requires schools and libraries to block or \nfilter online access to obscene or harmful content on school and library Wi-Fi and devices",
+      "evidence_start": 1854,
+      "evidence_end": 2052,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "evaluate and reform E‑Rate program to reduce harmful screen time",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program should be restructured to prioritize educational outcomes over screen‑based learning.",
+      "evidence_quote": "are \ninternet safety policies would help them make an informed decision, particularly concerning \nscreen-based learning.  \n \nThe E-Rate program is overdue for evaluation and reform, and the harmful",
+      "evidence_start": 4575,
+      "evidence_end": 4772,
+      "uncertain": false
+    },
+    {
+      "provision_id": "safety_policy_transparency",
+      "position": "support",
+      "requested_action": "publish schools’ internet safety policies online",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Publicly available safety policies help parents make informed decisions about screen‑based learning.",
+      "evidence_quote": "s use of technology and screens must \nbe respected and fully considered.5 \n \nPublish schools’ Internet safety policies online. \n \nThese policies should be publicly available on one easy-to-search",
+      "evidence_start": 4263,
+      "evidence_end": 4458,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_network_filter": "support",
+    "cipa_social_media": "support",
+    "other_policy_issue": "support",
+    "safety_policy_transparency": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081435",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081435",
+  "filer_raw": "Annie Chestnut Tutor",
+  "date_submission": "2026-10-14T03:59:45.262Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3df8c17d3d8482a37553e427a054f0d03e4cbafe742ce120a5b7b77cff92dad6",
+  "params_key": "92f4a4ab9125ca2f228f2f67fe01034ebcc45c3d7b4c669a8fdf44cc63fbaa3c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

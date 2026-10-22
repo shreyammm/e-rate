@@ -1,0 +1,75 @@
+{
+  "summary": "Oregon school leaders oppose proposals to narrow eligibility, cut funding, or condition E‑Rate on unrelated policies, arguing the program remains essential for broadband affordability and educational opportunity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals to narrow eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility would transfer costs to already strained local budgets and undermine broadband affordability for schools and libraries.",
+      "evidence_quote": "ns costs.​\n​The Commission should reject proposals to reduce eligibility based on poverty​\n​thresholds, market competition, or assumptions regarding local fiscal capacity. While​\n​higher-poverty",
+      "evidence_start": 1849,
+      "evidence_end": 2043,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate program consistent with Congress’s original intent",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "E‑Rate has consistently made broadband affordable for schools and libraries, and its continued federal investment is necessary for educational opportunity.",
+      "evidence_quote": "education long after networks were first installed.​\n​The program's impact on Oregon demonstrates why continued federal investment​\n​remains necessary. Between 2021 and 2025,​\n​●​ ​Oregon schools and",
+      "evidence_start": 1242,
+      "evidence_end": 1441,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to reduce funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E‑Rate funding would increase local expenditures and diminish the program’s ability to support essential broadband infrastructure.",
+      "evidence_quote": "ns costs.​\n​The Commission should reject proposals to reduce eligibility based on poverty​\n​thresholds, market competition, or assumptions regarding local fiscal capacity. While​\n​higher-poverty",
+      "evidence_start": 1849,
+      "evidence_end": 2043,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "reject proposals to condition E‑Rate on screen‑time policies",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is a broadband discount program, not an instructional technology program, and should not be tied to unrelated educational or screen‑time mandates.",
+      "evidence_quote": "llenges.​\n\n\n​We are equally concerned by proposals to condition E-Rate participation in educational​\n​technology or screen-time policies. E-Rate is not an instructional technology program. It​\n​does",
+      "evidence_start": 2315,
+      "evidence_end": 2513,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080924",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080924",
+  "filer_raw": "Northwest Regional Education Service District | Banks School District | Clatskanie School District | Forest Grove School District | Gaston School District | Neah-kah-nie School District | Rainier School District | Warrenton-Hammond School District",
+  "date_submission": "2026-10-13T14:34:33.158Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1163ce4290fd6d690ae6f4f03f22cf2c07c68722dd4ddd48010b2b0918365a15",
+  "params_key": "c084b695fe76632ebab2322cba2f7e570cc8e48f01cec4a6fd2c25046814b68b",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

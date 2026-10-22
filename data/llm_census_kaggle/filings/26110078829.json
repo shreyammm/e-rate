@@ -1,0 +1,50 @@
+{
+  "summary": "The comment urges the FCC to keep free Wi‑Fi in libraries and to preserve the federal E‑Rate program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Do not end the federal E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "other",
+      "argument": "Ending the E‑Rate program would reduce broadband affordability for schools and libraries.",
+      "evidence_quote": "Please do not eliminate free WiFi in libraries.  Do not end the federal E-rate program.",
+      "evidence_start": 0,
+      "evidence_end": 87,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Do not eliminate free WiFi in libraries",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Free Wi‑Fi in libraries expands internet access for underserved populations.",
+      "evidence_quote": "Please do not eliminate free WiFi in libraries.  Do not end the federal E-rate program.",
+      "evidence_start": 0,
+      "evidence_end": 87,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078829",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078829",
+  "filer_raw": "Shaina Vorspan",
+  "date_submission": "2026-09-30T04:57:40.548Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "05a59ed07d5a1954709160a6b85ab074415ea0955f2f05985125d7d50bc91b8a",
+  "params_key": "9a2e72b3388195619bbd692b8a2fef60849249b445282c482249218cd536fab5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

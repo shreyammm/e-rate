@@ -1,0 +1,88 @@
+{
+  "summary": "E‑Center argues that Head‑Start and pre‑K programs should remain eligible for E‑Rate, that the program’s core connectivity mission must be preserved, that screen‑time or parental‑opt‑out conditions are inappropriate, and that consultant oversight should be maintained without overly burdensome registration.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment states that screen‑time or parental‑opt‑out conditions are outside the FCC’s mandate and should not be imposed on Head‑Start funding.",
+      "evidence_quote": "yment; they do not replace the recurring discount mechanism that makes service affordable for high-poverty early-childhood providers year after year. Avoid overlaying screen-time or parental-opt-out",
+      "evidence_start": 2627,
+      "evidence_end": 2825,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "conditional_or_amend",
+      "requested_action": "retain consultant oversight while limiting percentage‑based fee arrangements",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Consultants are essential for small nonprofits to navigate E‑Rate rules, but transparency and conflict‑of‑interest safeguards should remain workable.",
+      "evidence_quote": "ures that improve transparency and deter percentage-based fee arrangements and conflicts of interest can strengthen program integrity. However, registration and certification requirements must remain",
+      "evidence_start": 4036,
+      "evidence_end": 4235,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The comment urges that registration and certification requirements remain workable for smaller nonprofits and their consultants.",
+      "evidence_quote": "d certification requirements must remain workable for smaller nonprofits and the consultants who assist them so that legitimate applicants are not deterred from participating. The Commission should",
+      "evidence_start": 4195,
+      "evidence_end": 4392,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject any proposal that would limit or eliminate Head‑Start/pre‑K eligibility for non‑public providers",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Head‑Start programs rely on E‑Rate connectivity for essential administrative and family‑engagement functions, and restricting eligibility would impair service delivery to disadvantaged children.",
+      "evidence_quote": "mmunications, parent engagement portals, reporting, training, and limited, developmentally appropriate educational uses. Restricting or eliminating support for non-public- school-district Head Start",
+      "evidence_start": 931,
+      "evidence_end": 1129,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain robust Category 1 and Category 2 support for high‑poverty early‑childhood providers",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Recurring discounts are necessary to keep connectivity affordable for high‑poverty early‑childhood providers, unlike one‑time deployment programs.",
+      "evidence_quote": "d for ongoing, affordable Category 1 and Category 2  (Including MIBS)  support. Bandwidth demands continue to rise with modern administrative systems,  cybersecurity requirements  and educational",
+      "evidence_start": 2317,
+      "evidence_end": 2512,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "discussion_no_position",
+    "consultant_percent_fees": "conditional_or_amend",
+    "consultant_registration": "discussion_no_position",
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076824",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076824",
+  "filer_raw": "E Center",
+  "date_submission": "2026-09-16T18:30:01.378Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1eabbaae375e208e5758d707427f3f99e36e6a79713b3e84bfb9d538430f35f0",
+  "params_key": "e2d16cf573f7e64f37ed1a4e2fb5e9544e7f3ee637b4be383e95fd672d59d857",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

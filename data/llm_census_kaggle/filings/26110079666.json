@@ -1,0 +1,50 @@
+{
+  "summary": "The comment urges the FCC to keep the current E‑Rate program and to avoid tying funding to screen‑time limits, arguing that reliable internet is essential for student achievement and that such restrictions would harm access.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reliable internet access is essential to student achievement and should not be curtailed by the program.",
+      "evidence_quote": "As the Assistant Superintendent of Technology of a public school system that receives E-Rate funding, I urge the FCC to maintain the current E-Rate program.\n\nReliable internet access is essential to",
+      "evidence_start": 0,
+      "evidence_end": 198,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base E-Rate funding on screen‑time limits",
+      "reason_family": "other",
+      "claim_kind": "child_safety",
+      "argument": "Basing funding on screen‑time limits would restrict access to essential educational resources and harm learning outcomes.",
+      "evidence_quote": "g opportunities that are now fundamental to a modern education.\n\nThe FCC should not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would",
+      "evidence_start": 315,
+      "evidence_end": 511,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079666",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079666",
+  "filer_raw": "Anthony Kingston",
+  "date_submission": "2026-10-06T20:04:47.721Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8ef52a82bb7d44a253cdd28cc08f845b06212c50be5e8d0299be92c89fe15d85",
+  "params_key": "a145c682c8835531db8ee433bd8463b528213a362480d7e7b2f29a5220d3d376",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

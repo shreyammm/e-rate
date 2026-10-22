@@ -1,0 +1,74 @@
+{
+  "summary": "The commenter, a public school board member, opposes proposed E‑Rate changes that would cut or limit the program, arguing that such actions would harm schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Preserve broad eligibility for equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting eligible equipment and services would limit schools’ ability to meet evolving technology needs.",
+      "evidence_quote": "rd member, I see firsthand how important robust and secure internet access is to our educators and administrators. Schools and libraries are under increasingly challenging budgetary conditions, and",
+      "evidence_start": 155,
+      "evidence_end": 352,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Cutting or sunsetting E‑Rate would leave schools and libraries behind and undermine essential infrastructure.",
+      "evidence_quote": "I am writing in opposition to the proposed changes to the E-Rate program currently benefiting public school districts and libraries. As a public school board member, I see firsthand how important",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Avoid program cuts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Cutting the program now would be a step backwards, especially as AI introduces further changes and considerations into our use of technology.",
+      "evidence_quote": "ical support for infrastructure would be devastating to lose, particularly as AI introduces further changes and considerations into our use of technology. Yes, this program has brought about",
+      "evidence_start": 463,
+      "evidence_end": 653,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Keep funding for infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The critical support for infrastructure would be devastating to lose, particularly as AI introduces further changes and considerations into our use of technology.",
+      "evidence_quote": "ogy. Yes, this program has brought about significant progress. Cutting it now would be a step backwards, and leave schools and libraries behind.",
+      "evidence_start": 613,
+      "evidence_end": 757,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110050945",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110050945",
+  "filer_raw": "Katy Foreman",
+  "date_submission": "2026-07-25T18:47:28.733Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "89dee7cb8f844e1e77f58df4180e7e449f707f22c6c3814c96db865939441d46",
+  "params_key": "68f3ddb0592044920b5d10d10cae9894096364fb26c65ea8ae8065de1d4e443d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "Bedford Public Schools urges the FCC to preserve core E‑Rate functions and avoid restrictive changes that would limit access, increase administrative burden, or reduce local flexibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "oppose",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "alternative_design",
+      "argument": "Overly strict CIPA rules would burden schools and infringe on privacy.",
+      "evidence_quote": "rol.\n• Keep CIPA requirements practical, technically feasible, and respectful of student privacy.\n\n\n• Avoid unnecessary cost allocation for Head Start or Pre-K classrooms, as many are integrated",
+      "evidence_start": 4202,
+      "evidence_end": 4396,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that cutting E‑Rate funding would harm instruction and operations.",
+      "evidence_quote": "ECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n•",
+      "evidence_start": 3430,
+      "evidence_end": 3628,
+      "uncertain": false
+    },
+    {
+      "provision_id": "prek_headstart",
+      "position": "oppose",
+      "requested_action": "Avoid unnecessary cost allocation for Head Start or Pre‑K classrooms",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Many Pre‑K classrooms are integrated into existing school networks and need E‑Rate support.",
+      "evidence_quote": "Pre-K classrooms, as many are integrated into\nexisting school networks and all have teachers and staff who rely on the Internet for direct instruction and\nsupport.\n• Preserve applicant choice in",
+      "evidence_start": 4356,
+      "evidence_end": 4550,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "Local control should determine appropriate screen‑time policies.",
+      "evidence_quote": "works are\nactually used for instruction, operations, and student support.\n• Avoid one-size-fits-all federal screen-time limits. Leave it to local control.\n• Keep CIPA requirements practical,",
+      "evidence_start": 4052,
+      "evidence_end": 4242,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, and managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district maintains that these services are essential for maintaining reliable connectivity.",
+      "evidence_quote": "ECOMMENDATION\n• Preserve the core E-Rate program.\n• Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections,\nand cost-effective managed services.\n•",
+      "evidence_start": 3430,
+      "evidence_end": 3628,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "oppose",
+    "erate_sunset": "oppose",
+    "prek_headstart": "oppose",
+    "screen_time_condition": "oppose",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080909",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080909",
+  "filer_raw": "Bedford Public Schools",
+  "date_submission": "2026-10-13T14:09:43.725Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "57d7fc3cec188d82e3e5d1b0c1609133efc085619c497951e9ce6062a23d1e2d",
+  "params_key": "43fb6fa20dbeb636a5582e899c7e43a11ebc6bd5dc75c801e8ecfeb432248c70",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

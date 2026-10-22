@@ -1,0 +1,74 @@
+{
+  "summary": "The superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting any sunset, reduction, or narrowing of eligibility, and emphasizing the program’s essential role in school operations and student access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject proposals that would unnecessarily narrow E‑Rate eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent contends that narrowing eligibility would leave students without adequate support.",
+      "evidence_quote": "lity or restrict support based solely on geography or other criteria that would leave students without adequate support;\n3. Preserve support for the connectivity and internal network infrastructure",
+      "evidence_start": 4932,
+      "evidence_end": 5129,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve support for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The superintendent stresses that E‑Rate is essential for reliable educational access and internal network infrastructure.",
+      "evidence_quote": "vity and internal network infrastructure schools need to provide reliable educational access; and\n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its",
+      "evidence_start": 5089,
+      "evidence_end": 5288,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The superintendent argues that eliminating E‑Rate would directly harm school operations and safety systems.",
+      "evidence_quote": "band is part of the basic infrastructure of a modern school system, just like electricity, transportation, and safe facilities.\n\nI therefore respectfully urge the Commission to:\n\n1. Reject any",
+      "evidence_start": 4621,
+      "evidence_end": 4813,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The superintendent urges the FCC to work with stakeholders to modernize E‑Rate instead of cutting its role.",
+      "evidence_quote": "modernize E-Rate rather than reduce its role in public education.\n\nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and",
+      "evidence_start": 5249,
+      "evidence_end": 5443,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077844",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077844",
+  "filer_raw": "Kristel Hickman",
+  "date_submission": "2026-09-23T15:36:05.569Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8e183251c08dbc721966f576fa768102f105ef8b828451182646a83cc2ac6cd6",
+  "params_key": "47352991b0ee811cb2d67a1b82130a58a588f5841f4efd660dfaa07920bacae2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "A parent of a Montgomery County student urges the FCC to keep E‑Rate funding but to impose stricter CIPA enforcement and parental controls to curb digital distraction.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen CIPA enforcement",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Digital distraction on school devices undermines learning and exposes children to inappropriate content, so stricter CIPA enforcement is needed.",
+      "evidence_quote": "ornographic content, all of which is far more pervasive on the internet now than it was when E-Rate began. The FCC should strengthen its enforcement of the Children’s Internet Protection Act (CIPA)",
+      "evidence_start": 473,
+      "evidence_end": 670,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080929",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080929",
+  "filer_raw": "Erin Hofmann",
+  "date_submission": "2026-10-13T14:37:20.676Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a19eab111c5b065a9ef3d516ea61124129e301c6bed46f57b6c740285e6df603",
+  "params_key": "d4d9699dca16f669441b35c7cfeba3058a307e53c2c2ffcd59b470b323501e6f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

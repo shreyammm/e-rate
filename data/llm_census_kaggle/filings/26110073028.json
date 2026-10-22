@@ -1,0 +1,86 @@
+{
+  "summary": "The library media specialist opposes eliminating or limiting the E‑Rate program, arguing that it is essential for affordable, reliable internet access for students, teachers, and vulnerable communities.",
+  "stakeholder_role": "library",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject limiting urban areas from eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Restricting E‑Rate to non‑urban areas would leave vulnerable communities without necessary resources.",
+      "evidence_quote": "nts a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks. Cutting E-Rate also threatens to leave vulnerable communities behind that don’t have",
+      "evidence_start": 616,
+      "evidence_end": 811,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Eliminating E‑Rate would cut essential funding for schools and libraries, undermining affordable internet access.",
+      "evidence_quote": "CC should eliminate E-Rate altogether or cut out urban areas from E-Rate eligibility. I urge the FCC to reject any proposal that would terminate or limit the E-Rate Program.\n\nE-Rate is critical for",
+      "evidence_start": 307,
+      "evidence_end": 504,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate is critical for schools and libraries to maintain affordable, reliable internet access.",
+      "evidence_quote": "E-Rate Program.\n\nE-Rate is critical for schools and libraries to maintain affordable, reliable access to the Internet. Terminating that support represents a cut to school and library budgets,",
+      "evidence_start": 465,
+      "evidence_end": 656,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Termination would disproportionately harm students who rely on school and public library internet for applications and job searches.",
+      "evidence_quote": "ere they can receive additional support. Students who are working often need to do timecards online now, too, or have to complete job applications online -- again, things they may be doing at school",
+      "evidence_start": 1242,
+      "evidence_end": 1440,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Continuing E‑Rate is essential to meet evolving educational needs and provide high‑quality instructional materials.",
+      "evidence_quote": "and they rely on internet access to help them find or create high quality instructional materials. Limiting the ability of teachers to provide quality instruction again reduces the educational",
+      "evidence_start": 1869,
+      "evidence_end": 2061,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073028",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073028",
+  "filer_raw": "Morgan Grey",
+  "date_submission": "2026-08-25T15:05:32.317Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8637bfd8a19fe898ce1d18fdebb7b718b27665e9826f8922d9a8e249ff85ca45",
+  "params_key": "e1f079de388d4c13087f468c9dd84b6f6417c7bdc4a7dc21ceb5ec21d8c54f47",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,74 @@
+{
+  "summary": "A paraeducator urges the FCC to preserve the E‑Rate program, arguing that cutting or sunsetting it would widen inequities, harm security, and undermine educational outcomes.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting the E‑Rate program would deepen inequities by leaving low‑income and rural schools without affordable broadband.",
+      "evidence_quote": "lete lessons. Without the Federal E-Rate program, Utah would have to come up with over $57 million dollars to cover the cost of internet statewide. Our rural and economically disadvantaged",
+      "evidence_start": 1245,
+      "evidence_end": 1433,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The program has successfully provided equal broadband access to students in low‑income urban and rural communities for nearly 30 years.",
+      "evidence_quote": "programs that will not work without high speed internet.\nFor nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same",
+      "evidence_start": 1702,
+      "evidence_end": 1898,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "continue E‑Rate support",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "School security programs that rely on high‑speed internet would fail without E‑Rate funding.",
+      "evidence_quote": "nnectivity as well. Whether it is facial recognition or the State mandated personal alert devices that staff wear, money has been spent to implemnet these programs that will not work without high",
+      "evidence_start": 1547,
+      "evidence_end": 1742,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "maintain program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Students cannot fully participate in modern learning environments without reliable internet access, which the E‑Rate program ensures.",
+      "evidence_quote": "ural communities have access to the same tools as students in wealthier districts. While the program has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict",
+      "evidence_start": 1858,
+      "evidence_end": 2057,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079893",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079893",
+  "filer_raw": "Jennifer Bramson",
+  "date_submission": "2026-10-07T19:19:17.505Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9a3dce318e5a0e098bb767dedf1defe7b08e77f7118c93934e83a19ca6a8ad01",
+  "params_key": "dd8acf75ae9c6b97717b6ff22566c2d572e67388dc03bb587dcc90d4ebfb3d2a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

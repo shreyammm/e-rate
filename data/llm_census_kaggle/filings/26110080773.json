@@ -1,0 +1,62 @@
+{
+  "summary": "The Warden School District Board Chair opposes any sunset or narrowing of the E‑Rate program and urges preservation of broad eligibility to support small and rural districts.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "oppose narrowing",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Restricting Category 2 support would hit small districts hardest, as they lack the local resources to absorb the costs.",
+      "evidence_quote": "onnections — the Wi-Fi inside our school buildings — is not a luxury. Without it, we cannot maintain the networks our students and teachers depend on every day. Eliminating or restricting Category 2",
+      "evidence_start": 302,
+      "evidence_end": 500,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve broad eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Broad eligibility is necessary because affordability depends on a district’s budget, not just its geographic location.",
+      "evidence_quote": "y. Eliminating or restricting Category 2 would hit small districts hardest, because we have the least ability to absorb those costs locally.\n\nI also urge the Commission to preserve broad eligibility",
+      "evidence_start": 460,
+      "evidence_end": 658,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose sunset",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program is essential for small districts to maintain student connectivity, and eliminating it would disproportionately harm them.",
+      "evidence_quote": "As chair of the Warden School District Board of Directors, a small rural district in Grant County, Washington, I am writing in opposition to any proposal to sunset or narrow the E-Rate",
+      "evidence_start": 0,
+      "evidence_end": 184,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080773",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080773",
+  "filer_raw": "Rick Martin",
+  "date_submission": "2026-10-13T00:03:01.033Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ccd828fad4771d198397136247acf97850b9f1064707c17ac381415a43ab94f8",
+  "params_key": "e4feb04be047334ce323621e8f632cf08d142bce4cab8ed290fbe3db1b72abb1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

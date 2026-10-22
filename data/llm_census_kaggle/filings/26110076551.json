@@ -1,0 +1,49 @@
+{
+  "summary": "The commenter urges the FCC to preserve the E‑Rate program, opposing any sunset or reduction, arguing that cutting the program would deepen inequities and deny students reliable internet access.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The commenter argues that sunset or reduction of E‑Rate would be catastrophic and deepen inequities in education.",
+      "evidence_quote": "I am writing to urge the Federal Communications Commission to preserve and protect the E-Rate program and to oppose any proposal that would reduce, limit, or sunset this vital source of support for",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "equity_access",
+      "argument": "The commenter states that cutting E‑Rate would prevent students from fully participating in modern learning environments.",
+      "evidence_quote": "m has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the",
+      "evidence_start": 473,
+      "evidence_end": 666,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076551",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076551",
+  "filer_raw": "Kevin Horwath",
+  "date_submission": "2026-09-13T23:39:28.503Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "89187e111c9787abc2a99ae0b38dcc9140708b3083c778d2c4406c3a4bafaedc",
+  "params_key": "fc88d9ec9d2b7e96ac57c003baae4dc9bccfb65cf24e8eae9167a0eb7b207b68",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

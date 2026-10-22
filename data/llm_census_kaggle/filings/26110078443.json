@@ -1,0 +1,50 @@
+{
+  "summary": "The commenter supports the E‑Rate program and opposes any proposal to narrow, sunset, or eliminate it, arguing that the program was essential for their access to the internet.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program was essential for my schools and libraries to provide internet access, enabling learning opportunities.",
+      "evidence_quote": "It is because of the E-Rate program that the schools I attended, and the few public libraries I visited during my youth, were able to provide me with the ability to access the internet and gave me",
+      "evidence_start": 0,
+      "evidence_end": 196,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to narrow, sunset, or eliminate E‑Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "Any proposal to narrow, sunset, or eliminate the E‑Rate program should be rejected, as it would remove critical funding for educational internet access.",
+      "evidence_quote": "ility to access the internet and gave me the potential to learn as much as I could. Therefore, I believe screen-time expectations should remain strictly a local issue. I urge the FCC to reject any",
+      "evidence_start": 156,
+      "evidence_end": 352,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078443",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078443",
+  "filer_raw": "Minh Tien Nguyen",
+  "date_submission": "2026-09-26T23:55:25.037Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "417a84eb63372e4624e40a7e536b56120be47cc5dcb11c2fef89070165c01237",
+  "params_key": "82ddf56c2797a9f929158b6624b96cda41c6f186ba8d754405cf58dda0d798aa",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

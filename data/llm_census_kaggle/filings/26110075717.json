@@ -1,0 +1,49 @@
+{
+  "summary": "The letter argues that E‑Rate is essential for universal internet access, especially for children, and opposes any reduction in funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate enables universal internet access, which is essential for modern education, government services, and community engagement.",
+      "evidence_quote": "al Communications Commission’s Notice of Proposed Rulemaking and Further \nNotice of Proposed Rulemaking on the E-Rate 4 August 2026 program. \n \nE-Rate provides an absolutely essential service to",
+      "evidence_start": 314,
+      "evidence_end": 508,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve current funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing E‑Rate funding would deny millions of children and families access to the internet, harming education and civic participation.",
+      "evidence_quote": "n we all have this access. The notion of reducing funding for this access is petty and \nshort-sighted and serves absolutely no good purpose imaginable.  \n \n \n \nCordially, \n \n \n \nJoy Hecht \nCitizen,",
+      "evidence_start": 2343,
+      "evidence_end": 2540,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075717",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075717",
+  "filer_raw": "Joy Hecht",
+  "date_submission": "2026-09-07T04:09:55.633Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "05b33920f9d0caebe8bd47721caede2b968e55ca43252868323a83405c3523e9",
+  "params_key": "1b44ebd1067825f35956beff3a0422d9d8ce76f1c4a9dc300baefc03f97aca0e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

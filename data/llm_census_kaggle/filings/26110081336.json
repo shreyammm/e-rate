@@ -1,0 +1,99 @@
+{
+  "summary": "Greeneville City Schools’ superintendent urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, cuts, or narrowing of eligibility, and stresses broadband as essential infrastructure for modern education. Support for continued E‑Rate funding to ensure reliable, affordable connectivity for all students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The letter states that narrowing eligibility would leave students without adequate support, especially in small towns and rural areas.",
+      "evidence_quote": "he Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or",
+      "evidence_start": 5422,
+      "evidence_end": 5619,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The superintendent argues that eliminating E‑Rate would deprive schools of essential broadband infrastructure, undermining educational access for all students.",
+      "evidence_quote": "he Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or",
+      "evidence_start": 5422,
+      "evidence_end": 5619,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "protect E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program must be preserved to provide all students with reliable, affordable connectivity.",
+      "evidence_quote": "e students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 6150,
+      "evidence_end": 6347,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter discusses the importance of broadband as infrastructure but does not propose a specific policy change beyond preserving E‑Rate.",
+      "evidence_quote": "lthy learning environments E-Rate is the only federal education technology program, and the connectivity it provides is foundational to supporting our students’ learning. Between curriculum",
+      "evidence_start": 2799,
+      "evidence_end": 2988,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The writer urges the FCC to maintain funding for internal network infrastructure, citing its role in critical school operations.",
+      "evidence_quote": "ict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to",
+      "evidence_start": 5579,
+      "evidence_end": 5776,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Work with schools and other stakeholders to strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The letter calls for collaboration to modernize the program, implying that current processes need improvement.",
+      "evidence_quote": "l network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public",
+      "evidence_start": 5736,
+      "evidence_end": 5931,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081336",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081336",
+  "filer_raw": "Matthew Drinnon",
+  "date_submission": "2026-10-13T23:10:40.933Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4e5cf287aad684742275558ea12985c72927fe6be42b18299cf276dfee712c32",
+  "params_key": "f6b694248a1ed79446aea9789780fa5922f2082d46b809e43ae7b78b2b5b4aa3",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

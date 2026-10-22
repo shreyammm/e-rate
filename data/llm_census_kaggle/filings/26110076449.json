@@ -1,0 +1,88 @@
+{
+  "summary": "Bend/La Pine School District 1 urges the FCC to preserve and strengthen E‑Rate, rejecting sunset, narrowing eligibility, or cuts that would harm broadband access for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students in certain geographies without adequate broadband support.",
+      "evidence_quote": "eject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support",
+      "evidence_start": 2643,
+      "evidence_end": 2842,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate would directly reduce students’ access to reliable broadband, harming educational equity.",
+      "evidence_quote": "deral Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 466,
+      "evidence_end": 661,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Modernize E‑Rate",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "k with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and",
+      "evidence_start": 2960,
+      "evidence_end": 3156,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Protect E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E‑Rate funding prevents districts from reallocating scarce resources to other critical areas.",
+      "evidence_quote": "related infrastructure that makes those opportunities possible. Our students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial",
+      "evidence_start": 3423,
+      "evidence_end": 3616,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve internal network support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Maintaining support for internal network infrastructure is essential for reliable educational access.",
+      "evidence_quote": "thout adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to",
+      "evidence_start": 2802,
+      "evidence_end": 3000,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "special_construction": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076449",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076449",
+  "filer_raw": "Bend - La Pine Schools",
+  "date_submission": "2026-09-11T19:02:33.568Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b45afe3023737d35445cfab061c5e6b084f1deafde38d550374670e67ee3abf4",
+  "params_key": "9314fcc8d32f333d916f464c9bb214ab0760d17fbc93520c51d18297f0938d44",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

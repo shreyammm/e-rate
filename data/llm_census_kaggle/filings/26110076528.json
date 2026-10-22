@@ -1,0 +1,62 @@
+{
+  "summary": "Teacher urges FCC to preserve E‑Rate, opposing any sunset or reduction, citing its essential role in equitable broadband access and student success.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or reduction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is vital for equitable broadband access and student success, and any sunset or reduction would deepen educational inequities.",
+      "evidence_quote": "to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome. Students cannot",
+      "evidence_start": 2333,
+      "evidence_end": 2530,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "continue funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Maintaining E‑Rate funding preserves educational opportunity for millions of students, especially in low‑income and rural communities.",
+      "evidence_quote": "nset E-Rate funding and instead continue supporting this essential program and protect the access for the students who need it most.\n\nPreserving E-Rate means preserving educational opportunity for",
+      "evidence_start": 3262,
+      "evidence_end": 3458,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address any specific policy proposals beyond opposing sunset or reduction.",
+      "evidence_quote": "Brendan Carr\nChairman\nFederal Communications Commission\n45 L Street NE\nWashington, DC 20554\n\nFederal Communications Commission\nRE: WC Docket No. 13-184 – E-Rate Program Review NPRM\n\nDear Chairman",
+      "evidence_start": 0,
+      "evidence_end": 195,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076528",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076528",
+  "filer_raw": "Sara Fanvu",
+  "date_submission": "2026-09-13T14:06:52.992Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4116a3fc3c94e3eab73fdfbc572958d120ea54476bdfd7bb7f84149fcfed1710",
+  "params_key": "ea5fd0550b05ce15a1e44792ad2ce9b623120a4ac30e70f2e180bfb7a7cfa6a2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

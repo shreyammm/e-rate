@@ -1,0 +1,61 @@
+{
+  "summary": "The comment argues that the E‑Rate program is essential for ensuring equitable internet access and warns that scaling back the program would harm communities and lead to teacher layoffs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose cuts to E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate ensures quality internet access for all communities regardless of wealth or distance from services.",
+      "evidence_quote": "The E-rate program insures quality access to internet services for all cities and towns regardless of how wealthy or financially struggling they are, or how near or far from services they are.",
+      "evidence_start": 0,
+      "evidence_end": 192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose cuts to E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Scaling back E‑Rate will increase expenses for schools and communities.",
+      "evidence_quote": "how near or far from services they are. Internet access is a modern day necessity, but the expenses of these services is high and growing more expensive day-by-day. E-rate is a a good federal",
+      "evidence_start": 153,
+      "evidence_end": 344,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "oppose cuts to E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Scaling back E‑Rate will force many local communities to lay off teachers to meet essential internet costs.",
+      "evidence_quote": "g back on E-rate will (sadly) force many local communities to have to lay off teachers in order to meet their essential internet costs.",
+      "evidence_start": 460,
+      "evidence_end": 595,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072178",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072178",
+  "filer_raw": "Thomas Reeve",
+  "date_submission": "2026-08-19T11:36:51.818Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fcf96153978e6a183c82da9260f4e5d83068c71512cb3068d3834e0f57cd8df8",
+  "params_key": "854cc4669a8f39d65dda58a39b4e088594eeb3f5242e397da563c6d8cec0fedd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

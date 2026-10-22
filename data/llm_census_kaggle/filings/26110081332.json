@@ -1,0 +1,63 @@
+{
+  "summary": "The comment urges continued E‑Rate support, limits special construction to rural areas, and stresses the need for cybersecurity funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate must continue to provide affordable broadband to ensure equitable access for all students and library patrons.",
+      "evidence_quote": "on MIBs as requested in  FCC 26-41 . The program has been extremely successful in providing affordable access to  high-speed  broadband within schools and libraries.  This success should not",
+      "evidence_start": 313,
+      "evidence_end": 503,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "increase cybersecurity funding",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Schools need assistance with cybersecurity to protect student data, network access, and district financial records.",
+      "evidence_quote": "rity.  A lack of adequate resources puts student data, schools network access, and district financial records at risk.   E-Rate should play significant role in safeguarding schools and libraries",
+      "evidence_start": 1861,
+      "evidence_end": 2055,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "limit special construction to rural areas only",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Special construction should not be necessary except in rural locations where viable alternatives do not exist.",
+      "evidence_quote": "ds to evolve.  E-Rate funding of special construction should not be necessary except in rural locations  were  a lack of viable alternatives exist.  There is no reason to overbuild networks in urban",
+      "evidence_start": 1547,
+      "evidence_end": 1745,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "support",
+    "other_policy_issue": "support",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081332",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081332",
+  "filer_raw": "Communications Audit Services LLC",
+  "date_submission": "2026-10-13T22:59:16.172Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3ea5aed21692f885c8897d04683a9e1e812194c1795f71b8e28981ee470a2597",
+  "params_key": "69f4a0664eca190dff1ff20c9584fd18ef17c10fe9522970773dd424b6722c1a",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

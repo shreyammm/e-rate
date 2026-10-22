@@ -1,0 +1,50 @@
+{
+  "summary": "The district opposes any immediate sunset of the E‑Rate program and warns that cuts would disproportionately affect urban schools, citing significant annual cost savings that would be lost.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid targeting urban schools for cuts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "The district believes cuts would disproportionately target urban areas with fewer network challenges.",
+      "evidence_quote": "It is critical that the program not end, but I don't think they could eliminate the funding immediately. I personally think they will target removing funding for urban areas where there are less",
+      "evidence_start": 0,
+      "evidence_end": 194,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve program funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Ending the program would cost the district an additional $337,219.20 annually.",
+      "evidence_quote": "/Internet Services (Category 1, where we only pay 10% of the cost), it would cost us an extra $337,219.20 annually.\n\n Furthermore, this year's Category 2 funding—which covers networking equipment and",
+      "evidence_start": 313,
+      "evidence_end": 512,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078699",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078699",
+  "filer_raw": "Rick Surrency",
+  "date_submission": "2026-09-29T14:51:24.636Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5efc47bbd1122205e51dc79e87676d592814178147379ca38d42f0f206ee7273",
+  "params_key": "e9d65ada9e786951c78feaf63d03340c50254a22674d69990210893c3b10f63e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

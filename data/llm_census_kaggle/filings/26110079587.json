@@ -1,0 +1,89 @@
+{
+  "summary": "The comment urges the FCC to preserve the core E‑Rate program, maintain broad eligibility, avoid one‑size‑fits‑all screen‑time limits, keep CIPA requirements practical, and protect applicants from administrative burdens.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "conditional_or_amend",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "alternative_design",
+      "argument": "The comment calls for CIPA to remain practical and privacy‑respectful, implying a need for amendment rather than repeal.",
+      "evidence_quote": "works are actually used for instruction, operations, and student support. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. • Keep CIPA requirements practical,",
+      "evidence_start": 3273,
+      "evidence_end": 3463,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_form_5654",
+      "position": "oppose",
+      "requested_action": "Do not allow delayed or non‑filing members to jeopardize an entire consortium",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "The comment warns against administrative rules that could unfairly penalize consortium members for filing delays.",
+      "evidence_quote": "ere documented as most cost-effective. • Make consortium Form 479 requirements workable and do not allow delayed or non-filing members to jeopardize an entire consortium. • Protect applicants when a",
+      "evidence_start": 4057,
+      "evidence_end": 4255,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain broad eligibility for special construction, dark fiber, and self‑provisioned networks",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The comment states that eligibility for these services should be preserved to meet schools’ diverse needs.",
+      "evidence_quote": "ECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. •",
+      "evidence_start": 2651,
+      "evidence_end": 2849,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The commenter argues that eliminating or reducing E‑Rate would harm schools’ ability to maintain affordable connectivity.",
+      "evidence_quote": "ECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. •",
+      "evidence_start": 2651,
+      "evidence_end": 2849,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The commenter contends that screen‑time limits should be left to local control rather than imposed federally.",
+      "evidence_quote": "works are actually used for instruction, operations, and student support. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. • Keep CIPA requirements practical,",
+      "evidence_start": 3273,
+      "evidence_end": 3463,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "conditional_or_amend",
+    "consultant_form_5654": "oppose",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079587",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079587",
+  "filer_raw": "Greater Opportunities for Broome and Chenango",
+  "date_submission": "2026-10-06T15:09:10.676Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "36b8afa4d0bf5ef7f46d06ff7439bff4accce86ea0268f6e719b71293f27007a",
+  "params_key": "6f086533bd1c3f2795c4616a6ff548534586d3fc5be3b6259163fc5825a26770",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

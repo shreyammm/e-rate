@@ -1,0 +1,87 @@
+{
+  "summary": "River Trails School District 26 opposes any sunset or reduction of E‑Rate, urges preservation of both Category One and Two funding, rejects narrowed eligibility, and argues that E‑Rate is essential for building safety and internal networking.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowed eligibility criteria based on geography or other restrictive factors",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district opposes narrowing eligibility criteria for E‑Rate.",
+      "evidence_quote": "rt for both Category One (broadband) and Category Two (internal infrastructure). \n●​ Reject narrowed eligibility criteria based on geography or other restrictive factors. \n●​ Partner with school",
+      "evidence_start": 463,
+      "evidence_end": 657,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain support for both Category One and Category Two",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district supports continued funding for both broadband and internal infrastructure.",
+      "evidence_quote": "rt for both Category One (broadband) and Category Two (internal infrastructure). \n●​ Reject narrowed eligibility criteria based on geography or other restrictive factors. \n●​ Partner with school",
+      "evidence_start": 463,
+      "evidence_end": 657,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate E‑Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "legal_claim",
+      "argument": "The district opposes any sunset or elimination of E‑Rate funding.",
+      "evidence_quote": "te, or scale back this vital support. \nI respectfully urge the Commission to: \n●​ Reject any proposal to sunset or eliminate E-Rate. \n●​ Maintain support for both Category One (broadband) and",
+      "evidence_start": 312,
+      "evidence_end": 503,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Preserve E‑Rate as essential for building safety and operations",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "E‑Rate funds critical network infrastructure that powers building security, emergency systems, and climate control.",
+      "evidence_quote": "imply to \nmaintain core operations. \nKey reasons the Commission must protect E-Rate: \n●​ Network Infrastructure Powers Building Safety & Operations: Beyond digital learning, E-Rate \npowers the",
+      "evidence_start": 934,
+      "evidence_end": 1126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Maintain Category Two funding for internal networking",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Category Two funding is essential for internal switches, routers, and access points that distribute connectivity.",
+      "evidence_quote": "rotocols. \n●​ Category Two is Essential: Broadband delivery at the property line has no value without internal \nhardware. Category Two funding supports the switches, routers, and access points that",
+      "evidence_start": 1554,
+      "evidence_end": 1751,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078162",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078162",
+  "filer_raw": "River Trails School District #26",
+  "date_submission": "2026-09-24T20:30:13.353Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f1d97e989cb88b69b8d4f44d66a2fb0f628847e9890967815d282fcd1b43bddb",
+  "params_key": "e99fbe07b125d4ebeb73b175ab6cec4e3ec3c20edcbab64d15389d6846d78a7c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

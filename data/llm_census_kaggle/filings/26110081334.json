@@ -1,0 +1,62 @@
+{
+  "summary": "The Noxon School District trustee urges the FCC to preserve and strengthen the E‑Rate program, rejecting any proposals to sunset, eliminate, or unnecessarily narrow its eligibility.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing E‑Rate eligibility would leave students without adequate support.",
+      "evidence_quote": "ion to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 2809,
+      "evidence_end": 3002,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must not be eliminated or sunset.",
+      "evidence_quote": "deral Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 468,
+      "evidence_end": 663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve and strengthen E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reliable broadband is essential for modern public education and must be preserved.",
+      "evidence_quote": "reduce, or unnecessarily restrict E-Rate support for schools and libraries. As a school board member, I see firsthand that reliable, high-quality broadband is no longer an optional technology benefit",
+      "evidence_start": 623,
+      "evidence_end": 822,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081334",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081334",
+  "filer_raw": "David",
+  "date_submission": "2026-10-13T23:04:58.882Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "930d85c52f6b2154739c55b78fd7788fbc520be12b3db410f1ef3a66b66dc1bf",
+  "params_key": "415681d33fd12db8ac5310d3520369610d54bab0081f69030428b0ec7717fff5",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

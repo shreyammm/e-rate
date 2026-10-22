@@ -1,0 +1,88 @@
+{
+  "summary": "The letter from Lafayette School Corporation’s CFO urges the FCC to preserve and strengthen the E‑Rate program, opposing any sunset, narrowing of eligibility, or reduction of support for internal network infrastructure, and argues that reliable broadband is essential public‑school infrastructure.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography or other criteria",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students in underserved areas without adequate connectivity, undermining educational equity.",
+      "evidence_quote": "e Commission to: \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based \nsolely on",
+      "evidence_start": 4334,
+      "evidence_end": 4526,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The E‑Rate program is essential infrastructure that ensures reliable broadband for all students, and eliminating it would disproportionately harm high‑need districts.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-\nRate program and to reject any proposal that would eliminate, sunset, substantially reduce, or",
+      "evidence_start": 461,
+      "evidence_end": 647,
+      "uncertain": false
+    },
+    {
+      "provision_id": "mibs",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Internal network infrastructure is critical for school operations, including security cameras, student information systems, and emergency communications.",
+      "evidence_quote": "vity and internal network infrastructure schools need to provide \nreliable educational access; and \n4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce",
+      "evidence_start": 4644,
+      "evidence_end": 4841,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Maintain reliable broadband as essential public‑school infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reliable broadband is foundational for modern education, supporting instructional systems, student learning, and administrative functions.",
+      "evidence_quote": "t reliable, high-quality broadband is no longer an \noptional technology benefit for students. It is essential infrastructure for modern public education and \nsupports myriad operational and",
+      "evidence_start": 764,
+      "evidence_end": 953,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate rather than reduce its role in public education",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernizing E‑Rate will improve efficiency and ensure the program keeps pace with evolving instructional demands.",
+      "evidence_quote": "and modernize E-Rate rather than reduce \nits role in public education. \nE-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity \nnecessary for students",
+      "evidence_start": 4802,
+      "evidence_end": 4998,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "mibs": "support",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078882",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078882",
+  "filer_raw": "Lafayette School Corporation",
+  "date_submission": "2026-09-30T15:50:09.655Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e3bb23d784a75b557d19486c009aefe6d5f2188de4931542ce57a903874ff110",
+  "params_key": "943d0d5491c5d9f77ebbc446752b17b851ddf9ba0d67b6b85344d0b8e9f3911d",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

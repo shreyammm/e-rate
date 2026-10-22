@@ -1,0 +1,74 @@
+{
+  "summary": "Belmont Public Schools urges the FCC to preserve the E‑Rate program, arguing that it enables essential technology upgrades without diverting local funds and ensures equitable access for all students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain access",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "E‑Rate funding has enabled Belmont to upgrade internet capacity, replace wireless access points, and replace network switches, directly improving learning environments.",
+      "evidence_quote": "ntain the reliable and secure technology infrastructure that \nstudents and educators depend on every day. In Belmont, this support has helped us: \n● Increase the district's internet capacity to 2",
+      "evidence_start": 1092,
+      "evidence_end": 1287,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate allows schools to make necessary technology investments without taking limited local resources away from other student needs.",
+      "evidence_quote": "elping us \ncomplete that work within our existing budget and at least a year sooner than we \notherwise could. \n\n\nThese investments matter not simply because schools rely on technology, but because",
+      "evidence_start": 1712,
+      "evidence_end": 1908,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "preserve E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Preserving E‑Rate ensures that public schools can afford reliable technology without burdening local budgets.",
+      "evidence_quote": "ng the FCC’s consideration of changes to the \nE-Rate program, including proposals to eliminate the program or limit eligibility for certain \ncommunities.[1] \n  \nI urge the FCC to preserve E-Rate and",
+      "evidence_start": 787,
+      "evidence_end": 985,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid eliminating E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Eliminating E‑Rate would shift the cost of essential technology to local school budgets, delaying upgrades and diverting funds from staffing and academic programming.",
+      "evidence_quote": "rovide up to \n$84,897.16 in benefits. \n  \nWithout E-Rate, the need for reliable internet, secure networks, wireless access, and \nfunctioning infrastructure does not go away. The cost simply shifts to",
+      "evidence_start": 2638,
+      "evidence_end": 2837,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072804",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072804",
+  "filer_raw": "Meghan Moriarty",
+  "date_submission": "2026-08-23T20:48:22.187Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9d2b9a8aaf7e652c2a05f8966d4583b4c97408490658fec6ba8ae170c069c0da",
+  "params_key": "a2e7018f0b0396f0c805397e3def4cc021f7ce9cb619346b9215f8d46ed54d78",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

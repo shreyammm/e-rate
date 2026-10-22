@@ -1,0 +1,111 @@
+{
+  "summary": "Wake County Public School System urges the FCC to maintain current E‑Rate support for WAN, internal network, and statewide internet services, arguing that cuts would create funding gaps and harm student learning; it also notes that screen‑time concerns should be addressed separately from infrastructure funding. WCPSS urges the FCC to keep E‑Rate funding for network infrastructure and to keep a clear distinction between infrastructure needs and student screen‑time concerns.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain eligibility for statewide internet services procured through NCDPI",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Statewide internet services funded through NCDPI are integral to the district’s integrated connectivity ecosystem and must remain eligible.",
+      "evidence_quote": "The North Carolina Department of Public Instruction (NCDPI)\nsubmits a statewide FCC Form 471 application for internet services benetiting North Carolina local education\nagencies. Through this",
+      "evidence_start": 3404,
+      "evidence_end": 3595,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "preserve current E‑Rate support for WAN and internal network services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district needs sustained federal funding to maintain and upgrade its broadband and internal network infrastructure, which directly supports student learning.",
+      "evidence_quote": "stments rather than any reduction in the underlying need for connectivity.\nWCPSS respectably urges the Federal Communications Commission to preserve the E-Rate program's support\nfor eligible WAN",
+      "evidence_start": 5729,
+      "evidence_end": 5923,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain clear distinction between infrastructure and student screen‑time policy",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "The district stresses that infrastructure funding decisions should be separate from policies on student technology use.",
+      "evidence_quote": "y changes, WCPSS respectfully recommends maintaining a clear\ndistinction between questions related to student technology use and the infrastructure necessary to provide\nsecure and reliable",
+      "evidence_start": 7124,
+      "evidence_end": 7312,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current E‑Rate support for network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "WCPSS argues that E‑Rate funding must continue to cover all components of school network infrastructure to ensure reliable connectivity for students.",
+      "evidence_quote": "necessary to provide\nsecure and reliable connectivity. Funding decisions that affect network infrastructure have significant\nimplications for the educational services and opportunities available to",
+      "evidence_start": 7272,
+      "evidence_end": 7469,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "prevent cuts to E‑Rate funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "other",
+      "argument": "Cuts would undermine the district’s ability to provide reliable, secure, and equitable access to digital instructional resources.",
+      "evidence_quote": "olving cybersecurity risks, and maintain consistent connectivity across schools.\nContinued support through the federal E-Rate program is essential to helping WCPSS manage these ongoing\nneeds,",
+      "evidence_start": 1403,
+      "evidence_end": 1594,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "avoid sunset or reduction of E‑Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Any reduction in federal E‑Rate support would create a funding gap that must be filled by state or local sources, increasing overall costs.",
+      "evidence_quote": "al\nwww.wcpss.net\n\nE-Rate support to fund school connectivity and technology infrastructure. Any reduction in federal E-Rate\nsupport would therefore create a funding gap that would need to be",
+      "evidence_start": 2935,
+      "evidence_end": 3125,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "evaluate screen‑time limits separately from infrastructure funding",
+      "reason_family": "child_safety",
+      "claim_kind": "other",
+      "argument": "Screen‑time considerations should be addressed independently of decisions about broadband infrastructure funding.",
+      "evidence_quote": "o seeks comment regarding student screen time and E-Rate-supported services. WCPSS\nrecognizes the importance of student safety, digital well-being, and the appropriate use of technology in",
+      "evidence_start": 6199,
+      "evidence_end": 6387,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080932",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080932",
+  "filer_raw": "Wake County Public School System",
+  "date_submission": "2026-10-13T14:39:03.813Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "f22e41f50e67f392f0efe2161d3c9c20e09dcab6a66a72565d0cb489b9caf2d9",
+  "params_key": "2f29191a549fbf27f216965064558751f4cbd0cf79c9a2546e8658f7f3531202",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

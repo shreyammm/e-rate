@@ -1,0 +1,87 @@
+{
+  "summary": "The commenter, a technology director, urges the FCC to keep the current E‑Rate program, opposes cutting funding based on screen‑time assumptions, and argues that reliable connectivity is essential for instruction, safety, and academic success.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for ensuring reliable, affordable connectivity for schools.",
+      "evidence_quote": "As the technology director of a public school system that receives E-Rate funding, I urge the FCC to maintain the current E-Rate program.\n\nInternet connectivity has become as fundamental to education",
+      "evidence_start": 0,
+      "evidence_end": 199,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "acknowledge academic gains linked to technology access",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Alabama’s significant NAEP gains after COVID‑era technology investments suggest that increased access improves academic outcomes.",
+      "evidence_quote": "e to achieve a statistically significant increase in fourth-grade NAEP mathematics scores, and independent research ranked Alabama first nationally in math recovery and third in reading recovery.",
+      "evidence_start": 1860,
+      "evidence_end": 2055,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "recognize connectivity as essential for safety and operations",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Reliable connectivity supports security cameras, emergency systems, and student information systems, protecting student safety.",
+      "evidence_quote": "defined purpose, this is the operational reality of today's schools. Reliable connectivity is now integral not only to instruction, but also to the safety, security, and day-to-day operation of",
+      "evidence_start": 2794,
+      "evidence_end": 2987,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not condition funding on screen‑time limits",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "Reducing funding to influence screen time would restrict access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "en-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly diverse range of cloud-based instructional resources, courses, applications,",
+      "evidence_start": 933,
+      "evidence_end": 1129,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base funding on screen‑time assumptions",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "Schools rely on diverse cloud‑based instructional resources; cutting funding would limit these resources.",
+      "evidence_quote": "tional resources, courses, applications, and essential services. Reducing funding to influence screen time could restrict access to valuable educational resources and harm learning outcomes rather",
+      "evidence_start": 1089,
+      "evidence_end": 1285,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080602",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080602",
+  "filer_raw": "Michael Fowlkes | Andy Plays",
+  "date_submission": "2026-10-12T15:35:57.102Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f0977aa257c2ca9a0348b881b6f8f39f311fc7b82d3dc800f7f765890bf1c2d9",
+  "params_key": "0fe584706962e3fba315f36dff389a8e5d838bf5de8863dc093db6ce62f7673f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

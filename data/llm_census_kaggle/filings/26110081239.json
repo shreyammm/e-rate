@@ -1,0 +1,87 @@
+{
+  "summary": "Jasper County School District’s Technology Coordinator urges the FCC to preserve and strengthen E‑Rate, opposing sunset, cuts, and narrowing eligibility, while arguing that E‑Rate is essential for reliable broadband, cost savings, and equitable access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "E‑Rate covers 70% of broadband costs and funds critical network upgrades and security, preventing diversion of instructional funds.",
+      "evidence_quote": "ating E-Rate support would have a direct and tangible impact. \nE-Rate covers 70% of our district's broadband costs, providing essential financial stability. Additionally, Category 2 \nfunding has been",
+      "evidence_start": 1842,
+      "evidence_end": 2041,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students without adequate support and widen digital inequities.",
+      "evidence_quote": "-Rate program; \n2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on \ngeography or other criteria that would leave students without adequate",
+      "evidence_start": 4636,
+      "evidence_end": 4830,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate is essential infrastructure that ensures reliable broadband for all students, especially in rural areas.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate \nprogram and to reject any proposal that would eliminate, sunset, substantially reduce, or",
+      "evidence_start": 457,
+      "evidence_end": 643,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Preserve and modernize E‑Rate rather than reduce its role",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate has enabled schools and libraries to build connectivity essential for modern education and should be strengthened.",
+      "evidence_quote": "e electricity, transportation, and \nsafe facilities. \nI therefore respectfully urge the Commission to: \n1. Reject any proposal to sunset or eliminate the E-Rate program; \n2. Reject proposals that",
+      "evidence_start": 4481,
+      "evidence_end": 4676,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "discussion_no_position",
+      "requested_action": "Maintain local control over screen‑time policies",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Screen‑time concerns should be addressed by local policies, not by cutting E‑Rate funding.",
+      "evidence_quote": "stead, they represent the recurring cost of keeping a modern network running. \nAdditionally, the proposal seeks to address screen time concerns; however, school connectivity is not \nsynonymous with",
+      "evidence_start": 3235,
+      "evidence_end": 3432,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "screen_time_condition": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081239",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081239",
+  "filer_raw": "Aaron Kurtz",
+  "date_submission": "2026-10-13T21:05:52.309Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9402011730c9656d1635cfcfb6adb37983432eea2a4cb70353e92c2b091f5c6b",
+  "params_key": "e876a6e33f971685ac47570756fdd509bec0fee33c34f5af2f1a43e04f23a213",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

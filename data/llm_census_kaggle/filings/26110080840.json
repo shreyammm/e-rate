@@ -1,0 +1,89 @@
+{
+  "summary": "A parent of three children in Montgomery County Public Schools urges the FCC to keep the E‑Rate program but to impose stricter safeguards against digital distraction, including enhanced CIPA enforcement, screen‑time reporting, parental opt‑outs, and AI consent requirements.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "conditional_or_amend",
+      "requested_action": "require parental consent before AI tools are used in schools",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "AI tools can influence content exposure; parental consent safeguards privacy and autonomy.",
+      "evidence_quote": "uch time students spend on a screen;\n-          Provide a parental opt-out right that will not penalize or ostracize a student;\n-          Require parental consent before artificial intelligence",
+      "evidence_start": 1399,
+      "evidence_end": 1593,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "conditional_or_amend",
+      "requested_action": "strengthen enforcement of CIPA and require audits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Digital distraction from unrestricted internet access harms students’ learning, so stricter CIPA enforcement is needed.",
+      "evidence_quote": "imes access pornographic content, all of which is far more pervasive on the internet now than it was when E-Rate began. The FCC should strengthen its enforcement of the Children’s Internet Protection",
+      "evidence_start": 467,
+      "evidence_end": 666,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "discussion_no_position",
+      "requested_action": "",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The parent notes that technology is important but needs guardrails to support learning.",
+      "evidence_quote": "l consent before artificial intelligence tools are turned on.\n\nTechnology is an important component of our children's education, but without meaningful guardrails in place, it is impeding our",
+      "evidence_start": 1553,
+      "evidence_end": 1744,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "conditional_or_amend",
+      "requested_action": "provide a parental opt‑out right for screen‑based instruction",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents should have the ability to opt their children out of screen‑based instruction without penalty.",
+      "evidence_quote": "test whether minors can reach obscenity and other harmful content;\n-          Provide notice to parents about what content students access in school and how much time students spend on a screen;\n-",
+      "evidence_start": 1241,
+      "evidence_end": 1437,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "conditional_or_amend",
+      "requested_action": "require schools to report instructional screen time and certify limits",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Monitoring and limiting daily screen time can reduce distraction and improve learning outcomes.",
+      "evidence_quote": "technology only as an enhancement, not a replacement;\n-          Report instructional screen time by grade level and certify that E-Rate-funded networks are not used to exceed reasonable daily",
+      "evidence_start": 931,
+      "evidence_end": 1123,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "conditional_or_amend",
+    "cipa_network_filter": "conditional_or_amend",
+    "education_outcomes": "discussion_no_position",
+    "parent_opt_out": "conditional_or_amend",
+    "screen_time_condition": "conditional_or_amend"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080840",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080840",
+  "filer_raw": "Susannah Nelson",
+  "date_submission": "2026-10-13T11:29:02.443Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "90a19adefa6905c4e2cd0930f9e9a1339ddb1e2c3b5ac434611f69160aa4ca73",
+  "params_key": "d45fcfdd49baf36d39f3a98f8b561cd535db0f3ca833bbcc0de97fa8ceed215f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

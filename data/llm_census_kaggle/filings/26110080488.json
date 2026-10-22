@@ -1,0 +1,87 @@
+{
+  "summary": "A retired teacher urges the FCC to keep the E‑Rate program intact, arguing that cutting or limiting it would harm students, especially those in low‑income and rural areas, and would force schools to cut other essential programs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue supporting all eligible schools",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Students in low‑income urban and rural communities rely on E‑Rate to access the same tools as wealthier districts.",
+      "evidence_quote": "ensure that students in low-income urban neighborhoods and rural communities have access to the same tools as students in wealthier districts. While the program has done a stellar job in reaching its",
+      "evidence_start": 1706,
+      "evidence_end": 1905,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject any proposal to reduce, limit, or sunset E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for equitable broadband access for all students.",
+      "evidence_quote": "the Federal Communications Commission to preserve and protect the E-Rate program and to oppose any proposal that would reduce, limit, or sunset this vital source of support for schools and libraries",
+      "evidence_start": 311,
+      "evidence_end": 509,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Cutting the program would deepen inequities in public education.",
+      "evidence_quote": "m has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the",
+      "evidence_start": 1865,
+      "evidence_end": 2058,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "avoid imposing additional costs on schools",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E‑Rate funding were reduced, schools would face an overwhelming additional cost of $3.8 million.",
+      "evidence_quote": "eliminated, the additional cost would be overwhelming for schools. Our district would lose 3.8 million dollars. School budgets have shrunk every year that I have taught. Having to fund the E-Rate",
+      "evidence_start": 2325,
+      "evidence_end": 2520,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "protect ancillary programs",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "implementation_burden",
+      "argument": "Eliminating E‑Rate would force schools to cut arts, sports, and other programs that help keep students in school.",
+      "evidence_quote": "I have taught. Having to fund the E-Rate program would force schools to cut other programs that keep students in school and entire curriculums would need to be replaced. Programs such as the arts and",
+      "evidence_start": 2480,
+      "evidence_end": 2679,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080488",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080488",
+  "filer_raw": "Tammy Ahmed",
+  "date_submission": "2026-10-10T20:12:23.739Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2d5ab33127c5cc1ffb23c070882927546e89ae69876b2187e37195fc32360e69",
+  "params_key": "4c2aecab29171bef40661251c05cee57531a01e357d75d9bac6f96c3774076f7",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

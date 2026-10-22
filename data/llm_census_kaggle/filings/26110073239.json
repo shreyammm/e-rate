@@ -1,0 +1,76 @@
+{
+  "summary": "Da Vinci Academy argues that eliminating or limiting the E‑Rate program would severely harm its students, staff, and safety systems, and that the program is essential for affordable broadband, digital equity, and operational viability.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "continue E‑Rate discounts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate discounts close the digital divide for economically disadvantaged students who lack home broadband.",
+      "evidence_quote": "ntinue to see students coming to us that are economically\ndisadvantaged. For these kids, who are less likely to have broadband internet at home, the\nE-Rate program plays an important role in closing",
+      "evidence_start": 3421,
+      "evidence_end": 3619,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "reject termination or limitation of E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential for maintaining affordable broadband and ensuring equitable access for low‑income students.",
+      "evidence_quote": "1 (rel. June 26, 2026).\n\nDaVinci Academy urges the Commission to reject any proposal that would terminate or limit the\nE-Rate Program. Through the established Telecommunications Act of 1996, the",
+      "evidence_start": 1396,
+      "evidence_end": 1590,
+      "uncertain": false
+    },
+    {
+      "provision_id": "school_supervision_reporting",
+      "position": "support",
+      "requested_action": "maintain broadband for safety systems",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "Broadband failure during emergencies would jeopardize alarm and communication systems, endangering over 1,000 children.",
+      "evidence_quote": "t internet\naccess affordable for charter public schools operating on tight budgets.\n2. School safety. We utilize online Emergency communication systems, with linked mass-\nnotification tools,",
+      "evidence_start": 2485,
+      "evidence_end": 2675,
+      "uncertain": false
+    },
+    {
+      "provision_id": "targeted_competition",
+      "position": "support",
+      "requested_action": "retain E‑Rate discounts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "implementation_burden",
+      "argument": "In a high‑cost, low‑competition market, E‑Rate discounts are the only viable way to afford adequate connectivity.",
+      "evidence_quote": "d otherwise be an unaffordable line item into a manageable one for us.\n5. Lack of Competition. We operate in a high-cost, low-competition broadband market\nwhere E-Rate discounts are the only way to",
+      "evidence_start": 3738,
+      "evidence_end": 3935,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "support",
+    "school_supervision_reporting": "support",
+    "targeted_competition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073239",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073239",
+  "filer_raw": "DaVinci Academy of Arts & Science",
+  "date_submission": "2026-08-26T17:05:34.428Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "78ece54bb9b9923c685f73879a3427d3b5f040a8ee30da4d0d5a726f737528cd",
+  "params_key": "3d67cc37de89d19058c1043f8d1d1af008f682e8c9f70742ab7a42a9cc09555e",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

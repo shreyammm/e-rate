@@ -1,0 +1,87 @@
+{
+  "summary": "The letter urges the FCC to keep the E‑Rate program intact, reject any sunset or narrowing of eligibility, and strengthen the program to ensure reliable broadband for schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would unnecessarily narrow E‑Rate eligibility or restrict support based solely on geography",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would leave students without adequate support and disproportionately affect non‑rural districts.",
+      "evidence_quote": "ion to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other",
+      "evidence_start": 4810,
+      "evidence_end": 5003,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reliable broadband is a basic utility necessary for modern education and student safety.",
+      "evidence_quote": "pport based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide",
+      "evidence_start": 4963,
+      "evidence_end": 5162,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to sunset or eliminate the E‑Rate program",
+      "reason_family": "other",
+      "claim_kind": "normative_value",
+      "argument": "The E‑Rate program is essential infrastructure that must be preserved to maintain reliable broadband for schools.",
+      "evidence_quote": "iting to urge the Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily",
+      "evidence_start": 468,
+      "evidence_end": 667,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Work with schools and stakeholders to strengthen and modernize E‑Rate rather than reduce its role",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Modernizing the program will better meet evolving instructional demands and technology needs.",
+      "evidence_quote": "k infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 5122,
+      "evidence_end": 5320,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "None",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address other policy issues beyond preserving and strengthening E‑Rate.",
+      "evidence_quote": "han reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully",
+      "evidence_start": 5280,
+      "evidence_end": 5477,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080700",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080700",
+  "filer_raw": "Brenham ISD | Leslie Carroll",
+  "date_submission": "2026-10-12T19:54:17.984Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4ffeba412d8b845d4cbc73df8d6859619f974f4f3aacf1ec0bf9dbb6bcfed025",
+  "params_key": "d4d7c66765717dad02e60d7b1be80edc85a2d3d78e948849e6172fb89f8d4721",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

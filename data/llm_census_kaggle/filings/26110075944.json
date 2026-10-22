@@ -1,0 +1,123 @@
+{
+  "summary": "Idaho Falls School District 91 urges the FCC to preserve the E‑Rate program, arguing that ongoing investment in network infrastructure is essential for reliable, secure, and equitable connectivity for students and staff. The district opposes proposals to narrow or sunset E‑Rate, citing rising equipment costs, the need for continuous upgrades, and the financial burden on constrained local budgets. The comment urges the FCC to maintain robust E‑Rate support, arguing that connectivity is essential for modern schools and that reducing eligibility or discount rates would harm educational outcomes.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "retain support for network modernization",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "The district emphasizes that network components such as switches, wireless infrastructure, and firewalls require ongoing replacement, and E‑Rate enables proactive, planned upgrades.",
+      "evidence_quote": "ty throughout our schools. It has helped us replace aging network equipment, including switches and other infrastructure that had reached or exceeded its useful life. E-Rate also helps support",
+      "evidence_start": 786,
+      "evidence_end": 978,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain funding for cybersecurity and filtering",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "E‑Rate supports eligible firewall and network security components necessary to safely connect thousands of students and staff to the internet.",
+      "evidence_quote": "s useful life. E-Rate also helps support eligible firewall and network security components that are necessary to safely connect thousands of students and staff members to the internet. A good example",
+      "evidence_start": 938,
+      "evidence_end": 1137,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "avoid cuts to essential infrastructure",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Rising costs for network equipment, software, and cybersecurity mean that reducing E‑Rate assistance would force districts to divert funds from core educational priorities.",
+      "evidence_quote": "l these pressures acutely. Over the last several years, we have experienced significant increases in the cost of network equipment, software, licensing, support, cybersecurity products, and other",
+      "evidence_start": 4189,
+      "evidence_end": 4384,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district argues that eligibility criteria based on rural classification or broadband competition do not reflect the true financial realities of maintaining school networks.",
+      "evidence_quote": "etermine that some communities no longer require E-Rate assistance simply because they are not classified as sufficiently rural, have  multiple broadband providers, or have lower participation in the",
+      "evidence_start": 5278,
+      "evidence_end": 5477,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility and discount rates",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reducing eligibility or discount rates would undermine the progress the program has made and harm students’ access to reliable internet.",
+      "evidence_quote": "wo internal connections and to carefully consider the real-world financial and educational consequences before adopting changes that would reduce school eligibility, lower discount rates, or",
+      "evidence_start": 8003,
+      "evidence_end": 8193,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve the E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district believes that eliminating or narrowing E‑Rate would transfer essential connectivity costs to already constrained local budgets, undermining educational equity.",
+      "evidence_quote": "nfrastructure that provides internet and network connectivity to our schools, classrooms, staff, and students. From that perspective, I strongly urge the Commission to preserve the E-Rate program and",
+      "evidence_start": 155,
+      "evidence_end": 354,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E‑Rate",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E‑Rate dollars translate directly into functioning classrooms and are essential for maintaining reliable internet connections.",
+      "evidence_quote": "hese systems operational, E-Rate dollars translate directly into functioning classrooms. They allow districts like ours to maintain reliable internet connections, replace obsolete infrastructure",
+      "evidence_start": 6927,
+      "evidence_end": 7121,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "support",
+      "requested_action": "preserve robust E‑Rate support",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Reliable internet and network infrastructure are fundamental to modern education, just as electricity is.",
+      "evidence_quote": "network improvements, or divert limited local education dollars from other priorities. Eventually, students bear the consequences. Reliable internet and network infrastructure have become as",
+      "evidence_start": 7389,
+      "evidence_end": 7579,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075944",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075944",
+  "filer_raw": "Donovan Gregory | Idaho Falls School District 91",
+  "date_submission": "2026-09-08T21:56:28.285Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7c140665e795113bdfa4290861556254b914207dc01cfa705bb3796653c6fd6d",
+  "params_key": "2d99f3cc79d3314aead49693735f0d939b4a467443af39b1024c468bd4e3a4b9",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

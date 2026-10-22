@@ -1,0 +1,89 @@
+{
+  "summary": "Commerce City Schools urges the FCC to keep the E‑Rate program intact, preserve dark‑fiber and other cost‑effective transport options, maintain the current discount methodology, reject geography‑based cuts, and leave screen‑time decisions to local authorities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "support",
+      "requested_action": "Maintain the current discount methodology so that small, high‑need districts are not disproportionately harmed",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district stresses that the current discount structure protects small, high‑need districts from being left behind.",
+      "evidence_quote": "ss, internal connections, Wi-Fi, managed internal \nbroadband services, and the secure network infrastructure schools need; \n●​ Maintain the current discount methodology, so that small, high-need",
+      "evidence_start": 4214,
+      "evidence_end": 4408,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject any proposal to eliminate the E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "alternative_design",
+      "argument": "The district argues that eliminating E‑Rate would shift costly network maintenance to local budgets, jeopardizing essential services.",
+      "evidence_quote": "g to urge the Commission to preserve the E-Rate program, and to reject any proposal \nthat would eliminate, substantially reduce, or unnecessarily restrict E-Rate support for schools \nand libraries.",
+      "evidence_start": 624,
+      "evidence_end": 821,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Leave screen‑time and instructional decisions to state and local authorities",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "The district maintains that connectivity is necessary for instruction but should not be tied to screen‑time limits.",
+      "evidence_quote": "bout \nhow and when technology is used in instruction belong to educators, families, and local school \nboards. Connectivity is necessary for any amount of screen time, and for the many operations",
+      "evidence_start": 3436,
+      "evidence_end": 3630,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "support",
+      "requested_action": "Preserve eligibility for dark fiber, special construction, self‑provisioned networks, and other cost‑effective transport options",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The district cites Category 1 funding that enabled dark‑fiber leasing as a cost‑effective WAN solution.",
+      "evidence_quote": "ability to safely and \neffectively serve students. Category 1 funding has allowed us to lease dark fiber, providing fast, \nsecure and the most cost effective WAN service possible. In the funding year",
+      "evidence_start": 1084,
+      "evidence_end": 1283,
+      "uncertain": false
+    },
+    {
+      "provision_id": "targeted_competition",
+      "position": "oppose",
+      "requested_action": "Reject proposals that would restrict support based solely on geography or other criteria that would leave students without adequate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district warns that geography‑based cuts would harm students in rural areas.",
+      "evidence_quote": "nt methodology, so that small, high-need districts are not \ndisproportionately harmed; \n●​ Reject proposals that would restrict support based solely on geography or other criteria \nthat would leave",
+      "evidence_start": 4368,
+      "evidence_end": 4565,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose",
+    "special_construction": "support",
+    "targeted_competition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080860",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080860",
+  "filer_raw": "Commerce City School District",
+  "date_submission": "2026-10-13T12:33:03.137Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fc350bf41af38d4d1b07ff1f46eae8390a6307329473dce33d0ed9bfa269b591",
+  "params_key": "42de9f7e5d1f8d4280b0814495288c8dce407c9db3fea98520b8fe77d0f8e275",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

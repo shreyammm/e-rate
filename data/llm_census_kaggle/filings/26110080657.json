@@ -1,0 +1,89 @@
+{
+  "summary": "Moore Public Library urges the FCC to preserve the core E‑Rate program and its support for library connectivity, while opposing any changes that would reduce access, increase administrative burden, or limit local flexibility. The library also calls for thoughtful improvements, simplification, and fraud prevention.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "discussion_no_position",
+      "requested_action": "Maintain broad definition of eligible library use",
+      "reason_family": "administrative_burden",
+      "claim_kind": "other",
+      "argument": "The library calls for a definition that reflects how library networks actually serve public access and digital resources.",
+      "evidence_quote": "environments differ. • Maintain a broad, workable definition of eligible library use that reflects how library networks actually serve public access, digital resources, workforce development,",
+      "evidence_start": 2805,
+      "evidence_end": 2996,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "Avoid benchmark pricing or reimbursement caps that discourage providers from serving high‑cost or hard‑to‑serve libraries",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "alternative_design",
+      "argument": "The library warns that such caps could unintentionally discourage service to rural or high‑cost libraries.",
+      "evidence_quote": "g justification requirements account for rural, high-cost, limited-provider, branch-based, and complex service environments. • Do not allow benchmark pricing or reimbursement caps to unintentionally",
+      "evidence_start": 3111,
+      "evidence_end": 3309,
+      "uncertain": false
+    },
+    {
+      "provision_id": "discount_matrix",
+      "position": "conditional_or_amend",
+      "requested_action": "Ensure discount methodology reflects true local cost and need",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library cautions against discount changes that disproportionately harm high‑need, rural, or high‑cost communities.",
+      "evidence_quote": "ibraries rely on every day. • Ensure any changes to discount methodology reflect true local cost and need, and do not disproportionately harm libraries  serve  high-need, rural, or high-cost",
+      "evidence_start": 2500,
+      "evidence_end": 2690,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve support for Internet access, internal connections, public Wi‑Fi, installation, maintenance, and related network services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library maintains that these services are critical for daily operations and community programs.",
+      "evidence_quote": "e program. • Preserve E-Rate support for Internet access, internal connections, public Wi-Fi, installation, maintenance, and related network services that libraries rely on every day. • Ensure any",
+      "evidence_start": 2344,
+      "evidence_end": 2540,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E‑Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The library argues that cutting or sunsetting E‑Rate would reduce essential connectivity services for rural patrons.",
+      "evidence_quote": "e program. • Preserve E-Rate support for Internet access, internal connections, public Wi-Fi, installation, maintenance, and related network services that libraries rely on every day. • Ensure any",
+      "evidence_start": 2344,
+      "evidence_end": 2540,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "discussion_no_position",
+    "consultant_percent_fees": "oppose",
+    "discount_matrix": "conditional_or_amend",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080657",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080657",
+  "filer_raw": "Moore Public Library",
+  "date_submission": "2026-10-12T18:07:20.463Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "df1135023e2da8ba3aedea4b3a31063bf29da5ea8ff3aff3203357ec2d96c480",
+  "params_key": "494815ff5970c7d79106bce3427ddaa2fc6a73af23d45ae4ac929422ebbb5c80",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

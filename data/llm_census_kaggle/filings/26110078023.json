@@ -1,0 +1,86 @@
+{
+  "summary": "The letter from Peter Emmel, technology director of Randolph Township Schools, urges the FCC to preserve and strengthen the E‑Rate program, rejecting any proposals to sunset, eliminate, or unnecessarily restrict it. He argues that reliable broadband is essential infrastructure for safety, instruction, and equity, and that cutting support would force districts to divert resources from educational priorities. The comment urges the FCC to protect the E‑Rate program and ensure public schools can continue providing reliable, affordable, and effective connectivity for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reject narrowing eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate eligibility should not be restricted based on geography or other criteria that would leave students without adequate support.",
+      "evidence_quote": "any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would",
+      "evidence_start": 5596,
+      "evidence_end": 5794,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Current eligibility criteria ensure schools receive necessary connectivity and internal network support.",
+      "evidence_quote": "n geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable",
+      "evidence_start": 5754,
+      "evidence_end": 5942,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject sunset or elimination",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate must be preserved to maintain essential broadband infrastructure for schools.",
+      "evidence_quote": "Federal Communications Commission (FCC) to preserve and strengthen the E-Rate program and to reject any proposal that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate",
+      "evidence_start": 468,
+      "evidence_end": 665,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "maintain funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Reducing or eliminating E‑Rate funding would force districts to divert resources from instructional and safety priorities.",
+      "evidence_quote": "rce districts to redirect resources away from innovation and emerging AI-driven educational  opportunities, making it more difficult to provide a safe, accessible, and well-rounded education for",
+      "evidence_start": 2800,
+      "evidence_end": 2994,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "strengthen and modernize program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate should be modernized to meet evolving instructional demands and technology needs.",
+      "evidence_quote": "ructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate",
+      "evidence_start": 5902,
+      "evidence_end": 6098,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple",
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078023",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078023",
+  "filer_raw": "Randolph Township Schools",
+  "date_submission": "2026-09-24T10:38:13.123Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7f833a34cbde6658d49f3617e7895eec0205e349b3427ff13e2c2131221af8d9",
+  "params_key": "e5d5848c56b7f72236ae2d7ed2dda931859a136ddfb5ec44b90cff74833920ec",
+  "model": "gpt-oss:20b",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

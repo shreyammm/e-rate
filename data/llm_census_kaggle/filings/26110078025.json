@@ -1,0 +1,75 @@
+{
+  "summary": "The Hoboken Public School District urges the FCC to preserve and strengthen the E‑Rate program, arguing that reliable broadband is essential for instruction, operations, and safety, and that eliminating or reducing support would force local budgets to absorb significant costs and diminish educational technology investments.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain current eligibility for connectivity and internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "E‑Rate currently covers about 60% of connectivity costs, and the district needs this support to maintain and upgrade its network.",
+      "evidence_quote": "nts in educational technology, software, digital\nresources, and other tools that support teaching and learning.\nE-Rate currently covers approximately 60% of our eligible connectivity and",
+      "evidence_start": 1544,
+      "evidence_end": 1730,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "continue funding for internal network infrastructure",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The program helps secure and maintain the network infrastructure that schools rely on for daily operations and safety.",
+      "evidence_quote": "twork connections. Without this support, our district would face an additional $154,000 yearly\nexpense. These funds do not represent a one-time technology purchase; they help maintain, upgrade,\nand",
+      "evidence_start": 1846,
+      "evidence_end": 2043,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to eliminate, sunset, or substantially reduce E‑Rate support",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The district argues that E‑Rate is essential infrastructure for modern education and that its removal would impose undue financial burdens on schools.",
+      "evidence_quote": "ommission to preserve and strengthen the E-Rate program and reject\nproposals that would eliminate, sunset, substantially reduce, or unnecessarily restrict E-Rate support for\nschools and libraries.",
+      "evidence_start": 613,
+      "evidence_end": 809,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "discussion_no_position",
+      "requested_action": "none",
+      "reason_family": "other",
+      "claim_kind": "other",
+      "argument": "The letter does not address any other specific policy proposals beyond preserving E‑Rate.",
+      "evidence_quote": "HOBOKEN BOARD OF EDUCATION\nOFFICE OF INFORMATION TECHNOLOGY\nHE BLISHED NE\n524 Park Ave H\nHoboken, NJ 07030 | 201.356.3600 k\nFax: 201.356.3641\nFederal Communications Commission\n45 L Street",
+      "evidence_start": 0,
+      "evidence_end": 187,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "discussion_no_position"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078025",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078025",
+  "filer_raw": "Hoboken Public School District",
+  "date_submission": "2026-09-24T11:06:37.601Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "9a19301d3fcd7651773bc736d092b5b50e02a9f986c68d5db788290f88affa64",
+  "params_key": "5e10275b9b654b0b5b1a3280a2a6363aa5157df6c95d86eb9f8f397b22639669",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

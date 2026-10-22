@@ -1,0 +1,89 @@
+{
+  "summary": "Reeths‑Puffer Schools argues for preserving core E‑Rate functions, broad eligibility, local control over screen‑time, practical CIPA, and avoiding cuts to Pre‑K/Head‑Start.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "conditional_or_amend",
+      "requested_action": "Keep CIPA requirements practical, technically feasible, and respectful of student privacy",
+      "reason_family": "child_safety",
+      "claim_kind": "implementation_burden",
+      "argument": "CIPA must be feasible for schools while protecting student privacy.",
+      "evidence_quote": "operations, and student support. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. • Keep CIPA requirements practical, technically feasible, and respectful of student",
+      "evidence_start": 4830,
+      "evidence_end": 5027,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Preserve eligibility for special construction, dark fiber, self‑provisioned networks, internal connections, and cost‑effective managed services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The district needs continued eligibility for a wide range of network services to maintain safety and instructional quality.",
+      "evidence_quote": "Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. • Preserve E-Rate support for Internet",
+      "evidence_start": 4203,
+      "evidence_end": 4402,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E‑Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E‑Rate would force schools to extend replacement cycles beyond equipment life, increasing long‑term costs.",
+      "evidence_quote": "or in some cases not be able to keep up with security patches and requirements to protect our data and equipment. 5. RECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for",
+      "evidence_start": 4049,
+      "evidence_end": 4243,
+      "uncertain": false
+    },
+    {
+      "provision_id": "prek_headstart",
+      "position": "oppose",
+      "requested_action": "Avoid unnecessary cost allocation for Head Start or Pre‑K classrooms",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Pre‑K/Head‑Start rely on existing school networks; separate funding would be wasteful.",
+      "evidence_quote": "ally feasible, and respectful of student privacy. • Avoid unnecessary cost allocation for Head Start or Pre-K classrooms, as many are integrated into existing school networks and all have teachers",
+      "evidence_start": 4987,
+      "evidence_end": 5183,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Avoid one‑size‑fits‑all federal screen‑time limits",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Local control is essential for balancing instructional needs and student well‑being.",
+      "evidence_quote": "operations, and student support. • Avoid one-size-fits-all federal screen-time limits. Leave it to local control. • Keep CIPA requirements practical, technically feasible, and respectful of student",
+      "evidence_start": 4830,
+      "evidence_end": 5027,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "conditional_or_amend",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose",
+    "prek_headstart": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080313",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080313",
+  "filer_raw": "Reeths-Puffer Schools",
+  "date_submission": "2026-10-09T17:55:53.522Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f5ce94f0a5762532953966541505a42ea40777146f4360e6f5e59dd18a748f8a",
+  "params_key": "1491175d9d5dbcd70d69c1c2e78d55fbd10edc6d098cb53d46fdbfa1f382e88c",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

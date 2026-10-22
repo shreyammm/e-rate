@@ -1,0 +1,50 @@
+{
+  "summary": "A rural school district opposes cutting E‑Rate funding and urges the FCC to address screen‑time issues through guidance rather than funding reductions.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E‑Rate funding levels",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Cutting E‑Rate would widen the digital divide in economically vulnerable rural districts.",
+      "evidence_quote": "oot cause of the issue.\n\nE-Rate provides essential, baseline digital infrastructure for high-need districts. Cutting this funding or adding mandates that artificially inflate school internet costs",
+      "evidence_start": 623,
+      "evidence_end": 819,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "alternative_proposal",
+      "requested_action": "implement educational guidance on screen‑time management",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "alternative_design",
+      "argument": "Screen‑time management should be addressed through curriculum design and digital literacy, not by reducing connectivity funding.",
+      "evidence_quote": "ge the Commission to address screen time through educational guidance, digital wellness frameworks, and parental support, rather than penalizing low-income and rural schools through E-Rate funding",
+      "evidence_start": 1394,
+      "evidence_end": 1590,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "alternative_proposal"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073926",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073926",
+  "filer_raw": "Rensselaer Central Schools Corporation",
+  "date_submission": "2026-08-31T15:48:07.440Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "16dc8eed303e62fa552f61b2cc850105f85b18d23430b31f6623e3196a8b400e",
+  "params_key": "9c5ef33f037d90e15fcc476c1565632422d8180b398efa01509f8418da5be949",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

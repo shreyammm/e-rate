@@ -1,0 +1,63 @@
+{
+  "summary": "Parents demand opt‑out rights for school tech, AI, and 1:1 devices; students should have allow‑list internet access; persuasive design and social media must be banned.",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "restrict student internet access to allow‑list only",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "Student internet access should be limited to an allow‑list to protect them from inappropriate content.",
+      "evidence_quote": "e the right to opt-out of 1:1 device use (chromebooks, iPads, laptops, tablets),\n- Student internet access should be allow-list only, \n- All forms of tech should be independent research verified,\n-",
+      "evidence_start": 150,
+      "evidence_end": 347,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "support",
+      "requested_action": "prohibit all forms of social media",
+      "reason_family": "child_safety",
+      "claim_kind": "normative_value",
+      "argument": "All forms of social media should be strictly prohibited from student technology.",
+      "evidence_quote": "be strictly prohibited from student tech (including student access to YouTube).",
+      "evidence_start": 463,
+      "evidence_end": 542,
+      "uncertain": false
+    },
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "allow opt‑out of school‑mandated tech",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents should be able to opt‑out of any school‑mandated technology, including AI and 1:1 devices.",
+      "evidence_quote": "K-12 parents should have the right to opt-out of school-mandated tech, \n- Parents should have the right to opt-out of any AI use,\n- Parents should have the right to opt-out of 1:1 device use",
+      "evidence_start": 0,
+      "evidence_end": 190,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_network_filter": "support",
+    "cipa_social_media": "support",
+    "parent_opt_out": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076761",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076761",
+  "filer_raw": "Elizabeth R",
+  "date_submission": "2026-09-16T00:23:51.136Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fddffa6528a4100ee36ef736c72af5bffb52e31590576e190cd8324a5a7dbb69",
+  "params_key": "72df29d2bbf59ebc55f0ca4c4b6c6ff4693d738271dad6398104b265e950c6cd",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

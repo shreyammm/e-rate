@@ -1,0 +1,89 @@
+{
+  "summary": "The technology director urges the FCC to keep or increase E‑Rate funding, reject screen‑time based cuts, cites evidence that greater connectivity improves learning outcomes, and stresses that reliable internet is essential for school safety and operations.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "Reliable connectivity supports essential safety and operational functions of schools, and compromising it risks student well‑being.",
+      "evidence_quote": "original, more narrowly defined purpose, this is the operational reality of today's schools. Reliable connectivity is now integral not only to instruction, but also to the safety, security, and",
+      "evidence_start": 3567,
+      "evidence_end": 3760,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "child_safety",
+      "claim_kind": "child_safety",
+      "argument": "High‑speed internet is critical for safety systems such as security cameras, emergency communications, and student information systems.",
+      "evidence_quote": "access provides far more than a conduit to online learning applications and other web-based educational tools. It is a critical lifeline connecting schools to cloud-hosted services that support",
+      "evidence_start": 3100,
+      "evidence_end": 3293,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Increased technology access during COVID‑era correlated with significant academic recovery in Alabama.",
+      "evidence_quote": "o challenges the assumption that greater access to technology is detrimental to learning. COVID-era investments dramatically expanded student access to devices and online educational resources, yet",
+      "evidence_start": 2327,
+      "evidence_end": 2524,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain or increase E‑Rate funding",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Reliable, affordable internet is essential infrastructure for student success and must not be reduced.",
+      "evidence_quote": "As the technology director and on behalf of my school system, I encourage the FCC to strengthen rather than reduce E-Rate.\n\nReliable, affordable internet access is no longer an optional educational",
+      "evidence_start": 0,
+      "evidence_end": 197,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "do not base funding on screen‑time limits",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Screen‑time restrictions would limit access to valuable educational resources and harm learning outcomes.",
+      "evidence_quote": "opportunities, particularly for students whose schools and communities have fewer resources.\n\nThe FCC should not base E-Rate funding levels on the assumption that states will enact screen-time limits",
+      "evidence_start": 1545,
+      "evidence_end": 1744,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "education_outcomes": "support",
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079813",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079813",
+  "filer_raw": "Krystal Wright",
+  "date_submission": "2026-10-07T16:08:13.930Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "310b173d5da42715e6864f6535103a10a46f387a8369c1e3287e066478ba84f6",
+  "params_key": "6aadb87136e064710505bd623327f6ef6cf5359dfd9eaa3765f0b6c838f10868",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

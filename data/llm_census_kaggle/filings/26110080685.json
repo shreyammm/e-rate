@@ -1,0 +1,87 @@
+{
+  "summary": "The Michigan Association of School Boards opposes proposed E‑Rate rule changes that would cut funding, narrow eligibility, or impose restrictive compliance mandates, arguing such actions would severely harm schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Narrowing eligibility would deprive high‑need schools and libraries of critical discounts.",
+      "evidence_quote": "arding potential funding cuts, \nnarrowed eligibility, and restrictive compliance mandates represent a direct threat to the educational \nand digital infrastructure of Michigan's public school",
+      "evidence_start": 775,
+      "evidence_end": 965,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject rule changes",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "normative_value",
+      "argument": "The proposed rule changes would cut E‑Rate funding, directly harming schools’ ability to maintain essential digital infrastructure.",
+      "evidence_quote": "an, strongly opposes the listed proposed federal rule changes that threaten the future \nof the E-Rate (Schools and Libraries) Program. Discussions regarding potential funding cuts, \nnarrowed",
+      "evidence_start": 625,
+      "evidence_end": 815,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "reject restrictive compliance mandates",
+      "reason_family": "administrative_burden",
+      "claim_kind": "normative_value",
+      "argument": "Restrictive compliance mandates would impose undue administrative burdens on schools.",
+      "evidence_quote": "frastructure of Michigan's public school districts. \nThe E-Rate Program provides crucial discounts of 20% to 90% on essential internet access, Wi-Fi \nequipment, and internal cabling. Because funding",
+      "evidence_start": 925,
+      "evidence_end": 1123,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "prevent local cost burden",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "empirical_claim",
+      "argument": "If federal support is curtailed, local districts will be forced to shoulder significant infrastructure costs alone.",
+      "evidence_quote": "scope will severely impact our schools, \ncommunities and students. If federal support is curtailed, local districts and municipalities will be \nforced to shoulder these significant infrastructure",
+      "evidence_start": 1400,
+      "evidence_end": 1595,
+      "uncertain": false
+    },
+    {
+      "provision_id": "other_policy_issue",
+      "position": "oppose",
+      "requested_action": "maintain digital tools for learning",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Cutting E‑Rate funding would reduce vital digital tools required for classroom learning and state testing.",
+      "evidence_quote": "houlder these significant infrastructure costs alone or cut back on vital digital tools \nrequired for classroom learning, state testing (such as M-STEP), and public library resources. \nWe urge the",
+      "evidence_start": 1555,
+      "evidence_end": 1751,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "other_policy_issue": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080685",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080685",
+  "filer_raw": "Michigan Association of School Boards",
+  "date_submission": "2026-10-12T19:26:08.996Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ceed97a0816055d2da49293ca943d2cfed778be1b9702319d9149d90ff5ff612",
+  "params_key": "6fa1854f71eea038b760032e0089d5a6edd55f3e91cb05d02f2cf6c4b9eecd6f",
+  "model": "gpt-oss:20b",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}
