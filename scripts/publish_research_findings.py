@@ -96,12 +96,16 @@ def build(land=LAND,explor=EXPLOR,target=TARGET):
                <blockquote>{h(quote)}</blockquote>""")
         parts.append('</article>')
     parts.append("""<h2>2. Position coding across specific policy questions</h2>
+      <p class="status"><strong>Stance-polarity audit required for “Limit or sunset E-Rate.”</strong> A <a href="https://www.fcc.gov/ecfs/filing/10604049228283">source-verified filing</a> explicitly requests continuing E-Rate but was machine-coded as supporting the sunset policy option. Support/oppose totals for this issue are withheld until the model labels can be reviewed. Original model claims and excerpts remain available for research, but should not be interpreted as validated positions.</p>
       <p>The rows below refer to policy targets named by our <em>provisional</em> notice-driven codebook, plus novel issues. They are not a claim that the FCC posed exactly 29 mutually exclusive proposals. Machine stances may be wrong, particularly when a comment quotes language it opposes. Incomplete, negative and unclassified filings are not imputed as neutral or no position.</p>
       <table><thead><tr><th>Policy target</th><th>Support</th><th>Oppose</th><th>Conditional / alternative</th><th>Machine-coded filings with a position or mention</th></tr></thead><tbody>""")
     for x in sorted(b.get('provisions',[]),key=lambda y:-int(y.get('filings_mentioning',0)))[:30]:
         d=x.get('positions',{})
         mixed=sum(int(d.get(k,0)) for k in ('conditional_or_amend','alternative_proposal','conflicting_or_multiple'))
         mention=int(x.get('filings_mentioning',0))
+        if x.get('provision_id') == 'erate_sunset':
+            parts.append(f'<tr><td>{h(x.get("label",x.get("provision_id","")))}</td><td colspan="3"><strong>Withheld: stance direction under audit</strong></td><td class="num">{fmt(mention)}</td></tr>')
+            continue
         parts.append(f'<tr><td>{h(x.get("label",x.get("provision_id","")))}</td><td class="num">{fmt(d.get("support",0))}</td><td class="num">{fmt(d.get("oppose",0))}</td><td class="num">{fmt(mixed)}</td><td class="num">{fmt(mention)}</td></tr>')
     parts.append('</tbody></table>')
     parts.append("""<h2>3. What stakeholder comparisons do—and do not—tell us</h2>
