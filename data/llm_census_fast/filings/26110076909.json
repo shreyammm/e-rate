@@ -1,0 +1,37 @@
+{
+  "summary": "A community member urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of broadband in modern public education and the potential cost implications of reducing or eliminating the program. The text urges protection of E-Rate funding and connectivity for schools and libraries, opposing any reduction in its role in public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal to sunset E-Rate would increase costs for schools, which have limited budgets and rely on federal support.",
+      "evidence_quote": "Our school has a limited budget and cannot afford the costs by itself. It is the E-Rate program that allows our school to teach its students properly. Those costs would ultimately compete with the resources our schools use to support students and educators.",
+      "evidence_start": 2307,
+      "evidence_end": 2564,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076909",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076909",
+  "filer_raw": "Emile Schwarz",
+  "date_submission": "2026-09-17T19:15:33.681Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "317c20eafd4de8fc1acf07c99a70d16b62f10cbbbeaeb34b01df9880af038cc3",
+  "params_key": "9002086ad1d273fbd1266fad27f4728a8c84748e48c5c393fa80ace7da74c9be",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

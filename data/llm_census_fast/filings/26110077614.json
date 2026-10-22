@@ -1,0 +1,50 @@
+{
+  "summary": "The comment from a principal in a school district emphasizes the importance of preserving and strengthening the E-Rate program, as it provides essential infrastructure for modern public education. The principal argues that reducing or eliminating E-Rate would increase operational costs and compete with other essential resources. The comment also highlights the success of E-Rate over the past three decades in providing reliable educational access and supports the claim that E-Rate is not obsolete The comments urge protection of the E-Rate program to ensure continued connectivity for students and schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate has enabled schools to provide reliable educational access",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education",
+      "evidence_start": 4403,
+      "evidence_end": 4579,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "Vermilion Catholic, A Legacy Of Mount Carmel has received $34,299 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $6,860 a year toward the connections our students depend on.",
+      "evidence_start": 2417,
+      "evidence_end": 2632,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077614",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077614",
+  "filer_raw": "Alexander Albert",
+  "date_submission": "2026-09-22T13:58:05.069Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "911f69f4ec89bc34c1295c72ae8a3c89fdbf9ef27cdb944c4694d843e1ba2111",
+  "params_key": "54b9f357cb5e3aa6047a8912e53c77b998f68bf8330f080f99f9fbf447e1aaa4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

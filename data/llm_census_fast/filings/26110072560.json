@@ -1,0 +1,49 @@
+{
+  "summary": "The comment highlights the critical role of E-Rate funding in supporting libraries and schools, which provide essential services to communities. The comment opposes any sunset or significant limitation of E-Rate funding, arguing that it would lead to cuts in services and programs, disproportionately affecting lower-income communities. The comment supports maintaining E-Rate funding to ensure libraries and schools can continue to serve as gateways to education, employment, information, technology, and opportunity for all.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Terminate or significantly limit E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, libraries and schools would face difficult choices, including cutting core services, programs, and operations simply to maintain the Internet access on which their communities depend",
+      "evidence_quote": "Without this funding, libraries and schools would face difficult choices, including cutting core services, programs, and operations simply to maintain the Internet access on which their communities depend.",
+      "evidence_start": 1837,
+      "evidence_end": 2042,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate will help ensure libraries and schools can continue to serve as gateways to education, employment, information, technology, and opportunity for all",
+      "evidence_quote": "Protecting E-Rate will help ensure that libraries and schools can continue to serve as gateways to education, employment, information, technology, and opportunity for all.",
+      "evidence_start": 4551,
+      "evidence_end": 4722,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072560",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072560",
+  "filer_raw": "Deborah Conrad",
+  "date_submission": "2026-08-21T11:30:28.692Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "15d567e1a80bda70c14d25d312755f2dc79a55404d245c9864e608674325ca5e",
+  "params_key": "dad060a37b8f21dc9cabd1228283bfade613c0861742798e7b952ecfbe89da5f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

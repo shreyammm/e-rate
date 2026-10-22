@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate funding in maintaining essential infrastructure and safety for its students and staff, and warns against any reductions that could lead to severe budgetary and operational impacts. The comment supports protecting full E-Rate funding capabilities and avoiding imposing restrictions that would force rural districts to choose between safety, staffing, and basic technological connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A reduction, restriction, or restructuring of E-Rate funding would create severe budgetary strain on Bloomingdale Public Schools. If forced to absorb local costs previously mitigated by up to 80% E-Rate discounts, our district would be compelled to make direct tradeoffs impacting classroom instruction, student well-being, and campus safety.",
+      "evidence_quote": "Specifically, our leadership team and school board would be forced to evaluate:\n\nReductions in Teaching and Support Staff: Offsetting technology deficits by cutting classroom instructors, paraprofessionals, and support personnel.\n\nReductions in Student Support Services: Scaling back mental health resources, tutoring programs, and specialized student intervention services.\n\nDelaying Network Upgrades: Freezing critical infrastructural replacements, leaving district networks vulnerable to security gaps, slowdowns, and hardware failures.\n\nReducing Campus Safety Infrastructure: Compromising planned enhancements to building security systems and digital safety monitoring.",
+      "evidence_start": 2294,
+      "evidence_end": 2967,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect full E-Rate funding capabilities",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or penalizing technology funding fails to recognize the deliberate safeguards local school districts have already established.",
+      "evidence_quote": "We respectfully urge the Commission to protect full E-Rate funding capabilities, support local educational control, and avoid imposing funding restrictions that would ultimately force rural districts to choose between safety, staffing, and basic technological connectivity.",
+      "evidence_start": 4966,
+      "evidence_end": 5239,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080739",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080739",
+  "filer_raw": "Rick Reo / Bloomingdale Public Schools",
+  "date_submission": "2026-10-12T21:35:51.363Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "18f3b391bfbd4ea64291eecad68705f6f1949190e92b5105ef12c8dcc084a8de",
+  "params_key": "9727d81b2a15b56244f4bb4396828082c6d625243e3cdf3cbd1230f1fd67d678",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

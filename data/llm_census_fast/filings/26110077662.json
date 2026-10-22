@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate for maintaining connectivity and network infrastructure in schools, and urges the FCC to preserve and strengthen the program rather than eliminate it. The text expresses opposition to limiting or sunsetting E-Rate, emphasizing its importance for providing connectivity to students and schools. It urges the Commission to protect E-Rate to ensure public schools can continue providing reliable, affordable, and effective connectivity to students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and connectivity in schools and libraries.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5140,
+      "evidence_end": 5297,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077662",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077662",
+  "filer_raw": "Hank Thiele",
+  "date_submission": "2026-09-22T16:15:53.882Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4ec9839744a451cfcb7311e92bea553f8e45bfaec032c69e45f263b991dace31",
+  "params_key": "87b90461a7a3ac0bc038870ee88c8d9d51a27b3ad08205eaffdb3b5c456c7e3e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

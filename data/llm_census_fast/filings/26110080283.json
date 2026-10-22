@@ -1,0 +1,37 @@
+{
+  "summary": "The school business manager urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's importance for providing reliable broadband connectivity to students and staff. The comments emphasize the importance of preserving E-Rate funding for providing reliable educational access to students, regardless of their financial circumstances. The comments urge the FCC to protect E-Rate and ensure that public schools can continue providing students with the necessary connectivity for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and connectivity in schools and libraries.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5171,
+      "evidence_end": 5328,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080283",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080283",
+  "filer_raw": "Central Catholic High School Bloomington IL",
+  "date_submission": "2026-10-09T16:59:27.768Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2860baf1f302dc748c310d9ceef9ee4ce4580f81a6a350ec58845d44bebb59f8",
+  "params_key": "dca28a5790c66510b96944d9634597dbce5f1fa3c98bd5120017926ccecb6a85",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

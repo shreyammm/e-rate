@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining network infrastructure and connectivity for educational purposes, and urges the FCC to preserve and strengthen the program rather than eliminate or reduce it. The comments urge protection of the E-Rate program to ensure access to necessary technology for education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The modern education system requires reliable, affordable connectivity for students to learn effectively.",
+      "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4469,
+      "evidence_end": 4695,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077709",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077709",
+  "filer_raw": "Robert E Gound",
+  "date_submission": "2026-09-22T18:18:20.227Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "232d14984eba74675fc6a6f1b178b2668772d730756573b5d75147391daa0916",
+  "params_key": "599b5943f24c289d0d83be7a325c4d6cdbc6766d49dd6be7dbfc0d888b178029",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

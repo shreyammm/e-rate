@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for modern public education, highlighting the costs and benefits of preserving the program. The comment urges protection of E-Rate funding to ensure continued access to connectivity for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E-Rate funding would amount to hundreds of thousands of dollars over time which could be invested in other ways to affect education",
+      "evidence_quote": "Norwood Public School District has received $329,347 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $65,869 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running. School connectivity is not synonymous with unrestricted student screen time. Districts, educators, and families already make decisions about when and how technology should be used to support learning — decisions that rest squarely in the domain of state and local control.",
+      "evidence_start": 2877,
+      "evidence_end": 3465,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build necessary connectivity infrastructure",
+      "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4740,
+      "evidence_end": 4966,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080377",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080377",
+  "filer_raw": "Norwood Public Schools",
+  "date_submission": "2026-10-09T21:29:21.503Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f2494b9be1af25f53e2c612e0e503ad5052f63b8928220ce053d9d1a12e930bc",
+  "params_key": "2a489a0afe3c4e4f9098be68ee0fe2734b46bf32d357cfe5dd6acd54cf581d50",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,62 @@
+{
+  "summary": "The author of ORION, a regional education service center, urges the FCC to preserve the E-Rate program and reject proposals to sunset or limit it, emphasizing the program's essential role in providing reliable broadband for schools and libraries. The author argues that reducing E-Rate would increase costs for schools and libraries and that decisions regarding educational technology should remain at the local level. The author also highlights the importance of maintaining protections for the lowe The comments urge preserving E-Rate funding to maintain affordable connectivity for schools and libraries, emphasizing the importance of infrastructure for education and digital readiness.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools and libraries",
+      "evidence_quote": "To ultimately compete against other priorities within already constrained local budgets.",
+      "evidence_start": 2767,
+      "evidence_end": 2855,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Weakening E-Rate would increase infrastructure costs",
+      "evidence_quote": "I urge the Commission to protect E-Rate and preserve affordable, high-speed connectivity for our schools and libraries.",
+      "evidence_start": 5090,
+      "evidence_end": 5209,
+      "uncertain": false
+    },
+    {
+      "provision_id": "lowest_corresponding_price",
+      "position": "oppose",
+      "requested_action": "retain lowest corresponding price protections",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Ensures schools receive the best available service at affordable rates",
+      "evidence_quote": "The availability of reliable broadband infrastructure should not itself be viewed as synonymous with how individual districts choose to use technology for instruction",
+      "evidence_start": 3350,
+      "evidence_end": 3516,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "lowest_corresponding_price": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110081213",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081213",
+  "filer_raw": "Michael Dante Fox | Region One ESC | ORION Fiber Network | One Regional Interconnected Optical Network",
+  "date_submission": "2026-10-13T20:37:13.555Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "66bb2e5e7a9768c59b3f2e0d0e2d15a35a5091112de48a3f3662733da1bbe769",
+  "params_key": "0766f745dc8991a3874586c7e46d2d842b6d0ccbdc543df134fbdcfd1d172d60",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

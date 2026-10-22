@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to eliminate or sunset it, citing budgetary constraints and the program's essential role in providing reliable broadband for modern education. The comment opposes limiting or sunsetting E-Rate, emphasizing its role in providing connectivity for schools and libraries to support modern education. The comment cites the importance of E-Rate in preparing students for future opportunities and the need to protect the program to ensure continued educational access.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity for students and libraries, enabling educational access and infrastructure. Limiting or sunsetting E-Rate would undermine the program's role in public education.",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4483,
+      "evidence_end": 4887,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077991",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077991",
+  "filer_raw": "Harrisburg CUSD #3",
+  "date_submission": "2026-09-24T00:26:35.707Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "09529a95ffd7d9f3dafbeabd22e5dd78fb4e5fca83d41f81e5063dec85c71ca6",
+  "params_key": "ddd2f6603e9a383785205fcb67ea0f5b355a551fe86757e38d7fb4a65f7dc6eb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

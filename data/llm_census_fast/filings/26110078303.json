@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to maintain broadband infrastructure for schools and libraries. Support for preserving E-Rate funding and infrastructure for educational access.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for school districts",
+      "evidence_quote": "If we didn't have e-rate, we'd have to ask even more from our local taxpayers whom we already rely on for essential services. It puts a big burden on rural communities.",
+      "evidence_start": 2429,
+      "evidence_end": 2597,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078303",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078303",
+  "filer_raw": "Dr. Tracey Edou",
+  "date_submission": "2026-09-25T15:46:35.242Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "08e9bdb2155891900b10555ef4a2ceb8ebde8049cd404ce5417c9889a2905b3b",
+  "params_key": "c12b1769d3732abe3ef3a93880aaf2ac2a3b69c3d6f0ffe50df8015558b8f6d2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The Ingham Intermediate School District emphasizes the importance of preserving the core E-Rate program and ensuring any changes to discount methodology and eligibility scope do not disproportionately harm high-cost or high-need communities. They recommend preserving the program's success while streamlining administrative processes to reduce compliance burden on vendors. The school district argues for preserving E-Rate funding and services, emphasizing the importance of affordable broadband for schools and libraries. They support improvements and simplifications but oppose changes that could reduce access or increase administrative burdens.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting eligible services would increase costs for schools and libraries",
+      "evidence_quote": "Connectivity requires ongoing investment, maintenance, upgrades, cybersecurity planning, and replacement of aging network equipment. Schools of all sizes and settings—rural, suburban, and urban—depend on stable and predictable support to provide reliable access for students and educators.",
+      "evidence_start": 2374,
+      "evidence_end": 2663,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for schools and libraries to provide affordable broadband services",
+      "evidence_quote": "e processes could encourage vendor participation, improve purchasing efficiency, and allow schools and libraries to focus more resources on obtaining cost-effective services rather than navigating increasingly complex administrative requirements.",
+      "evidence_start": 4450,
+      "evidence_end": 4696,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076600",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076600",
+  "filer_raw": "Ingham Intermediate School District",
+  "date_submission": "2026-09-14T18:04:51.126Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5ec5223eea1bf409c6397137497603c9bcedf1cad4606cd9cdc4868bd0146e2b",
+  "params_key": "6ecbadd5c1c4b08e47e488ce717211a2d7ebc8dfb3df1442bf731fd82536fbc9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and instead proposes strengthening and modernizing the program to better serve schools and students. The comments urge protection of E-Rate funding and its role in providing connectivity for students and schools, emphasizing the importance of maintaining the program for educational access and modernization.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "Federal Communications Commission should reject any proposal to sunset or eliminate the E-Rate program",
+      "evidence_quote": "Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4083,
+      "evidence_end": 4585,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and connectivity in schools and libraries.",
+      "evidence_quote": "Our students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial circumstances.",
+      "evidence_start": 4991,
+      "evidence_end": 5135,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078246",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078246",
+  "filer_raw": "North Pocono School District",
+  "date_submission": "2026-09-25T12:44:11.266Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0dffcbab37e8a8649a823dc534ea5f0bde877032b02932dfce2dfca30d08a9bc",
+  "params_key": "d3fa3f8c864a3b7cfe5a7ca01f54aee6f4307b31fa0198dae0cadc50617b65a5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

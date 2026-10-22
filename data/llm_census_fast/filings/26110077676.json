@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program for schools and libraries to ensure reliable broadband connectivity for modern education. The comment expresses opposition to limiting or sunsetting E-Rate, emphasizing its importance for providing connectivity to students and schools. The superintendent urges the Commission to protect the program to ensure schools can continue offering reliable, affordable connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate has enabled schools and libraries to build connectivity for modern education",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education.",
+      "evidence_start": 4467,
+      "evidence_end": 4644,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and connectivity in schools and libraries",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5017,
+      "evidence_end": 5174,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077676",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077676",
+  "filer_raw": "Ball-Chatham Community Unit School District 5",
+  "date_submission": "2026-09-22T16:42:57.803Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f97821985d482589995b82f238b28aeac80525af98196f4ead17befcf8bd2ab8",
+  "params_key": "00c903a22ce1f3cb9dcacbec58c99eaa71da4f0765dc998e329b5b5a21094796",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

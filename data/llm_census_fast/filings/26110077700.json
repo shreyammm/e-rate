@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, citing cost implications for maintaining connectivity and infrastructure. The school district expresses opposition to the potential sunset of the E-Rate program, emphasizing its importance for providing students with reliable, affordable, and effective connectivity. The school district urges the Commission to protect the program to ensure continued funding for broadband infrastructure.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would increase costs for school districts",
+      "evidence_quote": "It would cost the district more than $50,000 per year from current ISPs for the current connectivity that we need. It would also double the cost of investing in our future infrastructure & support (we are a 50% district) which would disadvantage our students and community.",
+      "evidence_start": 2475,
+      "evidence_end": 2748,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Protect E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures continued funding for broadband infrastructure",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4885,
+      "evidence_end": 5042,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077700",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077700",
+  "filer_raw": "Jonathan Chase",
+  "date_submission": "2026-09-22T17:56:18.744Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "747d5ac5bd007a8925b5edaee3924002eda50765cbc6870647b69de36a0fc56e",
+  "params_key": "49fd400173335778bf575bd05a42823fd658840e3ae8e688ca63e5e565cf2f6b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

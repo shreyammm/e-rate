@@ -1,0 +1,37 @@
+{
+  "summary": "The comment from a teacher in Illinois urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the essential role of reliable broadband in modern education. The comment opposes limiting or sunsetting E-Rate to protect its funding and ensure access to connectivity for students and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools",
+      "evidence_quote": "Morton High School Dist 201 has received $1.38 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $275,351 a year toward the connections our students depend on",
+      "evidence_start": 2458,
+      "evidence_end": 2663,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078150",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078150",
+  "filer_raw": "Alicia Serrano",
+  "date_submission": "2026-09-24T19:52:23.440Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4bdfd45fff9b4a173194f1c6b0350555f69c010b62da27ceda9b96ce961c5a5c",
+  "params_key": "1d038753c32b6b40fa0bcc70419af4ebf3e1993d8412cf3f300c24f8a7c88b8c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

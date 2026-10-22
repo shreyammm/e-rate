@@ -1,0 +1,37 @@
+{
+  "summary": "The claim is that the E-Rate program should continue indefinitely due to the increased financial and infrastructure burden on schools and libraries, and that funding is constantly being threatened or cut. The claim opposes imposing screen-time limits on schools and libraries under E-Rate, arguing that parents have the right to petition schools to change policies and that such restrictions would disadvantage children.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Placing limits on schools and libraries to make up for individual parents' failures is ludicrous",
+      "evidence_quote": "Parents who object to screen usage by their schools are free to petition the schools to change their policies but they would only be handicapping their children’s futures.",
+      "evidence_start": 5204,
+      "evidence_end": 5375,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079212",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079212",
+  "filer_raw": "Zachary Meyer",
+  "date_submission": "2026-10-03T05:26:46.821Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "176ef344c1906311782a28905dbf1b28203ac43c5fe99716de9c77ab126610c0",
+  "params_key": "deb51ecccaf67cb57ad31163aa9ea23333758c67ab4d4ae9050974d425b596b8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

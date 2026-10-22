@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern public education. The text expresses support for protecting E-Rate and ensuring access to reliable, affordable broadband for students and schools. It urges the Commission to protect E-Rate and maintain the program's role in providing connectivity for education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and connectivity in schools and libraries.",
+      "evidence_quote": "Our students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial circumstances. I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5082,
+      "evidence_end": 5384,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078387",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078387",
+  "filer_raw": "Jule Walker | South Heart School District",
+  "date_submission": "2026-09-25T20:58:04.692Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4c624ea75ad810a1534233f7b9d3fc2ef7da2cc613286fa0e391829e458f208b",
+  "params_key": "c8b895a8d4b8dc9d5624e3615cf7ab21a9171c26e6501099c650bc9db195257a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

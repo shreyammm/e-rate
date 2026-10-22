@@ -1,0 +1,37 @@
+{
+  "summary": "The CFO of a charter school emphasizes the importance of preserving E-Rate funding to ensure reliable internet access for educational purposes, noting that reducing or ending the program would increase the school's financial burden and impact classroom activities. School and library advocates urge the FCC to preserve E-Rate funding for broadband service and internal connections, citing the program's essential role in providing connectivity for educational purposes.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Adding costs that outweigh the benefit of the funding.",
+      "evidence_quote": "dding costs that outweigh the benefit of the funding.",
+      "evidence_start": 4232,
+      "evidence_end": 4285,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079432",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079432",
+  "filer_raw": "Gabriel Park",
+  "date_submission": "2026-10-05T17:05:20.215Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dd997ef2a7d52efd1fe963cbbbab4191be6769e408f91f9b39e73ebc57d0f89a",
+  "params_key": "0a2aad9b0b52478a74f52d182ab543227d0405954daaf1aa64ca52149e91f332",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "A school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of reliable broadband in modern public education and the potential financial burden of reducing or eliminating E-Rate support. The text expresses opposition to limiting or sunsetting E-Rate, emphasizing the importance of maintaining the program for providing reliable educational access to students. It urges the Commission to protect E-Rate and ensure schools can continue providing students with reliable, affordable, and effective connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would face significant costs for maintaining essential infrastructure",
+      "evidence_quote": "We receive around 28,000 per year in e-rate funds to pay for our internet and network security.  Without these funds we would not be able to maintain a secure network and the bandwidth needed to run our school.",
+      "evidence_start": 2489,
+      "evidence_end": 2699,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077716",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077716",
+  "filer_raw": "Carr",
+  "date_submission": "2026-09-22T18:32:27.893Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5eeb7413b585d3e7f33c972b11d95419c05fe934159b0dd223a6d3ac76b3fe31",
+  "params_key": "5cef60e8bebf52065f0950fd4403480050c24038169373e47adabafdd8d14a4c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

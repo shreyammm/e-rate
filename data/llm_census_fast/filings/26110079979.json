@@ -1,0 +1,37 @@
+{
+  "summary": "The school board member urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's essential role in providing reliable broadband infrastructure for modern public education. The comments express opposition to limiting or sunsetting E-Rate, emphasizing the importance of maintaining the program for providing connectivity and infrastructure for schools and libraries. The comments highlight the role of E-Rate in enabling students to access tools for learning and the need to protect the program to ensure educational access for all students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal to sunset E-Rate would have a direct and tangible impact on the district's budget, forcing difficult choices about resources.",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 2123,
+      "evidence_end": 2340,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079979",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079979",
+  "filer_raw": "Colleen Nowak, Adam Clayton, Jeff Dickert, Chad Jeskewitz, Brandy Tollefson, Kaitlan Schick, Matt Petersen",
+  "date_submission": "2026-10-08T02:26:10.027Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ffa126e33fe8d2113861d452c6d47e0db2e375823f406f7a0aaa28a800062079",
+  "params_key": "7d9bdf5e637ed5df13f65d31a4a71c2dfddbf7fb0792300325a04dd16aea4d68",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

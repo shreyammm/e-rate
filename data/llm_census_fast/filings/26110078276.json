@@ -1,0 +1,49 @@
+{
+  "summary": "The technology director emphasizes the importance of E-Rate for maintaining reliable broadband infrastructure in schools, which is essential for modern public education. They urge the FCC to preserve and strengthen the program rather than eliminate it, citing cost implications for schools. The text urges protecting E-Rate to ensure students have access to necessary tools for education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for schools",
+      "evidence_quote": "Connectivity is still an issue for many communities. E-Rate helps us with connectivity for student learning, fiber and wifi costs. Those costs would ultimately compete with the resources we use to support students and educators.",
+      "evidence_start": 2145,
+      "evidence_end": 2373,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The text urges protecting E-Rate to ensure students have access to necessary tools for education.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5177,
+      "evidence_end": 5334,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078276",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078276",
+  "filer_raw": "Bishop Hartley High School",
+  "date_submission": "2026-09-25T14:16:54.148Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a4fc604be945eba22f56b7b76408f3daf7500fde1e34f3b6a3160716177de317",
+  "params_key": "bc450d1560924d0d7a60d2c0e7cfdc8982d9b1d38d1ff5b56c269fe244e19394",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

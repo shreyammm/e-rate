@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's critical role in modern education infrastructure. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for providing connectivity to students and libraries in preparing for future opportunities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "For my district, reducing or eliminating E-Rate support would have a direct and tangible impact. We are in a position within our district where we are replacing the first pieces of network that were supported by E-Rate 20 years ago. The E-Rate funding will be essential to allowing the district to plan and execute the replacement of this vital piece to our district. Those costs would ultimately compete with the resources we use to support students and educators.",
+      "evidence_start": 2462,
+      "evidence_end": 2927,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for providing connectivity to students and libraries",
+      "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4588,
+      "evidence_end": 4814,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077874",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077874",
+  "filer_raw": "Yorkville Community Unit School District 115",
+  "date_submission": "2026-09-23T16:34:47.797Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "861269048734361a48aa7364b7c59d756ce63628f25335be479d4aa760582b69",
+  "params_key": "b1ba351b78cd887d3cdf4d7b2eb5e76902588fff08202865f6e610baba30c35f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

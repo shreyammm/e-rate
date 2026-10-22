@@ -1,0 +1,49 @@
+{
+  "summary": "The school community emphasizes the importance of E-Rate for maintaining essential infrastructure and connectivity in schools, and urges the FCC to preserve and strengthen the program rather than eliminate it. The comment opposes limiting or sunsetting E-Rate, emphasizing the importance of maintaining the program for students' educational needs and technological advancement.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools competing with other resources",
+      "evidence_quote": "The budget is tight and does not receive much federal funding. Those costs would ultimately compete with the resources our schools use to support students and educators.",
+      "evidence_start": 2040,
+      "evidence_end": 2209,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would result in increased costs for schools and libraries",
+      "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4563,
+      "evidence_end": 4789,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078007",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078007",
+  "filer_raw": "J. S. Morton High School District 201",
+  "date_submission": "2026-09-24T02:08:45.194Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dbfc34dc142e7b96278d6ca5652a43c3de7d5443a60b96a06135009715d8f0cc",
+  "params_key": "789a3800617c42658af375d5ecdc777f9a425985e31ad7788e2ef2d1e67c0a73",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

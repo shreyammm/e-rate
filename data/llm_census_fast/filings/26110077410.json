@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to support broadband infrastructure in schools and libraries. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for modern education infrastructure and student success.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would cost the district between $300,000 and $500,000 annually, competing with other essential resources",
+      "evidence_quote": "This would cost our district anywhere between $300,000 and $500,000, depending on the year. We spend nearly 80% of our operating revenue on people who work with our students. We would need to reduce staffing or compensation to offset the lost E-Rate revenue.",
+      "evidence_start": 2424,
+      "evidence_end": 2682,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for modern education infrastructure.",
+      "evidence_quote": "in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4438,
+      "evidence_end": 4685,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077410",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077410",
+  "filer_raw": "Mark Maus, Superintendent, Smithville R-II School District, MO",
+  "date_submission": "2026-09-21T16:13:49.979Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9b52f1acc5b03c99a84149416fd80a3e895f35293220f9f76fd43c66cd896699",
+  "params_key": "1bb1c5b9727637b3ce1e65814892f3e18bd3bc5384189d06ce0ed5a317b7fd94",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

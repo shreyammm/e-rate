@@ -1,0 +1,49 @@
+{
+  "summary": "Community member in Gallup, NM urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's role in modern public education and the potential impact of its reduction on schools' budgets and services. The comment urges protection of E-Rate funding to ensure continued access to broadband infrastructure for public schools and students.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would have direct and tangible impacts on schools, including cutting funding for extracurricular activities and free meals for students.",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and scaled, and reducing or eliminating E-Rate support would have a direct and tangible impact on schools in my community. This may mean cutting funding for extracurricular activities including tutoring and sports, may sadly interfere with funding for free meals for students. Our demographic greatly depends on the free meal programs provided by our schools. We need all the funding we can get so once we lose funding we so desperately rely on, it’s the children who ultimately suffer.",
+      "evidence_start": 1596,
+      "evidence_end": 2134,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Protect E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Protecting E-Rate ensures continued access to necessary broadband infrastructure",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 4837,
+      "evidence_end": 4994,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078898",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078898",
+  "filer_raw": "Chelsea on behalf of Gallup McKinley County School District",
+  "date_submission": "2026-09-30T16:57:04.359Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5ffbcac399dc07eae38e1657ed9facb3e3a3d0fff9066a07b8db7d21b7f86f61",
+  "params_key": "fcb47999f6db86fc01467e4b63e21f71db5a072f34e71ecd2be403d0fbe8a4a9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

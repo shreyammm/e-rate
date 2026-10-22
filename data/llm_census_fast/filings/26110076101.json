@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband infrastructure for schools and libraries. Support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would require cutting programs and resources, competing with other budget priorities",
+      "evidence_quote": "Absorbing the loss of E-Rate funding will require us to cut programs and eliminate other necessary resources, as our network is vital for daily operations.",
+      "evidence_start": 2233,
+      "evidence_end": 2388,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076101",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076101",
+  "filer_raw": "Dr. Majalise Tolan",
+  "date_submission": "2026-09-09T18:46:30.008Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "28a6ec1cd3b217aa22c8587dfc33b191fc85a8e40fa4101eaed121dd76f684d5",
+  "params_key": "0d21a347919fd20a71a3876b78e28c039d7f3e6c418c8f2e05c12f1228d90120",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

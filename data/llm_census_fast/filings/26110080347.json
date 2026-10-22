@@ -1,0 +1,37 @@
+{
+  "summary": "PLAINFIELD PUBLIC SCHOOLS urges the FCC to preserve E-Rate funding, citing the program's essential role in providing reliable broadband infrastructure for modern public education and the potential impact on their budget. The school district urges the FCC to preserve and improve the E-Rate program, not eliminate it, emphasizing its role in providing reliable broadband infrastructure for schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Suggesting sunset would undermine the program's success",
+      "evidence_quote": "Reject any proposal to sunset or eliminate the E-Rate program;",
+      "evidence_start": 3934,
+      "evidence_end": 3996,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080347",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080347",
+  "filer_raw": "Paul M Brenton",
+  "date_submission": "2026-10-09T19:49:49.103Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "6ed8f4cb5014ad6b1523e6f0cc076a6dfd84dbd7d0eb5aa1b36f7a735919b929",
+  "params_key": "c72ff7846b4d9fbc4d6942932fa1dca2b676f41ef842ff19dff894ea13874bfe",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

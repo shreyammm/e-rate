@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband infrastructure for schools and libraries. Support for preserving E-Rate funding and infrastructure for educational access and modernization.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would cut $80,000 annually, impacting classroom staffing",
+      "evidence_quote": "E-Rate covers roughly 80% of our fiber and Wi-Fi costs, about $80,000 a year. Absorbing it locally would cutting two classroom positions.",
+      "evidence_start": 2055,
+      "evidence_end": 2192,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078566",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078566",
+  "filer_raw": "Kelsey Ramos | Calallen ISD",
+  "date_submission": "2026-09-28T18:07:29.372Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "db62c7774b10ce183cc8bb17c5838b7350c7b43e0307bdfdda2715e9ab86b517",
+  "params_key": "b6abce3ea6fc8d157ac72a7297293b201b933cfbf5fed11ecf2063ee4c0cd63e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

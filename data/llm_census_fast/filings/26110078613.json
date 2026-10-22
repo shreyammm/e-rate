@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's essential role in providing reliable broadband infrastructure for modern public education. The text expresses support for preserving current E-Rate policies and maintaining existing CIPA rules regarding third-party-owned devices. It emphasizes the importance of ensuring students have access to reliable connectivity for education purposes, regardless of financial circumstances. The text urges the Commission to protect E-Rate and prevent any changes that could undermine the program's effectiveness.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for school districts operating within finite budgets",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities",
+      "evidence_start": 2099,
+      "evidence_end": 2315,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078613",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078613",
+  "filer_raw": "Andrew Levine",
+  "date_submission": "2026-09-28T20:26:53.193Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f0a5d4d72799d326fe5f78b5d2d906317b32adb3c63906b153357b9d18c426ef",
+  "params_key": "6b3de67c04b4a8e76f144f776c9a79e3a33fc5a630352a1f8bd9538586b6b8ed",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

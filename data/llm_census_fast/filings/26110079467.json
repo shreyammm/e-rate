@@ -1,0 +1,50 @@
+{
+  "summary": "Pennsylvania STEAM Academy emphasizes the importance of maintaining reliable and affordable internet access for schools, which has been made possible by E-Rate funding. The school relies on internet connectivity for various educational activities and functions. If E-Rate funding were significantly reduced or eliminated, the school would have to absorb the costs into its operating budget. Schools with limited budgets may rely on E-Rate to provide connectivity, which is essential for modern education. Reducing E-Rate funding could lead to budget cuts in other areas, impacting educational programs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding directly affects school budget allocations",
+      "evidence_quote": "E-Rate funding directly affects our ability to allocate limited school resources toward other educational priorities.",
+      "evidence_start": 1954,
+      "evidence_end": 2071,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain connectivity and infrastructure",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate funding were significantly reduced or eliminated, schools would have to absorb the costs, potentially leading to budget cuts in other areas",
+      "evidence_quote": "If E-Rate funding were significantly reduced or eliminated, these costs would not disappear. They would have to be absorbed by our school's operating budget.",
+      "evidence_start": 2375,
+      "evidence_end": 2532,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079467",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079467",
+  "filer_raw": "Jennifer Morrison",
+  "date_submission": "2026-10-05T19:24:47.167Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "84d47e5a985b73c1e54050243df01064e3abcfdc42252aef1c8656767ca08207",
+  "params_key": "ed5df7b8c6ad350fa421e3fae221672010450b80f16b53000a7e3023e1288d7d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}
