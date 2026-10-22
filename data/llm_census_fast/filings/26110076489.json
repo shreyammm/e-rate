@@ -1,0 +1,37 @@
+{
+  "summary": "Opposes proposal to sunset E-Rate program, emphasizing its importance for educational access and budget concerns.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deepen inequities and hinder students' access to essential tools for learning.",
+      "evidence_quote": "Public Schools across our state and nation are in budget crisis with the rising costs of materials and insurance. By ripping away funding for internet utilities, these budgets would be stretched even farther and cost students their right to free and public education by limiting their access to information and resources.",
+      "evidence_start": 2198,
+      "evidence_end": 2519,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076489",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076489",
+  "filer_raw": "Allen Schliebe",
+  "date_submission": "2026-09-12T16:19:31.184Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e193d6150a404f1a5fc6edec80a6c21ddc951eb8535b6bb9597b61103deacd09",
+  "params_key": "7f63d27337f4217ded40a30230627a0b3ba928eb24f3ee0aa25b0135832b00cb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

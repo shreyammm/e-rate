@@ -1,0 +1,37 @@
+{
+  "summary": "The Head Start Director opposes proposals to restrict E-Rate eligibility for Head Start programs, arguing that such restrictions would harm early learning programs without providing any child safety benefit. The document emphasizes that E-Rate funds essential IT infrastructure for Head Start operations, not student screen time, and that restricting eligibility would create an unfair, two-tiered system for community-based programs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "prek_headstart",
+      "position": "oppose",
+      "requested_action": "Maintain Head Start eligibility without restricting eligibility or mandating cost-allocation removals",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Restricting eligibility would harm early learning programs without providing any child safety benefit",
+      "evidence_quote": "As a current Head Start Director, I strongly oppose proposals to exclude Head Start and pre-kindergarten facilities from E-Rate eligibility or mandate cost-allocation removals. The Commission’s proposal assumes E-Rate funds direct student screen time in early childhood settings. In Head Start classrooms, children do not receive individual screen time. Instead, E-Rate supports essential IT infrastructure required to operate centers, communicate with families, and fulfill federally mandated electronic reporting. Restricting eligibility would harm early learning programs without providing any child safety benefit.",
+      "evidence_start": 0,
+      "evidence_end": 618,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "prek_headstart": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080664",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080664",
+  "filer_raw": "Mindy Leasure",
+  "date_submission": "2026-10-12T18:28:12.440Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "07d42f3b1cb5724292f073aa06de956fa516d221aa4044413a0f2dd71c3fd6d7",
+  "params_key": "3568ea9ed75c3b0ef765dc2f2c2be6595a6b3c719cd5883ef2f18af7b102b78a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

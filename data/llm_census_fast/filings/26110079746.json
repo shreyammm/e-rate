@@ -1,0 +1,37 @@
+{
+  "summary": "The school district expresses concern about the potential increase in costs and long-term planning required if E-Rate funding were reduced or eliminated, citing potential impacts on classroom resources, staffing, and facility improvements. They urge the FCC to preserve E-Rate funding to avoid these negative consequences.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, local costs and long-term planning for technology and annual budgets would increase.",
+      "evidence_quote": "Without this funding, a significant reduction or elimination of the program would increase local costs and require additional long-term planning for technology, capital improvements, and annual budgets. For our district, those additional expenses would have to come from somewhere, potentially diverting dollars from classroom resources, staffing, student and community programs, and needed facility improvements.",
+      "evidence_start": 1775,
+      "evidence_end": 2188,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079746",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079746",
+  "filer_raw": "Clinton Central School District",
+  "date_submission": "2026-10-07T12:20:53.750Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "edbee3667beea07aa3371269f508a184de30ba69fa3839e0bb481d17fe1d6a24",
+  "params_key": "e65f96e89ce1281d8de90eeab3c85ddf69a9f24d9f62e1eb6287c3fdc9da3d64",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

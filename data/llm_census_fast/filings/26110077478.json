@@ -1,0 +1,37 @@
+{
+  "summary": "The school districts and instructors emphasize the importance of preserving E-Rate funding to ensure access to broadband for students and libraries, arguing that cutting the program would have a significant negative impact on educational opportunities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deepen inequities and reduce access to essential tools for students",
+      "evidence_quote": "If E-Rate funding were to be cut, students, faculty, as well as the communities that those colleges are in would lose important access for access to our courses, communications, research, and relationships with the local communities.",
+      "evidence_start": 926,
+      "evidence_end": 1159,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077478",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077478",
+  "filer_raw": "Charmian Tashjian",
+  "date_submission": "2026-09-21T19:19:55.599Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ff28aef5cbcd7de50b1b638b03e53db75b73bf9369947c6002857ce0fa8eb1fd",
+  "params_key": "2827de9764b9c4bd50ddba0286613e132fc17f0c587928b22c8028398f780f95",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

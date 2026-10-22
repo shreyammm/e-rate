@@ -1,0 +1,37 @@
+{
+  "summary": "The library urges the FCC to reject proposals that would terminate or limit the E-Rate Program, emphasizing the essential role of E-Rate in providing internet access to their community.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Eliminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, libraries like Leicester Public Library would not be able to provide internet access to patrons, which is essential for modern life.",
+      "evidence_quote": "Without e-rate, we simply would not be able to provide this vital, necessary access.",
+      "evidence_start": 2371,
+      "evidence_end": 2455,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069509",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069509",
+  "filer_raw": "Leicester Public Library",
+  "date_submission": "2026-08-05T14:55:48.864Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "36a7913b8fc52d6c90802bdba7152863d3207a37600c76d0f2ec2cfe93912bc2",
+  "params_key": "351f43f017298409424dd25cb5e29924be506d82eeeb17d4ffa50c24180d1814",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

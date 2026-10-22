@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate funding in maintaining essential infrastructure and connectivity for their rural school district, which serves nearly 700 students across three school buildings. The district highlights the cost savings provided by E-Rate and the importance of reliable connectivity for educational access and safety.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining school infrastructure and connectivity costs",
+      "evidence_quote": "E-Rate covers 70% of our $33,979.85 bill for five-year Wi-Fi equipment licenses",
+      "evidence_start": 1095,
+      "evidence_end": 1174,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076864",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076864",
+  "filer_raw": "MSAD#44",
+  "date_submission": "2026-09-17T13:32:49.552Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2d26a7b62c107b2cbb1a6956c4c4c3c4496da7548419837da6a9d9318af407ca",
+  "params_key": "5584226e8d07b4fb4461bda9180ff9b2c4ae9a27c4bff741f3b37b2b24b6a834",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

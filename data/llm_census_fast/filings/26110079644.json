@@ -1,0 +1,37 @@
+{
+  "summary": "The technology director emphasizes the importance of E-Rate for student achievement and access to technology, advocating for strengthening rather than reducing funding. The comment highlights the critical role of reliable internet access in education and student safety, and argues that reducing E-Rate support could harm learning outcomes and limit educational opportunities, particularly for students in poverty.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "strengthen E-Rate rather than reduce funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Strengthening E-Rate rather than reducing funding ensures continued access to essential technology for schools and students",
+      "evidence_quote": "Now is not the time to reduce ERate funding or to add new screen-time requirements for ERate program eligibility.",
+      "evidence_start": 346,
+      "evidence_end": 459,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079644",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079644",
+  "filer_raw": "Calan Daniel",
+  "date_submission": "2026-10-06T18:35:20.422Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ff4af8d78d9fe2c7f6a60be4df15696acd129a6d7130fe32bd85affb2e1776ab",
+  "params_key": "3472942e659505ebfb0902f63efa91fa635447f71809dfa994b7ec8f0f056217",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

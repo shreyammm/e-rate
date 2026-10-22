@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving and strengthening the E-Rate Program to ensure continued connectivity and access to technology for students and educators.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, the district would have to absorb technology costs through local funding sources or reduce infrastructure investments.",
+      "evidence_quote": "Without this support, we would be forced to absorb substantial technology costs through local funding sources or reduce planned infrastructure investments which would negatively impact students and important district programs.",
+      "evidence_start": 1282,
+      "evidence_end": 1508,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081360",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081360",
+  "filer_raw": "Leigh Chavez | Arcadia Unified School District",
+  "date_submission": "2026-10-14T00:06:59.200Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b2cc3f5f9d7b11e7f136b6b1e7742fb111ed66503b9c5327aae40df29ed25654",
+  "params_key": "c015c4430bf8e2d5a75afcf95e5a9b6692ad6d02acd3acad1e19306224196ab9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

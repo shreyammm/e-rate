@@ -1,0 +1,37 @@
+{
+  "summary": "Madison County Library emphasizes the importance of E-Rate funding for providing affordable internet access to its rural community.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for providing affordable internet access to rural communities.",
+      "evidence_quote": "If the Madison County Library lost the E-rate funding that helps to provide my small, rural community with internet access, we would not be able to help our families and patrons who are not able to access the internet at their homes.",
+      "evidence_start": 1215,
+      "evidence_end": 1448,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080067",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080067",
+  "filer_raw": "Madison County Library",
+  "date_submission": "2026-10-08T16:30:29.584Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fca60018b66a877815f251a164abf9fc9cb2d14616c791542269172ed9c22874",
+  "params_key": "8205a1837c8600a7bdc80991f03251efe9397060db66eb9aea61968b392e716b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

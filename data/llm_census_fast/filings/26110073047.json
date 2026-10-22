@@ -1,0 +1,37 @@
+{
+  "summary": "Expresses support for E-Rate program and its importance to the school community.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E-Rate funding would require significant budget cuts to other areas",
+      "evidence_quote": "If the program were ended, we would likely be faced with difficult decisions about reducing technology services, delaying needed improvements, or redirecting funds away from other student and school needs.",
+      "evidence_start": 1384,
+      "evidence_end": 1589,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073047",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073047",
+  "filer_raw": "Reeds Creek Elementary School District",
+  "date_submission": "2026-08-25T17:00:52.046Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5ebc13148468415d5e201edbcf4f216a774f76c9857c2ae5c13079b1bdab2378",
+  "params_key": "d1b37e318c499db52c03ab1756ffefb4c75c4743df2d0e0efdb303288b2d9082",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

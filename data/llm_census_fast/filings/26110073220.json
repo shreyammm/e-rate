@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the essential role of E-Rate funding in maintaining network infrastructure and ensuring equitable access for students, highlighting the direct impact of any cuts on operational costs and instructional priorities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Proposals to limit, narrow, or sunset E-Rate funding would force districts to absorb infrastructure costs directly, diverting funds from instructional priorities.",
+      "evidence_quote": "As the Director of Technology for Wooster City Schools in Ohio, I am writing to provide our district's perspective on the vital role the E-Rate program serves in maintaining basic network infrastructure and ensuring equitable access for our students.\n\nWooster City Schools currently operates under deficit spending. E-Rate funding is not an optional luxury for our district; it is an essential operational offset.",
+      "evidence_start": 0,
+      "evidence_end": 413,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073220",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073220",
+  "filer_raw": "Wooster City School District",
+  "date_submission": "2026-08-26T16:09:33.202Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0d0d6d216b505d83374cf888ce2bc3970398cc1f674e666659c01d16434a5837",
+  "params_key": "84eb8f8358d68b978ec21ae94bb8b71f03341a0344117eb95146c1ae99c9d77c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

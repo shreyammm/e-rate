@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting any proposal to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential infrastructure for modern public education",
+      "evidence_quote": "E-Rate is the only federal education technology program, and the connectivity it provides is foundational to supporting our students’ learning.",
+      "evidence_start": 1289,
+      "evidence_end": 1432,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079842",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079842",
+  "filer_raw": "Edward Gruber",
+  "date_submission": "2026-10-07T17:26:36.252Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9c1eb1f37b39591d82ddb4ca0968ea44607b037ee332cf4b096285cb9d4d6812",
+  "params_key": "1dd18d12692968f8bcf7141cfc8664f696c403547fd01aadb8195bd942c82dd3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

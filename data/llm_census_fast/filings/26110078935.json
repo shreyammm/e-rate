@@ -1,0 +1,37 @@
+{
+  "summary": "As a citizen of the State of Alabama who is familiar with the E-Rate program, I urge the FCC to strengthen, not reduce, the E-Rate program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The FCC should not base E-Rate funding levels on assumptions about screen-time limits or bandwidth needs",
+      "evidence_quote": "The FCC should not base E-Rate funding levels on the assumption that states will enact screen-time limits or that such limits would significantly reduce schools’ bandwidth needs. Schools rely on an increasingly diverse range of cloud-based instructional resources, courses, applications, and essential services. Reducing funding to influence screen time could restrict access to valuable educational resources and harm learning outcomes rather than improve them.",
+      "evidence_start": 543,
+      "evidence_end": 1005,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078935",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078935",
+  "filer_raw": "Elizabeth Hancock",
+  "date_submission": "2026-09-30T19:35:54.909Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0e7b1f4961a6f581c5a02ecf992285f2143eae60ae40dddef0135a4d683324cc",
+  "params_key": "e87b62116d132546ed3f73db489613c4c67f53be7edc62167afcbc240edb4d46",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

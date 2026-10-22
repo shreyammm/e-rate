@@ -1,0 +1,37 @@
+{
+  "summary": "The undersigned organizations urge the FCC to reject proposals to eliminate E-Rate, emphasizing the program's critical role in maintaining affordable, reliable Internet access for schools and libraries, which are essential for educational and community services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to eliminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would represent a cut to school and library budgets, jeopardizing years of progress building and upgrading networks",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 1037,
+      "evidence_end": 1179,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076467",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076467",
+  "filer_raw": "Chris Ricker",
+  "date_submission": "2026-09-12T00:46:33.963Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "67c4b28ed425f9308efb32f203a2fb48916589fb798e7e6118963ce1fe30164f",
+  "params_key": "ce65edbb73167b8961b85d8bc61a89345a10145a8792cc71290cff7d28d836ff",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

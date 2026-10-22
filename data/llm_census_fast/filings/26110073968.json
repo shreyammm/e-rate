@@ -1,0 +1,37 @@
+{
+  "summary": "The comment emphasizes the importance of E-Rate for schools like Noble Academy, which rely on reliable internet for various operations and educational purposes. It highlights the program's role in closing the digital divide and ensuring affordable access to technology for students and staff. The comment argues against limiting or sunsetting E-Rate due to its critical role in maintaining connectivity and supporting educational initiatives.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for schools and libraries, leading to increased costs for maintaining reliable internet access.",
+      "evidence_quote": "The E-Rate program is a federal initiative that provides discounts of 20%-90% to help schools and libraries afford reliable internet access. Those discounts with the highest levels going to schools and libraries in low-income or rural areas. Noble Academy students and its families' diversity is majority of low-income. Our school receive that of 80% The program is intended to close the \"digital divide\" by ensuring that under-resourced communities have affordable access to modern, reliable communications technology.",
+      "evidence_start": 62,
+      "evidence_end": 581,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073968",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073968",
+  "filer_raw": "Noble Academy",
+  "date_submission": "2026-08-31T17:21:34.596Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f4401b3de1619a3479e27c5fa7a22b0c326601a29066407ca99f1f0a568b3157",
+  "params_key": "d254758de5e6cdfbf92c053cd0dea80b2ba420879576b112be8a4d2316dcde9c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

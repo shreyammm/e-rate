@@ -1,0 +1,37 @@
+{
+  "summary": "Library patron argues for preserving E-Rate funding to maintain library services and digital access for community members. The library relies on E-Rate discounts to keep its doors open and continue providing essential services such as internet access, job applications, telehealth, and online courses. The patron warns that any reduction in E-Rate funding will lead to significant cuts to library operations and could even force libraries to close in rural and underserved areas. The patron emphasize",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate funding will force libraries to cut core community operations",
+      "evidence_quote": "To pay full market rates for internet service, the library would have to reallocate funds directly from core community operations. This would mean cutting book and materials budgets, canceling digital literacy and job training programs, delaying equipment replacements, and reducing operating hours.",
+      "evidence_start": 1735,
+      "evidence_end": 2034,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076030",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076030",
+  "filer_raw": "Logan Penna",
+  "date_submission": "2026-09-09T13:25:55.920Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9772dc4b91d262e7b1b5724a799cdb45ea38400a3035d5615bc56e57d7352121",
+  "params_key": "f4501e2f9036a84d6657a92e92614eb49b8013f54abb654cf3fdb369f87d911f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

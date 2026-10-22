@@ -1,0 +1,37 @@
+{
+  "summary": "The Southeastern Colorado Board of Cooperative Educational Services (SEBOCES) urges the FCC to reject any proposal that would terminate or limit the E-Rate Program, emphasizing the importance of maintaining affordable connectivity for schools and libraries. SEBOCES argues that reducing E-Rate support could force districts to divert funds from other educational needs, postpone necessary upgrades, or reduce service quality.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Eliminate E-Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would eliminate funding for broadband access in schools and libraries, leading to increased costs for districts.",
+      "evidence_quote": "Respectfully submitted, Leonel Morales ___________________________ Leonel Morales Technology Director Southeastern Colorado BOCES 7784 Saddle Club Drive, Lamar CO 719-336-9048 l.morales@seboces.org 10/08/2026",
+      "evidence_start": 2713,
+      "evidence_end": 2921,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080156",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080156",
+  "filer_raw": "Southeastern Colorado Board of Cooperative Educational Services",
+  "date_submission": "2026-10-08T22:31:11.436Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ebaa053ed4c871b4ade6fdab8ced881d92af28b7d3f16d7146c1d8612cea2ccc",
+  "params_key": "d19259120cc1f64f3352d69b7c5045ff5c7c9ed9e27f86937e4b7f6b9819c1cf",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

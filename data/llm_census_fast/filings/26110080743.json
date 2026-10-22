@@ -1,0 +1,37 @@
+{
+  "summary": "Parent expresses concerns about digital distraction and suggests strengthening E-Rate enforcement of CIPA. ",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "screen_time_condition",
+      "position": "support",
+      "requested_action": "Require instructional screen time reporting by grade level",
+      "reason_family": "other",
+      "claim_kind": "empirical_claim",
+      "argument": "Require reporting of instructional screen time by grade level",
+      "evidence_quote": "Report instructional screen time by grade level",
+      "evidence_start": 1128,
+      "evidence_end": 1175,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "screen_time_condition": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080743",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080743",
+  "filer_raw": "Lee Oppenheimer",
+  "date_submission": "2026-10-12T21:47:45.388Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "298ae752b3395ac525e8c2b2f15be354c1fd3c2ba987b43cdb3fc64bfecdf84e",
+  "params_key": "e0d0ac9db34a518ef7b4783861e3834727300e51faa002826f1408fe358c79a8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

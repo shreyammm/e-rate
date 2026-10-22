@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving E-Rate funding to maintain essential network infrastructure and avoid shifting costs onto local property taxes, which would disproportionately affect high-need communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve full E-Rate program eligibility and funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Restricting or sunsetting E-Rate imposes severe fiscal harm on high-need communities",
+      "evidence_quote": "Restricting or sunsetting E-Rate imposes severe fiscal harm on high-need communities. E-Rate discounts (up to 90% based on poverty and rural status) provide essential relief. Eliminating or narrowing this support will not make network operations disappear; it will shift fixed infrastructure costs directly onto local property tax budgets, disproportionately burdening the school districts and students least equipped to absorb them.",
+      "evidence_start": 1551,
+      "evidence_end": 1984,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080136",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080136",
+  "filer_raw": "Micah Miner",
+  "date_submission": "2026-10-08T20:20:25.886Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6dffb7400cc7969a2d02ebddf8bea000b98c71e93a3d45e58a90466e43ff6859",
+  "params_key": "db58b27564964bb0bfb34f283fc347c147a5e32f52c3c8a1730c11d5abebf77d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

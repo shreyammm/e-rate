@@ -1,0 +1,37 @@
+{
+  "summary": "Benjamin Baer urges preservation of E-Rate program to ensure educational access for students and schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would reduce access to internet for schools and libraries",
+      "evidence_quote": "Rather than questioning whether this program should exist, the FCC should be asking how to make it work even better for students, educators, and communities. The internet is a key piece of infrastructure to our PreK-12 education system. E-Rate is how schools gain access to it.",
+      "evidence_start": 1961,
+      "evidence_end": 2238,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079512",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079512",
+  "filer_raw": "Benjamin Baer",
+  "date_submission": "2026-10-06T00:59:55.184Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8a0bb36c60581d6a12373a396648a52fc00ff29899c6af9ce6f29cc6615b10d2",
+  "params_key": "d9261e1a7bb86cf9f3a4dd6281ef95c45436eb0533166f7f80f2848b63e92cfe",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

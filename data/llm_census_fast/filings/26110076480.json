@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges preservation of E-Rate program to ensure educational access for students in low-income and rural areas.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deepen inequities and hinder educational access",
+      "evidence_quote": "Cutting this program would only deepen the inequities that public education is meant to overcome.",
+      "evidence_start": 1958,
+      "evidence_end": 2055,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076480",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076480",
+  "filer_raw": "Rebecca S Hall",
+  "date_submission": "2026-09-12T15:12:11.312Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f6f61df63786bd7bc3e2186f8fcbb6553eb7dd818e83d822147594bc2d821ae1",
+  "params_key": "42450d0d942d1ede5eb9510d5a8eb518f5b7f4aa6f738f3aa8bd8b09e6819a1b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

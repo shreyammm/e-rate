@@ -1,0 +1,37 @@
+{
+  "summary": "The Saginaw Intermediate School District opposes any changes to the E-Rate program, emphasizing its ongoing importance for schools and libraries. They urge the FCC to preserve the current eligibility structure, discount methodology, and local decision-making framework while modernizing the program to include cybersecurity equipment and services. The district highlights the critical role of E-Rate in maintaining reliable connectivity and protecting sensitive data.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding and support for schools and libraries",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program should remain unchanged because it continues to provide essential support for reliable connectivity and network infrastructure",
+      "evidence_quote": "The E-Rate program should remain fundamentally unchanged because it continues to provide essential support for the reliable, high-capacity connectivity and network infrastructure schools depend on for instruction, operations, communications, and access to modern educational resources.",
+      "evidence_start": 365,
+      "evidence_end": 650,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075789",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075789",
+  "filer_raw": "Mark Quaderer",
+  "date_submission": "2026-09-08T12:56:40.433Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dd7c337956d805a1dbb1267e798c1aac198ba3a1c4520e6f37eac17db678d4bb",
+  "params_key": "64ad632bd7e6e282c129141aa83ac2af8fc5b25a7517fa9e810b93e0d4ad4c08",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

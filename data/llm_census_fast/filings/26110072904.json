@@ -1,0 +1,37 @@
+{
+  "summary": "The Cuyahoga County Public Library (CCPL) urges the FCC to reject proposals that would sunset or eliminate E-Rate, emphasizing the program's critical role in maintaining affordable, reliable internet access for schools and libraries. The library highlights the program's long-term impact on community infrastructure and the potential consequences of cutting funding, including the need to cut broadband speeds, reduce public computer access, or divert funds from other critical services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to sunset or eliminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing progress in building and upgrading networks.",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress in building and upgrading those networks.",
+      "evidence_start": 624,
+      "evidence_end": 769,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072904",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072904",
+  "filer_raw": "Cuyahoga County Public Library",
+  "date_submission": "2026-08-24T19:27:10.101Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "df3166a778685460a070209bd9410b311c62dc7934c6f6e09c633b769db95a70",
+  "params_key": "2173588eefff61378cf5c4ccc20272ef4f95af3ceede8f983b0fde538de03123",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

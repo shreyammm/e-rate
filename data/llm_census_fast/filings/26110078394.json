@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting any proposal to sunset or eliminate it, and emphasizing the program's essential role in providing reliable broadband connectivity for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reject proposals to sunset, eliminate, or phase out the E-Rate program",
+      "evidence_quote": "Now is not the time to undermine the foundation of modern education. I urge the Commission to protect E-Rate so public schools can continue providing all students with the reliable connectivity they need to succeed.",
+      "evidence_start": 2516,
+      "evidence_end": 2731,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078394",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078394",
+  "filer_raw": "Jolyn Choate | Hulbert Public Schools",
+  "date_submission": "2026-09-25T21:38:45.866Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "047a47e44eae5b6d0fb48395db987f40b770f77d920c77b4515125ef0c7390a5",
+  "params_key": "9aaff6da97ee55132984a5b7320208fab2b6aa3c6e0f79d3207adb9812dedfff",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district expresses opposition to the proposal to sunset E-Rate funding, emphasizing the importance of preserving the program for its cost-effectiveness and the potential impact on local budgets and services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate is eliminated, costs fall on local budgets, potentially requiring tax increases or service reductions",
+      "evidence_quote": "If it is eliminated, the costs do not disappear. They fall back on our local budget and our taxpayers.",
+      "evidence_start": 1480,
+      "evidence_end": 1582,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081100",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081100",
+  "filer_raw": "Crestwood School District",
+  "date_submission": "2026-10-13T18:43:21.983Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "43b5812f2bb55d0fd0619f7ac2b63b98fe1f1368a7a2812939cdb8c68254d550",
+  "params_key": "fa2cf61345d28399c5884426857bb8ed3dfb3fa03a4690ec7b2a82f4d06a580f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

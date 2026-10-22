@@ -1,0 +1,37 @@
+{
+  "summary": "The claim that limiting or sunsetting E-Rate would cause significant harm to public schools and libraries, citing concerns about broadband connectivity, job searching, and access to information for residents.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate were to be limited or eliminated entirely, public schools and libraries would suffer greatly.",
+      "evidence_quote": "If E-Rate were to be limited or eliminated entirely, public schools and libraries would suffer greatly. First of all, not all schools and libraries have broadband connectivity.",
+      "evidence_start": 0,
+      "evidence_end": 176,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080135",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080135",
+  "filer_raw": "Hedrick Public Library",
+  "date_submission": "2026-10-08T20:12:20.099Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "737682236357a9abaa986d40ca3ae497430e77146f37910ac93b5da6dc34479a",
+  "params_key": "126b3130549178ad67fce81f99121ae4ef0ce7b07e0e4efd20ff710fda303959",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

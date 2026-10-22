@@ -1,0 +1,37 @@
+{
+  "summary": "The school library media specialist urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the program's critical role in maintaining affordable and reliable internet access for schools and libraries, which is essential for educational opportunities and technological advancements.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Eliminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would represent a cut to school and library budgets, jeopardizing years of progress building and upgrading networks.",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 584,
+      "evidence_end": 726,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073028",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073028",
+  "filer_raw": "Morgan Grey",
+  "date_submission": "2026-08-25T15:05:32.317Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8637bfd8a19fe898ce1d18fdebb7b718b27665e9826f8922d9a8e249ff85ca45",
+  "params_key": "eac26cbdc6d511a69031568b41a2978e7b0392a46c6880a19931eb42d914c978",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

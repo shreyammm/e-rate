@@ -1,0 +1,37 @@
+{
+  "summary": "The individual emphasizes the importance of affordable internet access for various aspects of life, including healthcare, education, and communication, and expresses concern about the potential negative impacts of limiting or sunsetting the E-Rate program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Taking away access to a service after people have already come to rely on it can have significant consequences",
+      "evidence_quote": "I believe it is cruel and harmful to take away access to a service after people have already come to rely on it, especially in a world where so much of our healthcare, communication, education, employment, and access to information has moved into the digital space.",
+      "evidence_start": 24,
+      "evidence_end": 289,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073723",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073723",
+  "filer_raw": "Autumn Stevens",
+  "date_submission": "2026-08-29T14:46:28.579Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dd812ae5c7ab4f1b0df270871edb79aa1e8a0290b23f7a8710253e2659c143e6",
+  "params_key": "a6de9b77655f856bfc8edeba7efbe3f8692856fd80b01098f4966cc749069f85",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

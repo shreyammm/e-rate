@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate funding in maintaining reliable internet connectivity for its students and educators. Without E-Rate, the district would face significant financial challenges that could compromise educational quality.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would lead to severe financial strain on districts, forcing compromises on educational quality",
+      "evidence_quote": "Without E-Rate funding, our component districts would face severe financial strain, directly forcing a compromise on the quality of student education.",
+      "evidence_start": 1480,
+      "evidence_end": 1630,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072186",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072186",
+  "filer_raw": "Sandy Wagner",
+  "date_submission": "2026-08-19T12:59:49.485Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5d8b6425147a4924f7d802af4de2d5aa05356c90d540ffe3e0558415a45978b7",
+  "params_key": "c0199c3cbed79878339f51b3ea674d34c64d7e693fc7fda87e6abe7f394106e6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

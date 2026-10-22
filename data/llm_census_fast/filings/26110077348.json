@@ -1,0 +1,37 @@
+{
+  "summary": "The text argues for parental autonomy in education technology use, advocating for opt-out options for children when technology use is deemed unnecessary. It emphasizes the importance of providing parents with meaningful alternatives to digital learning methods and the right to choose non-digital educational options for their children.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "parent_opt_out",
+      "position": "support",
+      "requested_action": "Provide opt-out options for technology use",
+      "reason_family": "parental_autonomy",
+      "claim_kind": "normative_value",
+      "argument": "Parents should have the right to opt their children out of unnecessary technology use in school and receive an equivalent, meaningful, non-digital educational alternative.",
+      "evidence_quote": "Parents should be able to say: For my child, I want the non-digital version of this educational experience.",
+      "evidence_start": 1221,
+      "evidence_end": 1328,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "parent_opt_out": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077348",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077348",
+  "filer_raw": "Jessica Wilkes",
+  "date_submission": "2026-09-21T03:21:16.581Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d38f1a06769df2e4069a5692bee5f5ec0e12ffec13ff14d92d71d746c31b8916",
+  "params_key": "0f170b7bb5240a312e7ca7631a62481b13f4fdffdb36be7273bdcaedce724b9b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

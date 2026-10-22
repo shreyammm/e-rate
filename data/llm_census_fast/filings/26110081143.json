@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate funding for providing reliable internet access to students and the community, highlighting the personal impact of the program on their own educational journey and the need to preserve the program to avoid financial burdens and ensure educational access for all students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding and support for E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, schools would have to cut other essential needs",
+      "evidence_quote": "Without this funding, as a Title I school, we depend on E-Rate funding to help cover our internet connectivity and the equipment needed to keep our students connected. Many of our students, including those supported through the McKinney-Vento Program (MVP), rely on school for dependable internet access. Some of our students are experiencing homelessness and staying in temporary housing, including Motel 6. They deserve a reliable place to learn, complete assignments, and access the same resources as their classmates.",
+      "evidence_start": 1469,
+      "evidence_end": 1990,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081143",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081143",
+  "filer_raw": "Palm Beach Maritime Academy Elementary | Nathalie Quezada",
+  "date_submission": "2026-10-13T19:23:14.950Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4713db7f6e3c6af0086065902a0e53be856ece94f7a6b97fb4b2e421db2805dd",
+  "params_key": "10aa8ce2b33c6cfe3d04fa42d2f924d3ea208c1bc8e798b45437aaf74894e629",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

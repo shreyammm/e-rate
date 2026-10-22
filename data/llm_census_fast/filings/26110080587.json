@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of the E-Rate program for funding broadband connectivity in schools and libraries, stating that reducing or eliminating it would result in a heavy loss and would require eliminating other programs to make up for the difference. They urge the FCC to keep the program intact and suggest expanding it to include security equipment and services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "keep E-Rate intact",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-rate funding would cause a heavy loss to schools and libraries",
+      "evidence_quote": "Reducing or eliminating E-rate funding would result in a heavy loss to us and to our students and greater community. There are currently no other programs at a federal, state or local level that can even come close to making up for the funding loss that cutting the E-rate program would cause.",
+      "evidence_start": 785,
+      "evidence_end": 1078,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080587",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080587",
+  "filer_raw": "Crestwood Local Schools",
+  "date_submission": "2026-10-12T14:45:33.401Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d018c3d66561e7b9343f7cb3b34b49e335a1da254bdac9b9725d4124b6d50faa",
+  "params_key": "22a5476bd1de8b38c6d2d9e859234d6d2dc5896ba48d98628f75ca4f0c8a7f72",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges preservation of E-Rate program for educational access",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate means preserving educational opportunity for millions of students",
+      "evidence_quote": "Preserving E-Rate means preserving educational opportunity for millions of students",
+      "evidence_start": 2151,
+      "evidence_end": 2234,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077830",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077830",
+  "filer_raw": "Colin Keppner",
+  "date_submission": "2026-09-23T14:27:17.296Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ce33641a1299a52ecae9aabf2bfffb9eb3fbf7f793ac2f9ceed150a7ae1de4d3",
+  "params_key": "d6db003f7082faade49c51daf3e390dcbeaa57dad700f80183b03a98abeb2317",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

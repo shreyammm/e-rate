@@ -1,0 +1,37 @@
+{
+  "summary": "The comment urges preservation of the E-Rate program to ensure ongoing funding for schools and libraries in rural and urban areas, emphasizing the program's ongoing nature and the costs associated with its elimination.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate is eliminated, costs will be transferred to schools, libraries, and local taxpayers, which may not be feasible for small, rural, lower-income communities.",
+      "evidence_quote": "If E-Rate is eliminated, those costs do not disappear. They are transferred to schools, libraries, municipalities, and local taxpayers. In small, rural, lower-income communities, institutions have very little room in their budgets to absorb significant new expenses without taking resources from staff, educational programs, library services, or other community needs.",
+      "evidence_start": 1193,
+      "evidence_end": 1561,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073168",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073168",
+  "filer_raw": "Dana Caspersen",
+  "date_submission": "2026-08-26T11:41:00.938Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4ede979be173f6664059832150d2377d52e4b63e1ec56bfeb08b3f5a755da62a",
+  "params_key": "91d0c69d711cf515dbf977c513d53fe4a0c01ef64463172d4f687b7e42230001",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

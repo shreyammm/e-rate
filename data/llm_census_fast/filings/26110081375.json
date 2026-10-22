@@ -1,0 +1,37 @@
+{
+  "summary": "The comment calls for maintaining E-Rate funding to improve internet safety and accountability in schools and libraries, while also proposing specific measures to enhance safety and parental control. It opposes any sunset or sunset of the program and supports the use of technology in a controlled manner.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue to fund E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding should not be cut",
+      "evidence_quote": "The FCC should continue to fund the E-Rate program, as it serves as an important mechanism for promoting internet safety and holding schools and libraries accountable.",
+      "evidence_start": 0,
+      "evidence_end": 167,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081375",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081375",
+  "filer_raw": "Ashley Bowers",
+  "date_submission": "2026-10-14T00:47:11.703Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f036d8d5b7e5400e4180cc9ad6e120218f1924267559205aa82f76b3f9be1756",
+  "params_key": "1f634804f080ea63a38d4915f351e29b9e183d6fd53f22b04f673631f4629f84",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

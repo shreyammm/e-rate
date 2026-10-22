@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve the E-Rate program, emphasizing its importance for providing broadband access to students and ensuring educational opportunities, especially in low-income and rural areas. The district warns that cutting E-Rate funding would exacerbate budget challenges and limit access to essential educational resources.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deepen inequities and limit educational opportunities",
+      "evidence_quote": "If the E-Rate funding is reduced or eliminated, our school district which is already closing and combining schools due to budget shortages, will be impacted with additional costs.",
+      "evidence_start": 1903,
+      "evidence_end": 2082,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078906",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078906",
+  "filer_raw": "Wendy  Jones",
+  "date_submission": "2026-09-30T17:38:15.272Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9b8a94ff630459d6f9a1ddcb8e36064c13390059126b7977cfe70e92ecc692dd",
+  "params_key": "6dbb0af4db15004a3542756ae4ff3f3eab3dfe22d61b9f8ab1b894570d87a829",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The Telluride School District opposes the proposed rulemaking to eliminate E-Rate, emphasizing the program's critical role in maintaining affordable and reliable internet access for schools and libraries. The district cites the need to support infrastructure upgrades and ensure access to essential services for students and staff.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate E-Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing infrastructure upgrades",
+      "evidence_quote": "Cutting E-Rate also threatens to leave vulnerable communities behind that don’t have dedicated resources to fill the gap.",
+      "evidence_start": 1593,
+      "evidence_end": 1714,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078588",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078588",
+  "filer_raw": "John Pandolfo",
+  "date_submission": "2026-09-28T19:04:33.496Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "acce8ffe76b2ae00bbac456c43aca5b5c6e24ef181c46ba27b0e4deeedd20015",
+  "params_key": "8e4e36cd4c9d22606deb4b2dde601b363f9038cc18ad2bcbb711693af6ff19ff",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

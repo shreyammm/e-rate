@@ -1,0 +1,37 @@
+{
+  "summary": "Lexington City Elementary School District describes the critical role of E-Rate in providing essential technology infrastructure and connectivity for their students and staff. They argue that eliminating E-Rate funding would lead to an immediate operational crisis and significant budget cuts. They urge the FCC to preserve E-Rate to ensure continued access to the modern world for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Eliminate E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, Lexington City Elementary School District would face an operational crisis and have to make painful budget sacrifices",
+      "evidence_quote": "Without the 80% discount E-Rate provides on our broadband circuits and internal networking hardware, our annual technology budget would be completely overwhelmed. We would no longer be able to afford the bandwidth required for state-mandated digital testing, daily classroom instruction, or basic school operations.",
+      "evidence_start": 1468,
+      "evidence_end": 1783,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081220",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081220",
+  "filer_raw": "Lexington City Elementary School District",
+  "date_submission": "2026-10-13T20:42:31.768Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d829bb4acc90280aaf1b49937d6ba9f53aeb0ae6677ae8229c9d1072eb348fc2",
+  "params_key": "73350ef884c74df6e9d1443ead59f98b84cab47c3dc5459c6120abb9d32f903a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

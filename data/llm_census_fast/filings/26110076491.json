@@ -1,0 +1,37 @@
+{
+  "summary": "A resident of Hawaiʻi strongly opposes any proposed cuts to the E-Rate program, emphasizing its critical role in providing broadband access for public schools and libraries, which are essential for education and community services.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Broadband access is no longer an optional luxury—it is core educational infrastructure",
+      "evidence_quote": "Broadband access is no longer an optional luxury—it is core educational infrastructure",
+      "evidence_start": 286,
+      "evidence_end": 372,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076491",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076491",
+  "filer_raw": "John Michael Fitzpatrick",
+  "date_submission": "2026-09-12T16:42:39.468Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9dfc23d31c06b2f5a7ef1286c78e7f95b1f35f09d36c0471f42c7c47091c73b1",
+  "params_key": "c503f37aeb3cc4c20c54ed42c4a1a974e83d41143bb9f0d3b1dabd46473f867c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

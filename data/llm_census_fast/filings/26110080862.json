@@ -1,0 +1,37 @@
+{
+  "summary": "The art teacher at Borden High School urges the FCC to preserve the E-Rate program and oppose any proposal that would reduce, limit, or sunset funding, emphasizing the program's importance for providing internet access to students and teachers.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate ensures continued access to internet for schools and libraries",
+      "evidence_quote": "Preserving E-Rate means preserving educational opportunities for millions of students, including those in communities like mine.",
+      "evidence_start": 2307,
+      "evidence_end": 2435,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080862",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080862",
+  "filer_raw": "Morgan Cope",
+  "date_submission": "2026-10-13T12:41:50.923Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f48b2bdd96f929a5f4e7d7c640baab94b1765752ec8d1d7b80efe3b6a0d3105e",
+  "params_key": "d297d121fe52f0ff53c8df61f724a814f6bcae2981488ca36b20fd0a5a058af5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

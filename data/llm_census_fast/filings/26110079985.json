@@ -1,0 +1,37 @@
+{
+  "summary": "Opposes proposal to sunset E-Rate program",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for public schools and libraries to provide broadband access to students.",
+      "evidence_quote": "If E-Rate support were reduced or eliminated, lower-income districts would face devastating financial choices: absorbing immense broadband costs or cutting access off entirely.",
+      "evidence_start": 1669,
+      "evidence_end": 1845,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079985",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079985",
+  "filer_raw": "Lisa E Woodson",
+  "date_submission": "2026-10-08T04:10:56.107Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "235bbf19f416c6715f4c3bc0590ac8be390266b13335074b456713faf1bef0f0",
+  "params_key": "2da58b80ada0519147adedb646b4ab3c671b2ac7ca5facebcae33e377d99abfe",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

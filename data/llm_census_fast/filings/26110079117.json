@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern public education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, the district would be taking several steps backwards in terms of preparing students for the current job market",
+      "evidence_quote": "We simply couldn't support a budget that keeps our network functional and relevant. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not as a reason to assume that the work is finished.",
+      "evidence_start": 1557,
+      "evidence_end": 1805,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079117",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079117",
+  "filer_raw": "Jeremy J. Herr",
+  "date_submission": "2026-10-02T14:18:40.085Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "16f4ad56c0a8c655167494a2525b818764208a833f1a6cefe378eb8cebc67710",
+  "params_key": "cc1b2f4ef0a7994d7aa58311033b89bbdcd227b52d7e8e4198ca07798246b4ba",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

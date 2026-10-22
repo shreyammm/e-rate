@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges preservation of E-Rate program to ensure access to broadband for students and schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate means preserving educational opportunity for millions of students",
+      "evidence_quote": "Preserving E-Rate means preserving educational opportunity for millions of students",
+      "evidence_start": 2897,
+      "evidence_end": 2980,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081335",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081335",
+  "filer_raw": "Claudia Bautista- Nicholas",
+  "date_submission": "2026-10-13T23:09:06.335Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "165aec710732f3f7213514801b803a08de2a01b74be1fd6b85afa45882e56024",
+  "params_key": "a090b65185d38b25942017118acbdd4c08217ff8e1b311c8bd27c963ed370656",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

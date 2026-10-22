@@ -1,0 +1,37 @@
+{
+  "summary": "A parent and school board member urges the FCC to maintain and strengthen the E-Rate program rather than weaken or sunset it, emphasizing the financial burden and importance of preserving the program for students and school districts.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding helps school districts manage costs of network equipment, services, and infrastructure",
+      "evidence_quote": "The cost of network equipment, Internet services, maintenance, upgrades, and related fees is significant. E-Rate funding helps our district manage those costs while continuing to provide students and staff with the reliable connectivity they need every day. Losing or substantially reducing that support would not simply be an administrative change—it would create a real and immediate financial burden on our school budget.",
+      "evidence_start": 559,
+      "evidence_end": 983,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110074142",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074142",
+  "filer_raw": "Kaleb Best",
+  "date_submission": "2026-09-01T03:56:49.145Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b2a25abd5aacca76f0c751ea2308c2c05e51ca89dd7c40adfcb79aa45c8c5607",
+  "params_key": "7fc5e255d0cb94bc07ceeae404d065b08c63a2950af53fbfc752b911cdad5df6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

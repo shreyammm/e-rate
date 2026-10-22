@@ -1,0 +1,37 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure schools can maintain connectivity and infrastructure costs",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate support, increased infrastructure costs would compete with finite local resources",
+      "evidence_quote": "Without that support, increased infrastructure costs would compete with finite local resources for staffing, instructional programs, and student services.",
+      "evidence_start": 1247,
+      "evidence_end": 1401,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079124",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079124",
+  "filer_raw": "Mark Dube",
+  "date_submission": "2026-10-02T14:53:58.848Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "598262cb584fdc862454f975dce39c7cfb71cbd3b985e7fd3d67d15d066fbf5b",
+  "params_key": "d60dadeb3c000fccdadc7f91eb5dec0381ab1bc3e52891fd1a309420a0b51d1c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

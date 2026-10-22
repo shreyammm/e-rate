@@ -1,0 +1,37 @@
+{
+  "summary": "The rural school district emphasizes the critical role of E-Rate funding in providing essential infrastructure for education and the financial challenges faced by their district. They urge the continuation and modernization of the program to ensure equitable access to modern learning opportunities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain and strengthen the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for sustaining network infrastructure and providing equitable access to modern education",
+      "evidence_quote": "E-Rate funding has made it possible for us to invest in essential infrastructure such as network upgrades, internal connections, and caching systems. These are not optional enhancements; they are foundational to daily instruction, online assessment, digital learning platforms, and emerging technologies. Without E-Rate, these investments would simply not be feasible within our local budget.",
+      "evidence_start": 298,
+      "evidence_end": 690,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110019533",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110019533",
+  "filer_raw": "Lisa MIlliard",
+  "date_submission": "2026-07-15T12:09:10.755Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "24dad556e11ec718fb11193736ae20dd27ec162835f68d720f31c8007b325e2f",
+  "params_key": "3ad546fd0c9bcd7642e61ebc2e989ad55f0432ce6088596a142689abe86f8db2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

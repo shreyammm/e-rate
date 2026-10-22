@@ -1,0 +1,37 @@
+{
+  "summary": "A parent urges preservation of the E-Rate program to ensure educational access for students and communities.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deepen inequities and lead to increased public expenditures",
+      "evidence_quote": "Cutting this program would only deepen the inequities that public education is meant to overcome. Students cannot fully participate in modern learning environments or our American society and culture without reliable Internet access, and schools cannot effectively prepare, educate and assess students for ultimate success without it.",
+      "evidence_start": 1995,
+      "evidence_end": 2329,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076552",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076552",
+  "filer_raw": "Martin Wolf | Marty Wolf",
+  "date_submission": "2026-09-14T00:42:14.308Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8ed694e8e90ef39e9be13f0e1282a1911d60ce9ea80a3bf991be9711d350e9d0",
+  "params_key": "8a84e84097422046279e03f37733a2f666a60e67d782a279243b807503a84f23",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

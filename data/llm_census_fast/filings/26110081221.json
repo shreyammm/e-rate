@@ -1,0 +1,37 @@
+{
+  "summary": "Concerns about the impact of changes to E-Rate funding on essential connectivity for schools and libraries in a rapidly growing and rural community.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Changes to E-Rate funding could reduce or destabilize essential connectivity for schools and libraries",
+      "evidence_quote": "As the Chief Technology Officer of Northwest Independent School District in Texas, I am extremely concerned about the potential impact of changes that could reduce or destabilize E-Rate funding for schools and libraries.",
+      "evidence_start": 0,
+      "evidence_end": 220,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081221",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081221",
+  "filer_raw": "Cara Carter",
+  "date_submission": "2026-10-13T20:44:47.847Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1a68deab94851051bd1784945ad497a7193bdf00606289acac8a27659dd454f4",
+  "params_key": "5acf1a8985f1fde49490d3917d75c96c8f16552c39e69a9928603c276533230d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

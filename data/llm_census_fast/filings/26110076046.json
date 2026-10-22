@@ -1,0 +1,37 @@
+{
+  "summary": "The Grand Blanc Community Schools opposes broadening E-Rate eligibility to include non-essential services, emphasizing cost efficiency and budget constraints. They recommend only allowing discounts for dark fiber and internet services, arguing that the program should focus solely on essential communications.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate to essential internet communications could reduce unnecessary spending on non-essential services",
+      "evidence_quote": "We'd find the money.",
+      "evidence_start": 1833,
+      "evidence_end": 1853,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076046",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076046",
+  "filer_raw": "Grand Blanc Community Schools | Thomas Wilberding",
+  "date_submission": "2026-09-09T14:58:34.475Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "101d35a8605d2626fc91bdefa1b13b060a66c474bd1a4fb44b781e8564895b8a",
+  "params_key": "e970ea37a7c038715c26ad8c361f5ba61d6dddd819fbb551fdd96cbe3e48c6e6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

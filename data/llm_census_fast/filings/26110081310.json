@@ -1,0 +1,37 @@
+{
+  "summary": "The library system, LFPL, relies on E-Rate funding for internet access and services. The author argues that terminating or limiting E-Rate funding would leave residents without access to fast, reliable internet, which is essential for library services and community access to information and resources. The author emphasizes the financial impact of E-Rate on the library system and the importance of maintaining the program to ensure continued access to broadband connectivity and digital literacy tr",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "terminate or limit funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate threatens to leave vulnerable communities behind",
+      "evidence_quote": "Cutting E-Rate also threatens to leave vulnerable communities behind that don’t have dedicated resources to fill the gap.",
+      "evidence_start": 594,
+      "evidence_end": 715,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081310",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081310",
+  "filer_raw": "Rebecca Hollenbach",
+  "date_submission": "2026-10-13T22:38:02.467Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2b0399d30f23a1577c890638510c1b55c47b30e1f28e0d0874c4c848bd359ee3",
+  "params_key": "e74f71f21d450b73359efd38aa530c3b7a86977a4161422be2ffbd8e0275379b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

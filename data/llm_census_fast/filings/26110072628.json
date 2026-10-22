@@ -1,0 +1,37 @@
+{
+  "summary": "The Information Technology leader for Madera Unified School District urges continued support for the E-Rate program and opposes any efforts to weaken or eliminate it. The district relies on high-capacity connectivity for various essential services, and without E-Rate support, they would face significant costs and tradeoffs. The FCC's proposed changes to the E-Rate program are seen as exceeding its area of expertise and interfering with local decisions about classroom instruction.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "limit or sunset E-Rate program",
+      "reason_family": "statutory_authority",
+      "claim_kind": "other",
+      "argument": "The FCC's proposal exceeds its area of expertise and reaches into questions about content and learning",
+      "evidence_quote": "The success of near-universal connectivity in schools is not a signal that the work is done; it is evidence that the program is working as intended. Districts continue to face significant and ongoing costs to maintain, upgrade, and secure their networks. Without E-Rate support, many communities, particularly those already under financial strain, would be forced into difficult tradeoffs that could directly affect students.",
+      "evidence_start": 1557,
+      "evidence_end": 1982,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072628",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072628",
+  "filer_raw": "Kee Vang | Madera Unified School District",
+  "date_submission": "2026-08-21T19:21:32.999Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dd8fdb9b42e8cc112e31f8ecb5befdbb785d5dcf5c87bec1d6e553d59bbe9fb0",
+  "params_key": "011cdc32b028cb41d94a5277b1232e4eefb64776cfeb2701b186aa9103b583d0",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

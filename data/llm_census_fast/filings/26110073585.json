@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate for maintaining reliable broadband infrastructure in schools, which is essential for modern public education. It urges the FCC to preserve and strengthen the program rather than eliminate or sunset it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Central Dauphin School Dist has received $2.26 million in committed federal E-Rate support over funding years 2021–2025",
+      "evidence_quote": "Central Dauphin School Dist has received $2.26 million in committed federal E-Rate support over funding years 2021–2025",
+      "evidence_start": 975,
+      "evidence_end": 1094,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073585",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073585",
+  "filer_raw": "Central Dauphin School District",
+  "date_submission": "2026-08-28T18:52:17.735Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4e9dea171246d47ccd153cc6cc1138b0d7abd209e76201e1b069a317d07ebdb7",
+  "params_key": "996cf6d6637d7508893797307912ed9d18bd749dfcbf6d0d239570e818f01dc0",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "School district urges FCC to preserve E-Rate program to prevent cost increases and service reductions.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate funding would force districts to absorb cost increases, reduce programs, and cut services.",
+      "evidence_quote": "If E-Rate funding were eliminated, restricted, or capped, the financial impact on our district would be immediate and severe. Because broadband and Wi-Fi access are non-negotiable necessities for school operations, local budgets would be forced to absorb these massive cost increases.",
+      "evidence_start": 1701,
+      "evidence_end": 1985,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079574",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079574",
+  "filer_raw": "Gregory Limperis",
+  "date_submission": "2026-10-06T14:00:05.092Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "88d7827801a1578f4b87130a7a7f733d91fdf0a1b67bbdd807f6a676dd1d7457",
+  "params_key": "1ad9137db6090c32db8d427ea6236f93c5c366dfe9d7ab62afa5eead95921b8c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

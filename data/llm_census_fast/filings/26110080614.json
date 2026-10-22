@@ -1,0 +1,37 @@
+{
+  "summary": "School and library rely on E-Rate for internet access and infrastructure. Opposing its sunset would preserve essential services and funding.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would represent a cut to school and library budgets, jeopardizing years of progress building and upgrading networks.",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 659,
+      "evidence_end": 801,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080614",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080614",
+  "filer_raw": "Hawkins County Schools",
+  "date_submission": "2026-10-12T15:58:48.009Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e4d90ac115a463947e668b8714bb6e4462751fb04d533b195d65257da960de24",
+  "params_key": "c866573f224bcae65545c0bd3ccca9603451c3a490ae39a81145eee35e829877",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

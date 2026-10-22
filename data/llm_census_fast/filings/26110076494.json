@@ -1,0 +1,37 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's role in providing essential tools for teaching and learning and the negative impact of potential cuts on educational equity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate ensures continued access to broadband for schools and libraries",
+      "evidence_quote": "For nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same tools as students in wealthier districts. While the program has done a stellar job in reaching its intended goals, proposals to sunset the program or restrict it to only certain schools would be catastrophic. Cutting this program would only deepen the inequities that public education is meant to overcome.",
+      "evidence_start": 1544,
+      "evidence_end": 1990,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076494",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076494",
+  "filer_raw": "Anthony Antonucci",
+  "date_submission": "2026-09-12T17:36:07.012Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9f70fc766fd1fcb4d42b1c1da2ab9f6d3e6ae7bcc6aeb793dbda0b52ce657f94",
+  "params_key": "b5aa2062aaab568b553d95d5e55111c7136c7c041e0237d30f6cf3acf6654b3c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

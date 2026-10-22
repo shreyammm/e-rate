@@ -1,0 +1,37 @@
+{
+  "summary": "Washington State’s school board urges the FCC to preserve E-Rate’s core mission of ensuring affordable broadband for schools and libraries, emphasizing the importance of local decision-making and avoiding new funding conditions that could shift responsibilities to the federal government.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting eligible equipment and services could increase costs for schools",
+      "evidence_quote": "Washington State’s school board members urge the FCC not to condition E-Rate funding on federally prescribed screen-time requirements, instructional mandates, or additional requirements that could displace local decision-making or create new administrative burdens without improving student access to safe, effective connectivity.",
+      "evidence_start": 1230,
+      "evidence_end": 1560,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080767",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080767",
+  "filer_raw": "Cynthia Tamayo",
+  "date_submission": "2026-10-12T23:16:25.706Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0264dc70ec2d7a37ca00418d640febc8458ba8da758e8e5990614b9758477b45",
+  "params_key": "d9e9439b13a9ebfd3b27f4588dc24936740611ddb4586e4e9ebe9ea49000a223",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

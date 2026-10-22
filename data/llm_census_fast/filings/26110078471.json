@@ -1,0 +1,37 @@
+{
+  "summary": "The school district and parent advocate strongly for preserving the E-Rate program, emphasizing its critical role in providing broadband access for students and schools. They argue that any proposal to sunset or limit the program would have severe financial and educational consequences, particularly for rural and low-income communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would result in significant financial losses for schools and districts",
+      "evidence_quote": "The town I live in would lose over $55,000 and the district I work in would lose over $290,000.",
+      "evidence_start": 1926,
+      "evidence_end": 2021,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078471",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078471",
+  "filer_raw": "Janet Howe Kuech",
+  "date_submission": "2026-09-27T21:14:19.410Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "71a066ab54ef90a063f649f29a09118481480e6370fddc923e92fb9bd8d4bd32",
+  "params_key": "0cb6857bb8e28706e965c80760175f73331058d8f44e737ff0290c1b0136bec6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

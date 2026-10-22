@@ -1,0 +1,37 @@
+{
+  "summary": "The school district supports the continued availability of the E-Rate program, citing concerns about budgetary impacts and the need for equitable access to technology for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue availability of the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Discontinuing the program could require the District to redirect existing resources from other educational priorities, reduce planned technology improvements, or delay necessary network upgrades. Such changes could create additional challenges in ensuring that all students have equitable access to digital learning resources, regardless of their school or individual circumstances.",
+      "evidence_quote": "Discontinuing the program could require the District to redirect existing resources from other educational priorities, reduce planned technology improvements, or delay necessary network upgrades. Such changes could create additional challenges in ensuring that all students have equitable access to digital learning resources, regardless of their school or individual circumstances.",
+      "evidence_start": 1752,
+      "evidence_end": 2134,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080680",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080680",
+  "filer_raw": "Roger Stinar, Travis Stinar",
+  "date_submission": "2026-10-12T19:11:57.618Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3742f45f4cd13c58d00386dfdfe9324d690ffb70a7f926d5a7d7c10f9b0df34b",
+  "params_key": "938b58bb76a00bfae03a8c0d6e5efc31c7eced2e546b7b9a74ae34460e4531be",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}
