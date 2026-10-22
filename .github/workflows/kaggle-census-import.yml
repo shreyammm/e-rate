@@ -25,6 +25,7 @@ jobs:
       - name: Check checkpoint validation and install public output downloader
         run: |
           python -m unittest discover -s tests -p test_kaggle_census.py -q
+          python -m unittest discover -s tests -p test_publish_stance_safety.py -q
           python -m pip install 'kagglehub>=0.3,<1' 'scikit-learn>=1.5,<2'
       - name: Download and validate latest saved public Kaggle output
         id: download
@@ -50,7 +51,9 @@ jobs:
             git pull --rebase origin main
             git push origin HEAD:main
           fi
-      - name: Report pending first saved output
+      - name: Report unavailable saved output as failed import
         if: steps.download.outcome != 'success'
-        run: echo 'Kaggle output is not available or failed validation. Existing research is unchanged; the next scheduled import will retry.'
+        run: |
+          echo '::error::Kaggle output is unavailable or invalid. No new results were imported. Hourly retries remain configured.'
+          exit 1
 
