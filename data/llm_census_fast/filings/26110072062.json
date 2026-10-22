@@ -1,0 +1,37 @@
+{
+  "summary": "The Technology Coordinator emphasizes the critical role of E-Rate funding in providing essential broadband connectivity for schools, particularly in economically disadvantaged communities. They argue that without E-Rate support, districts would be forced to delay necessary improvements or reduce services, which would disproportionately harm students in these areas.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "terminate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining broadband infrastructure and connectivity in schools.",
+      "evidence_quote": "The question raised in this proceeding regarding whether E-Rate is still needed is easy to answer from our community's perspective: E-Rate remains absolutely essential.",
+      "evidence_start": 821,
+      "evidence_end": 989,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072062",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072062",
+  "filer_raw": "Eduardo Perez",
+  "date_submission": "2026-08-18T17:59:43.271Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9b513b857e69e2d29a08083b5cfb02aa94bd165a736f8a15ae3e06ce589b5937",
+  "params_key": "51889b8123ca554dd0fab46eb1a4d0679a7073bc831e0435c5ef95601a9eff39",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

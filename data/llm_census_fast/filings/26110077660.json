@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving and strengthening the E-Rate program to ensure reliable broadband access for students and schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reject proposal to sunset or eliminate E-Rate",
+      "evidence_quote": "I therefore respectfully urge the Commission to:\n\n1. Reject any proposal to sunset or eliminate the E-Rate program;",
+      "evidence_start": 2100,
+      "evidence_end": 2215,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077660",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077660",
+  "filer_raw": "John Vranas",
+  "date_submission": "2026-09-22T16:14:26.318Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "73d2e89a6c83c39bbbd74eda1b59c7801991dc1bdf4ca5f4b9036398236a1165",
+  "params_key": "6683b10d6d994c1f99ce0851c38044cf42c29ce7c4b5ce2ca982096a2e55a156",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Preserving E-Rate program is crucial for school funding and program continuity",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would devastate school funding and programs",
+      "evidence_quote": "Removing the 5.3 million dollars that our school district receives would be devastating. Our district has no choice but to fund technology and therefore other programs like fine arts, sports, and afterschool programs would be cut along with compensation for their employees.",
+      "evidence_start": 2392,
+      "evidence_end": 2666,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079906",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079906",
+  "filer_raw": "Michelle Cardenas",
+  "date_submission": "2026-10-07T19:43:54.883Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7bd38d245c6893b745bc7af6c9334f0f23aea877b9c3c53b8791642ee266416d",
+  "params_key": "29a54256500c10bb5cbe33545993ee49e47bab39ff3d4c67df33344d0e5a16db",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

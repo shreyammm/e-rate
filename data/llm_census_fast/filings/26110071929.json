@@ -1,0 +1,37 @@
+{
+  "summary": "The Barbara Bush Branch Library of the Harris County Public Library is advocating for the continuation of the E-Rate program, emphasizing its importance in providing essential services to the community. The library highlights the financial burden of maintaining internet access without E-Rate funding and the need for continued commitment to ensure libraries and schools have access to secure, scalable, and future-ready connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for broadband services in schools and libraries, leading to increased costs for libraries to maintain internet access.",
+      "evidence_quote": "Without E-Rate funding, we will have to cut core services, programs, and operations to maintain the internet service our community requires.",
+      "evidence_start": 1300,
+      "evidence_end": 1440,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071929",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071929",
+  "filer_raw": "Ms. Marlene H. Dortch",
+  "date_submission": "2026-08-17T21:41:55.173Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d6aa181957314f51b4e67bfb2e8121f303b38481f0dea2ab97887c8a5b14627e",
+  "params_key": "f82d36897267121a68064d6444a3188a0e329e9f5848d46fb627b2da431708fb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

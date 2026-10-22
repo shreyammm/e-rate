@@ -1,0 +1,37 @@
+{
+  "summary": "The library and school community highlight the critical role of E-Rate funding in maintaining reliable internet access and access to digital resources. They emphasize the financial burden of cutting services without E-Rate support and the impact on community access to essential services and programs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, libraries will have to cut core services, programs, and operations to maintain internet service",
+      "evidence_quote": "Without E-Rate funding, we will have to cut core services, programs, and operations to maintain the internet service our community requires.",
+      "evidence_start": 1363,
+      "evidence_end": 1503,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071877",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071877",
+  "filer_raw": "Victoria Gillespie",
+  "date_submission": "2026-08-17T19:02:46.946Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dd6b9968b6638bd9fe344ed10b5cba2a4e8d282b07fc49960f9bf4af5264fb6a",
+  "params_key": "937f0c7e3586a2ba9eaddfaaf81115c4fc56e956f4889a15685f0799932e51e4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

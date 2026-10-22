@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining network infrastructure and safety for student health and learning, and the cost implications of not having the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential for maintaining network infrastructure and safety in schools, which would be lost without funding",
+      "evidence_quote": "Without E-Rate subsidies, absorbing those commercial infrastructure costs locally would force our school board to make painful decisions. We would be forced to choose between keeping the network running or cutting instructional staff, expanding class sizes, or scaling back student transportation.",
+      "evidence_start": 2925,
+      "evidence_end": 3222,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076082",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076082",
+  "filer_raw": "Thomas Garner",
+  "date_submission": "2026-09-09T18:02:28.695Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "22c4a99ce76bfc4cab5290c166fdaa1c1280ccf2f3d740fd4b7b249eb457f88d",
+  "params_key": "bede8f8e954d8527d74a72a76a00e1741298bbb9b765d752f801c162545de718",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

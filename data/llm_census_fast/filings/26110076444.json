@@ -1,0 +1,37 @@
+{
+  "summary": "Library urges FCC to reject proposals to eliminate E-Rate, emphasizing the program's critical role in providing affordable internet access and support for educational and economic opportunities in the community.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate funding has enabled libraries to provide essential services like internet access and hotspot programs, which are crucial for educational and economic opportunities",
+      "evidence_quote": "E-Rate funding has been fundamental in ensuring schools and libraries have affordable access to reliable and sustainable service. Continued support of the program is essential if we want to build on these advancements and meet the evolving educational, economic, and livelihood needs of those we serve",
+      "evidence_start": 3653,
+      "evidence_end": 3954,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076444",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076444",
+  "filer_raw": "John Tramondozzi, President, Board of the Malden Public Library",
+  "date_submission": "2026-09-11T17:42:13.340Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e35d27b179eda30fcfb36c3a5b0c6690ba1bd4dafef10b05999b617bb1f46e5f",
+  "params_key": "34bc9ab490685172e4900032d7b72be264da51af6bc38483b767ef3676867a0c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

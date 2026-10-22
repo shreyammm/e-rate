@@ -1,0 +1,37 @@
+{
+  "summary": "E-Rate program is crucial for schools and libraries to maintain connectivity and access to essential services. Ending E-Rate would lead to budget cuts and negatively impact student learning. The comments emphasize the importance of preserving E-Rate to ensure affordable connectivity for all schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Ending E-Rate would raise costs for schools and libraries, leading to budget cuts to classroom programs and services",
+      "evidence_quote": "In practice, that means cuts to classroom programs and services: fewer teachers and aides, fewer course offerings, deferred technology and maintenance, and less student support. For libraries, it means shorter hours and fewer programs.",
+      "evidence_start": 1186,
+      "evidence_end": 1421,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080892",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080892",
+  "filer_raw": "Susan Bearden",
+  "date_submission": "2026-10-13T13:45:59.070Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "356d1c2b26a3a7b312d05bb78a131ca130266d21415850f266b075dc07d68d82",
+  "params_key": "a062d5f1248f3b5413dca1d8617f09cca1994b79e05f9ec64f38358afab5e1fc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

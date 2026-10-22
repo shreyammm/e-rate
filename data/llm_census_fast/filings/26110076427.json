@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for modern education, highlighting the need to preserve and strengthen the program rather than eliminate or sunset it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate provides essential connectivity for schools, preventing disruptions and ensuring educational continuity",
+      "evidence_quote": "Condon School District 25 J has received $17,280 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $3,456 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 915,
+      "evidence_end": 1225,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076427",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076427",
+  "filer_raw": "Michelle Geer",
+  "date_submission": "2026-09-11T15:38:06.188Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cdce66f115c87dd717bf4f44f9c76510d4b56327a982bd1c4e6b1d8814386f95",
+  "params_key": "93f069de259d33a41581af04edbe95a7071abad42ac50f094b8475cf1e227f53",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

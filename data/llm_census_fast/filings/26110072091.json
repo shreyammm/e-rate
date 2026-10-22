@@ -1,0 +1,37 @@
+{
+  "summary": "The Young Men’s Library Association urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the program's critical role in maintaining affordable, reliable internet access for schools and libraries, including the library's community, in Ware, Massachusetts. The library has used E-Rate funding to connect patrons to the internet at a reduced rate, which is essential for various services such as staff work, public access, and children's programming. Losing E-Rate funding",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would require cutting other budget areas to maintain internet services",
+      "evidence_quote": "If the library were to have to make up that gap in funding, the funds would have to come out of other areas in our budget. We would need to cut our books and materials budget and our budget for Children’s Programming.",
+      "evidence_start": 1972,
+      "evidence_end": 2189,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110072091",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072091",
+  "filer_raw": "Heidi Reed Library Director Young Men's Library Association",
+  "date_submission": "2026-08-18T20:32:27.148Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "24031ac0578fa92fc046cc283abde161ac4c4db4236358fcb839a3a697dd94e4",
+  "params_key": "69b0a8622a62f561277274477feda7acee54b966c7347a21233cccde4d0e64da",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

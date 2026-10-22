@@ -1,0 +1,37 @@
+{
+  "summary": "The Arizona success story highlights the importance of E-rate funding for libraries and schools. The comment raises concerns about potential changes to E-rate eligibility and usage requirements, which could impact access to essential services and services for communities that rely on public libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The FCC is questioning whether E-rate remains necessary given today's higher rates of internet connectivity. This raises concerns that funding could be reduced, restricted, or eventually phased out.",
+      "evidence_quote": "The FCC is questioning whether E-rate remains necessary given today's higher rates of internet connectivity. This raises concerns that funding could be reduced, restricted, or eventually phased out.",
+      "evidence_start": 937,
+      "evidence_end": 1135,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110024072",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110024072",
+  "filer_raw": "Sierra Schuman",
+  "date_submission": "2026-07-16T23:28:48.198Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ab67a0f1a1d46eec8a63ebca59c5a147a139a0fd637705b75297d9725d9ba44a",
+  "params_key": "04ea6d25e71cdfcf5e223425aa28016bbce4da23d66607d41857899e24795e75",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

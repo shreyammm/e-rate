@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to receive funding for connectivity, reducing the need for costly infrastructure upgrades",
+      "evidence_quote": "Our door and camera systems run off the primary network connection that receives funding from E-Rate. A network outage would not just affect productivity, it would threaten our ability to maintain a safe and secure environment for our students.",
+      "evidence_start": 1610,
+      "evidence_end": 1854,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077825",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077825",
+  "filer_raw": "Gibson City-Melvin-Sibley CUSD#5",
+  "date_submission": "2026-09-23T13:39:32.356Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ef2e3022530bc94c9390b9f067047355d5a3f8a29c23ee8a1814cfc3fc63f2e9",
+  "params_key": "fc020599330147ed0e28146e7043c5c7113ef2dd25eb8371f575ce05fec76fb8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

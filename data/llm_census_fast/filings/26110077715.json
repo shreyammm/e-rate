@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's role in modern public education and the potential impact of its reduction on district budgets and resources.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts like Lick Creek School District 16",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 1767,
+      "evidence_end": 1984,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077715",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077715",
+  "filer_raw": "Lick Creek C.C.S.D. #16",
+  "date_submission": "2026-09-22T18:31:15.601Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "87ffe6c880774afc0110c75e12fc92a22c9f7e289b68cb8759e8ee62ae387793",
+  "params_key": "eb0b8e6ea0e4202808871444fce808a8e2a6d3c369735e84e034e8ccb7561c25",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

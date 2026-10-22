@@ -1,0 +1,37 @@
+{
+  "summary": "E-Rate program is crucial for educational access and funding preservation",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate ensures continued funding for schools and libraries, preventing financial strain on students and families.",
+      "evidence_quote": "Rather than questioning whether this program should exist, the FCC should be asking how to make it work even better for students, educators, and communities.",
+      "evidence_start": 3025,
+      "evidence_end": 3182,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079727",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079727",
+  "filer_raw": "Barbara K Emanuele | Barbara K Emanuele",
+  "date_submission": "2026-10-07T06:05:04.691Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9a770d795296dc3fa993a7ef9f4dbcc655bef2f09a860cd6a4b8b48faa0be6d5",
+  "params_key": "06046e1452ce70a34930109b299fb2fc7e7422c6059eb89009ffb3d524087d9f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

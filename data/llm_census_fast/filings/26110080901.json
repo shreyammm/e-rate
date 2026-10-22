@@ -1,0 +1,37 @@
+{
+  "summary": "Sand Creek Community Schools urges the FCC to preserve E-Rate's core funding and support for schools and libraries, emphasizing the transformative impact of E-Rate on their technology infrastructure.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has transformed the district from antiquation into current technology",
+      "evidence_quote": "E-Rate has transformed Sand Creek Community Schools from antiquation into current technology, without it we would never have gotten to this level of security, stability and coverage...without it we will, over the course of time, return to antiquation.",
+      "evidence_start": 2817,
+      "evidence_end": 3068,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080901",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080901",
+  "filer_raw": "Sand Creek Community Schools",
+  "date_submission": "2026-10-13T14:01:02.546Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2df7b7f50bd841f8e39c76e80fa654fe4ec90436cb2cb9f59f06d0068c24ab2d",
+  "params_key": "aa83e5d34ed462fa8d049e0b1ddfc60869b1976aed97387c626d60c5b8fb836e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for modern public education, highlighting the costs and challenges of operating without it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without affordable and reliable network connections, schools would face significant operational challenges",
+      "evidence_quote": "Without affordable and reliable network connections, our school security systems, communication systems and human resource systems would make it more difficult to manage a safe school environment.",
+      "evidence_start": 1264,
+      "evidence_end": 1460,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078321",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078321",
+  "filer_raw": "Royal Valley USD 337",
+  "date_submission": "2026-09-25T16:27:09.176Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e3355224be8d0d2e8354f85dc80a7d23c00b0082975892682b4b5baaa5c0e325",
+  "params_key": "cb4a53d72cc93529d023ab36e46fc6755290792a4a8bd288832878573f374a3e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,63 @@
+{
+  "summary": "Community member in Stow, Ohio, urges preservation of E-Rate program to ensure schools can maintain necessary connectivity for modern education and student security. ",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligible equipment and services would leave students without adequate technology access",
+      "evidence_quote": "As a community member, I see firsthand that reliable, high-quality broadband is no longer an optional technology benefit for students. It is essential infrastructure for modern public education, supporting both the daily operations of our schools and the learning that happens inside them",
+      "evidence_start": 647,
+      "evidence_end": 935,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Maintaining E-Rate ensures schools can continue to receive necessary connectivity support, preventing financial strain on districts",
+      "evidence_quote": "People in my district are already fighting against using property taxes to fund our schools. With IDEA already being an unfunded mandate that causes our taxes to go up, this will be seen as another attack on the taxpayer.",
+      "evidence_start": 1556,
+      "evidence_end": 1777,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate support for special construction and dark fiber",
+      "reason_family": "other",
+      "claim_kind": "empirical_claim",
+      "argument": "Special construction restrictions would hinder schools' ability to maintain and upgrade their networks, impacting educational outcomes",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and scaled, and reducing or eliminating E-Rate support would have a direct and tangible impact on schools in my community",
+      "evidence_start": 1381,
+      "evidence_end": 1554,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077839",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077839",
+  "filer_raw": "Joe Hendry",
+  "date_submission": "2026-09-23T15:00:01.062Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bbb7de36a57da9e3f87e08db2ff9977492929b4063b93d13761d98625ea4c5c2",
+  "params_key": "8407a1b0d30082f24ad9f50c3aa8d77c04feab5438d0d43223030f654ff056f7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

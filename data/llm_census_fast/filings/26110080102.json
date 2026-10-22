@@ -1,0 +1,37 @@
+{
+  "summary": "A parent from Harwood Unified Union School District urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of reliable broadband in modern education and the direct impact of E-Rate cuts on school budgets and services.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate support would result in direct and tangible cuts to schools' budgets, leading to service reductions for students",
+      "evidence_quote": "Over the past three school years our district has cut spending by about $7.5 million, including eliminating over 50 jobs. Yet, despite similar desperate cost-cutting efforts by all our school boards, our state has instituted a cost threshold for school budgets that will severely penalize my district's already stripped budget. Losing E-rate funding will immediately and unavoidably result in cuts to direct services to our kids.",
+      "evidence_start": 1916,
+      "evidence_end": 2345,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080102",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080102",
+  "filer_raw": "Rachel Mirus",
+  "date_submission": "2026-10-08T18:25:36.604Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d03ed5017f8e3141d633793c9f734e1d1783fce583e16c09689376f4247683bc",
+  "params_key": "e361960ae6c3be45736b8c6bebe99e43098b390a05298fd843d166bce9329b64",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

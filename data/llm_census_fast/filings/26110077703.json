@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program has been crucial for Barrington CUSD 220 to provide reliable broadband to students and maintain educational infrastructure",
+      "evidence_quote": "Barrington CUSD 220 has received $712,052 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $142,410 a year toward the connections our students depend on.",
+      "evidence_start": 991,
+      "evidence_end": 1184,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077703",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077703",
+  "filer_raw": "Barrington CUSD 220",
+  "date_submission": "2026-09-22T18:01:43.904Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ee2ecfca43f5e4cbe6a507206f0191c9639af0ebd1975d627761cb4a13bf9973",
+  "params_key": "602769205c2d567177463614a056b02fc7a3f68588346efb0c627b2e8093a1e7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure access to broadband for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential infrastructure for modern public education",
+      "evidence_quote": "E-Rate is the only federal education technology program, and the connectivity it provides is foundational to supporting our students’ learning.",
+      "evidence_start": 1275,
+      "evidence_end": 1418,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079825",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079825",
+  "filer_raw": "Dr. Paul McDermott",
+  "date_submission": "2026-10-07T16:49:00.952Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fd72757d811ef67887c55e99e82396f9c6d46b72977560e39879546c14e54c08",
+  "params_key": "b66d7e84ae2ba783497fdef8c6310e434319ca8fe7f38339d439927c43e54cf7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

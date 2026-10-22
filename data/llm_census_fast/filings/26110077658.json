@@ -1,0 +1,37 @@
+{
+  "summary": "The Calhoun Intermediate School District strongly advocates for the continuation of federal funding through the E-Rate program to ensure schools have reliable access to high-speed internet services necessary for teaching and learning.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential for schools to maintain and expand technology infrastructure",
+      "evidence_quote": "Without adequate federal support, the cost of maintaining and expanding this infrastructure places a significant burden on local school districts and, ultimately, local taxpayers.",
+      "evidence_start": 1554,
+      "evidence_end": 1733,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077658",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077658",
+  "filer_raw": "Annie Monaweck",
+  "date_submission": "2026-09-22T16:11:57.856Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c9140ce44f92f1d9b2abd286344dd2e610a5058b704fc21c39c89e49199fe468",
+  "params_key": "a3f4cb6f48999e284cb7faa594f48f4df65b567fec387b90299a862129e38023",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

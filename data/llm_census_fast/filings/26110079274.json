@@ -1,0 +1,37 @@
+{
+  "summary": "The parent and technology coordinator advocate for maintaining the current E-Rate program to ensure essential internet access for students and schools, emphasizing the importance of connectivity for educational success and equity.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain current E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Maintaining current E-Rate program avoids reducing funding",
+      "evidence_quote": "As a parent of school-age students, a recently retired K-12 technology coordinator, and a member of Alabama Leaders in Educational Technology (ALET), I urge the FCC to maintain the current E-Rate program.",
+      "evidence_start": 0,
+      "evidence_end": 204,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079274",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079274",
+  "filer_raw": "Sue Ellen Gilliland",
+  "date_submission": "2026-10-04T23:28:40.167Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "249f404e729639b89c786a297215fb0a04ca89fb1a51e2d7a9affcd7cc86edb6",
+  "params_key": "ea13910659eb7b08d326bdc052124e89cea4a1bbebd345776fa07292dcf82268",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

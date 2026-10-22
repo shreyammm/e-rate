@@ -1,0 +1,37 @@
+{
+  "summary": "The internet is a utility and public service institutions should not be burdened with internet infrastructure costs. Sunsetting the E-Rate program would increase costs on local governments and reduce services.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Sunset the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Sunsetting the program would increase costs on local taxing authorities and reduce services.",
+      "evidence_quote": "If you sunset the program, costs don't go away and will ultimately fall on local taxing authorities, who will increase taxes, drastically cut service access, or eliminate access.",
+      "evidence_start": 1074,
+      "evidence_end": 1252,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110069412",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069412",
+  "filer_raw": "Amy Ruffo",
+  "date_submission": "2026-08-04T14:28:48.740Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f13b8af4b3a452ac8f46506b6c8a879a2566ba22f4c628f9e14fa262e5a894e7",
+  "params_key": "c6166f8da34742ba7e620d66af1e6bb8e2901589e665e582d81e7b5254a8bd5e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher in Grand Rapids urges the FCC to continue and improve the E-Rate program, emphasizing the essential role of reliable broadband in modern public education and the financial impact of reducing or ending E-Rate support.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue and improve the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Decreasing or ending E-Rate would have direct and tangible impacts on schools' budgets and resources",
+      "evidence_quote": "Grand Rapids Public Schools has received $4.47 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $893,327 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 1802,
+      "evidence_end": 2120,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081406",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081406",
+  "filer_raw": "Wendy Winston",
+  "date_submission": "2026-10-14T02:04:47.526Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "eca7503d223d7454eefb18f0821a413aae7f989b543b9993968c515805453b51",
+  "params_key": "e07357bfd129c498392c2b17f06b42cdfc35617c31b1765bac64e6d20d96ed4c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

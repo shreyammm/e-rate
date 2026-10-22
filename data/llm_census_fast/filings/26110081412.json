@@ -1,0 +1,37 @@
+{
+  "summary": "School and library community urges FCC to reject proposals to terminate E-Rate program, emphasizing the program's critical role in maintaining affordable, reliable internet access for educational purposes.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut school and library budgets, jeopardizing years of network upgrades",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 577,
+      "evidence_end": 719,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081412",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081412",
+  "filer_raw": "Libertas School of Memphis",
+  "date_submission": "2026-10-14T02:32:23.659Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "727217afaffee4f28ad9129cb6260c76186bde668737f314466e4825af3ff22c",
+  "params_key": "05032de648b0a7cfaa48da15b0df53829dc7c7ab7d64d8d1fd38287969445a50",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

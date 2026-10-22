@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program for educational infrastructure needs",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential infrastructure for modern public education and supports myriad operational and instructional functions in schools",
+      "evidence_quote": "Our teachers utilize the internet in all aspects of their curriculum and instruction, and the students use it as a tool for research, collaboration, and completion of coursework. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not as a reason to assume that the work is finished.",
+      "evidence_start": 1954,
+      "evidence_end": 2297,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077784",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077784",
+  "filer_raw": "Joseph A Ciccoianni",
+  "date_submission": "2026-09-23T00:23:26.878Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e3a610c481a120795707c29de9ae070c4b8c5227023451d262e885891237fa1",
+  "params_key": "1a9c55d09d47eb8f77e26d7da22892da48c9fd5dcc0514efa82d54f85a0ff2b0",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

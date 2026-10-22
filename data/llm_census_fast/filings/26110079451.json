@@ -1,0 +1,37 @@
+{
+  "summary": "School expresses support for preserving E-Rate funding to maintain technology infrastructure and avoid budget competition with other educational priorities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, technology infrastructure costs would have to be absorbed by the school's general operating budget, potentially delaying network upgrades and affecting classroom technology.",
+      "evidence_quote": "Without E-Rate support, a much larger portion of these costs would have to come from our general operating budget, which would directly compete with other educational priorities.",
+      "evidence_start": 889,
+      "evidence_end": 1067,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079451",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079451",
+  "filer_raw": "Franklin Towne Charter High School",
+  "date_submission": "2026-10-05T18:46:51.320Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d8696523d28a9d99b63ba194d52635411226141a5f5b3406df5a62b2e6d465dc",
+  "params_key": "4b6ed080fad2df03d168f100fa84330661b7ca3b9c2ac64bdc3a16154acb3a52",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program rather than eliminate or sunset it, emphasizing the program's ongoing importance for maintaining essential infrastructure and connectivity in modern public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for school districts operating within finite budgets",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 1629,
+      "evidence_end": 1846,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076449",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076449",
+  "filer_raw": "Bend - La Pine Schools",
+  "date_submission": "2026-09-11T19:02:33.568Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b45afe3023737d35445cfab061c5e6b084f1deafde38d550374670e67ee3abf4",
+  "params_key": "b877eff8971ccf2224fdfc17c52718d691a86689eb689ff1e154827a319e1f5c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

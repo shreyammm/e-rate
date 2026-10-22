@@ -1,0 +1,37 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure reliable broadband access for students and schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential infrastructure for modern public education, supporting both daily operations and learning.",
+      "evidence_quote": "Morton High School Dist 201 has received $1.38 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $275,351 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 938,
+      "evidence_end": 1256,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078051",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078051",
+  "filer_raw": "Morton district 201",
+  "date_submission": "2026-09-24T13:35:38.035Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "984adc854b7740d53ab9230ef83f9ddcba40219962cf7efcc84a9c81b5da11fb",
+  "params_key": "bed2905abd1763ded465a52e117d07ef5fbe418214ecec80b4920e7600516d05",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}
