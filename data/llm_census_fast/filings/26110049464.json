@@ -1,0 +1,37 @@
+{
+  "summary": "The Delta Community Library in Alaska relies on E-Rate funding to provide essential internet services to its community, which is critical for accessing information, conducting business, and supporting educational programs. The library urges the FCC to reject proposals to terminate or limit the E-Rate program, emphasizing the importance of continued support for schools and libraries in rural areas.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "terminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would cut funding for schools and libraries, threatening their budgets and services.",
+      "evidence_quote": "We urge the FCC to reject any proposal that would terminate or limit the E-Rate Program.",
+      "evidence_start": 2940,
+      "evidence_end": 3028,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110049464",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110049464",
+  "filer_raw": "Mary Thea T. Levinson",
+  "date_submission": "2026-07-25T02:17:19.880Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "eeeeb3136ca6486cdc15a0921fb13d7c1858cdd07768ef5118523c29f9676727",
+  "params_key": "baae85b97fdb6f29cfac420dfaf3c567815ae646e1f8c98856b570961ea449b7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

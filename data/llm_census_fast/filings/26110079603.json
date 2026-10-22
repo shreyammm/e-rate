@@ -1,0 +1,37 @@
+{
+  "summary": "The technology director emphasizes the importance of strengthening E-Rate rather than reducing it, highlighting the critical role of reliable internet connectivity in education and the potential negative impacts of reduced funding.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "strengthen E-Rate rather than reduce",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Strengthening E-Rate rather than reducing it ensures better educational outcomes and infrastructure support",
+      "evidence_quote": "As the technology director and on behalf of my school system, I encourage the FCC to strengthen rather than reduce E-Rate.",
+      "evidence_start": 0,
+      "evidence_end": 122,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079603",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079603",
+  "filer_raw": "Matthew McQuay",
+  "date_submission": "2026-10-06T16:08:49.298Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9804b8dc9e7116324cf3b2134a71f1a2eeea8d807e7b6fd84f96fadbd6b1b64e",
+  "params_key": "db4ec71a87bec386548b71e58f985fb3a1cd6a00543e9ff2ca4d173ef3cb86d2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

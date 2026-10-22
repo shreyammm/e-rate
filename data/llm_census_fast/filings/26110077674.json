@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of connectivity for education and operations.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate support is reduced or eliminated, those recurring costs will shift directly to the local budget and compete with other needs.",
+      "evidence_quote": "If E-Rate support is reduced or eliminated, those recurring costs will shift directly to our local budget and compete with staffing, classroom resources, student services, transportation, and building needs.",
+      "evidence_start": 2027,
+      "evidence_end": 2234,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077674",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077674",
+  "filer_raw": "Philip Salemi",
+  "date_submission": "2026-09-22T16:40:02.002Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f735b9c4744430a9c8f531c9af39aa59da21b8d8746b2c533c4d13e4574684b2",
+  "params_key": "ce24c246f515606316717cecd9a6e1034da6a670398455e16f379a14e867e7d6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

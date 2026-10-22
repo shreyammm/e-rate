@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges preservation of E-Rate program to ensure students have access to essential connectivity for education.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would deprive students of access to essential connectivity",
+      "evidence_quote": "Cutting off connectivity for my students would deprive them of access to the lessons and educational tools that are the standard of education. AP Seminar, the research and presentation class I've taught for two years, would be nearly impossible without technology and reliable connection.",
+      "evidence_start": 1349,
+      "evidence_end": 1637,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078039",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078039",
+  "filer_raw": "Thomas Mizell",
+  "date_submission": "2026-09-24T13:04:00.551Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "269acbb33fb0e6f85f3139739c7601d561444774b09990f39e81724f88b9a58b",
+  "params_key": "e8c68091488bcfcc55b5d99f0c70a1512327840efc67712e4f65a250bee31064",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

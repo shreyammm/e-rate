@@ -1,0 +1,37 @@
+{
+  "summary": "The CFO of a school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of reliable broadband in their operations and the financial impact of reducing or eliminating E-Rate support.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal to sunset E-Rate would have a direct and large financial impact on school districts operating within finite budgets.",
+      "evidence_quote": "From my perspective as a school business manager, reliable broadband is part of the basic infrastructure of a modern school system, just like electricity, transportation, and safe facilities. I therefore urge the Commission to: 1. Reject any proposal to sunset or eliminate the E-Rate program; 2. Reject proposals that would narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; 3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and 4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 2558,
+      "evidence_end": 3286,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079628",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079628",
+  "filer_raw": "Porter Township School Corporation",
+  "date_submission": "2026-10-06T17:50:09.699Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f86f3e753e311a843eba65387939b2cf2f76c57ca14a3292a4b29d57ed25190b",
+  "params_key": "cf32a00b68bbddd8d025280a6a1beb9116bfe8b61f6ae164cddb7d20a386af11",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The Lisle Free Library emphasizes the critical role of E-Rate funding in maintaining reliable internet access for their community, which is essential for various services and programs. The library relies on E-Rate funding to provide internet access, digital literacy training, and technology support, and would face significant challenges without it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate funding, the library will have to cut core services, programs, and operations to maintain internet service",
+      "evidence_quote": "Without E-Rate funding, we will have to cut core services, programs, and operations to maintain the internet service our community requires.",
+      "evidence_start": 1352,
+      "evidence_end": 1492,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080054",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080054",
+  "filer_raw": "Cher Douglas",
+  "date_submission": "2026-10-08T15:37:14.998Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a3197d03558f95e2a11bcf001e108388a7fc3e0c758c1b37a4404beaecf6d80e",
+  "params_key": "2c0ea82de7294e664e416ab65e741bc391bf9b9763d43a103b7cf24eafd3e628",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "The notice argues that interpretations of E-Rate rules may not survive review now that Loper Bright Enterprises v. Raimondo requires courts to identify the single best reading of a statute. It also identifies gaps in the rulemaking process, such as the undefined term 'similarly situated' under the Lowest Corresponding Price rule and the need for clarification on the definition of covered E-Rate consultants. The notice suggests ways to address these gaps, such as defining the term 'similarly situ",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "oppose",
+      "requested_action": "Define covered E-Rate consultants",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "The notice acknowledges that the LCP rule leaves the term similarly situated undefined and asks how the Commission should define it.",
+      "evidence_quote": "the notice acknowledges that the LCP rule leaves the term similarly situated undefined and asks how the Commission should define it",
+      "evidence_start": 1234,
+      "evidence_end": 1365,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_percent_fees",
+      "position": "oppose",
+      "requested_action": "Prohibit percentage-based consultant fees",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "The notice acknowledges that the LCP rule leaves the term similarly situated undefined and asks how the Commission should define it.",
+      "evidence_quote": "the notice acknowledges that the LCP rule leaves the term similarly situated undefined and asks how the Commission should define it",
+      "evidence_start": 1234,
+      "evidence_end": 1365,
+      "uncertain": false
+    },
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "Individual consultant registration database",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "The FNPRM's consultant certification proposal would require every applicant and service provider to submit FCC Form 5654 annually, including those who certify they use no consultant.",
+      "evidence_quote": "Limiting the annual filing to applicants and service providers that actually engage a consultant, with the no-consultant certification handled as a one-time attestation renewed only on change",
+      "evidence_start": 2388,
+      "evidence_end": 2579,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The notice argues that interpretations of section 254(h) may not survive review now that Loper Bright Enterprises v. Raimondo requires courts to identify the single best reading of a statute.",
+      "evidence_quote": "Both citations point past their cases.",
+      "evidence_start": 591,
+      "evidence_end": 629,
+      "uncertain": false
+    },
+    {
+      "provision_id": "lowest_corresponding_price",
+      "position": "oppose",
+      "requested_action": "Define Lowest Corresponding Price rule",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "The notice acknowledges that the LCP rule leaves the term similarly situated undefined and asks how the Commission should define it.",
+      "evidence_quote": "the notice acknowledges that the LCP rule leaves the term similarly situated undefined and asks how the Commission should define it",
+      "evidence_start": 1234,
+      "evidence_end": 1365,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "oppose",
+    "consultant_percent_fees": "oppose",
+    "consultant_registration": "oppose",
+    "erate_sunset": "oppose",
+    "lowest_corresponding_price": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075713",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075713",
+  "filer_raw": "Steven Quinn Singleton",
+  "date_submission": "2026-09-07T03:17:36.124Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c52bb50eb1603b868009b7de3cf799dd5ce86f72a5f972a105cdd949f7461a1d",
+  "params_key": "695b4e7c40f9a8738a54d70f1172a23f5bf0d72c1ff062f16446c2d014444de4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

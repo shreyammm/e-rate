@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving and strengthening the E-Rate program to ensure reliable broadband access for students and maintain essential school operations. They urge the FCC to reject proposals that would eliminate or sunset E-Rate and instead advocate for preserving and improving the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate support is essential for maintaining school connectivity and infrastructure",
+      "evidence_quote": "Hewlett-Woodmere Union Free School District has received $223,560 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $44,712 a year toward the connections our students depend on.",
+      "evidence_start": 943,
+      "evidence_end": 1159,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076835",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076835",
+  "filer_raw": "Krista Albrecht",
+  "date_submission": "2026-09-16T19:51:12.220Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e455ecccc4355523ae86e49dd236afac76dd46a97b02df8c213b0119c835cd9",
+  "params_key": "209c2ca66172ef775f437132ae23b27fc78823ad44d4c09825b3850c81bc5766",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

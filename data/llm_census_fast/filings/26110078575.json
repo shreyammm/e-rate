@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urged to preserve and strengthen E-Rate program and reject proposals to eliminate or sunset it",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would have direct and tangible financial impact on school budgets",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities.",
+      "evidence_start": 2021,
+      "evidence_end": 2238,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078575",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078575",
+  "filer_raw": "Regional Office of Education #11",
+  "date_submission": "2026-09-28T18:38:24.517Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f0cc517c59855849c598a1c2e1f653c4f98b0fc67d1520e5c222a97d4921ef15",
+  "params_key": "dbe018243f171fb730809e6f86e98d922d6e898d29256e577cca0b112a1faafa",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

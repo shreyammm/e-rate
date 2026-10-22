@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urged to preserve E-Rate program and reject proposals to eliminate or sunset it",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would lead to budget cuts and increased costs for schools",
+      "evidence_quote": "Our district is already facing massive and painful cuts year after year, and we can't absorb another hit to the budget to absorb this cost if E-Rate disappears.",
+      "evidence_start": 1766,
+      "evidence_end": 1926,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080333",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080333",
+  "filer_raw": "Theo Hanna",
+  "date_submission": "2026-10-09T18:58:14.344Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fd910555ac5b55518d9b1f8c3850d680ad3a1b8c8d7061f08429abf9842604ab",
+  "params_key": "b4d639fa1a6aa476dc8de8ac22ed9d560d0578004cd47245839f8ea640af9bee",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

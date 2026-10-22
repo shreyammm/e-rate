@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, citing budget constraints and cost implications.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Adding a six-figure connectivity bill would come straight out of staffing",
+      "evidence_quote": "Our district is already on a tight budget. Adding a six-figure connectivity bill would come straight out of staffing because there is nowhere else for it to come from.",
+      "evidence_start": 2047,
+      "evidence_end": 2214,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078063",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078063",
+  "filer_raw": "Alejandra Villafuerte | J. Sterling Morton High School",
+  "date_submission": "2026-09-24T14:33:27.021Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4699bb82cbc0f11d24f9e54fcd91e1a555c9b4fc59bb9f18856236a0fad3055b",
+  "params_key": "60b6fb9d8d383454ef3a1fc231c2f4947949b84384c42066221526a4eb002d09",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

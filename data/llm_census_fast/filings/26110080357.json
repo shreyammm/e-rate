@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges protection of E-Rate program to ensure continued access to broadband and cybersecurity support for schools and students.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "protecting E-Rate prevents reduced funding",
+      "evidence_quote": "As a Missouri teacher, parent, and advocate for public schools, I urge the Commission to reject any proposal that would reduce, limit, or phase out E-Rate funding. Please continue to prioritize fair access to information and cybersecurity for all of our students.",
+      "evidence_start": 2690,
+      "evidence_end": 2953,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080357",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080357",
+  "filer_raw": "Christina Melly",
+  "date_submission": "2026-10-09T20:13:07.868Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e4ae9a8ed8981659ee42c6feed349c1875409793cb8619c623a3a6ab4d56f75a",
+  "params_key": "f4a9fb38b6918151a2fc48577463a53ce1d6dade59c8722bbea1c95d1a82b834",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

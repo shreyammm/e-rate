@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges preservation of E-Rate program to ensure broadband access for schools and students.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools competing with other resources",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared. Connectivity must be maintained, upgraded, secured, and scaled, and reducing or eliminating E-Rate support would have a direct and tangible impact on schools in my community.",
+      "evidence_start": 1228,
+      "evidence_end": 1688,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077971",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077971",
+  "filer_raw": "Erin Fagan",
+  "date_submission": "2026-09-23T22:07:25.390Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "12fc483bc0d45fa373ec929f9736af180a2651cac7da92b70faa9fb7c5d6d4ab",
+  "params_key": "5dbecfcabd461243df1db0d13d75fc5bfa1677afee1579bc3fb17e5f1dfdcbf7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

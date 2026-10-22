@@ -1,0 +1,37 @@
+{
+  "summary": "A school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of broadband in modern education and the potential financial impact of reducing or eliminating E-Rate support.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts like Ephrata School District 165",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared. Connectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology continue to evolve. For my district, reducing or eliminating E-Rate support would have a direct and tangible impact.",
+      "evidence_start": 1124,
+      "evidence_end": 1629,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078288",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078288",
+  "filer_raw": "Sarah Vasquez",
+  "date_submission": "2026-09-25T15:06:46.675Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aabd0e332cec45337a58597a85d5e403fbf16211a10144ce5b8169eacc990ef6",
+  "params_key": "ae081db9a616fca1689c8fedfd1a2528e0d0d824a873d61514daf81d8702873a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Coloma Community Schools emphasizes the importance of preserving the core E-Rate program to maintain affordable broadband, network infrastructure, and internet access for teaching, learning, and student support. The school district highlights the critical role of E-Rate in supporting its network needs and the potential impact of changes on access, cost, and administrative burden. The school urges the FCC to avoid changes that would reduce access, increase administrative burden, or limit local fl",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without eRate funds, the district's general fund would be unable to support refreshes of the district's data network needed to maintain current access and internet speeds",
+      "evidence_quote": "Without eRate funds our district would need to conduct a campus-wide audit and prioritization plan for our data network. Funds available to sustain our network would be reduced by more than half. We would need to identify spaces in which Wifi or network services would be terminated or reduced, lengthen our life cycles of network equipment from the current 7-10 year cycle to 10-15 years, and refresh parts of our network in pieces. This would create a data network in which vital equipment would be antiquated from a cybersecurity stand point, and introduce potential vulnerabilities to our network.",
+      "evidence_start": 3313,
+      "evidence_end": 3914,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080656",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080656",
+  "filer_raw": "Coloma Community Schools",
+  "date_submission": "2026-10-12T18:06:42.790Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7f27e6f3a599137782791f480e49a6ae53abf6ae312e7cff8741c72e99781850",
+  "params_key": "a2172d911cd12fa60297bc69f0a484f580675b6489d548af108e0c6d0e919e66",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

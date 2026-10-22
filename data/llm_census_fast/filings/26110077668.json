@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate saves the district around $100K every two years",
+      "evidence_quote": "If the district lost E-Rate, we would have to totally cover all the expenses. E-Rate saves us around $100K every two years.",
+      "evidence_start": 2272,
+      "evidence_end": 2395,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077668",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077668",
+  "filer_raw": "Sara Rose",
+  "date_submission": "2026-09-22T16:29:49.239Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9eb7f25be385d4300fc2063fe998b487b811ed2518b83d771d5e1a54e9d95792",
+  "params_key": "b8ef891b2ae17e304e2fcc426af372fa90aff1f9d4bbb984f662e005f9bcfdd4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

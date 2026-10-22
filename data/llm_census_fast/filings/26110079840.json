@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's importance for providing reliable broadband infrastructure to support modern public education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would have a direct and tangible impact on school budgets",
+      "evidence_quote": "We would be severely limited in keeping students and staff safe and families informed. E-Rate is the only federal education technology program, and the connectivity it provides is foundational to supporting our students’ learning. We depend heavily on our networks to provide quality, differentiated, and researched based instruction and assessments to best serve our students and stakeholders.",
+      "evidence_start": 1185,
+      "evidence_end": 1579,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079840",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079840",
+  "filer_raw": "Mark J. Watts",
+  "date_submission": "2026-10-07T17:24:53.439Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "56ae1fd7e327b05673e05b1d43f6e4520b58d8b95ebafd7cccdb4539f18153cb",
+  "params_key": "bd95b4d31baeefc15ad4816972e521504760926115978e0f37461a7fcd7e7dac",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

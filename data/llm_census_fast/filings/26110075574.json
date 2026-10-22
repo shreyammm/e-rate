@@ -1,0 +1,37 @@
+{
+  "summary": "The FCC comment urges preservation of the E-Rate program, emphasizing its essential role in providing reliable broadband infrastructure for schools and libraries. The comment highlights the importance of maintaining the program to support modern education and the technology-driven economy. The comment also emphasizes the need to preserve and strengthen E-Rate rather than sunset or reduce its role.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build and maintain connectivity necessary for modern education",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 3419,
+      "evidence_end": 3823,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075574",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075574",
+  "filer_raw": "Jeremy Owoh",
+  "date_submission": "2026-09-04T15:27:49.537Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ed6fdbb4713171836f186d16266c878f993381f981bf8dadc0bf699956783960",
+  "params_key": "871cfc946b89fc0922a171b77e67f12c813ccba0b97e5f2c436fd61885cdfd0c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

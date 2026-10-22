@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's essential role in providing reliable broadband infrastructure for modern public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would have a direct and tangible impact on the district's network maintenance costs",
+      "evidence_quote": "E-Rate covers roughly 50% of our internal network and Internet costs. This results in over $650,000 over the last five years that we were able to use for educating students instead of maintaining network connections.",
+      "evidence_start": 2219,
+      "evidence_end": 2435,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079471",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079471",
+  "filer_raw": "Jeff Smucker",
+  "date_submission": "2026-10-05T19:41:55.567Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "33cbb5abe8b0937a6d6b64b2b127d0326e344ef0f88520b1e89e86c0b46d5937",
+  "params_key": "5059af7ff25e08cd3de3a37a3adca937b0fb3852202fc6f03d646da9bc4d5bb6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

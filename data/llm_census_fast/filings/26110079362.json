@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the ongoing need for reliable broadband infrastructure for modern public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts like East Hampton Public Schools",
+      "evidence_quote": "East Hampton Public Schools has received $283,375 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $56,675 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 2162,
+      "evidence_end": 2474,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079362",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079362",
+  "filer_raw": "Timothy M. Van Tasel, Ed.D.",
+  "date_submission": "2026-10-05T13:49:58.173Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "98b3d2c18b2009af1ae87ea0991a6bd4feae296b55be670b10237088d778d266",
+  "params_key": "27c9eb001c9f8b712e5799f71d950526a32e480c13c3741f1bef5333cc4da8b5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

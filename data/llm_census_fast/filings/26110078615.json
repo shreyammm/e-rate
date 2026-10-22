@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "Mulberry Grove C U Sch Dist 1 has received $54,522 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $10,904 a year toward the connections our students depend on.",
+      "evidence_start": 2543,
+      "evidence_end": 2744,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078615",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078615",
+  "filer_raw": "Mulberry Grove CUSD #1",
+  "date_submission": "2026-09-28T20:33:16.376Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "18bd53b414c3e0a8fd198876b3cab9c54104123c7621f32a65d0315a0c04d701",
+  "params_key": "e0d48b76d7cfbdf0cad8a96af7ad09094937c82122ef5bc6d40276c3eda648c4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

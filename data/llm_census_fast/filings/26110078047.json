@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges preservation of E-Rate program to maintain essential broadband infrastructure for schools and libraries",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools competing with other resources",
+      "evidence_quote": "Reject any proposal to sunset or eliminate the E-Rate program",
+      "evidence_start": 3016,
+      "evidence_end": 3077,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078047",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078047",
+  "filer_raw": "Megan Terpstra",
+  "date_submission": "2026-09-24T13:24:16.975Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "21fd2cbd3c025883839dd2e5bf5a8958df9dc5963b16e4bee8527305b282342c",
+  "params_key": "bc2622d43e9b957b062efbe3257dadbb3f87d281b6b2a62c6ffd31b3661d530f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

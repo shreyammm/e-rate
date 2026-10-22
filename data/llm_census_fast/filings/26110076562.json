@@ -1,0 +1,37 @@
+{
+  "summary": "The technology coordinator for an Alabama public school system emphasizes the essential role of E-Rate in providing reliable, affordable internet access for students, especially in states with high poverty rates. They argue against reducing E-Rate funding based on assumptions about screen time and bandwidth use, citing evidence that increased technology access has not negatively impacted academic outcomes in Alabama. They stress the importance of maintaining robust, secure connectivity for educa",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not eliminate or reduce E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reduction in E-Rate support could have the greatest impact on students who have the fewest alternatives for accessing resources.",
+      "evidence_quote": "Reductions in E-Rate support could therefore have the greatest impact on students who have the fewest alternatives for accessing these resources.",
+      "evidence_start": 1221,
+      "evidence_end": 1366,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076562",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076562",
+  "filer_raw": "Susan Poling",
+  "date_submission": "2026-09-14T12:22:32.263Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "00ae223528b0895c5a2520ceda601286a97c5dbf2f3592e0ce68c7b2fee75d72",
+  "params_key": "89530f4d7e882a962e1e8ba64540ac4f6c167644898aa9b35240e128ee6da557",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

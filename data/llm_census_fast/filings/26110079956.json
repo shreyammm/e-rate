@@ -1,0 +1,37 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure broadband access for schools and students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools competing with finite budgets",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared. Connectivity must be maintained, upgraded, secured, and scaled, and reducing or eliminating E-Rate support would have a direct and tangible impact on schools in my community.",
+      "evidence_start": 1329,
+      "evidence_end": 1789,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079956",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079956",
+  "filer_raw": "Peter Colgan",
+  "date_submission": "2026-10-07T23:38:21.253Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "aabfc8f342a20e923b8b6bc017f1c80e168ab50ce54061f73d6088499f540021",
+  "params_key": "649046f5a2d5168eb02ae085332e00f3c0a65063882a584bc15f85e92f93fab9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school principal emphasizes the importance of E-Rate for maintaining essential infrastructure and budget stability, urging the FCC to preserve and strengthen the program rather than eliminate it.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would drastically impact school budgets",
+      "evidence_quote": "St Anthony Catholic School has received $26,406 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $5,281 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 2612,
+      "evidence_end": 2921,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078320",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078320",
+  "filer_raw": "Annette Alexander",
+  "date_submission": "2026-09-25T16:21:20.582Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "51a24c8bbf5bfc433f5e5cbc288ab5ed4b0949d6489a273a180dd93f65b43b94",
+  "params_key": "3735af07f640064232755daaa6f0b46a9a4b5c4ca4ed540a5df7859d9afa09f4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure reliable broadband infrastructure for schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate support is essential for maintaining reliable broadband infrastructure in schools",
+      "evidence_quote": "Gallup-Mckinley Co School Dist has received $7.90 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $1.58 million a year toward the connections our students depend on.",
+      "evidence_start": 923,
+      "evidence_end": 1137,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078888",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078888",
+  "filer_raw": "Gallup-McKinley County Schools",
+  "date_submission": "2026-09-30T16:11:36.411Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3fab800d1e00fa613ad0e0dae8df5d1412f94954d37c4a6e37224c5fd560a66c",
+  "params_key": "ca442f52542c4f3a33b308bf6aca4b264891df7bd5604622a48c96c66843c06d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

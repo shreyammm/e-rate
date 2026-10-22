@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure access to broadband for schools and students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would force districts to cut staff and prioritize other costs over essential infrastructure",
+      "evidence_quote": "Germantown Hills Sch Dist 69 has received $97,626 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $19,525 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not as a reason to assume that the work is finished.",
+      "evidence_start": 2045,
+      "evidence_end": 2522,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077756",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077756",
+  "filer_raw": "Adam Brumbaugh",
+  "date_submission": "2026-09-22T20:26:52.448Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "607991d86c86f948fba56e459aa450dfca588196952b3d7872afa0b49e44efd6",
+  "params_key": "9c7d5edbc82809d0b7ff34cfbea69aee57ecaf6c4bfee7ef44b916f68c8a822d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

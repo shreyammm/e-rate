@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the Committee to maintain strong, predictable E-Rate funding to ensure access to modern communications infrastructure for students, educators, and community members.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain strong, predictable funding for the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without continued E-Rate support, schools would face difficult budgetary decisions involving connectivity",
+      "evidence_quote": "Without continued E-Rate support, Jefferson County Schools and countless similar institutions would face difficult budgetary decisions involving connectivity, cybersecurity, instructional resources, staffing, and other critical needs.",
+      "evidence_start": 2508,
+      "evidence_end": 2742,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081052",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081052",
+  "filer_raw": "Jefferson County Schools",
+  "date_submission": "2026-10-13T17:31:25.515Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "38feb283db1efb8b468f97b3bfa9ddc4a218bcc8aab64ee11e661a8ab34bcf1a",
+  "params_key": "1abf56d995932ee3c82ffd4ab74c04a21e3f534c805b70e2ef169a3f818b0a0c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The teacher emphasizes the importance of preserving and strengthening the E-Rate program to ensure reliable broadband access for students and schools, arguing that removing E-Rate would have a negative impact on educational resources and budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate would require removing funds from other areas, increasing competition for limited school budgets",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared. Connectivity must be maintained, upgraded, secured, and scaled, and reducing or eliminating E-Rate support would have a direct and tangible impact on schools in my community.",
+      "evidence_start": 1590,
+      "evidence_end": 2050,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078481",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078481",
+  "filer_raw": "Tim Januszyk",
+  "date_submission": "2026-09-28T02:57:12.548Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "436ab2a585a494212d01bebbbfb101104933dcf1ef4f0b69f209abfc55486c45",
+  "params_key": "28ebca3260ba9edc9afb3ab9d24594b6b600331b3f81263747a489522a27d796",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

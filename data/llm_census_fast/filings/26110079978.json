@@ -1,0 +1,37 @@
+{
+  "summary": "The comment urges preservation of E-Rate to maintain essential broadband infrastructure for schools and libraries, emphasizing the program's role in supporting educational resources and services without competing with other budget priorities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, maintaining connectivity would require additional funding from the district's budget, which competes with other essential services.",
+      "evidence_quote": "Without that support, maintaining the same service at the same price would require an additional $20,484 from the district’s budget each year. These costs would compete directly with staffing, instructional programs, and student services.",
+      "evidence_start": 1945,
+      "evidence_end": 2183,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079978",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079978",
+  "filer_raw": "Skokie School District 73.5",
+  "date_submission": "2026-10-08T02:25:37.197Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "10428d419bf5e4c015482435eb12c4323d85d39d89564fa25e119dfa10f3b114",
+  "params_key": "1433021df01dadb67a8bc939c6c10e5e0dd18768157664da24c96881bab0d336",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}

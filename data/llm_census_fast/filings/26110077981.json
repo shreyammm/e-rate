@@ -1,0 +1,37 @@
+{
+  "summary": "Teacher urges preservation of E-Rate program to ensure schools can maintain essential broadband infrastructure and connectivity for students and staff",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal would eliminate E-Rate support, which would increase costs for schools operating within finite budgets",
+      "evidence_quote": "Our district past a very tight budget. Adding a connectivity bill would come from the staffing budget, because there is nowhere else for it to come from.",
+      "evidence_start": 1401,
+      "evidence_end": 1554,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077981",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077981",
+  "filer_raw": "Michaelina Considine",
+  "date_submission": "2026-09-23T23:14:39.321Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "be585c56f72ec90ea0e9b83cc5eebfa41f2caf4a96062c793a5179307c9ebd34",
+  "params_key": "ae757740128a92329ba459b8e9d5d449806c0248700b3f63f79d420d4ee5a5f0",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 1,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 1,
+  "source_windows_model_analyzed": 1
+}
