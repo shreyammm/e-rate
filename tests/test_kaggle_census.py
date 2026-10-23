@@ -1,6 +1,7 @@
-import gzip, json, tempfile, unittest
+import gzip, io, json, tempfile, unittest
+from unittest.mock import patch
 from pathlib import Path
-from scripts.kaggle_census import c,MODEL,SIZE,OVERLAP,pack,restore,source_spans
+from scripts.kaggle_census import c,MODEL,SIZE,OVERLAP,pack,restore,source_spans,model_call
 
 class Checkpoints(unittest.TestCase):
     def setUp(self):
@@ -39,6 +40,30 @@ class Checkpoints(unittest.TestCase):
     def test_invalid_partial_progress_rejected(self):
         obj=self.payload();obj.update(status='partial',next_chunk=2,parts=[])
         with self.assertRaises(ValueError):restore(self.bundle(obj),self.root/'out',[self.row],self.book)
+    def test_truncated_model_response_retries_with_larger_token_budget(self):
+        seen=[]
+        def mock_urlopen(req,timeout=None):
+            payload=json.loads(req.data.decode('utf-8'))
+            options=payload['options']
+            seen.append((options['num_ctx'],options['num_predict']))
+            if len(seen)==1:
+                output={'done_reason':'length','message':{'content':''}}
+            else:
+                output={'done_reason':'stop','message':{'content':json.dumps({
+                    'summary':'Brief source-grounded summary',
+                    'stakeholder_role':'unknown','stakeholder_quote':'','claims':[]})}}
+            return io.BytesIO(json.dumps(output).encode('utf-8'))
+        messages=[
+            {'role':'system','content':'Cite the original source.'},
+            {'role':'user','content':json.dumps({
+                'source_text':'Schools and libraries need affordable E-Rate broadband access.'})}
+        ]
+        with patch('scripts.kaggle_census.urllib.request.urlopen',side_effect=mock_urlopen), \
+             patch('scripts.kaggle_census.time.sleep',return_value=None):
+            result=model_call(messages,MODEL,'http://127.0.0.1:11434/api/chat')
+        self.assertEqual(result['claims'],[])
+        self.assertEqual(seen,[(8192,3072),(10240,4096)])
+
     def test_source_spans_are_exact_and_cover_full_window(self):
         body=('A long paragraph about the E-Rate program and school funding.\n'*180)[:6500]
         spans=source_spans(body)
