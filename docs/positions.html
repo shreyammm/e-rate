@@ -17,6 +17,7 @@
 <div id="pp-axes" class="pp-axis-grid"></div>
 </section>
 <section class="kr-section" id="pp-overlaps"><p class="kr-eyebrow">Across issues</p><h2>Where potential coalitions overlap</h2><p class="kr-muted">These are intersections of candidate language, not proof of endorsement of either proposition. The most useful result after review will be the verified intersection of screen-related concerns and support for actual E-Rate cuts or additional conditions.</p><div id="pp-overlap-cards" class="kr-cards"></div></section>
+<div class="kr-notice"><strong>Randomized validation built into this workflow:</strong> A separate stratified audit sample includes both flagged and unflagged filings for all four questions. Select <strong>Randomized QA sample</strong> under Prioritize to review assigned cases. This is how we test missed arguments instead of simply trusting the model's candidate list. Individual reviewer decisions are not yet an adjudicated census.</div>
 <section class="kr-section" id="pp-coding"><p class="kr-eyebrow">Source-backed human review</p><h2>Inspect each filing and adjudicate its arguments</h2>
 <p>Choose one axis at a time. Click the original FCC filing or the complete extracted text, review the author's actual recommendation, and select all positions supported by the source. A positive decision requires a selected source excerpt and a reviewer note. Browser-only decisions can be exported; they do not silently become published statistics.</p>
 <div class="kr-controls kr-controls-four">
@@ -24,7 +25,7 @@
 <label>Candidate cue<select id="pp-label"><option value="">All candidate labels</option></select></label>
 <label>Commenter type<select id="pp-role"><option value="">All types</option></select></label>
 <label>Search source / filer<input id="pp-search" type="search" placeholder="Organization, claim, filing ID…"></label>
-<label>Prioritize<select id="pp-priority"><option value="candidate">Candidate evidence first</option><option value="conflicts">Multiple / contradictory cues</option><option value="selective">Selective-reading or OCR cases</option><option value="uncoded">Not reviewed here</option><option value="all">All filings</option></select></label>
+<label>Prioritize<select id="pp-priority"><option value="candidate">Candidate evidence first</option><option value="conflicts">Multiple / contradictory cues</option><option value="selective">Selective-reading or OCR cases</option><option value="uncoded">Not reviewed here</option><option value="audit_sample">Randomized QA sample (incl. unflagged filings)</option><option value="all">All filings</option></select></label>
 <label>Model coverage<select id="pp-scope"><option value="">All text lengths</option><option value="full_text">Kaggle full-text only</option><option value="prioritized_windows">Kaggle selected long-document windows</option></select></label>
 <label>Reviewer ID<input id="pp-reviewer" type="text" maxlength="50" value="reviewer-1" placeholder="Reviewer ID"></label>
 <label>Page size<select id="pp-per"><option value="15">15 filings</option><option value="30">30 filings</option></select></label>
