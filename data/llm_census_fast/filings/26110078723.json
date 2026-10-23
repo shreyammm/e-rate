@@ -1,0 +1,37 @@
+{
+  "summary": "The Wichita Public Schools, a large high-poverty urban district in Kansas, opposes sunset or elimination of the E-Rate program, arguing that it would convert federal support into an unfunded mandate on local taxpayers. The district supports current funding to ensure affordable broadband for schools and students. The district urges the Commission not to limit E-Rate support to rural areas or areas served by a single provider. The district requests retention of the E-Rate program and other specific changes to address budgetary concerns and maintain program effectiveness.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting support to rural or single-provider areas",
+      "evidence_quote": "The district urges the Commission not to limit E-Rate support to rural areas or areas served by a single provider.",
+      "evidence_start": 4653,
+      "evidence_end": 4767,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110078723",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078723",
+  "filer_raw": "Wichita Public Schools, Unified School District No. 259",
+  "date_submission": "2026-09-29T16:50:42.827Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8a59fdf422c8093e0bbede2637af05cce027fe1a3e3f4713f8661c8251d7755c",
+  "params_key": "ca33898308db3ddec0e66bab1bbc026059d91f58608827ce862d6be33dfe7b73",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The Charter School of Excellence emphasizes the importance of E-Rate for maintaining affordable connectivity and ensuring continuity of service for teaching, learning, operations, student support, and community service. It highlights the program's role in supporting modern learning and the need to maintain the current range of eligible services to avoid local challenges. The school district emphasizes the importance of preserving E-Rate funding to maintain essential connectivity for instruction, testing, safety, and daily operations. A reduction in funding would force the school to make difficult decisions, such as cutting staff positions, delaying educational programs, and reducing services, which would directly impact students, staff, and the community. The comment opposes limiting or sunsetting E-Rate funding, arguing for thoughtful improvements and fraud prevention while opposing changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Maintain current eligibility scope",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Narrowing eligibility would create immediate local challenges",
+      "evidence_quote": "Any reduction in support would force us to scale back services",
+      "evidence_start": 4637,
+      "evidence_end": 4699,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Supports thoughtful improvements, simplification, and fraud prevention, but opposes changes that would reduce access, increase administrative burden, or limit local flexibility",
+      "evidence_quote": "We support thoughtful improvements, simplification, and fraud prevention, but ask the FCC to avoid changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+      "evidence_start": 8967,
+      "evidence_end": 9184,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080308",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080308",
+  "filer_raw": "Robert Haag",
+  "date_submission": "2026-10-09T17:43:50.061Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b2eda54a1f297aceb1a96a635ed3184bff59ca15dafbc103cf142d4819e205d9",
+  "params_key": "61dbd3008c930296e0eb5e6cce9dea251a05db7c6a4a4354ae4d9f79c809fff7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

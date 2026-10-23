@@ -1,0 +1,37 @@
+{
+  "summary": "Divine Savior Academy opposes narrowing the eligibility scope of E-Rate services and equipment, emphasizing the importance of maintaining essential services for a secure learning environment. The FCC comments present concerns about various aspects of the E-Rate program, including eligibility scope, budgetary impacts, and the need for practical oversight. The comments emphasize the importance of preserving the core program while implementing clear oversight rules to address misconduct. The comments also highlight the need to avoid unnecessary cost allocation and to maintain practical CIPA requirements that respect student privacy. The comment supports preserving the E-Rate program and its current structure, emphasizing the importance of affordable broadband and Internet access for schools and students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Narrowing eligible services would reduce funding availability for schools and libraries",
+      "evidence_quote": "We thing that a matrix can be developed to make sure that highest-cost applicants and those residing in single-provider markets get their fair share of support from the E-Rate program. EDUCATIONAL PURPOSE AND RESPONSIBLE USE Divine Savior Academy is 100% convinced that funded networks are supporting actual teaching and learning.",
+      "evidence_start": 4609,
+      "evidence_end": 4939,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110080473",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080473",
+  "filer_raw": "Henry Matos",
+  "date_submission": "2026-10-10T15:04:16.310Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5c73544633fdecca6119b2e1477c60a89ab39765ea6fceb4419e0a140864afdb",
+  "params_key": "68da868b7f5ba50fd30f7be2b87726806ff105f4b82b0b55078fef74ee2c3803",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

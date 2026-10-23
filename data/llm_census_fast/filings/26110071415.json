@@ -1,0 +1,37 @@
+{
+  "summary": "The Lyons School District expresses concerns about the impact of proposed E-Rate changes on their ability to educate students in a modern educational environment. The comment highlights the critical role of E-Rate funding in ensuring students have access to the internet for educational purposes, emphasizing the need to tie E-Rate decisions to educational outcomes to support students' learning and development. The comment emphasizes the importance of maintaining E-Rate funding for school broadband connectivity, particularly in rural areas with limited local resources. The comment highlights the cost implications of reducing E-Rate funding and the need to preserve eligibility for essential services. The comment also emphasizes the need for accountability and safeguards to prevent fraud and abuse, without compromising the availability of reliable Internet access for schools and students. The school district urges the FCC to preserve the E-Rate program and avoid policies that could shift the financial burden of connectivity to local school districts.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Reductions in E-Rate eligibility could negatively impact educational outcomes",
+      "evidence_quote": "Connectivity Is No Longer an Educational Luxury",
+      "evidence_start": 1770,
+      "evidence_end": 1817,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110071415",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071415",
+  "filer_raw": "Derek Reinhardt",
+  "date_submission": "2026-08-14T19:03:39.028Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e26f24f9873a530aec3de484b42bcaff89cd2a54113c3db370e6b9e1ef340cf",
+  "params_key": "5ef554c0a9257b8e94f2aa21893ffab273da7c699274841be42a2d9467c0e092",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 4,
+  "source_windows_model_analyzed": 4
+}

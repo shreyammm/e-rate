@@ -1,0 +1,61 @@
+{
+  "summary": "The Humboldt County Library System emphasizes the importance of E-Rate for maintaining affordable and reliable internet access in rural areas, which is essential for educational, community, and economic purposes. They highlight the need for E-Rate to continue funding new builds and upgrades to meet current and future connectivity needs. The text argues against limiting or sunsetting E-Rate funding, emphasizing the importance of connectivity for libraries and the potential negative impacts on their operations and services. It highlights the need for adequate funding to support technology upgrades, network improvements, and security measures. The text argues against sunsetting or limiting the E-Rate program, emphasizing the potential cost and resource strain it could cause on local libraries and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate could lead to increased costs for libraries",
+      "evidence_quote": "While library connectivity has improved significantly, the need for E-Rate has not ended. Even where E-Rate is not currently funding a new build or upgrade, it remains essential for maintaining affordable monthly service, and any build or upgrade only lasts the life of the technology as capacity needs continue to grow.",
+      "evidence_start": 1116,
+      "evidence_end": 1436,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate funding would increase connectivity costs for libraries and other affected entities",
+      "evidence_quote": "For the library, increased connectivity costs could mean delaying or putting off technology upgrades, network improvements, and necessary maintenance. Delayed upgrades are not simply a matter of having older equipment. Our network supports security systems, communications, facility operations, and the services that allow staff and patrons to safely and effectively use the library and other county resources. When maintenance and upgrades are delayed, vulnerabilities can increase and security gaps can develop.",
+      "evidence_start": 8349,
+      "evidence_end": 8862,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate would avoid increased operational costs and resource strain",
+      "evidence_quote": "The impact therefore extends beyond the library. Losing or reducing E-Rate support could require our county to redirect limited public funds to cover higher connectivity costs, potentially resulting in fewer resources available for other essential county services.",
+      "evidence_start": 9194,
+      "evidence_end": 9458,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079828",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079828",
+  "filer_raw": "Humboldt County Library System",
+  "date_submission": "2026-10-07T16:56:54.227Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "be04b7d8f5e77e68436fed6ec97fb2af28dc5b2c450b3672587654bd1da85470",
+  "params_key": "ba6765d02e4599e8edbce29001bc3d40c9a629f5ce517a3b69452b1914c6f3e7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

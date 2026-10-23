@@ -1,0 +1,37 @@
+{
+  "summary": "The comment highlights concerns about E-Rate-funded networks being used to expose children to harmful content, including gender ideology, and urges the FCC to strengthen the limitations set by CIPA to protect children's privacy and safety. The FCC comments advocate for stronger E-Rate protections, emphasizing the need for network-level content filtering, parental oversight, and the ability to opt out of screen-based instruction. They oppose narrowing eligibility scope, restricting special construction, and extending CIPA to third-party-owned devices. The comments also call for the Commission to enforce CIPA’s chat-room mandate and affirm that schools have the authority to protect children from harmful content, including gender ide The FCC comment argues against limiting or sunsetting E-Rate, emphasizing the importance of maintaining federal funding for broadband access and infrastructure in schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband access and infrastructure in schools and libraries.",
+      "evidence_quote": "Reg. at 52631–32.",
+      "evidence_start": 8902,
+      "evidence_end": 8919,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 6,
+  "submission_id": "26110081012",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081012",
+  "filer_raw": "Do No Harm",
+  "date_submission": "2026-10-13T16:26:15.721Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e59753a46e2f6b5e21db65cb6f2285e74afd3c22669c1ccc3efb20d8a50b436a",
+  "params_key": "9b0102fad37ef38bf90c2c2274e61e84430a9d21299bf130ea5a109fee63ceb2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential services such as communication, security, and internet access for modern education. They argue that preserving E-Rate is essential to avoid the financial and operational burdens of maintaining network infrastructure and cybersecurity without federal support. The school administrator argues against sunsetting or eliminating the E-Rate program, emphasizing the importance of preserving and improving the program to ensure reliable, affordable, secure, and effective connectivity for students. The administrator cites budget constraints and the need to maintain essential infrastructure as reasons for opposing any proposal to sunset or eliminate the program. The administrator also calls for the inclusion of cybersecurity as a permanent component of E-Rate t The FCC comments express concerns about the potential impact of limiting or sunsetting the E-Rate program on schools' ability to provide students with reliable, affordable, secure, and effective broadband connectivity. The comments suggest that such actions could have significant budgetary and cost implications for schools.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would have a direct and tangible impact on the district's ability to maintain critical network infrastructure and cybersecurity.",
+      "evidence_quote": "Without that funding, we would be forced to operate critical network infrastructure well beyond its supported life, weakening our cybersecurity posture, or redirect limited local dollars from areas such as technology support and classroom staffing to maintain the connectivity our schools depend on.",
+      "evidence_start": 3045,
+      "evidence_end": 3344,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would make it more difficult and costly to provide the secure, reliable connectivity needed to deliver instruction",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students and schools without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education; and Make cybersecurity a permanent component of E-Rate by expanding eligibility to support modern cybersecurity equipment and services, including advanced and next-generation firewalls, intrusion prevention and detection systems (IPS/IDS), DDoS protection, advanced threat detection and prevention, malware protection, network segmentation and visibility, DNS-layer security, identity protection and authentication, and other protections necessary to secure the networks and infrastructure E-Rate helps schools provide.",
+      "evidence_start": 7218,
+      "evidence_end": 8297,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076228",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076228",
+  "filer_raw": "Bryan Williams - Norris School District 160",
+  "date_submission": "2026-09-10T14:47:10.086Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d5c6066a2d21536504e0a3362ae083899145906befe1c8577809e8ddea77e72e",
+  "params_key": "13a1bc90669c6d42a681ebdaaa712c1a40a4685a823ca082ae8579d60a729a64",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

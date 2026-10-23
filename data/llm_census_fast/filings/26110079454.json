@@ -1,0 +1,37 @@
+{
+  "summary": "The comments advocate for preserving the E-Rate program's funding and integrity, emphasizing its ongoing importance in providing connectivity and services to schools and libraries. The text argues for the continued importance of the E-Rate program in addressing connectivity needs for schools and libraries, and opposes narrowing the eligibility scope for equipment and services as it would selectively ignore the problem. The text discusses concerns about the proposed FCC Form 5654 for E-Rate funding compliance, including the need to track consultants' participation and certification. It argues that the proposed database has flaws that limit its effectiveness and could cause additional burden on applicants. The text also mentions the proposed requirement for consultants to receive Consultant Registration Number (CRN) assignments, which would enable tracking of individual consultants. The overall stance is to oppo The comment argues against limiting or sunsetting the E-Rate program, citing concerns about the impact of flat-rate fees and higher fees on smaller applicants and consultants. The comment urges the FCC to reject proposals that would negatively affect the program's integrity and cost efficiency.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_registration",
+      "position": "oppose",
+      "requested_action": "Require consultant registration database",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Tracking consultant participation on an individual level is a reasonable goal, but the Commission’s proposed database contains significant flaws that severely limit its net benefit.",
+      "evidence_quote": "Net Benefit of the Proposed Consultant Registration Database is Limited",
+      "evidence_start": 7143,
+      "evidence_end": 7214,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_registration": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110079454",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079454",
+  "filer_raw": "Bryan Spencer | SMS E-Rate",
+  "date_submission": "2026-10-05T18:54:54.110Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8fdfff979cc6a12ccf40c440a100ba4fb9ee231a3452309a8ee5b536341d9f8f",
+  "params_key": "161f97b81ba62a2c9f2428e61bc74bc24d14982c085ee3968e0284ff96ab62a6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 4,
+  "source_windows_model_analyzed": 4
+}

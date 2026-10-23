@@ -1,0 +1,49 @@
+{
+  "summary": "The Yonkers Public Schools emphasizes the importance of preserving a strong, predictable E-Rate program for urban, suburban, and rural schools, retaining support for both Category One and Category Two services, and avoiding conditions that would shift educational and technology decisions from local school authorities to the FCC. The Yonkers Public Schools opposes proposals to sunset E-Rate and supports preserving its funding, emphasizing the need to maintain support for high-poverty urban districts and rural areas, and to continue Category One and Category Two support for broadband, wide area network services, internal connections, and other essential services. The district also opposes conditioning E-Rate funding on screen-time limits and parental opt-out requirements, and requests that the Commission preserve the exis The comment opposes sunset or major reduction of E-Rate, emphasizing the need to preserve it as a stable, needs-based program to avoid cost transfer to local taxpayers, delay network replacement, and reduce educational opportunities for students in high-poverty communities. The comment is from a school district and government role.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing support would penalize low-income urban districts with limited resources",
+      "evidence_quote": "A policy that reduces support merely because a district is urban would penalize students whose families and schools have the least capacity to replace federal support. The existing discount matrix appropriately recognizes student poverty and the applicant’s ability to pay. The Commission should preserve that principle.",
+      "evidence_start": 4489,
+      "evidence_end": 4809,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate as a stable, needs-based program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A sunset or major reduction would transfer substantial recurring costs to local taxpayers",
+      "evidence_quote": "A sunset or major reduction would transfer substantial recurring costs to local taxpayers, delay essential network replacement, and reduce educational opportunity for students in high-poverty communities.",
+      "evidence_start": 9987,
+      "evidence_end": 10191,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080925",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080925",
+  "filer_raw": "Yonkers Public Schools",
+  "date_submission": "2026-10-13T14:35:19.571Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "df726cbbde459968e58a283889c489099f80dafe1b7801e8171c4de3fe664e67",
+  "params_key": "e281b606d1fab2dc78477c80eeda9b5d18414c347dc7c6f1d0beca8b2f627f0c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to reject any proposal to terminate or significantly limit the E-Rate program, emphasizing the program's critical role in providing reliable, affordable, and equitable technology infrastructure for education. The comment period is too short and unfair to the education community",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or significant restructuring of the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would create a substantial financial burden for school districts and could require difficult choices that directly impact educational priorities",
+      "evidence_quote": "Eliminating or significantly restructuring the E-Rate program would create a substantial financial burden for school districts and could require difficult choices that directly impact educational priorities",
+      "evidence_start": 1225,
+      "evidence_end": 1431,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26109883738",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109883738",
+  "filer_raw": "MATTHEW HUNDVEN",
+  "date_submission": "2026-06-23T20:45:19.564Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "48eecbfe1c395c7860525268b8e4df5d4b7df83fb5a43b2aaa39bfc663da6ca8",
+  "params_key": "5cf8be14d4bda0f210975cfac334a18ac95bf1c41edbcdfe9cbd9d36c6270cf5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

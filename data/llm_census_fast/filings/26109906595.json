@@ -1,0 +1,49 @@
+{
+  "summary": "The comments emphasize the importance of the E-Rate program for school districts, libraries, and students, arguing against any restrictions or changes to the program that could negatively impact its effectiveness in providing reliable, affordable, and equitable access to technology infrastructure for educational purposes. The comment period is too short and the timing is unfair. The comment period should be extended to at least 90 days for initial comments, with reply comments due no fewer than 60 days thereafter. Additional administrative requirements should not create barriers to E-Rate participation. Existing safeguards provide a framework for protecting students while allowing educators and local leaders the flexibility to determine how technology can best support learning. The FCC should continue to support ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject termination or significant restructuring of the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would create a substantial financial burden for school districts and could require difficult choices that directly impact educational priorities",
+      "evidence_quote": "Eliminating or significantly restructuring the E-Rate program would create a substantial financial burden for school districts and could require difficult choices that directly impact educational priorities. Without this support, districts may face challenges maintaining critical technology infrastructure, expanding digital access, and providing students and educators with the reliable connectivity they need to succeed.",
+      "evidence_start": 1203,
+      "evidence_end": 1626,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program should not be terminated or sunset to ensure continued funding and support for schools and libraries.",
+      "evidence_quote": "The continued success of the E-Rate program depends on maintaining a framework that supports broad participation, minimizes unnecessary administrative burden, and preserves the flexibility schools and libraries need to meet their diverse operational and educational needs.",
+      "evidence_start": 7801,
+      "evidence_end": 8073,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26109906595",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109906595",
+  "filer_raw": "Andrew J McCarty",
+  "date_submission": "2026-06-24T16:40:09.119Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "bfc13c87253c999781a1a415c4b8ef51cb5ec952bbb4c098ccbdb0ea9f4a72bc",
+  "params_key": "90122b874dddeedf2cba77f8f9836984dc74aa598c1ed837dab2498f298f077f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}
