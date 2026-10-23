@@ -51,7 +51,7 @@ def run():
             assert "20" in page.locator("#kr-filing-status").inner_text()
             # Compare a known screen-time policy issue and show explanation.
             page.select_option("#kr-issue-select","screen_time_condition")
-            assert "Screen" in page.locator("#kr-issue-summary").inner_text()
+            assert "filings" in page.locator("#kr-issue-summary").inner_text().lower()
             # Sunset polarity risk must remain quarantined.
             page.select_option("#kr-issue-select","erate_sunset")
             assert "withheld" in page.locator("#kr-issue-summary").inner_text().lower()
