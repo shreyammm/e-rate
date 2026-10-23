@@ -82,6 +82,7 @@
  }
  const API={tokens,questionConcepts,searchAll,issueStats,stanceRisk,riskLabel,safeCsv,ALiASES:ALIASES};
  if(typeof module!=='undefined'&&module.exports)module.exports=API;
+ if(root)root.KaggleResearchCore=API;
  if(!root.document)return;
  const $=id=>document.getElementById(id);
  if(!$('kr-status'))return;
