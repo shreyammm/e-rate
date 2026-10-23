@@ -37,17 +37,22 @@ NEGATION=re.compile(r'\b(?:not|no|never|without|reject|oppose|against|cannot|sho
 def words(s: str) -> set[str]:
     return {m.group(0).lower() for m in WORD.finditer(str(s or ''))}-STOP
 
-def context_flags(row: dict, text: str, same_quote_count: int = 1) -> list[str]:
+def context_flags(row: dict, text: str, same_quote_count: int = 1,
+                  original_quote: str | None = None) -> list[str]:
     """Return review leads, not a definitive author attribution."""
     start=row.get('start')
     quote=str(row.get('quote') or '')
     if not isinstance(start,int) or start<0 or start>=len(text) or not quote:
         raise ValueError('Missing/malformed source-linked quote')
-    # Published public quotes may redact an email/phone, so compare only after
-    # applying the same redaction. 800 chars accounts for changed lengths.
-    nearby=CONTACT.sub('[CONTACT REDACTED]',text[start:start+max(800,len(quote)+100)])
-    if not nearby.startswith(quote):
-        raise ValueError('Public excerpt does not match redacted source at declared offset: '+str(row.get('id')))
+    if original_quote is not None:
+        # Redaction must operate on the EXACT model evidence quote; applying it
+        # to a larger window can consume digits beyond a truncated phone number.
+        if text[start:start+len(original_quote)]!=original_quote:
+            raise ValueError('Model checkpoint quote differs from source bytes: '+str(row.get('id')))
+        if CONTACT.sub('[CONTACT REDACTED]',original_quote[:320])!=quote:
+            raise ValueError('Public excerpt differs from verified model quote: '+str(row.get('id')))
+    elif text[start:start+len(quote)]!=quote:
+        raise ValueError('Direct quote does not match source: '+str(row.get('id')))
     preceding=text[max(0,start-240):start]
     fragment=text[start:start+len(quote)+240]
     flags=[]
@@ -68,7 +73,8 @@ def context_flags(row: dict, text: str, same_quote_count: int = 1) -> list[str]:
         flags.append('negation_in_source_requires_stance_inspection')
     return flags
 
-def build(source=SOURCE, ledger=ROWS, out=OUTPUT):
+def build(source=SOURCE, ledger=ROWS, out=OUTPUT,
+          checkpoints=ROOT/'data/llm_census_kaggle/filings'):
     source=Path(source);ledger=Path(ledger);out=Path(out)
     manifest=json.loads((source/'manifest.json').read_text(encoding='utf-8'))
     rows=json.loads(ledger.read_text(encoding='utf-8'))
@@ -95,8 +101,25 @@ def build(source=SOURCE, ledger=ROWS, out=OUTPUT):
                         raise ValueError('Source body checksum mismatch '+sid)
                 records=by_id.get(sid,[])
                 counts=Counter(r.get('start') for _,r in records)
+                if records:
+                    checkpoint_path=Path(checkpoints)/(sid+'.json')
+                    if not checkpoint_path.is_file():
+                        raise ValueError('Missing raw model checkpoint for '+sid)
+                    checkpoint=json.loads(checkpoint_path.read_text(encoding='utf-8'))
+                    if checkpoint.get('status')!='complete' or checkpoint.get('source_sha256')!=hashlib.sha256(text.encode()).hexdigest():
+                        raise ValueError('Raw checkpoint source mismatch for '+sid)
+                    raw_by_key=defaultdict(list)
+                    for original in checkpoint.get('claims',[]):
+                        key=(original.get('provision_id'),original.get('position'),original.get('evidence_start'))
+                        raw_by_key[key].append(str(original.get('evidence_quote') or ''))
                 for index,claim in records:
-                    flags=context_flags(claim,text,counts[claim.get('start')])
+                    key=(claim.get('issue'),claim.get('position'),claim.get('start'))
+                    candidates=raw_by_key.get(key,[])
+                    original_quote=next((v for v in candidates
+                        if CONTACT.sub('[CONTACT REDACTED]',v[:320])==claim.get('quote')),None)
+                    if original_quote is None:
+                        raise ValueError('Ledger quote has no matching raw source checkpoint '+sid)
+                    flags=context_flags(claim,text,counts[claim.get('start')],original_quote=original_quote)
                     # Index aligns to exact, immutable order of the published
                     # ledger. Avoid falsely merging claims using the same span.
                     if flags:
@@ -127,6 +150,7 @@ def main():
     p.add_argument('--source',type=Path,default=SOURCE)
     p.add_argument('--ledger',type=Path,default=ROWS)
     p.add_argument('--output',type=Path,default=OUTPUT)
+    p.add_argument('--checkpoints',type=Path,default=ROOT/'data/llm_census_kaggle/filings')
     a=p.parse_args()
-    print(json.dumps(build(a.source,a.ledger,a.output),indent=2))
+    print(json.dumps(build(a.source,a.ledger,a.output,a.checkpoints),indent=2))
 if __name__=='__main__':main()

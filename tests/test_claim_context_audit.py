@@ -22,6 +22,15 @@ class ContextAuditTest(unittest.TestCase):
     def test_quote_offsets_must_match(self):
         with self.assertRaises(ValueError):
             context_flags(row('The text is not source correct'), 'Something entirely different')
+    def test_redaction_honors_checkpoint_excerpt_end_boundary(self):
+        # Raw quote ends in a partial phone number. The longer source text
+        # contains the remaining digits, but those must NOT be redacted here.
+        body='Office of Superintendent (978) 640-7800 and public comment.'
+        excerpt='Office of Superintendent (978)'
+        item={'id':'1','start':0,'quote':excerpt,'position':'discussion_no_position',
+              'argument':'','action':''}
+        self.assertIsInstance(context_flags(item,body,original_quote=excerpt),list)
+
     def test_multiple_claim_uses_are_review_flagged(self):
         quote='High-speed school access improves connectivity reliability.'
         self.assertIn('one_quote_used_for_multiple_machine_claims',context_flags(row(quote),quote,3))
