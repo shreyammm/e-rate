@@ -178,7 +178,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                 if hashlib.sha256(body.encode('utf-8')).hexdigest()!=source_row.get('text_sha256'):
                     # One no-text entry can have an absent text hash.
                     if body or source_row.get('text_sha256'):raise ValueError('Filing text hash mismatch')
-                found=inferred_identity(source_row,base[sid],body)
+                # Only use institution names already vetted for public display by\n                # the existing privacy-minimized corpus index, never raw filer names.\n                safe_meta={'filer_raw':by_id[sid].get('organization','')}\n                found=inferred_identity(safe_meta,base[sid],body)
                 if sid in overrides:
                     v=overrides[sid]
                     if not isinstance(v,dict) or v.get('role') not in ROLE_LABELS or v.get('review_status')!='human_reviewed':
