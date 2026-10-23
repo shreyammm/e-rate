@@ -21,6 +21,7 @@ jobs:
       - name: Verify GitHub Pages JavaScript
         run: |
           node --check docs/assets/players.js
+          node --check docs/assets/claim_check.js
           node --check docs/assets/site.js
           node --check docs/assets/corpus.js
           node --check docs/assets/ask.js
