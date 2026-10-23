@@ -89,7 +89,7 @@
  const link=(title,url)=>{const a=el('a','',title);a.href=url;if(url.startsWith('https:')){a.target='_blank';a.rel='noopener noreferrer'}return a};
  const empty=id=>{const x=$(id);if(x)x.replaceChildren();return x};
  const state={rows:[],landscape:null,summary:null,meta:new Map(),audit:[],issues:[],roleNames:[],
-    selectedGroup:'',ledgerFiltered:[],ledgerPage:0,auditFiltered:[],auditPage:0,auditState:{},queryResult:null};
+    selectedGroup:'',ledgerFiltered:[],ledgerPage:0,ledgerFocusIds:null,auditFiltered:[],auditPage:0,auditState:{},queryResult:null};
  const ISSUE_UNSAFE=new Set(['erate_sunset']);
  const writeCount=(id,text)=>{$(id).textContent=text};
  const roleName=s=>friendly(s||'unresolved');
@@ -154,7 +154,7 @@
    reason=$('kr-ledger-reason').value,role=$('kr-ledger-role').value,
    stance=$('kr-ledger-stance').value,group=$('kr-ledger-group').value,
    quality=$('kr-ledger-quality').value,sort=$('kr-ledger-sort').value;
-   const selected=state.rows.filter(r=>(!issue||r.issue===issue)&&(!reason||r.reason_family===reason)&&
+   const selected=state.rows.filter(r=>(!state.ledgerFocusIds||state.ledgerFocusIds.has(r.id))&&(!issue||r.issue===issue)&&(!reason||r.reason_family===reason)&&
      (!role||r.role===role)&&(!stance||r.position===stance)&&(!group||r.group===group)&&
      (!quality||(quality==='sunset'?stanceRisk(r):(r.ocr_candidate||state.meta.get(String(r.id))?.ocr)))&&
      (!q||[r.id,r.organization,r.issue,r.position,r.reason_family,r.claim_kind,r.group,r.action,r.argument,r.quote].join(' ').toLowerCase().includes(q)));
@@ -169,7 +169,7 @@
    state.ledgerPage=Math.min(pages-1,state.ledgerPage);
    const box=empty('kr-ledger-results');
    for(const r of filtered.slice(state.ledgerPage*per,(state.ledgerPage+1)*per))box.append(strongQuote(r));
-   writeCount('kr-ledger-count',n(filtered.length)+' source-linked claim rows across '+n(countIds(filtered))+
+   writeCount('kr-ledger-count',(state.ledgerFocusIds?'Question-related evidence · ':'')+n(filtered.length)+' source-linked claim rows across '+n(countIds(filtered))+
      ' distinct filings; all '+n(state.rows.length)+' model rows examined. Page displays only 30 for readability.');
    writeCount('kr-page','Page '+(state.ledgerPage+1)+' of '+pages);
    $('kr-prev').disabled=state.ledgerPage===0;
@@ -319,7 +319,7 @@
    comparisons.append(left,right);overview.append(comparisons);
    overview.append(el('p','kr-muted','IMPORTANT: The same filing can discuss opposing policy choices; text/concept matches do not establish endorsement. Especially for E-Rate sunset, verify requested actions against the original source.'));
    const button=el('button','kr-action-button','Browse all '+n(matches.length)+' related claim rows');
-   button.onclick=()=>{const terms=questionConcepts(q).terms;const broad=terms[0]||q.split(' ')[0];$('kr-ledger-q').value=broad;updateLedgerFilters();$('ledger').scrollIntoView({behavior:'smooth'});};
+   button.onclick=()=>{state.ledgerFocusIds=new Set(matches.map(r=>r.id));for(const id of ['kr-ledger-q','kr-ledger-issue','kr-ledger-reason','kr-ledger-role','kr-ledger-stance','kr-ledger-group','kr-ledger-quality'])$(id).value='';state.ledgerPage=0;updateLedgerFilters();$('ledger').scrollIntoView({behavior:'smooth'});};
    overview.append(button,document.createTextNode(' '),link('Also search ALL original filing texts ↗','./ask.html?q='+encodeURIComponent(q)));
    area.append(overview);
    const title=el('h3','','Evidence examples from the complete candidate set');area.append(title);
@@ -398,6 +398,7 @@
    $('kr-prev').onclick=()=>{state.ledgerPage--;showLedger();};
    $('kr-next').onclick=()=>{state.ledgerPage++;showLedger();};
    $('kr-ledger-clear').onclick=()=>{
+     state.ledgerFocusIds=null;
      for(const id of ['kr-ledger-q','kr-ledger-issue','kr-ledger-reason','kr-ledger-role','kr-ledger-stance','kr-ledger-group','kr-ledger-quality'])
        $(id).value='';$('kr-ledger-sort').value='id';state.ledgerPage=0;updateLedgerFilters();
    };
