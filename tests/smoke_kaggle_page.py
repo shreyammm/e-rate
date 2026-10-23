@@ -7,6 +7,7 @@ Requires: playwright and installed chromium.
 from __future__ import annotations
 import http.server
 import pathlib
+import shutil
 import subprocess
 import sys
 import time
@@ -22,10 +23,9 @@ def run():
     try:
         time.sleep(1.5)
         with sync_playwright() as p:
-            try:
-                browser=p.chromium.launch(headless=True,channel="chrome",args=["--no-sandbox"])
-            except Exception:
-                browser=p.chromium.launch(headless=True,args=["--no-sandbox"])
+            installed=next((shutil.which(x) for x in ("google-chrome","chromium","chromium-browser") if shutil.which(x)),None)
+            browser=(p.chromium.launch(headless=True,executable_path=installed,args=["--no-sandbox"])
+                     if installed else p.chromium.launch(headless=True,args=["--no-sandbox"]))
             page=browser.new_page(viewport={"width":1440,"height":950})
             exceptions=[]
             page.on("pageerror",lambda e:exceptions.append(str(e)))
