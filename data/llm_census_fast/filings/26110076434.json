@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, opposing any proposal to eliminate or sunset it. The school district expresses concerns about the cost burden of E-Rate on their budget and urges the FCC to preserve and improve the program rather than sunset or eliminate it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The FCC’s proposal to eliminate E-Rate would have a direct and tangible impact on school budgets",
+      "evidence_quote": "We receive $12,000 in internet reimbursement each school year. This is more than my total technology budget.",
+      "evidence_start": 2497,
+      "evidence_end": 2605,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076434",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076434",
+  "filer_raw": "Sauvie Island School",
+  "date_submission": "2026-09-11T16:23:19.311Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a5ed49861d2202b83f2442f67a651320b938b1a6070c6b2c709e6868d2e2ad12",
+  "params_key": "c3412b2e21095f107ac54276ab4d18a269bddf63740dcdedfcdea3f925864475",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The superintendent of a school district emphasizes the essential role of E-Rate in providing reliable broadband infrastructure for modern public education, highlighting the potential financial and operational impacts of reducing or eliminating E-Rate support. The school district urges the FCC to preserve and improve the E-Rate program rather than sunset or eliminate it, emphasizing its role in providing reliable broadband infrastructure for schools and libraries. The district argues that the program has been successful over the past three decades and should be maintained to ensure access to modern education for students, regardless of their location or financial circumstances. The district highlights the importance of E-Rate in enabling schools to bu",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity necessary for modern education",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 5652,
+      "evidence_end": 6056,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076105",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076105",
+  "filer_raw": "Dr. Heather Perry, Gorham School Department",
+  "date_submission": "2026-09-09T18:52:34.694Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "34aea2d46fc7ed55fe4e44c9bd6c2f090b9fb199bf54a8ca96e2b648dfcbea7e",
+  "params_key": "c528c8403f46915025e4edc1bb5b1c56e7a8474faa4a5c39b742390db86bb51d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

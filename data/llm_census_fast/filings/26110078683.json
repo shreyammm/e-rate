@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program for school connectivity needs The technology director urges the Commission to protect the E-Rate program, rejecting proposals to sunset or eliminate it, narrow eligibility, or restrict support based on geography or other criteria. The technology director emphasizes the importance of E-Rate for providing reliable educational access to students, regardless of their location or financial circumstances. The technology director urges the Commission to ensure that public schools can continue providing students with reliable, affor",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would have a direct and tangible impact on the district's budget",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities. Hawthorn School District 73 has received $446,699 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $89,340 a year toward the connections our students depend on.",
+      "evidence_start": 2539,
+      "evidence_end": 2957,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Rejecting sunset proposals would ensure the program remains available for schools and libraries",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4649,
+      "evidence_end": 5200,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078683",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078683",
+  "filer_raw": "Hawthorn School District 73",
+  "date_submission": "2026-09-29T12:27:49.228Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "971f6427438b891863d5ef0abc399ec689159442bd639dfbea28a648428da061",
+  "params_key": "216a46679d53efdd75304053bde51a9549a13830b3973f215826fac170f960da",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

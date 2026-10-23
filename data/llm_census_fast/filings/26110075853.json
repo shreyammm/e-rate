@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to support broadband needs in schools and libraries. The school district argues for preserving E-Rate funding, citing its role in providing connectivity for students and the potential costs of losing it. They urge the Commission to reject proposals to sunset or eliminate the program and instead work to strengthen and modernize it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology continue to evolve. For my district, reducing or eliminating E-Rate support would have a direct and tangible impact. E-Rate covers nearly 80% of our Internet costs annually, which over the last 5 years is more than $200,000.",
+      "evidence_start": 1981,
+      "evidence_end": 2308,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity, and losing it would be costly",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4960,
+      "evidence_end": 5511,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075853",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075853",
+  "filer_raw": "Paul Zeller",
+  "date_submission": "2026-09-08T18:37:18.317Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "11dd11848f2a2f41f5f6c8401a75e220f05a1d2491865e231fac38f162cdd6cb",
+  "params_key": "5a0ed00c550ecf163efe0b2679f189320dd68d34b6cc71e544d6f2647f1df022",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

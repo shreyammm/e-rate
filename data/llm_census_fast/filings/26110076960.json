@@ -1,0 +1,50 @@
+{
+  "summary": "Shawnee Community Unit School District #84 opposes proposals to sunset or scale back the E-Rate program, emphasizing its essential role in maintaining an equitable, secure, and modern learning environment for its 300 students. It argues that E-Rate funding is crucial for budget predictability and operational stability, and that advanced services and infrastructure defined by E-Rate are foundational to modern education. The district urges the FCC to maintain full funding and eligibility scopes fo The school district urges the FCC to maintain full funding and eligibility scopes for the E-Rate program, emphasizing its success in adapting to technological needs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain current eligibility scopes",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "The NPRM’s inquiry into whether to narrow eligible equipment and services overlooks how modern education functions. Digital literacy is foundational, and Wi-Fi networks, robust routing, and reliable internal switches are critical to a modern school building",
+      "evidence_quote": "The NPRM’s inquiry into whether to strip funding for advanced internal connections (Category Two) or off-campus connectivity overlooks how modern education functions. Digital literacy is no longer elective; it is foundational. Wi-Fi networks, robust routing, and reliable internal switches are just as critical to a modern school building as plumbing and electricity",
+      "evidence_start": 1120,
+      "evidence_end": 1486,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain full funding and eligibility scopes",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program has been a monumental success precisely because it evolved alongside the technological needs of our students",
+      "evidence_quote": "We urge the Commission to abandon any proposals to limit or sunset E-Rate. The program has been a monumental success precisely because it evolved alongside the technological needs of our students.",
+      "evidence_start": 4478,
+      "evidence_end": 4674,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076960",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076960",
+  "filer_raw": "Shelly Clover, Superintendent",
+  "date_submission": "2026-09-18T13:29:47.069Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8ba9c36397dcc51011bec1562d3a05da94f64814dace34cee9a207599d4ea904",
+  "params_key": "e35b09fd1f5b46c1ae92fc1e2cf15f8b577b66188cef687fe4266350fa77fe90",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

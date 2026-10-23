@@ -1,0 +1,49 @@
+{
+  "summary": "The comments from a Klamath Falls City Schools network specialist emphasize the critical role of E-Rate funding in maintaining a modern network infrastructure for the district, which serves students in a rural area with limited broadband competition. The network specialist argues that eliminating or narrowing E-Rate eligibility would reverse decades of progress and create a budget crisis for the district. The FCC argues that eliminating or narrowing E-Rate eligibility would leave districts with internet access to the building but no reliable way to deliver it inside classrooms, which is not a modernized program. They propose preserving both Category 1 and Category 2 eligibility and expanding eligibility to include cybersecurity services. The FCC emphasizes the importance of E-Rate for rural districts and urges the Commission to maintain and strengthen the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would cause a budget crisis as districts would face full market-rate costs for services.",
+      "evidence_quote": "If E-Rate were eliminated or substantially narrowed, our district would not reduce internet usage — we cannot. We would face an immediate and severe budget crisis as we attempted to absorb full market-rate costs for services that E-Rate currently subsidizes.",
+      "evidence_start": 1893,
+      "evidence_end": 2151,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating or narrowing Category 2 eligibility would leave districts with internet access to the building and no reliable way to deliver it inside classrooms. That is not a modernized program — it is a partial one.",
+      "evidence_quote": "Eliminating or narrowing Category 2 eligibility would leave districts with internet access to the building and no reliable way to deliver it inside classrooms. That is not a modernized program — it is a partial one.",
+      "evidence_start": 4492,
+      "evidence_end": 4707,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110023882",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110023882",
+  "filer_raw": "Nicholas Collins | Klamath Falls City Schools",
+  "date_submission": "2026-07-16T23:04:11.906Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d950043536a28ce8de38e2e5b571aa54ae29c6f87b5acc9e3f5ece084f934474",
+  "params_key": "d1136d2dd2e74becaee1278aa2e44a5c8ffd7543a241bca6cb630446b9b4a822",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

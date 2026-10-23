@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for modern public education, citing the direct impact of reduced E-Rate support on their budget and ability to maintain essential services. The claim is normative, highlighting the importance of E-Rate for educational access and infrastructure maintenance. The school district urges the FCC to preserve E-Rate funding and support its role in providing connectivity for students, emphasizing the importance of maintaining the program for educational access and modernization.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity necessary for modern education",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 5781,
+      "evidence_end": 6185,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076849",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076849",
+  "filer_raw": "Susanville School District",
+  "date_submission": "2026-09-16T22:26:05.868Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ba52022ffb5e685958d3c914e582f4d4e335bccd3d4bbec50f316e12e18ee6a0",
+  "params_key": "a4c4419f22f716dbee66cbac58649d9745d4be2119c20abaf82ea13f19a7a22e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

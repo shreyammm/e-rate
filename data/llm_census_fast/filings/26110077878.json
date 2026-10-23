@@ -1,0 +1,49 @@
+{
+  "summary": "The comment emphasizes the importance of preserving and strengthening the E-Rate program, arguing that it is essential infrastructure for modern public education and that reducing or eliminating E-Rate support would have direct and tangible impacts on schools and communities. The individual emphasizes the importance of preserving and improving the E-Rate program, citing its success over the past three decades and its role in providing reliable educational access to students. They urge the Commission to reject proposals to sunset or eliminate the program and instead work with schools to strengthen and modernize it.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate funding would lead to increased recurring costs for school districts",
+      "evidence_quote": "Treating school connectivity as a \"finished job\" is a dangerous illusion. A network is not a one-time purchase—it is a living system that requires constant maintenance, cybersecurity, and expensive hardware upgrades. If E-Rate funding disappears, those massive recurring bills don't vanish. They are dumped directly onto local school budgets.",
+      "evidence_start": 2171,
+      "evidence_end": 2513,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build connectivity necessary for modern education",
+      "evidence_quote": "Need doesn't magically vanish at the city limits. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not as a reason to assume that the work is finished.",
+      "evidence_start": 4485,
+      "evidence_end": 4699,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077878",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077878",
+  "filer_raw": "Rocio Torres Aguilar",
+  "date_submission": "2026-09-23T16:42:20.514Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c452eda6708aa943d2b0239c938bcfb9d533e91d85a65a17181c6d803dd545df",
+  "params_key": "154fcebe59e773cfe2154a1b00b4366c883a2ebddfd958c21a45342aec736fe3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

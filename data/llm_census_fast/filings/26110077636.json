@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission RE: WC Docket Nos. proposes rulemaking to address E-Rate program, with a superintendent of a school district urging preservation of the program and rejecting proposals to eliminate or reduce its support. The school district urges the FCC to protect the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of maintaining reliable broadband for students and schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate support would have a direct and tangible impact on local school district budgets and taxpayers.",
+      "evidence_quote": "Without E-Rate support, these increasing costs shift directly to local school district budgets and taxpayers.",
+      "evidence_start": 2759,
+      "evidence_end": 2868,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110077636",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077636",
+  "filer_raw": "Tim J Vincent",
+  "date_submission": "2026-09-22T15:33:03.258Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0e83089bcc30b689f742a651dbc791dbf87d5e69854b5366408dca308516ed8a",
+  "params_key": "87bc63fd34ed1ce34cd78d8dc5441c468eb1831f1df9bd80e3c2361f58be999e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

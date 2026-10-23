@@ -1,0 +1,37 @@
+{
+  "summary": "School business manager urges preservation of E-Rate program to maintain essential broadband infrastructure for schools and libraries. The school business manager urges the Commission to preserve E-Rate funding and support its role in providing reliable educational access to students, regardless of their location or financial circumstances.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reject proposals to sunset or eliminate E-Rate",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4696,
+      "evidence_end": 5247,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077648",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077648",
+  "filer_raw": "Steven J Smidl",
+  "date_submission": "2026-09-22T15:54:45.097Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "56ecf624aca4161e2e45753fe746f2c43bef189f49fe290c61093dcec5f845cc",
+  "params_key": "f15478a63163bbcca4973c063a4bed188140c9c3bb7b9f38d426448a2d82eddb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

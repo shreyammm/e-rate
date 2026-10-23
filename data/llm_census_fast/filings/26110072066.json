@@ -1,0 +1,37 @@
+{
+  "summary": "The library emphasizes its critical role in providing internet access for community services and education, and the impact of cutting E-Rate funding on its ability to serve its community. Library argues that E-Rate funding is essential for providing reliable broadband speeds and services. A budget decrease would force the library to reduce programs and services, potentially leading to patron loss. The library emphasizes the importance of E-Rate for digital literacy training, internet access, and technology support.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate funding would force libraries to reduce programs and services to continue providing internet access.",
+      "evidence_quote": "If the FCC terminates or limits E-Rate funding, our library will be forced to reduce programs and services in order to continue providing internet access.",
+      "evidence_start": 5354,
+      "evidence_end": 5508,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110072066",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072066",
+  "filer_raw": "Raquel Watson",
+  "date_submission": "2026-08-18T18:20:15.636Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d6f71c0028f5dd47b4a5b02a6370ff1b75b65eb0ca6f960b00760845ef722fdb",
+  "params_key": "198d60116119db356e9bc30442e813be6e3b34786a63e80851e92e5de640d8a5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

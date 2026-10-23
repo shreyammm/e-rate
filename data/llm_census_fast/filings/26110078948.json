@@ -1,0 +1,37 @@
+{
+  "summary": "A teacher argues for preserving E-Rate to ensure reliable broadband connectivity for schools and students, emphasizing the program's ongoing importance and the costs associated with shifting those responsibilities to local budgets. The teacher argues for preserving E-Rate to ensure access to connectivity for students, emphasizing its importance in modern education and its role in preparing students for future opportunities.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity necessary for modern education",
+      "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 5587,
+      "evidence_end": 5813,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078948",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078948",
+  "filer_raw": "Omar Sanchez",
+  "date_submission": "2026-09-30T20:20:33.366Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ab16ef8b52e0b4821c1cfc6477f0f885331aa1f3127bea2614d575a34ab91214",
+  "params_key": "665823a999c2b30556eae621c013cff0818c1415a5ae6deb82f93763068c4e43",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

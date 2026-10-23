@@ -1,0 +1,49 @@
+{
+  "summary": "The comments urge preserving E-Rate to maintain reliable connectivity for schools, which supports educational outcomes and infrastructure needs. The claim could create substantial administrative work and raise student privacy concerns without showing whether instruction improved. The Commission should seek direct evidence of benefits and costs before attaching such conditions to connectivity funding.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for schools and families",
+      "evidence_quote": "The consequences of reduced support would extend beyond a technology budget. Districts would still need to pay for connectivity. Those costs would compete with classroom resources, staff, student services, and other obligations. Some communities could absorb that shift more readily than others. A policy that assumes broadband availability means broadband affordability would miss the financial reality facing many schools and families.",
+      "evidence_start": 2139,
+      "evidence_end": 2576,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to eliminate or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reject proposals to eliminate or sunset E-Rate",
+      "evidence_quote": "I support effective oversight of E-Rate spending. Clear rules, fair competition, transparent pricing, and appropriate safeguards against conflicts of interest protect both applicants and the public. As the Commission considers new consultant requirements and administrative changes, I ask it to account for the staff time and costs those rules impose, especially on smaller applicants and regional consortia. Program integrity is strongest when requirements are understandable, proportionate, and workable in practice.",
+      "evidence_start": 4362,
+      "evidence_end": 4880,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079688",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079688",
+  "filer_raw": "Dwight R. Levens Jr.",
+  "date_submission": "2026-10-06T21:52:51.841Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8410f93c538ea10acc1f56af6a4f0f0c611af380750f95546fa98d99eff75def",
+  "params_key": "7ea84ddd41be12aa9adf5298e235eb86f68fe1827c697966a6d77b835c31f2c2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program for schools and libraries, emphasizing its essential role in modern education infrastructure and cost implications. The school district urges the FCC to preserve and improve the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The program is essential for providing reliable broadband to schools and libraries",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4746,
+      "evidence_end": 5297,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080056",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080056",
+  "filer_raw": "Anaconda School District #10",
+  "date_submission": "2026-10-08T15:46:57.357Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "90d3d2e5467415ac33690356e014606252366fd3e78598e1e55c4cb707f86ebf",
+  "params_key": "7e77d8059ba6864aaf64b3ddea2d09a43d2741ecab92375493d600ff86fdf1d7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

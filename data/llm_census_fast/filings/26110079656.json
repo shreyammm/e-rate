@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve E-Rate funding to avoid increased infrastructure costs and maintain essential connectivity for students. The school district argues against sunsetting or eliminating the E-Rate program, emphasizing its importance for providing connectivity and educational access to students. The school district urges the Commission to preserve E-Rate and work with stakeholders to strengthen and modernize the program rather than reduce its role in public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase annual infrastructure costs for Minooka School District 201",
+      "evidence_quote": "We would be on the hook for $50,000 a year if the Illinois DOIT program goes away, and every 6 years when we try to upgrade our network firewalls, switches, routers, and access points, would be easily $250,000.",
+      "evidence_start": 2588,
+      "evidence_end": 2798,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity, and removing it would undermine educational opportunities",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 5045,
+      "evidence_end": 5596,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079656",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079656",
+  "filer_raw": "Minooka CCSD 201",
+  "date_submission": "2026-10-06T19:14:28.647Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "674a004c2766cb189f9bd01ca10011f481f057fb93038ed146e34a69cdd45893",
+  "params_key": "fc7c94bb825662df2547e00fa5ef226f71dc7756c178a3e0f012fb301a73637c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

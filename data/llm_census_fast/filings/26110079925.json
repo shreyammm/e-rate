@@ -1,0 +1,49 @@
+{
+  "summary": "A school staff member urges the FCC to preserve the E-Rate program, emphasizing its importance for providing broadband access to students and libraries in their community. The school district expresses concern over the potential impact of limiting or sunsetting E-Rate funding on their ability to provide essential technology infrastructure for students. They emphasize the importance of preserving E-Rate to ensure access to internet connectivity for students and the community.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would increase costs for schools",
+      "evidence_quote": "For nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same technological resources as students in wealthier communities. Cutting, restricting, or sunsetting the program would threaten that progress and deepen the inequities that public education should be working to overcome.",
+      "evidence_start": 3186,
+      "evidence_end": 3543,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to limit or sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate would force districts to balance technology costs against other educational needs",
+      "evidence_quote": "cannot be used elsewhere to support students. Districts like mine could be forced to balance technology infrastructure against other important educational needs—staffing, instructional materials, interventions, student programs, and other services.",
+      "evidence_start": 4221,
+      "evidence_end": 4469,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079925",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079925",
+  "filer_raw": "Sidney E. Flournoy",
+  "date_submission": "2026-10-07T20:26:22.003Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5f8f09cbe3843f6cee523d413d8415962f405d4139f5f2e6aef8929daba223f6",
+  "params_key": "aa498eb50d9ec1ac6ab8ce4b5c26a426838eafeb8bc71406fee5ea9cffd842fd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

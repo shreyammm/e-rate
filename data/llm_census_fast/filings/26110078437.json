@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to maintain essential broadband infrastructure for schools and libraries. The comment emphasizes the importance of E-Rate for providing reliable broadband to schools and libraries, and urges the Commission to preserve and improve the program rather than sunset or eliminate it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate prevents increased local budget costs",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and scaled, and reducing or eliminating E-Rate support would have a direct and tangible impact on schools in my community.",
+      "evidence_start": 2173,
+      "evidence_end": 2347,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078437",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078437",
+  "filer_raw": "Geff CC School District #14",
+  "date_submission": "2026-09-26T18:24:29.154Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8b3deaf9a2d6be84a1ce04ba5a7edb702b80fabde3546cc79e1b5872b5602dea",
+  "params_key": "b1984bfc5cf47518394ac163f641661c4b736d7f7733d59314dff75279b59cd3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The library system emphasizes the importance of E-Rate funding for maintaining affordable and reliable internet access in rural Northeast Georgia. It highlights the program's role in providing equal access to information and technology for library patrons, enabling various daily activities, and supporting library services. The library system recommends preserving the core E-Rate program and its eligibility for specific services, such as special construction, dark fiber, self-provisioned networks The comment opposes sunsetting E-Rate and supports preserving its core funding and services to avoid cost increases and administrative burdens on libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E-Rate funding and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Maintain current E-Rate funding to avoid cost increases",
+      "evidence_quote": "Avoid one-size-fits-all federal screen-time limits. Leave it to local control.",
+      "evidence_start": 4539,
+      "evidence_end": 4617,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Preserve eligibility for special construction",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Special construction is a critical service for libraries to maintain connectivity",
+      "evidence_quote": "Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services",
+      "evidence_start": 3704,
+      "evidence_end": 3847,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110072460",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072460",
+  "filer_raw": "Northeast Georgia Regional Library System (Ne GA Rls)",
+  "date_submission": "2026-08-20T18:39:04.883Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "cfeff38646022d51aabbc63fe4c454c8dd50ec88c00779b9ff58ae9acff3fe7a",
+  "params_key": "cc0ebd8388b4dba2be3b24447eb8c467edd07af88ea2d15c812fc29b9c0416fb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving and strengthening the E-Rate program to maintain essential infrastructure and support modern public education. A cut to E-Rate would have direct and tangible impacts on the district's budget and programs, potentially leading to staffing cuts and program reductions. The school district argues against sunsetting or eliminating the E-Rate program, emphasizing its importance for providing reliable broadband access to students. The school district urges the Commission to preserve the program and work with stakeholders to strengthen and modernize it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A cut to E-Rate would affect the access students need to have a thorough and efficient education",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4997,
+      "evidence_end": 5548,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077893",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077893",
+  "filer_raw": "Dr. Kathleen W. Walsh",
+  "date_submission": "2026-09-23T17:24:34.560Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "de79fcee20167c03a3b7e797a9405123e153798e5c82d6a15e1bf41b910edd9d",
+  "params_key": "ab6ab8c7aae7ef7c22dd33d81078fda7af5ee585c3bdf4ff05c004ea25a77638",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

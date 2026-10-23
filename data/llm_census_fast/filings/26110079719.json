@@ -1,0 +1,37 @@
+{
+  "summary": "E-Rate program is crucial for providing broadband access to schools and libraries, enabling modern learning and research. Opposition to sunsetting the program emphasizes the cost implications and the need to maintain funding to ensure equitable access to digital resources for students. The comment emphasizes the importance of E-Rate for providing reliable broadband access for educational purposes, particularly in science education, and urges the FCC to continue supporting the program rather than reducing or sunsetting it.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue supporting E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate means preserving educational opportunity for millions of students",
+      "evidence_quote": "I strongly urge the Commission to reject any proposal that would reduce, limit, or sunset E-Rate funding and instead continue supporting this essential program and protect access for the students who need it most.",
+      "evidence_start": 5471,
+      "evidence_end": 5684,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079719",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079719",
+  "filer_raw": "Mark Nebzydoski",
+  "date_submission": "2026-10-07T01:19:31.735Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e056c3ff77c60c205155286103368c821a82e8c59cec3d08ded0d7e664300300",
+  "params_key": "979e42e5d37a143b4a053ca099677d0d4849d0d246fcb38e1b9d0e716aaa9c52",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

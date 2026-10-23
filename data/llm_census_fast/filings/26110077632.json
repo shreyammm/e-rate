@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving and strengthening the E-Rate program to ensure reliable broadband infrastructure for modern public education. The school district opposes proposals to sunset or eliminate the E-Rate program, emphasizing its importance for maintaining connectivity and infrastructure in schools. They urge the Commission to preserve and improve the program rather than reduce its role in public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would have direct and tangible impact on school budgets and taxpayers.",
+      "evidence_quote": "The fact that schools are connected today does not mean the job is finished. Networks must continually be maintained, secured, upgraded, replaced, and scaled to meet growing demands. Without E-Rate support, these increasing costs shift directly to local school district budgets and taxpayers.",
+      "evidence_start": 2588,
+      "evidence_end": 2880,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077632",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077632",
+  "filer_raw": "Tim Vincent",
+  "date_submission": "2026-09-22T15:30:43.095Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "81fd4cd115af32c9ca39536e3d434e1549e3b606b4fbe60101e83732141be4c0",
+  "params_key": "f1865b0c6857ce298c0fcc0f223e76c4be48e1bca1186e9a51a3a54e15738a8b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

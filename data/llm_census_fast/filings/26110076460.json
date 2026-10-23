@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving E-Rate to maintain essential broadband infrastructure for modern public education, citing cost savings and the program's role in supporting connectivity and network maintenance. The claim is opposed to any proposal that would eliminate or sunset E-Rate. The technology director urges the Commission to preserve the E-Rate program, reject proposals to sunset or eliminate it, and work with schools to strengthen and modernize the program rather than reduce its role in public education. The technology director emphasizes the importance of E-Rate for providing reliable, affordable, and effective connectivity for students and schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reject proposals to sunset or eliminate E-Rate",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4698,
+      "evidence_end": 5249,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076460",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076460",
+  "filer_raw": "Justin Hefley",
+  "date_submission": "2026-09-11T20:55:56.493Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f31cd6fb583168fa3bb5cdb8850947286c7464c3d693fe47eb0dd3b3203b8018",
+  "params_key": "4725d90f9f1fcaf73593969d78c38cd614cf62db642422e14324480d233d7f9a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

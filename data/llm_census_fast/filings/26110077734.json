@@ -1,0 +1,37 @@
+{
+  "summary": "The comment from a technology director of a school district urges the FCC to preserve and strengthen the E-Rate program, opposing proposals that would eliminate or sunset the program, restrict eligibility scope, or change provisions related to broadband infrastructure and network connectivity. The comment highlights the critical role of reliable broadband in modern public education, the financial impact on school districts, and the importance of maintaining current provisions for network infrast The technology director urges preserving E-Rate to ensure schools can provide necessary connectivity for modern education, emphasizing the program's role in enabling schools and libraries to maintain connectivity and support educational access for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity necessary for modern education",
+      "evidence_quote": "I therefore respectfully urge the Commission to: 1. Reject any proposal to sunset or eliminate the E-Rate program; 2. Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; 3. Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and 4. Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education. E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education.",
+      "evidence_start": 4802,
+      "evidence_end": 5543,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110077734",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077734",
+  "filer_raw": "Granite City School District",
+  "date_submission": "2026-09-22T19:32:18.294Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "66d0e0f8459a402ad7a3cb00dc8f7a8ecbbf193eb8029baad29a8995a97dbbc7",
+  "params_key": "3ed4fddecbae13c9fde4abfbb79103e4044dbddd3696cc26ca2d5473e68ce7e9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

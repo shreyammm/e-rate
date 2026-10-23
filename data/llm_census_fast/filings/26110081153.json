@@ -1,0 +1,49 @@
+{
+  "summary": "RIDE urges the Commission to preserve affordable connectivity and retain poverty-based eligibility, emphasizing the value of competitive bidding and the need for predictable support to maintain access. The comment opposes limiting or sunsetting E-Rate, citing concerns about increased costs for schools and libraries and preserving state authority over educational technology. It also requests that the Commission maintain E-Rate and Category Two support for schools and libraries, preserve equitable poverty-based eligibility, and retain the educational-purpose presumption.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve affordable connectivity",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reduced support would shift recurring costs to school and library budgets",
+      "evidence_quote": "Competitive statewide procurement has lowered costs while supporting greater capacity: RIDE’s commitments declined approximately 43 percent, from $13.54 million in FY2010–2014 to $7.67 million in FY2020–2024. These savings demonstrate the value of competitive bidding and aggregated purchasing; they do not show that connectivity needs have ended. Reduced support would shift recurring costs to school and library budgets, placing connectivity in competition with instructional materials, staffing, and public services, or require service reductions.",
+      "evidence_start": 838,
+      "evidence_end": 1388,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "uctional technology use should remain matters for state and local authorities.",
+      "evidence_start": 4450,
+      "evidence_end": 4528,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081153",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081153",
+  "filer_raw": "Rhode Island Department of Education",
+  "date_submission": "2026-10-13T19:30:02.925Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "758b651a1fb8cf38d6dc369b8f6c7398f86ec5a7a0ae305e0cde45f15978657c",
+  "params_key": "daf7ca3e291a535f0a08f3950ac59c798b207d49958ac1b65560d71bb16710c8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

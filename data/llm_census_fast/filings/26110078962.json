@@ -1,0 +1,37 @@
+{
+  "summary": "The Sylvan Union School District opposes any proposals that would terminate E-Rate funding, emphasizing the program's critical role in enabling affordable, robust, and reliable broadband connectivity for public schools and libraries, which is essential for modern education and student success. The district urges the FCC to preserve full E-Rate funding to ensure access to digital tools for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve full E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Sidized commercial rates for enterprise-grade internet and infrastructure hardware would create an immediate financial crisis.",
+      "evidence_quote": "sidized commercial rates for enterprise-\ngrade internet and infrastructure hardware would create an immediate financial crisis.",
+      "evidence_start": 4450,
+      "evidence_end": 4577,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078962",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078962",
+  "filer_raw": "Sylvan Union School District",
+  "date_submission": "2026-09-30T21:00:38.649Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "fcc03e406115c5043b3484e6a2b3cca12c8682b121e98bdc594f9297b7326e2d",
+  "params_key": "d7df075ef481854fb6f4f3599e59c3d1327c2ef534febb40526f5d55ceb3d2c9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

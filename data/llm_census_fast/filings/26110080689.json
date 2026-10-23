@@ -1,0 +1,37 @@
+{
+  "summary": "The Washtenaw Intermediate School District (WISD) urges the FCC to maintain the E-Rate Program as it currently is to protect high-quality, affordable broadband internet access to communities across the country through its public schools and libraries. The WISD emphasizes the importance of preserving E-Rate’s broad access and existing scope of service to ensure that every school has reliable broadband infrastructure to support educational needs. The Washtenaw County school district urges the FCC to preserve the existing E-Rate program, emphasizing its critical role in providing connectivity to low-income students and the potential negative impact of changes to its eligibility criteria.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Any changes to the eligibility criteria that removes these schools from the E-Rate Program or significantly reduces their discount would have the greatest negative impact on the students and districts least able to absorb additional costs",
+      "evidence_quote": "Protect E-Rate’s Existing Discount Structure\nE-Rate funding is critical to ensuring students from low-income households stay connected to the internet in our globally competitive world. Nearly 60% of all full-time students in E-Rate supported schools across the country are eligible for the National School Lunch Program. The E-Rate program is structured to ensure schools serving higher concentrations of low-income students receive a higher discount rate. Any changes to the eligibility criteria that removes these schools from the E-Rate Program or significantly reduces their discount would have the greatest negative impact on the students and districts least able to absorb additional costs.",
+      "evidence_start": 3957,
+      "evidence_end": 4654,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080689",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080689",
+  "filer_raw": "Washtenaw Intermediate School District",
+  "date_submission": "2026-10-12T19:36:01.526Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9e67776fa4150a045032a45b6da6a756a9413296bad63013b80ebe121827d07d",
+  "params_key": "c3cac08520f9aaf4337b3791cbdbc4660c1cec230dde916c1a6281e7ced4fb4d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

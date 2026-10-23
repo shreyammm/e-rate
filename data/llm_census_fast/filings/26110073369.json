@@ -1,0 +1,37 @@
+{
+  "summary": "The school system expresses strong opposition to the proposed termination of E-Rate funding, emphasizing its critical role in providing essential infrastructure for education and digital learning. The comment highlights specific examples of how E-Rate funding is currently used to support various aspects of the school system, including network connectivity, internet services, network switches, wireless infrastructure, and network cabling. The comment argues that eliminating E-Rate would have sign The comment opposes the sunset of the E-Rate program, emphasizing its importance for maintaining essential infrastructure and ensuring equitable access to digital learning for students. It argues that eliminating E-Rate would place a significant financial burden on school districts and create disparities between districts based on their ability to absorb infrastructure costs. The comment calls for the preservation and strengthening of the program as an investment in students, teachers, and schoo",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would place a significantly greater burden on local taxpayers and could create substantial differences between districts based on their ability to absorb millions of dollars in infrastructure costs",
+      "evidence_quote": "We strongly encourage the continued funding of the E-Rate program. Removing this support would not move schools away from unnecessary technology spending—it would force schools to choose between maintaining essential infrastructure and funding other services that directly benefit students. The E-Rate program is an investment in our students, our teachers, our schools, and the infrastructure that allows modern public education to function. E-Rate should not be eliminated. It should be preserved and strengthened.",
+      "evidence_start": 5853,
+      "evidence_end": 6369,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110073369",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073369",
+  "filer_raw": "Bartow County School System",
+  "date_submission": "2026-08-27T15:06:12.614Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "997962a9892a4482c34a4ca6f823e2c0ebd2564b6a0ec2ae77cd223127a07c7e",
+  "params_key": "75a4a00d7750d43b7a0aeed5ac64b17cbeeaa1a2dc4f85aa4c6b9a58801cd6f3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

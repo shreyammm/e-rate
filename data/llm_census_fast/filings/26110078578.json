@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for modern public education, citing the direct impact on student learning and operational needs. The district argues that preserving E-Rate is essential to avoid compromising other essential services and budgets. The school district argues for preserving and improving the E-Rate program, not eliminating it, citing its role in providing connectivity for modern education and ensuring access for students regardless of their location or financial circumstances.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would force districts to cut funding from other essential needs",
+      "evidence_quote": "Our students and teachers depend on connectivity every day for classroom instruction, digital curriculum, state testing, 1:1 Chromebooks, special education resources, and career and technical education. Without reliable connectivity, many of the tools our teachers are expected to use simply do not work. The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared. Connectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology continue to evolve.",
+      "evidence_start": 1701,
+      "evidence_end": 2414,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity necessary for modern education",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 5269,
+      "evidence_end": 5820,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078578",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078578",
+  "filer_raw": "Atkinson County School District",
+  "date_submission": "2026-09-28T18:55:39.656Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5f277986d16de1b7610e78c23e997c5327f563e81bacfbd5e7713d5fb05940e5",
+  "params_key": "580bed1321df372e3cc70939ba3c82a566ed64b8fba0dd0eb357358b9c04d11b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

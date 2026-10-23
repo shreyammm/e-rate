@@ -1,0 +1,63 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of reliable broadband in modern education and the financial burden of maintaining infrastructure without E-Rate support. The school district emphasizes the importance of E-Rate for maintaining reliable broadband infrastructure in schools and urges the FCC to preserve and improve the program rather than sunset it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "Reject changing poverty and rural discount matrix",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Changing the discount matrix could increase costs for low-income schools",
+      "evidence_quote": "Lee’s Summit R-7 currently has approximately $2 million in E-Rate support committed toward the replacement of our 25-year-old fiber network. This is a significant investment in infrastructure that our district would have difficulty funding on its own.",
+      "evidence_start": 1872,
+      "evidence_end": 2123,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Reject narrowing of eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility could disproportionately affect schools in low-income areas",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and expanded as instructional demands and technology continue to evolve. A 25-year-old fiber network, for example, may technically provide connectivity, but that does not mean it provides the capacity, reliability, or resiliency a modern school district requires.",
+      "evidence_start": 3266,
+      "evidence_end": 3581,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, districts would have difficulty funding essential infrastructure on their own",
+      "evidence_quote": "Our district relies on E-Rate to help offset the cost of critical network infrastructure, including switches, servers, fiber, and other internal connections. These are not simply technology upgrades. They are essential components of the infrastructure that allows our schools to operate.",
+      "evidence_start": 1583,
+      "evidence_end": 1870,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110076147",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076147",
+  "filer_raw": "Steve Shelton",
+  "date_submission": "2026-09-09T21:58:33.868Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bdb2da672bc65ed826fa17579df5cf99f3b1acf79cb96e69e27b1255b7653c6b",
+  "params_key": "935dcbb505c8b6e89bedd9c6f04e52e19ee64dc1273058525b98238bcc33565a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}
