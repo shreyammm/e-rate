@@ -464,6 +464,20 @@
        n(quality.source_windows_model_analyzed)+' of '+n(quality.source_windows_available)+
        ' original source windows read by GPT-OSS.'));
      for(const flag of quality.known_interpretation_risks||[])title.append(pill(friendly(flag),true));
+     if(quality.model_summary){
+       const section=el('div','kr-panel');
+       section.append(el('h3','','GPT-OSS overview of this complete filing'),el('p','kr-muted','Unvalidated machine synthesis. Read the original filing before relying on it.'));
+       const summary=el('p','',quality.model_summary);summary.style.whiteSpace='pre-wrap';section.append(summary);
+       title.append(section);
+     }
+     if(quality.machine_positions&&Object.keys(quality.machine_positions).length){
+       const issueOverview=el('div','');
+       issueOverview.append(el('h4','','Machine-level issue summary'));
+       for(const [issue,position] of Object.entries(quality.machine_positions).sort()){
+         issueOverview.append(pill(issueName(issue)+': '+(issue==='erate_sunset'?'stance withheld (polarity audit)':friendly(position)),issue==='erate_sunset'));
+       }
+       title.append(issueOverview);
+     }
    }
    const nums=el('div','kr-kpis');
    [[records.length,'Model claim records'],[issues.size,'Issue labels'],[groups.size,'Exploratory claim groups'],
