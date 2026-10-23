@@ -89,7 +89,7 @@
  const el=(tag,cls,text)=>{const x=document.createElement(tag);if(cls)x.className=cls;if(text!==undefined)x.textContent=String(text);return x};
  const link=(title,url)=>{const a=el('a','',title);a.href=url;if(url.startsWith('https:')){a.target='_blank';a.rel='noopener noreferrer'}return a};
  const empty=id=>{const x=$(id);if(x)x.replaceChildren();return x};
- const state={rows:[],landscape:null,summary:null,meta:new Map(),audit:[],issues:[],roleNames:[],
+ const state={rows:[],landscape:null,summary:null,quality:null,meta:new Map(),audit:[],issues:[],roleNames:[],
     selectedGroup:'',ledgerFiltered:[],ledgerPage:0,ledgerFocusRows:null,auditFiltered:[],auditPage:0,auditState:{},queryResult:null};
  const ISSUE_UNSAFE=new Set(['erate_sunset']);
  const writeCount=(id,text)=>{$(id).textContent=text};
@@ -383,7 +383,7 @@
      writeCount('kr-filing-status','Filing ID not found in this 3,231-record research snapshot. Enter an original ECFS submission ID.');
      return;
    }
-   const records=state.rows.filter(r=>String(r.id)===id),issues=new Map(),groups=new Map(),reasons={};
+   const records=state.rows.filter(r=>String(r.id)===id),quality=state.quality?.filings?.[id],issues=new Map(),groups=new Map(),reasons={};
    writeCount('kr-filing-status',n(records.length)+' Kaggle source-linked claims found for '+id+'; full original record available.');
    for(const r of records){
      if(!issues.has(r.issue))issues.set(r.issue,[]);issues.get(r.issue).push(r);
@@ -398,6 +398,12 @@
    const links=el('p','');links.append(link('Read original FCC record ↗',fcc(id)),link(' Read full extracted comment ↗',corpus(id)),
      link(' View complete GPT-OSS extraction JSON ↗','https://github.com/shreyammm/e-rate/blob/main/data/llm_census_kaggle/filings/'+encodeURIComponent(id)+'.json'));
    title.append(links);
+   if(quality){
+     title.append(el('p','kr-muted','Semantic model coverage: '+friendly(quality.semantic_scope)+' · '+
+       n(quality.source_windows_model_analyzed)+' of '+n(quality.source_windows_available)+
+       ' original source windows read by GPT-OSS.'));
+     for(const flag of quality.known_interpretation_risks||[])title.append(pill(friendly(flag),true));
+   }
    const nums=el('div','kr-kpis');
    [[records.length,'Model claim records'],[issues.size,'Issue labels'],[groups.size,'Exploratory claim groups'],
     [record.duplicate_count||1,'Exact-text filing instances']].forEach(([v,t])=>nums.append(stat(v,t)));
@@ -440,6 +446,56 @@
    }
    const url=new URL(location.href);url.searchParams.set('id',id);
    if(window.history?.replaceState)history.replaceState(null,'',url.toString());
+ }
+
+ function qaSelection(){
+   if(!state.quality?.filings)return [];
+   const category=$('kr-qa-kind').value,term=$('kr-qa-query').value.trim().toLowerCase();
+   return Object.values(state.quality.filings).filter(f=>{
+     const valid=category==='all'||(category==='prioritized'&&f.semantic_scope!=='full_text')||
+       (category==='no_claims'&&f.number_claims===0)||
+       (category==='sunset'&&f.suspected_sunset_polarity_claim_indices?.length>0)||
+       (category==='ocr'&&f.ocr_candidate);
+     return valid&&(!term||(f.filer+' '+f.filing_id).toLowerCase().includes(term));
+   }).sort((a,b)=>a.filing_id.localeCompare(b.filing_id));
+ }
+ function qaDisplay(){
+   if(!state.quality?.filings)return;
+   const selected=qaSelection(),per=25,pages=Math.max(1,Math.ceil(selected.length/per));
+   state.qaPage=Math.min(state.qaPage||0,pages-1);
+   writeCount('kr-qa-count',n(selected.length)+' source-linked Kaggle filings with this diagnostic; only 25 preview cards per page.');
+   writeCount('kr-qa-page','Page '+(state.qaPage+1)+' of '+pages);
+   const root=empty('kr-qa-results');
+   for(const f of selected.slice(state.qaPage*per,(state.qaPage+1)*per)){
+     const card=el('article','kr-evidence');
+     card.append(link(f.filer||'FCC filing '+f.filing_id,f.original_source_url),
+        el('p','kr-muted','Filing '+f.filing_id+' · '+roleName(f.verified_role_crosswalk)+
+         ' · '+n(f.number_claims)+' model claims · '+n(f.source_windows_model_analyzed)+' / '+
+         n(f.source_windows_available)+' text windows read.'));
+     for(const flag of f.known_interpretation_risks||[])card.append(pill(friendly(flag),true));
+     const profile=el('button','kr-action-button','View detailed filing profile');
+     profile.onclick=()=>{$('kr-filing-id').value=f.filing_id;renderFilingProfile();$('filing').scrollIntoView({behavior:'smooth'});};
+     card.append(profile,document.createTextNode(' '),link('Model JSON ↗',f.model_output_url));
+     root.append(card);
+   }
+   $('kr-qa-prev').disabled=state.qaPage===0;
+   $('kr-qa-next').disabled=state.qaPage===pages-1;
+ }
+ function initQualityExplorer(){
+   for(const id of ['kr-qa-kind','kr-qa-query'])$(id).addEventListener(id==='kr-qa-query'?'input':'change',()=>{state.qaPage=0;qaDisplay();});
+   $('kr-qa-prev').onclick=()=>{state.qaPage--;qaDisplay();};
+   $('kr-qa-next').onclick=()=>{state.qaPage++;qaDisplay();};
+   $('kr-qa-export').onclick=()=>{
+     const records=qaSelection().map(f=>({
+       filing_id:f.filing_id,filer:f.filer,semantic_scope:f.semantic_scope,
+       model_read_windows:f.source_windows_model_analyzed,total_windows:f.source_windows_available,
+       claims:f.number_claims,ocr_candidate:f.ocr_candidate,review_flags:f.known_interpretation_risks.join(';'),
+       fcc_url:f.original_source_url
+     }));
+     download('kaggle_all_flagged_filings.csv',safeCsv(
+       ['filing_id','filer','semantic_scope','model_read_windows','total_windows','claims','ocr_candidate','review_flags','fcc_url'],records));
+   };
+   qaDisplay();
  }
  function setupInputs(){
    for(const p of state.issues){
@@ -505,9 +561,11 @@
      state.rows=claims.rows;state.landscape=landscape;state.summary=summary;
      state.meta=new Map(meta.filings.map(f=>[String(f.id),f]));state.issues=summary.provisions||[];
      state.audit=Array.isArray(audit.items)?audit.items:[];
+     try{const qr=await fetch('./data/kaggle/filing_quality.json',{cache:'default'});if(qr.ok){const q=await qr.json();if(q.version==='kaggle-filing-quality-v1'&&Object.keys(q.filings||{}).length===3230)state.quality=q;}}catch(_){/* optional quality diagnostics do not disable the claim explorer */}
      // The row dataset provides organization text from source metadata;
      // do not replace affiliation-less people with inferred organizations.
      initStats();setupInputs();renderClusters();issueConnections();groupPeople();issuePanel();updateLedgerFilters();auditControls();
+     if(state.quality)initQualityExplorer();else writeCount('kr-qa-count','Per-filing diagnostics are being regenerated; the other Kaggle evidence and audit features remain available.');
      setStatus('Loaded and checked '+n(state.rows.length)+' Kaggle claim rows across all '+n(summary.completed_filings)+' readable filings. The full evidence ledger is queryable below.');
    }catch(e){
      setStatus('Kaggle evidence failed to load or validate: '+e.message+'. No incomplete counts are being shown as complete.',true);
