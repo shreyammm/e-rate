@@ -48,8 +48,8 @@
       if(stem.length<3)continue;
       groups.push({name:term,variants:[stem]});
     }
-    // General policy documents need at least a topic even when the question is short.
-    if(!groups.length)throw Error('Please include a policy topic or a substantive search term.');
+    // Even a question with no search keywords must reach full-source model research.
+    // Empty lexical groups affect only the optional evidence navigator.
     return {groups,question};
   }
   function scorePassage(txt,query){
@@ -268,7 +268,7 @@
   }
   function displayComparison(found,evidence){
     const box=$('ask-comparison');if(!box)return;box.replaceChildren();
-    box.append(el('p','ask-muted',N(found.candidates.length)+' lexical matching filings; '+N(new Set(found.candidates.map(r=>r.filer.trim().toLowerCase()).filter(Boolean)).size)+' distinct nonempty filer-name strings. These are search coverage measures, not supporters or verified people. All matching filings are processed in batches by the answer model. '+N(evidence.length)+' source excerpts previewed below.'));
+    box.append(el('p','ask-muted',N(found.candidates.length)+' lexical matching filings; '+N(new Set(found.candidates.map(r=>r.filer.trim().toLowerCase()).filter(Boolean)).size)+' distinct nonempty filer-name strings. These are search coverage measures, not supporters or verified people. The AI pathway examines ALL readable filing texts independently of lexical matching. '+N(evidence.length)+' search-hit excerpts previewed below.'));
     const table=el('table');const head=el('tr');
     for(const title of ['Source','Search cues to inspect','Answer context'])head.append(el('th','',title));
     table.append(head);
@@ -276,7 +276,7 @@
       name.append(link('['+(i+1)+'] '+(e.filer||e.id),sourceLink(e.id)));
       const labels=[];if(e.affirmative)labels.push('possible requested restriction');if(e.contrary)labels.push('possible objection or preservation language');
       cues.textContent=(labels.join('; ')||'topic-related language')+(e.ocr?' · unreviewed OCR':'');
-      context.textContent='Preview shown; every matched filing receives a model pass';
+      context.textContent='Lexical preview only; every filing receives a full-text model pass';
       row.append(name,cues,context);table.append(row);
     });
     box.append(table,el('p','ask-small','Passages use question-concept matches, optionally boosted by document-level BM25. Search cues are automatic retrieval hints. Read the passage to distinguish the author’s position from a quoted proposal or rebuttal. They are not stance labels.'));
@@ -295,12 +295,15 @@
     const box=$('ask-answer');box.replaceChildren();
     const response=String(result.answer||''), authorized=new Set(result.sourceIds.map(String));
     const refs=[...response.matchAll(/\[FCC:(\d+)\]/g)].map(m=>m[1]);
-    if(!refs.length||refs.some(id=>!authorized.has(id))) {
-      box.append(el('p','ask-warning','The comprehensive answer lacked valid original filing citations. Its draft was withheld; inspect the complete matching-filing evidence below.'));
+    if(result.claims===0) {
+      box.append(el('p','ask-muted','Full-text model analysis finished across '+N(result.analyzedFilings)+' readable filings and '+N(result.sourceWindows)+' complete text windows. No source-verifiable relevant claims were extracted. This is not proof an argument is absent.'),el('p','ask-answer-body',response));
       return;
     }
-    const lead=el('p','ask-muted','All '+N(result.processed)+' lexically matching filing records were sent through the on-device model in batches, then progressively synthesized. This is not an independently validated stance census; other relevant filings might use different language.');
-    box.append(lead);
+    if(!refs.length||refs.some(id=>!authorized.has(id))) {
+      box.append(el('p','ask-warning','The full-corpus model answer lacked valid original filing citations. Its draft was withheld; the analysis ledger remains exportable.'));
+      return;
+    }
+    box.append(el('p','ask-muted','Every readable filing was processed: '+N(result.analyzedFilings)+' filings · '+N(result.sourceWindows)+' source-text windows · '+N(result.claims)+' extracted, source-linked claim rows · '+N(result.cachedWindows)+' windows restored from checkpoints. All original body text was passed to the model in windows, followed by multi-level synthesis. These are unvalidated machine interpretations, not verified stance percentages.'));
     const p=el('p','ask-answer-body');
     for(const part of response.split(/(\[FCC:\d+\])/g)) {
       const m=part.match(/^\[FCC:(\d+)\]$/);
@@ -308,6 +311,18 @@
       else p.append(document.createTextNode(part));
     }
     box.append(p);
+    const download=el('button','ask-submit','Export full model evidence ledger (JSON)');
+    download.type='button';
+    download.onclick=()=>{
+      const blob=new Blob([JSON.stringify({
+        question:$('ask-question').value,scanned:result.scanned,analyzedFilings:result.analyzedFilings,
+        sourceWindows:result.sourceWindows,sourceCoverage:result.coverage,
+        extractedClaimRows:result.claims,ledger:result.ledger
+      })],{type:'application/json'});
+      const url=URL.createObjectURL(blob),a=document.createElement('a');
+      a.href=url;a.download='fcc_question_full_corpus_ledger.json';a.click();URL.revokeObjectURL(url);
+    };
+    box.append(download);
   }
   function showAnswer(response,evidence){
     const box=$('ask-answer');box.replaceChildren();
@@ -356,7 +371,7 @@
       // Full unabridged candidate set for deterministic, source-linked exploration.
       if(typeof window!=='undefined')window.dispatchEvent(new CustomEvent('erate:scan-complete',{detail:{found,evidence}}));
       if(isPopulation(q))warn.append(el('p','ask-warning','A scan of every document does not itself validate counts of supporters or opponents. Search matches are not stance classifications; use source-reviewed coding for population estimates.'));
-      if(!evidence.length){status('Every source was scanned; no relevant lexical evidence was located. That is NOT proof nobody took the position. Try reformulating the question.');return;}
+      if(!evidence.length)status('No lexical matches found; the optional AI path will still examine all original filing text.');
       const aiCheckbox=$('ask-use-ai');
       if(aiCheckbox&&!aiCheckbox.checked){
         const box=$('ask-answer');
@@ -370,20 +385,21 @@
         status('Complete source search succeeded. Evidence-only mode; no model requested.');
         return;
       }
-      status('All filings searched. Preparing a source-cited answer from selected evidence…');
+      status('Loading on-device model to examine EVERY source-text window; completed results will be checkpointed locally…');
       try{
         const model=await loadModel();
-        if(!window.ErateExhaustiveSynthesis)throw Error('Comprehensive synthesis module unavailable; refusing a capped answer.');
-        const deep=await window.ErateExhaustiveSynthesis.run({
-          question:q,candidates:found.candidates,engine:model,cancelled:()=>researchCancelled,
+        if(!window.ErateAllTextResearch)throw Error('Full-source model reader is unavailable; refusing a partial answer.');
+        const deep=await window.ErateAllTextResearch.run({
+          question:q,meta,streamShard,engine:model,cancelled:()=>researchCancelled,
           onProgress:p=>{
-            if(p.phase==='read')status('Deep corpus analysis: model reviewed '+N(p.done)+' / '+N(p.total)+' matching filings · batch '+p.batch+'/'+p.batches+'.');
-            else if(p.phase==='merge')status('Synthesizing all batches: level '+p.level+' · '+p.done+'/'+p.total+' groups merged.');
-            else status('Preparing the final cited synthesis…');
+            if(p.phase==='source')status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings reached · '+N(p.chunks)+' original-text windows analyzed (cached: '+N(p.cached)+') · current filing '+p.id+' '+N(p.end)+'/'+N(p.length)+' characters.');
+            else if(p.phase==='filings')status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings fully inspected · '+N(p.chunks)+' source windows · '+N(p.cached)+' checkpoint hits.');
+            else if(p.phase==='synthesis')status('Merging ALL source-grounded findings: level '+p.level+' · '+N(p.done)+' / '+N(p.total)+' batches.');
+            else status('Every filing checked. Validating and combining extracted claims…');
           }
         });
         showExhaustiveAnswer(deep);
-        status('Comprehensive synthesis completed across all '+N(deep.processed)+' lexically retrieved filings, after scanning '+N(found.scanned)+' corpus records.');
+        status('Full text examined: '+N(deep.scanned)+' source records, '+N(deep.analyzedFilings)+' readable filings, '+N(deep.sourceWindows)+' original-text windows, '+N(deep.claims)+' extracted claim rows.');
       }catch(err){
         $('ask-answer').append(el('p','ask-warning','On-device model answer unavailable: '+err.message+'. Source excerpts and all matching filing links remain available below.'));
         status('Complete source scan succeeded. Generative answer unavailable on this device.');
