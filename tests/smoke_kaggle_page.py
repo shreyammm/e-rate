@@ -22,7 +22,10 @@ def run():
     try:
         time.sleep(1.5)
         with sync_playwright() as p:
-            browser=p.chromium.launch(headless=True,args=["--no-sandbox"])
+            try:
+                browser=p.chromium.launch(headless=True,channel="chrome",args=["--no-sandbox"])
+            except Exception:
+                browser=p.chromium.launch(headless=True,args=["--no-sandbox"])
             page=browser.new_page(viewport={"width":1440,"height":950})
             exceptions=[]
             page.on("pageerror",lambda e:exceptions.append(str(e)))
