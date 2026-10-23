@@ -1,0 +1,73 @@
+{
+  "summary": "The comment does not contain any policy claims related to the FCC E‑Rate topics listed. No E‑Rate policy claims identified in the provided text. No FCC E‑Rate policy claims are present in the provided text. No explicit policy claims or requested actions are present in the provided text. The comment argues that state laws blocking municipal broadband are driven by corporate lobbying, that municipal broadband is essential infrastructure, and that corporate providers prioritize campaign contributions over broadband investment.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "oppose state laws blocking municipal broadband",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "normative_value",
+      "argument": "State laws that block municipal broadband are driven by corporate lobbying and undermine competition.",
+      "evidence_quote": "rms the public interest. “Let’s be clear: industry-backed state laws to block \nmunicipal broadband only exist because pliant legislators are listening to their Big Cable and \nBig Telecom paymasters,”",
+      "evidence_start": 463321,
+      "evidence_end": 463520,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "reduce corporate influence on broadband policy",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "legal_claim",
+      "argument": "Corporate providers prioritize campaign contributions over broadband investment, distorting policy priorities.",
+      "evidence_quote": "r FCC Commissioner Michael Copps: “Let’s be clear: industry-\nbacked state laws to block municipal broadband only exist because pliant \nlegislators are listening to their Big Cable and Big Telecom",
+      "evidence_start": 464408,
+      "evidence_end": 464603,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "limit corporate lobbying in broadband legislation",
+      "reason_family": "fraud_integrity",
+      "claim_kind": "legal_claim",
+      "argument": "Big Cable and Big Telecom paymasters influence legislators to block municipal broadband.",
+      "evidence_quote": "ening to their Big Cable and Big Telecom paymasters,” \nhe said in a statement. “These corporate providers invest in campaign \ncontributions rather than in deploying high quality Broadband”",
+      "evidence_start": 464563,
+      "evidence_end": 464751,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "promote municipal broadband initiatives",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Municipal broadband provides essential high‑speed access that supports education, health, and economic development.",
+      "evidence_quote": "Carolina cases illustrate that broadband fiber access has become a vital \nfacilitator of health, safety, education, civic participation, jobs, economic development, and the \nquality of life and",
+      "evidence_start": 468244,
+      "evidence_end": 468437,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080208",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080208",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-09T13:07:37.029Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4508ec9dff31686f74126f813653f8ca55582a2c5cc7b1512c46b1120f967970",
+  "params_key": "00f06bc80151623a90eb4b9a386b06a4edba697fad21d9b5868fe921f9dbf0e1",
+  "model": "gpt-oss:20b",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 152,
+  "source_windows_model_analyzed": 5
+}

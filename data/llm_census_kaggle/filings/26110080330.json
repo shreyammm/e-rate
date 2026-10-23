@@ -1,0 +1,49 @@
+{
+  "summary": "The letter from United Data Technologies and Tennessee school leaders urges the FCC not to cut E‑Rate support for schools classified as urban, arguing that many such areas contain rural, economically disadvantaged communities. They also emphasize the need to keep Category Two services (internal connections and equipment) funded to maintain reliable, secure connectivity for instruction and safety. No explicit policy claims or requested actions are present in the provided text. No policy claims identified in the provided text. No explicit policy claims identified in the provided text.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "maintain Category Two services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The letter stresses the critical importance of continued support for Category Two services to provide reliable and secure connectivity throughout school facilities.",
+      "evidence_quote": "he emphasized the critical importance of continued support for \nCategory Two services, including internal connections and equipment necessary to provide \nreliable and secure connectivity throughout",
+      "evidence_start": 3253,
+      "evidence_end": 3450,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "do not eliminate E‑Rate support for schools classified as urban",
+      "reason_family": "other",
+      "claim_kind": "alternative_design",
+      "argument": "The letter argues that many urban‑classified areas contain rural, economically disadvantaged communities that would lose essential connectivity if E‑Rate support were cut.",
+      "evidence_quote": "ort \nfor areas classified as urban could have devastating consequences for schools and students in \nthese communities, including substantial financial burdens on school districts and reduced \naccess",
+      "evidence_start": 4178,
+      "evidence_end": 4376,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080330",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080330",
+  "filer_raw": "United Data Technologies, Inc. | Deborah Taylor Tate | Tennessee Organization of School Superintendents",
+  "date_submission": "2026-10-09T18:41:52.584Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "cd310347393b6a63a12e6272fcbba548809f11b88fa46122c5338dc2c8871a7a",
+  "params_key": "b37ec2261df4ae1d0b584665bdc1245c5a9ca33fa6007bf67c2a0b3a3b81aac2",
+  "model": "gpt-oss:20b",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 8,
+  "source_windows_model_analyzed": 5
+}

@@ -1,0 +1,49 @@
+{
+  "summary": "The Digital Childhood Council argues that schools must establish clear, human‑reviewed accountability for AI‑driven educational tools and that schools cannot rely solely on vendor‑controlled filters to protect students’ disclosures. The Digital Childhood Council urges the FCC to clarify the definition of “monitoring” in CIPA for generative AI systems and to require schools to document the monitoring process, including vendor and school steps, so that minors’ risk statements are effectively acted upon. No policy claims identified in the provided text.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "Require schools to implement human‑reviewed monitoring of AI‑driven tools",
+      "reason_family": "other",
+      "claim_kind": "implementation_burden",
+      "argument": "Schools must have clear, human‑reviewed oversight of AI conversations to ensure student disclosures are properly handled.",
+      "evidence_quote": "range County’s contract for its tutoring system states that the vendor’s \nconstraints “cannot be relied upon to screen user queries or filter responses” and places \nresponsibility for “conducting",
+      "evidence_start": 4347,
+      "evidence_end": 4542,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "clarify monitoring definition and require documentation of steps",
+      "reason_family": "child_safety",
+      "claim_kind": "alternative_design",
+      "argument": "The Council argues that the term “monitoring” is ambiguous and that schools must explicitly document how a minor’s risk statement is processed by both the system and school staff.",
+      "evidence_quote": "Council asks the Commission (see ¶ 13B) whether the certification that a school’s \nInternet safety policy includes “monitoring the online activities of minors” includes, for a \nsystem that generates",
+      "evidence_start": 6541,
+      "evidence_end": 6739,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_monitoring_privacy": "support"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080687",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080687",
+  "filer_raw": "Digital Childhood Council",
+  "date_submission": "2026-10-12T19:31:24.275Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1fdbb4a006483fef6320eb8a008a3f119a49d7ebcd29a2557a4ff5baba6b74a4",
+  "params_key": "5fb1490a9942702eca8bb1437b2d04196a24107be2bc7e8f4a37828b7025ed82",
+  "model": "gpt-oss:20b",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 460,
+  "source_windows_model_analyzed": 5
+}
