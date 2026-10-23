@@ -1,0 +1,37 @@
+{
+  "summary": "The FCC proposal to sunset E-Rate is opposed by the author, who emphasizes the importance of preserving the program for maintaining essential broadband infrastructure in schools and libraries. The technology director urges the FCC to protect the E-Rate program from sunsetting or elimination, emphasizing its critical role in providing reliable broadband for schools and students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal to sunset E-Rate would increase operational costs for school districts.",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology continue to evolve. For my district, reducing or eliminating E-Rate support would have a direct and tangible impact.",
+      "evidence_start": 1761,
+      "evidence_end": 1980,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076258",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076258",
+  "filer_raw": "David Fair",
+  "date_submission": "2026-09-10T16:12:04.882Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8ef57ebd6727955a5c7432adf581c98545fcc6e29ebd999a19a9b63104db5420",
+  "params_key": "0e2df1c3a75ed40ead2b64c7f21ecf420bce3ece99ae9c43fd43ec10988678ee",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The library urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of broadband in modern public education and the potential impact of program cuts on library operations. Library director urges preservation of E-Rate program to ensure access to broadband for students and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would have direct and tangible impact on library operations",
+      "evidence_quote": "In Indiana we are facing other budget cuts due to state changes. If we are hit with that plus the loss of E-Rate support we will have to majorly cut cultural programs, marketing, security officers, growing readers tutors and potentially other staff cuts such as library pages.",
+      "evidence_start": 1955,
+      "evidence_end": 2231,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079761",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079761",
+  "filer_raw": "Kristen L Edson",
+  "date_submission": "2026-10-07T13:54:40.209Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dd6a80606dcee8a67950408b62dfc02ecee3bcf69fdc40b6c727edabfbe874cc",
+  "params_key": "dd2977971bd704dd71ad9fbe56d264801cd184e9c237fe92b762d388ac2af701",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

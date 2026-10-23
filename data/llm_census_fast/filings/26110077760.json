@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern public education. The comment urges preservation of E-Rate support to ensure schools maintain necessary connectivity for educational access and modernization, emphasizing the importance of the program for students' success and the economy. The stakeholder is a school district superintendent. ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase costs for districts like Chicago Ridge School District 127.5",
+      "evidence_quote": "Chicago Ridge School District 127.5 has received $312,452 in committed federal E-Rate support over funding years 20 21–2025 — an average of roughly $62,490 a year toward the connections our students depend on.",
+      "evidence_start": 2728,
+      "evidence_end": 2937,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077760",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077760",
+  "filer_raw": "Adam Thorns",
+  "date_submission": "2026-09-22T20:47:31.823Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "18bebdc4856656c2d428d73d7133043eab871753b9e635ba99d22bba6e00b5c8",
+  "params_key": "c0be0049b44ac525b30eb83cc543074b17b97f0f2783af9c543398ac882b22e8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school community urges the FCC to preserve the E-Rate program, emphasizing its essential role in providing reliable broadband infrastructure for modern public education and the potential financial and educational impact of its loss. The comments urge protection of the E-Rate program, emphasizing its importance for providing connectivity and infrastructure for education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "protect E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Any proposal to sunset or eliminate the E-Rate program would undermine the connectivity and infrastructure that schools need for education.",
+      "evidence_quote": "Our students deserve access to the tools they need to learn and succeed regardless of where they live or the ir family’s financial circumstances.",
+      "evidence_start": 5355,
+      "evidence_end": 5500,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076990",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076990",
+  "filer_raw": "Maureen Burke",
+  "date_submission": "2026-09-18T17:23:23.270Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "6e6f41f792583497a51c545fc74e12a6bc74d71484c419cabaef5292f1ef2fcd",
+  "params_key": "e7f698485b2c72890f524d3e186482467a61cd3a8ffeb300ff77fb913966ca47",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of reliable broadband for modern education. The comments emphasize the importance of maintaining E-Rate funding to ensure students have access to necessary connectivity for education. The Network Manager urges the Commission to protect E-Rate and prevent any cuts or limitations that could hinder students' ability to participate in modern education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would cause cuts to other programs/services",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities",
+      "evidence_start": 2934,
+      "evidence_end": 3150,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077889",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077889",
+  "filer_raw": "Ted Lund",
+  "date_submission": "2026-09-23T17:08:38.867Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e1a59d28d4115442b67665f10eecef6335866a61b8d50c59ee7135e8e87b76c",
+  "params_key": "6afcb0861f0a7a8cf26f75f0927bd3c10061c7797ba06953c8dc45d5f11f9269",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

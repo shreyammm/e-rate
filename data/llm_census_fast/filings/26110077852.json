@@ -1,0 +1,49 @@
+{
+  "summary": "The technology director of a school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of reliable broadband in modern public education and the potential budget impacts of reducing or eliminating E-Rate support. The school district urges the FCC to maintain the E-Rate program to ensure students have access to necessary connectivity for education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, districts would have to downgrade internet speed significantly, leading to budget cuts in other areas",
+      "evidence_quote": "If we were to keep the speed we currently have then many other areas of the technology budget would get cut, including funding for door access systems and video camera replacements/upgrades. Those costs would ultimately compete with the resources we use to support students and educators.",
+      "evidence_start": 2571,
+      "evidence_end": 2859,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The E-Rate program is essential for providing connectivity to schools and libraries, enabling students to access educational resources and participate in modern education.",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5646,
+      "evidence_end": 5803,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077852",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077852",
+  "filer_raw": "Brian Vincent | Fisher Community Unit Dist. 1",
+  "date_submission": "2026-09-23T15:58:42.509Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1280065b37f362e5f7d14d3d76909e9c43d78a9b712f7e92e0e5f33d748a76b0",
+  "params_key": "ae427fd057cf26f06b63faee1d99d8c6707e10cf412bc32020f99421f07e79be",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission proposal to sunset E-Rate program faces opposition from school district and other stakeholders. School district urges preservation of E-Rate program to maintain essential broadband infrastructure and avoid financial burden. The proposal to sunset E-Rate is opposed due to its potential impact on funding and budget constraints. The school district emphasizes the importance of reliable broadband for modern education and the direct cost implications of losing E-Rate The school district urges the FCC to protect the E-Rate program and ensure schools can continue providing students with reliable, affordable, and effective connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity necessary for modern education",
+      "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 5243,
+      "evidence_end": 5469,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078264",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078264",
+  "filer_raw": "Hershey Public Schools",
+  "date_submission": "2026-09-25T13:48:07.946Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9973c0795fa19a3d9c74f98e59ecaf77f775a0971f4704dd60e679450642295a",
+  "params_key": "edc989f4bc7f1f5023aaf535c217db3647283578f650bd23843e6218d9000a02",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

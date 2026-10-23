@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to maintain essential broadband infrastructure for schools and libraries, emphasizing the cost implications of program elimination. The school superintendent urges the FCC to protect the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the importance of maintaining the program's funding and infrastructure for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Losing E-Rate would cost the district around $700k, which would eliminate 6 teachers or 11 support staff.",
+      "evidence_quote": "Losing E-Rate would cost us around $700k; which accounts to roughly 6 teachers OR 11 support staff being eliminated in the budget process.",
+      "evidence_start": 2364,
+      "evidence_end": 2502,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076479",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076479",
+  "filer_raw": "Gary Keith Roberts",
+  "date_submission": "2026-09-12T15:11:12.000Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "7b83052d7070c0396bb26faafa0b9e8b124751789d56fa8c74d80f5f6aa9c383",
+  "params_key": "ff8b8a575d5700b3accb65431ab0fd48946799d3326c080ffd91d8ab16020e13",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

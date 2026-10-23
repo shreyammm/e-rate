@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to ensure broadband access for schools and libraries, emphasizing the program's essential role in modern public education and the potential financial burden of its reduction. The comment urges preservation of E-Rate funding and modernization efforts rather than reduction. It cites the importance of E-Rate for enabling connectivity and modern education infrastructure. The stakeholder (James C. Soltis, Ed.D., Superintendent) urges the Commission to protect E-Rate funding.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build connectivity necessary for educational access",
+      "evidence_quote": "Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4454,
+      "evidence_end": 4709,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078844",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078844",
+  "filer_raw": "Roanoke County Public Schools",
+  "date_submission": "2026-09-30T12:38:06.466Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "35de56ae148769f12e425d0ad3b25f95a1614e1b80c6b9da4125b1fab9b9ef48",
+  "params_key": "fe5525298fc4ce3537a6f29bc9bff9459cf7c0574973690318c1f19159a78055",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

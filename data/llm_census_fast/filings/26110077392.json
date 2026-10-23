@@ -1,0 +1,37 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure reliable broadband infrastructure for schools and libraries. The text expresses support for maintaining E-Rate and its role in providing connectivity for schools and libraries, emphasizing the importance of the program for educational access and modernization.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for connectivity and infrastructure needed by schools",
+      "evidence_quote": "I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5247,
+      "evidence_end": 5404,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077392",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077392",
+  "filer_raw": "Laura Chastain",
+  "date_submission": "2026-09-21T14:57:16.545Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "03c489fd266e08c06655a54b071246620b5d0d12175e70e631cdda763e159ef4",
+  "params_key": "5269b306b76a94e62b54364b2676d18b50d6eccfb3d6686d15e0bbd49c042c4b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

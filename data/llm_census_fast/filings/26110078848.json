@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential school infrastructure and warns against any proposal to sunset or eliminate the program, citing the potential financial and operational impacts on their district. The superintendent urges the FCC to protect the E-Rate program, reject proposals to sunset or eliminate it, and work with schools to strengthen and modernize the program rather than reduce its role in public education. The superintendent emphasizes the importance of E-Rate for providing reliable, affordable, and effective connectivity to students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Rejecting sunset proposals would preserve the program's funding and continuity",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4607,
+      "evidence_end": 5158,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078848",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078848",
+  "filer_raw": "Fairfield Community High School District #225",
+  "date_submission": "2026-09-30T13:21:49.458Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6c160731ffc823dbee3e8b57885a46857ec5682dedbe0e5e627fef36dab08779",
+  "params_key": "62197156e3a67765b8d16762da873f04b2377f8f7eaaeda25864c9737ebb7b5b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "E-Rate is essential for modern public education, providing foundational infrastructure for schools and libraries. Curtailing E-Rate would have significant negative impacts on students, educators, and communities, particularly in rural and economically challenged areas. The program is crucial for maintaining reliable networks, supporting cybersecurity mandates, and providing necessary bandwidth for educational purposes. Ending E-Rate would leave districts unable to maintain their networks and una The comment from a school district in East Central Ohio argues against eliminating or sunsetting the E-Rate program, emphasizing its critical role in providing affordable broadband to districts. The comment cites the cost implications of removing E-Rate and the impact on the shared-services model used by rural and mid-sized districts.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "end",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Ending E-Rate would inflict lasting harm on students, educators, and communities, particularly those in rural and economically challenged areas.",
+      "evidence_quote": "Curtailing this program would inflict lasting harm on students, educators, and communities we serve — particularly those in rural and economically challenged areas that depend most heavily on federal universal service support.",
+      "evidence_start": 468,
+      "evidence_end": 694,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110038016",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110038016",
+  "filer_raw": "East Central Ohio ESC",
+  "date_submission": "2026-07-21T15:52:23.273Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "98e1db056a327a3a190e4651a9e4bd821c4f16528bf4455e7c7928df9f5e81e0",
+  "params_key": "080ad10026b1290e222a1c0434c56b1e2a6f174a34338b00ba11390fca0b3fb1",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

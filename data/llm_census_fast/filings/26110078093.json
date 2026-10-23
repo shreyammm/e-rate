@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate for maintaining essential school infrastructure and urges the FCC to preserve the program. The comments urge preserving E-Rate funding and support for connectivity and infrastructure, opposing unnecessary restrictions and advocating for modernization rather than reduction.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate, school districts would be forced to make impossible choices between scaling back vital educational technology and cutting other core educational services",
+      "evidence_quote": "In KCSD 96, this connectivity powers critical operational infrastructure—including our digital safety and visitor management systems, electronic student information systems including health platforms, and safety and security platforms, and —before a single instructional lesson even begins.",
+      "evidence_start": 2827,
+      "evidence_end": 3117,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078093",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078093",
+  "filer_raw": "Kathryn Sheridan",
+  "date_submission": "2026-09-24T16:09:33.814Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9a98f3d9007c702cc0841fff1ba405c399f5e5a01e0664273b39c9748e73eaf0",
+  "params_key": "e506cd2aa45f1286af2dad12b99fdef2923064b70b6a4acb7e3b167707223c4d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

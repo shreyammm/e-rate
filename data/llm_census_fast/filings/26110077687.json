@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urged to preserve and strengthen E-Rate program for public school districts, emphasizing the essential role of reliable broadband in modern education infrastructure and operations. The comments emphasize the importance of preserving E-Rate funding and infrastructure for schools and libraries, arguing against any cuts or limitations. The comments highlight the role of E-Rate in providing connectivity for students and the potential negative impact of reducing its funding.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for schools and libraries, leading to increased costs for connectivity.",
+      "evidence_quote": "support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4450,
+      "evidence_end": 4809,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077687",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077687",
+  "filer_raw": "Limestone Walters #316",
+  "date_submission": "2026-09-22T17:30:56.377Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "223996d01648d871fcc1cc4f3b7c8123ed68720ae4ae82c65d83b2739f71e077",
+  "params_key": "2e7eb8dd7e84339002f2fc57d3de7d1829602427b7a2ca5b5195a7e2e8773949",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

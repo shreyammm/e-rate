@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving the E-Rate program for maintaining reliable broadband infrastructure, which is essential for modern public education. The district highlights the ongoing costs and benefits of E-Rate support and urges the FCC to reject proposals to sunset or eliminate the program. The comments urge the FCC to protect the E-Rate program from sunsetting or elimination, emphasizing its importance for maintaining connectivity in modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without eRate support, some upgrades would have taken longer or required districts to cover greater costs",
+      "evidence_quote": "Without eRate support, some of these upgrades would have taken longer to complete or required the district to cover a greater share of the cost. Continued support remains necessary because equipment must be maintained and replaced, internet service is an ongoing expense, and network capacity must keep pace with instructional and operational needs.",
+      "evidence_start": 1692,
+      "evidence_end": 2041,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110081186",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081186",
+  "filer_raw": "Mary O'Meara",
+  "date_submission": "2026-10-13T20:11:13.372Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f179ff7e794e85e6f93b559cd7f660498db4011b84746a743a3b104b712b8a29",
+  "params_key": "8ce0bbf1b55fd33b776faa822c524570a06f9361f35a76be06eb1afc02c1258e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

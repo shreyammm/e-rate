@@ -1,0 +1,49 @@
+{
+  "summary": "Step Up Suncoast, Inc. opposes limiting or sunsetting E-Rate, emphasizing its critical role in providing essential connectivity for schools.  The school district discusses the importance of preserving the core E-Rate program to avoid cost cuts and budget constraints. They recommend preserving the program and avoiding unnecessary changes that would reduce access or increase administrative burden.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is a critical program that helps schools provide reliable, affordable connectivity for teaching, learning, operations, student support, and community service. Limiting or sunsetting E-Rate would eliminate a vital funding source for schools.",
+      "evidence_quote": "E-Rate is a critical program that helps schools provide reliable, affordable connectivity for teaching, learning, operations, student support, and community service.",
+      "evidence_start": 698,
+      "evidence_end": 863,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reduced or lost E-Rate funding would worsen the situation and require more cuts",
+      "evidence_quote": "We typically budget to replace all hardware after five years in circulation. Because of rising costs, we are already extending the lifespan of our equipment and delaying replacement. Budget constraints from flat funding and inflation have limited us to replacing fewer laptops at a time, and we now use more hardware beyond its planned lifespan. This year, we are also weighing layoffs and reduced staff hours.",
+      "evidence_start": 4534,
+      "evidence_end": 4944,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080599",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080599",
+  "filer_raw": "Step Up Suncoast, Inc.",
+  "date_submission": "2026-10-12T15:27:22.865Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a94a63ebaa73693a9e178cfb16adb78607ad20794ede78fa5983b3a808544e1b",
+  "params_key": "bd77d24943c8e42beb8b93446659529d2df866d10c51ae95a3e773e8f4055b89",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

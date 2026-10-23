@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for their rural school, which is essential for student safety, learning, and modern technology use. They urge the FCC to preserve and strengthen the program rather than eliminate it. The comments urge the FCC to maintain the E-Rate program and reject any proposals to sunset or phase it out, emphasizing its importance for providing digital tools and resources to students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would result in significant local budget shortfalls",
+      "evidence_quote": "For a small rural district like Canute, reducing or eliminating E-Rate support would be devastating. Canute ISD 11 received $154,213 in committed federal E-Rate support over funding years 2021–2025 averaging roughly $30,843 annually.",
+      "evidence_start": 2633,
+      "evidence_end": 2866,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078249",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078249",
+  "filer_raw": "Brian Morris",
+  "date_submission": "2026-09-25T12:56:34.565Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "affd7049a86aa77792d3e780f0f36f7c9ec66c349de68027637a3ccdd83f8a6c",
+  "params_key": "01de0f9e5eb5327f85c49b8ba9e3ea1827761e1122f860097ba6817b38054e82",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

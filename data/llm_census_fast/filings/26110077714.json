@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to sunset or eliminate it, and emphasizes the program's essential role in providing reliable broadband infrastructure for modern public education. The school district urges the FCC to protect E-Rate funding and ensure schools can maintain necessary connectivity for students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build necessary connectivity",
+      "evidence_quote": "Preserve support for the connecti vity and internal network infrastructure schools need to provide reliable educational access",
+      "evidence_start": 4602,
+      "evidence_end": 4728,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110077714",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077714",
+  "filer_raw": "Curtis Saindon, Woodridge School District 68 (IL)",
+  "date_submission": "2026-09-22T18:27:05.434Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "088d2a8053c593c7419728224b9948017a10e6884802d30742e1ff38d7644d14",
+  "params_key": "b2718188f84a307cd778fa909d5d239dcdb95be7b865c11991b059f76686e242",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

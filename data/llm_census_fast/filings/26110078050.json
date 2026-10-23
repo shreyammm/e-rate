@@ -1,0 +1,49 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure broadband access for schools and libraries. The comments urge preserving E-Rate support to ensure schools maintain necessary connectivity for educational access, emphasizing the importance of the program in preparing students for modern education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate would have a direct and tangible impact on schools in the community",
+      "evidence_quote": "Connectivity must be maintained, upgraded, secured, and scaled, and reducing or eliminating E-Rate support would have a direct and tangible impact on schools in my community. It would be astronomical for us. We would not just lose a few things - our entire way of life and services and resources we can provide students would be altered. Those costs would ultimately compete with the resources our schools use to support students and educators.",
+      "evidence_start": 2253,
+      "evidence_end": 2697,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve support for connectivity and internal network infrastructure schools need",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build necessary connectivity",
+      "evidence_quote": "Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "evidence_start": 4571,
+      "evidence_end": 4696,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078050",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078050",
+  "filer_raw": "Samantha Skubal | JS Morton High School District 201",
+  "date_submission": "2026-09-24T13:32:37.909Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e93e212bf253dd94d81ed588c90d3c2343ab36ede1f38421f980662bfec10df5",
+  "params_key": "4151f5d44610c33e591a63a723239c3cc8634fc4aa1f43867c794d09a4a1d8f1",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

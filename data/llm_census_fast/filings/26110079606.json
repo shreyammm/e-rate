@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve the E-Rate program, emphasizing the essential role of broadband connectivity in education and the potential financial and operational impacts of its elimination. The school district opposes proposals to sunset or eliminate the E-Rate program, emphasizing the importance of preserving and improving the program for public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to sunset or eliminate E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would undermine the program's success and hurt schools and communities.",
+      "evidence_quote": "I therefore respectfully urge the Commission to:\n1. Reject any proposal to sunset or eliminate the E-Rate program;",
+      "evidence_start": 4359,
+      "evidence_end": 4473,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079606",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079606",
+  "filer_raw": "Jolie Carroll | St Mary School, Aberdeen, WA",
+  "date_submission": "2026-10-06T16:11:44.037Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "1d8dc70e68bcfebd998469f2ce549a5c8c6e2e99ef6cc6bbaa1a11cfd99ca713",
+  "params_key": "40dde557263386a6fed124206cffb61e870185df12d4ec69fbe947c04cfddcc8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The FCC proposal to sunset E-Rate is opposed by a teacher who emphasizes the essential role of broadband in modern public education and the potential impact on their community. The comments urge preserving E-Rate funding and infrastructure, arguing that limiting or sunsetting it would lead to increased costs for schools and libraries. The comments emphasize the importance of E-Rate for providing reliable, affordable connectivity to students and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen the E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The FCC’s proposal to sunset E-Rate would have a direct and tangible impact on schools in the community.",
+      "evidence_quote": "If this cost were shifted to the local budget, our community might have to reduce funding for other important needs such as classroom resources, student programs, staff support, or facility improvements.",
+      "evidence_start": 2358,
+      "evidence_end": 2561,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078042",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078042",
+  "filer_raw": "Roberto Hernandez",
+  "date_submission": "2026-09-24T13:13:08.441Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3e39d6efb90a2459d46d72f18ba2ea0814768a286b8492175110e233e5fbf178",
+  "params_key": "f0f2f96e6420694dcd268994e719d7bed73ed669d6dcf57879619a92fc5a66fa",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

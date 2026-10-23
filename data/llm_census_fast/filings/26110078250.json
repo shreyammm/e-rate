@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for their rural school, which is essential for student safety, learning, and modern technology initiatives. They urge the FCC to preserve the program to avoid local budget overruns and cost increases. The comments emphasize the importance of preserving E-Rate funding to ensure access to digital tools for students in rural areas and to maintain educational equity. The director of technology from Canute Independent School District highlights the need to preserve the program to provide students with the same opportunities as those in larger centers. The comments oppose any attempts to sunset or restrict E-Rate funding, arguing that it is crucial for preparing students for a technology-driven eco",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate would lead to local budget overruns and cost increases",
+      "evidence_quote": "If forced to absorb those recurring enterprise infrastructure costs locally, we would face impossible choices: deferring campus security updates, eliminating academic electives and extracurricular programs like esports, or compromising instructional staffing.",
+      "evidence_start": 3058,
+      "evidence_end": 3317,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078250",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078250",
+  "filer_raw": "Brian Morris",
+  "date_submission": "2026-09-25T12:59:25.243Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "889c07038ffe51674647ad69895eecb334c583fea17c91c66d5fc05793acbab9",
+  "params_key": "02de1926cc91fa60f93f46133ceef82e525a1a3c9d6b5824660b2239af0052ce",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

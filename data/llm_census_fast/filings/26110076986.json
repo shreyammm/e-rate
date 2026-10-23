@@ -1,0 +1,49 @@
+{
+  "summary": "The school emphasizes the critical role of E-Rate in maintaining reliable connectivity for their school, which is essential for their educational programs and operations. They argue that preserving E-Rate is necessary to avoid increased costs and budget constraints. The comments emphasize the importance of preserving and strengthening the E-Rate program, not reducing its funding or eligibility. The principal urges the Commission to reject proposals to sunset or eliminate the program and to work with schools to modernize E-Rate rather than reduce its role in public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase infrastructure costs and force budget cuts",
+      "evidence_quote": "Without that support, our total annual network expenses would reach approximately $48,000, including $26,000 for Category 1 services and $22,000 for Category 2 equipment.",
+      "evidence_start": 2475,
+      "evidence_end": 2645,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate's success over the last three decades should be a reason to preserve and strengthen it, not a reason to assume the work is finished",
+      "evidence_quote": "I respectfully urge the Commission to: 1. Reject any proposal to sunset or eliminate the E-Rate program",
+      "evidence_start": 4731,
+      "evidence_end": 4834,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076986",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076986",
+  "filer_raw": "Mrs. Andrea Zimmerman",
+  "date_submission": "2026-09-18T17:15:54.444Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "94ab2bd2748efe83284fed705abe9f406d6af9a44c03fd7897f5dd3d6b0a5127",
+  "params_key": "d1fc4b96def4265ea390091cdb10c67d230234c75ac6b8df7993a0d266658891",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

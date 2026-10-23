@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve E-Rate funding, emphasizing its critical role in providing essential broadband infrastructure for modern education. The comments emphasize the importance of preserving the E-Rate program and its role in providing reliable broadband access to schools and libraries. The comments urge the FCC to reject proposals to sunset or eliminate the program, narrow its eligibility, or restrict its support based on geography or other criteria. The comments highlight the program's role in enabling schools to provide students with the necessary tools for modern education and urge the FCC to protect the program to ensure acces",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Rejecting sunset proposals would prevent unnecessary cost reductions",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4602,
+      "evidence_end": 5153,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079495",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079495",
+  "filer_raw": "Dr. Joseph Farnsworth Superintendent of the Show Low Unified School District",
+  "date_submission": "2026-10-05T21:42:08.792Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3626a9d6c5270de03e174f7d8409851971dab261347fde3d46aed04a5de32b44",
+  "params_key": "2a8ed5be0babcb8b304ffbae4bde66d1268c273f52dddcc93d0982d09eaedabb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

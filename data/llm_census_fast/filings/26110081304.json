@@ -1,0 +1,37 @@
+{
+  "summary": "The submission urges the FCC to reject proposals to eliminate or limit E-Rate funding, emphasizing the program's critical role in supporting public schools and libraries with affordable, reliable internet access. The comments emphasize the importance of E-Rate funding for ensuring affordable access to reliable and sustainable service for schools and libraries, which is essential for building on advancements and meeting the evolving educational needs of students. Cutting E-Rate would widen digital inequities and leave vulnerable communities digitally isolated and exposed.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Cutting E-Rate will widen digital inequities, disproportionately weakening rural, urban, and lower-income communities that lack the tax base to absorb inflated operational costs. In under-resourced areas, districts would have no choice but to downgrade connection speeds below functional modern needs, as the minimum FCC bandwidth standards are simply inadequate to run today's high-quality digital learning content.",
+      "evidence_quote": "ld widen digital inequities, disproportionately weakening \nrural, urban, and lower-income communities that lack the tax base to absorb these inflated \noperational costs. In under-resourced areas, districts would have no choice but to downgrade \nconnection speeds below functional modern needs, as the minimum FCC bandwidth standards \nare simply inadequate to run today's high-quality digital learning content.",
+      "evidence_start": 4450,
+      "evidence_end": 4859,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110081304",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081304",
+  "filer_raw": "Massachusetts Computer Using Educators (MassCUE) | Massachusetts Educational Technology Administrators Association (METAA) | Massachusetts Association of School Superintendents (M.A.S.S.) | Massachusetts Association of School Business Officials (MASBO)",
+  "date_submission": "2026-10-13T22:31:38.638Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "caff406eb91086680e586b9227d02b68d4cd9e65eaf50401e050840314309f7f",
+  "params_key": "5d584c0bbe868eaba786001d4529c3c6eedb590ae7eb024613af47cd2b3ffcf6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

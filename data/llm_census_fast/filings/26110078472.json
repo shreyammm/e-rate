@@ -1,0 +1,37 @@
+{
+  "summary": "The commenter expresses opposition to the sunset of the E-Rate program, citing the significant financial impact on school districts. They argue that eliminating or reducing E-Rate funding would have a trickle-down effect on the ability of schools to provide essential services such as internet access, network infrastructure, and equipment. The commenter also raises concerns about the potential impact on smaller school districts that rely on Managed Internal Broadband Service (MIBS) and the need t The claim opposes the sunset of MIBS funding for MIBS services, arguing that it would negatively impact smaller districts and should not be considered. The evidence provided cites the example of Weslaco Independent School District, which was able to afford the construction of a district-owned self-provisioned fiber optic network, allowing them to interconnect all locations within the district without annual recurring costs for leasing dark fiber or interconnection of entities using leased servic",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate funding would have a significant financial impact on school districts.",
+      "evidence_quote": "If the E-Rate program funding for schools were to be eliminated, or severely reduced, the consequence for the district would be felt across the district.",
+      "evidence_start": 1306,
+      "evidence_end": 1459,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078472",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078472",
+  "filer_raw": "Jeffrey Wayne Harris",
+  "date_submission": "2026-09-27T21:32:58.061Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "979d172c423722be7adb2b58b4b36d256c54ad246bad845cdc011da17b402bdf",
+  "params_key": "34768a850c489c538494ea316944882d44a795040c1d824bc959f0081a40b889",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

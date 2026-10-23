@@ -1,0 +1,62 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of broadband connectivity in modern public education and the potential financial impact of reducing or eliminating E-Rate support. The comments emphasize the importance of preserving E-Rate support to ensure students have access to reliable educational connectivity, regardless of their location or financial circumstances. The comments urge the FCC to protect the program and prevent unnecessary cuts or restrictions.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Maintain broad eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility would leave students without adequate support",
+      "evidence_quote": "Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria",
+      "evidence_start": 4462,
+      "evidence_end": 4593,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "Southern Oregon Education Service District has received $474,712 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $94,942 a year toward the connections our students depend on.",
+      "evidence_start": 2904,
+      "evidence_end": 3119,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build connectivity necessary for educational access",
+      "evidence_quote": "Our students deserve access to the tools they need to learn and succeed regardless of where they live or their family’s financial circumstances. I urge the Commission to protect E-Rate and ensure that public schools can continue providing students with reliable, affordable, and effective connectivity.",
+      "evidence_start": 5307,
+      "evidence_end": 5609,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079613",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079613",
+  "filer_raw": "Southern Oregon Education Service District",
+  "date_submission": "2026-10-06T16:34:49.851Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "514c90cb23b1fe4fd844c0c7305a58caf4b73f1d2aa40018c35fc9d670a67e0a",
+  "params_key": "a6f7965db4ad7d64baa138ac9cf3f4fce3666d19e7fd0a86d07c92f2d711d57f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

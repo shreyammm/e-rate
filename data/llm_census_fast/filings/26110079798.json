@@ -1,0 +1,37 @@
+{
+  "summary": "The Pierce County Library System expresses opposition to limiting or sunsetting the E-Rate program, emphasizing its importance for providing broadband services to community members, particularly in rural areas and for those with limited financial resources. The library system discusses the importance of E-Rate funding for maintaining modern, secure technology infrastructure and providing essential connectivity to its community.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate funding for broadband infrastructure and services.",
+      "evidence_quote": "ucing other library services relied upon by our communities.",
+      "evidence_start": 2385,
+      "evidence_end": 2445,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079798",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079798",
+  "filer_raw": "Pierce County Library System (Wa)",
+  "date_submission": "2026-10-07T15:40:38.307Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "781d771b4c267010a827c6860ec479299a9c45dbc9ed70cb3a9484b21d416fea",
+  "params_key": "c61d15531cede57d4ea932ec0f6d51340e2cff69edf9c10edef337d66c79a3d4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

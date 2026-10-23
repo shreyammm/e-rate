@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to support school connectivity and infrastructure needs The technology director urges the Commission to protect E-Rate and ensure schools can continue providing students with reliable, affordable, and effective connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate funding will put a strain on already limited budgets and force cuts to teaching positions",
+      "evidence_quote": "Pearl River County School District has received $673,215 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $134,643 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 3295,
+      "evidence_end": 3615,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078587",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078587",
+  "filer_raw": "Pearl River County School District",
+  "date_submission": "2026-09-28T19:04:20.214Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a78a9a00489c2cfb9b00f4e7a55c2255cf78f117ffbd6ed4608433ec4a4bfc92",
+  "params_key": "d9a6e8490315ad7dfd54d26d6760e59722a4b82ef46bf3f3594168a9ed3b781a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

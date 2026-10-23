@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission should preserve and strengthen the E-Rate program to ensure reliable broadband access for schools and libraries. The claim is for preserving the E-Rate program to ensure access to connectivity for students and schools, emphasizing the importance of the program for modern education and technology needs.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reject proposals to sunset or eliminate E-Rate",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program;",
+      "evidence_start": 4535,
+      "evidence_end": 4646,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079350",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079350",
+  "filer_raw": "Kings Park Central School District",
+  "date_submission": "2026-10-05T13:01:49.396Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6772113d0af7ece3687285c49e6807650fe5116ff2de460eca57fc435d10757e",
+  "params_key": "a59d3b83f4586d01acdd0c86e679a675110ccc7c713cb8bbf491219030ca65ed",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

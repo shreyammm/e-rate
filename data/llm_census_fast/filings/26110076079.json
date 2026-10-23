@@ -1,0 +1,37 @@
+{
+  "summary": "The Kern County Superintendent urges preservation of E-Rate funding to ensure broadband infrastructure for schools and libraries, emphasizing the program's ongoing cost and budgetary necessity. From the perspective of a school superintendent, reliable broadband is essential infrastructure for modern school systems. The superintendent urges the FCC to protect the E-Rate program and ensure schools can continue providing students with reliable, affordable connectivity. The superintendent rejects proposals to sunset or eliminate the program and emphasizes the importance of preserving E-Rate for educational access.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is directly used to subsidize the cost of broadband connectivity, which directly impacts school budgets",
+      "evidence_quote": "Kern Co Office Of Education has received $629,437 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $125,887 a year toward the connections our students depend on.",
+      "evidence_start": 2976,
+      "evidence_end": 3177,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076079",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076079",
+  "filer_raw": "John Mendiburu",
+  "date_submission": "2026-09-09T17:58:40.768Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c562c98f45d66fbf3063d3abd8828340baa7ab9c88c33b66a449e28bde28fe46",
+  "params_key": "392e86968e0d4695399a73f07d29b04b5d90fea9619d6de28e6c07e7e98cd06c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

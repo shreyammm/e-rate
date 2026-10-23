@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve the E-Rate program and reject any proposal to sunset or eliminate it, emphasizing the program's essential role in maintaining school infrastructure and connectivity. The comments urge preserving the E-Rate program and its role in providing connectivity for schools and libraries, emphasizing the importance of maintaining access to educational tools for students regardless of their location or financial circumstances.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "to sunset or eliminate the E-Rate program",
+      "evidence_quote": "to sunset or eliminate the E-Rate program",
+      "evidence_start": 4450,
+      "evidence_end": 4491,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078689",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078689",
+  "filer_raw": "Brentwood Borough School District",
+  "date_submission": "2026-09-29T13:24:48.457Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "80ba8ca485bef480ba38bddf434edb3dac076e4cdd49586ed0e76133602e72b7",
+  "params_key": "53aa312d58907c3d8165f8e1f43aeb375ad02d0e321016eb2572ca76c26bf3de",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

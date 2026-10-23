@@ -1,0 +1,50 @@
+{
+  "summary": "The Grand Blanc Community Schools emphasizes the critical role of E-Rate in maintaining affordable and reliable internet connectivity for their district, which serves 7500 students and covers grades K-12. They highlight the financial burden that would result from losing E-Rate funding, including increased costs for technology infrastructure, maintenance, and upgrades. The school district warns that without E-Rate support, they would face significant challenges in maintaining their network servic The school district emphasizes the importance of preserving the core E-Rate program and its benefits for the Grand Blanc community, while opposing any changes that could reduce access, increase administrative burden, or limit flexibility.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A reduction or loss of E-Rate funding would have a significant impact on GBCS by increasing the district’s direct cost for internet connectivity, network infrastructure, Wi-Fi, installation, maintenance, and managed internal broadband services",
+      "evidence_quote": "Without E-Rate support, projects such as network construction, dark fiber, self-provisioned networks, and major internal connection upgrades could become cost-prohibitive or require significant delays, making it more difficult to maintain and expand our infrastructure as technology needs continue to grow.",
+      "evidence_start": 2673,
+      "evidence_end": 2979,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Losing E-Rate funding would directly impact staffing, educational opportunities, facilities, safety, and the quality of services provided to the Grand Blanc community",
+      "evidence_quote": "upon. In short, losing E-Rate funding would not simply affect our technology budget—it could directly impact staffing, educational opportunities, facilities, safety, and the quality of services we provide to the Grand Blanc community.",
+      "evidence_start": 4450,
+      "evidence_end": 4684,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076957",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076957",
+  "filer_raw": "Grand Blanc Community Schools",
+  "date_submission": "2026-09-18T11:52:11.460Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "df9e957f13c7064685ea0c69b07c9327ac9c5c3a4d856ff504ac01077ff0b2ab",
+  "params_key": "5231e3c5d347369b6108020873ac8b54265a85168181c17c23adaa4965ef07ce",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

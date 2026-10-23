@@ -1,0 +1,37 @@
+{
+  "summary": "The technology director of a school urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of reliable broadband in modern public education and the potential financial burden of reducing or eliminating E-Rate support. The comments emphasize the importance of preserving E-Rate funding and preventing its sunset, highlighting the program's role in providing connectivity for educational access and modernizing education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding and prevent sunset",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity for educational access",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 4792,
+      "evidence_end": 5196,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076904",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076904",
+  "filer_raw": "Samantha Sekelsky",
+  "date_submission": "2026-09-17T18:56:34.376Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "c506e589b455eaff95a2ad37ed5c84d7c4f3df32abfbf13cb7f6b3266045a311",
+  "params_key": "75d006a3a4a053388e66e0e0e7104c1247c7fa54893748de59011cdf42694577",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

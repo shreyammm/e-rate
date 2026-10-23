@@ -1,0 +1,49 @@
+{
+  "summary": "The technology director of a school district urges the FCC to preserve the E-Rate program, citing the program's essential role in providing reliable broadband infrastructure for schools and the potential increase in operational costs if the program were to be eliminated. The technology director urges the Commission to protect the E-Rate program and ensure schools can continue providing reliable, affordable connectivity for students.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "Freeburg School District 70 has received $81,027 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $16,205 a year toward the connections our students depend on.",
+      "evidence_start": 3257,
+      "evidence_end": 3456,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Rejecting sunset proposals would ensure the program remains available for schools and libraries",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 4648,
+      "evidence_end": 5199,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077913",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077913",
+  "filer_raw": "Freeburg District 70",
+  "date_submission": "2026-09-23T18:38:51.687Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dc1f81013a9c514be3bb3736c6c98775e7a1e48944b1b1bb22b3ecf151d53973",
+  "params_key": "025862c6bd2989dc27015f4ab3c5d59082a61623edb1a65ce3ed5dd292e8d69c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

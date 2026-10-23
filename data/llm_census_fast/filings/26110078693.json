@@ -1,0 +1,37 @@
+{
+  "summary": "Community member urges preservation of E-Rate program to ensure broadband access for schools and libraries. The community urges the FCC to protect E-Rate funding and maintain its role in providing reliable broadband access for schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity necessary for modern education",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education.",
+      "evidence_start": 4918,
+      "evidence_end": 5095,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078693",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078693",
+  "filer_raw": "Audrey Henebry",
+  "date_submission": "2026-09-29T14:22:01.885Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e76ab8853458a5762eef2910862c25d3cfae06c1fdcadf6b88d013867045b798",
+  "params_key": "5933fceef577fe41836552497473cc21983797b0e3d118f405fcc33b94805c51",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

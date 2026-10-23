@@ -1,0 +1,37 @@
+{
+  "summary": "Federal Communications Commission urges preservation of E-Rate program to maintain essential broadband infrastructure for schools and libraries. The text urges protecting E-Rate to ensure connectivity for students and supports preserving the program rather than reducing its role.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase operational costs for school districts",
+      "evidence_quote": "Maintaining connectivity requires investments in routers, fiber lines, servers, and cyber security are all vital to our school but also increasing in cost every day",
+      "evidence_start": 2756,
+      "evidence_end": 2920,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080049",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080049",
+  "filer_raw": "Continental Local School District",
+  "date_submission": "2026-10-08T15:24:05.229Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2b4b9127a80f5baa6cdae6f18a7fadee7b6051835ec426de064761f0688bcaf7",
+  "params_key": "684d3ef5dbe0000b4030cf0aa3bddafbd12cb6fe3ddaec7d5186a0fb0ea94ebc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

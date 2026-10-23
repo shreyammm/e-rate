@@ -1,0 +1,37 @@
+{
+  "summary": "Opposes proposal to sunset E-Rate program, citing cost impact on schools and libraries. The claim emphasizes the importance of preserving E-Rate funding to ensure educational access and prevent inequities in education. The stakeholder argues that any proposal to limit or sunset the program would have a detrimental impact on students, particularly those in underserved communities. The evidence directly supports this position by urging the FCC to reject such proposals and continue supporting the program.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Suggesting that preserving E-Rate is necessary to maintain educational opportunities",
+      "evidence_quote": "I strongly urge the Commission to reject any proposal that would reduce, limit, or sunset E-Rate funding and instead continue supporting this essential program and protecting access for the students who need it most.",
+      "evidence_start": 4919,
+      "evidence_end": 5135,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079803",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079803",
+  "filer_raw": "Marcus Weaver-Hightower",
+  "date_submission": "2026-10-07T15:51:40.713Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fec23863014fbf4abae61826fbbf0450ac1d466545c23a0b3c6d64810804402e",
+  "params_key": "26ca89f7c31afbd16f1d35cb50e63ece971df2052a9a38410edd3626f037e035",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

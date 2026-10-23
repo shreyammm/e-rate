@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the importance of preserving the E-Rate program to maintain essential infrastructure and connectivity for modern public education, arguing against proposals to sunset or eliminate the program, and against narrowing eligibility or restricting support based on geography or other criteria. The school district highlights the program's role in supporting various operational and instructional functions, including security systems, online curriculum, and virtual instructi The text expresses opposition to sunset or eliminate the E-Rate program, emphasizing its importance for providing connectivity to students and schools. It urges the Commission to protect E-Rate and ensure public schools can continue providing students with reliable, affordable, and effective connectivity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "to sunset or eliminate the E-Rate program",
+      "evidence_quote": "to sunset or eliminate the E-Rate program",
+      "evidence_start": 4451,
+      "evidence_end": 4492,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076881",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076881",
+  "filer_raw": "Westwood Unified School District",
+  "date_submission": "2026-09-17T17:02:45.616Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6122979f978a03845b06a9b37da7a891c9f1b8a82d471f8d4bce877679bb1ab1",
+  "params_key": "623e8f7bef2c5fc07c5bffab3264fc2701989617cf6344be3d480c136488f0bd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

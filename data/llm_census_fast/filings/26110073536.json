@@ -1,0 +1,49 @@
+{
+  "summary": "E-Rate program is essential for Delaware Community Schools to provide reliable internet connectivity for educational and operational needs, and its continuation is necessary to maintain access and affordability. The comments express concerns about the potential impact of ending or reducing E-Rate funding on access to reliable educational connectivity, particularly in rural and underserved areas. The comments also highlight the value of E-Rate for technology professionals and the importance of preserving the program to meet the evolving connectivity, educational, and security needs of students and communities.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would transfer financial responsibility for internet connectivity to local school budgets, potentially diverting funds from other educational priorities.",
+      "evidence_quote": "If E-Rate funding were eliminated or significantly reduced, Delaware Community Schools would still need to maintain internet and network connectivity. The difference is that substantially more of those costs would have to be paid from our local and state education funding.",
+      "evidence_start": 2373,
+      "evidence_end": 2646,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating or substantially reducing the program risks reversing progress and widening the divide between well-resourced communities and rural or economically constrained school corporations.",
+      "evidence_quote": "Terminating or substantially reducing the program risks reversing that progress and widening the divide between well-resourced communities and rural or economically constrained school corporations.",
+      "evidence_start": 4225,
+      "evidence_end": 4422,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073536",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073536",
+  "filer_raw": "Dr. Lance Brand",
+  "date_submission": "2026-08-28T16:22:02.890Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "85a042fdf4a78c89a3d655294e30af5b9ce8b6145607b4f8a02ff0d928054999",
+  "params_key": "0a132e0efb78b8b5dec6225103ba2092dbf38400ee649a0aac48dbe71332fa97",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}
