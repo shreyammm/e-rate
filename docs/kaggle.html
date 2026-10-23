@@ -22,6 +22,15 @@
  <div class="kr-examples"><button data-kq="Were there commenters who supported E-Rate cuts because of screen-time concerns?">Screen time and E-Rate cuts</button><button data-kq="What arguments do libraries make about affordability and access?">Library affordability arguments</button><button data-kq="Who argues against intrusive student monitoring and why?">Monitoring and privacy</button><button data-kq="What different changes to consultant registration were requested?">Consultant reforms</button></div>
  <p class="kr-status" id="kr-answer-status">Question analysis will examine every published Kaggle claim row, not a small evidence sample.</p>
  <div id="kr-answer" aria-live="polite"></div>
+<div class="kr-panel" id="kr-llm-panel">
+<h3>Generate a cited LLM synthesis of the question evidence</h3>
+<p class="kr-muted">Optional, after evidence retrieval: Microsoft Phi-3.5 Mini runs locally using WebGPU and reads <strong>every query-matching Kaggle claim row</strong> in model batches before synthesizing the findings. This may require many model calls and substantial time; model weights are several GB initially. Retrieval still cannot guarantee every semantically relevant original passage was found, and machine interpretations remain unvalidated.</p>
+<button id="kr-llm-run" type="button" class="kr-primary" disabled>Synthesize all retrieved Kaggle claims (on-device)</button>
+<button id="kr-llm-cancel" type="button" class="kr-action-button" hidden>Cancel synthesis</button>
+<p id="kr-llm-status" class="kr-count">Enter a research question above first.</p>
+<div id="kr-llm-result"></div>
+</div>
+
 </section>
 
 <section class="kr-section" id="arguments">
@@ -74,4 +83,4 @@
  <p><a href="./kaggle-findings.html">Full generated findings report</a> · <a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/kaggle_census.md">Kaggle pipeline methodology</a> · <a href="./atlas.html">Independent non-LLM language discovery</a>.</p></div>
 </section></main>
 <footer class="shell kr-footer">Independent research project, not affiliated with the FCC. Machine-generated analysis is provisional and source-linked for review.</footer>
-<script src="./assets/kaggle_research.js" defer></script></body></html>
+<script src="./assets/kaggle_synthesis.js" defer></script><script src="./assets/kaggle_research.js" defer></script></body></html>
