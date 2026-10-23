@@ -2,7 +2,7 @@
 /* Every readable filing, every source character, for every question. Window
    outputs are checkpointed; an incomplete model pass NEVER becomes an answer. */
 (() => {
-  const MAX=4000, OVERLAP=200, BUDGET=6800, VERSION='exhaustive-source-v2';
+  const MAX=4000, OVERLAP=200, BUDGET=6800, VERSION='exhaustive-source-v3';
   const mark=id=>'[FCC:'+id+']';
   const cites=s=>[...String(s||'').matchAll(/\[FCC:(\d+)\]/g)].map(m=>m[1]);
   const stop=fn=>{if(fn?.())throw Error('Cancelled. Verified checkpoints are retained for resumption.');};
@@ -46,7 +46,7 @@
     return JSON.parse(t.slice(a,b+1));
   }
   function validatePass(v,w){
-    if(!v||typeof v.relevant!=='boolean'||!Array.isArray(v.claims)||v.claims.length>12)
+    if(!v||typeof v.relevant!=='boolean'||!Array.isArray(v.claims))
       throw Error('Invalid model output schema');
     const claims=[];
     for(const c of v.claims){
@@ -63,7 +63,7 @@
     if(claims.length&&!v.relevant)throw Error('Inconsistent relevance label');
     return {relevant:v.relevant,claims};
   }
-  async function call(engine,messages,max_tokens=800){
+  async function call(engine,messages,max_tokens=1200){
     const v=await engine.chat.completions.create({messages,temperature:0,max_tokens});
     return String(v?.choices?.[0]?.message?.content||'');
   }
@@ -71,7 +71,7 @@
     'Read the ENTIRE following source window for the user question, even when the wording differs. '+
     'Distinguish the author position from a quoted or rejected proposal. '+
     'Return only JSON {"relevant":boolean,"claims":[{"quote":"exact source substring 12-700 chars","argument":"author claim","position":"support|oppose|conditional|mixed|unclear","reason":"why","requested_action":"what they request"}]}. '+
-    'For genuinely irrelevant text, return {"relevant":false,"claims":[]}. Up to five independent claims. '+
+    'For genuinely irrelevant text, return {"relevant":false,"claims":[]}. Include every distinct relevant claim and counterargument that appears in this source window, not a shortlist of prominent claims. '+
     'If the topic is discussed without a stance, position=unclear. Never invent quotations.';
   async function analyzeWindow(engine,question,row,w){
     const input='Research question: '+question+'\nECFS filing: '+row.submission_id+
@@ -127,11 +127,11 @@
         const allowed=new Set(cites(input)),key=pfx+'|reduce|'+level+'|'+i+'|'+input;
         let draft=await store.get(key);
         if(!validSynthesis(draft,allowed)){
-          const user='Question: '+question+'\nMerge all the following evidence into a concise argument synthesis (maximum 260 words). '+
-            'Keep nuance and competing arguments, and cite only supplied [FCC:digits] identifiers. '+
+          const user='Question: '+question+'\nSynthesize all the following evidence into a detailed argument memo with distinct subthemes and disagreements (up to 450 words). '+
+            'Preserve distinct lines of reasoning, minority positions, named filers, and counterarguments; consolidate only redundant claims. Cite supplied [FCC:digits] identifiers. '+
             'No percentages or majority conclusions from unvalidated model classifications.\n\n'+input;
           for(let a=0;a<3;a++){
-            draft=await call(engine,[{role:'system',content:sys},{role:'user',content:user}],600);
+            draft=await call(engine,[{role:'system',content:sys},{role:'user',content:user}],900);
             if(validSynthesis(draft,allowed))break;
           }
           if(!validSynthesis(draft,allowed))throw Error('A synthesis batch failed source validation; refusing an incomplete answer');
