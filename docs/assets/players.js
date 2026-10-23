@@ -14,7 +14,7 @@
     misuse:/(misus|alleged fraud|procurement (?:fraud|abuse)|waste|improper payment|program integrity|oversight|fraud|vendor_influence)/i,
     funding:/(erate_sunset|erate_eligibility_scope|sunset|cut|continuation|preserv|end (?:e.?rate|the program)|funding)/i
   };
-  let data=null, claims=null, filteredReview=[],reviewPage=0, claimPage=0, candidates=[], changes=new Map();
+  let data=null, claims=null, filteredReview=[],reviewPage=0, claimPage=0, candidates=[], changes=new Map(), selectedOrg=null;
   const group=r=>{
     if(['school_district','individual_school','school_technology_staff','school_educator','school_administrator','school_connected_unknown'].includes(r.role))return 'school';
     if(r.role.startsWith('edtech_'))return 'edtech';
@@ -63,6 +63,17 @@
     if(o.disagreement_on_type)box.append(node('p','Conflicting candidate roles across filings: investigate before aggregating an institutional position.','ps-muted'));
     for(let id of o.filing_ids.slice(0,20))box.append(link('FCC '+id,source(id)),document.createTextNode(' · '));
     if(o.filing_ids.length>20)box.append(node('p','Additional filings available through the full corpus explorer.','ps-muted'));
+    const explore=node('button','Explore this institution\'s machine-extracted claims');
+    explore.type='button';explore.style.cssText='display:block;margin:12px 0;padding:9px 13px;border:1px solid #7b9bb0;color:#12496e;background:#eef5f9;cursor:pointer';
+    explore.addEventListener('click',async()=>{
+      selectedOrg=o;
+      if(!claims)await loadClaims();
+      if(!claims)return;
+      $('ps-sector').value='';$('ps-claim-query').value='';
+      displayClaims();
+      $('ps-claims-panel').scrollIntoView({behavior:'smooth',block:'start'});
+    });
+    box.append(explore);
   }
   function refreshReview(){
     let q=$('ps-review-query').value.trim().toLowerCase(),role=$('ps-review-role').value;
@@ -111,7 +122,12 @@
   function displayClaims(){
     if(!claims)return;
     const sector=$('ps-sector').value, query=$('ps-claim-query').value.trim().toLowerCase();
+    const selectedFilingIds=selectedOrg?new Set(selectedOrg.filing_ids):null;
+    const notice=$('ps-org-active');
+    notice.hidden=!selectedOrg;
+    if(selectedOrg)$('ps-org-active-label').textContent='Institution profile: '+selectedOrg.name+' · '+n(selectedOrg.filings)+' original filing records';
     candidates=claims.rows.filter(r=>{
+      if(selectedFilingIds&&!selectedFilingIds.has(String(r.id)))return false;
       if(!matchesLens(r))return false;
       const identity=byFiling.get(String(r.id));
       if(sector&&group(identity||{role:'unresolved'})!==sector)return false;
@@ -180,6 +196,7 @@
     for(let x of ['ps-org-table','ps-review-list','ps-roles'])$(x).textContent='Player registry publication pending.';
     return;
   }
+  $('ps-clear-organization').addEventListener('click',()=>{selectedOrg=null;displayClaims();});
   $('ps-org-query').addEventListener('input',displayOrgs);$('ps-org-role').addEventListener('change',displayOrgs);
   $('ps-review-query').addEventListener('input',refreshReview);$('ps-review-role').addEventListener('change',refreshReview);
   $('ps-more-review').addEventListener('click',()=>{reviewPage++;displayReview()});
