@@ -176,6 +176,10 @@
               !Array.isArray(item.claims)||item.claims.some(c=>body.slice(c.evidence_start,c.evidence_end)!==c.quote)))item=null;
             if(item)cached++;
             else{
+              // Emit progress BEFORE expensive GPU inference. The previous UI
+              // only updated after each model call resolved, appearing frozen.
+              onProgress({phase:'window-start',scanned,total:meta.records,readable,chunks,cached,
+                id,start:w.start,end:w.end,length:body.length,filing:doc.filer||row.filer_raw||''});
               const result=await analyzeWindow(engine,question,row,w);
               item={id,filer:String(row.filer_raw||doc.filer||'').slice(0,220),start:w.start,end:w.end,relevant:result.relevant,claims:result.claims};
               await store.set(key,item);
