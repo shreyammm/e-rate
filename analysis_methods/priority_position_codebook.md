@@ -48,6 +48,14 @@ Additional non-exclusive allegation \`subtypes\`: \`ineligible_costs\`, \`billin
 
 For every **specific** or **general** allegation, reviewers must also explicitly check whether the filer claims **illegal/ineligible** use vs **normatively undesirable but not necessarily prohibited** use (e.g. objecting to subsidized Wi-Fi on screen-time grounds). These are different dimensions.
 
+## Cross-axis causal linkage — a separate reviewer verdict
+
+For the user's question *"Were any commenters arguing for E-Rate cuts or conditions **because of** screen-time harms?"*, mere co-occurrence is not enough. Code `screen_harm_to_funding_condition_link` as `yes_explicit`, `no`, `ambiguous`, `not_applicable`, or `not_assessed`. A confirmed positive requires an original source passage connecting the asserted child harm to a proposed E-Rate funding restriction, categorical eligibility change, or new binding recipient condition. Do not infer motivation from two unrelated passages.
+
+For additional conditions, also record `new_condition_type`: daily-hour cap, filtering/blocking, monitoring, parental choice, educational-purpose criteria, or other mandatory conditions. For alleged misuse, record `misuse_allegation_type` (billing, ineligible expenditure, procurement, vendor/consultant conflicts, contested classroom Wi-Fi/device use, diversion/waste, other) and whether the commenter alleges unlawful/ineligible use versus a normative objection to funding arguably legal activities.
+
+These added fields are reviewer-coded and exportable; they are not automatically validated.
+
 ## Evidence and adjudication
 
 Each positive verdict requires: exact original-source quote + character offset + filing ID + rationale of why the **filer** endorses the position. A model-generated paraphrase alone does not qualify. If original quote is only an FCC question, quote from an opponent's submission, or a source not endorsed by filer, mark uncertain. Any filing receiving both support and oppose hints, OCR uncertainty, long selected-window analysis, repeated campaign text, or unsupported allegation is flagged for targeted review.
