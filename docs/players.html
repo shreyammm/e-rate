@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Players & Evidence | E-Rate Observatory</title><link rel="stylesheet" href="./assets/site.css">
+<style>
+.ps-hero{max-width:1060px;margin:25px 0}.ps-hero h1{font-size:clamp(28px,4vw,45px);letter-spacing:-.045em;line-height:1.15}
+.ps-muted{color:#536777;font-size:13px;line-height:1.6}.ps-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}.ps-stat{border:1px solid #d7e1e9;padding:17px;border-radius:7px}.ps-stat strong{font-size:26px;display:block}
+.ps-panel{border:1px solid #dce5eb;background:#fff;padding:20px;margin:22px 0;border-radius:8px}.ps-panel h2{margin:0 0 10px}
+.ps-controls{display:flex;gap:12px;flex-wrap:wrap;margin:14px 0}.ps-controls label{display:flex;flex-direction:column;font-size:12px;gap:5px;flex:1;min-width:165px}
+.ps-controls input,.ps-controls select,.ps-review select,.ps-review input{width:100%;font:inherit;padding:8px;background:#fff;border:1px solid #a5b8c6;border-radius:4px}
+.ps-table{border-collapse:collapse;width:100%;font-size:12px}.ps-table td,.ps-table th{border-bottom:1px solid #dce5eb;padding:9px;text-align:left;vertical-align:top}.ps-scroll{max-height:530px;overflow:auto}
+.ps-row{padding:12px 0;border-bottom:1px solid #e1e8ee}.ps-row strong{font-size:13px}.ps-row p{font-size:12px;line-height:1.6;margin:6px 0}.ps-row blockquote{font-size:12px;margin:8px 0;padding:9px 12px;border-left:2px solid #94adbd;background:#f4f7f9;white-space:pre-wrap}
+.ps-chip{font-size:11px;background:#f2f5f8;border:1px solid #dce4ea;border-radius:4px;padding:2px 6px;display:inline-block;margin:4px 6px 4px 0}
+.ps-review{border-top:1px solid #e3e8ed;padding:14px 0}.ps-review input{max-width:520px;margin-top:7px}
+.ps-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:12px 0}.ps-actions button{border:1px solid #779ab1;border-radius:4px;background:#f2f7f9;color:#12496e;padding:9px 13px;cursor:pointer;font-weight:650}
+.ps-small{font-size:11px;color:#637482}.ps-banner{border-left:3px solid #6a899e;padding:10px 14px;background:#f5f8fa}
+.ps-selected{background:#f5f9fb;padding:12px;margin:12px 0}a{overflow-wrap:anywhere}
+</style></head><body>
+<header class="site-top"><div class="shell header-row"><strong>E-Rate Comment Observatory</strong><nav><a href="./research.html">Research Studio</a> · <a href="./atlas.html">Themes</a> · <a href="./ask.html">Ask the Corpus</a> · <a href="./corpus.html">Original filings</a></nav></div></header>
+<main class="shell">
+<section class="ps-hero"><p class="ps-small">FCC 26-41 · Who speaks · what they argue · where evidence comes from</p>
+<h1>Players, arguments and evidence</h1>
+<p>Explore named institutions, school staff, consultants, vendors, parent voices and unresolved contributors. The filing submitter, speaker's professional capacity and organizations represented are different things. <strong>Machine-generated positions are hypotheses, not verified votes or factual findings.</strong></p></section>
+<p id="ps-status" role="status">Checking the source-grounded identity registry…</p>
+<div id="ps-stats" class="ps-grid"></div>
+<section class="ps-panel"><h2>1. Who appears in the docket?</h2><p class="ps-muted">Every filing has one provisional primary category for navigation. A role is only strongly indicated when supported by an organization-valued filer field or explicit author introduction; this is not confirmation of legal representative authority.</p>
+<div id="ps-roles"></div></section>
+<section class="ps-panel"><h2>2. Recognizable organizations and participating institutions</h2><p class="ps-muted">Names are consolidated conservatively across punctuation and case variants only. Participation is the number of filing IDs; it is not an influence score, membership attribution or proof the organization wrote every passage.</p>
+<div class="ps-controls"><label>Find organization<input type="search" id="ps-org-query" placeholder="District, association, telecom company…"></label><label>Role candidate<select id="ps-org-role"><option value="">All organization categories</option></select></label></div>
+<p id="ps-org-summary" class="ps-small"></p><div class="ps-scroll"><table class="ps-table"><thead><tr><th>Organization / institution</th><th>Filings</th><th>Distinct source texts</th><th>Sources</th></tr></thead><tbody id="ps-org-table"></tbody></table></div><div id="ps-org-detail" class="ps-selected" hidden></div></section>
+<section class="ps-panel" id="ps-claims-panel"><h2>3. Compare what different participants discuss</h2><p class="ps-muted">Compare school institutions, education professionals, vendors, telecom, consultants, libraries and parents within the same topic. Results are source-linked <strong>machine claim candidates</strong>, not verified author endorsements. A consultant filing on behalf of a school may require manual attribution before it counts toward either institution's substantive position.</p>
+<div class="ps-controls"><label>Research lens<select id="ps-lens">
+<option value="screen">Screen time and alleged harms</option><option value="benefits">Educational benefits of technology</option><option value="consultants">E-rate consultants, fees and administration</option><option value="conditions">Funding conditions and eligibility</option><option value="misuse">Misuse allegations versus routine oversight</option><option value="funding">Preserving, reducing or ending E-rate</option></select></label>
+<label>Player group<select id="ps-sector"><option value="">All player groups</option><option value="school">Schools and educators</option><option value="edtech">Identified edtech vendors</option><option value="telecom">Telecom and networking companies</option><option value="consultant">E-rate consultants</option><option value="library">Libraries</option><option value="parent">Parents / caregivers</option><option value="other">Other / unresolved</option></select></label>
+<label>Search argument<input id="ps-claim-query" type="search" placeholder="An outcome, claim, term…"></label></div>
+<div id="ps-claim-count" class="ps-muted">Load the machine evidence index to begin comparisons.</div><div id="ps-claim-summary" class="ps-grid"></div>
+<div id="ps-claim-list"></div><div class="ps-actions"><button id="ps-load-claims">Load source-linked claims</button><button id="ps-more-claims" hidden>Show more claims</button></div>
+<p class="ps-muted">For a factual assertion, compare the cited study's population, technology, outcomes and context with what the filing alleges. Differences between commenters are not independent fact checks. <a href="./ask.html?q=What%20claims%20about%20screen%20time%20and%20learning%20are%20made%20in%20the%20docket%3F%20Find%20counterarguments%20and%20cite%20the%20source%20filings.">Open Ask the Corpus for evidence exploration ↗</a></p></section>
+<section class="ps-panel" id="ps-review-panel"><h2>4. Identity review queue</h2><p class="ps-muted">Prioritize personal-name filers with unstated capacity, uncertain organizations and filings potentially submitted on behalf of another entity. Check the original PDF/letterhead/signature before reviewing. A source-matched quotation is mandatory for an override, so role guesses cannot be silently converted into verified labels.</p>
+<div class="ps-controls"><label>Search filing ID or existing organization<input type="search" id="ps-review-query" placeholder="FCC filing ID…"></label><label>Candidate role<select id="ps-review-role"><option value="">All uncertain roles</option></select></label></div>
+<p id="ps-review-count" class="ps-small"></p><div id="ps-review-list"></div><div class="ps-actions"><button id="ps-more-review">Review 25 more</button><button id="ps-export">Export reviewed decisions as JSON</button></div><p id="ps-export-status" class="ps-small" role="status"></p>
+<p class="ps-muted">Export produces proposed evidence-required edits. It does <strong>not</strong> change the live website automatically. Review decisions can be committed to <code>data/player_review_overrides.json</code> and the registry rebuilt with the original source text.</p></section>
+<section class="ps-panel"><h2>Interpretation and validation</h2><p class="ps-muted">This page deliberately avoids ranking organizations by how convincing they are or treating a trade association's filing as each member's stance. Counts should distinguish filings, distinct original texts, and actual reviewed individuals; the registry displays the former two. Automated identity labels remain candidates. The machine extracts at most five claims from a passage and long appendices can have partial semantic coverage, so a missing claim is not evidence the commenter has no view. Explore the original filing for attribution, evidence and context.</p></section>
+</main><script src="./assets/players.js" defer></script>
+</body></html>
