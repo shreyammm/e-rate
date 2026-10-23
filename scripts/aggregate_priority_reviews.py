@@ -81,7 +81,7 @@ def reconcile(records,eligible_ids):
     valid=[x for x in dedup.values() if x is not None]
     by_case=defaultdict(list)
     for v in valid:by_case[v['axis'],v['filing_id']].append(v)
-    agreed=[],disputed=[],once=[]
+    agreed,disputed,once=[],[],[]
     for (axis,id),entries in sorted(by_case.items()):
         if len(entries)<2:
             once.append({'filing_id':id,'axis':axis,'reviewers':len(entries)});continue

@@ -1,0 +1,54 @@
+name: Build source-backed player registry
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_player_registry.py'
+      - 'data/player_review_overrides.json'
+      - 'data/fcc_corpus/**'
+      - '.github/workflows/player-registry.yml'
+permissions:
+  contents: write
+concurrency:
+  group: erate-player-registry
+  cancel-in-progress: false
+jobs:
+  registry:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Unit test identity rules
+        run: python -m unittest discover -s tests -p test_player_registry.py -v
+      - name: Build all-filing identity audit and organization profile index
+        run: python -m scripts.build_player_registry
+      - name: Verify complete source alignment and no raw commenter names
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          x=json.loads(Path('docs/data/player_registry.json').read_text())
+          y=json.loads(Path('docs/data/corpus_index.json').read_text())
+          assert len(x['filings'])==len(y['filings'])==3231
+          assert {r['id'] for r in x['filings']}=={r['id'] for r in y['filings']}
+          assert sum(x['role_filing_counts'].values())==3231
+          assert all('filer_raw' not in r for r in x['filings'])
+          assert all('text' not in r for r in x['filings'])
+          print('Source coverage verified; manual review queue:',x['coverage']['filings_requiring_identity_review'])
+          PY
+      - name: Publish compiled privacy-minimal player index
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/player_registry.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish source-backed filing-player registry with review queue'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
