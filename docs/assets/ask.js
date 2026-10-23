@@ -291,9 +291,60 @@
       {role:'user',content:'Question: '+q+'\nFull text retrieval: '+found.scanned+' filings scanned; '+found.withText+' had text. Query-related lexical matches: '+found.candidates.length+' (NOT verified supporters).\nHere are up to '+pick.length+' representative, non-exhaustive source passages:\n'+excerpts+'\n\nAnswer the question using only the cited source material and distinguish policy restrictions from program-wide elimination. Cite every important statement [1]-['+pick.length+'].'}
     ];
   }
+  function displayCompleteClaimLedger(result) {
+    const section=$('ask-model-ledger');
+    if(!section)return;
+    const lookup=new Map((meta?.docs||[]).map(d=>[String(d.id),d]));
+    const all=[],keys=new Set();
+    for(const item of result.ledger||[])for(const c of item.claims||[]){
+      const unique=item.id+'|'+c.evidence_start+'|'+c.argument;
+      if(keys.has(unique))continue;keys.add(unique);
+      all.push({...c,id:item.id,filer:lookup.get(String(item.id))?.filer||item.id});
+    }
+    section.hidden=false;
+    $('ask-model-ledger-summary').textContent=N(result.analyzedFilings)+' readable filing texts checked in '+N(result.sourceWindows)+
+      ' original text windows; '+N(all.length)+' distinct source-offset-and-argument claim rows extracted. '+
+      'Each original claim remains in the local checkpoint; the model may miss relevant interpretations.';
+    const search=$('ask-model-ledger-search'),stance=$('ask-model-ledger-position');
+    const sort=$('ask-model-ledger-order'),container=$('ask-model-ledger-results'),more=$('ask-model-ledger-more');
+    search.value='';sort.value='source';
+    stance.replaceChildren();
+    const options=['',...[...new Set(all.map(x=>x.position||'unclear'))].sort()];
+    for(const item of options){const option=el('option','',item||'All machine-inferred stances');option.value=item;stance.append(option);}
+    let shown=40;
+    function render(){
+      const phrase=search.value.trim().toLowerCase();
+      const filtered=all.filter(x=>(!stance.value||x.position===stance.value)&&(!phrase||
+        [x.id,x.filer,x.quote,x.argument,x.reason,x.position,x.requested_action].join(' ').toLowerCase().includes(phrase)));
+      filtered.sort((a,b)=>sort.value==='argument'?a.argument.localeCompare(b.argument)||a.id.localeCompare(b.id):
+        a.id.localeCompare(b.id)||a.evidence_start-b.evidence_start);
+      container.replaceChildren();
+      for(const item of filtered.slice(0,shown)){
+        const card=el('article','ask-source');
+        const head=el('div','ask-source-top');
+        head.append(link(item.filer||item.id,sourceLink(item.id)),el('span','',
+          (item.position||'unclear')+' · filing '+item.id+' · original offset '+N(item.evidence_start)));
+        card.append(head,el('p','',item.argument));
+        if(item.requested_action)card.append(el('p','ask-small','Requested outcome: '+item.requested_action));
+        if(item.reason)card.append(el('p','ask-small','Reason: '+item.reason));
+        card.append(el('blockquote','',item.quote));
+        card.append(link('Read original FCC filing ↗',fccLink(item.id)));
+        container.append(card);
+      }
+      $('ask-model-ledger-count').textContent=N(Math.min(shown,filtered.length))+' of '+N(filtered.length)+
+        ' filtered source-cited claim rows displayed; '+N(all.length)+' total unique machine-extracted rows.';
+      more.hidden=shown>=filtered.length;more.disabled=shown>=filtered.length;
+    }
+    search.oninput=()=>{shown=40;render();};
+    stance.onchange=()=>{shown=40;render();};
+    sort.onchange=()=>{shown=40;render();};
+    more.onclick=()=>{shown+=40;render();};
+    render();
+  }
   function showExhaustiveAnswer(result) {
     const box=$('ask-answer');box.replaceChildren();
     const response=String(result.answer||''), authorized=new Set(result.sourceIds.map(String));
+    displayCompleteClaimLedger(result);
     const refs=[...response.matchAll(/\[FCC:(\d+)\]/g)].map(m=>m[1]);
     if(result.claims===0) {
       box.append(el('p','ask-muted','Full-text model analysis finished across '+N(result.analyzedFilings)+' readable filings and '+N(result.sourceWindows)+' complete text windows. No source-verifiable relevant claims were extracted. This is not proof an argument is absent.'),el('p','ask-answer-body',response));
@@ -363,6 +414,7 @@
     $('ask-answer').replaceChildren();$('ask-evidence').replaceChildren();
     const comparison=$('ask-comparison');if(comparison)comparison.replaceChildren();
     const warn=$('ask-warning');warn.replaceChildren();
+    const modelLedger=$('ask-model-ledger');if(modelLedger)modelLedger.hidden=true;
     const matches=$('ask-all-matches');if(matches)matches.replaceChildren();
     try{
       const found=await fullScan(q);
