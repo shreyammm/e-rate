@@ -208,7 +208,7 @@ def build(files=DEFAULT_FILES, corpus=DEFAULT_CORPUS, index=DEFAULT_META,output=
                 if sid in found or sid not in meta_by:raise ValueError('Duplicate or unexpected ID '+sid)
                 found.add(sid)
                 body=str(row.get('text') or '')
-                if hashlib.sha256(body.encode('utf-8')).hexdigest()!=row['text_sha256']:
+                if body and hashlib.sha256(body.encode('utf-8')).hexdigest()!=row['text_sha256']:
                     raise ValueError('Text source checksum mismatch '+sid)
                 if sid in models and models[sid].get('source_sha256')!=row['text_sha256']:
                     raise ValueError('Kaggle source text differs from original '+sid)
