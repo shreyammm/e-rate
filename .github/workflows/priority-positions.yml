@@ -1,0 +1,50 @@
+name: Build targeted E-Rate positions review
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build_priority_positions.py'
+      - 'tests/test_priority_positions.py'
+      - '.github/workflows/priority-positions.yml'
+permissions:
+  contents: write
+concurrency:
+  group: erate-priority-positions
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test independent question coding and accusation safeguards
+        run: python -m unittest discover -s tests -p 'test_priority_positions.py' -v
+      - name: Re-scan every original FCC filing and all Kaggle source claims
+        run: python -m scripts.build_priority_positions
+      - name: Verify source coverage and honest count labels
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=json.loads(Path('docs/data/kaggle/priority_position_candidates.json').read_text())
+          assert p['source_records']==3231 and p['readable_filings']==3230
+          assert p['model_completed_filings']==3230
+          assert p['status'].startswith('UNADJUDICATED_')
+          assert len(p['filings'])==3231
+          assert all(all(a['review_status']=='not_adjudicated' for a in row['axes'].values()) for row in p['filings'])
+          assert all(len(row['axes'])==4 for row in p['filings'])
+          print('All corpus IDs scanned; no unreviewed claims certified.')
+          PY
+      - name: Publish review candidate index
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data/kaggle/priority_position_candidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish full-corpus E-Rate policy and misuse allegation review candidates'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
