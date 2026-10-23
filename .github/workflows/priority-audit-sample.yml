@@ -1,0 +1,47 @@
+name: Priority position stratified audit sample
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/build_priority_audit_sample.py'
+      - 'docs/data/kaggle/priority_position_candidates.json'
+      - '.github/workflows/priority-audit-sample.yml'
+permissions:
+  contents: write
+concurrency:
+  group: erate-priority-audit-sample
+  cancel-in-progress: false
+jobs:
+  sample:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Create reproducible positive and negative candidate review strata
+        run: python -m scripts.build_priority_audit_sample
+      - name: Verify the sample covers every question's positive AND negative pools
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d=json.loads(Path('docs/data/kaggle/priority_audit_sample.json').read_text())
+          assert d['source_filings']==3230
+          assert len(d['strata'])==16
+          assert {s['axis'] for s in d['strata']}=={'funding','conditions','screen_harms','misuse'}
+          assert all(sum(s['population'] for s in d['strata'] if s['axis']==axis)==3230 for axis in ('funding','conditions','screen_harms','misuse'))
+          assert all(s['sampled']<=s['population'] for s in d['strata'])
+          print(d['total_assignments'],'assignments;',d['unique_filings'],'unique source documents')
+          PY
+      - name: Publish the source-grounded QA sampling frame
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data/kaggle/priority_audit_sample.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish transparent positive-negative four-question audit sample'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
