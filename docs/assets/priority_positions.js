@@ -253,7 +253,7 @@
   $('pp-prev').disabled=state.page===0;$('pp-next').disabled=state.page>=pages-1;
  }
  function download(){
-  const entries=Object.values(state.decisions),columns=['filing_id','reviewer','axis','labels','review_stage','misuse_legal_characterization','source_offset','chosen_source_quote','explanation','read_entire_source','reviewed_at'];
+  const entries=Object.values(state.decisions),columns=['filing_id','reviewer','axis','labels','review_stage','misuse_legal_characterization','misuse_allegation_type','screen_harm_to_funding_condition_link','new_condition_type','source_offset','chosen_source_quote','explanation','read_entire_source','reviewed_at'];
   const rows=entries.map(x=>({...x,labels:(x.labels||[]).join(';')}));
   const blob=new Blob([csv(rows,columns)],{type:'text/csv;charset=utf-8'});
   const url=URL.createObjectURL(blob),linkNode=el('a');linkNode.href=url;linkNode.download='erate_targeted_reviewer_decisions.csv';linkNode.click();
