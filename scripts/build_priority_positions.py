@@ -266,8 +266,18 @@ def build(files=DEFAULT_FILES, corpus=DEFAULT_CORPUS, index=DEFAULT_META,output=
           'Misuse allegations are statements in filings, not proven illegal use, fraud, or official findings.',
           'Long filings, OCR, incomplete extraction, source copies, repeated text, and unverified affiliations require targeted review.',
         ],'filings':out}
-    Path(output).parent.mkdir(parents=True,exist_ok=True)
-    Path(output).write_text(json.dumps(dataset,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    # Publishing a fresh UTC timestamp for byte-identical interpretations
+    # creates needless commits and clashes with independent audit workflows.
+    # Preserve the previous timestamp when no substantive candidate changed.
+    output=Path(output)
+    output.parent.mkdir(parents=True,exist_ok=True)
+    if output.exists():
+        previous=json.loads(output.read_text(encoding='utf-8'))
+        current_core={k:v for k,v in dataset.items() if k!='generated_utc'}
+        previous_core={k:v for k,v in previous.items() if k!='generated_utc'}
+        if current_core==previous_core:
+            dataset['generated_utc']=previous.get('generated_utc',dataset['generated_utc'])
+    output.write_text(json.dumps(dataset,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     return dataset
 
 def main():
