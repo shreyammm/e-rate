@@ -38,6 +38,14 @@ test('misuse review distinguishes illegal allegation from legally allowed spendi
  const output=p.reviewDecision({...base,legal:'alleges_illegal_or_ineligible'});
  assert.equal(output.value.misuse_legal_characterization,'alleges_illegal_or_ineligible');
 });
+test('explicit screen-harm causal links and misuse subtypes survive reviewer export',()=>{
+ const result=p.reviewDecision({reviewer:'r3',axis:'misuse',id:'456',labels:['specific_allegation'],
+  note:'The filer alleges a particular E-Rate billing violation.',source:{start:100,quote:'Federal funds were billed improperly',origin:'source_text_regex'},
+  read:true,legal:'alleges_illegal_or_ineligible',misuse_type:'improper_billing',screen_link:'yes_explicit'});
+ assert.equal(result.ok,true);
+ assert.equal(result.value.misuse_allegation_type,'improper_billing');
+ assert.equal(result.value.screen_harm_to_funding_condition_link,'yes_explicit');
+});
 test('CSV exports defend against formula injection',()=>{
  const s=p.csv([{filing_id:'17',explanation:'=HYPERLINK("bad")'}],['filing_id','explanation']);
  assert.ok(s.includes("'=HYPERLINK"));
