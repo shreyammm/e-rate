@@ -62,11 +62,15 @@ def model_call(messages, model, url):
         'claims':{'type':'array','maxItems':5,'items':{'type':'object',
             'properties':fields,'required':list(fields)}}},
         'required':['summary','stakeholder_role','stakeholder_quote','claims']}
-    for attempt in range(3):
+    # A truncated gpt-oss JSON response must not be retried with the identical
+    # token budget. Increase both available generation tokens and context on
+    # each attempt. Existing source-exact checkpoint fingerprints stay intact.
+    retry_budgets=((8192,3072),(10240,4096),(12288,6144))
+    for attempt,(num_ctx,num_predict) in enumerate(retry_budgets):
         try:
             payload={'model':model,'stream':False,'think':'low','format':schema,
                 'messages':messages,'keep_alive':'30m',
-                'options':{'temperature':0,'num_ctx':8192,'num_predict':3072}}
+                'options':{'temperature':0,'num_ctx':num_ctx,'num_predict':num_predict}}
             req=urllib.request.Request(url,data=json.dumps(payload).encode(),
                     headers={'Content-Type':'application/json'})
             with urllib.request.urlopen(req,timeout=420) as response: answer=json.load(response)
