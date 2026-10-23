@@ -4,7 +4,6 @@ on:
   push:
     paths:
       - 'scripts/build_priority_positions.py'
-      - 'tests/test_priority_positions.py'
       - '.github/workflows/priority-positions.yml'
 permissions:
   contents: write
