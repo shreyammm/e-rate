@@ -26,6 +26,26 @@ class PriorityPositionTests(unittest.TestCase):
         self.assertIn('no finding of misconduct',axis['caution'])
         self.assertTrue(any(e['start']>=0 for e in axis['evidence']))
 
+    def test_sunset_budget_diversion_is_not_misconduct_allegation(self):
+        text=('If E-Rate is eliminated, schools will be forced to divert scarce '
+              'funds from classroom priorities to internet service costs.')
+        v=self.sample(text)
+        self.assertNotIn('specific_allegation',v['axes']['misuse']['candidate_labels'])
+        self.assertNotIn('general_misuse_allegation',v['axes']['misuse']['candidate_labels'])
+
+    def test_explicit_negated_waste_claim_is_not_allegation(self):
+        text=('There are so many federal programs that are a waste of money; '
+              "E-Rate isn't one of them. We support the E-Rate program.")
+        v=self.sample(text)
+        self.assertNotIn('specific_allegation',v['axes']['misuse']['candidate_labels'])
+        self.assertNotIn('general_misuse_allegation',v['axes']['misuse']['candidate_labels'])
+
+    def test_preventing_possible_ineligible_mibs_not_specific_accusation(self):
+        text=('The FCC should prevent MIBS from being used to bundle '
+              'ineligible equipment into future E-Rate contracts.')
+        v=self.sample(text)
+        self.assertNotIn('specific_allegation',v['axes']['misuse']['candidate_labels'])
+
     def test_prevention_is_not_a_verified_allegation(self):
         text='We favor stronger fraud prevention and program integrity to avoid potential waste of E-Rate resources.'
         v=self.sample(text)
