@@ -1,0 +1,37 @@
+name: Reconcile reviewed E-Rate positions
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'data/priority_reviews/*.csv'
+      - 'scripts/aggregate_priority_reviews.py'
+      - 'tests/test_priority_review_aggregation.py'
+      - '.github/workflows/priority-review-aggregation.yml'
+permissions:
+  contents: write
+concurrency:
+  group: e-rate-reviewed-position-reconciliation
+  cancel-in-progress: false
+jobs:
+  count:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify reviewer independence and allegation safeguards
+        run: python -m unittest discover -s tests -p 'test_priority_review_aggregation.py' -v
+      - name: Reconcile source-backed reviewer exports
+        run: python -m scripts.aggregate_priority_reviews
+      - name: Publish two-reviewer subset counts only
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data/kaggle/priority_adjudicated_positions.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish independent reviewer agreement and dispute status (no unjustified prevalence)'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
