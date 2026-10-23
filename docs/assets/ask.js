@@ -410,6 +410,8 @@
     if(busy)return;
     const q=$('ask-question').value.trim();if(q.length<6){status('Please enter a substantive question.');return;}
     busy=true;researchCancelled=false;$('ask-submit').disabled=true;latestEvidence=[];
+    let heartbeat=null,inFlight=null;
+    const startTime=Date.now();
     const progress=$('ask-research-progress'),progressLabel=$('ask-research-progress-label');
     if(progress){progress.value=0;progress.hidden=false;}
     if(progressLabel)progressLabel.textContent='Starting complete source scan. A full new model run is approximately '+N(estimatedWindows)+' source-window analyses; existing checkpoints may save many calls.';
@@ -446,12 +448,26 @@
       try{
         const model=await loadModel();
         if(!window.ErateAllTextResearch)throw Error('Full-source model reader is unavailable; refusing a partial answer.');
+        heartbeat=setInterval(()=>{
+          if(!inFlight)return;
+          const elapsed=Math.floor((Date.now()-inFlight.time)/1000);
+          const patience=elapsed>=120?' · This model call is taking unusually long. Cancel to stop after the current inference.':'';
+          status('On-device model is analyzing filing '+inFlight.id+' ('+N(inFlight.start)+'–'+N(inFlight.end)+' of '+N(inFlight.length)+' characters). Current window: '+N(elapsed)+' seconds'+patience);
+          if(progressLabel)progressLabel.textContent=N(inFlight.finished)+' / ~'+N(estimatedWindows)+' source windows finished. Current model call running '+N(elapsed)+' seconds. Browser inference will not continue with the tab closed.';
+        },10000);
         const deep=await window.ErateAllTextResearch.run({
           question:q,meta,streamShard,engine:model,cancelled:()=>researchCancelled,
           onProgress:p=>{
+            if(p.phase==='window-start'){
+              inFlight={id:p.id,start:p.start,end:p.end,length:p.length,time:Date.now(),finished:p.chunks};
+              status('Starting on-device model for filing '+p.id+', characters '+N(p.start)+'–'+N(p.end)+' of '+N(p.length)+'; '+N(p.chunks)+' windows finished. This single call may be slow.');
+            }
             if(p.phase==='source'||p.phase==='filings'){
+              inFlight=null;
               if(progress)progress.value=Math.min(95,Math.round(95*p.chunks/Math.max(1,estimatedWindows)));
-              if(progressLabel)progressLabel.textContent=N(p.chunks)+' / ~'+N(estimatedWindows)+' original-text windows analyzed ('+N(p.cached)+' restored checkpoints). '+N(p.scanned)+' / '+N(p.total)+' filing records reached.';
+              const elapsed=Math.max(1,(Date.now()-startTime)/1000);
+              const eta=p.chunks>=3?Math.round((Math.max(0,estimatedWindows-p.chunks)*elapsed/p.chunks)/3600):null;
+              if(progressLabel)progressLabel.textContent=N(p.chunks)+' / ~'+N(estimatedWindows)+' original-text windows analyzed ('+N(p.cached)+' restored checkpoints). '+N(p.scanned)+' / '+N(p.total)+' records reached.'+(eta===null?'':' Rough remaining time at observed rate: '+N(eta)+' hours.');
               if(p.phase==='source')status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings reached · '+N(p.chunks)+' original-text windows analyzed · filing '+p.id+' '+N(p.end)+'/'+N(p.length)+' characters.');
               else status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings fully inspected · '+N(p.chunks)+' source windows · '+N(p.cached)+' checkpoint hits.');
             }else if(p.phase==='synthesis'){
@@ -478,7 +494,7 @@
       status('FULL-CORPUS SCAN INCOMPLETE: '+err.message+' No AI answer was generated.');
       $('ask-answer').append(el('p','ask-warning','No corpus-wide answer: the scan could not verify every filing. Please retry; partial evidence is not presented as a complete search.'));
       $('ask-evidence').replaceChildren();
-    }finally{busy=false;$('ask-submit').disabled=false;const cancel=$('ask-cancel');if(cancel){cancel.hidden=true;cancel.disabled=true;}}
+    }finally{if(heartbeat)clearInterval(heartbeat);busy=false;$('ask-submit').disabled=false;const cancel=$('ask-cancel');if(cancel){cancel.hidden=true;cancel.disabled=true;}}
   }
   async function init(){
     try{
