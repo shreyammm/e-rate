@@ -1,0 +1,37 @@
+{
+  "summary": "The superintendent of Tewksbury Public Schools urges the FCC to preserve the E-Rate program, emphasizing its critical role in providing reliable broadband infrastructure for schools and libraries. The school district discusses the importance of E-Rate for maintaining and upgrading broadband infrastructure, and the impact of reducing or eliminating E-Rate support on their budget and operational priorities. Opposes sunset of E-Rate program, emphasizing its importance for educational infrastructure and future readiness of students",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential for providing reliable broadband infrastructure for schools",
+      "evidence_quote": "E-Rate is the only federal education program focused on this essential infrastructure,",
+      "evidence_start": 1646,
+      "evidence_end": 1732,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110078741",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078741",
+  "filer_raw": "Dr. Nancy Milligan",
+  "date_submission": "2026-09-29T18:26:20.957Z",
+  "has_unreviewed_ocr": "1",
+  "agency_record_candidate": "0",
+  "source_sha256": "e86e7f9d55473e47647e114b1205f55226eace38df057c87024b2c786494294f",
+  "params_key": "571d56f0eda8180108a571bf40b30742aa63ab0e7de60aca5cd1dc5d1e96999b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

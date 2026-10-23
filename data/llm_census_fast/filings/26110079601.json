@@ -1,0 +1,49 @@
+{
+  "summary": "City View ISD urges the Commission to reject proposals to terminate E-Rate or restrict eligibility solely to rural areas. The district emphasizes the importance of maintaining affordable, reliable connectivity for teaching, learning, and district operations. Losing E-Rate would require the district to absorb higher network costs, defer equipment replacement, or scale back planned improvements, which could negatively impact other educational priorities. City View ISD urges the Commission to preserve a strong, sustainable E-Rate program to maintain essential connectivity for students and staff.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposals to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate were reduced or eliminated, local districts would face higher costs for connectivity and network infrastructure, diverting funds from other educational priorities.",
+      "evidence_quote": "If E-Rate were reduced or eliminated, City View ISD would still need internet service and functioning campus networks. The immediate effect would be to shift a greater share of those costs into the local district budget.",
+      "evidence_start": 3684,
+      "evidence_end": 3904,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Remove or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate would transfer costs to local budgets and increase pressure to delay infrastructure improvements",
+      "evidence_quote": "Reducing or ending the program would transfer costs to our local budget, increase pressure to delay infrastructure improvements, and force difficult tradeoffs among educational priorities.",
+      "evidence_start": 6873,
+      "evidence_end": 7061,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079601",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079601",
+  "filer_raw": "City View ISD",
+  "date_submission": "2026-10-06T15:50:18.248Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a03d4f3fb70cf6691d9577761ce5a2829d76e3108be1e062155452d70bb5d613",
+  "params_key": "5e172cc0510b7d25cb434063ca86ed674ec6073230b0b1f2fd2f6d9633cea8d6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "E-Rate program is essential for maintaining affordable connectivity and infrastructure for schools, which rely on E-Rate funding for their connectivity needs. The comments highlight the critical role of E-Rate in supporting daily instruction, student devices, state-mandated online assessments, and other educational technologies. The comments emphasize the financial and operational impacts of E-Rate reductions or eliminations on schools, which do not have access to local tax levies or bond refere The school district and charter school urge the FCC to preserve the core strengths of E-Rate, including support for affordable broadband, Internet access, internal connections, Wi-Fi, maintenance, and cost-effective network solutions, while avoiding changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining affordable connectivity and infrastructure, and reducing or eliminating it would have significant financial impacts on schools.",
+      "evidence_quote": "E-Rate is what allows us to provide reliable, high-capacity internet access and internal networks without diverting those dollars away from the classroom. Without it, every dollar of lost support would come directly out of instructional staffing and student programs.",
+      "evidence_start": 3029,
+      "evidence_end": 3296,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079438",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079438",
+  "filer_raw": "iLearn Schools, Inc.",
+  "date_submission": "2026-10-05T17:22:37.775Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "247f1ce2a4278924e5b15545d4ea3c10a14ca90da8365201730b25f497da7b38",
+  "params_key": "5f130cfb4e3d3a01e57f986dae8c3b3f321679f21e81a25dc824b33c9d745ab4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

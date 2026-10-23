@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve the E-Rate program and reject proposals to eliminate or sunset it, citing the program's essential role in providing reliable broadband infrastructure for modern public education and the potential financial burden on the district if the program were reduced or eliminated. The school district emphasizes the importance of E-Rate for providing reliable broadband infrastructure and supports preserving the program for educational access.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposal to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build connectivity infrastructure",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 6657,
+      "evidence_end": 7061,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079625",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079625",
+  "filer_raw": "Priya Tahiliani",
+  "date_submission": "2026-10-06T17:21:01.843Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "930c0050f6d72acd5640a0da1b56ad29bee1ca94f3dde72acfcf75a721921781",
+  "params_key": "30057b7af6b00aa56c6d65aa9368bf36cef6d67b863e6e9d6780fa6fe83b7437",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

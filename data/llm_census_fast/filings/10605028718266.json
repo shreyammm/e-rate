@@ -1,0 +1,37 @@
+{
+  "summary": "The taxpayer and parent object to E-Rate funding of wifi hotspots in schools, arguing that it misuses funds and creates a lack of supervision over children's internet access. The text discusses the negative impacts of excessive screen time on children, including obesity, mental health issues, and physical health. It argues that E-Rate should condition eligibility on screen-time limits to protect children's privacy and well-being.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "daily_hour_limits",
+      "position": "oppose",
+      "requested_action": "FCC-imposed daily hour limits",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding misuse",
+      "evidence_quote": "Internet access in school cannot be supervised to the extent that is required to keep children safe. The burden of supervision cannot fall on teachers. It doesn’t work.",
+      "evidence_start": 376,
+      "evidence_end": 544,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "daily_hour_limits": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "10605028718266",
+  "source_url": "https://www.fcc.gov/ecfs/filing/10605028718266",
+  "filer_raw": "Lisa Cline",
+  "date_submission": "2026-06-05T11:40:08.067Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1f82e9f72f88480c7234fea8ed50f0666522f5a102ca5d128add2c7c11015c9f",
+  "params_key": "ea8d02904062c48cc4d3a47e5d58c85c55d2146da46489c4a9730cdde9de7344",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

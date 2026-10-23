@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential infrastructure for their school operations, including network infrastructure, safety systems, and communication networks. They argue that reducing or eliminating E-Rate would have a devastating operational impact, leading to severe budget cuts and service disruptions. The claim is supported by a direct quote about the financial burden of absorbing additional costs for infrastructure maintenance. The school district emphasizes the importance of preserving and modernizing the E-Rate program to ensure reliable broadband infrastructure for schools, which is essential for student safety, cybersecurity, and educational access. The district urges the FCC to reject proposals to sunset or eliminate the program and instead work with schools to streamline and modernize E-Rate.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would create an unmanageable deficit for school districts, leading to severe cuts in essential services.",
+      "evidence_quote": "If E-Rate funding were reduced or eliminated, absorbing that additional $200,000 to $300,000 every five-year budget cycle would create an unmanageable deficit. Because school districts operate within strictly finite budgets, forcing us to bear the full cost of essential infrastructure would compel our district to make severe cuts—laying off educators and staff, and eliminating key student programs just to keep basic internet hardware running.",
+      "evidence_start": 3579,
+      "evidence_end": 4025,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078338",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078338",
+  "filer_raw": "Mayville School District",
+  "date_submission": "2026-09-25T17:07:57.863Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "20d4b58ff2ed65d46f6c26230d9e0dac59c7d590328e13836a65cb90511db12c",
+  "params_key": "90e40d94b97a43227a2991f3ef7471981b23b6da9cbb073f14dab1446b613fb8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

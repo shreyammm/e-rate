@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential infrastructure and connectivity for modern public education, arguing that preserving E-Rate is essential to avoid budget cuts and maintain educational services. The school district and parent advocate for preserving E-Rate funding, emphasizing its importance for connectivity and educational access. They argue against sunsetting the program and against proposals to narrow eligibility or restrict support based on geography or other criteria. They stress the need to maintain E-Rate to ensure students have access to reliable, affordable, and effective connectivity for learning.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build connectivity necessary for modern education",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 7350,
+      "evidence_end": 7754,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079779",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079779",
+  "filer_raw": "Todd Boothe",
+  "date_submission": "2026-10-07T14:57:53.728Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "01e7b5090907d2b7ecb351d86435894347c028b4c754f2326d7d75ad5b7350e6",
+  "params_key": "b1663ba918c987dda3d4e3aa0a055c094c1f100e2fb8ec98621ca43c739ac5b6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

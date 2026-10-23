@@ -1,0 +1,37 @@
+{
+  "summary": "As a parent and CTO, the author argues that E-Rate is essential for providing reliable internet access to students and teachers, which is critical for modern education. Removing E-Rate would disproportionately impact students with limited home internet access and could compromise cybersecurity measures. The FCC proposal to sunset E-Rate would have significant budgetary and safety implications for school districts, as it would force them to choose between maintaining connectivity and ensuring student safety. The proposal would also weaken the program's compliance framework for protecting children online and could lead to districts losing support for students in non-rural areas. The author argues for maintaining both Category 1 and Category 2 support and rejecting any proposal to sunset or limit ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain both Category 1 and Category 2 support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal to sunset E-Rate would force districts to choose between keeping students connected and keeping them safe, which is not a tradeoff.",
+      "evidence_quote": "es not save a district money in any real sense; it forces a choice between keeping students connected and keeping them safe, paid for by pulling dollars away from instruction.",
+      "evidence_start": 4378,
+      "evidence_end": 4553,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110005709",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110005709",
+  "filer_raw": "Scott C. Buller",
+  "date_submission": "2026-07-09T23:40:36.733Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "255d0c743f337d5e36dcaff8becf9330c0105d80a7b3968d61d5b5691e4347d5",
+  "params_key": "7e3c978a521988cfbb54d308a279f315d820956fb67ed49938568bd9d9879898",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

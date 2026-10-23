@@ -1,0 +1,49 @@
+{
+  "summary": "The FCC proposal to sunset or reduce E-Rate funding is opposed by the school district, which emphasizes the program's critical role in maintaining connectivity and supporting educational functions. The district argues that any reduction would have direct and tangible impacts on its operations and educational capabilities. The school district emphasizes the importance of preserving E-Rate funding to ensure schools can continue providing necessary connectivity for students. The district urges the Commission to reject proposals to sunset or eliminate the program and instead work to strengthen and modernize E-Rate.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Reject proposals tying E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate is essential infrastructure for modern public education",
+      "evidence_quote": "E-Rate is the only federal education technology program, and the connectivity it provides is foundational to supporting our students’ learning",
+      "evidence_start": 2626,
+      "evidence_end": 2768,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Reject proposals tying E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The FCC’s proposal points to progress in connectivity, but connectivity is a result of E-Rate success, not a reason to end it",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared",
+      "evidence_start": 2771,
+      "evidence_end": 3055,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110078903",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078903",
+  "filer_raw": "Alena Zachery-Ross",
+  "date_submission": "2026-09-30T17:30:06.222Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "37e2cc538a6be0350d9e49cc120dc23e649110c357e49e59a268e1bf2308b2ea",
+  "params_key": "b32f45a04d84568d94b68d44af7fdf5083308911c791877a6bf9116ff171ad46",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

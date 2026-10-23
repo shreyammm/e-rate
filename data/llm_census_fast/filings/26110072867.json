@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining and upgrading network infrastructure for modern public education, highlighting the direct impact of reduced E-Rate support on their budget constraints and the need to preserve and strengthen the program to ensure continued connectivity and educational services. The technology director urges the FCC to preserve and improve the E-Rate program rather than sunset it, emphasizing its role in providing connectivity for modern education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "not sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build connectivity infrastructure",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education. As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+      "evidence_start": 6667,
+      "evidence_end": 7071,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110072867",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072867",
+  "filer_raw": "Kevin Mack",
+  "date_submission": "2026-08-24T15:54:27.699Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0be96a1dd33c2a74b84dc04b16729de777c04af6fc63e43fc4094c67200bcc2d",
+  "params_key": "cb9d8d37ea9c3d4bdfed7a4850c5fd19623de7ac97a58456fe2043a4f13fb069",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

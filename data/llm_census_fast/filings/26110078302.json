@@ -1,0 +1,37 @@
+{
+  "summary": "School district expresses concern about maintaining E Rate program to ensure access to technology for students and maintain educational resources. The school district emphasizes the importance of preserving E-Rate funding to maintain connectivity and infrastructure for students. They highlight the financial impact of losing E-Rate support and the need to protect the program for students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain E Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E Rate would force school districts to absorb additional costs locally, reducing resources for other educational priorities",
+      "evidence_quote": "For a school district, that means local dollars must be redirected to cover expenses that E Rate has historically helped offset. Those dollars then cannot be used for teachers, paraeducators, special education services, transportation, student support, instructional materials, mental health services, or other priorities that directly affect students.",
+      "evidence_start": 2620,
+      "evidence_end": 2972,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078302",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078302",
+  "filer_raw": "Clover Park School District",
+  "date_submission": "2026-09-25T15:41:06.475Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d82c278d3c58e4bf43d8408cba5210041f82446fac869f24f985c508208149b7",
+  "params_key": "6c7a4545afc45a56448212b900083710092c23547e2de959f33701e85b99eddc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

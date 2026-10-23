@@ -1,0 +1,49 @@
+{
+  "summary": "The Ontario Public Library opposes the sunset of E-Rate, emphasizing the significant cost impact on their budget and the essential services they provide, such as internet access for patrons, library fees, and community services. The text argues against sunsetting E-Rate to maintain its cost-effectiveness and affordability for libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The cessation of the E-rate could affect more than just the public's access to the internet. If this program ended we would have to budget over $7000 a year to cover the cost of just the internet.",
+      "evidence_quote": "We have our printing, telephone system, faxing and many programs and events depend on that internet access. The increase to our internet cost would be significant. If this program ended we would have to budget over $7000 a year to cover the cost of just the internet.",
+      "evidence_start": 1642,
+      "evidence_end": 1909,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The text argues against sunsetting E-Rate to maintain its cost-effectiveness and affordability for libraries.",
+      "evidence_quote": "But if our internet costs rise, we may have to pass that increase to our patrons who have enough financial pressures.",
+      "evidence_start": 4478,
+      "evidence_end": 4595,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081152",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081152",
+  "filer_raw": "Anne Rehor",
+  "date_submission": "2026-10-13T19:29:44.503Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "781cd6809063ab1b5c55f7fcec2b95b4510d2be00fb059c0f30b665951764ca7",
+  "params_key": "b6947232914d1f53587b10d37c8a1a97825e1c58b5d9ef92e4db2ac85374461a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

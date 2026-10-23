@@ -1,0 +1,49 @@
+{
+  "summary": "Milwaukee Public Library urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the program's critical role in maintaining affordable and reliable Internet access for schools and libraries. The Milwaukee Public Library urges the FCC to continue E-Rate funding support to ensure affordable access to reliable broadband internet services and equipment, which are essential for the library's operations and community needs.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would jeopardize school and library budgets, threatening years of progress in building and upgrading networks",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 708,
+      "evidence_end": 850,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "continue E-Rate funding support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate is cut, MPL will have to cut its budget in other areas to cover costs, which could result in reduced hours, reducing direct access to physical materials and resources through partial or complete building closures",
+      "evidence_quote": "If E-Rate is cut, then MPL will have to cut its budget in other areas to cover these costs. Since the City of Milwaukee is already struggling to close its budget gap, further hits to the library’s budget could result in reduced hours, reducing direct access to physical materials and resources through partial or complete building closures,",
+      "evidence_start": 6779,
+      "evidence_end": 7119,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110071315",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071315",
+  "filer_raw": "Milwaukee Public Library",
+  "date_submission": "2026-08-14T15:11:21.477Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "057451e0cebe9a8ff64f0c8b39caba4a4add7e43ab95a07ded884d3cf9c98971",
+  "params_key": "0d7801b08f543cff2e15194ea26e2a9abfdd96c4b224318a4e41458ec593d665",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

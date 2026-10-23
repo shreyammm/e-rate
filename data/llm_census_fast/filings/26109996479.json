@@ -1,0 +1,49 @@
+{
+  "summary": "The comments argue that the E-Rate program has outlived its purpose due to the widespread availability of broadband, which has made the program unnecessary. The comments also highlight issues with CIPA compliance and the role of the American Library Association in facilitating non-compliance. The comments further question whether the funds are being used for appropriate educational purposes or for other purposes that may not align with the program's intended goals. The comment opposes the sunset of the E-Rate program, arguing for its phase-out or narrowing in favor of libraries, citing budget concerns, program integrity, and the diversion of resources to non-educational programming.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Continuing the program at current levels risks subsidizing services the market now provides efficiently, potentially distorting competition and creating ongoing administrative costs without commensurate public benefit",
+      "evidence_quote": "In this environment, a dedicated federal subsidy program for basic connectivity in schools and libraries is no longer necessary for most communities. Continuing the program at current levels risks subsidizing services the market now provides efficiently, potentially distorting competition and creating ongoing administrative costs without commensurate public benefit.",
+      "evidence_start": 1813,
+      "evidence_end": 2181,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "phase out or substantially narrow E-Rate support for libraries",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Given the maturity of the broadband market, persistent questions about program integrity and CIPA enforcement, and the diversion of attention and resources toward controversial, non-educational programming",
+      "evidence_quote": "Given the maturity of the broadband market, persistent questions about program integrity and CIPA enforcement, and the diversion of attention and resources toward controversial, non-educational programming",
+      "evidence_start": 6279,
+      "evidence_end": 6484,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26109996479",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109996479",
+  "filer_raw": "Dan Kleinman | SafeLibraries® brand library educational services",
+  "date_submission": "2026-07-07T03:19:13.940Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1c4e8fe9daf2cb79bc02d1c40c0c0d48f155ab2fe739103961c215f08fb42bb9",
+  "params_key": "a64d6ed10acd43d47f8a6a3dd6ab88c548897d6cb68fa2fb3b5a0864431219d4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

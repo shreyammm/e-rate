@@ -1,0 +1,49 @@
+{
+  "summary": "The Sanibel Public Library District emphasizes the importance of E-Rate for maintaining affordable connectivity and network infrastructure in their library, which serves 35,000 patrons. They highlight the ongoing need for E-Rate to cover monthly service costs and support various services, such as public Wi-Fi, public computer access, digital collections, and community services. The library also points out the limitations of the current E-Rate program, such as the narrow eligibility scope and the The Sanibel Public Library District argues for preserving the current E-Rate program, emphasizing the importance of affordable broadband and network services for libraries. They highlight the potential for visible cuts and operational impacts if E-Rate funding were reduced or eliminated.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would eliminate a critical funding source for libraries, leading to increased costs for maintaining connectivity and network infrastructure.",
+      "evidence_quote": "Even where E-Rate is not currently funding a new build or upgrade, it remains essential for maintaining affordable monthly service, and any build or upgrade only lasts the life of the technology as capacity needs continue to grow.",
+      "evidence_start": 1177,
+      "evidence_end": 1407,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reduced E-Rate support would result in visible cuts to library services",
+      "evidence_quote": "For the Sanibel Public Library District, a reduction in E-Rate support becomes a reduction in what the library can actually deliver to its community, not an abstract line item, but fewer open hours, fewer staff, fewer programs, and a harder time keeping the building safe and running.",
+      "evidence_start": 6208,
+      "evidence_end": 6492,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073388",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073388",
+  "filer_raw": "Sanibel Public Library District",
+  "date_submission": "2026-08-27T16:20:53.317Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b04675ecab57bdf417cbff1e65d7087511320cd271d86a77cdaefb1ec25503e8",
+  "params_key": "8675fb1142806e1189a6aad018d1bd2641991c9a23142c8a5010f45b8fe2c9a8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

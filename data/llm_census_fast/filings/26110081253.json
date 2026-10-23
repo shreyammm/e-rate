@@ -1,0 +1,37 @@
+{
+  "summary": "The FCC's Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking discusses the E-Rate program review, including the impact on Mississippi public libraries. The claim opposes narrowing the eligible equipment and services under E-Rate, arguing that it maintains the current level of support for libraries and their communities. The comment supports simplifying the E-Rate program by standardizing discount percentages for schools and libraries, regardless of their classification as rural or urban. The comment emphasizes the need for cost savings and budget efficiency through a more streamlined approach to eligibility and funding allocation. Mississippi's State E-Rate Coordinator shares firsthand experience and perspective on the importance of the program.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Narrow eligible equipment and services",
+      "evidence_quote": "To simplify the E-Rate program even further, I encourage the FCC to consider establishing a standard discount of 90% for Category One services and 85% for Category Two services for all eligible schools and libraries, regardless of whether they are classified as rural or urban.",
+      "evidence_start": 4319,
+      "evidence_end": 4596,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "support"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110081253",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081253",
+  "filer_raw": "Sharmaine Frazier",
+  "date_submission": "2026-10-13T21:23:03.874Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6a6eb5b65e319785035995a71ebdecaf253a856c4b1cfe36a01f0cdd266d5fc0",
+  "params_key": "83019c134cb2d20422509587cc1dbdcc5bc5ccb8c8f48d44fabfa8d483e72870",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

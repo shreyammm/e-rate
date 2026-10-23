@@ -1,0 +1,49 @@
+{
+  "summary": "The school opposes any narrowing, restructuring, or sunset of the E-Rate program, emphasizing the program's critical role in maintaining essential network infrastructure and connectivity for their school. The school highlights the significant cost savings provided by E-Rate and the potential impact of its reduction on their budget and operations. The comment argues that limiting or sunsetting E-Rate would devastate charter schools operating in facilities they cannot own, and urges rejection of proposals to do so.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The total annual savings Global Academy receives through E-Rate is roughly equivalent to one full-time teacher's salary. If E-Rate is reduced or eliminated, a school like ours does not absorb the cost. It eliminates a position, or it lets its network degrade. There is no third option.",
+      "evidence_quote": "I want to start with a number the Commission should remember: the total annual savings Global Academy receives through E-Rate is roughly equivalent to one full-time teacher's salary. That is the real trade-off this proceeding is about. If E-Rate is reduced or eliminated, a school like ours does not absorb the cost. It eliminates a position, or it lets its network degrade.",
+      "evidence_start": 342,
+      "evidence_end": 716,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would be devastating for charter schools operating in facilities they cannot own",
+      "evidence_quote": "The facilities problem compounds the infrastructure problem\n\nMinnesota law explicitly prohibits charter schools from using state funds to purchase land or buildings (Minn. Stat. § 124E.26, Subd. 1). Many charter schools operate in converted commercial spaces — former retail, former office — that were never designed or wired for school use. The wireless infrastructure, the structured cabling, the network closets: all of it has to be built from scratch before the building can function as a school.",
+      "evidence_start": 4366,
+      "evidence_end": 4866,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110070437",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110070437",
+  "filer_raw": "Andrew Charrier | Andy Charrier",
+  "date_submission": "2026-08-11T16:30:46.241Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8be210b3624163e8121da51538ed5fbf30713ae7e9d6edfaceb10105e5b2851a",
+  "params_key": "938d1cfff40e6038e9658d864ef4214c6d9dc552bdde49c0d230e1ed257086f3",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,62 @@
+{
+  "summary": "The FCC proposal to alter or eliminate E-rate funding for schools and libraries appears to be an effort to solve a non-existing problem. The text presents a parent's perspective on the importance of preserving E-rate funding for ensuring internet access in schools, emphasizing its role in bridging the digital divide and supporting educational outcomes. The parent argues against the sunset of E-rate, citing the program's essential role in providing internet connectivity to schools and the potential negative impact of its elimination on educational access and quality.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-rate funding supports educational outcomes by providing internet access for schools",
+      "evidence_quote": "Our schools are connected to the internet which meets one of E-rates goals",
+      "evidence_start": 6550,
+      "evidence_end": 6624,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "eliminate E-rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposal seeks to eliminate E-rate funding without providing any real-world justification.",
+      "evidence_quote": "The FCC proposal to alter, or eliminate, E-rate funding for schools and libraries appears to be an effort to solve a non-existing problem.",
+      "evidence_start": 0,
+      "evidence_end": 138,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate funding will not address government deficits",
+      "evidence_quote": "An argument is continuing with E-rate may be unfair government interference in the private sector.",
+      "evidence_start": 4419,
+      "evidence_end": 4517,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078183",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078183",
+  "filer_raw": "Gary Henry",
+  "date_submission": "2026-09-24T22:05:32.454Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "15a3738992b947894feb54f9e1065501578ec5c64631bfe9c7787598559d62d2",
+  "params_key": "09c297553fe09563b281a77a21ccccc79576b9d7ff6246213caceb4af618a4aa",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}
