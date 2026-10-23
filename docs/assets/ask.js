@@ -509,6 +509,9 @@
       },0);
       status('Ready. Every question scans all '+N(meta.records)+' source records; full AI mode reads all '+N(meta.with_text)+' texts in approximately '+N(estimatedWindows)+' original-text windows. It may require many hours on your own GPU, but is resumable.');
       $('ask-submit').disabled=false;$('ask-submit').onclick=ask;
+      const aiToggle=$('ask-use-ai');
+      if(aiToggle){const sync=()=>{$('ask-submit').textContent=aiToggle.checked?'Start exhaustive AI study (long-running)':'Search all filings';};
+        aiToggle.onchange=sync;sync();}
       $('ask-question').addEventListener('keydown',ev=>{if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();ask();}});
       const shared=new URLSearchParams(location.search).get('q');
       if(shared&&shared.length<1000)$('ask-question').value=shared;
