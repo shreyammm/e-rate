@@ -78,13 +78,13 @@ RAW_RULES={
     r'\b(?:screen\W*time|screen use|device use|digital exposure|screens in (?:schools|classrooms))\b',
  ],
  'general_misuse_allegation':[
-    r'\b(?:e[\s-]?rate|e[\s-]?rate funds|taxpayer funds)\b.{0,150}\b(?:misus\w*|abuse\w*|wast\w*|fraud\w*|improperly used|ineligible spend\w*)\b',
-    r'\b(?:misus\w*|wast\w*|fraud\w*|improperly used)\b.{0,125}\b(?:e[\s-]?rate|fund\w*|subsid\w*)\b',
- ],
- 'specific_allegation':[
-    r'\b(?:fraudulent(?:ly)?|improper(?:ly)?|ineligible|misus(?:e|ed)|divert(?:ed|ing)?|overbill(?:ed|ing)?|bid.rigg\w*|kickback\w*)\b.{0,125}\b(?:e[\s-]?rate|fund\w*|bill\w*|procure\w*|payment\w*|contract\w*|school wi[\s-]?fi)\b',
-    r'\b(?:e[\s-]?rate|taxpayer|federal)\b.{0,110}\b(?:funds|dollars|subsidies|money)\b.{0,85}\b(?:are being|is being|have been|were|was)\b.{0,65}\b(?:misus\w*|divert\w*|wast\w*|spent|fraud\w*)\b',
- ],
+    r'\b(?:e[\s-]?rate|e[\s-]?rate funds|taxpayer funds)\b.{0,115}\b(?:misus(?:e|ed)|fraudulent(?:ly)?|wast(?:ed|ing)|illegally spent|improperly spent)\b',
+    r'\b(?:misus(?:e|ed)|fraudulent(?:ly)?|wast(?:ed|ing)|misappropriat\w*|spent illegally)\b.{0,90}\b(?:e[\s-]?rate|e[\s-]?rate funds|subsid\w*)\b',
+  ],
+  'specific_allegation':[
+    r'\b(?:fraudulent(?:ly)?|misus(?:e|ed)|overbill(?:ed|ing)?|bid.rigg\w*|kickback\w*|misappropriat\w*|improperly billed|ineligible (?:equipment|expenses?|purchases?|costs?|charges?|services?))\b.{0,95}\b(?:e[\s-]?rate|fund\w*|bill\w*|procure\w*|payment\w*|contract\w*)\b',
+    r'\b(?:e[\s-]?rate|taxpayer|federal)\b.{0,95}\b(?:funds|dollars|subsidies|money)\b.{0,80}\b(?:are being|is being|have been|were|was)\b.{0,65}\b(?:misus\w*|fraud\w*|misappropriat\w*|spent on ineligible)\b',
+  ],
  'risk_or_hypothetical':[
     r'\b(?:risk|potential|prevent|preventing|could|might|possible|concern\w*)\b.{0,75}\b(?:fraud|misuse|abuse|waste|improper payment)\b',
  ],
@@ -111,6 +111,30 @@ HINTS={
 }
 NEGATION_WARNING=re.compile(r'\b(?:should (?:not|never)|must not|do not|oppose|reject|avoid|whether|asks? (?:if|whether)|we seek comment|the commission proposes|proposed rule|nprm)\b',re.I)
 CONTACT_REPLACEMENT='[CONTACT REDACTED]'
+# High-precision allegation triage exclusions. Prevention, hypothetical risks,
+# cut-induced budget reallocations and negated "waste" are not accusations.
+MISUSE_NOT_ALLEGED=re.compile(
+ r"\b(?:prevent(?:ing)?|avoid|reduce risk of|risk of|potential|could|might|would|"
+ r"may be|proposed|proposal|if the|whether|how to prevent|not a waste|isn.t waste|"
+ r"is not waste|not misus(?:e|ed)|no fraud|without fraud)\b",re.I)
+BUDGET_REALLOCATION=re.compile(
+ r"\b(?:divert(?:ed|ing)?|redirect|shift)\b.{0,100}\b(?:fund\w*|resources?|budgets?|costs?|instruction)\b",re.I)
+DIRECT_ASSERTION=re.compile(
+ r"\b(?:misus(?:e|ed)|misappropriat\w*|fraudulent(?:ly)?|overbill\w*|kickbacks?|"
+ r"bid.rigg\w*|spent on ineligible|improperly billed|spent illegally|ineligible costs?)\b",re.I)
+
+def plausible_allegation_context(text,begin,end):
+    # Inspect the local SENTENCE, not a huge paragraph containing both an
+    # allegation and unrelated calls for fraud-prevention reforms.
+    left=max(0,text.rfind('.',max(0,begin-200),begin)+1,
+             text.rfind('\n',max(0,begin-200),begin)+1)
+    right=text.find('.',end,min(len(text),end+150))
+    if right<end:right=min(len(text),end+150)
+    segment=text[left:right+1]
+    if MISUSE_NOT_ALLEGED.search(segment):return False
+    if BUDGET_REALLOCATION.search(segment) and not DIRECT_ASSERTION.search(segment):return False
+    return bool(DIRECT_ASSERTION.search(segment))
+
 
 def redact(s):
     return CONTACT.sub(CONTACT_REPLACEMENT,s)
@@ -125,6 +149,7 @@ def build_one(sid,text,model,meta):
         for p in patterns:
             for m in p.finditer(text):
                 if len(all_hits[label])>=3:break
+                if label in ('general_misuse_allegation','specific_allegation') and not plausible_allegation_context(text,m.start(),m.end()):continue
                 ev=window(text,m.start(),m.end(),115)
                 quote=ev['quote']
                 if any(x['start']==ev['start'] for x in all_hits[label]):continue
@@ -151,6 +176,7 @@ def build_one(sid,text,model,meta):
                     continue
                 for label in AXES[axis]:
                     pattern=HINTS.get(label)
+                    if axis=='misuse' and label in ('specific_allegation','general_misuse_allegation'):continue
                     if pattern is None or not pattern.search(input_text) or len(all_hits[label])>=4:continue
                     offset=c.get('evidence_start')
                     quote=str(c.get('evidence_quote') or '')
