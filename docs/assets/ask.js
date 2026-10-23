@@ -268,8 +268,7 @@
   }
   function displayComparison(found,evidence){
     const box=$('ask-comparison');if(!box)return;box.replaceChildren();
-    const used=promptEvidence(evidence);
-    box.append(el('p','ask-muted',N(found.candidates.length)+' lexical matching filings; '+N(new Set(found.candidates.map(r=>r.filer.trim().toLowerCase()).filter(Boolean)).size)+' distinct nonempty filer-name strings. These are search coverage measures, not supporters or verified people. '+used.length+' complete passages supplied to the answer model.'));
+    box.append(el('p','ask-muted',N(found.candidates.length)+' lexical matching filings; '+N(new Set(found.candidates.map(r=>r.filer.trim().toLowerCase()).filter(Boolean)).size)+' distinct nonempty filer-name strings. These are search coverage measures, not supporters or verified people. All matching filings are processed in batches by the answer model. '+N(evidence.length)+' source excerpts previewed below.'));
     const table=el('table');const head=el('tr');
     for(const title of ['Source','Search cues to inspect','Answer context'])head.append(el('th','',title));
     table.append(head);
@@ -277,7 +276,7 @@
       name.append(link('['+(i+1)+'] '+(e.filer||e.id),sourceLink(e.id)));
       const labels=[];if(e.affirmative)labels.push('possible requested restriction');if(e.contrary)labels.push('possible objection or preservation language');
       cues.textContent=(labels.join('; ')||'topic-related language')+(e.ocr?' · unreviewed OCR':'');
-      context.textContent=i<used.length?'Full displayed passage':'Available for your inspection';
+      context.textContent='Preview shown; every matched filing receives a model pass';
       row.append(name,cues,context);table.append(row);
     });
     box.append(table,el('p','ask-small','Passages use question-concept matches, optionally boosted by document-level BM25. Search cues are automatic retrieval hints. Read the passage to distinguish the author’s position from a quoted proposal or rebuttal. They are not stance labels.'));
