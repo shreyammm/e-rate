@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-Rate Positions & Coalitions | FCC Comment Observatory</title>
+<meta name="description" content="Review four major FCC E-Rate questions against every filing: program continuation, new conditions, screen-use harms, and alleged misuse. Source evidence, caveats, review decisions and exports.">
+<link rel="stylesheet" href="./assets/site.css"><link rel="stylesheet" href="./assets/kaggle_research.css"><link rel="stylesheet" href="./assets/priority_positions.css"></head><body>
+<header class="site-top"><div class="shell header-row"><div><strong>E-Rate Comment Observatory</strong><span class="subhead">Targeted Positions & Coalitions</span></div><nav class="kr-topnav"><a href="./">Source dashboard</a><a href="./kaggle.html">Kaggle Research Studio</a><a href="./ask.html">Ask the Corpus</a><a href="./corpus.html">Full texts</a></nav></div></header>
+<main class="shell kr-shell">
+<section class="kr-hero"><p class="kr-eyebrow">First-pass source audit · four independent research questions</p>
+<h1>Who supports what—and what evidence actually establishes their position?</h1>
+<p>Analyze E-Rate funding, additional federal conditions, screen-time concerns, and <strong>allegations of misuse</strong> independently. This first pass uses <strong>every original filing</strong> plus Kaggle's extracted evidence to flag candidates for human review. An excerpt matching a term is <em>not a vote</em>, and an accusation in a comment is <em>not a finding of misconduct</em>.</p>
+<div class="kr-links"><a href="#pp-candidates">Review candidate positions</a><a href="#pp-overlaps">Coalition intersections</a><a href="#pp-coding">Code an original filing</a><a href="#pp-method">How we validate counts</a><a href="./kaggle.html">All Kaggle findings ↗</a></div>
+<p id="pp-status" class="kr-status" role="status">Loading the complete full-source candidate index…</p>
+<div id="pp-kpis" class="kr-kpis"></div>
+</section>
+<div class="kr-notice"><strong>Publication safeguard:</strong> The numbers below are <strong>potentially relevant filings to review</strong>, not audited numbers of supporters, opponents, or fraud incidents. The model previously reversed positions on E-Rate sunset, so its original support/oppose fields are explicitly excluded. The tool never treats a keyword match or a hypothetical risk as a substantiated misconduct allegation.</div>
+
+<section class="kr-section" id="pp-candidates"><p class="kr-eyebrow">Corpus-wide candidate pool</p><h2>Four targeted questions</h2><p class="kr-muted">Count distinct filing IDs containing each source-text or Kaggle-action cue. Categories are nonexclusive; a filer may discuss several positions. Select a category to review the exact passages.</p>
+<div id="pp-axes" class="pp-axis-grid"></div>
+</section>
+<section class="kr-section" id="pp-overlaps"><p class="kr-eyebrow">Across issues</p><h2>Where potential coalitions overlap</h2><p class="kr-muted">These are intersections of candidate language, not proof of endorsement of either proposition. The most useful result after review will be the verified intersection of screen-related concerns and support for actual E-Rate cuts or additional conditions.</p><div id="pp-overlap-cards" class="kr-cards"></div></section>
+<section class="kr-section" id="pp-coding"><p class="kr-eyebrow">Source-backed human review</p><h2>Inspect each filing and adjudicate its arguments</h2>
+<p>Choose one axis at a time. Click the original FCC filing or the complete extracted text, review the author's actual recommendation, and select all positions supported by the source. A positive decision requires a selected source excerpt and a reviewer note. Browser-only decisions can be exported; they do not silently become published statistics.</p>
+<div class="kr-controls kr-controls-four">
+<label>Research question<select id="pp-axis"><option value="funding">Preserve / cut / end E-Rate</option><option value="conditions">New federal conditions</option><option value="screen_harms">Screen-time concerns</option><option value="misuse">Allegations of E-Rate misuse</option></select></label>
+<label>Candidate cue<select id="pp-label"><option value="">All candidate labels</option></select></label>
+<label>Commenter type<select id="pp-role"><option value="">All types</option></select></label>
+<label>Search source / filer<input id="pp-search" type="search" placeholder="Organization, claim, filing ID…"></label>
+<label>Prioritize<select id="pp-priority"><option value="candidate">Candidate evidence first</option><option value="conflicts">Multiple / contradictory cues</option><option value="selective">Selective-reading or OCR cases</option><option value="uncoded">Not reviewed here</option><option value="all">All filings</option></select></label>
+<label>Model coverage<select id="pp-scope"><option value="">All text lengths</option><option value="full_text">Kaggle full-text only</option><option value="prioritized_windows">Kaggle selected long-document windows</option></select></label>
+<label>Reviewer ID<input id="pp-reviewer" type="text" maxlength="50" value="reviewer-1" placeholder="Reviewer ID"></label>
+<label>Page size<select id="pp-per"><option value="15">15 filings</option><option value="30">30 filings</option></select></label>
+</div>
+<div class="kr-toolbar"><p id="pp-count" class="kr-count">Loading candidate filings…</p><button id="pp-export" type="button">Export all reviewer decisions CSV</button><button id="pp-reset" type="button">Reset filters</button></div>
+<div id="pp-results"></div><div class="kr-pager"><button id="pp-prev" type="button">Previous</button><span id="pp-page"></span><button id="pp-next" type="button">Next</button></div>
+</section>
+<section class="kr-section" id="pp-method"><p class="kr-eyebrow">Publishable counts require validation</p><h2>How we'll move from leads to credible numbers</h2>
+<div class="kr-cards">
+<article class="kr-card"><h3>1. Every filing considered</h3><p>Search all 3,230 readable source texts and all available Kaggle claims. Flag both positive and contrary evidence and separately identify missing or low-quality source coverage.</p></article>
+<article class="kr-card"><h3>2. Source-exact adjudication</h3><p>Code what the <em>filer</em> endorses, not a quoted FCC proposal. Separate ending E-Rate from cutting particular subsidies; concern about screen time from mandating limits; alleging misuse from calling for better oversight.</p></article>
+<article class="kr-card"><h3>3. Randomized error audit</h3><p>Sample both model-flagged and model-negative filings for false positives and missed arguments. Double-code contested and potentially reputational allegations. A one-person browser review is not an independently validated census.</p></article>
+<article class="kr-card"><h3>4. Report real denominators</h3><p>Publish counts as distinct <strong>filings</strong>, then verified organizations and distinct people only where identity is confirmed. Preserve duplicates and disclosed template clusters. Report unclassified filings rather than treating them as neutral.</p></article>
+</div><p class="kr-muted"><a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/priority_position_codebook.md">Open the complete four-question codebook ↗</a>. Data source: original FCC public filings and source-verified Kaggle outputs. Research classifications and alleged misconduct have not been adjudicated.</p>
+</section></main>
+<footer class="shell kr-footer">Machine and lexical flags are research candidates only · No misconduct finding or verified voter count is implied · Not affiliated with the FCC.</footer>
+<script src="./assets/priority_positions.js" defer></script></body></html>
