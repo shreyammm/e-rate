@@ -15,7 +15,7 @@
 .ps-small{font-size:11px;color:#637482}.ps-banner{border-left:3px solid #6a899e;padding:10px 14px;background:#f5f8fa}
 .ps-selected{background:#f5f9fb;padding:12px;margin:12px 0}a{overflow-wrap:anywhere}
 </style></head><body>
-<header class="site-top"><div class="shell header-row"><strong>E-Rate Comment Observatory</strong><nav><a href="./research.html">Research Studio</a> · <a href="./atlas.html">Themes</a> · <a href="./ask.html">Ask the Corpus</a> · <a href="./corpus.html">Original filings</a></nav></div></header>
+<header class="site-top"><div class="shell header-row"><strong>E-Rate Comment Observatory</strong><nav><a href="./research.html">Research Studio</a> · <a href="./atlas.html">Themes</a> · <a href="./claims-to-check.html">Claims to Check</a> · <a href="./ask.html">Ask the Corpus</a> · <a href="./corpus.html">Original filings</a></nav></div></header>
 <main class="shell">
 <section class="ps-hero"><p class="ps-small">FCC 26-41 · Who speaks · what they argue · where evidence comes from</p>
 <h1>Players, arguments and evidence</h1>
@@ -39,6 +39,7 @@
 <div class="ps-controls"><label>Search filing ID or existing organization<input type="search" id="ps-review-query" placeholder="FCC filing ID…"></label><label>Candidate role<select id="ps-review-role"><option value="">All uncertain roles</option></select></label></div>
 <p id="ps-review-count" class="ps-small"></p><div id="ps-review-list"></div><div class="ps-actions"><button id="ps-more-review">Review 25 more</button><button id="ps-export">Export reviewed decisions as JSON</button></div><p id="ps-export-status" class="ps-small" role="status"></p>
 <p class="ps-muted">Export produces proposed evidence-required edits. It does <strong>not</strong> change the live website automatically. Review decisions can be committed to <code>data/player_review_overrides.json</code> and the registry rebuilt with the original source text.</p></section>
+<section class="ps-panel"><h2>5. Check a factual claim against independent evidence</h2><p class="ps-muted">Investigate whether screen-time claims, edtech benefit claims and misuse allegations are actually supported. The <a href="./claims-to-check.html">Claims to Check workspace ↗</a> shows original passages, machine-attribution risks and structured assessment tools. No automatic verdict is issued.</p></section>
 <section class="ps-panel"><h2>Interpretation and validation</h2><p class="ps-muted">This page deliberately avoids ranking organizations by how convincing they are or treating a trade association's filing as each member's stance. Counts should distinguish filings, distinct original texts, and actual reviewed individuals; the registry displays the former two. Automated identity labels remain candidates. The machine extracts at most five claims from a passage and long appendices can have partial semantic coverage, so a missing claim is not evidence the commenter has no view. Explore the original filing for attribution, evidence and context.</p></section>
 </main><script src="./assets/players.js" defer></script>
 </body></html>
