@@ -376,6 +376,71 @@
    writeCount('kr-audit-page','Page '+(state.auditPage+1)+' of '+pages);
    $('kr-audit-prev').disabled=state.auditPage===0;$('kr-audit-next').disabled=state.auditPage===pages-1;
  }
+ function renderFilingProfile(){
+   const id=$('kr-filing-id').value.trim();
+   const area=empty('kr-filing-profile'),record=state.meta.get(id);
+   if(!/^\d+$/.test(id)||!record){
+     writeCount('kr-filing-status','Filing ID not found in this 3,231-record research snapshot. Enter an original ECFS submission ID.');
+     return;
+   }
+   const records=state.rows.filter(r=>String(r.id)===id),issues=new Map(),groups=new Map(),reasons={};
+   writeCount('kr-filing-status',n(records.length)+' Kaggle source-linked claims found for '+id+'; full original record available.');
+   for(const r of records){
+     if(!issues.has(r.issue))issues.set(r.issue,[]);issues.get(r.issue).push(r);
+     if(!groups.has(r.group))groups.set(r.group,0);groups.set(r.group,groups.get(r.group)+1);
+     reasons[r.reason_family]=(reasons[r.reason_family]||0)+1;
+   }
+   const title=el('div','kr-panel');
+   title.append(el('p','kr-eyebrow','Individual commenter profile'),el('h3','',record.organization||'Filing '+id));
+   title.append(el('p','kr-muted','Filing '+id+' · '+(record.date||'Date unavailable')+' · '+
+     roleName(records[0]?.role||record.role)+' · '+(record.ocr?'OCR candidate · ':'')+
+     'Original source length '+n(record.chars)+' characters'));
+   const links=el('p','');links.append(link('Read original FCC record ↗',fcc(id)),link(' Read full extracted comment ↗',corpus(id)),
+     link(' View complete GPT-OSS extraction JSON ↗','https://github.com/shreyammm/e-rate/blob/main/data/llm_census_kaggle/filings/'+encodeURIComponent(id)+'.json'));
+   title.append(links);
+   const nums=el('div','kr-kpis');
+   [[records.length,'Model claim records'],[issues.size,'Issue labels'],[groups.size,'Exploratory claim groups'],
+    [record.duplicate_count||1,'Exact-text filing instances']].forEach(([v,t])=>nums.append(stat(v,t)));
+   title.append(nums);
+   if(records.some(stanceRisk))title.append(el('p','kr-notice','Some machine stance labels about sunsetting E-Rate are known to be reversed. Inspect requested actions and source quotations, not the support/oppose field.'));
+   if(!records.length)title.append(el('p','kr-notice','No grounded claim was extracted for this filing. That is not evidence of a neutral position, agreement, or lack of arguments. Read the original full comment.'));
+   area.append(title);
+   if(records.length){
+     const reasonsArea=el('div','kr-panel');reasonsArea.append(el('h3','','How the model categorized its reasoning'));
+     const chart=el('div','kr-bars');bars(chart,fromCounts(reasons),12);reasonsArea.append(chart);area.append(reasonsArea);
+     const issueArea=el('div','kr-panel');issueArea.append(el('h3','','Requested policy outcomes by issue'));
+     for(const [issue,rs] of [...issues].sort((a,b)=>b[1].length-a[1].length)){
+       const item=el('article','kr-evidence');item.append(el('h4','',issueName(issue)+' · '+rs.length+' machine claims'));
+       const seen=new Set();
+       for(const r of rs){if(!r.action||seen.has(r.action))continue;seen.add(r.action);
+         item.append(el('p','',r.action+(stanceRisk(r)?' · sunset direction requires audit':'')));}
+       const btn=el('button','kr-action-button','Inspect this issue across the corpus');
+       btn.onclick=()=>{$('kr-issue-select').value=issue;$('kr-issue-role').value='';issuePanel();$('issues').scrollIntoView({behavior:'smooth'});};
+       item.append(btn);issueArea.append(item);
+     }
+     area.append(issueArea);
+     const all=el('div','kr-panel');all.append(el('h3','','Every extracted argument and source quotation'));
+     for(const r of records)all.append(strongQuote(r));
+     area.append(all);
+     const peerGroups=new Set(groups.keys()),peers=new Map();
+     for(const r of state.rows){
+       if(r.id===id||!peerGroups.has(r.group))continue;
+       if(!peers.has(r.id))peers.set(r.id,new Set());
+       peers.get(r.id).add(r.group);
+     }
+     const nearest=[...peers].sort((a,b)=>b[1].size-a[1].size).slice(0,12);
+     const similar=el('div','kr-panel');similar.append(el('h3','','Related claim families from other filings'));
+     similar.append(el('p','kr-muted','Automatically related by shared exploratory machine-cluster memberships, not verified semantic agreement or identical policy positions.'));
+     for(const [other,inter] of nearest){
+       const info=state.meta.get(String(other)),line=el('p','');
+       line.append(el('strong','',n(inter.size)+' shared claim groups · '),link(info?.organization||'FCC filing '+other,fcc(other)),el('span','kr-muted',' · '+other));
+       similar.append(line);
+     }
+     area.append(similar);
+   }
+   const url=new URL(location.href);url.searchParams.set('id',id);
+   if(window.history?.replaceState)history.replaceState(null,'',url.toString());
+ }
  function setupInputs(){
    for(const p of state.issues){
      option($('kr-issue-select'),p.provision_id,p.label);
@@ -408,8 +473,12 @@
      download('kaggle_fcc_filtered_claims.csv',safeCsv(cols,state.ledgerFiltered));
    };
    $('kr-ask').onclick=questionPanel;
+   $('kr-filing-open').onclick=renderFilingProfile;
+   $('kr-filing-id').addEventListener('keydown',e=>{if(e.key==='Enter')renderFilingProfile();});
    $('kr-question').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();questionPanel();}});
    document.querySelectorAll('[data-kq]').forEach(x=>{x.onclick=()=>{$('kr-question').value=x.dataset.kq;questionPanel();};});
+   const fid=new URLSearchParams(location.search).get('id');
+   if(fid&&/^\d+$/.test(fid)){$('kr-filing-id').value=fid;renderFilingProfile();}
    const qp=new URLSearchParams(location.search).get('q');
    if(qp&&qp.length<2000){$('kr-question').value=qp;questionPanel();}
  }
