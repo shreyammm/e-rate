@@ -61,7 +61,7 @@ class PriorityPositionTests(unittest.TestCase):
         matching=[e for e in v['axes']['funding']['evidence'] if e['origin']=='kaggle_claim_model_action']
         self.assertTrue(matching)
         self.assertEqual(matching[0]['start'],offset)
-        self.assertNotIn('verified',json.dumps(v).lower())
+        self.assertTrue(all(axis['review_status']=='not_adjudicated' for axis in v['axes'].values()))
 
     def test_full_corpus_record_coverage_with_fixture(self):
         with tempfile.TemporaryDirectory() as td:
