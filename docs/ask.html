@@ -35,6 +35,18 @@
 <div id="ask-warning"></div></section>
 <section class="ask-panel"><h2>Answer</h2><p class="ask-muted">An AI-generated synthesis will appear only after every readable filing and all of its original-text windows have completed on-device model analysis, followed by verified synthesis of the entire extracted-evidence ledger. This may require thousands of model calls. Browser checkpoints enable resumption; no incomplete research run will be represented as complete.</p><div id="ask-answer"></div></section>
 <section class="ask-panel"><h2>Compare the evidence</h2><p class="ask-muted">Browse lexical search matches and counterexamples independently of the exhaustive LLM analysis. The sources displayed here are previews for navigation; they are not a limit on what the model examines.</p><div id="ask-comparison"></div></section>
+<section id="ask-model-ledger" class="ask-panel" hidden>
+<h2>All model-extracted arguments · Complete evidence ledger</h2>
+<p id="ask-model-ledger-summary" class="ask-muted"></p>
+<p class="ask-small">Every readable original filing is analyzed in full text windows before this section appears. All extracted source-backed claim rows are browsable here, not just examples chosen for the final narrative. Claims and positions are unvalidated machine interpretations.</p>
+<div class="ev-filters">
+<label>Find in claim evidence<input id="ask-model-ledger-search" type="search" placeholder="Phrase, filer, reason, issue…"></label>
+<label>Machine-inferred stance<select id="ask-model-ledger-position"><option value="">All stances</option></select></label>
+<label>Order<select id="ask-model-ledger-order"><option value="source">By filing ID</option><option value="argument">By argument</option></select></label>
+</div>
+<p id="ask-model-ledger-count" class="ask-small"></p><div id="ask-model-ledger-results"></div>
+<button id="ask-model-ledger-more" type="button" class="ask-submit">Show 40 more claims</button>
+</section>
 <section id="ev-navigator" class="ask-panel" hidden>
 <h2>All matching filings · Evidence Navigator</h2>
 <p class="ask-muted">Every matching record in the complete source scan is available here, not just the passages selected for AI synthesis. Text matches cannot establish a commenter's position, or whether quotations represent endorsement.</p>
