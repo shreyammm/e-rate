@@ -33,6 +33,10 @@ The separate `data/llm_census_fast/` and legacy `data/llm_census/` GitHub CPU ba
 
 All outputs remain **machine-generated, unvalidated analytical estimates**. Exact duplicates with byte-identical comment texts may reuse the same quoted inference under their respective original filing IDs, but fuzzy text variants are never silently treated as identical.
 
+## Priority positions and possible E-Rate misuse (four-question study)
+
+The [Positions & Coalitions reviewer](https://shreyammm.github.io/e-rate/positions.html) asks four questions of every public FCC source filing, while preserving separation between automated retrieval and independently validated position counts: E-Rate continuation/abolition/targeted restrictions; proposed **new** federal recipient conditions; screen-time harms; and **allegations** of E-Rate resource misuse (versus routine oversight or hypothetical risk). Source excerpts and precise offsets are linked. The source scan covers all 3,230 readable filings and makes no use of the unreliable Kaggle support/oppose polarity field. Reviewer annotations live in the browser and can be exported as CSV; a single review does not create validated population counts. Specific allegations are not legal findings. Codebook: `analysis_methods/priority_position_codebook.md`.
+
 ## Kaggle Research Studio: complete machine-evidence exploration
 
 The [Kaggle Research Studio](https://shreyammm.github.io/e-rate/kaggle.html) is the first stop for analyzing the finished GPT-OSS 20B census. Unlike the source-only [Argument Atlas](https://shreyammm.github.io/e-rate/atlas.html), every research panel is grounded in the Kaggle machine-extracted argument record. The main view uses `docs/data/kaggle/machine_claim_rows.json` (14,835 rows) and `docs/data/kaggle/claim_landscape.json` (42 exploratory clusters), plus verified corpus metadata and the 150-entry human-audit suggestion queue.
