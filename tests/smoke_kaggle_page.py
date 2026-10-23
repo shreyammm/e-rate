@@ -31,9 +31,12 @@ def run():
                 "()=>document.querySelector('#kr-status')?.textContent.includes('Loaded and checked')",
                 timeout=120000)
             assert "14,835" in page.locator("#kr-status").inner_text()
+            out=ROOT/"artifacts"
+            out.mkdir(exist_ok=True)
+            page.screenshot(path=str(out/"kaggle-research-smoke.png"),full_page=True)
             assert page.locator("#kr-kpis .kr-kpi").count()==6
             assert page.locator("#kr-cluster-list .kr-cluster-item").count()==42
-            assert "Full claim ledger" in page.locator("#ledger").inner_text()
+            assert "Source-linked evidence ledger" in page.locator("#ledger").inner_text()
             assert "14,835" in page.locator("#kr-ledger-count").inner_text()
             # Question scans the complete 14,835-row index.
             page.fill("#kr-question","What concerns do commenters raise about screen time and E-Rate funding?")
