@@ -92,6 +92,7 @@
  const state={rows:[],landscape:null,summary:null,quality:null,meta:new Map(),audit:[],issues:[],roleNames:[],
     selectedGroup:'',ledgerFiltered:[],ledgerPage:0,ledgerFocusRows:null,auditFiltered:[],auditPage:0,auditState:{},queryResult:null};
  const ISSUE_UNSAFE=new Set(['erate_sunset']);
+ let citedLLMEngine=null,loadingCitedLLM=null,citedLLMBusy=false,citedLLMCancelled=false;
  const writeCount=(id,text)=>{$(id).textContent=text};
  const roleName=s=>friendly(s||'unresolved');
  function pill(t,risk=false){return el('span','kr-pill'+(risk?' kr-risk':''),t)}
@@ -289,10 +290,70 @@
    for(const id of picked){const r=stats.rows.find(v=>v.id===id);evidence.append(strongQuote(r));}
    if(stats.rows.length>picked.length)evidence.append(el('p','kr-muted','Source cards above are examples, not the denominator. Use the full ledger for all '+n(stats.claims)+' issue claims.'));
  }
+ async function loadCitedLLM(){
+   if(citedLLMEngine)return citedLLMEngine;
+   if(loadingCitedLLM)return loadingCitedLLM;
+   if(!navigator.gpu)throw Error('WebGPU is unavailable on this device. The complete Kaggle evidence ledger remains accessible.');
+   loadingCitedLLM=(async()=>{
+     writeCount('kr-llm-status','Downloading/loading the local Phi-3.5 Mini model; first setup is several gigabytes…');
+     const mod=await import('https://esm.run/@mlc-ai/web-llm@0.2.85');
+     const adapter=await navigator.gpu.requestAdapter();if(!adapter)throw Error('Could not initialize a WebGPU device');
+     citedLLMEngine=await mod.CreateMLCEngine('Phi-3.5-mini-instruct-q4f16_1-MLC',{
+       initProgressCallback:p=>{if(p?.text)writeCount('kr-llm-status','Loading on-device model: '+p.text);}
+     });
+     return citedLLMEngine;
+   })();
+   try{return await loadingCitedLLM;}finally{loadingCitedLLM=null;}
+ }
+ async function citedSynthesis(){
+   if(citedLLMBusy||!state.queryResult?.matched.length)return;
+   const q=state.queryResult.question,claims=state.queryResult.matched,
+     panel=empty('kr-llm-result'),button=$('kr-llm-run'),cancel=$('kr-llm-cancel');
+   citedLLMBusy=true;citedLLMCancelled=false;button.disabled=true;cancel.hidden=false;
+   cancel.onclick=()=>{citedLLMCancelled=true;cancel.disabled=true;writeCount('kr-llm-status','Cancellation requested; waiting for the current model call to finish.');};
+   try{
+     const worker=window.KaggleCitedSynthesis;
+     if(!worker?.run)throw Error('Source-verified Kaggle synthesis module unavailable');
+     const engine=await loadCitedLLM();
+     const result=await worker.run({
+       question:q,claims,engine,cancelled:()=>citedLLMCancelled,
+       onProgress:p=>{
+         if(p.phase==='map')writeCount('kr-llm-status','Model reviewing every retrieved claim: '+n(p.done)+'/'+n(p.total)+
+           ' source-evidence batches ('+n(p.claims)+' total claim rows).');
+         else writeCount('kr-llm-status','Hierarchical LLM synthesis, level '+p.level+' · '+n(p.done)+'/'+n(p.total)+' groups.');
+       }
+     });
+     if(state.queryResult?.question!==q){writeCount('kr-llm-status','Completed a previous question; results were not mixed with your newer query.');return;}
+     panel.append(el('p','kr-muted',n(result.processed_claims)+' retrieved Kaggle claim records evaluated in '+
+       n(result.analyzed_map_batches)+' LLM evidence batches. A synthesis is a lossy interpretation and cannot certify semantic completeness.'));
+     const text=el('p','kr-answer-text');text.style.whiteSpace='pre-wrap';text.style.lineHeight='1.75';
+     for(const chunk of result.answer.split(/(\[FCC:\d+\])/g)){
+       const m=chunk.match(/^\[FCC:(\d+)\]$/);
+       if(m)text.append(link(chunk,fcc(m[1])));
+       else text.append(document.createTextNode(chunk));
+     }
+     panel.append(text);
+     panel.append(el('p','kr-muted','Only citations to filing IDs present in model input are permitted. Quote accuracy does not validate stance interpretations. Examine the source quotes and exported claim ledger before publishing.'));
+     const exportEvidence=el('button','kr-action-button','Export every input claim and map synthesis (JSON)');
+     exportEvidence.onclick=()=>download('kaggle_query_model_evidence_ledger.json',
+       JSON.stringify({question:q,coverage:result.processed_claims,
+         original_retrieved_claims:claims,model_map_ledger:result.ledger,
+         answer:result.answer,limitations:result.limitation},null,2),'application/json');
+     panel.append(exportEvidence);
+     writeCount('kr-llm-status','Completed on-device synthesis using all '+n(result.processed_claims)+' retrieved Kaggle claim rows.');
+   }catch(err){
+     writeCount('kr-llm-status','LLM synthesis did not complete: '+err.message+
+       '. Source evidence is still available, but no partial model answer has been presented.');
+   }finally{
+     citedLLMBusy=false;button.disabled=false;cancel.hidden=true;cancel.disabled=false;
+   }
+ }
  function questionPanel(){
    const q=$('kr-question').value.trim(),area=empty('kr-answer');
    if(!q){writeCount('kr-answer-status','Enter a substantive question.');return;}
    const result=searchAll(state.rows,q);state.queryResult=result;
+   $('kr-llm-run').disabled=!result.matched.length||citedLLMBusy;
+   if(!citedLLMBusy){empty('kr-llm-result');writeCount('kr-llm-status',result.matched.length?n(result.matched.length)+' retrieved Kaggle claims eligible for opt-in synthesis. Every matched row is processed in model batches, without a top-k cap.':'No retrieved claims to synthesize.');}
    const matches=result.matched;writeCount('kr-answer-status',
      'Evaluated all '+n(result.rowsSearched)+' Kaggle claims; found '+n(matches.length)+' concept/term matches across '+n(result.filings)+' filings. This is a retrieval view, not a verified semantic census or a new LLM answer.');
    if(!matches.length){area.append(el('p','kr-notice','No Kaggle claim matched this wording. This does not prove the argument is absent. Search all original documents, or broaden the question.'));area.append(link('Search the entire source corpus ↗','./ask.html?q='+encodeURIComponent(q)));return;}
@@ -529,6 +590,7 @@
      download('kaggle_fcc_filtered_claims.csv',safeCsv(cols,state.ledgerFiltered));
    };
    $('kr-ask').onclick=questionPanel;
+   $('kr-llm-run').onclick=citedSynthesis;
    $('kr-filing-open').onclick=renderFilingProfile;
    $('kr-filing-id').addEventListener('keydown',e=>{if(e.key==='Enter')renderFilingProfile();});
    $('kr-question').addEventListener('keydown',e=>{if(e.key==='Enter'&&(e.metaKey||e.ctrlKey)){e.preventDefault();questionPanel();}});
