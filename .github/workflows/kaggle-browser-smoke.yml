@@ -1,0 +1,37 @@
+name: Kaggle research browser smoke
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'docs/kaggle.html'
+      - 'docs/assets/kaggle_research.js'
+      - 'docs/assets/kaggle_synthesis.js'
+      - 'docs/assets/kaggle_research.css'
+      - 'docs/data/kaggle/machine_claim_rows.json'
+      - 'docs/data/kaggle/filing_quality.json'
+      - 'tests/smoke_kaggle_page.py'
+      - '.github/workflows/kaggle-browser-smoke.yml'
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Chromium browser test tools
+        run: |
+          python -m pip install 'playwright==1.56.0'
+          python -m playwright install --with-deps chromium
+      - name: Render and interact with real Kaggle Research Studio data
+        run: python tests/smoke_kaggle_page.py
+      - name: Save browser screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kaggle-research-browser
+          path: artifacts/kaggle-research-smoke.png
+          if-no-files-found: ignore
