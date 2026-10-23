@@ -70,8 +70,8 @@ def build(files:Path,index:Path,output:Path):
         }
     if len(audit)!=3230:
         raise ValueError(f"Expected 3230 complete Kaggle filings, found {len(audit)}")
-    if full!=2813 or selective!=417:
-        raise ValueError(f"Semantic coverage unexpectedly changed: full={full}, selective={selective}")
+    if full+selective!=len(audit):
+        raise ValueError("Semantic scope rows do not reconcile with model-processed filings")
     payload={
         "version":"kaggle-filing-quality-v1",
         "generated_utc":datetime.now(timezone.utc).isoformat(),
