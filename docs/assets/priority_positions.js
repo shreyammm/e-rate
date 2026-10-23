@@ -42,7 +42,7 @@
  const link=(label,uri)=>{const a=el('a','',label);a.href=uri;if(uri.startsWith('https:')){a.target='_blank';a.rel='noopener noreferrer'}return a};
  const tag=(t,w)=>el('span','kr-pill'+(w?' kr-risk':''),t);
  const alert=()=>el('div','pp-flag-note','Unverified allegation or concern in a public filing, not an established finding of fraud, ineligibility, misconduct, or wrongdoing. A filer may object to spending that is legally eligible.');
- const state={records:[],data:null,filtered:[],page:0,intersect:null,decisions:{},reviewer:'reviewer-1'};
+ const state={records:[],data:null,filtered:[],page:0,intersect:null,decisions:{},reviewer:'reviewer-1',auditSample:null};
  const STORAGE='erate-four-questions-review-v1';
  try{state.decisions=JSON.parse(localStorage.getItem(STORAGE)||'{}')||{}}catch(_){}
  const saved=()=>{try{localStorage.setItem(STORAGE,JSON.stringify(state.decisions));return true}catch(_){return false}};
@@ -107,6 +107,7 @@
    if(priority==='conflicts'&&f.candidate_labels.length<2)return false;
    if(priority==='selective'&&!row.ocr_candidate&&row.model_semantic_scope!=='prioritized_windows')return false;
    if(priority==='uncoded'&&current(axis,row.id))return false;
+   if(priority==='audit_sample'&&(!state.auditSample?.[axis]||!state.auditSample[axis].has(String(row.id))))return false;
    if(q&&!([row.filer,row.id,row.role,...f.candidate_labels,...f.evidence.map(e=>e.quote+' '+(e.machine_requested_action||''))].join(' ').toLowerCase().includes(q)))return false;
    return true;
   }).sort((a,b)=>{
@@ -237,6 +238,14 @@
    const roles=[...new Set(state.records.map(x=>x.role))].sort();
    for(const role of roles){const option=el('option','',named(role));option.value=role;$('pp-role').append(option)}
    setAxis();updateStats();axisCards();overlapCards();render();
+   try{
+    const ar=await fetch('./data/kaggle/priority_audit_sample.json');
+    if(ar.ok){const audited=await ar.json();if(audited.source_filings===3230&&audited.strata?.length===16){
+      state.auditSample={};for(const axis of keys)state.auditSample[axis]=new Set();
+      for(const entry of audited.assignments||[])if(state.auditSample[entry.axis])state.auditSample[entry.axis].add(String(entry.filing_id));
+      if($('pp-priority').value==='audit_sample')render();
+    }}
+   }catch(_){/* Sample is additive; the all-filing review is independently functional. */}
   }catch(err){$('pp-status').className='kr-status pp-error';$('pp-status').textContent='The full-source data is not yet available: '+err.message+'. Caution: no incomplete counts will be shown as final.';}
  }
  load();
