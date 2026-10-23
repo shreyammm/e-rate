@@ -1,0 +1,37 @@
+{
+  "summary": "The technology director of a school district emphasizes the importance of preserving and strengthening the E-Rate program to maintain reliable internet access and network infrastructure, which is essential for the district's operations and student education. The district receives federal funding to support connectivity, and reducing or eliminating this funding would have a significant impact on the district's budget and technology needs. The technology director urges the FCC to preserve and improve the E-Rate program rather than sunset or eliminate it, emphasizing the program's role in providing reliable and affordable connectivity for students and schools.",
+  "stakeholder_role": "school_staff",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The Commission should preserve E-Rate to maintain the connectivity and infrastructure necessary for modern education",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 5633,
+      "evidence_end": 6184,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078701",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078701",
+  "filer_raw": "Rodney Robbins",
+  "date_submission": "2026-09-29T15:03:52.272Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2b6596bc4762ef06b60e063d1160b09ef56f34b012c5f4d9c723d17b313e0f0c",
+  "params_key": "59eae00cfe5a1756e071087a92150b474550ca0a37d85cc79b503d60a8fa3687",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

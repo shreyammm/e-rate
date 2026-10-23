@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in providing reliable broadband infrastructure for modern public education, highlighting the program's importance for maintaining network connectivity, supporting various operational and instructional functions, and ensuring equitable access to technology for all students. The school district urges the FCC to preserve and improve the E-Rate program rather than sunset or eliminate it, emphasizing the program's importance for providing reliable broadband infrastructure for students and schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate support is essential for maintaining modern network infrastructure and supports various operational and instructional functions",
+      "evidence_quote": "Connectivity is no longer a convenience. It is infrastructure. Today, network connectivity is as essential to a school district as the electricity that powers its buildings. Every critical business function depends on it.",
+      "evidence_start": 1895,
+      "evidence_end": 2116,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The loss of E-Rate funding would force the loss of staff positions or cause the school system to continue to defer needed capital maintenance",
+      "evidence_quote": "As a small town, the added expense of losing E-Rate funding in our current budget would force the loss of staff positions or cause the school system to continue to defer needed capital maintenance.",
+      "evidence_start": 4662,
+      "evidence_end": 4859,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110081336",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081336",
+  "filer_raw": "Matthew Drinnon",
+  "date_submission": "2026-10-13T23:10:40.933Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4e5cf287aad684742275558ea12985c72927fe6be42b18299cf276dfee712c32",
+  "params_key": "99939e177952339bd94c8fdde81aa43e0af8510dc59b012d95c835410fdd1370",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

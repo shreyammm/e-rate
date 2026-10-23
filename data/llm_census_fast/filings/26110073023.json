@@ -1,0 +1,37 @@
+{
+  "summary": "Springfield Local Schools emphasizes the critical role of E-Rate in maintaining essential digital infrastructure for modern education, highlighting the financial and operational impacts of reduced or eliminated funding on their district. The comments emphasize the program's necessity for covering monthly service costs, supporting network maintenance, and ensuring the availability of modern technology and safety systems in schools. The comment highlights the importance of preserving the E-Rate program to ensure affordable broadband access for schools and students, as removing it would force districts to pass costs onto families and impact educational outcomes.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Remove E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate would force schools to pass costs onto families through technology fees, impacting students and local community.",
+      "evidence_quote": "ng with periodic equipment replacement cycles, our newly upgraded fiber\nand wireless networks would rapidly age into obsolescence, leading to frequent outages, compromised\nstate testing, and severe network congestion. Ultimately, bridging this financial gap would force the\ndistrict to pass these rising costs onto local families through new technology fees, directly impacting our\nstudents and local community.",
+      "evidence_start": 4450,
+      "evidence_end": 4861,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110073023",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073023",
+  "filer_raw": "Springfield Local Schools",
+  "date_submission": "2026-08-25T14:44:11.307Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f8bf51f4381985de2da9fba5a2d94385b75bfa29a9f12591a50d6555a826d594",
+  "params_key": "82d7bad0e832e30b9512161456e68a8d30835d643576bcb52e709dbcbe119e88",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

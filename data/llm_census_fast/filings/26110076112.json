@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential infrastructure for modern public education, highlighting the financial burden of reduced or eliminated E-Rate support on their budget. The technology director urges the Commission to preserve E-Rate to ensure schools can continue providing reliable, affordable, and effective connectivity for students, emphasizing the program's success and the need to protect it from sunset or elimination.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would increase costs for districts like Searcy Special School District",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities. Searcy Special School District has received $399,494 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $79,899 a year toward the connections our students depend on.",
+      "evidence_start": 3019,
+      "evidence_end": 3440,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to provide connectivity, and its success should be preserved",
+      "evidence_quote": "I would imagine that my district is classified as non-rural, but we provide access for my students that are in rural sections just outside our town, and just because the infrastructure exists currently, thanks to the E-Rate program, does not mean that infrastructure will not need updates or possibly disappear if these types of funding continue to disappear. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not as a reason to assume that the work is finished.",
+      "evidence_start": 4820,
+      "evidence_end": 5344,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076112",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076112",
+  "filer_raw": "John Sullivan | Searcy Public School District",
+  "date_submission": "2026-09-09T19:21:01.041Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c45e990938ec5f73e782aab7efa6fe78755263677a64a6d5d56b36b3800980c4",
+  "params_key": "60f9bb1753be72e2cf877f77d55c7d421d6874b44de85f1720ca9973c64e1f1f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential broadband infrastructure for their schools, which supports various operational and instructional functions. They argue that eliminating E-Rate would have significant financial impacts on their budget, diverting funds from other essential programs. The school district opposes sunsetting E-Rate, emphasizing its role in providing connectivity for students and urging the Commission to preserve the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would require districts to divert funds from other essential programs",
+      "evidence_quote": "For my district, reducing or eliminating E-Rate support would have a direct and tangible impact. E-Rate helps pay for the broadband, wide-area networking, wireless infrastructure, and internet access that keep our schools connected. Without that funding, we would need to redirect significant dollars from our operating budget to maintain the same level of service. For many districts, that means shifting funds away from classroom instruction, staffing, curriculum resources, technology replacement cycles, or other student support programs. A loss of E-Rate support could represent $320,000 annually. Simply put, every dollar we spend replacing E-Rate funding is a dollar unavailable for direct student programs and services.",
+      "evidence_start": 2896,
+      "evidence_end": 3623,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076109",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076109",
+  "filer_raw": "EVELYN MAMMAN",
+  "date_submission": "2026-09-09T19:13:12.528Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8b3b3169eecc07677f3868afdb17b81ca551b207adc5ee37ef9ddf07ee88defa",
+  "params_key": "1647e76007c45b6fc9dad1cbb65f3ee0fd911bf43a6ab4491ee407751306a277",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

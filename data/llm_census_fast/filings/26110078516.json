@@ -1,0 +1,89 @@
+{
+  "summary": "The school district expresses strong opposition to any proposal that would eliminate or substantially reduce E-Rate support, emphasizing the program's critical role in providing essential broadband infrastructure for modern public education. The district highlights the direct impact on its budget and operations, the need for ongoing investment in network maintenance, and the importance of preserving broadband competition and access. The school district expresses opposition to proposals to sunset or eliminate the E-Rate program, emphasizing the importance of preserving funding and maintaining the program's role in providing reliable broadband for educational access. The district urges the Commission to reject proposals that would narrow eligibility or restrict support based on geography and to work with stakeholders to strengthen and modernize the program rather than reduce its role in public education. The district highligh",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "maintain current poverty and rural discount matrix",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Changing the discount matrix would increase the cost burden on low-income and rural schools",
+      "evidence_quote": "Hampton Township School District has received $43,000 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $11,087 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 3352,
+      "evidence_end": 3668,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "maintain broad eligibility scope for equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligible equipment and services would disproportionately affect schools in rural and low-income areas",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared. Connectivity must be maintained, upgraded, secured, and scaled as instructional demands and technology continue to evolve.",
+      "evidence_start": 2088,
+      "evidence_end": 2496,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate would force immediate, deeper cuts to essential academic programs and staffing",
+      "evidence_quote": "In rural Sussex County, Hampton Township School District relies on E-Rate funding to maintain vital network platforms and afford high-speed internet access across the district. Having already absorbed a $1.1 million loss in New Jersey state aid since 2019—a devastating 12% hit to our budget—losing E-Rate support would force immediate, deeper cuts to essential academic programs and staffing.",
+      "evidence_start": 2594,
+      "evidence_end": 2987,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "preserve special construction and dark fiber services",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Restricting special construction or dark fiber could limit broadband access in schools and libraries",
+      "evidence_quote": "As a superintendent, I see firsthand that reliable, high-quality broadband is no longer an optional technology benefit for students. It is essential infrastructure for modern public education and supports myriad operational and instructional functions in our schools.",
+      "evidence_start": 465,
+      "evidence_end": 732,
+      "uncertain": false
+    },
+    {
+      "provision_id": "targeted_competition",
+      "position": "oppose",
+      "requested_action": "preserve broadband competition and avoid limiting subsidies",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "normative_value",
+      "argument": "Limiting subsidies by broadband competition would harm the competitive landscape and innovation in broadband services",
+      "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared.",
+      "evidence_start": 2088,
+      "evidence_end": 2373,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose",
+    "targeted_competition": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078516",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078516",
+  "filer_raw": "Dr. Craig M Hutcheson",
+  "date_submission": "2026-09-28T14:51:00.258Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9bd71962ff48df82dca6d0affd898654ce1d24e55a1d885cb322cd4c49996b0f",
+  "params_key": "9f2a94b8dd295df88886cbabed74390f54056b971507200da0918c31b5e61dfb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

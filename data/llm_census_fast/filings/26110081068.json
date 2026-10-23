@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, rejecting proposals to eliminate or reduce its support, emphasizing the program's essential role in providing reliable broadband infrastructure for modern public education. The school district urges the FCC to preserve the E-Rate program, rejecting proposals to sunset or eliminate it, and to work with schools to strengthen and modernize the program rather than reduce its role.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The Commission should reject proposals to sunset or eliminate the E-Rate program",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program",
+      "evidence_start": 5561,
+      "evidence_end": 5671,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110081068",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081068",
+  "filer_raw": "West Salem School District",
+  "date_submission": "2026-10-13T17:52:24.823Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "90798ba12685f8ab38531eb312613f5705548368a210eb804b8f2a9cfd2169dc",
+  "params_key": "f100e95f8386e89dff83357a586fd0fff8b4559ef0473f4b639a9d696128a191",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

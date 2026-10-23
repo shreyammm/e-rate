@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential network infrastructure and connectivity for their operations and students. The school district urges the FCC to preserve and improve the E-Rate program rather than sunset or eliminate it, emphasizing the program's importance for providing reliable broadband to students and schools.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserving E-Rate is essential for maintaining network infrastructure and connectivity costs.",
+      "evidence_quote": "Our network supports nearly every part of our daily operations, including building security systems, communications, transportation, and business operations. A significant network outage is no longer simply an IT issue—it can immediately affect our ability to safely and effectively operate our schools.",
+      "evidence_start": 1305,
+      "evidence_end": 1608,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Rejecting sunset proposal would preserve program funding and infrastructure",
+      "evidence_quote": "The Commission should also consider the needs of districts that serve diverse communities. Broadband needs do not disappear simply because a school district is located in an area where broadband is technically available.",
+      "evidence_start": 4328,
+      "evidence_end": 4548,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078283",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078283",
+  "filer_raw": "Aaron Harrison | waynesville r-vi school district",
+  "date_submission": "2026-09-25T14:35:00.640Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5daa15efd5a48c362e46b357aed4a2a5281a31dd6ba24295707d7b4e430ded1b",
+  "params_key": "3a2bdcbf49e66473c36083270d68f7d9d6dd39b9a138aa037c21b4c57d00599d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

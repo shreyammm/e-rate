@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining and upgrading network infrastructure for modern public education, highlighting the financial burden of reducing or eliminating E-Rate support on local budgets. The district argues that E-Rate is essential for providing reliable connectivity, supporting online learning, and accessing specialized services. The district urges the FCC to preserve and strengthen the E-Rate program to avoid the negative impact of reducing or eli The school district argues against sunsetting the E-Rate program, emphasizing its importance for maintaining connectivity and infrastructure in rural areas. They urge the FCC to preserve and improve the program rather than eliminate it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate support would shift the cost of maintaining, securing, and upgrading networks onto already-stretched local budgets, likely at the expense of other student-facing programs",
+      "evidence_quote": "For my district, reducing or eliminating E-Rate support would have a direct and tangible impact. E-Rate funds the network infrastructure our districts depend on today, the circuits and equipment that keep connectivity running. Losing that support wouldn't eliminate the need for these networks; it would simply shift the cost of maintaining, securing, and upgrading them onto already-stretched local budgets, likely at the expense of other student-facing programs",
+      "evidence_start": 2643,
+      "evidence_end": 3106,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Suggesting that sunsetting E-Rate would lead to financial losses",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program",
+      "evidence_start": 5630,
+      "evidence_end": 5740,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078885",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078885",
+  "filer_raw": "Glenn County Office of Education",
+  "date_submission": "2026-09-30T15:56:43.721Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "77f8c42c52429ea200f0b89912e99524b55d51ffe23d16fc6e2690d261d63955",
+  "params_key": "4f685c411a77e445b7fd9e53c8ee332543cd3224e57b6db267a3f40383117180",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

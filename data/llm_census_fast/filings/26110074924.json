@@ -1,0 +1,37 @@
+{
+  "summary": "Lee County Schools opposes limiting or sunsetting E-Rate, emphasizing its ongoing cost and necessity for network infrastructure and connectivity support. The school district urges the Commission to preserve E-Rate's core structure and discount framework, avoid rules that would remove eligible students or shift costs onto districts least able to absorb them, and pursue any program-integrity improvements in a targeted, phased manner that does not disrupt districts' ability to serve their students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "not treat existing connectivity as evidence that the program's work is done",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The Commission should not sunset the program as contemplated in the NPRM",
+      "evidence_quote": "The Commission should not treat existing connectivity as evidence that the program's work is done,",
+      "evidence_start": 2565,
+      "evidence_end": 2663,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110074924",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074924",
+  "filer_raw": "Lee County School District",
+  "date_submission": "2026-09-02T12:37:18.666Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2a67f51a907e2f97704c2283af009e2c163cae5fbfb26be215f6c58616b2471c",
+  "params_key": "9fe42be3599772453eb1bf55a3e393b2e336a21afa147bab9849f5b470898663",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

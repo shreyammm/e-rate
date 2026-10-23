@@ -1,0 +1,50 @@
+{
+  "summary": "A parent argues that E-Rate is not about providing educational access but rather subsidizing screen time and device use, which conflicts with the original intent of the program to provide advanced telecommunications for educational purposes. The comment supports requiring reporting and testing of screen time limits on E-Rate networks to ensure educational content safety and compliance with parental opt-out requirements.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "daily_hour_limits",
+      "position": "support",
+      "requested_action": "Require applicants to report instructional screen time by grade band and to certify that E-Rate-funded networks are not used to meet or exceed reasonable daily limits, especially in elementary school",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Require certifications to test device content on E-Rate networks",
+      "evidence_quote": "Replace paper certifications with audits that test whether minors can reach obscenity, child sexual abuse material, and material harmful to minors on every device that uses an E-Rate network, including devices sent home.",
+      "evidence_start": 4881,
+      "evidence_end": 5101,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Parents do not check their rights at the schoolhouse door. A school-issued Chromebook is not a permission slip to override them.",
+      "evidence_quote": "Parents do not check their rights at the schoolhouse door. A school-issued Chromebook is not a permission slip to override them.",
+      "evidence_start": 120,
+      "evidence_end": 248,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "daily_hour_limits": "support",
+    "education_outcomes": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079250",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079250",
+  "filer_raw": "Rosalind Hanson",
+  "date_submission": "2026-10-04T13:23:56.067Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "22edcf35a867167082a316af3756aa8dfb037c198e1ba615fb99369db189987d",
+  "params_key": "95afd55a2a9e431d3942b3a71919be419554ce5f87a46f782e1775fa0606e9ae",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

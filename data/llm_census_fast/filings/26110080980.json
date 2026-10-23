@@ -1,0 +1,50 @@
+{
+  "summary": "The comments highlight the importance of E-Rate for providing reliable, affordable connectivity in rural communities, which supports educational, operational, and safety needs. The comments emphasize the need for E-Rate to continue providing essential services and infrastructure, including broadband and wifi, to ensure the safety and well-being of students. The comments also discuss the importance of maintaining the current eligibility scope and discount methodology to ensure that higher poverty The comment highlights concerns about preserving the core E-Rate program and its impact on school districts, particularly rural ones with high poverty levels. It emphasizes the importance of preserving eligibility for various network services and maintaining a broad definition of educational purposes. The comment urges the FCC to avoid changes that would reduce access, increase administrative burden, or limit local flexibility for schools and students.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility would place additional costs on districts, potentially leading to districts not participating in projects if they don't feel they will receive support from the community.",
+      "evidence_quote": "If any program scope was narrowed, the cost would be put on the district, and essentially the cost-payers. Many districts may chose to not do a project if they don't feel they will get support from the community.",
+      "evidence_start": 2158,
+      "evidence_end": 2370,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "It is not time or money well spent",
+      "evidence_quote": "It is not time or money well spent. Kids are using the Internet at very young ages. Most kids are not learning important dos and don'ts of it at home.",
+      "evidence_start": 4519,
+      "evidence_end": 4669,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080980",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080980",
+  "filer_raw": "Amanda J. Palmer, Madison-Oneida BOCES",
+  "date_submission": "2026-10-13T15:45:18.101Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c23b8732ebeb6435238de8eaa9e8aa78ef31cf5985539221156fe85fcaac50a7",
+  "params_key": "8993e41ddcdf6f01c28041d66c0449a7149a45d17eede84fd242c3cc4430fce4",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

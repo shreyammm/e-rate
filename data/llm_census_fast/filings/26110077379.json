@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the essential role of reliable broadband in modern public education and the potential financial impact of reducing or eliminating E-Rate support. The school district argues against sunsetting E-Rate, emphasizing the importance of preserving funding for connectivity infrastructure and the impact on economically disadvantaged families.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E-Rate funding would increase operational costs for maintaining network infrastructure.",
+      "evidence_quote": "E-rate currently covers over $400,000 of our network connectivity costs. Loss of this funding would prevent our district from maintaining our network services and imperil student learning.",
+      "evidence_start": 2695,
+      "evidence_end": 2883,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Suggesting sunset would lead to loss of funding for connectivity infrastructure",
+      "evidence_quote": "Our district spans a suburban county, which includes a large population of economically disadvantaged families. A rural-only rule would cuff of our funding for connectivity, compounding the gap in access to technology for our families and further hindering their children's learning opportunities.",
+      "evidence_start": 4590,
+      "evidence_end": 4887,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077379",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077379",
+  "filer_raw": "Douglas M Austin",
+  "date_submission": "2026-09-21T14:07:49.401Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "778e6e0e2242edec29d9ec80f9f9de268fd148d6b2588ee11946ba6c3a7970f6",
+  "params_key": "0c8c9bc3541808e4856253c3bdf38a8077ce62f289b3402335821baf5282eeb8",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

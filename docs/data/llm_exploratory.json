@@ -1,98 +1,98 @@
 {
   "schema_version": "llm-census-v1.1.0",
-  "generated_utc": "2026-10-23T04:17:02.243293+00:00",
+  "generated_utc": "2026-10-23T10:17:21.239692+00:00",
   "publication_status": "EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS",
   "model": "ibm/granite4:1b-q4_K_M",
   "codebook_version": "1.0.0-draft-anchored",
   "indexed_filings": 3231,
   "filings_with_text": 3230,
-  "completed_filings": 2308,
+  "completed_filings": 2420,
   "processing_status": {
-    "complete": 2308,
-    "pending": 921,
-    "no_source_text": 1,
-    "partial": 1
+    "complete": 2420,
+    "pending": 807,
+    "partial": 3,
+    "no_source_text": 1
   },
-  "distinct_normalized_texts_among_completed": 2255,
-  "completed_filings_in_exact_text_duplicate_groups": 67,
+  "distinct_normalized_texts_among_completed": 2366,
+  "completed_filings_in_exact_text_duplicate_groups": 69,
   "inferred_stakeholder_roles": {
-    "unknown": 1489,
+    "unknown": 1570,
     "government": 7,
-    "school_district": 608,
+    "school_district": 635,
     "researcher": 2,
     "telecom_provider": 1,
-    "school_staff": 111,
-    "parent_guardian": 83,
+    "school_staff": 114,
+    "parent_guardian": 84,
     "student": 3,
     "library": 1,
     "advocacy_group": 3
   },
   "machine_evidence_quality": {
-    "semantic_scope_full_text_filings": 2308,
-    "filings_without_grounded_positions": 1189,
-    "filings_with_rejected_quotes_or_codes": 1348,
-    "invalid_claim_rows_rejected": 1695,
+    "semantic_scope_full_text_filings": 2420,
+    "filings_without_grounded_positions": 1258,
+    "filings_with_rejected_quotes_or_codes": 1444,
+    "invalid_claim_rows_rejected": 1877,
     "uncertain_claim_rows": 0,
-    "ocr_candidate_filings": 151
+    "ocr_candidate_filings": 163
   },
   "argument_reason_counts": {
-    "budget_cost_efficiency": 1138,
-    "privacy_free_expression": 9,
+    "budget_cost_efficiency": 1194,
+    "privacy_free_expression": 10,
     "other": 27,
-    "education_effectiveness": 42,
+    "education_effectiveness": 45,
     "statutory_authority": 9,
-    "access_affordability_equity": 29,
+    "access_affordability_equity": 35,
     "administrative_burden": 1,
     "parental_autonomy": 3,
-    "competition_market_effects": 1
+    "competition_market_effects": 2
   },
   "argument_type_counts": {
-    "cost_or_savings": 1155,
-    "normative_value": 46,
-    "empirical_claim": 19,
+    "cost_or_savings": 1213,
+    "normative_value": 49,
+    "empirical_claim": 21,
     "legal_claim": 3,
-    "alternative_design": 10,
+    "alternative_design": 12,
     "other": 6,
     "implementation_burden": 4,
-    "privacy_expression": 1,
-    "equity_access": 10,
+    "privacy_expression": 2,
+    "equity_access": 11,
     "citation_of_external_evidence": 5
   },
   "issue_cooccurrences": [
     {
       "provision_a": "erate_eligibility_scope",
       "provision_b": "erate_sunset",
-      "filings": 14
+      "filings": 16
     },
     {
       "provision_a": "education_outcomes",
       "provision_b": "erate_sunset",
-      "filings": 7
+      "filings": 8
     },
     {
       "provision_a": "erate_sunset",
       "provision_b": "special_construction",
-      "filings": 6
+      "filings": 7
     },
     {
       "provision_a": "discount_matrix",
       "provision_b": "erate_sunset",
-      "filings": 5
+      "filings": 6
     },
     {
       "provision_a": "discount_matrix",
       "provision_b": "erate_eligibility_scope",
-      "filings": 4
+      "filings": 5
     },
     {
       "provision_a": "discount_matrix",
       "provision_b": "special_construction",
-      "filings": 4
+      "filings": 5
     },
     {
       "provision_a": "erate_eligibility_scope",
       "provision_b": "special_construction",
-      "filings": 4
+      "filings": 5
     },
     {
       "provision_a": "consultant_definition",
@@ -112,6 +112,26 @@
     {
       "provision_a": "erate_sunset",
       "provision_b": "lowest_corresponding_price",
+      "filings": 2
+    },
+    {
+      "provision_a": "discount_matrix",
+      "provision_b": "targeted_competition",
+      "filings": 2
+    },
+    {
+      "provision_a": "erate_eligibility_scope",
+      "provision_b": "targeted_competition",
+      "filings": 2
+    },
+    {
+      "provision_a": "erate_sunset",
+      "provision_b": "targeted_competition",
+      "filings": 2
+    },
+    {
+      "provision_a": "special_construction",
+      "provision_b": "targeted_competition",
       "filings": 2
     },
     {
@@ -180,23 +200,13 @@
       "filings": 1
     },
     {
-      "provision_a": "discount_matrix",
-      "provision_b": "targeted_competition",
+      "provision_a": "daily_hour_limits",
+      "provision_b": "education_outcomes",
       "filings": 1
     },
     {
-      "provision_a": "erate_eligibility_scope",
-      "provision_b": "targeted_competition",
-      "filings": 1
-    },
-    {
-      "provision_a": "erate_sunset",
-      "provision_b": "targeted_competition",
-      "filings": 1
-    },
-    {
-      "provision_a": "special_construction",
-      "provision_b": "targeted_competition",
+      "provision_a": "daily_hour_limits",
+      "provision_b": "special_construction",
       "filings": 1
     }
   ],
@@ -207,38 +217,38 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 1049,
+        "oppose": 1090,
         "support": 1
       },
       "unique_text_weighted_positions": {
-        "oppose": 1008,
+        "oppose": 1049,
         "support": 1
       },
-      "filings_mentioning": 1050,
+      "filings_mentioning": 1091,
       "claim_reason_counts": {
-        "budget_cost_efficiency": 1125,
+        "budget_cost_efficiency": 1180,
         "statutory_authority": 9,
-        "access_affordability_equity": 8,
+        "access_affordability_equity": 10,
         "education_effectiveness": 4,
         "other": 1
       },
       "claim_kind_counts": {
-        "cost_or_savings": 1126,
+        "cost_or_savings": 1182,
         "legal_claim": 3,
         "alternative_design": 1,
         "other": 3,
-        "normative_value": 10,
+        "normative_value": 11,
         "empirical_claim": 3,
         "equity_access": 1
       },
-      "claim_count": 1147,
+      "claim_count": 1204,
       "filings_by_inferred_role": {
-        "unknown": 373,
+        "unknown": 385,
         "government": 5,
-        "school_district": 527,
+        "school_district": 552,
         "telecom_provider": 1,
-        "school_staff": 89,
-        "parent_guardian": 50,
+        "school_staff": 92,
+        "parent_guardian": 51,
         "student": 2,
         "library": 1,
         "researcher": 1,
@@ -246,23 +256,23 @@
       },
       "inferred_role_by_position": {
         "unknown": {
-          "oppose": 373
+          "oppose": 385
         },
         "government": {
           "oppose": 5
         },
         "school_district": {
-          "oppose": 526,
+          "oppose": 551,
           "support": 1
         },
         "telecom_provider": {
           "oppose": 1
         },
         "school_staff": {
-          "oppose": 89
+          "oppose": 92
         },
         "parent_guardian": {
-          "oppose": 50
+          "oppose": 51
         },
         "student": {
           "oppose": 2
@@ -279,9 +289,9 @@
       },
       "claim_reason_by_position": {
         "oppose": {
-          "budget_cost_efficiency": 1124,
+          "budget_cost_efficiency": 1179,
           "statutory_authority": 9,
-          "access_affordability_equity": 8,
+          "access_affordability_equity": 10,
           "education_effectiveness": 4,
           "other": 1
         },
@@ -289,7 +299,7 @@
           "budget_cost_efficiency": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26109837335",
@@ -395,48 +405,48 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 23,
+        "oppose": 25,
         "support": 2
       },
       "unique_text_weighted_positions": {
-        "oppose": 23,
+        "oppose": 25,
         "support": 2
       },
-      "filings_mentioning": 25,
+      "filings_mentioning": 27,
       "claim_reason_counts": {
         "budget_cost_efficiency": 10,
-        "access_affordability_equity": 15
+        "access_affordability_equity": 17
       },
       "claim_kind_counts": {
         "cost_or_savings": 10,
-        "alternative_design": 7,
-        "equity_access": 8
+        "alternative_design": 8,
+        "equity_access": 9
       },
-      "claim_count": 25,
+      "claim_count": 27,
       "filings_by_inferred_role": {
-        "school_district": 18,
-        "unknown": 7
+        "school_district": 19,
+        "unknown": 8
       },
       "inferred_role_by_position": {
         "school_district": {
-          "oppose": 17,
+          "oppose": 18,
           "support": 1
         },
         "unknown": {
-          "oppose": 6,
+          "oppose": 7,
           "support": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
           "budget_cost_efficiency": 10,
-          "access_affordability_equity": 13
+          "access_affordability_equity": 15
         },
         "support": {
           "access_affordability_equity": 2
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110023440",
@@ -542,32 +552,33 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 6
+        "oppose": 8
       },
       "unique_text_weighted_positions": {
-        "oppose": 6
+        "oppose": 8
       },
-      "filings_mentioning": 6,
+      "filings_mentioning": 8,
       "claim_reason_counts": {
-        "access_affordability_equity": 1,
+        "access_affordability_equity": 2,
         "education_effectiveness": 3,
-        "privacy_free_expression": 1,
+        "privacy_free_expression": 2,
         "other": 1
       },
       "claim_kind_counts": {
-        "alternative_design": 1,
+        "alternative_design": 2,
         "implementation_burden": 1,
         "normative_value": 1,
-        "empirical_claim": 3
+        "empirical_claim": 3,
+        "privacy_expression": 1
       },
-      "claim_count": 6,
+      "claim_count": 8,
       "filings_by_inferred_role": {
-        "school_district": 2,
+        "school_district": 4,
         "unknown": 4
       },
       "inferred_role_by_position": {
         "school_district": {
-          "oppose": 2
+          "oppose": 4
         },
         "unknown": {
           "oppose": 4
@@ -575,13 +586,13 @@
       },
       "claim_reason_by_position": {
         "oppose": {
-          "access_affordability_equity": 1,
+          "access_affordability_equity": 2,
           "education_effectiveness": 3,
-          "privacy_free_expression": 1,
+          "privacy_free_expression": 2,
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110072460",
@@ -624,11 +635,27 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110078516",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110078516",
+          "position": "oppose",
+          "argument": "Restricting special construction or dark fiber could limit broadband access in schools and libraries",
+          "evidence_quote": "As a superintendent, I see firsthand that reliable, high-quality broadband is no longer an optional technology benefit for students. It is essential infrastructure for modern public education and supports myriad operational and instructional functions in our schools.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110079700",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110079700",
           "position": "oppose",
           "argument": "Special construction and dark fiber are critical for reliable broadband service in rural schools.",
           "evidence_quote": "For nearly 30 years, E-Rate has helped ensure that students in low-income urban neighborhoods and rural communities have access to the same tools as students in wealthier districts.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110080951",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080951",
+          "position": "oppose",
+          "argument": "Special construction, dark fiber, self-provisioned networks are essential for connectivity and cybersecurity",
+          "evidence_quote": "NONE of the infrastructure areas should be narrowed - they should be expanded especially to include Cybersecurity resources such as DDOS protections, device endpoint systems, Email Filtering Systems, etc.",
           "uncertain": false
         }
       ]
@@ -639,28 +666,28 @@
       "category": "funding",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 5
+        "oppose": 6
       },
       "unique_text_weighted_positions": {
-        "oppose": 5
+        "oppose": 6
       },
-      "filings_mentioning": 5,
+      "filings_mentioning": 6,
       "claim_reason_counts": {
-        "access_affordability_equity": 4,
+        "access_affordability_equity": 5,
         "other": 1
       },
       "claim_kind_counts": {
-        "cost_or_savings": 2,
+        "cost_or_savings": 3,
         "citation_of_external_evidence": 3
       },
-      "claim_count": 5,
+      "claim_count": 6,
       "filings_by_inferred_role": {
-        "school_district": 2,
+        "school_district": 3,
         "unknown": 3
       },
       "inferred_role_by_position": {
         "school_district": {
-          "oppose": 2
+          "oppose": 3
         },
         "unknown": {
           "oppose": 3
@@ -668,11 +695,11 @@
       },
       "claim_reason_by_position": {
         "oppose": {
-          "access_affordability_equity": 4,
+          "access_affordability_equity": 5,
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110075784",
@@ -707,6 +734,14 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110078516",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110078516",
+          "position": "oppose",
+          "argument": "Changing the discount matrix would increase the cost burden on low-income and rural schools",
+          "evidence_quote": "Hampton Township School District has received $43,000 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $11,087 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110079700",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110079700",
           "position": "oppose",
@@ -722,34 +757,47 @@
       "category": "funding",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 1
+        "oppose": 2
       },
       "unique_text_weighted_positions": {
-        "oppose": 1
+        "oppose": 2
       },
-      "filings_mentioning": 1,
+      "filings_mentioning": 2,
       "claim_reason_counts": {
-        "competition_market_effects": 1
+        "competition_market_effects": 2
       },
       "claim_kind_counts": {
+        "normative_value": 1,
         "other": 1
       },
-      "claim_count": 1,
+      "claim_count": 2,
       "filings_by_inferred_role": {
+        "school_district": 1,
         "unknown": 1
       },
       "inferred_role_by_position": {
+        "school_district": {
+          "oppose": 1
+        },
         "unknown": {
           "oppose": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
-          "competition_market_effects": 1
+          "competition_market_effects": 2
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
+        {
+          "submission_id": "26110078516",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110078516",
+          "position": "oppose",
+          "argument": "Limiting subsidies by broadband competition would harm the competitive landscape and innovation in broadband services",
+          "evidence_quote": "The FCC’s proposal points to the progress schools have made in expanding broadband connectivity over the past three decades. But the fact that schools are connected today is, in large part, evidence of the success of E-Rate — not evidence that the need for the program has disappeared.",
+          "uncertain": false
+        },
         {
           "submission_id": "26110079700",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110079700",
@@ -774,7 +822,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -784,37 +832,37 @@
       "notice_status": "question_for_comment",
       "positions": {
         "support": 22,
-        "oppose": 13
+        "oppose": 15
       },
       "unique_text_weighted_positions": {
         "support": 20,
-        "oppose": 12
+        "oppose": 14
       },
-      "filings_mentioning": 35,
+      "filings_mentioning": 37,
       "claim_reason_counts": {
-        "education_effectiveness": 35,
+        "education_effectiveness": 37,
         "other": 1
       },
       "claim_kind_counts": {
-        "normative_value": 22,
-        "empirical_claim": 11,
+        "normative_value": 23,
+        "empirical_claim": 12,
         "other": 1,
         "citation_of_external_evidence": 2
       },
-      "claim_count": 36,
+      "claim_count": 38,
       "filings_by_inferred_role": {
-        "school_district": 10,
-        "unknown": 12,
+        "school_district": 11,
+        "unknown": 13,
         "parent_guardian": 7,
         "school_staff": 6
       },
       "inferred_role_by_position": {
         "school_district": {
           "support": 9,
-          "oppose": 1
+          "oppose": 2
         },
         "unknown": {
-          "oppose": 8,
+          "oppose": 9,
           "support": 4
         },
         "parent_guardian": {
@@ -831,11 +879,11 @@
           "education_effectiveness": 22
         },
         "oppose": {
-          "education_effectiveness": 13,
+          "education_effectiveness": 15,
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110066867",
@@ -926,11 +974,11 @@
           "uncertain": false
         },
         {
-          "submission_id": "26110077060",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110077060",
-          "position": "support",
-          "argument": "E-Rate decisions should prioritize educational outcomes",
-          "evidence_quote": "For my students, internet connectivity is not about putting another screen in front of a child. It is about access - to instruction, intervention, communication, assessment, and educational opportunity.",
+          "submission_id": "26110076918",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110076918",
+          "position": "oppose",
+          "argument": "E-Rate decisions should focus on improving educational outcomes",
+          "evidence_quote": "E-Rate is the only federal education technology program, and the connectivity it provides is foundational to supporting our students’ learning.",
           "uncertain": false
         }
       ]
@@ -992,7 +1040,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26109929219",
@@ -1140,7 +1188,7 @@
           "parental_autonomy": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110073990",
@@ -1214,7 +1262,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1252,7 +1300,7 @@
           "budget_cost_efficiency": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110080613",
@@ -1286,7 +1334,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1303,7 +1351,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1320,7 +1368,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1337,7 +1385,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1354,7 +1402,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1371,7 +1419,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1388,7 +1436,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1405,7 +1453,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1414,33 +1462,47 @@
       "category": "screens",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 1
+        "oppose": 2,
+        "support": 1
       },
       "unique_text_weighted_positions": {
-        "oppose": 1
+        "oppose": 2,
+        "support": 1
       },
-      "filings_mentioning": 1,
+      "filings_mentioning": 3,
       "claim_reason_counts": {
-        "other": 1
+        "other": 1,
+        "education_effectiveness": 1,
+        "budget_cost_efficiency": 1
       },
       "claim_kind_counts": {
-        "cost_or_savings": 1
+        "cost_or_savings": 2,
+        "empirical_claim": 1
       },
-      "claim_count": 1,
+      "claim_count": 3,
       "filings_by_inferred_role": {
-        "unknown": 1
+        "unknown": 2,
+        "school_district": 1
       },
       "inferred_role_by_position": {
         "unknown": {
+          "oppose": 1,
+          "support": 1
+        },
+        "school_district": {
           "oppose": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
-          "other": 1
+          "other": 1,
+          "budget_cost_efficiency": 1
+        },
+        "support": {
+          "education_effectiveness": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110075628",
@@ -1448,6 +1510,22 @@
           "position": "oppose",
           "argument": "Limits could increase costs for schools",
           "evidence_quote": "to be realistic about what we are asking of an \n11-year-old. \nAnd the more I learn about educational technology, the more my questions have expanded \nbeyond screen time. I now find myself asking about student data and privacy, AI chatbots and AI \n\n\nfeatures embedded within educational programs, accountability, and, perhaps most importantly, \nthe evidence that these tools actually improve learning compared with a teacher, physical book, \npencil and paper, discussion, or hands-on experience.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110079250",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110079250",
+          "position": "support",
+          "argument": "Require certifications to test device content on E-Rate networks",
+          "evidence_quote": "Replace paper certifications with audits that test whether minors can reach obscenity, child sexual abuse material, and material harmful to minors on every device that uses an E-Rate network, including devices sent home.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110080951",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080951",
+          "position": "oppose",
+          "argument": "FCC-imposed daily hour limits will increase administrative burden on schools and reduce flexibility in scheduling.",
+          "evidence_quote": "Cut support staff that provide access to technology for teachers and students. Delay and/or stop network infrastructure replacment plan - Three out of 13 network closets were updated with Erate funds - we plan to continue with remaining closets with Erate funds. Budget increases to make up the lost Erate funds will directly impact local community and voters when it is time to vote on budgets.",
           "uncertain": false
         }
       ]
@@ -1494,7 +1572,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110073104",
@@ -1546,7 +1624,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110073104",
@@ -1600,7 +1678,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110073104",
@@ -1652,7 +1730,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110075713",
@@ -1678,7 +1756,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1695,7 +1773,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1712,7 +1790,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1764,7 +1842,7 @@
           "access_affordability_equity": 1
         }
       },
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": [
         {
           "submission_id": "26110073104",
@@ -1806,7 +1884,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     },
     {
@@ -1823,7 +1901,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2308,
+      "completed_filing_denominator": 2420,
       "examples": []
     }
   ],

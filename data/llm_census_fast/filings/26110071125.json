@@ -1,0 +1,37 @@
+{
+  "summary": "The Newburgh Enlarged City School District urges the FCC to reject proposals to terminate or limit E-Rate funding, emphasizing the critical role of E-Rate in maintaining affordable, reliable Internet access for schools and libraries. The school district expresses opposition to the sunset of E-Rate, citing the immediate financial impact on their budgets and the threat to equal educational opportunity. They argue that terminating E-Rate would force cuts to core educational programs and deepen the digital divide.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "reject proposal to terminate or limit E-Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would represent a cut to school and library budgets, jeopardizing years of progress building and upgrading networks",
+      "evidence_quote": "Terminating that support represents a cut to school and library budgets, jeopardizing years of progress building and upgrading those networks.",
+      "evidence_start": 1114,
+      "evidence_end": 1256,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110071125",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071125",
+  "filer_raw": "Newburgh Enlarged City School District",
+  "date_submission": "2026-08-13T20:02:19.382Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bde20c6b94bf1ef4165609007f508711aa0deb3ae5a919a8ba2b315a84412cfd",
+  "params_key": "2ebc314fc4e967c557d269099e21d1c1d193ba81dc5b73afd1287ec1c77ac1e6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

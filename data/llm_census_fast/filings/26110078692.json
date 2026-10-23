@@ -1,0 +1,37 @@
+{
+  "summary": "The claim is that daily screen time limits should be implemented to protect learning time and reduce instructional time lost to screen use. The text argues against limiting or sunsetting E-Rate, citing a requirement to create model policies that prohibit screen time for grades K-3, except for computer science standards and balance digital instruction with traditional teaching methods in grades 4-6. The text also mentions the lack of evidence supporting the effectiveness of screen-based learning and the need for districts to be held accountable for technology use in education.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would save money by reducing funding for broadband infrastructure.",
+      "evidence_quote": "HB 273 requires the State Board of Education to create model policies by December 2026 that prohibit screen time for grades K-3 except for computer science standards and balance digital instruction with traditional teaching methods in grades 4-6.",
+      "evidence_start": 4360,
+      "evidence_end": 4606,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078692",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078692",
+  "filer_raw": "Theresa Champion",
+  "date_submission": "2026-09-29T14:10:24.111Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c9807fae30e21399f7d1b054bd321068d761ce01cf935dfdecd9030ba033bd65",
+  "params_key": "429c82897b20463bd82e2d9b44797c2469b9a34c786327503fbc71a7132c123e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing the program's importance for maintaining essential network infrastructure and supporting students' learning. The school district emphasizes the importance of E-Rate for maintaining essential broadband infrastructure and urges the FCC to preserve the program rather than sunset it.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate support would place an unsustainable financial burden on district budgets",
+      "evidence_quote": "With inflation recently reported at nearly 3% over last year, shifting more costs onto our community through increased fees or taxes is simply not acceptable in today's economic climate.",
+      "evidence_start": 1759,
+      "evidence_end": 1945,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110076822",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076822",
+  "filer_raw": "Lincolnwood School District 74",
+  "date_submission": "2026-09-16T18:12:04.227Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "afdf1e84eb93667afc29e5ec86415cfeb7f7bd5b5f4554dd65f1631af68d2c87",
+  "params_key": "7135f6942ab02b39effba0354e90251f7acfb1d1655dbeb9093e8f1f1801228f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

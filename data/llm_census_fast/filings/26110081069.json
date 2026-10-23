@@ -1,0 +1,49 @@
+{
+  "summary": "A community member urges the FCC to preserve E-Rate funding, citing concerns about the financial burden on local taxpayers and the essential role of broadband in modern education. A community member argues for preserving E-Rate to ensure students have access to reliable broadband infrastructure and connectivity.",
+  "stakeholder_role": "parent_guardian",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Loss of E-Rate funding would force local taxpayers to replace essential connectivity support",
+      "evidence_quote": "As a parent in Noxon School District, I am deeply concerned that losing E-Rate support would force our small rural district to choose between maintaining essential connectivity and funding other student needs. Our children deserve the resources necessary to succeed, and shifting these costs onto local taxpayers may be more than families in our community can afford.",
+      "evidence_start": 1220,
+      "evidence_end": 1587,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled schools to build connectivity infrastructure",
+      "evidence_quote": "E-Rate has enabled schools (public and private) and libraries to build and maintain the connectivity necessary for students and patrons to participate fully in modern education.",
+      "evidence_start": 5868,
+      "evidence_end": 6045,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081069",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081069",
+  "filer_raw": "Amber Miskowitz",
+  "date_submission": "2026-10-13T17:52:59.859Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "2f5ea94352e2faa04c743723102b365a33cc9ab94ce2966b8216a5fcc158553f",
+  "params_key": "a5986d320e4aa2a60397bd7ba54541f1e326bc3bc201c16b113faa0c1a298c60",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

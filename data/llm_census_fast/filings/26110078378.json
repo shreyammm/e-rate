@@ -1,0 +1,37 @@
+{
+  "summary": "The undersigned organizations urge the FCC to reject proposals that would terminate or limit the E-Rate Program, emphasizing the critical role of E-Rate funding in maintaining affordable, reliable internet access for schools and libraries. The loss of E-Rate would force difficult budget decisions regarding where those funds would come from. Resources that would otherwise support classroom instruction, educational technology initiatives, student services, professional development, cybersecurity improvements, or equipment replacement cycles could be redirected to cover basic connectivity expenses. Future technology modernization projects would also become more difficult to sustain. Bandwidth demands continue to increase as schools a",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "terminate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Terminating E-Rate would lead to significant budget cuts for schools and libraries.",
+      "evidence_quote": "The elimination or reduction of E-Rate funding would have significant negative consequences for Mapleton Public Schools and the students we serve. Without E-Rate support, the district would face substantial increases in annual telecommunications and network infrastructure costs.",
+      "evidence_start": 3817,
+      "evidence_end": 4096,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078378",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078378",
+  "filer_raw": "Mapleton Public Schools",
+  "date_submission": "2026-09-25T20:17:01.054Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ba2516849a05a1658111b61ac19477c69c037214f243b43f4157b85e6bb13ab9",
+  "params_key": "f5da84b28c7b4a46ce370d7aff6ae2972c1c83d5c979d54066cfa65e48375cdf",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

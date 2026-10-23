@@ -1,0 +1,37 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential network infrastructure and connectivity for their students, highlighting the financial burden of losing E-Rate support and the potential impact on educational programs and staffing. The school district emphasizes the importance of preserving E-Rate funding and infrastructure, opposing any proposal to sunset or eliminate the program. They urge the Commission to reject proposals that would narrow eligibility or restrict support based on geography, and to work with schools to strengthen and modernize E-Rate rather than reduce its role in public education.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would force immediate, deeper cuts to essential academic programs and staffing",
+      "evidence_quote": "In rural Sussex County, Kittatinny relies on E-Rate funding to maintain vital network platforms and afford high-speed internet access across the district. Having already absorbed a $4.3 million loss in New Jersey state aid since 2019—a devastating 20% hit to our general fund—losing E-Rate support would force immediate, deeper cuts to essential academic programs and staffing",
+      "evidence_start": 2620,
+      "evidence_end": 2996,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110078514",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078514",
+  "filer_raw": "Craig Hutcheson",
+  "date_submission": "2026-09-28T14:44:45.260Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fc4491e10e6db9f1669c8d3a8edbb84162976dfbb309ea743a91f680a4ebbb09",
+  "params_key": "c4f8d98d9d097690be3c8b5675420bfcaf68af562464d99a7282cf6eb0caa0ac",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

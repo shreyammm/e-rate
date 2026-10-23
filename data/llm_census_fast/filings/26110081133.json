@@ -1,0 +1,49 @@
+{
+  "summary": "The school district expresses strong opposition to proposals that would reduce or limit E-Rate funding, emphasizing the critical role of E-Rate in maintaining and upgrading technology infrastructure for teaching, learning, operations, and safety. The comment emphasizes the importance of preserving the E-Rate program to ensure schools have reliable infrastructure for education and safety. The comment cites potential negative impacts of reducing or narrowing E-Rate eligibility, such as delays or cancellations of network projects, increased costs for local budgets, and diversion of resources from classrooms.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining and upgrading technology infrastructure, and reducing or limiting its funding would place a greater burden on taxpayers or force delays in critical upgrades.",
+      "evidence_quote": "Without E-Rate, projects of this scale would place a substantially greater burden on local taxpayers or force difficult decisions about delaying critical upgrades.",
+      "evidence_start": 2521,
+      "evidence_end": 2684,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If support is reduced or eligibility for infrastructure investments is narrowed, districts like ours will face difficult choices. Projects that improve network reliability, safety, and instructional capacity may be delayed or canceled. Local budgets would be forced to absorb costs currently shared through E-Rate, creating additional pressure on taxpayers and diverting resources from classrooms and student programs",
+      "evidence_quote": "If support is reduced or eligibility for infrastructure investments is narrowed, districts like ours will face difficult choices. Projects that improve network reliability, safety, and instructional capacity may be delayed or canceled. Local budgets would be forced to absorb costs currently shared through E-Rate, creating additional pressure on taxpayers and diverting resources from classrooms and student programs",
+      "evidence_start": 5765,
+      "evidence_end": 6182,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110081133",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081133",
+  "filer_raw": "Hilton Central School District",
+  "date_submission": "2026-10-13T19:06:26.311Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5e1c764c69be0b196d4165d80484d0f24b138d36b687d4a68a5b2cb093eab823",
+  "params_key": "63205416d94258f8a9c8851f98d5f653c9600b69e6a57ca2be1c8a714df443bb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

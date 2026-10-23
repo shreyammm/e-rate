@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential infrastructure and connectivity for modern public education, arguing that preserving and strengthening the program is essential to avoid diverting funds from other student needs and ensure the continuity of vital services like security, communication, and educational tools. The claim is based on the district's direct experience with the impact of reduced E-Rate funding on their operations and budget constraints. The school district urges the FCC to preserve and improve the E-Rate program rather than sunset or eliminate it, emphasizing the program's role in providing reliable connectivity for students and the potential cost burden of losing it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would force districts to divert funds from other student needs to cover infrastructure costs",
+      "evidence_quote": "When the cost of essential infrastructure increases, districts like mine are forced to make difficult choices about staffing, instructional programs, student services, transportation, facilities, and other priorities. Oostburg School District has received $97,828 in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $19,566 a year toward the connections our students depend on.",
+      "evidence_start": 3044,
+      "evidence_end": 3458,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Support should reflect financial need and the cost of maintaining school networks, because losing it would shift those costs onto local taxpayers and take funding away from student needs",
+      "evidence_quote": "Support should reflect financial need and the cost of maintaining school networks, because losing it would shift those costs onto local taxpayers and take funding away from student needs.",
+      "evidence_start": 4774,
+      "evidence_end": 4961,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110079439",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079439",
+  "filer_raw": "Terry Hendrikse",
+  "date_submission": "2026-10-05T17:26:40.336Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8c395769e496d993d7b15ff6d193d3f5611f6a8c155c13958c19b7e5d3c4364f",
+  "params_key": "42d761536e1a61077ed38540caaf5d411c0d4662603026535c203667d524991e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

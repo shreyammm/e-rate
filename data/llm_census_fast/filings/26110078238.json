@@ -1,0 +1,49 @@
+{
+  "summary": "Federal Communications Commission proposes rulemaking to modify E-Rate program, which school districts rely on for broadband connectivity. School districts urge preservation of E-Rate program to maintain essential connectivity infrastructure and avoid increased operational costs. FCC proposal to sunset or reduce E-Rate support is opposed by school districts as it would impose additional financial burdens on local budgets and compromise cybersecurity measures. The school district argues against sunsetting or eliminating the E-Rate program, emphasizing its importance for maintaining reliable broadband infrastructure in schools and libraries. They urge the Commission to preserve E-Rate support and reject proposals that would narrow eligibility or restrict support based on geography.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would shift connectivity costs to local taxpayers, increasing operational burdens on school budgets",
+      "evidence_quote": "With cyberattacks and data breaches posing a constant threat to schools, reducing this support would make it more difficult and more expensive for districts to protect student information and maintain safe, reliable systems",
+      "evidence_start": 3073,
+      "evidence_end": 3296,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate support based on location would widen existing learning gaps",
+      "evidence_quote": "I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support",
+      "evidence_start": 5921,
+      "evidence_end": 6215,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078238",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078238",
+  "filer_raw": "Dr. Michael J. Vuckovich",
+  "date_submission": "2026-09-25T12:21:53.917Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "dbbd724e659d78ef665d9e524540171e0e1eae2555b58b92d31dd0ac983bbe83",
+  "params_key": "c37eb91f7a86b58e5d040897f1cf7a4584b868f37291584319e2abceeced4ae2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

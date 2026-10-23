@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential network infrastructure for modern public education, including connectivity for security systems, emergency notifications, and day-to-day operations. They argue that reducing or eliminating E-Rate would increase operational costs and compete with resources for student and educator support. The technology director argues against sunsetting E-Rate, emphasizing its importance as a basic infrastructure for schools and urging the Commission to preserve and improve the program rather than reduce its role in public education. The technology director highlights the need to protect E-Rate to ensure students have access to reliable, affordable, and effective connectivity.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase annual infrastructure costs for school districts.",
+      "evidence_quote": "E-Rate currently covers approximately 60% of our internet and managed WAN costs, representing roughly $110,000 in annual support for the connectivity that links our schools.",
+      "evidence_start": 2729,
+      "evidence_end": 2902,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Suggesting to sunset E-Rate would lead to increased costs and reduced access to broadband for schools.",
+      "evidence_quote": "From my perspective as a technology director, reliable broadband is part of the basic infrastructure of a modern school system, just like electricity, transportation, and safe facilities. I therefore respectfully urge the Commission to: Reject any proposal to sunset or eliminate the E-Rate program; Reject proposals that would unnecessarily narrow E-Rate eligibility or restrict support based solely on geography or other criteria that would leave students without adequate support; Preserve support for the connectivity and internal network infrastructure schools need to provide reliable educational access; and Work with schools and other stakeholders to strengthen and modernize E-Rate rather than reduce its role in public education.",
+      "evidence_start": 5804,
+      "evidence_end": 6543,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110077877",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110077877",
+  "filer_raw": "Adrian Cepero",
+  "date_submission": "2026-09-23T16:41:17.643Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1188298634a2e2a42a0b4fa6ac772525a9578a468097de7cfa88d97fb64b1f9f",
+  "params_key": "cdc3126a70a03b5e855f9b85c52edba8a155f34f5170788702b0a7a42a0a4e4c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

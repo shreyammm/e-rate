@@ -1,0 +1,37 @@
+{
+  "summary": "The Wisconsin Department of Public Instruction opposes limiting or sunsetting the E-Rate program, arguing that the FCC must continue to offer services at discounted rates to support educational purposes. The state emphasizes that the program's funding should not be reduced while ongoing costs and maintenance requirements remain. The state also notes that the FCC's authority does not extend to making determinations about educational purposes, which should be left to local school and library board The Wisconsin Department of Public Instruction opposes changes to E-Rate eligibility scope, arguing that narrowing eligibility would harm educational resources and budgets.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue offering services at discounted rates that support educational purposes",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Sunsetting or reducing funding would violate the statute's ongoing need for affordable telecommunications services",
+      "evidence_quote": "The need for maintenance is ongoing. Broadband access and internal networks do not become free simply because circuits and networks have been installed.",
+      "evidence_start": 2113,
+      "evidence_end": 2265,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080959",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080959",
+  "filer_raw": "Wisconsin Department of Public Instruction",
+  "date_submission": "2026-10-13T15:26:38.817Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0968f29cd4e1967bf630b844f3a9d83235861ff248714f84214f218a32b7b428",
+  "params_key": "ddce5f6c57217c71c3cf0ada160c6102afdcd1ca6c255cb7cf4d50b906a1ef70",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate in maintaining essential network infrastructure for modern education, citing the direct impact of reduced E-Rate support on their budget and operational needs. The school district argues against sunsetting the E-Rate program, emphasizing its importance for maintaining reliable broadband infrastructure and connectivity for students. The school urges the FCC to preserve and improve the program rather than eliminate it.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate would increase budgetary strain on school districts",
+      "evidence_quote": "Rock Hill School District 3 has received $2.13 million in committed federal E-Rate support over funding years 2021–2025 — an average of roughly $425,602 a year toward the connections our students depend on. That support does not represent a one-time build; it is the recurring cost of keeping a modern network running.",
+      "evidence_start": 3254,
+      "evidence_end": 3572,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A rural-only rule would overlook the needs of students in a district like ours simply because a school falls on the other side of a geographic line. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not as a reason to assume that the work is finished.",
+      "evidence_quote": "A rural-only rule would overlook the needs of students in a district like ours simply because a school falls on the other side of a geographic line. E-Rate’s success over the past three decades should be viewed as a reason to preserve and improve the program — not as a reason to assume that the work is finished.",
+      "evidence_start": 4772,
+      "evidence_end": 5085,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110078274",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110078274",
+  "filer_raw": "York County District 3 | Rock Hill School District",
+  "date_submission": "2026-09-25T14:13:43.835Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ec97951f9fd7d22c320993b9306df458c831334a036a505ef99036d53f6a68bb",
+  "params_key": "f56ffe3cf67145c4a7706248aae6e3a01a16fd1228000f8b763a5d49520a2f5a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}

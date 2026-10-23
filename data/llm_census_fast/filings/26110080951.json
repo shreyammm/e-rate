@@ -1,0 +1,50 @@
+{
+  "summary": "The school emphasizes the importance of E-Rate for maintaining connectivity and infrastructure, arguing that no infrastructure areas should be narrowed and should be expanded, especially for cybersecurity resources. The school highlights the need for special construction, dark fiber, self-provisioned networks, and internal connections to ensure connectivity and safety. The comment expresses concerns about the potential impact of implementing daily hour limits on screen-based instruction, citing budgetary constraints and the need to preserve existing network infrastructure. The comment supports preserving the core E-Rate program and requests the FCC to avoid changes that would reduce access or increase administrative burden.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "daily_hour_limits",
+      "position": "oppose",
+      "requested_action": "Implement daily hour limits for screen-based instruction",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "FCC-imposed daily hour limits will increase administrative burden on schools and reduce flexibility in scheduling.",
+      "evidence_quote": "Cut support staff that provide access to technology for teachers and students. Delay and/or stop network infrastructure replacment plan - Three out of 13 network closets were updated with Erate funds - we plan to continue with remaining closets with Erate funds. Budget increases to make up the lost Erate funds will directly impact local community and voters when it is time to vote on budgets.",
+      "evidence_start": 4951,
+      "evidence_end": 5346,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Expand infrastructure requirements",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Special construction, dark fiber, self-provisioned networks are essential for connectivity and cybersecurity",
+      "evidence_quote": "NONE of the infrastructure areas should be narrowed - they should be expanded especially to include Cybersecurity resources such as DDOS protections, device endpoint systems, Email Filtering Systems, etc.",
+      "evidence_start": 2859,
+      "evidence_end": 3063,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "daily_hour_limits": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080951",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080951",
+  "filer_raw": "Miller Place UFSD",
+  "date_submission": "2026-10-13T15:15:06.145Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "18fe81f8b59fdbfaa6d87f882586139be6d526282d3934d0afe50b0311705a9b",
+  "params_key": "52d9ecada5b93ec8c35e875eb298d9b5be9888b7cb929c4e5d475254a807f7dd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
+}
