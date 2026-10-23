@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kaggle Research Studio | FCC E-Rate Observatory</title>
+<meta name="description" content="Explore every source-linked GPT-OSS 20B finding across the FCC E-Rate comment corpus: argument clusters, stakeholder comparisons, issue disagreements, filing evidence and audit cases.">
+<link rel="stylesheet" href="./assets/site.css"><link rel="stylesheet" href="./assets/kaggle_research.css"></head>
+<body>
+<header class="site-top"><div class="shell header-row"><div><strong>E-Rate Comment Observatory</strong><span class="subhead">Kaggle Research Studio · GPT-OSS 20B</span></div><nav class="kr-topnav"><a href="./">Source-only dashboard</a><a href="./atlas.html">Language Atlas</a><a href="./ask.html">Ask the Corpus</a><a href="./corpus.html">Full comments</a></nav></div></header>
+<main class="shell kr-shell">
+<section class="kr-hero">
+ <p class="kr-eyebrow">FCC E-Rate · Research evidence workspace</p>
+ <h1>What commenters argued, why they argued it, and who said what.</h1>
+ <p>Explore Kaggle's <strong>complete filing-level GPT-OSS 20B outputs</strong> independently of the source-only analysis. All extracted claims stay traceable to original FCC filings. This is <strong>machine interpretation, not a human-validated survey</strong>.</p>
+ <div class="kr-links"><a href="#questions">Ask the Kaggle evidence</a><a href="#arguments">Argument atlas</a><a href="#people">Who says what</a><a href="#issues">Positions &amp; disagreements</a><a href="#ledger">Full claim ledger</a><a href="#audit">Audit &amp; coverage</a></div>
+ <div id="kr-status" class="kr-status" role="status" aria-live="polite">Loading all Kaggle findings and verifying coverage…</div>
+ <div class="kr-kpis" id="kr-kpis"></div>
+</section>
+<section class="kr-notice" aria-label="Interpretation limitations"><strong>Interpretation safeguard:</strong> The model sometimes reverses support and opposition when a policy issue is phrased negatively, especially <em>“Limit or sunset E-Rate.”</em> Those stance totals are withheld until independently audited. Even an exact source quote does not prove its associated LLM interpretation is correct. Filing counts are not population estimates; repeated campaign comments are not independent people.</section>
+
+<section class="kr-section" id="questions">
+ <div class="kr-section-heading"><div><p class="kr-eyebrow">Research question workspace</p><h2>Search the entire Kaggle evidence record</h2><p>Evaluates <strong>every extracted claim</strong> for each question, then displays the related arguments, requested outcomes, disagreements, commenters and source evidence. Terms and expanded concepts are retrieval aids—not a semantic-embedding model or an LLM-generated final answer. The original complete source-search tool remains available alongside this layer.</p></div></div>
+ <div class="kr-question-bar"><label class="kr-visually-hidden" for="kr-question">Research question</label><textarea id="kr-question" rows="3" placeholder="Were there commenters who supported E-Rate cuts because of screen-time concerns?"></textarea><button class="kr-primary" id="kr-ask" type="button">Analyze Kaggle evidence</button></div>
+ <div class="kr-examples"><button data-kq="Were there commenters who supported E-Rate cuts because of screen-time concerns?">Screen time and E-Rate cuts</button><button data-kq="What arguments do libraries make about affordability and access?">Library affordability arguments</button><button data-kq="Who argues against intrusive student monitoring and why?">Monitoring and privacy</button><button data-kq="What different changes to consultant registration were requested?">Consultant reforms</button></div>
+ <p class="kr-status" id="kr-answer-status">Question analysis will examine every published Kaggle claim row, not a small evidence sample.</p>
+ <div id="kr-answer" aria-live="polite"></div>
+</section>
+
+<section class="kr-section" id="arguments">
+ <div class="kr-section-heading"><div><p class="kr-eyebrow">Open-ended discovery</p><h2>Argument atlas</h2><p>Forty-two exploratory machine-identified claim families. These are overlapping discovery groups, not 42 verified substantive policy positions. Select any group to inspect every extracted claim behind it.</p></div></div>
+ <div class="kr-controls"><label>Search argument groups<input id="kr-cluster-query" type="search" placeholder="Access, surveillance, teacher workload…"></label><label>Issue represented<select id="kr-cluster-issue"><option value="">All issues</option></select></label><label>Sort<select id="kr-cluster-sort"><option value="filings">Most filings</option><option value="unique">Distinct text variants</option><option value="claims">Most claims</option></select></label></div>
+ <p class="kr-count" id="kr-cluster-count"></p><div class="kr-columns"><div class="kr-cluster-list" id="kr-cluster-list"></div><div class="kr-detail" id="kr-cluster-detail"><p>Select an argument family.</p></div></div>
+ <div class="kr-panel"><h3>Which policy topics appear together?</h3><p>Number of distinct model-coded filings discussing both topics; overlap does not prove the same position on either topic.</p><div id="kr-issue-links" class="kr-bars"></div></div>
+</section>
+
+<section class="kr-section" id="people">
+ <div class="kr-section-heading"><div><p class="kr-eyebrow">Filing metadata &amp; inferred affiliations</p><h2>Who says what?</h2><p>Compare school and library commenters, advocacy organizations, parents and other classifications. The source-linked claim dataset uses the independent filing-role crosswalk, which is more informative than GPT-OSS's own frequently unknown role estimates, but still provisional.</p></div></div>
+ <div class="kr-controls"><label>Find filer or organization<input id="kr-org-query" type="search" placeholder="Alaska, INCOMPAS, library…"></label><label>Issue focus<select id="kr-org-issue"><option value="">All topics</option></select></label><label>Group by<select id="kr-person-group"><option value="role">Commenter category</option><option value="organization">Organization name</option></select></label></div>
+ <p class="kr-count" id="kr-org-count"></p><div id="kr-people-results"></div>
+</section>
+
+<section class="kr-section" id="issues">
+ <div class="kr-section-heading"><div><p class="kr-eyebrow">Positions, rationales &amp; differences</p><h2>Where does the debate diverge?</h2><p>Explore issues, competing recommendations, and reasoning. Stance charts are machine-coded and provisional; the known sunset-polarity error is quarantined rather than displayed as a misleading tally.</p></div></div>
+ <div class="kr-controls"><label>Policy question<select id="kr-issue-select"></select></label><label>Compare commenter type<select id="kr-issue-role"><option value="">All commenter categories</option></select></label></div>
+ <div id="kr-issue-summary" class="kr-panel"></div><div class="kr-split"><div class="kr-panel"><h3>Reasons used</h3><div id="kr-issue-reasons" class="kr-bars"></div></div><div class="kr-panel"><h3>Requested policy outcomes</h3><div id="kr-issue-actions"></div></div></div><div id="kr-issue-evidence" class="kr-panel"></div>
+</section>
+
+<section class="kr-section" id="ledger">
+ <div class="kr-section-heading"><div><p class="kr-eyebrow">Every accepted machine claim</p><h2>Source-linked evidence ledger</h2><p>Filter the complete Kaggle extraction, including quotations, requested actions, reason codes, filers and source locations. Every entry links to the original FCC record and extracted full comment. Use the audit filter to identify likely stance reversals.</p></div></div>
+ <div class="kr-controls kr-controls-four"><label>Search all fields<input id="kr-ledger-q" type="search" placeholder="Evidence, phrase, filer, ID…"></label><label>Policy issue<select id="kr-ledger-issue"><option value="">All issues</option></select></label><label>Reason family<select id="kr-ledger-reason"><option value="">All reasons</option></select></label><label>Commenter category<select id="kr-ledger-role"><option value="">All categories</option></select></label><label>Machine position<select id="kr-ledger-stance"><option value="">All positions</option></select></label><label>Argument family<select id="kr-ledger-group"><option value="">All 42 groups</option></select></label><label>Quality filter<select id="kr-ledger-quality"><option value="">All extracted claims</option><option value="sunset">Sunset-label review required</option><option value="ocr">OCR candidate</option></select></label><label>Order<select id="kr-ledger-sort"><option value="id">Filing ID</option><option value="issue">Policy issue</option><option value="filer">Commenter</option></select></label></div>
+ <div class="kr-toolbar"><p id="kr-ledger-count" class="kr-count"></p><button type="button" id="kr-ledger-csv">Export all filtered claims CSV</button><button type="button" id="kr-ledger-clear">Reset filters</button></div>
+ <div id="kr-ledger-results"></div><div class="kr-pager"><button id="kr-prev" type="button">Previous</button><span id="kr-page"></span><button id="kr-next" type="button">Next</button></div>
+</section>
+
+<section class="kr-section" id="audit">
+ <div class="kr-section-heading"><div><p class="kr-eyebrow">Reliability &amp; corrections</p><h2>Review the hardest model cases</h2><p>The Kaggle pipeline nominated 150 source-linked filings for human review; these are a <strong>risk-enriched audit queue</strong>, not a representative accuracy sample. Mark reviewed cases locally and export your adjudications. No review is silently converted into published accuracy estimates.</p></div></div>
+ <div id="kr-quality" class="kr-kpis"></div>
+ <div class="kr-notice">A completed filing is not always a fully read filing: 417 very long submissions had prioritized model windows. Another 316 readable filings contain no machine-extracted source-grounded positions. Do not interpret missing claims as disagreement or neutrality. An independent randomized validation sample is still needed for an error-rate estimate.</div>
+ <div class="kr-controls"><label>Audit reason<select id="kr-audit-reason"><option value="">All flagged reasons</option></select></label><label>Local review status<select id="kr-audit-status"><option value="">All</option><option value="unreviewed">Not reviewed here</option><option value="agree">Interpretation accepted</option><option value="incorrect">Interpretation disputed</option><option value="needs_review">Needs deeper review</option></select></label></div>
+ <div class="kr-toolbar"><p id="kr-audit-count" class="kr-count"></p><button id="kr-audit-export" type="button">Export review decisions CSV</button></div>
+ <div id="kr-audit-list"></div><div class="kr-pager"><button id="kr-audit-prev" type="button">Previous</button><span id="kr-audit-page"></span><button id="kr-audit-next" type="button">Next</button></div>
+ <div class="kr-panel"><h3>Methods &amp; safeguards</h3><p>Quotes were checked against original source character offsets. The model can still misinterpret a quote, reverse policy polarity, conflate separate positions, or miss evidence in long or OCR-damaged documents. Distinct-filings denominators are not unique individuals; thematic categories overlap. This research workspace never treats absent classifications as verified neutral positions.</p>
+ <p><a href="./kaggle-findings.html">Full generated findings report</a> · <a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/kaggle_census.md">Kaggle pipeline methodology</a> · <a href="./atlas.html">Independent non-LLM language discovery</a>.</p></div>
+</section></main>
+<footer class="shell kr-footer">Independent research project, not affiliated with the FCC. Machine-generated analysis is provisional and source-linked for review.</footer>
+<script src="./assets/kaggle_research.js" defer></script></body></html>
