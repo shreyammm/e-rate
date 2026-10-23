@@ -132,11 +132,33 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     self_role,self_quote=explicit_personal_role(text) if person else ('','')
     org_role,org_cue=first_rule(name,ORG_PATTERNS) if name else ('','')
     default=BASE_CROSSWALK.get(base,'unresolved')
-    # A recognizable letterhead or sign-off is a *lead for manual review*.
-    # It never establishes that an individual may represent that institution.
-    letterhead=bool(re.search(
-        r'(?im)^[^\\n]{0,100}\\b(?:school district|public schools|library system|'
-        r'elementary school|county office of education)\\b[^\\n]{0,40}
+    # A recognizable letterhead or sign-off is only a lead for manual review.
+    # Do not infer authorization to speak for an institution.
+    letterhead = bool(re.search(
+        r'(?im)^[^\n]{0,100}\b(?:school district|public schools|library system|'
+        r'elementary school|county office of education)\b[^\n]{0,40}$',
+        text[:700])) if person and not self_role else False
+    signature = ''
+    if person and not self_role:
+        tail = text[-2400:]
+        closing = re.search(r'(?i)\b(?:sincerely|respectfully submitted|best regards)\s*[,\n]', tail)
+        if closing:
+            signed = tail[closing.end():closing.end()+500]
+            if re.search(r'(?i)\b(?:director of technology|chief technology officer|it administrator|district technology coordinator)\b', signed):
+                signature = 'school_technology_staff'
+            elif re.search(r'(?i)\b(?:superintendent|principal|school board member)\b', signed):
+                signature = 'school_administrator'
+            elif re.search(r'(?i)\be[- ]?rate consultant\b', signed):
+                signature = 'erate_consultant'
+    candidate = signature or ('school_connected_unknown' if letterhead else '')
+    role = self_role or org_role or candidate or default
+    basis = ('author_self_description' if self_role else
+             'filer_field_organization' if org_role else
+             'signature_candidate' if signature else
+             'letterhead_candidate' if letterhead else 'provisional_full_text_role')
+    review = (not self_role and not org_role) or bool(candidate) or role in (
+        'school_connected_unknown','named_person_capacity_unstated',
+        'unresolved','other_vendor','advocacy_organization')
     proxy=bool(re.search(r'\b(?:on behalf of|representing (?:our|the|a)|counsel for|submitted for (?:our|the|a))\b',text[:2400],re.I))
     if proxy:review=True
     # A reviewer can reopen the FCC link. Do not republish a broad paragraph
