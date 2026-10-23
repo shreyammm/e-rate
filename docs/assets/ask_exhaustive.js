@@ -154,7 +154,7 @@
     const pfx=prefix(question,meta,modelName), expected=new Map(meta.docs.map(d=>[String(d.id),d]));
     if(expected.size!==meta.records)throw Error('Duplicate source IDs');
     const shardCounts=new Map();for(const doc of meta.docs)shardCounts.set(doc.shard,(shardCounts.get(doc.shard)||0)+1);
-    const seen=new Set(),ledger=[];
+    const seen=new Set(),ledger=[],actualLengths=new Map();
     let scanned=0,readable=0,chunks=0,cached=0,claimWindows=0;
     for(const [shard,need] of [...shardCounts].sort((a,b)=>a[0].localeCompare(b[0]))){
       stop(cancelled);let count=0;
@@ -164,6 +164,7 @@
         if(!doc||doc.shard!==shard||seen.has(id))throw Error('Invalid or duplicated original filing '+id);
         seen.add(id);
         if(Boolean(body.trim())!==Boolean(doc.has_text))throw Error('Source text mismatch for '+id);
+        if(body.trim())actualLengths.set(id,body.length);
         if(body.trim()){
           readable++;
           for(const w of windows(body)){
@@ -198,8 +199,7 @@
       if(items[0].start!==0)throw Error('Unanalyzed source beginning for '+id);
       for(let i=1;i<items.length;i++)if(items[i].start>items[i-1].end)
         throw Error('Source coverage gap for '+id);
-      const known=expected.get(id);
-      if(items[items.length-1].end!==known.length&&Number.isInteger(known.length))
+      if(items[items.length-1].end!==actualLengths.get(id))
         throw Error('Source coverage does not extend to end of '+id);
     }
     onProgress({phase:'synthesis-start',readable,chunks,cached,scanned,total:meta.records});
