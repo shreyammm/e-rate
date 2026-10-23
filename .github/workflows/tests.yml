@@ -38,8 +38,9 @@ jobs:
           node --check docs/assets/kaggle_research.js
           node --check docs/assets/kaggle_synthesis.js
           node --check docs/assets/ask_kaggle.js
+          node --check docs/assets/priority_positions.js
           node --check docs/assets/regulatory_crosswalk.js
       - name: Verify every-question full-corpus scan and relevant counterexamples
-        run: node --test tests/test_ask_full_corpus.cjs tests/test_ask_full_synthesis.cjs tests/test_ask_exhaustive.cjs tests/test_ask_exhaustive_real_corpus.cjs tests/test_kaggle_research.cjs tests/test_kaggle_synthesis.cjs
+        run: node --test tests/test_ask_full_corpus.cjs tests/test_ask_full_synthesis.cjs tests/test_ask_exhaustive.cjs tests/test_ask_exhaustive_real_corpus.cjs tests/test_kaggle_research.cjs tests/test_kaggle_synthesis.cjs tests/test_priority_positions_ui.cjs
       - name: Test schema, research snapshot, provenance and topic modeling
         run: python3 -m unittest discover -s tests -v
