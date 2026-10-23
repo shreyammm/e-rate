@@ -31,7 +31,7 @@
   const WORD = /[a-z][a-z0-9]{2,}/g;
   const el=(tag,cl,t)=>{const e=document.createElement(tag);if(cl)e.className=cl;if(t!==undefined)e.textContent=String(t);return e;};
   const N=n=>Number(n||0).toLocaleString('en-US');
-  let meta, engine, loadingEngine, busy=false, latestEvidence=[];
+  let meta, engine, loadingEngine, busy=false, latestEvidence=[], researchCancelled=false;
   function status(s){if(typeof document!=='undefined')$('ask-status').textContent=s;}
   function link(title,url){const a=el('a','',title);a.href=url;a.rel='noopener noreferrer';a.target='_blank';return a;}
   const sourceLink=id=>'./corpus.html?id='+encodeURIComponent(id);
@@ -292,6 +292,24 @@
       {role:'user',content:'Question: '+q+'\nFull text retrieval: '+found.scanned+' filings scanned; '+found.withText+' had text. Query-related lexical matches: '+found.candidates.length+' (NOT verified supporters).\nHere are up to '+pick.length+' representative, non-exhaustive source passages:\n'+excerpts+'\n\nAnswer the question using only the cited source material and distinguish policy restrictions from program-wide elimination. Cite every important statement [1]-['+pick.length+'].'}
     ];
   }
+  function showExhaustiveAnswer(result) {
+    const box=$('ask-answer');box.replaceChildren();
+    const response=String(result.answer||''), authorized=new Set(result.sourceIds.map(String));
+    const refs=[...response.matchAll(/\[FCC:(\d+)\]/g)].map(m=>m[1]);
+    if(!refs.length||refs.some(id=>!authorized.has(id))) {
+      box.append(el('p','ask-warning','The comprehensive answer lacked valid original filing citations. Its draft was withheld; inspect the complete matching-filing evidence below.'));
+      return;
+    }
+    const lead=el('p','ask-muted','All '+N(result.processed)+' lexically matching filing records were sent through the on-device model in batches, then progressively synthesized. This is not an independently validated stance census; other relevant filings might use different language.');
+    box.append(lead);
+    const p=el('p','ask-answer-body');
+    for(const part of response.split(/(\[FCC:\d+\])/g)) {
+      const m=part.match(/^\[FCC:(\d+)\]$/);
+      if(m) p.append(link(part,sourceLink(m[1])));
+      else p.append(document.createTextNode(part));
+    }
+    box.append(p);
+  }
   function showAnswer(response,evidence){
     const box=$('ask-answer');box.replaceChildren();
     const citations=[...String(response||'').matchAll(/\[(\d{1,2})\]/g)].map(m=>Number(m[1]));
@@ -326,7 +344,8 @@
   async function ask(){
     if(busy)return;
     const q=$('ask-question').value.trim();if(q.length<6){status('Please enter a substantive question.');return;}
-    busy=true;$('ask-submit').disabled=true;latestEvidence=[];
+    busy=true;researchCancelled=false;$('ask-submit').disabled=true;latestEvidence=[];
+    const cancel=$('ask-cancel');if(cancel){cancel.hidden=false;cancel.disabled=false;cancel.onclick=()=>{researchCancelled=true;cancel.disabled=true;status('Cancellation requested; completing the current model call…');};}
     $('ask-answer').replaceChildren();$('ask-evidence').replaceChildren();
     const comparison=$('ask-comparison');if(comparison)comparison.replaceChildren();
     const warn=$('ask-warning');warn.replaceChildren();
@@ -355,9 +374,17 @@
       status('All filings searched. Preparing a source-cited answer from selected evidence…');
       try{
         const model=await loadModel();
-        const result=await model.chat.completions.create({messages:sourcePrompt(q,evidence,found),temperature:0,max_tokens:700});
-        showAnswer(result.choices?.[0]?.message?.content||'',evidence);
-        status('Answer drafted from selected source excerpts, after scanning all '+N(found.scanned)+' filings.');
+        if(!window.ErateExhaustiveSynthesis)throw Error('Comprehensive synthesis module unavailable; refusing a capped answer.');
+        const deep=await window.ErateExhaustiveSynthesis.run({
+          question:q,candidates:found.candidates,engine:model,cancelled:()=>researchCancelled,
+          onProgress:p=>{
+            if(p.phase==='read')status('Deep corpus analysis: model reviewed '+N(p.done)+' / '+N(p.total)+' matching filings · batch '+p.batch+'/'+p.batches+'.');
+            else if(p.phase==='merge')status('Synthesizing all batches: level '+p.level+' · '+p.done+'/'+p.total+' groups merged.');
+            else status('Preparing the final cited synthesis…');
+          }
+        });
+        showExhaustiveAnswer(deep);
+        status('Comprehensive synthesis completed across all '+N(deep.processed)+' lexically retrieved filings, after scanning '+N(found.scanned)+' corpus records.');
       }catch(err){
         $('ask-answer').append(el('p','ask-warning','On-device model answer unavailable: '+err.message+'. Source excerpts and all matching filing links remain available below.'));
         status('Complete source scan succeeded. Generative answer unavailable on this device.');
@@ -366,7 +393,7 @@
       status('FULL-CORPUS SCAN INCOMPLETE: '+err.message+' No AI answer was generated.');
       $('ask-answer').append(el('p','ask-warning','No corpus-wide answer: the scan could not verify every filing. Please retry; partial evidence is not presented as a complete search.'));
       $('ask-evidence').replaceChildren();
-    }finally{busy=false;$('ask-submit').disabled=false;}
+    }finally{busy=false;$('ask-submit').disabled=false;const cancel=$('ask-cancel');if(cancel){cancel.hidden=true;cancel.disabled=true;}}
   }
   async function init(){
     try{
