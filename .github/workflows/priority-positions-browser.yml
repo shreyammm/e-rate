@@ -1,0 +1,37 @@
+name: Priority positions browser smoke
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'docs/positions.html'
+      - 'docs/assets/priority_positions.js'
+      - 'docs/assets/priority_positions.css'
+      - 'docs/data/kaggle/priority_position_candidates.json'
+      - 'tests/smoke_priority_positions.py'
+      - '.github/workflows/priority-positions-browser.yml'
+permissions:
+  contents: read
+jobs:
+  smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Use Chromium to render full-source positions website
+        run: |
+          python -m pip install 'playwright==1.56.0'
+          if ! command -v google-chrome && ! command -v chromium; then
+            python -m playwright install chromium
+          fi
+      - name: Test all policy panels, allegation safeguards and reviewer export
+        run: python tests/smoke_priority_positions.py
+      - name: Save browser screenshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: priority-positions-browser
+          path: artifacts/positions-qa-smoke.png
+          if-no-files-found: ignore
