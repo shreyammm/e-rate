@@ -31,7 +31,7 @@
   const WORD = /[a-z][a-z0-9]{2,}/g;
   const el=(tag,cl,t)=>{const e=document.createElement(tag);if(cl)e.className=cl;if(t!==undefined)e.textContent=String(t);return e;};
   const N=n=>Number(n||0).toLocaleString('en-US');
-  let meta, engine, loadingEngine, busy=false, latestEvidence=[], researchCancelled=false;
+  let meta, engine, loadingEngine, busy=false, latestEvidence=[], researchCancelled=false, estimatedWindows=0;
   function status(s){if(typeof document!=='undefined')$('ask-status').textContent=s;}
   function link(title,url){const a=el('a','',title);a.href=url;a.rel='noopener noreferrer';a.target='_blank';return a;}
   const sourceLink=id=>'./corpus.html?id='+encodeURIComponent(id);
@@ -410,6 +410,9 @@
     if(busy)return;
     const q=$('ask-question').value.trim();if(q.length<6){status('Please enter a substantive question.');return;}
     busy=true;researchCancelled=false;$('ask-submit').disabled=true;latestEvidence=[];
+    const progress=$('ask-research-progress'),progressLabel=$('ask-research-progress-label');
+    if(progress){progress.value=0;progress.hidden=false;}
+    if(progressLabel)progressLabel.textContent='Starting complete source scan. A full new model run is approximately '+N(estimatedWindows)+' source-window analyses; existing checkpoints may save many calls.';
     const cancel=$('ask-cancel');if(cancel){cancel.hidden=false;cancel.disabled=false;cancel.onclick=()=>{researchCancelled=true;cancel.disabled=true;status('Cancellation requested; completing the current model call…');};}
     $('ask-answer').replaceChildren();$('ask-evidence').replaceChildren();
     const comparison=$('ask-comparison');if(comparison)comparison.replaceChildren();
@@ -434,6 +437,8 @@
         const links=el('p','');
         evidence.slice(0,6).forEach((e,i)=>{if(i)links.append(document.createTextNode(' · '));links.append(link('Source ['+(i+1)+']',sourceLink(e.id)));});
         report.append(links);box.append(report);
+        if(progress)progress.hidden=true;
+        if(progressLabel)progressLabel.textContent='Source-only search completed; exhaustive model analysis was not requested.';
         status('Complete source search succeeded. Evidence-only mode; no model requested.');
         return;
       }
@@ -444,15 +449,28 @@
         const deep=await window.ErateAllTextResearch.run({
           question:q,meta,streamShard,engine:model,cancelled:()=>researchCancelled,
           onProgress:p=>{
-            if(p.phase==='source')status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings reached · '+N(p.chunks)+' original-text windows analyzed (cached: '+N(p.cached)+') · current filing '+p.id+' '+N(p.end)+'/'+N(p.length)+' characters.');
-            else if(p.phase==='filings')status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings fully inspected · '+N(p.chunks)+' source windows · '+N(p.cached)+' checkpoint hits.');
-            else if(p.phase==='synthesis')status('Merging ALL source-grounded findings: level '+p.level+' · '+N(p.done)+' / '+N(p.total)+' batches.');
-            else status('Every filing checked. Validating and combining extracted claims…');
+            if(p.phase==='source'||p.phase==='filings'){
+              if(progress)progress.value=Math.min(95,Math.round(95*p.chunks/Math.max(1,estimatedWindows)));
+              if(progressLabel)progressLabel.textContent=N(p.chunks)+' / ~'+N(estimatedWindows)+' original-text windows analyzed ('+N(p.cached)+' restored checkpoints). '+N(p.scanned)+' / '+N(p.total)+' filing records reached.';
+              if(p.phase==='source')status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings reached · '+N(p.chunks)+' original-text windows analyzed · filing '+p.id+' '+N(p.end)+'/'+N(p.length)+' characters.');
+              else status('Full-text AI analysis: '+N(p.scanned)+' / '+N(p.total)+' filings fully inspected · '+N(p.chunks)+' source windows · '+N(p.cached)+' checkpoint hits.');
+            }else if(p.phase==='synthesis'){
+              if(progress)progress.value=99;
+              if(progressLabel)progressLabel.textContent='Every original-text window was processed. Hierarchically synthesizing all extracted claim rows, level '+p.level+' · '+N(p.done)+' / '+N(p.total)+' batches.';
+              status('Merging ALL source-grounded findings: level '+p.level+' · '+N(p.done)+' / '+N(p.total)+' batches.');
+            }else{
+              if(progress)progress.value=97;
+              if(progressLabel)progressLabel.textContent='All source windows completed; starting evidence-ledger synthesis.';
+              status('Every filing checked. Validating and combining extracted claims…');
+            }
           }
         });
         showExhaustiveAnswer(deep);
+        if(progress)progress.value=100;
+        if(progressLabel)progressLabel.textContent='Research completed across all '+N(deep.analyzedFilings)+' readable filings and '+N(deep.sourceWindows)+' full-text windows. Claim ledger available below.';
         status('Full text examined: '+N(deep.scanned)+' source records, '+N(deep.analyzedFilings)+' readable filings, '+N(deep.sourceWindows)+' original-text windows, '+N(deep.claims)+' extracted claim rows.');
       }catch(err){
+        if(progressLabel)progressLabel.textContent='Run incomplete or interrupted. Successfully processed windows remain checkpointed on this browser for the same question.';
         $('ask-answer').append(el('p','ask-warning','On-device model answer unavailable: '+err.message+'. Source excerpts and all matching filing links remain available below.'));
         status('Complete source scan succeeded. Generative answer unavailable on this device.');
       }
@@ -468,8 +486,12 @@
       meta=await r.json();
       if(meta.records!==3231||meta.with_text!==3230||!Array.isArray(meta.docs)||meta.docs.length!==meta.records)
         throw Error('Corpus metadata incomplete; scanning disabled');
-      status('Ready. Each question will scan all '+N(meta.records)+' filing records ('+
-        N(meta.with_text)+' readable texts) across 12 compressed source files. The full scan may take time.');
+      estimatedWindows=meta.docs.reduce((total,d)=>{
+        if(!d.has_text)return total;
+        const len=Number(d.length)||0;
+        return total+Math.max(1,Math.ceil((len-200)/3800));
+      },0);
+      status('Ready. Every question scans all '+N(meta.records)+' source records; full AI mode reads all '+N(meta.with_text)+' texts in approximately '+N(estimatedWindows)+' original-text windows. It may require many hours on your own GPU, but is resumable.');
       $('ask-submit').disabled=false;$('ask-submit').onclick=ask;
       $('ask-question').addEventListener('keydown',ev=>{if(ev.key==='Enter'&&!ev.shiftKey){ev.preventDefault();ask();}});
       const shared=new URLSearchParams(location.search).get('q');
