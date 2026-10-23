@@ -14,7 +14,7 @@
     funding:/(erate_sunset|erate_eligibility_scope|sunset|eliminat|fund|discount|conditions|eligib|preserv|reducing e.?rate)/i,
     all:/./
   };
-  const reviews=new Map();let all=[],filtered=[],quality={},filings={},shown=0;
+  const reviews=new Map();let all=[],filtered=[],quality={},filings={},shown=0,attributionFlags={};
   function group(role){
     if(/^(school_|individual_school)/.test(role))return 'school';
     if(role.startsWith('edtech_'))return 'edtech';
@@ -31,6 +31,7 @@
     if(Array.isArray(f.suspected_sunset_polarity_claim_indices)&&f.suspected_sunset_polarity_claim_indices.length&&r.issue==='erate_sunset')a.push('Potential reversal of sunset support/oppose direction');
     if(f.ocr_candidate||r.ocr_candidate)a.push('OCR requires source inspection');
     if(!f.semantic_scope)a.push('No available per-filing model-quality record');
+    for(const flag of (attributionFlags[String(r.ledger_index)]||[]))a.push('Context audit: '+flag.replace(/_/g,' '));
     return a;
   }
   function refresh(){
@@ -125,10 +126,28 @@
     const files=['./data/kaggle/machine_claim_rows.json','./data/kaggle/filing_quality.json','./data/player_registry.json'];
     const rs=await Promise.all(files.map(f=>fetch(f)));
     for(let i=0;i<rs.length;i++)if(!rs[i].ok)throw Error('Required published data unavailable: '+files[i]);
-    const [claims,q,registry]=await Promise.all(rs.map(r=>r.json()));
+    const rawLedger=await rs[0].text();
+    const claims=JSON.parse(rawLedger);
+    const [q,registry]=await Promise.all([rs[1].json(),rs[2].json()]);
     if(claims.source_filings!==3231||!Array.isArray(claims.rows)||registry.coverage.filings!==3231||q.coverage.processed_readable_filings!==3230)throw Error('Disagreement across corpus, player and machine evidence versions');
-    all=claims.rows;quality=q.filings;for(let f of registry.filings)filings[f.id]=f;
-    $('cf-status').textContent='Loaded '+n(all.length)+' machine claim candidates, '+n(registry.coverage.filings)+' source-aligned identities and '+n(Object.keys(quality).length)+' per-filing quality records. No independent verification implied.';
+    // Optional audit cannot contaminate the page unless it was built from
+    // the EXACT same ledger bytes, with matching source-filing coverage.
+    try{
+      const response=await fetch('./data/kaggle/claim_context_audit.json');
+      if(response.ok&&globalThis.crypto?.subtle){
+        const audit=await response.json();
+        const digest=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(rawLedger));
+        const sha=[...new Uint8Array(digest)].map(b=>b.toString(16).padStart(2,'0')).join('');
+        if(audit.schema_version==='claim-context-audit-v1'&&
+          audit.machine_claim_ledger_sha256===sha&&
+          audit.coverage.machine_claim_rows_checked===claims.rows.length&&
+          audit.coverage.source_filings_checked===3231)
+            attributionFlags=audit.flags_by_ledger_row_index||{};
+      }
+    }catch(_ignored){/* Keep prior per-filing QA visible if contextual audit is unavailable. */}
+    all=claims.rows.map((r,i)=>({...r,ledger_index:i}));
+    quality=q.filings;for(let f of registry.filings)filings[f.id]=f;
+    $('cf-status').textContent='Loaded '+n(all.length)+' machine claim candidates, '+n(registry.coverage.filings)+' source-aligned identities and '+n(Object.keys(quality).length)+' per-filing quality records. '+n(Object.keys(attributionFlags).length)+' claims have extra verified-ledger context flags. No independent truth assessment implied.';
     refresh();
   }catch(err){$('cf-status').textContent='Evidence review workspace unavailable: '+err.message+'. Use the source corpus and existing argument atlas instead.';return;}
   for(const id of ['cf-topic','cf-group','cf-status-filter'])$(id).addEventListener('change',refresh);
