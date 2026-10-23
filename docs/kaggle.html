@@ -10,7 +10,7 @@
  <p class="kr-eyebrow">FCC E-Rate · Research evidence workspace</p>
  <h1>What commenters argued, why they argued it, and who said what.</h1>
  <p>Explore Kaggle's <strong>complete filing-level GPT-OSS 20B outputs</strong> independently of the source-only analysis. All extracted claims stay traceable to original FCC filings. This is <strong>machine interpretation, not a human-validated survey</strong>.</p>
- <div class="kr-links"><a href="#questions">Ask the Kaggle evidence</a><a href="#arguments">Argument atlas</a><a href="#people">Who says what</a><a href="#issues">Positions &amp; disagreements</a><a href="#ledger">Full claim ledger</a><a href="#audit">Audit &amp; coverage</a></div>
+ <div class="kr-links"><a href="#questions">Ask the Kaggle evidence</a><a href="#arguments">Argument atlas</a><a href="#people">Who says what</a><a href="#filing">Individual filing</a><a href="#issues">Positions &amp; disagreements</a><a href="#ledger">Full claim ledger</a><a href="#audit">Audit &amp; coverage</a></div>
  <div id="kr-status" class="kr-status" role="status" aria-live="polite">Loading all Kaggle findings and verifying coverage…</div>
  <div class="kr-kpis" id="kr-kpis"></div>
 </section>
@@ -37,6 +37,12 @@
  <p class="kr-count" id="kr-org-count"></p><div id="kr-people-results"></div>
 </section>
 
+<section class="kr-section" id="filing">
+<div class="kr-section-heading"><div><p class="kr-eyebrow">Individual comment interpretation</p><h2>Open any Kaggle-analyzed filing</h2><p>See an individual comment's metadata, every extracted machine claim, issue-level recommendations, source quotations and similar claim families. Includes filings with no extracted positions, which must not be classified as neutral.</p></div></div>
+<div class="kr-controls"><label>FCC filing ID<input id="kr-filing-id" type="search" inputmode="numeric" placeholder="26110080734"></label><label>Open filing profile<button class="kr-primary" id="kr-filing-open" type="button">Inspect this filing</button></label></div>
+<p id="kr-filing-status" class="kr-count">Enter a filing ID to inspect its complete Kaggle extraction.</p>
+<div id="kr-filing-profile"></div>
+</section>
 <section class="kr-section" id="issues">
  <div class="kr-section-heading"><div><p class="kr-eyebrow">Positions, rationales &amp; differences</p><h2>Where does the debate diverge?</h2><p>Explore issues, competing recommendations, and reasoning. Stance charts are machine-coded and provisional; the known sunset-polarity error is quarantined rather than displayed as a misleading tally.</p></div></div>
  <div class="kr-controls"><label>Policy question<select id="kr-issue-select"></select></label><label>Compare commenter type<select id="kr-issue-role"><option value="">All commenter categories</option></select></label></div>
