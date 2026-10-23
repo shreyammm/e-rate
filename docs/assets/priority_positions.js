@@ -14,7 +14,7 @@
  const full=id=>'./corpus.html?id='+encodeURIComponent(String(id));
  const counts=(filings,axis,label)=>filings.filter(x=>field(x,axis).candidate_labels.includes(label)).length;
  function reviewDecision(args){
-  const {reviewer,axis,id,labels,note,source,read,legal}=args;
+  const {reviewer,axis,id,labels,note,source,read,legal,screen_link,condition_type,misuse_type}=args;
   const allowed=CONFIG[axis]?.labels;
   if(!allowed)return {ok:false,error:'Unknown research question'};
   if(!reviewer?.trim())return {ok:false,error:'Enter reviewer ID'};
@@ -28,6 +28,9 @@
     explanation:String(note).trim(),chosen_source_quote:source?.quote||'',
     source_offset:source?.start??'',source_origin:source?.origin||'',
     misuse_legal_characterization:axis==='misuse'?legal:'',
+    misuse_allegation_type:axis==='misuse'?misuse_type||'not_assessed':'',
+    screen_harm_to_funding_condition_link:screen_link||'not_assessed',
+    new_condition_type:axis==='conditions'?condition_type||'not_assessed':'',
     read_entire_source:true,review_stage:'one_reviewer_only_not_validated',
     reviewed_at:new Date().toISOString()}};
  }
@@ -142,7 +145,47 @@
    input.checked=Boolean(prior?.labels?.includes(code));x.append(input,document.createTextNode(label));choices.append(x);
   }
   box.append(choices);
+  function additionalSelect(title,values,selectedValue){
+    const wrapper=el('label','kr-muted',title),list=el('select');
+    for(const [value,name] of values){
+      const choice=el('option','',name);choice.value=value;list.append(choice);
+    }
+    list.value=selectedValue||values[0][0];wrapper.append(list);box.append(wrapper);
+    return list;
+  }
+  let screenLink=null,conditionType=null,misuseType=null;
+  if(axis==='funding'||axis==='conditions'||axis==='screen_harms'){
+   screenLink=additionalSelect('Does this filer DIRECTLY link a screen-time harm concern to reducing or conditioning E-Rate?',[
+    ['not_assessed','Not yet assessed'],['yes_explicit','Yes: explicit causal connection'],
+    ['no','No direct causal connection'],['ambiguous','Possible link, but unclear'],
+    ['not_applicable','Screen-time concerns not addressed here']
+   ],prior?.screen_harm_to_funding_condition_link);
+  }
+  if(axis==='conditions'){
+   conditionType=additionalSelect('What NEW mandatory federal condition is proposed, if any?',[
+     ['not_assessed','Not assessed / no identified new condition'],
+     ['screen_time_cap','Screen-time or daily-hour limits'],
+     ['filtering_blocking','Content filtering / platform blocking'],
+     ['monitoring','Student surveillance or monitoring requirements'],
+     ['parental_choice','Parental opt-out or parental control'],
+     ['educational_use','Education-purpose or outcomes limits'],
+     ['other_child_safety','Other child-safety condition'],
+     ['other','Other recipient condition']
+   ],prior?.new_condition_type);
+  }
   let legality=null;
+  if(axis==='misuse'){
+   misuseType=additionalSelect('What KIND of misuse does the filer assert, if any?',[
+     ['not_assessed','Not assessed / no alleged event'],
+     ['ineligible_costs','Ineligible spending or cost category'],
+     ['improper_billing','Billing, reimbursement, or overcharging'],
+     ['procurement','Bidding or procurement manipulation'],
+     ['vendor_consultant_conflict','Vendor / consultant conflict or improper influence'],
+     ['wifi_device_screen_use','Wi-Fi or device use objected to on educational grounds'],
+     ['diversion_waste','Waste or diversion of funds'],
+     ['other','Other claimed misuse']
+   ],prior?.misuse_allegation_type);
+  }
   if(axis==='misuse'){
    box.append(alert());
    const label=el('label','kr-muted','Does the filer allege wrongdoing, or object to use that may be lawful?');
@@ -166,7 +209,9 @@
   button.onclick=()=>{
    const labels=[...choices.querySelectorAll('input:checked')].map(x=>x.value);
    const checked=evidenceNode.querySelector('input:checked'),source=checked?field(row,axis).evidence[Number(checked.value)]:null;
-   const result=reviewDecision({reviewer:reviewer(),axis,id:row.id,labels,note:notes.value,source,read:read.checked,legal:legality?.value||''});
+   const result=reviewDecision({reviewer:reviewer(),axis,id:row.id,labels,note:notes.value,source,read:read.checked,
+     legal:legality?.value||'',screen_link:screenLink?.value||'not_assessed',
+     condition_type:conditionType?.value||'not_assessed',misuse_type:misuseType?.value||'not_assessed'});
    if(!result.ok){message.className='pp-error';message.textContent=result.error;return}
    state.decisions[key(reviewer(),axis,row.id)]=result.value;
    message.className=saved()?'pp-saved':'pp-error';
