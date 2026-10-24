@@ -1,0 +1,37 @@
+{
+  "summary": "The Utility Reform Network opposes limiting or sunsetting the E-Rate program, citing its impact on schools and libraries. The Utility Reform Network urges the Commission not to make E-Rate the victim of its own success, emphasizing the importance of ongoing funding for schools and libraries to maintain connectivity and services. The FCC's proposed changes to the E-Rate program include altering the discount matrix to ensure that schools receive subsidies that are not higher than their actual costs, aiming to maintain affordability and accessibility for all eligible schools. The changes also aim to address budget constraints and ensure that the program remains consistent with its original objectives of providing universal service. The FCC's proposed changes to the E-Rate program raise concerns about competition, funding sustainability, and the potential impact on schools and libraries. The language in the NPRM fails to adequately address the possibility of BEAD program subgrantee defaults and the limited nature of the program, which could lead to schools and libraries being denied funding for special construction. The NPRM also does not account for the risk of competition between multiple providers, which may not result i The comment argues against limiting or sunsetting E-Rate, ci",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "support",
+      "requested_action": "Change poverty and rural discount matrix",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Under the rule, each school is eligible for a CTF discount of 50% of their costs for services (or 25% for voice services) after applying the E-rate discount, up to an amount equal to the school’s federal E-rate subsidy",
+      "evidence_quote": "discounts for federal E-rate eligible schools \nwill be no higher than their E-rate subsidy. Under this rule, each school is eligible for a CTF \ndiscount of 50% of their costs for services (or 25% for voice services) after applying the E-rate \ndiscount, up to an amount equal to the school’s federal E-rate subsidy.",
+      "evidence_start": 11689,
+      "evidence_end": 12003,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "support"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110081296",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081296",
+  "filer_raw": "The Utility Reform Network",
+  "date_submission": "2026-10-13T22:12:05.201Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a18e0625918c33bf8b0d5e3c4b8a884723dac4b9c9d8ecf57826be03d136357f",
+  "params_key": "f52d935766b6293e3010618b7f9cecc7a525f981b44fa2f0a5f5f790fce6668e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 14,
+  "source_windows_model_analyzed": 6
+}

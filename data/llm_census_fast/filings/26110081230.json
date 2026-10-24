@@ -1,63 +1,37 @@
 {
-  "submission_id": "26110081230",
-  "params_key": "4c201eb709565b2f8699bf1257a5ab28418760790e0011e7980b1f25cb4120fc",
-  "status": "partial",
-  "parts": [
+  "summary": "The comments from Rollins & Sumrall Education Group highlight Mississippi's success in improving educational outcomes while heavily relying on E-Rate funding and technology investments. The group supports the idea that higher levels of E-Rate support are associated with improved educational outcomes. The text discusses the impact of E-Rate support on educational outcomes in Mississippi, noting improvements in academic performance after implementing the program. It mentions Mississippi's achievement gains in reading and math, particularly in fourth-grade math, which improved from No. 49 to No. 16 between 2013 and 2024. The text also highlights the state's initiatives to provide digital learning resources and support to schools through the Mississippi Connects program funded by E-Rate. The comment discusses the importance of E-Rate funding for broadband infrastructure and services in Mississippi, highlighting the positive impact on student outcomes and the need to maintain the program. The comment opposes sunsetting the E-Rate program as a statutory authority. Mississippi school districts face budget cuts and reduced funding for E-Rate programs due to declining enrollment and new school funding formulas. Districts with small budgets must maintain complete networks in every school, ",
+  "stakeholder_role": "unknown",
+  "claims": [
     {
-      "summary": "The comments from Rollins & Sumrall Education Group highlight Mississippi's success in improving educational outcomes while heavily relying on E-Rate funding and technology investments. The group supports the idea that higher levels of E-Rate support are associated with improved educational outcomes.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The text discusses the impact of E-Rate support on educational outcomes in Mississippi, noting improvements in academic performance after implementing the program. It mentions Mississippi's achievement gains in reading and math, particularly in fourth-grade math, which improved from No. 49 to No. 16 between 2013 and 2024. The text also highlights the state's initiatives to provide digital learning resources and support to schools through the Mississippi Connects program funded by E-Rate.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment discusses the importance of E-Rate funding for broadband infrastructure and services in Mississippi, highlighting the positive impact on student outcomes and the need to maintain the program.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment opposes sunsetting the E-Rate program as a statutory authority.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [
-        {
-          "provision_id": "erate_sunset",
-          "position": "oppose",
-          "requested_action": "Limit or sunset E-Rate",
-          "reason_family": "statutory_authority",
-          "claim_kind": "legal_claim",
-          "argument": "The comment opposes sunsetting the E-Rate program as a statutory authority.",
-          "evidence_quote": "o. 9 overall in the nation for reading and No. \n16 for math.” Id. \n11 See E-Rate NPRM at ¶ 21 (“Are there services that are currently eligible for support that are \nno longer necessary or are inconsistent with the statute?”). \n12 See id. at ¶ 18.",
-          "evidence_start": 8905,
-          "evidence_end": 9151,
-          "uncertain": false
-        }
-      ],
-      "invalid_claims_rejected": 0
-    },
-    {
-      "summary": "Mississippi school districts face budget cuts and reduced funding for E-Rate programs due to declining enrollment and new school funding formulas. Districts with small budgets must maintain complete networks in every school, despite having no in-house IT staff. The district in West Bolivar was forced to cancel its requests for managed internal broadband services in both years, despite having no in-house IT staff. The district was using microwave technology at two locations and could not afford i",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment discusses the importance of maintaining category two E-Rate eligibility for Mississippi schools, particularly those using Managed Internal Broadband Services (MIBS). It highlights the financial strain on Jackson Public Schools (JPS) due to high poverty rates, declining enrollment, and the need for network maintenance. The comment argues against sunsetting or limiting E-Rate support, emphasizing that affordability depends on both service cost and the applicant's ability to pay, not ju",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The comment opposes sunsetting the E-Rate program as a statutory authority.",
+      "evidence_quote": "o. 9 overall in the nation for reading and No. \n16 for math.” Id. \n11 See E-Rate NPRM at ¶ 21 (“Are there services that are currently eligible for support that are \nno longer necessary or are inconsistent with the statute?”). \n12 See id. at ¶ 18.",
+      "evidence_start": 8905,
+      "evidence_end": 9151,
+      "uncertain": false
     }
   ],
-  "next_chunk": 6
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 6,
+  "submission_id": "26110081230",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081230",
+  "filer_raw": "Rollins & Sumrall Education Group Inc.",
+  "date_submission": "2026-10-13T20:54:21.835Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0d49d27480833cddf35ffbc1a728ab8c82c68c5fbfa575ca12805b1b42d90e13",
+  "params_key": "4c201eb709565b2f8699bf1257a5ab28418760790e0011e7980b1f25cb4120fc",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 7,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 7,
+  "source_windows_model_analyzed": 7
 }

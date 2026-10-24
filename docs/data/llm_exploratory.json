@@ -1,71 +1,72 @@
 {
   "schema_version": "llm-census-v1.1.0",
-  "generated_utc": "2026-10-24T17:19:14.743240+00:00",
+  "generated_utc": "2026-10-24T20:54:37.011835+00:00",
   "publication_status": "EXPLORATORY_UNVALIDATED_MACHINE_CLASSIFICATIONS",
   "model": "ibm/granite4:1b-q4_K_M",
   "codebook_version": "1.0.0-draft-anchored",
   "indexed_filings": 3231,
   "filings_with_text": 3230,
-  "completed_filings": 2787,
+  "completed_filings": 2873,
   "processing_status": {
-    "complete": 2787,
-    "pending": 425,
-    "partial": 18,
-    "no_source_text": 1
+    "complete": 2873,
+    "pending": 348,
+    "no_source_text": 1,
+    "partial": 9
   },
-  "distinct_normalized_texts_among_completed": 2731,
+  "distinct_normalized_texts_among_completed": 2817,
   "completed_filings_in_exact_text_duplicate_groups": 73,
   "inferred_stakeholder_roles": {
-    "unknown": 1854,
+    "unknown": 1924,
     "parent_guardian": 86,
-    "government": 9,
-    "school_district": 711,
+    "government": 12,
+    "school_district": 720,
     "school_staff": 116,
-    "researcher": 3,
+    "researcher": 5,
     "telecom_provider": 1,
     "student": 3,
     "library": 1,
-    "advocacy_group": 3
+    "advocacy_group": 5
   },
   "machine_evidence_quality": {
-    "semantic_scope_full_text_filings": 2767,
-    "filings_without_grounded_positions": 1514,
-    "filings_with_rejected_quotes_or_codes": 1794,
-    "invalid_claim_rows_rejected": 3083,
+    "semantic_scope_full_text_filings": 2779,
+    "filings_without_grounded_positions": 1574,
+    "filings_with_rejected_quotes_or_codes": 1880,
+    "invalid_claim_rows_rejected": 3520,
     "uncertain_claim_rows": 0,
     "ocr_candidate_filings": 203,
-    "semantic_scope_prioritized_windows_filings": 20,
-    "source_windows_selected_for_model": 96,
-    "source_windows_available_in_selective_documents": 177
+    "semantic_scope_prioritized_windows_filings": 94,
+    "source_windows_selected_for_model": 484,
+    "source_windows_available_in_selective_documents": 1412
   },
   "argument_reason_counts": {
     "other": 34,
-    "budget_cost_efficiency": 1324,
-    "education_effectiveness": 62,
-    "privacy_free_expression": 12,
-    "statutory_authority": 15,
-    "access_affordability_equity": 45,
+    "budget_cost_efficiency": 1340,
+    "education_effectiveness": 66,
+    "privacy_free_expression": 16,
+    "statutory_authority": 26,
+    "access_affordability_equity": 49,
     "administrative_burden": 2,
+    "competition_market_effects": 4,
     "parental_autonomy": 3,
-    "competition_market_effects": 2
+    "child_safety": 1
   },
   "argument_type_counts": {
-    "cost_or_savings": 1344,
-    "empirical_claim": 29,
+    "cost_or_savings": 1360,
+    "empirical_claim": 30,
     "implementation_burden": 11,
-    "normative_value": 59,
-    "legal_claim": 7,
-    "alternative_design": 18,
-    "other": 7,
-    "privacy_expression": 4,
-    "equity_access": 13,
-    "citation_of_external_evidence": 7
+    "normative_value": 63,
+    "legal_claim": 16,
+    "alternative_design": 22,
+    "other": 9,
+    "privacy_expression": 6,
+    "equity_access": 14,
+    "citation_of_external_evidence": 10
   },
   "issue_cooccurrences": [
     {
       "provision_a": "erate_eligibility_scope",
       "provision_b": "erate_sunset",
-      "filings": 22
+      "filings": 23
     },
     {
       "provision_a": "education_outcomes",
@@ -110,6 +111,11 @@
     {
       "provision_a": "erate_sunset",
       "provision_b": "lowest_corresponding_price",
+      "filings": 3
+    },
+    {
+      "provision_a": "erate_sunset",
+      "provision_b": "screen_time_condition",
       "filings": 3
     },
     {
@@ -223,8 +229,53 @@
       "filings": 1
     },
     {
-      "provision_a": "erate_sunset",
-      "provision_b": "screen_time_condition",
+      "provision_a": "cipa_byod",
+      "provision_b": "cipa_digital_literacy",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_byod",
+      "provision_b": "cipa_monitoring_privacy",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_byod",
+      "provision_b": "cipa_network_filter",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_byod",
+      "provision_b": "cipa_social_media",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_digital_literacy",
+      "provision_b": "cipa_monitoring_privacy",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_digital_literacy",
+      "provision_b": "cipa_network_filter",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_digital_literacy",
+      "provision_b": "cipa_social_media",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_monitoring_privacy",
+      "provision_b": "cipa_network_filter",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_monitoring_privacy",
+      "provision_b": "cipa_social_media",
+      "filings": 1
+    },
+    {
+      "provision_a": "cipa_network_filter",
+      "provision_b": "cipa_social_media",
       "filings": 1
     },
     {
@@ -240,54 +291,54 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 1182,
+        "oppose": 1200,
         "support": 1
       },
       "unique_text_weighted_positions": {
-        "oppose": 1141,
+        "oppose": 1159,
         "support": 1
       },
-      "filings_mentioning": 1183,
+      "filings_mentioning": 1201,
       "claim_reason_counts": {
-        "budget_cost_efficiency": 1304,
-        "statutory_authority": 15,
+        "budget_cost_efficiency": 1319,
+        "statutory_authority": 26,
         "access_affordability_equity": 11,
         "education_effectiveness": 4,
         "other": 1
       },
       "claim_kind_counts": {
-        "cost_or_savings": 1304,
+        "cost_or_savings": 1319,
         "normative_value": 13,
         "implementation_burden": 1,
-        "legal_claim": 7,
+        "legal_claim": 16,
         "alternative_design": 1,
-        "other": 4,
+        "other": 6,
         "empirical_claim": 3,
         "equity_access": 2
       },
-      "claim_count": 1335,
+      "claim_count": 1361,
       "filings_by_inferred_role": {
-        "unknown": 412,
-        "school_district": 613,
-        "government": 7,
+        "unknown": 421,
+        "school_district": 618,
+        "government": 9,
         "school_staff": 93,
         "telecom_provider": 1,
         "parent_guardian": 52,
         "student": 2,
         "library": 1,
-        "researcher": 1,
-        "advocacy_group": 1
+        "advocacy_group": 3,
+        "researcher": 1
       },
       "inferred_role_by_position": {
         "unknown": {
-          "oppose": 412
+          "oppose": 421
         },
         "school_district": {
-          "oppose": 612,
+          "oppose": 617,
           "support": 1
         },
         "government": {
-          "oppose": 7
+          "oppose": 9
         },
         "school_staff": {
           "oppose": 93
@@ -304,17 +355,17 @@
         "library": {
           "oppose": 1
         },
-        "researcher": {
-          "oppose": 1
-        },
         "advocacy_group": {
+          "oppose": 3
+        },
+        "researcher": {
           "oppose": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
-          "budget_cost_efficiency": 1303,
-          "statutory_authority": 15,
+          "budget_cost_efficiency": 1318,
+          "statutory_authority": 26,
           "access_affordability_equity": 11,
           "education_effectiveness": 4,
           "other": 1
@@ -323,7 +374,7 @@
           "budget_cost_efficiency": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26109837335",
@@ -429,50 +480,50 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 31,
-        "support": 8
+        "oppose": 33,
+        "support": 9
       },
       "unique_text_weighted_positions": {
-        "oppose": 31,
-        "support": 8
+        "oppose": 33,
+        "support": 9
       },
-      "filings_mentioning": 39,
+      "filings_mentioning": 42,
       "claim_reason_counts": {
-        "budget_cost_efficiency": 15,
-        "access_affordability_equity": 24
+        "budget_cost_efficiency": 16,
+        "access_affordability_equity": 27
       },
       "claim_kind_counts": {
-        "cost_or_savings": 15,
-        "alternative_design": 13,
+        "cost_or_savings": 16,
+        "alternative_design": 15,
         "empirical_claim": 1,
-        "equity_access": 10
+        "equity_access": 11
       },
-      "claim_count": 39,
+      "claim_count": 43,
       "filings_by_inferred_role": {
-        "school_district": 28,
-        "unknown": 11
+        "school_district": 29,
+        "unknown": 13
       },
       "inferred_role_by_position": {
         "school_district": {
-          "oppose": 22,
+          "oppose": 23,
           "support": 6
         },
         "unknown": {
-          "oppose": 9,
-          "support": 2
+          "oppose": 10,
+          "support": 3
         }
       },
       "claim_reason_by_position": {
         "oppose": {
-          "budget_cost_efficiency": 13,
-          "access_affordability_equity": 18
+          "budget_cost_efficiency": 14,
+          "access_affordability_equity": 20
         },
         "support": {
-          "access_affordability_equity": 6,
+          "access_affordability_equity": 7,
           "budget_cost_efficiency": 2
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26110023440",
@@ -539,6 +590,14 @@
           "uncertain": false
         },
         {
+          "submission_id": "26110075616",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110075616",
+          "position": "support",
+          "argument": "Maintain current eligibility criteria for equipment and services",
+          "evidence_quote": "Maintain E-Rate support for Internet connectivity and network infrastructure.",
+          "uncertain": false
+        },
+        {
           "submission_id": "26110075784",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110075784",
           "position": "oppose",
@@ -561,14 +620,6 @@
           "argument": "Narrowing eligibility could disproportionately affect schools in low-income areas",
           "evidence_quote": "Connectivity must be maintained, upgraded, secured, and expanded as instructional demands and technology continue to evolve. A 25-year-old fiber network, for example, may technically provide connectivity, but that does not mean it provides the capacity, reliability, or resiliency a modern school district requires.",
           "uncertain": false
-        },
-        {
-          "submission_id": "26110076600",
-          "source_url": "https://www.fcc.gov/ecfs/filing/26110076600",
-          "position": "oppose",
-          "argument": "Limiting eligible services would increase costs for schools and libraries",
-          "evidence_quote": "Connectivity requires ongoing investment, maintenance, upgrades, cybersecurity planning, and replacement of aging network equipment. Schools of all sizes and settings—rural, suburban, and urban—depend on stable and predictable support to provide reliable access for students and educators.",
-          "uncertain": false
         }
       ]
     },
@@ -578,36 +629,37 @@
       "category": "scope",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 9
+        "oppose": 10
       },
       "unique_text_weighted_positions": {
-        "oppose": 9
+        "oppose": 10
       },
-      "filings_mentioning": 9,
+      "filings_mentioning": 10,
       "claim_reason_counts": {
         "access_affordability_equity": 3,
         "education_effectiveness": 3,
         "privacy_free_expression": 2,
-        "other": 1
+        "other": 1,
+        "competition_market_effects": 1
       },
       "claim_kind_counts": {
-        "alternative_design": 3,
+        "alternative_design": 4,
         "implementation_burden": 1,
         "normative_value": 1,
         "empirical_claim": 3,
         "privacy_expression": 1
       },
-      "claim_count": 9,
+      "claim_count": 10,
       "filings_by_inferred_role": {
         "school_district": 5,
-        "unknown": 4
+        "unknown": 5
       },
       "inferred_role_by_position": {
         "school_district": {
           "oppose": 5
         },
         "unknown": {
-          "oppose": 4
+          "oppose": 5
         }
       },
       "claim_reason_by_position": {
@@ -615,10 +667,11 @@
           "access_affordability_equity": 3,
           "education_effectiveness": 3,
           "privacy_free_expression": 2,
-          "other": 1
+          "other": 1,
+          "competition_market_effects": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26110072460",
@@ -691,6 +744,14 @@
           "argument": "Special construction, dark fiber, self-provisioned networks are essential for connectivity and cybersecurity",
           "evidence_quote": "NONE of the infrastructure areas should be narrowed - they should be expanded especially to include Cybersecurity resources such as DDOS protections, device endpoint systems, Email Filtering Systems, etc.",
           "uncertain": false
+        },
+        {
+          "submission_id": "26110081367",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110081367",
+          "position": "oppose",
+          "argument": "Limiting special construction or dark fiber restricts broadband competition and access.",
+          "evidence_quote": "Limited competition should not penalize tribal applicants.",
+          "uncertain": false
         }
       ]
     },
@@ -700,28 +761,32 @@
       "category": "funding",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 7
+        "oppose": 7,
+        "support": 1
       },
       "unique_text_weighted_positions": {
-        "oppose": 7
+        "oppose": 7,
+        "support": 1
       },
-      "filings_mentioning": 7,
+      "filings_mentioning": 8,
       "claim_reason_counts": {
-        "access_affordability_equity": 6,
+        "access_affordability_equity": 7,
         "other": 1
       },
       "claim_kind_counts": {
         "cost_or_savings": 4,
-        "citation_of_external_evidence": 3
+        "citation_of_external_evidence": 3,
+        "alternative_design": 1
       },
-      "claim_count": 7,
+      "claim_count": 8,
       "filings_by_inferred_role": {
-        "school_district": 3,
+        "school_district": 4,
         "unknown": 4
       },
       "inferred_role_by_position": {
         "school_district": {
-          "oppose": 3
+          "oppose": 3,
+          "support": 1
         },
         "unknown": {
           "oppose": 4
@@ -731,9 +796,12 @@
         "oppose": {
           "access_affordability_equity": 6,
           "other": 1
+        },
+        "support": {
+          "access_affordability_equity": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26110075784",
@@ -790,6 +858,14 @@
           "argument": "The District's capacity requirement follows from those external mandates and increases as each additional state or federal process moves to a networked platform",
           "evidence_quote": "Broadband Availability Is an Ongoing District-Wide Necessity",
           "uncertain": false
+        },
+        {
+          "submission_id": "26110081296",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110081296",
+          "position": "support",
+          "argument": "Under the rule, each school is eligible for a CTF discount of 50% of their costs for services (or 25% for voice services) after applying the E-rate discount, up to an amount equal to the school’s federal E-rate subsidy",
+          "evidence_quote": "discounts for federal E-rate eligible schools \nwill be no higher than their E-rate subsidy. Under this rule, each school is eligible for a CTF \ndiscount of 50% of their costs for services (or 25% for voice services) after applying the E-rate \ndiscount, up to an amount equal to the school’s federal E-rate subsidy.",
+          "uncertain": false
         }
       ]
     },
@@ -799,39 +875,47 @@
       "category": "funding",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 2
+        "oppose": 3
       },
       "unique_text_weighted_positions": {
-        "oppose": 2
+        "oppose": 3
       },
-      "filings_mentioning": 2,
+      "filings_mentioning": 3,
       "claim_reason_counts": {
-        "competition_market_effects": 2
+        "competition_market_effects": 3
       },
       "claim_kind_counts": {
-        "normative_value": 1,
+        "normative_value": 2,
         "other": 1
       },
-      "claim_count": 2,
+      "claim_count": 3,
       "filings_by_inferred_role": {
-        "school_district": 1,
-        "unknown": 1
+        "unknown": 2,
+        "school_district": 1
       },
       "inferred_role_by_position": {
-        "school_district": {
-          "oppose": 1
-        },
         "unknown": {
+          "oppose": 2
+        },
+        "school_district": {
           "oppose": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
-          "competition_market_effects": 2
+          "competition_market_effects": 3
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
+        {
+          "submission_id": "26110073527",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110073527",
+          "position": "oppose",
+          "argument": "Maintain a clear distinction between Internet safety requirements and instructional technology policy",
+          "evidence_quote": "5.​ Maintain a clear distinction between Internet safety requirements and instructional technology policy.",
+          "uncertain": false
+        },
         {
           "submission_id": "26110078516",
           "source_url": "https://www.fcc.gov/ecfs/filing/26110078516",
@@ -864,7 +948,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -873,30 +957,30 @@
       "category": "evaluation",
       "notice_status": "question_for_comment",
       "positions": {
-        "support": 31,
-        "oppose": 21,
+        "support": 32,
+        "oppose": 22,
         "discussion_no_position": 1
       },
       "unique_text_weighted_positions": {
-        "support": 29,
-        "oppose": 20,
+        "support": 30,
+        "oppose": 21,
         "discussion_no_position": 1
       },
-      "filings_mentioning": 53,
+      "filings_mentioning": 55,
       "claim_reason_counts": {
-        "education_effectiveness": 54,
+        "education_effectiveness": 56,
         "other": 1
       },
       "claim_kind_counts": {
         "empirical_claim": 19,
-        "normative_value": 31,
+        "normative_value": 32,
         "other": 1,
-        "citation_of_external_evidence": 4
+        "citation_of_external_evidence": 5
       },
-      "claim_count": 55,
+      "claim_count": 57,
       "filings_by_inferred_role": {
         "school_district": 21,
-        "unknown": 17,
+        "unknown": 19,
         "parent_guardian": 8,
         "school_staff": 6,
         "researcher": 1
@@ -907,9 +991,9 @@
           "oppose": 6
         },
         "unknown": {
-          "oppose": 11,
+          "oppose": 12,
           "discussion_no_position": 1,
-          "support": 5
+          "support": 6
         },
         "parent_guardian": {
           "support": 6,
@@ -925,17 +1009,17 @@
       },
       "claim_reason_by_position": {
         "support": {
-          "education_effectiveness": 31
+          "education_effectiveness": 32
         },
         "oppose": {
-          "education_effectiveness": 22,
+          "education_effectiveness": 23,
           "other": 1
         },
         "discussion_no_position": {
           "education_effectiveness": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26109905937",
@@ -1041,16 +1125,16 @@
       "category": "screens",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 20,
+        "oppose": 22,
         "support": 1
       },
       "unique_text_weighted_positions": {
-        "oppose": 20,
+        "oppose": 22,
         "support": 1
       },
-      "filings_mentioning": 21,
+      "filings_mentioning": 23,
       "claim_reason_counts": {
-        "privacy_free_expression": 7,
+        "privacy_free_expression": 9,
         "other": 13,
         "budget_cost_efficiency": 1
       },
@@ -1058,22 +1142,22 @@
         "normative_value": 7,
         "cost_or_savings": 11,
         "other": 1,
-        "privacy_expression": 1,
+        "privacy_expression": 3,
         "empirical_claim": 1
       },
-      "claim_count": 21,
+      "claim_count": 23,
       "filings_by_inferred_role": {
-        "unknown": 6,
-        "school_district": 5,
+        "unknown": 7,
+        "school_district": 6,
         "parent_guardian": 7,
         "school_staff": 3
       },
       "inferred_role_by_position": {
         "unknown": {
-          "oppose": 6
+          "oppose": 7
         },
         "school_district": {
-          "oppose": 5
+          "oppose": 6
         },
         "parent_guardian": {
           "oppose": 6,
@@ -1085,7 +1169,7 @@
       },
       "claim_reason_by_position": {
         "oppose": {
-          "privacy_free_expression": 7,
+          "privacy_free_expression": 9,
           "other": 12,
           "budget_cost_efficiency": 1
         },
@@ -1093,7 +1177,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26109929219",
@@ -1241,7 +1325,7 @@
           "parental_autonomy": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26110073990",
@@ -1315,7 +1399,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -1353,7 +1437,7 @@
           "budget_cost_efficiency": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26110080613",
@@ -1379,33 +1463,44 @@
       "category": "cipa",
       "notice_status": "question_for_comment",
       "positions": {
-        "oppose": 1
+        "oppose": 1,
+        "support": 1
       },
       "unique_text_weighted_positions": {
-        "oppose": 1
+        "oppose": 1,
+        "support": 1
       },
-      "filings_mentioning": 1,
+      "filings_mentioning": 2,
       "claim_reason_counts": {
-        "budget_cost_efficiency": 1
+        "budget_cost_efficiency": 1,
+        "privacy_free_expression": 1
       },
       "claim_kind_counts": {
-        "cost_or_savings": 1
+        "cost_or_savings": 1,
+        "normative_value": 1
       },
-      "claim_count": 1,
+      "claim_count": 2,
       "filings_by_inferred_role": {
-        "unknown": 1
+        "unknown": 1,
+        "researcher": 1
       },
       "inferred_role_by_position": {
         "unknown": {
           "oppose": 1
+        },
+        "researcher": {
+          "support": 1
         }
       },
       "claim_reason_by_position": {
         "oppose": {
           "budget_cost_efficiency": 1
+        },
+        "support": {
+          "privacy_free_expression": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26110080721",
@@ -1413,6 +1508,14 @@
           "position": "oppose",
           "argument": "BYOD policies can increase costs and security risks",
           "evidence_quote": "As our nation seeks to prepare students for college, careers, and an increasingly technology-driven economy, now is not the time to undermine the very program and related infrastructure that makes those opportunities possible.",
+          "uncertain": false
+        },
+        {
+          "submission_id": "26110080813",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080813",
+          "position": "support",
+          "argument": "The comment supports extending CIPA to third-party-owned devices to ensure consistent protection of student data privacy.",
+          "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
           "uncertain": false
         }
       ]
@@ -1422,68 +1525,176 @@
       "label": "Require network-level content filtering",
       "category": "cipa",
       "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
-      "examples": []
+      "positions": {
+        "support": 1
+      },
+      "unique_text_weighted_positions": {
+        "support": 1
+      },
+      "filings_mentioning": 1,
+      "claim_reason_counts": {
+        "child_safety": 1
+      },
+      "claim_kind_counts": {
+        "empirical_claim": 1
+      },
+      "claim_count": 1,
+      "filings_by_inferred_role": {
+        "researcher": 1
+      },
+      "inferred_role_by_position": {
+        "researcher": {
+          "support": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "support": {
+          "child_safety": 1
+        }
+      },
+      "completed_filing_denominator": 2873,
+      "examples": [
+        {
+          "submission_id": "26110080813",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080813",
+          "position": "support",
+          "argument": "The comment supports requiring network-level content filtering to ensure comprehensive protection of student content from unsafe or inappropriate material.",
+          "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+          "uncertain": false
+        }
+      ]
     },
     {
       "provision_id": "cipa_monitoring_privacy",
       "label": "Interpret monitoring requirements and privacy",
       "category": "cipa",
       "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
-      "examples": []
+      "positions": {
+        "support": 1
+      },
+      "unique_text_weighted_positions": {
+        "support": 1
+      },
+      "filings_mentioning": 1,
+      "claim_reason_counts": {
+        "privacy_free_expression": 1
+      },
+      "claim_kind_counts": {
+        "citation_of_external_evidence": 1
+      },
+      "claim_count": 1,
+      "filings_by_inferred_role": {
+        "researcher": 1
+      },
+      "inferred_role_by_position": {
+        "researcher": {
+          "support": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "support": {
+          "privacy_free_expression": 1
+        }
+      },
+      "completed_filing_denominator": 2873,
+      "examples": [
+        {
+          "submission_id": "26110080813",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080813",
+          "position": "support",
+          "argument": "The comment cites FCC guidance on interpreting monitoring requirements and privacy implications to support the need for clear privacy protections in monitoring policies.",
+          "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+          "uncertain": false
+        }
+      ]
     },
     {
       "provision_id": "cipa_social_media",
       "label": "Change CIPA treatment of social media",
       "category": "cipa",
       "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
-      "examples": []
+      "positions": {
+        "oppose": 1
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 1
+      },
+      "filings_mentioning": 1,
+      "claim_reason_counts": {
+        "education_effectiveness": 1
+      },
+      "claim_kind_counts": {
+        "normative_value": 1
+      },
+      "claim_count": 1,
+      "filings_by_inferred_role": {
+        "researcher": 1
+      },
+      "inferred_role_by_position": {
+        "researcher": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "education_effectiveness": 1
+        }
+      },
+      "completed_filing_denominator": 2873,
+      "examples": [
+        {
+          "submission_id": "26110080813",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080813",
+          "position": "oppose",
+          "argument": "The comment opposes changing CIPA treatment of social media to prevent inappropriate content from being accessible to students.",
+          "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+          "uncertain": false
+        }
+      ]
     },
     {
       "provision_id": "cipa_digital_literacy",
       "label": "Require digital/media literacy courses",
       "category": "cipa",
       "notice_status": "question_for_comment",
-      "positions": {},
-      "unique_text_weighted_positions": {},
-      "filings_mentioning": 0,
-      "claim_reason_counts": {},
-      "claim_kind_counts": {},
-      "claim_count": 0,
-      "filings_by_inferred_role": {},
-      "inferred_role_by_position": {},
-      "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
-      "examples": []
+      "positions": {
+        "oppose": 1
+      },
+      "unique_text_weighted_positions": {
+        "oppose": 1
+      },
+      "filings_mentioning": 1,
+      "claim_reason_counts": {
+        "education_effectiveness": 1
+      },
+      "claim_kind_counts": {
+        "citation_of_external_evidence": 1
+      },
+      "claim_count": 1,
+      "filings_by_inferred_role": {
+        "researcher": 1
+      },
+      "inferred_role_by_position": {
+        "researcher": {
+          "oppose": 1
+        }
+      },
+      "claim_reason_by_position": {
+        "oppose": {
+          "education_effectiveness": 1
+        }
+      },
+      "completed_filing_denominator": 2873,
+      "examples": [
+        {
+          "submission_id": "26110080813",
+          "source_url": "https://www.fcc.gov/ecfs/filing/26110080813",
+          "position": "oppose",
+          "argument": "The comment opposes requiring digital/media literacy courses to ensure students have the necessary skills to navigate the digital world safely.",
+          "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+          "uncertain": false
+        }
+      ]
     },
     {
       "provision_id": "cipa_age_specific",
@@ -1499,7 +1710,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -1516,7 +1727,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -1533,7 +1744,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -1589,7 +1800,7 @@
           "education_effectiveness": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "10605028718266",
@@ -1682,7 +1893,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26109916817",
@@ -1759,7 +1970,7 @@
           "other": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26109916817",
@@ -1825,7 +2036,7 @@
           "administrative_burden": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26109916817",
@@ -1898,7 +2109,7 @@
           "other": 2
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26109916817",
@@ -1932,7 +2143,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -1949,7 +2160,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -1966,7 +2177,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -2018,7 +2229,7 @@
           "access_affordability_equity": 1
         }
       },
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": [
         {
           "submission_id": "26110073104",
@@ -2068,7 +2279,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     },
     {
@@ -2085,7 +2296,7 @@
       "filings_by_inferred_role": {},
       "inferred_role_by_position": {},
       "claim_reason_by_position": {},
-      "completed_filing_denominator": 2787,
+      "completed_filing_denominator": 2873,
       "examples": []
     }
   ],

@@ -1,0 +1,37 @@
+{
+  "summary": "The Navajo Nation Telecommunications Regulatory Commission urges the FCC to preserve and strengthen the E-Rate program for Tribal schools and libraries. The Navajo Nation argues against restricting special construction or dark fiber for E-Rate, emphasizing the importance of competition and access for tribal communities. The Navajo Nation and other Tribal Nations argue against sunsetting E-Rate, emphasizing the need to account for Tribal reliance interests and modernize the program to address the unique challenges faced by Tribal communities. The comment discusses the impact of limiting or sunsetting E-Rate on Tribal communities, particularly the Navajo Nation, and the importance of considering the specific needs and challenges of these communities when evaluating changes to the program. The comment argues that E-Rate should not be evaluated solely based on nationwide connectivity statistics but should take into account factors such as Tribal-land status, rurality, economic disadvantage, broadband service costs, and provider competit The comment opposes limiting or sunsetting E-Rate, arguing that it could lead to increased costs for schools and libraries. It supports a more targeted approach to E-Rate funding, directing more support to rural, insular, and high-cost areas, includin",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Restrict special construction or dark fiber",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "alternative_design",
+      "argument": "Limiting special construction or dark fiber restricts broadband competition and access.",
+      "evidence_quote": "Limited competition should not penalize tribal applicants.",
+      "evidence_start": 4529,
+      "evidence_end": 4587,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110081367",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081367",
+  "filer_raw": "Navajo Nation Telecommunications Regulatory Commission",
+  "date_submission": "2026-10-14T00:25:20.233Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bde3dc55ae2a7afd68d8fe8a172cb92fc7172d46c61d27a336ca61d21a929949",
+  "params_key": "ec3a30553b76e8086a2d23edf3e871ae2f91dbb91cc3af69a44059ab8d7f6548",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 20,
+  "source_windows_model_analyzed": 6
+}

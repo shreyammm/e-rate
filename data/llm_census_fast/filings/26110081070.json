@@ -1,0 +1,37 @@
+{
+  "summary": "The Northwest Arctic Borough School District opposes limiting or sunsetting the E-Rate program, emphasizing the need for funding to support broadband services in schools and libraries. The Northwest Arctic Borough School District highlights the importance of E-Rate funding for broadband infrastructure and services in remote communities, emphasizing the need to protect and maintain these services. The FCC comments highlight the financial strain on a rural school district due to the need for high-speed internet, which is not fully funded by the E-Rate program. The comments argue that limiting or sunsetting E-Rate would exacerbate this issue by eliminating the necessary funding for broadband infrastructure, leading to increased costs for schools and districts. The comments emphasize the importance of maintaining the E-Rate program to ensure that all schools have access to the necessary inte The school district highlights the significant cost impact of reduced E-Rate funding on their budget, emphasizing the need for predictability and stability in funding sources. The comments from a student and youth leader express strong opposition to the proposal to limit or sunset E-Rate funding, emphasizing the importance of internet access for learning and school operations. The student and you",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would lead to increased costs for schools and districts.",
+      "evidence_quote": "The Category Two discount cap, and what it costs this District\nThis District qualifies for a 90 percent discount on Category One services. On Category Two, the same poverty calculation\nis capped at 85 percent. The five-point difference is not abstract. Against the District's current five-year Category Two\nbudget of $392,275, it is approximately $19,600 that the District must fund itself, on internal connections equipment,\nsolely because the category changed and not because its need or its poverty did.",
+      "evidence_start": 16711,
+      "evidence_end": 17217,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110081070",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081070",
+  "filer_raw": "Northwest Arctic Borough School District",
+  "date_submission": "2026-10-13T17:59:01.658Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9f06ae66fc1d1a67eeddef626e916eaad8744b45d3a480ac1cc1d33d3a599692",
+  "params_key": "c5e3008884e58f3e9a76481cda0f3d0f4507ee05c0abd9688e71b0f400e91507",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 18,
+  "source_windows_model_analyzed": 6
+}

@@ -1,0 +1,89 @@
+{
+  "summary": "The E‑Rate Management Professionals Association, Inc. supports a definition of consultant, consultant registration, annual certification by consulting firms, annual training, and a written letter of agency with every client. E‑MPA asks the Commission to measure each requirement by its burden on applicants and its marginal gain in program integrity. The text discusses various provisions related to E-Rate, including consultant registration, certification, and reporting requirements. It supports individual consultant registration and provides a description of the proposed system, including the use of a federal identity-proofing service and the requirement for consultants to provide their information on request. The text also mentions the support for a written letter of agency for every consultant relationship and the need to retain records of Brief The comment supports several CIPA provisions while opposing others, focusing on privacy, child safety, and educational effectiveness. The text discusses the proposed FCC regulations on E-Rate and CIPA, including the proposed prohibition on percentage-based consultant fees. It notes that E-MPA, the accrediting organization for E-Rate consultants, takes no position on the proposed prohibition and emphasizes that any rule should address the ",
+  "stakeholder_role": "researcher",
+  "claims": [
+    {
+      "provision_id": "cipa_byod",
+      "position": "support",
+      "requested_action": "Extend CIPA to third-party-owned devices",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "normative_value",
+      "argument": "The comment supports extending CIPA to third-party-owned devices to ensure consistent protection of student data privacy.",
+      "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+      "evidence_start": 51934,
+      "evidence_end": 52126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_digital_literacy",
+      "position": "oppose",
+      "requested_action": "Require digital/media literacy courses",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The comment opposes requiring digital/media literacy courses to ensure students have the necessary skills to navigate the digital world safely.",
+      "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+      "evidence_start": 51934,
+      "evidence_end": 52126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_monitoring_privacy",
+      "position": "support",
+      "requested_action": "Interpret monitoring requirements and privacy",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The comment cites FCC guidance on interpreting monitoring requirements and privacy implications to support the need for clear privacy protections in monitoring policies.",
+      "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+      "evidence_start": 51934,
+      "evidence_end": 52126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_network_filter",
+      "position": "support",
+      "requested_action": "Require network-level content filtering",
+      "reason_family": "child_safety",
+      "claim_kind": "empirical_claim",
+      "argument": "The comment supports requiring network-level content filtering to ensure comprehensive protection of student content from unsafe or inappropriate material.",
+      "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+      "evidence_start": 51934,
+      "evidence_end": 52126,
+      "uncertain": false
+    },
+    {
+      "provision_id": "cipa_social_media",
+      "position": "oppose",
+      "requested_action": "Change CIPA treatment of social media",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "The comment opposes changing CIPA treatment of social media to prevent inappropriate content from being accessible to students.",
+      "evidence_quote": "requirement, with USAC’s course as the \n59 FCC 26-41, para. 66; Appendix A, proposed 47 CFR § 54.517(d).\n60 Administrative Procedures, Continuing Education Standards.\n61 Code of Ethics, § C.2.",
+      "evidence_start": 51934,
+      "evidence_end": 52126,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "cipa_byod": "support",
+    "cipa_digital_literacy": "oppose",
+    "cipa_monitoring_privacy": "support",
+    "cipa_network_filter": "support",
+    "cipa_social_media": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110080813",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080813",
+  "filer_raw": "E-RATE MANAGEMENT PROFESSIONALS ASSOCIATION, INC.",
+  "date_submission": "2026-10-13T04:49:48.053Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bbd5327e81df019131d56bf53d3d161aa1e8c5403b6f66c2e17ad464f746540e",
+  "params_key": "3589ff98d3c0594199cadc15687fd1d904641a477413c8f1a81571178e895d88",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 30,
+  "source_windows_model_analyzed": 6
+}

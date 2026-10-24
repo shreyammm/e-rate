@@ -1,0 +1,37 @@
+{
+  "summary": "The Quilt, a nonprofit representing research and education networks, argues for maintaining a persistent, predictable E-Rate program to support schools and libraries nationwide. It emphasizes that the need for connectivity is not determined by geography and that the Commission should continue to support both rural and urban schools and libraries. The Quilt also highlights the importance of special construction and self-provisioning as competitively bid options, even with the reduction in funding The Quilt opposes the sunset of the E-Rate program, arguing that targeted refinements would address concerns better than elimination. The Notice of Proposed Rulemaking proposes to sunset E-Rate funding. The Quilt and other stakeholders argue against limiting E-Rate eligibility to rural areas or single provider areas, emphasizing the need for a universal service commitment to K-12 education and public libraries. They cite statutory authority and the lack of comparable language in the relevant sections of the E-Rate program to support their position. The comment supports retaining special construction and self-provisioning as a competitively bid option for E-Rate programs, citing the example of the Utah Education and Telehealth Network (UETN) and its successful fiber project. The comments a",
+  "stakeholder_role": "government",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "other",
+      "argument": "The Notice of Proposed Rulemaking proposes to sunset E-Rate funding.",
+      "evidence_quote": "rther Notice of Proposed Rulemaking, FCC 26-41 (2026) (E-Rate NPRM).",
+      "evidence_start": 9058,
+      "evidence_end": 9126,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110081176",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081176",
+  "filer_raw": "The Quilt",
+  "date_submission": "2026-10-13T20:06:46.414Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c7631ab333846d0269194f2ba70b232bac165e92cb2e1102433ddc6d967e7004",
+  "params_key": "245af6a3f8783d91e68c212d815d211830e8d363c69fc0a2fa4ede2308182253",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 12,
+  "source_windows_model_analyzed": 6
+}

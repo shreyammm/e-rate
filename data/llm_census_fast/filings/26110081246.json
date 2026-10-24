@@ -1,0 +1,37 @@
+{
+  "summary": "The Pasadena Independent School District (District) submits comments in response to the Commission's Notice of Proposed Rulemaking and Further Notice of Proposed Rulemaking. The District serves about 44,000 students in 68 schools in the Houston, Texas area. All 68 schools participate in the Community Eligibility Provision. The District's E-Rate discount has been 90 percent for Category One and 85 percent for Category Two in every funding year from FY 2017 through FY 2026. Over that period the Un The school district recommends removing sunset provisions for E-Rate programs and adding budget whenever new services are added. The FCC comments discuss various aspects of the E-Rate program, including potential changes to its eligibility scope, funding amounts, and the impact on competition and market efficiency. The comments from the Pasadena ISD highlight concerns about special construction projects and the need to review the bidding process to ensure fair competition. The District also requests that the Commission keep maintenance and operation of leased dark fiber eligible and consider a national per-foot or per-str The District raises concerns about the potential impact of limiting or sunsetting E-Rate on their funding needs and budget constraints. The District opposes sunset provi",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Remove sunset provisions",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The District opposes any sunset of E-Rate funding.",
+      "evidence_quote": "The District asks the Commission to continue the program and to adopt these changes.",
+      "evidence_start": 32606,
+      "evidence_end": 32690,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110081246",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081246",
+  "filer_raw": "Pasadena Independent School District",
+  "date_submission": "2026-10-13T21:09:09.148Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "97cef4d6825078d10e1e09d2b112a78d06b71ee539c2d4b9ad7e8bd569a1f075",
+  "params_key": "cf91576d1daadeb00b191d6365a80a0f41416567ddc1d75a8a64e804fcf6dcd2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 10,
+  "source_windows_model_analyzed": 5
+}

@@ -1,7 +1,7 @@
 {
   "publication_status": "MACHINE_GENERATED_REVIEW_SUGGESTIONS_ONLY",
   "model": "ibm/granite4:1b-q4_K_M",
-  "completed_filings": 2787,
+  "completed_filings": 2873,
   "selected": 150,
   "selection": "Quality flags and reproducible filing-ID hash; not a random prevalence estimator",
   "items": [
@@ -96,6 +96,21 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110080414",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110080414",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read",
+        "deterministic_quality_sample"
+      ],
+      "claim_count": 0,
+      "chunk_count": 2,
+      "source_sha256": "a191e36d9f88097f72b70d2be3bdd04bcac780a2125be5a5f6723c3d802bfd1c",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110077021",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110077021",
       "review_reasons": [
@@ -182,6 +197,20 @@
       "claim_count": 0,
       "chunk_count": 1,
       "source_sha256": "e5efbf0c9120ae8f2ca5a609f6bb804f4dd7819e9aeacdc140e3fe0667651b51",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110076741",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110076741",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "82636896936ad6e0a323882396b3a10e2cd5504319065abdea17f7aecc903a33",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -312,6 +341,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110078358",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110078358",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "e6fb8404c2a327c9a0f2217c9344726f17f98832607bb8cd92d1060e6121d8d7",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110078925",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110078925",
       "review_reasons": [
@@ -410,6 +453,34 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110081393",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081393",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 5,
+      "source_sha256": "d4ba7e9192581fd01e4b8bec6de84351f9af503437531e075615eed3eac02cad",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110080558",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110080558",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "06e8b151a18473b49151a218928c40eec97485a098f98c8e7d7e42a709094f3c",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110078373",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110078373",
       "review_reasons": [
@@ -480,6 +551,34 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110081125",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081125",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 5,
+      "source_sha256": "3517ab3f66fc835df3fbeef27b507bcb93bbe7b6f4a0201460bfacab0dd311b1",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110073045",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073045",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "90183c5f436b6e9ff6bcb4f0984a752874f4c20322110718b1cc065047c77b26",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110081167",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110081167",
       "review_reasons": [
@@ -494,6 +593,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110081358",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081358",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "959ee7c1cca95e3a5d0b5af72984c7c112da70c41a66c4ae23767d4a443f4cef",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110079111",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110079111",
       "review_reasons": [
@@ -504,6 +617,20 @@
       "claim_count": 0,
       "chunk_count": 2,
       "source_sha256": "8ef7a47a728475197f77cf39765e34a8a6da43497c5db7828788c71136f77381",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110073918",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073918",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "3f77bb0fd204d900ba6b0df1c7558f15a208f644713936685cfa06de3c7d11ea",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -560,6 +687,20 @@
       "claim_count": 0,
       "chunk_count": 5,
       "source_sha256": "1f82d9e3816298c3afa1198fa210b34ee1fa756790ab4f1e912a7dd54a40cf7e",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110081252",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081252",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "a985c20532755fd891456d458c73f88a33d44498925cd518bdd6d9469794aaba",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -644,6 +785,20 @@
       "claim_count": 0,
       "chunk_count": 1,
       "source_sha256": "1b4396e73a798415bdf4b4239d408fb778ec5ee5b60a6144e19d1f354d5bfaec",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110081245",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081245",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 5,
+      "source_sha256": "dd233f7265a9f4568ceadf6777fa30664ae2cfed8f905ded149a9279a15bd461",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -816,6 +971,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110074187",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110074187",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "d27357dbe7571072f68d15a6091d61ab335c8bbc0e82973ffbb598fec18436b3",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110079258",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110079258",
       "review_reasons": [
@@ -900,6 +1069,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110081263",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081263",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "1b4ebf7ff82862a571f3dd27262d48a2a802023f82be90253b314d4a714fd38e",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110073401",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110073401",
       "review_reasons": [
@@ -910,6 +1093,48 @@
       "claim_count": 0,
       "chunk_count": 1,
       "source_sha256": "44b847a602ba4e53ecbe1239be5a8737d28ef72f0a17aaf656a0050f95e28609",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110080198",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110080198",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "40d467c909a5bd793d648be30593c8346b81a39bbbbe1013785abb5290d425c3",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110079279",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110079279",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 2,
+      "source_sha256": "0925a380f35da8928126dcfcc216887dbac2d8fb9412ea65bf6dab737595b29d",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110081214",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081214",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "a02aac18b785b7a1130a553f9d8c17b2f5dd31db1f026f786e21be04f5cf94e1",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -1208,6 +1433,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110081350",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081350",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "f524bcff97b590fd99015d150681a1c1e8262164af74d5c3965ae2a847e724ba",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110076865",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110076865",
       "review_reasons": [
@@ -1316,6 +1555,20 @@
       "claim_count": 0,
       "chunk_count": 2,
       "source_sha256": "158f3b1b01c8fff150eb046e9b1074065b421797faf013d8acc8a6ef5cd41c13",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110080243",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110080243",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 2,
+      "source_sha256": "bafec0c3141230addf691daabc5ef9eb9caa98fce3890f3f38246249a9e43d77",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -1432,6 +1685,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110081149",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081149",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "b06e8aa949b05021253d8cc529770b023fa9184679e134268291b59be83ba58d",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110077772",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110077772",
       "review_reasons": [
@@ -1474,6 +1741,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110081218",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110081218",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "ba6b9923c97dd589eee8318e957292103fafbb6c755229c11b5930a9b7a5341c",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110080770",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080770",
       "review_reasons": [
@@ -1488,6 +1769,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110071945",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110071945",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "1fc6fdbd0f6c890621ddf215ffaaa0a7c3ffc4f78c2b154ddd0278368a745e5d",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110078857",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110078857",
       "review_reasons": [
@@ -1498,6 +1793,20 @@
       "claim_count": 0,
       "chunk_count": 2,
       "source_sha256": "a991e82a330233b61c8bf4686b9d1f588ba39f393436a857b79590ede15cdabd",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110079332",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110079332",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "bf59e8aa42acc1a557ce63db22184cc3df9bc1d0bf43dc8c350fabec83924628",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -1670,6 +1979,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110071262",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110071262",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "selected_author_windows_not_full_appendix_semantic_read"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "6b11d2bd0167be99cf70e9d3dcfcfbf362e6c286d204b048e52f4cd482bcaa09",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110079031",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110079031",
       "review_reasons": [
@@ -1768,352 +2091,30 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
-      "submission_id": "26110076880",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076880",
+      "submission_id": "26110079982",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110079982",
       "review_reasons": [
         "unmatched_or_invalid_quotes",
         "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
+        "selected_author_windows_not_full_appendix_semantic_read"
       ],
       "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "f9e50d56acbd78031eb7ba66e2245d898eba6088f49fd876b3667b09737c170c",
+      "chunk_count": 6,
+      "source_sha256": "38503e15057282ebfd573847b0dd90b2930898f47fc25da5320474286dca777e",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
-      "submission_id": "26110081444",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081444",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "ea6ad536f259a3b3faa474ad3ff3eee26a6b482d7d3202767912e7ab3ad26ed0",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110077547",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110077547",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 3,
-      "source_sha256": "e6cf05ff16ee63bae8bdc348859fa3b21138f8d1333526d226bd461fea8fc99b",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110078313",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078313",
+      "submission_id": "26110079796",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110079796",
       "review_reasons": [
         "unmatched_or_invalid_quotes",
         "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
+        "selected_author_windows_not_full_appendix_semantic_read"
       ],
       "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "ee3ce8d61b22da576693992e0b902c5d07d5da0f151eb294644db9ee6ea9e1f7",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110076818",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076818",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "f27b9d10a22c54c2ed126a853afa5ef6de1f822601746eb891d77a7b28381660",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110078549",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078549",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "01d1ecff3c1187fc3685fa3c6fdcd3803edd634b74762c6193a32d77788b1dae",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110079271",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079271",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "964f16d0a2157906b0575bc25ffd69601ac8d60215947425dc7b0657db87002a",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110077929",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110077929",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 2,
-      "source_sha256": "9a20777b3cbf6eaf87d08da8331bcda7d255eeca0c468252668a6268e3e3e9cb",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110078945",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078945",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 3,
-      "source_sha256": "1477e053ddbdbfb1869bcde55ab47d684b3a060793b690cd4d6fe635ef366286",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110079168",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079168",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 2,
-      "source_sha256": "0e29b757e3896e0f4d10d5fe35ef78cca8f813d83137dbe9e956a6c20d8467cd",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110080273",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080273",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "ca5ffcb21074e30e9ba5c0d84f5dd6c0d80b3fc270583e5b8c164ad582e40228",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110080475",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080475",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "4f8f7e75d1cf1ca123612b9e2f90ba822141329532ae08fe623ce2fbe5fc1d85",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110079851",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079851",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "310534ee1693b8054aa4fe1b6e54707bf9b62a07f28302e2489f0d614bfccd7d",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110080271",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080271",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "5f7c99c12af611fd58a3cfc39ce358c671b96b934de83600ba2631d919bfb6cd",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110077855",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110077855",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 3,
-      "source_sha256": "867f293eb84b3bc5b61a873443b22d4aea3533d49768da5ec6f5d89cf8a78274",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110076120",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076120",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "0257d15383fd2b02505404f8baff5cc471a4383d9589275b7c01ef8c7fd42faf",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110074189",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110074189",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "494b3c1dbad2e4a1282e7eb80da293a2d27349f581e3466c2158e8df8028fe18",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110080668",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080668",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "5d4d789275af6e1da5daea5837d241cac2bd267c987fb949fa860bfeb4101f11",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110079661",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079661",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "f16c868b43e020404bb329a4edbeb24e82cd14c03cb229c1cac954c3cd91df30",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110078628",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078628",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 2,
-      "source_sha256": "bfff72cb23f4717f8a3a8fe290429fb183c183caed4ddbb7de0990166df676de",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110078810",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078810",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
-      ],
-      "claim_count": 0,
-      "chunk_count": 2,
-      "source_sha256": "5cfcab4debd9485cc8000e48eefeae799cbf6a253c5514def4da0b5797f8e511",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110073643",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110073643",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 3,
-      "source_sha256": "2a1859228ef1c416fe552e68f54549fa9790660f59d72b3e2698e1b25a20191d",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110079660",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079660",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "fd80f8af0dc02ed4ad7cecf914449eb838279cab53815452f29005d22f81bb34",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110073655",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110073655",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 2,
-      "source_sha256": "2b4fc2250f5ab2013fba94b4b2c2a9b2e8c5f4f64a4caed6d44e0ccb63e38b57",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110073219",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110073219",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "702e1fe5c25853a92b971397ca52a951ab59db9a83a748e3454fb0f1a7d9e0f1",
+      "chunk_count": 6,
+      "source_sha256": "4764a45276b6659bd5b62ed4113eb8ab3f60c283efd02bb30d75e4942e1d380e",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     }

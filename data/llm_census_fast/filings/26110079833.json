@@ -1,0 +1,74 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate for maintaining connectivity and technology infrastructure, noting the significant funding received over the past five years. They highlight the ongoing need for E-Rate to support various educational, operational, and safety needs, and the role of E-Rate consultants in navigating the program requirements. The comment emphasizes the importance of E-Rate for Byram Township School District, stating that reducing or eliminating the program would transfer costs to taxpayers and force difficult budget choices. It also highlights the need for E-Rate to support a broad range of eligible connectivity services and infrastructure to ensure reliable connectivity for students and staff. The comment argues against limiting or sunsetting E-Rate, as it would not eliminate the need for connectivity services and w The FCC should retain a broad, practical definition of educational purpose for E-Rate eligibility and avoid imposing rigid screen-time or age-based requirements. The text argues that decisions about technology use should be made locally by educators, administrators, and families rather than federally, as imposing federal screen-time requirements could create significant compliance responsibilities without necessarily improving stude",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would lead to increased costs for schools and taxpayers",
+      "evidence_quote": "While school connectivity has improved significantly, the need for E-Rate has not ended. Even where E-Rate is not currently funding a new build or upgrade, it remains essential for maintaining affordable monthly service, and any build or upgrade only lasts the life of the technology as capacity needs continue to grow. Schools must continually maintain, upgrade, and replace network infrastructure to meet current educational, operational, and safety needs. E-Rate is an important and meaningful resource for the Byram Township School District, a small PK–8 public school district in New Jersey. Over the past five years, Byram has received $86,959.07 through the E-Rate program. For a district of our size, that is significant funding that directly helps us maintain the connectivity and technology infrastructure our students, staff, and schools depend upon every day.",
+      "evidence_start": 1054,
+      "evidence_end": 1925,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing or eliminating E-Rate support would transfer more costs to local taxpayers and force difficult budget choices.",
+      "evidence_quote": "Reducing or eliminating E-Rate support would not reduce our need for these services. It would simply transfer more of their cost to our local taxpayers and force a small school district to make increasingly difficult choices among essential educational and operational priorities.",
+      "evidence_start": 5159,
+      "evidence_end": 5439,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The objective should be obtaining the required certification and ensuring program compliance, not denying otherwise eligible funding because an occasional EPC user missed an administrative deadline.",
+      "evidence_quote": "The objective should be obtaining the required certification and ensuring program compliance, not denying otherwise eligible funding because an occasional EPC user missed an administrative deadline.",
+      "evidence_start": 40175,
+      "evidence_end": 40373,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Decisions regarding screen time should be made locally by educators, administrators, and families rather than federally",
+      "evidence_quote": "We believe, however, that decisions regarding how and when technology is used for instruction are best made locally by educators, administrators, boards of education, and families rather than through conditions attached to the federal E-Rate program",
+      "evidence_start": 14055,
+      "evidence_end": 14304,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110079833",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079833",
+  "filer_raw": "Byram Township School District",
+  "date_submission": "2026-10-07T17:02:24.328Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9e6549523a118ce588c771113ef20fc4f1403f8686104935dd9d91f2a5cace20",
+  "params_key": "0468ef794e0ba939a669107596e8d1e0ef6f1b66b37f312b7c01cf253d47c551",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 13,
+  "source_windows_model_analyzed": 6
+}

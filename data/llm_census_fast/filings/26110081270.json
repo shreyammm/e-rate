@@ -1,0 +1,37 @@
+{
+  "summary": "The Education and Libraries Networks Coalition opposes limiting or sunsetting the E-Rate program, arguing that Section 254 establishes a continuing obligation and the Commission lacks authority to terminate it. The Education and Libraries Networks Coalition opposes proposals to sunset or modify the E-Rate program, emphasizing the program's multi-decade success and reliance on it by schools and libraries. The FCC's Section 706 Report and comments argue against fundamentally restructuring the E-Rate program, emphasizing its intended nationwide scope and the Commission's role in providing affordable broadband access to all Americans. The comments highlight the importance of maintaining eligibility criteria based on locale and provider count, and rejecting proposals that could undermine the program's success and contradict its statutory objectives. The FCC argues against tying E-Rate decisions to educational outcomes, emphasizing the need for efficiency and accountability in funding broadband services for schools and libraries. The FCC maintains that CIPA applies only to devices owned by schools or libraries, not to third-party devices, citing statutory language and past Commission decisions. The NPRM proposes expanding CIPA to third-party devices, which the FCC opposes as inconsiste",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "Section 254 establishes a continuing obligation, not a finite infrastructure project with a completion date",
+      "evidence_quote": "The Commission Does Not Have the Authority to Terminate the Program",
+      "evidence_start": 1601,
+      "evidence_end": 1668,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110081270",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081270",
+  "filer_raw": "Education and Libraries Networks Coalition (EdLiNC)",
+  "date_submission": "2026-10-13T21:40:56.691Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "24ccb532da63c1a7a6721efe00798fb604faab3803be8fd6caf1a2e3facb673b",
+  "params_key": "75f8e971202414dae344a39f8cb390445d997ff45bcc8859201ffbaad07cadac",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 27,
+  "source_windows_model_analyzed": 6
+}

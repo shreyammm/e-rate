@@ -1,0 +1,37 @@
+{
+  "summary": "Three Rivers ISD emphasizes the importance of E-Rate for maintaining affordable internet service and supporting ongoing infrastructure needs in their rural district, which faces financial constraints due to Chapter 49 recapture obligations. They highlight the necessity of E-Rate to cover ongoing costs and support essential network upgrades, despite the program's sunset provisions. Three Rivers Independent School District urges the FCC to preserve support for the full range of broadband services and infrastructure currently eligible under E-Rate. The district's experience demonstrates the continuing importance of Category Two support. The district recently made an infrastructure investment supported by local bond funds, while E-Rate provided approximately $85,000 toward eligible switches, firewall equipment, associated licensing, installation, and configuration. Reducing o The comment highlights the importance of using existing data and methods to assess eligibility for E-Rate, and argues against limiting or sunsetting the program without a more accurate method of identifying financial and high-cost need. The comment also emphasizes the need to consider the specific circumstances of the school district, including its property value, tax base, and other factors that may affect its ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate remains essential for maintaining affordable monthly service and reducing financial burden on local budget",
+      "evidence_quote": "Withou t E-Rate, these expenses would have to be paid entirely from local funds, requiring the district to delay technology improvements or redirect money from other educational needs",
+      "evidence_start": 2221,
+      "evidence_end": 2404,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110072563",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072563",
+  "filer_raw": "Three Rivers ISD",
+  "date_submission": "2026-08-21T12:09:03.420Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "eebdb9e9fea400ca72b56c5567f88f9f76000154b325caaaf5a24c5321ee93d0",
+  "params_key": "d3289542a88d92474aff00a1871f340497cfb3ebad87c177cbd3b88a3b2a8e29",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 17,
+  "source_windows_model_analyzed": 6
+}

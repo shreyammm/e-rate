@@ -1,0 +1,37 @@
+{
+  "summary": "The Free State Foundation opposes limiting or sunsetting the E-Rate program, emphasizing its statutory authority and the need to evaluate the program in light of current challenges. The comments highlight concerns about the current E-Rate program, including its cost, effectiveness in improving educational outcomes, and the need for accountability. The comments suggest that the program should be evaluated to ensure that it is delivering on its intended goals and not causing harm. The text argues that the FCC should regularly examine and potentially sunset the E-Rate program due to its lack of effectiveness and the potential for waste and fraud. The FCC's E-Rate program is criticized for its lack of evidence supporting the claim that connectivity enhances educational outcomes and for its outdated assumptions about the program's purpose. The FCC is urged to reverse its presumption that all activities on school property serve an educational purpose and to establish outcome-based performance goals and metrics for the program. The comment discusses the effectiveness of the E-Rate program in improving educational outcomes and suggests that it may not be as effective as previously thought. It also mentions the need to critically assess the program's performance and the potential impact o",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The absence of any evidence that E-Rate improves outcomes",
+      "evidence_quote": "The absence of any evidence that E-Rate improves outcomes",
+      "evidence_start": 35486,
+      "evidence_end": 35543,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose"
+  },
+  "invalid_claims_rejected": 7,
+  "submission_id": "26110080926",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080926",
+  "filer_raw": "The Free State Foundation",
+  "date_submission": "2026-10-13T14:35:26.368Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "a76ea54fc8007715e8a6b5b45314a01452c83c5d4e4a4aa7d5a0d59e11256940",
+  "params_key": "ea8d89f00a1f366c38364d50d3c63d1fa8f6bb1003e74ff95b39f2f9047598dd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 15,
+  "source_windows_model_analyzed": 6
+}

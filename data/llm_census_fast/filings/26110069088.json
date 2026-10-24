@@ -1,0 +1,37 @@
+{
+  "summary": "The claim opposes conditionally tying E-Rate decisions to screen-time limits based on empirical evidence of comprehensive phone-ban policies' negative consequences, such as increased student suspensions and limited parental consultation. The comment opposes preserving E-Rate funding and supports sunset provisions, emphasizing the need to balance screen safety with emergency communication needs. The comment opposes the sunset of E-Rate funding and supports preserving its funding to maintain broadband access for schools and libraries. The text discusses the impact of cell phones on education and safety, presenting both arguments for and against their use in schools. It highlights the importance of parental communication, digital literacy, and emergency situations. The text also mentions the need to consider educational outcomes when making E-Rate decisions. The comment argues against limiting or sunsetting E-Rate, emphasizing the importance of preserving funding for broadband access and infrastructure. Brief",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "Preserve emergency communication in any CIPA screen-time conditions",
+      "evidence_start": 12939,
+      "evidence_end": 13006,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110069088",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110069088",
+  "filer_raw": "Safer Buildings Coalition",
+  "date_submission": "2026-07-30T21:43:10.399Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "f9a52f260f982fa981a42280bcd5c373673f31c69a4605c26b63867d094ab9f5",
+  "params_key": "ba4b2bd14d2427eac2f48cde90cf6025edce9bfc2b52db6635e222ab2da8446e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 19,
+  "source_windows_model_analyzed": 6
+}

@@ -1,50 +1,37 @@
 {
-  "submission_id": "26110073527",
-  "params_key": "fb98e75fee9596a9622ff794a68b26b0abb203a1fb83313769b90e3a0f084108",
-  "status": "partial",
-  "parts": [
+  "summary": "The comments argue that E-Rate is an ongoing infrastructure requirement for schools, not a one-time project, and that reducing or eliminating E-Rate would shift costs to school districts and compete with other educational priorities. The text argues that E-Rate should not be conditioned on screen-time limits but rather on the actual infrastructure needs of schools. It emphasizes that network requirements are determined by coverage, capacity, and reliability, not by the amount of screen time students spend. The text also highlights the importance of discussing when technology improves learning and when it does not, and how digital assignments affect families. The text concludes by stating that a school district could reduce d The text argues that screen time decisions should remain with educational agencies and communities, not with the FCC. It emphasizes the importance of privacy and free expression, and the need to distinguish between content filtering and instructional screen time decisions. The text also highlights the need for the FCC to focus on network safety under CIPA, rather than expanding E-Rate to regulate instructional minutes. The text concludes by stating that urban status should not be a proxy for fin The comment supports maintaining the current E-Rate eligibility ",
+  "stakeholder_role": "unknown",
+  "claims": [
     {
-      "summary": "The comments argue that E-Rate is an ongoing infrastructure requirement for schools, not a one-time project, and that reducing or eliminating E-Rate would shift costs to school districts and compete with other educational priorities.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The text argues that E-Rate should not be conditioned on screen-time limits but rather on the actual infrastructure needs of schools. It emphasizes that network requirements are determined by coverage, capacity, and reliability, not by the amount of screen time students spend. The text also highlights the importance of discussing when technology improves learning and when it does not, and how digital assignments affect families. The text concludes by stating that a school district could reduce d",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The text argues that screen time decisions should remain with educational agencies and communities, not with the FCC. It emphasizes the importance of privacy and free expression, and the need to distinguish between content filtering and instructional screen time decisions. The text also highlights the need for the FCC to focus on network safety under CIPA, rather than expanding E-Rate to regulate instructional minutes. The text concludes by stating that urban status should not be a proxy for fin",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment supports maintaining the current E-Rate eligibility for special construction, emphasizing the importance of cost-effectiveness and the need to consider the specific needs of each school system. The comment argues that geography should not replace economic need as the principal indicator of a school community’s ability to fund connectivity.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The claim supports prohibiting percentage-based fees for consultant services in E-Rate programs to ensure cost-effectiveness and fairness.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The text argues against limiting or sunsetting the E-Rate program, emphasizing the importance of reasonable documentation, competitive procurement, and program integrity. It also discusses the need for modernization of the program rather than dismantling it.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "targeted_competition",
+      "position": "oppose",
+      "requested_action": "Maintain a clear distinction between Internet safety requirements and instructional technology policy",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "normative_value",
+      "argument": "Maintain a clear distinction between Internet safety requirements and instructional technology policy",
+      "evidence_quote": "5.​ Maintain a clear distinction between Internet safety requirements and instructional technology policy.",
+      "evidence_start": 20996,
+      "evidence_end": 21102,
+      "uncertain": false
     }
   ],
-  "next_chunk": 6
+  "positions": {
+    "targeted_competition": "oppose"
+  },
+  "invalid_claims_rejected": 10,
+  "submission_id": "26110073527",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073527",
+  "filer_raw": "Natomas Unified School District",
+  "date_submission": "2026-08-28T15:44:13.985Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e156e2decf05772632ab58bed6bbb677ac0f056cb4b694fc1bd09def6295c96b",
+  "params_key": "fb98e75fee9596a9622ff794a68b26b0abb203a1fb83313769b90e3a0f084108",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 7,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 7,
+  "source_windows_model_analyzed": 7
 }

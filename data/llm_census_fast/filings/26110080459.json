@@ -1,0 +1,37 @@
+{
+  "summary": "The comment opposes limiting or sunsetting E-Rate programs, citing statutory authority and regulatory requirements as reasons. It also mentions the FCC's research on WiFi and its potential dangers, suggesting that limiting E-Rate could lead to misinformation and confusion about exposure levels and evidence. The comment highlights the need for clear policies and evidence-based decisions regarding E-Rate programs. Brief The FCC study found no evidence of increased cancer cases near a cell-phone antenna station, suggesting that screen-time limits should not condition E-Rate eligibility. The text presents an epidemiological study on the relationship between mobile phone use and acoustic neuroma development. The study analyzes data from cases and controls, adjusting for confounders such as age, sex, residential area, and educational level. The study estimates associations between indicators of radio-frequency exposure from mobile phone use and acoustic neuroma as relative risks using unconditional logistic regression models. The study concludes with results presented in a table s",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The E-Rate program should not be limited or sunseted",
+      "evidence_quote": "or only occasionally (“not regularly”) using a mobile\nphone. Exposure within one year of the reference date was\nnot considered. The number of years of regular mobile phone\nuse was categorized into less than 5 years, 5–9 years, and 10\nyears or more.",
+      "evidence_start": 45502,
+      "evidence_end": 45750,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110080459",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080459",
+  "filer_raw": "Kevin Mottus | Outreach Director, CA Brain Tumor Assn",
+  "date_submission": "2026-10-10T08:59:14.362Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f473a4a77ec133e849edf653166fae1bb1b26b204487de9e4999640e0d97dfa8",
+  "params_key": "4f8c795d8fb4155e1c858a7496b92dded93ff23c9ad050459762505e2cf8f135",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 25,
+  "source_windows_model_analyzed": 4
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The comments oppose sunsetting E-Rate, maintaining its eligibility scope, and preserving flexibility in special construction options. The comments emphasize the importance of E-Rate for connectivity and child safety, and the success of Fresno Unified's leased dark-fiber network as an example of E-Rate's effectiveness. The comment emphasizes the importance of E-Rate for schools and libraries, highlighting the need to modernize administration and maintain the program's integrity. The commenter provides operational and empirical experience with the program, noting the challenges and successes in implementing E-Rate rules and programs. The comment opposes limiting or sunsetting E-Rate, arguing that it would reduce the program's effectiveness in providing safe internet access for students. The comment emphasizes the importance of E-Rate in delivering protected, CIPA-compliant internet access to students and libraries, and suggests that weakening the program would have negative consequences for children's safety and educational outcomes. The comment also highlights the need for the program to be able to keep pace with the growin The comment argues against limiting or sunsetting E-Rate, emphasizing its role as a funding mechanism for maintaining broadband infrastructure and connectivity",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Maintain broad eligibility scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "E-Rate should not narrow eligible equipment and services.",
+      "evidence_quote": "The Commission should distinguish communications infrastructure from pedagogy. E-Rate funds the network transport and internal connectivity layers; it does not pay for laptops, tablets, software, or digital content",
+      "evidence_start": 2580,
+      "evidence_end": 2794,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 7,
+  "submission_id": "26110076731",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076731",
+  "filer_raw": "Philip G. Neufeld",
+  "date_submission": "2026-09-15T20:17:04.059Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b4078d5b09e95fa3fbc1532ff6991a27b53f8478f1cecaa013ba8806a4b00afe",
+  "params_key": "d9e1189002ad28f6d7c474f1d3172079306bb418b9e96d8966de35f2334a85d2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 20,
+  "source_windows_model_analyzed": 6
+}

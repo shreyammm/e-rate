@@ -1,0 +1,49 @@
+{
+  "summary": "The American Indian Higher Education Consortium emphasizes the ongoing trust responsibility established by treaties and constitutional authority. The text discusses the unique relationship between the federal government and federally recognized Tribal Nations, emphasizing the importance of federal support for Tribal Colleges and Universities (TCUs). The comment proposes amendments to the Code of Federal Regulations to restrict eligibility of Tribal College or University libraries for E-Rate discounts, requiring dedicated public library staff. It cites TCU facts and comments about the unique services provided by Tribal College or University libraries in rural or remote areas, their role as community/public libraries, and the importance of access to computer labs for research and learning. Library advocates argue for exemptions from E-Rate regulations to support their libraries, which are critical for education and community access in remote locations. The comment opposes limiting or sunsetting E-Rate, arguing that it is essential for funding broadband infrastructure and services, particularly for Tribal libraries in rural and remote areas. It highlights the challenges of securing competitive suppliers and the importance of outreach to national Tribal organizations. The comment als",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "Legal authority to sunset E-Rate programs",
+      "evidence_quote": "This is why I believe TCU libraries should be exempt from this regulation.",
+      "evidence_start": 28952,
+      "evidence_end": 29026,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The comment opposes limiting or sunsetting E-Rate funding",
+      "evidence_quote": "unds because we can’t quantify the usage.",
+      "evidence_start": 51130,
+      "evidence_end": 51171,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110081189",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081189",
+  "filer_raw": "American Indian Higher Education Consortium",
+  "date_submission": "2026-10-13T20:11:53.928Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "500be70cc2dacf03cdf018dec6d1b6a912d1f67eaf0487307e4ee0106e45d849",
+  "params_key": "fe0b4da9fac50a33f3c44f708ef07e9a77cc6932dc60aab051271f868d30da04",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 18,
+  "source_windows_model_analyzed": 6
+}

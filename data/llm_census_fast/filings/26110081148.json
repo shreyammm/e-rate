@@ -1,63 +1,50 @@
 {
-  "submission_id": "26110081148",
-  "params_key": "e6342b7387477d2b252c04f0fbe22d5719e381bda03d8acae7a626d3dfafb37e",
-  "status": "partial",
-  "parts": [
+  "summary": "CommunicationFIRST opposes proposed screen time limits for E-Rate programs and advocates for the retention of eligibility for AAC users and other assistive technology. The text highlights the critical role of E-Rate funding in supporting educational outcomes for students with AAC needs, emphasizing the need to tie E-Rate decisions to educational outcomes for effective communication and accessibility. The comment argues against tying E-Rate decisions to educational outcomes, citing the need for reliable, high-capacity connectivity for assistive technologies like AAC, which are not interchangeable and require constant access. It emphasizes the importance of federal civil rights laws that guarantee effective communication for students and library patrons with disabilities. The comment opposes adopting screen-time limits as E-Rate conditions, arguing that such limits would harm AAC users' access to effective communication. The comment opposes limiting or sunsetting E-Rate to address budget concerns and potential cost savings. The comment opposes limiting or sunsetting E-Rate, citing concerns about the impact on students' communication devices and the potential for network-level filtering to interfere with accessibility services. The comment also argues against the alternative interpr",
+  "stakeholder_role": "unknown",
+  "claims": [
     {
-      "summary": "CommunicationFIRST opposes proposed screen time limits for E-Rate programs and advocates for the retention of eligibility for AAC users and other assistive technology.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "other",
+      "argument": "The comment opposes sunsetting the E-Rate program.",
+      "evidence_quote": "and other accessibility services; (2) exclude \n22 NPRM, 91 Fed. Reg. at 52,632.",
+      "evidence_start": 19177,
+      "evidence_end": 19256,
+      "uncertain": false
     },
     {
-      "summary": "The text highlights the critical role of E-Rate funding in supporting educational outcomes for students with AAC needs, emphasizing the need to tie E-Rate decisions to educational outcomes for effective communication and accessibility.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment argues against tying E-Rate decisions to educational outcomes, citing the need for reliable, high-capacity connectivity for assistive technologies like AAC, which are not interchangeable and require constant access. It emphasizes the importance of federal civil rights laws that guarantee effective communication for students and library patrons with disabilities.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment opposes adopting screen-time limits as E-Rate conditions, arguing that such limits would harm AAC users' access to effective communication.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [
-        {
-          "provision_id": "screen_time_condition",
-          "position": "oppose",
-          "requested_action": "Condition E-Rate on screen-time limits",
-          "reason_family": "privacy_free_expression",
-          "claim_kind": "privacy_expression",
-          "argument": "Screen time limits would harm AAC users' access to effective communication",
-          "evidence_quote": "Screen Time Limits Would Harm AAC Users",
-          "evidence_start": 10693,
-          "evidence_end": 10732,
-          "uncertain": false
-        }
-      ],
-      "invalid_claims_rejected": 0
-    },
-    {
-      "summary": "The comment opposes limiting or sunsetting E-Rate to address budget concerns and potential cost savings.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment opposes limiting or sunsetting E-Rate, citing concerns about the impact on students' communication devices and the potential for network-level filtering to interfere with accessibility services. The comment also argues against the alternative interpretation in the NPRM that would apply CIPA to any device accessing an E-Rate-funded network, which could affect adult library patrons. The comment emphasizes the importance of retaining the current interpretation of CIPA to protect the pri",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Screen time limits would harm AAC users' access to effective communication",
+      "evidence_quote": "Screen Time Limits Would Harm AAC Users",
+      "evidence_start": 10693,
+      "evidence_end": 10732,
+      "uncertain": false
     }
   ],
-  "next_chunk": 6
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110081148",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081148",
+  "filer_raw": "Communication First",
+  "date_submission": "2026-10-13T19:27:05.802Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "0b7c7d688279303837ba580d3f33317e4a4ee97bbabce07b653476e83e624d2e",
+  "params_key": "e6342b7387477d2b252c04f0fbe22d5719e381bda03d8acae7a626d3dfafb37e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 7,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 7,
+  "source_windows_model_analyzed": 7
 }
