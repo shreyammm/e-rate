@@ -1,0 +1,49 @@
+{
+  "summary": "The Healthy Aging Coalition opposes any proposal to terminate or materially reduce universal access to affordable internet connectivity through the E-Rate program, emphasizing the importance of internet access for older adults and community institutions beyond children. The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for older adults and libraries in providing essential services and information. It highlights the cost savings and benefits of maintaining the program. The text argues against ending or sunsetting the E-Rate program, emphasizing its role in preserving universal service for affordable internet access, which is crucial for community infrastructure, especially for older adults and those with disabilities. It highlights the program's importance in supporting older adults in accessing essential services and information online. The FCC should develop a comprehensive record on the impacts of sunsetting E-Rate on various stakeholders, including older adults, caregivers, people with disabilities, rural communities, low-income households, and community-based organizations. The record should include input from public libraries, Area Agencies on Aging, senior centers, community health organizations, aging-services providers, state aging ",
+  "stakeholder_role": "government",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Develop a full record on the effects of sunsetting E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Sunsetting E-Rate could reduce access for older adults, caregivers, people with disabilities, rural communities, low-income households, and community-based organizations",
+      "evidence_quote": "vancing any proposal that could reduce E-Rate access, the Commission should develop a full \nrecord on the effects on older adults, caregivers, people with disabilities, rural communities, low-income \nhouseholds, and community-based organizations.",
+      "evidence_start": 10863,
+      "evidence_end": 11109,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries",
+      "evidence_quote": "ons & Public Affairs, American College of Lifestyle Medicine",
+      "evidence_start": 18152,
+      "evidence_end": 18212,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110004795",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110004795",
+  "filer_raw": "Healthy Aging Coalition",
+  "date_submission": "2026-07-09T20:31:15.155Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4893f6fe9db84c3bc829363d6bd61a3d0db796d3468b94c6fa62a23ae8da279c",
+  "params_key": "a4be24a0f415e1115108eb236d0ba3a99cdced7a79c0f054bb5fe7724d6e327f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 6,
+  "source_windows_model_analyzed": 6
+}

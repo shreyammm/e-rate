@@ -1,15 +1,22 @@
 {
+  "summary": "The FCC comments argue that the E-Rate program should adapt to the ubiquitous availability of broadband to remain relevant and cost-efficient. The comments oppose limiting or sunsetting E-Rate, as the program funds should not be used to overbuild existing commercial networks providing similar services. The comments also argue that E-Rate should not be limited to areas served by a single provider, as broadband is currently available from multiple providers in almost every community. The FCC's analysis argues against sunsetting or limiting the E-Rate program, citing universal broadband availability and the program's role in ensuring access to broadband services for schools and libraries. The analysis also discusses the competitive nature of broadband providers and the importance of maintaining E-Rate's eligibility scope to ensure access to advanced information services. The comment opposes sunsetting E-Rate and supports maintaining its eligibility scope to ensure broadband availability for schools and libraries, emphasizing the importance of not limiting eligibility to narrow equipment and services.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 3,
   "submission_id": "26110081410",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081410",
+  "filer_raw": "Space Exploration Holdings, LLC",
+  "date_submission": "2026-10-14T02:25:59.570Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "63ad7c21b368c840733365b4ae47f21ea6c39ff5c64ac98ba03592e7e6a9c47f",
   "params_key": "f08b64b9a7896db3bcaeda3a1eca5af3bb5d094470d2c77111b184d3fc56ba53",
-  "status": "partial",
-  "parts": [
-    {
-      "summary": "The FCC comments argue that the E-Rate program should adapt to the ubiquitous availability of broadband to remain relevant and cost-efficient. The comments oppose limiting or sunsetting E-Rate, as the program funds should not be used to overbuild existing commercial networks providing similar services. The comments also argue that E-Rate should not be limited to areas served by a single provider, as broadband is currently available from multiple providers in almost every community.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    }
-  ],
-  "next_chunk": 1
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
 }

@@ -1,22 +1,37 @@
 {
-  "submission_id": "26110081132",
-  "params_key": "f9cfe96dc9fc50996a597c12305688eda1f9b700112d4d3a00076690ec45ba2e",
-  "status": "partial",
-  "parts": [
+  "summary": "USTelecom opposes the proposed definition of consultant, arguing that it would unnecessarily layer duplicative requirements on top of existing oversight and could inhibit service providers' ability to serve E-Rate customers, undermining the goals of the program. The FCC's proposed changes to the E-Rate program aim to modernize and streamline the competitive bidding process, while preserving existing market-based approaches to pricing. The NPRM cites existing FCC documents and regulations to support its proposals, such as the adoption of a USAC-managed competitive bidding portal and the preservation of the lowest corresponding price (LCP) and cost-effectiveness rules. The document also discusses the need to exclude ordinary service-provider commercial re The comment opposes limiting or sunsetting E-Rate to save costs and preserve broadband infrastructure funding.",
+  "stakeholder_role": "government",
+  "claims": [
     {
-      "summary": "USTelecom opposes the proposed definition of consultant, arguing that it would unnecessarily layer duplicative requirements on top of existing oversight and could inhibit service providers' ability to serve E-Rate customers, undermining the goals of the program.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The FCC's proposed changes to the E-Rate program aim to modernize and streamline the competitive bidding process, while preserving existing market-based approaches to pricing. The NPRM cites existing FCC documents and regulations to support its proposals, such as the adoption of a USAC-managed competitive bidding portal and the preservation of the lowest corresponding price (LCP) and cost-effectiveness rules. The document also discusses the need to exclude ordinary service-provider commercial re",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure",
+      "evidence_quote": "See E-Rate Reform NPRM, para. 87.",
+      "evidence_start": 8134,
+      "evidence_end": 8167,
+      "uncertain": false
     }
   ],
-  "next_chunk": 2
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110081132",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081132",
+  "filer_raw": "USTelecom - The Broadband Association",
+  "date_submission": "2026-10-13T19:05:26.285Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e73e027602f07c138bfb7e5e63f04e21c5c6a4ed60cb07981c002df35f47019a",
+  "params_key": "f9cfe96dc9fc50996a597c12305688eda1f9b700112d4d3a00076690ec45ba2e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
 }

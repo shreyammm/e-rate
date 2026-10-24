@@ -1,0 +1,50 @@
+{
+  "summary": "The Florida Autism Center of Excellence emphasizes the critical role of E-Rate in maintaining affordable and reliable internet connectivity for its students, which is essential for delivering an appropriate and meaningful education. The school highlights the importance of E-Rate in supporting its specialized educational needs and infrastructure maintenance. The school emphasizes the importance of E-Rate funding for maintaining reliable internet connectivity and technology infrastructure, which is essential for educational purposes, communication, and student assessments. They highlight the financial and educational implications of not having this support. The comment emphasizes the importance of preserving the E-Rate program for educational equity and access to broadband infrastructure. It argues against any changes that could reduce access, increase costs, or limit local flexibility for schools and students. The comment supports the importance of E-Rate for maintaining reliable internet infrastructure in schools and argues against limiting or sunsetting it. The comments emphasize the importance of preserving the E-Rate program to ensure access to technology for schools and students, and to maintain broadband infrastructure for educational purposes. The comments call for maintain",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "E-Rate has allowed FACE to upgrade outdated networking equipment and maintain reliable internet services, which are essential for delivering an appropriate and meaningful education to students",
+      "evidence_quote": "E-Rate has allowed FACE to upgrade outdated networking equipment that was negatively affecting internet speeds, connectivity, and cybersecurity. It has also helped us maintain these systems so that they continue functioning reliably. Even when we are not actively replacing equipment, we depend on E-Rate to sustain the monthly internet services that support instruction and school operations. Just because our technology is working today does not mean the funding that makes it possible is no longer necessary. In fact, that reliability is a direct result of the investments and ongoing support E-Rate has provided",
+      "evidence_start": 2468,
+      "evidence_end": 3083,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential for maintaining affordable monthly service and infrastructure maintenance",
+      "evidence_quote": "E-Rate provides approximately $75,000 in annual funding to the Florida Autism Center of Excellence (FACE), a tuition-free public charter school exclusively serving students with autism, ages 3–22. Without this funding, we simply could not afford the high-speed internet connectivity necessary to support our students' educational needs.",
+      "evidence_start": 1551,
+      "evidence_end": 1887,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110080039",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080039",
+  "filer_raw": "Florida Autism Center of Excellence",
+  "date_submission": "2026-10-08T14:44:45.486Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "81b637e0ef6d9cdf4018a441b80153c91e54a6895dab146c2f04917a3f4e3e75",
+  "params_key": "0c7ffd9c92bca69935466f64492bbcabe13c61d967fcb85997ebeb5b08186a1b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 9,
+  "source_windows_model_analyzed": 5
+}

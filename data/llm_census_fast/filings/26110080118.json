@@ -1,0 +1,37 @@
+{
+  "summary": "The professor argues that the E-Rate program has outlived its original purpose and that the current funding model is unjustified, suggesting a move towards outcome-based performance goals and metrics to assess the program's effectiveness in improving educational outcomes. The text argues that the E-Rate program is unsustainable due to its reliance on a declining revenue base and surcharge growth, and that its funding should be reevaluated given the current state of connectivity and demand for program funds. The text also highlights the lack of evidence supporting the effectiveness of E-Rate in improving educational outcomes and the need to address the budgetary concerns associated with the program. The text further emphasizes the importance of considering the imp The text discusses the impact of screen time on educational outcomes, citing research showing that excessive screen time can negatively affect academic performance. It also notes that moderate screen use can have positive effects, but excessive use is detrimental. The comment argues that the E-Rate program, built for an era of presumed positive connectivity return, is no longer valid in the current era of high-speed home internet, adverse effects of screen time on students, and AI-generated content, and should be reevalu",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "Specific recommendations follow. Initial Program Evaluation As a first step, the Commission should tie E-Rate decisions to educational outcomes",
+      "evidence_quote": "This would require the agency to identify useful outcome measures to indicate success. At the macro level, these could involve NAEP scores, state-level assessment results, or graduation rates. These prominent variables can be significant, but measuring the effect of spending on these ultimate achievement results takes time, and scores are impacted by confounding variables other than classroom connectivity. The Commission could also choose more moderate, intermediate measures, such as the amount of instructional use of category 2 capacity (as opposed to administrative or other non-instructional traffic), homework completion rates, or teacher-reported evaluations of the incorporation of digital tools into lesson plans. Each of these could help the Commission better understand whether, and to what extent, E-Rate-funded connectivity is successfully being used for educational purposes.",
+      "evidence_start": 19152,
+      "evidence_end": 20045,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110080118",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080118",
+  "filer_raw": "Professor Daniel A. Lyons",
+  "date_submission": "2026-10-08T19:11:09.278Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "fcb52fd8457696f47510de4a9d37d138961b09c6decd709c4f7d4e09c7214d42",
+  "params_key": "ea410073a667eaa9ef696abf7f75e1aeba0fd4ba94b3c5362537b4127b4ef847",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 6,
+  "source_windows_model_analyzed": 6
+}

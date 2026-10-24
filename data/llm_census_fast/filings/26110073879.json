@@ -1,0 +1,49 @@
+{
+  "summary": "Calhoun City Schools emphasizes the ongoing necessity of E-Rate for maintaining affordable and reliable broadband infrastructure in their rural district. They highlight the critical role of E-Rate in supporting their network maintenance, security, and operational needs, which cannot be replaced by commercial alternatives or federal initiatives. They express concern about the potential impact of losing E-Rate funding on their budget and the quality of educational services. The comment highlights the importance of preserving E-Rate funding for maintaining broadband infrastructure in rural school districts, emphasizing the cost implications of reducing eligible service scope and the need to maintain current discount levels and educational purposes. The comment opposes expanding E-Rate into instructional policies and screen-time management, emphasizing the need to preserve its core mission of funding essential network infrastructure. It cites operational challenges and the impracticality of implementing federal mandates on local educational practices. The comment also highlights the importance of local control over technology deployment and the potential for unnecessary legal complications introduced by federal requirements. The comment arg The comment highlights the importance of a ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Any reduction in eligible service scope would force our system to divert funds directly away from instructional personnel to cover basic network maintenance",
+      "evidence_quote": "Any reduction in eligible service scope would force our system to divert funds directly away from instructional personnel to cover basic network maintenance.",
+      "evidence_start": 4698,
+      "evidence_end": 4855,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services",
+      "evidence_quote": "Preserve the core E-Rate program. Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation, maintenance, and related network services that schools rely on every day.",
+      "evidence_start": 22599,
+      "evidence_end": 22939,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110073879",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073879",
+  "filer_raw": "Calhoun City Schools",
+  "date_submission": "2026-08-31T12:59:09.300Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "22ed1dd2ec67b57924e588c5b1a8468f29629a42ba20d25c87f561c3936b519f",
+  "params_key": "d8a4970032501c200707a74d7603b3d095426b082454a19a9586c574d6b9dccb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 6,
+  "source_windows_model_analyzed": 6
+}

@@ -1,15 +1,37 @@
 {
-  "submission_id": "26110080579",
-  "params_key": "8d44bbbc8873afdf95418bdca0baeefb5007f78f427a0b4158172c6f16f40120",
-  "status": "partial",
-  "parts": [
+  "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing its critical role in providing reliable broadband infrastructure for educational purposes. The school district expresses concerns about the impact of E-rate funding on their budget and the need to preserve the program to ensure adequate connectivity for students. The school district urges the FCC to reject proposals to sunset or eliminate E-rate and to work with schools to strengthen and modernize the program.",
+  "stakeholder_role": "unknown",
+  "claims": [
     {
-      "summary": "The school district urges the FCC to preserve and strengthen the E-Rate program, emphasizing its critical role in providing reliable broadband infrastructure for educational purposes.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Reject proposals to sunset or eliminate the E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-rate covers roughly 90% of our fiber costs and approximately 86% of our recent network upgrades",
+      "evidence_quote": "E-rate covers roughly 90% of our fiber costs and approximately 86% of our recent \nnetwork upgrades which were critical to keep our division safe electronically.",
+      "evidence_start": 2557,
+      "evidence_end": 2717,
+      "uncertain": false
     }
   ],
-  "next_chunk": 1
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080579",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080579",
+  "filer_raw": "Floyd County Public Schools, VA",
+  "date_submission": "2026-10-12T14:07:11.054Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3a08b29c63ec925607d0c21f176e01efef7d86f5de31a0cd544e3bb5a5e2f4e3",
+  "params_key": "8d44bbbc8873afdf95418bdca0baeefb5007f78f427a0b4158172c6f16f40120",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 2,
+  "source_windows_model_analyzed": 2
 }

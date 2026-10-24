@@ -1,0 +1,50 @@
+{
+  "summary": "The comment supports the FCC's proposed rulemaking to ensure child safety and parental involvement in the E-Rate program. It emphasizes the need for the FCC to focus on the administration and regulation of the program to minimize administrative burden and ensure compliance with safety standards. The comment cites the Surgeon General's warning on the harms of screen use and the importance of limiting screen time for children to ensure educational outcomes. The FCC comments argue against imposing screen-time limits on E-Rate programs, emphasizing the importance of parental control and privacy. The comments highlight the constitutional protection of parental rights and the need for transparent communication between schools and parents. The comments also discuss the potential impact of screen-time on children's development and the importance of protecting children's privacy and autonomy. The comments conclude by stating that the FCC is asking the rig The FCC has begun to limit the E-Rate program under its leadership, reversing Biden-era extensions and allowing children to access unfiltered internet content off campus without parents' knowledge. The FCC's proposed changes to E-Rate raise concerns about the program's future, including the potential to sunset the program and limit eligi",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The final rule should adopt the condition described in paragraph 31 of the NPRM: participating schools must give parents a meaningful opportunity to opt their children out of screen-based instruction during the school day and provide a non-screen alternative instructional method for the children of parents that do.",
+      "evidence_quote": "NPRM, supra n.1, ¶ 31.",
+      "evidence_start": 29866,
+      "evidence_end": 29888,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The policy is published early enough, and a hearing held early enough for parents to meaningfully take part.",
+      "evidence_quote": "47 U.S.C. § 254(h)(5)(A)(iii), (h)(6)(A)(iii); NPRM, supra n.1, ¶ 43.",
+      "evidence_start": 29792,
+      "evidence_end": 29861,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 6,
+  "submission_id": "26110080917",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080917",
+  "filer_raw": "Defending Education",
+  "date_submission": "2026-10-13T14:26:22.879Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "d219e7c8bbbc4d60732634a27d7cb78e671a0d1c8b425164d289123b01d895cf",
+  "params_key": "a39324e5678cf40ac46fd0ac22338f08efecd80afe25c0df9cd08a96e92927d9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 8,
+  "source_windows_model_analyzed": 5
+}

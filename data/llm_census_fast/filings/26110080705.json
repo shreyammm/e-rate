@@ -1,0 +1,37 @@
+{
+  "summary": "The White Pine County School District emphasizes the importance of the E-Rate program and its value for their rural community. The White Pine County School District provides evidence of a competitive bidding process for broadband services, showing a significant cost reduction in the new contract compared to the previous one. The District argues that the new contract should be treated as a finding against the applicant rather than a reason to question the procurement process. The District highlights the substantial decline in E-Rate funding and its impact on the District's share, emphasizing the need for transparency and competitive bidding to ensure fair service provision. The comment opposes sunset provisions for E-Rate funding and raises concerns about eligibility scope, vendor influence, and other policy issues affecting the program's implementation and effectiveness. The comment opposes sunset provisions for E-Rate funding and supports the proposed deadline for SPAC certification The comment opposes limiting or sunsetting E-Rate to save costs and reduce funding for broadband infrastructure and services in schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The decline in funding is significant, with the District's share at a 90 percent discount being ten percent of the cost before discount",
+      "evidence_quote": "The decline is $184,615.20, or 73.5 percent. The District’s share at a 90 percent discount is ten \npercent of the cost before discount: $27,900 in FY 2025 and $7,387.20 in FY 2026.",
+      "evidence_start": 8194,
+      "evidence_end": 8374,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110080705",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080705",
+  "filer_raw": "White Pine County School District",
+  "date_submission": "2026-10-12T20:02:05.418Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "40b416351206beafa93971b79ada2694abac61f070e9c5113ce1ec0838d269e4",
+  "params_key": "7cb7b03fe23844fb2aed2c1ad740d4a4d1b6e95b6a4abf1ce9270bf8752c44ea",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 10,
+  "source_windows_model_analyzed": 6
+}

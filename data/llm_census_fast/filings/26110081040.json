@@ -1,63 +1,37 @@
 {
-  "submission_id": "26110081040",
-  "params_key": "b8838c767995cf7196a47e0f0aad9cef3e3909b4dd08de35024323dbede14e2f",
-  "status": "partial",
-  "parts": [
+  "summary": "Vanoss Public Schools has participated in the E-Rate Program since 1999, with its own records and USAC data documenting 27 funding years for a combined $1,812,913.98 in disbursements. The District's discount rate has held at 80% since funding year 2018. The school district emphasizes the importance of E-Rate funding for maintaining and upgrading technology infrastructure in a rural school. The District relies on E-Rate support for its connectivity needs, which have not been fully met by the program's current funding levels. The District argues for continued E-Rate support to ensure access to the necessary network infrastructure for its educational programs. The comment emphasizes the importance of E-Rate for maintaining connectivity and academic outcomes in rural districts. It argues against limiting or sunsetting E-Rate, as it would eliminate essential connectivity support for schools and students. The school district requests preservation of the E-Rate Program and its current structure. The school district highlights the importance of E-Rate funding for maintaining up-to-date technology in their rural school. The library and school community express concerns about the impact of reduced E-Rate funding on their ability to provide hands-on, career-focused educational opportunities",
+  "stakeholder_role": "school_district",
+  "claims": [
     {
-      "summary": "Vanoss Public Schools has participated in the E-Rate Program since 1999, with its own records and USAC data documenting 27 funding years for a combined $1,812,913.98 in disbursements. The District's discount rate has held at 80% since funding year 2018.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The school district emphasizes the importance of E-Rate funding for maintaining and upgrading technology infrastructure in a rural school.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The District relies on E-Rate support for its connectivity needs, which have not been fully met by the program's current funding levels. The District argues for continued E-Rate support to ensure access to the necessary network infrastructure for its educational programs.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment emphasizes the importance of E-Rate for maintaining connectivity and academic outcomes in rural districts. It argues against limiting or sunsetting E-Rate, as it would eliminate essential connectivity support for schools and students.",
-      "stakeholder_role": "school_district",
-      "stakeholder_quote": "et access is not an extra resource in my \nclassroom—it is essential to the curriculum itself... E-Rate doesn't just help students get online. It \nhelps students learn, create, compete, communicate, and prepare for their futures.”",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The school district requests preservation of the E-Rate Program and its current structure.",
-      "stakeholder_role": "school_district",
-      "stakeholder_quote": "Respectfully submitted,",
-      "claims": [
-        {
-          "provision_id": "erate_sunset",
-          "position": "oppose",
-          "requested_action": "preserve E-Rate Program",
-          "reason_family": "budget_cost_efficiency",
-          "claim_kind": "cost_or_savings",
-          "argument": "preserve existing funding",
-          "evidence_quote": "Respectfully submitted,",
-          "evidence_start": 15375,
-          "evidence_end": 15398,
-          "uncertain": false
-        }
-      ],
-      "invalid_claims_rejected": 0
-    },
-    {
-      "summary": "The school district highlights the importance of E-Rate funding for maintaining up-to-date technology in their rural school.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate Program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "preserve existing funding",
+      "evidence_quote": "Respectfully submitted,",
+      "evidence_start": 15375,
+      "evidence_end": 15398,
+      "uncertain": false
     }
   ],
-  "next_chunk": 6
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 6,
+  "submission_id": "26110081040",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081040",
+  "filer_raw": "Vanoss Independent School District",
+  "date_submission": "2026-10-13T17:14:14.898Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b59d5dd5d76f1897a5187a37eff1c1e1baad626282e9df91625e92624789974c",
+  "params_key": "b8838c767995cf7196a47e0f0aad9cef3e3909b4dd08de35024323dbede14e2f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 7,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 7,
+  "source_windows_model_analyzed": 7
 }

@@ -1,0 +1,75 @@
+{
+  "summary": "The School District of Lee County emphasizes the critical role of E-Rate funding in supporting modern educational services, including network infrastructure, connectivity, and device programs. They highlight the importance of expanding the program scope to address growing connectivity needs and ensure continuity of services. The School District argues that E-Rate is not a peripheral subsidy but a load-bearing component of delivering instruction, assessments, and maintaining safety systems. They  The comment discusses the importance of E-Rate funding for school districts in Florida, particularly in the context of population growth and infrastructure costs. It highlights the need to maintain E-Rate funding to ensure access to broadband services and internet safety requirements. The comment also mentions concerns about the administrative burden and the need for transparency in monitoring and filtering practices. The comment emphasizes the critical role of E-Rate-funded network infrastructure in supporting educational purposes and responsible use, highlighting its necessity for various educational functions such as digital instruction, state and federal assessments, formative and summative assessment tools, and data-driven accountability. The comment argues that the network infrastru",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "E-Rate funded network infrastructure is essential for modern teaching and learning",
+      "evidence_quote": "Digital Instruction and Curriculum Delivery: Teachers rely on stable connectivity to deliver interactive lessons, stream educational content, access learning management systems (LMS), and utilize adaptive instructional software that personalizes learning paths for individual students.",
+      "evidence_start": 12533,
+      "evidence_end": 12818,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Expand eligible services and infrastructure scope",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The program scope should be expanded and not narrowed",
+      "evidence_quote": "The program scope should be expanded and not narrowed.",
+      "evidence_start": 4394,
+      "evidence_end": 4448,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Continuing E-Rate support is critical to maintaining and expanding infrastructure as instructional and operational technology needs continue to grow",
+      "evidence_quote": "Continued E-Rate support is critical to maintaining and expanding this infrastructure as instructional and operational technology needs continue to grow.",
+      "evidence_start": 17993,
+      "evidence_end": 18146,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If E-Rate funding disappeared, the most likely real-world sequence for a district is to protect security-network spending at the expense of other categories.",
+      "evidence_quote": "If E-Rate funding disappeared, the most likely real-world sequence for a district this size is: protect state-mandated security systems and core connectivity first (because the legal exposure of not doing so is severe), absorb the cost by slowing device refresh and deferring facility maintenance, freeze or cut technology-support and non-classroom-teacher positions, and scale back the programming that depends most visibly on the network, one-to-one devices, CTE simulation labs, community access hours, because those cuts are easiest to communicate to the public as \"reduced services\" rather than \"unsafe schools\" or \"no internet.\" 5. RECOMMENDATION • Preserve the core E-Rate program. • Preserve eligibility for special construction, dark fiber, self-provisioned networks, internal connections, and cost-effective managed services. • Preserve E-Rate support for Internet access, internal connections, Wi-Fi, installation, maintenance, and related network services that schools rely on every day. • Keep CIPA requirements practical, technically feasible, and respectful of student privacy. • Maintain a broad, workable definition of “educational purpose” that reflects how school networks are actually used for instruction, operations, and student support. 6. CLOSING School District of Lee County respectfully urges the FCC to preserve the core strengths of E-Rate, including support for affordab",
+      "evidence_start": 22583,
+      "evidence_end": 23983,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110072439",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110072439",
+  "filer_raw": "School District of Lee County",
+  "date_submission": "2026-08-20T17:17:55.950Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1f55283b4e5273171a43460435ef84dd4b982575a3847d2f51b893039fc17b05",
+  "params_key": "fedf4ecf4191c55b0bb21b28e906ef4beb4b43690bb0a2ff996fff86292d3c91",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 6,
+  "source_windows_model_analyzed": 6
+}

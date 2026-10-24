@@ -1,0 +1,63 @@
+{
+  "summary": "The Pace Charter School of Hamilton emphasizes the critical role of E-Rate in maintaining essential connectivity for teaching, learning, operations, and student support. The school highlights the significant cost savings provided by E-Rate, which allows it to receive a substantial discount on internet service costs. The school argues that narrowing the eligibility scope or reducing support for recurring connectivity would directly impact its budget, potentially diverting funds from critical educ The comment emphasizes the importance of maintaining a broad E-Rate program to ensure schools have adequate connectivity for educational purposes and to support student needs. It highlights the potential impact of reducing eligible services on smaller schools and the need to continue recognizing on-campus network use as educational in nature. The comment also mentions the current E-Rate discount methodology and its effectiveness in supporting the school's needs. The school district supports maintaining the current E-Rate discount methodology, emphasizing the importance of considering student poverty and financial resources when determining discounts. They argue that reducing the discount percentage would increase the school's share of eligible internet costs, which could compete with othe",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "For Pace, the goal is not to increase screen time—it is to make sure technology is available when it provides an educational benefit. Decisions about when and how students use that technology should remain with the educators who know their students and classrooms best.",
+      "evidence_quote": "For Pace, the goal is not to increase screen time—it is to make sure technology is available when it provides an educational benefit. Decisions about when and how students use that technology should remain with the educators who know their students and classrooms best.",
+      "evidence_start": 14638,
+      "evidence_end": 14907,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "support",
+      "requested_action": "Continue considering student poverty and financial resources when determining E-Rate discounts",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "empirical_claim",
+      "argument": "Reducing the discount percentage would increase the school's share of eligible annual internet cost, competing with other educational needs",
+      "evidence_quote": "For example, at our current 90% discount, Pace pays approximately $1,386 of our eligible annual internet cost. If our discount were reduced to 80%, our share would double to approximately $2,772. At 70%, our responsibility would increase to approximately $4,158.",
+      "evidence_start": 9579,
+      "evidence_end": 9841,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "maintain broad E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing eligible services could disproportionately affect smaller schools and schools with limited local resources",
+      "evidence_quote": "For Pace, the impact is straightforward: E-Rate currently covers 90% of our eligible recurring internet costs. Losing or significantly reducing that support would immediately create an additional expense for our school and take resources away from students.",
+      "evidence_start": 5418,
+      "evidence_end": 5675,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_eligibility_scope": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110074161",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074161",
+  "filer_raw": "Pace Charter School of Hamilton",
+  "date_submission": "2026-09-01T11:41:41.479Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e5418ddc461426f8eef64dbf7241edf327a7b0b5fc3d46011e43bfe9b9f235d",
+  "params_key": "faff0d16c77cd98bcb72fc9da47c99165c65dcb54657397f77be78635b8c6a18",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 5,
+  "source_windows_model_analyzed": 5
+}
