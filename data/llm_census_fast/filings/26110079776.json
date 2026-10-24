@@ -1,0 +1,62 @@
+{
+  "summary": "Copenhagen Central School District emphasizes the importance of E-Rate for maintaining affordable connectivity and reliable technology access in their rural district. They highlight the need for ongoing maintenance and upgrades to keep up with capacity demands and educational needs. The school urges the FCC to preserve E-Rate's scope to ensure districts like theirs can maintain reliable service today and plan for future needs. The school district expresses concerns about preserving E-Rate funding and supports maintaining current programs to ensure broadband access for students. The comment opposes imposing screen-time limits on E-Rate eligibility and supports local flexibility in managing technology use for educational purposes. It emphasizes the importance of considering the purpose and value of educational activities and the potential impact of blanket opt-out requirements on digital resources. The comment also highlights the need for privacy protections and the importance of local decision-making in implementing E-Rate programs. The school district outlines concerns about the impact of reduced E-Rate funding on their network infrastructure and budget, emphasizing the need to preserve the core program and avoid changes that would increase administrative burdens or reduce access",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding and sunset programs",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate programs would increase budgetary burdens on school districts and reduce broadband access for students.",
+      "evidence_quote": "We urge the FCC to preserve meaningful support for small rural districts while targeting additional assistance to applicants with the greatest documented needs.",
+      "evidence_start": 5850,
+      "evidence_end": 6010,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reduced E-Rate funding would increase administrative costs for districts.",
+      "evidence_quote": "Our first steps would likely include postponing replacement of aging switches and wireless access points, extending equipment use beyond planned replacement cycles, and delaying network improvements. Those decisions would increase the risk of outages, reduced performance, and unexpected repair costs, particularly when multiple classrooms are using online resources or testing simultaneously.",
+      "evidence_start": 14488,
+      "evidence_end": 14881,
+      "uncertain": false
+    },
+    {
+      "provision_id": "screen_time_condition",
+      "position": "oppose",
+      "requested_action": "Condition E-Rate on screen-time limits",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "privacy_expression",
+      "argument": "Screen-time limits could interrupt educational activities without considering their purpose or value.",
+      "evidence_quote": "A fixed federal time limit could interrupt an appropriate instructional activity or required assessment without considering its purpose or value. Parents should have clear information about classroom technology use and a process for discussing concerns and reasonable alternatives. A blanket opt-out requirement, however, could create challenges for required computer-based testing, accessibility tools, and courses that depend on digital resources. Local flexibility would allow schools to work with families while meeting students’ educational needs and applicable requirements.",
+      "evidence_start": 8924,
+      "evidence_end": 9504,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose",
+    "screen_time_condition": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079776",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079776",
+  "filer_raw": "Copenhagen Central School District",
+  "date_submission": "2026-10-07T14:42:30.028Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "099570c54d73c3f7cceef0d4fcc823ce8cd99f45d4ed4b2aad658bbe1aac0fdb",
+  "params_key": "a4561ffa4ebe7669768380f9d0b092daa980a4dfc0a93f361ccafb1eff894c2c",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 4,
+  "source_windows_model_analyzed": 4
+}

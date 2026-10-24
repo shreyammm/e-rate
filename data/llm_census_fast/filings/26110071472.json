@@ -1,0 +1,61 @@
+{
+  "summary": "Pomona USD urges the Commission to preserve E-Rate as a nationwide, needs-based program and reject proposals that would terminate the program or restrict support based primarily on geography. The District's network is foundational infrastructure supporting various educational uses and services. Without E-Rate support, the District estimates that approximately $3M would shift to unrestricted or other local funds, competing with educational priorities. The Commission should avoid rules that create The FCC should maintain a nationwide E-Rate program with discounts based on student and community need to ensure consistent support across all districts, addressing both cost and equity concerns. The FCC comment argues against sunsetting or limiting the E-Rate program, emphasizing the need to maintain its focus on educational use and avoiding overly prescriptive rules that could impose administrative burdens on schools and libraries. The comment also highlights the importance of preserving the program's role in supporting broadband connectivity for educational purposes and maintaining the autonomy of local educational authorities in determining appropriate online safety policies. The com The text argues against limiting or sunsetting E-Rate to save costs and maintain broadband infrastruct",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "retain nationwide E-Rate program with discounts based on student and community need",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "A nationwide program ensures consistent support across all districts, avoiding geographic restrictions",
+      "evidence_quote": "The Commission should preserve a nationwide program with discounts based on student and community need.",
+      "evidence_start": 5954,
+      "evidence_end": 6057,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools and libraries in maintaining broadband infrastructure.",
+      "evidence_quote": "control, or daily usage limits. See FCC 26-41, paras. 29–53. Pomona USD agrees that schools should use technology intentionally, protect students, and maintain age-appropriate educational practices. But “screen time” is not a single, technically measurable category that reliably distinguishes productive instruction, accessibility, assessment, communication, and creation from passive or recreational consumption. The Commission should expressly distinguish educational use from recreational use. A student composing an essay, using an augmentative communication tool, completing an assessment, participating in teacher-guided research, or receiving language support is not situated the same as a student accessing entertainment or social media. Network-level hourly caps would be difficult to administer, may interfere with individualized education programs and accessibility needs, and could produce inequitable outcomes for students who depend most on school-provided resources. Pedagogy and classroom practice should remain primarily matters for educators, families, governing boards, and state and local educational agencies. The Commission may appropriately promote transparency, digital citizenship, and reasonable-use practices, but it should not condition foundational connectivity funding on federally prescribed instructional-time limits or a single educational philosophy.",
+      "evidence_start": 8900,
+      "evidence_end": 10285,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve and strengthen E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "fully urges the Commission to preserve and strengthen E-Rate as a nationwide, needs-based program",
+      "evidence_quote": "fully urges the Commission to preserve and strengthen E-Rate as a nationwide, needs-based program",
+      "evidence_start": 17801,
+      "evidence_end": 17898,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110071472",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071472",
+  "filer_raw": "Pomona Unified School District",
+  "date_submission": "2026-08-14T23:31:37.257Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "85e6ed895736f2e9ac0f619b3fb6ebaf1cd70bd1bbbd8d44abd9aebca23df75e",
+  "params_key": "dd2060a4b5aece497165044835665d60ee5380931ecc7d2295ca76d6b226c7a2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 5,
+  "source_windows_model_analyzed": 5
+}

@@ -1,0 +1,75 @@
+{
+  "summary": "The library emphasizes the importance of E-Rate funding for maintaining affordable and reliable internet access in its rural community. It highlights the library's role as a critical resource for residents and the need to continue supporting E-Rate to ensure equitable access to technology and information. The library also mentions the specific services covered by E-Rate, such as internet access, internal connections, and network infrastructure, and the impact of reducing support for these servic The text expresses opposition to limiting or sunsetting E-Rate, emphasizing the importance of continued funding for broadband infrastructure and services in rural areas, which are essential for libraries to provide essential services and resources to their communities. The text argues against various proposed changes to the E-Rate program, emphasizing the importance of maintaining current E-Rate funding and services. It highlights concerns about the potential impact of these changes on libraries' ability to provide essential services, the cost and complexity of implementing new requirements, and the potential infringement on privacy and free expression. The library emphasizes the importance of preserving E-Rate support to maintain essential library services and ensure equitable access to ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Not tying E-Rate decisions to educational outcomes would undermine the program's effectiveness in supporting broadband access for educational purposes.",
+      "evidence_quote": "Access to information, research materials, news, educational content, and community resources is central to the mission of public libraries. E-Rate-supported connectivity enables libraries to uphold the principles of lifelong learning, intellectual freedom, and equitable access to information for all members of the community. Any reduction in support for these services would negatively affect our ability to serve the educational, informational, and technological needs of the public.",
+      "evidence_start": 9106,
+      "evidence_end": 9593,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services in rural areas, leading to increased costs for libraries and patrons.",
+      "evidence_quote": "Any reduction in E-Rate discounts would have a direct impact on our ability to maintain and improve technology services. Reduced funding could force libraries to delay equipment upgrades, postpone network improvements, reduce available services, or divert funding from other essential library programs and resources.",
+      "evidence_start": 5785,
+      "evidence_end": 6101,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would increase operational costs and reduce funding for broadband services.",
+      "evidence_quote": "works support multiple interconnected functions simultaneously, and distinguishing between these uses would increase complexity, costs, and administrative requirements without improving service to patrons.",
+      "evidence_start": 8900,
+      "evidence_end": 9105,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Restrict special construction or dark fiber",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Restricting special construction or dark fiber would limit the library's ability to provide reliable and high-speed internet services to patrons.",
+      "evidence_quote": "works support multiple interconnected functions simultaneously, and distinguishing between these uses would increase complexity, costs, and administrative requirements without improving service to patrons.",
+      "evidence_start": 8900,
+      "evidence_end": 9105,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110075796",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075796",
+  "filer_raw": "Lonesome Pine Regional Library",
+  "date_submission": "2026-09-08T13:49:26.680Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ebf4c98a71ea50a4d167c0ce7c7cee4420d76dfd36728835d28b530e50710382",
+  "params_key": "c30af4c8563a870d51ee752147519f88f95611406410dc7d986419ad06870362",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 5,
+  "source_windows_model_analyzed": 5
+}
