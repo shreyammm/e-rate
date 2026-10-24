@@ -1,0 +1,88 @@
+{
+  "summary": "The text discusses the benefits of the E-Rate program for libraries, particularly the LibTech consortium, which allows for the management of E-Rate administration in libraries with limited IT resources. It highlights the improvements in internet access, equipment, and IT services provided to libraries through the program. The text also mentions the challenges faced by libraries in competing with public safety and political projects for IT staff time. The comment highlights the importance of E-Rate funding for providing broadband access and services to libraries and schools, emphasizing the need to protect and maintain the program. It also mentions the unique aspects of urban and rural library consortium members and the importance of local community processes in developing library policies. The comment opposes any efforts to limit or sunset E-Rate funding and supports the use of managed services programs for cost-effective and efficient libra The comment opposes various proposed changes to the E-Rate program, including limiting or sunsetting the program, narrowing eligibility, restricting special construction, changing the discount matrix, and addressing vendor influence. It emphasizes the importance of E-Rate funding for schools, libraries, and communities, and argues that cuts t",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "oppose",
+      "requested_action": "Define covered E-Rate consultants",
+      "reason_family": "administrative_burden",
+      "claim_kind": "implementation_burden",
+      "argument": "Hiring a consultant to administer the E-Rate funding for the LibTech consortium is not feasible for individual libraries",
+      "evidence_quote": "Consultants provide a greater depth and breadth of knowledge than a single applicant could ever achieve",
+      "evidence_start": 10092,
+      "evidence_end": 10195,
+      "uncertain": false
+    },
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "empirical_claim",
+      "argument": "Cutting funding for E-Rate would defeat the goal of providing essential services to schools and libraries",
+      "evidence_quote": "It would be far better to leave this essential funding in place and to keep these issues separate",
+      "evidence_start": 9660,
+      "evidence_end": 9757,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services",
+      "evidence_quote": "In the Matter of Ensuring Children's Safe Use of Screens and E-Rate-Funded Services WC Docket No. 26-133 Modernizing the E-Rate Program for Schools and Libraries WC Docket No. 13-184 Establishing the Emergency Connectivity Fund to Close the Homework Gap WC Docket No. 21-93 Promoting Fair and Open Competitive Bidding in the E-Rate Program WC Docket No. 21-455",
+      "evidence_start": 93,
+      "evidence_end": 453,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would significantly increase the administrative burden with no guarantee of addressing unique internet safety needs",
+      "evidence_quote": "The E-Rate has been making great strides in reducing wasteful requirements and improving efficiency and now is not the time to move backward.",
+      "evidence_start": 9068,
+      "evidence_end": 9209,
+      "uncertain": false
+    },
+    {
+      "provision_id": "lowest_corresponding_price",
+      "position": "oppose",
+      "requested_action": "Prohibit percentage-based consultant fees",
+      "reason_family": "other",
+      "claim_kind": "cost_or_savings",
+      "argument": "Allowing percentage-based fees would encourage unnecessary purchases for financial benefit",
+      "evidence_quote": "We pay our consultant based on the work performed and not based on a percentage of what we buy",
+      "evidence_start": 10544,
+      "evidence_end": 10638,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "oppose",
+    "education_outcomes": "oppose",
+    "erate_sunset": "oppose",
+    "lowest_corresponding_price": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110080745",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080745",
+  "filer_raw": "Washington State Library",
+  "date_submission": "2026-10-12T21:59:28.561Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3cf9411499e970f16a55a11ee9ec5f614cbfa3ba402ed5058f006c85cdc65856",
+  "params_key": "d7dbb7387800eb4cb07a645e26a5bc4c70e2d7e959bf9741b814e71e564a81f2",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

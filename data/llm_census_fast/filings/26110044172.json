@@ -1,0 +1,49 @@
+{
+  "summary": "JCPS opposes proposals to sunset E-Rate program as it is an ongoing operational necessity with continuous lifecycle upgrades and bandwidth scaling requirements. The comment argues against limiting or sunsetting E-Rate, emphasizing the need to maintain funding for broadband infrastructure and connectivity in schools. The FCC comment argues against limiting or sunsetting the E-Rate program, emphasizing its importance for funding broadband infrastructure and maintaining educational access. The school district urges the FCC to preserve current E-Rate funding and reject any screen-time mandates as a condition of receiving support.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "do not sunset E-Rate program",
+      "reason_family": "statutory_authority",
+      "claim_kind": "implementation_burden",
+      "argument": "E-Rate is an ongoing operational necessity requiring continuous lifecycle upgrades and bandwidth scaling",
+      "evidence_quote": "Connectivity is an ongoing operational necessity requiring continuous lifecycle upgrades and bandwidth scaling.",
+      "evidence_start": 1721,
+      "evidence_end": 1832,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve and protect the current E-Rate funding cap",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The funding cap would be absolutely devastating to operational capacity",
+      "evidence_quote": "Rate funding—especially when tied to unworkable, top-down federal \"screen-time\" mandates—would be absolutely devastating to our operational capacity and the educational outcomes of our nearly 100,000 students.",
+      "evidence_start": 12980,
+      "evidence_end": 13189,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110044172",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110044172",
+  "filer_raw": "Jefferson County Public Schools",
+  "date_submission": "2026-07-23T13:32:20.769Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "ce755e4df509b4f822046b16d3f1696d91e50b06da762a0db1747b5991879b35",
+  "params_key": "dc7dd0d4045231958f1ef49e2a36ab543c33d23f507f54b2b5c05fc45995166f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 4,
+  "source_windows_model_analyzed": 4
+}

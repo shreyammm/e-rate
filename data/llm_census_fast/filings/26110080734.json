@@ -1,0 +1,37 @@
+{
+  "summary": "The Alaska Department of Education and Early Development supports the FCC's goal of protecting children's use of E-Rate-supported networks while advocating for flexibility in implementation. They recommend preserving state and local decision-making, protecting student privacy, and avoiding unfunded mandates. The department opposes extending CIPA to third-party-owned devices as a means of protecting student privacy. DEED recommends that the Commission establish clear child-safety objectives and minimum protections while allowing reasonable local flexibility in implementation. DEED recognizes legitimate concerns regarding excessive or inappropriate screen use. Nevertheless, a uniform measure of time spent on a connected device does not, by itself, establish whether the use is educationally appropriate. In Alaska, connected technology can provide access to standardized assessments, distance learning, advanced The comment opposes extending CIPA to third-party-owned devices, arguing that it could undermine privacy protections. The comment emphasizes the importance of E-Rate support for public libraries in Alaska, which provide essential services to residents across the state. The comment argues that any changes to E-Rate policies should consider the unique needs and constraints of pub",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "oppose",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "DEED recommends caution in using standardized test scores, graduation rates, job placement, or similar measures to evaluate E-Rate or CIPA compliance",
+      "evidence_quote": "CIPA Compliance Cannot Be Judged Through Academic Outcome Measures",
+      "evidence_start": 5904,
+      "evidence_end": 5970,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110080734",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080734",
+  "filer_raw": "Alaska Department of Education and Early Development",
+  "date_submission": "2026-10-12T21:27:15.522Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8e5a2e45f0c8e27e3632637e0026961ae32f9f9e90eb61862d86827871ca3bb9",
+  "params_key": "fd10d3ac84b0037bd57baaecf5bb6d90b57137daef4513aa16328966812a4791",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 5,
+  "source_windows_model_analyzed": 5
+}

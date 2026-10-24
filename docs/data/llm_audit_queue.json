@@ -1,7 +1,7 @@
 {
   "publication_status": "MACHINE_GENERATED_REVIEW_SUGGESTIONS_ONLY",
   "model": "ibm/granite4:1b-q4_K_M",
-  "completed_filings": 2663,
+  "completed_filings": 2710,
   "selected": 150,
   "selection": "Quality flags and reproducible filing-ID hash; not a random prevalence estimator",
   "items": [
@@ -502,6 +502,20 @@
       "claim_count": 0,
       "chunk_count": 3,
       "source_sha256": "38a6438986043f6cf1896c8b4a2662a886c51bbeb31c32063d52dd064f08d19a",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110079588",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110079588",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "deterministic_quality_sample"
+      ],
+      "claim_count": 0,
+      "chunk_count": 5,
+      "source_sha256": "49907eff41a803df65de40ab55fa96d78aabfb493d4216ddd88e6e7353eb7ec3",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -1080,6 +1094,20 @@
       "review_status": "suggested_unreviewed_human_audit"
     },
     {
+      "submission_id": "26110079564",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110079564",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "no_grounded_policy_position_extracted",
+        "deterministic_quality_sample"
+      ],
+      "claim_count": 0,
+      "chunk_count": 4,
+      "source_sha256": "74c9faec51562fa30808336ad3e0105587d2901acf944bf0f109af7700163431",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
       "submission_id": "26110080774",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080774",
       "review_reasons": [
@@ -1258,6 +1286,20 @@
       "claim_count": 0,
       "chunk_count": 1,
       "source_sha256": "6d82a82981067f247cffe670664d7a7721c671b6b8608f18ac05a965bfa93b08",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110080718",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110080718",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "unreviewed_ocr_candidate",
+        "no_grounded_policy_position_extracted"
+      ],
+      "claim_count": 0,
+      "chunk_count": 6,
+      "source_sha256": "f0de84e9317201d188b1eadca36f631015769ab995cbf1cb7be5ce10671890f4",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -2070,48 +2112,6 @@
       "claim_count": 0,
       "chunk_count": 1,
       "source_sha256": "08d86c052092158f9f9f16d3ce39ec6d71f7010fdd1614944ad62149a62e66aa",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110081272",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081272",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 1,
-      "source_sha256": "baee67daa360726cedff4b02840e4374a5ecb357396d1aaf7f32487d1a86131c",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110078359",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078359",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 3,
-      "source_sha256": "e9f458a7b1f2c9eb31afad9cdedcf4227196fe1388dfa160213de92952315b0e",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110076156",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076156",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "unreviewed_ocr_candidate",
-        "no_grounded_policy_position_extracted"
-      ],
-      "claim_count": 0,
-      "chunk_count": 3,
-      "source_sha256": "85538344eaf84703ab65b663e0947bdebe37d817366262ff4759b46325137240",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     }

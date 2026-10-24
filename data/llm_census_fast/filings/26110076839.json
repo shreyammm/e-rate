@@ -1,0 +1,49 @@
+{
+  "summary": "Hutto Independent School District supports continuing E-Rate as an ongoing affordability program for both Category 1 and Category 2 services, keeping suburban and urban applicants in the discount matrix, and leaving screen-time, device, and instructional-practice rules with local boards. The comment opposes ending or narrowing the E-Rate program, citing concerns about the program's statutory authority and the district's financial burden if services were to end. The comment opposes limiting or sunsetting E-Rate to address budget constraints and cost savings. The school district supports continuing E-Rate in its current form, emphasizing the importance of maintaining current eligibility and discount structures for budgetary stability.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The NPRM suggests ending the program to ensure schools have broadband meets the statutory mission.",
+      "evidence_quote": "The NPRM asks whether most schools having broadband means the statutory mission is complete.",
+      "evidence_start": 6828,
+      "evidence_end": 6920,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Narrowing geography or dropping Category 2 would significantly impact local budget for network infrastructure",
+      "evidence_quote": "Narrowing geography, dropping Category 2, or adding screen-use conditions would have a significant impact on the local budget for the same network.",
+      "evidence_start": 14014,
+      "evidence_end": 14161,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110076839",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076839",
+  "filer_raw": "Hutto Independent School District",
+  "date_submission": "2026-09-16T20:02:00.717Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b1487b99aa2a1a5f033235a9fda8f26918809b64250cb7dc1f80ea2a85023fd5",
+  "params_key": "f8a76278829d703bdf4df959936facd425dbed4b7b32020c518d00967df9167f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 4,
+  "source_windows_model_analyzed": 4
+}
