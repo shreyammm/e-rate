@@ -1,7 +1,7 @@
 {
   "publication_status": "MACHINE_GENERATED_REVIEW_SUGGESTIONS_ONLY",
   "model": "ibm/granite4:1b-q4_K_M",
-  "completed_filings": 2604,
+  "completed_filings": 2663,
   "selected": 150,
   "selection": "Quality flags and reproducible filing-ID hash; not a random prevalence estimator",
   "items": [
@@ -236,6 +236,20 @@
       "claim_count": 0,
       "chunk_count": 2,
       "source_sha256": "9d2799afbc8dee11eb8d8c0f44cf207a8d4069ef8a6833eed0c3f6bfde04b284",
+      "sample_quote": "",
+      "review_status": "suggested_unreviewed_human_audit"
+    },
+    {
+      "submission_id": "26110076588",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110076588",
+      "review_reasons": [
+        "unmatched_or_invalid_quotes",
+        "unreviewed_ocr_candidate",
+        "no_grounded_policy_position_extracted"
+      ],
+      "claim_count": 0,
+      "chunk_count": 3,
+      "source_sha256": "4001bf4f11ddb3437781908d20be76c9d7eaf1021c5d6bc142c6c238dfcaa2d9",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     },
@@ -2098,20 +2112,6 @@
       "claim_count": 0,
       "chunk_count": 3,
       "source_sha256": "85538344eaf84703ab65b663e0947bdebe37d817366262ff4759b46325137240",
-      "sample_quote": "",
-      "review_status": "suggested_unreviewed_human_audit"
-    },
-    {
-      "submission_id": "26110076636",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076636",
-      "review_reasons": [
-        "unmatched_or_invalid_quotes",
-        "no_grounded_policy_position_extracted",
-        "deterministic_quality_sample"
-      ],
-      "claim_count": 0,
-      "chunk_count": 2,
-      "source_sha256": "9d1d9f53d60191c82b6dbc1d683e95a86933d4ce2d407a352f585b1da632ee95",
       "sample_quote": "",
       "review_status": "suggested_unreviewed_human_audit"
     }

@@ -1,0 +1,61 @@
+{
+  "summary": "The school emphasizes the importance of E-Rate for maintaining affordable connectivity and supporting technology infrastructure, which is essential for providing reliable educational services to students. The school emphasizes the importance of the Federal E-Rate Program for maintaining connectivity and providing essential services for their students. They urge policymakers to preserve E-Rate funding to ensure schools with limited resources can continue to receive the support they need. The school highlights the significant impact of E-Rate funding on their ability to provide reliable connectivity and access to educational resources. They express concern about the potential operational and financ The comment emphasizes the importance of preserving the E-Rate program to ensure schools can maintain essential network services without compromising other educational priorities. It argues against reducing funding and supports preserving the program's core functions and eligibility.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue funding E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential for maintaining affordable monthly service and supporting technology infrastructure",
+      "evidence_quote": "E-Rate currently covers approximately 90% of our annual eligible connectivity costs. This support makes a tremendous difference to our school. As a public charter school, we do not receive funding at the same levels as schools operated by the Hawaii Department of Education. Our resources are limited, and without E-Rate assistance, the cost of maintaining the connectivity necessary to operate a modern school would place a significant financial burden on our budget.",
+      "evidence_start": 1892,
+      "evidence_end": 2360,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate is essential for schools like Connections Public Charter School to maintain connectivity and provide essential services",
+      "evidence_quote": "We respectfully urge policymakers to recognize the continuing importance of the Federal E-Rate Program and to preserve strong support for both ongoing connectivity and future infrastructure needs. E-Rate is an investment in educational opportunity, student equity, student safety, and the ability of schools—particularly smaller and less-funded charter schools—to provide the education and services our students deserve.",
+      "evidence_start": 5845,
+      "evidence_end": 6265,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "If funding were reduced, schools would have to choose between connectivity and other educational services",
+      "evidence_quote": "We cannot simply reduce connectivity without considering the effect on these essential systems. If funding were significantly reduced, we could ultimately have to consider reducing hours, services, or programs that our students and community depend upon in order to keep essential network services operating. These reductions could affect not only instructional programs but also the broader services and opportunities our school provides.",
+      "evidence_start": 8923,
+      "evidence_end": 9362,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110075925",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075925",
+  "filer_raw": "Cheryl  Gravela",
+  "date_submission": "2026-09-08T21:12:30.174Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3def2a6aa43146bc11eb5853419f25ab8edbe5c68e8bf5d33c6aa44f7c2b8bfb",
+  "params_key": "ff973eb8ca57eb2498ebb2ecc1ea435ad0010a9a137f798f73c821fbc34c208f",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

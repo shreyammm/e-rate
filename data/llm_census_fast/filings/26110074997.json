@@ -1,0 +1,37 @@
+{
+  "summary": "The comments highlight the importance of E-Rate for maintaining affordable connectivity and maintaining educational services in schools. The comments argue against narrowing the eligibility scope of E-Rate services and equipment, as well as against limiting the eligibility scope to specific types of infrastructure or services. The comments also emphasize the need to maintain the current discount methodology and the current presumption that on-campus network use is educational. The text argues against limiting or sunsetting E-Rate due to potential cost and implementation challenges, and supports maintaining current eligibility and requirements for broadband infrastructure and internet safety policies. The text argues for preserving the E-Rate program to ensure schools can continue providing reliable technology infrastructure for students and staff.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate could lead to increased costs for schools due to the lack of funding for broadband infrastructure.",
+      "evidence_quote": "Additional federal requirements for classroom supervision, parent opt-outs, or age-based restrictions could create administrative burdens and implementation challenges, particularly in schools with shared devices and mixed-grade environments.",
+      "evidence_start": 4464,
+      "evidence_end": 4706,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110074997",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110074997",
+  "filer_raw": "Ateret Torah Center",
+  "date_submission": "2026-09-02T14:48:46.783Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "bfb4b3948c4fcd1d6da27e40b54abc582c2b28ebf0c25f7276a7a6c43fca620c",
+  "params_key": "4158e1d60b0a0492741a7c06a3ec875025801742b87211ad77072d04f48633cd",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

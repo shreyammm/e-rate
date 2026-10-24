@@ -1,0 +1,37 @@
+{
+  "summary": "Library expresses critical need for E-Rate funding to maintain services and infrastructure. The comments highlight the critical role of E-Rate funding in enabling libraries to provide essential services such as internet access, computer use, and job assistance. The comments emphasize the importance of local control over safety policies and privacy, opposing federal mandates that could increase administrative burdens and regulatory costs. The comments also express concerns about the potential impact of limiting or sunsetting E-Rate funding on the availability of broadband services in sc The comment opposes limiting or sunsetting E-Rate funding, citing its efficiency and cost savings.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would cause wasteful requirements and reduce funding efficiency",
+      "evidence_quote": "been making great strides in reducing wasteful requirements and improving efficiency and now is not the time to move backward.",
+      "evidence_start": 8125,
+      "evidence_end": 8251,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110080540",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080540",
+  "filer_raw": "Timberland Regional Library",
+  "date_submission": "2026-10-11T23:54:56.927Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9a7a907bc318628a33bb45c0fac6e90465e1fc965933394babdbbf7360c1a524",
+  "params_key": "0d00c0196d23b7cf3c50713d042ad37689950d15b3c740ef06b492f0081fbaf6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

@@ -1,0 +1,62 @@
+{
+  "summary": "Columbus County Schools emphasizes the ongoing need for E-Rate to maintain and upgrade network infrastructure, which supports various educational and operational needs. The school highlights the importance of E-Rate in providing reliable internet access for students and staff, and the costs associated with maintaining and upgrading network equipment. The school argues that narrowing eligible equipment and services would increase costs and impact the program's effectiveness. Rural school district discusses the importance of E-Rate funding for maintaining network infrastructure and maintaining competition in rural areas.  The text argues against sunsetting E-Rate to maintain the program's core functions and support for affordable broadband and network services. It emphasizes the importance of E-Rate for the school district's daily operations and the need to preserve its core strengths, including support for affordable broadband, Internet access, internal connections, Wi-Fi, maintenance, and cost-effective network solutions. The text also highlights the need for thoughtful improvements, simplification, and fraud p",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining affordable internet access, and narrowing eligible equipment and services would increase costs for schools.",
+      "evidence_quote": "E-Rate today supports much more than students simply getting on the internet. Our online testing, curriculum programs, student information systems, communication systems, safety systems, and many of our daily school operations all depend on a reliable network. I think one of the biggest things people need to understand is that the fact schools are connected today does not mean E-Rate is no longer needed. It means the program worked. We have spent years building this infrastructure and improving access for our students, but we have to be able to maintain it, replace it, and continue to grow it as our needs change.",
+      "evidence_start": 3120,
+      "evidence_end": 3740,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Continue E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining and upgrading network infrastructure in rural districts",
+      "evidence_quote": "We cannot create competition where the infrastructure does not exist. For us, having only one real provider option means we have very little ability to shop around or negotiate the way a district in a larger area might. That is one of the biggest reasons I believe the FCC needs to continue looking at poverty, rural location, high costs, and provider availability when determining E-Rate support.",
+      "evidence_start": 4937,
+      "evidence_end": 5334,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The text argues against sunsetting E-Rate to maintain the program's core functions and support for affordable broadband and network services.",
+      "evidence_quote": "We are already stretched very thin. Our network supports online testing, curriculum resources, student information systems, communication, and the day to day operation of our schools. Reliable connectivity is now part of how instruction and school operations function, not an extra service we can simply choose to do without.",
+      "evidence_start": 9219,
+      "evidence_end": 9544,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110073517",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110073517",
+  "filer_raw": "Columbus County Schools",
+  "date_submission": "2026-08-28T14:57:39.039Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6f66a22e411b52d632e2aacf36e98405c14f4c6a040e17f52da02d5af7c46b55",
+  "params_key": "d448184239f48aaa470b6c256ef4499b8e337ea0b0ff015be14c599560befe84",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

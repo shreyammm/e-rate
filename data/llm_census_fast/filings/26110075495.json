@@ -1,0 +1,49 @@
+{
+  "summary": "The school emphasizes the importance of E-Rate for maintaining connectivity in their urban environment, where high-cost connectivity costs are a significant factor. They urge the Commission to preserve the current methodology that uses NSLP data to determine eligibility for poverty-based discounts, as this directly impacts their ability to afford connectivity costs and maintain essential services. The comment opposes limiting or sunsetting E-Rate funding, emphasizing the substantial costs of maintaining technology infrastructure in high-cost urban areas. It argues that decisions about student screen time should be made locally by educators and school leaders, not by federal definitions or age-based limits. The comment also emphasizes the importance of maintaining broad eligibility for E-Rate services and infrastructure, as narrowing eligibility would have a direct impact on the ability of The comment emphasizes the importance of preserving the E-Rate program to ensure schools can maintain essential technology infrastructure without compromising other educational priorities. It recommends preserving the core program and avoiding changes that would reduce access or increase administrative burden.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The costs of operating, maintaining, upgrading, and replacing technology infrastructure in a high-cost urban environment can be substantial.",
+      "evidence_quote": "The costs of operating, maintaining, upgrading, and replacing technology infrastructure in a high-cost urban environment can be substantial.",
+      "evidence_start": 4575,
+      "evidence_end": 4715,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Funding that currently supports teachers and staff, instructional programming, student services, building maintenance, and other educational priorities could instead have to be redirected toward essential network expenses",
+      "evidence_quote": "We could also be forced to extend the life of aging network equipment, delay infrastructure upgrades, or reduce the scope of planned projects. Those decisions carry real consequences.",
+      "evidence_start": 9569,
+      "evidence_end": 9752,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110075495",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110075495",
+  "filer_raw": "Harlem Village Academies",
+  "date_submission": "2026-09-03T20:56:21.797Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c695475f9b8788a78a30fdcbc6cdc440afaab63c4a972798dece23f0e6f9fa00",
+  "params_key": "31f917d86aa33197084881e0126f0e8d50c27cc0de9e9bf76d38ab65dc7c2534",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

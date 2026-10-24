@@ -1,0 +1,49 @@
+{
+  "summary": "The school district emphasizes the critical role of E-Rate funding in maintaining essential educational infrastructure and connectivity for students and staff. The school district emphasizes the critical role of E-Rate funding in ensuring equitable access to technology for students, particularly those from disadvantaged backgrounds. It highlights the direct impact of E-Rate on network infrastructure upgrades and the potential consequences of terminating or reducing funding, including network performance degradation, disruption to classroom instruction, and compromised standardized testing. The district stresses the importance of maintaining E-Rate to s The comment highlights the importance of maintaining E-Rate funding to ensure continuous, predictable investment in educational connectivity, which is essential for modern education. ",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Maintain E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate funding is essential for maintaining modern educational infrastructure and ensuring access to digital resources for students",
+      "evidence_quote": "Universal Service E-Rate funding is not an optional technology grant; it is the non-negotiable financial foundation that keeps our public school district connected.",
+      "evidence_start": 526,
+      "evidence_end": 690,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would lead to increased budget shortfalls and funding gaps.",
+      "evidence_quote": "Summary Impact Analysis: E-Rate Support vs. Funding Elimination Domain / Program Current Impact with E-Rate Support Projected Impact if E-Rate is Cut Broadband & Wi-Fi High-capacity fiber broadband; robust Wi-Fi 6 coverage across campuses. Bandwidth degradation, network congestion, Wi-Fi dead zones in classrooms. Network Hardware ($400k Refresh) Predictable 5-10 year lifecycle upgrades for switches & access points. Indefinite deferral of hardware refresh; elevated risk of network failure.",
+      "evidence_start": 9367,
+      "evidence_end": 9860,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110080073",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080073",
+  "filer_raw": "San Benito High School District",
+  "date_submission": "2026-10-08T16:50:32.749Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1adde8c0fd5aa08202afce8290d5a91ad1788821c3c7e5c1f64cd075e34e91f1",
+  "params_key": "5311f64bd101981fa6b84fb022aecee574b2c1ac56b9cfb06ae05b1be2b9fef9",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

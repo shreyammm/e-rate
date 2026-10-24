@@ -1,0 +1,61 @@
+{
+  "summary": "The comments argue against sunsetting or narrowing the E-Rate program, emphasizing its ongoing role in providing essential connectivity for schools and libraries. The comments highlight the program's cost-effectiveness and the need to preserve its support for affordable broadband services, data transmission, internal connections, and network construction. The comments also discuss the program's role in enabling shared infrastructure and coordination between districts and service providers. The c The text argues against sunsetting E-Rate funding, citing concerns about abrupt obligations for local funds and the limitations of NSLP participation as a measure of technology budget. It also opposes limiting E-Rate to rural areas and proposes retaining support for both Category One and Category Two connections, as well as protecting consortium and coordinated purchasing. The text emphasizes the importance of local direction for screen time and online safety, and the need to avoid federally pre The stakeholder opposes the sunset of the E-Rate program and supports preserving its funding to maintain connectivity support for schools and libraries.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program support",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "E-Rate has enabled shared network infrastructure and connectivity at costs that districts could not achieve independently",
+      "evidence_quote": "[1] Availability alone does not establish affordability, adequacy, reliability, or sustainability. A building may be described as served even when only one provider offers an enterprise-grade connection, when the available service is too expensive for a small district, or when the district cannot afford the internal infrastructure required to distribute that connection safely and reliably. Bandwidth needed for online assessment, instructional applications, cloud services, communications, and emerging technologies also changes over time. The fact that E-Rate demand has remained below the annual program cap does not establish that participating entities no longer need their discounts. The cap is a ceiling, not an expenditure target. A reduction in national aggregate demand also does not show that an individual rural or financially constrained district can absorb the loss of a recurring circuit discount or a major internal network replacement.",
+      "evidence_start": 2524,
+      "evidence_end": 3478,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Remove or sunset E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Removing E-Rate funding could lead to abrupt obligations for local general funds",
+      "evidence_quote": "I oppose phasing out E-Rate for applicants with the lowest NSLP participation rates. NSLP participation is useful within the existing discount methodology, but it is not a complete measure of an entity's available technology budget, local fiscal capacity, geographic costs, enrollment pressures, or ability to finance a major network replacement. A phaseout could create abrupt obligations that local general funds are not prepared to absorb.",
+      "evidence_start": 6750,
+      "evidence_end": 7192,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Do not terminate or sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Suggesting not to sunset E-Rate program to maintain connectivity support",
+      "evidence_quote": "Decline to terminate, sunset, or broadly narrow the E-Rate program",
+      "evidence_start": 11178,
+      "evidence_end": 11244,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110076710",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076710",
+  "filer_raw": "Scott Tomberlin",
+  "date_submission": "2026-09-15T18:21:07.574Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "528ddda3b87ace61b88722b26dc1c822403a4e590395c41d4c6903b37710cd9a",
+  "params_key": "30a00db927cf09504acbfad503cb6695041b41fff51a188e77964b0f96114672",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

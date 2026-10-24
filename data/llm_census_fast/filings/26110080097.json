@@ -1,0 +1,61 @@
+{
+  "summary": "APS opposes sunsetting E-Rate and emphasizes the ongoing need for connectivity in its network infrastructure. APS urges the Commission not to assume that schools have completed their internal networks or that current Category Two budgets are more than applicants need. APS does not operate a gold-plated network. It operates a large network serving schools, administrative facilities, students, employees, instructional systems, safety functions, and thousands of connected devices. APS’s own Category Two record shows the continuing need. In the first year of the FY2026–2030 cycle, APS has requested approxim APS supports strong oversight of E-Rate and sensible protections for the Universal Service Fund. It also encourages the Commission to build on what has worked. Do not sunset a program that continues to support essential school infrastructure. Preserve competition and applicant choice. Keep Category Two support grounded in the real cost of maintaining networks. Recognize cybersecurity as part of reliable connectivity. Respect lawful, competitively bid contracts and state and local procurement rul",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "not sunset E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Eliminating E-Rate would shift connectivity costs to an already constrained education budget",
+      "evidence_quote": "Eliminating E-Rate would not eliminate connectivity costs. It would shift them to an already constrained education budget, where they would compete with teachers, instructional programs, student services, safety, and facilities.",
+      "evidence_start": 2972,
+      "evidence_end": 3200,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "und spent more in the construction year, but the investment substantially reduced the recurring cost of supporting APS thereafter",
+      "evidence_quote": "und spent more in the construction year, but the investment substantially reduced the recurring cost of supporting APS thereafter",
+      "evidence_start": 4450,
+      "evidence_end": 4579,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Do not sunset a program that continues to support essential school infrastructure",
+      "evidence_quote": "Do not sunset a program that continues to support essential school infrastructure",
+      "evidence_start": 11748,
+      "evidence_end": 11829,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080097",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080097",
+  "filer_raw": "Albuquerque Public Schools",
+  "date_submission": "2026-10-08T18:16:59.982Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "e222561033af30f46d5819dad2737c68203c476359b0c3bc968b868994a715f7",
+  "params_key": "ca236be9578fb4bb0e3501b24078ac2a81f94757637ee133510d6170911138db",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

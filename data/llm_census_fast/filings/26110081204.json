@@ -1,0 +1,37 @@
+{
+  "summary": "The Texas Association of School Boards supports preserving E-Rate as an ongoing, nationwide program with needs-based support for affordable connectivity to and within eligible schools and libraries. The text argues against sunsetting E-Rate and supports preserving an administratively workable support mechanism instead. The FCC's recommendation to preserve E-Rate as a nationwide program, emphasizing the importance of maintaining existing contracts and services for schools and libraries, despite budget considerations.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve nationwide support under Section 254",
+      "reason_family": "statutory_authority",
+      "claim_kind": "other",
+      "argument": "The Commission’s statutory review should begin with Congress’s express direction",
+      "evidence_quote": "Section 254(b)(6) identifies access to advanced telecommunications services for schools and libraries as a universal-service principle",
+      "evidence_start": 2877,
+      "evidence_end": 3011,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110081204",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081204",
+  "filer_raw": "Ruben D. Longoria, Jr",
+  "date_submission": "2026-10-13T20:25:30.869Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9c6210160af314238e36b4ddcdfed2f1e3599a0eda2242655432384a546c5ceb",
+  "params_key": "b7382ee8c94993a5608e7472207aeb7cd3f36692afc3000aebb8824dfbcf9faf",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

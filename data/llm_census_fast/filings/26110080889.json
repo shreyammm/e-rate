@@ -1,0 +1,62 @@
+{
+  "summary": "The school district emphasizes the importance of E-Rate for maintaining essential infrastructure and connectivity in their schools, and urges the FCC to preserve current eligible services, especially support for internal connections, installation, and maintenance.  The comment from Meridian Public Schools expresses strong opposition to any reduction in E-Rate funding, emphasizing the financial strain it would impose on the district and the potential for budget cuts. The comment highlights the importance of preserving E-Rate funding to ensure the district can maintain necessary infrastructure upgrades and services. The comment also mentions the need for the FCC to evaluate any proposed discount reduction against its practical effect on students and schools, The school district emphasizes the importance of preserving the E-Rate program to ensure uninterrupted access to essential services and maintain educational equity. They recommend preserving the core program and eligibility for various services while advocating for changes that do not reduce access or increase administrative burdens.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "Narrowing eligibility or reducing support would make future improvements out of reach and harder to replace aging equipment before failures disrupt essential services",
+      "evidence_quote": "For Meridian Public Schools, E-Rate makes essential infrastructure improvements financially possible. Losing this funding would force difficult choices between maintaining the technology our schools depend on and meeting other urgent educational needs.",
+      "evidence_start": 2802,
+      "evidence_end": 3054,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve E-Rate funding",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Reducing E-Rate funding would increase the local cost of future projects, potentially forcing Meridian to delay necessary improvements or divert funding from other educational priorities",
+      "evidence_quote": "We ask the FCC to retain meaningful discounts based on demonstrated need, provide additional consideration for documented cost and access challenges, and avoid reductions that would put necessary upgrades and dependable connectivity beyond a district’s financial reach.",
+      "evidence_start": 7946,
+      "evidence_end": 8215,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Preserve the core E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Delaying equipment replacement would increase the risk of network failures and service interruptions",
+      "evidence_quote": "Delaying equipment replacement would also increase the risk of network failures and service interruptions. Our network supports instruction, required online state testing, student services, safety systems, and daily operations - including our internet-connected phones. If equipment fails and we cannot afford timely replacement, the disruption reaches far beyond the technology department. It affects teachers’ ability to deliver lessons, students’ access to required services, and the district’s ability to communicate and operate effectively. These costs do not disappear when funding is withdrawn. The equipment still ages, the network still requires maintenance, and students still need dependable access. Losing E-Rate would leave Meridian Public Schools with fewer resources to meet those responsibilities and force us to choose which essential needs must wait.",
+      "evidence_start": 9096,
+      "evidence_end": 9964,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 0,
+  "submission_id": "26110080889",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080889",
+  "filer_raw": "Meridian Public Schools",
+  "date_submission": "2026-10-13T13:39:56.762Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "592729f86b4aeb800510aa2644bc757a09f546b29d7ebabb94e2d074a63b3ff8",
+  "params_key": "44f9d1c7a9dfe582a7c64e49736ec44c4221fd36e7fbf3472ec0eb79030c0a7d",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

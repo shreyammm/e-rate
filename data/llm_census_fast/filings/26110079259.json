@@ -1,0 +1,49 @@
+{
+  "summary": "The school district urges the Commission to keep the E-Rate program in place and decline to phase it out or sunset it. The comment opposes limiting E-Rate funding to rural areas or areas with a single provider, arguing that geography is not a proxy for need and that funds should be targeted within the existing discount matrix. The comment also highlights the unique needs of suburban districts and the potential impact on competition and oversight of broadband networks.  The comment opposes sunsetting E-Rate, arguing that preserving the program would prevent increased costs and maintain local control over technology decisions. The comment emphasizes the importance of E-Rate in providing reliable connectivity and supports keeping decisions about classroom technology with school districts and school boards.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "keep the E-Rate program in place",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Without E-Rate support, District 120 would have to absorb the cost from its education fund, reduce bandwidth, defer equipment refreshes, and delay security upgrades.",
+      "evidence_quote": "In funding year 2026, E-Rate discounts covered approximately $269,175.00 of our eligible costs at a 50% discount rate. Without that support, we would have to absorb the cost from our education fund, or reduce bandwidth, defer equipment refreshes, and delay security upgrades.",
+      "evidence_start": 3185,
+      "evidence_end": 3460,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting E-Rate to rural areas or areas with a single provider would not address the need for broadband access in suburban areas.",
+      "evidence_quote": "We understand that other commenters, including the E-Rate Advocates coalition, are addressing the Commission’s authority (¶ 13) in detail, and we agree with their view that any decision to end or dismantle a program Congress created belongs to Congress. III. The Commission Should Not Limit E-Rate to Rural Applicants (NPRM ¶¶ 25–27) The Commission asks whether support should be limited to rural areas or areas with a single provider (¶ 26). District 120 is suburban and would receive no support under a rural-only rule.",
+      "evidence_start": 4479,
+      "evidence_end": 5000,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26110079259",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079259",
+  "filer_raw": "Mundelein SD 120",
+  "date_submission": "2026-10-04T16:36:25.715Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "4efad85d1777425b4cec3b94e576f7dd2677da046418742c1676c28fbba9df40",
+  "params_key": "6b43c33d2de9c9a2adfd34e013385838aa706e3f6f773c795f85f234fed0d043",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

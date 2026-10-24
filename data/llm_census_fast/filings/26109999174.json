@@ -1,0 +1,50 @@
+{
+  "summary": "The comment urges the FCC to preserve the E-Rate program rather than narrow or sunset it, emphasizing the ongoing need for connectivity and safety measures in schools and libraries, and cautioning against proposals that could jeopardize these services. The comment highlights concerns about the potential impact of limiting or sunsetting E-Rate on schools and libraries, citing budgetary concerns and the need for continued funding to support broadband access in rural areas. The comment supports preserving the E-Rate program with educational outcomes as a priority, ensuring it supports learning goals and outcomes rather than sunsetting or narrowing it. It also recommends grounding any screen-time-related conditions in the content and instructional structure rather than per-day time limits.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "education_outcomes",
+      "position": "support",
+      "requested_action": "Tie E-Rate decisions to educational outcomes",
+      "reason_family": "education_effectiveness",
+      "claim_kind": "normative_value",
+      "argument": "The comment urges the FCC to tie E-Rate decisions to educational outcomes to ensure they align with learning goals and outcomes.",
+      "evidence_quote": "For the foregoing reasons, Commenter respectfully urges the Commission to (1) preserve the E-Rate program as an ongoing, evolving source of support rather than sunsetting or narrowing it; (2) ensure that any changes to discount rates, eligibility criteria, or supported services preserve — and do not inadvertently erode — access for rural schools and libraries; and (3) if the Commission proceeds with any screen-time-related conditions on E-Rate funding, ground those conditions in the content and instructional structure of screen use rather than in undifferentiated, per-day time limits.",
+      "evidence_start": 11380,
+      "evidence_end": 11971,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "preserve E-Rate program",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Continuing support is essential to maintain connectivity and safety measures for schools and libraries",
+      "evidence_quote": "First, connectivity is not a one-time achievement but a recurring cost. Bandwidth needs grow every year as schools adopt adaptive learning platforms, online assessments, and AI-enabled instructional tools. Internal connections, wireless access points, and cybersecurity protections must be periodically replaced and upgraded. A school that achieved adequate connectivity in 2020 does not necessarily have adequate connectivity in 2026, and will not have adequate connectivity in 2030 without continued support. The statute's \"evolving level\" standard, 47 U.S.C. § 254(c)(1), was designed precisely to keep pace with this kind of change; it should not be read as a one-way ratchet toward elimination simply because the current baseline has been met.",
+      "evidence_start": 1970,
+      "evidence_end": 2718,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "education_outcomes": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 1,
+  "submission_id": "26109999174",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26109999174",
+  "filer_raw": "Kris Coleman",
+  "date_submission": "2026-07-07T22:58:09.426Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9962cb26ae7e18272bbf074a9bd335db55f582bd25b4fe4b65c3e95c74a5f093",
+  "params_key": "72a4dccb0e55fd07485ff6fa0d798a069564b17e8edf0ab7652760a2e89c68e6",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 3,
+  "source_windows_model_analyzed": 3
+}

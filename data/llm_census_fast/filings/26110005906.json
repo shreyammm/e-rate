@@ -1,0 +1,37 @@
+{
+  "summary": "CTO discusses budget impact of E-Rate changes on teacher salaries and infrastructure costs, emphasizing teacher quality as the priority for student success. The FCC's proposed NPRM raises concerns about the cost and impact of implementing new requirements on E-Rate, such as extending CIPA to personal devices and implementing daily screen-time limits, which could lead to instructional cuts and administrative burdens for school districts. The comment expresses concerns about the impact of proposed E-Rate changes on schools and districts, including the potential for increased costs and reduced funding for broadband infrastructure. The comment argues that the current funding model is already under pressure from various mandates and that further reductions could further strain resources. The comment urges the FCC to preserve E-Rate funding to protect the program's ability to provide broadband access and support, rather than imposing new requirements that could reduce the program's capacity.",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would force districts to choose between firewalls and teachers, leading to instructional quality issues.",
+      "evidence_quote": "The Commission would, in effect, be asking districts to choose between their firewalls and their teachers, and that choice falls directly on the instructional quality that best answers the concern at the center of this proceeding.",
+      "evidence_start": 3625,
+      "evidence_end": 3855,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110005906",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110005906",
+  "filer_raw": "Scott C. Buller",
+  "date_submission": "2026-07-10T00:26:40.709Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "097b5dc87ea6d9860256cc535e8908b97985a596a53f63ebb88dbf260b96f2ff",
+  "params_key": "83544f7640b715a7b1c1d89fe3dc50f17fcf2524f7b887c65d7eef8963614c8b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 4,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "full_text",
+  "source_windows_total": 4,
+  "source_windows_model_analyzed": 4
+}
