@@ -1,0 +1,37 @@
+{
+  "summary": "The comments oppose limiting or sunsetting E-Rate programs, citing statutory authority and legal standing. The FCC's request to scrutinize evidence challenging its RF exposure rules is criticized for demanding a higher evidentiary standard than the evidence used to establish the rules, and for failing to consider the scientific basis for the rules themselves. The comment cites the FCC and ICNIRP exposure limits for RFR, stating they were established based on behavioral studies in rats and monkeys and have been maintained for 26 years. The comment raises concerns about the potential impact of extending CIPA to third-party-owned devices on privacy and educational outcomes, citing evidence from the ICBE-EMF report and the NTP study. The comment discusses the FCC's and ICNIRP's reliance on scientific evidence to establish exposure limits for RFR, highlighting the limitations of existing studies and the need for further research. It also mentions the potential for non-thermal effects of RFR at lower exposure intensities and the importance of public awareness and education about the risks associated with RFR exposure. The text discusses various aspects of electromagnetic radiation and its effects on human health, including the impact of different frequencies on the human body. It also ",
+  "stakeholder_role": "advocacy_group",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should not limit or sunset E-Rate programs",
+      "evidence_quote": "To the FEDERAL COMMUNICATIONS COMMISSION in In the Matter of ET Docket No. 13-84",
+      "evidence_start": 106,
+      "evidence_end": 186,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110079300",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079300",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-05T08:06:41.381Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "99e4f09d663ce3127bcc1784b2d6c0adde13d27e1f09d63237b398dbe3e99171",
+  "params_key": "aec960cb96649a5e21fe07aefe8b41270c77114beac6f678cf89ef33fb77db83",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 51,
+  "source_windows_model_analyzed": 6
+}

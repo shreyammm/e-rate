@@ -1,15 +1,22 @@
 {
+  "summary": "The text presents a discussion on the relationship between mobile phone usage and brain cancer risk, highlighting the findings of various epidemiological studies. It emphasizes the importance of user privacy and control over their devices, and argues against extending CIPA to third-party-owned devices. Cite external evidence",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 2,
   "submission_id": "26110080241",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080241",
+  "filer_raw": "Kevin Mottus | Outreach Director, CA Brain Tumor Assn",
+  "date_submission": "2026-10-09T15:08:08.353Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b4028d5c28b00c866d9b3904e1134db19de00b4f6b4e2bbec3d4df155ab00365",
   "params_key": "02bef0801285a96cdae3c0759d64622d40f86c004c9cc0e20a88557d9a0bdccb",
-  "status": "partial",
-  "parts": [
-    {
-      "summary": "The text presents a discussion on the relationship between mobile phone usage and brain cancer risk, highlighting the findings of various epidemiological studies. It emphasizes the importance of user privacy and control over their devices, and argues against extending CIPA to third-party-owned devices.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    }
-  ],
-  "next_chunk": 1
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 2,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 39,
+  "source_windows_model_analyzed": 2
 }

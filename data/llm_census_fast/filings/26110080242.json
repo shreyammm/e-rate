@@ -1,15 +1,37 @@
 {
-  "submission_id": "26110080242",
-  "params_key": "442717a27736500e2485fe373af930231d178f8a499ce53d1d388fef272680f5",
-  "status": "partial",
-  "parts": [
+  "summary": "The text presents a discussion on the relationship between mobile phone usage and brain cancer risk, highlighting the findings of various epidemiological studies. It emphasizes the importance of user privacy and control over their devices, and argues against extending CIPA to third-party-owned devices. Cite external evidence The study examines the impact of mobile phone use on glioma risk, finding no significant link between glioma and mobile phone use. The study population includes 1,521 cases and 3,301 controls, with demographic characteristics and mobile phone usage details provided. The results show that regular mobile phone use is associated with a lower odds ratio for glioma, with no significant heterogeneity across countries. The study concludes with a discussion of the implications of mobile phone use on hea",
+  "stakeholder_role": "researcher",
+  "claims": [
     {
-      "summary": "The text presents a discussion on the relationship between mobile phone usage and brain cancer risk, highlighting the findings of various epidemiological studies. It emphasizes the importance of user privacy and control over their devices, and argues against extending CIPA to third-party-owned devices.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "Legal authority to sunset E-Rate programs",
+      "evidence_quote": "itish Columbia, Wiley Online Library on [07/10/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License",
+      "evidence_start": 42169,
+      "evidence_end": 42416,
+      "uncertain": false
     }
   ],
-  "next_chunk": 1
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 2,
+  "submission_id": "26110080242",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080242",
+  "filer_raw": "Kevin Mottus | Outreach Director, CA Brain Tumor Assn",
+  "date_submission": "2026-10-09T15:09:42.221Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "87b7849be1a08c7c4e8c9ec947335b66fd889ae8c877ac02c57595ca539aa99e",
+  "params_key": "442717a27736500e2485fe373af930231d178f8a499ce53d1d388fef272680f5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 3,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 41,
+  "source_windows_model_analyzed": 3
 }
