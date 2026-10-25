@@ -1,0 +1,37 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's RF exposure rules. The comment opposes sunsetting E-Rate without justification, citing the lack of EPA health-risk assessment and the FCC's reliance on outdated research. The FCC's RFR exposure limits have been maintained for 26 years, but the current limits are flawed and do not adequately protect human and environmental health. The comment opposes limiting or sunsetting E-Rate funding for its statutory authority and potential impact on broadband access and competition. The comment opposes limiting or sunsetting E-Rate, citing the need for adequate health data on 5G radiation exposure. The comment opposes limiting or sunsetting the E-Rate program, citing statutory authority to provide broadband access to schools and libraries.",
+  "stakeholder_role": "government",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110079794",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079794",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-07T15:29:39.499Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "9da6b3f55653282d90c182c85bdbf045c4bae1b43dfcd24d52dcaed9dcff6cbc",
+  "params_key": "5e01d53c1833e4be57976656b125d32c49e950bb9d04ad8968a9d6b0f3dc3beb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 50,
+  "source_windows_model_analyzed": 6
+}
