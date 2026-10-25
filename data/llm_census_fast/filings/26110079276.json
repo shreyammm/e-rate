@@ -1,0 +1,49 @@
+{
+  "summary": "The FCC comment argues against narrowing the eligibility scope of E-Rate services, emphasizing the importance of broad coverage for schools and libraries. The comment cites the National Broadband Plan (NBP) to support the claim that near-universal connectivity was reported in 2010, and urges the FCC to redefine the service level based on actual needs rather than relying on outdated metrics. The FCC comments argue against limiting or sunsetting the E-Rate program, emphasizing the importance of maintaining the current eligibility criteria and infrastructure support for schools and libraries. The commenter, who previously served as the Director of Education at the FCC, provides a background on the program and its implementation under the National Broadband Plan. The main concern is that narrowing or ending E-Rate would impede educational progress and increase costs for schools and lib The FCC comment argues against sunsetting the E-Rate program, citing cost implications and budget constraints. The comment also discusses the need for network-boundary security and the potential impact on school budgets. The comment identifies several specific provisions that could be affected by the proposed changes, including eligibility scope, cost and service level, and the role of the Commission i",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would lead to budget shortfalls and cost savings",
+      "evidence_quote": "The cost objection in the record prices something broader than what I propose. When GAO examined this question, Commission officials pointed to an estimate that providing all K-12 schools with advanced security services would cost $2.389 billion annually, against a program funding allocation then estimated at $3.15 billion.",
+      "evidence_start": 31943,
+      "evidence_end": 32268,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "support",
+      "requested_action": "Maintain E-Rate program",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "alternative_design",
+      "argument": "The connectivity statistic has not changed much since 2010, and the program needs to be updated and strengthened",
+      "evidence_quote": "The Commission told Congress in 2010 that internet access was nearly universal in the nation's schools and libraries, and in the same passage it said the program needed to be updated and strengthened. The connectivity statistic has not changed much since then. What schools and libraries require has changed, and the statistic was never designed to measure it.",
+      "evidence_start": 70657,
+      "evidence_end": 71017,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "conflicting_or_multiple"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110079276",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079276",
+  "filer_raw": "Stephen Midgley",
+  "date_submission": "2026-10-05T01:31:21.426Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8987d6058ffa46f690798f69f5e843b4d97754839163fd560fb6e04d3f3c00c4",
+  "params_key": "008461a18a76110a4553d40a9018f7a1a7fede32fe53818cdfcee73e65353255",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 39,
+  "source_windows_model_analyzed": 6
+}

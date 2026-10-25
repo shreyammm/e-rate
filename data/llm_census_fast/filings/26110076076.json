@@ -1,0 +1,37 @@
+{
+  "summary": "The comment opposes limiting or sunsetting the E-Rate program, emphasizing its importance for libraries and schools in Alabama, particularly in rural areas. The comment highlights the program's role in providing affordable internet access and the potential negative impact on residents, especially those in economically disadvantaged areas. The comment also mentions the current eligibility and usage of the program, with a significant portion of libraries and students receiving discounts or free se The comment opposes limiting or sunsetting E-Rate funding, citing statutory authority as the reason. The text provides data on Free Reduced Percentage (FRP) for various schools in Alabama for the school year 2025-2026. It includes information on school types, student counts, and FRP percentages. The data is sourced from the Alabama Department of Education's ACES system and prepared by IS/ET&SF. The comment opposes sunset provisions for E-Rate funding The text presents data on E-Rate eligibility percentages for various schools in Alabama, including student counts and free/reduced lunch percentages. It does not contain explicit policy claims about E-Rate itself. The text provides data on free/reduced percentage rates for schools in Alabama for the school year 2025-2026. It includes informat",
+  "stakeholder_role": "school_district",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "Limiting or sunsetting E-Rate would violate statutory authority",
+      "evidence_quote": "entary School\n86.82%",
+      "evidence_start": 7519,
+      "evidence_end": 7539,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110076076",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110076076",
+  "filer_raw": "ALABAMA PUBLIC LIBRARY SERVICE",
+  "date_submission": "2026-09-09T17:39:10.655Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6cea5b16a13d28c1f7a871359a11c034dd5bc27f0f8b1b0904b35d2af4fb7d62",
+  "params_key": "40834574653a1c11006fc0202555053d3b1c681a6a0b3bab34eea3fb5c8e3aae",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 48,
+  "source_windows_model_analyzed": 6
+}
