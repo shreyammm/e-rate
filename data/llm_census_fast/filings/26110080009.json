@@ -1,36 +1,37 @@
 {
-  "submission_id": "26110080009",
-  "params_key": "7742513c9b6da001151f55d07980804ffdc8c01db923ec262df20eb378577497",
-  "status": "partial",
-  "parts": [
+  "summary": "The Maine State Library emphasizes the critical importance of the E-Rate program for its libraries and communities. The Maine State Library opposes sunsetting the E-Rate program, emphasizing its essential role in sustaining library connectivity and its future dependency on the program's longevity. The Maine State Library opposes limiting or sunsetting E-Rate, arguing it would violate statutory authority and precedent established by the Commission. The library cautions the Commission to base decisions on assumptions about local resources and the need for the program to ensure sustained access to advanced telecommunications services. The comments highlight concerns about the impact of excessive screen time on children and the need for responsible technology use in education. The Maine State Library emphasizes the importance of parental input and professional development for library staff. The comments call for a collaborative approach between the FCC, DOE, and other relevant agencies to address the issue of excessive screentime use by young people before technology is implemented in schools or libraries. The Maine State Library opposes limiting or sunsetting the E-Rate program, arguing that the statutory language clearly requires libraries and schools to filter visual images and no",
+  "stakeholder_role": "school_district",
+  "claims": [
     {
-      "summary": "The Maine State Library emphasizes the critical importance of the E-Rate program for its libraries and communities.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The Maine State Library opposes sunsetting the E-Rate program, emphasizing its essential role in sustaining library connectivity and its future dependency on the program's longevity.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The Maine State Library opposes limiting or sunsetting E-Rate, arguing it would violate statutory authority and precedent established by the Commission. The library cautions the Commission to base decisions on assumptions about local resources and the need for the program to ensure sustained access to advanced telecommunications services.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comments highlight concerns about the impact of excessive screen time on children and the need for responsible technology use in education. The Maine State Library emphasizes the importance of parental input and professional development for library staff. The comments call for a collaborative approach between the FCC, DOE, and other relevant agencies to address the issue of excessive screentime use by young people before technology is implemented in schools or libraries.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The statute clearly requires libraries and schools to filter visual images and not text, making it out of scope for the Commission to modify requirements",
+      "evidence_quote": "Simply put, it is out of scope of the statutory language.",
+      "evidence_start": 30796,
+      "evidence_end": 30853,
+      "uncertain": false
     }
   ],
-  "next_chunk": 4
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110080009",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080009",
+  "filer_raw": "Maine State Library",
+  "date_submission": "2026-10-08T12:26:12.020Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "17e497569e68d5f508b388b878a447f4db646d94187786bd29e23ba5f1789910",
+  "params_key": "7742513c9b6da001151f55d07980804ffdc8c01db923ec262df20eb378577497",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 9,
+  "source_windows_model_analyzed": 5
 }
