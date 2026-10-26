@@ -1,0 +1,49 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's regulatory framework. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. The comment cites the FCC and ICNIRP exposure limits for RFR, stating they were established based on behavioral studies in rats and monkeys and have been maintained for 26 years. The comment raises concerns about the potential impact of extending CIPA to third-party-owned devices on privacy and educational outcomes, citing evidence from the ICBE-EMF report and the NTP study. The text discusses the expansion of the EMC National Voluntary Laboratory Accreditation Program (NVLAP) and the FCC's amendments to the Measurement Methods for RF Emissions from Computing Devices (MP-4). The text highlights concerns from industry experts about the potential privatization of the EMC LAP and the FCC's changes to MP-4, which some argue go beyond the threshold for rulemaking. The text also mentions the F",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "Limiting or sunsetting E-Rate would violate statutory authority",
+      "evidence_quote": "dealing with electromagnetic interference @MI) \nproblems.",
+      "evidence_start": 177905,
+      "evidence_end": 177962,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110079355",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079355",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-05T13:16:57.392Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "6e4d583aa6df3ea71c7a07295028911cc29731d398ac97fbcbd8dcdbe00da677",
+  "params_key": "6a2b0524e83ada9649337900a470701829bbfad2c71c686c168b8c10787f08c1",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 64,
+  "source_windows_model_analyzed": 6
+}

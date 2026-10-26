@@ -1,0 +1,49 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the program's implementation and funding. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. The comment cites the FCC and ICNIRP exposure limits for RFR, stating they were established based on behavioral studies in rats and monkeys and have been maintained for 26 years. The text cites external evidence from ICNIRP and FCC recommendations regarding the definition of psSAR, noting that ICNIRP recommends 10 g-psSAR while the FCC recommends 1 g-psSAR. This provides a basis for evaluating the adequacy of current recommendations for RF radiation dosimetry at frequencies above 1 GHz. The DER's Buck Oven told MicrowaveNews that the FCC and Commerce Department are seeking EPA RF/MW rules to establish federal standards for public exposures to radiofrequency and microwave (RFFrw) radiation. The FCC has expressed its disappointment that the EPA will not issue RF/MW limits and has",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure",
+      "evidence_quote": "Since at this point, wecan't say whatlevels are safe, the \nstandards are set on what is technologically achievable.",
+      "evidence_start": 169343,
+      "evidence_end": 169458,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110079391",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079391",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-05T14:35:49.985Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "8e6bc4c818dca67ba989893e297b543cf0e41d1b7027e974abdfe7e63aee9d80",
+  "params_key": "1d7b9506439b8a2f4744346a77e6c0d314a8f09f65b0b087e130e00a81c34473",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 63,
+  "source_windows_model_analyzed": 6
+}
