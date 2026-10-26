@@ -1,0 +1,50 @@
+{
+  "summary": "The FCC is proposing to improve the E-Rate program and ensure its use for educational purposes, including seeking comment on measures to better protect children and streamline program administration. The Notice of Proposed Rulemaking would propose narrowing or reorienting the program to meet intended policy goals, while the Further Notice of Proposed Rulemaking would propose actions to strengthen program integrity and streamline administrative processes. The document emphasizes the importance of The FCC is proposing rule changes to modernize the E-Rate program, including proposals to limit or sunset E-Rate funding. The comments indicate opposition to such actions, citing concerns about budget cost efficiency and the need for affordable broadband access. The FCC proposes several measures to improve oversight and implementation of the E-Rate program, including defining a consultant, requiring annual certifications and disclosures, creating a registration system, and amending rules regarding consultant fees and document retention. The proposal aims to address potential conflicts of interest and ensure compliance with program requirements. The FCC proposes creating a database to register E-Rate consultants, which would create an administrative burden and potential point of failure. T",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "consultant_definition",
+      "position": "support",
+      "requested_action": "Require USAC to verify consultant identities",
+      "reason_family": "privacy_free_expression",
+      "claim_kind": "legal_claim",
+      "argument": "Require USAC to verify consultant identities",
+      "evidence_quote": "d to verify the identities of individual consultants.",
+      "evidence_start": 164600,
+      "evidence_end": 164653,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "other",
+      "argument": "The comment opposes limiting or sunsetting the E-Rate program.",
+      "evidence_quote": "modify “four weeks” to 28 days in the rule, consistent \nwith longstanding program outreach materials.",
+      "evidence_start": 184791,
+      "evidence_end": 184892,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "consultant_definition": "support",
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "10604181893494",
+  "source_url": "https://www.fcc.gov/ecfs/filing/10604181893494",
+  "filer_raw": "Office of Media Relations",
+  "date_submission": "2026-06-04T17:00:00.000Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "a6f36e5d3edd2caaa45c6da6d1ba1a70c2b409a2e9f4fc8b2d8c7f4ea032d8d8",
+  "params_key": "15134c77f13516a6faf7d8dd1515a6d566a6d79ef6413388d544d53581d40471",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 75,
+  "source_windows_model_analyzed": 6
+}

@@ -1,0 +1,37 @@
+{
+  "summary": "The FCC proposes to limit or sunset the E-Rate program, which would reduce funding for broadband access in schools and libraries. This is a cost-saving measure that could negatively impact access to high-speed internet for students and library patrons. The FCC proposes to delete the Emergency Connectivity Fund program rules, which would eliminate funding for the E-Rate program and reduce overall costs. The proposed rule deletion is driven by budget considerations. The FCC proposes a comprehensive definition of a consultant for the E-Rate program, including non-employees of the applicant or service provider, to clarify roles in program participation and oversight. The FCC proposes creating a database for E-Rate consultant registration to increase transparency and prevent fraud. The FCC proposal to require individual consultant registration numbers raises privacy concerns and could compromise the security of the data collected. The comment supports tying E-Rate decisions to educational outcomes to ensure that funding supports educational goals.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Delete Emergency Connectivity Fund program rules",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposed rule deletion would eliminate funding for the program, reducing the overall cost of the E-Rate program.",
+      "evidence_quote": "V. PROCEDURAL MATTERS.................................................................................................................92\nVI. ORDERING CLAUSES........................................................................................................................99\nAPPENDIX A—Proposed Rules\nAPPENDIX B—Initial Regulatory Flexibility Analysis\nI.",
+      "evidence_start": 3342,
+      "evidence_end": 3701,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "1062673972746",
+  "source_url": "https://www.fcc.gov/ecfs/filing/1062673972746",
+  "filer_raw": "Wireline Competition Bureau",
+  "date_submission": "2026-06-26T17:00:00.000Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "1",
+  "source_sha256": "13c9f182f51305b3937923577cfd12315381557dd0f1daca418f20596e4140cc",
+  "params_key": "64f9aafe6ab88d15c6491492457081305b47784ebd675dfcf20625ba96180bb5",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 6,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 95,
+  "source_windows_model_analyzed": 6
+}
