@@ -1,29 +1,22 @@
 {
+  "summary": "The Digital Childhood Council examines the implications of generative AI systems on student privacy and supervision in schools. The comments argue that the system should not automatically limit screen time for students unless explicitly allowed by the school. The comment opposes sunset provisions for E-Rate funding and raises concerns about accountability and liability for AI-generated content in educational settings. The FCC comment opposes extending CIPA to third-party-owned devices, arguing it would undermine parental control over student devices and content. The FCC comment raises concerns about the potential impact of limiting or sunsetting E-Rate funding on broadband access in schools and libraries, citing budgetary considerations and cost savings.",
+  "stakeholder_role": "unknown",
+  "claims": [],
+  "positions": {},
+  "invalid_claims_rejected": 5,
   "submission_id": "26110080687",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080687",
+  "filer_raw": "Digital Childhood Council",
+  "date_submission": "2026-10-12T19:31:24.275Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "1fdbb4a006483fef6320eb8a008a3f119a49d7ebcd29a2557a4ff5baba6b74a4",
   "params_key": "fcdd8aaa6401b95937bf4f8255ee9a10e47644e6d287583d9ff17f3a4bf3c07c",
-  "status": "partial",
-  "parts": [
-    {
-      "summary": "The Digital Childhood Council examines the implications of generative AI systems on student privacy and supervision in schools.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comments argue that the system should not automatically limit screen time for students unless explicitly allowed by the school.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The comment opposes sunset provisions for E-Rate funding and raises concerns about accountability and liability for AI-generated content in educational settings.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    }
-  ],
-  "next_chunk": 3
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 601,
+  "source_windows_model_analyzed": 5
 }

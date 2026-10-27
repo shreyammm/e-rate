@@ -1,49 +1,37 @@
 {
-  "submission_id": "26110080565",
-  "params_key": "309ef3024647e0a61e116f655ef0e4368ef4dde166434452771fd3e690e99f2e",
-  "status": "partial",
-  "parts": [
+  "summary": "The study discusses the health impacts of 5G technology, including potential carcinogenic and reproductive effects, and recommends limiting or sunsetting E-Rate funding for research on these issues. The document discusses the role of the European Parliament in conducting a scoping review on the potential adverse effects of various electromagnetic fields on human health, including the effects on fertility and fetal development. The document acknowledges the need for further research and the contributions of various experts in the field. The document also provides information on the responsibilities of the Scientific Foresight Unit and the European Parliament in managing the review process. T The review discusses the assessment of individual studies on the effects of 5G frequencies on cancer and reproductive development. It includes epidemiological studies, experimental animal studies, and overall evaluations. The review concludes with a discussion on the implications of lower and higher frequency ranges for cancer and other health effects. The comment raises concerns about the potential health impacts of 5G technology on sperm quality, suggesting a need to consider these factors when evaluating E-Rate programs. Brief",
+  "stakeholder_role": "researcher",
+  "claims": [
     {
-      "summary": "The study discusses the health impacts of 5G technology, including potential carcinogenic and reproductive effects, and recommends limiting or sunsetting E-Rate funding for research on these issues.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The document discusses the role of the European Parliament in conducting a scoping review on the potential adverse effects of various electromagnetic fields on human health, including the effects on fertility and fetal development. The document acknowledges the need for further research and the contributions of various experts in the field. The document also provides information on the responsibilities of the Scientific Foresight Unit and the European Parliament in managing the review process. T",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
-    },
-    {
-      "summary": "The review discusses the assessment of individual studies on the effects of 5G frequencies on cancer and reproductive development. It includes epidemiological studies, experimental animal studies, and overall evaluations. The review concludes with a discussion on the implications of lower and higher frequency ranges for cancer and other health effects.",
-      "stakeholder_role": "researcher",
-      "stakeholder_quote": "STOA | Panel for the Future of Science and Technology",
-      "claims": [
-        {
-          "provision_id": "erate_sunset",
-          "position": "oppose",
-          "requested_action": "Limit or sunset E-Rate",
-          "reason_family": "budget_cost_efficiency",
-          "claim_kind": "cost_or_savings",
-          "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services",
-          "evidence_quote": "the present review _______________________________________________ 21",
-          "evidence_start": 25988,
-          "evidence_end": 26057,
-          "uncertain": false
-        }
-      ],
-      "invalid_claims_rejected": 0
-    },
-    {
-      "summary": "The comment raises concerns about the potential health impacts of 5G technology on sperm quality, suggesting a need to consider these factors when evaluating E-Rate programs.",
-      "stakeholder_role": "unknown",
-      "stakeholder_quote": "",
-      "claims": [],
-      "invalid_claims_rejected": 1
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services",
+      "evidence_quote": "the present review _______________________________________________ 21",
+      "evidence_start": 25988,
+      "evidence_end": 26057,
+      "uncertain": false
     }
   ],
-  "next_chunk": 4
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110080565",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110080565",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-12T09:57:12.071Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b74072f10629b42c2aa9b0be1f7d59397b9b71e13cb60adde05377ca50f0517c",
+  "params_key": "309ef3024647e0a61e116f655ef0e4368ef4dde166434452771fd3e690e99f2e",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 218,
+  "source_windows_model_analyzed": 5
 }
