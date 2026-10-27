@@ -1,0 +1,37 @@
+{
+  "summary": "The Environmental Health Trust (EHT) opposes limiting or sunsetting E-Rate, arguing that it could lead to increased costs for schools and libraries. The comment opposes limiting or sunsetting E-Rate, arguing that it could lead to increased costs for schools and libraries in the long run due to the need for alternative funding sources. The text presents concerns about outdated FCC radiation standards and recommends that the Department of Justice (DOJ) inquire on the progress of the FCC to ensure it fulfills a court order related to updating those standards. The comment raises concerns about the adequacy of NEPA reviews for E-Rate programs and recommends ensuring that the FCC follows NEPA rules for other government programs. It also emphasizes the need for a comprehensive registry of all wireless transmitting infrastructure and continuous monitoring of RF exposure sources. The comment highlights the importance of ensuring that the government relies on industry to measure and police itself in conducting emission testing, as this has proven inadequate The comment opposes limiting or sunsetting E-Rate to save costs and improve budget efficiency.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "Limiting or sunsetting E-Rate would reduce funding for broadband infrastructure and services.",
+      "evidence_quote": "binello, D., Joseph, W., Verloock, L., Martens, L., & Röösli, M.\n(2014). Temporal trends of radio-frequency electromagnetic field (RF-EMF) exposure in everyday environments across\nEuropean cities. Environmental Research, 134, 134–142.",
+      "evidence_start": 32579,
+      "evidence_end": 32813,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 5,
+  "submission_id": "26110081475",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110081475",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-14T06:51:13.231Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "c5c7ffc664cd7f431c7b48a88418af3bfe4f5c85a8bf9789611d20cd9d9cf5a4",
+  "params_key": "0368d7090237acb6d0349d8bae2e5fd27d06366a92d2e807169aa001f506d6fb",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 224,
+  "source_windows_model_analyzed": 5
+}

@@ -1,0 +1,49 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's RF exposure rules. The comment opposes sunsetting E-Rate without justification, citing the lack of EPA health-risk assessment and the FCC's reliance on outdated research. The FCC's RFR exposure limits have been maintained for 26 years, but the current limits are flawed and do not adequately protect human and environmental health. Brief The report emphasizes the need for better information on cell phone risks, suggesting that limiting or sunsetting E-Rate could lead to a lack of funding for broadband services.",
+  "stakeholder_role": "government",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The report highlights the need for better information on cell phone risks, indicating that limiting or sunsetting E-Rate could lead to a lack of funding for broadband services.",
+      "evidence_quote": "bias has influenced\nits choice of projects. She recommends that the Commonwealth\nCongress Told Public Needs\nBetter Info on Cell Phone Risks\nFederal agencies are not doing enough to help consumers make\ninformed choices about the health impacts of mobile phones,",
+      "evidence_start": 304691,
+      "evidence_end": 304951,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110079527",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079527",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-06T02:12:32.456Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "abebadb05af18510d88ce4d22822db3a44251a11043b59f0dacc435c3a3d8f09",
+  "params_key": "b35857bdb53061f3dd648e0bad857d636218795f0f6e3079ce5636818aa39b0a",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 179,
+  "source_windows_model_analyzed": 5
+}
