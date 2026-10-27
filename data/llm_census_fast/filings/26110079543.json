@@ -1,0 +1,49 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the program's implementation and funding. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. Evidence of unaddressed biological effects at low power densities from Soviet studies and U.S. research efforts. The comment opposes limiting or sunsetting E-Rate funding. brief",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The comment opposes limiting or sunsetting E-Rate funding.",
+      "evidence_quote": "ld do so himself, in conjunction with Sir\nRichard Doll, the chair of the NRPB Advisory Group on Non-\ncy (EPA) each has its own public and occupational exposure\nguidelines (see table on p.9). Chiang said that she expects the\ntwo standards to be “harmonized in a few years.",
+      "evidence_start": 1287498,
+      "evidence_end": 1287769,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110079543",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079543",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-06T07:53:24.004Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "f51a1298ede192f7b941cff57697a35be2b0d4bbcea434130da0d01b7b6cdb4c",
+  "params_key": "74d8d60c64275b79f0a38785b34503dab293be06c65f3f21d04d817a83125c0b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 360,
+  "source_windows_model_analyzed": 5
+}

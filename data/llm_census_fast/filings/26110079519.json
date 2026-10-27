@@ -1,0 +1,37 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's regulatory framework. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. No clear claims extracted from the FCC comment text. The comments cite external evidence from industry experts and advocacy groups supporting the adoption of ANSI standards over NCRP guidelines. The comments emphasize the importance of continued research into the effects of electric and magnetic fields, as the U.S. government should lead the effort. The comments argue that without government funding, other countries may not be able to provide the necessary unbiased research. The comments also warn against imposing international standards before adequate scientific knowledge is available, as this could lead to extensive costs for the energy and communications industries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110079519",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079519",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-06T01:26:26.787Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "965572f5ea4ac68bb1ccb6003b71cd73ce4e2c8d6148832bd14dfa51f08a554e",
+  "params_key": "34ac2eb5c6540fb4ac8a2f0500d890085a51cf84b7569cdb9bdb0dfeae0ff008",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 209,
+  "source_windows_model_analyzed": 5
+}

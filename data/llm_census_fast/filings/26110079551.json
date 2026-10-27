@@ -1,0 +1,37 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's regulatory framework. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. The FCC's proposed rule to sunset the E-Rate program was opposed by the FCC due to the preliminary stages of standard development by various federal agencies and the views of scientists regarding radiation hazards. The FCC felt it was premature to adopt the rule at this time. The text discusses the FCC's compliance with NEPA requirements when renewing licenses for facilities and modifications. It cites NEPA case law and regulations to support the claim that license renewal and facility modification applications should be included within NEPA environmental processing guidelines. The FCC is expected to follow these guidelines to avoid unnecessary burdens on the Commission and applicants. The comments argue against limiting or sunsetting E-Rate funding",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110079551",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079551",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-06T10:21:16.770Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "df5b5c037be81c5464908a52a0bd155dd088f6356d2af5be9b6d58f9fa7506e4",
+  "params_key": "89828a6cccc33a576a95c28b4bc109450eaf3bf9cad8d5b32a0792d5384bbf20",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 884,
+  "source_windows_model_analyzed": 5
+}

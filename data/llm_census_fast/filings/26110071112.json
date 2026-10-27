@@ -1,0 +1,37 @@
+{
+  "summary": "No claims extracted from the FCC E-Rate comment. The comment opposes limiting or sunsetting the E-Rate program, citing its statutory authority and fixed funding level. The text discusses concerns about the influence of industry on government policies related to non-ionizing radiation and wireless radiation. It highlights instances where researchers and advisory bodies have faced conflicts of interest due to industry affiliations, leading to biased or compromised decisions. The text also mentions the need for independent regulatory bodies and the potential conflicts of interest in government advisory agencies when they have ties to industry or receive funding f The claim challenges the independence of risk assessment processes by highlighting industry influence and conflicts of interest in risk analysis methodologies. The comments from industry stakeholders highlight concerns about the proposed E-Rate changes, including the potential impact on funding, eligibility, and competition. The comments emphasize the need to maintain or expand E-Rate programs to ensure affordable and reliable broadband access for schools and libraries.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "equity_access",
+      "argument": "Narrowing eligibility could exclude essential services for low-income schools",
+      "evidence_quote": "207 Slesin, ‘Industry Urges FCC Adoption…’, 1994.",
+      "evidence_start": 652582,
+      "evidence_end": 652631,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_eligibility_scope": "oppose"
+  },
+  "invalid_claims_rejected": 7,
+  "submission_id": "26110071112",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071112",
+  "filer_raw": "Theodora Scarato",
+  "date_submission": "2026-08-13T19:27:41.324Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "24bb46dae5d62fbef5d812562f77933825e14c734124151c03a5aabc075a152c",
+  "params_key": "2127998850e4777c39cb032dfb728da95bc0858183ca6f2044bc843f452d281b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 507,
+  "source_windows_model_analyzed": 5
+}

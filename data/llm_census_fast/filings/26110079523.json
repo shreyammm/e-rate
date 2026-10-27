@@ -1,0 +1,37 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's regulatory framework. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. The comment cites the FCC and ICNIRP exposure limits for RFR, stating they were established based on behavioral studies in rats and monkeys and have been maintained for 26 years. The text cites external evidence from ICNIRP and FCC recommendations regarding the definition of psSAR, noting that ICNIRP recommends 10 g-psSAR while the FCC recommends 1 g-psSAR. This provides a basis for evaluating the adequacy of current recommendations for RF radiation dosimetry at frequencies above 1 GHz. The comment opposes sunset clauses for E-Rate funding and supports harmonizing existing standards with international guidelines.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110079523",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079523",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-06T01:55:42.725Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "5522f0ca0073b2eff99a3f8cf5a0a3a6c41fdd220c1afacfcc43bb7c360c7558",
+  "params_key": "11f3e0a69fb3d81888000dad58f6d0e434665937c211d092dfd285cdc21c5e07",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 211,
+  "source_windows_model_analyzed": 5
+}

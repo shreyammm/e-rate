@@ -1,0 +1,49 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's regulatory framework. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. The text expresses opposition to limiting or sunsetting the E-Rate program, arguing that it would reduce funding for broadband infrastructure and services and potentially undermine the credibility of EPRI's research. The text also recommends allowing appropriate federal agencies to participate in the review of E-Rate research and funding. The FCC is considering proposals to sunset E-Rate rules, which would eliminate funding for broadband infrastructure. The American Radio Relay League and CTIA oppose this proposal, arguing that it would have significant cost implications and undermine competition in the broadband market. CTIA supports the adoption of the 1992 ANSI/IEEE standard, which they believe is scientifically based and provides a basis for safe use of radio products. The CTIA belie",
+  "stakeholder_role": "government",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Terminate the proposed sunset of E-Rate rules",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The proposed sunset would eliminate funding for broadband infrastructure",
+      "evidence_quote": "mission would reach a de-\ncision on whether to issue final rules or to seek additional public \ncomments would probably be by the end of the calendar year.",
+      "evidence_start": 2448827,
+      "evidence_end": 2448981,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 3,
+  "submission_id": "26110079539",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079539",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-06T06:28:32.722Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "191860cd5a7cc910f7f042f0bc385a1764359b5b3020a6eb48976d88e09e6d74",
+  "params_key": "d5d5fa2bed5a012a314cd8b09a890adf1cd8c898a282f376ee56e98a8d316143",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 720,
+  "source_windows_model_analyzed": 5
+}

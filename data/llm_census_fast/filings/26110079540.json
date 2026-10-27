@@ -1,0 +1,37 @@
+{
+  "summary": "The comments argue against sunsetting or limiting the E-Rate program, emphasizing the need for transparency and evidence-based decision-making in the FCC's regulatory framework. The comment raises concerns about the FCC's reliance on outdated research and the defunding of EPA before a comprehensive health-risk assessment could be completed. It argues that the FCC should not simply sunset E-Rate policies without considering the historical context and the need for rigorous evidence-based standards. The FCC is attempting to pressure local authorities to require environmental impact assessments for new antenna sites, citing radiation concerns. This represents an opposition to the E-Rate program's role in broadband infrastructure. The comment raises concerns about the potential impact of tying E-Rate decisions to educational outcomes, suggesting that this could have unintended consequences on the program's effectiveness and flexibility. The text presents arguments against the FCC's decision to limit or sunset E-Rate programs, citing critics' concerns about the FCC's lack of expertise in public health and its flawed science review process for RF/MW rules.",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_quote": "The FCC should hold a mirror to the evidence on which its RF rules were built",
+      "evidence_start": 2009,
+      "evidence_end": 2086,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "erate_sunset": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110079540",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110079540",
+  "filer_raw": "Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences",
+  "date_submission": "2026-10-06T06:42:18.993Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "3ef967235365f0cd0e6e6c0e05177ac8231487f24e38e7d8eca39950933c3431",
+  "params_key": "eabefa1dd8c5dfe3ac128926faa9df07b06190d8a036fbc69d80db4fddb6b5c7",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 757,
+  "source_windows_model_analyzed": 5
+}

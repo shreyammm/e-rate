@@ -1,0 +1,89 @@
+{
+  "summary": "The FCC article discusses concerns about the safety of 5G technology, specifically regarding exposure levels and health effects. It cites a study by Prof. Röösli that claims 5G would not necessarily increase exposure, is safe, and has no health effects. The article argues that these statements are misleading and incomplete, and that the actual impact of 5G deployment on public exposure is unknown and potentially harmful. The comment raises concerns about the FCC's reliance on unverified claims about the safety of 5G technologies and suggests that the FCC should not rely on such claims when making decisions about E-Rate funding. brief The comment opposes various provisions related to E-Rate, including sunset provisions, narrowing eligibility scope, restricting special construction, changing the discount matrix, and limiting subsidies by competition. The comment cites the Precautionary Principle and research on the risks of 5G to support its position. The text discusses concerns about the lack of progress in EMF policy and the potential conflict of interest in the regulator's role. It cites a letter from three researchers from ORSAA questioning why there has been no substantial change in EMF policy despite half a century of research. The researchers point to the financial interests",
+  "stakeholder_role": "unknown",
+  "claims": [
+    {
+      "provision_id": "discount_matrix",
+      "position": "oppose",
+      "requested_action": "Change poverty and rural discount matrix",
+      "reason_family": "budget_cost_efficiency",
+      "claim_kind": "cost_or_savings",
+      "argument": "The comment opposes changing the discount matrix for E-Rate funding.",
+      "evidence_quote": "We make reference to the Precautionary Principle (PP) (56) It \n”enables a rapid response to be given in the face of a possible \ndanger to human health…institutions may take protective \nmeasures without having to wait until the reality… of risks \nbecome apparent … preventive action should be taken” (57). \nResearch confirms 5G to be a risk to all life on earth’.",
+      "evidence_start": 1166444,
+      "evidence_end": 1166806,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_eligibility_scope",
+      "position": "oppose",
+      "requested_action": "Narrow eligible equipment and services",
+      "reason_family": "access_affordability_equity",
+      "claim_kind": "normative_value",
+      "argument": "The comment opposes narrowing the eligibility scope of E-Rate.",
+      "evidence_quote": "Finally, let me refer to the previous correspondence you have \nhad with John F. Ryan, Director of Public Health and me \n(29 November 2017, 13 October 2017 and 19 February 2018) \nwhere we have comprehensively explained our position with \nregard to the arguments you have raised. It is my view that we \nhave now extensively deliberated on the matter and that we \nshould refrain from further repetition’.",
+      "evidence_start": 1165359,
+      "evidence_end": 1165760,
+      "uncertain": false
+    },
+    {
+      "provision_id": "erate_sunset",
+      "position": "oppose",
+      "requested_action": "Limit or sunset E-Rate",
+      "reason_family": "statutory_authority",
+      "claim_kind": "legal_claim",
+      "argument": "The comment opposes sunset provisions for E-Rate funding.",
+      "evidence_quote": "h for your letter of 15 March 2018 which \nwas also transmitted by email on 19 March. Commissioner \nAndriukaitis has asked me to reply to you on his behalf’.",
+      "evidence_start": 1165201,
+      "evidence_end": 1165357,
+      "uncertain": false
+    },
+    {
+      "provision_id": "special_construction",
+      "position": "oppose",
+      "requested_action": "Restrict special construction or dark fiber",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The comment opposes restricting special construction or dark fiber for E-Rate.",
+      "evidence_quote": "We make reference to the Precautionary Principle (PP) (56) It \n”enables a rapid response to be given in the face of a possible \ndanger to human health…institutions may take protective \nmeasures without having to wait until the reality… of risks \nbecome apparent … preventive action should be taken” (57). \nResearch confirms 5G to be a risk to all life on earth’.",
+      "evidence_start": 1166444,
+      "evidence_end": 1166806,
+      "uncertain": false
+    },
+    {
+      "provision_id": "targeted_competition",
+      "position": "oppose",
+      "requested_action": "Limit subsidies by broadband competition",
+      "reason_family": "competition_market_effects",
+      "claim_kind": "citation_of_external_evidence",
+      "argument": "The comment opposes limiting subsidies by broadband competition for E-Rate.",
+      "evidence_quote": "We make reference to the Precautionary Principle (PP) (56) It \n”enables a rapid response to be given in the face of a possible \ndanger to human health…institutions may take protective \nmeasures without having to wait until the reality… of risks \nbecome apparent … preventive action should be taken” (57). \nResearch confirms 5G to be a risk to all life on earth’.",
+      "evidence_start": 1166444,
+      "evidence_end": 1166806,
+      "uncertain": false
+    }
+  ],
+  "positions": {
+    "discount_matrix": "oppose",
+    "erate_eligibility_scope": "oppose",
+    "erate_sunset": "oppose",
+    "special_construction": "oppose",
+    "targeted_competition": "oppose"
+  },
+  "invalid_claims_rejected": 4,
+  "submission_id": "26110071572",
+  "source_url": "https://www.fcc.gov/ecfs/filing/26110071572",
+  "filer_raw": "Theodora Scarato",
+  "date_submission": "2026-08-15T20:27:46.849Z",
+  "has_unreviewed_ocr": "0",
+  "agency_record_candidate": "0",
+  "source_sha256": "b193d806d7352dc25c15497c378142ecea842475b6ec51ea15dce811eb99311c",
+  "params_key": "65c4a1dababf13e6e7de6a52532abff06f4d01c5ae0759945c781319591fb12b",
+  "model": "ibm/granite4:1b-q4_K_M",
+  "chunk_count": 5,
+  "review_status": "unvalidated_machine_inference",
+  "status": "complete",
+  "semantic_scope": "prioritized_windows",
+  "source_windows_total": 588,
+  "source_windows_model_analyzed": 5
+}
