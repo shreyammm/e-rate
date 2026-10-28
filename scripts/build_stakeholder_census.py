@@ -29,9 +29,9 @@ NTIA_LISTENING_REPORT='26110081266'
 # We code a machine-extracted proposition, not a bare source-word mention.
 THEMES=[
  ('program_continuity','Keep, reduce or narrow E-Rate','Funding & infrastructure',
-  ('erate_sunset',),r'(?:sunset|eliminat|abolish|terminat|funding cut|reduce (?:e.?rate|funding)|preserv|continu|maintain (?:e.?rate|the program)|narrow (?:e.?rate|eligibility)|phase out)'),
+  ('erate_sunset',),r'(?:sunset|eliminat(?:e|ion) e[- ]?rate|abolish (?:e[- ]?rate|the program)|terminat(?:e|ion) (?:e[- ]?rate|funding)|funding cut|reduce (?:e[- ]?rate|funding)|preserv(?:e|ing) (?:e[- ]?rate|funding|the program)|continu(?:e|ing) (?:e[- ]?rate|funding)|maintain (?:e[- ]?rate|funding|the program)|narrow (?:e[- ]?rate|eligibility)|phase out (?:e[- ]?rate|funding))'),
  ('eligibility_rules','Which services E-Rate should fund','Funding & infrastructure',
-  ('erate_eligibility_scope','discount_matrix'),r'(?:eligib|categor(?:y|ies) (?:one|two|1|2)|discount|qualif|funding scope|eligible services)'),
+  ('erate_eligibility_scope','discount_matrix'),r'(?:e[- ]?rate eligib|eligib(?:le|ility) (?:service|broadband|network|cost|fund)|categor(?:y|ies) (?:one|two|1|2)|e[- ]?rate discount|discount (?:rate|matrix|structure|level)|funding scope|eligible services)'),
  ('internal_networks','Internal networks and equipment','Funding & infrastructure',
   ('mibs',),r'(?:managed internal broadband|internal (?:connections|network)|wireless (?:access|network)|wi.?fi|router|switch|category two|category 2|mibs)'),
  ('fiber_construction','Fiber, construction and network builds','Funding & infrastructure',
@@ -41,11 +41,13 @@ THEMES=[
  ('cybersecurity','Cybersecurity and network protection','Internet safety',
   ('cybersecurity',),r'(?:cybersecurity|cyber security|firewall|ransomware|network secur|protect student data|secure network|security equipment)'),
  ('filtering','Content filtering and CIPA safeguards','Internet safety',
-  ('cipa_network_filter','cipa_age_specific','cipa_social_media','cipa_byod'),r'(?:\bcipa\b|content filter|network.level filter|blocking|internet safety filter|filtering|social media restriction|age.specific)'),
+  ('cipa_network_filter','cipa_age_specific','cipa_social_media','cipa_byod'),r'(?:\bcipa\b|content filter|network.level filter|internet safety filter|filtering|social media restriction|age.specific)'),
  ('student_privacy','Student privacy and surveillance','Internet safety',
   ('cipa_monitoring_privacy',),r'(?:surveill|student privac|student data|data collection|student monitor|monitoring|sensitive information|tracking)'),
- ('screen_harms','Concerns about screen exposure','Screens & learning',
-  ('screen_time_condition',),r'(?:screen.time (?:harm|risk|concern|limit|restriction)|excessive (?:screen|device)|device (?:addiction|dependence)|mental health|developmental harm|screen exposure|screen.time condition)'),
+ ('screen_harms','Screen-use harms and disputed effects','Screens & learning',
+  (),r'(?:screen[\s-]?time (?:harm|risk|concern|addict)|excessive (?:screen|device)|device (?:addiction|dependence)|mental health|developmental harm|screen exposure concern)'),
+ ('screen_policy','Screen-time limits and funding conditions','Screens & learning',
+  ('screen_time_condition',),r'(?:screen[\s-]?time (?:limit|restric|condition|policy|mandat)|device (?:time|use) limit|screen[\s-]?time rules?|condition (?:e[- ]?rate|funding) on screen|require (?:a )?screen[\s-]?time plan)'),
  ('screen_use_distinctions','Instructional versus recreational screen use','Screens & learning',
   (),r'(?:recreational (?:screen|use)|educational (?:screen|use)|passive (?:screen|use)|different (?:types|forms) of screen|productive screen|instructional screen|screen.time is not|screen time is not|not all screen)'),
  ('learning_outcomes','Academic outcomes and instructional value','Screens & learning',
@@ -71,7 +73,7 @@ THEMES=[
  ('vendor_influence','Vendor influence and conflicts of interest','Consultants & procurement',
   ('vendor_influence',),r'(?:vendor influenc|vendor incentiv|vendor driven|conflict of interest|vendor pressur|commercial incentiv|industry influenc|vendor control|procurement bias)'),
  ('administrative_burden','Paperwork, audits and compliance costs','Consultants & procurement',
-  ('administrative_forms',),r'(?:administrative burden|paperwork|bureaucrac|administrative cost|compliance burden|certification burden|application process|forms?|red tape)'),
+  ('administrative_forms',),r'(?:administrative burden|paperwork|bureaucrac|administrative cost|compliance burden|certification burden|application process|(?:fcc|consultant|application) form\b|red tape)'),
  ('program_integrity','Waste prevention and program oversight','Oversight & legal',
   (),r'(?:program integrity|fraud prevention|audit|oversight|safeguards against (?:fraud|abuse)|improper payment|overbilling|waste,? fraud|compliance monitoring)'),
  ('alleged_misuse','Specific alleged misuse or fraud','Oversight & legal',
@@ -167,8 +169,11 @@ def topics_for_claim(row):
     # "Ordinary oversight" must not be conflated with an allegation of misuse.
     if 'alleged_misuse' in matches and not PATTERNS['alleged_misuse'].search(text):
         matches.discard('alleged_misuse')
-    # A screen-time policy is not proof the commenter alleges developmental harm.
-    if issue=='screen_time_condition' and not (re.search(r'\b(?:harm|risk|concern|addict|excess|mental health|development)\b',text,re.I)):
+    # Distinguish discussions of school screen-time RULES from assertions that
+    # screen use harms children. This guard applies to ALL machine issue IDs.
+    if 'screen_harms' in matches and not re.search(
+            r'\b(?:harm|harms|risk|risks|concern|concerns|addict|addiction|excess|excessive|'
+            r'mental health|developmental|negative effects|adverse effects)\b',text,re.I):
         matches.discard('screen_harms')
     return sorted(matches)
 
