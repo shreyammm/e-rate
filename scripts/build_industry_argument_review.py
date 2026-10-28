@@ -44,7 +44,8 @@ REVIEW_FIELDS = (
     "reviewer_id", "review_date", "verified_filer_category",
     "verified_represented_organization", "actual_speaker",
     "argument_present_in_complete_source", "filer_endorses_argument",
-    "requested_fcc_action", "verified_argument_summary",
+    "requested_fcc_action", "verified_fcc_provision_ids",
+    "multiple_policy_options_explanation", "verified_argument_summary",
     "claimed_causal_mechanism", "cited_evidence_type",
     "factual_claim_independently_checked", "source_recheck_notes",
 )
