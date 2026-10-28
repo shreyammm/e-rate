@@ -15,6 +15,38 @@ class CensusTest(unittest.TestCase):
         source=inspect.getsource(compute)
         self.assertIn("'named_institutions'",source)
         self.assertIn("'pct_of_coded_group_filings'",source)
+    def test_observed_model_label_confusions_against_actual_checkpoints(self):
+        import json
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]
+        def claim(filing, phrase):
+            rows=json.loads((root/'data/llm_census_kaggle/filings'/
+                             (filing+'.json')).read_text())['claims']
+            found=[c for c in rows if phrase.lower() in
+                   str(c.get('requested_action') or '').lower()]
+            self.assertTrue(found, f'No source-linked checkpoint action {filing}: {phrase}')
+            c=found[0]
+            return {'issue':c.get('provision_id'),'action':c.get('requested_action'),
+                    'argument':c.get('argument')}
+        false=[
+            ('26110079965','maintain consultant participation in bidding portal','consultant_fees'),
+            ('26110080495','maintain predictable support','administrative_burden'),
+            ('26110074471','maintain educational','learning_outcomes'),
+            ('26110038512','revise consultant','consultant_registration'),
+            ('26110038512','reject capping reseller markups','vendor_influence')
+        ]
+        for fid,phrase,theme in false:
+            with self.subTest(source=fid,theme=theme):
+                self.assertNotIn(theme,topics_for_claim(claim(fid,phrase)))
+        true=[
+            ('26110079965','file ACCD only','consultant_reporting'),
+            ('26110079965','require mandatory annual','consultant_qualifications'),
+            ('26110081267','allow percentage','consultant_fees'),
+            ('26110081267','treat consulting firm','consultant_registration')
+        ]
+        for fid,phrase,theme in true:
+            with self.subTest(source=fid,theme=theme):
+                self.assertIn(theme,topics_for_claim(claim(fid,phrase)))
     def test_narrow_consultant_issue_labels_require_substantive_claim_text(self):
         bad=[
             ('consultant_form_5654','Abandon the individual Form 479 requirement for school consortium members.',
