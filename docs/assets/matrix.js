@@ -85,6 +85,7 @@
   let data, byTopic = new Map(), byGroup = new Map(), groupRows = new Map();
   let activeGroup = 'edtech_vendors', activeTopic = 'learning_outcomes';
   let visibleGroups = [], visibleTopics = [], evidenceLimits = {};
+  const fullGroupCounts = new Map(), fullTopicCounts = new Map(), fullCells = new Map();
 
   function cell(topic, group) {
     return topic.by_stakeholder[group] || {filings:0,distinct_source_texts:0,named_institutions:0,
@@ -93,10 +94,20 @@
   function groupSize(group) { return byGroup.get(group)?.filings || 0; }
   function label(group) { return byGroup.get(group)?.label || group; }
   function count(topic, group) { return cell(topic, group).filings || 0; }
+  function fullOnly() { return $('coverage-filter').value === 'full'; }
+  function scopedGroupSize(group) { return fullOnly() ? (fullGroupCounts.get(group)||0) : groupSize(group); }
+  function scopedTopicSize(topic) { return fullOnly() ? (fullTopicCounts.get(topic.id)||0) : topic.filings; }
+  function scopedCount(topic, group) {
+    return fullOnly() ? (fullCells.get(topic.id+'|'+group)||0) : count(topic,group);
+  }
+  function sourceFilings(group) {
+    const records=groupRows.get(group)||[];
+    return fullOnly() ? records.filter(f=>f.quality_scope==='full_text') : records;
+  }
   function measureValue(topic, group) {
-    const c = count(topic, group), measure = $('measure').value;
-    if (measure === 'topic') return topic.filings ? c/topic.filings : 0;
-    if (measure === 'within') return groupSize(group) ? c/groupSize(group) : 0;
+    const c=scopedCount(topic,group),measure=$('measure').value;
+    if (measure==='topic') return scopedTopicSize(topic)?c/scopedTopicSize(topic):0;
+    if (measure==='within') return scopedGroupSize(group)?c/scopedGroupSize(group):0;
     return c;
   }
   function checkedGroup(group) {
@@ -106,7 +117,7 @@
     return (f.topics || []).find(e => e.topic === topic) || null;
   }
   function allFor(group, topic) {
-    return (groupRows.get(group) || []).filter(f => topicRow(f,topic));
+    return sourceFilings(group).filter(f=>topicRow(f,topic));
   }
   function checkDataset(d) {
     if (!d || d.schema !== 'stakeholder-arguments-v1' || d.coverage?.filings !== 3231 ||
@@ -144,9 +155,21 @@
       btn.setAttribute('aria-pressed', String(active));
     }
   }
+  function renderScopeStatus() {
+    const total=data.coverage.filings;
+    const full=[...fullGroupCounts.values()].reduce((n,x)=>n+x,0);
+    $('scope-message').textContent=fullOnly() ?
+      'Full-text model-read subset: '+number(full)+' of '+number(total)+' filing records. All percentages and evidence below use this subset only. Full-text model access does not guarantee correct interpretation.' :
+      'Entire indexed snapshot: '+number(total)+' filings. '+number(data.coverage.filings_selected_windows_only)+
+        ' were analyzed using selected text windows, so a missing theme does not imply the filer said nothing about it.';
+    $('audit-status').textContent=data.method.source_context_audit_sha256_verified ?
+      'Machine source-context audit matches the current claim ledger. Its review flags are automated warnings, not independent confirmation.' :
+      'Review status: the source-context audit is out of sync with the machine-claim ledger. Speaker/context risk cannot be assessed reliably until the audit is regenerated. All argument frequencies remain unvalidated.';
+  }
   function renderMatrix() {
     visibleGroups = calcGroups(); visibleTopics = calcTopics();
     updatePresetButtons();
+    renderScopeStatus();
     const description = {
       within:'Within group = filings with this argument ÷ all filings assigned to this group.',
       topic:'Share of argument = filings in this group with the argument ÷ all filings with the argument.',
@@ -160,26 +183,26 @@
     for (const group of visibleGroups) {
       const g = byGroup.get(group);
       const th=el('th');th.scope='col';
-      th.append(el('span',g.label),el('span',number(g.filings)+' filings'+(g.filings<15?' · small sample':''),'col-total'));
+      th.append(el('span',g.label),el('span',number(scopedGroupSize(group))+' filings'+(scopedGroupSize(group)<15?' · small sample':''),'col-total'));
       tr.append(th);
     }
     head.append(tr);
     const max = Math.max(1,...visibleTopics.flatMap(t=>visibleGroups.map(g=>measureValue(t,g))));
     for (const topic of visibleTopics) {
       const r=el('tr'),heading=el('th',undefined,'rowhead');heading.scope='row';
-      heading.append(el('strong',topic.label),el('small',topic.category+' · '+number(topic.filings)+' total filings'));
+      heading.append(el('strong',topic.label),el('small',topic.category+' · '+number(scopedTopicSize(topic))+' total filings'));
       r.append(heading);
       for (const group of visibleGroups) {
-        const groupRecord=byGroup.get(group),countHere=count(topic,group),v=measureValue(topic,group);
+        const groupRecord=byGroup.get(group),countHere=scopedCount(topic,group),v=measureValue(topic,group);
         const td=el('td'),btn=el('button',undefined,countHere?'':'zero');btn.type='button';
         const opacity=v/max;
         const colorScale=Math.round(247-opacity*89),tealScale=Math.round(250-opacity*51);
         btn.style.setProperty('--heat','rgb('+colorScale+','+tealScale+','+Math.round(251-opacity*35)+')');
         btn.append(el('strong',$('measure').value==='count'?number(countHere):
-          rate(countHere,$('measure').value==='topic'?topic.filings:groupRecord.filings)));
+          rate(countHere,$('measure').value==='topic'?scopedTopicSize(topic):scopedGroupSize(group))));
         btn.append(el('small',number(countHere)+' filing'+(countHere===1?'':'s')));
         btn.title=groupRecord.label+' / '+topic.label+': '+number(countHere)+' of '+
-          number(groupRecord.filings)+' group filings; '+number(topic.filings)+' filings overall for this argument.';
+          number(scopedGroupSize(group))+' group filings in scope; '+number(scopedTopicSize(topic))+' filings overall for this argument in scope.';
         btn.setAttribute('aria-pressed',String(activeGroup===group&&activeTopic===topic.id));
         btn.setAttribute('aria-label',btn.title+'; open source evidence');
         btn.addEventListener('click',()=>selectCell(group,topic.id,true));
@@ -215,12 +238,14 @@
     if(!t)return;
     $('detail-title').textContent=t.label;
     $('detail-subtitle').textContent=label(group)+' · Source-linked comments, with the same exclusive filing categories as the matrix.';
-    const c=cell(t,group);
+    const nFilings=scopedCount(t,group);
+    const matched=allFor(group,t.id);
+    const hashes=new Set(matched.map(f=>f.text_sha256).filter(Boolean));
     const stats=[
-      [number(c.filings), 'Filings in this stakeholder group with the argument'],
-      [rate(c.filings,groupSize(group)),'Share of all '+label(group).toLowerCase()+' filings'],
-      [rate(c.filings,t.filings),'Share of all filings with this argument'],
-      [number(c.distinct_source_texts),'Distinct original texts in this cell']
+      [number(nFilings),'Filings in this stakeholder group with the argument'],
+      [rate(nFilings,scopedGroupSize(group)),'Share of '+label(group).toLowerCase()+' filings in selected scope'],
+      [rate(nFilings,scopedTopicSize(t)),'Share of all filings with this argument in selected scope'],
+      [number(hashes.size),'Distinct original texts in this cell']
     ];
     $('detail-metrics').replaceChildren(...stats.map(([v,k])=>{
       const box=el('div',undefined,'detail-stat');box.append(el('strong',v),el('span',k));return box;
@@ -262,6 +287,8 @@
       if(f.identity_review_required)issues.push('Organization or role needs review');
       if(e.needs_speaker_review)issues.push('Speaker context needs review');
       if(f.quality_scope==='prioritized_windows')issues.push('Only selected passages were model-read');
+      if(f.ocr_candidate)issues.push('OCR transcript may be unreviewed');
+      if(!data.method.source_context_audit_sha256_verified)issues.push('Automated source-context audit is out of sync');
       if(f.joint_filing)issues.push('Joint institutional filing');
       if(issues.length)card.append(el('p',issues.join(' · '),'flags'));
       column.append(card);
@@ -412,6 +439,7 @@
     $('frame-focus').addEventListener('change',renderFrames);
     $('frame-compare').addEventListener('change',renderFrames);
     $('matrix-export').addEventListener('click',exportCSV);
+    $('coverage-filter').addEventListener('change',()=>{evidenceLimits={};renderMatrix();renderDetail();});
     $('industry-audit-export').addEventListener('click',exportIndustryAudit);
     for(const b of document.querySelectorAll('[data-preset]'))b.addEventListener('click',()=>{
       const preset=b.dataset.preset;
@@ -433,6 +461,13 @@
       for(const f of data.filings){
         if(!groupRows.has(f.group))throw Error('Unknown group: '+f.group);
         groupRows.get(f.group).push(f);
+        if(f.quality_scope==='full_text'){
+          fullGroupCounts.set(f.group,(fullGroupCounts.get(f.group)||0)+1);
+          for(const issue of f.topics){
+            fullCells.set(issue.topic+'|'+f.group,(fullCells.get(issue.topic+'|'+f.group)||0)+1);
+            fullTopicCounts.set(issue.topic,(fullTopicCounts.get(issue.topic)||0)+1);
+          }
+        }
       }
       $('stat-filings').textContent=number(data.coverage.filings);
       $('stat-coded').textContent=number(data.coverage.filings_with_coded_topics);
@@ -444,6 +479,10 @@
       }
       $('comparison-group').value='school_institutions';
       wireControls();
+      $('prefer-clear').disabled=!Boolean(data.method.source_context_audit_sha256_verified);
+      if($('prefer-clear').disabled)$('prefer-clear').parentElement.append(el('span',' (source-context audit not current)'));
+      const fullCount=[...fullGroupCounts.values()].reduce((n,x)=>n+x,0);
+      if(fullCount+data.coverage.filings_selected_windows_only>data.coverage.filings)throw Error('Analyzed text scope does not reconcile');
       const p=new URLSearchParams(location.search);
       if(byGroup.has(p.get('group')))activeGroup=p.get('group');
       if(byTopic.has(p.get('topic')))activeTopic=p.get('topic');
