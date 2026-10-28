@@ -57,6 +57,8 @@ ROLE_LABELS = {
 ORG_RULES = [
     # Exact organizations from FCC submitter metadata; no claim of endorsement.
     ('government', r'^national telecommunications and information administration$'),
+    ('telecom_isp', r'^alaska power (?:and|&) telephone$'),
+    ('erate_consultant', r'^hwc consultants$'),
     ('erate_consultant', r'^(?:funds for learning|american e[- ]rate solutions|e[- ]rate complete|e[- ]rate funding services|tel/logic.*e[- ]rate central|education service center region 12 e[- ]rate consulting services)\b'),
     ('trade_association', r'^(?:software (?:and|&) information industry association|e[- ]rate management professionals association|ncta|ustelecom|ntca[- ]|alaska telecom association|technology channel sales professionals)\b'),
     ('network_technology_vendor', r'^united data technologies\b'),
@@ -95,7 +97,7 @@ BASE_CROSSWALK = {
     'educator_or_school_staff':'school_connected_unknown',
     'school_connected_voice_capacity_unconfirmed':'school_connected_unknown',
     'library_or_library_system':'library_institution',
-    'consultant_or_e_rate_services_firm':'erate_consultant',
+    'consultant_or_e_rate_services_firm':'unresolved',
     'government_or_tribal_organization':'government',
     'advocacy_nonprofit_or_trade_association':'advocacy_organization',
     'other_business_or_vendor':'other_vendor',
@@ -106,7 +108,7 @@ BASE_CROSSWALK = {
     'unresolved':'unresolved',
 }
 SENSITIVE = re.compile(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?<!\d)(?:\+1[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}(?!\d)',re.I)
-ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commission|association|coalition|alliance|department|administration|agency|foundation|network|college|university|government|nation|corporation|llc|inc|institute|society|technologies|telecom|communications|media|consulting|consultants|services|software|technology|broadband|solutions)\b',re.I)
+ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commission|association|coalition|alliance|department|administration|agency|foundation|network|college|university|government|nation|corporation|llc|inc|institute|society|technologies|telecom|communications|media|consulting|consultants|services|software|technology|broadband|solutions|telephone)\b',re.I)
 
 def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
