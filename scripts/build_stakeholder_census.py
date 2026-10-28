@@ -81,6 +81,24 @@ THEMES=[
   (),r'(?:alleg(?:es|ed|ing) (?:misuse|fraud|abuse)|documented (?:fraud|misuse)|specific (?:fraud|misuse)|misappropriat|kickback|fraudulent (?:billing|claim|payment)|improperly spent|funds were misused)'),
  ('fcc_authority','FCC legal authority and jurisdiction','Oversight & legal',
   ('statutory_authority',),r'(?:fcc (?:authority|jurisdiction)|statutory (?:authority|mandate)|legal authority|beyond the fcc|communications act|congress(?:ional)? authorit|ultra vires)'),
+ ('edtech_study_evidence','Research evidence for instructional technology','Screens & learning',
+  (),r'(?:randomi[sz]ed (?:control|trial)|meta.analysis|peer.reviewed (?:study|research)|(?:research|study|studies|evidence) (?:shows?|demonstrates?|finds?|suggests?|indicates?) (?:that )?(?:digital|edtech|instructional|educational technolog|screen)|(?:digital|edtech|instructional|educational technolog) (?:research|evidence|study|studies))'),
+ ('adaptive_learning','Personalized, adaptive and differentiated instruction','Screens & learning',
+  (),r'(?:adaptive learning|personaliz(?:ed|ation) (?:instruction|learning)|individualiz(?:ed|ation) (?:instruction|learning)|differentiated instruction|tailor(?:ed|ing) (?:instruction|content) to (?:student|learner))'),
+ ('teacher_workload','Teacher workload and classroom implementation','Screens & learning',
+  (),r'(?:teacher (?:workload|time|burden|training)|teacher professional development|educator training|classroom implement|lesson planning|teacher productivity|reduce (?:the )?burden on teachers|classroom management)'),
+ ('device_management','Student devices and school IT management','Screens & learning',
+  (),r'(?:device management|managed (?:devices|chromebooks|laptops)|device deployment|one.to.one devices|1:1 devices|school.issued (?:device|laptop)|device fleet|endpoint management|classroom device policy)'),
+ ('consultant_value','Consultants as capacity or compliance support','Consultants & procurement',
+  (),r'(?:consultants? (?:help|assist|support|enable|provide|reduce)|consulting (?:services|expertise|support)|consultants? (?:are|is) (?:essential|necessary|important)|need (?:a|an|more) e[- ]?rate consultant|speciali[sz]ed (?:e[- ]?rate|program) (?:expertise|support)|consultant expertise)'),
+ ('consultant_independence','Consultant independence and vendor relationships','Consultants & procurement',
+  (),r'(?:consultant (?:independence|independent|conflict|impartial|neutral|relationship)|consultants? (?:paid|compensated) by (?:vendor|service provider)|consultants? (?:recommend|select) (?:a|the )?vendor|consultant.vendor (?:relationship|tie)|consultant (?:kickback|incentive)|vendor.funded consultant)'),
+ ('consultant_qualifications','Consultant qualifications and professional standards','Consultants & procurement',
+  (),r'(?:consultant (?:qualification|training|credential|certification|standard|experience)|professional (?:credential|standard|qualification) for consultants|certif(?:y|ied|ication) e[- ]?rate consultants?|consultants? (?:must|should) (?:demonstrate|meet) (?:competenc|qualification))'),
+ ('bid_independence','Fair and independent competitive bidding','Consultants & procurement',
+  (),r'(?:independent (?:bid|procurement|evaluation)|fair (?:and open )?(?:bidding|competition)|competitive neutrality|bid (?:manipulation|rigging|integrity)|vendor (?:steering|favoritism)|procurement (?:conflict|independence|fairness)|undue (?:supplier|vendor) influence)'),
+ ('technology_cost_benefit','Edtech costs, ROI and vendor value','Consultants & procurement',
+  (),r'(?:edtech (?:cost|expense|spend|budget|return on investment)|(?:educational|instructional) technolog(?:y|ies) (?:cost|expense|spend|budget)|technology return on investment|cost.effective (?:edtech|software|educational technolog)|vendor (?:pricing|markups|profit)|software subscription cost)'),
  ('libraries_public_service','Library access and public services','Schools & families',
   (),r'(?:public librar|library (?:patron|service|community)|homework help|job.seek|public internet access)')
 ]
@@ -296,11 +314,14 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
                 'group_with_any_coded_argument':group_claims[g],
                 'pct_of_group_filings':round(100*len(ids)/group_den[g],1) if group_den[g] else None,
                 'distinct_source_texts':len(hashes),
+                'named_institutions':len({per_id[fid].get('organization') for fid in ids if per_id[fid].get('organization')}),
+                'pct_of_coded_group_filings':round(100*len(ids)/group_claims[g],1) if group_claims[g] else None,
                 'lower_risk_filings':len(cautious[g][code]),
                 'needs_attribution_or_identity_review':len(ids-cautious[g][code])
             }
         stats.append({'id':code,'label':TOPICS[code]['label'],'category':TOPICS[code]['category'],
-                      'filings':len(total),'distinct_source_texts':len({
+                      'filings':len(total),'named_institutions':len({per_id[fid].get('organization') for fid in total if per_id[fid].get('organization')}),
+                      'distinct_source_texts':len({
                           per_id[fid].get('text_sha256') for fid in total if per_id[fid].get('text_sha256')}),
                       'by_stakeholder':cells})
     stats.sort(key=lambda x:(-x['filings'],x['label']))

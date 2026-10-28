@@ -4,6 +4,37 @@ from scripts.build_stakeholder_census import (
     topics_for_claim, stakeholder_group, compute, THEMES, GROUP_NAMES, NTIA_LISTENING_REPORT
 )
 class CensusTest(unittest.TestCase):
+    def test_census_statistics_include_unique_named_institutions(self):
+        import inspect
+        source=inspect.getsource(compute)
+        self.assertIn("'named_institutions'",source)
+        self.assertIn("'pct_of_coded_group_filings'",source)
+    def test_advanced_consultant_distinctions(self):
+        x=topics_for_claim({'issue':'other_policy_issue','action':'Require independent consultants to disclose consultant conflicts of interest and vendor payments.',
+           'argument':'Consultants paid by vendors risk recommending the vendor that compensates them.'})
+        self.assertIn('consultant_independence',x)
+        y=topics_for_claim({'issue':'other_policy_issue','action':'Improve consultant training and consultant qualifications.',
+           'argument':'Consultant credentials would professionalize E-Rate program services.'})
+        self.assertIn('consultant_qualifications',y)
+        z=topics_for_claim({'issue':'other_policy_issue','action':'Permit consulting expertise for small districts.',
+           'argument':'Consultants help applicants understand and complete the program.'})
+        self.assertIn('consultant_value',z)
+    def test_edtech_evidence_subthemes(self):
+        a=topics_for_claim({'issue':'other_policy_issue','action':'Evaluate peer-reviewed research.',
+           'argument':'Research shows that educational technology improves math outcomes.'})
+        self.assertIn('edtech_study_evidence',a)
+        b=topics_for_claim({'issue':'other_policy_issue','action':'Support adaptive learning systems.',
+           'argument':'Personalized instruction can tailor content to student needs.'})
+        self.assertIn('adaptive_learning',b)
+        c=topics_for_claim({'issue':'other_policy_issue','action':'Limit school device deployments.',
+           'argument':'Device management raises school IT administrative concerns.'})
+        self.assertIn('device_management',c)
+    def test_fees_do_not_imply_independence_or_specific_misuse(self):
+        x=topics_for_claim({'issue':'consultant_percent_fees','action':'Limit percentage-based consultant fees.',
+           'argument':'A fee tied to the funding award can raise total applicant costs.'})
+        self.assertIn('consultant_fees',x)
+        self.assertNotIn('consultant_independence',x)
+        self.assertNotIn('alleged_misuse',x)
     def test_named_types_are_not_collapsed(self):
         self.assertEqual(stakeholder_group({'role':'edtech_learning_vendor','industry_focus':'edtech_learning'}),'edtech_vendors')
         self.assertEqual(stakeholder_group({'role':'trade_association','industry_focus':'edtech_industry'}),'edtech_trade_associations')
