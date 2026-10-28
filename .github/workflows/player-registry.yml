@@ -73,18 +73,25 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- docs/data/player_registry.json docs/data/stakeholder_argument_census.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish source-backed filing-player registry with review queue'
-            for attempt in 1 2 3 4 5 6; do
-              git pull --rebase origin main
-              if git push origin HEAD:main; then
-                echo 'Published source-aligned census successfully.'
-                exit 0
-              fi
-              echo "Concurrent write detected, retry ${attempt}/6" >&2
-              sleep "$((attempt * 2))"
-            done
-            echo 'Publication failed after retries; no successful state claimed.' >&2
-            exit 1
-          fi
+          # Never attempt to rebase two independently generated JSON ledgers:
+          # refresh to the latest branch and rebuild from the SAME inputs.
+          for attempt in 1 2 3 4 5 6; do
+            git fetch origin main
+            git reset --hard origin/main
+            python -m scripts.build_player_registry
+            python -m scripts.build_stakeholder_census
+            git add -- docs/data/stakeholder_argument_census.json docs/data/player_registry.json
+            if git diff --cached --quiet; then
+              echo 'Generated datasets already match latest sources.'
+              exit 0
+            fi
+            git commit -m 'Publish atomic player registry and argument census'
+            if git push origin HEAD:main; then
+              echo 'Source-aligned outputs published.'
+              exit 0
+            fi
+            echo "Competing write; regenerate latest sources on retry ${attempt}/6" >&2
+            sleep "$((attempt * 2))"
+          done
+          echo 'Could not publish consistent source-aligned research data.' >&2
+          exit 1
