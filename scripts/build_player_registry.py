@@ -35,6 +35,9 @@ ROLE_LABELS = {
     'library_institution': 'Library or library system',
     'library_staff': 'Librarian or library employee',
     'edtech_learning_vendor': 'Learning software or instructional technology vendor',
+    'edtech_digital_content_vendor': 'Digital books, media or learning-content vendor',
+    'edtech_virtual_school_vendor': 'Virtual school or online learning provider',
+    'edtech_age_privacy_vendor': 'Age assurance or child privacy technology provider',
     'edtech_safety_vendor': 'Student safety, filtering or monitoring vendor',
     'edtech_device_vendor': 'Education device or hardware vendor',
     'telecom_isp': 'Internet or broadband service provider',
@@ -159,6 +162,32 @@ def candidate_affiliation(raw: str) -> str:
     if organization_label(parts[0]):return ''
     return organization_label(parts[1])
 
+# A deliberately narrow list of distinctive legal submitter names appearing
+# in this fixed source snapshot. The exact name establishes an *entity lead*;
+# product-line classifications remain provisional until document review.
+CURATED_FILER_ROLES = {
+    'curriculum associates llc': ('edtech_learning_vendor', 'edtech_learning'),
+    'stride inc': ('edtech_virtual_school_vendor', 'edtech_virtual_school'),
+    'overdrive inc': ('edtech_digital_content_vendor', 'edtech_digital_content'),
+    'rego payment architectures inc': ('edtech_age_privacy_vendor', 'child_privacy_technology'),
+    'cisco systems inc': ('network_technology_vendor', 'network_equipment'),
+    'extreme networks inc': ('network_technology_vendor', 'network_equipment'),
+    'zayo group llc': ('telecom_isp', 'telecom_service'),
+    'smith bagley inc': ('telecom_isp', 'telecom_service'),
+    'space exploration holdings llc': ('telecom_isp', 'satellite_connectivity'),
+    'first step internet llc': ('telecom_isp', 'telecom_service'),
+    'metcomm net llc': ('telecom_isp', 'telecom_service'),
+    'united data technologies inc': ('network_technology_vendor', 'network_equipment'),
+    'csm consulting inc': ('erate_consultant', 'erate_consulting'),
+    'grant consulting services llc': ('erate_consultant', 'erate_consulting'),
+    'sutherland consulting group inc': ('erate_consultant', 'erate_consulting'),
+    'educational funding group inc': ('erate_consultant', 'erate_consulting'),
+    'rollins sumrall education group inc': ('erate_consultant', 'erate_consulting'),
+    'kb associates llc': ('erate_consultant', 'erate_consulting'),
+}
+def curated_business(name: str):
+    return CURATED_FILER_ROLES.get(canon(name))
+
 def inferred_identity(meta: dict, base: str, text: str) -> dict:
     name=organization_label(meta.get('filer_raw',''))
     affiliated=candidate_affiliation(meta.get('filer_raw','')) if not name else ''
@@ -166,6 +195,8 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     person=base in PERSON_ROLES or (not name and base in ('unresolved', 'named_person_capacity_unstated'))
     self_role,self_quote=explicit_personal_role(text) if person else ('','')
     org_role,org_cue=first_rule(name,ORG_PATTERNS) if name else ('','')
+    curated=curated_business(name) if name else None
+    if curated:org_role,org_cue=curated[0],name
     default=BASE_CROSSWALK.get(base,'unresolved')
     # A recognizable letterhead or sign-off is only a lead for manual review.
     # Do not infer authorization to speak for an institution.
@@ -188,21 +219,31 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     candidate = signature or ('school_connected_unknown' if letterhead else '')
     role = self_role or org_role or candidate or default
     basis = ('multi_party_metadata_affiliation_candidate' if affiliated else
+             'curated_company_type_candidate' if curated else
              'author_self_description' if self_role else
              'filer_field_organization' if org_role else
              'signature_candidate' if signature else
              'letterhead_candidate' if letterhead else 'provisional_full_text_role')
-    review = bool(affiliated) or (not self_role and not org_role) or bool(candidate) or role in (
+    review = bool(curated) or bool(affiliated) or (not self_role and not org_role) or bool(candidate) or role in (
         'school_connected_unknown','named_person_capacity_unstated',
         'unresolved','other_vendor','advocacy_organization')
     proxy=bool(re.search(r'\b(?:on behalf of|representing (?:our|the|a)|counsel for|submitted for (?:our|the|a))\b',text[:2400],re.I))
     if proxy:review=True
     # A reviewer can reopen the FCC link. Do not republish a broad paragraph
     # of text from a private individual's letter as evidence.
-    return {'role':role,'organization':name, 'industry_focus':industry_focus(name,role),
+    return {'role':role,'organization':name,
+            'industry_focus':curated[1] if curated else industry_focus(name,role),
             'basis':basis,'evidence_cue':self_quote or org_cue or ('signature title' if signature else 'opening letterhead' if letterhead else ''),
             'speaker_is_proxy_possible':proxy,'needs_review':review,
             'identity_status':'candidate' if review else 'strong_source_cue'}
+
+def submitted_by_multiple_entities(raw: str) -> dict:
+    """Co-signers must never be counted as independent submissions."""
+    parts=[x.strip() for x in str(raw or '').split('|') if x.strip()]
+    return {'multi_submitter_metadata':len(parts)>1,
+            'submitter_field_components':len(parts) if parts else 1,
+            # Multi-party identities are not individual endorsing statements.
+            'requires_relationship_review':len(parts)>1}
 
 def review_priority(identity: dict, body: str) -> dict:
     """Rank needs-human-review cases, never convert a candidate into a fact."""
@@ -210,6 +251,8 @@ def review_priority(identity: dict, body: str) -> dict:
     score=5;reasons=[]
     if identity['organization']:
         score+=35;reasons.append('source_metadata_institution_or_candidate_affiliation')
+    if identity['basis']=='curated_company_type_candidate':
+        score+=30;reasons.append('business_sector_typing_requires_document_review')
     if identity['basis'] in ('signature_candidate','letterhead_candidate'):
         score+=30;reasons.append('letterhead_or_signature_needs_confirmation')
     if identity['basis']=='multi_party_metadata_affiliation_candidate':
@@ -281,6 +324,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                                  identity_status='human_reviewed',needs_review=False,
                                  industry_focus=industry_focus(org,v['role']))
                 review=review_priority(found,body)
+                joint=submitted_by_multiple_entities(raw_name)
                 filings.append({'id':sid,'base_role':base[sid],
                      'role':found['role'],'organization':found['organization'],
                      'industry_focus':found['industry_focus'],
@@ -292,7 +336,9 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                      'proxy_possible':found['speaker_is_proxy_possible'],
                      'source_url':'https://www.fcc.gov/ecfs/filing/'+sid,
                      'text_sha256':source_row.get('text_sha256') or '',
-                     'ocr_candidate':str(source_row.get('has_unreviewed_ocr','0'))=='1'})
+                     'ocr_candidate':str(source_row.get('has_unreviewed_ocr','0'))=='1',
+                     'multi_submitter_metadata':joint['multi_submitter_metadata'],
+                     'submitter_field_components':joint['submitter_field_components']})
     if len(filings)!=len(index) or seen!=set(by_id):raise ValueError('Registry does not cover all filing IDs')
     filings.sort(key=lambda x:x['id'])
     groups=defaultdict(list)
@@ -314,7 +360,8 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
        'coverage':{'filings':len(filings),'readable_source_texts':manifest['records_with_text'],
              'named_organizations':len(organizations),
              'filings_requiring_identity_review':sum(r['needs_review'] for r in filings),
-             'manually_reviewed_filings':sum(r['identity_status']=='human_reviewed' for r in filings)},
+             'manually_reviewed_filings':sum(r['identity_status']=='human_reviewed' for r in filings),
+             'filings_with_multiple_named_submitters':sum(r['multi_submitter_metadata'] for r in filings)},
        'method':'Screened original FCC institution-valued filer metadata, two-party potential affiliation, and explicit opening self-description. Type and industry remain separate. Categories provisional until human reviewed.',
        'roles':ROLE_LABELS,'role_filing_counts':dict(counts),
        'review_tier_counts':dict(Counter(r['review_tier'] for r in filings)),
