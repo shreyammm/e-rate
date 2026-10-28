@@ -40,6 +40,25 @@ class PlayerIdentityTest(unittest.TestCase):
         self.assertNotEqual(canon('Central High School'),canon('Central School District'))
         self.assertIn('unresolved',ROLE_LABELS)
 
+    def test_mentioning_consultant_rules_does_not_make_filer_a_consultant(self):
+        for name in ('Daniel Rice','David Smith'):
+            x=inferred_identity({'filer_raw':name},
+                'consultant_or_e_rate_services_firm',
+                'We should consider consultant oversight without reducing E-Rate.')
+            self.assertEqual(x['role'],'unresolved')
+            self.assertTrue(x['needs_review'])
+    def test_telecom_company_mentioning_consultants_remains_telecom(self):
+        x=inferred_identity({'filer_raw':'Alaska Power & Telephone'},
+            'consultant_or_e_rate_services_firm',
+            'The FCC should adjust consultant reporting requirements.')
+        self.assertEqual(x['role'],'telecom_isp')
+        self.assertEqual(x['organization'],'Alaska Power & Telephone')
+    def test_named_hwc_consulting_entity_still_detected(self):
+        x=inferred_identity({'filer_raw':'HWC Consultants'},
+            'consultant_or_e_rate_services_firm',
+            'We oppose limits on percentage-based consultant compensation.')
+        self.assertEqual(x['role'],'erate_consultant')
+        self.assertEqual(x['organization'],'HWC Consultants')
     def test_ntia_is_government_with_named_source(self):
         x=inferred_identity({'filer_raw':'National Telecommunications and Information Administration'},
             'unresolved','NTIA reports what participants said at a listening session.')
