@@ -97,7 +97,7 @@
       }
       row.append(make('span','›','arg-arrow'));
       row.addEventListener('click',()=>{
-        selectedTopic=t.id;visibleEvidence={};table();renderEvidence();renderOrgs();navigateState();
+        selectedTopic=t.id;visibleEvidence={};table();renderStakeholdersForTopic();renderEvidence();renderOrgs();navigateState();
         $('evidence').scrollIntoView({block:'start',behavior:'smooth'});
       });
       root.append(row);
@@ -120,6 +120,60 @@
       if(low.length)rows=low;
     }
     return rows;
+  }
+  function renderStakeholdersForTopic(){
+    const t=byTopic[selectedTopic],root=$('group-by-topic');
+    root.replaceChildren();
+    if(!t)return;
+    $('group-by-topic-description').textContent=n(t.filings)+' source filings contain an extracted argument in this category. See which stakeholders submitted them.';
+    const header=make('div',undefined,'inverse-header');
+    header.append(make('span','Stakeholder'),make('span','Filings raising argument'),
+      make('span','Share of topic'),make('span','Within group'));root.append(header);
+    const groups=data.stakeholder_groups.filter(g=>topicCell(t,g.id).filings>0);
+    groups.sort((a,b)=>topicCell(t,b.id).filings-topicCell(t,a.id).filings);
+    for(const g of groups){
+      const count=topicCell(t,g.id).filings;
+      const row=make('button',undefined,'inverse-row');
+      row.type='button';
+      row.append(make('span',g.label),make('b',n(count)),
+        make('span',pct(count,t.filings)),
+        make('span',pct(count,g.filings)));
+      row.addEventListener('click',()=>{
+        $('primary-group').value=g.id;
+        $('second-group').value='';
+        update();
+        $('explore').scrollIntoView({block:'start',behavior:'smooth'});
+      });
+      root.append(row);
+    }
+  }
+  function differences(){
+    const c=compareValue(),root=$('comparison-leads');
+    root.replaceChildren();root.hidden=!c;
+    if(!c)return;
+    const g=groupValue(),nA=groupSize(g),nB=groupSize(c);
+    if(!nA||!nB){root.hidden=true;return;}
+    const diffs=data.topics.map(t=>{
+      const a=topicCell(t,g).filings,b=topicCell(t,c).filings;
+      return {topic:t,delta:100*(a/nA-b/nB),a,b};
+    }).sort((a,b)=>Math.abs(b.delta)-Math.abs(a.delta));
+    root.append(make('h3','Different emphases'));
+    const caution=make('p', 'These are differences in how frequently filings mention an argument, not proof that the groups disagree.','small-note');
+    root.append(caution);
+    const top=diffs.filter(x=>x.a+x.b).slice(0,4);
+    for(const {topic,delta,a,b} of top){
+      const button=make('button',undefined,'difference-item');
+      button.type='button';
+      button.append(make('strong',topic.label),
+        make('span',n(a)+' / '+n(nA)+' vs '+n(b)+' / '+n(nB)+' filings ('+
+          Math.abs(delta).toFixed(1)+' percentage-point difference)'));
+      button.addEventListener('click',()=>{
+        selectedTopic=topic.id;table();renderEvidence();renderStakeholdersForTopic();renderOrgs();navigateState();
+        $('evidence').scrollIntoView({block:'start',behavior:'smooth'});
+      });
+      root.append(button);
+    }
+    if(Math.min(nA,nB)<15)root.append(make('p','One comparison group contains fewer than 15 filings. Even large percentage differences may reflect only one or two comments.','small-note'));
   }
   function renderEvidence(){
     const t=byTopic[selectedTopic],g=groupValue(),c=compareValue();
@@ -214,7 +268,7 @@
     const g=groupValue(),c=compareValue();
     if(g===c&&g!=='all')$('second-group').value='';
     if(g==='all'&&c==='all')$('second-group').value='';
-    summary();table();visibleEvidence={};renderEvidence();renderOrgs();navigateState();
+    summary();table();visibleEvidence={};renderStakeholdersForTopic();renderEvidence();renderOrgs();differences();navigateState();
   }
   try{
     const r=await fetch('./data/stakeholder_argument_census.json');
