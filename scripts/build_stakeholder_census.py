@@ -120,6 +120,8 @@ for code,label,category,issues,pattern in THEMES:
     for i in issues:BY_ISSUE[i].add(code)
 
 def stakeholder_group(f):
+    if f.get('multi_submitter_metadata'):
+        return 'joint_institutional_filings'
     r=f.get('role','unresolved')
     industry=f.get('industry_focus','unspecified')
     if r.startswith('edtech_'):return 'edtech_vendors'
@@ -140,6 +142,7 @@ def stakeholder_group(f):
     return 'other_or_unidentified'
 
 GROUP_NAMES={
+ 'joint_institutional_filings':'Joint institutional submissions',
  'school_institutions':'Schools and districts','school_professionals':'School staff and educators',
  'school_affiliation_uncertain':'School-related, capacity unclear',
  'libraries':'Libraries','parents':'Parents and caregivers','edtech_vendors':'Edtech companies',
@@ -260,6 +263,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'representative_possible':bool(f.get('proxy_possible')),
             'joint_filing':bool(f.get('multi_submitter_metadata')),
             'joint_parties_in_metadata':int(f.get('submitter_field_components') or 1),
+            'joint_institutions':f.get('joint_institution_candidates') or [],
             'quality_scope':q.get('semantic_scope','not_modeled'),
             'number_machine_claims':source_rows[fid],
             'topics':topic_evidence
