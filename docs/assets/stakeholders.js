@@ -29,6 +29,7 @@
     $('evidence-search').addEventListener('input',renderEvidence);
     $('evidence-clean').addEventListener('change',renderEvidence);
     $('download').addEventListener('click',download);
+    $('download-matrix').addEventListener('click',downloadMatrix);
     $('org-profile-close').addEventListener('click',()=>{$('org-profile').hidden=true;selectedOrg=null;});
     for(const btn of document.querySelectorAll('[data-preset]'))btn.addEventListener('click',()=>{
       const key=btn.dataset.preset;
@@ -302,6 +303,38 @@
       b.addEventListener('click',go);b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
       root.append(b);
     }
+  }
+  function downloadMatrix(){
+    const group=groupValue(),compare=compareValue(),category=$('category').value;
+    const relevantGroups=group==='all'?data.stakeholder_groups:
+      data.stakeholder_groups.filter(g=>g.id===group||Boolean(compare&&g.id===compare));
+    const values=[['topic_id','argument_label','issue_area','stakeholder_group','stakeholder_label',
+      'all_filings_in_group','group_filings_with_any_extracted_argument',
+      'filings_with_this_argument','pct_of_all_group_filings','pct_of_coded_group_filings',
+      'pct_of_all_filings_with_this_argument','distinct_original_source_texts',
+      'named_institutions_with_this_argument','lower_risk_filings','needs_attribution_or_identity_review',
+      'source_coding_status']];
+    for(const t of data.topics){
+      if(category!=='all'&&t.category!==category)continue;
+      for(const g of relevantGroups){
+        const c=topicCell(t,g.id);
+        values.push([t.id,t.label,t.category,g.id,g.label,g.filings,g.filings_with_coded_topics,
+          c.filings,c.pct_of_group_filings,c.pct_of_coded_group_filings,
+          t.filings?Number((100*c.filings/t.filings).toFixed(2)):null,
+          c.distinct_source_texts,c.named_institutions,c.lower_risk_filings,
+          c.needs_attribution_or_identity_review,
+          'Unvalidated model-extracted argument; filing counts not verified endorsements']);
+      }
+    }
+    function escape(v){
+      let s=v===null||v===undefined?'':String(v);
+      if(/^\s*[=+@-]/.test(s))s="'"+s;
+      return '"'+s.replace(/"/g,'""')+'"';
+    }
+    const csv='\ufeff'+values.map(row=>row.map(escape).join(',')).join('\r\n')+'\r\n';
+    const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+    const a=make('a');a.href=url;a.download='erate_stakeholder_argument_frequencies.csv';a.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
   }
   function download(){
     const g=groupValue(),c=compareValue(),cat=$('category').value;
