@@ -41,7 +41,7 @@ class EcfsRefreshTest(unittest.TestCase):
     def test_conflicting_duplicate_and_unsafe_source_rejected(self):
         with self.assertRaisesRegex(ValueError,"Duplicate export row"):
             normalized_export([{"id":"26110099999"},{"filing_id":"26110099999"}])
-        with self.assertRaisesRegex(ValueError,"Conflicting ECFS filing IDs"):
+        with self.assertRaisesRegex(ValueError,"conflicting ECFS filing IDs"):
             normalized_export([{"id":"26110099999","submission_id":"26110099998"}])
         with self.assertRaisesRegex(ValueError,"official HTTPS FCC"):
             normalized_export([{"id":"26110099999","source_url":"https://other.com/filing/26110099999"}])
