@@ -111,6 +111,10 @@ class CensusTest(unittest.TestCase):
         self.assertIn('consultant_fees',x)
         self.assertNotIn('consultant_independence',x)
         self.assertNotIn('alleged_misuse',x)
+    def test_stale_context_audit_never_implies_low_risk(self):
+        import inspect
+        source=inspect.getsource(compute)
+        self.assertIn('not audit_match or possible_voice_issue',source)
     def test_named_types_are_not_collapsed(self):
         self.assertEqual(stakeholder_group({'role':'edtech_learning_vendor','industry_focus':'edtech_learning'}),'edtech_vendors')
         self.assertEqual(stakeholder_group({'role':'trade_association','industry_focus':'edtech_industry'}),'edtech_trade_associations')
