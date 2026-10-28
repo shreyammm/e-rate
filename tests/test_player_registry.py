@@ -1,7 +1,7 @@
 """Regression tests for conservative source-grounded player identity classification."""
 import unittest
 from scripts.build_player_registry import (
-    inferred_identity, organization_label, canon, ROLE_LABELS
+    inferred_identity, organization_label, canon, ROLE_LABELS, review_priority
 )
 class PlayerIdentityTest(unittest.TestCase):
     def test_institutional_school_field(self):
@@ -66,5 +66,16 @@ class PlayerIdentityTest(unittest.TestCase):
         self.assertEqual(x['organization'],'E-Rate Funding Services LLC')
         self.assertEqual(x['basis'],'multi_party_metadata_affiliation_candidate')
         self.assertTrue(x['needs_review'])
+
+    def test_review_queue_prioritizes_possible_representatives(self):
+        x=inferred_identity({'filer_raw':'Jane Doe | E-Rate Funding Services LLC'},
+            'named_person_capacity_unstated','On behalf of our school client, we recommend procurement reforms.')
+        priority=review_priority(x,'On behalf of our school client, we recommend procurement reforms.')
+        self.assertEqual(priority['level'],'high')
+        self.assertIn('possible_representative_client_relationship',priority['reasons'])
+    def test_known_agency_not_unnecessarily_reviewed(self):
+        x=inferred_identity({'filer_raw':'National Telecommunications and Information Administration'},
+            'unresolved','This summary records public listening session statements.')
+        self.assertEqual(review_priority(x,'text')['level'],'not_required')
 
 if __name__=='__main__':unittest.main()
