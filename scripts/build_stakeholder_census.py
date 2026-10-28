@@ -310,6 +310,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'joint_parties_in_metadata':int(f.get('submitter_field_components') or 1),
             'joint_institutions':f.get('joint_institution_candidates') or [],
             'quality_scope':q.get('semantic_scope','not_modeled'),
+            'ocr_candidate':bool(q.get('ocr_candidate',False)),
             'number_machine_claims':source_rows[fid],
             'topics':topic_evidence
         })
@@ -375,6 +376,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'direction':'No published support/oppose count; existing machine stance polarity is not validated.',
             'attribution':'Original participant quotes can be reported by a different filer. NTIA listening-session summary excluded from agency-position topic tallies; context flags and identity uncertainty retained.',
             'review':'All category counts are exploratory. A lower-risk count does not imply substantive human verification.',
+            'context_audit_warning':'Context-based risk flags are unavailable when the machine claim ledger differs from the audited ledger; absence of flags does not indicate a safe excerpt.',
             'coverage_limitation':'No extracted claim for a topic does not mean a filing lacks that argument, particularly with long filings or OCR.',
             'source_context_audit_sha256_verified':audit_match
         },
@@ -385,6 +387,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'filings_with_coded_topics':sum(bool(x['topics']) for x in records),
             'filings_without_coded_topics':sum(not x['topics'] for x in records),
             'filings_selected_windows_only':sum(x['quality_scope']=='prioritized_windows' for x in records),
+            'filings_with_ocr_candidate':sum(x['ocr_candidate'] for x in records),
             'filings_with_multiple_submitters':sum(x['joint_filing'] for x in records),
             'unresolved_or_personal_capacity_filings':sum(x['group']=='other_or_unidentified' for x in records),
             'excluded_reported_listening_claim_rows':ignored['third_party_listening_summary_claim_rows'],
