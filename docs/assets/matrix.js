@@ -359,6 +359,48 @@
     a.href=object;a.download='erate_complete_stakeholder_argument_matrix.csv';a.click();
     setTimeout(()=>URL.revokeObjectURL(object),1000);
   }
+  function exportIndustryAudit() {
+    const selectedGroups=new Set(['edtech_vendors','edtech_trade_associations',
+      'erate_consultants','consultant_associations']);
+    const isEdtechCofiling=f=>f.joint_filing && (f.joint_institutions||[]).some(
+      name=>/\b(?:curriculum associates|software (?:and|&) information industry association)\b/i.test(name));
+    const selected=data.filings.filter(f=>selectedGroups.has(f.group)||isEdtechCofiling(f))
+      .sort((a,b)=>a.group.localeCompare(b.group)||a.id.localeCompare(b.id));
+    const headers=[
+      'fcc_filing_id','preliminary_stakeholder_group','specific_role_candidate',
+      'institution_candidate','joint_institution_names','source_read_scope',
+      'role_requires_review','possible_representative_or_client','argument_topic_id',
+      'machine_argument_unverified','machine_action_unverified','verbatim_quote',
+      'machine_speaker_flag','fcc_url','review_source_read','review_actual_speaker',
+      'review_role_correct','review_argument_present','review_argument_endorsed',
+      'review_verified_position','reviewer_notes'
+    ];
+    const encode=value=>{
+      let s=String(value===undefined||value===null?'':value);
+      if(/^\s*[=+@-]/.test(s))s="'"+s;
+      return '"'+s.replace(/"/g,'""')+'"';
+    };
+    const rows=[headers];
+    for(const f of selected){
+      for(const item of f.topics.length?f.topics:[null]){
+        rows.push([
+          f.id,f.group,f.role,f.organization,(f.joint_institutions||[]).join(' | '),
+          f.quality_scope,Boolean(f.identity_review_required),Boolean(f.representative_possible),
+          item?.topic||'',item?.argument||'',item?.action||'',item?.quote||'',
+          Boolean(item?.needs_speaker_review),fcc(f.id),
+          '','','','','','',''
+        ]);
+      }
+    }
+    const blob=new Blob(['\ufeff'+rows.map(row=>row.map(encode).join(',')).join('\r\n')+'\r\n'],
+      {type:'text/csv;charset=utf-8'});
+    const target=URL.createObjectURL(blob),a=el('a');
+    a.href=target;a.download='erate_edtech_consultant_source_review.csv';a.click();
+    setTimeout(()=>URL.revokeObjectURL(target),1000);
+    $('industry-audit-status').textContent=number(selected.length)+
+      ' source filings ('+number(rows.length-1)+' filing–argument review lines) exported. '+
+      'All review answers are blank. This is a targeted census of known industry filings and named joint cofilers, not a representative population sample.';
+  }
   function wireControls() {
     $('measure').addEventListener('change',renderMatrix);
     $('group-scope').addEventListener('change',renderMatrix);
@@ -370,6 +412,7 @@
     $('frame-focus').addEventListener('change',renderFrames);
     $('frame-compare').addEventListener('change',renderFrames);
     $('matrix-export').addEventListener('click',exportCSV);
+    $('industry-audit-export').addEventListener('click',exportIndustryAudit);
     for(const b of document.querySelectorAll('[data-preset]'))b.addEventListener('click',()=>{
       const preset=b.dataset.preset;
       if(preset==='screens'){$('group-scope').value='focus';$('issue-filter').value='Screens & learning';}
