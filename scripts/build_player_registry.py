@@ -240,9 +240,13 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
 def submitted_by_multiple_entities(raw: str) -> dict:
     """Co-signers must never be counted as independent submissions."""
     parts=[x.strip() for x in str(raw or '').split('|') if x.strip()]
-    return {'multi_submitter_metadata':len(parts)>1,
+    # The separator can mean 'person | employer', not co-signing entities.
+    # Count a joint institutional submission only when multiple independently
+    # recognizable institution names occur. Unknown names remain unallocated.
+    known_orgs={canon(p) for p in parts if organization_label(p)}
+    joint=len(known_orgs)>1
+    return {'multi_submitter_metadata':joint,
             'submitter_field_components':len(parts) if parts else 1,
-            # Multi-party identities are not individual endorsing statements.
             'requires_relationship_review':len(parts)>1}
 
 def review_priority(identity: dict, body: str) -> dict:
@@ -361,7 +365,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
              'named_organizations':len(organizations),
              'filings_requiring_identity_review':sum(r['needs_review'] for r in filings),
              'manually_reviewed_filings':sum(r['identity_status']=='human_reviewed' for r in filings),
-             'filings_with_multiple_named_submitters':sum(r['multi_submitter_metadata'] for r in filings)},
+             'filings_with_two_or_more_identifiable_institutions':sum(r['multi_submitter_metadata'] for r in filings)},
        'method':'Screened original FCC institution-valued filer metadata, two-party potential affiliation, and explicit opening self-description. Type and industry remain separate. Categories provisional until human reviewed.',
        'roles':ROLE_LABELS,'role_filing_counts':dict(counts),
        'review_tier_counts':dict(Counter(r['review_tier'] for r in filings)),
