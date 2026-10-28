@@ -1,10 +1,13 @@
 name: Audit machine claim quote context
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '41 10 * * *'
   push:
     branches: [main]
     paths:
       - 'scripts/audit_claim_context.py'
+      - 'scripts/build_stakeholder_census.py'
       - 'docs/data/kaggle/machine_claim_rows.json'
       - 'data/fcc_corpus/**'
       - '.github/workflows/claim-context-audit.yml'
@@ -41,13 +44,37 @@ jobs:
           assert a['coverage']['claim_rows_with_any_review_flag']<=len(c['rows'])
           print('PASS: complete, source-aligned quote context review candidates')
           PY
-      - name: Publish conservative attribution-review flags
+      - name: Publish source-aligned attribution-review flags
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- docs/data/kaggle/claim_context_audit.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Publish additive machine-quote context review flags'
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+          # Concurrent imports can replace the machine ledger. Do not rebase
+          # audit artifacts that were generated for earlier ledger contents.
+          for attempt in 1 2 3 4 5 6; do
+            git fetch origin main
+            git reset --hard origin/main
+            python -m scripts.audit_claim_context
+            python - <<'PY'
+          import hashlib,json
+          from pathlib import Path
+          ledger=Path('docs/data/kaggle/machine_claim_rows.json').read_bytes()
+          result=json.loads(Path('docs/data/kaggle/claim_context_audit.json').read_text())
+          assert result['machine_claim_ledger_sha256']==hashlib.sha256(ledger).hexdigest()
+          assert result['coverage']['machine_claim_rows_checked']==len(json.loads(ledger)['rows'])
+          print('PASS: evidence audit matches the exact checked machine ledger')
+          PY
+            git add -- docs/data/kaggle/claim_context_audit.json
+            if git diff --cached --quiet; then
+              echo 'Context audit already matches current source ledger.'
+              exit 0
+            fi
+            git commit -m 'Publish source-matched machine claim context audit'
+            if git push origin HEAD:main; then
+              echo 'Published digest-matched quote context audit.'
+              exit 0
+            fi
+            echo "Concurrent update; rebuilding audit on attempt ${attempt}/6" >&2
+            sleep "$((attempt * 2))"
+          done
+          echo 'Could not publish an audit matching the current source ledger.' >&2
+          exit 1
