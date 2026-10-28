@@ -279,7 +279,10 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
                 -priority(p[0]),-len(str(p[0].get('quote') or ''))))
             c,flags=ranked[0]
             possible_voice_issue=bool(SPEAKER_RISK.intersection(flags))
-            cautious_flag=possible_voice_issue or f.get('proxy_possible') or f.get('multi_submitter_metadata') or f.get('needs_review')
+            # Never treat unreviewed speaker context as lower-risk if the
+            # exact claim-ledger digest did not match the audit snapshot.
+            cautious_flag=(not audit_match or possible_voice_issue or
+                           f.get('proxy_possible') or f.get('multi_submitter_metadata') or f.get('needs_review'))
             summary[group][code].add(fid)
             by_role[f['role']][code].add(fid)
             if not cautious_flag:cautious[group][code].add(fid)
