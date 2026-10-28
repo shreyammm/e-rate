@@ -6,7 +6,7 @@
   const pct=(x,d)=>d?((100*x/d).toFixed(1).replace(/\.0$/,''))+'%':'—';
   const fcc=id=>'https://www.fcc.gov/ecfs/filing/'+encodeURIComponent(id);
   const visit=(label,url)=>{const a=make('a',label);a.href=url;a.target='_blank';a.rel='noopener noreferrer';return a;};
-  let data=null,selectedTopic=null,visibleEvidence={};
+  let data=null,selectedTopic=null,visibleEvidence={},orgLimit=24,selectedOrg=null;
   const labels={},byGroup={},byTopic={},groupIds=new Map();
   const groupValue=()=> $('primary-group').value;
   const compareValue=()=> $('second-group').value;
@@ -29,6 +29,7 @@
     $('evidence-search').addEventListener('input',renderEvidence);
     $('evidence-clean').addEventListener('change',renderEvidence);
     $('download').addEventListener('click',download);
+    $('org-profile-close').addEventListener('click',()=>{$('org-profile').hidden=true;selectedOrg=null;});
     for(const btn of document.querySelectorAll('[data-preset]'))btn.addEventListener('click',()=>{
       const key=btn.dataset.preset;
       $('category').value='all';selectedTopic=null;
@@ -211,25 +212,72 @@
       root.append(col);
     }
   }
-  function renderOrgs(){
-    const g=groupValue(),c=compareValue();
-    const ids=new Set(all(g,selectedTopic).map(f=>f.id));
-    if(c)for(const f of all(c,selectedTopic))ids.add(f.id);
-    const names=new Map();
-    for(const f of data.filings){
-      if(!ids.has(f.id)||!f.organization)continue;
-      if(!names.has(f.organization))names.set(f.organization,{name:f.organization,ids:new Set(),first:f.id});
-      names.get(f.organization).ids.add(f.id);
+  function showOrgProfile(name){
+    selectedOrg=name;
+    const filings=data.filings.filter(f=>f.organization===name);
+    const root=$('org-profile');root.hidden=false;
+    $('org-profile-title').textContent=name;
+    const totalThemes=new Set(filings.flatMap(f=>f.topics.map(t=>t.topic)));
+    const role=filings[0]?.role||'unresolved';
+    const inferred=filings.some(f=>f.identity_review_required||f.joint_filing);
+    $('org-profile-context').textContent=n(filings.length)+' source filing'+(filings.length===1?'':'s')+' · '+
+      n(totalThemes.size)+' extracted argument themes · '+role.replace(/_/g,' ')+
+      (inferred?' · Institution and representation require original-source confirmation.':'.');
+    const topics=new Map();
+    for(const f of filings)for(const e of f.topics){
+      if(!topics.has(e.topic))topics.set(e.topic,[]);
+      topics.get(e.topic).push({f,e});
     }
-    const sorted=[...names.values()].sort((a,b)=>b.ids.size-a.ids.size||a.name.localeCompare(b.name));
-    $('org-caption').textContent='Named submitters in the selected topic. Multiple filings from one institution do not imply independent supporters.';
+    const place=$('org-profile-topics');place.replaceChildren();
+    const ordered=[...topics.entries()].sort((a,b)=>b[1].length-a[1].length);
+    for(const [code,entries] of ordered){
+      const topic=byTopic[code],detail=make('details',undefined,'profile-topic');
+      const summary=make('summary',(topic?.label||code)+' · '+n(entries.length)+' filing'+(entries.length===1?'':'s'));
+      detail.append(summary);
+      for(const {f,e} of entries.slice(0,8)){
+        const item=make('div',undefined,'profile-evidence');
+        item.append(make('p',e.action||e.argument||'Model interpretation not available'));
+        item.append(make('blockquote',e.quote||'Source excerpt unavailable'));
+        item.append(visit('FCC '+f.id+' ↗',fcc(f.id)));
+        if(e.needs_speaker_review)item.append(make('small',' · Attribution needs checking'));
+        detail.append(item);
+      }
+      if(entries.length>8)detail.append(make('p','Additional filings are available in the original corpus.','small-note'));
+      place.append(detail);
+    }
+    if(!ordered.length)place.append(make('p','No substantive argument was extracted for this institution. Open its original filing to inspect the complete submission.','empty-state'));
+    const source=make('p',undefined,'method-links');
+    for(const f of filings.slice(0,7))source.append(visit('Original FCC '+f.id,fcc(f.id)),document.createTextNode(' · '));
+    place.append(source);
+    root.scrollIntoView({block:'center',behavior:'smooth'});
+  }
+  function renderOrgs(){
+    // List all named organizations in the group, even if the selected topic
+    // has no extracted argument for them. This prevents hiding niche vendors.
+    const g=groupValue(),c=compareValue(),scope=data.filings.filter(f=>
+      (g==='all'||f.group===g||Boolean(c&&f.group===c))&&Boolean(f.organization));
+    const named=new Map();
+    for(const f of scope){
+      if(!named.has(f.organization))named.set(f.organization,{name:f.organization,ids:new Set(),themeIds:new Set()});
+      const obj=named.get(f.organization);
+      obj.ids.add(f.id);
+      if(f.topics.some(t=>t.topic===selectedTopic))obj.themeIds.add(f.id);
+    }
+    const sorted=[...named.values()].sort((a,b)=>b.themeIds.size-a.themeIds.size||
+      b.ids.size-a.ids.size||a.name.localeCompare(b.name));
+    $('org-caption').textContent=n(sorted.length)+' named organizations in the chosen stakeholder group'+
+      (c?'s':'')+'. The second number shows filings with the selected argument. Select an organization to see all its extracted themes.';
     const root=$('organization-list');root.replaceChildren();
-    for(const o of sorted.slice(0,24)){
-      const div=make('div',undefined,'org-line');
-      div.append(visit(o.name,fcc(o.first)),make('small',n(o.ids.size)+' filing'+(o.ids.size===1?'':'s')));
+    for(const o of sorted.slice(0,orgLimit)){
+      const div=make('div',undefined,'org-line'),button=make('button',o.name,'org-name-button');
+      button.type='button';button.addEventListener('click',()=>showOrgProfile(o.name));
+      div.append(button,make('small',n(o.ids.size)+' total · '+n(o.themeIds.size)+' here'));
       root.append(div);
     }
-    if(!sorted.length)root.append(make('p','No organization names are established in the selected set. Open individual filings for affiliations.','empty-state'));
+    if(!sorted.length)root.append(make('p','No named institutions in this selection. You can still inspect the linked filings.','empty-state'));
+    const more=$('org-more');more.hidden=sorted.length<=orgLimit;
+    more.onclick=()=>{orgLimit+=24;renderOrgs();};
+    if(selectedOrg&&!named.has(selectedOrg)){$('org-profile').hidden=true;selectedOrg=null;}
   }
   function coverage(){
     const root=$('coverage-list');root.replaceChildren();
@@ -268,6 +316,7 @@
     const g=groupValue(),c=compareValue();
     if(g===c&&g!=='all')$('second-group').value='';
     if(g==='all'&&c==='all')$('second-group').value='';
+    orgLimit=24;selectedOrg=null;$('org-profile').hidden=true;
     summary();table();visibleEvidence={};renderStakeholdersForTopic();renderEvidence();renderOrgs();differences();navigateState();
   }
   try{
