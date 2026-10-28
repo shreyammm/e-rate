@@ -20,6 +20,7 @@ jobs:
           python3 "$GITHUB_WORKSPACE/scripts/build_research_snapshot.py" --help
       - name: Verify GitHub Pages JavaScript
         run: |
+          node --check docs/assets/matrix.js
           node --check docs/assets/players.js
           node --check docs/assets/claim_check.js
           node --check docs/assets/site.js
