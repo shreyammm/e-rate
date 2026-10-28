@@ -78,4 +78,27 @@ class PlayerIdentityTest(unittest.TestCase):
             'unresolved','This summary records public listening session statements.')
         self.assertEqual(review_priority(x,'text')['level'],'not_required')
 
+    def test_named_business_subtypes_are_candidate_not_verified(self):
+        for name,role,industry in [
+            ('Curriculum Associates, LLC','edtech_learning_vendor','edtech_learning'),
+            ('Stride, Inc.','edtech_virtual_school_vendor','edtech_virtual_school'),
+            ('OverDrive, Inc.','edtech_digital_content_vendor','edtech_digital_content'),
+            ('Rego Payment Architectures, Inc.','edtech_age_privacy_vendor','child_privacy_technology'),
+            ('Cisco Systems, Inc.','network_technology_vendor','network_equipment'),
+            ('Extreme Networks, Inc.','network_technology_vendor','network_equipment'),
+            ('Zayo Group, LLC','telecom_isp','telecom_service'),
+            ('CSM Consulting, Inc.','erate_consultant','erate_consulting'),
+            ('Grant Consulting Services LLC','erate_consultant','erate_consulting')]:
+            with self.subTest(name=name):
+                x=inferred_identity({'filer_raw':name},'other_business_or_vendor','We submit comments.')
+                self.assertEqual((x['role'],x['industry_focus']),(role,industry))
+                self.assertEqual(x['basis'],'curated_company_type_candidate')
+                self.assertTrue(x['needs_review'])
+    def test_co_signers_not_inferred_as_independent_filings(self):
+        from scripts.build_player_registry import submitted_by_multiple_entities
+        x=submitted_by_multiple_entities('A School District | Curriculum Associates, LLC | Library Association')
+        self.assertTrue(x['multi_submitter_metadata'])
+        self.assertEqual(x['submitter_field_components'],3)
+        self.assertFalse(submitted_by_multiple_entities('Curriculum Associates, LLC')['multi_submitter_metadata'])
+
 if __name__=='__main__':unittest.main()
