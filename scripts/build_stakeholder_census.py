@@ -11,6 +11,7 @@ import argparse
 import hashlib
 import json
 import re
+import unicodedata
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -57,7 +58,7 @@ THEMES=[
  ('digital_literacy','Digital literacy and preparation','Screens & learning',
   ('cipa_digital_literacy',),r'(?:digital literac|technology education|computer (?:skill|literac)|keyboard|digital skill|prepar(?:ation|e) for the workforce|ai literac)'),
  ('parent_choice','Parental choice and opt-outs','Schools & families',
-  ('parent_opt_out',),r'(?:parental (?:opt.out|consent|choice|control|right)|parent (?:opt.out|choice|consent|permission)|famil(?:y|ies) (?:opt.out|choice)|analog alternative|opt.out)'),
+  ('parent_opt_out',),r'(?:parental (?:opt.out|consent|choice|control|right)|parent (?:opt.out|choice|consent|permission)|famil(?:y|ies) (?:opt.out|choice)|analog alternative|opt.out|parents? (?:should|must|can) (?:retain|have|choose|decide)|parents? know best|virtual school (?:option|choice)|choice of (?:virtual|online) (?:school|education)|parents? (?:retain|have) the right to choose)'),
  ('school_discretion','School autonomy and local decisions','Schools & families',
   (),r'(?:local (?:control|decision|discretion|authority)|school (?:autonomy|decision)|district (?:discretion|decisions)|educators? (?:should|best positioned)|instructional autonomy)'),
  ('consultant_registration','Registering or licensing consultants','Consultants & procurement',
@@ -155,6 +156,15 @@ GROUP_NAMES={
  'other_or_unidentified':'Other or unidentified'}
 GROUP_ORDER=list(GROUP_NAMES)
 
+DASH_VARIANTS=re.compile(r'[\u2010-\u2015\u2212\u00ad\u2043\ufe58\ufe63\uff0d]')
+def normalized_interpretation(s: str) -> str:
+    """Normalize model typographic dashes without changing source quotations.
+
+    Published verbatim quotes stay byte-identical. Only semantic matching
+    text from the model is normalized.
+    """
+    return DASH_VARIANTS.sub('-',unicodedata.normalize('NFKC',str(s or '')))
+
 def topics_for_claim(row):
     """Only machine-extracted argument/action propositions, not keyword hits in source."""
     issue=str(row.get('issue') or '')
@@ -165,7 +175,7 @@ def topics_for_claim(row):
     # Remove reflexive 'no recommendation' rows even if policy codebook mentions an issue.
     if NON_POSITION.search(arg) and len(arg)<200 and (not action or NO_ACTION.fullmatch(action)):
         return []
-    text=action+' '+arg
+    text=normalized_interpretation(action+' '+arg)
     matches={key for key in BY_ISSUE.get(issue,())}
     for key,pattern in PATTERNS.items():
         if pattern.search(text):matches.add(key)
