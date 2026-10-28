@@ -177,4 +177,24 @@ class PlayerIdentityTest(unittest.TestCase):
                 self.assertEqual(got['organization'],'')
                 self.assertTrue(got['needs_review'])
 
+
+    def test_source_typing_edge_cases_from_registry_diff(self):
+        x=inferred_identity({'filer_raw':'Minnesota Association of Charter Schools'},
+            'school_district_or_school','Our association submits comments on E-Rate.')
+        self.assertEqual(x['role'],'trade_association')
+        x=inferred_identity({'filer_raw':'Santa Rosa County District Schools'},
+            'school_district_or_school','Our school system submits comments.')
+        self.assertEqual(x['role'],'school_district')
+        x=inferred_identity({'filer_raw':'Saint Regis Sch District 1 A.K.A. St Regis K-12 Schools'},
+            'school_district_or_school','Our district submits comments.')
+        self.assertEqual(x['role'],'school_district')
+        x=inferred_identity({'filer_raw':'Tel/Logic Inc. dba E-Rate Central'},
+            'consultant_or_e_rate_services_firm','We help schools obtain E-Rate funding.')
+        self.assertEqual(x['role'],'erate_consultant')
+        self.assertEqual(x['organization'],'Tel/Logic Inc. dba E-Rate Central')
+        x=inferred_identity({'filer_raw':'C/W MARS Member Libraries'},
+            'library_or_library_system','Public libraries need internet access.')
+        self.assertEqual(x['organization'],'C/W MARS Member Libraries')
+        self.assertEqual(organization_label('school'), '')
+
 if __name__=='__main__':unittest.main()
