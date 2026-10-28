@@ -64,7 +64,7 @@ THEMES=[
  ('consultant_registration','Registering or licensing consultants','Consultants & procurement',
   ('consultant_registration',),r'(?:consultant registr|registration (?:requirement|form)|register consultants|licens(?:e|ing) consultants|consultant (?:registry|registration|crn)|consultants? (?:in|on|to|from|update) (?:the )?(?:crn|registry))'),
  ('consultant_definition','Who counts as a consultant','Consultants & procurement',
-  ('consultant_definition',),r'(?:defin(?:e|ition) of consultant|consultant definition|consultant exemp|professional service provider)'),
+  ('consultant_definition',),r'(?:defin(?:e|ition) of consultant|defin(?:e|ing) (?:which persons|who|the term|consultants?)|(?:who|which) counts? as (?:an? )?(?:e[- ]?rate )?consultant|consultant definition|consultant exemp|professional service provider)'),
  ('consultant_fees','Consultant compensation and percentage fees','Consultants & procurement',
   ('consultant_percent_fees',),r'(?:percentage.based (?:fee|consult|compensat)|percent(?:age)? of.*(?:award|fund|discount)|contingen(?:t|cy) fee|consultant (?:fee|compensat|payment|billing|price)|(?:fee|compensation) (?:structure|model|arrangement)|performance.based fee|fee.flexibility)'),
  ('consultant_reporting','Consultant disclosures and Form 5654','Consultants & procurement',
