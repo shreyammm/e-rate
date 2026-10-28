@@ -20,6 +20,7 @@ class MatrixResearchPageTests(unittest.TestCase):
         required = [
             "load-status", "matrix-head", "matrix-body", "matrix-export", "industry-audit-export", "industry-audit-status",
             "group-scope", "issue-filter", "measure", "topic-search",
+            "coverage-filter", "scope-message", "audit-status",
             "detail-metrics", "detail-evidence", "detail-deep-link",
             "comparison-group", "evidence-query", "prefer-clear",
             "frame-focus", "frame-compare", "frame-list",
@@ -73,6 +74,40 @@ class MatrixResearchPageTests(unittest.TestCase):
         self.assertIn("isEdtechCofiling",js)
         self.assertIn("review_argument_endorsed",js)
         self.assertIn("review_verified_position",js)
+
+
+    def test_full_text_scope_is_subset_with_reconciled_denominators(self):
+        d = json.loads(CENSUS.read_text(encoding="utf-8"))
+        full = [f for f in d["filings"] if f["quality_scope"] == "full_text"]
+        full_ids = {f["id"] for f in full}
+        self.assertEqual(len(full_ids),len(full))
+        self.assertLess(len(full),d["coverage"]["filings"])
+        for g in d["stakeholder_groups"]:
+            selected = [f for f in full if f["group"] == g["id"]]
+            self.assertLessEqual(len(selected),g["filings"])
+        for topic in d["topics"]:
+            n = sum(any(e["topic"] == topic["id"] for e in f["topics"]) for f in full)
+            self.assertLessEqual(n,topic["filings"])
+            for group in d["stakeholder_groups"]:
+                hits = sum(f["group"] == group["id"] and
+                           any(e["topic"] == topic["id"] for e in f["topics"]) for f in full)
+                self.assertLessEqual(hits,topic["by_stakeholder"][group["id"]]["filings"])
+
+    def test_scope_and_stale_context_audit_are_visible(self):
+        html = PAGE.read_text(encoding="utf-8")
+        js = JS.read_text(encoding="utf-8")
+        for field in ("coverage-filter", "scope-message", "audit-status"):
+            self.assertIn('id="'+field+'"',html)
+        for token in ("scopedCount", "scopedGroupSize", "scopedTopicSize",
+                      "source_context_audit_sha256_verified",
+                      "ocr_candidate", "full_text_model_reads"):
+            self.assertIn(token,js)
+        d = json.loads(CENSUS.read_text(encoding="utf-8"))
+        if not d["method"]["source_context_audit_sha256_verified"]:
+            # Audits with a stale input digest can never be presented as
+            # lower-risk examples regardless of how readable the quote is.
+            self.assertEqual(sum(cell["lower_risk_filings"] for t in d["topics"]
+                        for cell in t["by_stakeholder"].values()),0)
 
 if __name__ == "__main__":
     unittest.main()
