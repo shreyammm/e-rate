@@ -4,6 +4,11 @@ from scripts.build_stakeholder_census import (
     topics_for_claim, stakeholder_group, compute, THEMES, GROUP_NAMES, NTIA_LISTENING_REPORT
 )
 class CensusTest(unittest.TestCase):
+    def test_census_statistics_include_unique_named_institutions(self):
+        import inspect
+        source=inspect.getsource(compute)
+        self.assertIn("'named_institutions'",source)
+        self.assertIn("'pct_of_coded_group_filings'",source)
     def test_advanced_consultant_distinctions(self):
         x=topics_for_claim({'issue':'other_policy_issue','action':'Require independent consultants to disclose consultant conflicts of interest and vendor payments.',
            'argument':'Consultants paid by vendors risk recommending the vendor that compensates them.'})
