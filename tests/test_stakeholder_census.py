@@ -31,6 +31,41 @@ class CensusTest(unittest.TestCase):
         x=topics_for_claim({'issue':'screen_time_condition','action':'Keep decisions about screens local.',
                             'argument':'Schools should make screen-time policy decisions.'})
         self.assertNotIn('screen_harms',x)
+    def test_privacy_preserving_is_not_erate_program_continuity(self):
+        # Rego filing 26110081077 -- an unrelated privacy-preserving proposal.
+        x=topics_for_claim({'issue':'cipa_age_specific',
+           'action':'establish a technology-neutral safe harbor for privacy-preserving age and parental assurance credentials',
+           'argument':'A safe harbor would allow schools to rely on limited, privacy-preserving age and parental assurances rather than collecting full identity data.'})
+        self.assertNotIn('program_continuity',x)
+    def test_performance_criteria_are_not_forms_and_admin_costs(self):
+        x=topics_for_claim({'issue':'other_policy_issue',
+            'action':'define performance, privacy, security, interoperability and accountability criteria for assurance methods',
+            'argument':'Rego proposes that the Commission define criteria for assurance methods.'})
+        self.assertNotIn('administrative_burden',x)
+    def test_certification_qualification_is_not_erate_service_eligibility(self):
+        x=topics_for_claim({'issue':'cipa_age_specific',
+            'action':'Certify multiple assurance providers based on outcome-based standards',
+            'argument':'Certification should focus on accuracy, privacy, and interoperability, allowing multiple vendors to qualify.'})
+        self.assertNotIn('eligibility_rules',x)
+    def test_opposing_limits_is_not_alleging_screen_harm(self):
+        # OverDrive filing 26110081293: educational reading use, not a harm allegation.
+        x=topics_for_claim({'issue':'education_outcomes',
+            'action':'recognize E-Rate-funded networks as essential for learning and not subject to screen-time limits',
+            'argument':'Students use E-Rate-funded Wi-Fi to read books and conduct research, which is core educational activity.'})
+        self.assertNotIn('screen_harms',x)
+        self.assertIn('screen_policy',x)
+        self.assertIn('learning_outcomes',x)
+    def test_explicit_developmental_harm_is_a_distinct_theme(self):
+        x=topics_for_claim({'issue':'screen_time_condition',
+            'action':'Require limits on excessive screen time.',
+            'argument':'Students face developmental harms from excessive screen time.'})
+        self.assertIn('screen_harms',x)
+        self.assertIn('screen_policy',x)
+    def test_explicit_erate_continuation_is_still_detected(self):
+        x=topics_for_claim({'issue':'other_policy_issue',
+            'action':'preserve E-Rate funding',
+            'argument':'Schools depend on preserving the E-Rate program.'})
+        self.assertIn('program_continuity',x)
     def test_complete_denominator_and_ntia_listening_exclusion(self):
         ids=['26110081266','26110081358','26110080790']
         ids+=['27'+str(i).zfill(9) for i in range(3228)]
