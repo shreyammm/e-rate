@@ -363,27 +363,36 @@
     }
   }
   function exportCSV() {
-    const head=['argument_id','argument','issue_area','stakeholder_id','stakeholder_group',
-      'all_group_filings','group_filings_with_extracted_themes','filings_with_argument',
-      'share_within_group_pct','share_of_argument_pct','distinct_source_texts',
-      'named_institutions','needs_identity_or_attribution_review','status'];
+    const head=['source_scope','argument_id','argument','issue_area','stakeholder_id','stakeholder_group',
+      'filings_in_scope_for_group','group_filings_with_extracted_themes',
+      'filings_with_argument','share_within_group_pct','share_of_argument_pct',
+      'distinct_source_texts','named_institutions','needs_identity_or_attribution_review',
+      'review_status'];
     const out=[head],quote=x=>{
       let s=String(x===null||x===undefined?'':x);
       if(/^[\s]*[=+@-]/.test(s))s="'"+s;
       return '"'+s.replace(/"/g,'""')+'"';
     };
     for(const t of data.topics)for(const g of data.stakeholder_groups) {
-      const c=cell(t,g.id);
-      out.push([t.id,t.label,t.category,g.id,g.label,g.filings,g.filings_with_coded_topics,
-        c.filings, g.filings?(100*c.filings/g.filings).toFixed(2):'',
-        t.filings?(100*c.filings/t.filings).toFixed(2):'',
-        c.distinct_source_texts,c.named_institutions,c.needs_attribution_or_identity_review,
-        'preliminary machine-extracted theme, not verified stance']);
+      const c=cell(t,g.id),subset=allFor(g.id,t.id),scope=fullOnly()?'full_text_model_reads':'all_machine_coded_filings';
+      const countHere=scopedCount(t,g.id),gTotal=scopedGroupSize(g.id),tTotal=scopedTopicSize(t);
+      const hashes=new Set(subset.map(f=>f.text_sha256).filter(Boolean));
+      const names=new Set(subset.map(f=>f.organization).filter(Boolean));
+      const cautions=subset.filter(f=>{
+        const e=topicRow(f,t.id);
+        return e?.needs_speaker_review || f.identity_review_required || f.joint_filing || f.ocr_candidate;
+      }).length;
+      const coded=sourceFilings(g.id).filter(f=>f.topics.length).length;
+      const pctWithin=fullOnly()?(gTotal?countHere/gTotal:0):(g.filings?c.filings/g.filings:0);
+      const pctTopic=fullOnly()?(tTotal?countHere/tTotal:0):(t.filings?c.filings/t.filings:0);
+      out.push([scope,t.id,t.label,t.category,g.id,g.label,gTotal,coded,countHere,
+        (100*pctWithin).toFixed(2),(100*pctTopic).toFixed(2),hashes.size,names.size,cautions,
+        'unvalidated machine-extracted argument; no verified stance count']);
     }
     const blob=new Blob(['\ufeff'+out.map(r=>r.map(quote).join(',')).join('\r\n')+'\r\n'],
       {type:'text/csv;charset=utf-8'});
     const object=URL.createObjectURL(blob),a=el('a');
-    a.href=object;a.download='erate_complete_stakeholder_argument_matrix.csv';a.click();
+    a.href=object;a.download='erate_stakeholder_argument_matrix_'+(fullOnly()?'full_text':'all_filings')+'.csv';a.click();
     setTimeout(()=>URL.revokeObjectURL(object),1000);
   }
   function exportIndustryAudit() {
