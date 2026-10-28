@@ -42,3 +42,8 @@ nav{display:flex;flex-wrap:wrap;gap:22px}nav a{font-size:12px;text-decoration:no
 .fieldnotes-grid p{font-size:12px;color:#546a74;line-height:1.7;margin:5px 0}
 .fieldnotes-grid p:last-child{font-size:11px;margin-top:12px}
 @media(max-width:790px){.fieldnotes-grid{display:block}.fieldnotes-grid article{padding:12px 0;margin-bottom:18px}}
+
+.heading-actions{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:flex-end}
+#industry-audit-status:not(:empty){padding:8px 0;color:#526f7e}
+.joint-note{color:#66777e;font-size:11px;line-height:1.65;border-top:1px solid #e6ecee;padding-top:13px;margin:16px 0 0}
+@media(max-width:790px){.heading-actions{margin-top:15px;justify-content:flex-start}}
