@@ -67,6 +67,23 @@ class CensusTest(unittest.TestCase):
             'action':'preserve E-Rate funding',
             'argument':'Schools depend on preserving the E-Rate program.'})
         self.assertIn('program_continuity',x)
+    def test_virtual_school_parental_choice_is_not_uncategorized(self):
+        # Stride: parents know best and seek choice of virtual school options.
+        x=topics_for_claim({'issue':'other_policy_issue',
+            'action':'preserve virtual school options',
+            'argument':'Stride opposes rules limiting virtual school options. Parents should retain the right to choose virtual education for their children.'})
+        self.assertIn('parent_choice',x)
+        self.assertNotIn('program_continuity',x)
+    def test_nonbreaking_hyphen_screen_time_limits(self):
+        # OverDrive's actual model action uses a U+2011 nonbreaking hyphen.
+        x=topics_for_claim({'issue':'education_outcomes',
+            'action':'recognize E‑Rate‑funded networks as essential for learning and not subject to screen‑time limits',
+            'argument':'Students read books through E‑Rate networks for educational purposes.'})
+        self.assertIn('screen_policy',x)
+        self.assertNotIn('screen_harms',x)
+    def test_en_and_em_dash_variants_normalize(self):
+        from scripts.build_stakeholder_census import normalized_interpretation
+        self.assertEqual(normalized_interpretation('E‑Rate – screen‐time'), 'E-Rate - screen-time')
     def test_complete_denominator_and_ntia_listening_exclusion(self):
         ids=['26110081266','26110081358','26110080790']
         ids+=['27'+str(i).zfill(9) for i in range(3228)]
