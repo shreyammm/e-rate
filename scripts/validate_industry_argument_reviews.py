@@ -28,7 +28,7 @@ OPTIONS = {
     "filer_endorses_argument": {"yes", "no", "unclear", "not_applicable"},
     "requested_fcc_action": {
         "support", "oppose", "amend_or_condition", "alternative",
-        "discussion_no_position", "not_addressed", "unclear",
+        "discussion_no_position", "not_addressed", "unclear", "mixed_or_multiple",
     },
 }
 
@@ -76,6 +76,10 @@ def validate_review_row(expected: dict, actual: dict, name: str) -> bool:
                          str(key(expected)))
     if present == "yes" and action == "not_addressed":
         raise ValueError(name + ": present argument marked as unaddressed " + str(key(expected)))
+    if action == "mixed_or_multiple" and len(actual.get("multiple_policy_options_explanation", "").strip()) < 12:
+        raise ValueError(name + ": mixed FCC actions require an explanatory note " + str(key(expected)))
+    if action in {"support", "oppose", "amend_or_condition", "alternative"} and not actual.get("verified_fcc_provision_ids", "").strip():
+        raise ValueError(name + ": a policy-action label requires identified FCC option IDs " + str(key(expected)))
     if len(actual.get("source_recheck_notes", "").strip()) < 12:
         raise ValueError(name + ": describe the full-source check at " + str(key(expected)))
     return True
