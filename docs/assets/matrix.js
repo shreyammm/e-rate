@@ -155,34 +155,34 @@
     $('measure-explanation').textContent = description[$('measure').value];
     const head=$('matrix-head'),body=$('matrix-body');head.replaceChildren();body.replaceChildren();
     $('matrix-empty').hidden = visibleTopics.length !== 0;
-    const tr=el('tr'),main=el('th','Stakeholder · total filings','rowhead');
+    const tr=el('tr'),main=el('th','Argument / topic total','rowhead');
     main.scope='col';tr.append(main);
-    for (const t of visibleTopics) {
+    for (const group of visibleGroups) {
+      const g = byGroup.get(group);
       const th=el('th');th.scope='col';
-      th.append(el('span',t.label),el('span',number(t.filings)+' filings overall','col-total'));
+      th.append(el('span',g.label),el('span',number(g.filings)+' filings'+(g.filings<15?' · small sample':''),'col-total'));
       tr.append(th);
     }
     head.append(tr);
-    const max = Math.max(1,...visibleGroups.flatMap(g=>visibleTopics.map(t=>measureValue(t,g))));
-    for (const group of visibleGroups) {
-      const groupRecord=byGroup.get(group),r=el('tr');
-      if (groupRecord.filings < 15) r.classList.add('small-sample');
-      const heading=el('th',undefined,'rowhead');heading.scope='row';
-      heading.append(el('strong',groupRecord.label),el('small',number(groupRecord.filings)+' total · '+number(groupRecord.filings_with_coded_topics)+' with extracted arguments'));
+    const max = Math.max(1,...visibleTopics.flatMap(t=>visibleGroups.map(g=>measureValue(t,g))));
+    for (const topic of visibleTopics) {
+      const r=el('tr'),heading=el('th',undefined,'rowhead');heading.scope='row';
+      heading.append(el('strong',topic.label),el('small',topic.category+' · '+number(topic.filings)+' total filings'));
       r.append(heading);
-      for (const t of visibleTopics) {
-        const td=el('td'),countHere=count(t,group),v=measureValue(t,group);
-        const btn=el('button',undefined,countHere ? '' : 'zero');btn.type='button';
-        const opacity = v / max;
-        const colorScale = Math.round(247 - opacity*89);
-        const tealScale = Math.round(250 - opacity*51);
+      for (const group of visibleGroups) {
+        const groupRecord=byGroup.get(group),countHere=count(topic,group),v=measureValue(topic,group);
+        const td=el('td'),btn=el('button',undefined,countHere?'':'zero');btn.type='button';
+        const opacity=v/max;
+        const colorScale=Math.round(247-opacity*89),tealScale=Math.round(250-opacity*51);
         btn.style.setProperty('--heat','rgb('+colorScale+','+tealScale+','+Math.round(251-opacity*35)+')');
-        btn.append(el('strong',$('measure').value==='count'?number(countHere):rate(countHere,$('measure').value==='topic'?t.filings:groupRecord.filings)));
+        btn.append(el('strong',$('measure').value==='count'?number(countHere):
+          rate(countHere,$('measure').value==='topic'?topic.filings:groupRecord.filings)));
         btn.append(el('small',number(countHere)+' filing'+(countHere===1?'':'s')));
-        btn.title=groupRecord.label+' / '+t.label+': '+number(countHere)+' of '+number(groupRecord.filings)+' group filings; '+number(t.filings)+' filings overall for argument.';
-        btn.setAttribute('aria-pressed',String(activeGroup===group&&activeTopic===t.id));
+        btn.title=groupRecord.label+' / '+topic.label+': '+number(countHere)+' of '+
+          number(groupRecord.filings)+' group filings; '+number(topic.filings)+' filings overall for this argument.';
+        btn.setAttribute('aria-pressed',String(activeGroup===group&&activeTopic===topic.id));
         btn.setAttribute('aria-label',btn.title+'; open source evidence');
-        btn.addEventListener('click',()=>selectCell(group,t.id,true));
+        btn.addEventListener('click',()=>selectCell(group,topic.id,true));
         td.append(btn);r.append(td);
       }
       body.append(r);
