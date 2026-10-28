@@ -18,13 +18,16 @@
   const group=r=>{
     if(['school_district','individual_school','school_technology_staff','school_educator','school_administrator','school_connected_unknown'].includes(r.role))return 'school';
     if(r.role.startsWith('edtech_'))return 'edtech';
+    if(r.industry_focus==='edtech_industry')return 'edtech_industry';
+    if(r.industry_focus==='telecom_industry')return 'telecom';
+    if(r.industry_focus==='erate_consulting')return 'consultant';
     if(['telecom_isp','network_technology_vendor'].includes(r.role))return 'telecom';
     if(['erate_consultant','procurement_adviser'].includes(r.role))return 'consultant';
     if(['library_institution','library_staff'].includes(r.role))return 'library';
     if(r.role==='parent_guardian')return 'parent';
     return 'other';
   };
-  const groupNames={school:'Schools and educators',edtech:'Edtech vendors',telecom:'Telecom and networking',consultant:'Consultants and advisers',library:'Libraries',parent:'Parents and caregivers',other:'Others / unresolved'};
+  const groupNames={school:'Schools and educators',edtech:'Edtech companies',edtech_industry:'Edtech industry associations',telecom:'Telecom and networking',consultant:'Consultants and advisers',library:'Libraries',parent:'Parents and caregivers',other:'Others / unresolved'};
   const byFiling=new Map();
   function stats(){
     const p=data.coverage;
