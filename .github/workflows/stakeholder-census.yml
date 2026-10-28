@@ -7,9 +7,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_stakeholder_census.py'
-      - 'scripts/build_player_registry.py'
       - 'tests/test_stakeholder_census.py'
-      - 'docs/data/player_registry.json'
       - 'docs/data/kaggle/machine_claim_rows.json'
       - 'docs/data/kaggle/filing_quality.json'
       - 'docs/data/kaggle/claim_context_audit.json'
@@ -18,7 +16,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: erate-stakeholder-census
+  group: erate-stakeholder-publish
   cancel-in-progress: false
 jobs:
   census:
@@ -70,6 +68,15 @@ jobs:
           git add -- docs/data/stakeholder_argument_census.json
           if ! git diff --cached --quiet; then
             git commit -m 'Publish complete stakeholder-by-argument exploratory census'
-            git pull --rebase origin main
-            git push origin HEAD:main
+            for attempt in 1 2 3 4 5 6; do
+              git pull --rebase origin main
+              if git push origin HEAD:main; then
+                echo 'Published source-aligned census successfully.'
+                exit 0
+              fi
+              echo "Concurrent write detected, retry ${attempt}/6" >&2
+              sleep "$((attempt * 2))"
+            done
+            echo 'Publication failed after retries; no successful state claimed.' >&2
+            exit 1
           fi
