@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_stakeholder_census.py'
+      - 'scripts/build_industry_argument_review.py'
+      - 'tests/test_industry_argument_review.py'
       - 'tests/test_stakeholder_census.py'
       - 'docs/data/kaggle/machine_claim_rows.json'
       - 'docs/data/kaggle/filing_quality.json'
@@ -33,6 +35,10 @@ jobs:
         run: python -m unittest discover -s tests -p test_stakeholder_census.py -v
       - name: Build all-source-file exploratory analysis
         run: python -m scripts.build_stakeholder_census
+      - name: Check industry argument review queue construction
+        run: python -m unittest discover -s tests -p test_industry_argument_review.py -v
+      - name: Build source-linked review queue with non-detection controls
+        run: python -m scripts.build_industry_argument_review
       - name: Verify full source census and no PII
         run: |
           python - <<'PY'
@@ -71,7 +77,8 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             python -m scripts.build_stakeholder_census
-            git add -- docs/data/stakeholder_argument_census.json
+            python -m scripts.build_industry_argument_review
+            git add -- docs/data/stakeholder_argument_census.json docs/data/industry_argument_review.csv docs/data/industry_argument_review_summary.json
             if git diff --cached --quiet; then
               echo 'Generated datasets already match latest sources.'
               exit 0
