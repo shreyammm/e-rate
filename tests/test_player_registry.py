@@ -47,6 +47,13 @@ class PlayerIdentityTest(unittest.TestCase):
                 'We should consider consultant oversight without reducing E-Rate.')
             self.assertEqual(x['role'],'unresolved')
             self.assertTrue(x['needs_review'])
+    def test_self_identified_individual_consultant_is_preserved(self):
+        x=inferred_identity({'filer_raw':'Alex Doe'},
+            'consultant_or_e_rate_services_firm',
+            'I am an E-Rate consultant working with several small districts.')
+        self.assertEqual(x['role'],'erate_consultant')
+        self.assertEqual(x['basis'],'author_self_description')
+        self.assertEqual(x['organization'],'')
     def test_telecom_company_mentioning_consultants_remains_telecom(self):
         x=inferred_identity({'filer_raw':'Alaska Power & Telephone'},
             'consultant_or_e_rate_services_firm',
