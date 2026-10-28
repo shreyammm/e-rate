@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Who said what? · E-Rate Comment Research</title>
+<meta name="description" content="Explore E-Rate comments by stakeholder and argument, compare edtech companies, schools and E-Rate consultants, and read original FCC filings.">
+<link rel="stylesheet" href="./assets/stakeholders.css">
+</head>
+<body>
+<header class="topbar"><div class="container top-inner">
+<a class="brand" href="./stakeholders.html">E-Rate <span>Comment Research</span></a>
+<nav aria-label="Main navigation"><a href="./stakeholders.html" aria-current="page">Arguments</a><a href="./players.html">Organizations</a><a href="./ask.html">Search filings</a><a href="./atlas.html">Themes</a><a href="./research.html">More tools</a></nav>
+</div></header>
+<main class="container">
+<section class="introduction">
+<p class="eyebrow">FCC comment analysis · October 2026 corpus</p>
+<h1>What did different stakeholders argue?</h1>
+<p class="lede">Find the recurring arguments, see who raised them, and compare schools, education technology companies, trade groups, and E-Rate consultants. Every example links back to an original FCC filing.</p>
+<p class="source-note" id="load-status" role="status">Preparing the filing and argument index…</p>
+</section>
+
+<section id="explore" class="research-layout" aria-label="Explore by group">
+<aside class="sidebar">
+<div class="sidebar-inner">
+<h2>Explore the comments</h2>
+<label for="primary-group">Stakeholder</label>
+<select id="primary-group">
+<option value="all">Everyone</option>
+<option value="school_institutions">Schools and districts</option>
+<option value="school_professionals">School staff and educators</option>
+<option value="edtech_vendors">Edtech companies</option>
+<option value="edtech_trade_associations">Edtech industry associations</option>
+<option value="erate_consultants">E-Rate consulting firms</option>
+<option value="consultant_associations">Consultant associations</option>
+<option value="connectivity_and_network_vendors">Internet and networking vendors</option>
+<option value="telecom_associations">Telecom associations</option>
+<option value="libraries">Libraries</option>
+<option value="parents">Parents and caregivers</option>
+<option value="government">Government</option>
+<option value="nonprofits_and_advocacy">Advocacy and nonprofits</option>
+<option value="other_associations">Other associations</option>
+<option value="other_businesses">Other businesses</option>
+<option value="other_or_unidentified">Unidentified and other filers</option>
+</select>
+<label for="second-group">Compare with <span class="optional">optional</span></label>
+<select id="second-group">
+<option value="">No comparison</option>
+<option value="school_institutions">Schools and districts</option>
+<option value="school_professionals">School staff and educators</option>
+<option value="edtech_vendors">Edtech companies</option>
+<option value="edtech_trade_associations">Edtech industry associations</option>
+<option value="erate_consultants">E-Rate consulting firms</option>
+<option value="consultant_associations">Consultant associations</option>
+<option value="connectivity_and_network_vendors">Internet and networking vendors</option>
+<option value="telecom_associations">Telecom associations</option>
+<option value="libraries">Libraries</option>
+<option value="parents">Parents and caregivers</option>
+<option value="government">Government</option>
+<option value="nonprofits_and_advocacy">Advocacy and nonprofits</option>
+<option value="other_associations">Other associations</option>
+<option value="other_businesses">Other businesses</option>
+<option value="other_or_unidentified">Unidentified and other filers</option>
+</select>
+<label for="category">Issue area</label>
+<select id="category"><option value="all">All arguments</option>
+<option>Funding &amp; infrastructure</option><option>Internet safety</option><option>Screens &amp; learning</option><option>Schools &amp; families</option><option>Consultants &amp; procurement</option><option>Oversight &amp; legal</option>
+</select>
+<div class="sidebar-rule"></div>
+<p class="sidebar-kicker">Start here</p>
+<div class="presets">
+<button data-preset="edtech">Edtech companies <span>and schools</span></button>
+<button data-preset="consultants">E-Rate consultants <span>and schools</span></button>
+<button data-preset="screen">Screen-time arguments <span>across groups</span></button>
+<button data-preset="procurement">Procurement and vendor influence <span>across groups</span></button>
+</div>
+<div class="sidebar-rule"></div>
+<p class="sidebar-help">Each number counts <strong>filings with a relevant extracted argument</strong>. One filing may raise several arguments. These are preliminary classifications, not verified opinions.</p>
+</div>
+</aside>
+<div class="main-column">
+<div class="section-top">
+<div><p class="eyebrow">Stakeholder overview</p><h2 id="group-heading">All commenters</h2><p id="group-description" class="muted">Loading the full filing census…</p></div>
+<div class="section-controls"><button id="download" class="quiet-button" type="button">Export data <span aria-hidden="true">↓</span></button></div>
+</div>
+<div class="summary-strip" id="summary-strip"></div>
+<section id="topics" class="content-section">
+<div class="section-header">
+<div><h3>Arguments raised</h3><p>Which issues appear most often in the selected group's submissions?</p></div>
+<label class="sort-control">Order <select id="sort-order"><option value="group">Most common in this group</option><option value="overall">Most common overall</option><option value="difference">Largest difference in share</option><option value="alpha">Alphabetical</option></select></label>
+</div>
+<p class="small-note">The percentages use all filings in each stakeholder group as the denominator. More than one argument can occur in a filing. Differences in frequency do not necessarily mean disagreements in position.</p>
+<div id="argument-table" class="argument-table" role="region" aria-label="Arguments and filing frequencies"></div>
+</section>
+<section id="evidence" class="content-section evidence-section">
+<div class="section-header"><div><p class="eyebrow">Read the filings</p><h3 id="evidence-heading">Choose an argument above</h3><p id="evidence-description">Select a topic to compare the actual language used in different submissions.</p></div></div>
+<div class="evidence-controls">
+<label for="evidence-search">Find a name or phrase</label><input type="search" id="evidence-search" placeholder="Search within these examples">
+<label class="checkbox"><input type="checkbox" id="evidence-clean"> Prioritize fewer review flags</label>
+</div>
+<div id="evidence-columns" class="evidence-columns"></div>
+<p class="small-note">Excerpts are literal quotations from the indexed filing. The sentence above each quote is a machine-generated interpretation that needs checking against the source; speaker affiliation and stance may also require confirmation.</p>
+</section>
+<section class="content-section" id="organizations">
+<div class="section-header"><div><h3>Organizations in these filings</h3><p id="org-caption">Named submitters associated with the selected stakeholder group and argument.</p></div></div>
+<div class="org-list" id="organization-list"></div>
+</section>
+</div></section>
+
+<section class="appendix" id="coverage">
+<div class="appendix-heading"><h2>Who submitted comments?</h2><p>All filing records, including those with no extracted argument.</p></div>
+<div class="coverage-grid" id="coverage-list"></div>
+</section>
+<section class="method-note">
+<h2>How to read these findings</h2>
+<div class="method-grid">
+<p><strong>The denominator is filings.</strong> Not individual supporters, distinct organizations, or representative public opinion. We also track identical source texts to expose repeated filings.</p>
+<p><strong>These are preliminary argument assignments.</strong> The original passages are real and source-linked, but the model may misinterpret a comment, miss a topic, or attribute a quotation to the filer.</p>
+<p><strong>Trade associations are kept separate from vendors.</strong> A joint submission remains a single filing. Consultants and clients are not automatically credited with each other's views.</p>
+<p><strong>Reporting isn't endorsement.</strong> NTIA's listening-session summary is excluded from the agency argument totals. Allegations of misuse are kept separate from routine calls for oversight.</p>
+</div>
+<p class="method-links"><a href="./corpus.html">Read every filing</a> · <a href="./claims-to-check.html">Review factual claims</a> · <a href="./players.html">Review uncertain affiliations</a> · <a href="https://github.com/shreyammm/e-rate">Methods and data</a></p>
+</section>
+<footer class="footer">E-Rate Comment Research <span>·</span> Source snapshot: October 20, 2026 <span>·</span> <a href="https://www.fcc.gov/ecfs/">FCC Electronic Comment Filing System</a></footer>
+</main>
+<script src="./assets/stakeholders.js" defer></script>
+</body></html>
