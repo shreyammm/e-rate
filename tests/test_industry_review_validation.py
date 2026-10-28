@@ -66,6 +66,20 @@ class ReviewValidationTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "full-source check"):
             validate_review_row(q, r2, "reviewer-a")
 
+    def test_specific_fcc_actions_need_provision_ids_and_mixed_actions_need_notes(self):
+        q = source()
+        r = coded(q, "reviewer-a")
+        r["requested_fcc_action"] = "oppose"
+        with self.assertRaisesRegex(ValueError, "identified FCC option IDs"):
+            validate_review_row(q, r, "reviewer-a")
+        r["verified_fcc_provision_ids"] = "screen_time_condition"
+        self.assertTrue(validate_review_row(q, r, "reviewer-a"))
+        r["requested_fcc_action"] = "mixed_or_multiple"
+        with self.assertRaisesRegex(ValueError, "mixed FCC actions"):
+            validate_review_row(q, r, "reviewer-a")
+        r["multiple_policy_options_explanation"] = "Opposes the screen mandate, amends the opt-out."
+        self.assertTrue(validate_review_row(q, r, "reviewer-a"))
+
     def test_independent_coder_ids_required(self):
         q = source()
         with self.assertRaisesRegex(ValueError, "different reviewer IDs"):
