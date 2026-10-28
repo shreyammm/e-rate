@@ -67,7 +67,7 @@
       <div>
         <p class="kicker">01 / Compare the record</p>
         <h2>Arguments by stakeholder</h2>
-        <p>Choose what the percentages mean. Every row represents an exclusive filing category; a joint institutional filing is counted once.</p>
+        <p>Choose what the percentages mean. Columns are exclusive stakeholder filing categories; a joint institutional filing is counted once.</p>
       </div>
       <div class="heading-actions"><button type="button" id="industry-audit-export" class="outline">Export industry review worksheet</button><button type="button" id="matrix-export" class="outline">Export frequency matrix (CSV)</button></div>
     </div>
@@ -105,10 +105,14 @@
           <option value="count">Number of filings</option>
         </select>
       </label>
+      <label>Text analyzed
+        <select id="coverage-filter"><option value="all">All machine-coded filings</option><option value="full">Full-text model reads only</option></select>
+      </label>
       <label>Find an argument
         <input type="search" id="topic-search" placeholder="e.g., consultant fees, screen time">
       </label>
     </div>
+    <p class="scope-message" id="scope-message" role="status"></p>
     <div class="legend">
       <span id="measure-explanation">Within group = filings with this argument ÷ all filings assigned to this group.</span>
       <span class="legend-gradient" aria-hidden="true"></span><span>Lower to higher frequency</span>
@@ -121,6 +125,7 @@
     </div>
     <p id="matrix-empty" class="notice" hidden>No argument topics match your filters. Try another issue area or clear the search.</p>
     <p id="industry-audit-status" class="status" role="status"></p>
+    <p class="fineprint" id="audit-status"></p>
     <p class="fineprint">One filing may raise several topics; percentages are not additive. The darkest cell is the largest rate in the current view, not a measure of endorsement. Small groups can show large percentages from one filing. Classification is machine-assisted and not independently adjudicated.</p>
   </section>
 
