@@ -81,6 +81,7 @@
   function refreshReview(){
     let q=$('ps-review-query').value.trim().toLowerCase(),role=$('ps-review-role').value;
     filteredReview=data.filings.filter(r=>r.needs_review&&(!role||r.role===role)&&(!q||[r.id,r.organization,r.role].join(' ').toLowerCase().includes(q)));
+    filteredReview.sort((a,b)=>(b.review_priority||0)-(a.review_priority||0)||String(a.id).localeCompare(String(b.id)));
     reviewPage=0;displayReview();
   }
   function displayReview(){
@@ -89,7 +90,9 @@
     for(const r of filteredReview.slice(0,(reviewPage+1)*25)){
       const x=node('div',undefined,'ps-review');
       x.append(link('FCC filing '+r.id,source(r.id)),node('span',' · '+(data.roles[r.role]||r.role),'ps-chip'));
-      if(r.organization)x.append(node('p','Recognized filer-field institution: '+r.organization,'ps-muted'));
+      x.append(node('span','Priority: '+(r.review_tier||'unranked')+' ('+(r.review_priority||0)+')','ps-chip'));
+      if(r.organization)x.append(node('p','Source metadata institution or possible affiliation: '+r.organization,'ps-muted'));
+      if(r.review_reasons?.length)x.append(node('p','Review leads: '+r.review_reasons.join('; '),'ps-small'));
       x.append(node('p','Basis: '+r.basis+'; possible representative/client attribution: '+(r.proxy_possible?'yes—verify':'not detected')+'. Open the source and check letterhead, opening, signatory and capacity.','ps-small'));
       if(r.evidence_cue)x.append(node('p','Source cue (not an independently validated affiliation): '+r.evidence_cue,'ps-small'));
       let form=node('div',undefined,'ps-controls'),select=node('select'),opt=new Option('— choose reviewed capacity —','');select.add(opt);
