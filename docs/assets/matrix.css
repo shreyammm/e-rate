@@ -32,3 +32,13 @@ nav{display:flex;flex-wrap:wrap;gap:22px}nav a{font-size:12px;text-decoration:no
 .identity-line{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid #e1e6e8;font-size:12px}
 .identity-line strong{white-space:nowrap;font-variant-numeric:tabular-nums}
 @media(max-width:650px){#identity-breakdown{display:block}}
+
+.fieldnotes{border-bottom:1px solid var(--line);padding:0 0 35px;margin:-8px 0 42px}
+.fieldnotes-head h2{font:normal 25px/1.2 Georgia,serif;letter-spacing:-.035em;margin:0 0 5px}
+.fieldnotes-head p:not(.kicker){color:#708087;font-size:12px;margin:0 0 20px}
+.fieldnotes-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
+.fieldnotes-grid article{border-top:2px solid #d8e2e6;padding:12px 0 0}
+.fieldnotes-grid h3{font-size:14px;margin:0 0 5px;letter-spacing:-.01em}
+.fieldnotes-grid p{font-size:12px;color:#546a74;line-height:1.7;margin:5px 0}
+.fieldnotes-grid p:last-child{font-size:11px;margin-top:12px}
+@media(max-width:790px){.fieldnotes-grid{display:block}.fieldnotes-grid article{padding:12px 0;margin-bottom:18px}}
