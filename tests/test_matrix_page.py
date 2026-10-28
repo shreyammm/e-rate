@@ -18,7 +18,7 @@ class MatrixResearchPageTests(unittest.TestCase):
         ids = re.findall(r'\bid="([^"]+)"', html)
         self.assertEqual(len(ids), len(set(ids)), "HTML element IDs must be unique")
         required = [
-            "load-status", "matrix-head", "matrix-body", "matrix-export",
+            "load-status", "matrix-head", "matrix-body", "matrix-export", "industry-audit-export", "industry-audit-status",
             "group-scope", "issue-filter", "measure", "topic-search",
             "detail-metrics", "detail-evidence", "detail-deep-link",
             "comparison-group", "evidence-query", "prefer-clear",
@@ -70,6 +70,9 @@ class MatrixResearchPageTests(unittest.TestCase):
         self.assertIn("alleged_misuse",js)
         self.assertIn("consultant_fees",js)
         self.assertIn("screen_use_distinctions",js)
+        self.assertIn("isEdtechCofiling",js)
+        self.assertIn("review_argument_endorsed",js)
+        self.assertIn("review_verified_position",js)
 
 if __name__ == "__main__":
     unittest.main()
