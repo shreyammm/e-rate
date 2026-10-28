@@ -69,7 +69,7 @@
         <h2>Arguments by stakeholder</h2>
         <p>Choose what the percentages mean. Every row represents an exclusive filing category; a joint institutional filing is counted once.</p>
       </div>
-      <button type="button" id="matrix-export" class="outline">Export complete frequency matrix (CSV)</button>
+      <div class="heading-actions"><button type="button" id="industry-audit-export" class="outline">Export industry review worksheet</button><button type="button" id="matrix-export" class="outline">Export frequency matrix (CSV)</button></div>
     </div>
     <div class="quick-views" role="group" aria-label="Suggested views">
       <button type="button" data-preset="edtech">Edtech and schools</button>
@@ -120,6 +120,7 @@
       </table>
     </div>
     <p id="matrix-empty" class="notice" hidden>No argument topics match your filters. Try another issue area or clear the search.</p>
+    <p id="industry-audit-status" class="status" role="status"></p>
     <p class="fineprint">One filing may raise several topics; percentages are not additive. The darkest cell is the largest rate in the current view, not a measure of endorsement. Small groups can show large percentages from one filing. Classification is machine-assisted and not independently adjudicated.</p>
   </section>
 
