@@ -52,7 +52,7 @@ THEMES=[
  ('screen_use_distinctions','Instructional versus recreational screen use','Screens & learning',
   (),r'(?:recreational (?:screen|use)|educational (?:screen|use)|passive (?:screen|use)|different (?:types|forms) of screen|productive screen|instructional screen|screen.time is not|screen time is not|not all screen)'),
  ('learning_outcomes','Academic outcomes and instructional value','Screens & learning',
-  ('education_outcomes',),r'(?:learning (?:outcome|benefit|opportunit)|educational (?:outcome|benefit|opportunit)|academic (?:achiev|performance|outcome)|instructional technolog|improv(?:e|ing) learning|student achievement|digital instruction)'),
+  ('education_outcomes',),r'(?:learning (?:outcome|benefit|opportunit)|educational (?:outcome|benefit|opportunit)|academic (?:achiev|performance|outcome)|instructional technolog|improv(?:e|ing) learning|student achievement|digital instruction|essential for learning|critical for learning|core educational activity|educational reading|reading books for (?:school|learning))'),
  ('accessibility','Disability, accessibility and assistive tools','Screens & learning',
   (),r'(?:disabilit|accessib|assistive tech|special education|learning difference|screen reader|alternative communication)'),
  ('digital_literacy','Digital literacy and preparation','Screens & learning',
@@ -62,13 +62,13 @@ THEMES=[
  ('school_discretion','School autonomy and local decisions','Schools & families',
   (),r'(?:local (?:control|decision|discretion|authority)|school (?:autonomy|decision)|district (?:discretion|decisions)|educators? (?:should|best positioned)|instructional autonomy)'),
  ('consultant_registration','Registering or licensing consultants','Consultants & procurement',
-  ('consultant_registration',),r'(?:consultant registr|registration (?:requirement|form)|register consultants|licens(?:e|ing) consultants)'),
+  ('consultant_registration',),r'(?:consultant registr|registration (?:requirement|form)|register consultants|licens(?:e|ing) consultants|consultant (?:registry|registration|crn)|consultants? (?:in|on|to|from|update) (?:the )?(?:crn|registry)|(?:individual|entity.level|firm) registration|registration of (?:e[- ]?rate )?consultants)'),
  ('consultant_definition','Who counts as a consultant','Consultants & procurement',
-  ('consultant_definition',),r'(?:defin(?:e|ition) of consultant|consultant definition|consultant exemp|professional service provider)'),
+  ('consultant_definition',),r'(?:defin(?:e|ition) of consultant|defin(?:e|ing) (?:which persons|who|the term|consultants?)|(?:who|which) counts? as (?:an? )?(?:e[- ]?rate )?consultant|consultant definition|consultant exemp|professional service provider)'),
  ('consultant_fees','Consultant compensation and percentage fees','Consultants & procurement',
-  ('consultant_percent_fees',),r'(?:percentage.based fee|percent(?:age)? of.*(?:award|fund|discount)|contingen(?:t|cy) fee|consultant compensat|fee structure|consultant payment|performance.based fee)'),
+  ('consultant_percent_fees',),r'(?:percentage.based (?:fee|consult|compensat)|percent(?:age)? of.*(?:award|fund|discount)|contingen(?:t|cy) fee|consultant (?:fee|compensat|payment|billing|price)|(?:fee|compensation) (?:structure|model|arrangement)|performance.based fee|fee.flexibility)'),
  ('consultant_reporting','Consultant disclosures and Form 5654','Consultants & procurement',
-  ('consultant_form_5654','consultant_records'),r'(?:form 5654|consultant disclosure|consultant record|consultant report|reporting requirement|consultant certif|retention requirement)'),
+  ('consultant_form_5654','consultant_records'),r'(?:form 5654|\baccd\b|consultant disclosure|consultant record|consultant report|consultant certif|annual consultant filing|consultant (?:filing|disclosure) requirement|consultant retention requirement)'),
  ('competitive_bidding','Competitive bidding and procurement rules','Consultants & procurement',
   ('targeted_competition',),r'(?:competitive bidd|bid process|procurement rule|r(e)?quest for proposals|\brfp\b|procurement practice|vendor selection)'),
  ('vendor_influence','Vendor influence and conflicts of interest','Consultants & procurement',
@@ -94,7 +94,7 @@ THEMES=[
  ('consultant_independence','Consultant independence and vendor relationships','Consultants & procurement',
   (),r'(?:consultant (?:independence|independent|conflict|impartial|neutral|relationship)|consultants? (?:paid|compensated) by (?:vendor|service provider)|consultants? (?:recommend|select) (?:a|the )?vendor|consultant.vendor (?:relationship|tie)|consultant (?:kickback|incentive)|vendor.funded consultant)'),
  ('consultant_qualifications','Consultant qualifications and professional standards','Consultants & procurement',
-  (),r'(?:consultant (?:qualification|training|credential|certification|standard|experience)|professional (?:credential|standard|qualification) for consultants|certif(?:y|ied|ication) e[- ]?rate consultants?|consultants? (?:must|should) (?:demonstrate|meet) (?:competenc|qualification))'),
+  (),r'(?:consultant (?:qualification|training|credential|professional standard|experience|competenc)|professional (?:credential|standard|qualification) for consultants|certif(?:y|ied|ication) (?:trained|qualified) e[- ]?rate consultants?|consultants? (?:must|should) (?:demonstrate|meet) (?:competenc|qualification)|(?:annual|mandatory|anti.fraud|e[- ]?rate) training for consultants)'),
  ('bid_independence','Fair and independent competitive bidding','Consultants & procurement',
   (),r'(?:independent (?:bid|procurement|evaluation)|fair (?:and open )?(?:bidding|competition)|competitive neutrality|bid (?:manipulation|rigging|integrity)|vendor (?:steering|favoritism)|procurement (?:conflict|independence|fairness)|undue (?:supplier|vendor) influence)'),
  ('technology_cost_benefit','Edtech costs, ROI and vendor value','Consultants & procurement',
@@ -134,6 +134,14 @@ SPEAKER_RISK={'possible_attributed_or_opposing_voice','fcc_prompt_or_policy_ques
 TOPICS={code:{'id':code,'label':label,'category':category,'description':'Exploratory machine-coded argument theme; counts are distinct filings, not validated endorsements.'}
         for code,label,category,issues,pattern in THEMES}
 PATTERNS={code:re.compile(pattern,re.I) for code,label,category,issues,pattern in THEMES}
+# These precise argument families require explicit wording in the model's
+# extracted action or reasoning. A model-proposed FCC issue ID alone is not
+# evidence that the document actually argues this narrower point.
+TEXT_REQUIRED_THEMES={
+    'consultant_registration','consultant_definition','consultant_fees',
+    'consultant_reporting','learning_outcomes','administrative_burden',
+    'vendor_influence','competitive_bidding'
+}
 BY_ISSUE=defaultdict(set)
 for code,label,category,issues,pattern in THEMES:
     for i in issues:BY_ISSUE[i].add(code)
@@ -197,6 +205,12 @@ def topics_for_claim(row):
     matches={key for key in BY_ISSUE.get(issue,())}
     for key,pattern in PATTERNS.items():
         if pattern.search(text):matches.add(key)
+    # Model issue IDs are notoriously broad, particularly for consultant
+    # provisions. Demand matching substantive action/reason text instead of
+    # silently inheriting the wrong codebook label.
+    for key in TEXT_REQUIRED_THEMES.intersection(matches):
+        if not PATTERNS[key].search(text):
+            matches.discard(key)
     # "Ordinary oversight" must not be conflated with an allegation of misuse.
     if 'alleged_misuse' in matches and not PATTERNS['alleged_misuse'].search(text):
         matches.discard('alleged_misuse')

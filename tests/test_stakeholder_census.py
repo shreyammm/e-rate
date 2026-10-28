@@ -15,6 +15,76 @@ class CensusTest(unittest.TestCase):
         source=inspect.getsource(compute)
         self.assertIn("'named_institutions'",source)
         self.assertIn("'pct_of_coded_group_filings'",source)
+    def test_observed_model_label_confusions_against_actual_checkpoints(self):
+        import json
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]
+        def claim(filing, phrase):
+            rows=json.loads((root/'data/llm_census_kaggle/filings'/
+                             (filing+'.json')).read_text())['claims']
+            found=[c for c in rows if phrase.lower() in
+                   str(c.get('requested_action') or '').lower()]
+            self.assertTrue(found, f'No source-linked checkpoint action {filing}: {phrase}')
+            c=found[0]
+            return {'issue':c.get('provision_id'),'action':c.get('requested_action'),
+                    'argument':c.get('argument')}
+        false=[
+            ('26110079965','maintain consultant participation in bidding portal','consultant_fees'),
+            ('26110080495','maintain predictable support','administrative_burden'),
+            ('26110074471','maintain educational','learning_outcomes'),
+            ('26110038512','revise consultant','consultant_registration'),
+            ('26110038512','reject capping reseller markups','vendor_influence')
+        ]
+        for fid,phrase,theme in false:
+            with self.subTest(source=fid,theme=theme):
+                self.assertNotIn(theme,topics_for_claim(claim(fid,phrase)))
+        true=[
+            ('26110079965','file ACCD only','consultant_reporting'),
+            ('26110079965','require mandatory annual','consultant_qualifications'),
+            ('26110081267','allow percentage','consultant_fees'),
+            ('26110081267','treat consulting firm','consultant_registration')
+        ]
+        for fid,phrase,theme in true:
+            with self.subTest(source=fid,theme=theme):
+                self.assertIn(theme,topics_for_claim(claim(fid,phrase)))
+    def test_narrow_consultant_issue_labels_require_substantive_claim_text(self):
+        bad=[
+            ('consultant_form_5654','Abandon the individual Form 479 requirement for school consortium members.',
+             'More CIPA documentation for consortium members is burdensome.','consultant_reporting'),
+            ('consultant_registration','Scale new consultant oversight requirements to reduce burdens.',
+             'Consultant regulation should be proportional, especially for small applicants.','consultant_registration'),
+            ('consultant_percent_fees','Maintain consultant participation in the bidding portal.',
+             'Consultants will remain essential to applicants when procurement rules change.','consultant_fees'),
+            ('administrative_forms','Maintain predictable E-Rate support.',
+             'Schools plan their network upgrades years in advance.','administrative_burden'),
+            ('education_outcomes','Preserve the educational-purpose presumption.',
+             'This legal presumption should not be reversed.','learning_outcomes'),
+            ('vendor_influence','Reject price caps on reseller markups.',
+             'Caps may reduce competition among broadband suppliers.','vendor_influence')
+        ]
+        for issue,action,argument,theme in bad:
+            with self.subTest(issue=issue,theme=theme):
+                self.assertNotIn(theme,topics_for_claim({
+                    'issue':issue,'action':action,'argument':argument}))
+    def test_actual_fee_disclosure_and_registration_actions_still_detected(self):
+        cases=[
+            ('consultant_percent_fees','Permit percentage-based consultant fee arrangements.','consultant_fees'),
+            ('consultant_form_5654','Require annual Form 5654 filing by consultants.','consultant_reporting'),
+            ('consultant_registration','Maintain a consultant registration and CRN registry.','consultant_registration'),
+            ('consultant_definition','Define which persons count as E-Rate consultants.','consultant_definition'),
+            ('education_outcomes','Improve student academic achievement with instructional technology.','learning_outcomes'),
+            ('vendor_influence','Require disclosure of vendor influence and conflicts of interest.','vendor_influence'),
+        ]
+        for issue,action,theme in cases:
+            with self.subTest(theme=theme):
+                self.assertIn(theme,topics_for_claim({'issue':issue,'action':action,
+                    'argument':'The filing recommends the stated action.'}))
+    def test_consultant_filing_certificate_not_professional_qualification(self):
+        x=topics_for_claim({'issue':'consultant_form_5654',
+            'action':'Require annual consultant certification and disclosure Form 5654.',
+            'argument':'A reporting form helps regulators check compliance.'})
+        self.assertIn('consultant_reporting',x)
+        self.assertNotIn('consultant_qualifications',x)
     def test_advanced_consultant_distinctions(self):
         x=topics_for_claim({'issue':'other_policy_issue','action':'Require independent consultants to disclose consultant conflicts of interest and vendor payments.',
            'argument':'Consultants paid by vendors risk recommending the vendor that compensates them.'})
