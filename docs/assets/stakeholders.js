@@ -126,7 +126,7 @@
     const t=byTopic[selectedTopic],root=$('group-by-topic');
     root.replaceChildren();
     if(!t)return;
-    $('group-by-topic-description').textContent=n(t.filings)+' source filings contain an extracted argument in this category. See which stakeholders submitted them.';
+    $('group-by-topic-description').textContent=n(t.filings)+' source filings, '+n(t.distinct_source_texts)+' distinct source texts, and '+n(t.named_institutions||0)+' named submitter institutions have an extracted argument in this category. See which stakeholder groups submitted them. Institutional names may be missing for personal or joint filings.';
     const header=make('div',undefined,'inverse-header');
     header.append(make('span','Stakeholder'),make('span','Filings raising argument'),
       make('span','Share of topic'),make('span','Within group'));root.append(header);
@@ -136,6 +136,7 @@
       const count=topicCell(t,g.id).filings;
       const row=make('button',undefined,'inverse-row');
       row.type='button';
+      row.title=n(topicCell(t,g.id).named_institutions||0)+' named institutional submitters; '+n(topicCell(t,g.id).distinct_source_texts||0)+' distinct original texts. All counts remain provisional.';
       row.append(make('span',g.label),make('b',n(count)),
         make('span',pct(count,t.filings)),
         make('span',pct(count,g.filings)));
