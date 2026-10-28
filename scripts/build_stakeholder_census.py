@@ -299,6 +299,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
     group_den=Counter(x['group'] for x in records)
     roles_den=Counter(x['role'] for x in records)
     group_claims=Counter(x['group'] for x in records if x['topics'])
+    role_claims=Counter(x['role'] for x in records if x['topics'])
     all_codes=list(TOPICS)
     stats=[]
     for code in all_codes:
@@ -319,11 +320,22 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
                 'lower_risk_filings':len(cautious[g][code]),
                 'needs_attribution_or_identity_review':len(ids-cautious[g][code])
             }
+        role_cells={}
+        for role in sorted(roles_den):
+            ids=by_role[role][code]
+            role_cells[role]={
+                'filings':len(ids),
+                'role_filings':roles_den[role],
+                'role_filings_with_any_coded_argument':role_claims[role],
+                'pct_of_role_filings':round(100*len(ids)/roles_den[role],1) if roles_den[role] else None,
+                'pct_of_topic_filings':round(100*len(ids)/len(total),1) if total else None,
+                'distinct_source_texts':len({per_id[fid].get('text_sha256') for fid in ids if per_id[fid].get('text_sha256')}),
+            }
         stats.append({'id':code,'label':TOPICS[code]['label'],'category':TOPICS[code]['category'],
                       'filings':len(total),'named_institutions':len({per_id[fid].get('organization') for fid in total if per_id[fid].get('organization')}),
                       'distinct_source_texts':len({
                           per_id[fid].get('text_sha256') for fid in total if per_id[fid].get('text_sha256')}),
-                      'by_stakeholder':cells})
+                      'by_stakeholder':cells,'by_detailed_role':role_cells})
     stats.sort(key=lambda x:(-x['filings'],x['label']))
     profiles=[]
     for name,issues in orgs.items():
