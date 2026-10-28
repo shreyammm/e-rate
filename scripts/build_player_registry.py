@@ -52,18 +52,23 @@ ROLE_LABELS = {
     'unresolved': 'Affiliation not established',
 }
 ORG_RULES = [
+    # Exact organizations from FCC submitter metadata; no claim of endorsement.
+    ('government', r'^national telecommunications and information administration$'),
+    ('erate_consultant', r'^(?:funds for learning|american e[- ]rate solutions|e[- ]rate complete|e[- ]rate funding services|tel/logic.*e[- ]rate central|education service center region 12 e[- ]rate consulting services)\b'),
+    ('trade_association', r'^(?:software (?:and|&) information industry association|e[- ]rate management professionals association|ncta|ustelecom|ntca[- ]|alaska telecom association|technology channel sales professionals)\b'),
+    ('network_technology_vendor', r'^united data technologies\b'),
     ('erate_consultant', r'\b(?:e[- ]?rate consulting|e[- ]?rate services|funds for learning|e[- ]?rate management|erate consultant)\b'),
     ('edtech_safety_vendor', r'\b(?:student safety (?:software|platform)|content filtering (?:vendor|software)|school (?:monitoring|filtering) (?:software|platform))\b'),
     ('edtech_learning_vendor', r'\b(?:learning management (?:system|software)|educational (?:software|technology) (?:company|vendor)|edtech (?:company|vendor))\b'),
     ('edtech_device_vendor', r'\b(?:educational devices? (?:company|vendor)|student device manufacturer)\b'),
-    ('school_district', r'\b(?:public schools|school district|unified school|independent school district|school system|county office of education|educational service (?:agency|district))\b'),
+    ('school_district', r'\b(?:public schools|school district|unified school|independent school district|school system|school corporation|county office of education|educational service (?:agency|district))\b'),
     ('individual_school', r'\b(?:elementary school|middle school|high school|charter school|academy|preparatory school)\b'),
     ('library_institution', r'\b(?:public librar(?:y|ies)|county librar(?:y|ies)|district librar(?:y|ies)|library system)\b'),
     ('telecom_isp', r'\b(?:internet service provider|broadband provider|telecommunications provider|telephone company|cable operator|fiber internet provider)\b'),
     ('network_technology_vendor', r'\b(?:network equipment (?:vendor|manufacturer)|networking equipment (?:company|manufacturer))\b'),
     ('trade_association', r'\b(?:trade association|professional association|association of|national association|state association)\b'),
     ('advocacy_organization', r'\b(?:foundation|coalition|advocacy|nonprofit|non-profit|institute|citizens for|center for|common sense media|fairplay)\b'),
-    ('government', r'\b(?:department of|commission|tribal nation|state senate|legislature|bureau of|office of the governor)\b'),
+    ('government', r'\b(?:department of|commission|tribal nation|state senate|legislature|bureau of|office of the governor|telecommunications and information administration)\b'),
     ('procurement_adviser', r'\b(?:procurement (?:adviser|advisor|consultant)|grant (?:consultant|management firm))\b'),
     ('other_vendor', r'\b(?:incorporated|corporation|\bllc\b|\bltd\b|technologies (?:inc|llc))\b'),
 ]
@@ -98,13 +103,15 @@ BASE_CROSSWALK = {
     'unresolved':'unresolved',
 }
 SENSITIVE = re.compile(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?<!\d)(?:\+1[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}(?!\d)',re.I)
-ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commission|association|coalition|alliance|department|foundation|network|college|university|government|nation|corporation|llc|institute|society|technologies|telecom|communications|media)\b',re.I)
+ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commission|association|coalition|alliance|department|administration|agency|foundation|network|college|university|government|nation|corporation|llc|inc|institute|society|technologies|telecom|communications|media|consulting|consultants|services|software|technology|broadband|solutions)\b',re.I)
 
 def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
     name=' '.join(str(name or '').split())
     if len(name)<5 or len(name)>110 or not ORG_TOKEN.search(name): return ''
-    if SENSITIVE.search(name) or any(x in name for x in ('|',' - ',',')):return ''
+    # Permit a legal corporate suffix while rejecting people mixed with entities.
+    suffix=re.search(r',\s*(?:LLC|Inc\.?|Incorporated|Ltd\.?|Corporation|Corp\.?)$',name,re.I)
+    if SENSITIVE.search(name) or '|' in name or ' - ' in name or (',' in name and not suffix):return ''
     return name
 
 def canon(name: str) -> str:
@@ -126,8 +133,36 @@ def explicit_personal_role(text: str) -> tuple[str,str]:
         if role:return role,match
     return '', ''
 
+# An industry focus never turns a trade association into a vendor, or assigns
+# the association's stated claims to each of its corporate members.
+INDUSTRY_RULES = [
+    ('edtech_industry', re.compile(r'^software (?:and|&) information industry association$',re.I)),
+    ('erate_consulting', re.compile(r'(?:funds for learning|e[- ]rate (?:central|complete|funding services|management professionals|consulting)|american e[- ]rate solutions)',re.I)),
+    ('telecom_industry', re.compile(r'^(?:ncta|ustelecom|ntca[- ]|alaska telecom association|wta [-–]|.*broadband association)',re.I)),
+]
+def industry_focus(name: str, role: str) -> str:
+    for industry,pattern in INDUSTRY_RULES:
+        if pattern.search(name):return industry
+    if role.startswith('edtech_'):return 'edtech_industry'
+    if role in ('telecom_isp','network_technology_vendor'):return 'telecom_industry'
+    if role in ('erate_consultant','procurement_adviser'):return 'erate_consulting'
+    return 'unspecified'
+
+def candidate_affiliation(raw: str) -> str:
+    """Provisional second party in 'person | organization' metadata only.
+
+    A listing is not proof of a person's legal power to speak for an entity.
+    The person's name is never published in this derived registry.
+    """
+    parts=[x.strip() for x in str(raw or '').split('|')]
+    if len(parts)!=2 or not parts[0] or not parts[1]:return ''
+    if organization_label(parts[0]):return ''
+    return organization_label(parts[1])
+
 def inferred_identity(meta: dict, base: str, text: str) -> dict:
     name=organization_label(meta.get('filer_raw',''))
+    affiliated=candidate_affiliation(meta.get('filer_raw','')) if not name else ''
+    if affiliated:name=affiliated
     person=base in PERSON_ROLES or (not name and base in ('unresolved', 'named_person_capacity_unstated'))
     self_role,self_quote=explicit_personal_role(text) if person else ('','')
     org_role,org_cue=first_rule(name,ORG_PATTERNS) if name else ('','')
@@ -152,21 +187,45 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
                 signature = 'erate_consultant'
     candidate = signature or ('school_connected_unknown' if letterhead else '')
     role = self_role or org_role or candidate or default
-    basis = ('author_self_description' if self_role else
+    basis = ('multi_party_metadata_affiliation_candidate' if affiliated else
+             'author_self_description' if self_role else
              'filer_field_organization' if org_role else
              'signature_candidate' if signature else
              'letterhead_candidate' if letterhead else 'provisional_full_text_role')
-    review = (not self_role and not org_role) or bool(candidate) or role in (
+    review = bool(affiliated) or (not self_role and not org_role) or bool(candidate) or role in (
         'school_connected_unknown','named_person_capacity_unstated',
         'unresolved','other_vendor','advocacy_organization')
     proxy=bool(re.search(r'\b(?:on behalf of|representing (?:our|the|a)|counsel for|submitted for (?:our|the|a))\b',text[:2400],re.I))
     if proxy:review=True
     # A reviewer can reopen the FCC link. Do not republish a broad paragraph
     # of text from a private individual's letter as evidence.
-    return {'role':role,'organization':name,
+    return {'role':role,'organization':name, 'industry_focus':industry_focus(name,role),
             'basis':basis,'evidence_cue':self_quote or org_cue or ('signature title' if signature else 'opening letterhead' if letterhead else ''),
             'speaker_is_proxy_possible':proxy,'needs_review':review,
             'identity_status':'candidate' if review else 'strong_source_cue'}
+
+def review_priority(identity: dict, body: str) -> dict:
+    """Rank needs-human-review cases, never convert a candidate into a fact."""
+    if not identity['needs_review']:return {'score':0,'level':'not_required','reasons':[]}
+    score=5;reasons=[]
+    if identity['organization']:
+        score+=35;reasons.append('source_metadata_institution_or_candidate_affiliation')
+    if identity['basis'] in ('signature_candidate','letterhead_candidate'):
+        score+=30;reasons.append('letterhead_or_signature_needs_confirmation')
+    if identity['basis']=='multi_party_metadata_affiliation_candidate':
+        score+=25;reasons.append('potential_person_organization_relationship')
+    if identity['speaker_is_proxy_possible']:
+        score+=25;reasons.append('possible_representative_client_relationship')
+    if identity['role'] in ('erate_consultant','procurement_adviser','other_vendor','trade_association','edtech_learning_vendor','edtech_safety_vendor','edtech_device_vendor','telecom_isp','network_technology_vendor'):
+        score+=30;reasons.append('commercial_or_trade_stakeholder')
+    if identity['role'] in ('unresolved','school_connected_unknown'):
+        score+=15;reasons.append('role_unclear')
+    if re.search(r'(?i)\b(?:respectfully submitted|sincerely|director of technology|superintendent|chief executive|vice president|on behalf of)\b',body[-2600:]):
+        score+=12;reasons.append('possible_closing_or_signature_evidence')
+    if re.search(r'(?i)\b(?:vendor incentives|e[- ]rate consultant|consultant registration|school screen time|education technology|procurement)\b',body[:3500]):
+        score+=10;reasons.append('relevant_policy_stakeholder_language')
+    score=min(100,score)
+    return {'score':score,'level':'high' if score>=65 else 'medium' if score>=35 else 'low','reasons':reasons}
 
 def base_lookup(index: list[dict], role_file: Path) -> dict:
     data=json.loads(role_file.read_text(encoding='utf-8'))
@@ -202,7 +261,13 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                     if body or source_row.get('text_sha256'):raise ValueError('Filing text hash mismatch')
                 # Only use institution names already vetted for public display by
                 # the existing privacy-minimized corpus index, never raw filer names.
-                safe_meta={'filer_raw':by_id[sid].get('organization','')}
+                # Screen raw metadata for organizational content only. Keep
+                # individuals private; co-signer lists require separate review.
+                safe_name=organization_label(by_id[sid].get('organization',''))
+                raw_name=str(source_row.get('filer_raw') or '')
+                source_org=organization_label(raw_name)
+                source_affiliation=candidate_affiliation(raw_name)
+                safe_meta={'filer_raw':safe_name or source_org or (raw_name if source_affiliation else '')}
                 found=inferred_identity(safe_meta,base[sid],body)
                 if sid in overrides:
                     v=overrides[sid]
@@ -213,12 +278,17 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                     org=organization_label(v.get('organization',''))
                     found.update(role=v['role'],organization=org,basis='human_source_review',
                                  evidence_cue='human reviewer checked source',
-                                 identity_status='human_reviewed',needs_review=False)
+                                 identity_status='human_reviewed',needs_review=False,
+                                 industry_focus=industry_focus(org,v['role']))
+                review=review_priority(found,body)
                 filings.append({'id':sid,'base_role':base[sid],
                      'role':found['role'],'organization':found['organization'],
+                     'industry_focus':found['industry_focus'],
                      'basis':found['basis'],'evidence_cue':found['evidence_cue'],
                      'identity_status':found['identity_status'],
                      'needs_review':found['needs_review'],
+                     'review_priority':review['score'],'review_tier':review['level'],
+                     'review_reasons':review['reasons'],
                      'proxy_possible':found['speaker_is_proxy_possible'],
                      'source_url':'https://www.fcc.gov/ecfs/filing/'+sid,
                      'text_sha256':source_row.get('text_sha256') or '',
@@ -234,6 +304,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
         organizations.append({'key':key,'name':forms.most_common(1)[0][0],
             'filings':len(rs),'distinct_source_texts':len({r['text_sha256'] for r in rs if r['text_sha256']}),
             'role_candidates':dict(Counter(r['role'] for r in rs)),
+            'industry_focus_candidates':dict(Counter(r['industry_focus'] for r in rs)),
             'filing_ids':[r['id'] for r in rs],
             'disagreement_on_type':len({r['role'] for r in rs})>1})
     organizations.sort(key=lambda r:(-r['filings'],r['name']))
@@ -244,8 +315,9 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
              'named_organizations':len(organizations),
              'filings_requiring_identity_review':sum(r['needs_review'] for r in filings),
              'manually_reviewed_filings':sum(r['identity_status']=='human_reviewed' for r in filings)},
-       'method':'Organization-valued filer field + explicit self-description in the opening; all provisional unless manually reviewed. No topical-content identity inference.',
+       'method':'Screened original FCC institution-valued filer metadata, two-party potential affiliation, and explicit opening self-description. Type and industry remain separate. Categories provisional until human reviewed.',
        'roles':ROLE_LABELS,'role_filing_counts':dict(counts),
+       'review_tier_counts':dict(Counter(r['review_tier'] for r in filings)),
        'organizations':organizations,'filings':filings}
     Path(output).parent.mkdir(parents=True,exist_ok=True)
     Path(output).write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')

@@ -40,6 +40,13 @@ jobs:
           assert sum(x['role_filing_counts'].values())==3231
           assert all('filer_raw' not in r for r in x['filings'])
           assert all('text' not in r for r in x['filings'])
+          by_id={r['id']:r for r in x['filings']}
+          assert by_id['26110081266']['organization']=='National Telecommunications and Information Administration'
+          assert by_id['26110081266']['role']=='government'
+          assert by_id['26110081279']['role']=='trade_association'
+          assert by_id['26110081279']['industry_focus']=='edtech_industry'
+          assert by_id['26110071262']['role']=='erate_consultant'
+          assert by_id['26110071262']['organization']=='Funds For Learning, LLC'
           print('Source coverage verified; manual review queue:',x['coverage']['filings_requiring_identity_review'])
           PY
       - name: Publish compiled privacy-minimal player index
