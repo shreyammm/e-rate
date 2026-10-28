@@ -127,7 +127,8 @@ def stakeholder_group(f):
     if r in ('telecom_isp','network_technology_vendor'):return 'connectivity_and_network_vendors'
     if industry=='telecom_industry':return 'telecom_associations'
     if r in ('school_district','individual_school'):return 'school_institutions'
-    if r in ('school_technology_staff','school_educator','school_administrator','school_connected_unknown'):return 'school_professionals'
+    if r in ('school_technology_staff','school_educator','school_administrator'):return 'school_professionals'
+    if r=='school_connected_unknown':return 'school_affiliation_uncertain'
     if r in ('library_institution','library_staff'):return 'libraries'
     if r=='parent_guardian':return 'parents'
     if r=='government':return 'government'
@@ -138,6 +139,7 @@ def stakeholder_group(f):
 
 GROUP_NAMES={
  'school_institutions':'Schools and districts','school_professionals':'School staff and educators',
+ 'school_affiliation_uncertain':'School-related, capacity unclear',
  'libraries':'Libraries','parents':'Parents and caregivers','edtech_vendors':'Edtech companies',
  'edtech_trade_associations':'Edtech industry associations','erate_consultants':'E-Rate consulting firms',
  'consultant_associations':'Consultant associations',
