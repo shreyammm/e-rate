@@ -39,4 +39,32 @@ class PlayerIdentityTest(unittest.TestCase):
     def test_distinct_org_names_do_not_merge(self):
         self.assertNotEqual(canon('Central High School'),canon('Central School District'))
         self.assertIn('unresolved',ROLE_LABELS)
+
+    def test_ntia_is_government_with_named_source(self):
+        x=inferred_identity({'filer_raw':'National Telecommunications and Information Administration'},
+            'unresolved','NTIA reports what participants said at a listening session.')
+        self.assertEqual(x['organization'],'National Telecommunications and Information Administration')
+        self.assertEqual(x['role'],'government')
+    def test_comma_legal_suffix_not_person(self):
+        x=inferred_identity({'filer_raw':'Funds For Learning, LLC'},
+            'consultant_or_e_rate_services_firm','We submit these comments.')
+        self.assertEqual(x['organization'],'Funds For Learning, LLC')
+        self.assertEqual(x['role'],'erate_consultant')
+    def test_trade_association_is_not_vendor(self):
+        x=inferred_identity({'filer_raw':'Software and Information Industry Association'},
+            'advocacy_nonprofit_or_trade_association','We advocate for education software.')
+        self.assertEqual(x['role'],'trade_association')
+        self.assertEqual(x['industry_focus'],'edtech_industry')
+    def test_separated_person_metadata_is_only_candidate(self):
+        x=inferred_identity({'filer_raw':'Chris Warden | K12TechPro'},
+            'named_person_capacity_unstated','Our organization provides technology assistance.')
+        self.assertEqual(x['organization'],'')
+        self.assertTrue(x['needs_review'])
+    def test_affiliation_candidate_not_legal_speaker(self):
+        x=inferred_identity({'filer_raw':'Jane Doe | E-Rate Funding Services LLC'},
+            'named_person_capacity_unstated','My statement addresses school procurement.')
+        self.assertEqual(x['organization'],'E-Rate Funding Services LLC')
+        self.assertEqual(x['basis'],'multi_party_metadata_affiliation_candidate')
+        self.assertTrue(x['needs_review'])
+
 if __name__=='__main__':unittest.main()
