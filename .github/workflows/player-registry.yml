@@ -49,11 +49,31 @@ jobs:
           assert by_id['26110071262']['organization']=='Funds For Learning, LLC'
           print('Source coverage verified; manual review queue:',x['coverage']['filings_requiring_identity_review'])
           PY
+      - name: Rebuild stakeholder frequencies against freshly classified players
+        run: |
+          python -m unittest discover -s tests -p test_stakeholder_census.py -v
+          python -m scripts.build_stakeholder_census
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          r=Path('docs/data/player_registry.json').read_bytes()
+          s=json.loads(Path('docs/data/stakeholder_argument_census.json').read_text())
+          assert s['inputs']['player_registry_sha256']==hashlib.sha256(r).hexdigest()
+          by={x['id']:x for x in s['filings']}
+          assert by['26110081358']['group']=='edtech_vendors'
+          assert by['26110080790']['group']=='edtech_vendors'
+          assert by['26110081358']['role']=='edtech_learning_vendor'
+          assert by['26110081008']['group']=='connectivity_and_network_vendors'
+          assert by['26110079982']['group']=='erate_consultants'
+          assert by['26110081279']['group']=='edtech_trade_associations'
+          assert not by['26110081293']['joint_filing']
+          print('Same-source stakeholder census recomputed and audited.')
+          PY
       - name: Publish compiled privacy-minimal player index
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- docs/data/player_registry.json
+          git add -- docs/data/player_registry.json docs/data/stakeholder_argument_census.json
           if ! git diff --cached --quiet; then
             git commit -m 'Publish source-backed filing-player registry with review queue'
             git pull --rebase origin main

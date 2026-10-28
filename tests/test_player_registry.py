@@ -100,5 +100,6 @@ class PlayerIdentityTest(unittest.TestCase):
         self.assertTrue(x['multi_submitter_metadata'])
         self.assertEqual(x['submitter_field_components'],3)
         self.assertFalse(submitted_by_multiple_entities('Curriculum Associates, LLC')['multi_submitter_metadata'])
+        self.assertFalse(submitted_by_multiple_entities('Steve Potash | OverDrive, Inc.')['multi_submitter_metadata'])
 
 if __name__=='__main__':unittest.main()
