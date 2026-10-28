@@ -69,7 +69,7 @@
         <h2>Arguments by stakeholder</h2>
         <p>Choose what the percentages mean. Columns are exclusive stakeholder filing categories; a joint institutional filing is counted once.</p>
       </div>
-      <div class="heading-actions"><button type="button" id="industry-audit-export" class="outline">Export industry review worksheet</button><button type="button" id="matrix-export" class="outline">Export frequency matrix (CSV)</button></div>
+      <div class="heading-actions"><a class="outline" href="./data/industry_argument_review.csv" download="erate_industry_full_argument_review.csv">Review queue incl. missed arguments (CSV)</a><button type="button" id="industry-audit-export" class="outline">Export detected industry arguments</button><button type="button" id="matrix-export" class="outline">Export frequency matrix (CSV)</button></div>
     </div>
     <div class="quick-views" role="group" aria-label="Suggested views">
       <button type="button" data-preset="edtech">Edtech and schools</button>
@@ -193,6 +193,7 @@
       <p><strong>Unique texts</strong> help identify repeated language. Filings, organizations, unique texts and supporters are different units; this analysis does not equate them.</p>
       <p><strong>Positions need separate verification.</strong> Machine-extracted claims can misidentify the speaker or reverse a policy direction. The NTIA listening-session compilation is not counted as the agency adopting third-party positions.</p>
     </div>
+    <p><strong>Checking missing arguments:</strong> The <a href="./data/industry_argument_review.csv" download>review queue</a> assigns all 23 known ed-tech and consultant filing candidates and all 29 joint institutional filings to 18 priority themes, plus 924 sampled comparator assignments. Blank reviews deliberately include <em>not detected by the model</em> rows. They are not findings that an argument is absent. Confirm the actual speaker, complete source, requested action and supporting evidence before treating any extracted statement as endorsed.</p>
     <p>See the <a href="./stakeholders.html">full argument explorer</a>, <a href="./players.html">identity review queue</a>, <a href="./claims-to-check.html">factual-claims checker</a>, and <a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/industry_argument_accuracy_gates.md">industry analysis accuracy protocol</a>.</p>
   </section>
 </main>
