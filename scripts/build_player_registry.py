@@ -62,7 +62,7 @@ ORG_RULES = [
     ('erate_consultant', r'^(?:funds for learning|american e[- ]rate solutions|e[- ]rate complete|e[- ]rate funding services|tel/logic.*e[- ]rate central|education service center region 12 e[- ]rate consulting services)\b'),
     ('trade_association', r'^(?:software (?:and|&) information industry association|e[- ]rate management professionals association|ncta|ustelecom|ntca[- ]|alaska telecom association|technology channel sales professionals)\b'),
     # Education-industry and professional bodies are not individual schools.
-    ('trade_association', r'\b(?:school boards? association|school superintendents association|association of school (?:administrators|superintendents)|school administrators association|state e[- ]?rate coordinators.{0,6}alliance)\b'),
+    ('trade_association', r'\b(?:school boards? association|school superintendents association|association of (?:charter )?schools?|association of school (?:administrators|superintendents)|school administrators association|state e[- ]?rate coordinators.{0,6}alliance)\b'),
     ('advocacy_organization', r'^national alliance for public charter schools$'),
     ('government', r'\b(?:state education department|department of education|education department|state education agency)\b'),
     ('network_technology_vendor', r'^united data technologies\b'),
@@ -70,7 +70,7 @@ ORG_RULES = [
     ('edtech_safety_vendor', r'\b(?:student safety (?:software|platform)|content filtering (?:vendor|software)|school (?:monitoring|filtering) (?:software|platform))\b'),
     ('edtech_learning_vendor', r'\b(?:learning management (?:system|software)|educational (?:software|technology) (?:company|vendor)|edtech (?:company|vendor))\b'),
     ('edtech_device_vendor', r'\b(?:educational devices? (?:company|vendor)|student device manufacturer)\b'),
-    ('school_district', r'\b(?:public schools|school district|schools district|unified school|independent school district|school system|school corporation|schools corporation|central schools?(?: corporation)?|school city of|regional school unit|exempted village school|indep sch(?:ool)? dist(?:rict)?|county office of education|(?:education|educational) service (?:agency|district)|area special education district)\b'),
+    ('school_district', r'\b(?:public schools|school district|schools district|county district schools|sch district|unified school|independent school district|school system|school corporation|schools corporation|central schools?(?: corporation)?|school city of|regional school unit|exempted village school|indep sch(?:ool)? dist(?:rict)?|county office of education|(?:education|educational) service (?:agency|district)|area special education district)\b'),
     ('individual_school', r'\b(?:elementary school|middle school|high school|charter school|academy|preparatory school)\b|\b(?:school|schools)\b(?:\s+(?:of|for)\s+[a-z][a-z -]{2,35})?\s*(?:,?\s*(?:inc\.?|llc\.?))?$'),
     ('library_institution', r'\b(?:public librar(?:y|ies)|county librar(?:y|ies)|district librar(?:y|ies)|library system)\b'),
     ('telecom_isp', r'\b(?:internet service provider|broadband provider|telecommunications provider|telephone company|cable operator|fiber internet provider)\b'),
@@ -119,10 +119,15 @@ def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
     name=' '.join(str(name or '').split())
     if len(name)<5 or len(name)>110 or not ORG_TOKEN.search(name): return ''
+    if canon(name) in {'school','schools','library','district','association','corporation','company','business'}:return ''
     # Permit a legal corporate suffix while rejecting people mixed with entities.
     suffix=re.search(r',\s*(?:LLC|Inc\.?|Incorporated|Ltd\.?|Corporation|Corp\.?)$',name,re.I)
     # Mixed personal and organizational fields are not institution labels.
-    if SENSITIVE.search(name) or any(sep in name for sep in ('|',';','/',' - ')) or (',' in name and not suffix):return ''
+    # Two distinctive institutional slash names in the source snapshot are
+    # legitimate entity names, not person/organization combinations.
+    known_institutional_slash = bool(re.fullmatch(
+        r'(?:tel/logic inc\.? dba e[- ]rate central|c/w mars member libraries)',name,re.I))
+    if SENSITIVE.search(name) or any(sep in name for sep in ('|',';',' - ')) or ('/' in name and not known_institutional_slash) or (',' in name and not suffix):return ''
     return name
 
 def canon(name: str) -> str:
