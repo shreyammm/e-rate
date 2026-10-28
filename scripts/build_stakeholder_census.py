@@ -198,6 +198,98 @@ def priority(row):
     if row.get('issue')!='other_policy_issue':score+=1
     return score
 
+# These are *explicit machine-action wording patterns*, not model support/oppose
+# labels. Exact issue context is required. Counts remain unreviewed candidates.
+CONTRASTS={
+ 'consultant_fees':{
+   'label':'Should percentage-based consulting fees be restricted?',
+   'issues':{'consultant_percent_fees'},
+   'options':{
+      'keep_fee_options':('Permit fee flexibility',r'^(?:(?:do not|dont|reject|oppose|avoid|decline to|reconsider)\s+.{0,40}(?:ban|prohibit|restrict)|(?:allow|permit|retain|preserve|keep)\s+.{0,70}(?:percentage|percent|contingen|consultant fee)|(?:maintain|preserve)\s+fee flexibility)'),
+      'restrict_fee_options':('Ban or restrict fees tied to funding',r'^(?:(?:prohibit|ban|restrict|forbid|disallow|prevent|limit)\s+.{0,80}(?:percentage|percent|contingen|consultant fee)|(?:require|establish)\s+.{0,80}(?:fixed fee|fee cap|fee prohibition))')
+   }},
+ 'consultant_registration':{
+   'label':'How should E-Rate consultants register?',
+   'issues':{'consultant_registration','consultant_definition'},
+   'options':{
+       'firm_registration':('Register firms or entities',r'(?:entity.level (?:registration|registry)|(?:treat|register|registration for|registration at|focus registration at|database at|adopt)\s+.{0,65}(?:firm|organi[sz]ation|entity)|reject individual (?:consultant )?registration|no individual registration|not individual registration)'),
+       'individual_registration':('Register individual consultants',r'^(?:(?:require|mandate|adopt|establish|implement|register)\s+.{0,75}(?:individual|each consultant|personal registration)|individual registration (?:is required|must be))')
+   }},
+ 'screen_time_conditions':{
+   'label':'Who should set school screen-time rules?',
+   'issues':{'screen_time_condition','parent_opt_out','other_policy_issue','education_outcomes','erate_sunset'},
+   'options':{
+      'local_control':('Leave screen-time policy to schools and families',r'(?:(?:keep|leave|remain|maintain|reserve)\s+.{0,65}(?:screen.time|screen use|device use|screen.limit).{0,40}(?:local|school|district|parent)|(?:reject|oppose|do not|avoid|decline to)\s+.{0,100}(?:screen.time|screen.use|device.use).{0,45}(?:limit|condition|mandat|rule)|(?:do not|reject|oppose|decline to)\s+.{0,40}(?:condition|tie|impose|mandate|require)\s+.{0,80}(?:screen.time|screen.use)|screen.time\s+(?:limits?|policy)\s+(?:local|are local))'),
+      'federal_conditions':('Require federal screen-use safeguards',r'^(?:(?:require|mandate|impose|adopt|condition)\s+.{0,70}(?:screen.time|screen use|device use|screen.limit|screen policy)|(?:tie|condition)\s+e.rate\s+.{0,65}screen.time)')
+   }},
+}
+CONTRAST_PATTERNS={c:{name:(label,re.compile(expr,re.I))
+                       for name,(label,expr) in cfg['options'].items()}
+                   for c,cfg in CONTRASTS.items()}
+def contrast_suggestions(row):
+    """Conservative direction hints from a machine action, never from its 'position'."""
+    action=normalized_interpretation(row.get('action') or '').strip()
+    if not action or NO_ACTION.fullmatch(action) or NON_POSITION.search(action):return []
+    issue=str(row.get('issue') or '')
+    matches=[]
+    for code,cfg in CONTRASTS.items():
+        if issue not in cfg['issues']:continue
+        for option,(label,pattern) in CONTRAST_PATTERNS[code].items():
+            if pattern.search(action):
+                matches.append((code,option))
+    return matches
+
+def contrast_index(claim_rows, identities, qa, by_ledger_index):
+    """One filing per contrast option; both options => visible conflict warning."""
+    found=defaultdict(lambda:defaultdict(lambda:defaultdict(list)))
+    for i,row in enumerate(claim_rows):
+        fid=str(row.get('id') or '')
+        if fid==NTIA_LISTENING_REPORT:continue
+        if fid not in identities:raise ValueError('Unknown contrast source '+fid)
+        for debate,option in contrast_suggestions(row):
+            found[debate][option][fid].append((row,by_ledger_index.get(str(i),[])))
+    out=[]
+    for debate,config in CONTRASTS.items():
+        all_option_ids={fid for choices in found[debate].values() for fid in choices}
+        conflicting={fid for fid in all_option_ids if
+           sum(fid in found[debate][opt] for opt in config['options'])>1}
+        options=[]
+        for code,(label,_) in config['options'].items():
+            examples=[]
+            ids=found[debate][code]
+            for fid,rows in ids.items():
+                selected=sorted(rows,key=lambda pair:(
+                    bool(set(pair[1])&SPEAKER_RISK),
+                    -priority(pair[0]),
+                    -len(str(pair[0].get('quote') or ''))))[0]
+                row,flags=selected
+                f=identities[fid]
+                examples.append({
+                    'id':fid,'organization':f.get('organization',''),
+                    'stakeholder_group':stakeholder_group(f),
+                    'action':str(row.get('action') or '')[:220],
+                    'argument':str(row.get('argument') or '')[:350],
+                    'quote':str(row.get('quote') or '')[:320],
+                    'context_flags':list(flags),
+                    'review_required':bool(f.get('needs_review') or f.get('proxy_possible') or
+                                          f.get('multi_submitter_metadata') or
+                                          (set(flags)&SPEAKER_RISK) or fid in conflicting),
+                    'conflicting_machine_options':fid in conflicting
+                })
+            examples.sort(key=lambda x:(x['conflicting_machine_options'],
+                x['review_required'],not bool(x['organization']),x['id']))
+            groups=Counter(stakeholder_group(identities[fid]) for fid in ids)
+            options.append({
+                'id':code,'label':label,'filings':len(ids),
+                'by_stakeholder':dict(groups),
+                'filings_with_conflicting_machine_options':len(set(ids)&conflicting),
+                'examples':examples[:35]})
+        out.append({'id':debate,'label':config['label'],'options':options,
+                    'filings_with_any_explicit_machine_action':len(all_option_ids),
+                    'conflicted_filing_ids_count':len(conflicting),
+                    'method':'Explicit machine action wording only. Unmatched and uncertain directions are not counted. Multiple conflicting machine assignments for a filing are shown, not resolved.'})
+    return out
+
 def compute(registry, claims, quality, context_audit=None, manifest=None, ledger_digest=''):
     filings=registry['filings']
     if len(filings)!=3231 or len({f['id'] for f in filings})!=3231:
@@ -278,6 +370,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'number_machine_claims':source_rows[fid],
             'topics':topic_evidence
         })
+    issue_contrasts=contrast_index(claims['rows'],per_id,qfiles,audit_by_index)
     group_den=Counter(x['group'] for x in records)
     roles_den=Counter(x['role'] for x in records)
     group_claims=Counter(x['group'] for x in records if x['topics'])
@@ -347,7 +440,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
              'joint_filings':sum(x['joint_filing'] for x in records if x['group']==g)}
             for g,name in GROUP_NAMES.items()],
         'stakeholder_roles':[{'id':r,'filings':n} for r,n in sorted(roles_den.items(),key=lambda kv:(-kv[1],kv[0]))],
-        'topics':stats,'organizations':profiles,'filings':records
+        'topics':stats,'contrasts':issue_contrasts,'organizations':profiles,'filings':records
     }
 
 def build(registry=REGISTRY,claim_path=CLAIMS,quality_path=QUALITY,audit_path=AUDIT,
