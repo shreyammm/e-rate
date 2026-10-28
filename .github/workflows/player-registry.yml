@@ -47,6 +47,10 @@ jobs:
           assert by_id['26110081279']['industry_focus']=='edtech_industry'
           assert by_id['26110071262']['role']=='erate_consultant'
           assert by_id['26110071262']['organization']=='Funds For Learning, LLC'
+          assert by_id['26110073446']['role']=='telecom_isp'
+          assert by_id['26110074074']['role']=='unresolved'
+          assert by_id['26110074471']['role']=='unresolved'
+          assert by_id['26110081267']['role']=='erate_consultant'
           print('Source coverage verified; manual review queue:',x['coverage']['filings_requiring_identity_review'])
           PY
       - name: Rebuild stakeholder frequencies against freshly classified players
