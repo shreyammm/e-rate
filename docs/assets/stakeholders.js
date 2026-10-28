@@ -55,12 +55,14 @@
     const g=groupValue(),name=groupName(g);
     $('group-heading').textContent=name;
     let ids=all(g),coded=ids.filter(f=>f.topics.length),hashes=new Set(ids.map(f=>f.text_sha256).filter(Boolean));
+    const distinctInstitutions=new Set(ids.map(f=>f.organization).filter(Boolean)).size;
     $('group-description').textContent=(g==='all'?'Browse every indexed source filing.':
       'Explore the filing-based record for this group, including names and tentative affiliations.');
     const stats=[
       [n(ids.length),'FCC filings in this group'],
       [n(hashes.size),'Distinct original source texts'],
-      [n(coded.length),'Filings with coded argument themes']
+      [n(coded.length),'Filings with coded argument themes'],
+      [n(distinctInstitutions),'Named institutions in selected group']
     ];
     $('summary-strip').replaceChildren(...stats.map(([num,label])=>{
       const el=make('div',undefined,'summary-stat');el.append(make('strong',num),make('span',label));return el;
@@ -318,7 +320,9 @@
     for(const f of sorted){
       const b=make('div',undefined,'coverage-item');
       b.append(make('span',n(f.filings),'coverage-value'),make('strong',f.label),
-        make('p',n(f.filings_with_coded_topics)+' with identified argument themes'));
+        make('p',pct(f.filings,data.coverage.filings)+' of all indexed filings · '+
+          n(f.filings_with_coded_topics)+' with identified argument themes · '+
+          n(f.unique_texts)+' distinct source texts'));
       b.tabIndex=0;b.setAttribute('role','button');b.setAttribute('aria-label','Explore '+f.label);
       const go=()=>{$('primary-group').value=f.id;$('second-group').value='';selectedTopic=null;update();$('explore').scrollIntoView({block:'start',behavior:'smooth'});};
       b.addEventListener('click',go);b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
