@@ -1,6 +1,8 @@
 name: Build stakeholder argument census
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '14 9 * * *'
   push:
     branches: [main]
     paths:
@@ -40,6 +42,16 @@ jobs:
           from pathlib import Path
           x=json.loads(Path('docs/data/stakeholder_argument_census.json').read_text())
           assert x['schema']=='stakeholder-arguments-v1'
+          import hashlib
+          reg=Path('docs/data/player_registry.json').read_bytes()
+          ledger=Path('docs/data/kaggle/machine_claim_rows.json').read_bytes()
+          assert x['inputs']['player_registry_sha256']==hashlib.sha256(reg).hexdigest()
+          assert x['inputs']['machine_claim_ledger_sha256']==hashlib.sha256(ledger).hexdigest()
+          by={r['id']:r for r in x['filings']}
+          assert by['26110081358']['role']=='edtech_learning_vendor'
+          assert by['26110080790']['group']=='edtech_vendors'
+          assert by['26110079982']['group']=='erate_consultants'
+          assert by['26110081008']['group']=='connectivity_and_network_vendors'
           assert x['coverage']['filings']==3231
           assert sum(x['coverage'][k] for k in ('filings_with_coded_topics','filings_without_coded_topics'))==3231
           assert sum(s['filings'] for s in x['stakeholder_groups'])==3231
