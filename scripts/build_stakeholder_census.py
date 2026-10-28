@@ -52,7 +52,7 @@ THEMES=[
  ('screen_use_distinctions','Instructional versus recreational screen use','Screens & learning',
   (),r'(?:recreational (?:screen|use)|educational (?:screen|use)|passive (?:screen|use)|different (?:types|forms) of screen|productive screen|instructional screen|screen.time is not|screen time is not|not all screen)'),
  ('learning_outcomes','Academic outcomes and instructional value','Screens & learning',
-  ('education_outcomes',),r'(?:learning (?:outcome|benefit|opportunit)|educational (?:outcome|benefit|opportunit)|academic (?:achiev|performance|outcome)|instructional technolog|improv(?:e|ing) learning|student achievement|digital instruction)'),
+  ('education_outcomes',),r'(?:learning (?:outcome|benefit|opportunit)|educational (?:outcome|benefit|opportunit)|academic (?:achiev|performance|outcome)|instructional technolog|improv(?:e|ing) learning|student achievement|digital instruction|essential for learning|critical for learning|core educational activity|educational reading|reading books for (?:school|learning))'),
  ('accessibility','Disability, accessibility and assistive tools','Screens & learning',
   (),r'(?:disabilit|accessib|assistive tech|special education|learning difference|screen reader|alternative communication)'),
  ('digital_literacy','Digital literacy and preparation','Screens & learning',
