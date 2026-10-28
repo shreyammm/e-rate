@@ -159,9 +159,9 @@
     const total=data.coverage.filings;
     const full=[...fullGroupCounts.values()].reduce((n,x)=>n+x,0);
     $('scope-message').textContent=fullOnly() ?
-      'Full-text model-read subset: '+number(full)+' of '+number(total)+' filing records. All percentages and evidence below use this subset only. Full-text model access does not guarantee correct interpretation.' :
+      'Full-text model-read subset: '+number(full)+' of '+number(total)+' filing records. All comparison counts, percentages, and examples below use this subset. Candidate OCR may still be unreviewed; full-text model access does not guarantee a correct interpretation.' :
       'Entire indexed snapshot: '+number(total)+' filings. '+number(data.coverage.filings_selected_windows_only)+
-        ' were analyzed using selected text windows, so a missing theme does not imply the filer said nothing about it.';
+        ' were analyzed using selected text windows and '+number(data.coverage.filings_with_ocr_candidate||0)+' include candidate OCR. A missing theme does not imply the filer said nothing about it.';
     $('audit-status').textContent=data.method.source_context_audit_sha256_verified ?
       'Machine source-context audit matches the current claim ledger. Its review flags are automated warnings, not independent confirmation.' :
       'Review status: the source-context audit is out of sync with the machine-claim ledger. Speaker/context risk cannot be assessed reliably until the audit is regenerated. All argument frequencies remain unvalidated.';
@@ -322,7 +322,7 @@
   }
   function frameMatches(def, groups) {
     const codes=new Set(def[3]),pattern=def[4],matches=[];
-    for(const g of groups)for(const f of (groupRows.get(g)||[])) {
+    for(const g of groups)for(const f of sourceFilings(g)) {
       if(f.topics.some(e => codes.has(e.topic) && pattern.test([e.action,e.argument].join(' '))))matches.push(f);
     }
     return matches;
@@ -331,9 +331,9 @@
     const key=$('frame-focus').value;
     const aGroups=key==='edtech'?['edtech_vendors','edtech_trade_associations']:['erate_consultants','consultant_associations'];
     const b=$('frame-compare').value;
-    const totalA=aGroups.reduce((s,g)=>s+groupSize(g),0),totalB=groupSize(b);
+    const totalA=aGroups.reduce((s,g)=>s+scopedGroupSize(g),0),totalB=scopedGroupSize(b);
     $('frame-context').textContent=number(totalA)+' filings assigned to the selected industry categories; '+number(totalB)+
-      ' filings assigned to '+label(b).toLowerCase()+'. Some organizations may appear in joint submissions classified separately. Small denominators make percentages volatile.';
+      ' filings assigned to '+label(b).toLowerCase()+'. Counts reflect '+(fullOnly()?'full-text model reads only':'the complete index')+'. Joint submissions remain separate. Small denominators make percentages volatile.';
     const root=$('frame-list');root.replaceChildren();
     for(const def of frames[key]){
       const a=frameMatches(def,aGroups),comparison=frameMatches(def,[b]);
@@ -448,7 +448,7 @@
     $('frame-focus').addEventListener('change',renderFrames);
     $('frame-compare').addEventListener('change',renderFrames);
     $('matrix-export').addEventListener('click',exportCSV);
-    $('coverage-filter').addEventListener('change',()=>{evidenceLimits={};renderMatrix();renderDetail();});
+    $('coverage-filter').addEventListener('change',()=>{evidenceLimits={};renderMatrix();renderDetail();renderFrames();});
     $('industry-audit-export').addEventListener('click',exportIndustryAudit);
     for(const b of document.querySelectorAll('[data-preset]'))b.addEventListener('click',()=>{
       const preset=b.dataset.preset;
