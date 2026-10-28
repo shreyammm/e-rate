@@ -130,7 +130,17 @@ ISSUE_MAP={
 }
 NON_POSITION=re.compile(r'\b(?:does not (?:address|discuss|mention|recommend|advocate)|no explicit (?:position|recommendation)|not explicitly (?:addressed|discussed)|there is no (?:proposal|position)|not discussed|no specific position|none is recommended|no stance)\b',re.I)
 NO_ACTION=re.compile(r'^(?:none|n/a|not specified|no recommendation|no action|not applicable|unknown|unclear|no specific change)$',re.I)
-SPEAKER_RISK={'possible_attributed_or_opposing_voice','fcc_prompt_or_policy_question_near_quote','possible_bibliography_or_cited_material','agency_listening_summary_third_party_views_not_official_stance'}
+# Review risks include weak evidence-to-interpretation correspondence, not just
+# the possibility that a quoted passage belongs to a different speaker.
+# A mismatched claim is never eligible to be presented as a lower-risk example.
+SPEAKER_RISK={
+    'possible_attributed_or_opposing_voice',
+    'fcc_prompt_or_policy_question_near_quote',
+    'possible_bibliography_or_cited_material',
+    'agency_listening_summary_third_party_views_not_official_stance',
+    'low_lexical_overlap_between_quote_and_machine_paraphrase',
+    'one_quote_used_for_multiple_machine_claims',
+}
 TOPICS={code:{'id':code,'label':label,'category':category,'description':'Exploratory machine-coded argument theme; counts are distinct filings, not validated endorsements.'}
         for code,label,category,issues,pattern in THEMES}
 PATTERNS={code:re.compile(pattern,re.I) for code,label,category,issues,pattern in THEMES}
