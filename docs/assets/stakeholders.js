@@ -217,6 +217,9 @@
     const filings=data.filings.filter(f=>f.organization===name);
     const root=$('org-profile');root.hidden=false;
     $('org-profile-title').textContent=name;
+    const norm=x=>String(x||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+    const jointAppearances=data.filings.filter(f=>
+      f.joint_filing&&(f.joint_institutions||[]).some(candidate=>norm(candidate)===norm(name)));
     const totalThemes=new Set(filings.flatMap(f=>f.topics.map(t=>t.topic)));
     const role=filings[0]?.role||'unresolved';
     const inferred=filings.some(f=>f.identity_review_required||f.joint_filing);
@@ -249,6 +252,13 @@
     const source=make('p',undefined,'method-links');
     for(const f of filings.slice(0,7))source.append(visit('Original FCC '+f.id,fcc(f.id)),document.createTextNode(' · '));
     place.append(source);
+    if(jointAppearances.length){
+      const co=make('div',undefined,'joint-note');
+      co.append(make('strong','Additional joint filings mentioning this institution'));
+      co.append(make('p','These are entries in multi-institution submitter metadata. They are not counted as separately authored comments or attributed individual endorsements.'));
+      for(const f of jointAppearances)co.append(visit('Joint FCC '+f.id+' ↗',fcc(f.id)),document.createTextNode(' · '));
+      place.append(co);
+    }
     root.scrollIntoView({block:'center',behavior:'smooth'});
   }
   function renderOrgs(){

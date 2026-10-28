@@ -101,5 +101,13 @@ class PlayerIdentityTest(unittest.TestCase):
         self.assertEqual(x['submitter_field_components'],3)
         self.assertFalse(submitted_by_multiple_entities('Curriculum Associates, LLC')['multi_submitter_metadata'])
         self.assertFalse(submitted_by_multiple_entities('Steve Potash | OverDrive, Inc.')['multi_submitter_metadata'])
+        x=submitted_by_multiple_entities(
+            "Prince George's County Memorial Library System | "
+            "Software & Information Industry Association | Curriculum Associates")
+        self.assertTrue(x['multi_submitter_metadata'])
+        self.assertIn('Software and Information Industry Association',x['joint_institution_candidates'])
+        self.assertIn('Curriculum Associates, LLC',x['joint_institution_candidates'])
+        self.assertEqual(x['submitter_field_components'],3)
+        self.assertFalse(any('Steve Potash' in x for x in x['joint_institution_candidates']))
 
 if __name__=='__main__':unittest.main()

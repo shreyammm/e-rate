@@ -237,16 +237,35 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
             'speaker_is_proxy_possible':proxy,'needs_review':review,
             'identity_status':'candidate' if review else 'strong_source_cue'}
 
-def submitted_by_multiple_entities(raw: str) -> dict:
-    """Co-signers must never be counted as independent submissions."""
+JOINT_ORGANIZATION_ALIASES = {
+    'curriculum associates':'Curriculum Associates, LLC',
+    'software & information industry association':'Software and Information Industry Association',
+    'software and information industry association':'Software and Information Industry Association',
+    'consortium for school networking':'Consortium for School Networking',
+}
+def identifiable_cofilers(raw: str) -> list[str]:
+    """Conservatively extract institution-valued members of explicit '|' lists.
+
+    This preserves co-signer leads without treating a person + employer as two
+    organizations. Never publish private-person components.
+    """
     parts=[x.strip() for x in str(raw or '').split('|') if x.strip()]
-    # The separator can mean 'person | employer', not co-signing entities.
-    # Count a joint institutional submission only when multiple independently
-    # recognizable institution names occur. Unknown names remain unallocated.
-    known_orgs={canon(p) for p in parts if organization_label(p)}
-    joint=len(known_orgs)>1
-    return {'multi_submitter_metadata':joint,
+    seen=set();result=[]
+    for p in parts:
+        label=JOINT_ORGANIZATION_ALIASES.get(p.casefold()) or organization_label(p)
+        if not label:continue
+        key=canon(label)
+        if key not in seen:
+            seen.add(key);result.append(label)
+    return result
+
+def submitted_by_multiple_entities(raw: str) -> dict:
+    """A joint institutional filing remains ONE FCC filing for statistics."""
+    parts=[x.strip() for x in str(raw or '').split('|') if x.strip()]
+    organizations=identifiable_cofilers(raw)
+    return {'multi_submitter_metadata':len(organizations)>1,
             'submitter_field_components':len(parts) if parts else 1,
+            'joint_institution_candidates':organizations if len(organizations)>1 else [],
             'requires_relationship_review':len(parts)>1}
 
 def review_priority(identity: dict, body: str) -> dict:
@@ -342,7 +361,8 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                      'text_sha256':source_row.get('text_sha256') or '',
                      'ocr_candidate':str(source_row.get('has_unreviewed_ocr','0'))=='1',
                      'multi_submitter_metadata':joint['multi_submitter_metadata'],
-                     'submitter_field_components':joint['submitter_field_components']})
+                     'submitter_field_components':joint['submitter_field_components'],
+                     'joint_institution_candidates':joint['joint_institution_candidates']})
     if len(filings)!=len(index) or seen!=set(by_id):raise ValueError('Registry does not cover all filing IDs')
     filings.sort(key=lambda x:x['id'])
     groups=defaultdict(list)

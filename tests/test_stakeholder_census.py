@@ -11,6 +11,7 @@ class CensusTest(unittest.TestCase):
         self.assertEqual(stakeholder_group({'role':'trade_association','industry_focus':'erate_consulting'}),'consultant_associations')
         self.assertEqual(stakeholder_group({'role':'school_technology_staff'}),'school_professionals')
         self.assertEqual(stakeholder_group({'role':'school_connected_unknown'}),'school_affiliation_uncertain')
+        self.assertEqual(stakeholder_group({'role':'school_connected_unknown','multi_submitter_metadata':True}),'joint_institutional_filings')
     def test_issue_not_automatically_direction(self):
         x=topics_for_claim({'issue':'erate_sunset','position':'support','action':'Protect the program against cuts',
                             'argument':'Schools need E-Rate connectivity.'})
