@@ -274,6 +274,25 @@
     if(rows.length>distinct.length)column.append(el('p',number(rows.length-distinct.length)+' additional filing records repeat a source text shown or indexed here.','fineprint'));
     root.append(column);
   }
+  function renderIdentityBreakdown() {
+    const unmatched=(groupRows.get('other_or_unidentified')||[]);
+    const counts=new Map();
+    for(const f of unmatched)counts.set(f.role,(counts.get(f.role)||0)+1);
+    const titles={
+      named_person_capacity_unstated:'Named individuals without confirmed professional capacity',
+      unresolved:'Affiliation could not be established',
+      researcher:'Researchers and health professionals',
+      student:'Students'
+    };
+    const root=$('identity-breakdown');root.replaceChildren();
+    const items=[...counts.entries()].sort((a,b)=>b[1]-a[1]);
+    for(const [role,n] of items) {
+      const line=el('div',undefined,'identity-line');
+      line.append(el('span',titles[role]||role.replace(/_/g,' ')),
+        el('strong',number(n)+' · '+rate(n,unmatched.length)));
+      root.append(line);
+    }
+  }
   function frameMatches(def, groups) {
     const codes=new Set(def[3]),pattern=def[4],matches=[];
     for(const g of groups)for(const f of (groupRows.get(g)||[])) {
@@ -388,7 +407,7 @@
       if(activeGroup==='school_institutions')$('comparison-group').value='edtech_vendors';
       $('load-status').textContent=number(data.coverage.filings)+' filing records · '+number(data.coverage.filings_with_coded_topics)+
         ' with extracted arguments · Categories and quotations are preliminary and source-linked.';
-      renderMatrix();renderDetail();renderFrames();
+      renderMatrix();renderDetail();renderFrames();renderIdentityBreakdown();
     } catch(error) {
       $('load-status').textContent='Unable to load the stakeholder data: '+error.message+
         '. You can still use the complete filing browser or source search.';
