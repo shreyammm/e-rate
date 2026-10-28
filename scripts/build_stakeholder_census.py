@@ -337,6 +337,11 @@ def build(registry=REGISTRY,claim_path=CLAIMS,quality_path=QUALITY,audit_path=AU
     ledger=json.loads(cb);a=json.loads(Path(audit_path).read_text(encoding='utf8')) if Path(audit_path).exists() else None
     payload=compute(json.loads(rb),ledger,json.loads(Path(quality_path).read_text(encoding='utf8')),
                     a,json.loads(Path(manifest_path).read_text(encoding='utf8')),hashlib.sha256(cb).hexdigest())
+    payload['inputs']={
+        'player_registry_sha256':hashlib.sha256(rb).hexdigest(),
+        'machine_claim_ledger_sha256':hashlib.sha256(cb).hexdigest(),
+        'source_manifest_sha256':hashlib.sha256(Path(manifest_path).read_bytes()).hexdigest()
+    }
     path=Path(out);path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     return {'groups':len(payload['stakeholder_groups']),'topics':len(payload['topics']),
