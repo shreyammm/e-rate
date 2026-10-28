@@ -99,7 +99,7 @@
       }
       row.append(make('span','›','arg-arrow'));
       row.addEventListener('click',()=>{
-        selectedTopic=t.id;visibleEvidence={};table();renderStakeholdersForTopic();renderEvidence();renderOrgs();navigateState();
+        selectedTopic=t.id;visibleEvidence={};table();renderStakeholdersForTopic();renderDetailedRoles();renderEvidence();renderOrgs();navigateState();
         $('evidence').scrollIntoView({block:'start',behavior:'smooth'});
       });
       root.append(row);
@@ -150,6 +150,26 @@
       root.append(row);
     }
   }
+  function renderDetailedRoles(){
+    const root=$('role-by-topic');root.replaceChildren();
+    const topic=byTopic[selectedTopic];
+    if(!topic||!topic.by_detailed_role){
+      root.append(make('p','Detailed roles have not yet been published with this dataset.','small-note'));
+      return;
+    }
+    const roles=data.stakeholder_roles.filter(r=>topic.by_detailed_role[r.id]?.filings>0)
+      .sort((a,b)=>topic.by_detailed_role[b.id].filings-topic.by_detailed_role[a.id].filings);
+    const head=make('div',undefined,'inverse-header');
+    head.append(make('span','Specific role'),make('span','Filings raising argument'),
+      make('span','Share of topic'),make('span','Within role'));root.append(head);
+    for(const role of roles){
+      const c=topic.by_detailed_role[role.id],row=make('div',undefined,'inverse-row');
+      row.title=n(c.distinct_source_texts)+' distinct original source texts; classification remains provisional.';
+      row.append(make('span',role.id.replace(/_/g,' ')),make('b',n(c.filings)),
+        make('span',pct(c.filings,topic.filings)),make('span',pct(c.filings,c.role_filings)));
+      root.append(row);
+    }
+  }
   function differences(){
     const c=compareValue(),root=$('comparison-leads');
     root.replaceChildren();root.hidden=!c;
@@ -171,7 +191,7 @@
         make('span',n(a)+' / '+n(nA)+' vs '+n(b)+' / '+n(nB)+' filings ('+
           Math.abs(delta).toFixed(1)+' percentage-point difference)'));
       button.addEventListener('click',()=>{
-        selectedTopic=topic.id;table();renderEvidence();renderStakeholdersForTopic();renderOrgs();navigateState();
+        selectedTopic=topic.id;table();renderEvidence();renderStakeholdersForTopic();renderDetailedRoles();renderOrgs();navigateState();
         $('evidence').scrollIntoView({block:'start',behavior:'smooth'});
       });
       root.append(button);
@@ -361,7 +381,7 @@
     if(g===c&&g!=='all')$('second-group').value='';
     if(g==='all'&&c==='all')$('second-group').value='';
     orgLimit=24;selectedOrg=null;$('org-profile').hidden=true;
-    summary();table();visibleEvidence={};renderStakeholdersForTopic();renderEvidence();renderOrgs();differences();navigateState();
+    summary();table();visibleEvidence={};renderStakeholdersForTopic();renderDetailedRoles();renderEvidence();renderOrgs();differences();navigateState();
   }
   try{
     const r=await fetch('./data/stakeholder_argument_census.json');

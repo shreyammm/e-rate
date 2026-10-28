@@ -4,6 +4,12 @@ from scripts.build_stakeholder_census import (
     topics_for_claim, stakeholder_group, compute, THEMES, GROUP_NAMES, NTIA_LISTENING_REPORT
 )
 class CensusTest(unittest.TestCase):
+    def test_detailed_role_counts_are_exposed(self):
+        import inspect
+        source=inspect.getsource(compute)
+        self.assertIn("'by_detailed_role':role_cells",source)
+        self.assertIn("'pct_of_topic_filings'",source)
+        self.assertIn("'distinct_source_texts'",source)
     def test_census_statistics_include_unique_named_institutions(self):
         import inspect
         source=inspect.getsource(compute)
