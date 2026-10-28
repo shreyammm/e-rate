@@ -1,0 +1,63 @@
+name: Build stakeholder argument census
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_stakeholder_census.py'
+      - 'scripts/build_player_registry.py'
+      - 'tests/test_stakeholder_census.py'
+      - 'docs/data/player_registry.json'
+      - 'docs/data/kaggle/machine_claim_rows.json'
+      - 'docs/data/kaggle/filing_quality.json'
+      - 'docs/data/kaggle/claim_context_audit.json'
+      - 'data/fcc_corpus/manifest.json'
+      - '.github/workflows/stakeholder-census.yml'
+permissions:
+  contents: write
+concurrency:
+  group: erate-stakeholder-census
+  cancel-in-progress: false
+jobs:
+  census:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test exact stakeholder and theme counts
+        run: python -m unittest discover -s tests -p test_stakeholder_census.py -v
+      - name: Build all-source-file exploratory analysis
+        run: python -m scripts.build_stakeholder_census
+      - name: Verify full source census and no PII
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          x=json.loads(Path('docs/data/stakeholder_argument_census.json').read_text())
+          assert x['schema']=='stakeholder-arguments-v1'
+          assert x['coverage']['filings']==3231
+          assert sum(x['coverage'][k] for k in ('filings_with_coded_topics','filings_without_coded_topics'))==3231
+          assert sum(s['filings'] for s in x['stakeholder_groups'])==3231
+          assert len({f['id'] for f in x['filings']})==3231
+          for t in x['topics']:
+            assert sum(v['filings'] for v in t['by_stakeholder'].values())==t['filings']
+            assert all(v['distinct_source_texts']<=v['filings'] for v in t['by_stakeholder'].values())
+          assert all('filer_raw' not in f and 'author_name' not in f for f in x['filings'])
+          assert all(t['id'] and t['label'] for t in x['topics'])
+          print('Verified filing denominators, group topics and source privacy.')
+          PY
+      - name: Publish site census
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- docs/data/stakeholder_argument_census.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish complete stakeholder-by-argument exploratory census'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
