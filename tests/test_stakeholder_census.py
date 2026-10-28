@@ -4,6 +4,11 @@ from scripts.build_stakeholder_census import (
     topics_for_claim, stakeholder_group, compute, THEMES, GROUP_NAMES, NTIA_LISTENING_REPORT
 )
 class CensusTest(unittest.TestCase):
+    def test_weak_quote_alignment_and_reused_quotes_are_not_low_risk(self):
+        from scripts.build_stakeholder_census import SPEAKER_RISK
+        self.assertIn('low_lexical_overlap_between_quote_and_machine_paraphrase',SPEAKER_RISK)
+        self.assertIn('one_quote_used_for_multiple_machine_claims',SPEAKER_RISK)
+
     def test_detailed_role_counts_are_exposed(self):
         import inspect
         source=inspect.getsource(compute)
