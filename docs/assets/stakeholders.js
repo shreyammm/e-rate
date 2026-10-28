@@ -30,6 +30,7 @@
     $('evidence-clean').addEventListener('change',renderEvidence);
     $('download').addEventListener('click',download);
     $('download-matrix').addEventListener('click',downloadMatrix);
+    $('download-audit').addEventListener('click',downloadReviewSample);
     $('org-profile-close').addEventListener('click',()=>{$('org-profile').hidden=true;selectedOrg=null;});
     for(const btn of document.querySelectorAll('[data-preset]'))btn.addEventListener('click',()=>{
       const key=btn.dataset.preset;
@@ -323,6 +324,88 @@
       b.addEventListener('click',go);b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
       root.append(b);
     }
+  }
+  function downloadReviewSample(){
+    // A reproducible, purposefully oversampled QUALITY sample, not population
+    // sampling: intentionally include every small, high-interest industry group.
+    const priorityGroups=new Set(['edtech_vendors','edtech_trade_associations',
+      'erate_consultants','consultant_associations','connectivity_and_network_vendors',
+      'telecom_associations']);
+    const rows=data.filings.filter(f=>f.quality_scope!=='not_modeled');
+    const byId=new Map(rows.map(f=>[f.id,f]));
+    const items=new Map();
+    const fnv=str=>{
+      let h=2166136261;
+      for(const c of String(str)){h^=c.charCodeAt(0);h=Math.imul(h,16777619);}
+      return h>>>0;
+    };
+    const sortFor=(pool,stratum)=>pool.slice().sort((a,b)=>
+      fnv(stratum+'|'+a.id)-fnv(stratum+'|'+b.id)||a.id.localeCompare(b.id));
+    function add(f,topic,reason){
+      const item=f.topics.find(t=>t.topic===topic);
+      const key=f.id+'|'+(topic||'none');
+      if(items.has(key))return;
+      items.set(key,{f,item,topic:topic||'',reason});
+    }
+    const highValue=(e)=>/^(consultant_|vendor_influence|competitive_bidding|bid_independence|administrative_burden|program_integrity|alleged_misuse|learning_outcomes|screen_policy|screen_harms|screen_use_distinctions|edtech_study_evidence|adaptive_learning|technology_cost_benefit)/.test(e.topic);
+    for(const f of rows){
+      if(!priorityGroups.has(f.group))continue;
+      const topics=f.topics.slice().sort((a,b)=>Number(highValue(b))-Number(highValue(a))||
+        a.topic.localeCompare(b.topic));
+      if(!topics.length)add(f,'','high_priority_sector_no_extracted_argument');
+      for(const e of topics.slice(0,Math.max(6,Math.min(topics.length,10))))
+        add(f,e.topic,'all_filers_in_high_priority_industry_group');
+    }
+    const groups=data.stakeholder_groups.filter(g=>!priorityGroups.has(g.id));
+    for(const g of groups){
+      const pool=sortFor(rows.filter(f=>f.group===g.id),'comparison_group_'+g.id);
+      for(const f of pool.slice(0,Math.min(12,pool.length))){
+        const selected=f.topics.slice(0,2);
+        if(!selected.length)add(f,'','comparison_group_no_coded_theme_control');
+        else for(const e of selected)add(f,e.topic,'comparison_group_stratified_check');
+      }
+    }
+    // Cover every thematic definition, including rare edtech and consultant
+    // categories; this makes review useful for precision, not merely frequency.
+    for(const theme of data.topics){
+      const pool=sortFor(rows.filter(f=>f.topics.some(x=>x.topic===theme.id)),
+        'theme_precision_'+theme.id);
+      for(const f of pool.slice(0,Math.min(3,pool.length)))
+        add(f,theme.id,'theme_precision_check');
+      // Negative controls matter: an extraction gap is not a zero-stance.
+      const negative=sortFor(rows.filter(f=>f.quality_scope==='full_text'&&
+        !f.topics.some(x=>x.topic===theme.id)),
+        'theme_omission_'+theme.id);
+      if(negative.length)add(negative[0],theme.id,'no_extracted_argument_negative_control');
+    }
+    const headings=['selection_reason','fcc_filing_id','stakeholder_group','specific_role_candidate',
+      'institution_candidate','argument_topic','argument_label','machine_interpretation_unverified',
+      'original_filing_quote_if_extracted','original_fcc_url','text_scope',
+      'identity_or_speaker_review_needed','joint_submission','independent_source_checked',
+      'correct_stakeholder_role','author_endorses_argument','argument_actually_present',
+      'reviewer_notes'];
+    const clean=v=>{
+      let s=String(v??'');
+      if(/^\s*[=+@-]/.test(s))s="'"+s;
+      return '"'+s.replace(/"/g,'""')+'"';
+    };
+    const lines=[headings.map(clean).join(',')];
+    for(const {f,item,topic,reason} of items.values()){
+      const label=byTopic[topic]?.label||'No model claim; inspect complete source';
+      const negative=reason==='no_extracted_argument_negative_control';
+      lines.push([
+        reason,f.id,f.group,f.role,f.organization,topic,label,
+        negative?'[No extracted argument for this topic; verify full original]':item?.action||item?.argument||'',
+        negative?'':item?.quote||'',fcc(f.id),f.quality_scope,
+        Boolean(f.identity_review_required||f.representative_possible||f.joint_filing||item?.needs_speaker_review),
+        Boolean(f.joint_filing),'','','','',''
+      ].map(clean).join(','));
+    }
+    const csv='\ufeff'+lines.join('\r\n')+'\r\n';
+    const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
+    const a=make('a');a.href=url;a.download='erate_stakeholder_validation_worksheet.csv';a.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    $('audit-download-status').textContent=n(items.size)+' source-linked review assignments exported. Review conclusions are blank until independently checked.';
   }
   function downloadMatrix(){
     const group=groupValue(),compare=compareValue(),category=$('category').value;
