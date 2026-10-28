@@ -56,6 +56,26 @@
     return notes;
   }
   function needReview(r){return flags(r).length>0||filing(r).needs_review;}
+  function exportCsv(){
+    const headers=['filing_id','organization_metadata_candidate','provisional_role','industry_focus','machine_issue','machine_position_unvalidated','machine_action','machine_argument','verbatim_source_quote','source_url','source_and_identity_cautions'];
+    function quote(x){
+      let v=String(x??'');
+      // Avoid spreadsheet formula evaluation of arbitrary source text on open.
+      if(/^[\s]*[=+@-]/.test(v))v="'"+v;
+      return '"'+v.replace(/"/g,'""')+'"';
+    }
+    const out=[headers.map(quote).join(',')];
+    for(const r of selection){
+      const f=filing(r);
+      const warnings=flags(r).concat(f.needs_review?['Provisional commenter identity requires source review']:[]);
+      out.push([id(r),f.organization||'',f.role||'unresolved',f.industry_focus||'unspecified',r.issue||'',r.position||'',r.action||'',r.argument||'',r.quote||'',fcc(id(r)),warnings.join('; ')].map(quote).join(','));
+    }
+    const blob=new Blob(['\ufeff'+out.join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'});
+    const url=URL.createObjectURL(blob),a=make('a');
+    a.href=url;a.download='erate_source_claim_candidates_'+topic+'.csv';a.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    $('br-export-status').textContent=fmt(selection.length)+' unvalidated machine claim rows exported, with original filing links and caution flags.';
+  }
   function controls(){
     let p=new URLSearchParams(location.search);
     const q=p.get('lens'),g=p.get('group');
@@ -69,6 +89,7 @@
     for(const i of ['br-lens','br-group','br-quality'])$(i).addEventListener('change',recalc);
     $('br-query').addEventListener('input',recalc);
     $('br-more').addEventListener('click',()=>{shown+=30;renderEvidence();});
+    $('br-export').addEventListener('click',exportCsv);
   }
   function syncTopic(){
     topic=$('br-lens').value;
