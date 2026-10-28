@@ -90,6 +90,7 @@ SELF_DESCRIBED = [
 ORG_PATTERNS = [(k,re.compile(p,re.I)) for k,p in ORG_RULES]
 SELF_PATTERNS = [(k,re.compile(p,re.I)) for k,p in SELF_DESCRIBED]
 PERSON_ROLES = {'named_person_capacity_unstated', 'parent_guardian',
+                'consultant_or_e_rate_services_firm',
                 'student', 'school_connected_voice_capacity_unconfirmed',
                 'educator_or_school_staff', 'researcher_or_health_professional'}
 BASE_CROSSWALK = {
