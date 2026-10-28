@@ -178,28 +178,23 @@ def make_queue(data: dict, per_comparator_stratum: int = 3) -> tuple[list[dict],
                 uncertainty = "risk" if machine_risk(f, hit) else "lower_risk"
                 groups[(status, uncertainty)].append(f)
             for (status, uncertainty), pool in sorted(groups.items()):
-                # Stable pseudo-random selection of filing RECORDS. A template
-                # can recur; do not silently drop records or publish these as
-                # an independent-person survey. Avoid filling the same small
-                # stratum with repeated source texts where alternatives exist.
+                # Stratified pseudo-random sample of filing RECORDS, without
+                # dropping duplicated/template text. Excluding duplicates
+                # destroys known inclusion probabilities and can conceal
+                # campaigns. Distinct-text sensitivity is reported separately.
                 ordered = sorted(pool, key=lambda f: sort_key(group, topic_id, status, uncertainty, f["id"]))
-                chosen = []
-                hashes = set()
-                for f in ordered:
-                    h = f.get("text_sha256") or f["id"]
-                    if h not in hashes:
-                        hashes.add(h)
-                        chosen.append(f)
-                    if len(chosen) == per_comparator_stratum:
-                        break
+                chosen = ordered[:per_comparator_stratum]
                 population.append({
                     "group": group, "topic": topic_id,
                     "model_candidate_status": status, "risk_stratum": uncertainty,
                     "filing_population": len(pool),
                     "distinct_texts_in_population": len({x.get("text_sha256") or x["id"] for x in pool}),
                     "selected_filings": len(chosen),
-                    "selection": "deterministic_pseudorandom_distinct_text_first",
-                    "probability_sample": False,
+                    "distinct_texts_selected": len({x.get("text_sha256") or x["id"] for x in chosen}),
+                    "selection": "sha256_seeded_pseudorandom_filing_record_sample_without_replacement",
+                    "sampling_fraction": round(len(chosen) / len(pool), 8) if pool else None,
+                    "weight_after_adjudication": len(pool) / len(chosen) if chosen else None,
+                    "reviewed_estimate_available": False,
                 })
                 for f in chosen:
                     add(f, topic_id, "comparator_quality_control",
@@ -224,9 +219,10 @@ def make_queue(data: dict, per_comparator_stratum: int = 3) -> tuple[list[dict],
             "negative conclusion, and a detected row is not an endorsed stance. "
             "Review every industry candidate against the full original filing. "
             "Joint filings are separate screening leads, not attributed industry "
-            "positions. Comparator sampling is purposive and distinct-text-first; "
-            "do not use it to estimate group prevalence or classifier accuracy "
-            "without a properly designed probability sample and adjudication."
+            "positions. Comparator strata use seeded pseudo-random sampling of "
+            "filing records including repeated text, with N/n design weights. "
+            "No accuracy, stance or prevalence estimates exist until independent "
+            "source adjudication; filing counts never estimate public opinion."
         ),
     }
     return result, summary
