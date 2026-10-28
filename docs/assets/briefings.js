@@ -115,7 +115,7 @@
       ['Rows with any source/identity caution',reviewed]
     ];
     $('br-stats').replaceChildren(...tiles.map(([label,value])=>{let d=make('div',undefined,'b-stat');d.append(make('strong',fmt(value)),make('span',label));return d;}));
-    renderMatrix();renderOrganizations();shown=30;renderEvidence();
+    renderMatrix();renderHeadtohead();renderOrganizations();shown=30;renderEvidence();
   }
   function renderMatrix(){
     const t=$('br-matrix');t.replaceChildren();
@@ -136,6 +136,35 @@
         tr.append(make('td',fmt(ids.size)));
       }
       t.append(tr);
+    }
+  }
+  function renderHeadtohead(){
+    const root=$('br-headtohead');root.replaceChildren();
+    const groups=topic==='consultants'?[['consultants','Consultants'],['school','Schools']]
+      :[['school','Schools / educators'],['edtech_industry','Edtech industry']];
+    const q=$('br-query').value.trim().toLowerCase();
+    for(const [g,label] of groups){
+      const candidates=rows.filter(r=>{
+        if(sector(r)!==g)return false;
+        if(!rowTheme(r,topic))return false;
+        if(q&&!([filing(r).organization,r.issue,r.action,r.argument,r.quote,id(r)].join(' ').toLowerCase().includes(q)))return false;
+        return id(r)!=='26110081266';
+      }).sort((a,b)=>Number(needReview(a))-Number(needReview(b))||
+         Number(!filing(a).organization)-Number(!filing(b).organization)||
+         id(a).localeCompare(id(b)));
+      const pick=candidates[0],card=make('div',undefined,'b-step');
+      card.append(make('strong',label));
+      if(!pick){
+        card.append(make('p','No source-linked candidate found for this group under the current topic or search. This is not evidence that the group has no position.','b-note'));
+      }else{
+        const f=filing(pick);
+        card.append(make('h3',f.organization||registry.roles[f.role]||'Attribution not established'),
+          make('p',pick.action||pick.argument||'No explicit model-extracted requested action','b-note'));
+        if(pick.quote)card.append(make('blockquote',pick.quote));
+        if(needReview(pick))card.append(make('p','Additional speaker, context, or completeness review is needed.','b-small'));
+        card.append(link('Inspect original FCC '+id(pick),fcc(id(pick))));
+      }
+      root.append(card);
     }
   }
   function renderOrganizations(){
