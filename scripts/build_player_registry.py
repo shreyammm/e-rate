@@ -103,7 +103,7 @@ BASE_CROSSWALK = {
     'unresolved':'unresolved',
 }
 SENSITIVE = re.compile(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?<!\d)(?:\+1[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}(?!\d)',re.I)
-ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commission|association|coalition|alliance|department|administration|agency|foundation|network|college|university|government|nation|corporation|llc|inc|institute|society|technologies|telecom|communications|media|consulting|consultants|services|software|technology|broadband)\b',re.I)
+ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commission|association|coalition|alliance|department|administration|agency|foundation|network|college|university|government|nation|corporation|llc|inc|institute|society|technologies|telecom|communications|media|consulting|consultants|services|software|technology|broadband|solutions)\b',re.I)
 
 def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
@@ -204,6 +204,29 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
             'speaker_is_proxy_possible':proxy,'needs_review':review,
             'identity_status':'candidate' if review else 'strong_source_cue'}
 
+def review_priority(identity: dict, body: str) -> dict:
+    """Rank needs-human-review cases, never convert a candidate into a fact."""
+    if not identity['needs_review']:return {'score':0,'level':'not_required','reasons':[]}
+    score=5;reasons=[]
+    if identity['organization']:
+        score+=35;reasons.append('source_metadata_institution_or_candidate_affiliation')
+    if identity['basis'] in ('signature_candidate','letterhead_candidate'):
+        score+=30;reasons.append('letterhead_or_signature_needs_confirmation')
+    if identity['basis']=='multi_party_metadata_affiliation_candidate':
+        score+=25;reasons.append('potential_person_organization_relationship')
+    if identity['speaker_is_proxy_possible']:
+        score+=25;reasons.append('possible_representative_client_relationship')
+    if identity['role'] in ('erate_consultant','procurement_adviser','other_vendor','trade_association','edtech_learning_vendor','edtech_safety_vendor','edtech_device_vendor','telecom_isp','network_technology_vendor'):
+        score+=30;reasons.append('commercial_or_trade_stakeholder')
+    if identity['role'] in ('unresolved','school_connected_unknown'):
+        score+=15;reasons.append('role_unclear')
+    if re.search(r'(?i)\b(?:respectfully submitted|sincerely|director of technology|superintendent|chief executive|vice president|on behalf of)\b',body[-2600:]):
+        score+=12;reasons.append('possible_closing_or_signature_evidence')
+    if re.search(r'(?i)\b(?:vendor incentives|e[- ]rate consultant|consultant registration|school screen time|education technology|procurement)\b',body[:3500]):
+        score+=10;reasons.append('relevant_policy_stakeholder_language')
+    score=min(100,score)
+    return {'score':score,'level':'high' if score>=65 else 'medium' if score>=35 else 'low','reasons':reasons}
+
 def base_lookup(index: list[dict], role_file: Path) -> dict:
     data=json.loads(role_file.read_text(encoding='utf-8'))
     codes=gzip.decompress(base64.b64decode(data['sequence'])).decode('ascii')
@@ -257,12 +280,15 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                                  evidence_cue='human reviewer checked source',
                                  identity_status='human_reviewed',needs_review=False,
                                  industry_focus=industry_focus(org,v['role']))
+                review=review_priority(found,body)
                 filings.append({'id':sid,'base_role':base[sid],
                      'role':found['role'],'organization':found['organization'],
                      'industry_focus':found['industry_focus'],
                      'basis':found['basis'],'evidence_cue':found['evidence_cue'],
                      'identity_status':found['identity_status'],
                      'needs_review':found['needs_review'],
+                     'review_priority':review['score'],'review_tier':review['level'],
+                     'review_reasons':review['reasons'],
                      'proxy_possible':found['speaker_is_proxy_possible'],
                      'source_url':'https://www.fcc.gov/ecfs/filing/'+sid,
                      'text_sha256':source_row.get('text_sha256') or '',
@@ -291,6 +317,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
              'manually_reviewed_filings':sum(r['identity_status']=='human_reviewed' for r in filings)},
        'method':'Screened original FCC institution-valued filer metadata, two-party potential affiliation, and explicit opening self-description. Type and industry remain separate. Categories provisional until human reviewed.',
        'roles':ROLE_LABELS,'role_filing_counts':dict(counts),
+       'review_tier_counts':dict(Counter(r['review_tier'] for r in filings)),
        'organizations':organizations,'filings':filings}
     Path(output).parent.mkdir(parents=True,exist_ok=True)
     Path(output).write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
