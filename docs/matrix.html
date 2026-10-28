@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Compare which FCC E-Rate arguments appear in filings from schools, edtech companies, E-Rate consultants, and other stakeholders. Every example is source-linked.">
+<title>Stakeholder comparison | E-Rate Comment Research</title>
+<link rel="stylesheet" href="./assets/matrix.css">
+<script src="./assets/matrix.js" defer></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap mast-inner">
+    <a class="wordmark" href="./index.html">E-Rate <span>Comment Research</span></a>
+    <nav aria-label="Main navigation">
+      <a href="./matrix.html" aria-current="page">Compare groups</a>
+      <a href="./stakeholders.html">Explore arguments</a>
+      <a href="./players.html">Organizations</a>
+      <a href="./ask.html">Search filings</a>
+      <a href="./corpus.html">All filings</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="opening">
+    <p class="kicker">FCC comments / stakeholder research</p>
+    <h1>Who is making which arguments?</h1>
+    <p class="intro">Compare the issues raised by schools, edtech firms, E-Rate consultants and other participants. Select any number to read the underlying submissions. The figures count filing records, not verified agreement with an argument.</p>
+    <p id="load-status" role="status" class="status">Loading the research index…</p>
+  </section>
+
+  <section class="summary" aria-label="Corpus summary">
+    <div><strong id="stat-filings">—</strong><span>FCC filings in the snapshot</span></div>
+    <div><strong id="stat-coded">—</strong><span>Filings with extracted arguments</span></div>
+    <div><strong id="stat-categories">—</strong><span>Distinct argument topics</span></div>
+    <div><strong id="stat-groups">—</strong><span>Stakeholder groups</span></div>
+  </section>
+
+  <section id="matrix-section" class="panel">
+    <div class="section-heading">
+      <div>
+        <p class="kicker">01 / Compare the record</p>
+        <h2>Arguments by stakeholder</h2>
+        <p>Choose what the percentages mean. Every row represents an exclusive filing category; a joint institutional filing is counted once.</p>
+      </div>
+      <button type="button" id="matrix-export" class="outline">Export complete frequency matrix (CSV)</button>
+    </div>
+    <div class="quick-views" role="group" aria-label="Suggested views">
+      <button type="button" data-preset="edtech">Edtech and schools</button>
+      <button type="button" data-preset="consultants">Consultants and schools</button>
+      <button type="button" data-preset="screens">Screen time and learning</button>
+      <button type="button" data-preset="all">All groups</button>
+    </div>
+    <div class="filters">
+      <label>Groups
+        <select id="group-scope">
+          <option value="focus">Schools, edtech and consultants</option>
+          <option value="all">All stakeholder groups</option>
+          <option value="edtech">Edtech and schools</option>
+          <option value="consultants">Consultants and schools</option>
+        </select>
+      </label>
+      <label>Issue area
+        <select id="issue-filter">
+          <option value="focus">Key education and consultant arguments</option>
+          <option value="all">All issue areas</option>
+          <option>Funding &amp; infrastructure</option>
+          <option>Internet safety</option>
+          <option>Screens &amp; learning</option>
+          <option>Schools &amp; families</option>
+          <option>Consultants &amp; procurement</option>
+          <option>Oversight &amp; legal</option>
+        </select>
+      </label>
+      <label>Show
+        <select id="measure">
+          <option value="within">Share of each stakeholder group</option>
+          <option value="topic">Share of filings on each argument</option>
+          <option value="count">Number of filings</option>
+        </select>
+      </label>
+      <label>Find an argument
+        <input type="search" id="topic-search" placeholder="e.g., consultant fees, screen time">
+      </label>
+    </div>
+    <div class="legend">
+      <span id="measure-explanation">Within group = filings with this argument ÷ all filings assigned to this group.</span>
+      <span class="legend-gradient" aria-hidden="true"></span><span>Lower to higher frequency</span>
+    </div>
+    <div class="table-scroll" role="region" aria-label="Stakeholder by argument frequency table" tabindex="0">
+      <table class="matrix-table">
+        <thead id="matrix-head"></thead>
+        <tbody id="matrix-body"></tbody>
+      </table>
+    </div>
+    <p id="matrix-empty" class="notice" hidden>No argument topics match your filters. Try another issue area or clear the search.</p>
+    <p class="fineprint">One filing may raise several topics; percentages are not additive. The darkest cell is the largest rate in the current view, not a measure of endorsement. Small groups can show large percentages from one filing. Classification is machine-assisted and not independently adjudicated.</p>
+  </section>
+
+  <section class="panel detail" id="detail-section" aria-live="polite">
+    <div class="section-heading">
+      <div>
+        <p class="kicker">02 / Examine the evidence</p>
+        <h2 id="detail-title">Select a cell to inspect its filings</h2>
+        <p id="detail-subtitle">Choose a stakeholder group and argument in the table above.</p>
+      </div>
+      <a id="detail-deep-link" href="./stakeholders.html">Open full argument explorer</a>
+    </div>
+    <div id="detail-metrics" class="detail-metrics"></div>
+    <div class="detail-options">
+      <label>Compare these filings with
+        <select id="comparison-group">
+          <option value="">No comparison</option>
+        </select>
+      </label>
+      <label>Search these excerpts
+        <input type="search" id="evidence-query" placeholder="Organization or phrase">
+      </label>
+      <label class="check-label"><input type="checkbox" id="prefer-clear"> Show lower-risk examples first</label>
+    </div>
+    <div id="detail-evidence" class="evidence-grid"></div>
+    <p class="fineprint">Displayed excerpts are copied from source-linked submissions. The short action description is an unverified machine paraphrase. It can be wrong or describe a view being quoted rather than adopted. For consequential conclusions, read the complete FCC filing.</p>
+  </section>
+
+  <section class="panel" id="frames-section">
+    <div class="section-heading">
+      <div><p class="kicker">03 / Dig deeper</p><h2>How are the arguments framed?</h2>
+        <p>Explore specific recurring ideas within the edtech and consultant debate. This is a transparent, phrase-based grouping of machine-extracted arguments; it does not infer support or opposition.</p></div>
+    </div>
+    <div class="frame-chooser">
+      <label>Focus on
+        <select id="frame-focus"><option value="edtech">Edtech companies and industry associations</option><option value="consultants">E-Rate consultants and their associations</option></select>
+      </label>
+      <label>Compare with
+        <select id="frame-compare">
+          <option value="school_institutions">Schools and districts</option>
+          <option value="school_professionals">School staff</option>
+          <option value="edtech_vendors">Edtech vendors</option>
+          <option value="erate_consultants">E-Rate consultants</option>
+          <option value="libraries">Libraries</option>
+        </select>
+      </label>
+    </div>
+    <p id="frame-context" class="notice"></p>
+    <div class="frame-list" id="frame-list"></div>
+    <p class="fineprint">Frames are matched against extracted action/reason text, rather than full-filing keyword searches. A single filing can match more than one frame. These are exploratory research leads and have not been fact-checked against the full context.</p>
+  </section>
+
+  <section class="method" id="methods">
+    <h2>Reading the numbers correctly</h2>
+    <div class="method-grid">
+      <p><strong>Within stakeholder</strong> is the number of filings assigned to a group that contain an extracted argument, divided by all filings in that group, including filings with no detected theme.</p>
+      <p><strong>Within argument</strong> is the number of filings raising an argument from a particular group, divided by all indexed filings with that argument.</p>
+      <p><strong>Unique texts</strong> help identify repeated language. Filings, organizations, unique texts and supporters are different units; this analysis does not equate them.</p>
+      <p><strong>Positions need separate verification.</strong> Machine-extracted claims can misidentify the speaker or reverse a policy direction. The NTIA listening-session compilation is not counted as the agency adopting third-party positions.</p>
+    </div>
+    <p>See the <a href="./stakeholders.html">full argument explorer</a>, <a href="./players.html">identity review queue</a>, <a href="./claims-to-check.html">factual-claims checker</a>, and <a href="https://github.com/shreyammm/e-rate/blob/main/analysis_methods/substantive_position_research_protocol.md">research protocol</a>.</p>
+  </section>
+</main>
+<footer><div class="wrap">E-Rate Comment Research · Source snapshot October 20, 2026 · <a href="https://www.fcc.gov/ecfs/">FCC ECFS</a></div></footer>
+</body>
+</html>
