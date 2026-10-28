@@ -136,4 +136,45 @@ class PlayerIdentityTest(unittest.TestCase):
         self.assertEqual(x['submitter_field_components'],3)
         self.assertFalse(any('Steve Potash' in x for x in x['joint_institution_candidates']))
 
+
+    def test_school_filers_not_mistyped_as_commercial_firms(self):
+        for name,expected in [
+            ('Rensselaer Central Schools Corporation','school_district'),
+            ('Columbia Gorge Education Service District','school_district'),
+            ('Regional School Unit 22','school_district'),
+            ('School City of Whiting','school_district'),
+            ('Warren County Schools District','school_district'),
+            ('International School of Brooklyn','individual_school'),
+            ('Rudolf Steiner School','individual_school'),
+            ('Saint Mary Catholic School','individual_school')
+        ]:
+            with self.subTest(name=name):
+                self.assertEqual(inferred_identity(
+                    {'filer_raw':name},'school_district_or_school','Our school depends on broadband.'
+                )['role'],expected)
+
+    def test_professional_associations_and_state_agencies_are_not_schools(self):
+        for name,role in [
+            ('National School Boards Association','trade_association'),
+            ('New York State School Boards Association','trade_association'),
+            ('State E-Rate Coordinators\u0027 Alliance','trade_association'),
+            ('National Alliance for Public Charter Schools','advocacy_organization'),
+            ('New York State Education Department','government')
+        ]:
+            with self.subTest(name=name):
+                got=inferred_identity({'filer_raw':name},'unresolved','We submit these comments.')
+                self.assertEqual(got['role'],role)
+                self.assertNotEqual(got['industry_focus'],'erate_consulting')
+
+    def test_mixed_person_and_school_labels_abstain_for_privacy(self):
+        for name in ('Aaron Weston; Oley Valley School District',
+                     'Holmes County School Board/Melissa Baxley',
+                     'Jane Doe / Eastern School District'):
+            with self.subTest(name=name):
+                self.assertEqual(organization_label(name),'')
+                got=inferred_identity({'filer_raw':name},
+                    'school_district_or_school','Broadband matters.')
+                self.assertEqual(got['organization'],'')
+                self.assertTrue(got['needs_review'])
+
 if __name__=='__main__':unittest.main()
