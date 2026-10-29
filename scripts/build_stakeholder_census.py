@@ -404,7 +404,12 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'review':'All category counts are exploratory. A lower-risk count does not imply substantive human verification.',
             'context_audit_warning':'Context-based risk flags are unavailable when the machine claim ledger differs from the audited ledger; absence of flags does not indicate a safe excerpt.',
             'coverage_limitation':'No extracted claim for a topic does not mean a filing lacks that argument, particularly with long filings or OCR.',
-            'source_context_audit_sha256_verified':audit_match
+            'source_context_audit_sha256_verified':audit_match,
+            'machine_direction_review':(
+                context_audit.get('machine_direction_consistency',{}) if audit_match else None),
+            'machine_direction_limitations':(
+                'Support and opposition labels may describe a proposed action rather than opposing views of the same FCC policy; mixed machine labels are unreviewed interpretation warnings.')
+
         },
         'coverage':{
             'filings':len(records),'original_readable_texts':3230,
