@@ -61,8 +61,10 @@ ORG_RULES = [
     ('erate_consultant', r'^hwc consultants$'),
     ('erate_consultant', r'^(?:funds for learning|american e[- ]rate solutions|e[- ]rate complete|e[- ]rate funding services|tel/logic.*e[- ]rate central|education service center region 12 e[- ]rate consulting services)\b'),
     ('trade_association', r'^(?:software (?:and|&) information industry association|e[- ]rate management professionals association|ncta|ustelecom|ntca[- ]|alaska telecom association|technology channel sales professionals)\b'),
-    # Named library-sector professional bodies are associations, not library systems.
-    ('trade_association', r'^(?:american library association|association of research libraries|public library association)
+    # Named professional bodies are organizations, not operating libraries.
+    ('trade_association', r'^(?:american library association|association of research libraries|public library association)\b'),
+    # This named association is a disability advocacy organization, not a trade body.
+    ('advocacy_organization', r'^american association of people with disabilities\b'),
     # Education-industry and professional bodies are not individual schools.
     ('trade_association', r'\b(?:school boards? association|school superintendents association|association of (?:charter )?schools?|association of school (?:administrators|superintendents)|school administrators association|state e[- ]?rate coordinators.{0,6}alliance)\b'),
     ('advocacy_organization', r'^national alliance for public charter schools$'),
