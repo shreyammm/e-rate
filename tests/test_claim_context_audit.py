@@ -1,5 +1,5 @@
 import unittest
-from scripts.audit_claim_context import context_flags
+from scripts.audit_claim_context import context_flags, opposing_machine_position_flags
 
 def row(quote,**kwargs):
     return {'id':'26110080000','start':0,'quote':quote,'argument':'',
@@ -30,6 +30,30 @@ class ContextAuditTest(unittest.TestCase):
         item={'id':'1','start':0,'quote':excerpt,'position':'discussion_no_position',
               'argument':'','action':''}
         self.assertIsInstance(context_flags(item,body,original_quote=excerpt),list)
+
+    def test_same_issue_opposing_machine_labels_are_review_leads_not_stances(self):
+        claims=[
+            {'id':'1','issue':'erate_sunset','position':'support','start':10,'quote':'quoted text'},
+            {'id':'1','issue':'erate_sunset','position':'oppose','start':55,'quote':'different text'},
+            {'id':'1','issue':'screen_time_condition','position':'oppose','start':55,'quote':'different text'},
+            {'id':'2','issue':'erate_sunset','position':'support','start':10,'quote':'quoted text'},
+            {'id':'3','issue':'other_policy_issue','position':'support','start':3,'quote':'random'},
+            {'id':'3','issue':'other_policy_issue','position':'oppose','start':4,'quote':'other'}
+        ]
+        flags, stats=opposing_machine_position_flags(claims)
+        self.assertEqual(stats['filing_issue_pairs_with_mixed_machine_directions'],1)
+        self.assertEqual(stats['filings_with_mixed_machine_directions'],1)
+        self.assertEqual(stats['identical_source_spans_with_opposing_machine_labels'],0)
+        self.assertEqual(set(flags),{'0','1'})
+        self.assertIn('mixed_machine_directions_same_filing_and_issue',flags['0'])
+
+    def test_identical_source_evidence_with_opposite_labels_is_prioritized(self):
+        rows=[{'id':'1','issue':'consultant_registration','position':p,
+               'start':33,'quote':'one source passage'} for p in ('support','oppose')]
+        flags, summary=opposing_machine_position_flags(rows)
+        self.assertEqual(summary['identical_source_spans_with_opposing_machine_labels'],1)
+        self.assertTrue(all('opposing_machine_labels_on_identical_source_span' in x
+                            for x in flags.values()))
 
     def test_multiple_claim_uses_are_review_flagged(self):
         quote='High-speed school access improves connectivity reliability.'
