@@ -41,11 +41,16 @@ class StaticPublicationTests(unittest.TestCase):
         raw=(ROOT/'docs/index.html').read_text()
         p=LinkParser()
         p.feed(raw)
-        self.assertTrue({'status','issue-chart','role-chart','position-table','alignment','ex-query','ex-issue','ex-role','ex-type','ex-table'}<=p.ids)
+        # Current front page is a navigational landing page; the old dashboard
+        # charts are separate workbenches. Verify navigation and caveats instead.
+        self.assertIn('aria-label="Primary navigation"',raw)
+        for target in ("matrix.html","stakeholders.html","corpus.html","research.html"):
+            self.assertIn('href="./'+target+'"',raw)
         for asset in p.assets:
             self.assertTrue((ROOT/'docs'/asset).is_file(),asset)
         self.assertIn('not affiliated with the fcc',raw.lower())
-        self.assertIn('Do not interpret these examples as whole-corpus support percentages',raw)
+        self.assertIn('machine-extracted argument candidates',raw)
+        self.assertIn('not verified supporters',raw)
 
 
 if __name__=='__main__':
