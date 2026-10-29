@@ -116,6 +116,37 @@ class CensusTest(unittest.TestCase):
         self.assertIn('consultant_fees',x)
         self.assertNotIn('consultant_independence',x)
         self.assertNotIn('alleged_misuse',x)
+    def test_narrow_consultant_questions_do_not_conflate_policy_options(self):
+        positives=[
+            ("treat the consulting firm as the registered consultant rather than individual employees",
+             "consultant_firm_vs_individual"),
+            ("permit percentage-based consultant fees rather than ban those arrangements",
+             "consultant_percentage_fee_rules"),
+            ("require mandatory annual consultant training on fraud and procurement",
+             "consultant_annual_training"),
+            ("consultant disclosures should protect personal information and home addresses",
+             "consultant_personal_data"),
+            ("exempt instructional screen use from recreational screen-time limits",
+             "instructional_screen_exemptions"),
+        ]
+        for claim,topic in positives:
+            with self.subTest(topic=topic):
+                tags=topics_for_claim({'issue':'other_policy_issue',
+                   'action':claim,'argument':'This proposal creates a distinct regulatory question.'})
+                self.assertIn(topic,tags)
+        negatives=[
+            ("The consulting firm assists with school bidding.", "consultant_firm_vs_individual"),
+            ("Consultant fees can increase school costs.", "consultant_percentage_fee_rules"),
+            ("Teachers need classroom training.", "consultant_annual_training"),
+            ("Schools protect student privacy and device data.", "consultant_personal_data"),
+            ("Schools should choose their own network policies.", "instructional_screen_exemptions"),
+        ]
+        for claim,topic in negatives:
+            with self.subTest(negative_topic=topic):
+                tags=topics_for_claim({'issue':'other_policy_issue',
+                    'action':claim,'argument':'No separate recommendation on a new subprovision.'})
+                self.assertNotIn(topic,tags)
+
     def test_stale_context_audit_never_implies_low_risk(self):
         import inspect
         source=inspect.getsource(compute)
