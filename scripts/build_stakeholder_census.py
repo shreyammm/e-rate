@@ -100,7 +100,18 @@ THEMES=[
  ('technology_cost_benefit','Edtech costs, ROI and vendor value','Consultants & procurement',
   (),r'(?:edtech (?:cost|expense|spend|budget|return on investment)|(?:educational|instructional) technolog(?:y|ies) (?:cost|expense|spend|budget)|technology return on investment|cost.effective (?:edtech|software|educational technolog)|vendor (?:pricing|markups|profit)|software subscription cost)'),
  ('libraries_public_service','Library access and public services','Schools & families',
-  (),r'(?:public librar|library (?:patron|service|community)|homework help|job.seek|public internet access)')
+  (),r'(?:public librar|library (?:patron|service|community)|homework help|job.seek|public internet access)'),
+ # Narrow subthemes: matching extracted ACTION/ARGUMENT wording, no assumed stance.
+ ('consultant_firm_vs_individual','Firm versus individual consultant registration','Consultants & procurement',
+  (),r'(?:\b(?:consulting firm|consultant firm|firm.level|entity.level|corporate.level)\b.{0,90}\b(?:regist|consultant|individual|person|employee)|\b(?:individual|person|employee)\b.{0,90}\b(?:consulting firm|consultant firm|firm.level|entity.level))'),
+ ('consultant_percentage_fee_rules','Percentage and contingency fee restrictions','Consultants & procurement',
+  (),r'(?:\b(?:ban|prohibit|restrict|limit|allow|permit|retain|preserv|oppose|reject|support)\w*.{0,70}\b(?:percentage.based|contingen(?:t|cy))\s+(?:consultant )?(?:fees?|compensation)|\b(?:percentage.based|contingen(?:t|cy))\s+(?:consultant )?(?:fees?|compensation).{0,90}\b(?:ban|prohibit|allow|permit|restrict|limit))'),
+ ('consultant_annual_training','Annual and mandatory consultant training','Consultants & procurement',
+  (),r'(?:\b(?:annual|mandatory|required|recurring|anti.fraud)\b.{0,75}\bconsultants?\b.{0,35}\b(?:training|certification|credits)|\bconsultants?\b.{0,50}\b(?:annual|mandatory|anti.fraud|continuing)\b.{0,35}\btraining\b|\bcontinuing education credits?\b.{0,65}\bconsultants?\b)'),
+ ('consultant_personal_data','Consultant forms and sensitive personal disclosures','Consultants & procurement',
+  (),r'(?:\b(?:consultant|form 5654|consultant disclosure)\b.{0,95}\b(?:personal (?:data|information|details)|individual names?|home addresses?|social security|personally identifiable|privacy of (?:consultants?|individuals?)|confidentiality of (?:consultants?|individuals?)))'),
+ ('instructional_screen_exemptions','Exempting educational screen use from restrictions','Screens & learning',
+  (),r'(?:\b(?:exempt|exclude|carve.out|differentiat|distinguish|should not count|not be counted)\w*.{0,110}\b(?:instructional|educational|academic|learning|reading)\b.{0,50}\b(?:screen|device|limit|restriction)\b|\b(?:instructional|educational)\b.{0,90}\b(?:exempt|excluded from|different rules|distinct from recreational)\b)')
 ]
 # Prefix semantics: source model category (not the FCC's normative direction).
 ISSUE_MAP={
@@ -152,7 +163,10 @@ PATTERNS={code:re.compile(pattern,re.I) for code,label,category,issues,pattern i
 TEXT_REQUIRED_THEMES={
     'consultant_registration','consultant_definition','consultant_fees',
     'consultant_reporting','learning_outcomes','administrative_burden',
-    'vendor_influence','competitive_bidding'
+    'vendor_influence','competitive_bidding',
+    'consultant_firm_vs_individual','consultant_percentage_fee_rules',
+    'consultant_annual_training','consultant_personal_data',
+    'instructional_screen_exemptions'
 }
 BY_ISSUE=defaultdict(set)
 for code,label,category,issues,pattern in THEMES:
