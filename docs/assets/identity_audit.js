@@ -70,6 +70,11 @@
         link.textContent = r.organization || ("FCC filing " + r.id);
         const name = document.createElement("td");
         name.append(link);
+        const review = document.createElement("a");
+        review.href = "./players.html?review=" + encodeURIComponent(r.id) + "#ps-review-panel";
+        review.textContent = "Review identity";
+        review.style.marginLeft = "0.6rem";
+        name.append(review);
         if (r.organization) {
           const code = document.createElement("small");
           code.textContent = " · " + r.id;
