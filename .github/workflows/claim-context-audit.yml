@@ -7,6 +7,9 @@ on:
     branches: [main]
     paths:
       - 'scripts/audit_claim_context.py'
+      - 'scripts/build_direction_conflict_review.py'
+      - 'tests/test_direction_conflict_review.py'
+      - 'tests/test_claim_context_audit.py'
       - 'scripts/build_stakeholder_census.py'
       - 'docs/data/kaggle/machine_claim_rows.json'
       - 'data/fcc_corpus/**'
@@ -29,6 +32,8 @@ jobs:
           python-version: '3.11'
       - name: Test quotation context heuristics
         run: python -m unittest discover -s tests -p test_claim_context_audit.py -v
+      - name: Verify high-priority model-label triage rules
+        run: python -m unittest discover -s tests -p test_direction_conflict_review.py -v
       - name: Verify source and assess every machine quote without changing LLM output
         run: python -m scripts.audit_claim_context
       - name: Assert full-source and machine-ledger coverage
@@ -55,6 +60,7 @@ jobs:
             git reset --hard origin/main
             python -m scripts.audit_claim_context
             python -m scripts.build_stakeholder_census
+            python -m scripts.build_direction_conflict_review
             python - <<'PY'
           import hashlib,json
           from pathlib import Path
@@ -67,7 +73,7 @@ jobs:
           assert census['inputs']['machine_claim_ledger_sha256']==result['machine_claim_ledger_sha256']
           print('PASS: audit and stakeholder frequencies use the same machine ledger')
           PY
-            git add -- docs/data/kaggle/claim_context_audit.json docs/data/stakeholder_argument_census.json
+            git add -- docs/data/kaggle/claim_context_audit.json docs/data/stakeholder_argument_census.json docs/data/kaggle/direction_conflict_review.csv docs/data/kaggle/direction_conflict_review_summary.json
             if git diff --cached --quiet; then
               echo 'Context audit already matches current source ledger.'
               exit 0
