@@ -123,7 +123,16 @@ def organization_label(name: str) -> str:
     # issue heading, or policy slogan rather than an institutional filer. Do
     # not transform an essay title such as "Ensuring ... E-Rate-Funded Services."
     # into a named institution merely because it includes "services".
-    if re.search(r'\.(?!\S)    if canon(name) in {'school','schools','library','district','association','corporation','company','business'}:return ''
+    if re.search(r'\.$',name) and not re.search(
+        r'\b(?:inc|ltd|corp|co)\.$',name,re.I):
+        return ''
+    if (len(name.split())>=6 and re.match(
+        r'^(?:ensuring|protecting|preserving|strengthening|improving|'
+        r'promoting|supporting|reforming|modernizing|opposing|'
+        r'comments on|request for)\b',name,re.I)
+        and not re.search(r'\b(?:llc|inc\.?|ltd\.?|corporation|corp\.?)$',name,re.I)):
+        return ''
+    if canon(name) in {'school','schools','library','district','association','corporation','company','business'}:return ''
     # Permit a legal corporate suffix while rejecting people mixed with entities.
     suffix=re.search(r',\s*(?:LLC|Inc\.?|Incorporated|Ltd\.?|Corporation|Corp\.?)$',name,re.I)
     # Mixed personal and organizational fields are not institution labels.
