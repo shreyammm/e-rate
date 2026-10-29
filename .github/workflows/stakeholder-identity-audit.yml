@@ -1,0 +1,54 @@
+name: Publish stakeholder identity agreement audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 */2 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/reconcile_stakeholder_labels.py'
+      - 'tests/test_stakeholder_identity_audit.py'
+      - 'docs/data/player_registry.json'
+      - 'docs/data/kaggle/filing_quality.json'
+      - 'data/identity_llm/filings/**'
+      - '.github/workflows/stakeholder-identity-audit.yml'
+permissions:
+  contents: write
+concurrency:
+  group: erate-identity-audit-publication
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify the harmonized taxonomy and identity evidence checks
+        run: python -m unittest discover -s tests -p 'test_stakeholder_identity_audit.py' -v
+      - name: Publish source-identity reconciliation against latest inputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3 4 5 6; do
+            git fetch origin main
+            git reset --hard origin/main
+            python -m scripts.reconcile_stakeholder_labels
+            git add -- docs/data/stakeholder_label_audit.json
+            if git diff --cached --quiet; then
+              echo 'Identity audit already current.'
+              exit 0
+            fi
+            git commit -m 'Publish filing-level stakeholder identity disagreement and review queue'
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "Concurrent update; rebuilding audit against latest source."
+            sleep "$((attempt * 2))"
+          done
+          echo 'Unable to publish source-aligned identity audit.' >&2
+          exit 1
