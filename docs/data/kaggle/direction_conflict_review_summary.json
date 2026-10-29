@@ -1,0 +1,120 @@
+{
+  "schema": "machine-direction-conflict-review-v1",
+  "generated_utc": "2026-10-29T10:26:28.229405+00:00",
+  "source_machine_ledger_sha256": "d4a424de04f9d4fd3b2231f03ff69b3e7555f1568e495f6343bff06e73490dfc",
+  "source_census_registry_sha256": "a5997af67c134ca591126969500e846af9601df21fc8e859a978f90e3ba85859",
+  "status": "UNREVIEWED_MACHINE_LABEL_AMBIGUITIES",
+  "filing_issue_pairs_with_both_machine_labels": 1389,
+  "same_span_case_count": 45,
+  "cases_selected_for_review": 211,
+  "review_strata": {
+    "group_stratified_other_mixed_issue": 143,
+    "identical_span_conflicting_machine_labels": 45,
+    "industry_issue_mixed_machine_labels": 23
+  },
+  "other_group_sampling": [
+    {
+      "stakeholder_group": "connectivity_and_network_vendors",
+      "population": 14,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.1666666666666667
+    },
+    {
+      "stakeholder_group": "government",
+      "population": 25,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 2.0833333333333335
+    },
+    {
+      "stakeholder_group": "joint_institutional_filings",
+      "population": 23,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.9166666666666667
+    },
+    {
+      "stakeholder_group": "libraries",
+      "population": 59,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 4.916666666666667
+    },
+    {
+      "stakeholder_group": "nonprofits_and_advocacy",
+      "population": 57,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 4.75
+    },
+    {
+      "stakeholder_group": "other_associations",
+      "population": 19,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.5833333333333333
+    },
+    {
+      "stakeholder_group": "other_businesses",
+      "population": 9,
+      "selected": 9,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.0
+    },
+    {
+      "stakeholder_group": "other_or_unidentified",
+      "population": 155,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 12.916666666666666
+    },
+    {
+      "stakeholder_group": "parents",
+      "population": 37,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 3.0833333333333335
+    },
+    {
+      "stakeholder_group": "school_affiliation_uncertain",
+      "population": 266,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 22.166666666666668
+    },
+    {
+      "stakeholder_group": "school_institutions",
+      "population": 332,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 27.666666666666668
+    },
+    {
+      "stakeholder_group": "school_professionals",
+      "population": 323,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 26.916666666666668
+    },
+    {
+      "stakeholder_group": "telecom_associations",
+      "population": 2,
+      "selected": 2,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.0
+    }
+  ],
+  "machine_context_audit_summary": {
+    "filing_issue_pairs_with_mixed_machine_directions": 1389,
+    "filings_with_mixed_machine_directions": 968,
+    "identical_source_spans_with_opposing_machine_labels": 45,
+    "affected_machine_rows": 4242
+  },
+  "limitations": [
+    "Support/oppose are unverified LLM action labels, NOT opposing positions on one normalized FCC proposal.",
+    "Opposite machine labels on identical evidence may describe one consistent preference using positive and negative wording.",
+    "A mixed filing/issue may contain different subproposals or genuine conditional views; read the complete FCC filing.",
+    "Selected comparator cases are a reproducible sample and may not support inference without independent adjudication."
+  ]
+}
