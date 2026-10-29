@@ -1,0 +1,78 @@
+name: Export completed Kaggle LLM filing summaries to CSV
+on:
+  push:
+    paths:
+      - '.github/workflows/export-kaggle-summaries.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  export:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Export source-preserving summaries and verify completeness
+        run: |
+          python - <<'PY'
+          import csv
+          import json
+          from pathlib import Path
+
+          base = Path('data/llm_census_kaggle')
+          files = sorted((base / 'filings').glob('*.json'))
+          census = json.loads((base / 'summary.json').read_text(encoding='utf-8'))
+          expected = int(census['completed_filings'])
+          rows = []
+          missing_names = missing_urls = missing_summaries = 0
+          for f in files:
+              record = json.loads(f.read_text(encoding='utf-8'))
+              if record.get('status') != 'complete':
+                  continue
+              submission_id = str(record.get('submission_id') or f.stem).strip()
+              summary = str(record.get('summary') or '').strip()
+              name = str(record.get('filer_raw') or '').strip()
+              url = str(record.get('source_url') or '').strip()
+              if not summary:
+                  missing_summaries += 1
+              if not name:
+                  missing_names += 1
+              if not url:
+                  missing_urls += 1
+              rows.append({
+                  'summary': summary,
+                  'attributed_person_or_stakeholder': name,
+                  'comment_link': url,
+                  'submission_id': submission_id,
+                  'llm_stakeholder_role': str(record.get('stakeholder_role') or ''),
+                  'semantic_scope': str(record.get('semantic_scope') or ''),
+                  'review_status': str(record.get('review_status') or ''),
+              })
+          if len(rows) != expected:
+              raise SystemExit(f'Export incomplete: {len(rows)} records found, {expected} completed in Kaggle summary')
+          ids = [r['submission_id'] for r in rows]
+          if len(set(ids)) != len(ids):
+              raise SystemExit('Export has duplicate submission IDs')
+          output = Path('exports/kaggle_llm_summaries_2026-10-29.csv')
+          output.parent.mkdir(parents=True, exist_ok=True)
+          with output.open('w', newline='', encoding='utf-8-sig') as fp:
+              writer = csv.DictWriter(fp, fieldnames=list(rows[0]))
+              writer.writeheader()
+              writer.writerows(rows)
+          print(f'Exported {len(rows)} Kaggle-generated filing summaries to {output}')
+          print(f'Missing: attribution={missing_names}; comment URL={missing_urls}; summary={missing_summaries}')
+          print(f'Kaggle source generated: {census.get("generated_utc")}')
+          PY
+      - name: Commit the export
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- exports/kaggle_llm_summaries_2026-10-29.csv
+          if ! git diff --cached --quiet; then
+            git commit -m 'Export complete Kaggle LLM filing summaries with filer attribution and FCC links'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
