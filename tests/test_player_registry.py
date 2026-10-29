@@ -36,6 +36,17 @@ class PlayerIdentityTest(unittest.TestCase):
     def test_sanitize_mixed_identifiers(self):
         self.assertEqual(organization_label('Joe Smith, ABC School District'),'')
         self.assertEqual(organization_label('Jane Doe jane@example.com'),'')
+    def test_policy_slogan_or_document_title_is_not_an_organization(self):
+        self.assertEqual(organization_label(
+            "Ensuring Children’s Safe Use of Screens and E-Rate-Funded Services."),"")
+        self.assertEqual(organization_label(
+            "Strengthening Broadband Access for Schools and Libraries"),"")
+        # Real institutional suffixes and names remain available.
+        self.assertEqual(organization_label("Example Technology Services LLC"),
+                         "Example Technology Services LLC")
+        self.assertEqual(organization_label("Funds For Learning, LLC"),
+                         "Funds For Learning, LLC")
+
     def test_distinct_org_names_do_not_merge(self):
         self.assertNotEqual(canon('Central High School'),canon('Central School District'))
         self.assertIn('unresolved',ROLE_LABELS)
