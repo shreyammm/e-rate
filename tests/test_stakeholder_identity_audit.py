@@ -91,6 +91,10 @@ class StakeholderIdentityAuditTest(unittest.TestCase):
             self.assertNotIn("filer_raw",text)
             self.assertNotIn("evidence_quote",text)
             self.assertTrue(report["high_priority_review"])
+            sampling=report["probability_review_sampling"]
+            self.assertEqual(sampling["distinct_selected_filings"],4)
+            self.assertTrue(all(row["in_probability_review_sample"] for row in report["filings"]))
+            self.assertTrue(any(row["in_industry_census_review"] for row in report["filings"]))
             # Model outputs must refer to the same source content.
             model=json.loads((second/"2.json").read_text())
             model["source_sha256"]="incorrect"
