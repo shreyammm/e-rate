@@ -60,6 +60,7 @@ jobs:
             git reset --hard origin/main
             python -m scripts.audit_claim_context
             python -m scripts.build_stakeholder_census
+            python -m scripts.build_industry_argument_review
             python -m scripts.build_direction_conflict_review
             python - <<'PY'
           import hashlib,json
@@ -73,7 +74,7 @@ jobs:
           assert census['inputs']['machine_claim_ledger_sha256']==result['machine_claim_ledger_sha256']
           print('PASS: audit and stakeholder frequencies use the same machine ledger')
           PY
-            git add -- docs/data/kaggle/claim_context_audit.json docs/data/stakeholder_argument_census.json docs/data/kaggle/direction_conflict_review.csv docs/data/kaggle/direction_conflict_review_summary.json
+            git add -- docs/data/kaggle/claim_context_audit.json docs/data/stakeholder_argument_census.json docs/data/industry_argument_review.csv docs/data/industry_argument_review_summary.json docs/data/kaggle/direction_conflict_review.csv docs/data/kaggle/direction_conflict_review_summary.json
             if git diff --cached --quiet; then
               echo 'Context audit already matches current source ledger.'
               exit 0
