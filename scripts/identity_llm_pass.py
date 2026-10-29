@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Checkpointable independent LLM-only stakeholder identity classifier.
 
-Runs on full FCC source text, not argument paraphrases or previous labels.
+Reads original FCC source files, analyzing author-introduction and signature windows rather than argument summaries or previous labels.
 Private-person names and raw evidence are NEVER exported in the model results.
 All source-backed roles remain unverified machine candidates.
 """
