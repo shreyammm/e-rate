@@ -194,6 +194,32 @@ def build(registry_path=REGISTRY, quality_path=QUALITY, second_pass=SECOND_PASS,
         "model_specific_deterministic_unknown", "unmapped_taxonomy")) == total
     # Full queue is published only with institutional names; no personal names
     # or source excerpts. A high-priority slice is also exposed for convenience.
+    # Stable, reproducible holdout sample. Sample agreement cases as well as
+    # disagreements; reviewing only model conflicts would bias error estimates.
+    strata = defaultdict(list)
+    for row in rows:
+        strata[row["comparison"]].append(row)
+    sample_details = {}
+    selected = set()
+    for name, group in sorted(strata.items()):
+        ordered = sorted(group, key=lambda x: hashlib.sha256(
+            ("stakeholder-gold-audit-v1:" + x["id"]).encode("utf-8")).hexdigest())
+        target = min(40, len(ordered))
+        selected.update(x["id"] for x in ordered[:target])
+        sample_details[name] = {
+            "population": len(ordered),
+            "selected": target,
+            "selection": "sha256_seeded_pseudorandom_filing_record_without_replacement",
+            "weight_after_adjudication": round(len(ordered) / target, 6) if target else None,
+        }
+    for row in rows:
+        row["in_probability_review_sample"] = row["id"] in selected
+        # All known commercial, edtech, consultant and trade-category candidates
+        # are additionally reviewed by census (separate from the probability sample).
+        row["in_industry_census_review"] = (
+            row["deterministic_role"] in INDUSTRY_TYPES
+            or row["joint_institutional"]
+        )
     rows.sort(key=lambda r: (-r["priority"], r["id"]))
     result = {
         "schema_version": "stakeholder-identity-reconciliation-v1",
@@ -229,6 +255,8 @@ def build(registry_path=REGISTRY, quality_path=QUALITY, second_pass=SECOND_PASS,
         },
         "confusion_matrix": {k: dict(v) for k,v in sorted(matrix.items())},
         "by_detailed_deterministic_role": {k:dict(v) for k,v in sorted(by_det.items())},
+        "probability_review_sampling": {"seed": "stakeholder-gold-audit-v1", "strata":sample_details,
+                                       "distinct_selected_filings":len(selected)},
         "high_priority_review": [r for r in rows if r["priority"] >= 65][:650],
         "filings": rows,
         "limitations": [
