@@ -29,6 +29,9 @@ TOPICS = (
     "accessibility", "teacher_workload", "consultant_registration",
     "consultant_definition", "consultant_fees", "consultant_reporting",
     "consultant_independence", "consultant_value", "competitive_bidding",
+    "consultant_firm_vs_individual", "consultant_percentage_fee_rules",
+    "consultant_annual_training", "consultant_personal_data",
+    "instructional_screen_exemptions",
     "alleged_misuse", "program_integrity", "program_continuity",
 )
 INDUSTRY = {
