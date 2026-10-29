@@ -55,7 +55,9 @@
       const filter = $("identity-audit-filter").value;
       const search = $("identity-audit-query").value.trim().toLowerCase();
       visible = all.filter(r => (!filter || r.comparison === filter ||
-        (filter === "second_pass_conflict" && r.second_pass_conflict)) &&
+        (filter === "second_pass_conflict" && r.second_pass_conflict) ||
+        (filter === "probability_review_sample" && r.in_probability_review_sample) ||
+        (filter === "industry_census_review" && r.in_industry_census_review)) &&
         (!search || [r.id, r.organization, r.deterministic_role, r.old_llm_role, r.industry_focus]
           .some(s => String(s || "").toLowerCase().includes(search))));
       $("identity-audit-count").textContent = n(visible.length) + " matching filings, showing up to 120 highest-priority cases.";
