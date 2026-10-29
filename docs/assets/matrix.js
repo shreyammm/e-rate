@@ -365,6 +365,58 @@
       row.append(links);root.append(row);
     }
   }
+  async function renderIdentityRecall() {
+    const root=$('identity-recall-content');
+    if(!root)return;
+    try {
+      const response=await fetch('./data/industry_identity_recall.json');
+      if(!response.ok)throw Error('Identity-review file is not available');
+      const audit=await response.json();
+      if(audit.schema!=='industry-identity-recall-leads-v1' ||
+         audit.coverage?.checked_filing_records!==data.coverage.filings ||
+         audit.registry_sha256!==data.inputs?.player_registry_sha256)
+        throw Error('Identity audit does not match this stakeholder snapshot');
+      root.replaceChildren();
+      const counts=audit.coverage,leads=audit.leads||[];
+      const institutes=new Map();
+      for(const f of leads) {
+        const name=f.organization_candidate||'Affiliation unconfirmed';
+        if(!institutes.has(name))institutes.set(name,[]);
+        institutes.get(name).push(f);
+      }
+      root.append(el('p',number(counts.currently_industry_coded||0)+
+        ' known industry filing candidates; '+number(leads.length)+
+        ' additional filing records flagged for identity review across '+
+        number(institutes.size)+' potential institution labels. These leads are not added to industry counts without source review.'));
+      if(institutes.size){
+        const list=el('ul');
+        for(const [name,records] of institutes) {
+          const li=el('li');
+          li.append(el('strong',name+' — '));
+          li.append(el('span',number(records.length)+' filing'+(records.length===1?'':'s')+' to check: '));
+          for(const [i,f] of records.entries()){
+            if(i)li.append(document.createTextNode(', '));
+            li.append(url(f.id,f.source_url));
+          }
+          list.append(li);
+        }
+        root.append(list);
+      }
+      root.append(el('p',
+        number(counts.separate_relationship_review_leads||0)+
+        ' separate proxy or joint-submission leads need relationship checks. A representative, a client, and a co-signer are not interchangeable; none is silently counted as a new industry filer.',
+        'fineprint'));
+      const method=el('p',undefined,'fineprint');
+      method.append(url('Source audit and unreviewed candidate details',
+                        './data/industry_identity_recall.json'));
+      root.append(method);
+    } catch(e) {
+      root.replaceChildren(el('p','Identity review unavailable or not source-aligned. '+
+        'The argument matrix is still exploratory; industry completeness is not verified.',
+        'fineprint'));
+    }
+  }
+
   function exportCSV() {
     const head=['source_scope','argument_id','argument','issue_area','stakeholder_id','stakeholder_group',
       'filings_in_scope_for_group','group_filings_with_extracted_themes',
@@ -502,6 +554,7 @@
       $('load-status').textContent=number(data.coverage.filings)+' filing records · '+number(data.coverage.filings_with_coded_topics)+
         ' with extracted arguments · Categories and quotations are preliminary and source-linked.';
       renderMatrix();renderDetail();renderFrames();renderIdentityBreakdown();
+      renderIdentityRecall();
     } catch(error) {
       $('load-status').textContent='Unable to load the stakeholder data: '+error.message+
         '. You can still use the complete filing browser or source search.';
