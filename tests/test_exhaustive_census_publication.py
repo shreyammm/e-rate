@@ -53,8 +53,9 @@ class FullTextCensusPublicationTests(unittest.TestCase):
             for n,role in zip(counts,c['roles']):
                 self.assertLessEqual(n,role['filings'])
         html=(ROOT/'docs/index.html').read_text()
-        self.assertIn('id="argument-role-table"',html)
-        self.assertIn('id="argument-role-family"',html)
+        # Historical role matrix is preserved in the data and advanced tools;
+        # the new landing page deliberately has no chart-specific controls.
+        self.assertIn('href="./research.html"',html)
 
     def test_all_29_proposal_counts_and_caveats(self):
         census=json.loads((ROOT/'docs/data/exhaustive_census.json').read_text())
@@ -74,8 +75,8 @@ class FullTextCensusPublicationTests(unittest.TestCase):
         self.assertTrue(all(0<=x['agency_type_candidates']<=x['filings_with_language']
                             for x in census['argument_language_signals']))
         html=(ROOT/'docs/index.html').read_text()
-        self.assertIn('id="argument-census-bars"',html)
-        self.assertIn('id="census-proposals"',html)
+        self.assertIn('href="./research.html"',html)
+        self.assertTrue((ROOT/'docs/data/exhaustive_census.json').is_file())
         self.assertFalse('manual_spot_check' in (ROOT/'docs/data/research_dashboard.json').read_text())
 
 if __name__=='__main__':
