@@ -1,4 +1,5 @@
 name: Publish stakeholder identity agreement audit
+# Rebuild from latest source registry before publishing the sampled review population.
 on:
   workflow_dispatch:
   schedule:
