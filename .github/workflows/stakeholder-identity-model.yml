@@ -1,0 +1,78 @@
+name: Recheck FCC stakeholder identity with a dedicated open LLM
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/identity_llm_pass.py'
+      - '.github/workflows/stakeholder-identity-model.yml'
+  schedule:
+    - cron: '47 */2 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: erate-identity-model-checkpoints
+  cancel-in-progress: false
+jobs:
+  classify:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 105
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check source-backed second-pass tests
+        run: python -m unittest discover -s tests -p 'test_stakeholder_identity_audit.py' -v
+      - name: Determine remaining identities
+        id: pending
+        run: |
+          python -m scripts.identity_llm_pass --pending-only | tee /tmp/identity_pending.txt
+          if grep -q '"pending": 0' /tmp/identity_pending.txt; then
+            echo 'run=false' >> "$GITHUB_OUTPUT"
+          else
+            echo 'run=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Cache the open IBM identity model
+        if: steps.pending.outputs.run == 'true'
+        uses: actions/cache@v4
+        with:
+          path: ~/.ollama/models
+          key: erate-identity-granite4-1b-q4-v1
+      - name: Start local model without remote source disclosure
+        if: steps.pending.outputs.run == 'true'
+        run: |
+          curl -fsSL https://ollama.com/install.sh | sh
+          OLLAMA_NUM_PARALLEL=1 ollama serve > /tmp/identity-ollama.log 2>&1 &
+          for i in $(seq 1 40); do
+            curl -fsS http://127.0.0.1:11434/api/tags && break || sleep 2
+          done
+          ollama pull ibm/granite4:1b-q4_K_M
+      - name: Separate speaker identity classification on full original filings
+        if: steps.pending.outputs.run == 'true'
+        run: |
+          python -m scripts.identity_llm_pass --limit 300 --max-minutes 80
+      - name: Save durable incremental model evidence and candidate roles
+        if: always() && steps.pending.outputs.run == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/identity_llm/filings/
+          if git diff --cached --quiet; then
+            echo 'No new validated-source model output.'
+            exit 0
+          fi
+          git commit -m 'Checkpoint independent stakeholder identity candidates (unvalidated)'
+          for attempt in 1 2 3 4 5; do
+            git fetch origin main
+            git rebase origin/main || { git rebase --abort; exit 1; }
+            if git push origin HEAD:main; then
+              echo 'Second-pass checkpoint published; separate audit will rebuild.'
+              exit 0
+            fi
+            sleep "$((attempt * 2))"
+          done
+          exit 1
