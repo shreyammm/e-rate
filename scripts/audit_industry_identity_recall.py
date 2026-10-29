@@ -158,6 +158,7 @@ def build(source=SOURCE, registry=REGISTRY, output=DEST) -> dict:
         raise ValueError("Duplicate registry filing IDs")
     seen = set()
     leads = []
+    relationship_leads = []
     counts = Counter()
     for shard in manifest["shards"]:
         filename = source / "shards" / shard["name"]
@@ -187,7 +188,11 @@ def build(source=SOURCE, registry=REGISTRY, output=DEST) -> dict:
                     counts["currently_industry_coded"] += 1
                 elif raw_signals:
                     score, reasons = rank_lead(r, raw_signals)
-                    if score >= 20:
+                    # A generic "on behalf of" is a relationship-audit signal,
+                    # NEVER a credible indication of being an industry filer.
+                    industry_signals = [s for s in raw_signals
+                        if s.startswith("metadata_named_") or s.startswith("author_intro_first_person_")]
+                    if industry_signals and score >= 20:
                         leads.append({
                             "id": sid, "role_candidate": r.get("role", ""),
                             "organization_candidate": r.get("organization", ""),
@@ -200,12 +205,22 @@ def build(source=SOURCE, registry=REGISTRY, output=DEST) -> dict:
                             "joint_filing": bool(r.get("multi_submitter_metadata")),
                             "source_url": "https://www.fcc.gov/ecfs/filing/" + sid,
                         })
-                        counts["possible_missed_industry_or_relationship"] += 1
+                        counts["possible_missed_industry_leads"] += 1
+                    if "possible_proxy_or_client_relationship" in raw_signals or "joint_institutional_metadata" in raw_signals:
+                        relationship_leads.append({
+                            "id": sid, "role_candidate": r.get("role", ""),
+                            "organization_candidate": r.get("organization", ""),
+                            "representation_uncertain": "possible_proxy_or_client_relationship" in raw_signals,
+                            "joint_institutional_metadata": "joint_institutional_metadata" in raw_signals,
+                            "source_url": "https://www.fcc.gov/ecfs/filing/" + sid,
+                        })
+                        counts["separate_relationship_review_leads"] += 1
                 if r.get("multi_submitter_metadata"):
                     counts["joint_institutional_filings"] += 1
     if seen != set(by_id) or len(seen) != manifest["records"]:
         raise ValueError("Incomplete source scan")
     leads.sort(key=lambda x: (-x["review_priority_score"], x["id"]))
+    relationship_leads.sort(key=lambda x: x["id"])
     result = {
         "schema": "industry-identity-recall-leads-v1",
         "generated_utc": datetime.now(timezone.utc).isoformat(),
@@ -221,14 +236,17 @@ def build(source=SOURCE, registry=REGISTRY, output=DEST) -> dict:
             "A name mentioning technology may identify an applicant school or nonprofit; review the original FCC source.",
             "Absence from the lead queue is not proof that no other industry source exists.",
             "First-person excerpts may still contain attributed or quoted language.",
+            "Representation-only or joint-party cues are segregated from industry candidates.",
             "No raw individual submitter names, email addresses, phone numbers or source paragraphs are republished.",
         ],
         "leads": leads,
+        "relationship_leads_not_industry_candidates": relationship_leads,
     }
     output = Path(output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(result, ensure_ascii=False, separators=(",", ":"))+"\n", encoding="utf-8")
-    return {"coverage": result["coverage"], "lead_count": len(leads), "output": str(output)}
+    return {"coverage": result["coverage"], "lead_count": len(leads),
+            "relationship_lead_count": len(relationship_leads), "output": str(output)}
 
 
 def main() -> None:
