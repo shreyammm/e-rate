@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_player_registry.py'
+      - 'scripts/audit_industry_identity_recall.py'
+      - 'tests/test_industry_identity_recall.py'
+      - 'scripts/build_industry_argument_review.py'
       - 'data/player_review_overrides.json'
       - 'data/fcc_corpus/**'
       - '.github/workflows/player-registry.yml'
@@ -28,6 +31,10 @@ jobs:
         run: python -m unittest discover -s tests -p test_player_registry.py -v
       - name: Build all-filing identity audit and organization profile index
         run: python -m scripts.build_player_registry
+      - name: Check source-grounded recall audit rules
+        run: python -m unittest discover -s tests -p test_industry_identity_recall.py -v
+      - name: Identify additional potential industry players without reclassification
+        run: python -m scripts.audit_industry_identity_recall
       - name: Verify complete source alignment and no raw commenter names
         run: |
           python - <<'PY'
@@ -57,6 +64,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p test_stakeholder_census.py -v
           python -m scripts.build_stakeholder_census
+          python -m scripts.build_industry_argument_review
           python - <<'PY'
           import hashlib, json
           from pathlib import Path
@@ -84,7 +92,9 @@ jobs:
             git reset --hard origin/main
             python -m scripts.build_player_registry
             python -m scripts.build_stakeholder_census
-            git add -- docs/data/stakeholder_argument_census.json docs/data/player_registry.json
+            python -m scripts.build_industry_argument_review
+            python -m scripts.audit_industry_identity_recall
+            git add -- docs/data/stakeholder_argument_census.json docs/data/player_registry.json docs/data/industry_identity_recall.json docs/data/industry_argument_review.csv docs/data/industry_argument_review_summary.json
             if git diff --cached --quiet; then
               echo 'Generated datasets already match latest sources.'
               exit 0
