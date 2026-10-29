@@ -9,7 +9,8 @@ class ComparisonPublicationTests(unittest.TestCase):
         page=(P/"compare.html").read_text()
         script=(P/"assets"/"compare.js").read_text()
         home=(P/"index.html").read_text()
-        self.assertIn('href="./compare.html"',home)
+        self.assertIn('href="./research.html"',home)
+        self.assertIn('href="./compare.html"',(P/"research.html").read_text())
         self.assertIn('src="./assets/compare.js"',page)
         for id in ("compare-metric","compare-weight","compare-type","compare-ocr","compare-head","compare-body","compare-records","compare-export"):
             self.assertIn('id="'+id+'"',page)
