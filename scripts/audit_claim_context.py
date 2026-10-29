@@ -73,6 +73,44 @@ def context_flags(row: dict, text: str, same_quote_count: int = 1,
         flags.append('negation_in_source_requires_stance_inspection')
     return flags
 
+def opposing_machine_position_flags(rows: list[dict]) -> tuple[dict[str,list[str]], dict]:
+    """Identify machine label collisions; never decide which claim is right.
+
+    Labels are provisional and may reflect different regulatory subparts, a
+    substantive alternative, or an actual LLM error. 'other_policy_issue' is
+    too broad to interpret as a single policy question.
+    """
+    by_issue=defaultdict(list)
+    for index,row in enumerate(rows):
+        issue=str(row.get('issue') or '')
+        position=str(row.get('position') or '')
+        if issue not in ('', 'other_policy_issue') and position in ('support','oppose'):
+            by_issue[(str(row.get('id')),issue)].append((index,row))
+    result=defaultdict(set)
+    mixed_issues=set()
+    exact_span_collisions=set()
+    for key,entries in by_issue.items():
+        if not {'support','oppose'}.issubset({str(r.get('position')) for _,r in entries}):
+            continue
+        mixed_issues.add(key)
+        for i,_ in entries:
+            result[str(i)].add('mixed_machine_directions_same_filing_and_issue')
+        by_span=defaultdict(list)
+        for i,row in entries:
+            by_span[(row.get('start'),str(row.get('quote') or ''))].append((i,row))
+        for span,claims in by_span.items():
+            if {'support','oppose'}.issubset({str(r.get('position')) for _,r in claims}):
+                exact_span_collisions.add((key[0],key[1],span[0]))
+                for i,_ in claims:
+                    result[str(i)].add('opposing_machine_labels_on_identical_source_span')
+    return {k:sorted(v) for k,v in result.items()},{
+        'filing_issue_pairs_with_mixed_machine_directions':len(mixed_issues),
+        'filings_with_mixed_machine_directions':len({k[0] for k in mixed_issues}),
+        'identical_source_spans_with_opposing_machine_labels':len(exact_span_collisions),
+        'affected_machine_rows':len(result),
+    }
+
+
 def build(source=SOURCE, ledger=ROWS, out=OUTPUT,
           checkpoints=ROOT/'data/llm_census_kaggle/filings'):
     source=Path(source);ledger=Path(ledger);out=Path(out)
@@ -128,16 +166,27 @@ def build(source=SOURCE, ledger=ROWS, out=OUTPUT,
                     audited+=1
     if len(seen)!=manifest['records'] or set(by_id)-seen or audited!=len(rows['rows']):
         raise ValueError('Source or claim count incomplete')
+    direction_flags,direction_summary=opposing_machine_position_flags(rows['rows'])
+    for index,flags in direction_flags.items():
+        existing=set(by_claim.get(index,[]))
+        for flag in flags:
+            if flag not in existing:
+                stats[flag]+=1
+                existing.add(flag)
+        by_claim[index]=sorted(existing)
     payload={'schema_version':'claim-context-audit-v1','generated_utc':datetime.now(timezone.utc).isoformat(),
         'source_manifest_sha256':hashlib.sha256((source/'manifest.json').read_bytes()).hexdigest(),
         'machine_claim_ledger_sha256':hashlib.sha256(ledger.read_bytes()).hexdigest(),
         'coverage':{'source_filings_checked':len(seen),'machine_claim_rows_checked':audited,
                     'claim_rows_with_any_review_flag':len(by_claim)},
         'flag_counts':dict(stats),
+        'machine_direction_consistency':direction_summary,
         'limitations':[
             'Review flags do not establish whether a quote is endorsed, whether the model stance is correct, or whether a factual claim is true.',
             'Non-flagged claims remain machine-unvalidated; this is not a validated false-negative audit.',
             'Reference and negation context can legitimately appear in authors own arguments. Review original context before changing a stance.',
+            'Machine labels supporting and opposing the same named provision can reflect different conditions or subparts, not necessarily a factual contradiction.',
+            'A label collision does not establish what the source author supports or opposes; independently review the original FCC request and passage.',
             'Values are keyed to zero-based row index of the machine_claim_rows.json ledger; ledger SHA-256 must match.'
         ],
         'flags_by_ledger_row_index':by_claim}
