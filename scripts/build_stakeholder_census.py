@@ -140,6 +140,8 @@ SPEAKER_RISK={
     'agency_listening_summary_third_party_views_not_official_stance',
     'low_lexical_overlap_between_quote_and_machine_paraphrase',
     'one_quote_used_for_multiple_machine_claims',
+    'mixed_machine_directions_same_filing_and_issue',
+    'opposing_machine_labels_on_identical_source_span',
 }
 TOPICS={code:{'id':code,'label':label,'category':category,'description':'Exploratory machine-coded argument theme; counts are distinct filings, not validated endorsements.'}
         for code,label,category,issues,pattern in THEMES}
