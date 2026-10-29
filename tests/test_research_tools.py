@@ -53,7 +53,9 @@ class ResearchToolsTests(unittest.TestCase):
 
     def test_index_links_all_plain_corpus_workbenches(self):
         home=(DOCS/"index.html").read_text(encoding="utf-8")
-        for page in ("patterns.html","compare.html","phrase.html","similar.html","research.html","ask.html"):
-            self.assertIn(page,home)
+        self.assertIn('href="./research.html"',home)
+        hub=(DOCS/"research.html").read_text(encoding="utf-8")
+        for page in ("patterns.html","compare.html","phrase.html","similar.html","ask.html"):
+            self.assertIn('href="./'+page+'"',hub)
 
 if __name__=="__main__":unittest.main()
