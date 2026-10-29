@@ -168,6 +168,13 @@
     $('audit-status').textContent=data.method.source_context_audit_sha256_verified ?
       'Machine source-context audit matches the current claim ledger. Its review flags are automated warnings, not independent confirmation.' :
       'Review status: the source-context audit is out of sync with the machine-claim ledger. Speaker/context risk cannot be assessed reliably until the audit is regenerated. All argument frequencies remain unvalidated.';
+    const direction=data.method.machine_direction_review;
+    if(data.method.source_context_audit_sha256_verified && direction){
+      $('audit-status').textContent+=' Interpretation warning: '+number(direction.filings_with_mixed_machine_directions||0)+
+        ' filings received both support and oppose model labels under the same broad FCC issue; '+
+        number(direction.identical_source_spans_with_opposing_machine_labels||0)+
+        ' identical source passages were assigned both labels. These are machine-label collisions, not proof the filer contradicted themselves. Never convert these model labels into verified stakeholder positions.';
+    }
   }
   function renderMatrix() {
     visibleGroups = calcGroups(); visibleTopics = calcTopics();
