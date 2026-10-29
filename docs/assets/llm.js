@@ -7,7 +7,7 @@
   const node=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!==undefined)e.textContent=String(text);return e;};
   function metric(number,caption){const e=node('article');e.append(node('strong','',number.toLocaleString()),node('span','',caption));return e;}
   function evidenceCard(c){const wrap=node('div','llm-evidence');
-    wrap.append(node('span','llm-small',`${nice(c.position)} — ${c.argument}`));
+    wrap.append(node('span','llm-small',`Machine label (unverified): ${nice(c.position)} — ${c.argument}`));
     wrap.append(node('blockquote','',`“${c.evidence_quote}”`));
     if(/^https:\/\/www\.fcc\.gov\//.test(c.source_url)){
       const a=node('a','','FCC filing '+c.submission_id+' ↗');a.href=c.source_url;a.rel='noopener noreferrer';a.target='_blank';wrap.append(a);
@@ -29,12 +29,20 @@
     for(const p of results){const card=node('article','llm-issue');card.append(node('h3','',p.label),
       node('p','llm-small',`${p.filings_mentioning||0} completed filings discussed this provision · ${p.claim_count||0} cited argument rows`));
       const val=p.positions||{},total=Object.values(val).reduce((a,b)=>a+Number(b||0),0);
-      if(total){const bar=node('div','llm-breakdown');for(const [key,klass] of [['support','support'],['oppose','oppose']]){
-        const x=node('span',klass);x.style.width=`${100*(Number(val[key]||0))/total}%`;bar.append(x);
-      }const others=node('span','other');others.style.width=`${100*(total-Number(val.support||0)-Number(val.oppose||0))/total}%`;bar.append(others);card.append(bar);
-        for(const k of ['support','oppose','conditional_or_amend','alternative_proposal','discussion_no_position','unclear','conflicting_or_multiple'])if(val[k]){
-          const row=node('div','llm-row');row.append(node('span','',nice(k)),node('strong','',val[k]));card.append(row);
+      if(total){
+        const detail=node('details');
+        detail.append(node('summary','','Show unverified machine stance labels'));
+        detail.append(node('p','llm-small','These labels describe preliminary machine interpretations of requested actions. “Support” and “oppose” may refer to different proposals and even describe the same underlying policy preference. They are not verified FCC-position counts.'));
+        const bar=node('div','llm-breakdown');
+        for(const [key,klass] of [['support','support'],['oppose','oppose']]){
+          const x=node('span',klass);x.style.width=`${100*(Number(val[key]||0))/total}%`;bar.append(x);
         }
+        const others=node('span','other');others.style.width=`${100*(total-Number(val.support||0)-Number(val.oppose||0))/total}%`;bar.append(others);
+        detail.append(bar);
+        for(const k of ['support','oppose','conditional_or_amend','alternative_proposal','discussion_no_position','unclear','conflicting_or_multiple'])if(val[k]){
+          const row=node('div','llm-row');row.append(node('span','','Machine: '+nice(k)),node('strong','',val[k]));detail.append(row);
+        }
+        card.append(detail);
       }
       const notes=Object.entries(p.claim_reason_counts||{}).sort((a,b)=>b[1]-a[1]).slice(0,3);
       if(notes.length)card.append(node('p','llm-small','Frequent reasons: '+notes.map(x=>`${nice(x[0])} (${x[1]} claims)`).join(', ')));
@@ -70,7 +78,7 @@
       .sort((a,b)=>b.total-a.total);
     if(!entries.length){root.append(node('p','','No source-grounded positions completed for this provision yet.'));return;}
     const table=node('table');const head=node('thead');const tr=node('tr');
-    for(const label of ['Inferred stakeholder role','Support','Oppose','Conditional','Alternative','Other / conflicting','Total filed positions'])
+    for(const label of ['Model-inferred role','Machine support label','Machine oppose label','Machine conditional','Machine alternative','Other / conflicting','Model label count'])
       tr.append(node('th','',label));
     head.append(tr);table.append(head);
     const body=node('tbody');
@@ -83,7 +91,9 @@
         row.append(node('td','',v));
       body.append(row);
     }
-    table.append(body);root.append(table);
+    table.append(body);
+    root.append(node('p','llm-small','These are unverified model labels, not a verified comparison of institutional positions. A filing can be interpreted inconsistently across requested actions.'));
+    root.append(table);
   }
   async function renderAuditQueue() {
     const root=$('llm-review');root.replaceChildren();
