@@ -1,6 +1,8 @@
 name: Publish stakeholder identity agreement audit
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '19 */2 * * *'
   push:
     branches: [main]
     paths:
