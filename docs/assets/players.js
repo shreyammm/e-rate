@@ -80,7 +80,7 @@
   }
   function refreshReview(){
     let q=$('ps-review-query').value.trim().toLowerCase(),role=$('ps-review-role').value;
-    filteredReview=data.filings.filter(r=>r.needs_review&&(!role||r.role===role)&&(!q||[r.id,r.organization,r.role].join(' ').toLowerCase().includes(q)));
+    filteredReview=data.filings.filter(r=>(r.needs_review || q===String(r.id).toLowerCase())&&(!role||r.role===role)&&(!q||[r.id,r.organization,r.role].join(' ').toLowerCase().includes(q)));
     filteredReview.sort((a,b)=>(b.review_priority||0)-(a.review_priority||0)||String(a.id).localeCompare(String(b.id)));
     reviewPage=0;displayReview();
   }
@@ -196,6 +196,8 @@
        new Set(j.filings.map(r=>r.id)).size!==3231)throw Error('Player index integrity check failed');
     data=j;for(let r of data.filings)byFiling.set(r.id,r);
     $('ps-status').textContent='Source-aligned registry: '+n(j.coverage.filings)+' filing records · '+n(j.coverage.filings_requiring_identity_review)+' identity cases still require review. All categories are provisional except recorded human reviews.';
+    const selectedFiling=new URLSearchParams(location.search).get('review');
+    if(selectedFiling && /^\d+$/.test(selectedFiling))$('ps-review-query').value=selectedFiling;
     stats();initSelects();displayOrgs();refreshReview();
   }catch(err){
     $('ps-status').textContent='Player registry not yet available: '+err.message+'. Original filings and the existing Atlas remain available.';
