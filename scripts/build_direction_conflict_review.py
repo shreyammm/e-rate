@@ -132,11 +132,10 @@ def make_queue(ledger, audit, census, max_other_per_group=12):
     stats=Counter(x['review_stratum'] for x in selected)
     count_exact=sum(x['identical_quote_and_offset'] for x in all_candidates)
     known=audit.get('machine_direction_consistency',{})
-    if known and count_exact<known.get('identical_source_spans_with_opposing_machine_labels',0):
-        # A single filing+issue can have multiple contradictory source spans;
-        # the queue is case-based, while the context audit is span-based.
-        if not (count_exact<=known['identical_source_spans_with_opposing_machine_labels']):
-            raise ValueError('Inconsistent exact-span audit')
+    # A single filing+issue may contain multiple exact-span collisions.
+    # This queue counts filing/issue cases while the audit counts source spans.
+    if known and count_exact>known.get('identical_source_spans_with_opposing_machine_labels',0):
+        raise ValueError('Conflicting model spans exceed the source-matched audit')
     summary={
         'schema':'machine-direction-conflict-review-v1',
         'generated_utc':datetime.now(timezone.utc).isoformat(),
