@@ -22,6 +22,9 @@
     'screen_use_distinctions','edtech_study_evidence','accessibility',
     'school_discretion','consultant_registration','consultant_definition',
     'consultant_fees','consultant_reporting','consultant_value',
+    'consultant_firm_vs_individual','consultant_percentage_fee_rules',
+    'consultant_annual_training','consultant_personal_data',
+    'instructional_screen_exemptions',
     'consultant_independence','vendor_influence','alleged_misuse'
   ];
   const focusGroups = [
@@ -46,7 +49,7 @@
       ['research','Research and evidence','Claims invoking studies, research or measurable outcomes',
         ['edtech_study_evidence','learning_outcomes'],/\b(?:research|stud(?:y|ies)|evidence|trial|measur|outcome|academic performance)\b/i],
       ['screen_differences','Different kinds of screen use','Distinguishing instruction from recreational or passive screen use',
-        ['screen_use_distinctions','screen_policy','learning_outcomes'],
+        ['screen_use_distinctions','screen_policy','learning_outcomes','instructional_screen_exemptions'],
         /\b(?:recreational|instructional|passive|not all screen|types of screen|educational screen|productive screen)\b/i],
       ['screen_risks','Concerns about screen use','Discussion of screen harms, risks and developmental effects, regardless of position',
         ['screen_harms','screen_policy'],
@@ -62,14 +65,14 @@
     ],
     consultants: [
       ['registration','Registration and definitions','Who must register, qualify or be defined as a consultant',
-        ['consultant_registration','consultant_definition','consultant_qualifications'],
+        ['consultant_registration','consultant_definition','consultant_qualifications','consultant_firm_vs_individual','consultant_annual_training'],
         /\b(?:consultant|registr|qualif|credential|licens|defin|exempt)\b/i],
       ['fees','Fees and compensation','Percentage, contingency and other consultant payment structures',
-        ['consultant_fees'],/\b(?:fee|percent|contingen|compensat|payment|billing)\b/i],
+        ['consultant_fees','consultant_percentage_fee_rules'],/\b(?:fee|percent|contingen|compensat|payment|billing)\b/i],
       ['expertise','Consultants as support','Expertise, capacity, school assistance and compliance navigation',
         ['consultant_value'],/\b(?:consultant|support|expert|comply|compliance|assist|capacity)\b/i],
       ['burden','Paperwork and burden','Compliance and administrative costs or form requirements',
-        ['administrative_burden','consultant_reporting'],
+        ['administrative_burden','consultant_reporting','consultant_personal_data'],
         /\b(?:paperwork|burden|compliance|administrat|form|filing|disclos|record|report)\b/i],
       ['independence','Consultant independence','Vendor ties, impartiality, conflicts of interest and independence',
         ['consultant_independence','vendor_influence','bid_independence'],
@@ -285,7 +288,7 @@
       card.append(url('Read original FCC filing '+f.id,fcc(f.id)));
       const issues=[];
       if(f.identity_review_required)issues.push('Organization or role needs review');
-      if(e.needs_speaker_review)issues.push('Speaker context needs review');
+      if(e.needs_speaker_review)issues.push('Source interpretation needs review');
       if(f.quality_scope==='prioritized_windows')issues.push('Only selected passages were model-read');
       if(f.ocr_candidate)issues.push('OCR transcript may be unreviewed');
       if(!data.method.source_context_audit_sha256_verified)issues.push('Automated source-context audit is out of sync');
