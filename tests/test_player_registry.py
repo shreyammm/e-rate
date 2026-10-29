@@ -189,6 +189,14 @@ class PlayerIdentityTest(unittest.TestCase):
                 self.assertTrue(got['needs_review'])
 
 
+    def test_named_library_association_is_not_library_system(self):
+        x=inferred_identity({'filer_raw':'American Library Association'},
+            'library_or_library_system','Our members are public libraries.')
+        self.assertEqual(x['role'],'trade_association')
+        y=inferred_identity({'filer_raw':'American Association of People with Disabilities'},
+            'advocacy_nonprofit_or_trade_association','We advocate for accessible services.')
+        self.assertEqual(y['role'],'advocacy_organization')
+
     def test_source_typing_edge_cases_from_registry_diff(self):
         x=inferred_identity({'filer_raw':'Minnesota Association of Charter Schools'},
             'school_district_or_school','Our association submits comments on E-Rate.')
