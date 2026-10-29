@@ -33,8 +33,10 @@ class ArgumentFirstTests(unittest.TestCase):
             self.assertIn('./atlas.html',src)
             self.assertIn('./regulatory.html',src)
         home=(DOCS/"index.html").read_text(encoding="utf-8")
-        self.assertIn('FCC regulatory crosswalk (secondary)',home)
-        self.assertIn('id="census-proposals"',home) # No loss of original dashboard data.
+        # The simplified landing page links to the crosswalk; the detailed
+        # original census lives in published data rather than on the landing page.
+        self.assertIn('Regulatory crosswalk',home)
+        self.assertTrue((DOCS/"data"/"exhaustive_census.json").is_file())
 
     def test_four_evidence_types_have_a_schema(self):
         d=json.loads((ROOT/"analysis_methods/argument_first_ontology_v2.json").read_text())
