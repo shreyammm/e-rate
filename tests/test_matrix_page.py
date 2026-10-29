@@ -33,6 +33,16 @@ class MatrixResearchPageTests(unittest.TestCase):
         self.assertIn("./matrix.html",(ROOT/"docs/index.html").read_text(encoding="utf-8"))
         self.assertIn("./matrix.html",(ROOT/"docs/stakeholders.html").read_text(encoding="utf-8"))
 
+    def test_industry_recall_leads_are_separate_and_source_aligned(self):
+        html = PAGE.read_text(encoding="utf-8")
+        js = JS.read_text(encoding="utf-8")
+        self.assertIn('id="identity-recall-content"', html)
+        self.assertIn("renderIdentityRecall", js)
+        self.assertIn("audit.registry_sha256!==data.inputs?.player_registry_sha256", js)
+        self.assertIn("relationship_review_leads", js.lower().replace("separate_relationship_review_leads", "relationship_review_leads"))
+        self.assertIn("The argument matrix is still exploratory", js)
+        self.assertIn("source_url", js)
+
     def test_census_denominators_and_stakeholder_exclusivity(self):
         d = json.loads(CENSUS.read_text(encoding="utf-8"))
         self.assertEqual(d["schema"],"stakeholder-arguments-v1")
