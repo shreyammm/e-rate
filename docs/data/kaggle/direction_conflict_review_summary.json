@@ -1,8 +1,8 @@
 {
   "schema": "machine-direction-conflict-review-v1",
-  "generated_utc": "2026-10-29T17:05:25.433998+00:00",
-  "source_machine_ledger_sha256": "d4a424de04f9d4fd3b2231f03ff69b3e7555f1568e495f6343bff06e73490dfc",
-  "source_census_registry_sha256": "a5997af67c134ca591126969500e846af9601df21fc8e859a978f90e3ba85859",
+  "generated_utc": "2026-10-30T16:49:34.102027+00:00",
+  "source_machine_ledger_sha256": "c5768a53d3a29644fe12f9f385594be78eacdb16ae395ea4f0694b260a67c3aa",
+  "source_census_registry_sha256": "76be05724f9c9c550f30fe422daa8e6f6194f9796cf6838282d617959b85db0f",
   "status": "UNREVIEWED_MACHINE_LABEL_AMBIGUITIES",
   "filing_issue_pairs_with_both_machine_labels": 1389,
   "same_span_case_count": 45,
@@ -36,10 +36,10 @@
     },
     {
       "stakeholder_group": "libraries",
-      "population": 59,
+      "population": 58,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 4.916666666666667
+      "weight_if_adjudicated": 4.833333333333333
     },
     {
       "stakeholder_group": "nonprofits_and_advocacy",
@@ -50,10 +50,10 @@
     },
     {
       "stakeholder_group": "other_associations",
-      "population": 19,
+      "population": 20,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 1.5833333333333333
+      "weight_if_adjudicated": 1.6666666666666667
     },
     {
       "stakeholder_group": "other_businesses",
