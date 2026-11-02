@@ -91,6 +91,19 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
         c=self.classify('Ellen Manley, Becket Athenaeum')
         self.assertTrue(c['attribution_review'])
 
+    def test_fcc_comma_separated_signatories_and_explicit_association(self):
+        from scripts.identity_metadata_resolver import multiple_person_names_only
+        self.assertTrue(multiple_person_names_only(
+            'Rachelle Chong, Ken McClure, Sharon Nelson, Susan Ness'))
+        self.assertTrue(multiple_person_names_only('Roger Stinar, Travis Stinar'))
+        self.assertFalse(multiple_person_names_only('26-133, 13-184'))
+        self.assertFalse(multiple_person_names_only('Laura Capelle, President NEA-Alaska'))
+        people = self.classify('Rachelle Chong, Ken McClure, Sharon Nelson, Susan Ness')
+        self.assertEqual(people['role'], 'named_person_capacity_unstated')
+        org = self.classify('Laura Capelle, President NEA-Alaska')
+        self.assertEqual(org['role'], 'trade_association')
+        self.assertEqual(org['organization'], 'NEA-Alaska')
+
     def test_source_only_not_topic(self):
         for commenter in ['Jessica','Cath','Christopher C Netro','E W','Nicki']:
             with self.subTest(name=commenter):
