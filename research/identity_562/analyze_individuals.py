@@ -28,6 +28,7 @@ from scripts.identity_metadata_resolver import personal_name_format
 SOURCE = ROOT / "data/fcc_corpus"
 REGISTRY = ROOT / "docs/data/player_registry.json"
 OUTPUT = ROOT / "research/identity_562/results"
+TOPIC_LEDGER = ROOT / "docs/data/stakeholder_argument_census.json"
 TARGET_ROLE = "named_person_capacity_unstated"
 
 # Anchor all evidence to a *self* statement and keep it out of scholarly
@@ -412,11 +413,21 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
     if set(raw)!=set(targets):
         raise ValueError("Source missing target IDs "+str(sorted(set(targets)-set(raw))[:4]))
     template = cluster_templates(list(targets.values()),raw)
+    # Argument interests are a *separate axis*, never an inferred identity.
+    # Only retain topics from preexisting source-linked claim retrieval.
+    topic_by_id={}
+    if TOPIC_LEDGER.exists():
+        ledger=json.loads(TOPIC_LEDGER.read_text(encoding="utf8"))
+        for filing in ledger.get("filings",[]):
+            topic_by_id[str(filing["id"])]=sorted({
+                str(e.get("topic")) for e in filing.get("topics",[])
+                if e.get("topic")})
     rows=[]
     pattern_counts=Counter()
     primary_counts=Counter()
     reason_counts=Counter()
     model_hint_counts=Counter()
+    interests=Counter()
     for fid,target in sorted(targets.items()):
         r=raw[fid];text=str(r.get("text") or "")
         # A pre-existing model is a *search lead*, not proof of capacity.
@@ -469,6 +480,8 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
             status="no_source_supported_capacity"
         primary_counts[(main.role if main else "none")]+=1
         reason_counts[status]+=1
+        topics=topic_by_id.get(fid,[])
+        interests.update(topics)
         rows.append({
             "filing_id":fid,
             "source_url":"https://www.fcc.gov/ecfs/filing/"+fid,
@@ -486,6 +499,10 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
             "readable_source":bool(text.strip()),
             "ocr_candidate":str(r.get("has_unreviewed_ocr","0"))=="1",
             "source_chars":len(text),
+            "detected_argument_themes":topics,
+            "source_length_band":("missing" if not text.strip()
+                else "very_brief" if len(text)<150 else "brief" if len(text)<500
+                else "medium" if len(text)<2000 else "long"),
             "has_personal_name_metadata":is_personal_filer(r.get("filer_raw","")),
             "signature_occupation_candidate":signatures.role or None,
             "institutional_submission_role_lead":institutional_role or None,
@@ -512,6 +529,8 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
         "cases_with_specific_independent_model_lead":sum(x["independent_model_specificity_lead"] for x in rows),
         "disposition_counts":dict(reason_counts),
         "template_cluster_sizes":getattr(cluster_templates,"stats",{}),
+        "source_length_distribution":dict(Counter(x["source_length_band"] for x in rows)),
+        "detected_argument_theme_counts":dict(interests.most_common()),
         "template_participant_filings":len(template),
         "readable_targets":sum(x["readable_source"] for x in rows),
         "remaining_without_occupational_or_self_declared_civic_capacity":
