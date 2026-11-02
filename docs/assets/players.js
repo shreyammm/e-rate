@@ -27,9 +27,10 @@
     if(['erate_consultant','procurement_adviser'].includes(r.role))return 'consultant';
     if(['library_institution','library_staff','library_affiliated'].includes(r.role))return 'library';
     if(r.role==='parent_guardian')return 'parent';
+    if(r.role==='nonprofit_service_provider')return 'nonprofit_provider';
     return 'other';
   };
-  const groupNames={education_networks:'Education network consortia',higher_education:'Colleges and universities',school:'Schools and educators',edtech:'Edtech companies',edtech_industry:'Edtech industry associations',telecom:'Telecom and networking',consultant:'Consultants and advisers',library:'Libraries',parent:'Parents and caregivers',other:'Others / unresolved'};
+  const groupNames={education_networks:'Education network consortia',higher_education:'Colleges and universities',school:'Schools and educators',edtech:'Edtech companies',edtech_industry:'Edtech industry associations',telecom:'Telecom and networking',consultant:'Consultants and advisers',library:'Libraries',parent:'Parents and caregivers',nonprofit_provider:'Nonprofit service providers',other:'Others / unresolved'};
   const byFiling=new Map();
   function stats(){
     const p=data.coverage;
