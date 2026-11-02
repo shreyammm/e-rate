@@ -18,6 +18,9 @@ class ExtendedIdentityCapacityTest(unittest.TestCase):
             "I'm a library assistant and I use this program.": "library_staff",
             "I work as a library media specialist.": "library_staff",
             "I provide E-Rate consulting services to local districts.": "erate_consultant",
+            "I am a grandmother of three school children.": "parent_guardian",
+            "My grandchild uses E-Rate-funded services.": "parent_guardian",
+            "I have been teaching for twenty years.": "school_educator",
         }
         for comment, role in examples.items():
             with self.subTest(comment=comment):
