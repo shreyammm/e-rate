@@ -169,8 +169,8 @@
     const total=data.coverage.unique_commenters;
     const full=new Set([...fullGroupCounts.values()].flatMap(set=>[...set])).size;
     $('scope-message').textContent=fullOnly() ?
-      'Full-text model-read subset: '+number(full)+' of '+number(total)+' distinct submitters. All comparison counts and percentages below deduplicate repeat filers in this subset. Candidate OCR may still be unreviewed; full-text model access does not guarantee a correct interpretation.' :
-      'Entire indexed snapshot: '+number(total)+' distinct submitters across '+number(data.coverage.filings)+' filings. '+number(data.coverage.filings_selected_windows_only)+
+      'Full-text model-read subset: '+number(full)+' of '+number(total)+' distinct stakeholder voices. All comparison counts and percentages below deduplicate repeat filers in this subset. Candidate OCR may still be unreviewed; full-text model access does not guarantee a correct interpretation.' :
+      'Entire indexed snapshot: '+number(total)+' distinct stakeholder voices across '+number(data.coverage.filings)+' filings. '+number(data.coverage.filings_selected_windows_only)+
         ' were analyzed using selected text windows and '+number(data.coverage.filings_with_ocr_candidate||0)+' include candidate OCR. A missing theme does not imply the filer said nothing about it.';
     $('audit-status').textContent=data.method.source_context_audit_sha256_verified ?
       'Machine source-context audit matches the current claim ledger. Its review flags are automated warnings, not independent confirmation.' :
@@ -188,9 +188,9 @@
     updatePresetButtons();
     renderScopeStatus();
     const description = {
-      within:'Within group = distinct submitters raising the argument ÷ distinct submitters in the group.',
+      within:'Within group = distinct stakeholder voices raising the argument ÷ distinct stakeholder voices in the group.',
       topic:'Share of argument = distinct commenter–group assignments raising the argument in this group ÷ all such assignments for the argument.',
-      count:'Each cell counts distinct FCC submitters in this group mentioning the argument; repeat filings count once.'
+      count:'Each cell counts distinct stakeholder voices in this group mentioning the argument; repeat filings count once.'
     };
     $('measure-explanation').textContent = description[$('measure').value];
     const head=$('matrix-head'),body=$('matrix-body');head.replaceChildren();body.replaceChildren();
@@ -259,7 +259,7 @@
     const matched=allFor(group,t.id);
     const hashes=new Set(matched.map(f=>f.text_sha256).filter(Boolean));
     const stats=[
-      [number(nSubmitters),'Distinct submitters in this group mentioning the argument'],
+      [number(nSubmitters),'Distinct stakeholder voices in this group mentioning the argument'],
       [rate(nSubmitters,scopedGroupSize(group)),'Share of '+label(group).toLowerCase()+' submitters in selected scope'],
       [rate(nSubmitters,scopedTopicSize(t)),'Share of commenter–group assignments with this argument'],
       [number(hashes.size),'Distinct original texts in this cell']
@@ -357,7 +357,7 @@
     const b=$('frame-compare').value;
     const totalA=aGroups.reduce((s,g)=>s+scopedGroupSize(g),0),totalB=scopedGroupSize(b);
     $('frame-context').textContent=number(totalA)+' distinct commenter–group assignments in the selected industry categories; '+number(totalB)+
-      ' distinct submitters assigned to '+label(b).toLowerCase()+'. Counts reflect '+(fullOnly()?'full-text model reads only':'the complete index')+'. Joint submissions remain separate. Small denominators make percentages volatile.';
+      ' distinct stakeholder voices assigned to '+label(b).toLowerCase()+'. Counts reflect '+(fullOnly()?'full-text model reads only':'the complete index')+'. Joint submissions remain separate. Small denominators make percentages volatile.';
     const root=$('frame-list');root.replaceChildren();
     for(const def of frames[key]){
       const a=frameMatches(def,aGroups),comparison=frameMatches(def,[b]);
@@ -571,7 +571,7 @@
       if(byGroup.has(p.get('group')))activeGroup=p.get('group');
       if(byTopic.has(p.get('topic')))activeTopic=p.get('topic');
       if(activeGroup==='school_institutions')$('comparison-group').value='edtech_vendors';
-      $('load-status').textContent=number(data.coverage.unique_commenters)+' distinct submitters from '+number(data.coverage.filings)+' filing records · '+number(data.coverage.filings_with_coded_topics)+
+      $('load-status').textContent=number(data.coverage.unique_commenters)+' distinct stakeholder voices from '+number(data.coverage.filings)+' filing records · '+number(data.coverage.filings_with_coded_topics)+
         ' with extracted arguments · Categories and quotations are preliminary and source-linked.';
       renderMatrix();renderDetail();renderFrames();renderIdentityBreakdown();
       renderIdentityRecall();
