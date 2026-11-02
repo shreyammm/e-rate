@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/build_player_registry.py'
       - 'scripts/identity_context_resolver.py'
+      - 'scripts/audit_unstated_commenters.py'
       - 'scripts/identity_metadata_resolver.py'
       - 'tests/test_identity_metadata_resolver.py'
       - 'tests/test_identity_context_extended.py'
@@ -41,6 +42,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_identity_context_extended.py -v
       - name: Build all-filing identity audit and organization profile index
         run: python -m scripts.build_player_registry
+      - name: Audit every capacity-unstated filing against its original source
+        run: python -m scripts.audit_unstated_commenters
       - name: Check source-grounded recall audit rules
         run: python -m unittest discover -s tests -p test_industry_identity_recall.py -v
       - name: Identify additional potential industry players without reclassification
@@ -101,10 +104,11 @@ jobs:
             git fetch origin main
             git reset --hard origin/main
             python -m scripts.build_player_registry
+            python -m scripts.audit_unstated_commenters
             python -m scripts.build_stakeholder_census
             python -m scripts.build_industry_argument_review
             python -m scripts.audit_industry_identity_recall
-            git add -- docs/data/stakeholder_argument_census.json docs/data/player_registry.json docs/data/identity_resolution_metrics.json docs/data/industry_identity_recall.json docs/data/industry_argument_review.csv docs/data/industry_argument_review_summary.json
+            git add -- docs/data/stakeholder_argument_census.json docs/data/player_registry.json docs/data/identity_resolution_metrics.json docs/data/unstated_identity_audit.json docs/data/industry_identity_recall.json docs/data/industry_argument_review.csv docs/data/industry_argument_review_summary.json
             if git diff --cached --quiet; then
               echo 'Generated datasets already match latest sources.'
               exit 0
