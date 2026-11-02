@@ -16,6 +16,8 @@
   };
   let data=null, claims=null, filteredReview=[],reviewPage=0, claimPage=0, candidates=[], changes=new Map(), selectedOrg=null;
   const group=r=>{
+    if(r.role==='education_network_consortium')return 'education_networks';
+    if(r.role==='higher_education_institution')return 'higher_education';
     if(['school_district','individual_school','school_technology_staff','school_educator','school_administrator','school_connected_unknown'].includes(r.role))return 'school';
     if(r.role.startsWith('edtech_'))return 'edtech';
     if(r.industry_focus==='edtech_industry')return 'edtech_industry';
@@ -27,7 +29,7 @@
     if(r.role==='parent_guardian')return 'parent';
     return 'other';
   };
-  const groupNames={school:'Schools and educators',edtech:'Edtech companies',edtech_industry:'Edtech industry associations',telecom:'Telecom and networking',consultant:'Consultants and advisers',library:'Libraries',parent:'Parents and caregivers',other:'Others / unresolved'};
+  const groupNames={education_networks:'Education network consortia',higher_education:'Colleges and universities',school:'Schools and educators',edtech:'Edtech companies',edtech_industry:'Edtech industry associations',telecom:'Telecom and networking',consultant:'Consultants and advisers',library:'Libraries',parent:'Parents and caregivers',other:'Others / unresolved'};
   const byFiling=new Map();
   function stats(){
     const p=data.coverage;
