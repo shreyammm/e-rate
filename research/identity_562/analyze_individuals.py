@@ -20,7 +20,7 @@ from collections import Counter, defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 
-from scripts.build_player_registry import ROOT
+from scripts.build_player_registry import ROOT, organization_label, first_rule, ORG_PATTERNS
 from scripts.identity_context_resolver import context_capacity
 from scripts.identity_signature_resolver import signature_signal, domain_sector
 from scripts.identity_metadata_resolver import personal_name_format
@@ -344,6 +344,37 @@ def is_personal_filer(raw: str) -> bool:
     return personal_name_format(raw) and len(raw.split())>=2
 
 
+def explicitly_submitting_institution(text: str) -> tuple[str,str]:
+    """Read only author-title / author-submission statements in opening lines.
+
+    Merely mentioning a school or library as a topic is not an authorship cue.
+    A named entity claim is a *provisional source lead*, never verification of
+    the individual's legal authority to represent that institution.
+    """
+    lines=[re.sub(r"\s+"," ",x.strip()) for x in str(text or "")[:2300].splitlines()[:45]]
+    for line in lines:
+        if not line or len(line)>210:continue
+        proposed=""
+        matches=(
+            re.search(r"(?i)^(?:comments|filing|reply comments|statement) of\s+(.{5,125})$",line),
+            re.search(r"(?i)^(.{5,130}?)\s+(?:respectfully\s+)?(?:submits?|files?)\s+"
+                      r"(?:these|this|its|our|the)\s+(?:comments|filing|statement)\b",line),
+            re.search(r"(?i)^(?:submitted|filed|prepared) (?:on behalf of|by)\s+(.{5,125})$",line),
+        )
+        for m in matches:
+            if m:
+                proposed=m.group(1).strip(" .,-:")
+                break
+        if not proposed:continue
+        # Clear corporate/institutional name in an AUTHOR label only.
+        name=organization_label(proposed)
+        if not name:continue
+        role=first_rule(name,ORG_PATTERNS)[0]
+        if role and role!="other_vendor":
+            return role,name
+    return "",""
+
+
 def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
     source = Path(source)
     registry = json.loads(Path(registry).read_text())
@@ -388,6 +419,7 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
             r"(?i)\b[\w.+-]+@([a-z0-9.-]+\.[a-z]{2,})\b",
             text[-1600:])}
         domain_sectors=sorted({domain_sector(d) for d in domains if domain_sector(d)})
+        institutional_role,institutional_name=explicitly_submitting_institution(text)
         signatures=signature_signal(text,str(r.get("filer_raw") or ""))
         roles=declared_roles(text)
         existing=context_capacity(text)
@@ -439,6 +471,8 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
             "source_chars":len(text),
             "has_personal_name_metadata":is_personal_filer(r.get("filer_raw","")),
             "signature_occupation_candidate":signatures.role or None,
+            "institutional_submission_role_lead":institutional_role or None,
+            "institutional_submission_name_lead":institutional_name or None,
             "contact_domain_sector_leads":domain_sectors,
             "independent_model_role_lead":model_hint or None,
             "independent_model_specificity_lead":bool(model_hint and model_hint not in ("unknown","individual_other")),
@@ -457,6 +491,7 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
         "pattern_counts":dict(pattern_counts),
         "independent_model_role_leads":dict(model_hint_counts),
         "cases_with_contact_domain_sector_lead":sum(bool(x["contact_domain_sector_leads"]) for x in rows),
+        "cases_with_explicit_institutional_submission_lead":sum(bool(x["institutional_submission_role_lead"]) for x in rows),
         "cases_with_specific_independent_model_lead":sum(x["independent_model_specificity_lead"] for x in rows),
         "disposition_counts":dict(reason_counts),
         "template_cluster_sizes":getattr(cluster_templates,"stats",{}),
