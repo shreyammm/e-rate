@@ -65,8 +65,14 @@ def canonical_org(org):
     return normalize(label) if label else ''
 
 def person_name(raw):
-    """Allow titles on otherwise recognizable personal-name metadata only."""
+    """Recognize a person; never mistake a two-word occupational title for one."""
     value=PERSON_TITLE.sub('',str(raw or '').strip()).strip()
+    words=value.split()
+    if len(words)<2:return ''
+    if re.search(r'(?i)\b(?:coordinator|director|manager|officer|administrator|'
+                 r'teacher|specialist|consultant|technician|assistant|superintendent|'
+                 r'librarian|president|secretary|counsel|chairperson|chair|trustee)\b',value):
+        return ''
     return normalize(value) if (personal_name_format(value) or personal_name_with_postnominals(value)) else ''
 
 def parts_of(raw):
@@ -119,6 +125,13 @@ def resolve_submitter(raw, filing_id, entry=None):
             return ('composite_raw:'+norm,'conflicting_institutions_in_metadata',True)
         return ('person:'+names[0]+'|org:'+orgs[0],
                 'named_person_in_metadata_with_institution',False)
+    if len(parts)>1 and len(raw_institutions)==1 and not names:
+        # Example: "Outreach Director | Nonprofit Association": an
+        # occupational title and an institution, not a named human signatory.
+        if org and org!=raw_institutions[0]:
+            return ('joint_raw:'+norm,'conflicting_title_institution_metadata',True)
+        return ('organization:'+raw_institutions[0],
+                'institution_metadata_with_occupational_title',True)
     if len(parts)>1 and len(raw_institutions)>1:
         return ('joint_raw:'+norm,'potential_joint_submission',True)
     if len(parts)==1 and len(names)==1:
