@@ -483,6 +483,17 @@ def submitted_by_multiple_entities(raw: str) -> dict:
             'joint_institution_candidates':organizations if len(organizations)>1 else [],
             'requires_relationship_review':len(parts)>1}
 
+def joint_education_associations(raw: str) -> bool:
+    """True only for a multi-signatory metadata field consisting entirely
+    of explicit professional or educational associations, not their members.
+    """
+    members=[m.strip() for m in str(raw or '').split('|') if m.strip()]
+    if len(members)<2:return False
+    return all(re.search(
+        r'(?i)\b(?:association|professional society|'
+        r'(?:computer using )?educators|school superintendents|'
+        r'school business officials)\b',m) for m in members)
+
 def review_priority(identity: dict, body: str) -> dict:
     """Rank needs-human-review cases, never convert a candidate into a fact."""
     if not identity['needs_review']:return {'score':0,'level':'not_required','reasons':[]}
@@ -562,8 +573,20 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                                  identity_status='human_reviewed',identity_confidence='high',
                                  identity_review_reason='',needs_review=False,
                                  industry_focus=industry_focus(org,v['role']))
-                review=review_priority(found,body)
                 joint=submitted_by_multiple_entities(raw_name)
+                # A coalition of educational associations should not be
+                # assigned a school employee's role simply because all the
+                # signatories work in education. Preserve joint signers below.
+                if joint_education_associations(raw_name) and sid not in overrides:
+                    found.update(
+                        role='trade_association',
+                        organization='Joint education associations',
+                        basis='joint_education_association_metadata',
+                        evidence_cue='multiple co-signing education associations',
+                        identity_status='source_inferred',identity_confidence='high',
+                        industry_focus='unspecified',
+                        identity_review_reason='',needs_review=False)
+                review=review_priority(found,body)
                 filings.append({'id':sid,'base_role':base[sid],
                      'role':found['role'],'organization':found['organization'],
                      'industry_focus':found['industry_focus'],
