@@ -264,7 +264,7 @@ def priority(row):
     return score
 
 def normalize_submitter_name(value):
-    return re.sub(r'[^\\w]+',' ',unicodedata.normalize('NFKC',str(value or '')).casefold()).strip()
+    return re.sub(r'[^\w]+',' ',unicodedata.normalize('NFKC',str(value or '')).casefold()).strip()
 
 def submitter_token(raw, filing_id):
     """Deduplicate exact FCC filer metadata, never shared source text."""
@@ -302,7 +302,6 @@ def load_submitter_ids(manifest_path,registry):
         'filings_in_repeated_identifiers':sum(n for n in distinct_counts.values() if n>1),
         'largest_repeat_cluster_sizes':sorted((n for n in distinct_counts.values() if n>1),reverse=True)[:12],
         'fallback_filing_identities':sum(token.startswith('filing:') for token in tokens.values()),
-        'raw_fields_blank':sum(not normalize_submitter_name(token) for token in []),
     }
     return {fid:opaque[key] for fid,key in tokens.items()}
 
