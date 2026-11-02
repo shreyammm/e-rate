@@ -59,9 +59,9 @@
     const codedSubmitters=new Set(coded.map(f=>f.submitter_id));
     const distinctInstitutions=new Set(ids.map(f=>f.organization).filter(Boolean)).size;
     $('group-description').textContent=(g==='all'?'Browse every indexed source filing.':
-      'Explore the distinct submitters in this group, with repeat filings collapsed for frequencies.');
+      'Explore the distinct stakeholder voices in this group, with repeat filings collapsed for frequencies.');
     const stats=[
-      [n(submitters.size),'Distinct submitters in group'],
+      [n(submitters.size),'Distinct stakeholder voices in group'],
       [n(codedSubmitters.size),'Submitters with extracted themes'],
       [n(hashes.size),'Distinct original source texts'],
       [n(distinctInstitutions),'Named institutions in group']
@@ -92,7 +92,7 @@
     for(const t of sorted){
       const row=make('button',undefined,'arg-row'+(c?' comparison':''));
       row.type='button';row.setAttribute('aria-pressed',String(selectedTopic===t.id));
-      row.setAttribute('aria-label',t.label+', '+n(topicCell(t,g).commenters)+' distinct submitters, view sources');
+      row.setAttribute('aria-label',t.label+', '+n(topicCell(t,g).commenters)+' distinct stakeholder voices, view sources');
       const left=make('span');left.append(make('span',t.label,'arg-title'),make('span',t.category,'arg-category'));row.append(left);
       for(const group of [g,...(c?[c]:[])]){
         const cell=topicCell(t,group),bar=make('span',undefined,'bar-unit');
@@ -132,9 +132,9 @@
     const t=byTopic[selectedTopic],root=$('group-by-topic');
     root.replaceChildren();
     if(!t)return;
-    $('group-by-topic-description').textContent=n(t.commenters)+' distinct submitters across '+n(t.filings)+' source filings, '+n(t.distinct_source_texts)+' distinct source texts, and '+n(t.named_institutions||0)+' named institutions have an extracted argument in this category. See which stakeholder groups submitted them. Institutional names may be missing for personal or joint filings.';
+    $('group-by-topic-description').textContent=n(t.commenters)+' distinct stakeholder voices across '+n(t.filings)+' source filings, '+n(t.distinct_source_texts)+' distinct source texts, and '+n(t.named_institutions||0)+' named institutions have an extracted argument in this category. See which stakeholder groups submitted them. Institutional names may be missing for personal or joint filings.';
     const header=make('div',undefined,'inverse-header');
-    header.append(make('span','Stakeholder'),make('span','Distinct submitters'),
+    header.append(make('span','Stakeholder'),make('span','Distinct stakeholder voices'),
       make('span','Share of topic'),make('span','Within group'));root.append(header);
     const groups=data.stakeholder_groups.filter(g=>topicCell(t,g.id).commenters>0);
     groups.sort((a,b)=>topicCell(t,b.id).commenters-topicCell(t,a.id).commenters);
@@ -165,7 +165,7 @@
     const roles=data.stakeholder_roles.filter(r=>topic.by_detailed_role[r.id]?.commenters>0)
       .sort((a,b)=>topic.by_detailed_role[b.id].commenters-topic.by_detailed_role[a.id].commenters);
     const head=make('div',undefined,'inverse-header');
-    head.append(make('span','Specific role'),make('span','Distinct submitters'),
+    head.append(make('span','Specific role'),make('span','Distinct stakeholder voices'),
       make('span','Share of topic'),make('span','Within role'));root.append(head);
     for(const role of roles){
       const c=topic.by_detailed_role[role.id],row=make('div',undefined,'inverse-row');
@@ -186,7 +186,7 @@
       return {topic:t,delta:100*(a/nA-b/nB),a,b};
     }).sort((a,b)=>Math.abs(b.delta)-Math.abs(a.delta));
     root.append(make('h3','Different emphases'));
-    const caution=make('p', 'These are differences in the share of distinct submitters with an extracted argument, not proof that the groups disagree.','small-note');
+    const caution=make('p', 'These are differences in the share of distinct stakeholder voices with an extracted argument, not proof that the groups disagree.','small-note');
     root.append(caution);
     const top=diffs.filter(x=>x.a+x.b).slice(0,4);
     for(const {topic,delta,a,b} of top){
@@ -201,7 +201,7 @@
       });
       root.append(button);
     }
-    if(Math.min(nA,nB)<15)root.append(make('p','One comparison group contains fewer than 15 distinct submitters. Even large percentage differences may reflect only one or two comments.','small-note'));
+    if(Math.min(nA,nB)<15)root.append(make('p','One comparison group contains fewer than 15 distinct stakeholder voices. Even large percentage differences may reflect only one or two comments.','small-note'));
   }
   function renderEvidence(){
     const t=byTopic[selectedTopic],g=groupValue(),c=compareValue();
@@ -434,7 +434,7 @@
            g.filings,g.filings_with_coded_topics,
           c.filings,c.distinct_source_texts,c.named_institutions,c.lower_risk_filings,
           c.needs_attribution_or_identity_review,
-          'Unvalidated extracted themes; submitters deduplicated from normalized FCC metadata; filing fields retained for audit only']);
+          'Unvalidated extracted themes; submitters deduplicated from filer name plus represented organization; filing fields retained for audit only']);
       }
     }
     function escape(v){
@@ -484,7 +484,7 @@
     for(const g of data.stakeholder_groups){labels[g.id]=g.label;byGroup[g.id]=g;}
     for(const t of data.topics)byTopic[t.id]=t;
     config();update();coverage();
-    $('load-status').textContent=n(data.coverage.unique_commenters)+' distinct submitters across '+n(data.coverage.filings)+' FCC filings · '+n(data.coverage.filings_with_coded_topics)+
+    $('load-status').textContent=n(data.coverage.unique_commenters)+' distinct stakeholder voices across '+n(data.coverage.filings)+' FCC filings · '+n(data.coverage.filings_with_coded_topics)+
       ' filings with categorized arguments · '+n(data.topics.length)+' argument topics. Source quotations are verifiable; topic and speaker interpretations remain preliminary.';
   }catch(e){
     $('load-status').textContent='The argument analysis is not available yet: '+e.message+
