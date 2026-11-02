@@ -44,6 +44,21 @@ KNOWN = {
     'infinity communications compliance': ('Infinity Communications & Compliance', 'erate_consultant'),
     'infinity communications and compliance': ('Infinity Communications & Compliance', 'erate_consultant'),
 
+    # Additional public identity checks (November 2026). Exact filer names only:
+    # operating school networks and nonprofits must not be counted as vendors.
+    'palm bay education group inc': ('Palm Bay Education Group, Inc.', 'school_district'),
+    'connected nation inc': ('Connected Nation, Inc.', 'advocacy_organization'),
+    'regional economic community action program inc': ('Regional Economic Community Action Program, Inc.', 'advocacy_organization'),
+    'step up suncoast inc': ('Step Up Suncoast, Inc.', 'advocacy_organization'),
+    'le jardin community center inc': ('Le Jardin Community Center, Inc.', 'advocacy_organization'),
+    'community action partnership of madera county inc': ('Community Action Partnership of Madera County, Inc.', 'advocacy_organization'),
+    # IT/network firms are distinct from instructional software manufacturers.
+    'somethingcool com llc': ('SomethingCool.com LLC', 'network_technology_vendor'),
+    'vision21 networks llc': ('Vision21 Networks, LLC', 'network_technology_vendor'),
+    # A library-policy watchdog publication is not an operating public library.
+    'safelibraries brand library educational services': ('SafeLibraries', 'advocacy_organization'),
+
+
 }
 
 # Recognize canonical spellings after the institution name has been normalized.
