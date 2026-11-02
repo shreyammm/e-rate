@@ -97,8 +97,10 @@ class PlayerIdentityTest(unittest.TestCase):
     def test_separated_person_metadata_is_only_candidate(self):
         x=inferred_identity({'filer_raw':'Chris Warden | K12TechPro'},
             'named_person_capacity_unstated','Our organization provides technology assistance.')
-        self.assertEqual(x['organization'],'')
-        self.assertTrue(x['needs_review'])
+        self.assertEqual(x['organization'],'K12TechPro')
+        self.assertEqual(x['role'],'trade_association')
+        self.assertFalse(x['needs_review'])
+        self.assertTrue(x['attribution_review'])
     def test_affiliation_candidate_not_legal_speaker(self):
         x=inferred_identity({'filer_raw':'Jane Doe | E-Rate Funding Services LLC'},
             'named_person_capacity_unstated','My statement addresses school procurement.')
@@ -360,8 +362,10 @@ class PlayerIdentityTest(unittest.TestCase):
     def test_mixed_metadata_recognizes_explicit_school_without_person_name_leak(self):
         unresolved=inferred_identity({'filer_raw':'Aaron Weston; Oley Valley School District'},
             'school_district_or_school','Broadband matters.')
-        self.assertEqual(unresolved['organization'],'')
-        self.assertTrue(unresolved['needs_review'])
+        self.assertEqual(unresolved['organization'],'Oley Valley School District')
+        self.assertEqual(unresolved['role'],'school_district')
+        self.assertFalse(unresolved['needs_review'])
+        self.assertTrue(unresolved['attribution_review'])
         for name,org in [
             ('Holmes County School Board/Melissa Baxley','Holmes County School Board'),
             ('Jane Doe / Eastern School District','Eastern School District')]:
