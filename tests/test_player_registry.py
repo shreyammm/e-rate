@@ -256,6 +256,18 @@ class PlayerIdentityTest(unittest.TestCase):
             'Parents should be able to opt students out of screen use.')
         self.assertEqual(x['role'],'named_person_capacity_unstated')
 
+    def test_joint_education_professional_associations_are_not_school_staff(self):
+        from scripts.build_player_registry import joint_education_associations
+        names=("Massachusetts Computer Using Educators | "
+               "Massachusetts Educational Technology Administrators Association | "
+               "Massachusetts Association of School Superintendents")
+        self.assertTrue(joint_education_associations(names))
+        self.assertFalse(joint_education_associations(
+            "Massachusetts Educational Technology Administrators Association | "
+            "Riverton Unified School District"))
+        self.assertFalse(joint_education_associations(
+            "Jane Doe | Springfield Unified School District"))
+
     def test_co_signers_not_inferred_as_independent_filings(self):
         from scripts.build_player_registry import submitted_by_multiple_entities
         x=submitted_by_multiple_entities('A School District | Curriculum Associates, LLC | Library Association')
