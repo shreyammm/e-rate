@@ -1,10 +1,10 @@
 {
   "schema_version": "unstated-identity-source-audit-v1",
   "scope": "Every filing whose current identity is flagged or whose capacity is unstated",
-  "population": 592,
+  "population": 584,
   "disposition_counts": {
     "incomplete_or_ocr_source": 4,
-    "no_explicit_professional_capacity_found": 561,
+    "no_explicit_professional_capacity_found": 553,
     "possible_affiliation_needs_full_source_review": 24,
     "source_identity_evidence_needs_reconciliation": 3
   },
@@ -69,21 +69,6 @@
       "requires_human_confirmation": true
     },
     {
-      "id": "26109834985",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26109834985",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "3ec43b18955e3f98a7a1129d1027e202ddf2a1d3251ce4d9a3a2340bd3372a71",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
       "id": "26109835042",
       "source_url": "https://www.fcc.gov/ecfs/filing/26109835042",
       "current_role": "named_person_capacity_unstated",
@@ -103,21 +88,6 @@
       "current_role": "named_person_capacity_unstated",
       "current_identity_status": "capacity_not_stated",
       "source_sha256": "2933f9cdc55be5f325fd956ecee589f2e09f268f525cc0e53968e648dbde93ba",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26109837335",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26109837335",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "4fc9e6e23ed223cb4765f5fdd6989139202079d1707a59a57fbafbac8ce18fb3",
       "disposition": "no_explicit_professional_capacity_found",
       "evidence_indicators": [
         "closing_present",
@@ -765,20 +735,6 @@
       "current_role": "named_person_capacity_unstated",
       "current_identity_status": "capacity_not_stated",
       "source_sha256": "5cd8d3821c0f2f807f2aab7095d8db1f5be71a0160c65db0002ac515a7646a4a",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110069614",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110069614",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "e5e8114a08cdf38100fa7efce13a2a73597484e5478bc81bc310fec7760c6083",
       "disposition": "no_explicit_professional_capacity_found",
       "evidence_indicators": [
         "text_available"
@@ -2351,20 +2307,6 @@
       "current_role": "named_person_capacity_unstated",
       "current_identity_status": "capacity_not_stated",
       "source_sha256": "e54b2c97181dbc2d9b4d46b403f831ea7bf994a5edfbdfadf666b59a000662c4",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110074365",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110074365",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "2229961db00ae43e798f5bd12a83e7d299324c2f61f5ade1a3ba5854435825dc",
       "disposition": "no_explicit_professional_capacity_found",
       "evidence_indicators": [
         "text_available"
@@ -5291,20 +5233,6 @@
       "requires_human_confirmation": true
     },
     {
-      "id": "26110078366",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078366",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "d36065102ab7ffa61a4777d9b4c5505394ac7fb225cbd189542933ff65e60408",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
       "id": "26110078372",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110078372",
       "current_role": "named_person_capacity_unstated",
@@ -6784,21 +6712,6 @@
       "requires_human_confirmation": true
     },
     {
-      "id": "26110080229",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080229",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "cce32f25b4a79c158131e21b69f6ca98704d585a4b962b5389ab8b0df6a05359",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
       "id": "26110080317",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080317",
       "current_role": "named_person_capacity_unstated",
@@ -6919,21 +6832,6 @@
       "source_sha256": "b9b8953bec592041a9e1ab5b87ca35087a990e481ddc02c2c12d8cda517d00e7",
       "disposition": "no_explicit_professional_capacity_found",
       "evidence_indicators": [
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110080489",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080489",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "48b0b7c703025f26e90ea5fbf9ebc3c2af363158b3210e26338919925ffd085a",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "closing_present",
         "text_available"
       ],
       "candidate_capacity": "",
@@ -7594,21 +7492,6 @@
       "current_role": "named_person_capacity_unstated",
       "current_identity_status": "capacity_not_stated",
       "source_sha256": "e59753a46e2f6b5e21db65cb6f2285e74afd3c22669c1ccc3efb20d8a50b436a",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110081042",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081042",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "db4e6244857b26e67f5622dd024321dfba36349d9e8da0439debfaaada372fa8",
       "disposition": "no_explicit_professional_capacity_found",
       "evidence_indicators": [
         "closing_present",
