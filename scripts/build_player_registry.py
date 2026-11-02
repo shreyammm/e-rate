@@ -525,6 +525,25 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
        'roles':ROLE_LABELS,'role_filing_counts':dict(counts),
        'review_tier_counts':dict(Counter(r['review_tier'] for r in filings)),
        'organizations':organizations,'filings':filings}
+    # Publish a small, reproducible summary alongside the full index so that
+    # changes in the review queue can be assessed without downloading 3,231
+    # filing-level identity records. This is an automatic-resolution report,
+    # NOT a human-verified accuracy measurement.
+    metrics={
+        'schema_version':'identity-resolution-audit-v1',
+        'source_filings':len(filings),
+        'review_required':sum(r['needs_review'] for r in filings),
+        'usable_without_review':sum(not r['needs_review'] for r in filings),
+        'confidence_counts':dict(Counter(r['identity_confidence'] for r in filings)),
+        'review_reason_counts':dict(Counter(r['identity_review_reason'] for r in filings if r['needs_review'])),
+        'classification_basis_counts':dict(Counter(r['basis'] for r in filings)),
+        'review_roles':dict(Counter(r['role'] for r in filings if r['needs_review'])),
+        'signature_resolutions':sum(r['basis']=='signed_role_and_organization' and not r['needs_review'] for r in filings),
+        'letterhead_or_signature_org_resolutions':sum(r['basis']=='source_letterhead_or_signature' and not r['needs_review'] for r in filings),
+        'note':'Usable means source-supported machine classification, not adjudicated legal authority or a verified endorsement.',
+    }
+    summary_path=ROOT/'docs/data/identity_resolution_metrics.json'
+    summary_path.write_text(json.dumps(metrics,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     Path(output).parent.mkdir(parents=True,exist_ok=True)
     Path(output).write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
     return payload['coverage']
