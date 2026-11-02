@@ -85,7 +85,7 @@
 <button data-preset="procurement">Procurement and vendor influence <span>across groups</span></button>
 </div>
 <div class="sidebar-rule"></div>
-<p class="sidebar-help">Each percentage counts <strong>distinct FCC submitters</strong>, with repeat filings from the same normalized filer collapsed. One submitter may raise several arguments. These are preliminary argument classifications, not verified opinions.</p>
+<p class="sidebar-help">Each percentage counts <strong>distinct submitter–organization voices</strong>. Repeat filings in the same documented capacity count once, while a person submitting for different organizations can count separately. One submitter may raise several arguments. These are preliminary argument classifications, not verified opinions.</p>
 </div>
 </aside>
 <div class="main-column">
@@ -100,7 +100,7 @@
 <div><h3>Arguments raised</h3><p>Which issues appear most often in the selected group's submissions?</p></div>
 <label class="sort-control">Order <select id="sort-order"><option value="group">Most common in this group</option><option value="overall">Most common overall</option><option value="difference">Largest difference in share</option><option value="alpha">Alphabetical</option></select></label>
 </div>
-<p class="small-note">Within-group percentages use distinct submitters in that group as the denominator, counting each submitter at most once per argument. Multiple source filings are preserved as evidence, but cannot multiply a person's share. A submitter can appear in more than one stakeholder group if their filings receive different categories. Topic frequencies do not prove endorsement or disagreement.</p>
+<p class="small-note">Within-group percentages use unique submitter–organization voices in that stakeholder group as the denominator, counting each voice at most once per argument. Multiple source filings are preserved as evidence, but cannot multiply a person's share. A submitter can appear in more than one stakeholder group if their filings receive different categories. Topic frequencies do not prove endorsement or disagreement.</p>
 <div id="argument-table" class="argument-table" role="region" aria-label="Arguments and filing frequencies"></div>
 </section>
 <section id="groups-for-topic" class="content-section">
@@ -110,7 +110,7 @@
 <p class="small-note">Break down broad groups into individual institution and occupational categories. These are provisional source-identity classifications, not verified unique people.</p>
 <div id="role-by-topic" class="argument-table" role="region" aria-label="Detailed stakeholder roles for selected argument"></div>
 </details>
-<p class="small-note">“Share of topic” is the share of commenter–group assignments with this argument in each category. “Within group” is the share of distinct submitters in that category with this argument. These numbers describe extracted argument themes, not agreement or public opinion.</p>
+<p class="small-note">“Share of topic” is the share of submitter–group voice assignments with this argument in each category. “Within group” is the share of distinct submitting voices in that category with this argument. These numbers describe extracted argument themes, not agreement or public opinion.</p>
 <details class="role-detail">
 <summary>Help check argument and stakeholder accuracy</summary>
 <p class="small-note">Download a prioritized audit worksheet with every identifiable edtech and E-Rate consultant filing, plus stratified comparison cases from schools and other groups, rare argument categories, and filings without detected themes. The worksheet includes original FCC links and blank fields to verify argument presence and speaker attribution. It is <strong>not</strong> a representative sample or an automatic accuracy estimate.</p>
@@ -140,13 +140,13 @@
 </div></section>
 
 <section class="appendix" id="coverage">
-<div class="appendix-heading"><h2>Who submitted comments?</h2><p>Distinct FCC submitters, including those with no extracted argument. Repeated filings by the same normalized filer are counted once per category.</p></div>
+<div class="appendix-heading"><h2>Who submitted comments?</h2><p>Distinct submitter–organization voices, including those with no extracted argument. Repeated filings by the same voice are counted once per stakeholder category.</p></div>
 <div class="coverage-grid" id="coverage-list"></div>
 </section>
 <section class="method-note">
 <h2>How to read these findings</h2>
 <div class="method-grid">
-<p><strong>The denominator is distinct metadata submitters.</strong> FCC filer names are normalized and repeat filings collapsed, including on argument charts. Incomplete or generic names are kept separate. An identical name may refer to different people and one person may use variant names, so these are estimates, not verified people or endorsements.</p>
+<p><strong>The denominator is source-identified stakeholder voices.</strong> We match normalized filer names with recognized institutional identities and source-based represented organizations. The same person submitting for different organizations is counted in separate capacities. Ambiguous matches and unattributed comments stay flagged, so these are not verified unique people or endorsements.</p>
 <p><strong>These are preliminary argument assignments.</strong> The original passages are real and source-linked, but the model may misinterpret a comment, miss a topic, or attribute a quotation to the filer.</p>
 <p><strong>Stakeholder categories remain distinct.</strong> A joint submission is one source record; consultant and client positions are not conflated. If a submitter crosses categories, their commenter–group assignments can exceed the corpus-wide unique-submitter total.</p>
 <p><strong>Reporting isn't endorsement.</strong> NTIA's listening-session summary is excluded from the agency argument totals. Allegations of misuse are kept separate from routine calls for oversight.</p>
