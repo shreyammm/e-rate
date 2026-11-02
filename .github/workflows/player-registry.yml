@@ -8,6 +8,7 @@ on:
       - 'scripts/identity_context_resolver.py'
       - 'scripts/identity_metadata_resolver.py'
       - 'tests/test_identity_metadata_resolver.py'
+      - 'tests/test_identity_context_extended.py'
       - 'tests/test_player_registry.py'
       - 'scripts/audit_industry_identity_recall.py'
       - 'tests/test_industry_identity_recall.py'
@@ -36,6 +37,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_player_registry.py -v
       - name: Verify metadata identity resolution
         run: python -m unittest discover -s tests -p test_identity_metadata_resolver.py -v
+      - name: Verify extended first-person capacity signals
+        run: python -m unittest discover -s tests -p test_identity_context_extended.py -v
       - name: Build all-filing identity audit and organization profile index
         run: python -m scripts.build_player_registry
       - name: Check source-grounded recall audit rules
