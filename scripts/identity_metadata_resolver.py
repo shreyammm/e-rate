@@ -36,6 +36,12 @@ def key(s: str) -> str:
 def institution(raw: str) -> tuple[str,str]:
     normalized=key(raw)
     if normalized in KNOWN:return KNOWN[normalized]
+    # Two filing fields can be trade names for the SAME firm (rather than
+    # separate co-signers); require both to resolve to the identical entity.
+    fields=[p.strip() for p in str(raw).split('|')]
+    if len(fields)==2 and all(key(p) in KNOWN for p in fields):
+        resolved={KNOWN[key(p)] for p in fields}
+        if len(resolved)==1:return next(iter(resolved))
     # The FCC's public metadata explicitly names both the company and title.
     if re.search(r'(?i)\bpresident of zayo education\b',str(raw)):
         return ('Zayo Group LLC','telecom_isp')
