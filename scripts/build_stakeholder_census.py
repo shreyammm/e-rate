@@ -519,6 +519,19 @@ def build(registry=REGISTRY,claim_path=CLAIMS,quality_path=QUALITY,audit_path=AU
     }
     path=Path(out);path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(payload,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+    # Publish a compact human-checkable verification table alongside the large census.
+    summary_path=path.with_name('submitter_count_summary.json')
+    compact={
+        'generated_utc':payload['generated_utc'],
+        'method':payload['method']['deduplication'],
+        'coverage':{k:payload['coverage'][k] for k in
+                    ('filings','unique_commenters','commenter_group_assignments')},
+        'groups':[{k:g[k] for k in ('id','label','filings','commenters')}
+                  for g in payload['stakeholder_groups']],
+        'topics':[{k:t[k] for k in ('id','label','filings','commenters','commenter_group_assignments')}
+                  for t in payload['topics']]
+    }
+    summary_path.write_text(json.dumps(compact,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     return {'groups':len(payload['stakeholder_groups']),'topics':len(payload['topics']),
             'filings':payload['coverage']['filings'],'coded':payload['coverage']['filings_with_coded_topics'],
             'audit_matched':payload['method']['source_context_audit_sha256_verified']}
