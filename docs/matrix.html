@@ -25,7 +25,7 @@
   <section class="opening">
     <p class="kicker">FCC comments / stakeholder research</p>
     <h1>Who is making which arguments?</h1>
-    <p class="intro">Compare the issues raised by schools, edtech firms, E-Rate consultants and other participants. Select any number to read the underlying submissions. The figures count filing records, not verified agreement with an argument.</p>
+    <p class="intro">Compare the issues raised by schools, edtech firms, E-Rate consultants and other participants. Select any number to read the underlying submissions. The percentages count distinct FCC submitters, collapsing repeated filings by the same normalized filer. They do not establish agreement with an argument.</p>
     <p class="scope-caution"><strong>Snapshot boundary:</strong> This analysis is frozen at the October 20, 2026 source collection, not a live FCC docket feed. The FCC set a November 12, 2026 deadline for reply comments, which are not automatically added here. Post-snapshot filings and replies can change the stakeholder picture. <a href="https://www.fcc.gov/ecfs/" target="_blank" rel="noopener noreferrer">Check the current ECFS record</a>.</p>
     <p id="load-status" role="status" class="status">Loading the research index…</p>
   </section>
@@ -85,7 +85,7 @@
       <div>
         <p class="kicker">01 / Compare the record</p>
         <h2>Arguments by stakeholder</h2>
-        <p>Choose what the percentages mean. Columns are exclusive stakeholder filing categories; a joint institutional filing is counted once.</p>
+        <p>Choose what the percentages mean. Columns are stakeholder categories, with each distinct submitter counted once per category and argument. Joint filings remain one source record.</p>
       </div>
       <div class="heading-actions"><a class="outline" href="./data/industry_argument_review.csv" download="erate_industry_full_argument_review.csv">Review queue incl. missed arguments (CSV)</a><button type="button" id="industry-audit-export" class="outline">Export detected industry arguments</button><button type="button" id="matrix-export" class="outline">Export frequency matrix (CSV)</button></div>
     </div>
@@ -118,9 +118,9 @@
       </label>
       <label>Show
         <select id="measure">
-          <option value="within">Share of each stakeholder group</option>
-          <option value="topic">Share of filings on each argument</option>
-          <option value="count">Number of filings</option>
+          <option value="within">Share of distinct submitters in group</option>
+          <option value="topic">Share of submitters on each argument</option>
+          <option value="count">Number of distinct submitters</option>
         </select>
       </label>
       <label>Text analyzed
@@ -132,7 +132,7 @@
     </div>
     <p class="scope-message" id="scope-message" role="status"></p>
     <div class="legend">
-      <span id="measure-explanation">Within group = filings with this argument ÷ all filings assigned to this group.</span>
+      <span id="measure-explanation">Within group = distinct submitters with this argument ÷ distinct submitters in the group.</span>
       <span class="legend-gradient" aria-hidden="true"></span><span>Lower to higher frequency</span>
     </div>
     <div class="table-scroll" role="region" aria-label="Stakeholder by argument frequency table" tabindex="0">
@@ -144,7 +144,7 @@
     <p id="matrix-empty" class="notice" hidden>No argument topics match your filters. Try another issue area or clear the search.</p>
     <p id="industry-audit-status" class="status" role="status"></p>
     <p class="fineprint" id="audit-status"></p>
-    <p class="fineprint">One filing may raise several topics; percentages are not additive. The darkest cell is the largest rate in the current view, not a measure of endorsement. Small groups can show large percentages from one filing. Classification is machine-assisted and not independently adjudicated.</p>
+    <p class="fineprint">One submitter may raise several topics or appear in multiple groups; percentages across topics are not additive. The darkest cell is the largest rate in the current view, not a measure of endorsement. Small groups can show large percentages from one filing. Classification is machine-assisted and not independently adjudicated.</p>
   </section>
 
   <details class="identity-note" id="identity-note">
@@ -206,9 +206,9 @@
   <section class="method" id="methods">
     <h2>Reading the numbers correctly</h2>
     <div class="method-grid">
-      <p><strong>Within stakeholder</strong> is the number of filings assigned to a group that contain an extracted argument, divided by all filings in that group, including filings with no detected theme.</p>
-      <p><strong>Within argument</strong> is the number of filings raising an argument from a particular group, divided by all indexed filings with that argument.</p>
-      <p><strong>Unique texts</strong> help identify repeated language. Filings, organizations, unique texts and supporters are different units; this analysis does not equate them.</p>
+      <p><strong>Within stakeholder</strong> is the share of distinct FCC submitters in the group with an extracted argument, including submitters with no detected themes in the denominator.</p>
+      <p><strong>Within argument</strong> is the share of commenter–group assignments raising a given argument attributable to that stakeholder group. A person appearing in two groups may count once in each.</p>
+      <p><strong>Deduplication</strong> uses normalized FCC submitter metadata, not matching text. Repeated filings from one named filer count once per group and theme. Placeholder identities remain separate; name collisions and variants can still distort unique-person counts. Source filings, unique texts, organizations, and actual supporters are different units.</p>
       <p><strong>Positions need separate verification.</strong> Machine-extracted claims can misidentify the speaker or reverse a policy direction. The NTIA listening-session compilation is not counted as the agency adopting third-party positions.</p>
     </div>
     <p><strong>Checking missing arguments:</strong> The <a href="./data/industry_argument_review.csv" download>review queue</a> assigns known ed-tech and consultant filing candidates and joint institutional submissions to each current priority topic, alongside reproducibly sampled positive and negative controls from comparison groups. The precise number of topics and review assignments is recorded in the exported summary. Blank reviews deliberately include <em>not detected by the model</em> rows. They are not findings that an argument is absent. Confirm the actual speaker, complete source, requested action and supporting evidence before treating any extracted statement as endorsed.</p>
