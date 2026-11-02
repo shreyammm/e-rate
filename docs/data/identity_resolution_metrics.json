@@ -1,47 +1,41 @@
 {
   "schema_version": "identity-resolution-audit-v1",
   "source_filings": 3231,
-  "review_required": 23,
-  "usable_without_review": 3208,
+  "review_required": 20,
+  "usable_without_review": 3211,
   "confidence_counts": {
-    "medium": 1296,
-    "high": 1351,
+    "medium": 1298,
+    "high": 1352,
     "not_established": 561,
-    "low": 23
+    "low": 20
   },
   "review_reason_counts": {
-    "capacity_clue_without_role": 15,
+    "capacity_clue_without_role": 12,
     "unresolved_capacity": 7,
     "conflicting_source_cues": 1
   },
   "capacity_not_stated_not_assumed": 561,
   "attribution_questions_separate": 1142,
-  "externally_supported_role_count": 17,
+  "externally_supported_role_count": 20,
   "source_context_classifications": 929,
   "classification_basis_counts": {
     "multi_party_metadata_affiliation_candidate": 520,
-    "provisional_full_text_role": 777,
+    "provisional_full_text_role": 774,
     "filer_field_organization": 812,
     "author_self_description": 828,
     "curated_company_type_candidate": 23,
     "source_letterhead_or_signature": 140,
     "signed_role_and_organization": 79,
+    "externally_corrob_professional_role": 20,
     "signed_role": 23,
-    "externally_corrob_professional_role": 17,
     "joint_institutional_metadata": 12
   },
   "review_roles": {
-    "named_person_capacity_unstated": 15,
+    "named_person_capacity_unstated": 12,
     "unresolved": 7,
     "school_educator": 1
   },
   "review_candidate_records": [
-    {
-      "id": "26109999174",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
     {
       "id": "26110023531",
       "candidate_role": "named_person_capacity_unstated",
@@ -50,12 +44,6 @@
     },
     {
       "id": "26110071991",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110072909",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
@@ -71,12 +59,6 @@
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110075824",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
     },
     {
       "id": "26110076030",
@@ -203,9 +185,9 @@
     "26110081310"
   ],
   "unresolved_sample_ids": [
-    "26109999174",
-    "26110076482",
-    "26110079870"
+    "26110023531",
+    "26110077868",
+    "26110079940"
   ],
   "spotcheck_filing_ids": {
     "10604263924780": {
