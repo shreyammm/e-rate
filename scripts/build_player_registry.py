@@ -51,6 +51,7 @@ ROLE_LABELS = {
     'procurement_adviser': 'Procurement or grant adviser',
     'trade_association': 'Trade or professional association',
     'advocacy_organization': 'Advocacy or nonprofit organization',
+    'nonprofit_service_provider': 'Nonprofit provider of educational or community services',
     'parent_guardian': 'Parent or caregiver',
     'student': 'Student',
     'government': 'Government or tribal institution',
