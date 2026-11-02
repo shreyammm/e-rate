@@ -1,24 +1,31 @@
 {
   "schema": "machine-direction-conflict-review-v1",
-  "generated_utc": "2026-11-02T12:49:11.220252+00:00",
+  "generated_utc": "2026-11-02T13:06:35.558012+00:00",
   "source_machine_ledger_sha256": "c5768a53d3a29644fe12f9f385594be78eacdb16ae395ea4f0694b260a67c3aa",
-  "source_census_registry_sha256": "61abcad61e8afd1888356b3f150c2c2cf49c6241c9e78ccd2314d01ea486a85e",
+  "source_census_registry_sha256": "77205f28d093ce86658d6bdb222c30990fb1ce9ad1936d69048ee1f5f4554226",
   "status": "UNREVIEWED_MACHINE_LABEL_AMBIGUITIES",
   "filing_issue_pairs_with_both_machine_labels": 1389,
   "same_span_case_count": 45,
-  "cases_selected_for_review": 222,
+  "cases_selected_for_review": 223,
   "review_strata": {
-    "group_stratified_other_mixed_issue": 146,
+    "group_stratified_other_mixed_issue": 145,
     "identical_span_conflicting_machine_labels": 45,
-    "industry_issue_mixed_machine_labels": 31
+    "industry_issue_mixed_machine_labels": 33
   },
   "other_group_sampling": [
     {
       "stakeholder_group": "connectivity_and_network_vendors",
-      "population": 14,
+      "population": 16,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 1.1666666666666667
+      "weight_if_adjudicated": 1.3333333333333333
+    },
+    {
+      "stakeholder_group": "education_networks",
+      "population": 2,
+      "selected": 2,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.0
     },
     {
       "stakeholder_group": "government",
@@ -29,24 +36,24 @@
     },
     {
       "stakeholder_group": "joint_institutional_filings",
-      "population": 23,
+      "population": 24,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 1.9166666666666667
+      "weight_if_adjudicated": 2.0
     },
     {
       "stakeholder_group": "libraries",
-      "population": 62,
+      "population": 61,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 5.166666666666667
+      "weight_if_adjudicated": 5.083333333333333
     },
     {
       "stakeholder_group": "nonprofits_and_advocacy",
-      "population": 56,
+      "population": 60,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 4.666666666666667
+      "weight_if_adjudicated": 5.0
     },
     {
       "stakeholder_group": "other_associations",
@@ -57,45 +64,45 @@
     },
     {
       "stakeholder_group": "other_businesses",
-      "population": 7,
-      "selected": 7,
+      "population": 4,
+      "selected": 4,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
       "weight_if_adjudicated": 1.0
     },
     {
       "stakeholder_group": "other_or_unidentified",
-      "population": 79,
+      "population": 71,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 6.583333333333333
+      "weight_if_adjudicated": 5.916666666666667
     },
     {
       "stakeholder_group": "parents",
-      "population": 47,
+      "population": 46,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 3.9166666666666665
+      "weight_if_adjudicated": 3.8333333333333335
     },
     {
       "stakeholder_group": "school_affiliation_uncertain",
-      "population": 126,
+      "population": 100,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 10.5
+      "weight_if_adjudicated": 8.333333333333334
     },
     {
       "stakeholder_group": "school_institutions",
-      "population": 319,
+      "population": 389,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 26.583333333333332
+      "weight_if_adjudicated": 32.416666666666664
     },
     {
       "stakeholder_group": "school_professionals",
-      "population": 514,
+      "population": 472,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 42.833333333333336
+      "weight_if_adjudicated": 39.333333333333336
     },
     {
       "stakeholder_group": "telecom_associations",
