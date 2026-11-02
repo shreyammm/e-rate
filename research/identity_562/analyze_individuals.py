@@ -12,6 +12,7 @@ Broad, explicitly self-declared *civic* capacities remain separate from jobs.
 from __future__ import annotations
 
 import argparse
+import csv
 import gzip
 import hashlib
 import json
@@ -582,6 +583,49 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
     (output/"summary.json").write_text(json.dumps(report,indent=2,ensure_ascii=False)+"\n")
     (output/"review_queue.json").write_text(json.dumps({"summary":report,"records":rows},
                                                      indent=2,ensure_ascii=False)+"\n")
+    # Analyst-facing spreadsheet with ALL source IDs, never raw names/contact
+    # data or an unverified employment claim. Rank source-only and cross-model
+    # conflicts first so human review has the highest expected information gain.
+    def rank(x):
+        if x["institutional_submission_role_lead"]:
+            return 95
+        if x["independent_model_role_lead"] in ("school_staff","school_district","library",
+                                                "parent_guardian","researcher"):
+            return 85 if x["new_primary_role_candidate"] is None else 45
+        if x["new_primary_role_candidate"] is not None:
+            return 65
+        if x["independent_model_role_lead"]=="advocacy_group":
+            return 35
+        if x["suspected_template_cluster"]:
+            return 18
+        return 10 if x["source_chars"]>500 else 3
+    fieldnames=["filing_id","source_url","review_priority",
+                "existing_role","source_supported_capacity",
+                "source_evidence_id","evidence_confidence","independent_model_hint",
+                "explicit_institutional_author_role_lead","institutional_name_lead",
+                "observed_template_cluster","source_length_band",
+                "topic_interest_codes","disposition","adjudicated"]
+    with (output/"identity_review_567.csv").open("w",encoding="utf8",newline="") as stream:
+        writer=csv.DictWriter(stream,fieldnames=fieldnames)
+        writer.writeheader()
+        for row in sorted(rows,key=lambda x:(-rank(x),x["filing_id"])):
+            writer.writerow({
+                "filing_id":row["filing_id"],
+                "source_url":row["source_url"],
+                "review_priority":rank(row),
+                "existing_role":row["current_role"],
+                "source_supported_capacity":row["new_primary_role_candidate"] or "",
+                "source_evidence_id":row["identity_basis"] or "",
+                "evidence_confidence":row["confidence"],
+                "independent_model_hint":row["independent_model_role_lead"] or "",
+                "explicit_institutional_author_role_lead":row["institutional_submission_role_lead"] or "",
+                "institutional_name_lead":row["institutional_submission_name_lead"] or "",
+                "observed_template_cluster":(row["suspected_template_cluster"] or {}).get("cluster_id",""),
+                "source_length_band":row["source_length_band"],
+                "topic_interest_codes":"|".join(row["detected_argument_themes"]),
+                "disposition":row["independent_capacity_kind"],
+                "adjudicated":"NO",
+            })
     print(json.dumps({k:report[k] for k in (
         "filing_target_count","primary_role_counts","disposition_counts",
         "template_participant_filings",
