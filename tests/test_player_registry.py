@@ -33,7 +33,8 @@ class PlayerIdentityTest(unittest.TestCase):
            'On behalf of our school clients we submit this filing.')
         self.assertEqual(x['role'],'erate_consultant')
         self.assertTrue(x['speaker_is_proxy_possible'])
-        self.assertTrue(x['needs_review'])
+        self.assertTrue(x['attribution_review'])
+        self.assertFalse(x['needs_review'])
     def test_sanitize_mixed_identifiers(self):
         self.assertEqual(organization_label('Joe Smith, ABC School District'),'')
         self.assertEqual(organization_label('Jane Doe jane@example.com'),'')
@@ -179,7 +180,8 @@ class PlayerIdentityTest(unittest.TestCase):
             'On behalf of our school clients we ask for simpler requirements.')
         self.assertEqual(x['role'],'erate_consultant')
         self.assertTrue(x['speaker_is_proxy_possible'])
-        self.assertTrue(x['needs_review'])
+        self.assertTrue(x['attribution_review'])
+        self.assertFalse(x['needs_review'])
 
     def test_quoted_consultant_reference_not_self_identification(self):
         x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
@@ -195,6 +197,41 @@ class PlayerIdentityTest(unittest.TestCase):
             'I work for a local education nonprofit and would like to comment on E-Rate.')
         self.assertTrue(x['needs_review'])
         self.assertEqual(x['identity_review_reason'],'capacity_clue_without_role')
+
+    def test_parent_taxpayer_context(self):
+        x=inferred_identity({'filer_raw':'Lisa Cline'},'named_person_capacity_unstated',
+            'I wish to supply comments regarding E-Rate. As a taxpayer and a parent, '
+            'I object to Wi-Fi hotspots.')
+        self.assertEqual(x['role'],'parent_guardian')
+        self.assertFalse(x['needs_review'])
+
+    def test_library_first_person_affiliation_without_employment_claim(self):
+        x=inferred_identity({'filer_raw':'Stephen Lackey'},'named_person_capacity_unstated',
+            'Our library is their broadband. Our library provides internet service to residents.')
+        self.assertEqual(x['role'],'library_affiliated')
+        self.assertFalse(x['needs_review'])
+        self.assertEqual(x['identity_confidence'],'medium')
+
+    def test_school_first_person_affiliation_without_specific_job(self):
+        x=inferred_identity({'filer_raw':'John Doe'},'school_district_or_school',
+            'Our district serves 2,000 students. E-Rate connectivity is vital.')
+        self.assertEqual(x['role'],'school_connected_unknown')
+        self.assertEqual(x['identity_status'],'source_inferred')
+        self.assertFalse(x['needs_review'])
+
+    def test_adtec_organization_external_e_rate_identity(self):
+        for name in ['AdTec', 'AdTec E-Rate Administrative and Technical Consulting']:
+            with self.subTest(name=name):
+                x=inferred_identity({'filer_raw':name},'unresolved',
+                    'We provide E-Rate support to schools and libraries.')
+                self.assertEqual(x['role'],'erate_consultant')
+                self.assertEqual(x['industry_focus'],'erate_consulting')
+                self.assertFalse(x['needs_review'])
+
+    def test_generic_parent_policy_discussion_not_personal_parent(self):
+        x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
+            'Parents should be able to opt students out of screen use.')
+        self.assertEqual(x['role'],'named_person_capacity_unstated')
 
     def test_co_signers_not_inferred_as_independent_filings(self):
         from scripts.build_player_registry import submitted_by_multiple_entities
