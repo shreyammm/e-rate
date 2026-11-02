@@ -1,10 +1,10 @@
 {
-  "generated_utc": "2026-11-02T15:19:15.646003+00:00",
+  "generated_utc": "2026-11-02T15:20:24.371663+00:00",
   "method": "Conservatively merge exact normalized FCC filer fields. Placeholder/missing filer names remain separate, with no text-based merging. Identical names may conceal different people and name variants may split one person. Multi-group submitters can appear in more than one group. Counts are not verified endorsements.",
   "coverage": {
     "filings": 3231,
     "unique_commenters": 2820,
-    "commenter_group_assignments": 2828
+    "commenter_group_assignments": 2829
   },
   "metadata_diagnostics": {
     "records": 3231,
@@ -77,6 +77,24 @@
       "commenters": 113
     },
     {
+      "id": "students",
+      "label": "Students",
+      "filings": 2,
+      "commenters": 2
+    },
+    {
+      "id": "researchers",
+      "label": "Researchers and health professionals",
+      "filings": 7,
+      "commenters": 6
+    },
+    {
+      "id": "individual_capacity_unstated",
+      "label": "Individuals (occupation not stated)",
+      "filings": 567,
+      "commenters": 562
+    },
+    {
       "id": "edtech_vendors",
       "label": "Edtech companies",
       "filings": 5,
@@ -144,9 +162,9 @@
     },
     {
       "id": "other_or_unidentified",
-      "label": "Other or unidentified",
-      "filings": 583,
-      "commenters": 575
+      "label": "Unresolved or unclassified",
+      "filings": 7,
+      "commenters": 6
     }
   ],
   "topics": [
