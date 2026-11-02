@@ -1,14 +1,14 @@
 {
   "schema": "machine-direction-conflict-review-v1",
-  "generated_utc": "2026-11-02T15:17:20.802688+00:00",
+  "generated_utc": "2026-11-02T15:20:05.957130+00:00",
   "source_machine_ledger_sha256": "c5768a53d3a29644fe12f9f385594be78eacdb16ae395ea4f0694b260a67c3aa",
-  "source_census_registry_sha256": "83f0cf10823ba71551089f51bef4dfab12b653798224db27ba8f46b8a845303d",
+  "source_census_registry_sha256": "4a4982ba7c76114a3f3b2f07d4cac6c028806570f85734959b954c94b2285a05",
   "status": "UNREVIEWED_MACHINE_LABEL_AMBIGUITIES",
   "filing_issue_pairs_with_both_machine_labels": 1389,
   "same_span_case_count": 45,
-  "cases_selected_for_review": 227,
+  "cases_selected_for_review": 231,
   "review_strata": {
-    "group_stratified_other_mixed_issue": 149,
+    "group_stratified_other_mixed_issue": 153,
     "identical_span_conflicting_machine_labels": 45,
     "industry_issue_mixed_machine_labels": 33
   },
@@ -33,6 +33,13 @@
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
       "weight_if_adjudicated": 3.3333333333333335
+    },
+    {
+      "stakeholder_group": "individual_capacity_unstated",
+      "population": 41,
+      "selected": 12,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 3.4166666666666665
     },
     {
       "stakeholder_group": "joint_institutional_filings",
@@ -78,10 +85,10 @@
     },
     {
       "stakeholder_group": "other_or_unidentified",
-      "population": 45,
-      "selected": 12,
+      "population": 1,
+      "selected": 1,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 3.75
+      "weight_if_adjudicated": 1.0
     },
     {
       "stakeholder_group": "parents",
@@ -91,11 +98,18 @@
       "weight_if_adjudicated": 3.8333333333333335
     },
     {
+      "stakeholder_group": "researchers",
+      "population": 2,
+      "selected": 2,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.0
+    },
+    {
       "stakeholder_group": "school_affiliation_uncertain",
-      "population": 97,
+      "population": 93,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 8.083333333333334
+      "weight_if_adjudicated": 7.75
     },
     {
       "stakeholder_group": "school_institutions",
@@ -106,10 +120,17 @@
     },
     {
       "stakeholder_group": "school_professionals",
-      "population": 474,
+      "population": 478,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 39.5
+      "weight_if_adjudicated": 39.833333333333336
+    },
+    {
+      "stakeholder_group": "students",
+      "population": 1,
+      "selected": 1,
+      "selection": "deterministic_pseudorandom_filing_issue_pairs",
+      "weight_if_adjudicated": 1.0
     },
     {
       "stakeholder_group": "telecom_associations",
