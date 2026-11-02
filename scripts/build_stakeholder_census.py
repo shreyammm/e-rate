@@ -293,6 +293,17 @@ def load_submitter_ids(manifest_path,registry):
                 tokens[fid]=submitter_token(row.get('filer_raw'),fid)
     if set(tokens)!=expected:raise ValueError('Filer identity coverage mismatch')
     opaque={key:'s'+str(i+1).zfill(5) for i,key in enumerate(sorted(set(tokens.values())))}
+    distinct_counts=Counter(tokens.values())
+    # Public aggregate diagnostics; no original filer names or hashes.
+    load_submitter_ids.summary={
+        'records':len(tokens),
+        'unique_normalized_raw_filer_fields':len(set(tokens.values())),
+        'repeated_identifiers':sum(n>1 for n in distinct_counts.values()),
+        'filings_in_repeated_identifiers':sum(n for n in distinct_counts.values() if n>1),
+        'largest_repeat_cluster_sizes':sorted((n for n in distinct_counts.values() if n>1),reverse=True)[:12],
+        'fallback_filing_identities':sum(token.startswith('filing:') for token in tokens.values()),
+        'raw_fields_blank':sum(not normalize_submitter_name(token) for token in []),
+    }
     return {fid:opaque[key] for fid,key in tokens.items()}
 
 def compute(registry, claims, quality, context_audit=None, manifest=None, ledger_digest='', submitter_ids=None):
@@ -526,6 +537,7 @@ def build(registry=REGISTRY,claim_path=CLAIMS,quality_path=QUALITY,audit_path=AU
         'method':payload['method']['deduplication'],
         'coverage':{k:payload['coverage'][k] for k in
                     ('filings','unique_commenters','commenter_group_assignments')},
+        'metadata_diagnostics':getattr(load_submitter_ids,'summary',{}),
         'groups':[{k:g[k] for k in ('id','label','filings','commenters')}
                   for g in payload['stakeholder_groups']],
         'topics':[{k:t[k] for k in ('id','label','filings','commenters','commenter_group_assignments')}
