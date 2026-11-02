@@ -1,12 +1,12 @@
 {
   "schema_version": "unstated-identity-source-audit-v1",
   "scope": "Every filing whose current identity is flagged or whose capacity is unstated",
-  "population": 576,
+  "population": 575,
   "disposition_counts": {
     "incomplete_or_ocr_source": 4,
     "no_explicit_professional_capacity_found": 552,
     "possible_affiliation_needs_full_source_review": 18,
-    "source_identity_evidence_needs_reconciliation": 2
+    "source_identity_evidence_needs_reconciliation": 1
   },
   "note": "Source-level machine triage, not individual human adjudication. Do not infer employer or authority solely from discussion of a sector.",
   "records": [
@@ -8113,24 +8113,6 @@
       ],
       "candidate_capacity": "",
       "candidate_organization": "Special Education Services",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110079905",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079905",
-      "current_role": "school_educator",
-      "current_identity_status": "source_conflict",
-      "source_sha256": "cfe12978a82e834b75bdbc98e3b4faed4c15b27fa0514bfc90e5dd020e51773d",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "self_description",
-        "signature_role",
-        "signature_organization",
-        "potential_employment",
-        "text_available"
-      ],
-      "candidate_capacity": "school_educator",
-      "candidate_organization": "Moscow Senior High School",
       "requires_human_confirmation": true
     }
   ]

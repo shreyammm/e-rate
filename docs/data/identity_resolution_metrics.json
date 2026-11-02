@@ -1,39 +1,37 @@
 {
   "schema_version": "identity-resolution-audit-v1",
   "source_filings": 3231,
-  "review_required": 16,
-  "usable_without_review": 3215,
+  "review_required": 15,
+  "usable_without_review": 3216,
   "confidence_counts": {
     "medium": 1301,
-    "high": 1354,
+    "high": 1355,
     "not_established": 560,
-    "low": 16
+    "low": 15
   },
   "review_reason_counts": {
     "capacity_clue_without_role": 8,
-    "unresolved_capacity": 7,
-    "conflicting_source_cues": 1
+    "unresolved_capacity": 7
   },
   "capacity_not_stated_not_assumed": 560,
   "attribution_questions_separate": 1142,
-  "externally_supported_role_count": 23,
+  "externally_supported_role_count": 24,
   "source_context_classifications": 931,
   "classification_basis_counts": {
     "multi_party_metadata_affiliation_candidate": 520,
     "provisional_full_text_role": 770,
     "filer_field_organization": 812,
-    "author_self_description": 829,
+    "author_self_description": 828,
     "curated_company_type_candidate": 23,
     "source_letterhead_or_signature": 140,
     "signed_role_and_organization": 79,
-    "externally_corrob_professional_role": 23,
+    "externally_corrob_professional_role": 24,
     "signed_role": 23,
     "joint_institutional_metadata": 12
   },
   "review_roles": {
     "named_person_capacity_unstated": 8,
-    "unresolved": 7,
-    "school_educator": 1
+    "unresolved": 7
   },
   "review_candidate_records": [
     {
@@ -107,12 +105,6 @@
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110079905",
-      "candidate_role": "school_educator",
-      "organization": "Moscow Senior High School",
-      "reason": "conflicting_source_cues"
     },
     {
       "id": "26110079940",
