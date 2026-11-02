@@ -1,14 +1,14 @@
 {
   "schema": "machine-direction-conflict-review-v1",
-  "generated_utc": "2026-11-01T16:55:14.970575+00:00",
+  "generated_utc": "2026-11-02T12:18:04.151403+00:00",
   "source_machine_ledger_sha256": "c5768a53d3a29644fe12f9f385594be78eacdb16ae395ea4f0694b260a67c3aa",
-  "source_census_registry_sha256": "76be05724f9c9c550f30fe422daa8e6f6194f9796cf6838282d617959b85db0f",
+  "source_census_registry_sha256": "bb8a0661d0d9a41e49a4214e67ef7132e6573ccfe7d97c77e50eb726c41ca1d7",
   "status": "UNREVIEWED_MACHINE_LABEL_AMBIGUITIES",
   "filing_issue_pairs_with_both_machine_labels": 1389,
   "same_span_case_count": 45,
-  "cases_selected_for_review": 211,
+  "cases_selected_for_review": 213,
   "review_strata": {
-    "group_stratified_other_mixed_issue": 143,
+    "group_stratified_other_mixed_issue": 145,
     "identical_span_conflicting_machine_labels": 45,
     "industry_issue_mixed_machine_labels": 23
   },
@@ -22,10 +22,10 @@
     },
     {
       "stakeholder_group": "government",
-      "population": 25,
+      "population": 36,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 2.0833333333333335
+      "weight_if_adjudicated": 3.0
     },
     {
       "stakeholder_group": "joint_institutional_filings",
@@ -36,71 +36,71 @@
     },
     {
       "stakeholder_group": "libraries",
-      "population": 58,
+      "population": 59,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 4.833333333333333
+      "weight_if_adjudicated": 4.916666666666667
     },
     {
       "stakeholder_group": "nonprofits_and_advocacy",
-      "population": 57,
+      "population": 54,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 4.75
+      "weight_if_adjudicated": 4.5
     },
     {
       "stakeholder_group": "other_associations",
-      "population": 20,
+      "population": 23,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 1.6666666666666667
+      "weight_if_adjudicated": 1.9166666666666667
     },
     {
       "stakeholder_group": "other_businesses",
-      "population": 9,
-      "selected": 9,
+      "population": 6,
+      "selected": 6,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
       "weight_if_adjudicated": 1.0
     },
     {
       "stakeholder_group": "other_or_unidentified",
-      "population": 155,
+      "population": 127,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 12.916666666666666
+      "weight_if_adjudicated": 10.583333333333334
     },
     {
       "stakeholder_group": "parents",
-      "population": 37,
+      "population": 41,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 3.0833333333333335
+      "weight_if_adjudicated": 3.4166666666666665
     },
     {
       "stakeholder_group": "school_affiliation_uncertain",
-      "population": 266,
+      "population": 110,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 22.166666666666668
+      "weight_if_adjudicated": 9.166666666666666
     },
     {
       "stakeholder_group": "school_institutions",
-      "population": 332,
+      "population": 348,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 27.666666666666668
+      "weight_if_adjudicated": 29.0
     },
     {
       "stakeholder_group": "school_professionals",
-      "population": 323,
+      "population": 473,
       "selected": 12,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
-      "weight_if_adjudicated": 26.916666666666668
+      "weight_if_adjudicated": 39.416666666666664
     },
     {
       "stakeholder_group": "telecom_associations",
-      "population": 2,
-      "selected": 2,
+      "population": 7,
+      "selected": 7,
       "selection": "deterministic_pseudorandom_filing_issue_pairs",
       "weight_if_adjudicated": 1.0
     }
