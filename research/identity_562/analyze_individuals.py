@@ -446,11 +446,17 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
     rows=[]
     pattern_counts=Counter()
     primary_counts=Counter()
+    role_unique_names=defaultdict(set)
+    all_name_tokens=set()
     reason_counts=Counter()
     model_hint_counts=Counter()
     interests=Counter()
     for fid,target in sorted(targets.items()):
         r=raw[fid];text=str(r.get("text") or "")
+        # Private counting key is never exported. Exact metadata strings may
+        # collide or differ, so this remains an approximation of individuals.
+        raw_filer=re.sub(r"[^a-z0-9]+"," ",str(r.get("filer_raw") or "").casefold()).strip() or ("filing:"+fid)
+        all_name_tokens.add(raw_filer)
         # A pre-existing model is a *search lead*, not proof of capacity.
         # Do not use it to set the source-backed primary role.
         model_path=ROOT/"data/llm_census_kaggle/filings"/(fid+".json")
@@ -500,6 +506,7 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
         else:
             status="no_source_supported_capacity"
         primary_counts[(main.role if main else "none")]+=1
+        role_unique_names[main.role if main else "none"].add(raw_filer)
         reason_counts[status]+=1
         topics=topic_by_id.get(fid,[])
         interests.update(topics)
@@ -541,6 +548,8 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
         "scope":"Entire existing named_person_capacity_unstated filing cohort on local research branch",
         "publication_status":"EXPERIMENTAL_UNPUBLISHED__NOT_SITE_DATA",
         "filing_target_count":len(rows),
+        "distinct_normalized_filer_fields":len(all_name_tokens),
+        "unique_filer_fields_by_primary_role":{k:len(v) for k,v in role_unique_names.items()},
         "distinct_filing_ids":len({x["filing_id"] for x in rows}),
         "primary_role_counts":dict(primary_counts),
         "pattern_counts":dict(pattern_counts),
