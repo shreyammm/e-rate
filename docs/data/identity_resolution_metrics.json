@@ -1,37 +1,37 @@
 {
   "schema_version": "identity-resolution-audit-v1",
   "source_filings": 3231,
-  "review_required": 56,
-  "usable_without_review": 3175,
+  "review_required": 37,
+  "usable_without_review": 3194,
   "confidence_counts": {
-    "medium": 1284,
-    "high": 1299,
+    "medium": 1298,
+    "high": 1304,
     "not_established": 592,
-    "low": 56
+    "low": 37
   },
   "review_reason_counts": {
-    "capacity_clue_without_role": 28,
-    "unresolved_capacity": 28
+    "capacity_clue_without_role": 24,
+    "unresolved_capacity": 13
   },
   "capacity_not_stated_not_assumed": 592,
-  "attribution_questions_separate": 572,
+  "attribution_questions_separate": 610,
   "externally_supported_role_count": 1,
-  "source_context_classifications": 925,
+  "source_context_classifications": 920,
   "classification_basis_counts": {
-    "multi_party_metadata_affiliation_candidate": 482,
-    "provisional_full_text_role": 841,
-    "filer_field_organization": 779,
-    "author_self_description": 833,
+    "multi_party_metadata_affiliation_candidate": 520,
+    "provisional_full_text_role": 812,
+    "filer_field_organization": 797,
+    "author_self_description": 816,
     "curated_company_type_candidate": 23,
-    "source_letterhead_or_signature": 157,
-    "signed_role_and_organization": 80,
+    "source_letterhead_or_signature": 149,
+    "signed_role_and_organization": 78,
     "signed_role": 23,
     "joint_institutional_metadata": 12,
     "externally_corrob_professional_role": 1
   },
   "review_roles": {
-    "named_person_capacity_unstated": 28,
-    "unresolved": 28
+    "named_person_capacity_unstated": 24,
+    "unresolved": 13
   },
   "review_candidate_records": [
     {
@@ -131,19 +131,7 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110077745",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110077868",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110078095",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
@@ -173,49 +161,13 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110079039",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079259",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079260",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079454",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
       "id": "26110079567",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110079587",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110079749",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079856",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
@@ -239,40 +191,10 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110080222",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110080305",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110080349",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
       "id": "26110080481",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110080606",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110080645",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
     },
     {
       "id": "26110080680",
@@ -281,28 +203,10 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110080737",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
       "id": "26110080767",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110080784",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110080858",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
     },
     {
       "id": "26110080913",
@@ -329,12 +233,6 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110081114",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110081204",
       "candidate_role": "unresolved",
       "organization": "",
@@ -357,22 +255,10 @@
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110081385",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110081466",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
     }
   ],
-  "signature_resolutions": 80,
-  "letterhead_or_signature_org_resolutions": 157,
+  "signature_resolutions": 78,
+  "letterhead_or_signature_org_resolutions": 149,
   "capacity_unstated_sample_ids": [
     "26109834985",
     "26110038471",
@@ -402,10 +288,8 @@
   "unresolved_sample_ids": [
     "26109999174",
     "26110075824",
-    "26110077745",
-    "26110079259",
+    "26110077868",
     "26110079889",
-    "26110080680",
     "26110081084"
   ],
   "spotcheck_filing_ids": {
