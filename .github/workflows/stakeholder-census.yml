@@ -63,6 +63,23 @@ jobs:
           assert x['coverage']['filings']==3231
           assert sum(x['coverage'][k] for k in ('filings_with_coded_topics','filings_without_coded_topics'))==3231
           assert sum(s['filings'] for s in x['stakeholder_groups'])==3231
+          assert x['coverage']['unique_commenters']==len({f['submitter_id'] for f in x['filings']})
+          assert x['coverage']['commenter_group_assignments']==sum(
+              g['commenters'] for g in x['stakeholder_groups'])
+          assert all('submitter_id' in f and f['submitter_id'].startswith('s')
+                     for f in x['filings'])
+          for t in x['topics']:
+            ids={f['submitter_id'] for f in x['filings']
+                 if any(p['topic']==t['id'] for p in f['topics'])}
+            assert len(ids)==t['commenters'],t['id']
+            for group,cell in t['by_stakeholder'].items():
+              voices={f['submitter_id'] for f in x['filings'] if f['group']==group
+                      and any(p['topic']==t['id'] for p in f['topics'])}
+              assert len(voices)==cell['commenters'],(t['id'],group)
+          for rollup in x['stakeholder_rollups']:
+            union={f['submitter_id'] for f in x['filings']
+                   if f['group'] in rollup['included_groups']}
+            assert len(union)==rollup['distinct_submitter_capacity_voices']
           assert len({f['id'] for f in x['filings']})==3231
           for t in x['topics']:
             assert sum(v['filings'] for v in t['by_stakeholder'].values())==t['filings']
