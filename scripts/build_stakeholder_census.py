@@ -16,6 +16,7 @@ import unicodedata
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from scripts.submitter_identity_resolution import (normalize as normalize_filer_field, canonical_org, resolve_submitter)
 
 ROOT=Path(__file__).resolve().parents[1]
 REGISTRY=ROOT/'docs/data/player_registry.json'
@@ -270,23 +271,18 @@ def priority(row):
     return score
 
 def normalize_submitter_name(value):
-    return re.sub(r'[^\w]+',' ',unicodedata.normalize('NFKC',str(value or '')).casefold()).strip()
+    return normalize_filer_field(value)
 
-def submitter_token(raw, filing_id):
-    """Deduplicate exact FCC filer metadata, never shared source text."""
-    name=normalize_submitter_name(raw)
-    placeholders={'','anonymous','unknown','not available','n a','na','none','individual',
-                  'public comment','commenter','private citizen','citizen','parent',
-                  'school','district','library','unidentified'}
-    if name in placeholders or not 4<=len(name)<=220 or not re.search(r'[a-z0-9]',name):
-        return 'filing:'+str(filing_id)
-    return 'filer:'+name
+def submitter_token(raw, filing_id, entry=None):
+    """Ephemeral voice identity, with named-person and organization separate."""
+    return resolve_submitter(raw, filing_id, entry)[0]
 
 def load_submitter_ids(manifest_path,registry):
-    """Source-grounded, opaque corpus-local IDs; no name or name hash published."""
+    """Resolve all primary submitter fields without publishing names."""
     manifest=json.loads(Path(manifest_path).read_text())
-    expected={str(x['id']) for x in registry['filings']}
-    tokens={}
+    registry_by_id={str(x['id']):x for x in registry['filings']}
+    expected=set(registry_by_id)
+    tokens={};bases={};risk={};raw_tokens={}
     for shard in manifest['shards']:
         path=Path(manifest_path).parent/'shards'/shard['name']
         if hashlib.sha256(path.read_bytes()).hexdigest()!=shard['sha256']:
@@ -296,19 +292,24 @@ def load_submitter_ids(manifest_path,registry):
                 if not line.strip():continue
                 row=json.loads(line);fid=str(row['submission_id'])
                 if fid in tokens or fid not in expected:raise ValueError('Unexpected filer ID '+fid)
-                tokens[fid]=submitter_token(row.get('filer_raw'),fid)
+                raw=row.get('filer_raw')
+                token,basis,uncertain=resolve_submitter(raw,fid,registry_by_id[fid])
+                tokens[fid]=token;bases[fid]=basis;risk[fid]=uncertain
+                raw_tokens[fid]=normalize_submitter_name(raw)
     if set(tokens)!=expected:raise ValueError('Filer identity coverage mismatch')
     opaque={key:'s'+str(i+1).zfill(5) for i,key in enumerate(sorted(set(tokens.values())))}
-    distinct_counts=Counter(tokens.values())
-    registry_by_id={str(f['id']):f for f in registry['filings']}
-    members=defaultdict(list)
-    for fid,token in tokens.items():members[token].append(fid)
-    repeat_profiles=[]
-    for token,ids in sorted(members.items(),key=lambda kv:(-len(kv[1]),kv[0])):
+    # Original raw fields are held ONLY for the in-memory audit; none are output.
+    members=defaultdict(list);raw_members=defaultdict(list)
+    for fid,token in tokens.items():
+        members[token].append(fid)
+        raw_members[raw_tokens[fid]].append(fid)
+    profiles=[]
+    for raw,ids in sorted(raw_members.items(),key=lambda kv:(-len(kv[1]),kv[0])):
         if len(ids)<2:continue
         entries=[registry_by_id[fid] for fid in ids]
-        orgs=sorted({str(e.get('organization') or '') for e in entries if e.get('organization')})
-        repeat_profiles.append({
+        orgs=sorted({str(e.get('organization') or '') for e in entries
+                     if canonical_org(e.get('organization'))})
+        profiles.append({
             'filings':len(ids),
             'role_counts':dict(Counter(e.get('role','unresolved') for e in entries)),
             'stakeholder_group_counts':dict(Counter(stakeholder_group(e) for e in entries)),
@@ -316,19 +317,40 @@ def load_submitter_ids(manifest_path,registry):
             'distinct_organization_candidates':len(orgs),
             'distinct_source_texts':len({e.get('text_sha256') for e in entries if e.get('text_sha256')}),
             'example_filing_ids':sorted(ids)[:4],
-            'organization_annotation_coverage':sum(bool(e.get('organization')) for e in entries),
-            'repeat_metadata_type':'unresolved_filer_metadata' if token.startswith('filing:') else
-                                   'repeat_exact_normalized_filer_field'
+            'distinct_resolved_voices':len({tokens[fid] for fid in ids}),
+            'resolution_methods':dict(Counter(bases[fid] for fid in ids)),
+            'requires_relationship_review':sum(risk[fid] for fid in ids),
         })
-        if len(repeat_profiles)>=16:break
-    # Public aggregate diagnostics; no raw personal names or name hashes.
+        if len(profiles)>=20:break
+    raw_splits=[]
+    for raw,ids in raw_members.items():
+        if len(ids)<2 or len({tokens[fid] for fid in ids})<2:continue
+        entries=[registry_by_id[fid] for fid in ids]
+        raw_splits.append({
+            'filings':len(ids),'distinct_resolved_voices':len({tokens[fid] for fid in ids}),
+            'source_filing_ids':sorted(ids)[:10],
+            'organization_candidates':sorted({str(e.get('organization') or '')
+                for e in entries if canonical_org(e.get('organization'))})[:8],
+            'stakeholder_groups':dict(Counter(stakeholder_group(e) for e in entries)),
+            'resolution_methods':dict(Counter(bases[fid] for fid in ids)),
+        })
+    raw_splits.sort(key=lambda x:(-x['filings'],x['source_filing_ids']))
+    counts=Counter(tokens.values())
+    raw_counts=Counter(raw_tokens.values())
+    load_submitter_ids.methods=bases
+    load_submitter_ids.risk=risk
     load_submitter_ids.summary={
         'records':len(tokens),
-        'unique_normalized_raw_filer_fields':len(set(tokens.values())),
-        'repeated_identifiers':sum(n>1 for n in distinct_counts.values()),
-        'filings_in_repeated_identifiers':sum(n for n in distinct_counts.values() if n>1),
-        'largest_repeat_cluster_sizes':sorted((n for n in distinct_counts.values() if n>1),reverse=True)[:12],
-        'largest_repeat_cluster_profiles':repeat_profiles,
+        'unique_normalized_raw_filer_fields':len(raw_counts),
+        'distinct_submitter_capacity_identities':len(counts),
+        'repeated_identifiers':sum(n>1 for n in counts.values()),
+        'filings_in_repeated_identifiers':sum(n for n in counts.values() if n>1),
+        'largest_repeat_cluster_sizes':sorted((n for n in raw_counts.values() if n>1),reverse=True)[:12],
+        'largest_repeat_cluster_profiles':profiles,
+        'raw_name_collisions_split_by_affiliation':raw_splits[:50],
+        'total_raw_names_split_by_affiliation':len(raw_splits),
+        'resolution_methods':dict(Counter(bases.values())),
+        'records_with_identity_relationship_uncertainty':sum(risk.values()),
         'fallback_filing_identities':sum(token.startswith('filing:') for token in tokens.values()),
     }
     return {fid:opaque[key] for fid,key in tokens.items()}
@@ -412,6 +434,8 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             })
         records.append({
             'id':fid,'role':f['role'],'group':group,'submitter_id':person,
+            'submitter_identity_basis':getattr(load_submitter_ids,'methods',{}).get(fid,'filing_record'),
+            'submitter_identity_review_required':getattr(load_submitter_ids,'risk',{}).get(fid,False),
             'industry_focus':f.get('industry_focus','unspecified'),
             'organization':f.get('organization',''),
             'text_sha256':f.get('text_sha256',''),
@@ -499,8 +523,8 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
         'schema':'stakeholder-arguments-v1',
         'generated_utc':datetime.now(timezone.utc).isoformat(),
         'method':{
-            'unit':'Unique metadata submitters, each counted once per stakeholder group and topic; raw filing counts retained for source audit.',
-            'deduplication':'Conservatively merge exact normalized FCC filer fields. Placeholder/missing filer names remain separate, with no text-based merging. Identical names may conceal different people and name variants may split one person. Multi-group submitters can appear in more than one group. Counts are not verified endorsements.',
+            'unit':'Distinct identified submitter–capacity voices; each counted once per group and topic. A person representing different organizations can be counted separately; raw filing counts are preserved for auditing.',
+            'deduplication':'Resolve FCC filer metadata as institution, named person, or person–represented-organization pair using original filer fields and source-derived institutional affiliation. Different represented organizations are distinct capacities; organizational aliases are canonicalized only with evidence. Missing identities remain separate. Ambiguous entries are flagged for review. This is a count of submitter-capacity voices, not independently verified unique people, endorsements, or representative opinion.',
             'argument_detection':'Analyst theme rules applied only to source-quoted, model-extracted claims/actions; original full-text keyword hits do not count.',
             'direction':'No published support/oppose count; existing machine stance polarity is not validated.',
             'attribution':'Original participant quotes can be reported by a different filer. NTIA listening-session summary excluded from agency-position topic tallies; context flags and identity uncertainty retained.',
