@@ -156,18 +156,14 @@ def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -
     return next(o for o in orgs if o)
 
 def personal_name_with_postnominals(raw: str) -> bool:
-    """Filer is a named person with commonplace suffixes, not an institution.
-
-    Degrees and honorifics do not themselves establish who the person represents.
-    """
+    """Recognize personal names bearing degree or generational suffixes."""
     raw = str(raw or '').strip()
-    base = re.sub(
-        r'(?:,?\\s+(?:Jr\\.?|Sr\\.?|II|III|IV|MD|M\\.D\\.|MPH|MS|M\\.S\\.|PhD|Ph\\.D\\.))+\\s*
-    """Multiple named signatories, without implying private capacity.
+    suffix = re.compile(r'(?:,?\s+(?:Jr\.?|Sr\.?|II|III|IV|MD|MPH|MS|PhD))+\s*$', re.I)
+    base = suffix.sub('', raw)
+    return base != raw and personal_name_format(base)
 
-    ECFS uses pipes for some multi-person filings and commas for others.
-    Reject docket numbers, job titles and institution-valued strings.
-    """
+def multiple_person_names_only(raw: str) -> bool:
+    """Recognize two to six personal names separated by pipes or commas."""
     raw = str(raw or '').strip()
     if '|' in raw:
         parts = [p.strip() for p in raw.split('|')]
