@@ -357,6 +357,19 @@ def load_submitter_ids(manifest_path,registry):
     raw_splits.sort(key=lambda x:(-x['filings'],x['source_filing_ids']))
     counts=Counter(tokens.values())
     raw_counts=Counter(raw_tokens.values())
+    repeated_review=[]
+    for key,ids in members.items():
+        # Members was created after affiliation propagation and key reassignment.
+        if len(ids)<2 or not any(risk[fid] for fid in ids):continue
+        repeated_review.append({
+            'filing_count':len(ids),
+            'filing_ids':sorted(ids)[:12],
+            'stakeholder_groups':dict(Counter(stakeholder_group(registry_by_id[fid]) for fid in ids)),
+            'identity_resolution_methods':dict(Counter(bases[fid] for fid in ids)),
+            'uncertain_record_count':sum(risk[fid] for fid in ids),
+        })
+    repeated_review.sort(key=lambda x:(-x['filing_count'],x['filing_ids']))
+
     load_submitter_ids.methods=bases
     load_submitter_ids.risk=risk
     load_submitter_ids.summary={
@@ -373,6 +386,8 @@ def load_submitter_ids(manifest_path,registry):
         'single_affiliation_inferred_for_repeated_filer_records':len(inferred_links),
         'inferred_single_affiliation_example_ids':sorted(inferred_links)[:20],
         'records_with_identity_relationship_uncertainty':sum(risk.values()),
+        'repeat_clusters_with_identity_relationship_uncertainty':len(repeated_review),
+        'repeated_filer_identity_review_queue':repeated_review[:60],
         'fallback_filing_identities':sum(token.startswith('filing:') for token in tokens.values()),
     }
     return {fid:opaque[key] for fid,key in tokens.items()}
