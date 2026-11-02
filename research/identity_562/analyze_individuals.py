@@ -143,6 +143,27 @@ AUTHOR_PATTERNS += [
      r"as (?:a |an |the )?(?:licensed |clinical )?(?:psychologist|pediatrician|"
      r"child psychiatrist|mental health clinician))\b"),
 ]
+# A further source-specific pass for user/parent relationships and a filing
+# signer's own connection to a school or library. These are not job titles.
+AUTHOR_PATTERNS += [
+    ("parent_guardian", "homeschool_or_our_children",
+     r"\b(?:as (?:a |an |the )?(?:home[- ]?school|homeschooling|home schooling) parent|"
+     r"i (?:have been|am|'m) (?:a |an )?(?:home[- ]?school|homeschooling) parent|"
+     r"our children(?:[, ]+(?:in|aged|age|who))?[\w ,0-9-]{0,45}"
+     r"\b(?:are|have|need|use|spend|attend|go|were|should|require|must|will|depend|struggle|learn|benefit)\b|"
+     r"we (?:entrust|are raising|refuse to allow) (?:our|my) (?:children|kids)|"
+     r"our children (?:to|from|with) (?:\w+ ){0,7}(?:school|online|screen|device))\b"),
+    ("library_patron", "family_uses_library_service",
+     r"\b(?:my (?:family|household) (?:has |have )?(?:used|relied on|depended on|visited) "
+     r"(?:the |our |a )?(?:public |local |community )?library|"
+     r"we (?:need|use|depend on|rely on) (?:wifi|wi[- ]fi|internet) "
+     r"(?:at|in|from) (?:the |our |my |a )?(?:public |local )?library|"
+     r"we (?:go|come|visit) (?:to )?(?:the |our |my |a )?(?:public |local )?library "
+     r"(?:to|for) (?:do )?(?:homework|research|internet))\b"),
+    ("library_community_connection", "my_library_service_voice",
+     r"\b(?:my library (?:saves|serves|provides|has|uses|depends|relies|offers)|"
+     r"my library's (?:budget|internet|e[- ]?rate|funding|patrons|services))\b"),
+]
 # In source text, stakeholder words in a copied sample question or bibliography
 # are not evidence of *the author*. The regexes above require self-reference.
 PATTERNS = [(role, pid, re.compile(rx, re.I)) for role,pid,rx in AUTHOR_PATTERNS]
