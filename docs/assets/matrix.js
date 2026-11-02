@@ -319,7 +319,8 @@
     root.append(column);
   }
   function renderIdentityBreakdown() {
-    const unmatched=(groupRows.get('other_or_unidentified')||[]);
+    const unmatched=[...(groupRows.get('individual_capacity_unstated')||[]),
+                     ...(groupRows.get('other_or_unidentified')||[])];
     const counts=new Map();
     for(const f of unmatched)addUnique(counts,f.role,f.submitter_id);
     const titles={
