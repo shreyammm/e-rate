@@ -21,6 +21,9 @@ class ExtendedIdentityCapacityTest(unittest.TestCase):
             "I am a grandmother of three school children.": "parent_guardian",
             "My grandchild uses E-Rate-funded services.": "parent_guardian",
             "I have been teaching for twenty years.": "school_educator",
+            "I\u0027m a community college student who depends on library Wi-Fi.": "student",
+            "As a high school student I need connectivity.": "student",
+            "I attend a community college and rely on E-Rate.": "student",
         }
         for comment, role in examples.items():
             with self.subTest(comment=comment):
