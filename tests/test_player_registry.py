@@ -15,7 +15,8 @@ class PlayerIdentityTest(unittest.TestCase):
            'A journal wrote: "As a consultant I favor this." In my letter I have a different view.')
         self.assertEqual(x['organization'],'')
         self.assertEqual(x['role'],'named_person_capacity_unstated')
-        self.assertTrue(x['needs_review'])
+        self.assertEqual(x['identity_status'],'capacity_not_stated')
+        self.assertFalse(x['needs_review'])
     def test_explicit_teacher_role_in_author_intro(self):
         x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
            'I am a teacher in a public school. Internet service matters.')
@@ -186,7 +187,14 @@ class PlayerIdentityTest(unittest.TestCase):
             'References:\nAccording to a consultant registration study, '
             'E-Rate providers face new rules.')
         self.assertEqual(x['role'],'named_person_capacity_unstated')
+        self.assertEqual(x['identity_confidence'],'not_established')
+        self.assertFalse(x['needs_review'])
+
+    def test_explicit_but_unparsed_affiliation_clue_is_reviewable(self):
+        x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
+            'I work for a local education nonprofit and would like to comment on E-Rate.')
         self.assertTrue(x['needs_review'])
+        self.assertEqual(x['identity_review_reason'],'capacity_clue_without_role')
 
     def test_co_signers_not_inferred_as_independent_filings(self):
         from scripts.build_player_registry import submitted_by_multiple_entities
