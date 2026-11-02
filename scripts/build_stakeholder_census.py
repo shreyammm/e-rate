@@ -297,6 +297,26 @@ def load_submitter_ids(manifest_path,registry):
                 tokens[fid]=token;bases[fid]=basis;risk[fid]=uncertain
                 raw_tokens[fid]=normalize_submitter_name(raw)
     if set(tokens)!=expected:raise ValueError('Filer identity coverage mismatch')
+    # Exact personal-name repeats with one evidence-backed institution and no
+    # competing institution may be linked when the stakeholder group agrees.
+    # Never propagate affiliation across different stakeholder capacities.
+    raw_candidates=defaultdict(list)
+    for fid,name in raw_tokens.items():raw_candidates[name].append(fid)
+    inferred_links=[]
+    for name,ids in raw_candidates.items():
+        if len(ids)<2 or len({stakeholder_group(registry_by_id[fid]) for fid in ids})!=1:
+            continue
+        keys=[tokens[fid] for fid in ids]
+        if not all(x.startswith('person:') for x in keys):continue
+        supported={x for x in keys if '|org:unstated' not in x}
+        unknown=[fid for fid in ids if '|org:unstated' in tokens[fid]]
+        if len(supported)!=1 or not unknown:continue
+        candidate=next(iter(supported))
+        for fid in unknown:
+            tokens[fid]=candidate
+            bases[fid]='inferred_single_organization_from_same_named_filer_and_group'
+            risk[fid]=True
+            inferred_links.append(fid)
     opaque={key:'s'+str(i+1).zfill(5) for i,key in enumerate(sorted(set(tokens.values())))}
     # Original raw fields are held ONLY for the in-memory audit; none are output.
     members=defaultdict(list);raw_members=defaultdict(list)
@@ -350,6 +370,8 @@ def load_submitter_ids(manifest_path,registry):
         'raw_name_collisions_split_by_affiliation':raw_splits[:50],
         'total_raw_names_split_by_affiliation':len(raw_splits),
         'resolution_methods':dict(Counter(bases.values())),
+        'single_affiliation_inferred_for_repeated_filer_records':len(inferred_links),
+        'inferred_single_affiliation_example_ids':sorted(inferred_links)[:20],
         'records_with_identity_relationship_uncertainty':sum(risk.values()),
         'fallback_filing_identities':sum(token.startswith('filing:') for token in tokens.values()),
     }
