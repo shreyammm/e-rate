@@ -265,10 +265,12 @@ def normalize_template(text: str) -> str:
 
 
 def shingles(normalized: str) -> set[int]:
+    """Short comments get four-word shingles; long documents use seven."""
     words = normalized.split()
-    if len(words) < 65:
+    if len(words)<22:
         return set()
-    chunks = (" ".join(words[i:i+7]) for i in range(len(words)-6))
+    width = 7 if len(words)>=65 else 4
+    chunks = (" ".join(words[i:i+width]) for i in range(len(words)-width+1))
     return {int.from_bytes(hashlib.blake2b(x.encode(),digest_size=8).digest(),"little")
             for x in chunks}
 
@@ -278,6 +280,7 @@ def cluster_templates(records: list[dict], all_source: dict[str,dict]) -> dict[s
     # validation. A common form letter must have >=3 different filer fields.
     sigs = {}
     fingerprints = defaultdict(list)
+    exact_texts = defaultdict(list)
     meta_names = {}
     for r in records:
         fid=r["id"]
@@ -285,7 +288,10 @@ def cluster_templates(records: list[dict], all_source: dict[str,dict]) -> dict[s
         raw = str(source.get("filer_raw") or "").strip().casefold()
         name = re.sub(r"[^a-z0-9]+"," ",raw).strip()
         meta_names[fid] = name or fid
-        sig = shingles(normalize_template(source.get("text","")))
+        normalized=normalize_template(source.get("text",""))
+        if len(normalized.split())>=7:
+            exact_texts[hashlib.sha256(normalized.encode()).hexdigest()].append(fid)
+        sig = shingles(normalized)
         sigs[fid]=sig
         if not sig:
             continue
@@ -303,6 +309,13 @@ def cluster_templates(records: list[dict], all_source: dict[str,dict]) -> dict[s
         a,b=root(x),root(y)
         if a!=b:
             parent[max(a,b)]=min(a,b)
+    # Exact short notes can be identical even when too short for robust
+    # minhash. Same exact text from >=3 distinct filer fields is an
+    # observed template cluster, not proof of organizational coordination.
+    for ids in exact_texts.values():
+        if len({meta_names[x] for x in ids})>=3:
+            for other in ids[1:]:
+                merge(ids[0],other)
     seen=set()
     for ids in fingerprints.values():
         if len(ids)>150:
@@ -318,7 +331,10 @@ def cluster_templates(records: list[dict], all_source: dict[str,dict]) -> dict[s
                 if not x or not y:continue
                 overlap=len(x&y)
                 sim=overlap/(len(x)+len(y)-overlap)
-                if sim>=0.83 and min(len(x),len(y))>=40:
+                is_short=min(len(x),len(y))<60
+                minimum=12 if is_short else 40
+                threshold=.90 if is_short else .83
+                if sim>=threshold and min(len(x),len(y))>=minimum:
                     merge(a,b)
     clusters=defaultdict(list)
     for fid in parent:
