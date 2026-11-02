@@ -207,6 +207,31 @@
         "https://e-mpa.org/members/"
       ],
       "confidence": "high"
+    },
+    {
+      "filing_ids": [
+        "26110081032"
+      ],
+      "label": "Cause Based Commerce",
+      "role": "telecom_isp",
+      "evidence": "Company sells communications services (mobile, long distance, toll-free); FCC Enforcement Bureau identifies it as a telecommunications service provider.",
+      "sources": [
+        "https://www.causebasedcommerce.com/",
+        "https://docs.fcc.gov/public/attachments/DA-24-656A1_Rcd.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "filing_ids": [
+        "26110077365"
+      ],
+      "label": "The Learning Clinic",
+      "role": "individual_school",
+      "evidence": "Rhode Island education agency lists the exact-name organization as a special-education school (code 70914); it is not an instructional software vendor.",
+      "sources": [
+        "https://datacenter.ride.ri.gov/Directory"
+      ],
+      "confidence": "high"
     }
   ]
 }
