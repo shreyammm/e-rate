@@ -26,6 +26,10 @@ KNOWN = {
     'zayo education': ('Zayo Group LLC', 'telecom_isp'),
 }
 
+# Recognize canonical spellings after the institution name has been normalized.
+KNOWN.update({re.sub(r'[^a-z0-9]+',' ',v[0].lower()).strip():v
+              for v in tuple(KNOWN.values())})
+
 def key(s: str) -> str:
     return re.sub(r'[^a-z0-9]+',' ',str(s).lower()).strip()
 
