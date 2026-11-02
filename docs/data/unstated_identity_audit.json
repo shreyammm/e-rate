@@ -1,12 +1,12 @@
 {
   "schema_version": "unstated-identity-source-audit-v1",
   "scope": "Every filing whose current identity is flagged or whose capacity is unstated",
-  "population": 581,
+  "population": 578,
   "disposition_counts": {
     "incomplete_or_ocr_source": 4,
     "no_explicit_professional_capacity_found": 553,
-    "possible_affiliation_needs_full_source_review": 21,
-    "source_identity_evidence_needs_reconciliation": 3
+    "possible_affiliation_needs_full_source_review": 19,
+    "source_identity_evidence_needs_reconciliation": 2
   },
   "note": "Source-level machine triage, not individual human adjudication. Do not infer employer or authority solely from discussion of a sector.",
   "records": [
@@ -8023,21 +8023,6 @@
       "requires_human_confirmation": true
     },
     {
-      "id": "26110076530",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076530",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "unresolved",
-      "source_sha256": "89037473f91a6ea66ba5bdf32e08fcd81a83067a22d112617101f7ce48c615bf",
-      "disposition": "possible_affiliation_needs_full_source_review",
-      "evidence_indicators": [
-        "potential_employment",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
       "id": "26110076540",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110076540",
       "current_role": "named_person_capacity_unstated",
@@ -8061,21 +8046,6 @@
       "disposition": "possible_affiliation_needs_full_source_review",
       "evidence_indicators": [
         "potential_representation",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110078427",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078427",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "unresolved",
-      "source_sha256": "130ab35a8a163483bcb281aaf5404d926e5ab43fd0ba451692f7d0f535f504c8",
-      "disposition": "possible_affiliation_needs_full_source_review",
-      "evidence_indicators": [
-        "potential_employment",
         "text_available"
       ],
       "candidate_capacity": "",
@@ -8190,22 +8160,6 @@
       ],
       "candidate_capacity": "school_educator",
       "candidate_organization": "Moscow Senior High School",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110080613",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080613",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "7f3d9a1153342cb546fbd0c0c24c8a81b8a289f37a94e9dfca5966e3043e61a3",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Oswego County Opportunities, Inc",
       "requires_human_confirmation": true
     }
   ]
