@@ -11,6 +11,22 @@ from typing import Callable
 
 # Matched to metadata fields, not occurrences in quoted comment text.
 KNOWN = {
+    # Original FCC signature/letterhead candidates cross-checked against
+    # independent institutional sources (Nov 2, 2026). These aliases apply
+    # only to institution-valued metadata or inspected signature blocks.
+    'fairfield library association': ('Fairfield Library Association', 'library_institution'),
+    'eminent technical solutions ets': ('Eminent Technical Solutions', 'network_technology_vendor'),
+    'eminent technical solutions': ('Eminent Technical Solutions', 'network_technology_vendor'),
+    'pacific east district': ('DoDEA Pacific East District', 'school_district'),
+    'community program centers of long island inc': ('Community Program Centers of Long Island, Inc.', 'nonprofit_service_provider'),
+    'community program centers of long island': ('Community Program Centers of Long Island, Inc.', 'nonprofit_service_provider'),
+    'advocap inc': ('ADVOCAP, Inc.', 'nonprofit_service_provider'),
+    'springfield school dist 186': ('Springfield School District 186', 'school_district'),
+    'moscow sr high school': ('Moscow Senior High School', 'individual_school'),
+    'the inter agency council of developmental disabilities agencies inc': ('Inter Agency Council of Developmental Disabilities Agencies', 'trade_association'),
+    'parents for school options arizona': ('Parents for School Options Arizona', 'advocacy_organization'),
+    'national catholic educational association': ('National Catholic Educational Association', 'trade_association'),
+
     'laura capelle president nea alaska': ('NEA-Alaska', 'trade_association'),
     'nea alaska': ('NEA-Alaska', 'trade_association'),
     'selco': ('Southeastern Libraries Cooperating (SELCO)', 'library_institution'),
