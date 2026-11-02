@@ -676,7 +676,11 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
             } for row in filings if row['id'] in {
                 '10605028718266','26110074008','26110079834',
                 '26110041970','26110081332','26110069343',
-                '26110080608','26110081304'}
+                '26110080608','26110081304',
+                '10604263924780','26110070292','26110075502',
+                '26110075844','26110076475','26110076713',
+                '26110077245','26110078335','26110080408',
+                '26110080652'}
         },
         'note':'Usable means source-supported machine classification, not adjudicated legal authority or a verified endorsement.',
     }
