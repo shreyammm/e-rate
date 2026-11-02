@@ -24,6 +24,15 @@ KNOWN = {
     'advanedge solutions intelafunds': ('AdvanEdge Solutions Inc.', 'erate_consultant'),
     'north central independent living services': ('North Central Independent Living Services', 'advocacy_organization'),
     'zayo education': ('Zayo Group LLC', 'telecom_isp'),
+    'k12techpro': ('K12TechPro', 'trade_association'),
+    'kidango': ('Kidango', 'advocacy_organization'),
+    'ca brain tumor assn': ('California Brain Tumor Association', 'advocacy_organization'),
+    'outreach director ca brain tumor assn': ('California Brain Tumor Association', 'advocacy_organization'),
+    'california brain tumor association': ('California Brain Tumor Association', 'advocacy_organization'),
+    'district of columbia': ('District of Columbia', 'government'),
+    'environmental health sciences': ('Environmental Health Sciences', 'advocacy_organization'),
+    'director of wireless and emf program at environmental health sciences': ('Environmental Health Sciences', 'advocacy_organization'),
+
     # Additional residual cases checked against primary institution websites,
     # state education agencies, college directories, and vendor descriptions.
     'sentinelone inc': ('SentinelOne, Inc.', 'other_vendor'),
@@ -81,6 +90,8 @@ def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -
     parts=[s.strip() for s in raw.split('|')]
     if len(parts)==1 and raw.count('/')==1 and not re.search(r'(?i)https?://',raw):
         parts=[p.strip() for p in raw.split('/')]
+    if len(parts)==1 and raw.count(';')==1:
+        parts=[p.strip() for p in raw.split(';')]
     if len(parts)<2 or not all(parts):return ''
     orgs=[institution_label(p) for p in parts]
     # A single organization and several named signatories is an attribution
