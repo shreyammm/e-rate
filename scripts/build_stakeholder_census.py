@@ -197,7 +197,7 @@ def stakeholder_group(f):
 GROUP_NAMES={
  'joint_institutional_filings':'Joint institutional submissions',
  'school_institutions':'Schools and districts','school_professionals':'School staff and educators',
- 'school_affiliation_uncertain':'School-related, capacity unclear',
+ 'school_affiliation_uncertain':'School-affiliated commenters (role unspecified)',
  'libraries':'Libraries','parents':'Parents and caregivers','edtech_vendors':'Edtech companies',
  'edtech_trade_associations':'Edtech industry associations','erate_consultants':'E-Rate consulting firms',
  'consultant_associations':'Consultant associations',
