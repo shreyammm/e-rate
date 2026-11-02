@@ -65,6 +65,10 @@ class ExperimentalIdentityTests(unittest.TestCase):
         assert explicitly_submitting_institution(
             "E-Rate helps the Marietta City School District access the internet."
         ) == ("","")
+        assert explicitly_submitting_institution(
+            "Before the FCC, East Side Union High School District (ESUHSD) "
+            "respectfully submits these comments regarding E-Rate."
+        )[0] == "school_district"
 
     def test_template_trivial_letters_not_clustered(self):
         self.assertFalse(shingles(normalize_template("Keep E-Rate, please.")))
