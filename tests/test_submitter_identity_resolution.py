@@ -41,6 +41,17 @@ class SubmitterCapacityTests(unittest.TestCase):
             self.key('Funds For Learning, LLC','1',organization='Funds For Learning, LLC'),
             self.key('Funds for Learning LLC','2',organization='Funds For Learning, LLC'))
 
+    def test_occupational_titles_are_not_identified_as_people(self):
+        from scripts.submitter_identity_resolution import person_name
+        self.assertEqual(person_name('Outreach Director'),'')
+        self.assertEqual(person_name('Technology Coordinator'),'')
+        self.assertEqual(person_name('Executive Director'),'')
+        self.assertEqual(
+            self.key('Outreach Director | California Brain Tumor Association','1',
+                     organization='California Brain Tumor Association'),
+            self.key('California Brain Tumor Association','2',
+                     organization='California Brain Tumor Association'))
+
     def test_industry_legal_aliases_merge_when_corrob(self):
         self.assertEqual(canonical_org('AdvanEdge Solutions'),
                          canonical_org('IntelaFunds'))
