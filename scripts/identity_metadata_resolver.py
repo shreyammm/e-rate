@@ -184,34 +184,3 @@ def personal_name_format(raw: str) -> bool:
         return False
     if raw.isupper() and len(raw.split())==1 and len(raw)>=3:return False
     return bool(re.fullmatch(r"[A-Za-z][A-Za-z.'-]*(?:\s+[A-Za-z][A-Za-z.'-]*){0,3}",raw))
-,
-        '', raw, flags=re.I
-    )
-    return base != raw and personal_name_format(base)
-
-def multiple_person_names_only(raw: str) -> bool:
-    """Multiple named signatories, without implying private capacity.
-
-    ECFS uses pipes for some multi-person filings and commas for others.
-    Reject docket numbers, job titles and institution-valued strings.
-    """
-    raw = str(raw or '').strip()
-    if '|' in raw:
-        parts = [p.strip() for p in raw.split('|')]
-    elif ',' in raw:
-        parts = [p.strip() for p in raw.split(',')]
-    else:
-        return False
-    return 2 <= len(parts) <= 6 and all(
-        len(p.split()) >= 2 and personal_name_format(p) for p in parts
-    )
-
-def personal_name_format(raw: str) -> bool:
-    """An apparently personal-name filer with unknown occupational capacity."""
-    raw=' '.join(str(raw or '').split())
-    if not raw or len(raw)>70 or len(raw.split())>4:return False
-    if any(c in raw for c in ('|','/',';', '@', ':')):return False
-    if re.search(r'\d|\b(?:center|network|school|library|county|district|inc|llc|association|corp|coalition|fund|services|solutions|college|university|group|technologies|collective|bureau)\b',raw,re.I):
-        return False
-    if raw.isupper() and len(raw.split())==1 and len(raw)>=3:return False
-    return bool(re.fullmatch(r"[A-Za-z][A-Za-z.'-]*(?:\s+[A-Za-z][A-Za-z.'-]*){0,3}",raw))
