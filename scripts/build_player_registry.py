@@ -624,6 +624,18 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
         'review_roles':dict(Counter(r['role'] for r in filings if r['needs_review'])),
         'signature_resolutions':sum(r['basis']=='signed_role_and_organization' and not r['needs_review'] for r in filings),
         'letterhead_or_signature_org_resolutions':sum(r['basis']=='source_letterhead_or_signature' and not r['needs_review'] for r in filings),
+        'spotcheck_filing_ids':{
+            row['id']:{
+                'role':row['role'],'organization':row['organization'],
+                'identity_confidence':row['identity_confidence'],
+                'review':row['needs_review'],
+                'review_reason':row['identity_review_reason'],
+                'attribution_review':row.get('attribution_review',False)
+            } for row in filings if row['id'] in {
+                '10605028718266','26110074008','26110079834',
+                '26110041970','26110081332','26110069343',
+                '26110080608','26110081304'}
+        },
         'note':'Usable means source-supported machine classification, not adjudicated legal authority or a verified endorsement.',
     }
     summary_path=ROOT/'docs/data/identity_resolution_metrics.json'
