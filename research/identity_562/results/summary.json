@@ -1,0 +1,47 @@
+{
+  "schema_version": "identity-562-experimental-v1",
+  "scope": "Entire existing named_person_capacity_unstated filing cohort on local research branch",
+  "publication_status": "EXPERIMENTAL_UNPUBLISHED__NOT_SITE_DATA",
+  "filing_target_count": 567,
+  "distinct_filing_ids": 567,
+  "primary_role_counts": {
+    "none": 518,
+    "community_resident": 18,
+    "library_patron": 7,
+    "taxpayer": 3,
+    "student": 18,
+    "parent_guardian": 2,
+    "school_alumnus": 1
+  },
+  "pattern_counts": {
+    "resident_self_description": 19,
+    "library_user_declared": 7,
+    "taxpayer_self_description": 3,
+    "current_student_self_description": 18,
+    "parent_self_description": 2,
+    "former_student_declared": 1
+  },
+  "disposition_counts": {
+    "no_source_supported_capacity": 478,
+    "no_self_declared_role__template_participant": 39,
+    "explicit_civic_capacity": 21,
+    "explicit_non_occupational_or_sector_identity": 10,
+    "explicit_professional_or_school_role": 18,
+    "no_readable_source": 1
+  },
+  "template_cluster_sizes": {
+    "8": 1,
+    "3": 1,
+    "31": 1
+  },
+  "template_participant_filings": 42,
+  "readable_targets": 566,
+  "remaining_without_occupational_or_self_declared_civic_capacity": 518,
+  "limitations": [
+    "Counts reflect source-text evidence rules, not verified occupations or employer authority.",
+    "A person may be a parent, taxpayer and educator simultaneously. Primary role prioritizes specificity; all evidence candidates are retained.",
+    "Matched form letters indicate similar source text, not an organizer, a paid campaign, or a shared policy preference.",
+    "No outside employer lookup has been performed. Same-name matches require separate corroboration.",
+    "We cannot infer missing careers for people who do not say what they do. An unclassified occupation is not an unidentified person."
+  ]
+}
