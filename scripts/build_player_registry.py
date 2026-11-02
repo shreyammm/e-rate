@@ -359,7 +359,8 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # A person|organization source field does not alone prove authority or
     # employment. Preserve it as a review case unless an author self-description
     # corroborates their role and institution.
-    ambiguous_affiliation=bool(affiliated and not (self_role or signed_role))
+    ambiguous_affiliation=bool((affiliated and not (self_role or signed_role)) or
+                               (person and '|' in str(raw) and not name))
     review=bool(unresolved or conflicting or ambiguous_affiliation or proxy or possible_missed_affiliation)
     identity_status=('capacity_not_stated' if unknown_person and not review else
                      'unresolved' if unresolved or unknown_person else
