@@ -193,6 +193,7 @@ def stakeholder_group(f):
     if r=='government':return 'government'
     if r=='trade_association':return 'other_associations'
     if r=='advocacy_organization':return 'nonprofits_and_advocacy'
+    if r=='nonprofit_service_provider':return 'nonprofit_service_providers'
     if r=='other_vendor':return 'other_businesses'
     return 'other_or_unidentified'
 
@@ -208,6 +209,7 @@ GROUP_NAMES={
  'connectivity_and_network_vendors':'Internet and networking vendors',
  'telecom_associations':'Telecom industry associations','government':'Government',
  'nonprofits_and_advocacy':'Nonprofits and advocacy groups',
+ 'nonprofit_service_providers':'Nonprofit education and community-service providers',
  'other_associations':'Other associations','other_businesses':'Other businesses',
  'other_or_unidentified':'Other or unidentified'}
 GROUP_ORDER=list(GROUP_NAMES)
