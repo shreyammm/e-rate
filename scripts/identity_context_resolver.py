@@ -22,16 +22,27 @@ class Capacity:
 # Prioritized, mutually exclusive when possible. Use first-person local context,
 # NOT the occurrence of generic 'teachers', 'parents', 'consultants' or 'libraries'.
 PATTERNS = [
+    ("government", "author_elected_office", "first_person_government_official",
+     r"\b(?:i (?:serve|work|am serving) as (?:an? |the )?(?:county |city |state )?"
+     r"(?:supervisor|commissioner|councilmember|legislator|elected official)|"
+     r"i represent (?:the |my )?(?:\w+\s+){0,3}(?:district|ward|county) "
+     r"of (?:the )?(?:\w+\s+){0,5}(?:board of supervisors|city council|"
+     r"county commission)|as (?:a|the) county supervisor)\b"),
     ("parent_guardian", "self_declared_parent", "first_person_parent",
      r"\b(?:as (?:an? |the |a concerned |a working |a (?:taxpayer|taxpaxer) and a )"
      r"(?:parent|mother|father|guardian|caregiver)|i am (?:a |an |the |also a )?"
      r"(?:parent|mother|father|guardian)|i (?:have|am raising) (?:\d+ |two |three |four )?"
      r"(?:children|kids|school[- ]age children)|my (?:son|daughter|child|children|kids) "
-     r"(?:is|are|was|were|attends?|go(?:es)? to|has|have|uses?|go))\b"),
+     r"(?:is|are|was|were|attends?|go(?:es)? to|has|have|uses?|go)|"
+     r"my (?:child|children|son|daughter|kids)\b)"),
     ("school_technology_staff", "author_technical_capacity", "first_person_school_IT",
      r"\b(?:i (?:am|serve as|work as|have served as) (?:the |an? )?"
      r"(?:district |school )?(?:it director|tech(?:nology)? director|network administrator|"
-     r"technology coordinator|chief technology officer)|i (?:manage|administer|oversee) "
+     r"network technician|it specialist|school network engineer|"
+     r"technology coordinator|chief technology officer)|"
+     r"as (?:a|an|the) (?:network technician|technology specialist|it specialist|"
+     r"network engineer) (?:for|at|in) (?:a|our|the) (?:local )?school district|"
+     r"i (?:manage|administer|oversee) "
      r"(?:our|the|my) (?:school|district).{0,55}(?:network|it systems|technology infrastructure))\b"),
     ("school_administrator", "author_school_leadership", "first_person_school_administrator",
      r"\b(?:i (?:am|serve as|work as|have served as) (?:the |an? )?"
@@ -56,12 +67,16 @@ PATTERNS = [
      r"our (?:e[- ]?rate )?consulting (?:firm|business|practice) (?:helps|serves|works|assists))\b"),
     ("library_affiliated", "author_library_affiliation", "first_person_library_affiliation",
      r"\b(?:our library (?:is|serves|provides|offers|depends|relies|has|uses|connects|operates|supports)|"
+     r"our library (?:will|would|could|cannot|can't)\b|"
      r"at our library[, ]|we (?:at|here at) (?:the |our )?library\b|"
      r"the library (?:where|at which) i (?:work|volunteer|serve))\b"),
     ("school_connected_unknown", "author_school_affiliation", "first_person_school_affiliation",
      r"\b(?:our (?:school district|district|schools?|classrooms?) "
      r"(?:is|are|has|have|serves|serve|uses|use|depends|relies|needs|need|provides|provide|"
      r"operates|operate|would|could|will)|"
+     r"our school (?:to|can|could|will|would)\b|"
+     r"in our (?:district|school)\b|"
+     r"our (?:local |rural |urban )?district(?:'s)?\b|"
      r"at our (?:school|district)[, ]|we (?:as|at) (?:a|our|the) (?:school|district)\b)\b"),
 ]
 
@@ -89,7 +104,7 @@ def context_capacity(text: str) -> Capacity:
         m=rx.search(t)
         if m:
             return Capacity(role,basis,cue,"high" if basis in {
-                "self_declared_parent","author_technical_capacity",
+                "self_declared_parent","author_elected_office","author_technical_capacity",
                 "author_school_leadership","author_teaching_capacity",
                 "author_library_staff_capacity","author_consulting_capacity"}
                 else "medium")
