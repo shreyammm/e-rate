@@ -16,7 +16,7 @@ KNOWN = {
     'independent women': ('Independent Women', 'advocacy_organization'),
     'lgbt tech': ('LGBT Tech', 'advocacy_organization'),
     'semcac head start': ('Semcac Head Start', 'nonprofit_service_provider'),
-    'seta head start': ('SETA Head Start', 'nonprofit_service_provider'),
+    'seta head start': ('SETA Head Start (Sacramento Employment and Training Agency)', 'government'),
     'educationsuperhighway': ('EducationSuperHighway', 'advocacy_organization'),
 
     # Original FCC signature/letterhead candidates cross-checked against
