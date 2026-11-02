@@ -18,6 +18,11 @@ class ExperimentalIdentityTests(unittest.TestCase):
           "I work in our public school district.": "school_employee_general",
           "I own an E-Rate consulting firm helping applicants.": "erate_consultant",
           "My grandson uses the school library.": "parent_guardian",
+          "Our children attend schools that use E-Rate.": "parent_guardian",
+          "Our library provides broadband to residents.": "library_community_connection",
+          "Our school's internet access is essential.": "school_community_connection",
+          "As an E-Rate applicant I know the paperwork.": "erate_applicant_voice",
+          "I volunteer at our public library.": "community_volunteer",
           "I am a researcher studying education policy.": "researcher",
           "I am a school IT director.": "school_technology_staff",
         }
