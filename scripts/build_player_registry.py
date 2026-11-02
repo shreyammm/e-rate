@@ -63,6 +63,7 @@ ORG_RULES = [
     ('erate_consultant', r'^hwc consultants$'),
     ('erate_consultant', r'^(?:funds for learning|american e[- ]rate solutions|e[- ]rate complete|e[- ]rate funding services|tel/logic.*e[- ]rate central|education service center region 12 e[- ]rate consulting services)\b'),
     ('trade_association', r'^(?:software (?:and|&) information industry association|e[- ]rate management professionals association|ncta|ustelecom|ntca[- ]|alaska telecom association|technology channel sales professionals)\b'),
+    ('trade_association', r'^(?:massachusetts educational technology administrators association|massachusetts computer using educators|massachusetts association of school superintendents|massachusetts association of school business officials)\b'),
     # Named professional bodies are organizations, not operating libraries.
     ('trade_association', r'^(?:american library association|association of research libraries|public library association)\b'),
     # This named association is a disability advocacy organization, not a trade body.
@@ -128,6 +129,10 @@ def organization_label(name: str) -> str:
                        'adtec e rate administrative and technical consulting',
                        'adtec administrative and technical consulting inc'}:
         return 'AdTec Administrative and Technical Consulting Inc.'
+    # Recognize an identifiable professional association from multi-filer
+    # metadata, without treating an association as an individual school.
+    if '|' in name and any(re.search(r'(?i)massachusetts (?:educational technology administrators association|computer using educators|association of school superintendents|association of school business officials)',part) for part in name.split('|')):
+        return 'Massachusetts Educational Technology Administrators Association (METAA)'
     if len(name)<5 or len(name)>110 or not ORG_TOKEN.search(name): return ''
     # Independent E-Rate service provider, checked against its own site and
     # federal USAC FCC Form 470 consulting-firm records. 'AdTec' alone is a
