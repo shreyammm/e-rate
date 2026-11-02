@@ -17,6 +17,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from scripts.identity_context_resolver import context_capacity
+from scripts.identity_metadata_resolver import institution, single_institution_pair, personal_name_format
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'data/fcc_corpus'
@@ -127,6 +128,8 @@ ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commissi
 def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
     name=' '.join(str(name or '').split())
+    known,_=institution(name)
+    if known:return known
     if canon(name) in {'adtec', 'adtec inc', 'adtec administrative and technical consulting',
                        'adtec e rate administrative and technical consulting',
                        'adtec administrative and technical consulting inc'}:
@@ -212,9 +215,7 @@ def candidate_affiliation(raw: str) -> str:
     The person's name is never published in this derived registry.
     """
     parts=[x.strip() for x in str(raw or '').split('|')]
-    if len(parts)!=2 or not parts[0] or not parts[1]:return ''
-    if organization_label(parts[0]):return ''
-    return organization_label(parts[1])
+    return single_institution_pair(raw, organization_label)
 
 # A deliberately narrow list of distinctive legal submitter names appearing
 # in this fixed source snapshot. The exact name establishes an *entity lead*;
@@ -340,15 +341,21 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     if not self_role and inferred_capacity and inferred_capacity.role:
         self_role,self_quote=inferred_capacity.role,inferred_capacity.cue
     org_role,org_cue=first_rule(name,ORG_PATTERNS) if name else ('','')
+    _,known_role=institution(name) if name else ('','')
+    if known_role:org_role,org_cue=known_role,name
     curated=curated_business(name) if name else None
     if curated:org_role,org_cue=curated[0],name
     default=BASE_CROSSWALK.get(base,'unresolved')
+    if default=='unresolved' and person and not name and personal_name_format(raw):
+        default='named_person_capacity_unstated'
     signed_role,signed_org,sign_basis=signoff_evidence(text) if person else ('','','')
     document_org=opening_institution(text) if person and not name else ''
     recovered_org=signed_org or document_org
     if not name and recovered_org:
         name=recovered_org
         org_role,org_cue=first_rule(name,ORG_PATTERNS)
+        _,known_role=institution(name)
+        if known_role:org_role,org_cue=known_role,name
         curated=curated_business(name)
         if curated:org_role,org_cue=curated[0],name
     # An organization filing with direct source metadata is stronger than an
