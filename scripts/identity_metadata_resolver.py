@@ -11,6 +11,14 @@ from typing import Callable
 
 # Matched to metadata fields, not occurrences in quoted comment text.
 KNOWN = {
+    # Exact short organization names in ECFS metadata, otherwise easily mistaken
+    # for people's names when no legal suffix such as Inc. is present.
+    'independent women': ('Independent Women', 'advocacy_organization'),
+    'lgbt tech': ('LGBT Tech', 'advocacy_organization'),
+    'semcac head start': ('Semcac Head Start', 'nonprofit_service_provider'),
+    'seta head start': ('SETA Head Start', 'nonprofit_service_provider'),
+    'educationsuperhighway': ('EducationSuperHighway', 'advocacy_organization'),
+
     # Original FCC signature/letterhead candidates cross-checked against
     # independent institutional sources (Nov 2, 2026). These aliases apply
     # only to institution-valued metadata or inspected signature blocks.
