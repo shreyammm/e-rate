@@ -57,10 +57,10 @@ KNOWN = {
     # operating school networks and nonprofits must not be counted as vendors.
     'palm bay education group inc': ('Palm Bay Education Group, Inc.', 'school_district'),
     'connected nation inc': ('Connected Nation, Inc.', 'advocacy_organization'),
-    'regional economic community action program inc': ('Regional Economic Community Action Program, Inc.', 'advocacy_organization'),
-    'step up suncoast inc': ('Step Up Suncoast, Inc.', 'advocacy_organization'),
-    'le jardin community center inc': ('Le Jardin Community Center, Inc.', 'advocacy_organization'),
-    'community action partnership of madera county inc': ('Community Action Partnership of Madera County, Inc.', 'advocacy_organization'),
+    'regional economic community action program inc': ('Regional Economic Community Action Program, Inc.', 'nonprofit_service_provider'),
+    'step up suncoast inc': ('Step Up Suncoast, Inc.', 'nonprofit_service_provider'),
+    'le jardin community center inc': ('Le Jardin Community Center, Inc.', 'nonprofit_service_provider'),
+    'community action partnership of madera county inc': ('Community Action Partnership of Madera County, Inc.', 'nonprofit_service_provider'),
     # IT/network firms are distinct from instructional software manufacturers.
     'somethingcool com llc': ('SomethingCool.com LLC', 'network_technology_vendor'),
     'vision21 networks llc': ('Vision21 Networks, LLC', 'network_technology_vendor'),
