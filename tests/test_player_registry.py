@@ -104,14 +104,17 @@ class PlayerIdentityTest(unittest.TestCase):
             'named_person_capacity_unstated','My statement addresses school procurement.')
         self.assertEqual(x['organization'],'E-Rate Funding Services LLC')
         self.assertEqual(x['basis'],'multi_party_metadata_affiliation_candidate')
-        self.assertTrue(x['needs_review'])
+        self.assertTrue(x['attribution_review'])
+        self.assertFalse(x['needs_review'])
+        self.assertEqual(x['identity_confidence'],'medium')
 
     def test_review_queue_prioritizes_possible_representatives(self):
         x=inferred_identity({'filer_raw':'Jane Doe | E-Rate Funding Services LLC'},
             'named_person_capacity_unstated','On behalf of our school client, we recommend procurement reforms.')
         priority=review_priority(x,'On behalf of our school client, we recommend procurement reforms.')
-        self.assertEqual(priority['level'],'high')
-        self.assertIn('possible_representative_client_relationship',priority['reasons'])
+        self.assertEqual(priority['level'],'not_required')
+        self.assertTrue(x['attribution_review'])
+        self.assertFalse(x['needs_review'])
     def test_known_agency_not_unnecessarily_reviewed(self):
         x=inferred_identity({'filer_raw':'National Telecommunications and Information Administration'},
             'unresolved','This summary records public listening session statements.')
@@ -217,6 +220,26 @@ class PlayerIdentityTest(unittest.TestCase):
             'Our district serves 2,000 students. E-Rate connectivity is vital.')
         self.assertEqual(x['role'],'school_connected_unknown')
         self.assertEqual(x['identity_status'],'source_inferred')
+        self.assertFalse(x['needs_review'])
+
+    def test_school_affiliation_from_source_role_census_also_no_manual_review(self):
+        x=inferred_identity({'filer_raw':'John Doe'},'school_district_or_school',
+            'We believe broadband is essential.')
+        self.assertEqual(x['role'],'school_connected_unknown')
+        self.assertEqual(x['identity_confidence'],'medium')
+        self.assertFalse(x['needs_review'])
+
+    def test_parent_with_signed_school_role_is_primarily_school_staff(self):
+        x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
+            'As a parent I value classroom connectivity.\nSincerely,\n'
+            'Jane Doe\nDirector of Technology\nRiverton School District')
+        self.assertEqual(x['role'],'school_technology_staff')
+        self.assertFalse(x['needs_review'])
+
+    def test_elite_fund_verified_erate_consultancy(self):
+        x=inferred_identity({'filer_raw':'Elite Fund Inc'},'other_business_or_vendor',
+            'We assist schools with E-Rate procurement.')
+        self.assertEqual(x['role'],'erate_consultant')
         self.assertFalse(x['needs_review'])
 
     def test_adtec_organization_external_e_rate_identity(self):
