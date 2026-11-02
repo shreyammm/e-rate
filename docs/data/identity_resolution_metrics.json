@@ -1,37 +1,37 @@
 {
   "schema_version": "identity-resolution-audit-v1",
   "source_filings": 3231,
-  "review_required": 32,
-  "usable_without_review": 3199,
+  "review_required": 29,
+  "usable_without_review": 3202,
   "confidence_counts": {
-    "medium": 1290,
-    "high": 1327,
-    "not_established": 582,
-    "low": 32
+    "medium": 1293,
+    "high": 1338,
+    "not_established": 571,
+    "low": 29
   },
   "review_reason_counts": {
-    "capacity_clue_without_role": 24,
+    "capacity_clue_without_role": 21,
     "unresolved_capacity": 7,
     "conflicting_source_cues": 1
   },
-  "capacity_not_stated_not_assumed": 582,
+  "capacity_not_stated_not_assumed": 571,
   "attribution_questions_separate": 1142,
-  "externally_supported_role_count": 1,
+  "externally_supported_role_count": 10,
   "source_context_classifications": 929,
   "classification_basis_counts": {
     "multi_party_metadata_affiliation_candidate": 520,
-    "provisional_full_text_role": 807,
-    "filer_field_organization": 798,
+    "provisional_full_text_role": 793,
+    "filer_field_organization": 803,
     "author_self_description": 828,
     "curated_company_type_candidate": 23,
     "source_letterhead_or_signature": 140,
     "signed_role_and_organization": 79,
     "signed_role": 23,
-    "joint_institutional_metadata": 12,
-    "externally_corrob_professional_role": 1
+    "externally_corrob_professional_role": 10,
+    "joint_institutional_metadata": 12
   },
   "review_roles": {
-    "named_person_capacity_unstated": 24,
+    "named_person_capacity_unstated": 21,
     "unresolved": 7,
     "school_educator": 1
   },
@@ -62,12 +62,6 @@
     },
     {
       "id": "26110072909",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110074680",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
@@ -205,19 +199,7 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110080938",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
       "id": "26110080939",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "",
-      "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110081084",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
@@ -233,35 +215,34 @@
   "letterhead_or_signature_org_resolutions": 140,
   "capacity_unstated_sample_ids": [
     "26109834985",
-    "26110041373",
-    "26110069600",
-    "26110071838",
-    "26110072276",
-    "26110073043",
-    "26110073440",
-    "26110075169",
-    "26110075791",
-    "26110076467",
-    "26110076732",
-    "26110077339",
-    "26110077739",
-    "26110077887",
-    "26110077978",
-    "26110078300",
-    "26110078443",
-    "26110078829",
-    "26110079485",
-    "26110079858",
-    "26110080229",
-    "26110080664",
-    "26110080920",
-    "26110081371"
+    "26110045082",
+    "26110069602",
+    "26110071853",
+    "26110072306",
+    "26110073104",
+    "26110073473",
+    "26110075415",
+    "26110075857",
+    "26110076487",
+    "26110076750",
+    "26110077416",
+    "26110077795",
+    "26110077900",
+    "26110077999",
+    "26110078318",
+    "26110078472",
+    "26110079124",
+    "26110079647",
+    "26110079975",
+    "26110080497",
+    "26110080760",
+    "26110081108"
   ],
   "unresolved_sample_ids": [
     "26109999174",
-    "26110075824",
-    "26110077868",
-    "26110079940"
+    "26110076030",
+    "26110078427",
+    "26110080481"
   ],
   "spotcheck_filing_ids": {
     "10604263924780": {
