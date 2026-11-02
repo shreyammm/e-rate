@@ -83,6 +83,11 @@ def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -
     if sum(bool(o) for o in orgs)!=1:return ''
     return next(o for o in orgs if o)
 
+def multiple_person_names_only(raw: str) -> bool:
+    """Multiple signatory names; does not imply a personal-capacity stance."""
+    parts=[p.strip() for p in str(raw or '').split('|')]
+    return 2<=len(parts)<=6 and all(personal_name_format(p) for p in parts)
+
 def personal_name_format(raw: str) -> bool:
     """An apparently personal-name filer with unknown occupational capacity."""
     raw=' '.join(str(raw or '').split())
