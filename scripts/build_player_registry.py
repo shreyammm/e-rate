@@ -124,6 +124,10 @@ ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commissi
 def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
     name=' '.join(str(name or '').split())
+    if canon(name) in {'adtec', 'adtec inc', 'adtec administrative and technical consulting',
+                       'adtec e rate administrative and technical consulting',
+                       'adtec administrative and technical consulting inc'}:
+        return 'AdTec Administrative and Technical Consulting Inc.'
     if len(name)<5 or len(name)>110 or not ORG_TOKEN.search(name): return ''
     # Independent E-Rate service provider, checked against its own site and
     # federal USAC FCC Form 470 consulting-firm records. 'AdTec' alone is a
