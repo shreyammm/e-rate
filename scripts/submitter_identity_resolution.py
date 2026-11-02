@@ -57,10 +57,11 @@ def canonical_org(org):
         return ''
     known,_role=institution(name)
     if known:return normalize(known)
-    # Registry organization candidates occasionally contain occupations,
-    # headings, or quoted text. They are not institutions.
+    # A role/title in a recovered source is not an institution.
     if re.search(r'(?i)\b(?:coordinator|director|manager|officer|administrator|'
-                 r'teacher|specialist|consultant|technician|assistant|superintendent)\.?
+                 r'teacher|specialist|consultant|technician|assistant|superintendent)\.?$',name):
+        return ''
+    label=organization_label(name)
     return normalize(label) if label else ''
 
 def person_name(raw):
