@@ -109,6 +109,36 @@ PATTERNS = [
      r"\b(?:i(?:'m| am) (?:an? |the )?(?:e[- ]?rate (?:program )?consultant|"
      r"e[- ]?rate funding consultant)|i (?:provide|offer) e[- ]?rate "
      r"(?:consulting|advisory) services)\b"),
+    # Explicit affiliation phrases that do not assert a precise occupation.
+    # These are *author* connections, not institution-level representative authority.
+    ("erate_consultant", "author_consulting_capacity", "first_person_consulting_owner",
+     r"\b(?:i (?:own|operate|founded|run|manage) (?:an? |my |our )?"
+     r"e[- ]?rate (?:consulting|advisory) (?:firm|business|practice)|"
+     r"we (?:are|operate as) (?:an? )?e[- ]?rate consulting (?:firm|company))\b"),
+    ("library_staff", "author_library_staff_capacity", "first_person_library_employment",
+     r"\b(?:i(?:'m| am) employed (?:by|at) (?:the |our |a )?"
+     r"(?:public |school |county )?library|"
+     r"i work (?:for|with) (?:the |our |a )?"
+     r"(?:public |school |county )?library(?: system)?|"
+     r"i (?:serve|work) (?:as|in the role of) (?:the |a |an )?"
+     r"(?:library media specialist|library technician))\b"),
+    ("school_connected_unknown", "author_school_affiliation", "first_person_school_employment",
+     r"\b(?:i (?:work|volunteer|serve) (?:at|for|in) (?:the |a |our |my )?"
+     r"(?:public |private |charter |local )?"
+     r"(?:school district|school system|public school|school|district)|"
+     r"i (?:am|'m) employed (?:by|at) (?:the |a |our |my )?"
+     r"(?:school district|school system|public school|school)|"
+     r"i (?:work|teach|serve) (?:for|at) [a-z][a-z0-9 '-]{3,70}"
+     r"(?:school district|public schools|unified school district))\b"),
+    ("parent_guardian", "self_declared_parent", "first_person_school_parent",
+     r"\b(?:as (?:a|the) (?:public |private |charter |elementary |high )?"
+     r"(?:school )?parent|i(?:'m| am) a parent (?:of|with) "
+     r"(?:a |an )?(?:school[- ]age|elementary[- ]age|high[- ]school) "
+     r"(?:child|children|student|students))\b"),
+    ("library_affiliated", "author_library_affiliation", "first_person_library_board",
+     r"\b(?:i (?:serve|volunteer|sit) on (?:the |our |a )?"
+     r"(?:public |local )?library (?:board|board of trustees)|"
+     r"as (?:a |the )?library (?:trustee|board member|volunteer))\b"),
     ("library_affiliated", "author_library_affiliation", "first_person_library_affiliation",
      r"\b(?:our library (?:is|serves|provides|offers|depends|relies|has|uses|connects|operates|supports)|"
      r"our library (?:will|would|could|cannot|can't)\b|"
