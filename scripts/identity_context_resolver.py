@@ -35,6 +35,8 @@ PATTERNS = [
      r"(?:children|kids|school[- ]age children)|my (?:son|daughter|child|children|kids) "
      r"(?:is|are|was|were|attends?|go(?:es)? to|has|have|uses?|go)|"
      r"my (?:child|children|son|daughter|kids)\b)"),
+    ("parent_guardian", "first_person_parent_child", "first_person_our_child",
+     r"\bour (?:child|son|daughter)(?:['’]s)?\b"),
     ("school_technology_staff", "author_technical_capacity", "first_person_school_IT",
      r"\b(?:i (?:am|serve as|work as|have served as) (?:the |an? )?"
      r"(?:district |school )?(?:it director|tech(?:nology)? director|network administrator|"
@@ -104,7 +106,7 @@ def context_capacity(text: str) -> Capacity:
         m=rx.search(t)
         if m:
             return Capacity(role,basis,cue,"high" if basis in {
-                "self_declared_parent","author_elected_office","author_technical_capacity",
+                "self_declared_parent","first_person_parent_child","author_elected_office","author_technical_capacity",
                 "author_school_leadership","author_teaching_capacity",
                 "author_library_staff_capacity","author_consulting_capacity"}
                 else "medium")
