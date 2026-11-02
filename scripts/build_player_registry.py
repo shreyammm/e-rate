@@ -32,7 +32,7 @@ ROLE_LABELS = {
     'school_technology_staff': 'School/district IT or technology staff',
     'school_educator': 'Teacher or educator',
     'school_administrator': 'School administrator or superintendent',
-    'school_connected_unknown': 'School-connected; authority unclear',
+    'school_connected_unknown': 'School-affiliated commenter (specific role unstated)',
     'library_institution': 'Library or library system',
     'library_staff': 'Librarian or library employee',
     'library_affiliated': 'Library-affiliated commenter (title not stated)',
