@@ -139,6 +139,10 @@ def explicit_job_title(raw: str) -> str:
     """Professional titles exposed directly in FCC submitter metadata."""
     k=key(raw)
     return {
+        'technology administrative assistant and e rate coordinator':'school_technology_staff',
+        'technology services coordinator':'school_technology_staff',
+        'state e rate coordinator for mississippi libraries':'library_staff',
+        'school counselor':'school_educator',
         'library assistant ii':'library_staff',
         'adult education educational technology specialist':'school_technology_staff',
     }.get(k,'')
