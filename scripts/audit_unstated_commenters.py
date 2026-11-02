@@ -48,15 +48,15 @@ def scan(registry=REGISTRY, source=CORPUS, output=OUTPUT):
                     'letterhead_organization': bool(header_org),
                     'metadata_organization': bool(meta_org),
                     'potential_employment': bool(re.search(
-                        r'(?i)\\b(?:i work (?:for|at|with)|i am employed by|'
+                        r'(?i)\b(?:i work (?:for|at|with)|i am employed by|'
                         r'i serve (?:as|on|at)|my employer|our organization|'
-                        r'we at (?:the|our)|my school|our district)\\b',intro)),
+                        r'we at (?:the|our)|my school|our district)\b',intro)),
                     'potential_representation': bool(re.search(
-                        r'(?i)\\b(?:on behalf of|we represent|i represent|'
-                        r'counsel for|representing the)\\b',intro)),
+                        r'(?i)\b(?:on behalf of|we represent|i represent|'
+                        r'counsel for|representing the)\b',intro)),
                     'closing_present': bool(re.search(
-                        r'(?im)^\\s*(?:respectfully submitted|sincerely|'
-                        r'best regards|submitted by|signed by)\\b',tail)),
+                        r'(?im)^\s*(?:respectfully submitted|sincerely|'
+                        r'best regards|submitted by|signed by)\b',tail)),
                     'text_available': bool(body.strip()),
                     'ocr_candidate': str(raw.get('has_unreviewed_ocr','0'))=='1'
                 }
