@@ -6,10 +6,12 @@ on:
     paths:
       - 'scripts/build_player_registry.py'
       - 'scripts/identity_context_resolver.py'
+      - 'scripts/identity_signature_resolver.py'
       - 'scripts/audit_unstated_commenters.py'
       - 'scripts/identity_metadata_resolver.py'
       - 'tests/test_identity_metadata_resolver.py'
       - 'tests/test_identity_context_extended.py'
+      - 'tests/test_identity_signature_resolver.py'
       - 'tests/test_player_registry.py'
       - 'scripts/audit_industry_identity_recall.py'
       - 'tests/test_industry_identity_recall.py'
@@ -40,6 +42,8 @@ jobs:
         run: python -m unittest discover -s tests -p test_identity_metadata_resolver.py -v
       - name: Verify extended first-person capacity signals
         run: python -m unittest discover -s tests -p test_identity_context_extended.py -v
+      - name: Verify source-signature and email-domain attribution safety
+        run: python -m unittest discover -s tests -p test_identity_signature_resolver.py -v
       - name: Build all-filing identity audit and organization profile index
         run: python -m scripts.build_player_registry
       - name: Audit every capacity-unstated filing against its original source
