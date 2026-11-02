@@ -58,7 +58,9 @@ ROLE_LABELS = {
 }
 ORG_RULES = [
     # Exact organizations from FCC submitter metadata; no claim of endorsement.
-    ('government', r'^national telecommunications and information administration
+    ('government', r'^national telecommunications and information administration$'),
+    ('government', r'^fcc wireline competition bureau$'),
+    ('school_district', r'^coastline regional occupational program$'),
     ('telecom_isp', r'^alaska power (?:and|&) telephone$'),
     ('erate_consultant', r'^hwc consultants$'),
     ('erate_consultant', r'^(?:funds for learning|american e[- ]rate solutions|e[- ]rate complete|e[- ]rate funding services|tel/logic.*e[- ]rate central|education service center region 12 e[- ]rate consulting services)\b'),
