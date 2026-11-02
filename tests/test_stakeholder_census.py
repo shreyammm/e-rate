@@ -1,8 +1,19 @@
 """Tests for stakeholder and argument-counting methods; independent of model outputs."""
 import unittest
+from scripts.build_stakeholder_census import stakeholder_group
 from scripts.build_stakeholder_census import (
     topics_for_claim, stakeholder_group, compute, THEMES, GROUP_NAMES, NTIA_LISTENING_REPORT
 )
+class NonprofitServiceStakeholderTest(unittest.TestCase):
+    def test_nonprofit_service_operators_are_not_advocacy_campaigns(self):
+        self.assertEqual(stakeholder_group({'role':'nonprofit_service_provider'}),
+                         'nonprofit_service_providers')
+        self.assertEqual(stakeholder_group({'role':'advocacy_organization'}),
+                         'nonprofits_and_advocacy')
+        self.assertEqual(stakeholder_group({'role':'nonprofit_service_provider',
+                                           'multi_submitter_metadata':True}),
+                         'joint_institutional_filings')
+
 class CensusTest(unittest.TestCase):
     def test_weak_quote_alignment_and_reused_quotes_are_not_low_risk(self):
         from scripts.build_stakeholder_census import SPEAKER_RISK
