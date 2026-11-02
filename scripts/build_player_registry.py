@@ -85,7 +85,7 @@ ORG_RULES = [
     ('edtech_device_vendor', r'\b(?:educational devices? (?:company|vendor)|student device manufacturer)\b'),
     ('school_district', r'\b(?:public schools|school district|schools district|county district schools|sch district|unified school|independent school district|school system|school corporation|schools corporation|central schools?(?: corporation)?|school city of|regional school unit|exempted village school|indep sch(?:ool)? dist(?:rict)?|county office of education|(?:education|educational) service (?:agency|district)|area special education district)\b'),
     ('individual_school', r'\b(?:elementary school|middle school|high school|charter school|academy|preparatory school)\b|\b(?:school|schools)\b(?:\s+(?:of|for)\s+[a-z][a-z -]{2,35})?\s*(?:,?\s*(?:inc\.?|llc\.?))?$'),
-    ('library_institution', r'\b(?:public librar(?:y|ies)|county librar(?:y|ies)|district librar(?:y|ies)|library system)\b'),
+    ('library_institution', r'\b(?:public librar(?:y|ies)|county librar(?:y|ies)|district librar(?:y|ies)|library system|library district|federated library system)\b'),
     ('telecom_isp', r'\b(?:internet service provider|broadband provider|telecommunications provider|telephone company|cable operator|fiber internet provider)\b'),
     ('network_technology_vendor', r'\b(?:network equipment (?:vendor|manufacturer)|networking equipment (?:company|manufacturer))\b'),
     ('trade_association', r'\b(?:trade association|professional association|association of|national association|state association)\b'),
