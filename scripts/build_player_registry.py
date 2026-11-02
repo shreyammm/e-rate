@@ -687,6 +687,10 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
         'source_context_classifications':sum(r['identity_status']=='source_inferred' for r in filings),
         'classification_basis_counts':dict(Counter(r['basis'] for r in filings)),
         'review_roles':dict(Counter(r['role'] for r in filings if r['needs_review'])),
+        'review_candidate_records':[{'id':r['id'],'candidate_role':r['role'],
+                                    'organization':r['organization'],
+                                    'reason':r['identity_review_reason']}
+                                   for r in filings if r['needs_review']],
         'signature_resolutions':sum(r['basis']=='signed_role_and_organization' and not r['needs_review'] for r in filings),
         'letterhead_or_signature_org_resolutions':sum(r['basis']=='source_letterhead_or_signature' and not r['needs_review'] for r in filings),
         'capacity_unstated_sample_ids':[
