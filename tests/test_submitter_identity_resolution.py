@@ -69,7 +69,7 @@ class SubmitterCapacityTests(unittest.TestCase):
 
     def test_same_name_unsafe_unknown_org_is_not_confident(self):
         _key,basis,review=resolve_submitter('Alex Example','1')
-        self.assertIn('unstated',basis)
+        self.assertIn('not_established',basis)
         self.assertTrue('person:' in _key)
         self.assertFalse(basis=='institution_filer_metadata')
 
