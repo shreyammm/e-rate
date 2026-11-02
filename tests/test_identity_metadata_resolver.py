@@ -107,6 +107,28 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
         self.assertEqual(org['role'], 'trade_association')
         self.assertEqual(org['organization'], 'NEA-Alaska')
 
+    def test_recovered_signed_organizations_and_titles(self):
+        cases = [
+            ('Fairfield Library Association', 'library_institution'),
+            ('Eminent Technical Solutions (ETS)', 'network_technology_vendor'),
+            ('Community Program Centers of Long Island, Inc.', 'nonprofit_service_provider'),
+            ('ADVOCAP, Inc.', 'nonprofit_service_provider'),
+            ('National Catholic Educational Association', 'trade_association'),
+            ('Springfield School Dist 186', 'school_district'),
+        ]
+        for org, expected_role in cases:
+            with self.subTest(org=org):
+                result=self.classify('Example Signer',body=(
+                    'These comments concern ongoing E-Rate support.\\n'
+                    'Sincerely,\\nExample Signer\\n'+org))
+                self.assertEqual(result['role'],expected_role)
+                self.assertTrue(result['attribution_review'])
+        role=self.classify('Example Signer',body=(
+            'We use E-Rate each year.\\n'
+            'Sincerely,\\nExample Signer\\n'
+            'Technology Administrative Assistant and E-Rate Coordinator'))
+        self.assertEqual(role['role'],'school_technology_staff')
+
     def test_source_only_not_topic(self):
         for commenter in ['Jessica','Cath','Christopher C Netro','E W','Nicki']:
             with self.subTest(name=commenter):
