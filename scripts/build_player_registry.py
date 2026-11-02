@@ -126,7 +126,7 @@ BASE_CROSSWALK = {
     'unresolved':'unresolved',
 }
 SENSITIVE = re.compile(r'[\w.+-]+@[\w.-]+\.[a-z]{2,}|(?<!\d)(?:\+1[-. ]?)?\(?\d{3}\)?[-. ]?\d{3}[-. ]?\d{4}(?!\d)',re.I)
-ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commission|association|coalition|alliance|department|administration|agency|foundation|network|college|university|government|nation|corporation|llc|inc|institute|society|technologies|telecom|communications|media|consulting|consultants|services|software|technology|broadband|solutions|telephone)\b',re.I)
+ORG_TOKEN = re.compile(r'\b(?:school|schools|district|academy|library|libraries|commission|association|coalition|alliance|department|administration|agency|foundation|network|college|university|government|nation|corporation|llc|inc|institute|society|technologies|telecom|communications|media|consulting|consultants|services|software|technology|broadband|solutions|telephone)\b',re.I)
 
 def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
