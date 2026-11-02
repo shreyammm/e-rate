@@ -437,7 +437,11 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
         sep in str(raw) for sep in ('|',';',' / ','/')))
     # Representation needs a *separate* attribution check. It does not make
     # an otherwise known firm, district or signatory an unknown entity.
-    review=bool(unresolved or conflicting or ambiguous_affiliation or possible_missed_affiliation)
+    # An established stakeholder category should not remain in the identity
+    # review queue solely because authority to represent an institution is
+    # uncertain. Preserve that as a separate attribution question.
+    review=bool(unresolved or conflicting or possible_missed_affiliation or
+                (ambiguous_affiliation and role=='named_person_capacity_unstated'))
     identity_status=('capacity_not_stated' if unknown_person and not review else
                      'source_inferred' if not review and (
                          (inferred_capacity and inferred_capacity.role) or
@@ -462,7 +466,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
                 'signatory title' if signed_role else
                 'organization on letterhead/signature' if recovered_org else ''),
             'speaker_is_proxy_possible':proxy,'needs_review':review,
-            'attribution_review':bool(proxy or affiliated),
+            'attribution_review':bool(proxy or affiliated or ambiguous_affiliation),
             'identity_status':identity_status,'identity_confidence':confidence,
             'identity_review_reason':(
                 'capacity_clue_without_role' if possible_missed_affiliation else
