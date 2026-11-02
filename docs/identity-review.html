@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Identity evidence review · E-Rate Comment Research</title>
+<style>
+:root{font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;color:#252d31;background:#faf9f7}*{box-sizing:border-box}body{margin:0}a{color:#175984;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1120px;margin:auto;padding:0 24px}header{border-bottom:1px solid #dedbd6;background:white}header .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;padding-top:17px;padding-bottom:17px}nav{display:flex;gap:22px;flex-wrap:wrap;font-size:14px}main{padding-top:38px;padding-bottom:60px}h1{font-size:clamp(30px,4vw,42px);letter-spacing:-.04em;font-weight:700;margin:8px 0}.muted{color:#5f686d;line-height:1.55}.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#61707a;font-weight:700}#stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px;margin:24px 0}#stats div{background:white;border:1px solid #e2dfd9;padding:17px;border-radius:8px}#stats strong{display:block;font-size:26px;font-variant-numeric:tabular-nums}#stats span{display:block;font-size:13px;color:#606b70;margin-top:4px}section.panel{border:1px solid #e2dfd9;background:white;border-radius:8px;padding:22px;margin-top:22px}.filters{display:flex;gap:13px;flex-wrap:wrap;align-items:end}.filters label{display:grid;gap:5px;font-size:13px;font-weight:600}.filters select,.filters input{padding:9px 12px;border:1px solid #aab5b8;border-radius:5px;background:#fff;min-width:220px;color:inherit}#resultcount{font-size:13px;color:#5f686d;margin-top:15px}.table-wrap{overflow:auto;margin-top:16px}table{width:100%;border-collapse:collapse;text-align:left;font-size:13px}th{background:#f7f7f5;color:#526168;font-weight:700}td,th{padding:12px 11px;border-bottom:1px solid #e8e6e2;vertical-align:top}tbody tr:hover{background:#faf9f7}.tag{display:inline-block;padding:3px 7px;border-radius:4px;background:#edf2f3;color:#30444d;font-size:12px}.tiny{font-size:12px;color:#657278}#status{color:#667079;font-size:13px}footer{border-top:1px solid #e2dfd9;padding:22px 0;font-size:13px}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a href="./matrix.html"><strong>E-Rate Comment Research</strong></a><nav><a href="./matrix.html">Compare groups</a><a href="./players.html">Organizations</a><a href="./stakeholders.html">Arguments</a></nav></div></header>
+<main class="wrap"><div class="eyebrow">Source identity audit</div><h1>Which commenters still need an identity check?</h1>
+<p class="muted" style="max-width:850px">This view separates named people whose occupational capacity is simply unstated from comments with concrete clues that deserve another look. It uses the original FCC source-text audit and links every record to its filing. Evidence indicators are leads, not verified identities. Names and email addresses are not copied into this dataset.</p>
+<p id="status">Loading audited source filings…</p><div id="stats"></div>
+<section class="panel"><div class="filters">
+<label>Evidence status<select id="statusfilter"><option value="actionable">Prioritize evidence leads and incomplete documents</option><option value="all">All audited records</option><option value="possible_affiliation_needs_full_source_review">Possible affiliation</option><option value="source_identity_evidence_needs_reconciliation">Source identity needs reconciliation</option><option value="incomplete_or_ocr_source">OCR or incomplete source</option><option value="no_explicit_professional_capacity_found">No explicit professional capacity found</option></select></label>
+<label>Find filing ID<input id="query" type="search" placeholder="e.g. 26110081346"></label>
+</div><p id="resultcount"></p><div class="table-wrap"><table><thead><tr><th>FCC source</th><th>Disposition</th><th>Available clues</th><th>Current classification</th><th>Candidate sector</th></tr></thead><tbody id="rows"></tbody></table></div><p class="tiny">The source audit cannot determine whether a private individual has a professional background they chose not to disclose. An email domain alone never proves employment or authority to submit for a school or organization.</p></section>
+</main><footer><div class="wrap">Source-linked exploratory research · <a href="./players.html">Return to stakeholder review</a></div></footer>
+<script>
+(async()=>{
+'use strict';const $=x=>document.getElementById(x);const n=x=>Number(x||0).toLocaleString();
+const labels={possible_affiliation_needs_full_source_review:'Potential affiliation',source_identity_evidence_needs_reconciliation:'Source evidence needs reconciliation',incomplete_or_ocr_source:'OCR / missing source',no_explicit_professional_capacity_found:'Capacity not stated in text'};
+try{const r=await fetch('./data/unstated_identity_audit.json',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const d=await r.json();const counts=d.disposition_counts||{};
+const cards=[['Audited source records',d.population],['Potential affiliations',counts.possible_affiliation_needs_full_source_review],['Unreconciled source evidence',counts.source_identity_evidence_needs_reconciliation],['OCR / missing source',counts.incomplete_or_ocr_source],['No stated occupation',counts.no_explicit_professional_capacity_found]];
+$('stats').replaceChildren(...cards.map(([label,num])=>{const div=document.createElement('div'),b=document.createElement('strong'),span=document.createElement('span');b.textContent=n(num);span.textContent=label;div.append(b,span);return div}));
+$('status').textContent='Source audit loaded. All filing links point to the FCC.';
+function render(){const q=$('query').value.trim(),s=$('statusfilter').value,order={source_identity_evidence_needs_reconciliation:0,possible_affiliation_needs_full_source_review:1,incomplete_or_ocr_source:2,no_explicit_professional_capacity_found:3};
+const a=d.records.filter(x=>(!q||x.id.includes(q))&&(s==='all'||s==='actionable'&&x.disposition!=='no_explicit_professional_capacity_found'||s===x.disposition)).sort((a,b)=>(order[a.disposition]??99)-(order[b.disposition]??99)||a.id.localeCompare(b.id));$('resultcount').textContent=n(a.length)+' matching filings';const body=$('rows');body.replaceChildren();
+for(const x of a.slice(0,550)){const tr=document.createElement('tr'),tds=Array.from({length:5},()=>document.createElement('td')),lnk=document.createElement('a');lnk.href=x.source_url;lnk.target='_blank';lnk.rel='noopener noreferrer';lnk.textContent=x.id;tds[0].append(lnk);
+const status=document.createElement('span');status.className='tag';status.textContent=labels[x.disposition]||x.disposition;tds[1].append(status);
+tds[2].textContent=(x.evidence_indicators||[]).map(t=>t.replaceAll('_',' ')).join(' · ')||'No explicit clue';
+tds[3].textContent=(x.current_role||'').replaceAll('_',' ');tds[4].textContent=(x.candidate_capacity||x.candidate_organization||'Not established').replaceAll('_',' ');
+tr.append(...tds);body.append(tr)}
+if(a.length>550){const p=document.createElement('tr'),td=document.createElement('td');td.colSpan=5;td.textContent='Showing first 550 records. Filter by filing ID or evidence status for more.';p.append(td);body.append(p)}
+}
+$('query').addEventListener('input',render);$('statusfilter').addEventListener('change',render);render();
+}catch(e){$('status').textContent='Source audit is temporarily unavailable: '+e.message;}
+})();
+</script>
+</body></html>
