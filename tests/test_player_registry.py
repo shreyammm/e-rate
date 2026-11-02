@@ -130,7 +130,64 @@ class PlayerIdentityTest(unittest.TestCase):
                 x=inferred_identity({'filer_raw':name},'other_business_or_vendor','We submit comments.')
                 self.assertEqual((x['role'],x['industry_focus']),(role,industry))
                 self.assertEqual(x['basis'],'curated_company_type_candidate')
-                self.assertTrue(x['needs_review'])
+                self.assertEqual(x['identity_confidence'],'high')
+                self.assertFalse(x['needs_review'])
+    def test_school_employee_signature_at_end_resolves_role_and_affiliation(self):
+        x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
+            'Dear Commissioners,\nThe E-Rate program helps our students.\n'
+            'Respectfully submitted,\nJane Doe\nDirector of Technology\n'
+            'Riverton Unified School District\n')
+        self.assertEqual(x['role'],'school_technology_staff')
+        self.assertEqual(x['organization'],'Riverton Unified School District')
+        self.assertEqual(x['basis'],'signed_role_and_organization')
+        self.assertFalse(x['needs_review'])
+
+    def test_school_signature_org_without_title_recovers_institution(self):
+        x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
+            'Please protect our library connectivity.\nSincerely,\n'
+            'Jane Doe\nFranklin Public Library\n')
+        self.assertEqual(x['role'],'library_institution')
+        self.assertEqual(x['organization'],'Franklin Public Library')
+        self.assertFalse(x['needs_review'])
+
+    def test_opening_letterhead_recovers_school(self):
+        x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
+            'Riverton Unified School District\n'
+            'October 12\nDear Commission, we support broadband funding.')
+        self.assertEqual(x['role'],'school_district')
+        self.assertEqual(x['organization'],'Riverton Unified School District')
+        self.assertFalse(x['needs_review'])
+
+    def test_company_filing_tech_signature_does_not_turn_into_school_staff(self):
+        x=inferred_identity({'filer_raw':'Cisco Systems, Inc.'},'other_business_or_vendor',
+            'We recommend continuing Category 2 funding.\n'
+            'Respectfully submitted,\nJane Doe\nDirector of Technology\nCisco Systems, Inc.')
+        self.assertEqual(x['role'],'network_technology_vendor')
+        self.assertFalse(x['needs_review'])
+
+    def test_generic_advocacy_phrase_not_assumed_proxy_client(self):
+        x=inferred_identity({'filer_raw':'Springfield Unified School District'},
+            'school_district_or_school',
+            'On behalf of students and parents, we request sustained internet access.')
+        self.assertFalse(x['speaker_is_proxy_possible'])
+        self.assertFalse(x['needs_review'])
+
+    def test_consultant_representing_client_still_needs_attribution_check(self):
+        x=inferred_identity({'filer_raw':'Example E-Rate Services LLC'},
+            'consultant_or_e_rate_services_firm',
+            'On behalf of our school clients we ask for simpler requirements.')
+        self.assertEqual(x['role'],'erate_consultant')
+        self.assertTrue(x['speaker_is_proxy_possible'])
+        self.assertTrue(x['needs_review'])
+
+    def test_quoted_consultant_reference_not_self_identification(self):
+        x=inferred_identity({'filer_raw':'Jane Doe'},'named_person_capacity_unstated',
+            'We are submitting this comment to improve E-Rate integrity.\n'
+            'References:\nAccording to a consultant registration study, '
+            'E-Rate providers face new rules.')
+        self.assertEqual(x['role'],'named_person_capacity_unstated')
+        self.assertTrue(x['needs_review'])
+
     def test_co_signers_not_inferred_as_independent_filings(self):
         from scripts.build_player_registry import submitted_by_multiple_entities
         x=submitted_by_multiple_entities('A School District | Curriculum Associates, LLC | Library Association')
