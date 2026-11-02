@@ -409,7 +409,8 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # useful *likely affiliation* even without proof of representative mandate.
     # Keep the legal/agency question in attribution_review instead of
     # inflating the role-review queue. Unparsed multipart fields remain flagged.
-    ambiguous_affiliation=bool(person and '|' in str(raw) and not name)
+    ambiguous_affiliation=bool(person and not name and any(
+        sep in str(raw) for sep in ('|',';',' / ','/')))
     # Representation needs a *separate* attribution check. It does not make
     # an otherwise known firm, district or signatory an unknown entity.
     review=bool(unresolved or conflicting or ambiguous_affiliation or possible_missed_affiliation)
