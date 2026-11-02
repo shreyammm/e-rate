@@ -1,37 +1,37 @@
 {
   "schema_version": "identity-resolution-audit-v1",
   "source_filings": 3231,
-  "review_required": 136,
-  "usable_without_review": 3095,
+  "review_required": 120,
+  "usable_without_review": 3111,
   "confidence_counts": {
-    "medium": 1329,
-    "high": 1225,
+    "medium": 1334,
+    "high": 1236,
     "not_established": 541,
-    "low": 136
+    "low": 120
   },
   "review_reason_counts": {
-    "capacity_clue_without_role": 31,
-    "unresolved_capacity": 105
+    "capacity_clue_without_role": 29,
+    "unresolved_capacity": 91
   },
   "capacity_not_stated_not_assumed": 541,
   "attribution_questions_separate": 153,
   "externally_supported_role_count": 1,
-  "source_context_classifications": 1034,
+  "source_context_classifications": 1033,
   "classification_basis_counts": {
     "multi_party_metadata_affiliation_candidate": 102,
-    "provisional_full_text_role": 988,
-    "filer_field_organization": 629,
+    "provisional_full_text_role": 978,
+    "filer_field_organization": 640,
     "author_self_description": 930,
     "curated_company_type_candidate": 23,
-    "source_letterhead_or_signature": 429,
+    "source_letterhead_or_signature": 428,
     "signed_role_and_organization": 77,
     "signed_role": 49,
     "joint_education_association_metadata": 3,
     "externally_corrob_professional_role": 1
   },
   "review_roles": {
-    "named_person_capacity_unstated": 31,
-    "unresolved": 105
+    "named_person_capacity_unstated": 29,
+    "unresolved": 91
   },
   "review_candidate_records": [
     {
@@ -65,27 +65,9 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110068993",
-      "candidate_role": "unresolved",
-      "organization": "Ohio Information Technology Centers",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110069022",
-      "candidate_role": "unresolved",
-      "organization": "SentinelOne, Inc.",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110069600",
       "candidate_role": "unresolved",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110071888",
-      "candidate_role": "unresolved",
-      "organization": "Missouri Research and Education Network",
       "reason": "unresolved_capacity"
     },
     {
@@ -93,12 +75,6 @@
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110071998",
-      "candidate_role": "unresolved",
-      "organization": "Southwest Kansas Area Cooperative District",
-      "reason": "unresolved_capacity"
     },
     {
       "id": "26110072276",
@@ -155,22 +131,10 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110074187",
-      "candidate_role": "unresolved",
-      "organization": "Michigan Statewide Educational Network (MiSEN)",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110074680",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110075441",
-      "candidate_role": "unresolved",
-      "organization": "Responsive Education Solutions",
-      "reason": "unresolved_capacity"
     },
     {
       "id": "26110075543",
@@ -215,12 +179,6 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110076168",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "Library Assistant II",
-      "reason": "capacity_clue_without_role"
-    },
-    {
       "id": "26110076203",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
@@ -260,12 +218,6 @@
       "id": "26110076614",
       "candidate_role": "unresolved",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110076667",
-      "candidate_role": "unresolved",
-      "organization": "Mothers Against Media Addiction",
       "reason": "unresolved_capacity"
     },
     {
@@ -493,7 +445,7 @@
     {
       "id": "26110078746",
       "candidate_role": "unresolved",
-      "organization": "Adult Education & Educational Technology Specialist",
+      "organization": "",
       "reason": "unresolved_capacity"
     },
     {
@@ -527,12 +479,6 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110079365",
-      "candidate_role": "unresolved",
-      "organization": "Family Services of Westchester",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110079454",
       "candidate_role": "unresolved",
       "organization": "",
@@ -545,12 +491,6 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110079584",
-      "candidate_role": "unresolved",
-      "organization": "Finkelstein Memorial Library",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110079587",
       "candidate_role": "unresolved",
       "organization": "",
@@ -560,12 +500,6 @@
       "id": "26110079722",
       "candidate_role": "unresolved",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079727",
-      "candidate_role": "unresolved",
-      "organization": "Queensborough Community College",
       "reason": "unresolved_capacity"
     },
     {
@@ -650,12 +584,6 @@
       "id": "26110080229",
       "candidate_role": "unresolved",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110080303",
-      "candidate_role": "unresolved",
-      "organization": "Citizens Against Government Waste",
       "reason": "unresolved_capacity"
     },
     {
@@ -779,18 +707,6 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110081147",
-      "candidate_role": "unresolved",
-      "organization": "Alabama Leaders in Educational Technology",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110081149",
-      "candidate_role": "unresolved",
-      "organization": "California Emerging Technology Fund",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110081204",
       "candidate_role": "unresolved",
       "organization": "",
@@ -807,12 +723,6 @@
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110081237",
-      "candidate_role": "named_person_capacity_unstated",
-      "organization": "Methodist Healthcare Ministries of South Texas, Inc.",
-      "reason": "capacity_clue_without_role"
     },
     {
       "id": "26110081344",
@@ -839,12 +749,6 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110081422",
-      "candidate_role": "unresolved",
-      "organization": "Infinity Communications & Compliance",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110081466",
       "candidate_role": "unresolved",
       "organization": "",
@@ -852,7 +756,7 @@
     }
   ],
   "signature_resolutions": 77,
-  "letterhead_or_signature_org_resolutions": 423,
+  "letterhead_or_signature_org_resolutions": 428,
   "capacity_unstated_sample_ids": [
     "26109834985",
     "26110038479",
@@ -879,22 +783,20 @@
   ],
   "unresolved_sample_ids": [
     "26109999174",
-    "26110071888",
-    "26110073108",
-    "26110075700",
-    "26110076317",
+    "26110072444",
+    "26110074680",
+    "26110076203",
     "26110076771",
     "26110077489",
     "26110077856",
     "26110077993",
     "26110078492",
     "26110079259",
-    "26110079727",
-    "26110079889",
-    "26110080305",
-    "26110080737",
-    "26110080939",
-    "26110081231"
+    "26110079755",
+    "26110080085",
+    "26110080606",
+    "26110080789",
+    "26110081204"
   ],
   "spotcheck_filing_ids": {
     "10604263924780": {
