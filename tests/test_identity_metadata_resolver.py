@@ -87,7 +87,9 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
                 self.assertFalse(x['needs_review'])
                 self.assertEqual(x['organization'],'')
         institutional=self.classify('Chris Warden | K12TechPro')
-        self.assertTrue(institutional['needs_review'])
+        self.assertEqual(institutional['role'],'trade_association')
+        self.assertFalse(institutional['needs_review'])
+        self.assertTrue(institutional['attribution_review'])
 
     def test_dont_invent_professional_authority(self):
         self.assertFalse(personal_name_format('HTTP'))
