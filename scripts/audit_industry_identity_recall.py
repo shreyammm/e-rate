@@ -73,7 +73,7 @@ INTRO_SIGNALS = {
 }
 NONINDUSTRY = {"school_district", "individual_school", "school_technology_staff",
                "school_educator", "school_administrator", "library_institution",
-               "library_staff", "government", "parent_guardian", "student"}
+               "library_staff", "library_affiliated", "government", "parent_guardian", "student"}
 SAFE_COMPANY = re.compile(r"\b(?:inc\.?|llc|ltd\.?|corporation|corp\.?|company|"
                           r"technologies|software|consulting|consultants?|services)\b", re.I)
 
