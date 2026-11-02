@@ -25,6 +25,13 @@ class ExperimentalIdentityTests(unittest.TestCase):
           "I volunteer at our public library.": "community_volunteer",
           "I am a researcher studying education policy.": "researcher",
           "I am a school IT director.": "school_technology_staff",
+          "As a professional librarian I see the benefit.": "library_staff",
+          "As a high school teacher, I want E-Rate preserved.": "school_educator",
+          "I have just retired in June from teaching elementary school for 28 years.": "retired_educator",
+          "As an IT Professional at a Catholic School in Marlborough, I see firsthand its importance.": "school_technology_staff",
+          "Currently, I am a member of the BOE at my district.": "school_board_member",
+          "I have been in education for over 20 years, starting in the classroom.": "education_professional",
+          "I am a licensed psychologist in private practice.": "health_professional",
         }
         for text, role in samples.items():
             with self.subTest(text=text):
