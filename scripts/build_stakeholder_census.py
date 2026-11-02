@@ -300,13 +300,35 @@ def load_submitter_ids(manifest_path,registry):
     if set(tokens)!=expected:raise ValueError('Filer identity coverage mismatch')
     opaque={key:'s'+str(i+1).zfill(5) for i,key in enumerate(sorted(set(tokens.values())))}
     distinct_counts=Counter(tokens.values())
-    # Public aggregate diagnostics; no original filer names or hashes.
+    registry_by_id={str(f['id']):f for f in registry['filings']}
+    members=defaultdict(list)
+    for fid,token in tokens.items():members[token].append(fid)
+    repeat_profiles=[]
+    for token,ids in sorted(members.items(),key=lambda kv:(-len(kv[1]),kv[0])):
+        if len(ids)<2:continue
+        entries=[registry_by_id[fid] for fid in ids]
+        orgs=sorted({str(e.get('organization') or '') for e in entries if e.get('organization')})
+        repeat_profiles.append({
+            'filings':len(ids),
+            'role_counts':dict(Counter(e.get('role','unresolved') for e in entries)),
+            'stakeholder_group_counts':dict(Counter(stakeholder_group(e) for e in entries)),
+            'recognized_public_organizations':orgs[:6],
+            'distinct_organization_candidates':len(orgs),
+            'distinct_source_texts':len({e.get('text_sha256') for e in entries if e.get('text_sha256')}),
+            'example_filing_ids':sorted(ids)[:4],
+            'organization_annotation_coverage':sum(bool(e.get('organization')) for e in entries),
+            'repeat_metadata_type':'unresolved_filer_metadata' if token.startswith('filing:') else
+                                   'repeat_exact_normalized_filer_field'
+        })
+        if len(repeat_profiles)>=16:break
+    # Public aggregate diagnostics; no raw personal names or name hashes.
     load_submitter_ids.summary={
         'records':len(tokens),
         'unique_normalized_raw_filer_fields':len(set(tokens.values())),
         'repeated_identifiers':sum(n>1 for n in distinct_counts.values()),
         'filings_in_repeated_identifiers':sum(n for n in distinct_counts.values() if n>1),
         'largest_repeat_cluster_sizes':sorted((n for n in distinct_counts.values() if n>1),reverse=True)[:12],
+        'largest_repeat_cluster_profiles':repeat_profiles,
         'fallback_filing_identities':sum(token.startswith('filing:') for token in tokens.values()),
     }
     return {fid:opaque[key] for fid,key in tokens.items()}
