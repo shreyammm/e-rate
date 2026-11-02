@@ -390,6 +390,27 @@ def explicitly_submitting_institution(text: str) -> tuple[str,str]:
         role=first_rule(name,ORG_PATTERNS)[0]
         if role and role!="other_vendor":
             return role,name
+    # PDFs sometimes concatenate a heading, organization and statement on
+    # the same long extracted line; the strict standalone-line matcher above
+    # misses these explicit institutional submitter declarations.
+    head=re.sub(r"\s+"," ",str(text or "")[:2300])
+    for m in re.finditer(
+        r"(?i)([A-Za-z][A-Za-z&.' -]{7,100}?"
+        r"(?:school district|public schools|public library|library system|"
+        r"unified high school district|school corporation|county school board))"
+        r"\s*(?:\([A-Z]{2,12}\))?\s+(?:respectfully )?"
+        r"(?:submits?|files?)\s+(?:these|its|the|our)\s+(?:comments|filing|statement)\b",
+        head,
+    ):
+        candidate=m.group(1).strip(" .,:;-")
+        # Trim preceding title / salutation text, keeping only up to 12 words.
+        parts=candidate.split()
+        candidate=" ".join(parts[-12:])
+        label=organization_label(candidate)
+        if label:
+            role=first_rule(label,ORG_PATTERNS)[0]
+            if role and role!="other_vendor":
+                return role,label
     return "",""
 
 
