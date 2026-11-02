@@ -28,8 +28,8 @@ class StakeholderPageTest(unittest.TestCase):
         for control in ('download-matrix','download-audit','download'):
             self.assertIn(f'id="{control}"',html)
             self.assertIn(f"$('{control}')",js)
-        for field in ('pct_of_all_group_filings','pct_of_coded_group_filings',
-                      'pct_of_all_filings_with_this_argument','distinct_original_source_texts',
+        for field in ('pct_of_distinct_submitters_in_group','pct_of_argument_submitter_group_assignments',
+                      'distinct_original_source_texts',
                       'named_institutions_with_this_argument','selection_reason'):
             self.assertIn(field,js)
         self.assertIn('negative_control',js)
