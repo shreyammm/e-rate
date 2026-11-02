@@ -538,6 +538,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
        'coverage':{'filings':len(filings),'readable_source_texts':manifest['records_with_text'],
              'named_organizations':len(organizations),
              'filings_requiring_identity_review':sum(r['needs_review'] for r in filings),
+             'filings_capacity_not_stated':sum(r['identity_status']=='capacity_not_stated' for r in filings),
              'manually_reviewed_filings':sum(r['identity_status']=='human_reviewed' for r in filings),
              'filings_with_two_or_more_identifiable_institutions':sum(r['multi_submitter_metadata'] for r in filings)},
        'method':'Screened original FCC institution-valued filer metadata, two-party potential affiliation, and explicit opening self-description. Type and industry remain separate. Categories provisional until human reviewed.',
