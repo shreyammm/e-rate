@@ -32,6 +32,7 @@ DET_TO_OLD = {
     "school_technology_staff": "school_staff", "school_educator": "school_staff",
     "school_administrator": "school_staff", "school_connected_unknown": "unknown",
     "library_institution": "library", "library_staff": "library",
+    "library_affiliated": "library",
     "erate_consultant": "consultant", "procurement_adviser": "consultant",
     "trade_association": None,  # LLM has no trade-association label.
     "advocacy_organization": "advocacy_group",
