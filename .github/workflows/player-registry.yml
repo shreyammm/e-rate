@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_player_registry.py'
+      - 'tests/test_player_registry.py'
       - 'scripts/audit_industry_identity_recall.py'
       - 'tests/test_industry_identity_recall.py'
       - 'scripts/build_industry_argument_review.py'
