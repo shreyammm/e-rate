@@ -1,17 +1,17 @@
 {
-  "generated_utc": "2026-11-02T15:39:01.135909+00:00",
+  "generated_utc": "2026-11-02T15:39:50.284767+00:00",
   "method": "Resolve FCC filer metadata as institution, named person, or person–represented-organization pair using original filer fields and source-derived institutional affiliation. Different represented organizations are distinct capacities; organizational aliases are canonicalized only with evidence. Missing identities remain separate. Ambiguous entries are flagged for review. This is a count of submitter-capacity voices, not independently verified unique people, endorsements, or representative opinion.",
   "coverage": {
     "filings": 3231,
-    "unique_commenters": 2821,
-    "commenter_group_assignments": 2829
+    "unique_commenters": 2822,
+    "commenter_group_assignments": 2830
   },
   "metadata_diagnostics": {
     "records": 3231,
     "unique_normalized_raw_filer_fields": 2820,
-    "distinct_submitter_capacity_identities": 2821,
-    "repeated_identifiers": 56,
-    "filings_in_repeated_identifiers": 466,
+    "distinct_submitter_capacity_identities": 2822,
+    "repeated_identifiers": 55,
+    "filings_in_repeated_identifiers": 464,
     "largest_repeat_cluster_sizes": [
       277,
       65,
@@ -533,6 +533,24 @@
         "filings": 2,
         "distinct_resolved_voices": 2,
         "source_filing_ids": [
+          "26110075784",
+          "26110077716"
+        ],
+        "organization_candidates": [
+          "Washington Community H.S. District #308"
+        ],
+        "stakeholder_groups": {
+          "school_professionals": 2
+        },
+        "resolution_methods": {
+          "unparsed_named_filer_field": 1,
+          "affiliation_candidate_unparsed_filer": 1
+        }
+      },
+      {
+        "filings": 2,
+        "distinct_resolved_voices": 2,
+        "source_filing_ids": [
           "26110077672",
           "26110080143"
         ],
@@ -549,27 +567,28 @@
         }
       }
     ],
-    "total_raw_names_split_by_affiliation": 2,
+    "total_raw_names_split_by_affiliation": 3,
     "resolution_methods": {
-      "named_person_in_metadata_with_institution": 475,
+      "named_person_in_metadata_with_institution": 471,
       "institution_filer_metadata": 908,
-      "named_person_capacity_not_established": 1120,
-      "unparsed_named_filer_field": 151,
-      "named_person_with_source_affiliation": 407,
-      "affiliation_candidate_unparsed_filer": 105,
+      "named_person_capacity_not_established": 1105,
+      "unparsed_named_filer_field": 167,
+      "named_person_with_source_affiliation": 398,
+      "affiliation_candidate_unparsed_filer": 107,
       "source_identified_institution_with_unparsed_filer": 17,
       "unidentifiable_filer": 22,
       "joint_institutional_submission": 22,
-      "inferred_single_organization_from_same_named_filer_and_group": 3,
+      "institution_metadata_with_occupational_title": 10,
+      "inferred_single_organization_from_same_named_filer_and_group": 2,
+      "potential_joint_submission": 1,
       "joint_relationship_needs_review": 1
     },
-    "single_affiliation_inferred_for_repeated_filer_records": 3,
+    "single_affiliation_inferred_for_repeated_filer_records": 2,
     "inferred_single_affiliation_example_ids": [
-      "26110075784",
       "26110077604",
       "26110078250"
     ],
-    "records_with_identity_relationship_uncertainty": 370,
+    "records_with_identity_relationship_uncertainty": 398,
     "fallback_filing_identities": 22
   },
   "industry_rollups": [
@@ -642,7 +661,7 @@
       "id": "school_professionals",
       "label": "School staff and educators",
       "filings": 644,
-      "commenters": 637
+      "commenters": 638
     },
     {
       "id": "school_affiliation_uncertain",
@@ -758,15 +777,15 @@
       "id": "program_continuity",
       "label": "Keep, reduce or narrow E-Rate",
       "filings": 2554,
-      "commenters": 2508,
-      "commenter_group_assignments": 2514
+      "commenters": 2509,
+      "commenter_group_assignments": 2515
     },
     {
       "id": "eligibility_rules",
       "label": "Which services E-Rate should fund",
       "filings": 1635,
-      "commenters": 1609,
-      "commenter_group_assignments": 1611
+      "commenters": 1610,
+      "commenter_group_assignments": 1612
     },
     {
       "id": "broadband_affordability",
