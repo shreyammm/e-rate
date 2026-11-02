@@ -36,6 +36,7 @@ DET_TO_OLD = {
     "erate_consultant": "consultant", "procurement_adviser": "consultant",
     "trade_association": None,  # LLM has no trade-association label.
     "advocacy_organization": "advocacy_group",
+    "nonprofit_service_provider": None,  # Old LLM cannot distinguish service charities from advocates.
     "parent_guardian": "parent_guardian", "student": "individual_other",
     "government": "government", "researcher": "researcher",
     "other_vendor": None,  # LLM has no vendor type at all.
