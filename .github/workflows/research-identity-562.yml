@@ -6,6 +6,7 @@ on:
     paths:
       - 'research/identity_562/analyze_individuals.py'
       - 'research/identity_562/test_analyze_individuals.py'
+      - 'research/identity_562/diagnose_model_leads.py'
       - '.github/workflows/research-identity-562.yml'
   workflow_dispatch:
 permissions:
@@ -29,6 +30,8 @@ jobs:
         run: python -m unittest research.identity_562.test_analyze_individuals -v
       - name: Run source inspection on all named-individual filings
         run: python -m research.identity_562.analyze_individuals
+      - name: Inspect redacted original-source examples behind model stakeholder leads
+        run: python -m research.identity_562.diagnose_model_leads
       - name: Verify no personal contact details are emitted
         run: |
           python - <<'PY'
