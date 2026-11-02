@@ -375,6 +375,37 @@ class PlayerIdentityTest(unittest.TestCase):
                 self.assertTrue(got['attribution_review'])
 
 
+    def test_publicly_corrob_institution_roles_not_generic_vendors(self):
+        cases=[
+            ('Palm Bay Education Group,Inc.', 'school_district'),
+            ('Connected Nation, Inc.', 'advocacy_organization'),
+            ('REGIONAL ECONOMIC COMMUNITY ACTION PROGRAM, INC.', 'advocacy_organization'),
+            ('Step Up Suncoast, Inc.', 'advocacy_organization'),
+            ('Le Jardin Community Center, Inc.', 'advocacy_organization'),
+            ('Community Action Partnership of Madera County, Inc.', 'advocacy_organization'),
+            ('SomethingCool.com LLC', 'network_technology_vendor'),
+            ('Vision21 Networks, LLC', 'network_technology_vendor'),
+            ('Infinity Communications & Compliance', 'erate_consultant'),
+        ]
+        for name,expected in cases:
+            with self.subTest(name=name):
+                got=inferred_identity({'filer_raw':name}, 'other_business_or_vendor',
+                    'These are our comments on the FCC E-Rate program.')
+                self.assertEqual(got['role'], expected)
+        source=inferred_identity(
+            {'filer_raw':'Dan Kleinman | SafeLibraries® brand library educational services'},
+            'library_or_library_system','The author advocates changes to library policy.')
+        self.assertEqual(source['role'],'advocacy_organization')
+        self.assertNotEqual(source['role'],'library_institution')
+
+    def test_joint_two_libraries_remain_two_institutions(self):
+        from scripts.build_player_registry import submitted_by_multiple_entities
+        joint=submitted_by_multiple_entities(
+            'Northwest Library District | Crawford County Federated Library System')
+        self.assertTrue(joint['multi_submitter_metadata'])
+        self.assertEqual(len(joint['joint_institution_candidates']),2)
+        self.assertTrue(all('Library' in x for x in joint['joint_institution_candidates']))
+
     def test_named_library_association_is_not_library_system(self):
         x=inferred_identity({'filer_raw':'American Library Association'},
             'library_or_library_system','Our members are public libraries.')
