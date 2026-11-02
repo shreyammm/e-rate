@@ -55,6 +55,8 @@ KNOWN = {
     # IT/network firms are distinct from instructional software manufacturers.
     'somethingcool com llc': ('SomethingCool.com LLC', 'network_technology_vendor'),
     'vision21 networks llc': ('Vision21 Networks, LLC', 'network_technology_vendor'),
+    'cause based commerce inc': ('Cause Based Commerce, Inc.', 'telecom_isp'),
+    'the learning clinic inc': ('The Learning Clinic, Inc.', 'individual_school'),
     # A library-policy watchdog publication is not an operating public library.
     'safelibraries brand library educational services': ('SafeLibraries', 'advocacy_organization'),
 
