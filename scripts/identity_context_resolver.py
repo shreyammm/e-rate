@@ -67,6 +67,31 @@ PATTERNS = [
      r"e[- ]?rate (?:consultant|advisor|adviser)|"
      r"as (?:an? |the )?e[- ]?rate (?:consultant|advisor|adviser)|"
      r"our (?:e[- ]?rate )?consulting (?:firm|business|practice) (?:helps|serves|works|assists))\b"),
+    # Additional explicit occupational self-descriptions. Keep the cues in the
+    # author's voice and never infer a profession merely because it is discussed.
+    ("school_technology_staff", "author_technical_capacity", "first_person_school_IT_extended",
+     r"\\b(?:i(?:'m| am) (?:the |an? )?(?:district |school )?(?:chief information officer|"
+     r"director of (?:information )?technology|technology integration specialist|"
+     r"edtech coordinator)|i work (?:in|for) (?:our|the|a) (?:school |district )?"
+     r"(?:it|technology) (?:department|team))\\b"),
+    ("school_administrator", "author_school_leadership", "first_person_school_admin_extended",
+     r"\\b(?:i(?:'m| am) (?:the |an? )?(?:assistant principal|vice principal|"
+     r"school district superintendent|school board trustee|district superintendent)|"
+     r"i serve on (?:our|the|a) school board)\\b"),
+    ("school_educator", "author_teaching_capacity", "first_person_educator_extended",
+     r"\\b(?:i(?:'m| am) (?:an? |the )?(?:special education teacher|"
+     r"elementary school teacher|high school teacher|middle school teacher|"
+     r"substitute teacher|paraprofessional|school counselor)|"
+     r"i work as (?:an? |the )?(?:paraprofessional|school counselor))\\b"),
+    ("library_staff", "author_library_staff_capacity", "first_person_library_staff_extended",
+     r"\\b(?:i(?:'m| am) (?:an? |the )?(?:public |school )?(?:library assistant|"
+     r"library technician|library media specialist|head librarian)|"
+     r"i work as (?:an? |the )?(?:library assistant|library technician|"
+     r"library media specialist))\\b"),
+    ("erate_consultant", "author_consulting_capacity", "first_person_erate_consultant_extended",
+     r"\\b(?:i(?:'m| am) (?:an? |the )?(?:e[- ]?rate (?:program )?consultant|"
+     r"e[- ]?rate funding consultant)|i (?:provide|offer) e[- ]?rate "
+     r"(?:consulting|advisory) services)\\b"),
     ("library_affiliated", "author_library_affiliation", "first_person_library_affiliation",
      r"\b(?:our library (?:is|serves|provides|offers|depends|relies|has|uses|connects|operates|supports)|"
      r"our library (?:will|would|could|cannot|can't)\b|"
