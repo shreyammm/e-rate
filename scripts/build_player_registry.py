@@ -64,6 +64,7 @@ ORG_RULES = [
     ('government', r'^national telecommunications and information administration$'),
     ('government', r'^fcc wireline competition bureau$'),
     ('school_district', r'^coastline regional occupational program$'),
+    ('school_district', r'\b(?:school board|education cooperative district)\b'),
     ('telecom_isp', r'^alaska power (?:and|&) telephone$'),
     ('erate_consultant', r'^hwc consultants$'),
     ('erate_consultant', r'^(?:funds for learning|american e[- ]rate solutions|e[- ]rate complete|e[- ]rate funding services|tel/logic.*e[- ]rate central|education service center region 12 e[- ]rate consulting services)\b'),
@@ -630,6 +631,24 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                         identity_status='source_inferred',identity_confidence='high',
                         industry_focus='unspecified',
                         identity_review_reason='',needs_review=False)
+                # Multiple identifiable institutions are a joint filing,
+                # not a mysterious private commenter. Keep joint counts to
+                # one filing and attribute each institution separately.
+                if joint['multi_submitter_metadata'] and found['needs_review']:
+                    role_candidates=[]
+                    for institution_name in joint['joint_institution_candidates']:
+                        _,known_role=institution(institution_name)
+                        candidate=known_role or first_rule(institution_name,ORG_PATTERNS)[0]
+                        if candidate and candidate!='other_vendor':
+                            role_candidates.append(candidate)
+                    if role_candidates:
+                        common_role=Counter(role_candidates).most_common(1)[0][0]
+                        found.update(role=common_role,organization='',
+                            basis='joint_institutional_metadata',
+                            identity_status='source_inferred',
+                            identity_confidence='medium',needs_review=False,
+                            identity_review_reason='',attribution_review=True,
+                            industry_focus=industry_focus('',common_role))
                 review=review_priority(found,body)
                 filings.append({'id':sid,'base_role':base[sid],
                      'role':found['role'],'organization':found['organization'],
