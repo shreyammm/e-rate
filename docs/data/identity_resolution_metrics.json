@@ -4,28 +4,30 @@
   "review_required": 143,
   "usable_without_review": 3088,
   "confidence_counts": {
-    "medium": 1319,
+    "medium": 1320,
     "high": 1227,
     "low": 143,
-    "not_established": 542
+    "not_established": 541
   },
   "review_reason_counts": {
     "unresolved_capacity": 112,
     "capacity_clue_without_role": 31
   },
-  "capacity_not_stated_not_assumed": 542,
+  "capacity_not_stated_not_assumed": 541,
   "attribution_questions_separate": 123,
+  "externally_supported_role_count": 1,
   "source_context_classifications": 1036,
   "classification_basis_counts": {
     "multi_party_metadata_affiliation_candidate": 71,
-    "provisional_full_text_role": 1002,
+    "provisional_full_text_role": 1001,
     "filer_field_organization": 625,
     "author_self_description": 942,
     "source_letterhead_or_signature": 436,
     "curated_company_type_candidate": 22,
     "signed_role_and_organization": 81,
     "signed_role": 49,
-    "joint_education_association_metadata": 3
+    "joint_education_association_metadata": 3,
+    "externally_corrob_professional_role": 1
   },
   "review_roles": {
     "unresolved": 112,
@@ -43,19 +45,19 @@
     "26110073648",
     "26110075435",
     "26110076026",
-    "26110076496",
-    "26110076769",
-    "26110077478",
-    "26110077883",
-    "26110077980",
-    "26110078314",
-    "26110078482",
-    "26110079169",
-    "26110079698",
-    "26110080134",
-    "26110080586",
-    "26110080794",
-    "26110081264"
+    "26110076505",
+    "26110076787",
+    "26110077480",
+    "26110077886",
+    "26110077989",
+    "26110078318",
+    "26110078487",
+    "26110079171",
+    "26110079700",
+    "26110080136",
+    "26110080588",
+    "26110080808",
+    "26110081278"
   ],
   "unresolved_sample_ids": [
     "10616053926673",
@@ -143,11 +145,11 @@
       "attribution_review": false
     },
     "26110076475": {
-      "role": "named_person_capacity_unstated",
+      "role": "researcher",
       "organization": "",
-      "identity_confidence": "not_established",
+      "identity_confidence": "medium",
       "review": false,
-      "review_reason": "unresolved_capacity",
+      "review_reason": "",
       "attribution_review": false
     },
     "26110076713": {
