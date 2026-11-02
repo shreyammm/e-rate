@@ -136,6 +136,14 @@ def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -
     # institution; never infer authority merely from that relationship.
     if len(parts)==1 and raw.count(';')==1:
         parts=[p.strip() for p in raw.split(';')]
+    # "Ellen Manley, Becket Athenaeum": a named signer + one recognized
+    # institution, not an unknown private person. Commas in legal names are
+    # ignored unless exactly one field resolves as an institution.
+    if len(parts)==1 and raw.count(',')==1:
+        possible=[p.strip() for p in raw.split(',')]
+        if sum(bool(institution_label(p)) for p in possible)==1:
+            parts=possible
+
     if len(parts)==1 and raw.count(';')==1:
         parts=[p.strip() for p in raw.split(';')]
     if len(parts)<2 or not all(parts):return ''
