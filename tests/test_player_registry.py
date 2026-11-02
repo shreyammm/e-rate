@@ -386,6 +386,8 @@ class PlayerIdentityTest(unittest.TestCase):
             ('SomethingCool.com LLC', 'network_technology_vendor'),
             ('Vision21 Networks, LLC', 'network_technology_vendor'),
             ('Infinity Communications & Compliance', 'erate_consultant'),
+            ('Cause Based Commerce, Inc.', 'telecom_isp'),
+            ('The Learning Clinic, Inc.', 'individual_school'),
         ]
         for name,expected in cases:
             with self.subTest(name=name):
