@@ -24,6 +24,12 @@ class ExtendedIdentityCapacityTest(unittest.TestCase):
             "I\u0027m a community college student who depends on library Wi-Fi.": "student",
             "As a high school student I need connectivity.": "student",
             "I attend a community college and rely on E-Rate.": "student",
+            "I work for our public school district.": "school_connected_unknown",
+            "I am employed by the public school.": "school_connected_unknown",
+            "I work for the county library system.": "library_staff",
+            "I sit on the public library board of trustees.": "library_affiliated",
+            "As a public school parent, I support connectivity.": "parent_guardian",
+            "I own an E-Rate consulting firm helping applicants.": "erate_consultant",
         }
         for comment, role in examples.items():
             with self.subTest(comment=comment):
