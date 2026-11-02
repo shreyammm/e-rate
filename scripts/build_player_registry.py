@@ -17,6 +17,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from scripts.identity_context_resolver import context_capacity
+from scripts.identity_signature_resolver import signature_signal, SignatureSignal
 from scripts.identity_metadata_resolver import institution, single_institution_pair, personal_name_format, multiple_person_names_only, personal_name_with_postnominals, explicit_job_title
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -356,6 +357,14 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     if default=='unresolved' and person and not name and (personal_name_format(raw) or multiple_person_names_only(raw) or personal_name_with_postnominals(raw)):
         default='named_person_capacity_unstated'
     signed_role,signed_org,sign_basis=signoff_evidence(text) if person else ('','','')
+    # A signatory can identify their professional sector by an institutional
+    # domain or a terminal title even without a standardized salutation.
+    # Domain-only signals NEVER identify a legal employer or filing authority.
+    signature=signature_signal(text,raw) if person else SignatureSignal()
+    terminal_title_used=bool(not signed_role and signature.basis=='terminal_signature_job_title')
+    if terminal_title_used:
+        signed_role=signature.role
+    domain_role=(signature.role if signature.basis=='signature_institutional_email_domain' else '')
     document_org=opening_institution(text) if person and not name else ''
     recovered_org=signed_org or document_org
     if not name and recovered_org:
@@ -368,7 +377,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # An organization filing with direct source metadata is stronger than an
     # isolated occupational title; for an individual, self-description wins.
     # A signed occupational title is useful when an individual never says "I am".
-    role=(self_role or signed_role or metadata_job or org_role or default) if person else (org_role or default)
+    role=(self_role or signed_role or metadata_job or org_role or domain_role or default) if person else (org_role or default)
     # A signatory may also be a parent or an institutional affiliate. When
     # their signed occupational capacity is more specific, use that capacity
     # as the primary category without treating the two descriptions as errors.
@@ -383,7 +392,9 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
            'author_self_description' if self_role else
            'metadata_occupational_title' if metadata_job else
            'signed_role_and_organization' if signed_role and name else
+           'terminal_signature_job_title' if terminal_title_used else
            'signed_role' if signed_role else
+           'signature_institutional_email_domain' if domain_role and role==domain_role else
            'source_letterhead_or_signature' if recovered_org else
            'curated_company_type_candidate' if curated else
            'filer_field_organization' if org_role else
@@ -399,8 +410,9 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
         'school_district_or_school','educator_or_school_staff',
         'school_connected_voice_capacity_unconfirmed')
     school_affiliation_supported=(
-        school_base or bool(inferred_capacity and
-                            inferred_capacity.role=='school_connected_unknown'))
+        school_base or bool(domain_role=='school_connected_unknown') or
+        bool(inferred_capacity and
+             inferred_capacity.role=='school_connected_unknown'))
     unresolved=(role=='unresolved' or
                 (role=='school_connected_unknown' and not school_affiliation_supported))
     # An ordinary person who did not claim an occupational capacity is an
@@ -447,6 +459,8 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     identity_status=('capacity_not_stated' if unknown_person and not review else
                      'source_inferred' if not review and (
                          (inferred_capacity and inferred_capacity.role) or
+                         bool(domain_role and role==domain_role) or
+                         terminal_title_used or
                          (role=='school_connected_unknown' and school_base)) else
                      'unresolved' if unresolved or unknown_person else
                      'source_conflict' if conflicting else
@@ -454,6 +468,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
                      'strong_source_cue')
     confidence=('high' if metadata_job else
                 'not_established' if unknown_person and not review else
+                'medium' if domain_role and role==domain_role else
                 'medium' if role=='school_connected_unknown' and school_base else
                 'medium' if affiliated and not conflicting else
                 inferred_capacity.confidence if inferred_capacity and inferred_capacity.role
@@ -466,9 +481,10 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
             'basis':basis,
             'evidence_cue':self_quote or org_cue or (
                 'signatory title' if signed_role else
+                'institutional domain in signoff' if domain_role and role==domain_role else
                 'organization on letterhead/signature' if recovered_org else ''),
             'speaker_is_proxy_possible':proxy,'needs_review':review,
-            'attribution_review':bool(proxy or affiliated or ambiguous_affiliation or recovered_org),
+            'attribution_review':bool(proxy or affiliated or ambiguous_affiliation or recovered_org or domain_role),
             'identity_status':identity_status,'identity_confidence':confidence,
             'identity_review_reason':(
                 'capacity_clue_without_role' if possible_missed_affiliation else
