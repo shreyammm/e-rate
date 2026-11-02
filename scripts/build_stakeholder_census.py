@@ -541,6 +541,29 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'topics':{k:len(v) for k,v in issues.items()}
         })
     profiles.sort(key=lambda x:(-x['filings_with_topics'],x['name'].casefold()))
+    industry_rollups={
+        'edtech_and_erate_consulting':[
+            'edtech_vendors','erate_consultants'],
+        'edtech_and_erate_with_associations':[
+            'edtech_vendors','edtech_trade_associations',
+            'erate_consultants','consultant_associations'],
+        'all_named_technology_and_erate_industry':[
+            'edtech_vendors','edtech_trade_associations',
+            'erate_consultants','consultant_associations',
+            'connectivity_and_network_vendors','telecom_associations'],
+    }
+    voice_den=len({x['submitter_id'] for x in records})
+    industry_totals=[]
+    for label,groups in industry_rollups.items():
+        unique=set().union(*(group_person[g] for g in groups))
+        industry_totals.append({
+            'id':label,
+            'included_groups':groups,
+            'distinct_submitter_capacity_voices':len(unique),
+            'pct_of_corpus_voices':round(100*len(unique)/voice_den,2) if voice_den else None,
+            'stakeholder_category_assignments':sum(len(group_person[g]) for g in groups),
+            'filings':sum(group_den[g] for g in groups),
+        })
     return {
         'schema':'stakeholder-arguments-v1',
         'generated_utc':datetime.now(timezone.utc).isoformat(),
@@ -584,6 +607,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
              'joint_filings':sum(x['joint_filing'] for x in records if x['group']==g)}
             for g,name in GROUP_NAMES.items()],
         'stakeholder_roles':[{'id':r,'filings':n,'commenters':len(role_person[r])} for r,n in sorted(roles_den.items(),key=lambda kv:(-kv[1],kv[0]))],
+        'stakeholder_rollups':industry_totals,
         'topics':stats,'organizations':profiles,'filings':records
     }
 
@@ -611,6 +635,7 @@ def build(registry=REGISTRY,claim_path=CLAIMS,quality_path=QUALITY,audit_path=AU
         'coverage':{k:payload['coverage'][k] for k in
                     ('filings','unique_commenters','commenter_group_assignments')},
         'metadata_diagnostics':getattr(load_submitter_ids,'summary',{}),
+        'industry_rollups':payload['stakeholder_rollups'],
         'groups':[{k:g[k] for k in ('id','label','filings','commenters')}
                   for g in payload['stakeholder_groups']],
         'topics':[{k:t[k] for k in ('id','label','filings','commenters','commenter_group_assignments')}
