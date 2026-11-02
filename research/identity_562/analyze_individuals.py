@@ -403,7 +403,7 @@ def explicitly_submitting_institution(text: str) -> tuple[str,str]:
         head,
     ):
         candidate=m.group(1).split(",")[-1].strip(" .,:;-")
-        candidate=re.sub(r"(?i)^(?:comments|reply comments|statement) of\\s+","",candidate)
+        candidate=re.sub(r"(?i)^(?:comments|reply comments|statement) of\s+","",candidate)
         # Trim preceding title / salutation text, keeping only up to 12 words.
         parts=candidate.split()
         parts=parts[-12:]
