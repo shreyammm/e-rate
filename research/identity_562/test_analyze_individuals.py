@@ -1,6 +1,6 @@
 import unittest
 from scripts.identity_context_resolver import context_capacity
-from research.identity_562.analyze_individuals import declared_roles, normalize_template, shingles
+from research.identity_562.analyze_individuals import declared_roles, normalize_template, shingles, explicitly_submitting_institution
 
 class ExperimentalIdentityTests(unittest.TestCase):
     def check(self, text, role):
@@ -57,6 +57,14 @@ class ExperimentalIdentityTests(unittest.TestCase):
         x=("This filing raises an issue.\nReferences\n"
            "I am an E-Rate consultant employed by a school.\n")
         self.assertEqual(declared_roles(x),[])
+
+    def test_explicit_institutional_author_not_ordinary_topic_mention(self):
+        assert explicitly_submitting_institution(
+            "East Side Union High School District respectfully submits these comments."
+        )[0] == "school_district"
+        assert explicitly_submitting_institution(
+            "E-Rate helps the Marietta City School District access the internet."
+        ) == ("","")
 
     def test_template_trivial_letters_not_clustered(self):
         self.assertFalse(shingles(normalize_template("Keep E-Rate, please.")))
