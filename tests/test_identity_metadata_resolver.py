@@ -68,6 +68,29 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
         self.assertEqual(parent['role'],'parent_guardian')
         self.assertFalse(parent['needs_review'])
 
+    def test_remaining_public_institution_aliases(self):
+        cases=[
+            ('HMH','edtech_learning_vendor'),
+            ('Building Industry Consulting Service International, Incorporated (BICSI)','trade_association'),
+            ('City of Homer, Alaska','government'),
+            ('City of Lafayette, CA','government'),
+            ('City of Oceanside, CA','government'),
+            ('Mundelein SD 120','school_district'),
+            ('Mundelein SD 75','school_district'),
+            ('Educational Service Unit 13','school_district'),
+            ('Lewis County Head Start','individual_school'),
+            ('National Conference of State Legislatures','trade_association'),
+            ('Public Interest Privacy Center','advocacy_organization'),
+            ('Ellen Manley, Becket Athenaeum','library_institution'),
+        ]
+        for name,role in cases:
+            with self.subTest(name=name):
+                c=self.classify(name)
+                self.assertEqual(c['role'],role)
+                self.assertFalse(c['needs_review'])
+        c=self.classify('Ellen Manley, Becket Athenaeum')
+        self.assertTrue(c['attribution_review'])
+
     def test_source_only_not_topic(self):
         for commenter in ['Jessica','Cath','Christopher C Netro','E W','Nicki']:
             with self.subTest(name=commenter):
