@@ -77,9 +77,14 @@ def explicit_job_title(raw: str) -> str:
 
 def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -> str:
     """Either person|institution or institution|person; not joint institutions."""
-    parts=[s.strip() for s in str(raw or '').split('|')]
-    if len(parts)!=2 or not all(parts):return ''
+    raw=str(raw or '')
+    parts=[s.strip() for s in raw.split('|')]
+    if len(parts)==1 and raw.count('/')==1 and not re.search(r'(?i)https?://',raw):
+        parts=[p.strip() for p in raw.split('/')]
+    if len(parts)<2 or not all(parts):return ''
     orgs=[institution_label(p) for p in parts]
+    # A single organization and several named signatories is an attribution
+    # relationship, not an unknown entity. Multiple institutions are joint.
     if sum(bool(o) for o in orgs)!=1:return ''
     return next(o for o in orgs if o)
 
@@ -95,5 +100,5 @@ def personal_name_format(raw: str) -> bool:
     if any(c in raw for c in ('|','/',';', '@', ':')):return False
     if re.search(r'\d|\b(?:center|network|school|library|county|district|inc|llc|association|corp|coalition|fund|services|solutions|college|university|group|technologies|collective|bureau)\b',raw,re.I):
         return False
-    if raw.isupper() and len(raw.replace(' ',''))>=3:return False
+    if raw.isupper() and len(raw.split())==1 and len(raw)>=3:return False
     return bool(re.fullmatch(r"[A-Za-z][A-Za-z.'-]*(?:\s+[A-Za-z][A-Za-z.'-]*){0,3}",raw))
