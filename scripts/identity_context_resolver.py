@@ -66,7 +66,7 @@ PATTERNS = [
 ]
 
 COMPILED = [(r,b,c,re.compile(p,re.I)) for r,b,c,p in PATTERNS]
-STOP = re.compile(r"(?im)^\s*(?:references|bibliography|works cited|endnotes|appendix|footnotes)\s*[:.]?\s*$")
+STOP = re.compile(r"(?im)^\s*(?:references|bibliography|works cited|endnotes|appendix|footnotes)\b\s*[:.]?")
 QUOTE_PREFIX = re.compile(r"^\s*(?:>|“|\"|[•*]|\d{1,2}[.)]\s+)")
 
 def author_intro(text: str) -> str:
