@@ -1,17 +1,38 @@
 {
-  "generated_utc": "2026-11-02T15:10:49.739829+00:00",
+  "generated_utc": "2026-11-02T15:15:26.500675+00:00",
   "method": "Conservatively merge exact normalized FCC filer fields. Placeholder/missing filer names remain separate, with no text-based merging. Identical names may conceal different people and name variants may split one person. Multi-group submitters can appear in more than one group. Counts are not verified endorsements.",
   "coverage": {
     "filings": 3231,
-    "unique_commenters": 3224,
-    "commenter_group_assignments": 3229
+    "unique_commenters": 2820,
+    "commenter_group_assignments": 2828
+  },
+  "metadata_diagnostics": {
+    "records": 3231,
+    "unique_normalized_raw_filer_fields": 2820,
+    "repeated_identifiers": 56,
+    "filings_in_repeated_identifiers": 467,
+    "largest_repeat_cluster_sizes": [
+      277,
+      65,
+      8,
+      4,
+      4,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "fallback_filing_identities": 22
   },
   "groups": [
     {
       "id": "joint_institutional_filings",
       "label": "Joint institutional submissions",
       "filings": 30,
-      "commenters": 30
+      "commenters": 29
     },
     {
       "id": "education_networks",
@@ -29,31 +50,31 @@
       "id": "school_institutions",
       "label": "Schools and districts",
       "filings": 672,
-      "commenters": 671
+      "commenters": 655
     },
     {
       "id": "school_professionals",
       "label": "School staff and educators",
       "filings": 638,
-      "commenters": 638
+      "commenters": 631
     },
     {
       "id": "school_affiliation_uncertain",
       "label": "School-affiliated commenters (role unspecified)",
       "filings": 250,
-      "commenters": 250
+      "commenters": 247
     },
     {
       "id": "libraries",
       "label": "Libraries",
       "filings": 314,
-      "commenters": 313
+      "commenters": 309
     },
     {
       "id": "parents",
       "label": "Parents and caregivers",
       "filings": 116,
-      "commenters": 116
+      "commenters": 113
     },
     {
       "id": "edtech_vendors",
@@ -65,13 +86,13 @@
       "id": "edtech_trade_associations",
       "label": "Edtech industry associations",
       "filings": 2,
-      "commenters": 2
+      "commenters": 1
     },
     {
       "id": "erate_consultants",
       "label": "E-Rate consulting firms",
       "filings": 24,
-      "commenters": 24
+      "commenters": 20
     },
     {
       "id": "consultant_associations",
@@ -83,7 +104,7 @@
       "id": "connectivity_and_network_vendors",
       "label": "Internet and networking vendors",
       "filings": 16,
-      "commenters": 16
+      "commenters": 15
     },
     {
       "id": "telecom_associations",
@@ -95,13 +116,13 @@
       "id": "government",
       "label": "Government",
       "filings": 75,
-      "commenters": 75
+      "commenters": 71
     },
     {
       "id": "nonprofits_and_advocacy",
       "label": "Nonprofits and advocacy groups",
       "filings": 430,
-      "commenters": 430
+      "commenters": 83
     },
     {
       "id": "nonprofit_service_providers",
@@ -113,7 +134,7 @@
       "id": "other_associations",
       "label": "Other associations",
       "filings": 49,
-      "commenters": 49
+      "commenters": 47
     },
     {
       "id": "other_businesses",
@@ -125,7 +146,7 @@
       "id": "other_or_unidentified",
       "label": "Other or unidentified",
       "filings": 584,
-      "commenters": 584
+      "commenters": 576
     }
   ],
   "topics": [
@@ -133,127 +154,127 @@
       "id": "program_continuity",
       "label": "Keep, reduce or narrow E-Rate",
       "filings": 2554,
-      "commenters": 2548,
-      "commenter_group_assignments": 2552
+      "commenters": 2507,
+      "commenter_group_assignments": 2514
     },
     {
       "id": "eligibility_rules",
       "label": "Which services E-Rate should fund",
       "filings": 1635,
-      "commenters": 1632,
-      "commenter_group_assignments": 1635
+      "commenters": 1609,
+      "commenter_group_assignments": 1611
     },
     {
       "id": "broadband_affordability",
       "label": "Cost, access and equity",
       "filings": 1413,
-      "commenters": 1410,
-      "commenter_group_assignments": 1413
+      "commenters": 1393,
+      "commenter_group_assignments": 1394
     },
     {
       "id": "internal_networks",
       "label": "Internal networks and equipment",
       "filings": 1079,
-      "commenters": 1077,
-      "commenter_group_assignments": 1079
+      "commenters": 1067,
+      "commenter_group_assignments": 1068
     },
     {
       "id": "filtering",
       "label": "Content filtering and CIPA safeguards",
       "filings": 451,
-      "commenters": 451,
-      "commenter_group_assignments": 451
+      "commenters": 443,
+      "commenter_group_assignments": 443
     },
     {
       "id": "screen_policy",
       "label": "Screen-time limits and funding conditions",
       "filings": 402,
-      "commenters": 402,
-      "commenter_group_assignments": 402
+      "commenters": 394,
+      "commenter_group_assignments": 394
     },
     {
       "id": "student_privacy",
       "label": "Student privacy and surveillance",
       "filings": 353,
-      "commenters": 353,
-      "commenter_group_assignments": 353
+      "commenters": 244,
+      "commenter_group_assignments": 244
     },
     {
       "id": "learning_outcomes",
       "label": "Academic outcomes and instructional value",
       "filings": 298,
-      "commenters": 298,
-      "commenter_group_assignments": 298
+      "commenters": 294,
+      "commenter_group_assignments": 294
     },
     {
       "id": "fiber_construction",
       "label": "Fiber, construction and network builds",
       "filings": 273,
-      "commenters": 273,
-      "commenter_group_assignments": 273
+      "commenters": 272,
+      "commenter_group_assignments": 272
     },
     {
       "id": "administrative_burden",
       "label": "Paperwork, audits and compliance costs",
       "filings": 265,
-      "commenters": 265,
-      "commenter_group_assignments": 265
+      "commenters": 262,
+      "commenter_group_assignments": 262
     },
     {
       "id": "cybersecurity",
       "label": "Cybersecurity and network protection",
       "filings": 248,
-      "commenters": 248,
-      "commenter_group_assignments": 248
+      "commenters": 244,
+      "commenter_group_assignments": 244
     },
     {
       "id": "program_integrity",
       "label": "Waste prevention and program oversight",
       "filings": 226,
-      "commenters": 226,
-      "commenter_group_assignments": 226
+      "commenters": 222,
+      "commenter_group_assignments": 222
     },
     {
       "id": "school_discretion",
       "label": "School autonomy and local decisions",
       "filings": 145,
-      "commenters": 145,
-      "commenter_group_assignments": 145
+      "commenters": 142,
+      "commenter_group_assignments": 142
     },
     {
       "id": "parent_choice",
       "label": "Parental choice and opt-outs",
       "filings": 129,
-      "commenters": 129,
-      "commenter_group_assignments": 129
+      "commenters": 126,
+      "commenter_group_assignments": 126
     },
     {
       "id": "digital_literacy",
       "label": "Digital literacy and preparation",
       "filings": 116,
-      "commenters": 116,
-      "commenter_group_assignments": 116
+      "commenters": 115,
+      "commenter_group_assignments": 115
     },
     {
       "id": "libraries_public_service",
       "label": "Library access and public services",
       "filings": 105,
-      "commenters": 105,
-      "commenter_group_assignments": 105
+      "commenters": 104,
+      "commenter_group_assignments": 104
     },
     {
       "id": "consultant_fees",
       "label": "Consultant compensation and percentage fees",
       "filings": 80,
-      "commenters": 80,
-      "commenter_group_assignments": 80
+      "commenters": 79,
+      "commenter_group_assignments": 79
     },
     {
       "id": "competitive_bidding",
       "label": "Competitive bidding and procurement rules",
       "filings": 69,
-      "commenters": 69,
-      "commenter_group_assignments": 69
+      "commenters": 64,
+      "commenter_group_assignments": 64
     },
     {
       "id": "accessibility",
@@ -273,15 +294,15 @@
       "id": "screen_harms",
       "label": "Screen-use harms and disputed effects",
       "filings": 54,
-      "commenters": 54,
-      "commenter_group_assignments": 54
+      "commenters": 53,
+      "commenter_group_assignments": 53
     },
     {
       "id": "fcc_authority",
       "label": "FCC legal authority and jurisdiction",
       "filings": 52,
-      "commenters": 52,
-      "commenter_group_assignments": 52
+      "commenters": 51,
+      "commenter_group_assignments": 51
     },
     {
       "id": "consultant_percentage_fee_rules",
