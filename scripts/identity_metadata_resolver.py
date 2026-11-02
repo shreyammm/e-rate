@@ -24,6 +24,26 @@ KNOWN = {
     'advanedge solutions intelafunds': ('AdvanEdge Solutions Inc.', 'erate_consultant'),
     'north central independent living services': ('North Central Independent Living Services', 'advocacy_organization'),
     'zayo education': ('Zayo Group LLC', 'telecom_isp'),
+    # Additional residual cases checked against primary institution websites,
+    # state education agencies, college directories, and vendor descriptions.
+    'sentinelone inc': ('SentinelOne, Inc.', 'other_vendor'),
+    'ohio information technology centers': ('Ohio Information Technology Centers', 'education_network_consortium'),
+    'missouri research and education network': ('Missouri Research and Education Network (MOREnet)', 'education_network_consortium'),
+    'southwest kansas area cooperative district': ('Southwest Kansas Area Cooperative District', 'school_district'),
+    'michigan statewide educational network misen': ('Michigan Statewide Educational Network (MiSEN)', 'education_network_consortium'),
+    'michigan statewide educational network': ('Michigan Statewide Educational Network (MiSEN)', 'education_network_consortium'),
+    'responsive education solutions': ('Responsive Education Solutions', 'school_district'),
+    'mothers against media addiction': ('Mothers Against Media Addiction', 'advocacy_organization'),
+    'family services of westchester': ('Family Services of Westchester', 'advocacy_organization'),
+    'finkelstein memorial library': ('Finkelstein Memorial Library', 'library_institution'),
+    'queensborough community college': ('Queensborough Community College', 'higher_education_institution'),
+    'citizens against government waste': ('Citizens Against Government Waste', 'advocacy_organization'),
+    'alabama leaders in educational technology': ('Alabama Leaders in Educational Technology', 'trade_association'),
+    'california emerging technology fund': ('California Emerging Technology Fund', 'advocacy_organization'),
+    'methodist healthcare ministries of south texas inc': ('Methodist Healthcare Ministries of South Texas, Inc.', 'advocacy_organization'),
+    'infinity communications compliance': ('Infinity Communications & Compliance', 'erate_consultant'),
+    'infinity communications and compliance': ('Infinity Communications & Compliance', 'erate_consultant'),
+
 }
 
 # Recognize canonical spellings after the institution name has been normalized.
@@ -46,6 +66,14 @@ def institution(raw: str) -> tuple[str,str]:
     if re.search(r'(?i)\bpresident of zayo education\b',str(raw)):
         return ('Zayo Group LLC','telecom_isp')
     return ('','')
+
+def explicit_job_title(raw: str) -> str:
+    """Professional titles exposed directly in FCC submitter metadata."""
+    k=key(raw)
+    return {
+        'library assistant ii':'library_staff',
+        'adult education educational technology specialist':'school_technology_staff',
+    }.get(k,'')
 
 def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -> str:
     """Either person|institution or institution|person; not joint institutions."""
