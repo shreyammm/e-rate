@@ -11,6 +11,8 @@ from typing import Callable
 
 # Matched to metadata fields, not occurrences in quoted comment text.
 KNOWN = {
+    'laura capelle president nea alaska': ('NEA-Alaska', 'trade_association'),
+    'nea alaska': ('NEA-Alaska', 'trade_association'),
     'selco': ('Southeastern Libraries Cooperating (SELCO)', 'library_institution'),
     'southeastern libraries cooperating': ('Southeastern Libraries Cooperating (SELCO)', 'library_institution'),
     'ateret torah center': ('Ateret Torah Center', 'individual_school'),
