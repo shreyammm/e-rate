@@ -23,7 +23,7 @@ class Capacity:
 # NOT the occurrence of generic 'teachers', 'parents', 'consultants' or 'libraries'.
 PATTERNS = [
     ("parent_guardian", "self_declared_parent", "first_person_parent",
-     r"\b(?:as (?:an?|the|a concerned|a working|a taxpayer and a|a taxpayer,? and a) "
+     r"\b(?:as (?:an? |the |a concerned |a working |a (?:taxpayer|taxpaxer) and a |"
      r"(?:parent|mother|father|guardian|caregiver)|i am (?:a |an |the |also a )?"
      r"(?:parent|mother|father|guardian)|i (?:have|am raising) (?:\d+ |two |three |four )?"
      r"(?:children|kids|school[- ]age children)|my (?:son|daughter|child|children|kids) "
