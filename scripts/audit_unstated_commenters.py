@@ -91,7 +91,7 @@ def scan(registry=REGISTRY, source=CORPUS, output=OUTPUT):
          'note':'Source-level machine triage, not individual human adjudication. Do not infer employer or authority solely from discussion of a sector.',
          'records':records}
     Path(output).parent.mkdir(parents=True,exist_ok=True)
-    Path(output).write_text(json.dumps(out,indent=2)+'\\n')
+    Path(output).write_text(json.dumps(out,indent=2)+'\n')
     return out
 
 if __name__ == '__main__':
