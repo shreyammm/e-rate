@@ -12,10 +12,10 @@
   const compareValue=()=> $('second-group').value;
   const groupName=g=>g==='all'?'All commenters':labels[g]||g;
   const all=(g,topic)=>data.filings.filter(f=>(g==='all'||f.group===g)&&(!topic||f.topics.some(t=>t.topic===topic)));
-  const groupSize=g=>g==='all'?data.coverage.filings:(byGroup[g]?.filings||0);
+  const groupSize=g=>g==='all'?data.coverage.unique_commenters:(byGroup[g]?.commenters||0);
   const topicCell=(topic,g)=>{
-    if(g==='all')return {filings:topic.filings,distinct_source_texts:topic.distinct_source_texts,group_filings:data.coverage.filings};
-    return topic.by_stakeholder[g]||{filings:0,distinct_source_texts:0,group_filings:0};
+    if(g==='all')return {commenters:topic.commenters,filings:topic.filings,distinct_source_texts:topic.distinct_source_texts};
+    return topic.by_stakeholder[g]||{commenters:0,filings:0,distinct_source_texts:0};
   };
   function config(){
     let p=new URLSearchParams(location.search),g=p.get('group'),c=p.get('compare'),t=p.get('topic');
@@ -55,14 +55,16 @@
     const g=groupValue(),name=groupName(g);
     $('group-heading').textContent=name;
     let ids=all(g),coded=ids.filter(f=>f.topics.length),hashes=new Set(ids.map(f=>f.text_sha256).filter(Boolean));
+    const submitters=new Set(ids.map(f=>f.submitter_id));
+    const codedSubmitters=new Set(coded.map(f=>f.submitter_id));
     const distinctInstitutions=new Set(ids.map(f=>f.organization).filter(Boolean)).size;
     $('group-description').textContent=(g==='all'?'Browse every indexed source filing.':
-      'Explore the filing-based record for this group, including names and tentative affiliations.');
+      'Explore the distinct submitters in this group, with repeat filings collapsed for frequencies.');
     const stats=[
-      [n(ids.length),'FCC filings in this group'],
+      [n(submitters.size),'Distinct submitters in group'],
+      [n(codedSubmitters.size),'Submitters with extracted themes'],
       [n(hashes.size),'Distinct original source texts'],
-      [n(coded.length),'Filings with coded argument themes'],
-      [n(distinctInstitutions),'Named institutions in selected group']
+      [n(distinctInstitutions),'Named institutions in group']
     ];
     $('summary-strip').replaceChildren(...stats.map(([num,label])=>{
       const el=make('div',undefined,'summary-stat');el.append(make('strong',num),make('span',label));return el;
@@ -73,12 +75,12 @@
     const cat=$('category').value;
     const visible=data.topics.filter(t=>cat==='all'||t.category===cat);
     let sorted=[...visible];
-    const rate=(t,x)=>{const v=topicCell(t,x);return v.filings/Math.max(1,groupSize(x));};
+    const rate=(t,x)=>{const v=topicCell(t,x);return v.commenters/Math.max(1,groupSize(x));};
     switch($('sort-order').value){
       case 'difference':if(c)sorted.sort((a,b)=>Math.abs(rate(b,g)-rate(b,c))-Math.abs(rate(a,g)-rate(a,c)));else sorted.sort((a,b)=>rate(b,g)-rate(a,g));break;
-      case 'overall':sorted.sort((a,b)=>b.filings-a.filings);break;
+      case 'overall':sorted.sort((a,b)=>b.commenters-a.commenters);break;
       case 'alpha':sorted.sort((a,b)=>a.label.localeCompare(b.label));break;
-      default:sorted.sort((a,b)=>rate(b,g)-rate(a,g)||b.filings-a.filings);
+      default:sorted.sort((a,b)=>rate(b,g)-rate(a,g)||b.commenters-a.commenters);
     }
     if(!selectedTopic||!visible.some(t=>t.id===selectedTopic))selectedTopic=sorted[0]?.id||null;
     const root=$('argument-table');root.replaceChildren();
@@ -90,14 +92,14 @@
     for(const t of sorted){
       const row=make('button',undefined,'arg-row'+(c?' comparison':''));
       row.type='button';row.setAttribute('aria-pressed',String(selectedTopic===t.id));
-      row.setAttribute('aria-label',t.label+', '+n(topicCell(t,g).filings)+' filings, view sources');
+      row.setAttribute('aria-label',t.label+', '+n(topicCell(t,g).commenters)+' distinct submitters, view sources');
       const left=make('span');left.append(make('span',t.label,'arg-title'),make('span',t.category,'arg-category'));row.append(left);
       for(const group of [g,...(c?[c]:[])]){
         const cell=topicCell(t,group),bar=make('span',undefined,'bar-unit');
         const bl=make('span',undefined,'bar-label');
-        bl.append(make('b',n(cell.filings)+' filings'),make('small',pct(cell.filings,groupSize(group))));
+        bl.append(make('b',n(cell.commenters)+' submitters'),make('small',pct(cell.commenters,groupSize(group))));
         const track=make('span',undefined,'bar-line'),fill=make('span',undefined,'bar-fill'+(group===c?' second':''));
-        fill.style.width=(groupSize(group)?100*cell.filings/groupSize(group):0)+'%';
+        fill.style.width=(groupSize(group)?100*cell.commenters/groupSize(group):0)+'%';
         track.append(fill);bar.append(bl,track);row.append(bar);
       }
       row.append(make('span','›','arg-arrow'));
@@ -130,20 +132,20 @@
     const t=byTopic[selectedTopic],root=$('group-by-topic');
     root.replaceChildren();
     if(!t)return;
-    $('group-by-topic-description').textContent=n(t.filings)+' source filings, '+n(t.distinct_source_texts)+' distinct source texts, and '+n(t.named_institutions||0)+' named submitter institutions have an extracted argument in this category. See which stakeholder groups submitted them. Institutional names may be missing for personal or joint filings.';
+    $('group-by-topic-description').textContent=n(t.commenters)+' distinct submitters across '+n(t.filings)+' source filings, '+n(t.distinct_source_texts)+' distinct source texts, and '+n(t.named_institutions||0)+' named institutions have an extracted argument in this category. See which stakeholder groups submitted them. Institutional names may be missing for personal or joint filings.';
     const header=make('div',undefined,'inverse-header');
-    header.append(make('span','Stakeholder'),make('span','Filings raising argument'),
+    header.append(make('span','Stakeholder'),make('span','Distinct submitters'),
       make('span','Share of topic'),make('span','Within group'));root.append(header);
-    const groups=data.stakeholder_groups.filter(g=>topicCell(t,g.id).filings>0);
-    groups.sort((a,b)=>topicCell(t,b.id).filings-topicCell(t,a.id).filings);
+    const groups=data.stakeholder_groups.filter(g=>topicCell(t,g.id).commenters>0);
+    groups.sort((a,b)=>topicCell(t,b.id).commenters-topicCell(t,a.id).commenters);
     for(const g of groups){
-      const count=topicCell(t,g.id).filings;
+      const count=topicCell(t,g.id).commenters;
       const row=make('button',undefined,'inverse-row');
       row.type='button';
       row.title=n(topicCell(t,g.id).named_institutions||0)+' named institutional submitters; '+n(topicCell(t,g.id).distinct_source_texts||0)+' distinct original texts. All counts remain provisional.';
       row.append(make('span',g.label),make('b',n(count)),
-        make('span',pct(count,t.filings)),
-        make('span',pct(count,g.filings)));
+        make('span',pct(count,t.commenter_group_assignments)),
+        make('span',pct(count,g.commenters)));
       row.addEventListener('click',()=>{
         $('primary-group').value=g.id;
         $('second-group').value='';
@@ -160,16 +162,16 @@
       root.append(make('p','Detailed roles have not yet been published with this dataset.','small-note'));
       return;
     }
-    const roles=data.stakeholder_roles.filter(r=>topic.by_detailed_role[r.id]?.filings>0)
-      .sort((a,b)=>topic.by_detailed_role[b.id].filings-topic.by_detailed_role[a.id].filings);
+    const roles=data.stakeholder_roles.filter(r=>topic.by_detailed_role[r.id]?.commenters>0)
+      .sort((a,b)=>topic.by_detailed_role[b.id].commenters-topic.by_detailed_role[a.id].commenters);
     const head=make('div',undefined,'inverse-header');
-    head.append(make('span','Specific role'),make('span','Filings raising argument'),
+    head.append(make('span','Specific role'),make('span','Distinct submitters'),
       make('span','Share of topic'),make('span','Within role'));root.append(head);
     for(const role of roles){
       const c=topic.by_detailed_role[role.id],row=make('div',undefined,'inverse-row');
       row.title=n(c.distinct_source_texts)+' distinct original source texts; classification remains provisional.';
-      row.append(make('span',role.id.replace(/_/g,' ')),make('b',n(c.filings)),
-        make('span',pct(c.filings,topic.filings)),make('span',pct(c.filings,c.role_filings)));
+      row.append(make('span',role.id.replace(/_/g,' ')),make('b',n(c.commenters)),
+        make('span',pct(c.commenters,topic.commenters)),make('span',pct(c.commenters,c.role_commenters)));
       root.append(row);
     }
   }
@@ -180,18 +182,18 @@
     const g=groupValue(),nA=groupSize(g),nB=groupSize(c);
     if(!nA||!nB){root.hidden=true;return;}
     const diffs=data.topics.map(t=>{
-      const a=topicCell(t,g).filings,b=topicCell(t,c).filings;
+      const a=topicCell(t,g).commenters,b=topicCell(t,c).commenters;
       return {topic:t,delta:100*(a/nA-b/nB),a,b};
     }).sort((a,b)=>Math.abs(b.delta)-Math.abs(a.delta));
     root.append(make('h3','Different emphases'));
-    const caution=make('p', 'These are differences in how frequently filings mention an argument, not proof that the groups disagree.','small-note');
+    const caution=make('p', 'These are differences in the share of distinct submitters with an extracted argument, not proof that the groups disagree.','small-note');
     root.append(caution);
     const top=diffs.filter(x=>x.a+x.b).slice(0,4);
     for(const {topic,delta,a,b} of top){
       const button=make('button',undefined,'difference-item');
       button.type='button';
       button.append(make('strong',topic.label),
-        make('span',n(a)+' / '+n(nA)+' vs '+n(b)+' / '+n(nB)+' filings ('+
+        make('span',n(a)+' / '+n(nA)+' vs '+n(b)+' / '+n(nB)+' submitters ('+
           Math.abs(delta).toFixed(1)+' percentage-point difference)'));
       button.addEventListener('click',()=>{
         selectedTopic=topic.id;table();renderEvidence();renderStakeholdersForTopic();renderDetailedRoles();renderOrgs();navigateState();
@@ -199,7 +201,7 @@
       });
       root.append(button);
     }
-    if(Math.min(nA,nB)<15)root.append(make('p','One comparison group contains fewer than 15 filings. Even large percentage differences may reflect only one or two comments.','small-note'));
+    if(Math.min(nA,nB)<15)root.append(make('p','One comparison group contains fewer than 15 distinct submitters. Even large percentage differences may reflect only one or two comments.','small-note'));
   }
   function renderEvidence(){
     const t=byTopic[selectedTopic],g=groupValue(),c=compareValue();
@@ -316,13 +318,13 @@
   }
   function coverage(){
     const root=$('coverage-list');root.replaceChildren();
-    const sorted=[...data.stakeholder_groups].sort((a,b)=>b.filings-a.filings);
+    const sorted=[...data.stakeholder_groups].sort((a,b)=>b.commenters-a.commenters);
     for(const f of sorted){
       const b=make('div',undefined,'coverage-item');
-      b.append(make('span',n(f.filings),'coverage-value'),make('strong',f.label),
-        make('p',pct(f.filings,data.coverage.filings)+' of all indexed filings · '+
-          n(f.filings_with_coded_topics)+' with identified argument themes · '+
-          n(f.unique_texts)+' distinct source texts'));
+      b.append(make('span',n(f.commenters),'coverage-value'),make('strong',f.label),
+        make('p',pct(f.commenters,data.coverage.commenter_group_assignments)+' of commenter–group assignments · '+
+          n(f.commenters_with_coded_topics)+' with extracted argument themes · '+
+          n(f.filings)+' original filings'));
       b.tabIndex=0;b.setAttribute('role','button');b.setAttribute('aria-label','Explore '+f.label);
       const go=()=>{$('primary-group').value=f.id;$('second-group').value='';selectedTopic=null;update();$('explore').scrollIntoView({block:'start',behavior:'smooth'});};
       b.addEventListener('click',go);b.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
@@ -416,6 +418,8 @@
     const relevantGroups=group==='all'?data.stakeholder_groups:
       data.stakeholder_groups.filter(g=>g.id===group||Boolean(compare&&g.id===compare));
     const values=[['topic_id','argument_label','issue_area','stakeholder_group','stakeholder_label',
+       'distinct_submitters_in_group','submitters_with_argument','pct_of_distinct_submitters_in_group',
+       'pct_of_argument_submitter_group_assignments',
       'all_filings_in_group','group_filings_with_any_extracted_argument',
       'filings_with_this_argument','pct_of_all_group_filings','pct_of_coded_group_filings',
       'pct_of_all_filings_with_this_argument','distinct_original_source_texts',
@@ -425,12 +429,15 @@
       if(category!=='all'&&t.category!==category)continue;
       for(const g of relevantGroups){
         const c=topicCell(t,g.id);
-        values.push([t.id,t.label,t.category,g.id,g.label,g.filings,g.filings_with_coded_topics,
+        values.push([t.id,t.label,t.category,g.id,g.label,g.commenters,c.commenters,
+           g.commenters?Number((100*c.commenters/g.commenters).toFixed(2)):null,
+           t.commenter_group_assignments?Number((100*c.commenters/t.commenter_group_assignments).toFixed(2)):null,
+           g.filings,g.filings_with_coded_topics,
           c.filings,c.pct_of_group_filings,c.pct_of_coded_group_filings,
           t.filings?Number((100*c.filings/t.filings).toFixed(2)):null,
           c.distinct_source_texts,c.named_institutions,c.lower_risk_filings,
           c.needs_attribution_or_identity_review,
-          'Unvalidated model-extracted argument; filing counts not verified endorsements']);
+          'Unvalidated extracted themes; submitters deduplicated from normalized FCC metadata; filing fields retained for audit only']);
       }
     }
     function escape(v){
@@ -474,14 +481,14 @@
     const r=await fetch('./data/stakeholder_argument_census.json');
     if(!r.ok)throw Error('analysis dataset unavailable (HTTP '+r.status+')');
     data=await r.json();
-    if(data.schema!=='stakeholder-arguments-v1'||data.coverage.filings!==3231||
+    if(data.schema!=='stakeholder-arguments-v1'||!data.coverage.unique_commenters||data.coverage.filings!==3231||
       data.filings.length!==3231||new Set(data.filings.map(f=>f.id)).size!==3231)
       throw Error('source completeness check failed');
     for(const g of data.stakeholder_groups){labels[g.id]=g.label;byGroup[g.id]=g;}
     for(const t of data.topics)byTopic[t.id]=t;
     config();update();coverage();
-    $('load-status').textContent=n(data.coverage.filings)+' FCC filings · '+n(data.coverage.filings_with_coded_topics)+
-      ' with categorized arguments · '+n(data.topics.length)+' argument topics. Source quotations are verifiable; topic and speaker interpretations remain preliminary.';
+    $('load-status').textContent=n(data.coverage.unique_commenters)+' distinct submitters across '+n(data.coverage.filings)+' FCC filings · '+n(data.coverage.filings_with_coded_topics)+
+      ' filings with categorized arguments · '+n(data.topics.length)+' argument topics. Source quotations are verifiable; topic and speaker interpretations remain preliminary.';
   }catch(e){
     $('load-status').textContent='The argument analysis is not available yet: '+e.message+
       '. The original filings and other research views remain accessible above.';
