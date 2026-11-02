@@ -337,7 +337,22 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # Explicit proxy relationships can affect whose view the filing should
     # count as. Distinguish that ambiguity from the submitter's known identity.
     proxy=expressed_proxy(text)
-    unresolved=role in ('unresolved','named_person_capacity_unstated','school_connected_unknown')
+    unknown_person=role=='named_person_capacity_unstated'
+    unresolved=role in ('unresolved','school_connected_unknown')
+    # An ordinary person who did not claim an occupational capacity is an
+    # honest "capacity not stated" classification, not an actionable error
+    # requiring a researcher to hunt for a non-existent employer. Only elevate
+    # such a filing when the author provides a concrete affiliation clue that
+    # our current parser has not resolved.
+    introduction=text[:min(len(text),3000)]
+    closing=text[-min(len(text),1400):]
+    possible_missed_affiliation=bool(unknown_person and re.search(
+        r'(?i)\b(?:i (?:work|serve|teach|lead|consult|represent) (?:at|for|with)|'
+        r'i am employed by|my (?:school|district|firm|company|organization|employer)|'
+        r'our (?:school district|company|firm|consulting practice|association)|'
+        r'on behalf of|we represent (?:a|the|our)|'
+        r'appointed (?:superintendent|principal)|'
+        r'e[- ]?rate consulting firm)\b',introduction+ '\n'+closing))
     conflicting=(bool(self_role and signed_role and self_role!=signed_role) or
                  bool(name and signed_org and canon(name)!=canon(signed_org)
                       and not affiliated))
@@ -345,12 +360,14 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # employment. Preserve it as a review case unless an author self-description
     # corroborates their role and institution.
     ambiguous_affiliation=bool(affiliated and not (self_role or signed_role))
-    review=bool(unresolved or conflicting or ambiguous_affiliation or proxy)
-    identity_status=('unresolved' if unresolved else
+    review=bool(unresolved or conflicting or ambiguous_affiliation or proxy or possible_missed_affiliation)
+    identity_status=('capacity_not_stated' if unknown_person and not review else
+                     'unresolved' if unresolved or unknown_person else
                      'source_conflict' if conflicting else
                      'affiliation_uncertain' if ambiguous_affiliation or proxy else
                      'strong_source_cue')
-    confidence=('low' if unresolved or conflicting else
+    confidence=('not_established' if unknown_person and not review else
+                'low' if unresolved or conflicting or unknown_person else
                 'medium' if ambiguous_affiliation or proxy or recovered_org else
                 'high' if (self_role or org_role or signed_role) else 'medium')
     return {'role':role,'organization':name,
@@ -362,7 +379,8 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
             'speaker_is_proxy_possible':proxy,'needs_review':review,
             'identity_status':identity_status,'identity_confidence':confidence,
             'identity_review_reason':(
-                'unresolved_capacity' if unresolved else
+                'capacity_clue_without_role' if possible_missed_affiliation else
+                'unresolved_capacity' if unresolved or unknown_person else
                 'conflicting_source_cues' if conflicting else
                 'representative_relationship' if proxy else
                 'affiliation_requires_corroboration' if ambiguous_affiliation else ''),
@@ -536,6 +554,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
         'usable_without_review':sum(not r['needs_review'] for r in filings),
         'confidence_counts':dict(Counter(r['identity_confidence'] for r in filings)),
         'review_reason_counts':dict(Counter(r['identity_review_reason'] for r in filings if r['needs_review'])),
+        'capacity_not_stated_not_assumed':sum(r['identity_status']=='capacity_not_stated' for r in filings),
         'classification_basis_counts':dict(Counter(r['basis'] for r in filings)),
         'review_roles':dict(Counter(r['role'] for r in filings if r['needs_review'])),
         'signature_resolutions':sum(r['basis']=='signed_role_and_organization' and not r['needs_review'] for r in filings),
