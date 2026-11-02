@@ -133,6 +133,7 @@ def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
     name=' '.join(str(name or '').split())
     if explicit_job_title(name):return ''
+    if re.fullmatch(r'(?i)(?:broadband director|education services director)',name):return ''
     known,_=institution(name)
     if known:return known
     if canon(name) in {'adtec', 'adtec inc', 'adtec administrative and technical consulting',
@@ -258,10 +259,10 @@ def curated_business(name: str):
 # Evidence is restricted to author-introduction and signature neighborhoods.
 # The entire comment is used for policy analysis, never for claiming authorship.
 SIGNATURE_ROLE_RULES = [
-    ('school_technology_staff', r'\b(?:director of (?:information )?technology|it director|technology (?:director|coordinator|officer)|chief technology officer|network administrator|systems administrator)\b'),
+    ('school_technology_staff', r'\b(?:director of (?:information )?technology|it director|technology (?:director|coordinator|officer|services coordinator|administrative assistant)|chief technology officer|network administrator|systems administrator)\b'),
     ('school_administrator', r'\b(?:superintendent|school principal|head of school|school board member|district administrator)\b'),
-    ('school_educator', r'\b(?:classroom teacher|special education teacher|educator|teacher)\b'),
-    ('library_staff', r'\b(?:librarian|library director|director of libraries|library administrator)\b'),
+    ('school_educator', r'\b(?:classroom teacher|special education teacher|educator|teacher|school counselor)\b'),
+    ('library_staff', r'\b(?:librarian|library director|director of libraries|library administrator|state e[- ]?rate coordinator for [a-z ]*libraries)\b'),
     ('erate_consultant', r'\b(?:e[- ]?rate consultant|e[- ]?rate adviser|e[- ]?rate advisor)\b'),
     ('researcher', r'\b(?:research scientist|researcher|pediatrician|public health professional)\b'),
 ]
@@ -467,7 +468,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
                 'signatory title' if signed_role else
                 'organization on letterhead/signature' if recovered_org else ''),
             'speaker_is_proxy_possible':proxy,'needs_review':review,
-            'attribution_review':bool(proxy or affiliated or ambiguous_affiliation),
+            'attribution_review':bool(proxy or affiliated or ambiguous_affiliation or recovered_org),
             'identity_status':identity_status,'identity_confidence':confidence,
             'identity_review_reason':(
                 'capacity_clue_without_role' if possible_missed_affiliation else
