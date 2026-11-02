@@ -1,0 +1,71 @@
+{
+  "schema_version": "external-stakeholder-identity-checks-v1",
+  "purpose": "Public source checks for identifiable stakeholder categories. Source organization type is distinct from whether a signer is legally authorized to represent an institution. Exact filing-level status is in identity_resolution_metrics.json.",
+  "records": [
+    {
+      "filing_ids": [
+        "26110079834"
+      ],
+      "label": "AdTec",
+      "role": "erate_consultant",
+      "evidence": "Company website describes dedicated E-Rate consulting, and USAC Form 470 lists the firm as a consulting organization.",
+      "sources": [
+        "https://www.adtecerate.com/",
+        "https://publicdata.usac.org/EPC/Prd/Form470/260008236/16072354/21262963-USAC_FCC_FORM_470_APPLICATION_260008236_CERTIFIED.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "filing_ids": [
+        "26110041970",
+        "26110081332"
+      ],
+      "label": "Communications Audit Services LLC",
+      "role": "erate_consultant",
+      "evidence": "School purchasing records describe E-Rate consulting, and industry source explicitly identifies Communications Audit Services LLC as an E-Rate consultant.",
+      "sources": [
+        "https://www.sourceonetechnology.com/e-rate-process/",
+        "https://meetings.boardbook.org/Documents/DownloadPDF/cfad0b70-b6b3-4977-bd14-58fddb374692?org=1265"
+      ],
+      "confidence": "high"
+    },
+    {
+      "filing_ids": [
+        "26110069343"
+      ],
+      "label": "Elite Fund Inc",
+      "role": "erate_consultant",
+      "evidence": "2026 USAC Form 471 lists Elite Fund under consulting firms, and the company describes providing E-Rate consulting.",
+      "sources": [
+        "https://publicdata.usac.org/EPC/Prd/Form471/261002986/131132/20995371-USAC_FCC_FORM_471_APPLICATION_261002986_CERTIFIED.pdf",
+        "https://www.elitefund.com/about"
+      ],
+      "confidence": "high"
+    },
+    {
+      "filing_ids": [
+        "26110074008"
+      ],
+      "label": "Community Library Association / Stephen Lackey",
+      "role": "library_affiliated",
+      "evidence": "The FCC filing describes the association's library services. An official municipal 2023 meeting agenda identifies Stephen Lackey as president of the Community Library Association board. This does not establish his precise 2026 title or representative authority.",
+      "sources": [
+        "https://www.fcc.gov/ecfs/filing/26110074008",
+        "https://www.fox-chapel.pa.us/borough-council/agenda/borough-council-agenda-amended"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "filing_ids": [
+        "10605028718266"
+      ],
+      "label": "Lisa Cline",
+      "role": "parent_guardian",
+      "evidence": "The FCC filing uses the first-person self-description 'a parent' alongside taxpayer identity. This is a source-identified parent voice, not an inferred institution.",
+      "sources": [
+        "https://www.fcc.gov/ecfs/filing/10605028718266"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
