@@ -1,22 +1,23 @@
 {
   "schema_version": "identity-resolution-audit-v1",
   "source_filings": 3231,
-  "review_required": 120,
-  "usable_without_review": 3111,
+  "review_required": 180,
+  "usable_without_review": 3051,
   "confidence_counts": {
-    "medium": 1334,
-    "high": 1236,
-    "not_established": 541,
-    "low": 120
+    "medium": 1352,
+    "high": 1218,
+    "not_established": 598,
+    "low": 63
   },
   "review_reason_counts": {
-    "capacity_clue_without_role": 29,
-    "unresolved_capacity": 91
+    "capacity_clue_without_role": 30,
+    "affiliation_requires_corroboration": 117,
+    "unresolved_capacity": 33
   },
-  "capacity_not_stated_not_assumed": 541,
+  "capacity_not_stated_not_assumed": 598,
   "attribution_questions_separate": 153,
   "externally_supported_role_count": 1,
-  "source_context_classifications": 1033,
+  "source_context_classifications": 1001,
   "classification_basis_counts": {
     "multi_party_metadata_affiliation_candidate": 102,
     "provisional_full_text_role": 978,
@@ -30,8 +31,19 @@
     "externally_corrob_professional_role": 1
   },
   "review_roles": {
-    "named_person_capacity_unstated": 29,
-    "unresolved": 91
+    "named_person_capacity_unstated": 31,
+    "school_connected_unknown": 17,
+    "library_staff": 1,
+    "unresolved": 32,
+    "library_institution": 5,
+    "erate_consultant": 1,
+    "parent_guardian": 1,
+    "school_administrator": 11,
+    "school_technology_staff": 5,
+    "student": 1,
+    "advocacy_organization": 73,
+    "school_educator": 1,
+    "other_vendor": 1
   },
   "review_candidate_records": [
     {
@@ -41,16 +53,22 @@
       "reason": "capacity_clue_without_role"
     },
     {
+      "id": "26110023223",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110023378",
+      "candidate_role": "library_staff",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110023531",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110023613",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
     },
     {
       "id": "26110026484",
@@ -65,10 +83,34 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110069600",
-      "candidate_role": "unresolved",
+      "id": "26110069663",
+      "candidate_role": "library_institution",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110070486",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110070673",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110071348",
+      "candidate_role": "erate_consultant",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110071799",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110071991",
@@ -77,16 +119,10 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110072276",
-      "candidate_role": "unresolved",
+      "id": "26110072504",
+      "candidate_role": "parent_guardian",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110072444",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110072865",
@@ -101,52 +137,22 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110073043",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110073108",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110073161",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110073536",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110073843",
-      "candidate_role": "unresolved",
+      "id": "26110073602",
+      "candidate_role": "school_administrator",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110074680",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
-    },
-    {
-      "id": "26110075543",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110075700",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
     },
     {
       "id": "26110075762",
@@ -156,12 +162,6 @@
     },
     {
       "id": "26110075774",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110075816",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
@@ -185,10 +185,22 @@
       "reason": "capacity_clue_without_role"
     },
     {
+      "id": "26110076238",
+      "candidate_role": "library_institution",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110076317",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
+    },
+    {
+      "id": "26110076332",
+      "candidate_role": "school_administrator",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110076482",
@@ -203,52 +215,34 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110076539",
-      "candidate_role": "unresolved",
+      "id": "26110076608",
+      "candidate_role": "school_connected_unknown",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
-      "id": "26110076552",
-      "candidate_role": "unresolved",
+      "id": "26110076744",
+      "candidate_role": "school_administrator",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
-      "id": "26110076614",
-      "candidate_role": "unresolved",
+      "id": "26110076806",
+      "candidate_role": "school_connected_unknown",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
-      "id": "26110076761",
-      "candidate_role": "unresolved",
+      "id": "26110076918",
+      "candidate_role": "school_connected_unknown",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
-      "id": "26110076771",
-      "candidate_role": "unresolved",
+      "id": "26110077011",
+      "candidate_role": "school_technology_staff",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110076777",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110076789",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110076956",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110077267",
@@ -257,46 +251,22 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110077335",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077368",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077426",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077489",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077580",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110077607",
       "candidate_role": "unresolved",
       "organization": "Special Education Services",
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110077695",
-      "candidate_role": "unresolved",
+      "id": "26110077641",
+      "candidate_role": "school_administrator",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110077682",
+      "candidate_role": "school_administrator",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110077745",
@@ -305,40 +275,10 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110077789",
-      "candidate_role": "unresolved",
+      "id": "26110077852",
+      "candidate_role": "school_technology_staff",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077790",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077793",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077856",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077858",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077866",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110077868",
@@ -347,40 +287,22 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110077882",
-      "candidate_role": "unresolved",
+      "id": "26110077870",
+      "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110077930",
-      "candidate_role": "unresolved",
+      "id": "26110078046",
+      "candidate_role": "student",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
-      "id": "26110077935",
-      "candidate_role": "unresolved",
+      "id": "26110078065",
+      "candidate_role": "school_connected_unknown",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077949",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110077993",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110078012",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110078095",
@@ -395,10 +317,16 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110078340",
-      "candidate_role": "unresolved",
+      "id": "26110078220",
+      "candidate_role": "school_administrator",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110078274",
+      "candidate_role": "school_technology_staff",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110078427",
@@ -407,34 +335,16 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110078434",
-      "candidate_role": "unresolved",
+      "id": "26110078432",
+      "candidate_role": "school_administrator",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
-      "id": "26110078450",
-      "candidate_role": "unresolved",
+      "id": "26110078541",
+      "candidate_role": "advocacy_organization",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110078492",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110078506",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110078667",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110078680",
@@ -449,22 +359,16 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110078889",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110079039",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110079199",
-      "candidate_role": "unresolved",
+      "id": "26110079121",
+      "candidate_role": "school_administrator",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110079259",
@@ -479,10 +383,22 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110079454",
-      "candidate_role": "unresolved",
+      "id": "26110079279",
+      "candidate_role": "advocacy_organization",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110079348",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110079454",
+      "candidate_role": "named_person_capacity_unstated",
+      "organization": "",
+      "reason": "capacity_clue_without_role"
     },
     {
       "id": "26110079567",
@@ -497,37 +413,7 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110079722",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079728",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110079749",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079755",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079800",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110079831",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
@@ -537,6 +423,12 @@
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
+    },
+    {
+      "id": "26110079864",
+      "candidate_role": "school_educator",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110079870",
@@ -557,16 +449,10 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110079973",
-      "candidate_role": "unresolved",
+      "id": "26110080099",
+      "candidate_role": "school_administrator",
       "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
-      "id": "26110080085",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110080222",
@@ -581,10 +467,136 @@
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110080229",
-      "candidate_role": "unresolved",
+      "id": "26110080240",
+      "candidate_role": "advocacy_organization",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080241",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080242",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080243",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080256",
+      "candidate_role": "library_institution",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080263",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080264",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080266",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080271",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080277",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080278",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080280",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080286",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080288",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080290",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080292",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080293",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080295",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080296",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080297",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080298",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080300",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110080305",
@@ -593,10 +605,286 @@
       "reason": "unresolved_capacity"
     },
     {
+      "id": "26110080330",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110080349",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
+    },
+    {
+      "id": "26110080409",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080410",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080411",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080414",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080417",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080418",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080419",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080421",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080422",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080423",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080424",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080425",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080426",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080427",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080428",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080429",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080430",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080431",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080432",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080433",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080434",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080435",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080436",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080437",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080439",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080440",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080442",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080443",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080444",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080446",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080447",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080448",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080449",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080450",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080452",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080453",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080454",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080455",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080456",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080457",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080458",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080459",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080460",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080461",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080462",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110080481",
@@ -605,10 +893,16 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110080489",
-      "candidate_role": "unresolved",
+      "id": "26110080565",
+      "candidate_role": "advocacy_organization",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080605",
+      "candidate_role": "library_institution",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110080606",
@@ -623,6 +917,18 @@
       "reason": "unresolved_capacity"
     },
     {
+      "id": "26110080661",
+      "candidate_role": "school_technology_staff",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080671",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110080680",
       "candidate_role": "unresolved",
       "organization": "",
@@ -635,10 +941,28 @@
       "reason": "unresolved_capacity"
     },
     {
+      "id": "26110080706",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080721",
+      "candidate_role": "school_administrator",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110080737",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
+    },
+    {
+      "id": "26110080739",
+      "candidate_role": "school_administrator",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110080767",
@@ -647,22 +971,22 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110080771",
-      "candidate_role": "unresolved",
-      "organization": "",
-      "reason": "unresolved_capacity"
-    },
-    {
       "id": "26110080784",
       "candidate_role": "named_person_capacity_unstated",
       "organization": "",
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110080789",
-      "candidate_role": "unresolved",
+      "id": "26110080827",
+      "candidate_role": "advocacy_organization",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110080855",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110080858",
@@ -689,10 +1013,10 @@
       "reason": "capacity_clue_without_role"
     },
     {
-      "id": "26110081042",
-      "candidate_role": "unresolved",
+      "id": "26110081032",
+      "candidate_role": "other_vendor",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110081084",
@@ -701,10 +1025,22 @@
       "reason": "capacity_clue_without_role"
     },
     {
+      "id": "26110081098",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110081114",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
+    },
+    {
+      "id": "26110081198",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110081204",
@@ -713,16 +1049,28 @@
       "reason": "unresolved_capacity"
     },
     {
+      "id": "26110081213",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110081217",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110081218",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
     },
     {
-      "id": "26110081231",
-      "candidate_role": "unresolved",
+      "id": "26110081235",
+      "candidate_role": "school_technology_staff",
       "organization": "",
-      "reason": "unresolved_capacity"
+      "reason": "affiliation_requires_corroboration"
     },
     {
       "id": "26110081344",
@@ -743,60 +1091,94 @@
       "reason": "unresolved_capacity"
     },
     {
+      "id": "26110081363",
+      "candidate_role": "school_connected_unknown",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
+      "id": "26110081381",
+      "candidate_role": "library_institution",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110081385",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
     },
     {
+      "id": "26110081452",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
+    },
+    {
       "id": "26110081466",
       "candidate_role": "unresolved",
       "organization": "",
       "reason": "unresolved_capacity"
+    },
+    {
+      "id": "26110081482",
+      "candidate_role": "advocacy_organization",
+      "organization": "",
+      "reason": "affiliation_requires_corroboration"
     }
   ],
   "signature_resolutions": 77,
   "letterhead_or_signature_org_resolutions": 428,
   "capacity_unstated_sample_ids": [
     "26109834985",
-    "26110038479",
-    "26110069599",
-    "26110071838",
-    "26110072286",
-    "26110073106",
-    "26110073648",
-    "26110075435",
-    "26110076026",
-    "26110076505",
-    "26110076787",
-    "26110077480",
-    "26110077886",
-    "26110077989",
-    "26110078318",
-    "26110078487",
-    "26110079171",
-    "26110079700",
-    "26110080136",
-    "26110080588",
-    "26110080808",
-    "26110081278"
+    "26110038471",
+    "26110069576",
+    "26110071534",
+    "26110072231",
+    "26110073039",
+    "26110073435",
+    "26110074365",
+    "26110075772",
+    "26110076367",
+    "26110076612",
+    "26110076889",
+    "26110077506",
+    "26110077865",
+    "26110077953",
+    "26110078206",
+    "26110078410",
+    "26110078688",
+    "26110079249",
+    "26110079743",
+    "26110080134",
+    "26110080539",
+    "26110080780",
+    "26110081127"
   ],
   "unresolved_sample_ids": [
     "26109999174",
-    "26110072444",
-    "26110074680",
-    "26110076203",
-    "26110076771",
-    "26110077489",
-    "26110077856",
-    "26110077993",
-    "26110078492",
-    "26110079259",
-    "26110079755",
-    "26110080085",
-    "26110080606",
-    "26110080789",
-    "26110081204"
+    "26110070673",
+    "26110073602",
+    "26110076317",
+    "26110077011",
+    "26110077870",
+    "26110078432",
+    "26110079279",
+    "26110079870",
+    "26110080242",
+    "26110080278",
+    "26110080296",
+    "26110080410",
+    "26110080423",
+    "26110080431",
+    "26110080440",
+    "26110080450",
+    "26110080459",
+    "26110080645",
+    "26110080739",
+    "26110080939",
+    "26110081217",
+    "26110081385"
   ],
   "spotcheck_filing_ids": {
     "10604263924780": {
