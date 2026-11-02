@@ -119,13 +119,13 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
         for org, expected_role in cases:
             with self.subTest(org=org):
                 result=self.classify('Example Signer',body=(
-                    'These comments concern ongoing E-Rate support.\\n'
-                    'Sincerely,\\nExample Signer\\n'+org))
+                    'These comments concern ongoing E-Rate support.\n'
+                    'Sincerely,\nExample Signer\n'+org))
                 self.assertEqual(result['role'],expected_role)
                 self.assertTrue(result['attribution_review'])
         role=self.classify('Example Signer',body=(
-            'We use E-Rate each year.\\n'
-            'Sincerely,\\nExample Signer\\n'
+            'We use E-Rate each year.\n'
+            'Sincerely,\nExample Signer\n'
             'Technology Administrative Assistant and E-Rate Coordinator'))
         self.assertEqual(role['role'],'school_technology_staff')
 
