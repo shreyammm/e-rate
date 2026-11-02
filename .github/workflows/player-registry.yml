@@ -95,7 +95,7 @@ jobs:
             python -m scripts.build_stakeholder_census
             python -m scripts.build_industry_argument_review
             python -m scripts.audit_industry_identity_recall
-            git add -- docs/data/stakeholder_argument_census.json docs/data/player_registry.json docs/data/industry_identity_recall.json docs/data/industry_argument_review.csv docs/data/industry_argument_review_summary.json
+            git add -- docs/data/stakeholder_argument_census.json docs/data/player_registry.json docs/data/identity_resolution_metrics.json docs/data/industry_identity_recall.json docs/data/industry_argument_review.csv docs/data/industry_argument_review_summary.json
             if git diff --cached --quiet; then
               echo 'Generated datasets already match latest sources.'
               exit 0
