@@ -629,6 +629,14 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
         'review_roles':dict(Counter(r['role'] for r in filings if r['needs_review'])),
         'signature_resolutions':sum(r['basis']=='signed_role_and_organization' and not r['needs_review'] for r in filings),
         'letterhead_or_signature_org_resolutions':sum(r['basis']=='source_letterhead_or_signature' and not r['needs_review'] for r in filings),
+        'capacity_unstated_sample_ids':[
+            row['id'] for idx,row in enumerate(
+                [r for r in filings if r['identity_status']=='capacity_not_stated'])
+            if idx % 25 == 0][:30],
+        'unresolved_sample_ids':[
+            row['id'] for idx,row in enumerate(
+                [r for r in filings if r['needs_review']])
+            if idx % 8 == 0][:25],
         'spotcheck_filing_ids':{
             row['id']:{
                 'role':row['role'],'organization':row['organization'],
