@@ -186,7 +186,7 @@ def stakeholder_group(f):
     if r in ('school_district','individual_school'):return 'school_institutions'
     if r in ('school_technology_staff','school_educator','school_administrator'):return 'school_professionals'
     if r=='school_connected_unknown':return 'school_affiliation_uncertain'
-    if r in ('library_institution','library_staff'):return 'libraries'
+    if r in ('library_institution','library_staff','library_affiliated'):return 'libraries'
     if r=='parent_guardian':return 'parents'
     if r=='government':return 'government'
     if r=='trade_association':return 'other_associations'
