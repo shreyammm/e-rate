@@ -357,16 +357,22 @@ class PlayerIdentityTest(unittest.TestCase):
                 self.assertEqual(got['role'],role)
                 self.assertNotEqual(got['industry_focus'],'erate_consulting')
 
-    def test_mixed_person_and_school_labels_abstain_for_privacy(self):
-        for name in ('Aaron Weston; Oley Valley School District',
-                     'Holmes County School Board/Melissa Baxley',
-                     'Jane Doe / Eastern School District'):
+    def test_mixed_metadata_recognizes_explicit_school_without_person_name_leak(self):
+        unresolved=inferred_identity({'filer_raw':'Aaron Weston; Oley Valley School District'},
+            'school_district_or_school','Broadband matters.')
+        self.assertEqual(unresolved['organization'],'')
+        self.assertTrue(unresolved['needs_review'])
+        for name,org in [
+            ('Holmes County School Board/Melissa Baxley','Holmes County School Board'),
+            ('Jane Doe / Eastern School District','Eastern School District')]:
             with self.subTest(name=name):
                 self.assertEqual(organization_label(name),'')
                 got=inferred_identity({'filer_raw':name},
                     'school_district_or_school','Broadband matters.')
-                self.assertEqual(got['organization'],'')
-                self.assertTrue(got['needs_review'])
+                self.assertEqual(got['organization'],org)
+                self.assertEqual(got['role'],'school_district')
+                self.assertFalse(got['needs_review'])
+                self.assertTrue(got['attribution_review'])
 
 
     def test_named_library_association_is_not_library_system(self):
