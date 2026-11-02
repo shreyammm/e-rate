@@ -162,7 +162,8 @@ AUTHOR_PATTERNS += [
      r"(?:to|for) (?:do )?(?:homework|research|internet))\b"),
     ("library_community_connection", "my_library_service_voice",
      r"\b(?:my library (?:saves|serves|provides|has|uses|depends|relies|offers)|"
-     r"my library's (?:budget|internet|e[- ]?rate|funding|patrons|services))\b"),
+     r"my library's (?:budget|internet|e[- ]?rate|funding|patrons|services)|"
+     r"(?:program|funding) saves my library (?:money|costs|time))\b"),
 ]
 # In source text, stakeholder words in a copied sample question or bibliography
 # are not evidence of *the author*. The regexes above require self-reference.
