@@ -78,6 +78,11 @@ class SignatureIdentityTest(unittest.TestCase):
                              "Jane Doe")
         self.assertEqual(s.role, "")
 
+    def test_another_persons_signoff_must_not_be_attributed_to_filer(self):
+        t = ("The original filer submits through their counsel.\n"
+             "Sincerely,\nAlex Roe\nalex@town.k12.ca.us")
+        self.assertEqual(signature_signal(t, "Jane Doe").role, "")
+
     def test_generic_edu_or_gov_does_not_assume_role(self):
         self.assertEqual(domain_sector("university.edu"), "")
         self.assertEqual(domain_sector("gov.gov"), "")
