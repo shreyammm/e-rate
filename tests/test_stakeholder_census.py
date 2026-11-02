@@ -275,6 +275,46 @@ class CensusTest(unittest.TestCase):
         self.assertEqual(x['filings'],2)
         self.assertEqual(sum(g['filings'] for g in result['stakeholder_groups']),3231)
         self.assertEqual(next(f for f in result['filings'] if f['id']=='26110081358')['topics'][0]['claim_count'],2)
+    def test_duplicate_filer_cannot_multiply_topic_frequency(self):
+        # Synthetic repeat filer in the same stakeholder group, with a different
+        # filing and source text. The unit of analysis must be submitter, not text.
+        ids=['26110081266','26110081358','26110080790','27000000000']
+        ids+=['27'+str(i).zfill(9) for i in range(1,3228)]
+        self.assertEqual(len(ids),3231)
+        registry=[]
+        for i,fid in enumerate(ids):
+            role='government' if i==0 else 'edtech_learning_vendor' if i in (1,2,3) else 'unresolved'
+            registry.append({'id':fid,'role':role,'industry_focus':'unspecified',
+                'organization':'','text_sha256':'different-text-'+str(i),
+                'needs_review':False,'multi_submitter_metadata':False})
+        def claim(fid):
+            return {'id':fid,'issue':'education_outcomes','start':0,
+                    'action':'Preserve educational technology for student learning.',
+                    'argument':'Instructional tools improve learning outcomes.',
+                    'quote':'This is an explicit policy recommendation.'}
+        ledger={'source_filings':3231,'rows':[claim(ids[i]) for i in (1,2,3)]}
+        quality={'coverage':{'processed_readable_filings':3230},'filings':{}}
+        people={fid:fid for fid in ids}
+        people[ids[3]]=people[ids[1]]
+        out=compute({'filings':registry},ledger,quality,submitter_ids=people)
+        theme=next(t for t in out['topics'] if t['id']=='learning_outcomes')
+        self.assertEqual(theme['filings'],3)
+        self.assertEqual(theme['commenters'],2)
+        self.assertEqual(theme['by_stakeholder']['edtech_vendors']['filings'],3)
+        self.assertEqual(theme['by_stakeholder']['edtech_vendors']['commenters'],2)
+        self.assertEqual(out['coverage']['unique_commenters'],3230)
+        self.assertEqual(next(g['commenters'] for g in out['stakeholder_groups']
+                              if g['id']=='edtech_vendors'),2)
+
+    def test_normalized_filer_metadata_only(self):
+        from scripts.build_stakeholder_census import submitter_token
+        self.assertEqual(submitter_token('Ms. Sarah  Example', '1'),
+                         submitter_token('MS SARAH EXAMPLE', '2'))
+        self.assertNotEqual(submitter_token('Anonymous', '1'),
+                            submitter_token('Anonymous', '2'))
+        self.assertNotEqual(submitter_token('Alex Example','1'),
+                            submitter_token('Blake Example','2'))
+
     def test_theme_ids_unique_and_all_groups_named(self):
         self.assertEqual(len({t[0] for t in THEMES}),len(THEMES))
         self.assertIn('edtech_vendors',GROUP_NAMES)
