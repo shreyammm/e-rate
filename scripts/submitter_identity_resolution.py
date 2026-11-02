@@ -101,6 +101,14 @@ def resolve_submitter(raw, filing_id, entry=None):
     raw_institutions=[canonical_org(p) for p in parts]
     raw_institutions=[x for x in raw_institutions if x]
     org=canonical_org(e.get('organization',''))
+    # Known institutions can have human-like names. Recognized institutional
+    # metadata outranks a generic personal-name pattern.
+    raw_org=canonical_org(field) if len(parts)==1 else ''
+    if raw_org:
+        if org and org!=raw_org:
+            return ('organization:'+raw_org,'organization_metadata_conflict',True)
+        return ('organization:'+(org or raw_org),'institution_filer_metadata',
+                bool(e.get('needs_review') or e.get('proxy_possible')))
     if len(parts)>1 and len(names)==1 and (raw_institutions or org):
         orgs=sorted(set(raw_institutions+([org] if org else [])))
         if len(orgs)>1:
@@ -118,12 +126,6 @@ def resolve_submitter(raw, filing_id, entry=None):
                 'named_person_capacity_not_established',
                 bool(e.get('needs_review')))
     # Filer field itself is an organization; canonicalize aliases.
-    raw_org=canonical_org(field)
-    if raw_org:
-        if org and org!=raw_org:
-            return ('organization:'+raw_org,'organization_metadata_conflict',True)
-        return ('organization:'+(org or raw_org),'institution_filer_metadata',
-                bool(e.get('needs_review') or e.get('proxy_possible')))
     if org and e.get('role') in INSTITUTION_ROLES and e.get('basis') in ORG_BASIS:
         # Institution detected in signature/letterhead, but the raw field is
         # a title or unclear identifier. Do not merge different unnamed people
