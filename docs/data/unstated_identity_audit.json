@@ -1,12 +1,12 @@
 {
   "schema_version": "unstated-identity-source-audit-v1",
   "scope": "Every filing whose current identity is flagged or whose capacity is unstated",
-  "population": 627,
+  "population": 614,
   "disposition_counts": {
     "incomplete_or_ocr_source": 4,
     "no_explicit_professional_capacity_found": 563,
-    "possible_affiliation_needs_full_source_review": 43,
-    "source_identity_evidence_needs_reconciliation": 17
+    "possible_affiliation_needs_full_source_review": 44,
+    "source_identity_evidence_needs_reconciliation": 3
   },
   "note": "Source-level machine triage, not individual human adjudication. Do not infer employer or authority solely from discussion of a sector.",
   "records": [
@@ -8455,6 +8455,21 @@
       "requires_human_confirmation": true
     },
     {
+      "id": "26110079069",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110079069",
+      "current_role": "named_person_capacity_unstated",
+      "current_identity_status": "capacity_not_stated",
+      "source_sha256": "45763e78c2981957ad7b42aed0551e63551b9b6fa6c214914955981685ced05d",
+      "disposition": "possible_affiliation_needs_full_source_review",
+      "evidence_indicators": [
+        "potential_employment",
+        "text_available"
+      ],
+      "candidate_capacity": "",
+      "candidate_organization": "",
+      "requires_human_confirmation": true
+    },
+    {
       "id": "26110079593",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110079593",
       "current_role": "named_person_capacity_unstated",
@@ -8638,70 +8653,6 @@
       "requires_human_confirmation": true
     },
     {
-      "id": "26110023440",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110023440",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "389bd76f58ca81acc37016ee733748f8db4d56c367ef3875792335e3b6690b51",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Fairfield Library Association",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110026500",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110026500",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "7b57d0f78b4977a801b4ed3653f051b9e05be52eceb11fdf61ac4f9175e9133e",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "EMINENT TECHNICAL SOLUTIONS (ETS)",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110076058",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076058",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "d52dcbe0ab1d82e784f2c37cc83c1ea7b73a64755b921ab1656e0f5389240b7c",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "letterhead_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Technology Administrative Assistant and E-Rate Coordinator",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110076525",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076525",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "5913c84f0bec84b93ffb13f130cd604e841c68dcc0ce30377d8941e845e97811",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Pacific East District",
-      "requires_human_confirmation": true
-    },
-    {
       "id": "26110077607",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110077607",
       "current_role": "unresolved",
@@ -8715,38 +8666,6 @@
       ],
       "candidate_capacity": "",
       "candidate_organization": "Special Education Services",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110078724",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110078724",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "e2d5407d675b99b37c4bc7bf3b0acfb85581036e4e948208296651bbb810e105",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Community Program Centers of Long Island, Inc.",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110079069",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079069",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "45763e78c2981957ad7b42aed0551e63551b9b6fa6c214914955981685ced05d",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "potential_employment",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Broadband Director",
       "requires_human_confirmation": true
     },
     {
@@ -8764,39 +8683,7 @@
         "text_available"
       ],
       "candidate_capacity": "school_educator",
-      "candidate_organization": "Moscow Sr. High School",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110079953",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110079953",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "c6f04f1abc5e673a70c4040e85ab0285b60781ee604db58a785e13de41867440",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Springfield School Dist 186",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110080586",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080586",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "8996a78d7bf7f4ba4f431cc141d817fa5109347bdee0829873e283ddf0995039",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "letterhead_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "ADVOCAP, Inc.",
+      "candidate_organization": "Moscow Senior High School",
       "requires_human_confirmation": true
     },
     {
@@ -8812,103 +8699,7 @@
         "text_available"
       ],
       "candidate_capacity": "",
-      "candidate_organization": "Education Services Director",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110081080",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081080",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "7879d02d1d818536a260d7c3868b549aab7852b642ed48026b4821b313861888",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "The Inter Agency Council of Developmental Disabilities Agencies, Inc",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110081127",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081127",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "c705c1db3326747585fbd0bb239266a13056b25ea880755110da275f56d2ceb4",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Parents for School Options Arizona",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110081242",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081242",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "1204296f6523076caa6082fb2cfd9b2afb2616cff91ba43a7a735882d79ac94e",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "National Catholic Educational Association",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110081253",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081253",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "6a6eb5b65e319785035995a71ebdecaf253a856c4b1cfe36a01f0cdd266d5fc0",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "State E-Rate Coordinator for Mississippi Libraries",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110081425",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081425",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "d960d4705ea6a1f958d733dcbc1dba7dfe157033ea8844cf9a23b050c952f6b0",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "letterhead_organization",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "Technology Services Coordinator",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110081511",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110081511",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "a3ae628e3dbd8e34fc394f21468f5f3b0dc66c7c2947ac59a2ab648ca347c0b6",
-      "disposition": "source_identity_evidence_needs_reconciliation",
-      "evidence_indicators": [
-        "signature_organization",
-        "letterhead_organization",
-        "closing_present",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "school counselor",
+      "candidate_organization": "Oswego County Opportunities, Inc",
       "requires_human_confirmation": true
     }
   ]
