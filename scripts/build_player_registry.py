@@ -17,7 +17,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from scripts.identity_context_resolver import context_capacity
-from scripts.identity_metadata_resolver import institution, single_institution_pair, personal_name_format
+from scripts.identity_metadata_resolver import institution, single_institution_pair, personal_name_format, explicit_job_title
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'data/fcc_corpus'
@@ -34,6 +34,8 @@ ROLE_LABELS = {
     'school_educator': 'Teacher or educator',
     'school_administrator': 'School administrator or superintendent',
     'school_connected_unknown': 'School-affiliated commenter (specific role unstated)',
+    'education_network_consortium': 'Education network or connectivity consortium',
+    'higher_education_institution': 'College or university institution',
     'library_institution': 'Library or library system',
     'library_staff': 'Librarian or library employee',
     'library_affiliated': 'Library-affiliated commenter (title not stated)',
@@ -128,6 +130,7 @@ ORG_TOKEN = re.compile(r'\b(?:school|district|academy|library|libraries|commissi
 def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
     name=' '.join(str(name or '').split())
+    if explicit_job_title(name):return ''
     known,_=institution(name)
     if known:return known
     if canon(name) in {'adtec', 'adtec inc', 'adtec administrative and technical consulting',
@@ -346,6 +349,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     curated=curated_business(name) if name else None
     if curated:org_role,org_cue=curated[0],name
     default=BASE_CROSSWALK.get(base,'unresolved')
+    metadata_job=explicit_job_title(raw) if person else ''
     if default=='unresolved' and person and not name and personal_name_format(raw):
         default='named_person_capacity_unstated'
     signed_role,signed_org,sign_basis=signoff_evidence(text) if person else ('','','')
@@ -361,7 +365,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # An organization filing with direct source metadata is stronger than an
     # isolated occupational title; for an individual, self-description wins.
     # A signed occupational title is useful when an individual never says "I am".
-    role=(self_role or signed_role or org_role or default) if person else (org_role or default)
+    role=(self_role or signed_role or metadata_job or org_role or default) if person else (org_role or default)
     # A signatory may also be a parent or an institutional affiliate. When
     # their signed occupational capacity is more specific, use that capacity
     # as the primary category without treating the two descriptions as errors.
@@ -374,6 +378,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
         role=org_role or role
     basis=('multi_party_metadata_affiliation_candidate' if affiliated else
            'author_self_description' if self_role else
+           'metadata_occupational_title' if metadata_job else
            'signed_role_and_organization' if signed_role and name else
            'signed_role' if signed_role else
            'source_letterhead_or_signature' if recovered_org else
@@ -440,7 +445,8 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
                      'source_conflict' if conflicting else
                      'affiliation_uncertain' if ambiguous_affiliation or proxy else
                      'strong_source_cue')
-    confidence=('not_established' if unknown_person and not review else
+    confidence=('high' if metadata_job else
+                'not_established' if unknown_person and not review else
                 'medium' if role=='school_connected_unknown' and school_base else
                 'medium' if affiliated and not conflicting else
                 inferred_capacity.confidence if inferred_capacity and inferred_capacity.role
