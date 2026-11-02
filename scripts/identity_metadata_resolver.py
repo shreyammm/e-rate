@@ -107,6 +107,11 @@ def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -
     parts=[s.strip() for s in raw.split('|')]
     if len(parts)==1 and raw.count('/')==1 and not re.search(r'(?i)https?://',raw):
         parts=[p.strip() for p in raw.split('/')]
+    # ECFS sometimes separates an institutional filer and individual signer
+    # with a semicolon instead of a pipe. Require exactly one recognized
+    # institution; never infer authority merely from that relationship.
+    if len(parts)==1 and raw.count(';')==1:
+        parts=[p.strip() for p in raw.split(';')]
     if len(parts)==1 and raw.count(';')==1:
         parts=[p.strip() for p in raw.split(';')]
     if len(parts)<2 or not all(parts):return ''
