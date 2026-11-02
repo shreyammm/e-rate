@@ -13,6 +13,8 @@ from typing import Callable
 KNOWN = {
     # Exact short organization names in ECFS metadata, otherwise easily mistaken
     # for people's names when no legal suffix such as Inc. is present.
+    'infoblox': ('Infoblox', 'network_technology_vendor'),
+    'wested': ('WestEd', 'nonprofit_service_provider'),
     'independent women': ('Independent Women', 'advocacy_organization'),
     'lgbt tech': ('LGBT Tech', 'advocacy_organization'),
     'semcac head start': ('Semcac Head Start', 'nonprofit_service_provider'),
