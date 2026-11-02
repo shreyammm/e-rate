@@ -43,6 +43,12 @@ PATTERNS = [
      r"i(?:'m| am) (?:a |the )?(?:grandparent|grandmother|grandfather|"
      r"foster parent|adoptive parent)|"
      r"my (?:grandchild|grandchildren|grandson|granddaughter)\b)"),
+    ("student", "author_student_capacity", "first_person_student_extended",
+     r"\b(?:i(?:'m| am) (?:a |an |the )?(?:student|college student|"
+     r"high school student|community college student|university student|"
+     r"graduate student)|as (?:a |an )?(?:community college|college|high school)"
+     r" student|i (?:attend|study at) (?:a |my |the )?(?:community college|"
+     r"public university|university|high school))\b"),
     ("school_educator", "author_teaching_capacity", "first_person_teaching_extended",
      r"\b(?:i(?:'ve| have) (?:been )?teaching (?:for|in|at)|"
      r"i (?:taught|teach) (?:in|at) (?:a |the |our )?(?:public |private )?"
