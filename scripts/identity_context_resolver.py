@@ -37,6 +37,17 @@ PATTERNS = [
      r"my (?:child|children|son|daughter|kids)\b)"),
     ("parent_guardian", "first_person_parent_child", "first_person_our_child",
      r"\bour (?:child|son|daughter)(?:['’]s)?\b"),
+    ("parent_guardian", "self_declared_parent", "first_person_family_extended",
+     r"\b(?:as (?:the |a )?(?:parent|guardian) of (?:a |an |my |two |three )?"
+     r"(?:student|child|kid|children|students)|"
+     r"i(?:'m| am) (?:a |the )?(?:grandparent|grandmother|grandfather|"
+     r"foster parent|adoptive parent)|"
+     r"my (?:grandchild|grandchildren|grandson|granddaughter)\b)"),
+    ("school_educator", "author_teaching_capacity", "first_person_teaching_extended",
+     r"\b(?:i(?:'ve| have) (?:been )?teaching (?:for|in|at)|"
+     r"i (?:taught|teach) (?:in|at) (?:a |the |our )?(?:public |private )?"
+     r"(?:school|district|classroom)|"
+     r"i(?:'m| am) (?:a |the )?retired (?:school )?teacher)\b"),
     ("school_technology_staff", "author_technical_capacity", "first_person_school_IT",
      r"\b(?:i (?:am|serve as|work as|have served as) (?:the |an? )?"
      r"(?:district |school )?(?:it director|tech(?:nology)? director|network administrator|"
