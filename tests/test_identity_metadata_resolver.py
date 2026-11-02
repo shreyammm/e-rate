@@ -58,6 +58,18 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
                 self.assertFalse(f['needs_review'])
                 self.assertEqual(f['identity_status'],'capacity_not_stated')
 
+    def test_multi_person_signatories_are_capacity_unstated_not_an_institution(self):
+        for raw in ('Sean George | Janine George',
+                    'Cheryl Brownstein | Nancy Thompson',
+                    'Serena | David | Ralph | Kavion | Camila'):
+            with self.subTest(raw=raw):
+                x=self.classify(raw)
+                self.assertEqual(x['role'],'named_person_capacity_unstated')
+                self.assertFalse(x['needs_review'])
+                self.assertEqual(x['organization'],'')
+        institutional=self.classify('Chris Warden | K12TechPro')
+        self.assertTrue(institutional['needs_review'])
+
     def test_dont_invent_professional_authority(self):
         self.assertFalse(personal_name_format('HTTP'))
         self.assertFalse(personal_name_format('26-133 | 13-184'))
