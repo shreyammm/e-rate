@@ -1,16 +1,17 @@
 {
-  "generated_utc": "2026-11-02T15:28:49.045709+00:00",
-  "method": "Conservatively merge exact normalized FCC filer fields. Placeholder/missing filer names remain separate, with no text-based merging. Identical names may conceal different people and name variants may split one person. Multi-group submitters can appear in more than one group. Counts are not verified endorsements.",
+  "generated_utc": "2026-11-02T15:32:55.325383+00:00",
+  "method": "Resolve FCC filer metadata as institution, named person, or person–represented-organization pair using original filer fields and source-derived institutional affiliation. Different represented organizations are distinct capacities; organizational aliases are canonicalized only with evidence. Missing identities remain separate. Ambiguous entries are flagged for review. This is a count of submitter-capacity voices, not independently verified unique people, endorsements, or representative opinion.",
   "coverage": {
     "filings": 3231,
-    "unique_commenters": 2820,
-    "commenter_group_assignments": 2829
+    "unique_commenters": 2824,
+    "commenter_group_assignments": 2832
   },
   "metadata_diagnostics": {
     "records": 3231,
     "unique_normalized_raw_filer_fields": 2820,
-    "repeated_identifiers": 56,
-    "filings_in_repeated_identifiers": 467,
+    "distinct_submitter_capacity_identities": 2824,
+    "repeated_identifiers": 53,
+    "filings_in_repeated_identifiers": 460,
     "largest_repeat_cluster_sizes": [
       277,
       65,
@@ -45,8 +46,11 @@
           "26110079285",
           "26110079286"
         ],
-        "organization_annotation_coverage": 277,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_in_metadata_with_institution": 277
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 65,
@@ -67,8 +71,11 @@
           "26110080242",
           "26110080243"
         ],
-        "organization_annotation_coverage": 65,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_in_metadata_with_institution": 65
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 8,
@@ -91,8 +98,11 @@
           "26110081093",
           "26110081109"
         ],
-        "organization_annotation_coverage": 8,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "institution_filer_metadata": 8
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 4,
@@ -104,10 +114,8 @@
           "parents": 3,
           "school_affiliation_uncertain": 1
         },
-        "recognized_public_organizations": [
-          "●​ My children’s elementary school pays $800 a year for access to Disney+ and"
-        ],
-        "distinct_organization_candidates": 1,
+        "recognized_public_organizations": [],
+        "distinct_organization_candidates": 0,
         "distinct_source_texts": 4,
         "example_filing_ids": [
           "26110080079",
@@ -115,8 +123,11 @@
           "26110081128",
           "26110081170"
         ],
-        "organization_annotation_coverage": 1,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_capacity_not_established": 4
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 4,
@@ -137,8 +148,11 @@
           "26110071838",
           "26110076475"
         ],
-        "organization_annotation_coverage": 0,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_capacity_not_established": 4
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 3,
@@ -158,8 +172,11 @@
           "26110076335",
           "26110081388"
         ],
-        "organization_annotation_coverage": 3,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_with_source_affiliation": 3
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 3,
@@ -179,8 +196,11 @@
           "26110078404",
           "26110080653"
         ],
-        "organization_annotation_coverage": 3,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "institution_filer_metadata": 3
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 3,
@@ -204,8 +224,12 @@
           "26110076796",
           "26110080214"
         ],
-        "organization_annotation_coverage": 1,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 2,
+        "resolution_methods": {
+          "named_person_capacity_not_established": 2,
+          "named_person_with_source_affiliation": 1
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 3,
@@ -225,8 +249,11 @@
           "26110069088",
           "26110069090"
         ],
-        "organization_annotation_coverage": 3,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "institution_filer_metadata": 3
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 3,
@@ -246,8 +273,11 @@
           "26110069047",
           "26110080948"
         ],
-        "organization_annotation_coverage": 3,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "institution_filer_metadata": 3
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 3,
@@ -267,8 +297,11 @@
           "26110034713",
           "26110081296"
         ],
-        "organization_annotation_coverage": 3,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "institution_filer_metadata": 3
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 3,
@@ -288,8 +321,11 @@
           "1062673972746",
           "10817073914005"
         ],
-        "organization_annotation_coverage": 3,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "institution_filer_metadata": 3
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 2,
@@ -306,8 +342,11 @@
           "26110075762",
           "26110079749"
         ],
-        "organization_annotation_coverage": 0,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "unparsed_named_filer_field": 2
+        },
+        "requires_relationship_review": 2
       },
       {
         "filings": 2,
@@ -326,8 +365,11 @@
           "26109875536",
           "26110038512"
         ],
-        "organization_annotation_coverage": 2,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "institution_filer_metadata": 2
+        },
+        "requires_relationship_review": 0
       },
       {
         "filings": 2,
@@ -337,18 +379,18 @@
         "stakeholder_group_counts": {
           "government": 2
         },
-        "recognized_public_organizations": [
-          "Submitted to the Department of Health and Human Services",
-          "Submitted to the Federal Communications Commission’s Proposed Rule to"
-        ],
-        "distinct_organization_candidates": 2,
+        "recognized_public_organizations": [],
+        "distinct_organization_candidates": 0,
         "distinct_source_texts": 2,
         "example_filing_ids": [
           "26110079692",
           "26110081189"
         ],
-        "organization_annotation_coverage": 2,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "unparsed_named_filer_field": 2
+        },
+        "requires_relationship_review": 2
       },
       {
         "filings": 2,
@@ -367,10 +409,213 @@
           "26109906595",
           "26110081234"
         ],
-        "organization_annotation_coverage": 0,
-        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_capacity_not_established": 2
+        },
+        "requires_relationship_review": 0
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "school_administrator": 2
+        },
+        "stakeholder_group_counts": {
+          "school_professionals": 2
+        },
+        "recognized_public_organizations": [
+          "Calhoun Intermediate School District"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26110077658",
+          "26110077661"
+        ],
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_with_source_affiliation": 2
+        },
+        "requires_relationship_review": 2
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "school_connected_unknown": 2
+        },
+        "stakeholder_group_counts": {
+          "school_affiliation_uncertain": 2
+        },
+        "recognized_public_organizations": [],
+        "distinct_organization_candidates": 0,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26110080406",
+          "26110080408"
+        ],
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_capacity_not_established": 2
+        },
+        "requires_relationship_review": 0
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "individual_school": 2
+        },
+        "stakeholder_group_counts": {
+          "school_institutions": 2
+        },
+        "recognized_public_organizations": [
+          "The Academy of Charter Schools"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26110078727",
+          "26110078745"
+        ],
+        "distinct_resolved_voices": 1,
+        "resolution_methods": {
+          "named_person_in_metadata_with_institution": 2
+        },
+        "requires_relationship_review": 0
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "school_technology_staff": 2
+        },
+        "stakeholder_group_counts": {
+          "school_professionals": 2
+        },
+        "recognized_public_organizations": [
+          "Canute Independent School District 11"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26110078249",
+          "26110078250"
+        ],
+        "distinct_resolved_voices": 2,
+        "resolution_methods": {
+          "named_person_with_source_affiliation": 1,
+          "named_person_capacity_not_established": 1
+        },
+        "requires_relationship_review": 0
       }
     ],
+    "raw_name_collisions_split_by_affiliation": [
+      {
+        "filings": 3,
+        "distinct_resolved_voices": 2,
+        "source_filing_ids": [
+          "26110071929",
+          "26110076796",
+          "26110080214"
+        ],
+        "organization_candidates": [
+          "Reading Community City School District"
+        ],
+        "stakeholder_groups": {
+          "libraries": 1,
+          "individual_capacity_unstated": 1,
+          "school_affiliation_uncertain": 1
+        },
+        "resolution_methods": {
+          "named_person_capacity_not_established": 2,
+          "named_person_with_source_affiliation": 1
+        }
+      },
+      {
+        "filings": 2,
+        "distinct_resolved_voices": 2,
+        "source_filing_ids": [
+          "26110075784",
+          "26110077716"
+        ],
+        "organization_candidates": [
+          "District Technology Coordinator",
+          "Washington Community H.S. District #308"
+        ],
+        "stakeholder_groups": {
+          "school_professionals": 2
+        },
+        "resolution_methods": {
+          "named_person_with_source_affiliation": 2
+        }
+      },
+      {
+        "filings": 2,
+        "distinct_resolved_voices": 2,
+        "source_filing_ids": [
+          "26110077604",
+          "26110081401"
+        ],
+        "organization_candidates": [
+          "Rockford School District 205"
+        ],
+        "stakeholder_groups": {
+          "school_professionals": 2
+        },
+        "resolution_methods": {
+          "named_person_capacity_not_established": 1,
+          "named_person_with_source_affiliation": 1
+        }
+      },
+      {
+        "filings": 2,
+        "distinct_resolved_voices": 2,
+        "source_filing_ids": [
+          "26110077672",
+          "26110080143"
+        ],
+        "organization_candidates": [
+          "Hall High School District #502"
+        ],
+        "stakeholder_groups": {
+          "school_institutions": 1,
+          "school_professionals": 1
+        },
+        "resolution_methods": {
+          "institution_filer_metadata": 1,
+          "unparsed_named_filer_field": 1
+        }
+      },
+      {
+        "filings": 2,
+        "distinct_resolved_voices": 2,
+        "source_filing_ids": [
+          "26110078249",
+          "26110078250"
+        ],
+        "organization_candidates": [
+          "Canute Independent School District 11"
+        ],
+        "stakeholder_groups": {
+          "school_professionals": 2
+        },
+        "resolution_methods": {
+          "named_person_with_source_affiliation": 1,
+          "named_person_capacity_not_established": 1
+        }
+      }
+    ],
+    "total_raw_names_split_by_affiliation": 5,
+    "resolution_methods": {
+      "named_person_in_metadata_with_institution": 476,
+      "institution_filer_metadata": 908,
+      "named_person_capacity_not_established": 1097,
+      "unparsed_named_filer_field": 149,
+      "named_person_with_source_affiliation": 433,
+      "affiliation_candidate_unparsed_filer": 106,
+      "source_identified_institution_with_unparsed_filer": 17,
+      "unidentifiable_filer": 22,
+      "joint_institutional_submission": 23
+    },
+    "records_with_identity_relationship_uncertainty": 366,
     "fallback_filing_identities": 22
   },
   "groups": [
@@ -402,7 +647,7 @@
       "id": "school_professionals",
       "label": "School staff and educators",
       "filings": 644,
-      "commenters": 637
+      "commenters": 640
     },
     {
       "id": "school_affiliation_uncertain",
@@ -518,29 +763,29 @@
       "id": "program_continuity",
       "label": "Keep, reduce or narrow E-Rate",
       "filings": 2554,
-      "commenters": 2507,
-      "commenter_group_assignments": 2514
+      "commenters": 2511,
+      "commenter_group_assignments": 2517
     },
     {
       "id": "eligibility_rules",
       "label": "Which services E-Rate should fund",
       "filings": 1635,
-      "commenters": 1609,
-      "commenter_group_assignments": 1611
+      "commenters": 1612,
+      "commenter_group_assignments": 1614
     },
     {
       "id": "broadband_affordability",
       "label": "Cost, access and equity",
       "filings": 1413,
-      "commenters": 1393,
-      "commenter_group_assignments": 1394
+      "commenters": 1396,
+      "commenter_group_assignments": 1396
     },
     {
       "id": "internal_networks",
       "label": "Internal networks and equipment",
       "filings": 1079,
-      "commenters": 1067,
-      "commenter_group_assignments": 1068
+      "commenters": 1069,
+      "commenter_group_assignments": 1070
     },
     {
       "id": "filtering",
