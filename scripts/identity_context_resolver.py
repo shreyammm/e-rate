@@ -73,6 +73,10 @@ def author_intro(text: str) -> str:
     t=text[:min(len(text), 4500)]
     stop=STOP.search(t)
     if stop:t=t[:stop.start()]
+    # Text extraction can concatenate a bibliography heading onto the same
+    # line as the preceding paragraph. Once past the opening, strip those.
+    inline_refs=re.search(r"(?i)\b(?:references|bibliography|works cited)\s*:",t[800:])
+    if inline_refs:t=t[:800+inline_refs.start()]
     # Quoted policy excerpts are not an author introduction. Keep normal prose.
     lines=[s for s in t.splitlines() if not QUOTE_PREFIX.match(s)]
     return "\n".join(lines)[:3700]
