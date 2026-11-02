@@ -183,6 +183,8 @@ def stakeholder_group(f):
     if industry=='erate_consulting' and r=='trade_association':return 'consultant_associations'
     if r in ('telecom_isp','network_technology_vendor'):return 'connectivity_and_network_vendors'
     if industry=='telecom_industry':return 'telecom_associations'
+    if r=='education_network_consortium':return 'education_networks'
+    if r=='higher_education_institution':return 'higher_education'
     if r in ('school_district','individual_school'):return 'school_institutions'
     if r in ('school_technology_staff','school_educator','school_administrator'):return 'school_professionals'
     if r=='school_connected_unknown':return 'school_affiliation_uncertain'
@@ -196,6 +198,8 @@ def stakeholder_group(f):
 
 GROUP_NAMES={
  'joint_institutional_filings':'Joint institutional submissions',
+ 'education_networks':'Education network consortia',
+ 'higher_education':'Colleges and universities',
  'school_institutions':'Schools and districts','school_professionals':'School staff and educators',
  'school_affiliation_uncertain':'School-affiliated commenters (role unspecified)',
  'libraries':'Libraries','parents':'Parents and caregivers','edtech_vendors':'Edtech companies',
