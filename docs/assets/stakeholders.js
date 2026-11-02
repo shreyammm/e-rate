@@ -421,8 +421,7 @@
        'distinct_submitters_in_group','submitters_with_argument','pct_of_distinct_submitters_in_group',
        'pct_of_argument_submitter_group_assignments',
       'all_filings_in_group','group_filings_with_any_extracted_argument',
-      'filings_with_this_argument','pct_of_all_group_filings','pct_of_coded_group_filings',
-      'pct_of_all_filings_with_this_argument','distinct_original_source_texts',
+      'filings_with_this_argument','distinct_original_source_texts',
       'named_institutions_with_this_argument','lower_risk_filings','needs_attribution_or_identity_review',
       'source_coding_status']];
     for(const t of data.topics){
@@ -433,9 +432,7 @@
            g.commenters?Number((100*c.commenters/g.commenters).toFixed(2)):null,
            t.commenter_group_assignments?Number((100*c.commenters/t.commenter_group_assignments).toFixed(2)):null,
            g.filings,g.filings_with_coded_topics,
-          c.filings,c.pct_of_group_filings,c.pct_of_coded_group_filings,
-          t.filings?Number((100*c.filings/t.filings).toFixed(2)):null,
-          c.distinct_source_texts,c.named_institutions,c.lower_risk_filings,
+          c.filings,c.distinct_source_texts,c.named_institutions,c.lower_risk_filings,
           c.needs_attribution_or_identity_review,
           'Unvalidated extracted themes; submitters deduplicated from normalized FCC metadata; filing fields retained for audit only']);
       }
