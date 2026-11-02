@@ -634,15 +634,19 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                 # Multiple identifiable institutions are a joint filing,
                 # not a mysterious private commenter. Keep joint counts to
                 # one filing and attribute each institution separately.
-                if joint['multi_submitter_metadata'] and found['needs_review']:
+                # Joint institutional metadata outranks an accidental signature
+                # or body-level phrase that looks like an organizational label.
+                # For two libraries, never classify the filing as a school simply
+                # because the signature contains "District Consultant".
+                if joint['multi_submitter_metadata'] and sid not in overrides:
                     role_candidates=[]
                     for institution_name in joint['joint_institution_candidates']:
                         _,known_role=institution(institution_name)
                         candidate=known_role or first_rule(institution_name,ORG_PATTERNS)[0]
                         if candidate and candidate!='other_vendor':
                             role_candidates.append(candidate)
-                    if role_candidates:
-                        common_role=Counter(role_candidates).most_common(1)[0][0]
+                    if role_candidates and len(role_candidates)==len(joint['joint_institution_candidates']) and len(set(role_candidates))==1:
+                        common_role=role_candidates[0]
                         found.update(role=common_role,organization='',
                             basis='joint_institutional_metadata',
                             identity_status='source_inferred',
