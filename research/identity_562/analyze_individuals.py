@@ -22,7 +22,7 @@ from pathlib import Path
 
 from scripts.build_player_registry import ROOT
 from scripts.identity_context_resolver import context_capacity
-from scripts.identity_signature_resolver import signature_signal
+from scripts.identity_signature_resolver import signature_signal, domain_sector
 from scripts.identity_metadata_resolver import personal_name_format
 
 SOURCE = ROOT / "data/fcc_corpus"
@@ -71,6 +71,34 @@ AUTHOR_PATTERNS = [
      r"\b(?:i(?:'m| am) (?:a |an )?(?:member|volunteer|organizer) (?:of|with) (?:our |the |a )?(?:parent|school|education|student|library) (?:advocacy |community )?(?:organization|association|coalition|group)|as (?:an |a )?(?:member|volunteer|organizer) of (?:the |our )?(?:parent|school|education|library) (?:advocacy |community )?(?:organization|association|coalition|group))\b"),
 ]
 
+# Additional identity *facets* for groups that clearly use an authorial
+# school/library/family voice without proving a particular job or mandate.
+AUTHOR_PATTERNS += [
+    ("parent_guardian", "parents_plural_self_description",
+     r"\b(?:as parents(?: of (?:students|school children|children))?|"
+     r"we (?:are|remain) parents(?: of (?:school|young) children)?|"
+     r"our (?:own )?(?:kids|children|sons|daughters) (?:attend|use|need|go|have|are|will|depend)|"
+     r"our (?:own )?(?:kids|children|sons|daughters)['’] (?:education|school|future)|"
+     r"my (?:first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth) grader)\b"),
+    ("school_community_connection", "first_person_school_connection",
+     r"\b(?:at (?:our|my) school|for (?:our|my) school|"
+     r"our school's (?:students|teachers|network|budget|technology|internet|library)|"
+     r"my school (?:uses|depends|relies|needs|provides|is|has)|"
+     r"we (?:at|in) (?:our|the) (?:local |public |rural )?(?:school|district))\b"),
+    ("library_community_connection", "first_person_library_connection",
+     r"\b(?:our library (?:needs|relies|depends|uses|offers|supports|provides|serves|has)|"
+     r"our library's (?:services|patrons|funding|wifi|internet|broadband)|"
+     r"at our (?:public |local )?library|"
+     r"we (?:at|in) (?:our|the) (?:public |local )?library)\b"),
+    ("erate_applicant_voice", "self_identified_erate_applicant",
+     r"\b(?:as (?:an? |the )?e[- ]?rate applicant|"
+     r"i (?:apply|have applied|am applying) for e[- ]?rate (?:funding|discounts|support)|"
+     r"we (?:apply|have applied) for e[- ]?rate (?:funding|discounts|support))\b"),
+    ("community_volunteer", "volunteer_self_description",
+     r"\b(?:i (?:volunteer|have volunteered) (?:at|for|with) (?:our |the |a )?"
+     r"(?:school|district|public library|community center)|"
+     r"as (?:a |an )?(?:school|library|community) volunteer)\b"),
+]
 # In source text, stakeholder words in a copied sample question or bibliography
 # are not evidence of *the author*. The regexes above require self-reference.
 PATTERNS = [(role, pid, re.compile(rx, re.I)) for role,pid,rx in AUTHOR_PATTERNS]
@@ -81,7 +109,8 @@ STRONG_ROLES = {
     "school_alumnus", "library_patron", "school_employee_general",
     "retired_educator", "education_advocacy_member",
 }
-GENERAL_CIVIC = {"taxpayer","community_resident"}
+GENERAL_CIVIC = {"taxpayer","community_resident","school_community_connection",
+                 "library_community_connection","erate_applicant_voice","community_volunteer"}
 ROLE_PRIORITY = {
     "school_technology_staff": 10, "school_administrator": 11,
     "school_educator": 12, "retired_educator": 13,
@@ -90,6 +119,10 @@ ROLE_PRIORITY = {
     "library_board_member": 25, "school_employee_general": 27,
     "education_advocacy_member": 30, "school_alumnus": 35,
     "school_family_member": 40, "library_patron": 42,
+    "school_community_connection": 46,
+    "library_community_connection": 47,
+    "erate_applicant_voice": 48,
+    "community_volunteer": 49,
     "taxpayer": 60, "community_resident": 65,
 }
 NON_AUTHOR = re.compile(
@@ -267,8 +300,26 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
     pattern_counts=Counter()
     primary_counts=Counter()
     reason_counts=Counter()
+    model_hint_counts=Counter()
     for fid,target in sorted(targets.items()):
         r=raw[fid];text=str(r.get("text") or "")
+        # A pre-existing model is a *search lead*, not proof of capacity.
+        # Do not use it to set the source-backed primary role.
+        model_path=ROOT/"data/llm_census_kaggle/filings"/(fid+".json")
+        model_hint=""
+        model_summary=""
+        if model_path.exists():
+            model=json.loads(model_path.read_text(encoding="utf8"))
+            model_hint=str(model.get("stakeholder_role") or "unknown")
+            model_summary=str(model.get("summary") or "")
+        model_hint_counts[model_hint or "missing"]+=1
+        # An organizational contact domain can be a useful manual-review
+        # lead even when the original signature is incomplete; do not turn
+        # the domain into an occupation or representative mandate.
+        domains={m.group(1).lower() for m in re.finditer(
+            r"(?i)\b[\w.+-]+@([a-z0-9.-]+\.[a-z]{2,})\b",
+            text[-1600:])}
+        domain_sectors=sorted({domain_sector(d) for d in domains if domain_sector(d)})
         signatures=signature_signal(text,str(r.get("filer_raw") or ""))
         roles=declared_roles(text)
         existing=context_capacity(text)
@@ -319,6 +370,9 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
             "source_chars":len(text),
             "has_personal_name_metadata":is_personal_filer(r.get("filer_raw","")),
             "signature_occupation_candidate":signatures.role or None,
+            "contact_domain_sector_leads":domain_sectors,
+            "independent_model_role_lead":model_hint or None,
+            "independent_model_specificity_lead":bool(model_hint and model_hint not in ("unknown","individual_other")),
             "cross_filing_review":bool(target.get("attribution_review")),
             "automatic_reclassification":False,
         })
@@ -332,6 +386,9 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
         "distinct_filing_ids":len({x["filing_id"] for x in rows}),
         "primary_role_counts":dict(primary_counts),
         "pattern_counts":dict(pattern_counts),
+        "independent_model_role_leads":dict(model_hint_counts),
+        "cases_with_contact_domain_sector_lead":sum(bool(x["contact_domain_sector_leads"]) for x in rows),
+        "cases_with_specific_independent_model_lead":sum(x["independent_model_specificity_lead"] for x in rows),
         "disposition_counts":dict(reason_counts),
         "template_cluster_sizes":getattr(cluster_templates,"stats",{}),
         "template_participant_filings":len(template),
