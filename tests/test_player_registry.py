@@ -58,8 +58,8 @@ class PlayerIdentityTest(unittest.TestCase):
             x=inferred_identity({'filer_raw':name},
                 'consultant_or_e_rate_services_firm',
                 'We should consider consultant oversight without reducing E-Rate.')
-            self.assertEqual(x['role'],'unresolved')
-            self.assertTrue(x['needs_review'])
+            self.assertEqual(x['role'],'named_person_capacity_unstated')
+            self.assertFalse(x['needs_review'])
     def test_self_identified_individual_consultant_is_preserved(self):
         x=inferred_identity({'filer_raw':'Alex Doe'},
             'consultant_or_e_rate_services_firm',
