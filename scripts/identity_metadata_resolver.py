@@ -163,17 +163,24 @@ def personal_name_with_postnominals(raw: str) -> bool:
     return base != raw and personal_name_format(base)
 
 def multiple_person_names_only(raw: str) -> bool:
-    """Recognize two to six personal names separated by pipes or commas."""
+    """Recognize personal co-signers while rejecting job titles and docket numbers."""
     raw = str(raw or '').strip()
-    if '|' in raw:
+    pipe = '|' in raw
+    if pipe:
         parts = [p.strip() for p in raw.split('|')]
     elif ',' in raw:
         parts = [p.strip() for p in raw.split(',')]
     else:
         return False
-    return 2 <= len(parts) <= 6 and all(
-        len(p.split()) >= 2 and personal_name_format(p) for p in parts
-    )
+    if not (2 <= len(parts) <= 6):
+        return False
+    if not pipe and any(len(p.split()) < 2 for p in parts):
+        return False
+    title = re.compile(r'(?i)^(?:president|director|manager|superintendent|'
+                       r'coordinator|chief|assistant|counsel|representative|'
+                       r'educator|teacher|principal|trustee|librarian)\\b')
+    return all(personal_name_format(p) and not title.search(p)
+               for p in parts)
 
 def personal_name_format(raw: str) -> bool:
     """An apparently personal-name filer with unknown occupational capacity."""
