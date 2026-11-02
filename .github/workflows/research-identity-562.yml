@@ -1,0 +1,57 @@
+name: EXPERIMENTAL individual identity evidence audit (branch only)
+on:
+  push:
+    branches:
+      - research/identity-562-unpublished-20261102
+    paths:
+      - 'research/identity_562/analyze_individuals.py'
+      - 'research/identity_562/test_analyze_individuals.py'
+      - '.github/workflows/research-identity-562.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: unpublished-identity-562-research-branch
+  cancel-in-progress: false
+jobs:
+  analyze:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/identity-562-unpublished-20261102
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Test experimental evidence rules
+        run: python -m unittest research.identity_562.test_analyze_individuals -v
+      - name: Run source inspection on all named-individual filings
+        run: python -m research.identity_562.analyze_individuals
+      - name: Verify no personal contact details are emitted
+        run: |
+          python - <<'PY'
+          import json, re
+          from pathlib import Path
+          p=Path('research/identity_562/results/review_queue.json')
+          d=json.loads(p.read_text())
+          assert d['summary']['filing_target_count']>=500
+          assert len(d['records'])==d['summary']['filing_target_count']
+          assert len({x['filing_id'] for x in d['records']})==len(d['records'])
+          out=p.read_text()
+          assert not re.search(r'[a-z0-9_.+-]+@[a-z0-9.-]+\.[a-z]{2,}',out,re.I)
+          assert 'filer_raw' not in out and '"text":' not in out
+          print('All source-file IDs audited; no names/emails/raw excerpts exported')
+          PY
+      - name: Keep research results on feature branch only (never publish website)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- research/identity_562/results/summary.json research/identity_562/results/review_queue.json
+          if git diff --cached --quiet; then
+            echo "Unpublished evidence outputs unchanged"
+          else
+            git commit -m 'Research-only source identity evidence report (not website)'
+            git push origin HEAD:research/identity-562-unpublished-20261102
+          fi
