@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-02T15:39:50.284767+00:00",
+  "generated_utc": "2026-11-02T15:40:36.613867+00:00",
   "method": "Resolve FCC filer metadata as institution, named person, or person–represented-organization pair using original filer fields and source-derived institutional affiliation. Different represented organizations are distinct capacities; organizational aliases are canonicalized only with evidence. Missing identities remain separate. Ambiguous entries are flagged for review. This is a count of submitter-capacity voices, not independently verified unique people, endorsements, or representative opinion.",
   "coverage": {
     "filings": 3231,
@@ -589,6 +589,151 @@
       "26110078250"
     ],
     "records_with_identity_relationship_uncertainty": 398,
+    "repeat_clusters_with_identity_relationship_uncertainty": 10,
+    "repeated_filer_identity_review_queue": [
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110041970",
+          "26110081332"
+        ],
+        "stakeholder_groups": {
+          "erate_consultants": 2
+        },
+        "identity_resolution_methods": {
+          "institution_filer_metadata": 2
+        },
+        "uncertain_record_count": 2
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110044093",
+          "26110078980"
+        ],
+        "stakeholder_groups": {
+          "nonprofits_and_advocacy": 2
+        },
+        "identity_resolution_methods": {
+          "source_identified_institution_with_unparsed_filer": 2
+        },
+        "uncertain_record_count": 2
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110071317",
+          "26110081259"
+        ],
+        "stakeholder_groups": {
+          "nonprofits_and_advocacy": 2
+        },
+        "identity_resolution_methods": {
+          "unparsed_named_filer_field": 2
+        },
+        "uncertain_record_count": 2
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110075762",
+          "26110079749"
+        ],
+        "stakeholder_groups": {
+          "other_or_unidentified": 2
+        },
+        "identity_resolution_methods": {
+          "unparsed_named_filer_field": 2
+        },
+        "uncertain_record_count": 2
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110077604",
+          "26110081401"
+        ],
+        "stakeholder_groups": {
+          "school_professionals": 2
+        },
+        "identity_resolution_methods": {
+          "inferred_single_organization_from_same_named_filer_and_group": 1,
+          "named_person_with_source_affiliation": 1
+        },
+        "uncertain_record_count": 1
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110077658",
+          "26110077661"
+        ],
+        "stakeholder_groups": {
+          "school_professionals": 2
+        },
+        "identity_resolution_methods": {
+          "named_person_with_source_affiliation": 2
+        },
+        "uncertain_record_count": 2
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110078249",
+          "26110078250"
+        ],
+        "stakeholder_groups": {
+          "school_professionals": 2
+        },
+        "identity_resolution_methods": {
+          "named_person_with_source_affiliation": 1,
+          "inferred_single_organization_from_same_named_filer_and_group": 1
+        },
+        "uncertain_record_count": 1
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110079692",
+          "26110081189"
+        ],
+        "stakeholder_groups": {
+          "government": 2
+        },
+        "identity_resolution_methods": {
+          "unparsed_named_filer_field": 2
+        },
+        "uncertain_record_count": 2
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110080873",
+          "26110080894"
+        ],
+        "stakeholder_groups": {
+          "school_affiliation_uncertain": 2
+        },
+        "identity_resolution_methods": {
+          "unparsed_named_filer_field": 2
+        },
+        "uncertain_record_count": 2
+      },
+      {
+        "filing_count": 2,
+        "filing_ids": [
+          "26110081213",
+          "26110081217"
+        ],
+        "stakeholder_groups": {
+          "joint_institutional_filings": 2
+        },
+        "identity_resolution_methods": {
+          "joint_institutional_submission": 2
+        },
+        "uncertain_record_count": 2
+      }
+    ],
     "fallback_filing_identities": 22
   },
   "industry_rollups": [
