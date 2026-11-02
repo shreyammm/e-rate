@@ -6,26 +6,40 @@
     "filing_target_count": 567,
     "distinct_filing_ids": 567,
     "primary_role_counts": {
-      "none": 512,
+      "none": 500,
       "parent_guardian": 4,
       "community_resident": 17,
+      "library_staff": 3,
       "library_patron": 7,
       "taxpayer": 3,
-      "school_community_connection": 3,
+      "school_educator": 3,
+      "education_professional": 2,
+      "school_community_connection": 2,
       "student": 18,
+      "school_board_member": 2,
+      "retired_educator": 1,
       "library_community_connection": 2,
-      "school_alumnus": 1
+      "school_alumnus": 1,
+      "school_technology_staff": 1,
+      "health_professional": 1
     },
     "pattern_counts": {
       "parents_plural_self_description": 2,
       "resident_self_description": 19,
+      "professional_librarian": 3,
       "library_user_declared": 7,
       "taxpayer_self_description": 3,
+      "teacher_level_or_subject": 3,
+      "education_career_declared": 2,
       "first_person_school_connection": 3,
       "current_student_self_description": 18,
       "parent_self_description": 2,
+      "boe_or_board_member": 2,
+      "retirement_from_teaching": 1,
       "first_person_library_connection": 2,
-      "former_student_declared": 1
+      "former_student_declared": 1,
+      "it_professional_at_school": 1,
+      "licensed_child_professional": 1
     },
     "independent_model_role_leads": {
       "advocacy_group": 83,
@@ -40,11 +54,11 @@
     "cases_with_contact_domain_sector_lead": 0,
     "cases_with_specific_independent_model_lead": 165,
     "disposition_counts": {
-      "no_source_supported_capacity": 472,
+      "no_source_supported_capacity": 460,
       "explicit_non_occupational_or_sector_identity": 12,
       "no_self_declared_role__template_participant": 39,
-      "explicit_civic_capacity": 25,
-      "explicit_professional_or_school_role": 18,
+      "explicit_civic_capacity": 24,
+      "explicit_professional_or_school_role": 31,
       "no_readable_source": 1
     },
     "template_cluster_sizes": {
@@ -54,7 +68,7 @@
     },
     "template_participant_filings": 42,
     "readable_targets": 566,
-    "remaining_without_occupational_or_self_declared_civic_capacity": 512,
+    "remaining_without_occupational_or_self_declared_civic_capacity": 500,
     "limitations": [
       "Counts reflect source-text evidence rules, not verified occupations or employer authority.",
       "A person may be a parent, taxpayer and educator simultaneously. Primary role prioritizes specificity; all evidence candidates are retained.",
@@ -1516,12 +1530,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110070789",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "library_staff",
+      "identity_basis": "professional_librarian",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "library_staff",
+          "pattern_id": "professional_librarian",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -1585,12 +1605,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110071312",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "library_staff",
+      "identity_basis": "professional_librarian",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "library_staff",
+          "pattern_id": "professional_librarian",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -2292,12 +2318,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110072231",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "school_educator",
+      "identity_basis": "teacher_level_or_subject",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "school_educator",
+          "pattern_id": "teacher_level_or_subject",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -3460,12 +3492,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110073435",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "education_professional",
+      "identity_basis": "education_career_declared",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "education_professional",
+          "pattern_id": "education_career_declared",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -4812,12 +4850,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110076027",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "school_educator",
+      "identity_basis": "teacher_level_or_subject",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "school_educator",
+          "pattern_id": "teacher_level_or_subject",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -5461,12 +5505,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110076512",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "school_educator",
+      "identity_basis": "teacher_level_or_subject",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "school_educator",
+          "pattern_id": "teacher_level_or_subject",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -6164,12 +6214,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110076828",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "school_board_member",
+      "identity_basis": "boe_or_board_member",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "school_board_member",
+          "pattern_id": "boe_or_board_member",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -6670,12 +6726,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110077464",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "library_staff",
+      "identity_basis": "professional_librarian",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "library_staff",
+          "pattern_id": "professional_librarian",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -7062,12 +7124,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110077792",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "retired_educator",
+      "identity_basis": "retirement_from_teaching",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "retired_educator",
+          "pattern_id": "retirement_from_teaching",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -11458,12 +11526,17 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080030",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": "school_community_connection",
-      "identity_basis": "first_person_school_connection",
+      "new_primary_role_candidate": "school_technology_staff",
+      "identity_basis": "it_professional_at_school",
       "evidence_window": "intro",
-      "confidence": "medium",
-      "independent_capacity_kind": "explicit_civic_capacity",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
       "all_self_declared_capacity_candidates": [
+        {
+          "role": "school_technology_staff",
+          "pattern_id": "it_professional_at_school",
+          "confidence": "high"
+        },
         {
           "role": "school_community_connection",
           "pattern_id": "first_person_school_connection",
@@ -12198,12 +12271,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080617",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "health_professional",
+      "identity_basis": "licensed_child_professional",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "health_professional",
+          "pattern_id": "licensed_child_professional",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -12605,12 +12684,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080773",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "school_board_member",
+      "identity_basis": "boe_or_board_member",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "school_board_member",
+          "pattern_id": "boe_or_board_member",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
@@ -13359,12 +13444,18 @@
       "source_url": "https://www.fcc.gov/ecfs/filing/26110081333",
       "current_role": "named_person_capacity_unstated",
       "identity_status": "capacity_not_stated",
-      "new_primary_role_candidate": null,
-      "identity_basis": null,
-      "evidence_window": null,
-      "confidence": "none",
-      "independent_capacity_kind": "no_source_supported_capacity",
-      "all_self_declared_capacity_candidates": [],
+      "new_primary_role_candidate": "education_professional",
+      "identity_basis": "education_career_declared",
+      "evidence_window": "intro",
+      "confidence": "high",
+      "independent_capacity_kind": "explicit_professional_or_school_role",
+      "all_self_declared_capacity_candidates": [
+        {
+          "role": "education_professional",
+          "pattern_id": "education_career_declared",
+          "confidence": "high"
+        }
+      ],
       "suspected_template_cluster": null,
       "readable_source": true,
       "ocr_candidate": false,
