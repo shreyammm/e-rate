@@ -268,6 +268,49 @@ class PlayerIdentityTest(unittest.TestCase):
         self.assertFalse(joint_education_associations(
             "Jane Doe | Springfield Unified School District"))
 
+    def test_parent_reference_to_my_children(self):
+        x=inferred_identity({'filer_raw':'Nicole Lewis'},'named_person_capacity_unstated',
+            'I live in an economically diverse district whose public schools are '
+            'educating my children. E-Rate is critical.')
+        self.assertEqual(x['role'],'parent_guardian')
+        self.assertFalse(x['needs_review'])
+
+    def test_school_network_technician_first_person(self):
+        x=inferred_identity({'filer_raw':'Camden McCroskey'},'named_person_capacity_unstated',
+            "As a network technician for a local school district serving a "
+            "disadvantaged area, I've seen firsthand what E-Rate does.")
+        self.assertEqual(x['role'],'school_technology_staff')
+        self.assertFalse(x['needs_review'])
+
+    def test_library_language_our_library_will(self):
+        x=inferred_identity({'filer_raw':'Lisa Melone'},'named_person_capacity_unstated',
+            'The library cannot operate without internet. If E-Rate funding ends, '
+            'our library will be forced to cut vital services.')
+        self.assertEqual(x['role'],'library_affiliated')
+        self.assertFalse(x['needs_review'])
+
+    def test_school_affiliation_in_our_district(self):
+        x=inferred_identity({'filer_raw':'Dr. Josh Oster'},'named_person_capacity_unstated',
+            'If E-Rate ends districts will pay more. In our district that would '
+            'increase the budget burden.')
+        self.assertEqual(x['role'],'school_connected_unknown')
+        self.assertFalse(x['needs_review'])
+
+    def test_monterey_supervisor_first_person_role(self):
+        x=inferred_identity({'filer_raw':'Supervisor Chris Lopez'},'named_person_capacity_unstated',
+            'I represent the Third District of the Monterey County Board of Supervisors.')
+        self.assertEqual(x['role'],'government')
+        self.assertFalse(x['needs_review'])
+
+    def test_known_institution_abbreviation(self):
+        for raw,role in [('Coastline ROP','school_district'),
+                         ('Wireline Competition Bureau','government')]:
+            with self.subTest(raw=raw):
+                x=inferred_identity({'filer_raw':raw},'named_person_capacity_unstated',
+                    'We submit comments to the FCC.')
+                self.assertEqual(x['role'],role)
+                self.assertFalse(x['needs_review'])
+
     def test_co_signers_not_inferred_as_independent_filings(self):
         from scripts.build_player_registry import submitted_by_multiple_entities
         x=submitted_by_multiple_entities('A School District | Curriculum Associates, LLC | Library Association')
