@@ -14,6 +14,8 @@ KNOWN = {
     # Original FCC signature/letterhead candidates cross-checked against
     # independent institutional sources (Nov 2, 2026). These aliases apply
     # only to institution-valued metadata or inspected signature blocks.
+    'united community action partnership': ('United Community Action Partnership', 'nonprofit_service_provider'),
+    'united community action partnership inc': ('United Community Action Partnership', 'nonprofit_service_provider'),
     'central massachusetts collaborative': ('Central Massachusetts Collaborative', 'school_district'),
     'international leadership of texas': ('International Leadership of Texas', 'school_district'),
     'international leadership of texas iltexas': ('International Leadership of Texas', 'school_district'),
