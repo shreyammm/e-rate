@@ -313,6 +313,13 @@ class PlayerIdentityTest(unittest.TestCase):
                 self.assertEqual(x['role'],role)
                 self.assertFalse(x['needs_review'])
 
+    def test_known_role_with_ambiguous_cosigner_stays_classified(self):
+        x=inferred_identity({'filer_raw':'Jane Doe | Unknown Umbrella Network'},
+            'unresolved','I am a teacher in an elementary school.')
+        self.assertEqual(x['role'],'school_educator')
+        self.assertFalse(x['needs_review'])
+        self.assertTrue(x['attribution_review'])
+
     def test_co_signers_not_inferred_as_independent_filings(self):
         from scripts.build_player_registry import submitted_by_multiple_entities
         x=submitted_by_multiple_entities('A School District | Curriculum Associates, LLC | Library Association')
