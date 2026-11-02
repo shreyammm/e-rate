@@ -218,54 +218,156 @@ CURATED_FILER_ROLES = {
 def curated_business(name: str):
     return CURATED_FILER_ROLES.get(canon(name))
 
+
+# Evidence is restricted to author-introduction and signature neighborhoods.
+# The entire comment is used for policy analysis, never for claiming authorship.
+SIGNATURE_ROLE_RULES = [
+    ('school_technology_staff', r'\b(?:director of (?:information )?technology|it director|technology (?:director|coordinator|officer)|chief technology officer|network administrator|systems administrator)\b'),
+    ('school_administrator', r'\b(?:superintendent|school principal|head of school|school board member|district administrator)\b'),
+    ('school_educator', r'\b(?:classroom teacher|special education teacher|educator|teacher)\b'),
+    ('library_staff', r'\b(?:librarian|library director|director of libraries|library administrator)\b'),
+    ('erate_consultant', r'\b(?:e[- ]?rate consultant|e[- ]?rate adviser|e[- ]?rate advisor)\b'),
+    ('researcher', r'\b(?:research scientist|researcher|pediatrician|public health professional)\b'),
+]
+SIGNATURE_PATTERNS = [(role, re.compile(pattern, re.I)) for role,pattern in SIGNATURE_ROLE_RULES]
+DOCUMENT_ADDRESSEE = re.compile(
+    r'^(?:federal communications commission|fcc|office of the secretary|'
+    r'marlene h dortch|national telecommunications and information administration|'
+    r'wc docket|re:|subject:|dear |comments of |before the |in the matter of )',re.I)
+
+def signoff_evidence(text: str) -> tuple[str,str,str]:
+    """Read a real closing, not an arbitrary occurrence of a title in the body.
+
+    Returns candidate role, institution name, and evidence basis. No personal
+    names, signature paragraphs or contact details are exported.
+    """
+    tail=text[-min(len(text),2400):]
+    closings=list(re.finditer(
+        r'(?im)^\s*(?:respectfully submitted|sincerely(?: yours)?|best regards|'
+        r'respectfully|submitted by|signed by|thank you)\s*[,.:]?\s*$',
+        tail))
+    if not closings:
+        return '', '', ''
+    sign=tail[closings[-1].end():closings[-1].end()+900]
+    lines=[re.sub(r'\s+',' ',line).strip(' ,;') for line in sign.splitlines()[:14]]
+    lines=[line for line in lines if line and len(line)<130 and not SENSITIVE.search(line)]
+    if not lines:return '', '', ''
+    # A title in a signature block identifies the signatory's capacity, not
+    # necessarily the organization for which every statement is made.
+    role=''
+    for line in lines[:9]:
+        role,_=first_rule(line,SIGNATURE_PATTERNS)
+        if role:break
+    org=''
+    for line in lines[:10]:
+        if DOCUMENT_ADDRESSEE.search(line):continue
+        cand=organization_label(line)
+        if not cand:continue
+        # Ignore incidental words in role descriptions such as
+        # "Director of Technology" or "Network Administrator".
+        if re.match(r'(?i)^(?:director|chief|president|vice president|'
+                    r'superintendent|manager|board member|representative|'
+                    r'consultant|network administrator|technology director)\b',cand):
+            continue
+        org=cand
+        break
+    return role,org,('signed_role_and_institution' if role and org else
+                     'signed_role' if role else
+                     'signed_institution' if org else '')
+
+def opening_institution(text: str) -> str:
+    """Recognize a source-letterhead organization only near the document start."""
+    start=text[:min(len(text),1300)]
+    # Only explicit institution-like short lines, rather than a document
+    # title, salutation, cited case, or an FCC addressee.
+    for line in start.splitlines()[:12]:
+        line=' '.join(line.strip().split())
+        if not line or len(line)>100 or DOCUMENT_ADDRESSEE.search(line):
+            continue
+        cand=organization_label(line)
+        if cand and (first_rule(cand,ORG_PATTERNS)[0] not in ('','other_vendor')):
+            return cand
+    return ''
+
+def expressed_proxy(text: str) -> bool:
+    """Do not treat generic advocacy 'on behalf of students' as client agency."""
+    intro=text[:min(len(text),2200)]
+    return bool(re.search(
+        r'(?i)\b(?:as (?:legal )?counsel for|'
+        r'on behalf of (?:our (?:client|member|customer|district)|'
+        r'(?:the )?(?:[A-Z][\w&.-]+(?:\s+[A-Z][\w&.-]+){0,7})\s+'
+        r'(?:school district|association|corporation|llc|inc\.?|coalition))|'
+        r'we represent (?:our client|the [A-Z]))',intro))
+
 def inferred_identity(meta: dict, base: str, text: str) -> dict:
-    name=organization_label(meta.get('filer_raw',''))
-    affiliated=candidate_affiliation(meta.get('filer_raw','')) if not name else ''
+    raw=meta.get('filer_raw','')
+    name=organization_label(raw)
+    affiliated=candidate_affiliation(raw) if not name else ''
     if affiliated:name=affiliated
-    person=base in PERSON_ROLES or (not name and base in ('unresolved', 'named_person_capacity_unstated'))
+    person=base in PERSON_ROLES or not name
     self_role,self_quote=explicit_personal_role(text) if person else ('','')
     org_role,org_cue=first_rule(name,ORG_PATTERNS) if name else ('','')
     curated=curated_business(name) if name else None
     if curated:org_role,org_cue=curated[0],name
     default=BASE_CROSSWALK.get(base,'unresolved')
-    # A recognizable letterhead or sign-off is only a lead for manual review.
-    # Do not infer authorization to speak for an institution.
-    letterhead = bool(re.search(
-        r'(?im)^[^\n]{0,100}\b(?:school district|public schools|library system|'
-        r'elementary school|county office of education)\b[^\n]{0,40}$',
-        text[:700])) if person and not self_role else False
-    signature = ''
-    if person and not self_role:
-        tail = text[-2400:]
-        closing = re.search(r'(?i)\b(?:sincerely|respectfully submitted|best regards)\s*[,\n]', tail)
-        if closing:
-            signed = tail[closing.end():closing.end()+500]
-            if re.search(r'(?i)\b(?:director of technology|chief technology officer|it administrator|district technology coordinator)\b', signed):
-                signature = 'school_technology_staff'
-            elif re.search(r'(?i)\b(?:superintendent|principal|school board member)\b', signed):
-                signature = 'school_administrator'
-            elif re.search(r'(?i)\be[- ]?rate consultant\b', signed):
-                signature = 'erate_consultant'
-    candidate = signature or ('school_connected_unknown' if letterhead else '')
-    role = self_role or org_role or candidate or default
-    basis = ('multi_party_metadata_affiliation_candidate' if affiliated else
-             'curated_company_type_candidate' if curated else
-             'author_self_description' if self_role else
-             'filer_field_organization' if org_role else
-             'signature_candidate' if signature else
-             'letterhead_candidate' if letterhead else 'provisional_full_text_role')
-    review = bool(curated) or bool(affiliated) or (not self_role and not org_role) or bool(candidate) or role in (
-        'school_connected_unknown','named_person_capacity_unstated',
-        'unresolved','other_vendor','advocacy_organization')
-    proxy=bool(re.search(r'\b(?:on behalf of|representing (?:our|the|a)|counsel for|submitted for (?:our|the|a))\b',text[:2400],re.I))
-    if proxy:review=True
-    # A reviewer can reopen the FCC link. Do not republish a broad paragraph
-    # of text from a private individual's letter as evidence.
+    signed_role,signed_org,sign_basis=signoff_evidence(text) if person else ('','','')
+    document_org=opening_institution(text) if person and not name else ''
+    recovered_org=signed_org or document_org
+    if not name and recovered_org:
+        name=recovered_org
+        org_role,org_cue=first_rule(name,ORG_PATTERNS)
+        curated=curated_business(name)
+        if curated:org_role,org_cue=curated[0],name
+    # An organization filing with direct source metadata is stronger than an
+    # isolated occupational title; for an individual, self-description wins.
+    # A signed occupational title is useful when an individual never says "I am".
+    role=(self_role or signed_role or org_role or default) if person else (org_role or default)
+    # Do not turn generic "other vendor" into an unspecified identity, or
+    # assume a person's employer is a school's institutional position.
+    if role=='unresolved' and (signed_org or document_org):
+        role=org_role or role
+    basis=('multi_party_metadata_affiliation_candidate' if affiliated else
+           'author_self_description' if self_role else
+           'signed_role_and_organization' if signed_role and name else
+           'signed_role' if signed_role else
+           'source_letterhead_or_signature' if recovered_org else
+           'curated_company_type_candidate' if curated else
+           'filer_field_organization' if org_role else
+           'provisional_full_text_role')
+    # Explicit proxy relationships can affect whose view the filing should
+    # count as. Distinguish that ambiguity from the submitter's known identity.
+    proxy=expressed_proxy(text)
+    unresolved=role in ('unresolved','named_person_capacity_unstated','school_connected_unknown')
+    conflicting=(bool(self_role and signed_role and self_role!=signed_role) or
+                 bool(name and signed_org and canon(name)!=canon(signed_org)
+                      and not affiliated))
+    # A person|organization source field does not alone prove authority or
+    # employment. Preserve it as a review case unless an author self-description
+    # corroborates their role and institution.
+    ambiguous_affiliation=bool(affiliated and not (self_role or signed_role))
+    review=bool(unresolved or conflicting or ambiguous_affiliation or proxy)
+    identity_status=('unresolved' if unresolved else
+                     'source_conflict' if conflicting else
+                     'affiliation_uncertain' if ambiguous_affiliation or proxy else
+                     'strong_source_cue')
+    confidence=('low' if unresolved or conflicting else
+                'medium' if ambiguous_affiliation or proxy or recovered_org else
+                'high' if (self_role or org_role or signed_role) else 'medium')
     return {'role':role,'organization':name,
             'industry_focus':curated[1] if curated else industry_focus(name,role),
-            'basis':basis,'evidence_cue':self_quote or org_cue or ('signature title' if signature else 'opening letterhead' if letterhead else ''),
+            'basis':basis,
+            'evidence_cue':self_quote or org_cue or (
+                'signatory title' if signed_role else
+                'organization on letterhead/signature' if recovered_org else ''),
             'speaker_is_proxy_possible':proxy,'needs_review':review,
-            'identity_status':'candidate' if review else 'strong_source_cue'}
+            'identity_status':identity_status,'identity_confidence':confidence,
+            'identity_review_reason':(
+                'unresolved_capacity' if unresolved else
+                'conflicting_source_cues' if conflicting else
+                'representative_relationship' if proxy else
+                'affiliation_requires_corrobation' if ambiguous_affiliation else ''),
+            'signatory_role_detected':bool(signed_role)}
+
 
 JOINT_ORGANIZATION_ALIASES = {
     'curriculum associates':'Curriculum Associates, LLC',
@@ -374,7 +476,8 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                     org=organization_label(v.get('organization',''))
                     found.update(role=v['role'],organization=org,basis='human_source_review',
                                  evidence_cue='human reviewer checked source',
-                                 identity_status='human_reviewed',needs_review=False,
+                                 identity_status='human_reviewed',identity_confidence='high',
+                                 identity_review_reason='',needs_review=False,
                                  industry_focus=industry_focus(org,v['role']))
                 review=review_priority(found,body)
                 joint=submitted_by_multiple_entities(raw_name)
@@ -383,6 +486,8 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                      'industry_focus':found['industry_focus'],
                      'basis':found['basis'],'evidence_cue':found['evidence_cue'],
                      'identity_status':found['identity_status'],
+                     'identity_confidence':found.get('identity_confidence','high' if found['identity_status']=='human_reviewed' else 'medium'),
+                     'identity_review_reason':found.get('identity_review_reason',''),
                      'needs_review':found['needs_review'],
                      'review_priority':review['score'],'review_tier':review['level'],
                      'review_reasons':review['reasons'],
