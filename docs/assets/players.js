@@ -31,7 +31,7 @@
   const byFiling=new Map();
   function stats(){
     const p=data.coverage;
-    const vals=[['Filing records',p.filings],['Recognized institutional names',p.named_organizations],['Actionable identity reviews',p.filings_requiring_identity_review],['Personal filers: capacity not stated',p.filings_capacity_not_stated||0],['Human-reviewed identity records',p.manually_reviewed_filings]];
+    const vals=[['Filing records',p.filings],['Recognized institutional names',p.named_organizations],['Actionable identity reviews',p.filings_requiring_identity_review],['Named filers: no stated capacity',p.filings_capacity_not_stated||0],['Human-reviewed identity records',p.manually_reviewed_filings]];
     $('ps-stats').replaceChildren(...vals.map(([label,v])=>{const x=node('div',undefined,'ps-stat');x.append(node('strong',n(v)),node('span',label,'ps-small'));return x}));
     const holder=$('ps-roles');holder.replaceChildren();
     const t=node('table',undefined,'ps-table');t.appendChild(node('thead'));let h=node('tr');h.append(node('th','Candidate role'),node('th','Filing records'));t.tHead.append(h);
