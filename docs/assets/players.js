@@ -23,7 +23,7 @@
     if(r.industry_focus==='erate_consulting')return 'consultant';
     if(['telecom_isp','network_technology_vendor'].includes(r.role))return 'telecom';
     if(['erate_consultant','procurement_adviser'].includes(r.role))return 'consultant';
-    if(['library_institution','library_staff'].includes(r.role))return 'library';
+    if(['library_institution','library_staff','library_affiliated'].includes(r.role))return 'library';
     if(r.role==='parent_guardian')return 'parent';
     return 'other';
   };
