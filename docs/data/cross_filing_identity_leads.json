@@ -1,0 +1,39 @@
+{
+  "schema": "cross-filing-identity-leads-v1",
+  "source_filings": 3231,
+  "distinct_personal_name_strings": 1624,
+  "person_name_strings_with_multiple_filings": 23,
+  "capacity_unstated_targets": 559,
+  "potential_cross_filing_leads": 2,
+  "role_lead_counts": {
+    "school_connected_unknown": 1,
+    "school_administrator": 1
+  },
+  "limitations": "Same-name links are provisional; no unverified role is automatically applied to the stakeholder census. The person's different submissions may be in different capacities.",
+  "records": [
+    {
+      "id": "26110076796",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110076796",
+      "role_candidate": "school_connected_unknown",
+      "evidence_kind": "same_exact_normalized_personal_name_other_filing",
+      "corroborating_filing_ids": [
+        "26110080214"
+      ],
+      "confidence": "unconfirmed_name_match",
+      "automatic_reclassification": false,
+      "reason": "The same FCC filer-name string described this role in another filing. This does not establish a unique person, current occupation, or authority on this submission."
+    },
+    {
+      "id": "26110080317",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110080317",
+      "role_candidate": "school_administrator",
+      "evidence_kind": "same_exact_normalized_personal_name_other_filing",
+      "corroborating_filing_ids": [
+        "26110007859"
+      ],
+      "confidence": "unconfirmed_name_match",
+      "automatic_reclassification": false,
+      "reason": "The same FCC filer-name string described this role in another filing. This does not establish a unique person, current occupation, or authority on this submission."
+    }
+  ]
+}
