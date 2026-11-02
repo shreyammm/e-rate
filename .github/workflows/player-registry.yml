@@ -11,6 +11,7 @@ on:
       - 'tests/test_industry_identity_recall.py'
       - 'scripts/build_industry_argument_review.py'
       - 'data/player_review_overrides.json'
+      - 'docs/data/external_identity_checks.json'
       - 'data/fcc_corpus/**'
       - '.github/workflows/player-registry.yml'
 permissions:
