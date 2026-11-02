@@ -294,7 +294,7 @@ def expressed_proxy(text: str) -> bool:
     intro=text[:min(len(text),2200)]
     return bool(re.search(
         r'(?i)\b(?:as (?:legal )?counsel for|'
-        r'on behalf of (?:our (?:client|member|customer|district)|'
+        r'on behalf of (?:our (?:school )?(?:client|member|customer|district)|'
         r'(?:the )?(?:[A-Z][\w&.-]+(?:\s+[A-Z][\w&.-]+){0,7})\s+'
         r'(?:school district|association|corporation|llc|inc\.?|coalition))|'
         r'we represent (?:our client|the [A-Z]))',intro))
@@ -304,7 +304,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     name=organization_label(raw)
     affiliated=candidate_affiliation(raw) if not name else ''
     if affiliated:name=affiliated
-    person=base in PERSON_ROLES or not name
+    person=not bool(organization_label(raw))
     self_role,self_quote=explicit_personal_role(text) if person else ('','')
     org_role,org_cue=first_rule(name,ORG_PATTERNS) if name else ('','')
     curated=curated_business(name) if name else None
@@ -365,7 +365,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
                 'unresolved_capacity' if unresolved else
                 'conflicting_source_cues' if conflicting else
                 'representative_relationship' if proxy else
-                'affiliation_requires_corrobation' if ambiguous_affiliation else ''),
+                'affiliation_requires_corroboration' if ambiguous_affiliation else ''),
             'signatory_role_detected':bool(signed_role)}
 
 
