@@ -10,6 +10,7 @@ import gzip, hashlib, json, re
 from collections import Counter
 from pathlib import Path
 from scripts.build_player_registry import ROOT, context_capacity, signoff_evidence, opening_institution, organization_label, candidate_affiliation
+from scripts.identity_signature_resolver import signature_signal
 
 REGISTRY = ROOT / 'docs/data/player_registry.json'
 CORPUS = ROOT / 'data/fcc_corpus'
@@ -33,6 +34,7 @@ def scan(registry=REGISTRY, source=CORPUS, output=OUTPUT):
                 body = str(raw.get('text') or '')
                 filer = str(raw.get('filer_raw') or '')
                 source_capacity = context_capacity(body)
+                signature = signature_signal(body, filer)
                 signed_role, signed_org, sign_basis = signoff_evidence(body)
                 header_org = opening_institution(body)
                 meta_org = organization_label(filer) or candidate_affiliation(filer)
@@ -44,6 +46,8 @@ def scan(registry=REGISTRY, source=CORPUS, output=OUTPUT):
                 indicators = {
                     'self_description': bool(source_capacity.role),
                     'signature_role': bool(signed_role),
+                    'terminal_signature_title': signature.basis == 'terminal_signature_job_title',
+                    'signature_institutional_email_domain': signature.basis == 'signature_institutional_email_domain',
                     'signature_organization': bool(signed_org),
                     'letterhead_organization': bool(header_org),
                     'metadata_organization': bool(meta_org),
@@ -63,7 +67,7 @@ def scan(registry=REGISTRY, source=CORPUS, output=OUTPUT):
                 clues = [k for k,v in indicators.items() if v]
                 # These are dispositions, not classifications. Keep remaining
                 # named individuals as "capacity unstated" when source lacks proof.
-                if source_capacity.role or signed_role or signed_org or header_org or meta_org:
+                if source_capacity.role or signed_role or signed_org or header_org or meta_org or signature.role:
                     disposition = 'source_identity_evidence_needs_reconciliation'
                 elif indicators['potential_employment'] or indicators['potential_representation']:
                     disposition = 'possible_affiliation_needs_full_source_review'
@@ -77,8 +81,9 @@ def scan(registry=REGISTRY, source=CORPUS, output=OUTPUT):
                     'current_identity_status':targets[sid]['identity_status'],
                     'source_sha256':raw.get('text_sha256') or '',
                     'disposition':disposition, 'evidence_indicators':clues,
-                    'candidate_capacity':source_capacity.role or signed_role or '',
+                    'candidate_capacity':source_capacity.role or signed_role or signature.role or '',
                     'candidate_organization':meta_org or signed_org or header_org or '',
+                    'signature_evidence_kind':signature.basis or 'none',
                     'requires_human_confirmation':True
                 }
     if set(results) != set(targets):
@@ -88,7 +93,7 @@ def scan(registry=REGISTRY, source=CORPUS, output=OUTPUT):
          'scope':'Every filing whose current identity is flagged or whose capacity is unstated',
          'population':len(records),
          'disposition_counts':dict(Counter(x['disposition'] for x in records)),
-         'note':'Source-level machine triage, not individual human adjudication. Do not infer employer or authority solely from discussion of a sector.',
+         'note':'Source-level machine triage, not individual human adjudication. Institutional domains in the author signature support only a provisional sector and never prove an employer or authority. No email addresses or full personal names are published.',
          'records':records}
     Path(output).parent.mkdir(parents=True,exist_ok=True)
     Path(output).write_text(json.dumps(out,indent=2)+'\n')
