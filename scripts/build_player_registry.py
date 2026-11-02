@@ -231,6 +231,8 @@ CURATED_FILER_ROLES = {
     'adtec administrative and technical consulting inc': ('erate_consultant', 'erate_consulting'),
     # Exact-source metadata names and unambiguous E-Rate service firms.
     'communications audit services llc': ('erate_consultant', 'erate_consulting'),
+    # Verified against USAC FY2026 Form 471 consultant-registration records.
+    'elite fund inc': ('erate_consultant', 'erate_consulting'),
 }
 def curated_business(name: str):
     return CURATED_FILER_ROLES.get(canon(name))
@@ -342,6 +344,12 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # isolated occupational title; for an individual, self-description wins.
     # A signed occupational title is useful when an individual never says "I am".
     role=(self_role or signed_role or org_role or default) if person else (org_role or default)
+    # A signatory may also be a parent or an institutional affiliate. When
+    # their signed occupational capacity is more specific, use that capacity
+    # as the primary category without treating the two descriptions as errors.
+    broad_voices={'parent_guardian','library_affiliated','school_connected_unknown'}
+    if person and signed_role and self_role in broad_voices and signed_role!=self_role:
+        role=signed_role
     # Do not turn generic "other vendor" into an unspecified identity, or
     # assume a person's employer is a school's institutional position.
     if role=='unresolved' and (signed_org or document_org):
@@ -361,9 +369,14 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # A positive first-person reference to our school/district is enough for
     # the broad school-affiliated role, even without a specific job title.
     # Don't confuse this with proof of authority to file for that district.
+    school_base=base in (
+        'school_district_or_school','educator_or_school_staff',
+        'school_connected_voice_capacity_unconfirmed')
+    school_affiliation_supported=(
+        school_base or bool(inferred_capacity and
+                            inferred_capacity.role=='school_connected_unknown'))
     unresolved=(role=='unresolved' or
-                (role=='school_connected_unknown' and
-                 not (inferred_capacity and inferred_capacity.role=='school_connected_unknown')))
+                (role=='school_connected_unknown' and not school_affiliation_supported))
     # An ordinary person who did not claim an occupational capacity is an
     # honest "capacity not stated" classification, not an actionable error
     # requiring a researcher to hunt for a non-existent employer. Only elevate
@@ -378,24 +391,39 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
         r'on behalf of|we represent (?:a|the|our)|'
         r'appointed (?:superintendent|principal)|'
         r'e[- ]?rate consulting firm)\b',introduction+ '\n'+closing))
-    conflicting=(bool(self_role and signed_role and self_role!=signed_role) or
+    # A parent may work in a school, and an educator can hold an IT or
+    # administrative title. Compatible occupational descriptions are not an
+    # identity conflict.
+    school_roles={'school_technology_staff','school_administrator','school_educator',
+                  'school_connected_unknown'}
+    compatible=(self_role==signed_role or
+                self_role in broad_voices or
+                (self_role in school_roles and signed_role in school_roles))
+    conflicting=(bool(self_role and signed_role and not compatible) or
                  bool(name and signed_org and canon(name)!=canon(signed_org)
                       and not affiliated))
     # A person|organization source field does not alone prove authority or
     # employment. Preserve it as a review case unless an author self-description
     # corroborates their role and institution.
-    ambiguous_affiliation=bool((affiliated and not (self_role or signed_role)) or
-                               (person and '|' in str(raw) and not name))
+    # A recognizable company/school in "person | institution" metadata is a
+    # useful *likely affiliation* even without proof of representative mandate.
+    # Keep the legal/agency question in attribution_review instead of
+    # inflating the role-review queue. Unparsed multipart fields remain flagged.
+    ambiguous_affiliation=bool(person and '|' in str(raw) and not name)
     # Representation needs a *separate* attribution check. It does not make
     # an otherwise known firm, district or signatory an unknown entity.
     review=bool(unresolved or conflicting or ambiguous_affiliation or possible_missed_affiliation)
     identity_status=('capacity_not_stated' if unknown_person and not review else
-                     'source_inferred' if inferred_capacity and inferred_capacity.role and not review else
+                     'source_inferred' if not review and (
+                         (inferred_capacity and inferred_capacity.role) or
+                         (role=='school_connected_unknown' and school_base)) else
                      'unresolved' if unresolved or unknown_person else
                      'source_conflict' if conflicting else
                      'affiliation_uncertain' if ambiguous_affiliation or proxy else
                      'strong_source_cue')
     confidence=('not_established' if unknown_person and not review else
+                'medium' if role=='school_connected_unknown' and school_base else
+                'medium' if affiliated and not conflicting else
                 inferred_capacity.confidence if inferred_capacity and inferred_capacity.role
                 and not (conflicting or ambiguous_affiliation) else
                 'low' if unresolved or conflicting or unknown_person else
