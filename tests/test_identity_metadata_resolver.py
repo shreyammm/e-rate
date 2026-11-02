@@ -129,6 +129,22 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
             'Technology Administrative Assistant and E-Rate Coordinator'))
         self.assertEqual(role['role'],'school_technology_staff')
 
+    def test_short_institution_names_are_not_people(self):
+        cases = [
+            ('Independent Women', 'advocacy_organization'),
+            ('LGBT Tech', 'advocacy_organization'),
+            ('Semcac Head Start', 'nonprofit_service_provider'),
+            ('SETA HEAD START', 'government'),
+            ('EducationSuperHighway', 'advocacy_organization'),
+            ('United Community Action Partnership', 'nonprofit_service_provider'),
+        ]
+        for name, expected in cases:
+            with self.subTest(name=name):
+                found = self.classify(name)
+                self.assertEqual(found['role'], expected)
+                self.assertTrue(found['organization'])
+                self.assertFalse(found['needs_review'])
+
     def test_source_only_not_topic(self):
         for commenter in ['Jessica','Cath','Christopher C Netro','E W','Nicki']:
             with self.subTest(name=commenter):
