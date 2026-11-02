@@ -1,11 +1,11 @@
 {
   "schema_version": "unstated-identity-source-audit-v1",
   "scope": "Every filing whose current identity is flagged or whose capacity is unstated",
-  "population": 600,
+  "population": 598,
   "disposition_counts": {
     "incomplete_or_ocr_source": 4,
-    "no_explicit_professional_capacity_found": 563,
-    "possible_affiliation_needs_full_source_review": 30,
+    "no_explicit_professional_capacity_found": 562,
+    "possible_affiliation_needs_full_source_review": 29,
     "source_identity_evidence_needs_reconciliation": 3
   },
   "note": "Source-level machine triage, not individual human adjudication. Do not infer employer or authority solely from discussion of a sector.",
@@ -6684,20 +6684,6 @@
       "requires_human_confirmation": true
     },
     {
-      "id": "26110080085",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110080085",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "d9591ca45bb25348a8d224fd034af36d93baf7667864cd9334d49533edfec3c4",
-      "disposition": "no_explicit_professional_capacity_found",
-      "evidence_indicators": [
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
       "id": "26110080093",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080093",
       "current_role": "named_person_capacity_unstated",
@@ -8264,21 +8250,6 @@
       "current_role": "named_person_capacity_unstated",
       "current_identity_status": "capacity_not_stated",
       "source_sha256": "fcd4551d517c088daa611ab3720826079fd561dc26ecbda882d51c37d9e47196",
-      "disposition": "possible_affiliation_needs_full_source_review",
-      "evidence_indicators": [
-        "potential_employment",
-        "text_available"
-      ],
-      "candidate_capacity": "",
-      "candidate_organization": "",
-      "requires_human_confirmation": true
-    },
-    {
-      "id": "26110076569",
-      "source_url": "https://www.fcc.gov/ecfs/filing/26110076569",
-      "current_role": "named_person_capacity_unstated",
-      "current_identity_status": "capacity_not_stated",
-      "source_sha256": "b3f6150c2fd9f3c7933adaa1b8a19c2180385d8a6f195a95c9a46beeeb4af74e",
       "disposition": "possible_affiliation_needs_full_source_review",
       "evidence_indicators": [
         "potential_employment",
