@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-11-02T15:26:57.805933+00:00",
+  "generated_utc": "2026-11-02T15:28:49.045709+00:00",
   "method": "Conservatively merge exact normalized FCC filer fields. Placeholder/missing filer names remain separate, with no text-based merging. Identical names may conceal different people and name variants may split one person. Multi-group submitters can appear in more than one group. Counts are not verified endorsements.",
   "coverage": {
     "filings": 3231,
@@ -24,6 +24,352 @@
       3,
       3,
       3
+    ],
+    "largest_repeat_cluster_profiles": [
+      {
+        "filings": 277,
+        "role_counts": {
+          "advocacy_organization": 277
+        },
+        "stakeholder_group_counts": {
+          "nonprofits_and_advocacy": 277
+        },
+        "recognized_public_organizations": [
+          "Environmental Health Sciences"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 277,
+        "example_filing_ids": [
+          "26110079279",
+          "26110079281",
+          "26110079285",
+          "26110079286"
+        ],
+        "organization_annotation_coverage": 277,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 65,
+        "role_counts": {
+          "advocacy_organization": 65
+        },
+        "stakeholder_group_counts": {
+          "nonprofits_and_advocacy": 65
+        },
+        "recognized_public_organizations": [
+          "California Brain Tumor Association"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 65,
+        "example_filing_ids": [
+          "26110080240",
+          "26110080241",
+          "26110080242",
+          "26110080243"
+        ],
+        "organization_annotation_coverage": 65,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 8,
+        "role_counts": {
+          "individual_school": 8
+        },
+        "stakeholder_group_counts": {
+          "school_institutions": 8
+        },
+        "recognized_public_organizations": [
+          "Palm Beach Maritime Academy",
+          "Palm beach maritime academy",
+          "palm beach maritime academy"
+        ],
+        "distinct_organization_candidates": 3,
+        "distinct_source_texts": 8,
+        "example_filing_ids": [
+          "26110081086",
+          "26110081087",
+          "26110081093",
+          "26110081109"
+        ],
+        "organization_annotation_coverage": 8,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 4,
+        "role_counts": {
+          "parent_guardian": 3,
+          "school_connected_unknown": 1
+        },
+        "stakeholder_group_counts": {
+          "parents": 3,
+          "school_affiliation_uncertain": 1
+        },
+        "recognized_public_organizations": [
+          "●​ My children’s elementary school pays $800 a year for access to Disney+ and"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 4,
+        "example_filing_ids": [
+          "26110080079",
+          "26110080117",
+          "26110081128",
+          "26110081170"
+        ],
+        "organization_annotation_coverage": 1,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 4,
+        "role_counts": {
+          "named_person_capacity_unstated": 2,
+          "researcher": 2
+        },
+        "stakeholder_group_counts": {
+          "individual_capacity_unstated": 2,
+          "researchers": 2
+        },
+        "recognized_public_organizations": [],
+        "distinct_organization_candidates": 0,
+        "distinct_source_texts": 4,
+        "example_filing_ids": [
+          "26110071112",
+          "26110071572",
+          "26110071838",
+          "26110076475"
+        ],
+        "organization_annotation_coverage": 0,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 3,
+        "role_counts": {
+          "school_technology_staff": 3
+        },
+        "stakeholder_group_counts": {
+          "school_professionals": 3
+        },
+        "recognized_public_organizations": [
+          "Newport School District"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26110076330",
+          "26110076335",
+          "26110081388"
+        ],
+        "organization_annotation_coverage": 3,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 3,
+        "role_counts": {
+          "erate_consultant": 3
+        },
+        "stakeholder_group_counts": {
+          "erate_consultants": 3
+        },
+        "recognized_public_organizations": [
+          "Funds For Learning, LLC"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 3,
+        "example_filing_ids": [
+          "26110071262",
+          "26110078404",
+          "26110080653"
+        ],
+        "organization_annotation_coverage": 3,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 3,
+        "role_counts": {
+          "library_institution": 1,
+          "named_person_capacity_unstated": 1,
+          "school_connected_unknown": 1
+        },
+        "stakeholder_group_counts": {
+          "libraries": 1,
+          "individual_capacity_unstated": 1,
+          "school_affiliation_uncertain": 1
+        },
+        "recognized_public_organizations": [
+          "Reading Community City School District"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 3,
+        "example_filing_ids": [
+          "26110071929",
+          "26110076796",
+          "26110080214"
+        ],
+        "organization_annotation_coverage": 1,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 3,
+        "role_counts": {
+          "advocacy_organization": 3
+        },
+        "stakeholder_group_counts": {
+          "nonprofits_and_advocacy": 3
+        },
+        "recognized_public_organizations": [
+          "Safer Buildings Coalition"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 3,
+        "example_filing_ids": [
+          "26110046724",
+          "26110069088",
+          "26110069090"
+        ],
+        "organization_annotation_coverage": 3,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 3,
+        "role_counts": {
+          "trade_association": 3
+        },
+        "stakeholder_group_counts": {
+          "other_associations": 3
+        },
+        "recognized_public_organizations": [
+          "State E-Rate Coordinators' Alliance (SECA)"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 3,
+        "example_filing_ids": [
+          "26109835044",
+          "26110069047",
+          "26110080948"
+        ],
+        "organization_annotation_coverage": 3,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 3,
+        "role_counts": {
+          "advocacy_organization": 3
+        },
+        "stakeholder_group_counts": {
+          "nonprofits_and_advocacy": 3
+        },
+        "recognized_public_organizations": [
+          "The Utility Reform Network"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 3,
+        "example_filing_ids": [
+          "26110020798",
+          "26110034713",
+          "26110081296"
+        ],
+        "organization_annotation_coverage": 3,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 3,
+        "role_counts": {
+          "government": 3
+        },
+        "stakeholder_group_counts": {
+          "government": 3
+        },
+        "recognized_public_organizations": [
+          "FCC Wireline Competition Bureau"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 3,
+        "example_filing_ids": [
+          "10604263924780",
+          "1062673972746",
+          "10817073914005"
+        ],
+        "organization_annotation_coverage": 3,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "unresolved": 2
+        },
+        "stakeholder_group_counts": {
+          "other_or_unidentified": 2
+        },
+        "recognized_public_organizations": [],
+        "distinct_organization_candidates": 0,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26110075762",
+          "26110079749"
+        ],
+        "organization_annotation_coverage": 0,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "erate_consultant": 2
+        },
+        "stakeholder_group_counts": {
+          "erate_consultants": 2
+        },
+        "recognized_public_organizations": [
+          "American e-Rate Solutions"
+        ],
+        "distinct_organization_candidates": 1,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26109875536",
+          "26110038512"
+        ],
+        "organization_annotation_coverage": 2,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "government": 2
+        },
+        "stakeholder_group_counts": {
+          "government": 2
+        },
+        "recognized_public_organizations": [
+          "Submitted to the Department of Health and Human Services",
+          "Submitted to the Federal Communications Commission’s Proposed Rule to"
+        ],
+        "distinct_organization_candidates": 2,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26110079692",
+          "26110081189"
+        ],
+        "organization_annotation_coverage": 2,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      },
+      {
+        "filings": 2,
+        "role_counts": {
+          "school_connected_unknown": 1,
+          "school_technology_staff": 1
+        },
+        "stakeholder_group_counts": {
+          "school_affiliation_uncertain": 1,
+          "school_professionals": 1
+        },
+        "recognized_public_organizations": [],
+        "distinct_organization_candidates": 0,
+        "distinct_source_texts": 2,
+        "example_filing_ids": [
+          "26109906595",
+          "26110081234"
+        ],
+        "organization_annotation_coverage": 0,
+        "repeat_metadata_type": "repeat_exact_normalized_filer_field"
+      }
     ],
     "fallback_filing_identities": 22
   },
