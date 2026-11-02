@@ -13,6 +13,18 @@ class NonprofitServiceStakeholderTest(unittest.TestCase):
                                            'multi_submitter_metadata':True}),
                          'joint_institutional_filings')
 
+class IndividualIdentityGroupingTest(unittest.TestCase):
+    def test_named_person_is_not_unresolved_identity(self):
+        self.assertEqual(
+            stakeholder_group({"role": "named_person_capacity_unstated"}),
+            "individual_capacity_unstated")
+        self.assertEqual(stakeholder_group({"role": "unresolved"}),
+                         "other_or_unidentified")
+        self.assertEqual(stakeholder_group({"role": "student"}), "students")
+        self.assertEqual(stakeholder_group({"role": "researcher"}), "researchers")
+        self.assertIn("individual_capacity_unstated", GROUP_NAMES)
+
+
 class CensusTest(unittest.TestCase):
     def test_weak_quote_alignment_and_reused_quotes_are_not_low_risk(self):
         from scripts.build_stakeholder_census import SPEAKER_RISK
