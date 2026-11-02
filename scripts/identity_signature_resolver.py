@@ -74,12 +74,23 @@ def _signature_region(text: str, filer_name: str = "") -> str:
     text = str(text or "")
     tail = text[-min(len(text), 2600):]
     matches = list(CLOSING.finditer(tail))
+    name = " ".join(str(filer_name or "").split())
+    valid_name = bool(3 <= len(name) <= 90 and re.fullmatch(
+        r"[A-Za-z][A-Za-z'.-]*(?:\s+[A-Za-z][A-Za-z'.-]*){1,3}", name
+    ))
     if matches:
-        # A signature should begin close to the end, not precede another paper.
+        # A title/email in a representative's or quoted person's signature
+        # must not silently overwrite the actual ECFS filer identity.
         region = tail[matches[-1].end():]
         if len(region) <= 1600:
-            return region[:1100]
-    name = " ".join(str(filer_name or "").split())
+            region = region[:1100]
+            if valid_name:
+                signer = re.compile(r"(?im)^[ \t]*" +
+                    re.escape(name).replace(r"\ ", r"\s+") +
+                    r"[ \t]*,?[ \t]*$")
+                if not signer.search(region):
+                    return ""
+            return region
     if not 3 <= len(name) <= 90 or not re.fullmatch(
         r"[A-Za-z][A-Za-z'.-]*(?:\s+[A-Za-z][A-Za-z'.-]*){1,3}", name
     ):
