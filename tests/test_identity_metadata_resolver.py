@@ -92,11 +92,14 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
         self.assertTrue(c['attribution_review'])
 
     def test_fcc_comma_separated_signatories_and_explicit_association(self):
-        from scripts.identity_metadata_resolver import multiple_person_names_only
+        from scripts.identity_metadata_resolver import multiple_person_names_only, personal_name_with_postnominals
         self.assertTrue(multiple_person_names_only(
             'Rachelle Chong, Ken McClure, Sharon Nelson, Susan Ness'))
         self.assertTrue(multiple_person_names_only('Roger Stinar, Travis Stinar'))
         self.assertFalse(multiple_person_names_only('26-133, 13-184'))
+        self.assertTrue(personal_name_with_postnominals('Ruben D. Longoria, Jr'))
+        self.assertTrue(personal_name_with_postnominals('Vincent L Tripi, III, MS'))
+        self.assertFalse(personal_name_with_postnominals('NEA-Alaska'))
         self.assertFalse(multiple_person_names_only('Laura Capelle, President NEA-Alaska'))
         people = self.classify('Rachelle Chong, Ken McClure, Sharon Nelson, Susan Ness')
         self.assertEqual(people['role'], 'named_person_capacity_unstated')
