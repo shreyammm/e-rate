@@ -23,6 +23,32 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
                 self.assertEqual(found['role'],role)
                 self.assertFalse(found['needs_review'])
 
+    def test_named_remaining_institutions_and_occupational_titles(self):
+        cases=[
+            ('SentinelOne, Inc.','other_vendor'),
+            ('Ohio Information Technology Centers','education_network_consortium'),
+            ('Missouri Research and Education Network','education_network_consortium'),
+            ('Southwest Kansas Area Cooperative District','school_district'),
+            ('Michigan Statewide Educational Network (MiSEN)','education_network_consortium'),
+            ('Responsive Education Solutions','school_district'),
+            ('Mothers Against Media Addiction','advocacy_organization'),
+            ('Family Services of Westchester','advocacy_organization'),
+            ('Finkelstein Memorial Library','library_institution'),
+            ('Queensborough Community College','higher_education_institution'),
+            ('Citizens Against Government Waste','advocacy_organization'),
+            ('Alabama Leaders in Educational Technology','trade_association'),
+            ('California Emerging Technology Fund','advocacy_organization'),
+            ('Methodist Healthcare Ministries of South Texas, Inc.','advocacy_organization'),
+            ('Infinity Communications & Compliance','erate_consultant'),
+            ('Library Assistant II','library_staff'),
+            ('Adult Education & Educational Technology Specialist','school_technology_staff'),
+        ]
+        for name,role in cases:
+            with self.subTest(name=name):
+                x=self.classify(name)
+                self.assertEqual(x['role'],role)
+                self.assertFalse(x['needs_review'])
+
     def test_source_only_not_topic(self):
         for commenter in ['Jessica','Cath','Christopher C Netro','E W','Nicki']:
             with self.subTest(name=commenter):
