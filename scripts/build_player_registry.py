@@ -16,6 +16,7 @@ import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from scripts.identity_context_resolver import context_capacity
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'data/fcc_corpus'
@@ -34,6 +35,7 @@ ROLE_LABELS = {
     'school_connected_unknown': 'School-connected; authority unclear',
     'library_institution': 'Library or library system',
     'library_staff': 'Librarian or library employee',
+    'library_affiliated': 'Library-affiliated commenter (title not stated)',
     'edtech_learning_vendor': 'Learning software or instructional technology vendor',
     'edtech_digital_content_vendor': 'Digital books, media or learning-content vendor',
     'edtech_virtual_school_vendor': 'Virtual school or online learning provider',
@@ -123,6 +125,13 @@ def organization_label(name: str) -> str:
     """Conservative names from an institution-valued filer field only."""
     name=' '.join(str(name or '').split())
     if len(name)<5 or len(name)>110 or not ORG_TOKEN.search(name): return ''
+    # Independent E-Rate service provider, checked against its own site and
+    # federal USAC FCC Form 470 consulting-firm records. 'AdTec' alone is a
+    # trade name, not an anonymous personal filer.
+    if canon(name) in {'adtec', 'adtec inc', 'adtec administrative and technical consulting',
+                       'adtec e rate administrative and technical consulting',
+                       'adtec administrative and technical consulting inc'}:
+        return 'AdTec Administrative and Technical Consulting Inc.'
     # ECFS metadata and the historical index sometimes contain a filing title,
     # issue heading, or policy slogan rather than an institutional filer. Do
     # not transform an essay title such as "Ensuring ... E-Rate-Funded Services."
@@ -214,6 +223,10 @@ CURATED_FILER_ROLES = {
     'educational funding group inc': ('erate_consultant', 'erate_consulting'),
     'rollins sumrall education group inc': ('erate_consultant', 'erate_consulting'),
     'kb associates llc': ('erate_consultant', 'erate_consulting'),
+    # Verified against adtecerate.com and USAC FY2026 FCC Form 470.
+    'adtec administrative and technical consulting inc': ('erate_consultant', 'erate_consulting'),
+    # Exact-source metadata names and unambiguous E-Rate service firms.
+    'communications audit services llc': ('erate_consultant', 'erate_consulting'),
 }
 def curated_business(name: str):
     return CURATED_FILER_ROLES.get(canon(name))
@@ -306,6 +319,9 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     if affiliated:name=affiliated
     person=not bool(organization_label(raw))
     self_role,self_quote=explicit_personal_role(text) if person else ('','')
+    inferred_capacity=context_capacity(text) if person else None
+    if not self_role and inferred_capacity and inferred_capacity.role:
+        self_role,self_quote=inferred_capacity.role,inferred_capacity.cue
     org_role,org_cue=first_rule(name,ORG_PATTERNS) if name else ('','')
     curated=curated_business(name) if name else None
     if curated:org_role,org_cue=curated[0],name
@@ -338,7 +354,12 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # count as. Distinguish that ambiguity from the submitter's known identity.
     proxy=expressed_proxy(text)
     unknown_person=role=='named_person_capacity_unstated'
-    unresolved=role in ('unresolved','school_connected_unknown')
+    # A positive first-person reference to our school/district is enough for
+    # the broad school-affiliated role, even without a specific job title.
+    # Don't confuse this with proof of authority to file for that district.
+    unresolved=(role=='unresolved' or
+                (role=='school_connected_unknown' and
+                 not (inferred_capacity and inferred_capacity.role=='school_connected_unknown')))
     # An ordinary person who did not claim an occupational capacity is an
     # honest "capacity not stated" classification, not an actionable error
     # requiring a researcher to hunt for a non-existent employer. Only elevate
@@ -361,13 +382,18 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     # corroborates their role and institution.
     ambiguous_affiliation=bool((affiliated and not (self_role or signed_role)) or
                                (person and '|' in str(raw) and not name))
-    review=bool(unresolved or conflicting or ambiguous_affiliation or proxy or possible_missed_affiliation)
+    # Representation needs a *separate* attribution check. It does not make
+    # an otherwise known firm, district or signatory an unknown entity.
+    review=bool(unresolved or conflicting or ambiguous_affiliation or possible_missed_affiliation)
     identity_status=('capacity_not_stated' if unknown_person and not review else
+                     'source_inferred' if inferred_capacity and inferred_capacity.role and not review else
                      'unresolved' if unresolved or unknown_person else
                      'source_conflict' if conflicting else
                      'affiliation_uncertain' if ambiguous_affiliation or proxy else
                      'strong_source_cue')
     confidence=('not_established' if unknown_person and not review else
+                inferred_capacity.confidence if inferred_capacity and inferred_capacity.role
+                and not (conflicting or ambiguous_affiliation) else
                 'low' if unresolved or conflicting or unknown_person else
                 'medium' if ambiguous_affiliation or proxy or recovered_org else
                 'high' if (self_role or org_role or signed_role) else 'medium')
@@ -378,12 +404,12 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
                 'signatory title' if signed_role else
                 'organization on letterhead/signature' if recovered_org else ''),
             'speaker_is_proxy_possible':proxy,'needs_review':review,
+            'attribution_review':bool(proxy or affiliated),
             'identity_status':identity_status,'identity_confidence':confidence,
             'identity_review_reason':(
                 'capacity_clue_without_role' if possible_missed_affiliation else
                 'unresolved_capacity' if unresolved or unknown_person else
                 'conflicting_source_cues' if conflicting else
-                'representative_relationship' if proxy else
                 'affiliation_requires_corroboration' if ambiguous_affiliation else ''),
             'signatory_role_detected':bool(signed_role)}
 
@@ -511,6 +537,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                      'review_priority':review['score'],'review_tier':review['level'],
                      'review_reasons':review['reasons'],
                      'proxy_possible':found['speaker_is_proxy_possible'],
+                     'attribution_review':found.get('attribution_review',False),
                      'source_url':'https://www.fcc.gov/ecfs/filing/'+sid,
                      'text_sha256':source_row.get('text_sha256') or '',
                      'ocr_candidate':str(source_row.get('has_unreviewed_ocr','0'))=='1',
@@ -539,6 +566,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
              'named_organizations':len(organizations),
              'filings_requiring_identity_review':sum(r['needs_review'] for r in filings),
              'filings_capacity_not_stated':sum(r['identity_status']=='capacity_not_stated' for r in filings),
+             'filings_with_attribution_questions':sum(r.get('attribution_review',False) for r in filings),
              'manually_reviewed_filings':sum(r['identity_status']=='human_reviewed' for r in filings),
              'filings_with_two_or_more_identifiable_institutions':sum(r['multi_submitter_metadata'] for r in filings)},
        'method':'Screened original FCC institution-valued filer metadata, two-party potential affiliation, and explicit opening self-description. Type and industry remain separate. Categories provisional until human reviewed.',
@@ -557,6 +585,8 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
         'confidence_counts':dict(Counter(r['identity_confidence'] for r in filings)),
         'review_reason_counts':dict(Counter(r['identity_review_reason'] for r in filings if r['needs_review'])),
         'capacity_not_stated_not_assumed':sum(r['identity_status']=='capacity_not_stated' for r in filings),
+        'attribution_questions_separate':sum(r.get('attribution_review',False) for r in filings),
+        'source_context_classifications':sum(r['identity_status']=='source_inferred' for r in filings),
         'classification_basis_counts':dict(Counter(r['basis'] for r in filings)),
         'review_roles':dict(Counter(r['role'] for r in filings if r['needs_review'])),
         'signature_resolutions':sum(r['basis']=='signed_role_and_organization' and not r['needs_review'] for r in filings),
