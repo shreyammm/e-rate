@@ -6,6 +6,8 @@ on:
     paths:
       - 'scripts/build_player_registry.py'
       - 'scripts/identity_context_resolver.py'
+      - 'scripts/identity_metadata_resolver.py'
+      - 'tests/test_identity_metadata_resolver.py'
       - 'tests/test_player_registry.py'
       - 'scripts/audit_industry_identity_recall.py'
       - 'tests/test_industry_identity_recall.py'
@@ -32,6 +34,8 @@ jobs:
           python-version: '3.11'
       - name: Unit test identity rules
         run: python -m unittest discover -s tests -p test_player_registry.py -v
+      - name: Verify metadata identity resolution
+        run: python -m unittest discover -s tests -p test_identity_metadata_resolver.py -v
       - name: Build all-filing identity audit and organization profile index
         run: python -m scripts.build_player_registry
       - name: Check source-grounded recall audit rules
