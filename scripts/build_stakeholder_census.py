@@ -8,6 +8,7 @@ audit ledger is required before deriving high-confidence context flags.
 """
 from __future__ import annotations
 import argparse
+import gzip
 import hashlib
 import json
 import re
@@ -262,7 +263,39 @@ def priority(row):
     if row.get('issue')!='other_policy_issue':score+=1
     return score
 
-def compute(registry, claims, quality, context_audit=None, manifest=None, ledger_digest=''):
+def normalize_submitter_name(value):
+    return re.sub(r'[^\\w]+',' ',unicodedata.normalize('NFKC',str(value or '')).casefold()).strip()
+
+def submitter_token(raw, filing_id):
+    """Deduplicate exact FCC filer metadata, never shared source text."""
+    name=normalize_submitter_name(raw)
+    placeholders={'','anonymous','unknown','not available','n a','na','none','individual',
+                  'public comment','commenter','private citizen','citizen','parent',
+                  'school','district','library','unidentified'}
+    if name in placeholders or not 4<=len(name)<=220 or not re.search(r'[a-z0-9]',name):
+        return 'filing:'+str(filing_id)
+    return 'filer:'+name
+
+def load_submitter_ids(manifest_path,registry):
+    """Source-grounded, opaque corpus-local IDs; no name or name hash published."""
+    manifest=json.loads(Path(manifest_path).read_text())
+    expected={str(x['id']) for x in registry['filings']}
+    tokens={}
+    for shard in manifest['shards']:
+        path=Path(manifest_path).parent/'shards'/shard['name']
+        if hashlib.sha256(path.read_bytes()).hexdigest()!=shard['sha256']:
+            raise ValueError('Source shard hash mismatch for submitter IDs')
+        with gzip.open(path,'rt',encoding='utf-8') as stream:
+            for line in stream:
+                if not line.strip():continue
+                row=json.loads(line);fid=str(row['submission_id'])
+                if fid in tokens or fid not in expected:raise ValueError('Unexpected filer ID '+fid)
+                tokens[fid]=submitter_token(row.get('filer_raw'),fid)
+    if set(tokens)!=expected:raise ValueError('Filer identity coverage mismatch')
+    opaque={key:'s'+str(i+1).zfill(5) for i,key in enumerate(sorted(set(tokens.values())))}
+    return {fid:opaque[key] for fid,key in tokens.items()}
+
+def compute(registry, claims, quality, context_audit=None, manifest=None, ledger_digest='', submitter_ids=None):
     filings=registry['filings']
     if len(filings)!=3231 or len({f['id'] for f in filings})!=3231:
         raise ValueError('Player registry coverage mismatch')
@@ -275,6 +308,8 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
     audit_match=bool(context_audit and context_audit.get('machine_claim_ledger_sha256')==ledger_digest
                      and context_audit.get('coverage',{}).get('machine_claim_rows_checked')==len(claims['rows']))
     audit_by_index=context_audit['flags_by_ledger_row_index'] if audit_match else {}
+    if submitter_ids is not None and set(submitter_ids)!={f['id'] for f in filings}:
+        raise ValueError('Filer identity map must cover the full corpus')
     per_id={f['id']:f for f in filings}
     qfiles=quality['filings']
     if set(qfiles)-set(per_id):raise ValueError('Unexpected model-quality filing')
@@ -300,9 +335,13 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
     records=[]
     summary=defaultdict(lambda:defaultdict(set));cautious=defaultdict(lambda:defaultdict(set))
     by_role=defaultdict(lambda:defaultdict(set))
+    by_group_person=defaultdict(lambda:defaultdict(set))
+    by_role_person=defaultdict(lambda:defaultdict(set))
+    by_topic_person=defaultdict(set)
     orgs=defaultdict(lambda:defaultdict(set))
     for f in filings:
         fid=f['id'];group=stakeholder_group(f);q=qfiles.get(fid,{})
+        person=(submitter_ids or {}).get(fid,'filing:'+fid)
         topic_evidence=[]
         for code,claims_and_flags in sorted(grouped.get(fid,{}).items()):
             # Keep one source citation per filing/theme, prefer clear and specific.
@@ -317,6 +356,9 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
                            f.get('proxy_possible') or f.get('multi_submitter_metadata') or f.get('needs_review'))
             summary[group][code].add(fid)
             by_role[f['role']][code].add(fid)
+            by_group_person[group][code].add(person)
+            by_role_person[f['role']][code].add(person)
+            by_topic_person[code].add(person)
             if not cautious_flag:cautious[group][code].add(fid)
             if f.get('organization'):orgs[f['organization']][code].add(fid)
             topic_evidence.append({
@@ -331,7 +373,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
                 'needs_speaker_review':bool(cautious_flag)
             })
         records.append({
-            'id':fid,'role':f['role'],'group':group,
+            'id':fid,'role':f['role'],'group':group,'submitter_id':person,
             'industry_focus':f.get('industry_focus','unspecified'),
             'organization':f.get('organization',''),
             'text_sha256':f.get('text_sha256',''),
@@ -350,6 +392,15 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
     roles_den=Counter(x['role'] for x in records)
     group_claims=Counter(x['group'] for x in records if x['topics'])
     role_claims=Counter(x['role'] for x in records if x['topics'])
+    group_person=defaultdict(set);role_person=defaultdict(set)
+    coded_group_person=defaultdict(set);coded_role_person=defaultdict(set)
+    for x in records:
+        person=x['submitter_id']
+        group_person[x['group']].add(person)
+        role_person[x['role']].add(person)
+        if x['topics']:
+            coded_group_person[x['group']].add(person)
+            coded_role_person[x['role']].add(person)
     all_codes=list(TOPICS)
     stats=[]
     for code in all_codes:
@@ -360,6 +411,9 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             ids=summary[g][code]
             hashes={per_id[fid].get('text_sha256') for fid in ids if per_id[fid].get('text_sha256')}
             cells[g]={
+                'commenters':len(by_group_person[g][code]),
+                'group_commenters':len(group_person[g]),
+                'coded_group_commenters':len(coded_group_person[g]),
                 'filings':len(ids),
                 'group_filings':group_den[g],
                 'group_with_any_coded_argument':group_claims[g],
@@ -374,6 +428,8 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
         for role in sorted(roles_den):
             ids=by_role[role][code]
             role_cells[role]={
+                'commenters':len(by_role_person[role][code]),
+                'role_commenters':len(role_person[role]),
                 'filings':len(ids),
                 'role_filings':roles_den[role],
                 'role_filings_with_any_coded_argument':role_claims[role],
@@ -382,6 +438,8 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
                 'distinct_source_texts':len({per_id[fid].get('text_sha256') for fid in ids if per_id[fid].get('text_sha256')}),
             }
         stats.append({'id':code,'label':TOPICS[code]['label'],'category':TOPICS[code]['category'],
+                      'commenters':len(by_topic_person[code]),
+                      'commenter_group_assignments':sum(len(by_group_person[g][code]) for g in GROUP_NAMES),
                       'filings':len(total),'named_institutions':len({per_id[fid].get('organization') for fid in total if per_id[fid].get('organization')}),
                       'distinct_source_texts':len({
                           per_id[fid].get('text_sha256') for fid in total if per_id[fid].get('text_sha256')}),
@@ -403,7 +461,8 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
         'schema':'stakeholder-arguments-v1',
         'generated_utc':datetime.now(timezone.utc).isoformat(),
         'method':{
-            'unit':'distinct FCC filing ID; unique source hashes separately; no unique-person inference',
+            'unit':'Unique metadata submitters, each counted once per stakeholder group and topic; raw filing counts retained for source audit.',
+            'deduplication':'Conservatively merge exact normalized FCC filer fields. Placeholder/missing filer names remain separate, with no text-based merging. Identical names may conceal different people and name variants may split one person. Multi-group submitters can appear in more than one group. Counts are not verified endorsements.',
             'argument_detection':'Analyst theme rules applied only to source-quoted, model-extracted claims/actions; original full-text keyword hits do not count.',
             'direction':'No published support/oppose count; existing machine stance polarity is not validated.',
             'attribution':'Original participant quotes can be reported by a different filer. NTIA listening-session summary excluded from agency-position topic tallies; context flags and identity uncertainty retained.',
@@ -418,6 +477,8 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
 
         },
         'coverage':{
+            'unique_commenters':len({x['submitter_id'] for x in records}),
+            'commenter_group_assignments':sum(len(v) for v in group_person.values()),
             'filings':len(records),'original_readable_texts':3230,
             'machine_claim_rows':len(claims['rows']),
             'filings_with_any_claim':sum(bool(x['number_machine_claims']) for x in records),
@@ -431,12 +492,14 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'excluded_nonassertion_or_unmapped_claim_rows':ignored['no_substantive_topic_or_nonassertion']
         },
         'stakeholder_groups':[
-            {'id':g,'label':name,'filings':group_den[g],
+            {'id':g,'label':name,'commenters':len(group_person[g]),
+             'commenters_with_coded_topics':len(coded_group_person[g]),
+             'filings':group_den[g],
              'filings_with_coded_topics':group_claims[g],
              'unique_texts':len({x['text_sha256'] for x in records if x['group']==g and x['text_sha256']}),
              'joint_filings':sum(x['joint_filing'] for x in records if x['group']==g)}
             for g,name in GROUP_NAMES.items()],
-        'stakeholder_roles':[{'id':r,'filings':n} for r,n in sorted(roles_den.items(),key=lambda kv:(-kv[1],kv[0]))],
+        'stakeholder_roles':[{'id':r,'filings':n,'commenters':len(role_person[r])} for r,n in sorted(roles_den.items(),key=lambda kv:(-kv[1],kv[0]))],
         'topics':stats,'organizations':profiles,'filings':records
     }
 
@@ -444,8 +507,11 @@ def build(registry=REGISTRY,claim_path=CLAIMS,quality_path=QUALITY,audit_path=AU
           manifest_path=SOURCE,out=OUT):
     rb=Path(registry).read_bytes();cb=Path(claim_path).read_bytes()
     ledger=json.loads(cb);a=json.loads(Path(audit_path).read_text(encoding='utf8')) if Path(audit_path).exists() else None
-    payload=compute(json.loads(rb),ledger,json.loads(Path(quality_path).read_text(encoding='utf8')),
-                    a,json.loads(Path(manifest_path).read_text(encoding='utf8')),hashlib.sha256(cb).hexdigest())
+    registry_data=json.loads(rb)
+    submitter_ids=load_submitter_ids(manifest_path,registry_data)
+    payload=compute(registry_data,ledger,json.loads(Path(quality_path).read_text(encoding='utf8')),
+                    a,json.loads(Path(manifest_path).read_text(encoding='utf8')),hashlib.sha256(cb).hexdigest(),
+                    submitter_ids)
     payload['inputs']={
         'player_registry_sha256':hashlib.sha256(rb).hexdigest(),
         'machine_claim_ledger_sha256':hashlib.sha256(cb).hexdigest(),
