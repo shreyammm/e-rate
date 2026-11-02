@@ -49,6 +49,25 @@ class IdentityMetadataResolutionTest(unittest.TestCase):
                 self.assertEqual(x['role'],role)
                 self.assertFalse(x['needs_review'])
 
+    def test_repeated_association_metadata_and_parent_language(self):
+        cases=[
+            ('Kevin Mottus | Outreach Director, CA Brain Tumor Assn','advocacy_organization'),
+            ('Chris Warden | K12TechPro','trade_association'),
+            ('Maéva Renaud | Kidango','advocacy_organization'),
+            ('Liberty Public Schools; Dr. Jennifer Kephart, Superintendent','school_district'),
+            ('District of Columbia','government'),
+            ('Theodora Scarato | Director of Wireless and EMF Program at Environmental Health Sciences','advocacy_organization'),
+        ]
+        for name,role in cases:
+            with self.subTest(name=name):
+                a=self.classify(name)
+                self.assertEqual(a['role'],role)
+                self.assertFalse(a['needs_review'])
+        parent=self.classify('Nicki','unresolved',
+            'Where is our say in our child’s safety? We need better screen time limits.')
+        self.assertEqual(parent['role'],'parent_guardian')
+        self.assertFalse(parent['needs_review'])
+
     def test_source_only_not_topic(self):
         for commenter in ['Jessica','Cath','Christopher C Netro','E W','Nicki']:
             with self.subTest(name=commenter):
