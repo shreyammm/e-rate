@@ -17,7 +17,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from scripts.identity_context_resolver import context_capacity
-from scripts.identity_metadata_resolver import institution, single_institution_pair, personal_name_format, multiple_person_names_only, explicit_job_title
+from scripts.identity_metadata_resolver import institution, single_institution_pair, personal_name_format, multiple_person_names_only, personal_name_with_postnominals, explicit_job_title
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'data/fcc_corpus'
@@ -352,7 +352,7 @@ def inferred_identity(meta: dict, base: str, text: str) -> dict:
     if curated:org_role,org_cue=curated[0],name
     default=BASE_CROSSWALK.get(base,'unresolved')
     metadata_job=explicit_job_title(raw) if person else ''
-    if default=='unresolved' and person and not name and (personal_name_format(raw) or multiple_person_names_only(raw)):
+    if default=='unresolved' and person and not name and (personal_name_format(raw) or multiple_person_names_only(raw) or personal_name_with_postnominals(raw)):
         default='named_person_capacity_unstated'
     signed_role,signed_org,sign_basis=signoff_evidence(text) if person else ('','','')
     document_org=opening_institution(text) if person and not name else ''
