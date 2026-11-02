@@ -540,6 +540,16 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
     manifest=json.loads((Path(source)/'manifest.json').read_text(encoding='utf-8'))
     overrides=json.loads(Path(overrides_file).read_text(encoding='utf-8')) if Path(overrides_file).exists() else {}
     if not isinstance(overrides,dict):raise ValueError('Review overrides must be filing-keyed dictionary')
+    external_checks_path=ROOT/'docs/data/external_identity_checks.json'
+    external_checks=json.loads(external_checks_path.read_text(encoding='utf-8')) if external_checks_path.exists() else {'records':[]}
+    external_roles={}
+    for record in external_checks.get('records',[]):
+        if not record.get('apply_as_professional_role_only'):continue
+        if record.get('role') not in ROLE_LABELS or not record.get('metadata_filer_match') or not record.get('sources'):
+            raise ValueError('Invalid public identity evidence entry')
+        for filing_id in record.get('filing_ids',[]):
+            if filing_id in external_roles:raise ValueError('Repeated external identity record')
+            external_roles[filing_id]=record
     unknown=set(overrides)-set(by_id)
     if unknown:raise ValueError('Unknown filing overrides: '+str(sorted(unknown)[:4]))
     filings=[];seen=set()
@@ -567,6 +577,19 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
                 source_affiliation=candidate_affiliation(raw_name)
                 safe_meta={'filer_raw':safe_name or source_org or (raw_name if source_affiliation else '')}
                 found=inferred_identity(safe_meta,base[sid],body)
+                external=external_roles.get(sid)
+                # External biographies establish a *likely occupational type*
+                # only when matched to exact FCC filer metadata; they never
+                # prove institutional authority to file or represent a client.
+                if external and raw_name.strip().casefold()==external['metadata_filer_match'].casefold() and sid not in overrides:
+                    found.update(
+                        role=external['role'],organization='',
+                        basis='externally_corrob_professional_role',
+                        evidence_cue='public independent professional biography',
+                        identity_status='externally_supported_role',
+                        identity_confidence=external.get('confidence','medium'),
+                        identity_review_reason='',needs_review=False,
+                        industry_focus='unspecified')
                 if sid in overrides:
                     v=overrides[sid]
                     if not isinstance(v,dict) or v.get('role') not in ROLE_LABELS or v.get('review_status')!='human_reviewed':
@@ -653,6 +676,7 @@ def build(source=SOURCE, index_file=INDEX, role_file=BASE_ROLES, overrides_file=
         'review_reason_counts':dict(Counter(r['identity_review_reason'] for r in filings if r['needs_review'])),
         'capacity_not_stated_not_assumed':sum(r['identity_status']=='capacity_not_stated' for r in filings),
         'attribution_questions_separate':sum(r.get('attribution_review',False) for r in filings),
+        'externally_supported_role_count':sum(r['identity_status']=='externally_supported_role' for r in filings),
         'source_context_classifications':sum(r['identity_status']=='source_inferred' for r in filings),
         'classification_basis_counts':dict(Counter(r['basis'] for r in filings)),
         'review_roles':dict(Counter(r['role'] for r in filings if r['needs_review'])),
