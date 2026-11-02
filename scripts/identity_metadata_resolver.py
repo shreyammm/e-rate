@@ -178,7 +178,7 @@ def multiple_person_names_only(raw: str) -> bool:
         return False
     title = re.compile(r'(?i)^(?:president|director|manager|superintendent|'
                        r'coordinator|chief|assistant|counsel|representative|'
-                       r'educator|teacher|principal|trustee|librarian)\\b')
+                       r'educator|teacher|principal|trustee|librarian)\b')
     return all(personal_name_format(p) and not title.search(p)
                for p in parts)
 
