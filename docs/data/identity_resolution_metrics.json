@@ -4,9 +4,9 @@
   "review_required": 153,
   "usable_without_review": 3078,
   "confidence_counts": {
-    "medium": 1255,
+    "medium": 1254,
     "not_established": 615,
-    "high": 1208,
+    "high": 1209,
     "low": 153
   },
   "review_reason_counts": {
@@ -15,23 +15,24 @@
   },
   "capacity_not_stated_not_assumed": 615,
   "attribution_questions_separate": 123,
-  "source_context_classifications": 855,
+  "source_context_classifications": 858,
   "classification_basis_counts": {
     "multi_party_metadata_affiliation_candidate": 71,
     "provisional_full_text_role": 1121,
     "author_self_description": 755,
-    "source_letterhead_or_signature": 473,
+    "source_letterhead_or_signature": 472,
     "curated_company_type_candidate": 22,
-    "filer_field_organization": 623,
+    "filer_field_organization": 621,
     "signed_role_and_organization": 102,
-    "signed_role": 64
+    "signed_role": 64,
+    "joint_education_association_metadata": 3
   },
   "review_roles": {
     "unresolved": 114,
     "named_person_capacity_unstated": 39
   },
   "signature_resolutions": 102,
-  "letterhead_or_signature_org_resolutions": 466,
+  "letterhead_or_signature_org_resolutions": 465,
   "capacity_unstated_sample_ids": [
     "10604263924780",
     "26110023408",
@@ -124,7 +125,7 @@
     },
     "26110080608": {
       "role": "trade_association",
-      "organization": "Massachusetts Educational Technology Administrators Association (METAA)",
+      "organization": "Joint education associations",
       "identity_confidence": "high",
       "review": false,
       "review_reason": "",
@@ -132,7 +133,7 @@
     },
     "26110081304": {
       "role": "trade_association",
-      "organization": "Massachusetts Educational Technology Administrators Association (METAA)",
+      "organization": "Joint education associations",
       "identity_confidence": "high",
       "review": false,
       "review_reason": "",
