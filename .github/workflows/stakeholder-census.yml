@@ -7,6 +7,8 @@ on:
     branches: [main]
     paths:
       - 'scripts/build_stakeholder_census.py'
+      - 'scripts/submitter_identity_resolution.py'
+      - 'tests/test_submitter_identity_resolution.py'
       - 'scripts/build_industry_argument_review.py'
       - 'tests/test_industry_argument_review.py'
       - 'tests/test_stakeholder_census.py'
@@ -33,6 +35,8 @@ jobs:
           python-version: '3.11'
       - name: Test exact stakeholder and theme counts
         run: python -m unittest discover -s tests -p test_stakeholder_census.py -v
+      - name: Verify submitter and represented-organization identity resolution
+        run: python -m unittest discover -s tests -p test_submitter_identity_resolution.py -v
       - name: Build all-source-file exploratory analysis
         run: python -m scripts.build_stakeholder_census
       - name: Check industry argument review queue construction
