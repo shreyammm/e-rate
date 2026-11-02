@@ -16,6 +16,9 @@
 <label>Evidence status<select id="statusfilter"><option value="actionable">Prioritize evidence leads and incomplete documents</option><option value="all">All audited records</option><option value="possible_affiliation_needs_full_source_review">Possible affiliation</option><option value="source_identity_evidence_needs_reconciliation">Source identity needs reconciliation</option><option value="incomplete_or_ocr_source">OCR or incomplete source</option><option value="no_explicit_professional_capacity_found">No explicit professional capacity found</option></select></label>
 <label>Find filing ID<input id="query" type="search" placeholder="e.g. 26110081346"></label>
 </div><p id="resultcount"></p><div class="table-wrap"><table><thead><tr><th>FCC source</th><th>Disposition</th><th>Available clues</th><th>Current classification</th><th>Candidate sector</th></tr></thead><tbody id="rows"></tbody></table></div><p class="tiny">The source audit cannot determine whether a private individual has a professional background they chose not to disclose. An email domain alone never proves employment or authority to submit for a school or organization.</p></section>
+<section class="panel"><h2 style="margin-top:0">Cross-filing evidence leads</h2>
+<p class="muted">When an identical normalized personal-name string appears across multiple FCC submissions, we check whether another filing explicitly states an occupation. These are possible identity matches, not proof that the person spoke for an employer in either filing. No such lead automatically changes the stakeholder classification.</p>
+<div id="crossfiling">Loading cross-filing source checks…</div></section>
 </main><footer><div class="wrap">Source-linked exploratory research · <a href="./players.html">Return to stakeholder review</a></div></footer>
 <script>
 (async()=>{
@@ -35,6 +38,27 @@ tr.append(...tds);body.append(tr)}
 if(a.length>550){const p=document.createElement('tr'),td=document.createElement('td');td.colSpan=5;td.textContent='Showing first 550 records. Filter by filing ID or evidence status for more.';p.append(td);body.append(p)}
 }
 $('query').addEventListener('input',render);$('statusfilter').addEventListener('change',render);render();
+try {
+ const xr=await fetch('./data/cross_filing_identity_leads.json',{cache:'no-store'});
+ if(!xr.ok)throw Error('no cross-filing audit');
+ const xd=await xr.json(),root=$('crossfiling');
+ root.replaceChildren();
+ const count=document.createElement('p');count.className='muted';
+ count.textContent=n(xd.potential_cross_filing_leads)+' tentative links found by comparing '+n(xd.distinct_personal_name_strings)+' personal-name strings.';
+ root.append(count);
+ for(const x of xd.records||[]){
+  const p=document.createElement('p'),a=document.createElement('a');
+  a.href=x.source_url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Filing '+x.id;
+  p.append(a,document.createTextNode(' · Possible '+x.role_candidate.replaceAll('_',' ')+' from another filing: '));
+  for(const id of x.corroborating_filing_ids||[]){
+   const evidence=document.createElement('a');
+   evidence.href='https://www.fcc.gov/ecfs/filing/'+encodeURIComponent(id);
+   evidence.target='_blank';evidence.rel='noopener noreferrer';evidence.textContent=id;
+   p.append(evidence,document.createTextNode(' '));
+  }
+  root.append(p);
+ }
+} catch(e) {$('crossfiling').textContent='Cross-filing evidence ledger is unavailable in this snapshot.';}
 }catch(e){$('status').textContent='Source audit is temporarily unavailable: '+e.message;}
 })();
 </script>
