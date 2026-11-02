@@ -403,9 +403,15 @@ def explicitly_submitting_institution(text: str) -> tuple[str,str]:
         head,
     ):
         candidate=m.group(1).split(",")[-1].strip(" .,:;-")
+        candidate=re.sub(r"(?i)^(?:comments|reply comments|statement) of\\s+","",candidate)
         # Trim preceding title / salutation text, keeping only up to 12 words.
         parts=candidate.split()
-        candidate=" ".join(parts[-12:])
+        parts=parts[-12:]
+        # Some PDF extractions repeat the same organization around a heading.
+        if len(parts)%2==0 and [x.casefold() for x in parts[:len(parts)//2]]==[
+            x.casefold() for x in parts[len(parts)//2:]]:
+            parts=parts[:len(parts)//2]
+        candidate=" ".join(parts)
         label=organization_label(candidate)
         if label:
             role=first_rule(label,ORG_PATTERNS)[0]
