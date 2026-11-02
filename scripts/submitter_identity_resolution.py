@@ -25,10 +25,10 @@ UNINFORMATIVE={
 BAD_ORG_PREFIX=re.compile(
     r'(?i)^(?:submitted to|comments? (?:on|to|regarding)|in (?:response|support)|'
     r'my children|the following|dear |to the |please |subject:|re:|'
-    r'this (?:letter|comment|document)|\\W)',
+    r'this (?:letter|comment|document)|\W)',
 )
-BAD_ORG_CONTEXT=re.compile(r'[\\n\\r•●]|(?:https?://)|(?:\\b(?:pays|a year for access|dear commission)\\b)',re.I)
-PERSON_TITLE=re.compile(r'(?i)^(?:(?:ms|mrs|mr|miss|dr|prof)\\.?\\s+)+')
+BAD_ORG_CONTEXT=re.compile(r'[\n\r•●]|(?:https?://)|(?:\b(?:pays|a year for access|dear commission)\b)',re.I)
+PERSON_TITLE=re.compile(r'(?i)^(?:(?:ms|mrs|mr|miss|dr|prof)\.?\s+)+')
 INSTITUTION_ROLES={
     'advocacy_organization','nonprofit_service_provider','trade_association',
     'government','individual_school','school_district','library_institution',
@@ -48,7 +48,7 @@ ORG_BASIS={
 
 def normalize(value):
     value=unicodedata.normalize('NFKC',str(value or '')).casefold()
-    return re.sub(r'[^\\w]+',' ',value,flags=re.UNICODE).strip()
+    return re.sub(r'[^\w]+',' ',value,flags=re.UNICODE).strip()
 
 def canonical_org(org):
     """Known corroborated aliases share a key; unknown names match conservatively."""
@@ -72,7 +72,7 @@ def parts_of(raw):
         if delimiter not in text:continue
         parts=[p.strip() for p in text.split(delimiter)]
         if 2<=len(parts)<=6 and all(parts):return parts
-    if text.count(',')==1 and not re.search(r'(?i)\\b(?:inc|llc|ltd|corp)\\b',text):
+    if text.count(',')==1 and not re.search(r'(?i)\b(?:inc|llc|ltd|corp)\b',text):
         parts=[p.strip() for p in text.split(',')]
         if sum(bool(canonical_org(p)) for p in parts)==1 and any(person_name(p) for p in parts):
             return parts
