@@ -14,6 +14,16 @@ KNOWN = {
     # Original FCC signature/letterhead candidates cross-checked against
     # independent institutional sources (Nov 2, 2026). These aliases apply
     # only to institution-valued metadata or inspected signature blocks.
+    'central massachusetts collaborative': ('Central Massachusetts Collaborative', 'school_district'),
+    'international leadership of texas': ('International Leadership of Texas', 'school_district'),
+    'international leadership of texas iltexas': ('International Leadership of Texas', 'school_district'),
+    'kvc health systems': ('KVC Health Systems', 'nonprofit_service_provider'),
+    'generation west virginia': ('Generation West Virginia', 'advocacy_organization'),
+    'saint marys central': ("St. Mary's Central", 'individual_school'),
+    'st marys central': ("St. Mary's Central", 'individual_school'),
+    'st mary s central': ("St. Mary's Central", 'individual_school'),
+    'taxpayers protection alliance': ('Taxpayers Protection Alliance', 'advocacy_organization'),
+    'connecticut commission for educational technology': ('Connecticut Commission for Educational Technology', 'government'),
     'fairfield library association': ('Fairfield Library Association', 'library_institution'),
     'eminent technical solutions ets': ('Eminent Technical Solutions', 'network_technology_vendor'),
     'eminent technical solutions': ('Eminent Technical Solutions', 'network_technology_vendor'),
