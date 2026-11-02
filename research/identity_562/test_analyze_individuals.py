@@ -32,6 +32,11 @@ class ExperimentalIdentityTests(unittest.TestCase):
           "Currently, I am a member of the BOE at my district.": "school_board_member",
           "I have been in education for over 20 years, starting in the classroom.": "education_professional",
           "I am a licensed psychologist in private practice.": "health_professional",
+          "I have been a homeschool parent for 20 years.": "parent_guardian",
+          "Screen time is affecting our children, in 2nd and 3rd grade, who are required to use tablets.": "parent_guardian",
+          "My family has used our library services many times.": "library_patron",
+          "We need wifi at the library to be able to do homework.": "library_patron",
+          "The E-Rate program saves my library money and time allowing us to serve our residents.": "library_community_connection",
         }
         for text, role in samples.items():
             with self.subTest(text=text):
