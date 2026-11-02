@@ -191,6 +191,9 @@ def stakeholder_group(f):
     if r=='school_connected_unknown':return 'school_affiliation_uncertain'
     if r in ('library_institution','library_staff','library_affiliated'):return 'libraries'
     if r=='parent_guardian':return 'parents'
+    if r=='student':return 'students'
+    if r=='researcher':return 'researchers'
+    if r=='named_person_capacity_unstated':return 'individual_capacity_unstated'
     if r=='government':return 'government'
     if r=='trade_association':return 'other_associations'
     if r=='advocacy_organization':return 'nonprofits_and_advocacy'
@@ -204,7 +207,10 @@ GROUP_NAMES={
  'higher_education':'Colleges and universities',
  'school_institutions':'Schools and districts','school_professionals':'School staff and educators',
  'school_affiliation_uncertain':'School-affiliated commenters (role unspecified)',
- 'libraries':'Libraries','parents':'Parents and caregivers','edtech_vendors':'Edtech companies',
+ 'libraries':'Libraries','parents':'Parents and caregivers',
+ 'students':'Students','researchers':'Researchers and health professionals',
+ 'individual_capacity_unstated':'Individuals (occupation not stated)',
+ 'edtech_vendors':'Edtech companies',
  'edtech_trade_associations':'Edtech industry associations','erate_consultants':'E-Rate consulting firms',
  'consultant_associations':'Consultant associations',
  'connectivity_and_network_vendors':'Internet and networking vendors',
@@ -212,7 +218,7 @@ GROUP_NAMES={
  'nonprofits_and_advocacy':'Nonprofits and advocacy groups',
  'nonprofit_service_providers':'Nonprofit education and community-service providers',
  'other_associations':'Other associations','other_businesses':'Other businesses',
- 'other_or_unidentified':'Other or unidentified'}
+ 'other_or_unidentified':'Unresolved or unclassified'}
 GROUP_ORDER=list(GROUP_NAMES)
 
 DASH_VARIANTS=re.compile(r'[\u2010-\u2015\u2212\u00ad\u2043\ufe58\ufe63\uff0d]')
@@ -497,7 +503,7 @@ def compute(registry, claims, quality, context_audit=None, manifest=None, ledger
             'filings_selected_windows_only':sum(x['quality_scope']=='prioritized_windows' for x in records),
             'filings_with_ocr_candidate':sum(x['ocr_candidate'] for x in records),
             'filings_with_multiple_submitters':sum(x['joint_filing'] for x in records),
-            'unresolved_or_personal_capacity_filings':sum(x['group']=='other_or_unidentified' for x in records),
+            'unresolved_or_personal_capacity_filings':sum(x['group'] in ('other_or_unidentified','individual_capacity_unstated') for x in records),
             'excluded_reported_listening_claim_rows':ignored['third_party_listening_summary_claim_rows'],
             'excluded_nonassertion_or_unmapped_claim_rows':ignored['no_substantive_topic_or_nonassertion']
         },
