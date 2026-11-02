@@ -1,6 +1,5 @@
 """Tests for stakeholder and argument-counting methods; independent of model outputs."""
 import unittest
-from scripts.build_stakeholder_census import stakeholder_group
 from scripts.build_stakeholder_census import (
     topics_for_claim, stakeholder_group, compute, THEMES, GROUP_NAMES, NTIA_LISTENING_REPORT
 )
