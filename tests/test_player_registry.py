@@ -411,6 +411,10 @@ class PlayerIdentityTest(unittest.TestCase):
         self.assertTrue(joint['multi_submitter_metadata'])
         self.assertEqual(len(joint['joint_institution_candidates']),2)
         self.assertTrue(all('Library' in x for x in joint['joint_institution_candidates']))
+        for name in ('Northwest Library District','Crawford County Federated Library System'):
+            got=inferred_identity({'filer_raw':name},'library_or_library_system',
+                'Public libraries need affordable connectivity.')
+            self.assertEqual(got['role'],'library_institution')
 
     def test_named_library_association_is_not_library_system(self):
         x=inferred_identity({'filer_raw':'American Library Association'},
