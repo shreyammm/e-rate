@@ -99,6 +99,50 @@ AUTHOR_PATTERNS += [
      r"(?:school|district|public library|community center)|"
      r"as (?:a |an )?(?:school|library|community) volunteer)\b"),
 ]
+# Targeted additions derived from individually inspected FCC examples. We keep
+# broad roles for self-described schooling and healthcare professionals without
+# inventing a named employer or organization-level authority.
+AUTHOR_PATTERNS += [
+    ("school_educator", "teacher_level_or_subject",
+     r"\b(?:as (?:a |an |the )?(?:(?:public|elementary|middle|high|secondary|special education|pre[- ]?k|kindergarten|science|math|english|history) )+(?:school )?teacher|"
+     r"i (?:teach|taught) (?:elementary|middle|high) school|"
+     r"being (?:a |an )?(?:teacher|school educator)|"
+     r"(?:my|our) (?:special education|classroom|high school|middle school|elementary) students)\b"),
+    ("retired_educator", "retirement_from_teaching",
+     r"\b(?:i (?:have )?(?:just |recently )?retired (?:in \w+ )?(?:from )?teaching|"
+     r"i retired (?:in \w+ )?(?:from )?(?:teaching|my teaching career)|"
+     r"i was a (?:school |classroom |elementary |high school )?teacher for \d+ years|"
+     r"i (?:taught|have taught) (?:elementary|middle|high) school for \d+ years)\b"),
+    ("library_staff", "professional_librarian",
+     r"\b(?:as (?:a |an |the )?(?:professional |public |school |retired )?librarian|"
+     r"i (?:am|'m) (?:a |an |the )?(?:professional |public |school |retired )?librarian|"
+     r"i have worked in librar(?:y|ies) for \d+ years)\b"),
+    ("school_technology_staff", "it_professional_at_school",
+     r"\b(?:as (?:a |an |the )?(?:it|information technology|network|technology) "
+     r"professional at (?:a |an |the |our )?(?:[\w&.'-]+ ){0,6}school|"
+     r"i (?:am|'m) (?:an? |the )?(?:it|technology|network|information technology) "
+     r"professional (?:at|for) (?:a |an |the |our )?(?:[\w&.'-]+ ){0,6}school|"
+     r"i (?:manage|coordinate|oversee) e[- ]?rate (?:at|for) (?:our|the|my) district)\b"),
+    ("school_board_member", "boe_or_board_member",
+     r"\b(?:i (?:am|'m) (?:currently )?(?:a |an |the )?(?:member of (?:the|our) (?:boe|board of education)|"
+     r"(?:school|district) board member|board of education member)|"
+     r"as (?:a |an |the )?(?:member of (?:the|our) (?:boe|board of education)|"
+     r"(?:school|district) board member|board of education member)|"
+     r"i (?:serve|sit) on (?:the |our )?(?:board of education|boe)|"
+     r"as chair of (?:the |our )?(?:[\w&.'-]+ ){0,9}board of directors,"
+     r" (?:a |the )?(?:small |rural |public )*(?:school )?district)\b"),
+    ("education_professional", "education_career_declared",
+     r"\b(?:i (?:have been|have worked|work|am working) in education for "
+     r"(?:over|more than|about|approximately)? ?\d+ years|"
+     r"i (?:have worked|work) in (?:public |k[- ]?12 )?education (?:for|since)|"
+     r"my \d+(?:st|nd|rd|th)? year (?:working )?in education)\b"),
+    ("health_professional", "licensed_child_professional",
+     r"\b(?:i (?:am|'m) (?:a |an |the )?(?:licensed |clinical |practicing )?"
+     r"(?:psychologist|psychotherapist|mental health clinician|mental health counselor|"
+     r"pediatrician|child psychiatrist|social worker|school psychologist)|"
+     r"as (?:a |an |the )?(?:licensed |clinical )?(?:psychologist|pediatrician|"
+     r"child psychiatrist|mental health clinician))\b"),
+]
 # In source text, stakeholder words in a copied sample question or bibliography
 # are not evidence of *the author*. The regexes above require self-reference.
 PATTERNS = [(role, pid, re.compile(rx, re.I)) for role,pid,rx in AUTHOR_PATTERNS]
@@ -108,11 +152,14 @@ STRONG_ROLES = {
     "researcher", "government", "library_board_member", "school_family_member",
     "school_alumnus", "library_patron", "school_employee_general",
     "retired_educator", "education_advocacy_member",
+    "school_board_member", "education_professional", "health_professional",
 }
 GENERAL_CIVIC = {"taxpayer","community_resident","school_community_connection",
                  "library_community_connection","erate_applicant_voice","community_volunteer"}
 ROLE_PRIORITY = {
     "school_technology_staff": 10, "school_administrator": 11,
+    "school_board_member": 12, "health_professional": 16,
+    "education_professional": 28,
     "school_educator": 12, "retired_educator": 13,
     "library_staff": 15, "erate_consultant": 16, "researcher": 17,
     "government": 18, "student": 19, "parent_guardian": 20,
@@ -339,7 +386,8 @@ def inspect(source=SOURCE, registry=REGISTRY, output=OUTPUT) -> dict:
             status="explicit_non_occupational_or_sector_identity"
             if main.role in {"school_technology_staff","school_administrator","school_educator",
                              "library_staff","erate_consultant","researcher","government","student",
-                             "retired_educator","school_employee_general"}:
+                             "retired_educator","school_employee_general","school_board_member",
+                             "education_professional","health_professional"}:
                 status="explicit_professional_or_school_role"
         elif civic:
             status="explicit_civic_capacity"
