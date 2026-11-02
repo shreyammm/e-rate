@@ -154,9 +154,21 @@ def single_institution_pair(raw: str, institution_label: Callable[[str], str]) -
     return next(o for o in orgs if o)
 
 def multiple_person_names_only(raw: str) -> bool:
-    """Multiple signatory names; does not imply a personal-capacity stance."""
-    parts=[p.strip() for p in str(raw or '').split('|')]
-    return 2<=len(parts)<=6 and all(personal_name_format(p) for p in parts)
+    """Multiple named signatories, without implying private capacity.
+
+    ECFS uses pipes for some multi-person filings and commas for others.
+    Reject docket numbers, job titles and institution-valued strings.
+    """
+    raw = str(raw or '').strip()
+    if '|' in raw:
+        parts = [p.strip() for p in raw.split('|')]
+    elif ',' in raw:
+        parts = [p.strip() for p in raw.split(',')]
+    else:
+        return False
+    return 2 <= len(parts) <= 6 and all(
+        len(p.split()) >= 2 and personal_name_format(p) for p in parts
+    )
 
 def personal_name_format(raw: str) -> bool:
     """An apparently personal-name filer with unknown occupational capacity."""
