@@ -78,7 +78,6 @@ def inspect_entire_source(text):
     matches=[]
     for role,signal,rx in COMPILED:
         for m in rx.finditer(text):
-            if m.start()<4800:continue  # first pass already scanned intro
             line=text[text.rfind("\n",0,m.start())+1:m.start()]
             if QUOTED.match(line):continue
             matches.append({"role":role,"evidence_code":signal,
