@@ -8,6 +8,7 @@ on:
       - 'research/identity_562/test_analyze_individuals.py'
       - 'research/identity_562/diagnose_model_leads.py'
       - 'research/identity_562/deep_investigation.py'
+      - 'research/identity_562/model_and_phrase_review.py'
       - 'research/identity_562/test_deep_investigation.py'
       - '.github/workflows/research-identity-562.yml'
   workflow_dispatch:
@@ -36,6 +37,8 @@ jobs:
         run: python -m research.identity_562.analyze_individuals
       - name: Investigate residual identities against entire original corpus
         run: python -m research.identity_562.deep_investigation
+      - name: Reconcile independent Granite identity model and extract full-document author phrases
+        run: python -m research.identity_562.model_and_phrase_review
       - name: Inspect redacted original-source examples behind model stakeholder leads
         run: python -m research.identity_562.diagnose_model_leads
       - name: Verify no personal contact details are emitted
@@ -53,6 +56,9 @@ jobs:
           assert 'filer_raw' not in out and '"text":' not in out
           deep=json.loads(Path('research/identity_562/results/deep_full_document_evidence.json').read_text())
           assert deep['unresolved_filing_count']>=450
+          mdl=json.loads(Path('research/identity_562/results/model_and_phrase_review.json').read_text())
+          assert mdl['target']>350
+          assert len(mdl['records'])==mdl['target']
           assert len(deep['records'])==deep['unresolved_filing_count']
           assert len(list(Path('research/identity_562/results/identity_review_567.csv').open())) == d['summary']['filing_target_count']+1
           print('All source-file IDs audited; no names/emails/raw excerpts exported')
