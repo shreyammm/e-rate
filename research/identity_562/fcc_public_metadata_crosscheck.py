@@ -55,12 +55,24 @@ def run():
                "User-Agent":"e-rate-research-metadata-verification/1.0"})
             with urllib.request.urlopen(req,timeout=10) as conn:
                 data=json.load(conn)
-                doc=data.get("filing",data) if isinstance(data,dict) else {}
+                row["response_type"]=type(data).__name__
+                row["response_top_level_keys"]=sorted(list(data))[:22] if isinstance(data,dict) else []
+                doc=data
+                if isinstance(data,dict):
+                    for key in ("filing","record","data","result","results","records"):
+                        candidate=data.get(key)
+                        if isinstance(candidate,dict):
+                            doc=candidate
+                            break
+                        if isinstance(candidate,list) and candidate and isinstance(candidate[0],dict):
+                            doc=candidate[0]
+                            break
+                row["response_record_keys"]=sorted(list(doc))[:30] if isinstance(doc,dict) else []
                 if not isinstance(doc,dict):
                     row["status"]="non_object_response"
                 else:
                     returned=str(doc.get("submissionId") or doc.get("submission_id")
-                                 or doc.get("id") or "")
+                                 or doc.get("submissionID") or doc.get("id") or "")
                     if returned!=fid:
                         row["status"]="id_not_matched"
                     else:
