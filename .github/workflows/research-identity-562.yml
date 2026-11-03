@@ -7,6 +7,8 @@ on:
       - 'research/identity_562/analyze_individuals.py'
       - 'research/identity_562/test_analyze_individuals.py'
       - 'research/identity_562/diagnose_model_leads.py'
+      - 'research/identity_562/deep_investigation.py'
+      - 'research/identity_562/test_deep_investigation.py'
       - '.github/workflows/research-identity-562.yml'
   workflow_dispatch:
 permissions:
@@ -28,8 +30,12 @@ jobs:
           python-version: '3.11'
       - name: Test experimental evidence rules
         run: python -m unittest research.identity_562.test_analyze_individuals -v
+      - name: Test full-document methods
+        run: python -m unittest research.identity_562.test_deep_investigation -v
       - name: Run source inspection on all named-individual filings
         run: python -m research.identity_562.analyze_individuals
+      - name: Investigate residual identities against entire original corpus
+        run: python -m research.identity_562.deep_investigation
       - name: Inspect redacted original-source examples behind model stakeholder leads
         run: python -m research.identity_562.diagnose_model_leads
       - name: Verify no personal contact details are emitted
@@ -45,6 +51,9 @@ jobs:
           out=p.read_text()
           assert not re.search(r'[a-z0-9_.+-]+@[a-z0-9.-]+\.[a-z]{2,}',out,re.I)
           assert 'filer_raw' not in out and '"text":' not in out
+          deep=json.loads(Path('research/identity_562/results/deep_full_document_evidence.json').read_text())
+          assert deep['unresolved_filing_count']>=450
+          assert len(deep['records'])==deep['unresolved_filing_count']
           assert len(list(Path('research/identity_562/results/identity_review_567.csv').open())) == d['summary']['filing_target_count']+1
           print('All source-file IDs audited; no names/emails/raw excerpts exported')
           PY
@@ -52,7 +61,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- research/identity_562/results/summary.json research/identity_562/results/review_queue.json research/identity_562/results/identity_review_567.csv
+          git add -- research/identity_562/results/summary.json research/identity_562/results/review_queue.json research/identity_562/results/identity_review_567.csv research/identity_562/results/deep_full_document_evidence.json
           if git diff --cached --quiet; then
             echo "Unpublished evidence outputs unchanged"
           else
