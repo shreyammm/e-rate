@@ -97,9 +97,10 @@ def run():
                         for field in ("filers","authors","lawfirms"):
                             members=doc.get(field,[])
                             row[field+"_record_count"]=len(members) if isinstance(members,list) else 0
-                            row[field+"_item_keyset"]=sorted(
-                                list(members[0]))[:20] if isinstance(members,list) and members
-                                and isinstance(members[0],dict) else []
+                            if isinstance(members,list) and members and isinstance(members[0],dict):
+                                row[field+"_item_keyset"]=sorted(list(members[0]))[:20]
+                            else:
+                                row[field+"_item_keyset"]=[]
                         row["extra_org_metadata"]=sorted(set().union(
                             publicly_named_institutions(doc.get("filers",[])),
                             publicly_named_institutions(doc.get("authors",[])),
