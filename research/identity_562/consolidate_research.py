@@ -124,16 +124,22 @@ def run():
         })
     distinct_all=len({filer_key(original[x["filing_id"]].get("filer_raw",""))
                    or "filing:"+x["filing_id"] for x in base})
+    source_known=set().union(*(v for k,v in unique_status.items()
+                             if k!="capacity_unstated"))
+    missing_in_some=unique_status["capacity_unstated"]
+    fully_missing=missing_in_some-source_known
+    mixed_filings=missing_in_some & source_known
     summary={
         "schema_version":"unpublished-research-consolidated-v1",
         "source_filing_count":len(original),
         "original_filing_cohort":len(base),
         "original_distinct_normalized_filer_identifiers":distinct_all,
         "new_source_supported_role_filings":len(base)-capacities["capacity_unstated"],
-        "new_source_supported_role_distinct_identifiers":
-            len(set().union(*(v for k,v in unique_status.items() if k!="capacity_unstated"))),
+        "new_source_supported_role_distinct_identifiers":len(source_known),
         "still_role_unstated_filings":capacities["capacity_unstated"],
         "still_role_unstated_distinct_identifiers":len(unique_status["capacity_unstated"]),
+        "fully_role_unstated_distinct_identifiers":len(fully_missing),
+        "mixed_role_and_unstated_filing_distinct_identifiers":len(mixed_filings),
         "source_recovery_methods":dict(statuses),
         "primary_capacity_counts":dict(capacities),
         "role_distinct_identifier_counts":{k:len(v) for k,v in unique_status.items()},
