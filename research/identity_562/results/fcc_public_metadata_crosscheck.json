@@ -1,16 +1,17 @@
 {
   "schema": "fcc-live-crosscheck-unpublished-v1",
-  "cases_requested": 8,
-  "confirmed_live_metadata": 0,
+  "cases_requested": 25,
+  "confirmed_live_metadata": 10,
   "statuses": {
-    "id_not_matched": 8
+    "official_fcc_metadata_confirmed": 10,
+    "http_429": 15
   },
   "records": [
     {
       "filing_id": "26110079125",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110079125",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -62,13 +63,21 @@
         "submissiontype",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
     },
     {
       "filing_id": "26110080317",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080317",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -120,13 +129,21 @@
         "submissiontype",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
     },
     {
       "filing_id": "26110081012",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110081012",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -178,13 +195,23 @@
         "submissiontype",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 1,
+      "authors_item_keyset": [
+        "name"
+      ],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
     },
     {
       "filing_id": "26110081375",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110081375",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -230,13 +257,21 @@
         "text_data",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
     },
     {
       "filing_id": "26110076731",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110076731",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -288,13 +323,21 @@
         "submissiontype",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
     },
     {
       "filing_id": "26110073398",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110073398",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -346,13 +389,21 @@
         "submissiontype",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
     },
     {
       "filing_id": "26110080616",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110080616",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -398,13 +449,21 @@
         "text_data",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
     },
     {
       "filing_id": "26110014024",
       "source_url": "https://www.fcc.gov/ecfs/filing/26110014024",
-      "metadata_verified": false,
-      "status": "id_not_matched",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
       "extra_org_metadata": [],
       "response_type": "dict",
       "response_top_level_keys": [
@@ -450,7 +509,240 @@
         "text_data",
         "total_page_count",
         "viewingstatus"
-      ]
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
+    },
+    {
+      "filing_id": "26110023726",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110023726",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
+      "extra_org_metadata": [],
+      "response_type": "dict",
+      "response_top_level_keys": [
+        "_index",
+        "attachments",
+        "authors",
+        "bureaus",
+        "created",
+        "date_disseminated",
+        "date_last_modified",
+        "date_received",
+        "date_submission",
+        "documents",
+        "express_comment",
+        "filers",
+        "filingstatus",
+        "id_submission",
+        "lawfirms",
+        "proceedings",
+        "submissiontype",
+        "text_data",
+        "total_page_count",
+        "viewingstatus"
+      ],
+      "response_record_keys": [
+        "_index",
+        "attachments",
+        "authors",
+        "bureaus",
+        "created",
+        "date_disseminated",
+        "date_last_modified",
+        "date_received",
+        "date_submission",
+        "documents",
+        "express_comment",
+        "filers",
+        "filingstatus",
+        "id_submission",
+        "lawfirms",
+        "proceedings",
+        "submissiontype",
+        "text_data",
+        "total_page_count",
+        "viewingstatus"
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
+    },
+    {
+      "filing_id": "26110045082",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110045082",
+      "metadata_verified": true,
+      "status": "official_fcc_metadata_confirmed",
+      "extra_org_metadata": [],
+      "response_type": "dict",
+      "response_top_level_keys": [
+        "_index",
+        "attachments",
+        "authors",
+        "bureaus",
+        "created",
+        "date_disseminated",
+        "date_last_modified",
+        "date_received",
+        "date_submission",
+        "documents",
+        "express_comment",
+        "filers",
+        "filingstatus",
+        "id_submission",
+        "lawfirms",
+        "proceedings",
+        "submissiontype",
+        "text_data",
+        "total_page_count",
+        "viewingstatus"
+      ],
+      "response_record_keys": [
+        "_index",
+        "attachments",
+        "authors",
+        "bureaus",
+        "created",
+        "date_disseminated",
+        "date_last_modified",
+        "date_received",
+        "date_submission",
+        "documents",
+        "express_comment",
+        "filers",
+        "filingstatus",
+        "id_submission",
+        "lawfirms",
+        "proceedings",
+        "submissiontype",
+        "text_data",
+        "total_page_count",
+        "viewingstatus"
+      ],
+      "filers_record_count": 1,
+      "filers_item_keyset": [
+        "name"
+      ],
+      "authors_record_count": 0,
+      "authors_item_keyset": [],
+      "lawfirms_record_count": 0,
+      "lawfirms_item_keyset": []
+    },
+    {
+      "filing_id": "26110069031",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110069031",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110069348",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110069348",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110069351",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110069351",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110069989",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110069989",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110071353",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110071353",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110071489",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110071489",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110071534",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110071534",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110071871",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110071871",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110072834",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110072834",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110073024",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073024",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110073108",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073108",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110073177",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073177",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110073187",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073187",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110073318",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073318",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
+    },
+    {
+      "filing_id": "26110073415",
+      "source_url": "https://www.fcc.gov/ecfs/filing/26110073415",
+      "metadata_verified": false,
+      "status": "http_429",
+      "extra_org_metadata": []
     }
   ],
   "limitations": "DEMO_KEY may be rate limited or blocked; failure is not evidence of identity"
