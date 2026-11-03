@@ -13,6 +13,7 @@ on:
       - 'research/identity_562/source_specific_roles.py'
       - 'research/identity_562/institutional_letterhead.py'
       - 'research/identity_562/consolidate_research.py'
+      - 'research/identity_562/fcc_public_metadata_crosscheck.py'
       - 'research/identity_562/test_deep_investigation.py'
       - '.github/workflows/research-identity-562.yml'
   workflow_dispatch:
@@ -51,6 +52,8 @@ jobs:
         run: python -m research.identity_562.source_specific_roles
       - name: Consolidate all source-grounded identity evidence and separately classified argument interests
         run: python -m research.identity_562.consolidate_research
+      - name: Probe official ECFS filing metadata for high-priority organization/author fields
+        run: python -m research.identity_562.fcc_public_metadata_crosscheck
       - name: Inspect redacted original-source examples behind model stakeholder leads
         run: python -m research.identity_562.diagnose_model_leads
       - name: Verify no personal contact details are emitted
@@ -87,7 +90,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- research/identity_562/results/summary.json research/identity_562/results/review_queue.json research/identity_562/results/identity_review_567.csv research/identity_562/results/deep_full_document_evidence.json research/identity_562/results/model_and_phrase_review.json research/identity_562/results/source_specific_identity_recovery.json research/identity_562/results/institutional_letterhead_leads.json research/identity_562/results/consolidated_identity_summary.json research/identity_562/results/consolidated_identity_review.csv
+          git add -- research/identity_562/results/summary.json research/identity_562/results/review_queue.json research/identity_562/results/identity_review_567.csv research/identity_562/results/deep_full_document_evidence.json research/identity_562/results/model_and_phrase_review.json research/identity_562/results/source_specific_identity_recovery.json research/identity_562/results/institutional_letterhead_leads.json research/identity_562/results/consolidated_identity_summary.json research/identity_562/results/consolidated_identity_review.csv research/identity_562/results/fcc_public_metadata_crosscheck.json
           if git diff --cached --quiet; then
             echo "Unpublished evidence outputs unchanged"
           else
