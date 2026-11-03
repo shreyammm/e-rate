@@ -5,6 +5,7 @@ Uses only the FCC's public REST API and demo credentials. Network/rate-limit
 errors are recorded as unverified and NEVER converted into a role. No personal
 names, contact addresses or phone numbers are exported.
 """
+import csv
 import json
 import os
 import re
@@ -43,8 +44,23 @@ def publicly_named_institutions(value):
 
 def run():
     api=os.getenv("FCC_ECFS_API_KEY","DEMO_KEY")
+    # Prioritize high-signal unresolved cases for a rate-limited DEMO_KEY pilot.
+    ids=list(FILING_IDS)
+    review=OUTPUT/"consolidated_identity_review.csv"
+    if review.exists():
+        with review.open(encoding="utf8",newline="") as f:
+            rows=list(csv.DictReader(f))
+        rows.sort(key=lambda x:(
+             0 if x["candidate_institution_from_letterhead"] else
+             1 if x["model_only_role_hint"] in ("school_district","library","school_staff","parent_guardian") else
+             2 if x["model_only_role_hint"]=="advocacy_group" else 3,
+             x["filing_id"]))
+        for entry in rows:
+            if entry["filing_id"] not in ids and not entry["source_supported_identity_role"]:
+                ids.append(entry["filing_id"])
+            if len(ids)>=25:break
     records=[]
-    for fid in FILING_IDS:
+    for fid in ids:
         url="https://publicapi.fcc.gov/ecfs/filing/"+fid+"?api_key="+api
         row={"filing_id":fid,"source_url":"https://www.fcc.gov/ecfs/filing/"+fid,
              "metadata_verified":False,"status":"not_fetched",
@@ -72,16 +88,22 @@ def run():
                     row["status"]="non_object_response"
                 else:
                     returned=str(doc.get("submissionId") or doc.get("submission_id")
-                                 or doc.get("submissionID") or doc.get("id") or "")
+                                 or doc.get("submissionID") or doc.get("id_submission") or doc.get("id") or "")
                     if returned!=fid:
                         row["status"]="id_not_matched"
                     else:
                         row["metadata_verified"]=True
                         row["status"]="official_fcc_metadata_confirmed"
+                        for field in ("filers","authors","lawfirms"):
+                            members=doc.get(field,[])
+                            row[field+"_record_count"]=len(members) if isinstance(members,list) else 0
+                            row[field+"_item_keyset"]=sorted(
+                                list(members[0]))[:20] if isinstance(members,list) and members
+                                and isinstance(members[0],dict) else []
                         row["extra_org_metadata"]=sorted(set().union(
                             publicly_named_institutions(doc.get("filers",[])),
                             publicly_named_institutions(doc.get("authors",[])),
-                            publicly_named_institutions(doc.get("lawFirms",[]))))
+                            publicly_named_institutions(doc.get("lawfirms",[]))))
         except urllib.error.HTTPError as exc:
             row["status"]="http_"+str(exc.code)
         except (urllib.error.URLError,TimeoutError) as exc:
@@ -92,7 +114,7 @@ def run():
         time.sleep(.4)
     result={
       "schema":"fcc-live-crosscheck-unpublished-v1",
-      "cases_requested":len(FILING_IDS),
+      "cases_requested":len(ids),
       "confirmed_live_metadata":sum(x["metadata_verified"] for x in records),
       "statuses":dict(Counter(x["status"] for x in records)),
       "records":records,
