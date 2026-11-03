@@ -21,7 +21,7 @@ ADJUDICATIONS={
  "26110071947":("retired_library_staff",r"\bas a retired kcls refe\s*re\s*nce librarian\b","explicit past library profession"),
  "26110072168":("retired_school_educator",r"\bi am a retired nyc public school teacher\b","explicit former profession"),
  "26110072186":("school_network_staff",r"\bas a supervisor of network\b.{0,100}\bwswhe boces\b","explicit school-network supervisory professional"),
- "26110072449":("community_resident",r"\bi am a resident of the\b","explicit resident"),
+ "26110072449":("community_resident",r"\bi\s+am\s+a\s+resident\s+of\s+the\b","explicit resident"),
  "26110073715":("library_staff",r"\bas a public library employee\b","explicit working library professional"),
  "26110073727":("teacher_educator",r"\bformer high school science teacher and current teacher educator\b","explicit former schoolteacher and current educator"),
  "26110074167":("parent_guardian",r"\bi was a struggling single mom\b","historical explicit maternal experience"),
