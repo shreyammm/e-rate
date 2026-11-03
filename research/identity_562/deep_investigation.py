@@ -34,7 +34,7 @@ ROLE_RULES=[
   r" (?:director|coordinator|administrator|manager|specialist))\b"),
  ("library_staff","library_employee",
   r"\b(?:i (?:work|am employed|have worked) (?:at|in|for)"
-  r" (?:our |the |a )?(?:public |school |county )?library|"
+  r" (?:our |the |a )?(?:(?:local|public|school|county) ){0,3}library|"
   r"as (?:a |the )?(?:public |school )?(?:librarian|library director|library worker)|"
   r"my job (?:at|in) (?:our |the |a )?library)\b"),
  ("parent_guardian","parent_child_school",
